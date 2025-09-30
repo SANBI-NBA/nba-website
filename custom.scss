@@ -87,6 +87,52 @@ strong, b {
   font-size: 36px;
 }
 
+
+/* Custom overrides for small screens */
+@media (max-width: 576px) {
+  /* Stack everything inside the navbar */
+  .navbar .navbar-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Stack logo and title vertically */
+  .navbar .navbar-brand-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Logo block */
+  .navbar .navbar-brand-logo {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .navbar .navbar-logo {
+    max-width: 80% !important;
+    height: auto !important;
+  }
+
+  /* Title under logo */
+  .navbar .navbar-title {
+    display: block !important;
+    margin-top: 0.5rem !important;
+    font-size: 1rem; /* adjust if too small/large */
+  }
+
+  /* Tools centered under title */
+  .navbar .quarto-navbar-tools {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
+  }
+}
+
 // Sidebar references customization
 
 .column-margin figcaption,.margin-caption,div.aside,aside,.column-margin {
