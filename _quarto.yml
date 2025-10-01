@@ -3,6 +3,9 @@ project:
   
 website:
   title: "National Biodiversity Assessment"
+  description: "The status of South Africa's ecosystems and biodiversity"
+  site-url: "https://nba.sanbi.org.za/"
+  repo-url: "https://github.com/SANBI-NBA/nba-website"
   favicon: imgs/sanbi-icon.png
   search:
     location: sidebar
@@ -11,6 +14,7 @@ website:
   back-to-top-navigation: true
   navbar:
     logo: imgs/sanbi-logo-medium.png
+    logo-href: "https://www.sanbi.org/"
     pinned: true
     tools:
       - icon: imgs/sanbi-icon.png
@@ -37,7 +41,6 @@ editor: visual
 csl: sanbi.csl
 footnotes-hover: true
 reference-location: document
-link-external-newwindow: true
 callout-icon: false
 
 language:
@@ -56,6 +59,7 @@ format:
     theme: 
       - default 
       - custom.scss    
+    link-external-newwindow: true
     crossref:
       fig-prefix: Figure
       fig-title: Figure
@@ -97,4 +101,4 @@ format:
     toc-location: right
     toc-depth: 4
     toc-expand: true
-    link-external-newwindow: true
+
