@@ -1,0 +1,322 @@
+/*-- scss:defaults --*/
+
+//
+// Color system: This is the yeti theme's colours (with a few sanbi additions)
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #eee !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ccc !default;
+$gray-500: #adb5bd !default;
+$gray-600: #888 !default;
+$gray-700: #495057 !default;
+$gray-800: #333 !default;
+$gray-900: #222 !default;
+$black:    #000 !default;
+
+$freshwater:        #4097C2 !default; //changed to freshwater blue
+$freshwater-light:  #CBDDED !default;
+$marine:            #02268A !default; //changed to marine blue
+$marine-light:      #B2B2CD !default;
+$purple:            #9D85BE !default; //changed to sanbi purple
+$pink:              #e83e8c !default;
+$red:               #f04124 !default; 
+$orange:            #FAA755 !default; //changed to sanbi orange
+$coast:             #DEA004 !default; //changed to coastal yellow
+$coast-light:       #F5E2C1 !default;
+$green:             #70B276 !default; //changed to sanbi green
+$estuarine:         #028A85 !default; //changed to estuarine teal
+$estuarine-light:   #C2D6D5 !default;
+$cyan:              #5bc0de !default;
+$terrestrial:       #617016 !default;
+$terrestrial-light: #CBCCB7 !default;
+$threatened:        #C38443 !default;
+$well-protected:    #4B6E00 !default;
+$not-protected:     #A6A6A6 !default;
+$species:           #DE2104 !default;
+$species-light:     #F6C6B4 !default;
+$genetics:          #99BD41 !default;
+$genetics-light:    #E0EAC6 !default;
+
+$primary:       $gray-200 !default; //This sets the colour of the topmost navbar (unless you overrule it with navbar-bg)
+$secondary:     $green !default; //SANBI green
+$success:       $green !default;
+$info:          $orange !default;
+$warning:       $purple !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   1.9 !default;
+
+// Base document colours
+
+$navbar-bg: $white;
+$navbar-fg: $green;
+$navbar-hl: $gray-500;
+$body-bg: $white;
+$body-color: $gray-900;
+$link-color: $green;
+$link-decoration: none;
+$footer-bg: $gray-500;
+$sidebar-hl: $green;
+
+// Import fonts:
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Text settings 
+
+$headings-font-family: "Poppins";
+$headings-font-weight: medium;
+$headings-line-height: 1.4;
+$headings-color: $black;
+$font-weight-base: 300;
+$line-height-base: 1.8;
+
+/*-- scss:rules --*/
+
+strong, b {
+  font-weight: 500; 
+}
+
+// Navbar customization 
+
+.navbar-logo {
+    max-height: 100px;
+    width: auto;
+    padding-right: 4px;
+}
+
+.navbar-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 36px;
+}
+
+
+/* Custom overrides for small screens */
+@media (max-width: 1100px) {
+  /* Stack everything inside the navbar */
+  .navbar .navbar-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Stack logo and title vertically */
+  .navbar .navbar-brand-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Logo block */
+  .navbar .navbar-brand-logo {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .navbar .navbar-logo {
+    max-width: 80% !important;
+    height: auto !important;
+  }
+
+  /* Title under logo */
+  .navbar .navbar-title {
+    display: block !important;
+    white-space: normal !important;  /* allow wrapping */
+    text-align: center !important;   /* keep it centered */
+    margin-top: 0.5rem !important;
+    font-size: 1.8rem; 
+  }
+
+  /* Tools centered under title */
+  .navbar .quarto-navbar-tools {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
+  }
+}
+
+// Sidebar references customization
+
+.column-margin figcaption,.margin-caption,div.aside,aside,.column-margin {
+    color: #626262;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+// Callout customization
+
+div.callout-note {
+  border-left: solid 1px #7E576B !important;
+  border-right: solid 1px #7E576B !important;
+  border-top: solid 1px #7E576B !important;
+  border-bottom: solid 1px #7E576B !important;
+  background-color: #C7B0BC !important;
+}
+
+div.callout-note.callout-style-default .callout-header {
+  background-color: #7E576B !important;
+  color: #fff !important;
+}
+
+.callout.terrestrial {
+  border-left: solid 1px $terrestrial !important;
+  border-right: solid 1px $terrestrial !important;
+  border-top: solid 1px $terrestrial !important;
+  border-bottom: solid 1px $terrestrial !important;
+  background-color: $terrestrial-light !important;
+}
+
+.callout.terrestrial.callout-style-default>.callout-header {
+  background-color: $terrestrial !important;
+  color: #fff !important;
+}
+
+.callout.freshwater {
+  border-left: solid 1px $freshwater !important;
+  border-right: solid 1px $freshwater !important;
+  border-top: solid 1px $freshwater !important;
+  border-bottom: solid 1px $freshwater !important;
+  background-color: $freshwater-light !important;
+}
+
+.callout.freshwater.callout-style-default>.callout-header {
+  background-color: $freshwater !important;
+  color: #fff !important;
+}
+
+.callout.estuarine {
+  border-left: solid 1px $estuarine !important;
+  border-right: solid 1px $estuarine !important;
+  border-top: solid 1px $estuarine !important;
+  border-bottom: solid 1px $estuarine !important;
+  background-color: $estuarine-light !important;
+}
+
+.callout.estuarine.callout-style-default>.callout-header {
+  background-color: $estuarine !important;
+  color: #fff !important;
+}
+
+.callout.marine {
+  border-left: solid 1px $marine !important;
+  border-right: solid 1px $marine !important;
+  border-top: solid 1px $marine !important;
+  border-bottom: solid 1px $marine !important;
+  background-color: $marine-light !important;
+}
+
+.callout.marine.callout-style-default>.callout-header {
+  background-color: $marine !important;
+  color: #fff !important;
+}
+
+.callout.species {
+  border-left: solid 1px $species !important;
+  border-right: solid 1px $species !important;
+  border-top: solid 1px $species !important;
+  border-bottom: solid 1px $species !important;
+  background-color: $species-light !important;
+}
+
+.callout.species.callout-style-default>.callout-header {
+  background-color: $species !important;
+  color: #fff !important;
+}
+
+.callout.coast {
+  border-left: solid 1px $coast !important;
+  border-right: solid 1px $coast !important;
+  border-top: solid 1px $coast !important;
+  border-bottom: solid 1px $coast !important;
+  background-color: $coast-light !important;
+}
+
+.callout.coast.callout-style-default>.callout-header {
+  background-color: $coast !important;
+  color: #fff !important;
+}
+
+.callout.genetics {
+  border-left: solid 1px $genetics !important;
+  border-right: solid 1px $genetics !important;
+  border-top: solid 1px $genetics !important;
+  border-bottom: solid 1px $genetics !important;
+  background-color: $genetics-light !important;
+}
+
+.callout.genetics.callout-style-default>.callout-header {
+  background-color: $genetics !important;
+  color: #fff !important;
+}
+
+
+/* Citation styling */
+
+#quarto-appendix.default {
+    border-top: 1px solid #fff
+}
+
+#quarto-appendix.default .quarto-appendix-citeas {
+    font-size: .9em;
+    padding: 1em;
+    border: solid 1px #fff;
+    margin-bottom: 1em
+}
+
+/* Styling classes for key statistics */
+
+.inline-style-threatened {
+  color:$threatened;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.inline-style-indicator {
+    font-size: 130%;
+    font-weight: 600;
+}
+
+.inline-style-well-protected {
+  color:$well-protected;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.inline-style-not-protected {
+  color:$not-protected;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+/* Custom styling element for affiliations */
+
+.quarto-title-meta-contents-affiliation {
+    font-size: .7em;
+}
+
+
+/* Fixing table caption alignment */
+figure.quarto-float-tbl figcaption.quarto-float-caption-top {
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+    text-align: left
+}
+
+/* Distinguishing footnotes from references */
+.footnote-ref sup:before {
+  content: '[';
+}
+
+.footnote-ref sup:after {
+  content: ']';
+}
+
