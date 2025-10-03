@@ -103,34 +103,36 @@ strong, b {
   .navbar .navbar-container {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   /* Stack logo and title vertically */
   .navbar .navbar-brand-container {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     width: 100% !important;
   }
 
   /* Logo block */
   .navbar .navbar-brand-logo {
     display: block !important;
-    margin: 0 auto !important;
+    margin: 0 !important;
   }
 
   .navbar .navbar-logo {
     max-width: 80% !important;
     height: auto !important;
+    position: static !important; 
+    margin: 0 !important; 
   }
 
   /* Title under logo */
   .navbar .navbar-title {
     display: block !important;
     white-space: normal !important;  /* allow wrapping */
-    text-align: center !important;   /* keep it centered */
+    text-align: left !important;   /* keep it centered */
     margin-top: 0.5rem !important;
     font-size: 1.8rem; 
   }
@@ -138,7 +140,7 @@ strong, b {
   /* Tools centered under title */
   .navbar .quarto-navbar-tools {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: right !important;
     margin-top: 0.5rem !important;
     width: 100% !important;
   }
