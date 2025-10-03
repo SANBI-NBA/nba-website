@@ -1,0 +1,79 @@
+# NBA website content
+
+The NBA website is compiled from the contributions of a team of scientists. Each contributor maintains their own repository for their section of NBA content. Each contributor's repository follows a template folder structure for compiling their content, documented [here](https://github.com/SANBI-NBA/templates).
+
+The folders in here are compiled from the **quarto** folder inside each contributor's repository. It is essential that all files necessary for the successful rendering of their content is stored inside the quarto folder, as other content (e.g. in the root folder) is ignored.
+
+## List of source repositories for each content folder
+
+### **context**
+
+A folder containing miscellaneous contextual pages for the website. Some are part of the main website navigation, others are linked in the footer.
+
+**Maintainer:** Carol Poole, Andrew Skowno
+
+**Source:** <https://github.com/SANBI-NBA/about_webpages>
+
+### integrated-findings
+
+A section summarising overall status and trends of South Africa's biodiversity, including the headline indicators for species and ecosystems.
+
+**Maintainer:** Andrew Skowno
+
+**Source:** <https://github.com/SANBI-NBA/integrated_findings>
+
+### terrestrial
+
+Detailed findings for the terrestrial realm.
+
+**Maintainer:** Maphale Monyeki
+
+**Source:** <https://github.com/SANBI-NBA/terrestrial>
+
+### freshwater
+
+Detailed findings for the freshwater realm.
+
+**Maintainer:** Nancy Job
+
+**Source:** <https://github.com/SANBI-NBA/freshwater>
+
+### estuarine
+
+Detailed findings for the freshwater realm.
+
+**Maintainer:** Lara van Niekerk
+
+**Source:** <https://github.com/SANBI-NBA/estuaries>
+
+### marine
+
+Detailed findings for the marine realm.
+
+**Maintainer:** Jock Currie, Natasha Besseling
+
+**Source**: <https://github.com/SANBI-NBA/marine>
+
+### coast
+
+Detailed findings for the coast.
+
+**Maintainer:** Linda Harris
+
+**Source:** <https://github.com/lrharris/nba2025_coast>
+
+### subantarctic
+
+Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Islands).
+
+**Maintainer:**
+
+**Source:**
+
+### species
+
+Detailed findings for species.
+
+**Maintainer:**
+
+**Source:**
