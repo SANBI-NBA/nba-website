@@ -38,9 +38,9 @@ Detailed findings for the freshwater realm.
 
 **Source:** <https://github.com/SANBI-NBA/freshwater>
 
-### estuarine
+### estuaries
 
-Detailed findings for the freshwater realm.
+Detailed findings for the estuarine realm.
 
 **Maintainer:** Lara van Niekerk
 
@@ -66,7 +66,7 @@ Detailed findings for the coast.
 
 Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Islands).
 
-**Maintainer:**
+**Maintainer:** 
 
 **Source:**
 
@@ -74,6 +74,6 @@ Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Isla
 
 Detailed findings for species.
 
-**Maintainer:**
+**Maintainer:** Shae-Lynn Hendricks
 
-**Source:**
+**Source:** <https://github.com/SANBI-NBA/species>
