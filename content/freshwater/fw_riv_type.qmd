@@ -1,0 +1,217 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Freshwater (inland aquatic) realm" # Compulsory
+subtitle: "River Ecosystem Type" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nancy #Add author's first name here. Abbreviate the middle name
+      family: Job #Add author's surname here
+    orcid: 0000-0002-4929-7592 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: af1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: fw-references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+## Summary {#summary}
+
+**Use this section to summarise highlights or key messages of your page** Use bold text to highlight your main points.
+
+**Remember to use links to relevant sections elsewhere on the page**. To add a link, click on Insert \> Link. In the pop-up box, change the link to selection from URL to Heading, and select the heading of the section you want to link to. The display text will default to the header name. If you want to use different text, you need to tag your header. Select the header, and click on the three dots to the right. In the pop-up box, give the header a tag using the ID text box. The tag must start with #, e.g. #summary. Now you can link to it using the following syntax: [display text](#section-name). (Check how it is configured in Source view).
+
+South Africa's rivers are incredibly diverse and vital for our well-being. We have an interim typology in place and are currently at work on an updated national system to understand and manage our rivers as effectively as possible. The proposed river typology update will contribute significantly towards ensuring their long-term health and the benefits they provide to all South Africans.
+
+<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
+
+![Descriptive image captions. As in the 2018 synthesis report, photos get descriptive captions but are not numbered.](imgs/nba-banner.png){fig-align="center"}
+
+## Page body
+
+Organise this part of your webpage into sections and subsections as you see fit. Use it to give background, and present your results and discussions of results.
+
+Label main sections using Header 2. Header 1 is the style reserved for page titles at the top - do not use it anywhere else on the page. Use consecutive higher Header numbers to label subsections.
+
+### Subsection 1 (Header 3)
+
+#### Subsection 2 (Header 4)
+
+etc.
+
+## Inserting footnotes and references
+
+### Footnotes
+
+Use the built-in footnotes function to add notes to your text where necessary. Use notes sparingly - mainly to clarify terms.
+
+Some text with a footnote[^1].
+
+[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
+
+### References
+
+See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references
+
+Citing a journal article[@harris2019].
+
+Citing a book[@megadiversity1997].
+
+Citing a book chapter[@wilson2018].
+
+Citing a technical report[@vonmaltitz2020carbon].
+
+## Code blocks for graphs, maps and tables
+
+Use these code blocks to ensure that your graphs maps and tables are consistently numbered and labeled. Using these code blocks also lets you cross-reference tables and figures in the text.
+
+### Graphs and maps
+
+The **#\| label:** line in the code below makes it possible to reference the graph in the text. It must always start with **fig-** for Quarto to recognise it as a figure, and to apply correct styling and numbering to the figure caption. Each figure in your document must have a unique **fig**- name. To reference the figure in the text, use Insert \> Cross Reference, and look for the figure lable in the list.
+
+Add an appropriate descriptive caption next to **fig-cap.**
+
+```{r}
+#| label: fig-ref
+#| fig-cap: "Add figure caption here." 
+
+# Add R code for generating figure here
+
+```
+
+### Tables
+
+Follow the same system for creating tables. Do not use the visual editor to insert tables, as this will create a table in Quarto's default style, and you will have to type in the data manually, making the table less reproducible if your data changes. Note that here you must use the **tbl-** prefix to ensure that quarto recognises it as a table.
+
+```{r}
+#| label: tbl-ref
+#| tbl-cap: "Add table caption here." 
+#| classes: plain
+
+# Add R code for generating table here
+
+```
+
+### Combine figures and related data
+
+It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
+
+:::: panel-tabset
+## Figure
+
+```{r}
+#| label: fig-tab
+#| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+
+library(dplyr)
+library(tidyr)
+library(nbaR)
+
+# dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
+# 
+# ecosystem_summary <- dat %>% 
+#                       group_by(biome, threat_status) %>% 
+#                       summarise(count = n()) %>% 
+#                       pivot_wider(
+#                         id_cols = biome,
+#                         names_from = threat_status,
+#                         values_from = count
+#                       ) %>% 
+#                       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
+# 
+# nba_plot(ecosystem_summary,
+#          biome,
+#          2:5,
+#          CHRT = "bar",
+#          NUM = FALSE,
+#          LAB = "Percentage of ecosystem types",
+#          SAVE = "test-fig")
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-tab
+#| tbl-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+#| classes: plain
+
+# library(dplyr)
+# library(nbaR)
+# library(gt)
+# 
+# tbl_dat <- dat %>% 
+#             select(ecosystem, biome, threat_status) %>% 
+#             arrange(biome, ecosystem)
+# 
+# colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
+# 
+# gt(tbl_dat) %>% nba_tbl_theme()
+
+```
+:::
+
+Download the data here.
+::::
+
+## Information boxes
+
+Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+
+::: {#box-1 .callout-note collapse="true"}
+## Box title
+
+Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+:::
+
+## Technical documentation
+
+The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
+
+-   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+
+-   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+
+-   **Technical report**: Add link to technical report in PDF format
+
+**Other publications**
+
+Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+
+## References
+
+::: {#refs}
+:::

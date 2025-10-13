@@ -1,0 +1,61 @@
+realm,pressure,score2025
+Terrestrial,Agriculture & aquaculture,4
+Terrestrial,Biological resource use,3
+Terrestrial,Climate change & severe weather,3
+Terrestrial,Energy production & mining,3
+Terrestrial,Human intrusions & disturbance,1
+Terrestrial,"Invasive and other problematic species, genes & diseases",3
+Terrestrial,Natural system modifications,2
+Terrestrial,Pollution,1
+Terrestrial,Residential & commercial development,3
+Terrestrial,Transportation & service corridors,2
+Freshwater,Agriculture & aquaculture,4
+Freshwater,Biological resource use,2
+Freshwater,Climate change & severe weather,3
+Freshwater,Energy production & mining,2
+Freshwater,Human intrusions & disturbance,2
+Freshwater,"Invasive and other problematic species, genes & diseases",4
+Freshwater,Natural system modifications,5
+Freshwater,Pollution,4
+Freshwater,Residential & commercial development,3
+Freshwater,Transportation & service corridors,2
+Marine,Agriculture & aquaculture,1
+Marine,Biological resource use,5
+Marine,Climate change & severe weather,3
+Marine,Energy production & mining,3
+Marine,Human intrusions & disturbance,1
+Marine,"Invasive and other problematic species, genes & diseases",2
+Marine,Natural system modifications,3
+Marine,Pollution,3
+Marine,Residential & commercial development,2
+Marine,Transportation & service corridors,1
+Estuarine,Agriculture & aquaculture,3
+Estuarine,Biological resource use,5
+Estuarine,Climate change & severe weather,3
+Estuarine,Energy production & mining,3
+Estuarine,Human intrusions & disturbance,3
+Estuarine,"Invasive and other problematic species, genes & diseases",2
+Estuarine,Natural system modifications,5
+Estuarine,Pollution,5
+Estuarine,Residential & commercial development,2
+Estuarine,Transportation & service corridors,3
+Coastal,Agriculture & aquaculture,3
+Coastal,Biological resource use,5
+Coastal,Climate change & severe weather,3
+Coastal,Energy production & mining,4
+Coastal,Human intrusions & disturbance,2
+Coastal,"Invasive and other problematic species, genes & diseases",3
+Coastal,Natural system modifications,4
+Coastal,Pollution,3
+Coastal,Residential & commercial development,4
+Coastal,Transportation & service corridors,3
+Sub-Antarctic,Agriculture & aquaculture,0
+Sub-Antarctic,Biological resource use,2
+Sub-Antarctic,Climate change & severe weather,3
+Sub-Antarctic,Energy production & mining,0
+Sub-Antarctic,Human intrusions & disturbance,2
+Sub-Antarctic,"Invasive and other problematic species, genes & diseases",4
+Sub-Antarctic,Natural system modifications,0
+Sub-Antarctic,Pollution,0
+Sub-Antarctic,Residential & commercial development,0
+Sub-Antarctic,Transportation & service corridors,0

@@ -1,0 +1,15 @@
+---
+title: "Disclaimer and terms of use"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+---
+
+The information provided on the National Biodiversity Assessment website is on an 'as is' and 'as available' basis without any representations, warranties or conditions, whether express or implied, statutory or otherwise, including, without limitation, any representations, warranties or conditions as to quality, accuracy, completeness, currency, fitness for a particular purpose, uninterrupted access, error free operation.
+
+SANBI will not be liable for any claims whatsoever, whether for damages or otherwise, which may arise as a result of inaccuracies in the information supplied.
+
+More information about the South African National Biodiversity Institute, and general terms and conditions can be accessed via the [SANBI corporate website](https://www.sanbi.org/about-us/terms-and-conditions/).
+
+All NBA datasets and results are licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+Please read the recommendations for how to cite NBA information correctly. **LINK TO CITE.QMD**

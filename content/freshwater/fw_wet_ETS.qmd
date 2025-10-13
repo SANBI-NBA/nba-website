@@ -1,0 +1,311 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Freshwater (inland aquatic) realm" # Compulsory
+subtitle: "Wetland Ecosystem Threat Status" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nancy 
+      family: Job 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: sanbi
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Andrew 
+      family: Skowno
+    affiliations:
+      - ref: sanbi 
+  - name:
+      given: Jock 
+      family: Currie 
+    orcid: 0000-0002-0000-0000 
+    affiliations:
+      - ref: other 
+  - name:
+      given: Nacelle  
+      family: Collins 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: destea
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Adwoa  
+      family: Awuah 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: sanbi
+      # If an author has more than one affiliation, add more - ref: lines here
+      
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi 
+    number: 1 
+    name: South African National Biodiversity Institute
+  - id: destea 
+    number: 2 
+    name: Free State Department of Economic, Small Business Development, Tourism and Environmental Affairs
+  - id: other 
+    number: 3 
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: fw-references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+## Summary {#summary}
+
+**Inland wetlands remain highly threatened and under-protected. This places the vital services they provide and the incredible biodiversity they support at great risk.**
+
+Approximately 65% of inland wetland extent and 72% of inland wetland ecosystem types are threatened. In terms of threatened inland wetland ecosystem types, approximately18% are Critically Endangered, 24% Endangered and 30% are Vulnerable. In terms of wetland extent, approximately 20% is Critically Endangered, 21% Endangered and 45% is Vulnerable.
+
+![](imgs/wet_ets_map.png)
+Figure 1. Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.
+
+```{r}
+#| label: tbl-ets
+#| tbl-cap: "Ecosystem Threat Status of inland wetland ecosystem types."
+
+# library(here)
+library(stringr)
+library(reactable)
+library(dplyr)
+
+# load data
+ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, RLE24) %>% # , RLE24, extent, RLE_RLE24) #
+    mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
+         RLE24 = str_replace_all(RLE24, "EN","Endangered" ),
+         RLE24 = str_replace_all(RLE24, "VU","Vulnerable" ),
+         RLE24 = str_replace_all(RLE24, "NT","Near Threatened" ), 
+         RLE24 = str_replace_all(RLE24, "LC","Least Concern" )) %>% 
+  rename("Wetland type" = type,
+         Zone = zone,
+         "Ecosystem Threat Status" = RLE24)
+
+# create the table
+reactable(
+  ets,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 600,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
+
+```
+
+
+<!-- ![](images/%7B115EFD65-E262-4766-B6B3-ED1C59F6A681%7D.png) -->
+<!-- Figure 2. Inland wetland ecosystem threat status according to broad wetland ecosystem type. (a) The percentage of ecosystem types per threat category (labelled with actual value) with the total for all inland wetland types at the bottom (n = 82); (b) the percentage of inland wetland area within each threat category with the total area for all wetlands (# m2) at the bottom – providing an indication of the relative extent of each category. -->
+:::: panel-tabset
+## Figure
+
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+
+```{r}
+#| label: fig-wetland_ets_bargraph
+#| fig-cap: "Figure 2. Inland Wetland Ecosystem Threat Status shown for each hydrogeomorphological (HGM) category and their total; (a) the percentage of ecosystem types (labelled with their counts) in each protection level category; (b) the percentage of wetland extents (km^2^) in each protection level category." 
+
+library(tidyverse)
+library(stringr)
+library(nbaR)
+
+# load and prep the data
+ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, RLE24, extent) %>% # , RLE24, extent, RLE_RLE24) #
+      mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
+         RLE24 = str_replace_all(RLE24, "EN","Endangered" ),
+         RLE24 = str_replace_all(RLE24, "VU","Vulnerable" ),
+         RLE24 = str_replace_all(RLE24, "NT","Near Threatened" ), 
+         RLE24 = str_replace_all(RLE24, "LC","Least Concern" )) %>% 
+  group_by(zone, RLE24) %>%
+  summarise(count = n(),
+            extent = sum(extent))
+  # rename("Wetland type" = type,
+  #        Zone = zone,
+  #        "Ecosystem Threat Status" = RLE24)
+
+# count table
+count <- ets %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = RLE24,
+    values_from = count) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(!contains("zone"))), na.rm = TRUE)) %>% 
+  ungroup()
+# count
+
+## add a totals row:
+count <- count %>%
+  bind_rows(
+    count %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total count") %>%
+      select(zone, everything())
+  )
+# count
+
+# extent table
+extent <- ets %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = RLE24,
+    values_from = extent) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(!contains("zone"))), na.rm = TRUE)) %>% 
+  ungroup()
+# extent
+
+# add a totals row:
+extent <- extent %>%
+  bind_rows(
+    extent %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total extent") %>%
+      select(zone, everything())
+  )
+# extent
+
+# combine count and extent in a single table
+ets_combined <- count %>%
+  mutate(metric = "count") %>%
+  bind_rows(extent %>%
+              mutate(metric = "extent")) %>%
+  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
+# ets_combined
+    
+## save the data to downloadable csv for the link, before arranging by zone for the plot
+write.csv(ets_combined, file = paste0(here::here(),"/quarto/outputs/wetlands_ETS.csv"), row.names = FALSE)
+
+# create ets plot
+ets_combined_plot <- ets_combined %>% 
+    arrange(desc(zone)) %>% 
+    nba_plot_comb(
+      zone,
+                                   METRIC_COL = metric,
+                                   METRICS = c("count", "extent"),
+                                   2:5,
+                                   CHRT = "bar",
+                                   NUM = FALSE,
+                                   LAB = "Percentage of ecosystem",
+                                   SAVE = NULL) 
+
+ets_combined_plot
+
+```
+
+## Data
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+
+```{r}
+#| label: tbl-river_ets
+#| tbl-cap: "Table of inland Wetland protection level data." 
+#| classes: plain
+
+library(dplyr)
+library(nbaR)
+library(gt)
+
+## create the table
+# as we prepared the data above for the combined plot, simply provide those? checkNancy
+tbl_dat <- ets_combined %>% 
+  arrange(metric,zone) %>% 
+  rename(Zone = zone,
+         Metric = metric)
+
+gt(tbl_dat) %>% nba_tbl_theme()
+
+```
+:::
+
+Download the data [here](outputs/wetlands_ETS.csv).
+::::
+
+
+\[Photo\]
+
+## Methods
+
+The Red List of Ecosystems (known as Ecosystem Threat Status in South Africa) assesses the risk of collapse of each ecosystem type based on a range of criteria on extent condition and pressures faced by each ecosystem type. For consistency with past NBAs this assessment follows the methods developed by Nel et al. (2007) and modified by [van Deventer et al., 2019](http://hdl.handle.net/20.500.12143/5847). Each of the 82 river ecosystems types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern.
+
+The analysis approach of van Deventer et al., 2019 uses the proportion of each ecosystem type that is in a good to fair condition (PES class A B and C) and a set of thresholds. If less than 20% of a type (measured by length of river segment) is in a A or B condition then the type is categorised as Critically Endangered; if between 20-35% of the type is in A or B condition then the type is categorised as Endangered; if less than 60% of the type is in A or or C condition then the type is categorised as Vulnerable; if none of these thresholds are crossed then the type is Least Concern. This method aligns with the South African Framework for Threatened ecosystems but not the IUCN RLE 1.1. Processes to transition to the IUCN framework are underway - but in the interest of comparing past results, the 2011 methods have been implemented.
+
+#### Major catchments
+
+If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+
+::: {.callout-note collapse="true"}
+## Box 1. New case study
+
+Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+:::
+
+## Technical documentation
+
+-   **Code repository**: [github.com/SANBI-NBA/](https://github.com/SANBI-NBA/templates)....... (askowno/ets_riv)
+
+-   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+
+-   **Technical report**: Add link to technical report in PDF format
+
+**Other publications**
+
+Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+
+## Technical documentation
+
+**Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+
+-   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+
+-   **Technical report**: Add link to technical report in PDF format
+
+**Other publications**
+
+Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+
+## References
+
+::: {#refs}
+:::

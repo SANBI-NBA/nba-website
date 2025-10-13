@@ -1,0 +1,191 @@
+mapcode,type,zone,extent,RLE,EPL,realm
+AT17,Albany Mesic Thicket,Semi-coastal vegetation,576.74,LC,MP,ter
+AT20,Bethelsdorp Bontveld,Semi-coastal vegetation,20.0016,LC,NP,ter
+AT26,Elands Forest Thicket,Semi-coastal vegetation,30.174,LC,PP,ter
+AT36,Goukamma Dune Thicket,Coastal vegetation,29.7644,CR,WP,ter
+AT37,Gouritz Valley Thicket,Semi-coastal vegetation,106.1272,CR,NP,ter
+AT39,Grassridge Bontveld,Semi-coastal vegetation,216.984,LC,PP,ter
+AT56,Hamburg Dune Thicket,Coastal vegetation,465.9492,LC,PP,ter
+AT40,Hartenbos Dune Thicket,Coastal vegetation,463.16,EN,PP,ter
+AT41,Kasouga Dune Thicket,Coastal vegetation,207.8656,LC,MP,ter
+AT44,Motherwell Karroid Thicket,Semi-coastal vegetation,63.2552,CR,NP,ter
+AT48,Sardinia Forest Thicket,Semi-coastal vegetation,11.6912,CR,NP,ter
+AT57,St Francis Dune Thicket,Coastal vegetation,105.5096,EN,PP,ter
+AT53,Umtiza Forest Thicket,Semi-coastal vegetation,16.5496,CR,WP,ter
+Dn1,Alexander Bay Coastal Duneveld,Coastal vegetation,1.3532,CR,NP,ter
+Dn2,Namib Lichen Fields,Semi-coastal vegetation,1.01,CR,WP,ter
+Dn3,Western Gariep Plains Desert,Coastal vegetation,122.5984,LC,PP,ter
+FOa3,Mangrove Forest,Coastal vegetation,37.4,EN,WP,ter
+FOz7,Northern Coastal Forest,Coastal vegetation,514.9484,LC,WP,ter
+FOz1,Southern Afrotemperate Forest,Semi-coastal vegetation,632.212,LC,WP,ter
+FOz6,Southern Coastal Forest,Coastal vegetation,150.9288,LC,WP,ter
+FOa2,Swamp Forest,Coastal vegetation,73.6,LC,WP,ter
+FFl1,Agulhas Limestone Fynbos,Coastal vegetation,257.4524,CR,PP,ter
+FFd7,Agulhas Sand Fynbos,Coastal vegetation,119.5484,CR,PP,ter
+FFd9,Albertinia Sand Fynbos,Semi-coastal vegetation,264.1432,EN,PP,ter
+FFs29,Algoa Sandstone Fynbos,Coastal vegetation,131.6812,CR,PP,ter
+FFd4,Atlantis Sand Fynbos,Semi-coastal vegetation,330.844,EN,PP,ter
+FFl3,Canca Limestone Fynbos,Coastal vegetation,622.3644,LC,NP,ter
+FS6,Cape Flats Dune Strandveld,Coastal vegetation,183.1524,EN,MP,ter
+FFd5,Cape Flats Sand Fynbos,Semi-coastal vegetation,88.866,CR,NP,ter
+FFh5,Cape Winelands Shale Fynbos,Semi-coastal vegetation,35.8028,CR,MP,ter
+FFl2,De Hoop Limestone Fynbos,Semi-coastal vegetation,661.6104,LC,MP,ter
+FFb6,Eastern Coastal Shale Band Vegetation,Semi-coastal vegetation,29.268,EN,PP,ter
+FFf1,Elim Ferricrete Fynbos,Semi-coastal vegetation,233.5072,EN,PP,ter
+FFg5,Garden Route Granite Fynbos,Coastal vegetation,177.678,CR,NP,ter
+FFh9,Garden Route Shale Fynbos,Semi-coastal vegetation,243.7668,EN,PP,ter
+FS13,Goukamma Strandveld,Semi-coastal vegetation,35.1444,LC,WP,ter
+FS9,Groot Brak Dune Strandveld,Coastal vegetation,12.3604,CR,NP,ter
+FS11,Grootbos Strandveld,Semi-coastal vegetation,39.448,CR,PP,ter
+FFd6,Hangklip Sand Fynbos,Coastal vegetation,51.4168,CR,MP,ter
+FFd3,Hopefield Sand Fynbos,Semi-coastal vegetation,638.2968,EN,PP,ter
+FRs19,Humansdorp Shale Renosterveld,Semi-coastal vegetation,155.8908,EN,NP,ter
+FFd10,Knysna Sand Fynbos,Semi-coastal vegetation,29.776,CR,PP,ter
+FFs11,Kogelberg Sandstone Fynbos,Semi-coastal vegetation,763.5196,CR,WP,ter
+FS1,Lambert's Bay Strandveld,Coastal vegetation,235.792,CR,PP,ter
+FS5,Langebaan Dune Strandveld,Coastal vegetation,293.0008,EN,WP,ter
+FFa4,Lourensford Alluvium Fynbos,Semi-coastal vegetation,5.122,CR,PP,ter
+FRs14,Mossel Bay Shale Renosterveld,Semi-coastal vegetation,326.5452,CR,NP,ter
+FFd1,Namaqualand Sand Fynbos,Coastal vegetation,1106.6752,LC,PP,ter
+FS7,Overberg Dune Strandveld,Coastal vegetation,37.4948,EN,MP,ter
+FFs12,Overberg Sandstone Fynbos,Semi-coastal vegetation,1049.864,EN,PP,ter
+FFg3,Peninsula Granite Fynbos,Coastal vegetation,31.2132,CR,MP,ter
+FFs9,Peninsula Sandstone Fynbos,Semi-coastal vegetation,203.276,CR,WP,ter
+FFh11,Peninsula Shale Fynbos,Semi-coastal vegetation,5.3668,CR,WP,ter
+FRs10,Peninsula Shale Renosterveld,Coastal vegetation,2.5132,CR,PP,ter
+FFf2,Potberg Ferricrete Fynbos,Semi-coastal vegetation,19.376,CR,PP,ter
+FFs17,Potberg Sandstone Fynbos,Coastal vegetation,100.296,CR,WP,ter
+FS3,Saldanha Flats Strandveld,Coastal vegetation,580.8488,EN,PP,ter
+FS2,Saldanha Granite Strandveld,Coastal vegetation,78.3044,CR,PP,ter
+FS4,Saldanha Limestone Strandveld,Coastal vegetation,49.5296,CR,MP,ter
+FS12,Southeastern Strandveld,Semi-coastal vegetation,91.0064,EN,PP,ter
+FFd11,Southern Cape Dune Fynbos,Coastal vegetation,60.0188,CR,PP,ter
+FS10,Southwestern Strandveld,Semi-coastal vegetation,305.542,EN,MP,ter
+FS14,St Francis Strandveld,Semi-coastal vegetation,84.9324,CR,PP,ter
+FFs20,Tsitsikamma Sandstone Fynbos,Semi-coastal vegetation,1567.7116,LC,WP,ter
+CB3,KwaZulu-Natal Coastal Belt Grassland,Coastal vegetation,672.314,EN,NP,ter
+CB1,Maputaland Coastal Belt,Coastal vegetation,832.548,EN,MP,ter
+CB2,Maputaland Wooded Grassland,Semi-coastal vegetation,401.0516,EN,MP,ter
+CB4,Pondoland-Ugu Sandstone Coastal Sourveld,Coastal vegetation,641.0904,VU,PP,ter
+CB5,Transkei Coastal Belt,Coastal vegetation,899.2332,EN,PP,ter
+SVs8,South Eastern Coastal Thornveld,Semi-coastal vegetation,848.6824,EN,PP,ter
+SKs8,Namaqualand Coastal Duneveld,Coastal vegetation,727.288,LC,MP,ter
+SKs14,Namaqualand Heuweltjie Strandveld,Coastal vegetation,644.0144,LC,PP,ter
+SKs9,Namaqualand Inland Duneveld,Coastal vegetation,884.7432,LC,PP,ter
+SKs7,Namaqualand Strandveld,Coastal vegetation,2540.0112,LC,PP,ter
+SKs2,Northern Richtersveld Yellow Duneveld,Coastal vegetation,524.9028,LC,NP,ter
+SKs1,Richtersveld Coastal Duneveld,Coastal vegetation,311.0076,CR,NP,ter
+SKs4,Richtersveld Sandy Coastal Scorpionstailveld,Coastal vegetation,441.4408,LC,NP,ter
+SKs3,Southern Richtersveld Yellow Duneveld,Coastal vegetation,302.72,LC,NP,ter
+AZs3,Subtropical Dune Thicket,Coastal vegetation,11.972,LC,WP,ter
+AZd3,Cape Seashore Vegetation,Coastal vegetation,215.2172,LC,WP,ter
+AZd2,Namaqualand Seashore Vegetation,Coastal vegetation,9.5168,CR,PP,ter
+AZd1,Namib Seashore Vegetation,Coastal vegetation,0.3172,CR,NP,ter
+AZd4,Subtropical Seashore Vegetation,Coastal vegetation,26.27,LC,WP,ter
+TR1,Tropical Estuarine Lake,Estuaries,81.6629477243529,VU,MP,est
+ST1s,Subtropical Estuarine Bay,Estuaries,28.1520198774511,CR,NP,est
+ST2s,Subtropical Estuarine Lake,Estuaries,818.752767461073,EN,MP,est
+ST3s,Subtropical Large Fluvially Dominated,Estuaries,107.658288479826,EN,PP,est
+ST4s,Subtropical Large Temporarily Closed,Estuaries,50.5120897559682,VU,PP,est
+ST6s,Subtropical Predominantly Open,Estuaries,78.4991420166852,VU,PP,est
+ST7s,Subtropical Small Temporarily Closed,Estuaries,20.4839036645557,VU,MP,est
+WT1s,Warm Temperate Estuarine Bay,Estuaries,30.1056471283708,VU,MP,est
+WT2s,Warm Temperate Estuarine Lake,Estuaries,143.423569509232,EN,MP,est
+WT3s,Warm Temperate Large Fluvially Dominated,Estuaries,5.72582112925239,VU,NP,est
+WT4s,Warm Temperate Large Temporarily Closed,Estuaries,69.2596673221285,VU,PP,est
+WT6s,Warm Temperate Predominantly Open,Estuaries,176.69248293924,VU,PP,est
+WT7s,Warm Temperate Small Fluvially Dominated,Estuaries,1.22435829857325,LC,WP,est
+WT8s,Warm Temperate Small Temporarily Closed,Estuaries,16.1027211742301,LC,MP,est
+CT1s,Cool Temperate Arid Predominantly Closed,Estuaries,14.4021165678708,EN,PP,est
+CT2,Cool Temperate Estuarine Lagoon,Estuaries,60.0688314211718,EN,MP,est
+CT3s,Cool Temperate Estuarine Lake,Estuaries,70.9307671719994,EN,PP,est
+CT4,Cool Temperate Large Fluvially Dominated,Estuaries,30.1905846029966,EN,PP,est
+CT5s,Cool Temperate Large Temporarily Closed,Estuaries,32.8391200959501,EN,PP,est
+CT7s,Cool Temperate Predominantly Open,Estuaries,152.598212237101,EN,NP,est
+CT8s,Cool Temperate Small Fluvially Dominated,Estuaries,0.0395655144470274,VU,WP,est
+CT9s,Cool Temperate Small Temporarily Closed,Estuaries,5.17640367488375,VU,MP,est
+SHa1,Agulhas Boulder Shore,Shore,1.63047062342191,NT,MP,marine
+SHa5,Agulhas Exposed Stromatolite Rocky Shore,Shore,8.29588149602399,NT,PP,marine
+SHa4,Agulhas Exposed Rocky Shore,Shore,89.4899998908471,VU,MP,marine
+SHa9,Agulhas Sheltered Rocky Shore,Shore,1.31753414924586,EN,PP,marine
+SHa12,Agulhas Very Exposed Stromatolite Rocky Shore,Shore,1.26502103971722,NT,MP,marine
+SHa11,Agulhas Very Exposed Rocky Shore,Shore,9.07358637308985,LC,PP,marine
+SHc1,Cape Boulder Shore,Shore,2.62294539023256,VU,MP,marine
+SHc2,Cape Exposed Rocky Shore,Shore,28.8799923049157,VU,MP,marine
+SHc4,Cape Sheltered Rocky Shore,Shore,1.48131661842756,EN,NP,marine
+SHc5,Cape Very Exposed Rocky Shore,Shore,0.523550143900107,LC,MP,marine
+SHd2,Delagoa Very Exposed Rocky Shore,Shore,0.26728955428873,LC,WP,marine
+SHn1,Namaqua Exposed Rocky Shore,Shore,42.4888492854475,EN,PP,marine
+SHn3,Namaqua Sheltered Rocky Shore,Shore,1.19589222629092,EN,PP,marine
+SHn4,Namaqua Very Exposed Rocky Shore,Shore,3.14966155728105,EN,PP,marine
+SHna1,Natal Boulder Shore,Shore,0.273372386433886,VU,WP,marine
+SHna2,Natal Exposed Rocky Shore,Shore,31.4363868939502,NT,WP,marine
+SHna4,Natal Very Exposed Rocky Shore,Shore,0.958760010181768,NT,MP,marine
+SHa7,Agulhas Mixed Shore,Shore,188.084081621847,NT,PP,marine
+SHa10,Agulhas Stromatolite Mixed Shore,Shore,8.35762098315369,VU,PP,marine
+SHc3,Cape Mixed Shore,Shore,33.7339338998445,EN,PP,marine
+SHd1,Delagoa Mixed Shore,Shore,28.7546276148732,LC,WP,marine
+SHn2,Namaqua Mixed Shore,Shore,60.6566241566782,EN,PP,marine
+SHna3,Natal Mixed Shore,Shore,69.4813529609774,VU,MP,marine
+SHa3,Agulhas Dissipative Intermediate Sandy Shore,Shore,116.445347944504,LC,MP,marine
+SHa2,Agulhas Dissipative Sandy Shore,Shore,25.1498200029029,NT,MP,marine
+SHa6,Agulhas Intermediate Sandy Shore,Shore,14.451768374427,LC,MP,marine
+SHa8,Agulhas Reflective Sandy Shore,Shore,0.868005318487441,EN,PP,marine
+SHnad2,Natal Delagoa Dissipative Intermediate Sandy Shore,Shore,32.8521649933219,LC,WP,marine
+SHnad1,Natal Delagoa Dissipative Sandy Shore,Shore,0.705740773370085,NT,NP,marine
+SHnad3,Natal Delagoa Intermediate Sandy Shore,Shore,52.1177098499427,NT,WP,marine
+SHnad4,Natal Delagoa Reflective Sandy Shore,Shore,9.43567918033413,EN,WP,marine
+SHsb2,Southern Benguela Dissipative Intermediate Sandy Shore,Shore,51.4668402099681,LC,MP,marine
+SHsb1,Southern Benguela Dissipative Sandy Shore,Shore,26.1798968861555,LC,WP,marine
+SHsb3,Southern Benguela Intermediate Sandy Shore,Shore,32.3365615717474,NT,PP,marine
+SHsb4,Southern Benguela Reflective Sandy Shore,Shore,10.543340329831,EN,PP,marine
+SHi1,Agulhas Island,Shore,6.44674198801448,VU,WP,marine
+SHi2,Cape Island,Shore,2.95176447335229,EN,MP,marine
+Ags1,Eastern Agulhas Bay,Inner shelf and river influenced,1631.18822935712,EN,MP,marine
+Ags2,Western Agulhas Bay,Inner shelf and river influenced,819.733594067297,EN,PP,marine
+Cpe1,Cape Bay,Inner shelf and river influenced,254.36523253387,CR,PP,marine
+Ags22,False and Walker Bay,Inner shelf and river influenced,1681.22938636127,EN,PP,marine
+Cpe5,St Helena Bay,Inner shelf and river influenced,980.823124156415,EN,NP,marine
+Kf1,Agulhas Kelp Forest,Inner shelf and river influenced,12.3040435950156,VU,PP,marine
+Kf2,Cape Kelp Forest,Inner shelf and river influenced,9.7845713104048,VU,PP,marine
+Kf3,Namaqua Kelp Forest,Inner shelf and river influenced,7.36009090470201,VU,PP,marine
+Ags6,Agulhas Inner Shelf Mosaic,Inner shelf and river influenced,1853.57285690773,VU,MP,marine
+Ags5,Agulhas Inner Shelf Reef,Inner shelf and river influenced,17.6760227477687,LC,WP,marine
+Ntl1,Aliwal Shoal Reef Complex,Inner shelf and river influenced,5.21579499834488,CR,MP,marine
+Cpe2,Cape Rocky Inner Shelf,Inner shelf and river influenced,473.609909867424,VU,PP,marine
+NtB1,Durnford Inner Shelf Reef Complex,Inner shelf and river influenced,460.539430230572,EN,PP,marine
+Ags23,Kei Fluvial Fan,Inner shelf and river influenced,49.0154065005113,EN,MP,marine
+Dlg8,Kosi Coral Community,Inner shelf and river influenced,8.04203670348581,VU,WP,marine
+Dlg9,Leadsman Coral Community,Inner shelf and river influenced,12.4926190922383,VU,WP,marine
+Nmq5,Orange Cone Inner Shelf Mud Reef Mosaic,Inner shelf and river influenced,511.019418656815,CR,NP,marine
+Ntl13,Port St Johns Inner Shelf Mosaic,Inner shelf and river influenced,48.5420773199831,VU,MP,marine
+Dlg10,Sodwana Coral Community,Inner shelf and river influenced,5.96441864350722,VU,WP,marine
+Ntl5,Southern KZN Inner Shelf Mosaic,Inner shelf and river influenced,258.868157698594,EN,PP,marine
+Ntl17,Trafalgar Reef Complex,Inner shelf and river influenced,58.705205304486,EN,PP,marine
+Ntl10,Wild Coast Inner Shelf Mosaic,Inner shelf and river influenced,253.034456812489,VU,MP,marine
+Ags16,Agulhas Sandy Inner Shelf,Inner shelf and river influenced,521.54655904102,VU,MP,marine
+Cpe4,Cape Sandy Inner Shelf,Inner shelf and river influenced,526.200650557555,NT,PP,marine
+Dlg4,Delagoa Sandy Inner Shelf,Inner shelf and river influenced,172.701546121339,LC,WP,marine
+NtB6,KZN Bight Muddy Inner Shelf,Inner shelf and river influenced,328.747992106968,CR,MP,marine
+NtB9,KZN Bight Sandy Inner Shelf,Inner shelf and river influenced,145.873792380413,EN,PP,marine
+Nmq3,Namaqua Sandy Inner Shelf,Inner shelf and river influenced,760.246322097607,LC,MP,marine
+NtB10,St Lucia Sandy Inner Shelf,Inner shelf and river influenced,119.956175910939,LC,WP,marine
+NtB2,Durnford Mid Shelf Reef Complex,Inner shelf and river influenced,431.837393282035,VU,MP,marine
+Ntl3,Kei Reef Mosaic,Inner shelf and river influenced,93.6947599098899,EN,MP,marine
+NtB5,KZN Bight Mid Shelf Mosaic,Inner shelf and river influenced,534.671299105116,EN,PP,marine
+NtB4,KZN Bight Mid Shelf Reef Complex,Inner shelf and river influenced,22.9909236769553,EN,NP,marine
+NtB8,KZN Bight Outer Shelf Mosaic,Inner shelf and river influenced,655.790229207946,VU,PP,marine
+Nmq1,Namaqua Mid Shelf Fossils,Inner shelf and river influenced,20.067841270200802,LC,WP,marine
+Nmq2,Namaqua Muddy Mid Shelf Mosaic,Inner shelf and river influenced,11762.5068676088,LC,PP,marine
+NtB12,uThukela Mid Shelf Mosaic,Inner shelf and river influenced,789.363916237971,VU,MP,marine
+NtB14,uThukela Outer Shelf Muddy Reef Mosaic,Inner shelf and river influenced,531.750297505297,VU,MP,marine
+Ags9,Agulhas Muddy Mid Shelf,Inner shelf and river influenced,1732.35397257669,CR,PP,marine
+NtB7,KZN Bight Muddy Shelf Edge,Inner shelf and river influenced,515.728316435026,VU,MP,marine
+NtB3,KZN Bight Deep Shelf Edge,Inner shelf and river influenced,1761.23466780699,EN,PP,marine
+SoB7,Namaqua Muddy Sands,Inner shelf and river influenced,12168.9416239687,LC,NP,marine
+SHn5,Namaqua Sandy Mid Shelf,Inner shelf and river influenced,2853.16084359544,LC,PP,marine
+Nmq6,Orange Cone Muddy Mid Shelf,Inner shelf and river influenced,1925.36359377494,EN,NP,marine
+Ntl14,Port St Johns Muddy Mid Shelf,Inner shelf and river influenced,124.793408782948,VU,MP,marine
+Ntl15,Port St Johns Muddy Shelf Edge,Inner shelf and river influenced,129.382199805529,VU,MP,marine
+NtB11,St Lucia Sandy Mid Shelf,Inner shelf and river influenced,646.798293525038,VU,MP,marine
+NtB13,uThukela Mid Shelf Mud Coarse Sediment Mosaic,Inner shelf and river influenced,1348.69885270629,VU,MP,marine

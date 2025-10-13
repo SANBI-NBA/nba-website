@@ -1,0 +1,337 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Species Assessments"
+subtitle: "Coastal Zone"
+title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda R. #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu 
+  - name:
+      given: Domitilla #Add author's first name here. Abbreviate the middle name
+      family: Raimondo #Add author's surname here
+    orcid: 0000-0003-3998-752X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi 
+      
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: cst_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [35%]{.inline-style-threatened}
+| of 20 beach invertebrates are
+| [Taxa of Conservation Concern]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [1 in 5]{.inline-style-threatened}
+| beach invertebrates assessed as
+| [Endangered]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Summary {#summary}
+
+**Endemic coastal invertebrates living at the dune-beach interface are threatened by mining, coastal development, artificial nighttime lights, and wrack harvesting. In addition, South Africa's only commercially harvested beach clam is rapidly declining in abundance. The littoral active zone (connected dune-beach-surf zone) needs to be kept intact and restored, and sustainable harvesting of beach-associated resources is essential for conserving this unique coastal biodiversity.**
+
+![The Endangered giant pillbug, *Tylos granulatus*, is one of several Taxa of Conservation Concern living at the dune-beach interface in South Africa. Image credit: © Linda Harris (CC-BY-NC-ND).](imgs/Tylos-granulatus_Linda-Harris.png){fig-alt="Picture of a giant pillbug on the beach"}
+
+## Preamble
+
+This is the first time in the National Biodiversity Assessments that there is a Species section in the Coast Assessment. For now, we are starting with IUCN Red List assessments of sandy beach invertebrates, but will expand this over time to include more coastal species, including those already assessed in the terrestrial, estuarine and marine realms. This will allow more comprehensive analyses of species to determine, for example, whether coastal species are more threatened than non-coastal species as a result of the disproportionate pressures on coastal ecosystems. <!--# link to coast pressures page -->
+
+## First assessments of sandy beach species
+
+Sandy beach invertebrates have been assessed for the first time globally using the [IUCN Red List Criteria and Categories](https://www.iucnredlist.org/resources/summary-sheet){target="_blank"} [@iucn2012]. Data on species occurrences were compiled from [GBIF](https://www.gbif.org/){target="_blank"}, [iNaturalist](https://www.inaturalist.org){target="_blank"} ([Box 1](#box1)), and from field sampling [@harris2014] to determine the area of occupancy (AOO[^1]) and extent of occurrence (EOO[^2]) of each of the species using the [GeoCAT](https://geocat.iucnredlist.org/){target="_blank"} tool. These metrics, data from the literature, and expert knowledge were used to assess 20 beach species. The species assessed include beach clams, plough shells, ghost crabs, amphipods (sandhoppers and others), isopods (pillbugs and others) and beetles ([Box 2](#box2)). See the [Technical documentation] for links to the detailed methodology and R code.
+
+[^1]: **AOO**: The area occupied by a species, calculated using a standard 2x2 km^2^ grid
+
+[^2]: **EOO**: The total area within which a species occurs, measured as a minimum convex polygon around all localities
+
+:::::: {.callout-note .coast collapse="false"}
+## Box 1. Calling all citizen scientists! {#box1}
+
+To contribute data to future red list assessments of these and other beach species, join the iNaturalist citizen science projects:
+
+[**Sandy Beaches (s Afr)**](https://www.inaturalist.org/projects/sandy-beaches-s-afr){target="_blank"} and\
+[**Seashore Vegetation (s Afr)**](https://www.inaturalist.org/projects/seashore-vegetation-s-afr){target="_blank"}.
+
+::::: grid
+::: {.g-col-lg-9 .g-col-12}
+New to iNaturalist (or never heard of it) and want to play along? Watch these [**video tutorials**](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795){target="_blank"} to get started, and sign up on the [**iNaturalist website**](https://www.inaturalist.org){target="_blank"} or download the app on your smartphone.
+
+To see how valuable your nature photographs can be, watch this inspiring [**TED talk**](https://www.ted.com/talks/148410){target="_blank"}.
+:::
+
+::: {.g-col-lg-3 .g-col-12 .text-center}
+[![](imgs/cst-s-inaturalist_logo.png){target="_blank" fig-alt="iNaturalist logo" width="140"}](https://www.inaturalist.org)
+:::
+:::::
+::::::
+
+## Species assessment results
+
+Most of the species that were assessed are endemic to South Africa, with some species' distributions extending into Namibia or Mozambique. Only the four crabs and *Latona madagascariensis* have broader distributions.
+
+A third (35%) of the species assessed are threatened or Near Threatened (NT) (@fig-sp_ets). The species that are most at risk are the Endangered white mussels (*Donax serra*), pillbugs (*Tylos capensis* and *Tylos granulatus*) and beach ground beetle (*Acanthoscelis ruficornis*). This means 1 in 5 beach species is assessed as Endangered.
+
+View the species in the image gallery below ([Box 2](#box2)), and click on the pictures to view the IUCN Red List of Species assessment for each taxon.
+
+```{r error=FALSE, message=FALSE, results='hide', warning=FALSE}
+#| label: fig-sp_ets
+#| fig-cap: "Threat status of beach invertebates; categories follow the IUCN 3.1 Red List Categories and Criteria. The percentage of species in each category is shown, and the total number of taxa that have been assessed is shown in the inner circle."
+
+library(nbaR)
+library(tidyverse)
+
+beach_sts <- read_csv("data/coast-species-beach_sts.csv")
+
+rls<-nba_plot(beach_sts,
+                GROUPS='species',
+                COLS = 2:6,
+                CHRT = "donut",
+                NUM = TRUE,
+                LAB = "",
+                SAVE=NULL)+
+  geom_text(x=2.25, y=0, label="Percentage of", size = 5) +
+  geom_text(x=1.95, y=0, label="species", size = 5) +
+    geom_text(x=1.65, y=0, label="(n=20)", size = 5) +
+  theme(legend.title = element_blank(),
+        legend.text = element_text(size = 14),
+        #legend.background = element_rect(fill = "transparent"), 
+        #legend.box.background = element_rect(fill = "transparent"), 
+        panel.background = element_rect(fill = "transparent"), 
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(), 
+        plot.background = element_rect(fill = "transparent", 
+                                       color = NA)) 
+ggsave(
+  filename = here::here("imgs/cst_sts-graph.png"),
+  plot = rls,
+  width = 800/100,   # inches = pixels / dpi
+  height = (800/100) * 0.51,  # adjust aspect ratio
+  dpi = 100
+)
+rls
+```
+
+:::::::::::::::::::::::: {.callout-note .coast collapse="false"}
+## Box 2. Access the species red list assessments {#box2}
+
+Photo credits: © Linda Harris (CC-BY-NC-ND) <!--# need to update links to the IUCN RLS pages once available online (should be in Oct 2025) -->
+
+::::::::::::::::::::::: grid
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Donax-serra_Linda-Harris.png" alt="Donax serra EN" class="img-fluid"/></a> <br>*Donax serra* EN
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-capensis_Linda-Harris.png" alt="Tylos capensis EN" class="img-fluid"/></a> <br>*Tylos capensis* EN
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-granulatus_Linda-Harris.png" alt="Tylos granulatus EN" class="img-fluid"/></a> <br>*Tylos granulatus* EN
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png" alt="Acanthoscelis ruficornis EN" class="img-fluid"/></a> <br>*Acanthoscelis ruficornis* EN
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Africorchestia-quadrispinosa_Linda-Harris.png" alt="Africorchestia quadrispinosa NT" class="img-fluid"/></a> <br>*Africorchestia quadrispinosa* NT
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/">![Capeorchestia capensis NT](imgs/cst-s-Capeorchestia-capensis_Linda-Harris.png){.img-fluid alt="Capeorchestia capensis NT" target="_blank"}</a> <br>*Capeorchestia capensis* NT
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Pachyphaleria-capensis_Linda-Harris.png" alt="Pachyphaleria capensis NT" class="img-fluid"/></a> <br>*Pachyphaleria capensis* NT
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Excirolana-latipes_Linda-Harris.png" alt="Excirolana latipes LC" class="img-fluid"/></a> <br>*Excirolana latipes* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Excirolana-natalensis_Linda-Harris.png" alt="Excirolana natalensis LC" class="img-fluid"/></a> <br>*Excirolana natalensis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Griffithsius-latipes_Linda-Harris.png" alt="Griffithsius latipes LC" class="img-fluid"/></a> <br>*Griffithsius latipes* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Latona-sordida_Linda-Harris.png" alt="Latona sordida LC" class="img-fluid"/></a> <br>*Latona sordida* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Latona-madagascariensis_Linda-Harris.png" alt="Latona madagascariensis LC" class="img-fluid"/></a> <br>*Latona madagascariensis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-digitalis_Linda-Harris.png" alt="Bullia digitalis LC" class="img-fluid"/></a> <br>*Bullia digitalis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-rhodostoma_Linda-Harris.png" alt="Bullia rhodostoma LC" class="img-fluid"/></a> <br>*Bullia rhodostoma* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-natalensis_Linda-Harris.png" alt="Bullia natalensis LC" class="img-fluid"/></a> <br>*Bullia natalensis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-mozambicensis_Linda-Harris.png" alt="Bullia mozambicensis LC" class="img-fluid"/></a> <br>*Bullia mozambicensis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Emerita-austroafricana_Linda-Harris.png" alt="Emerita austroafricana LC" class="img-fluid"/></a> <br>*Emerita austroafricana* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-ceratophthalmus_Linda-Harris.png" alt="Ocypode ceratophthalmus LC" class="img-fluid"/></a> <br>*Ocypode ceratophthalmus* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-madagascariensis_Linda-Harris.png" alt="Ocypode madagascariensis LC" class="img-fluid"/></a> <br>*Ocypode madagascariensis* LC
+:::
+
+::: {.g-col-lg-4 .g-col-6 .text-center}
+<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-ryderi_Linda-Harris.png" alt="Ocypode ryderi LC" class="img-fluid"/></a> <br>*Ocypode ryderi* LC
+:::
+:::::::::::::::::::::::
+::::::::::::::::::::::::
+
+## Key pressures on threatened species
+
+Read more details about each of the pressures mentioned below on the Coastal Pressures and Ecological Condition page. <!--# link to coastal pressures page -->
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![*Donax serra*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Donax-serra_Linda-Harris.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+***Donax serra*** (white mussel) is a beach clam that is endemic to Namibia and South Africa. There is evidence of population declines by 50-80% based on **commercial catch** and catch per unit effort (CPUE) data in South Africa over the past 10 years, disappearance of the species at sites that have been **mined** in Namibia, and anecdotal evidence of **severe declines and/or disappearance** of the species at certain beaches in South Africa. **Harmful algal blooms** can also cause mass mortalities. The overall population is suspected to have declined by over 50% in the past decade and it is therefore assessed as **Endangered** under Criterion A2.
+:::
+:::::
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![*Tylos capensis*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Tylos-capensis_Linda-Harris.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+***Tylos capensis*** (Cape pillbug) is endemic to South Africa. It has a limited range and restricted habitat along the South African south coast, with between 9 and 12 locations extant. It is experiencing ongoing loss, degradation and fragmentation of habitat to expanding **coastal development** and **artificial light at night** (ALAN), and has been lost from at least four locations, including inside protected areas. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+:::
+:::::
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![*Tylos granulatus*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Tylos-granulatus_Linda-Harris.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+***Tylos granulatus*** (giant pillbug) is restricted to the coast of Namibia and South Africa. It generally occurs in low numbers, and is found in large abundances (hundreds to thousands of individuals) in only a few places. **Extirpations** have been recorded at the southern end of its range due to **coastal development**, there are no recent records in the northern part of its range, and it is impacted by **mining**. **Kelp wrack removal** takes away an important source of food for this species. Collectively these pressures are causing notable declines in its habitat availability and quality, and declines in the number of mature individuals. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+:::
+:::::
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![*Acanthoscelis ruficornis*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+***Acanthoscelis ruficornis*** (beach ground beetle) is a southern African endemic species, found only in the supralittoral habitat on sandy beaches along the west coast of South Africa and Namibia. It burrows in the sand or hides under kelp wrack, feeding on invertebrates associated with wrack. Approximately 80% of its recent (since 2000) range is exposed to **mining**, **coastal development** and/or **kelp wrack removal**. These pressures are causing declines in habitat extent, quality, and population abundance, and there is evidence that the species has been lost from some sites that have been mined. The population is inferred to be severely fragmented, comprising small, isolated subpopulations across its range. It is therefore listed as **Endangered** under Criterion B.
+:::
+:::::
+
+## Technical documentation
+
+### Publication {data-link="publication"}
+
+Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. **Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration**. Estuarine, Coastal and Shelf Science, 324: 109447. [https://doi.org/10.1016/j.ecss.2025.109447](https://doi.org/10.1016/j.ecss.2025.109447){.uri target="_blank"}.\
+*Technical details on the IUCN Red List of Species assessments for sandy beach invertebrates.*
+
+### Data availability
+
+1.  **Git Repository**\
+    [*Code*](https://github.com/lrharris/species-occurrences-for-red-listing/){target="_blank"} *to compile species records from GBIF, iNaturalist, and other records (e.g., from field sampling) stored in csv files. Also available as a pdf in the Supplementary Material of the [publication]*
+
+2.  **Species red list assessments** on the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/){target="_blank"}
+
+## Recommended citation
+
+The [publication] is the preferred citation for this content, otherwise use:
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

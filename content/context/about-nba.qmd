@@ -1,0 +1,60 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "About the NBA" # Compulsory
+subtitle: "The what, why, how and when of the NBA" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+
+# Remember to rename the default .bib file and change the name here
+bibliography: refs-about-nba.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+## What is the NBA
+
+*South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision making across multiple sectors, and contribute to national development priorities*.
+
+![This infographic summarises what the NBA is and what it is used for © SANBI](imgs/nba-infoGraphic.jpg){fig-align="center"}
+
+## Why the NBA is done
+
+The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa. It is prepared as part of the South African National Biodiversity Institute’s (SANBI) mandate, in terms of the National Environmental Management: Biodiversity Act (Act 10 of 2004). The Act specifically states that SANBI 'must monitor and report regularly to the Minister on (i) the status of the Republic’s biodiversity and (ii) the conservation status of all listed threatened or protected species and listed ecosystems'.
+
+The scope of the NBA is broad, assessing biodiversity at the ecosystem and species level, and addressing aspects of genetic diversity. The assessment covers all of South Africa's territory, across land and sea, including its subantarctic territory of the Prince Edward Islands. Information is organised by realm (terrestrial, freshwater (rivers and inland wetlands), estuarine and marine (benthic and pelagic)), and the cross-ream coastal zone and the subantarctic region. 
+
+Read more about the purposes and uses of all the NBA products here. **ADD LINK TO USES-NBA.QMD**
+
+## How the NBA is undertaken
+
+The breadth and scope of the NBA calls for a major collaborative effort between multiple institutions and individual contributors. There are many ways that individuals become involved in the NBA, from contributing data or providing advice, to helping undertake analyses and being part of the author team. This fosters collective ownership of the assessment by the biodiversity community in South Africa; and this co-production of knowledge for the NBA enables scientists, practitioners and decision makers to work towards a common vision for priority actions and responses following the assessment.
+
+For NBA 2025, over **XXX** ndividuals from **YYY** institutions contributed – the vast majority on a volunteer basis without any financial compensation from SANBI. Without these voluntary contributions from experts and institutions outside of SANBI, the NBA would not be possible.
+
+## When the NBA is updated
+
+An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.
+
+The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the 'What's New?' section on the landing page to see what has been updated.
+
+## Further reading
+
+Read more about the origins, context, goals, form, scope and approach of the NBA in the document called [South Africa's National Biodiversity Assessment: Contextual and Operational Framework](https://hdl.handle.net/20.500.12143/9058).
+
+Poole et al., 2023[@poole2023] describes the long-term vision to move the NBA into the information age.
+
+## References
+
+::: {#refs}
+:::

@@ -1,0 +1,215 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Inland Wetland Ecosystem Condition" # Compulsory
+subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nacelle B.
+      family: Collins 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: destea 
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Adwoa
+      family: Awuah
+    affiliations:
+      - ref: sanbi 
+  - name:
+      given: Nancy 
+      family: Job 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: sanbi 
+      
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: destea 
+    number: 1      
+    name: Free State Department of Economic, Small Business Development, Tourism and Environmental Affairs
+  - id: sanbi 
+    number: 2 
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: fw-references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+## Summary {#summary}
+
+**Inland wetlands face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use. While we \[don't yet have a complete national picture of\] how healthy our wetlands are, the signs are worrying. Most of these vital ecosystems are in poor condition, even in our protected areas. This lack of information makes it hard to protect them properly, so improving how we monitor their health is crucial. Furthermore, South Africa's wetlands are degrading faster than we can rehabilitate them.**
+
+## Page body
+
+Organise this part of your webpage into sections and subsections as you see fit. Use it to give background, and present your results and discussions of results.
+
+Label main sections using Header 2. Header 1 is the style reserved for page titles at the top - do not use it anywhere else on the page. Use consecutive higher Header numbers to label subsections.
+
+### Subsection 1 (Header 3)
+
+#### Subsection 2 (Header 4)
+
+etc.
+
+## Inserting footnotes and references
+
+### Footnotes
+
+Use the built-in footnotes function to add notes to your text where necessary. Use notes sparingly - mainly to clarify terms.
+
+Some text with a footnote[^1].
+
+[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
+
+### References
+
+## Code blocks for graphs, maps and tables
+
+Use these code blocks to ensure that your graphs maps and tables are consistently numbered and labeled. Using these code blocks also lets you cross-reference tables and figures in the text.
+
+### Graphs and maps
+
+The **#\| label:** line in the code below makes it possible to reference the graph in the text. It must always start with **fig-** for Quarto to recognise it as a figure, and to apply correct styling and numbering to the figure caption. Each figure in your document must have a unique **fig**- name. To reference the figure in the text, use Insert \> Cross Reference, and look for the figure lable in the list.
+
+Add an appropriate descriptive caption next to **fig-cap.**
+
+```{r}
+#| label: fig-ref
+#| fig-cap: "Add figure caption here." 
+
+# Add R code for generating figure here
+
+```
+
+### Tables
+
+Follow the same system for creating tables. Do not use the visual editor to insert tables, as this will create a table in Quarto's default style, and you will have to type in the data manually, making the table less reproducible if your data changes. Note that here you must use the **tbl-** prefix to ensure that quarto recognises it as a table.
+
+```{r}
+#| label: tbl-ref
+#| tbl-cap: "Add table caption here." 
+#| classes: plain
+
+# Add R code for generating table here
+
+```
+
+### Combine figures and related data
+
+It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
+
+:::: panel-tabset
+## Figure
+
+```{r}
+#| label: fig-tab
+#| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+
+library(dplyr)
+library(tidyr)
+library(nbaR)
+
+# dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
+# 
+# ecosystem_summary <- dat %>% 
+#                       group_by(biome, threat_status) %>% 
+#                       summarise(count = n()) %>% 
+#                       pivot_wider(
+#                         id_cols = biome,
+#                         names_from = threat_status,
+#                         values_from = count
+#                       ) %>% 
+#                       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
+# 
+# nba_plot(ecosystem_summary,
+#          biome,
+#          2:5,
+#          CHRT = "bar",
+#          NUM = FALSE,
+#          LAB = "Percentage of ecosystem types",
+#          SAVE = "test-fig")
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-tab
+#| tbl-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+#| classes: plain
+
+# library(dplyr)
+# library(nbaR)
+# library(gt)
+# 
+# tbl_dat <- dat %>% 
+#             select(ecosystem, biome, threat_status) %>% 
+#             arrange(biome, ecosystem)
+# 
+# colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
+# 
+# gt(tbl_dat) %>% nba_tbl_theme()
+
+```
+:::
+
+Download the data here.
+::::
+
+## Information boxes
+
+Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+
+::: {#box-1 .callout-note collapse="true"}
+## Box title
+
+Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+:::
+
+## Data availability
+
+-   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates) \[link to the specific page within github\]
+
+-   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - \[link to the specific page within these websites containing your data\]
+
+## Recommended citation for this webpage
+
+Collins, N.B., Awuah, A., Job, N.M., names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
+
+## Associated documentation
+
+-   **Publications**:
+
+-   **Technical reports**: Add link to synthesis report \[plus technical report?\] in PDF format
+
+## References for this webpage
+
+::: {#refs}
+:::

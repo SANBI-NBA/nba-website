@@ -1,0 +1,62 @@
+---
+title: "Ecosystem threat status and the Red List of Ecosystems"
+subtitle: "General introduction to the indicator"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+bibliography: intf_references.bib
+---
+
+South Africa is one of few countries that started assessing ecosystem threat status (circa 2004), using national criteria, before the [IUCN Red List of Ecosystems](https://iucnrle.org/){target="blank"} (RLE) was developed [@botts2020]. For the National Biodiversity Assessment 2018 efforts were made to transition to the IUCN RLE framework for terrestrial ecosystem assessments [@skowno2021] and partially for estuaries and marine ecosystems, with some deviations in the thresholds that were applied. For the NBA 2025, there was full application of the IUCN RLE criteria for the first time in South Africa across all realms following the latest guidelines [@iucn2024] to ensure best practice and global alignment.
+
+### The IUCN Red List of Ecosystems Framework
+
+|  |  |
+|------------------------------------|:----------------------------------:|
+| The RLE is a framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](imgs/RLE%20logo%20new.png) |
+
+1.  can be applied systematically across realms and geographic areas;
+
+2.  are transparent and scientifically rigorous;
+
+3.  are comparable and repeatable;
+
+4.  can be easily understood by policy makers and the general public; and
+
+5.  complement the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) (RLS) framework
+
+The goal of the RLE is to identify ecosystems that are at risk of losing their constituent biodiversity. The unit of assessment in the RLE is an ecosystem type. The RLE framework used the concept of ecosystem collapse as the “end point” of ecosystem decline. This is equivalent to species extinction in the RLS.
+
+## Application of the IUCN RLE criteria
+
+There are [five criteria](https://iucnrle.org/documents_and_publications){target="blank"} in the RLE that can be used to assess ecosystem threat status, each of which have subcriteria:
+
+-   A: Reduction in geographic distribution
+
+-   B: Restricted geographic distribution
+
+-   C: Environmental degradation
+
+-   D: Disruption of biotic processes or interactions
+
+-   E: Quantitative estimate of the probability of ecosystem collapse within 50 or 100 years.
+
+Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case. Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
+
+| Realm           | Criteria assessed            |
+|-----------------|------------------------------|
+| Terrestrial     | Criteria A2b, A3, B1, B2, D3 |
+| Rivers          | Criteria B1, B2, D3          |
+| Inland wetlands | Criteria A2b, A3, B1, B2, D3 |
+| Estuaries       | Criteria A2b, A3, B3, D1, D3 |
+| Marine          | Criteria A3, B1, B2, C3, D3  |
+
+### RLE calculation methods
+
+Details of the RLE calculations per realm can be accessed here:
+
+link to RLE_terr git repo
+
+## References
+
+::: {#refs}
+:::

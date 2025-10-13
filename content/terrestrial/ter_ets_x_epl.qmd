@@ -1,0 +1,65 @@
+---
+title: "Intersection of ecosystem threat status and protection level"  
+subtitle: "Terrestrial realm" 
+
+title-block-banner: "#617016" 
+title-block-banner-color: white 
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  - name:
+      given: Andrew L. 
+      family: Skowno 
+    orcid: orcid.org/0000-0002-2726-7886 
+    affiliations:
+      - ref: af1       
+      - ref: af2
+       
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: af1
+      - ref: af3 
+      
+  - name:
+      given: Sediqa. 
+      family: Khatieb 
+    orcid: 0009-0009-6464-0908
+    affiliations:
+      - ref: af1
+
+affiliations:
+  - id: af1 
+    number: 1 
+    name: South African National Biodiversity Institute
+
+  - id: af2 
+    number: 2    
+    name: Department of Biological Sciences, University of Cape Town, Cape Town, South Africa    
+            
+  - id: af3 
+    number: 3    
+    name: Centre for Statistics in Ecology, Environment and Conservation, University of Cape Town, Cape Town, South Africa    
+    
+date: last-modified
+bibliography: terrestrial.bib
+
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+
+format:
+  html:
+    self-contained: true
+    execute: 
+      echo: false
+---
+

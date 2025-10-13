@@ -1,0 +1,417 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Threat Status" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: marine_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [45%]{.inline-style-threatened}
+| of 163 ecosystem types
+| [Threatened]{.inline-style-indicator}
+
+| [4%]{.inline-style-threatened}
+| of 163 ecosystem types
+| [Critically endangered]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [19%]{.inline-style-threatened}
+| of 163 ecosystem types
+| [Endangered]{.inline-style-indicator}
+
+| [22%]{.inline-style-threatened}
+| of 163 ecosystem types
+| [Vulnerable]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Approach
+
+The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using [the 2024 aligned]{.mark} to the IUCN guidelines for red listing ecosystems and drawing from previous marine NBA assessments.
+
+Criteria A to E Both the extent and severity of ecosystem degradation were considered by calculating the extent of each ecosystem type in each of the ecosystem condition categories (good and fair, moderately modified, severely modified, very severely degraded). Condition assessments are based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+
+A more detailed explanation of the assessment method can be found at [RLE explanation page](rle_explain.html).
+
+## Ecosystem Threat Status Assessment
+
+```{r}
+#| label: fig-ets_map_benth
+#| fig-cap: Benthopelagic and deepsea benthic marine ecosystem type threat status.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+#devtools::install_github("SANBI-NBA/nbaR")
+# library(tidyverse)
+# library(nbaR)
+# library(sf)
+# 
+# 
+# #marine linewidth
+# m_lwd = 0.001
+# 
+# 
+# dat <-  st_read(
+#     dir("data",
+#         "marine_ecosystems.gpkg",
+#         full.names = T,
+#         recursive = T)[1],
+#   quiet = TRUE)
+# 
+# marine_benth <- dat %>%
+#   group_by(ecosystem_type,ecosystem_functional_type_getl3, threat_status, protection_level) %>% #
+#   summarise(geometry = st_union(geom)) %>%
+#   st_cast(to = "MULTIPOLYGON") %>%
+#   filter(ecosystem_functional_type_getl3 !="Pelagic ocean waters")%>% 
+#   st_transform(crs = 4326)
+# 
+# marine_pel <- dat %>%
+#   group_by(ecosystem_type,ecosystem_functional_type_getl3, threat_status, protection_level) %>% #
+#   summarise(geometry = st_union(geom)) %>%
+#   st_cast(to = "MULTIPOLYGON") %>%
+#   filter(ecosystem_functional_type_getl3 =="Pelagic ocean waters")%>% 
+#   st_transform(crs = 4326)
+# 
+# 
+# 
+# 
+# RLEmap <- nbaR::nba_map(marine_benth,
+#                            "vector",
+#                            FILL = threat_status, 
+#                         LEGEND = T) +
+# #  geom_sf(data=marine_benth, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
+#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
+#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
+#         # ,
+#         # legend.key.size = ggplot2::unit(1,"line"),
+#         #  legend.position = "inside",
+#         #  legend.justification = c("right", "bottom"),
+#         # legend.title = element_blank()
+#         ) +  #remove white space around the plot
+#   coord_sf(expand = FALSE)    # <-- prevents padding around data
+# # theme_void()
+# 
+# #ggsave(plot = RLEmap, filename = "imgs/ets_benth.jpg")
+# 
+# ## add the donut plot
+# 
+# rle_donut <- marine_benth %>% 
+#   st_drop_geometry() %>% 
+#   ungroup() %>% 
+#   count(threat_status) %>% 
+#   tidyr::pivot_wider(names_from = threat_status, values_from = n) %>% 
+#   mutate(RLE = "RLE") %>% 
+#   select(RLE, `Critically Endangered`,Endangered, Vulnerable, `Near Threatened`, `Least Concern`) %>% 
+#   nbaR::nba_plot(GROUPS = RLE, 
+#                  COLS = 2:6, 
+#                  CHRT = "donut",
+#                  NUM = TRUE, 
+#                  LAB = "", 
+#                  GRP = F) +
+#   theme(legend.position = "none") 
+# 
+# final_plot <- RLEmap + 
+#   annotation_custom(ggplotGrob(rle_donut),
+#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
+# 
+# print(final_plot)
+
+knitr::include_graphics("imgs/ets_benthic_with_donut.png")
+
+```
+
+```{r}
+#| label: fig-ets_map_pel
+#| fig-cap: Pelagic marine ecosystem type threat status.
+#| echo: false
+#| out-width: 100%
+
+
+# RLEmap <- nbaR::nba_map(marine_pel,
+#                            "vector",
+#                            FILL = threat_status, 
+#                         LEGEND = T)+
+# #  geom_sf(data=marine_pel, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
+#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
+#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
+#         # ,
+#         # legend.key.size = ggplot2::unit(1,"line"),
+#         #  legend.position = "inside",
+#         #  legend.justification = c("right", "bottom"),
+#         # legend.title = element_blank()
+#         ) + #remove white space around the plot
+#   coord_sf(expand = FALSE)    # <-- prevents padding around data
+# # theme_void()
+# 
+# #ggsave(plot = RLEmap, filename = "imgs/ets_pel.jpg")
+# 
+# ## add the donut plot
+# 
+# rle_donut <- marine_pel %>% 
+#   st_drop_geometry() %>% 
+#   ungroup() %>% 
+#   count(threat_status) %>% 
+#   tidyr::pivot_wider(names_from = threat_status, values_from = n) %>% 
+#   mutate(RLE = "RLE") %>% 
+#   select(RLE, Vulnerable, `Least Concern`) %>% 
+#   nbaR::nba_plot(GROUPS = RLE, 
+#                  COLS = 2:3, 
+#                  CHRT = "donut",
+#                  NUM = TRUE, 
+#                  LAB = "", 
+#                  GRP = F) +
+#   theme(legend.position = "none") 
+# 
+# final_plot <- RLEmap + 
+#   annotation_custom(ggplotGrob(rle_donut),
+#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
+# 
+# print(final_plot)
+
+knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
+
+```
+
+```{r}
+#| label: fig-ets_bargraphs
+#| echo: false
+#| fig-cap: Threat status of marine ecosystem types by functional group.
+#| out-width: 100%
+
+library(tidyverse)
+library(nbaR)
+
+# ecosystem_summary <- dat %>%
+#      st_drop_geometry() %>%
+#       group_by(ecosystem_functional_type_getl3, 
+#                threat_status) %>%
+#       summarise(count = n(),
+#                 extent = sum(eco_extent_km2)) %>% 
+#   mutate(ecosystem_functional_type_getl3 = str_replace_all(ecosystem_functional_type_getl3,"Mesophotic and sub-photic rocky shelves", "rocky shelves"))
+# 
+# count <- ecosystem_summary %>%
+#       pivot_wider(
+#         id_cols = ecosystem_functional_type_getl3,
+#         names_from = threat_status,
+#         values_from = count) %>%
+#       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
+# 
+# extent <- ecosystem_summary %>%
+#       pivot_wider(
+#         id_cols = ecosystem_functional_type_getl3,
+#         names_from = threat_status,
+#         values_from = extent) %>%
+#       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
+# 
+# 
+# # ets <- count %>%
+# #   mutate(metric = "count") %>%
+# #   bind_rows(extent %>% mutate(metric = "extent"))
+# # 
+# # nba_plot_comb(DF = ets,
+# #          GROUPS = ecosystem_functional_type_getl3,
+# #          METRIC_COL = "metric", 
+# #          METRICS = c("count", "extent"),
+# #          COLS = 2:6,
+# #          CHRT = "bar",
+# #          NUM = T,
+# #          LAB = "Percentage of ecosystem",
+# #          SAVE = NULL)+
+# #   theme(legend.position = "bottom",
+# #     legend.location = "plot")
+# 
+# 
+# rle_count_all <- nba_plot(count,
+#          ecosystem_functional_type_getl3,
+#          2:6,
+#          CHRT = "bar",
+#          NUM = T,
+#          LAB = "Percentage of ecosystem counts",
+#          SAVE = NULL)+
+#   theme(legend.position = "bottom",
+#     legend.location = "plot")
+# 
+# rle_ext_all <- nba_plot(extent,
+#          ecosystem_functional_type_getl3,
+#          2:6,
+#          CHRT = "bar",
+#          NUM = F,
+#          LAB = "Percentage of ecosystem extent",
+#          SAVE = NULL)+
+#   theme(legend.position = "bottom",
+#     legend.location = "plot")+
+#   ggpubr::rremove("y.text") + 
+#   ggpubr::rremove("y.ticks")
+# 
+# rle_combined <- count %>%
+# mutate(metric = "count") %>%
+# bind_rows(extent %>%
+# mutate(metric = "extent"))
+
+# load the data 
+ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+#Combine RLE plot
+nba_plot_comb(ets_combined,
+              ecosystem_functional_type_getl3,
+              METRIC_COL = metric,
+              METRICS = c("count", "extent"),
+              2:6,
+              CHRT = "bar",
+              NUM = FALSE,
+              LAB = "Percentage of ecosystem",
+              SAVE = NULL) +
+  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
+
+```
+
+```{r}
+#| label: tbl-ets
+#| tbl-cap: "Threat status of marine ecosystem types in South Africa."
+# ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern. Type values in any of the search boxes to filter the list to rows of interest.
+
+# library(here)
+#library(gt)
+library(reactable)
+library(dplyr)
+
+# marine_ecotype <-  st_read(
+#     dir(here::here("data"),
+#         "marine_ecosystems.gpkg",
+#         full.names = T,
+#         recursive = T)[1],
+#   quiet = TRUE) %>%
+#   st_drop_geometry() %>%  
+#   select(c(ecoregion, ecosystem_type, threat_status, threat_basis)) %>% 
+#   mutate(threat_status = factor(threat_status, levels = c("Critically Endangered",
+#                                  "Endangered",
+#                                  "Vulnerable",
+#                                  "Near Threatened",
+#                                  "Least Concern"),
+#                       ordered = TRUE)) %>%
+#   rename(Ecoregion = ecoregion, 
+#          `Ecosystem type` = ecosystem_type,
+#          `Threat status` = threat_status, 
+#          `Threat basis` = threat_basis) %>% 
+#   arrange(Ecoregion, `Ecosystem type`, `Threat status`, `Threat basis`) 
+
+# load data
+ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(-'Protection level') # removing the threat status, assuming we only want to show that in the ETS page?
+
+# create the table
+reactable(
+  ets,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 600,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
+
+```
+
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+### GitLab repositories
+
+-   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+
+### Key Publications
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+::: {#refs}
+:::

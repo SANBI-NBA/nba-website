@@ -1,0 +1,438 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Threat Status" 
+subtitle: "Coastal zone"
+
+title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda R. #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu 
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Kerry J. #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: nmu
+  - name:
+      given: Andrew L. #Add author's first name here. Abbreviate the middle name
+      family: Skowno #Add author's surname here
+    orcid: 0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: uct
+  - name:
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: Van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: csir
+      - ref: nmu
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: uct # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: University of Cape Town
+  - id: csir # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Council for Scientific and Industrial Research
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: cst_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+```{r setting up data}
+#| message: false
+#| warning: false
+#| include: false
+
+source(here::here("scripts/cst_supporting-data.R"))
+```
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [`r percent_types(cet_thr_n, cet_n)`%]{.inline-style-threatened}
+| of `r cet_n` ecosystem types
+| [Threatened]{.inline-style-indicator}
+
+| [`r c_nc_prop_thr_n`]{.inline-style-threatened}
+| times more
+| [Threatened Ecosystem Types]{.inline-style-indicator}
+| in the coastal zone
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [`r percent_extent(ets, "thr", "coast")`%]{.inline-style-threatened}
+| of the coast extent
+| [Threatened]{.inline-style-indicator}
+
+| [`r c_nc_prop_thr_e`]{.inline-style-threatened}
+| times more
+| [Threatened Area]{.inline-style-indicator}
+| in the coastal zone
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Introduction
+
+Ecosystem threat status (ETS), also called ecosystem red list status, is one of the headline indicators of the National Biodiversity Assessment. It is an indicator of the degree to which ecosystems are still intact or, alternatively, losing vital aspects of their structure, function or composition.
+
+The IUCN Red List of Ecosystems (RLE) framework uses the concept of ecosystem collapse as the end point for ecosystem decline. The framework comprises a set of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition, and threatening processes.
+
+Each ecosystem type is assessed according to these criteria, and is then placed into one of several categories. Collectively, ecosystem types assessed as Critically Endangered, Endangered, or Vulnerable are called 'threatened'. Collapsed is the ecosystem equivalent of the species category, Extinct.
+
+-   Collapsed (CO)
+
+-   Critically Endangered (CR)
+
+-   Endangered (EN)
+
+-   Vulnerable (VU)
+
+-   Near Threatened (NT)
+
+-   Least Concern (LC)
+
+-   Not Evaluated (NE)
+
+-   Data deficient (DD)
+
+For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see <!--# INSERT LINK TO ETS EXPLAINER PAGE -->.
+
+## Coastal Ecosystem Threat Status
+
+The South African coast is proportionately more threatened than the rest of the country (entire non-coastal territory combined, @fig-etsgraph, @tbl-etsnumbers). In fact, the coast (`r percent_types(cet_thr_n, cet_n)`% threatened ecosystem types) proportionately has `r c_nc_prop_thr_n` times more threatened ecosystem types than the rest of the country (`r round(ncet_thr_n/ncet_n*100)`%), which is proportionately `r c_nc_prop_thr_e` times more by extent (coastal: `r percent_extent(ets, "thr", "coast")`%, non-coastal: `r round(nc_thr_e/nc_e*100)`%). Areas where threatened ecosystem types are concentrated are around the Orange River mouth, through most of the Western Cape, in St Francis and Algoa bays, and along virtually the entire East Coast (@fig-etsmap).
+
+![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map.png){#fig-etsmap fig-align="center"}
+
+```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
+#| fig.cap: "Ecosystem threat status of coastal ecosystem types by (A) number of types and (B) extent of types"
+#| label: fig-etsgraph
+
+library(ggpubr)
+library(nbaR)
+library(here)
+library(tidyverse)
+subrealm_ets_p <- read_csv(here("outputs/cst_subrealm-ets-p.csv"))
+c_ets_t <- subrealm_ets_p %>% 
+  filter(`Sub-realm`=="Total") %>% 
+  select(!c(`Sub-realm`, Thr, Total)) %>% 
+  rename(`Critically Endangered` = CR,
+         `Endangered` = EN,
+         `Vulnerable` = VU,
+         `Near Threatened` = NT,
+         `Least Concern` = LC)%>%
+  arrange(desc(row_number()))
+# c_ets_e <- c_ets %>% 
+#   filter(metric=="extent") %>% 
+#   select(!metric)
+
+subrealm_ets_e_p <-read_csv(here("outputs/cst_subrealm-ets-e_proportions.csv"))
+c_ets_e <- subrealm_ets_e_p %>% 
+  filter(`Sub-realm`=="Total") %>% 
+  select(!c(`Sub-realm`, Thr, Total)) %>% 
+  rename(`Critically Endangered` = CR,
+         `Endangered` = EN,
+         `Vulnerable` = VU,
+         `Near Threatened` = NT,
+         `Least Concern` = LC)%>%
+  arrange(desc(row_number()))
+
+ets_t<-nba_plot(c_ets_t,
+     GROUPS=Realm,
+     COLS = 2:6,
+     CHRT = "bar",
+     NUM = FALSE,
+     LAB = "Percentage of ecosystem types",
+     SAVE=NULL)
+ets_e<-nba_plot(c_ets_e,
+     GROUPS = Realm,
+     COLS = 2:6,
+     CHRT = "bar",
+     NUM = FALSE,
+     LAB = "Percentage of ecosystem extent",
+     SAVE=NULL)
+
+ggarrange(ets_t, ets_e, ncol = 2, labels = c("A","B"), common.legend = T, legend = "bottom")
+```
+
+Of the `r cet_n` coastal ecosystem types in the EDCZ, `r cet_thr_n` are threatened, comprising `r c_ets_n("CR")` Critically Endangered, `r c_ets_n("EN")` Endangered, and `r c_ets_n("VU")` Vulnerable ecosystem types (@fig-etsgraph, @tbl-etsnumbers). These threatened types make up `r percent_extent(ets, "thr", "E")`% of the estuarine realm, `r percent_extent(ets, "thr", "T")`% of the coastal terrestrial extent, `r percent_extent(ets, "thr", "M")`% of the coastal marine extent, and `r percent_extent(ets, "thr", "coast")`% of the overall coastal extent.
+
+In comparison, there are `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r astext(c_nc_prop_thr_n)` times the number of threatened ecosystem types and almost an order of magnitude (`r astext(c_nc_prop_thr_e)` times) more threatened area than the rest of the South African mainland territory (@fig-etsgraph, @tbl-etsnumbers).
+
+::: panel-tabset
+## Number of types<!--#  have csvs for each of these tables - is it worth including them as downloads? -->
+
+```{r}
+#| label: tbl-etsnumbers
+#| tbl-cap: "Ecosystem threat status of coastal ecosystem types: number of types per threat category, given per across-shore zone (inland to offshore). Thr = Threatened (CR, EN, VU); CR = Critically Endangered; EN = Endangered; VU = Vulnerable;  NT = Near Threatened; LC = Least Concern"
+#| classes: plain
+
+library(gt)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_ets_n <- read_csv(here("outputs/cst_subrealm-ets-n.csv"))
+subrealm_ets_n %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>%
+  nba_tbl_theme() %>% 
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),     
+    locations = cells_column_labels(columns = everything())
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = "Total")
+  )
+
+
+```
+
+## Proportion of types
+
+```{r}
+#| label: tbl-etsproptypes
+#| tbl-cap: "Ecosystem threat status of coastal ecosystem types: proportion of types per threat category, given per across-shore zone (inland to offshore). Thr = Threatened (CR, EN, VU); CR = Critically Endangered; EN = Endangered; VU = Vulnerable;  NT = Near Threatened; LC = Least Concern" 
+#| classes: plain
+
+library(gt)
+library(nbaR)
+library(tidyverse)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_ets_p <- read_csv(here("outputs/cst_subrealm-ets-p.csv"))
+subrealm_ets_p %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>% 
+  nba_tbl_theme() %>%
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  )
+```
+
+## Proportion of extent
+
+```{r}
+#| label: tbl-etspropext
+#| tbl-cap: "Ecosystem threat status of coastal ecosystem types: proportion of extent per threat category, given per across-shore zone (inland to offshore). The extent of terrestrial ecosystem types is given as the percentage of remaining natural habitat. Thr = Threatened (CR, EN, VU); CR = Critically Endangered; EN = Endangered; VU = Vulnerable;  NT = Near Threatened; LC = Least Concern" 
+#| classes: plain
+
+library(gt)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_ets_e_p <- read_csv(here("outputs/cst_subrealm-ets-e_proportions.csv"))
+subrealm_ets_e_p %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>% 
+  nba_tbl_theme() %>% 
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = "Total")
+  )
+
+```
+:::
+
+Most (`r r_ets_n("T", "CR")`) of the `r c_ets_n("CR")` Critically Endangered coastal ecosystem types are within the coastal portion of the terrestrial realm (@fig-etsmap, @fig-etsgraph, @tbl-etsnumbers), with a slightly higher proportion of types and extent among semi-coastal vegetation types (`r percent_types(sr_ets_n("Semi-coastal vegetation", "CR"), sret_n("Semi-coastal vegetation"))`% of types; `r SCV_CR_E_P`% of extent) than coastal vegetation types (`r percent_types(sr_ets_n("Coastal vegetation", "CR"), sret_n("Coastal vegetation"))`% of types; `r CV_CR_E_P`% of extent). This is because pressures on land act more locally and intensively than they do in the aquatic realms, often causing complete habitat loss (e.g., houses replacing grasslands) rather than degrees of degradation (e.g., different pollution levels in estuaries).
+
+Because the data and/or assessment methodologies have changed in the realm assessments since the NBA 2018, the results are not comparable between the two assessments. However, the latest results do show that the South African coastal zone is more threatened than was previously reported.
+
+```{r}
+#| label: tbl-ets
+#| tbl-cap: "Threat status of coastal ecosystem types in South Africa. ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern."
+
+library(here)
+library(tidyverse)
+
+cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>% 
+  select(c(realm, zone, type, RLE)) %>% 
+  mutate(realm = recode(realm, 
+                        "ter" = "Terrestrial",
+                        "est" = "Estuarine",
+                        "marine" = "Marine"),
+    RLE = factor(RLE, levels = c("CR",
+                                 "EN",
+                                 "VU",
+                                 "NT",
+                                 "LC"),
+                      ordered = TRUE),
+         realm = factor(realm, levels = c("Terrestrial",
+                                          "Estuarine",
+                                          "Marine"),
+                        ordered = TRUE)) %>%
+  arrange(realm, RLE, zone, type) %>% 
+  rename(Realm = realm, Subrealm = zone, `Ecosystem Type`=type, ETS = RLE)
+
+# Output as regular table
+# library(gt)
+# cst %>%
+#   gt() %>%
+#   nba_tbl_theme() %>% 
+# tab_style(
+#     style = cell_fill(color = "#EDCA8D"),
+#     locations = cells_column_labels(columns = everything())
+#   )%>%
+#   tab_options(container.height = px(600),
+#               container.overflow.y = TRUE)
+
+library(gt)
+library(nbaR)
+nba_tbl_colr(DF = cst,
+             COL = ETS,
+             HEADER = "Coast") %>%
+  tab_options(container.height = px(550),
+              container.overflow.y = TRUE) %>% 
+    tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  )
+
+# Output as filterable table. Add to caption: Type values in any of the search boxes to filter the list to rows of interest.
+#library(reactable)
+# reactable(
+#   cst,
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#EDCA8D", fontWeight = "bold")
+#   ))
+
+```
+
+## Technical documentation
+
+### Github repositories
+
+Coastal synthesis: <https://github.com/lrharris/nba2025_coast/>
+
+Terrestrial RLE assessment: <https://github.com/askowno/RLE_terr>
+
+Estuarine RLE assessment: <https://github.com/askowno/RLE_est>
+
+Marine RLE assessment: <https://gitlab.com/nba_2025/ecosystem_assessment/threat_status>
+
+### Data availability
+
+The following datasets are available for download:
+
+1.  [Map of ecosystem threat status of South Africa's coastal ecosystem types](https://bgis.sanbi.org/Projects/Detail/226){target="blank"}
+
+### Related publications and supporting information
+
+1.  Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. **Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration**. Estuarine Coastal and Shelf Science 324, 109447. <https://doi.org/10.1016/j.ecss.2025.109447>\
+    *Technical details regarding the threat status assessment of sandy shore ecosystem types and species*
+2.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+    *Technical details regarding the threat status assessment of coastal ecosystem types from the NBA 2018*
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

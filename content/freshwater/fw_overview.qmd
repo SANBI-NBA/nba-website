@@ -1,0 +1,173 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Overview of freshwater species and ecosystems" # Compulsory
+subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nancy #Add author's first name here. Abbreviate the middle name
+      family: Job #Add author's surname here
+    orcid: 0000-0002-4929-7592 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: af1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: fw-references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+**Freshwater ecosystems – rivers and inland wetlands – are the lifeblood of South Africa, underpinning our water security, economy, and cultural heritage. However, more than 60% are in a compromised ecological condition. This places at risk the vital services they provide, and the incredible biodiversity they support. It is of great concern that the number of threatened freshwater species continues to rise.**
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [65%]{.inline-style-threatened}
+| of 222 river ecosystem types
+| [Threatened]{.inline-style-indicator}
+| [13%]{.inline-style-well-protected}
+| of 222 river ecosystem types
+| [Well Protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [64%]{.inline-style-threatened}
+| of 82 inland wetland types
+| [Threatened]{.inline-style-indicator}
+| [5%]{.inline-style-well-protected}
+| of 82 inland wetland types
+| [Well Protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [42%]{.inline-style-not-protected}
+| of 222 river ecosystem types
+| [Not protected]{.inline-style-indicator}
+| [16%]{.inline-style-threatened}
+| of 1417 freshwater taxa assessed
+| [Threatened]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [20%]{.inline-style-not-protected}
+| of 82 inland wetland types
+| [Not protected]{.inline-style-indicator}
+| [20%]{.inline-style-not-protected}
+| of 1417 freshwater taxa assessed
+| [Not protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+:::: columns
+::: {.column width="50%"}
+:::
+::::
+
+------------------------------------------------------------------------
+
+*More than 64% of river ecosystem types and 65% of wetland ecosystem types are threatened* (KM[^1] B2).
+
+[^1]: KM = key message
+
+Rivers and inland wetlands are among the [most threatened](int_ecosystems.qmd)[^2] and least protected ecosystems in South Africa. Over a third of **river** ecosystem types (82/222) are both highly threatened and under protected.
+
+[^2]: Ecosystem types and species are referred to as 'threatened' when they have been categorised as Critically Endangered, Endangered or Vulnerable. \[link to Lexicon\]
+
+Seventeen (20%) out of 82 inland wetland types are both threatened (i.e. CR, EN and VU) and under-protected (Not Protected). They are found on the Highveld, along the eastern escarpment, in the Cape Fold Mountains and the arid Northern Cape.
+
+It follows that the **freshwater species** which these ecosystems support are increasingly highly threatened.
+
+*36% of all assessed freshwater taxa and 66% of assessed endemic freshwater taxa are threatened, while 36% of all freshwater fishes and 66% of endemic freshwater fishes are threatened.*
+
+Freshwater fishes are the most threatened of all taxa in South Africa. With escalating pressures from human activities and climate change, it is highly concerning that 59 waterbird species have been uplisted, with 5 listed as Endangered, 11 Vulnerable and the remaining Near Threatened, while the African Shaggy Rat (previously African Marsh Rat) and the Laminate Vlei Rat have been uplisted from Least Concern to Near Threatened during the current assessment.
+
+![Figure 1. Nieuwoudtville ephemeral salt pan, a Vulnerable ecosystem type](images/20210821_105714_nvlle_v3.png)
+
+In the face of increasing **pressures**, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([KM A3](key_messages_A3.qmd)), direct habitat loss and biological invasions (KM A4)\[link\], as well as the exacerbating effect of climate change (KM A1)\[link\].
+
+As freshwater ecosystems are affected by land use within their receiving catchment (KM A2)\[link\], often at far distances, they are not easily protected within nature reserves and, thus, implementation of other effective area-based conservation measures (OECM[^3]s) are vital. We must collaborate across all levels of society (KM C1)\[link\] to conserve and wisely manage our remaining intact rivers and inland wetlands, and the freshwater species that they support. We must take urgent **action** to increase attention and funding on freshwater ecosystems and species, and to implement extensive restorative actions in strategically identified areas.
+
+[^3]: Other effective area-based conservation measures (OECMs) can include xxxx and are part of the suite of conservation tools. Conservation can include formal protection, stewardship, OECMs, and targeted species efforts.
+
+## For more information on river ecosystems
+
+Click on the following links to find more information on **river** types, ecological condition, pressures, Ecosystem Threat Status, Ecosystem Protection Level, key actions and knowledge gaps
+
+## For more information on inland wetland ecosystems
+
+Click on the following to find more information on **inland wetland** types, ecological condition, pressures, Ecosystem Threat Status, Ecosystem Protection Level, key actions and knowledge gaps
+
+## For more information on freshwater species
+
+For a summary of the status of assessed **freshwater species** as well as for all freshwater species.
+
+## Technical documentation
+
+In addition to this webpage, supporting information is available in the form of data, technical reports and journal articles. Please use the recommended citation that is found on each webpage when you cite a particular result or data from the webpage.
+
+### Github repositories
+
+**Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates) \[link to the specific page within github\]
+
+### Data availability
+
+The following datasets and their associated metadata are available for download:
+
+**Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - \[link to the specific page within these websites containing your data\]
+
+### Supporting publications and information
+
+**Journal articles**: In prep
+
+**Technical reports**:
+
+South African National Biodiversity Institute (SANBI). 2025. *National Biodiversity Assessment 2025: The* *status of South Africa’s biodiversity. Summary of Findings and Key Messages*. Skowno, A.L., Poole, C.J., Besseling, N., Currie, J., da Silva, J.M., Dayaram, A., Job, N., Harris, L.R., Monyeki, M., Mtshali, H., Raimondo, D.C., Sink, K.J., van der Bank, M.G., van der Colff, D., van Niekerk, L., von Staden, L. (eds) South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. Handle:  
+
+## Recommended citation
+
+Job, N.M., other names xx. 2025. Freshwater (inland aquatic) realm - Status of Freshwater Species and Ecosystems. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za

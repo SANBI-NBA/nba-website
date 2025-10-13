@@ -1,0 +1,69 @@
+Realm,Threat status,Protection level,Ecosystem type
+Terrestrial,CR,NP,Gouritz Valley Thicket
+Terrestrial,CR,NP,Motherwell Karroid Thicket
+Terrestrial,CR,NP,Sardinia Forest Thicket
+Terrestrial,CR,NP,Alexander Bay Coastal Duneveld
+Terrestrial,CR,NP,Cape Flats Sand Fynbos
+Terrestrial,CR,NP,Garden Route Granite Fynbos
+Terrestrial,CR,NP,Groot Brak Dune Strandveld
+Terrestrial,CR,NP,Mossel Bay Shale Renosterveld
+Terrestrial,CR,NP,Richtersveld Coastal Duneveld
+Terrestrial,CR,NP,Namib Seashore Vegetation
+Terrestrial,CR,PP,Agulhas Limestone Fynbos
+Terrestrial,CR,PP,Agulhas Sand Fynbos
+Terrestrial,CR,PP,Algoa Sandstone Fynbos
+Terrestrial,CR,PP,Grootbos Strandveld
+Terrestrial,CR,PP,Knysna Sand Fynbos
+Terrestrial,CR,PP,Lambert's Bay Strandveld
+Terrestrial,CR,PP,Lourensford Alluvium Fynbos
+Terrestrial,CR,PP,Peninsula Shale Renosterveld
+Terrestrial,CR,PP,Potberg Ferricrete Fynbos
+Terrestrial,CR,PP,Saldanha Granite Strandveld
+Terrestrial,CR,PP,Southern Cape Dune Fynbos
+Terrestrial,CR,PP,St Francis Strandveld
+Terrestrial,CR,PP,Namaqualand Seashore Vegetation
+Terrestrial,EN,NP,Humansdorp Shale Renosterveld
+Terrestrial,EN,NP,KwaZulu-Natal Coastal Belt Grassland
+Terrestrial,EN,PP,Hartenbos Dune Thicket
+Terrestrial,EN,PP,St Francis Dune Thicket
+Terrestrial,EN,PP,Albertinia Sand Fynbos
+Terrestrial,EN,PP,Atlantis Sand Fynbos
+Terrestrial,EN,PP,Eastern Coastal Shale Band Vegetation
+Terrestrial,EN,PP,Elim Ferricrete Fynbos
+Terrestrial,EN,PP,Garden Route Shale Fynbos
+Terrestrial,EN,PP,Hopefield Sand Fynbos
+Terrestrial,EN,PP,Overberg Sandstone Fynbos
+Terrestrial,EN,PP,Saldanha Flats Strandveld
+Terrestrial,EN,PP,Southeastern Strandveld
+Terrestrial,EN,PP,Transkei Coastal Belt
+Terrestrial,EN,PP,South Eastern Coastal Thornveld
+Estuarine,CR,NP,Subtropical Estuarine Bay
+Estuarine,EN,NP,Cool Temperate Predominantly Open
+Estuarine,EN,PP,Subtropical Large Fluvially Dominated
+Estuarine,EN,PP,Cool Temperate Arid Predominantly Closed
+Estuarine,EN,PP,Cool Temperate Estuarine Lake
+Estuarine,EN,PP,Cool Temperate Large Fluvially Dominated
+Estuarine,EN,PP,Cool Temperate Large Temporarily Closed
+Marine,CR,NP,Orange Cone Inner Shelf Mud Reef Mosaic
+Marine,CR,PP,Cape Bay
+Marine,CR,PP,Agulhas Muddy Mid Shelf
+Marine,EN,NP,Cape Sheltered Rocky Shore
+Marine,EN,NP,St Helena Bay
+Marine,EN,NP,KZN Bight Mid Shelf Reef Complex
+Marine,EN,NP,Orange Cone Muddy Mid Shelf
+Marine,EN,PP,Agulhas Sheltered Rocky Shore
+Marine,EN,PP,Namaqua Exposed Rocky Shore
+Marine,EN,PP,Namaqua Sheltered Rocky Shore
+Marine,EN,PP,Namaqua Very Exposed Rocky Shore
+Marine,EN,PP,Cape Mixed Shore
+Marine,EN,PP,Namaqua Mixed Shore
+Marine,EN,PP,Agulhas Reflective Sandy Shore
+Marine,EN,PP,Southern Benguela Reflective Sandy Shore
+Marine,EN,PP,Western Agulhas Bay
+Marine,EN,PP,False and Walker Bay
+Marine,EN,PP,Durnford Inner Shelf Reef Complex
+Marine,EN,PP,Southern KZN Inner Shelf Mosaic
+Marine,EN,PP,Trafalgar Reef Complex
+Marine,EN,PP,KZN Bight Sandy Inner Shelf
+Marine,EN,PP,KZN Bight Mid Shelf Mosaic
+Marine,EN,PP,KZN Bight Deep Shelf Edge

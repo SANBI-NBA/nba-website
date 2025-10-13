@@ -1,0 +1,6 @@
+# ignore html output 
+*.html
+README.html
+
+# ignore .quarto folders
+/.quarto/

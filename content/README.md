@@ -66,7 +66,7 @@ Detailed findings for the coast.
 
 Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Islands).
 
-**Maintainer:** 
+**Maintainer:**
 
 **Source:**
 
@@ -77,3 +77,11 @@ Detailed findings for species.
 **Maintainer:** Shae-Lynn Hendricks
 
 **Source:** <https://github.com/SANBI-NBA/species>
+
+## Workflow for extracting website content from repositories
+
+1.  Clone each of the repos listed above - it is best to place them within a parent folder to allow recursive content extraction
+
+2.  Make sure that the local folder name containing the repo matches the content folder listed here
+
+3.  Run the script `collect-content.R` in the `scripts` folder to copy the contents of the `quarto` folder of each repo to here

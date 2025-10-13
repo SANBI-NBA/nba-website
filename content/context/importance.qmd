@@ -1,0 +1,102 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "The importance of South Africa’s biodiversity" # Compulsory
+#subtitle: "Add subtitle here" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Carol #Add author's first name here. Abbreviate the middle name
+      family: Poole #Add author's surname here
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+# Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Zimkita #Add author's first name here. Abbreviate the middle name
+      family: Mavumengwana #Add author's surname here
+    
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: af1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: SANBI
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: refs-about-nba.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+South Africa is one of 17 megadiverse countries in the world, with extraordinary biodiversity defined by species richness, high levels of endemism and diverse ecosystems across the terrestrial, freshwater, estuarine and marine realms and extending into our subantarctic territory.  
+
+This natural wealth is foundational to the wellbeing of South Africa’s people and underpins livelihoods and economic growth. These benefits rely on intact ecosystems, healthy species populations and genetic diversity. 
+
+::: {#box-1 .callout-note collapse="true"}
+## South Africa’s extraordinary biodiversity provides multiple benefits to the economy, society and human wellbeing
+
+South Africa’s exceptional biodiversity sustains livelihoods; supports water and food security; provides medicines; protects communities from natural disasters; enriches cultural, spiritual and recreational practices; enables adaptation to climate change; and drives innovation through bioprospecting and biomimicry.  
+
+Biodiversity is woven into our languages, place names, art, religions and folklore; and is showcased across the world through tourism, storytelling and horticulture.  
+
+Biodiversity is both a national priority and a treasured legacy for future generations. 
+:::
+
+**INSERT BENEFITS INFOGRAPHIC FROM BOOKLET**
+
+Read more about how our extraordinary biodiversity provides multiple benefits to the economy, society and human wellbeing in the [Compendium of Benefits of Biodiversity](http://hdl.handle.net/20.500.12143/8052), which was released as supplementary material to NBA 2018. 
+
+### Subsection 1 (Header 3)
+
+#### Subsection 2 (Header 4)
+
+etc.
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```

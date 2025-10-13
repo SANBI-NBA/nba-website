@@ -1,0 +1,83 @@
+,type,zone,RLE18,RLE24,type24_m2,extent,EPL18,EPL24,RLE_EPL24
+1,Albany Thicket_Depression,Depression,VU,VU,24912446.25,24.91244625,MP,MP,VU_MP
+2,Albany Thicket_Floodplain,Floodplain,LC,LC,28862129.33,28.86212933,PP,NP,LC_NP
+3,Albany Thicket_Seep,Seep,VU,VU,5136773.275,5.136773275,NP,PP,VU_PP
+4,Albany Thicket_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,VU,4372598.526,4.372598526,NP,NP,VU_NP
+5,Bushmanland_Depression,Depression,CR,CR,3270558895,3270.558895,NP,PP,CR_PP
+6,Bushmanland_Floodplain,Floodplain,LC,LC,94564752.84,94.56475284,NP,PP,LC_PP
+7,Bushmanland_Seep,Seep,LC,LC,16779757.39,16.77975739,NP,PP,LC_PP
+8,Bushmanland_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,707266009.9,707.2660099,NP,MP,LC_MP
+9,Central Bushveld_Depression,Depression,CR,CR,52912191.29,52.91219129,PP,PP,CR_PP
+10,Central Bushveld_Floodplain,Floodplain,EN,EN,1578674465,1578.674465,PP,PP,EN_PP
+11,Central Bushveld_Seep,Seep,VU,VU,197991585.3,197.9915853,PP,PP,VU_PP
+12,Central Bushveld_Unchannelled valley-bottom,Unchannelled valley-bottom,VU,VU,445804987,445.804987,PP,PP,VU_PP
+13,Drakensberg Grassland_Depression,Depression,CR,CR,10870503.62,10.87050362,PP,PP,CR_PP
+14,Drakensberg Grassland_Floodplain,Floodplain,LC,LC,239711283.5,239.7112835,PP,PP,LC_PP
+15,Drakensberg Grassland_Seep,Seep,VU,VU,136385334.6,136.3853346,PP,PP,VU_PP
+16,Drakensberg Grassland_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,18138039.45,18.13803945,NP,NP,EN_NP
+17,Dry Highveld Grassland_Depression,Depression,CR,CR,1192458512,1192.458512,PP,PP,CR_PP
+18,Dry Highveld Grassland_Floodplain,Floodplain,EN,EN,1485374631,1485.374631,PP,PP,EN_PP
+19,Dry Highveld Grassland_Seep,Seep,LC,LC,243020502.6,243.0205026,PP,PP,LC_PP
+20,Dry Highveld Grassland_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,836028785.3,836.0287853,PP,PP,EN_PP
+21,East Coast Renosterveld_Depression,Depression,CR,CR,19487503.77,19.48750377,WP,WP,CR_WP
+22,East Coast Renosterveld_Floodplain,Floodplain,VU,VU,349908052.2,349.9080522,NP,NP,VU_NP
+23,East Coast Renosterveld_Seep,Seep,VU,VU,82102431.04,82.10243104,PP,PP,VU_PP
+24,East Coast Renosterveld_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,VU,11483661.07,11.48366107,MP,MP,VU_MP
+25,Eastern Fynbos-Renosterveld_Depression,Depression,EN,EN,4272926.264,4.272926264,PP,PP,EN_PP
+26,Eastern Kalahari Bushveld_Depression,Depression,VU,VU,1040460052,1040.460052,NP,NP,VU_NP
+27,Eastern Kalahari Bushveld_Seep,Seep,EN,EN,283804164.3,283.8041643,NP,NP,EN_NP
+28,Eastern Kalahari Bushveld_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,382738249.2,382.7382492,NP,NP,EN_NP
+29,Kalahari Duneveld_Depression,Depression,CR,CR,342667807.8,342.6678078,PP,PP,CR_PP
+30,Kalahari Duneveld_Seep,Seep,LC,LC,8160196.767,8.160196767,NP,NP,LC_NP
+31,Karoo Interior_Depression,Depression,CR,CR,669213911,669.213911,NP,NP,CR_NP
+32,Karoo Interior_Floodplain,Floodplain,LC,LC,1293315857,1293.315857,NP,NP,LC_NP
+33,Karoo Interior_Seep,Seep,LC,LC,87677660.28,87.67766028,PP,PP,LC_PP
+34,Karoo Interior_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,212778071.2,212.7780712,PP,PP,LC_PP
+35,Knersvlakte_Depression,Depression,EN,EN,1583279.22,1.58327922,PP,PP,EN_PP
+36,Kwa-Zulu Natal Coastal Belt_Floodplain,Floodplain,EN,EN,65653204.76,65.65320476,NP,NP,EN_NP
+37,Kwa-Zulu Natal Coastal Belt_Seep,Seep,CR,CR,46821241.98,46.82124198,NP,NP,CR_NP
+38,Kwa-Zulu Natal Coastal Belt_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,27184270.21,27.18427021,NP,NP,EN_NP
+39,Lowveld_Depression,Depression,EN,EN,90148294.97,90.14829497,MP,MP,EN_MP
+40,Lowveld_Floodplain,Floodplain,VU,VU,624016223.6,624.0162236,WP,WP,VU_WP
+41,Lowveld_Seep,Seep,LC,LC,238371210.3,238.3712103,MP,MP,LC_MP
+42,Lowveld_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,66853866.64,66.85386664,MP,MP,LC_MP
+43,Maputaland Coastal Belt_Depression,Depression,CR,CR,223034187.5,223.0341875,WP,WP,CR_WP
+44,Maputaland Coastal Belt_Floodplain,Floodplain,EN,EN,560194213.9,560.1942139,MP,MP,EN_MP
+45,Maputaland Coastal Belt_Seep,Seep,EN,CR,37221204.6,37.2212046,MP,MP,CR_MP
+46,Maputaland Coastal Belt_Unchannelled valley-bottom,Unchannelled valley-bottom,CR,CR,58239353.69,58.23935369,PP,PP,CR_PP
+47,Mesic Highveld Grassland_Depression,Depression,LC,LC,473255912.8,473.2559128,PP,PP,LC_PP
+48,Mesic Highveld Grassland_Floodplain,Floodplain,VU,VU,4755817577,4755.817577,PP,PP,VU_PP
+49,Mesic Highveld Grassland_Seep,Seep,VU,VU,1623925814,1623.925814,PP,PP,VU_PP
+50,Mesic Highveld Grassland_Unchannelled valley-bottom,Unchannelled valley-bottom,VU,VU,420371719,420.371719,PP,PP,VU_PP
+51,Mopane_Depression,Depression,CR,CR,12574153.39,12.57415339,WP,WP,CR_WP
+52,Mopane_Floodplain,Floodplain,EN,EN,304451564.9,304.4515649,WP,WP,EN_WP
+53,Mopane_Seep,Seep,LC,LC,1115907.835,1.115907835,WP,WP,LC_WP
+54,Mopane_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,43454013.19,43.45401319,PP,PP,LC_PP
+55,Namaqualand_Depression,Depression,CR,CR,122947907.8,122.9479078,PP,PP,CR_PP
+56,Northwest Fynbos_Depression,Depression,CR,CR,12207547.95,12.20754795,PP,PP,CR_PP
+57,Northwest Fynbos_Floodplain,Floodplain,EN,EN,147619806.6,147.6198066,PP,PP,EN_PP
+58,Northwest Fynbos_Seep,Seep,EN,EN,36328078.28,36.32807828,MP,MP,EN_MP
+59,Northwest Fynbos_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,6879912.951,6.879912951,PP,PP,EN_PP
+60,Pondoland Coastal Belt_Floodplain,Floodplain,LC,LC,3779961.171,3.779961171,NP,NP,LC_NP
+61,Pondoland Coastal Belt_Seep,Seep,EN,LC,15336763.6,15.3367636,NP,NP,LC_NP
+62,Pondoland Coastal Belt_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,4842956.74,4.84295674,PP,PP,LC_PP
+63,Southern Fynbos_Depression,Depression,EN,VU,15009819.04,15.00981904,WP,WP,VU_WP
+64,Southern Fynbos_Floodplain,Floodplain,VU,VU,235922196,235.922196,PP,PP,VU_PP
+65,Southern Fynbos_Seep,Seep,LC,LC,111133895.1,111.1338951,MP,MP,LC_MP
+66,Southern Fynbos_Unchannelled valley-bottom,Unchannelled valley-bottom,VU,VU,23725013,23.725013,PP,PP,VU_PP
+67,Southwest Fynbos_Depression,Depression,LC,LC,6997578.431,6.997578431,WP,WP,LC_WP
+68,Southwest Fynbos_Floodplain,Floodplain,VU,VU,354072715.1,354.0727151,PP,PP,VU_PP
+69,Southwest Fynbos_Seep,Seep,VU,VU,201791862.9,201.7918629,WP,WP,VU_WP
+70,Southwest Fynbos_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,13812182.75,13.81218275,PP,PP,EN_PP
+71,Sub-Escarpment Grassland_Depression,Depression,EN,EN,46029578.65,46.02957865,PP,PP,EN_PP
+72,Sub-escarpment Grassland_Floodplain,Floodplain,VU,VU,1225375949,1225.375949,PP,PP,VU_PP
+73,Sub-escarpment Grassland_Seep,Seep,VU,VU,1356158796,1356.158796,NP,NP,VU_NP
+74,Sub-escarpment Grassland_Unchannelled valley-bottom,Unchannelled valley-bottom,LC,LC,272549612,272.549612,PP,PP,LC_PP
+75,Sub-escarpment Savanna_Depression,Depression,EN,VU,3854902.241,3.854902241,NP,NP,VU_NP
+76,Sub-escarpment Savanna_Floodplain,Floodplain,VU,VU,172386949.4,172.3869494,NP,NP,VU_NP
+77,Sub-escarpment Savanna_Seep,Seep,VU,VU,191471317.6,191.4713176,NP,NP,VU_NP
+78,Sub-escarpment Savanna_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,19174152.74,19.17415274,NP,NP,EN_NP
+79,West Coast_Depression,Depression,CR,CR,17938683.62,17.93868362,PP,PP,CR_PP
+80,West Coast_Floodplain,Floodplain,EN,EN,198496678.5,198.4966785,PP,PP,EN_PP
+81,West Coast_Seep,Seep,EN,EN,33102530.16,33.10253016,PP,NP,EN_NP
+82,West Coast_Unchannelled valley-bottom,Unchannelled valley-bottom,EN,EN,5691066.691,5.691066691,NP,NP,EN_NP

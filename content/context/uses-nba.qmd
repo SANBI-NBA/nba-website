@@ -1,0 +1,138 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Using the NBA" # Compulsory
+subtitle: "The various products of the NBA and how they are used" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: refs-about-nba.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+***South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision making across multiple sectors, and contribute to national development priorities.***
+
+## Objectives of the NBA
+
+The NBA has seven objectives, which are to:
+
+1.  inform policy and decision making across multiple sectors;
+
+2.  support prioritisation and planning for conservation action;
+
+3.  highlight the benefits of biodiversity for people and the economy;
+
+4.  present indicators for both national and international reporting;
+
+5.  raise key issues for education and fundraising;
+
+6.  provide a platform for collaboration and capacity development within the biodiversity sector; and
+
+7.  identify crucial data and knowledge gaps to stimulate future research and improvement.
+
+## Uses and users of the NBA
+
+Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used.
+
+The website form of the NBA allows information to be presented at increasing levels of detail, and each user can delve as deeply as they choose. Users who want to only read the key messages, for example, can study the Summary of Findings and Key Messages publication and the key messages section of the website. Users who are developing response strategies and action plans for a particular realm or taxonomic group or pressure can study those webpages in detail and delve into the references provided. Users such as scientists or biodiversity planners can access the underlying datasets and can investigate the analytical methods by reviewing the workflows and script that underpin the NBA, accessible in public repositories.
+
+It is imperative that users cite the NBA correctly - please read the citation guidance here. **LINK TO CITE_NBA.QMD**
+
+## The various products of the NBA
+
+The NBA's products can be summarised as follows:
+
+-   **Input datasets:** The NBA has a strong focus on presenting spatial information (e.g. maps of ecosystem types, maps of ecological condition, species distribution maps, maps of threat status and protection level, etc.), and also makes non-spatial datasets available (e.g. species checklists). Each of these datasets are accompanied by their metadata.
+
+-   **Workflows for analyses and indicators:** A key focus of NBA 2025 was to ensure that the workflows for undertaking these analyses were published on repositories such as GitHub. This ensures that the NBA analyses are reproducible and mitigates any loss of knowledge or data should there be a change in staff undertaking the analyses.
+
+-   **Results of analyses:** The results of NBA analyses are usually graphs or maps, and these are made available for users, with a recommended citation.
+
+-   **Key messages:** The key messages distill some of the most important findings of the NBA in a way that is accessible to various audiences. Each key message includes a summary paragraph with a confidence statement. The messages draw on evidence from an NBA analysis (e.g. Red List status, ecological condition); describe why this is important (e.g. what are the consequences for people); and give some practical actions, responses and interventions that can be done. The key messages should be considered with their underlying data and analyses to inform sector-specific strategies and action plans, cross-sectoral planning and interventions, research strategies, scenario planning, and other action plans or response strategies that may be co-produced subsequent to the NBA.
+
+-   **Facts and statistics about the benefits of biodiversity:** One of the seven goals of the NBA is to highlight the benefits of biodiversity for people and the economy. There is a chapter on the 'importance of South Africa's biodiversity' and each key message contains some information on why the finding is important. Links to additional information about nature's contributions to people are also provided throughout the NBA website.
+
+-   **Priority actions, responses and interventions:** The NBA indicators reveal potential avenues through which pressures on biodiversity can be reduced and biodiversity conservation outcomes and sustainable resource management may be improved. Each key message in the NBA makes a ‘call to action’ that addresses the finding and identifies specific interventions that could be considered. Through this process, the NBA contributes to the body of knowledge that enables the multitude of stakeholders to co-develop, through participatory whole-of-society and whole-of-government approaches, the various policy responses and detailed action and implementation plans required for the benefit of both biodiversity and people.
+
+-   **Summaries:** Research via surveys, consultations and a systematic review after NBA 2018 revealed that few users want a full printed synthesis book and that most users want to search for exactly what they are interested in. The move to the online website with regular updates is accommodating user needs. However, the value of a shorter less-technical printed booklet is still recognised for several reasons – including: it is a tangible product for high-level officials to showcase at a launch function; it provides media personnel with a colourful summary that may entice them into exploring certain NBA results more deeply; it serves to entice new users of the NBA into exploring the website.
+
+-   **Popular products:** Several other popular products are created from NBA results, and may depend on the audience – e.g. press releases, films, pre-recorded PowerPoint presentations, fact sheets, social media posts, conference presentations, popular articles, etc. Some of these items form part of the NBA Communication Plan, which is aimed for immediately pre- and post- the NBA release event, and are produced by SANBI and its NBA partners. However, all users of the NBA are welcome and encouraged to create their own popular products - making use of the results in ways that are meaningful for their particular audience.
+
+## Direct links between the NBA and multilateral environmental agreements
+
+One of the most important uses of the NBA is objective 4 mentioned above - the results of the NBA are used directly in both national and international reporting.
+
+South Africa is a signatory to several Multilateral Environmental Agreements (MEAs). The NBA's national headline indicators are directly applicable for reporting on the country’s progress towards meeting the goals and targets of the following MEAs: the Convention on Biological Diversity's (CBD) [Kunming-Montreal Global Biodiversity Framework (KM-GBF)](#kunming-montreal-global-biodiversity-framework-km-gbf), the [Sustainable Development Goals (SDGs)](#sustainable-development-goals-sdgs), the [United Nations Convention to Combat Desertification (UNCCD)](#united-nations-convention-to-combat-desertification-unccd), and the [Ramsar Convention on Wetlands of International Importance ](#ramsar-convention-on-wetlands-of-international-importance). In other cases, the foundational datasets curated through the NBA process can be used to calculate various international indicators.
+
+Read more via the links to the sections below. 
+
+### Kunming-Montreal Global Biodiversity Framework (KM-GBF)  {#kunming-montreal-global-biodiversity-framework-km-gbf}
+
+In 2022, the Parties to the Convention on Biological Diversity (CBD) adopted the [Kunming-Montreal Global Biodiversity Framework (KM GBF).](https://www.cbd.int/gbf) The KM GBF is a global agreement aiming to halt and reverse biodiversity loss by 2030. It has 4 goals and 23 targets for 2030. 
+
+Key GBF indicators to which the NBA has links: 
+
+GBF Goals 
+
+-   A.1 Red List of Ecosystems
+-   A.3 Red List Index (RLI) 
+-   A.4 The proportion of populations within species with an effective population size \> 500 (Ne)
+-   B.1 Services provided by ecosystems 
+
+GBF Targets 
+
+-   1.1 Per cent of land and seas covered by biodiversity-inclusive spatial plans
+-   3.1 Coverage of protected areas and Other Effective Area-based Conservation Measures (OECMs)
+-   A.3 Red List Index (RLI)
+-   A.4 The proportion of populations within species with an effective population size \> 500 (Ne)
+-   6.1 Rate of invasive alien species establishment
+-   7.2 Pesticide environment concentration and/or Aggregated Total Applied Toxicity
+-   9.1 Benefits from the sustainable use of wild species
+-   B.1 Services provided by ecosystems 
+-   21.1 Indicator on biodiversity information for monitoring the Kunming-Montreal Global Biodiversity Framework 
+
+### Sustainable Development Goals (SDGs)  {#sustainable-development-goals-sdgs}
+
+The [SDGs](https://sdgs.un.org/goals) are a set of 17 interconnected goals adopted by the United Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that all people enjoy peace and prosperity. 
+
+Key SDG indicators to which the NBA has links: 
+
+-   6.6.1: Change in the extent of water-related ecosystems over time
+-   14.5.1: Coverage of protected areas in relation to marine areas
+-   15.1.1: Forest area as a proportion of total land area
+-   15.1.2: Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type
+-   15.4.1: Coverage by protected areas of important sites for mountain biodiversity
+-   15.5.1 Red List Index (RLI) 
+
+### United Nations Convention to Combat Desertification (UNCCD)  {#united-nations-convention-to-combat-desertification-unccd}
+
+The [UNCCD](https://www.unccd.int/) is a legally binding framework set up to address desertification and the effects of drought. In 2017, the Conference of the Parties (COP) to the United Nations Convention to Combat Desertification (UNCCD) adopted the 2018–2030 Strategic Framework. The framework contains five strategic objectives (SOs). 
+
+Key UNCCD indicators to which the NBA has links: 
+
+-   SO1-1: Trends in land cover
+-   SO4-2: Trends in abundance and distribution of selected species (Red List Index)
+-   SO4-3 Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type 
+
+### Ramsar Convention on Wetlands of International Importance  {#ramsar-convention-on-wetlands-of-international-importance}
+
+The [Ramsar](https://www.ramsar.org/) treaty was adopted in 1971 and serves as the framework for the conservation and effective management of welands. 
+
+Key Ramsar indicator to which the NBA has links: 
+
+-   8.6 Total and disaggregated area for the extent of wetlands (according to the Convention’s definition) for the year of available data 

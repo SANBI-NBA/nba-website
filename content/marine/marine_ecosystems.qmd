@@ -1,0 +1,208 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Types" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: marine_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+## Summary
+
+South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans with the contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current (Figure 1) interacting with the diverse geological setting and topography (Figure 2) to drive exceptional marine biodiversity. The marine realm around mainland South Africa extends from the dune base to a depth of about 5 500 m. The broad range of oceanographic, climatic and geological settings result in a high diversity of marine ecosystem types around mainland South Africa. Globally, South Africa is reported to have the third highest marine endemism with an estimated 33% of its marine fauna found only in South Africa. There is particularly high marine endemism in the warm temperate Agulhas region that extends from False Bay in Cape Town to the transition area near East London and extends offshore on the Agulhas Bank. The 2025 assessment uses the 163 marine ecosystem types as mapped in the 2023 Marine Ecosystem Map (Figure 3). These ecosystems are nested within 17 Ecosystem Functional Groups in alignment with the [IUCN global ecosystem typology](https://global-ecosystems.org/).
+
+::::: columns
+::: {.column width="50%"}
+<center>![South Africa’s wide range of oceanographic, bioclimatic, topographical and geological settings result in exceptional marine biodiversity. © Otto Whitehead](imgs/sa_oceanography.jpg){fig-align="center"} <!-- We should perhaps check with Otto, I somehow doubt that he created that image and he probably found or received it from someone, in which case its a bit weird attributing copyright to him?  --></center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+![Schematic of major oceanographic processes that occur off Southern Africa.](imgs/sa_currents.jpg){fig-align="center"}
+
+</center>
+:::
+:::::
+
+In the past five years, a substantial amount of data have been collated to improve marine ecosystem mapping and South Africa has shared lessons on our approach of iterative improvements in ecosystem classification and mapping ([\@sink2023](https://www.frontiersin.org/articles/10.3389/fevo.2023.1108118)). Recent advancements include a new 100-m^2^ resolution national bathymetry map (Manikam et al. 2023), a 600% increase in sediment records and interpolated sediment maps sourced from [dbSEABED](https://instaar.colorado.edu/~jenkinsc/dbseabed/), multiple new oceanographic layers and a cumulative marine biodiversity data set spanning \>1.8 million records, \>7 000 species and \> 100 000 unique localities from more than 125 years of marine science efforts. [(Kelp map published Dunga et al. 2024) Luther AI? Cite reference image report Figure x.]{.mark} Investment in greater research and data science capacity enable such advancements that will improve marine ecosystem classification and mapping, spatial biodiversity assessment and management advice.
+
+There is rapid escalation in the variety and volume of marine data that monitor biodiversity and environmental conditions and that can be used to characterise patterns, habitats and ecosystems in the ocean. In recognition of this escalation of data, SANBI is implementing data science tools, workflows and statistical approaches for delineating and describing marine ecosystem types[@dunga2024]. Like its predecessors, the 2023 marine ecosystem map relied heavily on thematic approaches and expert-informed decision-making. The updated approach is to develop a framework of data-ingesting and analytical workflows that are reproducible, can be improved as new data or better methods become available, and can be maintained through turnover in staff and guiding experts. The new way of working aims for effectively curated data structures, accessed, manipulated and analysed with scripted workflows, which are documented in online repositories. These repositories ease collaboration and version control and can be shared in publication of the results or products, enhancing transparency of the methods.
+
+## Marine Ecosystem Types
+
+<!-- ```{=html} -->
+
+<!-- <style type="text/css"> -->
+
+<!-- div.callout-note { -->
+
+<!--   border-left-color: #02268A !important; -->
+
+<!--   background: #02268A !important; -->
+
+<!-- } -->
+
+<!-- </style> -->
+
+<!-- ``` -->
+
+::: {.panel-tabset appearance="minimal" collapse="false"}
+<!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
+
+## Marine Ecosystem Map
+
+```{r}
+#| label: fig-eco_map
+#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined bentho-pelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246).
+# where does the following link come from? it requires me to sign up on some esri platform and is not a BGIS link?! https://aniday.maps.arcgis.com/apps/webappviewer/index.html?id=d123de04da384e52b53baad8e6ca749c. -->
+#| echo: false
+
+knitr::include_graphics("imgs/benthic_pelagic_map_panel.png")
+
+```
+
+## Benthopelagic and deepsea benthic key
+
+![Key for the benthopelagic and deepsea benthic Marine Ecosystem Map](imgs/nba_benthic_map_legend.png){fig-align="center"}
+
+## Pelagic key
+
+![Key for the pelagic Marine Ecosystem Map](imgs/nba_pelagic_map_legend.png){fig-align="center"}
+:::
+
+## Marine ecosystem types in South Africa
+
+```{r marine_ecosystem_types}
+#<span style="color:white">Marine ecosystem types in South Africa</span>
+#| label: tbl-eco_types
+#| echo: false
+#| classes: plain
+#| tbl-cap: Marine ecosystem types in South Africa and the IUCN functional group codes that they align with in the [Global Ecosystem Typology](https://global-ecosystems.org/).
+
+# library(here)
+library(gt)
+library(tidyverse)
+library(sf)
+
+# marine_ecotype <-  st_read(
+#     dir("data",
+#         "marine_ecosystems.gpkg",
+#         full.names = T,
+#         recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   st_drop_geometry()
+# 
+marine_ecotype <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^marine_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
+
+marine_ecotype %>%
+  gt() %>%
+  gt::tab_style(style = list(gt::cell_fill(color = "#02268A"),
+    gt::cell_borders(sides = c("top", "bottom"), color = "black",
+      weight = gt::px(2), style = "solid"), gt::cell_borders(sides = c("left",
+      "right"), color = "lightgray"), gt::cell_text(weight = "bold")),
+    locations = gt::cells_column_labels()) %>%
+  gt::tab_style(style = list(gt::cell_text(weight = "bold", color = "white", align = "left")),
+    locations = gt::cells_column_labels()) %>%
+  tab_options(container.height = px(600),
+              container.overflow.y = TRUE)
+
+## change this to be bathone, efg, efg code, and national eco types. 
+##link to iucn website
+##do key for ecosystem map
+##link to jock reports
+
+```
+
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+### GitLab repositories
+
+<!-- -   **Bathymetry map**: [gitlab.com/marine-map/geomorphology/attribute_layers](https://gitlab.com/marine-map/geomorphology/attribute_layers) -->
+
+<!-- -   **Oceanographic variables**: [gitlab.com/marine-map/geomorphology/attribute_layers](https://gitlab.com/marine-map/geomorphology/attribute_layers) -->
+
+-   **Sediment layers**: [gitlab.com/marine-map/sediment/sediment-map](https://gitlab.com/marine-map/sediment/sediment-map)
+
+-   **Species occurrence records**: [gitlab.com/marine-map/biodiversity/Occurrence](https://gitlab.com/marine-map/biodiversity/Occurrence)
+
+-   **RCP models**: [gitlab.com/marine-map/environmental_clustering](https://gitlab.com/marine-map/environmental_clustering)
+
+### Data availability
+
+-   **Marine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/Projects/Detail/2246)
+
+### Key Publications
+
+-   **Sink KJ, et al. 2023. Iterative mapping of marine ecosystems for spatial status assessment, prioritization, and decision support.** Front. Ecol. Evol. 11:1108118. doi: [10.3389/fevo.2023.1108118](https://doi.org/10.3389/fevo.2023.1108118)
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR)
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+::: {#refs}
+:::

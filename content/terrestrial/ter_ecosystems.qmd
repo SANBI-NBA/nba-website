@@ -1,0 +1,99 @@
+---
+title: "Ecosystem types"
+subtitle: "Terrestrial realm"
+
+title-block-banner: "#617016"
+title-block-banner-color: white
+
+author:
+  - name:
+      given: Anisha
+      family: Dayaram
+    orcid: 0000-0003-4160-812X
+    affiliations:
+      - ref: af1
+      - ref: af2
+  
+  - name:
+      given: Andrew L.
+      family: Skowno
+    orcid: 0000-0002-2726-7886
+    affiliations:
+      - ref: af1
+      - ref: af3
+      
+affiliations:
+  - id: af1
+    number: 1
+    name: South African National Biodiversity Institute
+
+  - id: af2
+    number: 2
+    name: University of the Witwatersrand
+    
+  - id: af3
+    number: 3
+    name: University of Cape Town
+
+
+date: last-modified
+bibliography: terrestrial.bib
+
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+
+appendix-cite-as: false
+google-scholar: true
+
+format:
+  html:
+    self-contained: true
+    citation: true
+    
+# --- Table numbering settings ---
+table-caption-location: top        # puts captions above tables
+table-caption-prefix: "Table"      # the prefix used for numbering
+table-caption-auto-number: true    # enable automatic numbering
+---
+
+The ecosystem units for terrestrial ecosystem assessments in the NBA 2025 are based on The vegetation of South Africa, Lesotho and Swaziland - version 2024[@mucina; @Dayaram2019]. This digital map, underpinned by numerous publications, delineates and describes 463 national vegetation types nested within nine terrestrial biomes[@rutherford2006]. The moist, winter-rainfall region in the southwest of the country is home to the unique Fynbos biome. Adjacent to this lies the Succulent Karoo biome, an arid winter-rainfall biome with the highest diversity of succulent plants in the world. The Nama-Karoo biome covers the arid, summer-rainfall, central interior of the country. The Savanna biome dominates the northern and eastern summer rainfall regions of South Africa, and is the largest biome in Africa. The Grassland biome occurs mostly on the cooler high lying central plateau and has high levels of endemism. The Albany Thicket biome occurs in the eastern and southern cape and contains a unique combination of plant forms with an Eocene origin and unique evolutionary history[@cowling2005]. The Forest biome is characterised by small patches distributed across the winter and summer rainfall areas of the country. The Indian Ocean Coastal Belt biome represents the southernmost extent of the moist tropical seaboard of East Africa. The Desert biome occupies a small portion of the extreme north west of the country, forming the southernmost extent of the Namib Desert.
+
+The vegetation map reflects the historical extent of the vegetation prior to major anthropogenic land conversion (ca. 1750). By estimating and mapping the extent and state of our natural ecosystems before large scale human modifications, there is a baseline against which the state and extent of ecosystems can be monitored. In South Africa we have a wealth of information that allows for the approximation of historical extent[@boshoff2016; @scott2017]. The arid and mountainous character of much of South Africa also means that many landscapes have not seen extensive habitat loss - making estimation of historical extent feasible.
+
+![Figure 1. National Vegetation Map 2024 with an inset of the Prince Edward Islands, SANBI 2024](imgs/terr-map-main-pei.png){fig-align="center"}
+
+## Data availability
+
+The terrestrial ecosystem map is part of a family of ecosystem maps for the country. Together these maps and classifications form the South African National Ecosystem Classification System or SA-NECS[@dayaram2021].
+
+i)  [Terrestrial Ecosystem Map (National Vegetation Map)](https://bgis.sanbi.org/vegmap) (the [2024 version](https://bgis.sanbi.org/Projects/Detail/2258) used in NBA 2025)
+ii) Marine Ecosystem Map
+iii) [Inland Aquatic Ecosystem Maps](https://bgis.sanbi.org/Projects/Detail/216)
+iv) [Estuarine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/1245)
+v)  [Integrated Coastal Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/213)
+
+![](imgs/sanec_cover.png){width="400"}
+
+## Recommended Citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+```
+
+![Aloidendron dichotomum (Vulnerable) in the Lower Gariep Broken Veld (NKb1) ecosystem type (Photo by Kagiso Mogajane CC BY-NC 4.0)](imgs/Aloefrontlandingpage.png){width="800"}

@@ -1,0 +1,261 @@
+---
+# ---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Intersection of Ecosystem Threat Status and Protection Level" # Compulsory
+subtitle: "Coastal zone"
+
+title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda R. #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu 
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Kerry J. #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: nmu
+  - name:
+      given: Andrew L. #Add author's first name here. Abbreviate the middle name
+      family: Skowno #Add author's surname here
+    orcid: 0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: uct
+  - name:
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: Van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: csir
+      - ref: nmu
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: uct # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: University of Cape Town
+  - id: csir # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Council for Scientific and Industrial Research
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: cst_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+```{r setting up data}
+#| message: false
+#| warning: false
+#| include: false
+
+source(here::here("scripts/cst_supporting-data.R"))
+```
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [`r risky_n`]{.inline-style-threatened}
+| of `r cet_n` ecosystem types
+| [Threatened and under-protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [`r unlucky_n`]{.inline-style-threatened}
+| of `r cet_n` ecosystem types
+| [Highly threatened and under-protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Coastal ecosystem types at highest risk of loss
+
+Intersecting the results from the ecosystem threat status and protection level assessments identifies the ecosystem types that are threatened (Critically Endangered, Endangered and Vulnerable) and under-protected (Not Protected, Poorly Protected and Moderately Protected). Within this group, the ecosystem types that are are highest risk of loss are those that are highly threatened and under-protected (Critically Endangered or Endangered, and Not Protected or Poorly Protected).
+
+There are `r risky_n` threatened coastal ecosystem types that are under-protected in South Africa (@tbl-riskies). This means that all but `r cet_thr_n-risky_n` of the `r cet_thr_n` threatened coastal ecosystem types are currently under-protected.
+
+```{r}
+#| label: tbl-riskies
+#| tbl-cap: "Cross-tabulation of coastal ecosystem threat status and ecosystem protection level, highlighting the threatened and under-protected types."
+
+# nba_tbl_comb(
+#   DF = coast_data,
+#   GROUP = ecotype,
+#   THR = ets,
+#   PRO = epl,
+#   FILE = "csv")
+
+# didn't work so did it manually
+
+library(kableExtra)
+
+threat_color_mapping <- c(
+  `Critically Endangered` = "#e9302c", 
+  Endangered = "#f97835", 
+  Vulnerable = "#fff02a"
+)
+
+var <- names(ets_x_epl)[1]  # assumes first column is the THR column
+count_columns <- setdiff(names(ets_x_epl), c(var, "Total"))
+
+tbl_final <- kable(ets_x_epl, col.names = c("", colnames(ets_x_epl)[-1]), format = "html", escape = FALSE) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover"),
+    full_width = FALSE,
+    position = "center",
+    font_size = 16
+  ) %>%
+  row_spec(0, background = "lightgrey", color = "black",
+           extra_css = "border-top: 2px solid black; border-bottom: 2px solid black; text-align: left; font-weight: normal;") %>%
+  column_spec(1:ncol(ets_x_epl), border_left = FALSE, border_right = FALSE, background = "white") %>%
+  row_spec(nrow(ets_x_epl), background = "lightgrey", color = "black",
+           extra_css = "border-top: 2px solid black; border-bottom: 2px solid black;", bold = TRUE, hline_after = TRUE)
+
+for (i in 1:(nrow(ets_x_epl) - 1)) {
+  thr_name <- ets_x_epl[[var]][i]
+  if (!is.na(thr_name) && thr_name %in% names(threat_color_mapping)) {
+    tbl_final <- tbl_final %>% row_spec(i, background = threat_color_mapping[thr_name])
+  }
+}
+
+tbl_final <- tbl_final %>%
+  column_spec(1, background = "white") %>%
+  column_spec(ncol(ets_x_epl), background = "white") %>%
+  row_spec(nrow(ets_x_epl), background = "lightgrey") %>%
+  row_spec(0, bold = TRUE, hline_after = TRUE)
+
+
+tbl_final
+
+```
+
+Of these `r risky_n` ecosystem types, `r unlucky_n` are at the greatest risk of being lost because they are highly threatened and under-protected. These include `r r_unlucky_n("T")` terrestrial, `r r_unlucky_n("E")` estuarine and `r r_unlucky_n("M")` marine ecosystem types (@tbl-riskies, @tbl-highrisklist) that urgently need improved conservation and management if their associated biodiversity and benefits are to be safeguarded into the future.
+
+The highly threatened and under-protected ecosystem types are found all along the national coast, particularly around the Orange River mouth, in the Western Cape, between St Francis and Gqeberha, and in southern and central KwaZulu-Natal (@fig-unlucky).
+
+![High-risk coastal ecosystem types that are highly threatened (CR = Critically Endangered or EN = Endangered) and highly under-protected (NP = Not Protected or PP = Poorly Protected).](imgs/cst_unluckies-map.png){#fig-unlucky}
+
+```{r}
+#| label: tbl-highrisklist
+#| tbl-cap: "List of highly threatened and under-protected ecosystem types in South Africa's coastal zone. CR = Critically Endangered, EN = Endangered, NP = Not Protected, PP = Poorly Protected. Type values in any of the search boxes to filter the list to rows of interest."
+library(here)
+library(tidyverse)
+
+unlucky <- read_csv(here("outputs/cst_unlucky-CR-EN-NP-PP.csv")) %>% 
+  select(c(Realm, `Ecosystem type`,`Threat status`, `Protection level`)) 
+
+# Output regular table
+#library(gt)
+# unlucky %>%
+#   gt() %>%
+# tab_style(
+#     style = cell_fill(color = "#EDCA8D"),
+#     locations = cells_column_labels(columns = everything())
+#   )%>%
+#   tab_options(container.height = px(550),
+#               container.overflow.y = TRUE)
+
+# Output filterable table
+library(reactable)
+reactable(
+  unlucky,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 550,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#EDCA8D", fontWeight = "bold")
+  ))
+
+```
+
+## Technical documentation
+
+### Github repositories {data-link="publication"}
+
+Coastal synthesis: <https://github.com/lrharris/nba2025_coast/>
+
+### Data availability
+
+The following datasets are available for download:
+
+1.  [Map of ecosystem threat status and protection level of South Africa's coastal ecosystem types](https://bgis.sanbi.org/Projects/Detail/226){target="blank"}
+
+### Related publications and supporting information
+
+1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+    *Technical details regarding the ecosystem threat status and protection level assessments of coastal ecosystem types from the NBA 2018*
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::
