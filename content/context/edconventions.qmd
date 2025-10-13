@@ -1,5 +1,5 @@
 ---
-title: "A note about editorial conventions and glossary"
+title: "A note on terminology and editorial conventions"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---

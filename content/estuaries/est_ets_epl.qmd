@@ -1,10 +1,10 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Add the title of your page here" # Compulsory
-subtitle: "Add subtitle here" # Optional: delete if you are not using a subtitle
+title: "Integration of Ecosystem Threat Status and Protection Level" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
@@ -12,11 +12,11 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
 author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
 affiliations:
@@ -24,15 +24,15 @@ affiliations:
 # Write out institutional names in full
 # See README for common examples - they can be copied and pasted here
 # Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
+  - id: sanbi1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
-    name: Name of Affiliation
+    name: South African National Biodiversity Institute
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
 # Remember to rename the default .bib file and change the name here
-bibliography: references.bib
+bibliography: marine_references.bib
 
 # This section sets up the page citation format. DO NOT EDIT
 citation:
@@ -45,205 +45,136 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
+## Threatened and under-protected ecosystem types
 
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
-
-::::: columns
-::: {.column width="50%"}
-<center>
-
-| [00%]{.inline-style-threatened}
-| of 220 ecosystem types
-| [Threatened]{.inline-style-indicator}
-
-| [00%]{.inline-style-well-protected}
-| of 220 ecosystem types
-| [Well Protected]{.inline-style-indicator}
-
-</center>
-:::
-
-::: {.column width="50%"}
-<center>
-
-| [00%]{.inline-style-not-protected}
-| of 220 ecosystem types
-| [Not protected]{.inline-style-indicator}
-
-| [00%]{.inline-style-threatened}
-| of 50 taxa assessed
-| [Threatened]{.inline-style-indicator}
-
-</center>
-:::
-:::::
-
-------------------------------------------------------------------------
-
-## Summary {#summary}
-
-**Use this section to summarise highlights or key messages of your page** Use bold text to highlight your main points. Do not write it as an abstract. Suggestion is to follow this section with a nice picture that relates to your page/section, before diving into details or supporting statistics
-
-**Remember to use links to relevant sections elsewhere on the page**. To add a link, click on Insert \> Link. In the pop-up box, change the link to selection from URL to Heading, and select the heading of the section you want to link to. The display text will default to the header name. If you want to use different text, you need to tag your header. Select the header, and click on the three dots to the right. In the pop-up box, give the header a tag using the ID text box. The tag must start with #, e.g. #summary. Now you can link to it using the following syntax: [display text](#section-name). (Check how it is configured in Source view).
-
-<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
-
-![Descriptive image captions. As in the 2018 synthesis report, photos get descriptive captions but are not numbered.](imgs/nba-banner.png){fig-align="center"}
-
-## Page body
-
-Organise this part of your webpage into sections and subsections as you see fit. Use it to give background, and present your results and discussions of results.
-
-Label main sections using Header 2. Header 1 is the style reserved for page titles at the top - do not use it anywhere else on the page. Use consecutive higher Header numbers to label subsections.
-
-### Subsection 1 (Header 3)
-
-#### Subsection 2 (Header 4)
-
-etc.
-
-## Inserting footnotes and references
-
-### Footnotes
-
-Use the built-in footnotes function to add notes to your text where necessary. Use notes sparingly - mainly to clarify terms.
-
-Some text with a footnote[^1].
-
-[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
-
-### References
-
-See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references. The references.bib file in the `quarto` folder contains some example references:
-
-Here is a citation of a journal article[@harris2019].
-
-Here is a citation of a book [@megadiversity1997].
-
-Here is a citation of an edited book[@Skowno2019].
-
-Here is a citation of a book chapter [@wilson2018].
-
-Here is a citation of a report [@vonmaltitz2020carbon].
-
-Here is a citation of a website [@nhm2019].
-
-Here is a citation of multiple references [@barger2018; @melaku2024; @vonmaltitz2020carbon]
-
-For a chapter or section in a book that is part of a series (e.g. Vegetation of South Africa) use the `@inproceedings` format[@vegsa2006]
-
-## Code blocks for graphs, maps and tables
-
-Use these code blocks to ensure that your graphs maps and tables are consistently numbered and labeled. Using these code blocks also lets you cross-reference tables and figures in the text.
-
-### Graphs and maps
-
-The **#\| label:** line in the code below makes it possible to reference the graph in the text. It must always start with **fig-** for Quarto to recognise it as a figure, and to apply correct styling and numbering to the figure caption. Each figure in your document must have a unique **fig**- name. To reference the figure in the text, use Insert \> Cross Reference, and look for the figure lable in the list.
-
-Add an appropriate descriptive caption next to **fig-cap.**
+There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected. This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include some several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
 
 ```{r}
-#| label: fig-ref
-#| fig-cap: "Add figure caption here." 
-
-# Add R code for generating figure here, e.g.
-nbaR::nba_plot(nbaR::NBA_example_thr_data, `OVERALL types`, 2:5, CHRT = "bar", NUM = TRUE, LAB = "Percentage of ecosystem types")
-
-```
-
-### Tables
-
-Follow the same system for creating tables. Do not use the visual editor to insert tables, as this will create a table in Quarto's default style, and you will have to type in the data manually, making the table less reproducible if your data changes. Note that here you must use the **tbl-** prefix to ensure that quarto recognises it as a table.
-
-```{r}
-#| label: tbl-ref
-#| tbl-cap: "Add table caption here." 
-#| classes: plain
-
-# Add R code for generating table here, e.g.
-nbaR::nba_tbl(nbaR::NBA_example_pro_data)
-
-```
-
-### Combine figures and related data
-
-It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
-
-:::: panel-tabset
-## Figure
-
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
-
-```{r}
-#| label: fig-tab
-#| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
-
-library(dplyr)
-library(tidyr)
-library(nbaR)
-
-dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
-
-ecosystem_summary <- dat %>% 
-                      group_by(biome, threat_status) %>% 
-                      summarise(count = n()) %>% 
-                      pivot_wider(
-                        id_cols = biome,
-                        names_from = threat_status,
-                        values_from = count
-                      ) %>% 
-                      mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
-
-nba_plot(ecosystem_summary,
-         biome,
-         2:5,
-         CHRT = "bar",
-         NUM = FALSE,
-         LAB = "Percentage of ecosystem types",
-         SAVE = "test-fig")
-
-```
-
-## Data
-
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
-::: {#table .table style="height:500px;overflow-y: auto"}
-```{r}
-#| label: tbl-tab
-#| tbl-cap: "Ecosystem threat status of terrestrial ecosystem types." 
-#| classes: plain
+#| label: tbl-ets_epl
+#| echo: false
+#| tbl-cap: Table summarising the distribution of protection levels across different threat status categories for marine ecosystem types.
 
 library(dplyr)
 library(nbaR)
-library(gt)
+# library(sf)
 
-tbl_dat <- dat %>% 
-            select(ecosystem, biome, threat_status) %>% 
-            arrange(biome, ecosystem)
 
-colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
+# mem <-  st_read(
+#     dir("data",
+#         "marine_ecosystems.gpkg",
+#         full.names = T,
+#         recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   st_drop_geometry() %>%  
+#   select(c(ecosystem_type, protection_level, threat_status))
 
-gt(tbl_dat) %>% nba_tbl_theme()
+
+thr_pro <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
+  # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
+  rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 
+  select(ecosystem_type, threat_status, protection_level) %>%
+  nbaR::nba_tbl_comb(GROUP = ecosystem_type,
+                     THR =threat_status,
+                     PRO = protection_level,
+                     FILE ="csv")
+
+thr_pro
 
 ```
-:::
 
-Download the data [here](http://insert_your_link_to_your_data).
-::::
+Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
 
-## Information boxes
+There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
 
-Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+```{r}
+#| label: fig-rle_map
+#| fig-cap: Threatened and under-protected benthopelagic and deepsea benthic ecosystem types.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
 
-::: {#box-1 .callout-note collapse="true"}
-## Box 1. Box title
+#devtools::install_github("SANBI-NBA/nbaR")
+library(tidyverse)
+library(nbaR)
+library(sf)
 
-<!-- it is important to use second-level headings in box titles -->
 
-Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
-:::
+# #marine linewidth
+# m_lwd = 0.001
+# 
+# 
+# dat <-  st_read(
+#     dir("data",
+#         "marine_results_for_integration.gpkg",
+#         full.names = T,
+#         recursive = T)[1],
+#   quiet = TRUE)
+# 
+# eez <- st_read(list.files(path="data", 
+#                              pattern="^eez_MEM2018.gpkg$", 
+#                              recursive = T, 
+#                              full.names = T)[1],
+#   quiet = TRUE)
+# 
+# marine_benth <- dat %>%
+#   group_by(type_name,zone, RLE_EPL) %>% #
+#   summarise(geometry = st_union(geom)) %>%
+#   st_cast(to = "MULTIPOLYGON") %>%
+#   filter(zone !="Pelagic ocean waters",
+#          RLE_EPL %in% c("CR_NP", "CR_PP", "EN_NP", "EN_PP"))%>% 
+#   st_transform(crs = 4326)
+#                              
+# 
+# 
+# RLEmap <- nbaR::nba_map(marine_benth,
+#                            "vector",
+#                            FILL = RLE_EPL, 
+#                         LEGEND = T) +
+#   geom_sf(data=eez, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
+#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
+#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
+#         # ,
+#         # legend.key.size = ggplot2::unit(1,"line"),
+#         #  legend.position = "inside",
+#         #  legend.justification = c("right", "bottom"),
+#         # legend.title = element_blank()
+#         ) +  #remove white space around the plot
+#   coord_sf(expand = FALSE)    # <-- prevents padding around data
+# # theme_void()
+# 
+# #ggsave(plot = RLEmap, filename = "imgs/ets_benth.jpg")
+# 
+# ## add the donut plot
+# 
+# rle_donut <- marine_benth %>% 
+#   st_drop_geometry() %>% 
+#   ungroup() %>% 
+#   count(RLE_EPL) %>% 
+#   tidyr::pivot_wider(names_from = RLE_EPL, values_from = n) %>% 
+#   mutate(RLE = "RLE") %>% 
+#   select(RLE, CR_NP,CR_PP, EN_NP, EN_PP) %>% 
+#   nbaR::nba_plot(GROUPS = RLE, 
+#                  COLS = 2:5, 
+#                  CHRT = "donut",
+#                  NUM = TRUE, 
+#                  LAB = "", 
+#                  GRP = F) +
+#   theme(legend.position = "none") 
+# 
+# final_plot <- RLEmap + 
+#   annotation_custom(ggplotGrob(rle_donut),
+#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
+# 
+# print(final_plot)
+
+
+
+knitr::include_graphics("imgs/rle_unluckies.png")
+
+
+```
 
 ## Technical documentation
 
@@ -255,17 +186,13 @@ Add the box content here. It can include text, pictures, tables and graphs. Add 
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
+### GitLab repositories
 
--   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+-   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
 
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+-   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
--   **Technical report**: Add link to technical report in PDF format or Quarto website
-
-**Key publications**
-
-Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+### Key Publications
 
 ## Recommended citation
 
@@ -286,8 +213,6 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
-
-## References
 
 ::: {#refs}
 :::

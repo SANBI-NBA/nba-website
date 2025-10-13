@@ -1,6 +1,5 @@
 ---
-title: "What is new in NBA 2025"
-subtitle: "Add subtitle here"
+title: "What's new in the NBA"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---

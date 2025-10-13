@@ -1,8 +1,6 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
-
-title: "About the NBA" # Compulsory
-subtitle: "The what, why, how and when of the NBA" # Optional: delete if you are not using a subtitle
+title: "About the National Biodiversity Assessment" # Compulsory
+subtitle: "NBA 2025" # 
 
 title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE

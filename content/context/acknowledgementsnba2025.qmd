@@ -1,6 +1,5 @@
 ---
-title: "Acknowledgements for NBA 2025"
-
+title: "Acknowledgements"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---

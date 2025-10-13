@@ -1,0 +1,18 @@
+"Ecosystem functional group","Well Protected","Moderately Protected","Poorly Protected","Not Protected"
+"Abyssal plains",0,0,3,2
+"Bays",0,1,3,1
+"Boulder/cobble shores",1,2,0,0
+"Canyons",3,3,1,2
+"Deepwater biogenic beds",0,1,0,0
+"Kelp forests",0,0,3,0
+"Mesophotic and sub-photic rocky shelves",6,12,8,5
+"Muddy shelves",0,6,4,4
+"Pelagic ocean waters",1,0,7,5
+"Photic coral reefs",3,0,0,0
+"Photic rocky reefs",1,5,4,0
+"Plateaus",0,2,0,0
+"Rocky shores",4,7,10,1
+"Sandy shelves",6,4,8,2
+"Sandy shores",4,4,3,1
+"Seamounts",3,0,0,1
+"Slopes",0,1,2,3

@@ -32,7 +32,7 @@ affiliations:
 date: last-modified
 
 # Remember to rename the default .bib file and change the name here
-bibliography: references.bib
+bibliography: est_references.bib
 
 # This section sets up the page citation format. DO NOT EDIT
 citation:

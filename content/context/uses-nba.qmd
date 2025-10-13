@@ -1,28 +1,7 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
-
-title: "Using the NBA" # Compulsory
-subtitle: "The various products of the NBA and how they are used" # Optional: delete if you are not using a subtitle
-
-title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-
-# This date determines the PUBLISHED date in the title block
-date: last-modified
-
-# Remember to rename the default .bib file and change the name here
-bibliography: refs-about-nba.bib
-
-# This section sets up the page citation format. DO NOT EDIT
-citation:
-  type: webpage
-  container-title: National Biodiversity Assessment 2025
-  publisher: South African National Biodiversity Institute
-  url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
-appendix-cite-as: false
-google-scholar: true
+title: "Products and uses of the NBA" # 
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
 ---
 
 ***South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision making across multiple sectors, and contribute to national development priorities.***

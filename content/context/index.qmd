@@ -1,25 +1,7 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
-
-title: "NBA 2025" # Compulsory
-
-
-title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-
-# Remember to rename the default .bib file and change the name here
-bibliography: refs-about-nba.bib
-
-# This section sets up the page citation format. DO NOT EDIT
-citation:
-  type: webpage
-  container-title: National Biodiversity Assessment 2025
-  publisher: South African National Biodiversity Institute
-  url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
-appendix-cite-as: false
-google-scholar: true
+title: "National Biodiversity Assessment 2025"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
 ---
 
 ------------------------------------------------------------------------

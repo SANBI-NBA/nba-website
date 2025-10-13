@@ -12,7 +12,6 @@ readRenviron(".Renviron")
 content_dir <- Sys.getenv("CONTENT_PATH")
 
 # Path to content directory in this repo
-# For some reason relative paths do not work with file_copy/dir_copy
 website_dir <- "content" # This needs to be set relative to the project path, not this script
 
 # Find the quarto folder inside each repo in the content directory
