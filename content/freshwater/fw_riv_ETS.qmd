@@ -95,15 +95,15 @@ google-scholar: true
 
 Of South Africa’s 222 river ecosystem types, 43% are Critically Endangered, 19% are Endangered, 2% are Vulnerable, and 36% are of Least Concern. Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
 
-![](images/clipboard-1952197093.png)
+![](imgs/clipboard-1952197093.png)
 
 Figure 1. Ecosystem threat status for river ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.
 
 <!-- jock plse help with figure 1 and inset donut graph by number of types. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\riv_results_vector.gpkg" Also see Andrew's repo "https://github.com/askowno/RLE_riv" and Natasha's code for this info in the integrated assessment. -->
 
-![](images/clipboard-1015321969.png)
+![](imgs/clipboard-1015321969.png)
 
-![](images/clipboard-100401253.png)
+![](imgs/clipboard-100401253.png)
 
 Figure 2. River ecosystem threat status within each geomorphological zone (i.e. slope category). (a) The percentage of ecosystem types per threat category (labelled with actual value) with the total for all rivers at the bottom (n = 222); (b) the percentage of river length (km) within each threat category with the total length for all rivers (length = 147 180 km) at the bottom – providing an indication of the relative extent of each category. \[a lot of tables, think about how to present them\]
 
@@ -115,7 +115,7 @@ Some text with a footnote[^1].
 
 <!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
 
-![](images/clipboard-2986255016.png)
+![](imgs/clipboard-2986255016.png)
 
 ::: {#box-1 .callout-note collapse="true"}
 ## **Box 1.** Free-flowing rivers/rivers in SWSAs/

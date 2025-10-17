@@ -170,83 +170,83 @@ Photo credits: © Linda Harris (CC-BY-NC-ND) <!--# need to update links to the I
 
 ::::::::::::::::::::::: grid
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Donax-serra_Linda-Harris.png" alt="Donax serra EN" class="img-fluid"/></a> <br>*Donax serra* EN
+<a href="https://www.iucnredlist.org/species/254661607/254662297/" target="_blank">![Donax serra EN](imgs/cst-s-Donax-serra_Linda-Harris.png){.img-fluid alt="Donax serra EN"}</a> <br>*Donax serra* EN
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-capensis_Linda-Harris.png" alt="Tylos capensis EN" class="img-fluid"/></a> <br>*Tylos capensis* EN
+<a href="https://www.iucnredlist.org/species/254657167/254662282/" target="_blank">![Tylos capensis EN](imgs/cst-s-Tylos-capensis_Linda-Harris.png){.img-fluid alt="Tylos capensis EN"}</a> <br>*Tylos capensis* EN
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-granulatus_Linda-Harris.png" alt="Tylos granulatus EN" class="img-fluid"/></a> <br>*Tylos granulatus* EN
+<a href="https://www.iucnredlist.org/species/254657182/254662322/" target="_blank">![Tylos granulatus EN](imgs/cst-s-Tylos-granulatus_Linda-Harris.png){.img-fluid alt="Tylos granulatus EN"}</a> <br>*Tylos granulatus* EN
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png" alt="Acanthoscelis ruficornis EN" class="img-fluid"/></a> <br>*Acanthoscelis ruficornis* EN
+<a href="https://www.iucnredlist.org/species/254559963/254662352/" target="_blank">![Acanthoscelis ruficornis EN](imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png){.img-fluid alt="Acanthoscelis ruficornis EN"}</a> <br>*Acanthoscelis ruficornis* EN
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Africorchestia-quadrispinosa_Linda-Harris.png" alt="Africorchestia quadrispinosa NT" class="img-fluid"/></a> <br>*Africorchestia quadrispinosa* NT
+<a href="https://www.iucnredlist.org/species/254562178/254662312/" target="_blank"><img src="imgs/cst-s-Africorchestia-quadrispinosa_Linda-Harris.png" alt="Africorchestia quadrispinosa NT" class="img-fluid"/></a> <br>*Africorchestia quadrispinosa* NT
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/">![Capeorchestia capensis NT](imgs/cst-s-Capeorchestia-capensis_Linda-Harris.png){.img-fluid alt="Capeorchestia capensis NT" target="_blank"}</a> <br>*Capeorchestia capensis* NT
+<a href="https://www.iucnredlist.org/species/254562225/254662367/" target="_blank">![Capeorchestia capensis NT](imgs/cst-s-Capeorchestia-capensis_Linda-Harris.png){.img-fluid alt="Capeorchestia capensis NT" target="_blank"}</a> <br>*Capeorchestia capensis* NT
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Pachyphaleria-capensis_Linda-Harris.png" alt="Pachyphaleria capensis NT" class="img-fluid"/></a> <br>*Pachyphaleria capensis* NT
+<a href="https://www.iucnredlist.org/species/254561505/254662302/" target="_blank"><img src="imgs/cst-s-Pachyphaleria-capensis_Linda-Harris.png" alt="Pachyphaleria capensis NT" class="img-fluid"/></a> <br>*Pachyphaleria capensis* NT
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Excirolana-latipes_Linda-Harris.png" alt="Excirolana latipes LC" class="img-fluid"/></a> <br>*Excirolana latipes* LC
+<a href="https://www.iucnredlist.org/species/254656958/254662327/" target="_blank"><img src="imgs/cst-s-Excirolana-latipes_Linda-Harris.png" alt="Excirolana latipes LC" class="img-fluid"/></a> <br>*Excirolana latipes* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Excirolana-natalensis_Linda-Harris.png" alt="Excirolana natalensis LC" class="img-fluid"/></a> <br>*Excirolana natalensis* LC
+<a href="https://www.iucnredlist.org/species/254657119/254662347/" target="_blank"><img src="imgs/cst-s-Excirolana-natalensis_Linda-Harris.png" alt="Excirolana natalensis LC" class="img-fluid"/></a> <br>*Excirolana natalensis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Griffithsius-latipes_Linda-Harris.png" alt="Griffithsius latipes LC" class="img-fluid"/></a> <br>*Griffithsius latipes* LC
+<a href="https://www.iucnredlist.org/species/254562118/254662292/" target="_blank"><img src="imgs/cst-s-Griffithsius-latipes_Linda-Harris.png" alt="Griffithsius latipes LC" class="img-fluid"/></a> <br>*Griffithsius latipes* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Latona-sordida_Linda-Harris.png" alt="Latona sordida LC" class="img-fluid"/></a> <br>*Latona sordida* LC
+<a href="https://www.iucnredlist.org/species/254661633/254662307/" target="_blank"><img src="imgs/cst-s-Latona-sordida_Linda-Harris.png" alt="Latona sordida LC" class="img-fluid"/></a> <br>*Latona sordida* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Latona-madagascariensis_Linda-Harris.png" alt="Latona madagascariensis LC" class="img-fluid"/></a> <br>*Latona madagascariensis* LC
+<a href="https://www.iucnredlist.org/species/254661624/254662362/" target="_blank"><img src="imgs/cst-s-Latona-madagascariensis_Linda-Harris.png" alt="Latona madagascariensis LC" class="img-fluid"/></a> <br>*Latona madagascariensis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-digitalis_Linda-Harris.png" alt="Bullia digitalis LC" class="img-fluid"/></a> <br>*Bullia digitalis* LC
+<a href="https://www.iucnredlist.org/species/254661651/254662372/" target="_blank"><img src="imgs/cst-s-Bullia-digitalis_Linda-Harris.png" alt="Bullia digitalis LC" class="img-fluid"/></a> <br>*Bullia digitalis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-rhodostoma_Linda-Harris.png" alt="Bullia rhodostoma LC" class="img-fluid"/></a> <br>*Bullia rhodostoma* LC
+<a href="https://www.iucnredlist.org/species/254662276/254662317/" target="_blank"><img src="imgs/cst-s-Bullia-rhodostoma_Linda-Harris.png" alt="Bullia rhodostoma LC" class="img-fluid"/></a> <br>*Bullia rhodostoma* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-natalensis_Linda-Harris.png" alt="Bullia natalensis LC" class="img-fluid"/></a> <br>*Bullia natalensis* LC
+<a href="https://www.iucnredlist.org/species/254661670/254662287/" target="_blank"><img src="imgs/cst-s-Bullia-natalensis_Linda-Harris.png" alt="Bullia natalensis LC" class="img-fluid"/></a> <br>*Bullia natalensis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Bullia-mozambicensis_Linda-Harris.png" alt="Bullia mozambicensis LC" class="img-fluid"/></a> <br>*Bullia mozambicensis* LC
+<a href="https://www.iucnredlist.org/species/254661663/254662342/" target="_blank"><img src="imgs/cst-s-Bullia-mozambicensis_Linda-Harris.png" alt="Bullia mozambicensis LC" class="img-fluid"/></a> <br>*Bullia mozambicensis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Emerita-austroafricana_Linda-Harris.png" alt="Emerita austroafricana LC" class="img-fluid"/></a> <br>*Emerita austroafricana* LC
+<a href="https://www.iucnredlist.org/species/254655894/254662357/" target="_blank"><img src="imgs/cst-s-Emerita-austroafricana_Linda-Harris.png" alt="Emerita austroafricana LC" class="img-fluid"/></a> <br>*Emerita austroafricana* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-ceratophthalmus_Linda-Harris.png" alt="Ocypode ceratophthalmus LC" class="img-fluid"/></a> <br>*Ocypode ceratophthalmus* LC
+<a href="https://www.iucnredlist.org/species/254656446/254662332/" target="_blank"><img src="imgs/cst-s-Ocypode-ceratophthalmus_Linda-Harris.png" alt="Ocypode ceratophthalmus LC" class="img-fluid"/></a> <br>*Ocypode ceratophthalmus* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-madagascariensis_Linda-Harris.png" alt="Ocypode madagascariensis LC" class="img-fluid"/></a> <br>*Ocypode madagascariensis* LC
+<a href="https://www.iucnredlist.org/species/254656659/254662377/" target="_blank"><img src="imgs/cst-s-Ocypode-madagascariensis_Linda-Harris.png" alt="Ocypode madagascariensis LC" class="img-fluid"/></a> <br>*Ocypode madagascariensis* LC
 :::
 
 ::: {.g-col-lg-4 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Ocypode-ryderi_Linda-Harris.png" alt="Ocypode ryderi LC" class="img-fluid"/></a> <br>*Ocypode ryderi* LC
+<a href="https://www.iucnredlist.org/species/254656669/254662337/" target="_blank"><img src="imgs/cst-s-Ocypode-ryderi_Linda-Harris.png" alt="Ocypode ryderi LC" class="img-fluid"/></a> <br>*Ocypode ryderi* LC
 :::
 :::::::::::::::::::::::
 ::::::::::::::::::::::::

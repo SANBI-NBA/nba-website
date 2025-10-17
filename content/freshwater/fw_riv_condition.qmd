@@ -70,7 +70,7 @@ Only a third of the total length of river ecosystems in South Africa are in a na
 
 [^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
 
-![](images/clipboard-492964934.png)
+![](imgs/clipboard-492964934.png)
 
 **links to relevant sections elsewhere on the page**. To add a link, click on Insert \> Link. In the pop-up box, change the link to selection from URL to Heading, and select the heading of the section you want to link to. The display text will default to the header name. If you want to use different text, you need to tag your header. Select the header, and click on the three dots to the right. In the pop-up box, give the header a tag using the ID text box. The tag must start with #, e.g. #summary. Now you can link to it using the following syntax: [display text](#section-name). (Check how it is configured in Source view).
 

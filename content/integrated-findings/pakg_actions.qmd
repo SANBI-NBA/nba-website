@@ -7,7 +7,7 @@ title-block-banner-color: white
 
 The NBA reports on the state of South Africa’s biodiversity, accounting for the various pressures affecting ecosystems, species and genetic diversity. This approach reveals potential avenues through which pressures on biodiversity can be reduced and biodiversity conservation outcomes and sustainable resource management may be improved. Each key message in the NBA makes a ‘call to action’ that addresses the particular finding and identifies specific interventions that could be considered. Through this process, the NBA contributes to the body of knowledge that enables the multitude of stakeholders to co-develop, through participatory whole-of-society and whole-of-government approaches, the various policy responses and detailed action and implementation plans required for the benefit of both biodiversity and people.
 
-![Figure 1. South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level.](imgs/Figure%2020%20mockup.png)
+![South Africa’s spatial biodiversity priority areas, produced using systematic conservation planning approaches, at a national, provincial and municipal level.](imgs/cba-map20.png){#fig-cba-map fig-align="center" width="600"}
 
 ## Seven broad themes for action
 

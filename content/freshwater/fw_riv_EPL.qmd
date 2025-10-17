@@ -245,7 +245,7 @@ Approximately #% of the country’s river length occurs in protected areas. Of t
 #   annotation_custom(ggplotGrob(epl_donut),
 #                     xmin=30, ymin=-35.5, xmax=36.5, ymax=-28.5)
 
-knitr::include_graphics("imgs/riv_epl_map.png")
+knitr::include_graphics("imgs/{F2F1974B-14FC-410A-BAFE-1C327C20C621}.png") # ("imgs/riv_epl_map.png")
 
 ```
 
@@ -261,61 +261,94 @@ The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally 
 #| label: tbl-epl
 #| tbl-cap: "Ecosystem protection level of river ecosystem types."
 
-#library(gt)
+# library(here)
+library(stringr)
 library(reactable)
-library(tidyverse)
+library(dplyr)
 
+# # load data
+# dat <-  st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "riv_results_vector.gpkg",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   ## rename some variables for use below
+#   rename(protection_level = EPL,
+#          threat_status = RLE) %>% 
+#   ## rename the abbreviated levels
+#   # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# 
+# # have a look at the data
+# # dim(dat)
+# # names(dat)
+# 
+# ## borrowing from Tash's booklet maps code:
+# 
+# # prep rivers data
+# rivers <- dat %>%
+#   st_drop_geometry() %>% 
+#   select(RIVTYPE, protection_level) %>% # 
+#   group_by(RIVTYPE, protection_level) %>% # grouping by river type, which is not needed for the map but is for the donut plot
+#   mutate(protection_level = factor(protection_level, levels = c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected"))) %>% # specify the sequence of protection categories so that they appear in that sequence in the legend
+#   distinct() %>% 
+#   # count(protection_level) %>% 
+#   # tidyr::pivot_wider(names_from = protection_level, values_from = n) %>% 
+#   # mutate(EPL = "EPL") %>% 
+#   # select(EPL, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) 
+#   rename('River type' = RIVTYPE,
+#          'Protection level' = protection_level) # %>%
+# 
+# # create table object
+# reactable(
+#   rivers,
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#4097C2", color = "white",  fontWeight = "bold")
+#   ))
+
+## temporarily putting in wetland table:
 # load data
-dat <-  st_read(
-  dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
-      "riv_results_vector.gpkg",
-      full.names = T,
-      recursive = T)[1],
-  quiet = TRUE) %>% 
-  ## rename some variables for use below
-  rename(protection_level = EPL,
-         threat_status = RLE) %>% 
-  ## rename the abbreviated levels
-  # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, EPL24) %>% # , RLE24, extent, RLE_EPL24) #
+  mutate(EPL24 = str_replace_all(EPL24, "WP","Well Protected"),
+         EPL24 = str_replace_all(EPL24, "MP","Moderately Protected"),
+         EPL24 = str_replace_all(EPL24, "PP","Poorly Protected"),
+         EPL24 = str_replace_all(EPL24, "NP","Not Protected" )) %>% 
+  rename("Wetland type" = type,
+         Zone = zone,
+         "Ecosystem Protection Level" = EPL24)
 
-# have a look at the data
-# dim(dat)
-# names(dat)
-
-## borrowing from Tash's booklet maps code:
-
-# prep rivers data
-rivers <- dat %>%
-  st_drop_geometry() %>% 
-  select(RIVTYPE, protection_level) %>% # 
-  group_by(RIVTYPE, protection_level) %>% # grouping by river type, which is not needed for the map but is for the donut plot
-  mutate(protection_level = factor(protection_level, levels = c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected"))) %>% # specify the sequence of protection categories so that they appear in that sequence in the legend
-  distinct() %>% 
-  # count(protection_level) %>% 
-  # tidyr::pivot_wider(names_from = protection_level, values_from = n) %>% 
-  # mutate(EPL = "EPL") %>% 
-  # select(EPL, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) 
-  rename('River type' = RIVTYPE,
-         'Protection level' = protection_level) # %>%
-
-# create table object
+# create the table
 reactable(
-  rivers,
+  epl,
   filterable = TRUE,
   searchable = FALSE,
   pagination = FALSE,
   height = 600,
   defaultColDef = colDef(
-    headerStyle = list(background = "#4097C2", color = "white",  fontWeight = "bold")
-  ))
+    headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
+
+
 
 ```
 
@@ -335,53 +368,178 @@ In terms of river geomorphological zone, only 16% of the river ecosystem types w
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
 ```{r}
-#| label: river_epl_fig-tab
+#| label: fig-river_epl_bargraph
 #| fig-cap: "Figure 2. River ecosystem protection level within each geomorphological zone (i.e. slope category); (a) the percentage of ecosystem types per category (labelled with the number per type) with the total for all rivers at the bottom; (b) the percentage of river length (km) within each category with the total length for all rivers at the bottom – providing an indication of the relative extent of each category." 
 
+# library(tidyverse)
+# # library(tidyr)
+# library(nbaR)
+# library(sf)
+# 
+# # load data
+# dat <-  st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "riv_results_vector.gpkg",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   ## rename some variables for use below
+#   rename(protection_level = EPL) %>% 
+#   select(RIVTYPE, zone, protection_level, leng) %>%
+#   group_by(RIVTYPE, zone, protection_level) %>% # group by and sum the lengths and counts by river type
+#   summarise(# count = n(),
+#             leng = sum(leng)) %>% 
+#   ## rename the abbreviated levels
+#   # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# 
+# # have a look at the data
+# # dim(dat)
+# # names(dat)
+# 
+# # prep the data
+# ecosystem_summary <- dat %>%
+#      st_drop_geometry() %>%
+#       group_by(zone, protection_level) %>%
+#       summarise(count = n(),
+#                 leng = sum(leng))
+# 
+# count <- ecosystem_summary %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = protection_level,
+#     values_from = count) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # count
+# 
+# ## add a totals row:
+# count <- count %>%
+#   bind_rows(
+#     count %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total count") %>%
+#       select(zone, everything())
+#   )
+# # count
+# 
+# # extent (length)
+# # checkNancy: is the length in m? (and if so, should be converted to km?)
+# extent <- ecosystem_summary %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = protection_level,
+#     values_from = leng) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # extent
+# 
+# # add a totals row:
+# extent <- extent %>%
+#   bind_rows(
+#     extent %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total extent") %>%
+#       select(zone, everything())
+#   )
+# # extent
+# 
+# #
+# # ets <- count %>% 
+# #   mutate(metric = "count") %>% 
+# #   bind_rows(extent %>% mutate(metric = "extent"))
+# 
+# epl_combined <- count %>%
+#   mutate(metric = "count") %>%
+#   bind_rows(extent %>%
+#               mutate(metric = "extent")) %>% # calling it extent though it is river length; checkNancy; otherwise this and the next 'extent' should be replaced with 'length'
+#   mutate(zone = factor(zone, levels = c("Mountain stream", "Upper foothill", "Lower foothill", "Lowland river", "Total count", "Total extent"))) %>% 
+#   arrange(desc(zone))
+# # epl_combined
+# 
+# #Combine RLE plot
+# epl_combined_plot <- nba_plot_comb(epl_combined,
+#                                    zone,
+#                                    METRIC_COL = metric,
+#                                    METRICS = c("count", "extent"),
+#                                    2:5,
+#                                    CHRT = "bar",
+#                                    NUM = FALSE,
+#                                    LAB = "Percentage of ecosystem",
+#                                    SAVE = NULL) 
+# 
+# epl_combined_plot
+# 
+# ## previously from summarised table:
+# # 
+# # data_file_path <- Sys.getenv("NBA_DATA")
+# # dta <- read.csv(file = list.files(path = data_file_path,
+# #                            pattern = "^riv_epl24_sum_count.csv$",
+# #                            recursive = TRUE,
+# #                            full.names = TRUE),
+# #                  stringsAsFactors = F)
+# # 
+# # 
+# # ecosystem_summary <- dta %>% 
+# #   as_tibble() %>% 
+# #   select(-X, -EPLI) %>% 
+# #   ## because the protection level categories are as acronyms at the moment and the function only recognises them as written out in full, we need to rename them:
+# #   rename('Well Protected' = WP,
+# #          'Moderately Protected' = MP,
+# #          'Poorly Protected' = PP,
+# #          'Not Protected' = NP)  
+# #   
+# # 
+# # nba_plot(ecosystem_summary,
+# #          zone,
+# #          2:5,
+# #          CHRT = "bar",
+# #          NUM = TRUE, # change to FALSE if you don't want the numbers plotted on the bars
+# #          LAB = "Percentage of ecosystem types",
+# #          SAVE = NULL)
+# 
+
+# temporarily putting in wetland graph here:
+
 library(tidyverse)
-# library(tidyr)
+library(stringr)
 library(nbaR)
-library(sf)
 
-# load data
-dat <-  st_read(
-  dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
-      "riv_results_vector.gpkg",
-      full.names = T,
-      recursive = T)[1],
-  quiet = TRUE) %>% 
-  ## rename some variables for use below
-  rename(protection_level = EPL) %>% 
-  select(RIVTYPE, zone, protection_level, leng) %>%
-  group_by(RIVTYPE, zone, protection_level) %>% # group by and sum the lengths and counts by river type
-  summarise(# count = n(),
-            leng = sum(leng)) %>% 
-  ## rename the abbreviated levels
-  # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
-  # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
-  mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# load and prep the data
+epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, EPL24, extent) %>% # , RLE24, extent, RLE_EPL24) #
+  mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
+  group_by(zone, EPL24) %>%
+  summarise(count = n(),
+            extent = sum(extent))
+  # rename("Wetland type" = type,
+  #        Zone = zone,
+  #        "Ecosystem Protection Level" = EPL24)
 
-# have a look at the data
-# dim(dat)
-# names(dat)
-
-# prep the data
-ecosystem_summary <- dat %>%
-     st_drop_geometry() %>%
-      group_by(zone, protection_level) %>%
-      summarise(count = n(),
-                leng = sum(leng))
-
-count <- ecosystem_summary %>%
+# count table
+count <- epl %>%
   pivot_wider(
     id_cols = zone,
-    names_from = protection_level,
+    names_from = EPL24,
     values_from = count) %>%
   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
   ungroup() %>% 
@@ -401,13 +559,12 @@ count <- count %>%
   )
 # count
 
-# extent (length)
-# checkNancy: is the length in m? (and if so, should be converted to km?)
-extent <- ecosystem_summary %>%
+# extent table
+extent <- epl %>%
   pivot_wider(
     id_cols = zone,
-    names_from = protection_level,
-    values_from = leng) %>%
+    names_from = EPL24,
+    values_from = extent) %>%
   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
   ungroup() %>% 
   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
@@ -426,22 +583,22 @@ extent <- extent %>%
   )
 # extent
 
-#
-# ets <- count %>% 
-#   mutate(metric = "count") %>% 
-#   bind_rows(extent %>% mutate(metric = "extent"))
-
+# combine count and extent in a single table
 epl_combined <- count %>%
   mutate(metric = "count") %>%
   bind_rows(extent %>%
-              mutate(metric = "extent")) %>% # calling it extent though it is river length; checkNancy; otherwise this and the next 'extent' should be replaced with 'length'
-  mutate(zone = factor(zone, levels = c("Mountain stream", "Upper foothill", "Lower foothill", "Lowland river", "Total count", "Total extent"))) %>% 
-  arrange(desc(zone))
+              mutate(metric = "extent")) %>%
+  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
 # epl_combined
+    
+## save the data to downloadable csv for the link, before arranging by zone for the plot
+write.csv(epl_combined, file = "outputs/wetlands_EPL.csv", row.names = FALSE)
 
-#Combine RLE plot
-epl_combined_plot <- nba_plot_comb(epl_combined,
-                                   zone,
+# create EPL plot
+epl_combined_plot <- epl_combined %>% 
+    arrange(desc(zone)) %>% 
+    nba_plot_comb(
+      zone,
                                    METRIC_COL = metric,
                                    METRICS = c("count", "extent"),
                                    2:5,
@@ -452,34 +609,6 @@ epl_combined_plot <- nba_plot_comb(epl_combined,
 
 epl_combined_plot
 
-## previously from summarised table:
-# 
-# data_file_path <- Sys.getenv("NBA_DATA")
-# dta <- read.csv(file = list.files(path = data_file_path,
-#                            pattern = "^riv_epl24_sum_count.csv$",
-#                            recursive = TRUE,
-#                            full.names = TRUE),
-#                  stringsAsFactors = F)
-# 
-# 
-# ecosystem_summary <- dta %>% 
-#   as_tibble() %>% 
-#   select(-X, -EPLI) %>% 
-#   ## because the protection level categories are as acronyms at the moment and the function only recognises them as written out in full, we need to rename them:
-#   rename('Well Protected' = WP,
-#          'Moderately Protected' = MP,
-#          'Poorly Protected' = PP,
-#          'Not Protected' = NP)  
-#   
-# 
-# nba_plot(ecosystem_summary,
-#          zone,
-#          2:5,
-#          CHRT = "bar",
-#          NUM = TRUE, # change to FALSE if you don't want the numbers plotted on the bars
-#          LAB = "Percentage of ecosystem types",
-#          SAVE = NULL)
-
 ```
 
 ## Data
@@ -488,7 +617,7 @@ epl_combined_plot
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: river_epl_tbl-tab
+#| label:  tbl-river_epl
 #| tbl-cap: "Table of protection level data. The extent metric represents the length (m) of river types." 
 #| classes: plain
 
@@ -527,7 +656,7 @@ gt(tbl_dat) %>% nba_tbl_theme()
 ```
 :::
 
-Download the data [here](http://insert_your_link_to_your_data).
+Download the data [here](outputs/wetlands_EPL.csv).
 ::::
 
 <!-- ![](images/clipboard-2393070426.png) -->

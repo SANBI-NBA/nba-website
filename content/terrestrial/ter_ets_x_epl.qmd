@@ -5,8 +5,6 @@ subtitle: "Terrestrial realm"
 title-block-banner: "#617016" 
 title-block-banner-color: white 
 
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
   - name:
       given: Andrew L. 
@@ -22,8 +20,7 @@ author:
     orcid: 0000-0002-5083-7461 
     affiliations:
       - ref: af1
-      - ref: af3 
-      
+
   - name:
       given: Sediqa. 
       family: Khatieb 
@@ -38,11 +35,8 @@ affiliations:
 
   - id: af2 
     number: 2    
-    name: Department of Biological Sciences, University of Cape Town, Cape Town, South Africa    
+    name: University of Cape Town    
             
-  - id: af3 
-    number: 3    
-    name: Centre for Statistics in Ecology, Environment and Conservation, University of Cape Town, Cape Town, South Africa    
     
 date: last-modified
 bibliography: terrestrial.bib
@@ -52,7 +46,7 @@ citation:
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
+
 appendix-cite-as: false
 google-scholar: true
 
@@ -63,3 +57,89 @@ format:
       echo: false
 ---
 
+------------------------------------------------------------------------
+
+*The intersection of ecosystem threat status and protection levels reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
+
+![Black Harrier (Critically Endangered); an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome ©Odette Curtis-Scott](imgs/blackharrier_crop_ocs.png){fig-align="center"}
+
+::::: columns
+::: {.column width="50%"}
+| [23%]{.inline-style-threatened}
+| of 463 ecosystem types
+| [Highly threatened and under protected]{.inline-style-indicator}
+:::
+
+::: {.column width="50%"}
+| [57%]{.inline-style-well-protected}
+| of 30 renosterveld ecosystem types
+| 
+:::
+:::::
+
+------------------------------------------------------------------------
+
+Close to a quarter (105/463) of terrestrial ecosystems are highly threatened and under protected (Critically Endangered or Endangered and Not Protected or Poorly Protected). Three of the six ecosystem types making up the Indian Ocean Coastal Belt Biome, and 40% of Fynbos ecosystem types (50/126) fall into this category. Within the Fynbos Biome renosterveld ecosystems are particularly highly threatened and under protected (17/30 types), highlighting a general trend globally where fragmented lowland regions which have seen extensive habitat loss from cropland development and human settlement are rarely included in protected areas networks. Recent biodiversity stewardship efforts in the Overberg region have see some of these ecosystems and their iconic and threatened species receive formal protection (read more [here](https://overbergrenosterveld.org.za/latest-renosterveld-news-37/)).
+
+![Highly threatened and under protected ecosystem types.](imgs/unluckies_map.png){#fig-unluckies_map fig-cap="Map of threatened and under-protected ecosystem types." width="600"}
+
+```{r libraries}
+
+library(dplyr)
+library(gt)
+
+```
+
+```{r}
+#| label: tbl-unluckies_table
+#| tbl-cap: Terrestrial ecosystem threat status and ecosystem protection level
+#| classes: plain
+
+unluckies_summary <- read.csv(here::here("quarto/data/ter_results_type_rle_epl.csv")) %>%
+                     rename(MapCode = T_MAPCODE) %>%
+
+                     mutate(RLE = factor(RLE,levels = c("CR", "EN", "VU", "LC"),
+                                   labels = c("Critically Endangered", "Endangered", "Vulnerable", "Least Concern")),
+                        
+                             EPL = factor(EPL, levels = c("WP", "MP", "PP", "NP"),  
+                                          labels = c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected"))) %>%
+
+                     arrange(RLE) # sort rows by RLE factor 
+
+#---------------------------------
+# summary table for the unluckies
+#---------------------------------
+thr_pro_tbl <- unluckies_summary |>
+               nbaR::nba_tbl_comb(GROUP = MapCode,
+               THR = RLE,
+               PRO = EPL, 
+               FILE = "csv")
+
+thr_pro_tbl
+
+```
+
+### Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+### References
+
+::: {#refs}
+:::

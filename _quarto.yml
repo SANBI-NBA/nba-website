@@ -27,12 +27,25 @@ website:
         href: https://www.linkedin.com/in/sa-biodiversity-south-african-national-biodiversity-institute-9444b7140/
       - icon: github
         href: https://github.com/SANBI-NBA
+    right: 
+      - href: index.qmd
+        text: "Home"
+      - href: contents.qmd
+        text: "Contents"
   sidebar:
     title: "Contents"
     style: "floating"
     contents:
-      - text: "Home"
-        href: index.qmd
+      - text: "About the NBA"
+        href: content/context/about-nba.qmd
+      - text: "Using the NBA"
+        href: content/context/uses-nba.qmd
+      - text: "South Africa's biodiversity profile"
+        href: content/context/biodivprof.qmd
+      - text: "The importance of biodiversity"
+        href: content/context/importance.qmd
+      - section: "Key messages"
+        href: content/key-messages/KMLandingpage.qmd
     alignment: center
     collapse-level: 1
 

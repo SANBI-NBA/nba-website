@@ -8,7 +8,7 @@ title-block-banner-color: white
 
 The NBA is produced by the South African National Biodiversity Institute (SANBI) as part of its mandate to report regularly to the Minister of Forestry, Fisheries and the Environment on the status of the country’s biodiversity. SANBI operates through the Network of Partners Model, recognising that such a technically demanding and wide-ranging scientific assessment cannot be achieved without substantial support from numerous partners. This model not only ensures the completion of the NBA, but also fosters collective ownership of the assessment by the biodiversity community in South Africa. The co-production of knowledge for the NBA enables scientists, practitioners and decision makers to work towards a common vision for priority actions and responses following the assessment.
 
-NBA 2025 would not have been possible without the substantial in-kind contributions of time, data and expertise from numerous individuals and institutions. From November 2019 to October 2025 more than 470 individuals from approximately 90 institutions contributed over 135 000 person-hours of work. Their dedication and expertise are sincerely appreciated – the NBA truly is a multi-stakeholder endeavour.
+NBA 2025 would not have been possible without the substantial in-kind contributions of time, data and expertise from numerous individuals and institutions. From November 2019 to October 2025 more than 490 individuals from approximately 110 institutions contributed over 23 000 person-days of work. Their dedication and expertise are sincerely appreciated – the NBA truly is a multi-stakeholder endeavour.
 
 SANBI is particularly grateful for the strategic and long-term partnerships that supported leadership of the Estuarine (Council for Scientific and Industrial Research) and Coastal (the Institute for Coastal and Marine Research at Nelson Mandela University) Components of the NBA. Their clear and experienced leadership of these complex components was invaluable.
 
@@ -68,6 +68,6 @@ crg_tb
 
 Former members of the CRG included Adwoa Awuah and Krystal Tolley.
 
-Several SANBI interns and students were also involved, including Esethu Nkibi, Curtley Tonkin, Alex Nieto Lawrence, Londiwe Makhaye, Nikita Gertze, **ADD JESSICA's INTERNS**
+Several SANBI interns and students were also involved, including Esethu Nkibi, Curtley Tonkin, Alex Nieto Lawrence, Londiwe Makhaye, Nikita Gertze, Jade Simoen and Future Machate.
 
 ## 

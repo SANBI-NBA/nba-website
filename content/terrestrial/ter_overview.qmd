@@ -21,10 +21,9 @@ format:
 appendix-cite-as: false
 google-scholar: true
 ---
+--------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
-![Agriculture in the Hemel en Aarde Valley, Western Cape (Photo by Andrew Skowno CC BY-NC 4.0)](imgs/canola_wc_skowno_crop.png){fig-align="center"}
+![Agriculture in the Hemel-en-Aarde Valley, Western Cape ©Andrew Skowno](imgs/canola_wc_skowno_crop.png){fig-align="center"}
 
 South Africa's unique terrestrial biodiversity is globally recognised, with high species diversity and exceptional levels of endemism (especially for plants). The wide climatic range and varied geology and topography result in an equally diverse set of 463 terrestrial ecosystem types. This natural heritage supports vibrant rural and urban land uses, from farming to tourism to expanding cities, through essential ecosystem services. The steady loss of terrestrial habitat and decline in species populations to various human activities set against a backdrop of accelerating climate change paints an overall picture of decline in the biodiversity and ecosystem services on which we rely. Gains in protection of species and ecosystems (through biodiversity stewardship programs) and growing sustainable use and restoration efforts are a positive trend. Biodiversity inclusive spatial planning, a well established and formalised practice in South Africa, is a key tool in striking the balance between development and biodiversity.
 

@@ -36,8 +36,7 @@ One .qmd file represents one page on the NBA website. It is up to you to decide 
 
 Once you have created and renamed a quarto template, the first step is to edit the yaml header.
 
-> [!WARNING\]
-> yaml code is extremely sensitive to wrong code indentations (the space between the side of the screen and where the text begins). If you get any yaml-related errors when rendering, check that your yaml edits did not accidentally change indentations.
+> \[!WARNING\] yaml code is extremely sensitive to wrong code indentations (the space between the side of the screen and where the text begins). If you get any yaml-related errors when rendering, check that your yaml edits did not accidentally change indentations.
 
 Follow these instructions for each template:
 

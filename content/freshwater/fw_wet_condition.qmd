@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Inland Wetland Ecosystem Condition" # Compulsory
+title: "Wetland Ecological Condition" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -19,13 +19,14 @@ author:
       - ref: destea 
       # If an author has more than one affiliation, add more - ref: lines here
   - name:
-      given: Adwoa
-      family: Awuah
+      given: Nancy
+      family: Job
+    orcid: 0000-0000-0000-0000  
     affiliations:
       - ref: sanbi 
   - name:
-      given: Nancy 
-      family: Job 
+      given: Adwoa 
+      family: Awuah 
     orcid: 0000-0002-4929-7592 
     affiliations:
       - ref: sanbi 
@@ -59,155 +60,199 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Summary {#summary}
+**Inland wetland ecosystems are in poor condition, even in our protected areas. Lack of sufficient field collected information makes it hard to protect them properly, so improving how we monitor their health is crucial. It is concerning that South Africa's wetlands are degrading faster than we can rehabilitate them.**
 
-**Inland wetlands face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use. While we \[don't yet have a complete national picture of\] how healthy our wetlands are, the signs are worrying. Most of these vital ecosystems are in poor condition, even in our protected areas. This lack of information makes it hard to protect them properly, so improving how we monitor their health is crucial. Furthermore, South Africa's wetlands are degrading faster than we can rehabilitate them.**
+::::: columns
+::: {.column width="50%"}
+<center>
 
-## Page body
+| [xx%]{.inline-style-well-protected}
+| of 82 inland wetland types
+| Natural or Near-natural
 
-Organise this part of your webpage into sections and subsections as you see fit. Use it to give background, and present your results and discussions of results.
+</center>
+:::
 
-Label main sections using Header 2. Header 1 is the style reserved for page titles at the top - do not use it anywhere else on the page. Use consecutive higher Header numbers to label subsections.
+::: {.column width="50%"}
+<center>
 
-### Subsection 1 (Header 3)
+| [35%]{.inline-style-not-protected}
+| of wetland extent
+| Natural or Near-natural
 
-#### Subsection 2 (Header 4)
+</center>
+:::
+:::::
 
-etc.
+:::: columns
+::: {.column width="50%"}
+:::
+::::
 
-## Inserting footnotes and references
+<!-- jock plse help with Figure 1. Inland Wetland ecological condition and inset donut graph of ecological condition classes by number of types. Please use attribute field "EC22_all" to find condition values A-F. However, please group into 3 classes "Natural/near-natural (A/B)" + "Moderately Modified (C)" + "Severely modified (D/E/F)". Do you have the colour code for these three classes? See the screenshot. Please could you add a donut graph for # of wetland types in each of the 3 classes. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
 
-### Footnotes
+Approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
 
-Use the built-in footnotes function to add notes to your text where necessary. Use notes sparingly - mainly to clarify terms.
+![](imgs/%7BB5DBFA74-1938-4020-AEF4-F2EA7ABA1479%7D.png)
 
-Some text with a footnote[^1].
+More text
 
-[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
-
-### References
-
-## Code blocks for graphs, maps and tables
-
-Use these code blocks to ensure that your graphs maps and tables are consistently numbered and labeled. Using these code blocks also lets you cross-reference tables and figures in the text.
-
-### Graphs and maps
-
-The **#\| label:** line in the code below makes it possible to reference the graph in the text. It must always start with **fig-** for Quarto to recognise it as a figure, and to apply correct styling and numbering to the figure caption. Each figure in your document must have a unique **fig**- name. To reference the figure in the text, use Insert \> Cross Reference, and look for the figure lable in the list.
-
-Add an appropriate descriptive caption next to **fig-cap.**
-
-```{r}
-#| label: fig-ref
-#| fig-cap: "Add figure caption here." 
-
-# Add R code for generating figure here
-
-```
-
-### Tables
-
-Follow the same system for creating tables. Do not use the visual editor to insert tables, as this will create a table in Quarto's default style, and you will have to type in the data manually, making the table less reproducible if your data changes. Note that here you must use the **tbl-** prefix to ensure that quarto recognises it as a table.
-
-```{r}
-#| label: tbl-ref
-#| tbl-cap: "Add table caption here." 
-#| classes: plain
-
-# Add R code for generating table here
-
-```
-
-### Combine figures and related data
-
-It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
+<!-- jock plse help with Figure 2. Inland Wetland Ecological Condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category. I started to attempt to do it myself by copying across the table from EPL. Please use attribute field "zone" for the hydrogeomorphological types and "EC22_all" to find condition values A-F. However, please group into 3 classes "Natural/near-natural (A/B)" + "Moderately Modified (C)" + "Severely modified (D/E/F)". Do you have the colour code for these three classes? See the screenshot. Please could you add a donut graph for # of wetland types in each of the 3 classes. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
 
 :::: panel-tabset
 ## Figure
 
-```{r}
-#| label: fig-tab
-#| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
-library(dplyr)
-library(tidyr)
+```{r}
+#| label: fig-wetland_epl_bargraph
+#| fig-cap: "Inland Wetland Ecological Condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category." 
+
+library(tidyverse)
+library(stringr)
 library(nbaR)
 
-# dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
-# 
-# ecosystem_summary <- dat %>% 
-#                       group_by(biome, threat_status) %>% 
-#                       summarise(count = n()) %>% 
-#                       pivot_wider(
-#                         id_cols = biome,
-#                         names_from = threat_status,
-#                         values_from = count
-#                       ) %>% 
-#                       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
-# 
-# nba_plot(ecosystem_summary,
-#          biome,
-#          2:5,
-#          CHRT = "bar",
-#          NUM = FALSE,
-#          LAB = "Percentage of ecosystem types",
-#          SAVE = "test-fig")
+# load and prep the data
+epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, EPL24, extent) %>% # , RLE24, extent, RLE_EPL24) #
+  mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
+  group_by(zone, EPL24) %>%
+  summarise(count = n(),
+            extent = sum(extent))
+  # rename("Wetland type" = type,
+  #        Zone = zone,
+  #        "Ecosystem Protection Level" = EPL24)
+
+# count table
+count <- epl %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = EPL24,
+    values_from = count) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  ungroup()
+# count
+
+## add a totals row:
+count <- count %>%
+  bind_rows(
+    count %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total count") %>%
+      select(zone, everything())
+  )
+# count
+
+# extent table
+extent <- epl %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = EPL24,
+    values_from = extent) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  ungroup()
+# extent
+
+# add a totals row:
+extent <- extent %>%
+  bind_rows(
+    extent %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total extent") %>%
+      select(zone, everything())
+  )
+# extent
+
+# combine count and extent in a single table
+epl_combined <- count %>%
+  mutate(metric = "count") %>%
+  bind_rows(extent %>%
+              mutate(metric = "extent")) %>%
+  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
+# epl_combined
+    
+## save the data to downloadable csv for the link, before arranging by zone for the plot
+write.csv(epl_combined, file = "outputs/wetlands_EPL.csv", row.names = FALSE)
+
+# create EPL plot
+epl_combined_plot <- epl_combined %>% 
+    arrange(desc(zone)) %>% 
+    nba_plot_comb(
+      zone,
+                                   METRIC_COL = metric,
+                                   METRICS = c("count", "extent"),
+                                   2:5,
+                                   CHRT = "bar",
+                                   NUM = FALSE,
+                                   LAB = "Percentage of ecosystem",
+                                   SAVE = NULL) 
+
+epl_combined_plot
 
 ```
 
 ## Data
 
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-tab
-#| tbl-cap: "Ecosystem threat status of terrestrial ecosystem types." 
+#| label: tbl-river_epl
+#| tbl-cap: "Table of inland Wetland ecological condition." 
 #| classes: plain
 
-# library(dplyr)
-# library(nbaR)
-# library(gt)
-# 
-# tbl_dat <- dat %>% 
-#             select(ecosystem, biome, threat_status) %>% 
-#             arrange(biome, ecosystem)
-# 
-# colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
-# 
-# gt(tbl_dat) %>% nba_tbl_theme()
+library(dplyr)
+library(nbaR)
+library(gt)
+
+## create the table
+# as we prepared the data above for the combined plot, simply provide those? checkNancy
+tbl_dat <- epl_combined %>% 
+  arrange(metric,zone) %>% 
+  rename(Zone = zone,
+         Metric = metric)
+
+gt(tbl_dat) %>% nba_tbl_theme()
 
 ```
 :::
 
-Download the data here.
+Download the data [here](outputs/wetlands_EPL.csv).
 ::::
 
-## Information boxes
+Add text
 
-Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+Refer to DWS NWMF monitoring a subset of wetlands. Refer to dataset of field assessed wetlands contributing to national wetland map condition assessment. Desirable for future collaboration.
 
-::: {#box-1 .callout-note collapse="true"}
-## Box title
+<!-- jock is it possible for the table / ie the coloured threat status part to be less compressed and to stretch across the page more? "unchannelled valley-bottom" could be two lines if this is what is causing the table to squash? -->
 
-Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
-:::
+## Approach
 
-## Data availability
+Excellent progress has been made regarding automated condition assessments to support the NBA 2025 inland wetlands threat status; Text
+
+## Technical documentation
 
 -   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates) \[link to the specific page within github\]
 
 -   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - \[link to the specific page within these websites containing your data\]
 
-## Recommended citation for this webpage
-
-Collins, N.B., Awuah, A., Job, N.M., names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
-
-## Associated documentation
-
 -   **Publications**:
 
--   **Technical reports**: Add link to synthesis report \[plus technical report?\] in PDF format
+-   **Technical reports**:
+
+## Recommended citation for this webpage
+
+Collins, N.B., Job, N.M., Awuah, A., names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
 
 ## References for this webpage
 

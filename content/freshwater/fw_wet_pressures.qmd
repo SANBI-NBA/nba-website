@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Freshwater (inland aquatic) realm" # Compulsory
-subtitle: "Pressures on Inland Wetland Ecosystems" # Optional: delete if you are not using a subtitle
+title: "Pressures on Wetland Ecosystems" # Compulsory
+subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -59,29 +59,21 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Summary {#summary}
-
-**Inland wetlands face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use. While we \[don't yet have a full picture of all impacts\] how healthy our wetlands are, the signs are worrying. Most of these vital ecosystems are in poor condition, even in our protected areas. This lack of information makes it hard to protect them properly, so improving how we monitor their health is crucial. Furthermore, South Africa's wetlands are degrading faster than we can rehabilitate them.**
+**Inland wetlands face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use. Climate change. The collective importance of multiple wetlands across the catchment xx**
 
 ![Figure 1. Nutrients accumulating along the edge of a depression wetland.](images/20210820_084558_nvllev3.png)
 
-## Pressures on inland wetlands
-
 Text
 
-Text
+### 1. Habitat loss and degradation
 
-### 1. Land use pressure
-
-#### 1.1 Subsection
-
-etc.
+Inland wetlands and their catchment areas are directly impacted through habitat loss and fragmentation, and through land degradation linked to overgrazing and inappropriate fire regimes. Seasonal and intermittently inundated or saturated wetlands and rivers are often (illegally) ploughed, leading to a complete loss of habitat structure and associated species. Ploughing also leads to erosion and increased sedimentation of rivers. Both the suppression of fires and planned burning practices for grazing result in changes to the natural fire regimes and subsequently the species composition of vegetation associated with rivers and inland wetlands in the landscape. Suppression of fire in the Fynbos biome, for example, has led to the densification of vegetation and decline in habitat of Rose’s Mountain Toadlet (Capensibufo rosei). Habitat fragmentation can result from land conversion as well as infrastructure development, impacting dispersal and migration of amphibians.
 
 ### 2. Pollution
 
-#### 2.1 Subsection
+Water pollution is a major cause of the decline in freshwater species, particularly freshwater fishes. A combination of sediment, nutrient, chemical and thermal water pollution cumulatively impact the biodiversity and functioning of river and inland wetland ecosystem types and their associated freshwater species. Pollution (such as poorly or untreated wastewater effluent from industries and WWTWs, mining waste, acid mine drainage and agricultural return flows) not only significantly increases nutrients,metals, pesticides and other toxic compound loads, but can also change the natural temperature ranges and turbulence of aquatic environments. Furthermore, pharmaceuticals and micro-plastics are emerging contaminants that act as endocrine disruptors, impacting the productivity of aquatic species, and are of grave concern. Water pollution has dire, long-lasting consequences for aquatic organisms and hence ecosystems function. The Olifants River, which flows through the Kruger National Park, is a prime example of a river at the receiving end of a heavily utilised and degraded landscape. The impact of pollutants entering the river system have led to the demise of Endangered species such as the Nile Crocodile (Crocodylus niloticus), attributed to pansteatitis, as well as the mortality of several fish species in Loskop Dam. A decline in piscivorous bird species has also been observed, including Pel’s Fishing Owl (Scotopelia peli)
 
-etc.If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
 
 ::: {#box-1 .callout-note collapse="true"}
 ## **Box 1. Over-reliance on wetlands to buffer the impacts of wastewater mismanagement threatens biodiversity and human wellbeing**
@@ -96,7 +88,7 @@ Kotze, D
 
 ***Most ecosystem services provided by wetlands are negatively affected by wastewater inputs, except for rare instances where they are enhanced**.* One example is where nutrient-enriched wastewater promotes increased vegetation growth, which in turn increases the sediment carbon store in the wetland (Rybczyk et al. 2002; McCarthy and Venter 2006). Another example is when the prolonged hydroperiod and nutrient enrichment caused by the wastewater inputs may potentially enhance conditions for certain bird species, as occurred for the Lesser Flamingo (*Phoeniconaias minor*) at Kamfers Pan (Anderson 2015). These instances often occur in arid environments, such as the western parts of South Africa.
 
-***The*** v***ulnerability of wetlands to wastewater impacts depends on (1) wetland type (2) the wastewater inputs; and (3) other uses of the wetland***. An inward draining (i.e. endorheic) wetland is inherently vulnerable as it has no outflow through which pollutants can be flushed from the system. High wastewater discharge with high loads of pathogenic bacteria impacts greatly on human wellbeing when use involves direct contact with the water, e.g. if used for conducting baptisms. If use of the wetland involves no direct contact with the water, e.g. as might be the case when observing water birds from a bird hide, the impacts in terms of human use would likely be less severe. Given the potential impacts and range in vulnerabilities, it is useful to distinguish between wetland areas and contexts which are most vulnerable to water quality impacts, and for which use should be kept to a minimum, and less vulnerable wetlands, which could potentially be designated as hard-working wetlands.
+***The vulnerability of wetlands to wastewater impacts depends on (1) wetland type (2) the wastewater inputs; and (3) other uses of the wetland***. An inward draining (i.e. endorheic) wetland is inherently vulnerable as it has no outflow through which pollutants can be flushed from the system. High wastewater discharge with high loads of pathogenic bacteria impacts greatly on human wellbeing when use involves direct contact with the water, e.g. if used for conducting baptisms. If use of the wetland involves no direct contact with the water, e.g. as might be the case when observing water birds from a bird hide, the impacts in terms of human use would likely be less severe. Given the potential impacts and range in vulnerabilities, it is useful to distinguish between wetland areas and contexts which are most vulnerable to water quality impacts, and for which use should be kept to a minimum, and less vulnerable wetlands, which could potentially be designated as hard-working wetlands.
 
 ***The pollutant assimilation capacity of wetlands is finite, and overloading a wetland will result in severe consequences for the wetland and downstream water users**.* Sustained point-source pollution into a wetland can overwhelm a wetland’s assimilative capacity, severely compromising its capacity to deal with non-point sources of pollution (Verhoeven et al. 2006). In some cases where the initial effect of wastewater is positive, beyond a certain threshold its effect can dramatically shift to become negative, e.g. as occurred in the Kamfers Pan in 2011 when the sewage works was malfunctioning and many flamingos contracted avian pox virus through biting flies proliferating in the
 
@@ -139,11 +131,9 @@ UN-Water, 2015. Wastewater management: a UN-water analytical brief. UN-Water, Un
 Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
 :::
 
-### 3. Climate
+### 3. Climate change
 
-#### 3.1 Subsection
-
-etc.If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+Changes in climate, particularly rise in temperature and changes to the amount, intensity and season of precipitation, are expected to exacerbate the impacts of current pressures on inland aquatic ecosystems. Global temperatures have increased by almost 1°C over the past 50 years and could increase another 1–2°C by 2050. Increasing temperature will impact the hydrological cycle, and consequently the functioning of rivers and inland wetlands. Significant reductions in amphibians’ range sizes are probable early impacts. In southern Africa, large lakes have shown increases in aquatic temperature, while the tropical cyclones that bring rain to the Maputaland Coastal Plain may move eastward, away from the African continent. Climate change is widely considered as a multiplier of other pressures on biodiversity, both exacerbating the effects of these pressures and altering the frequency, intensity and timing of events. Many of these shifts are predicted to benefit the survival of invasive species over native species and increase the outbreak potential and spread of disease. Considering that many freshwater species are range-restricted and that the fragmented state of ecosystems may prohibit range shift migrations, increasing the connectedness and size of the protected area network, including Ramsar sites, are key components of climate change adaptation strategies. In the inland aquatic realm, human responses to climate change are likely to further increase some pressures, for example, reduced rainfall due to climate change (exacerbated by biological invasions in catchment areas) drives an increase in water abstraction (for human settlements and agriculture), which compounds the pressure on the aquatic ecosystem and species.etc.If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
 
 ::: {.callout-note collapse="true"}
 ## **Box 2. Climate**
@@ -161,23 +151,25 @@ Broom, C
 DWS, 2023. Green Drop Progress Assessment Report 2023.  Department of Water and Sanitation, Pretoria. .
 :::
 
-### 4. Other
+### 4. Biological invasions
 
-#### Subsection
+Alien invasive species cause substantial changes to ecosystem structure and function and negatively impact aquatic biota. Rivers and inland wetlands are the most heavily invaded ecosystems globally, largely due to their inherent connectivity and the intensity of anthropogenic activities. Of the 191 listed alien species in the inland aquatic realm, 65 are invasive. Of these invasive species, 27 severely impact biodiversity (5 fish species and 15 plant species). Nationally, 81% of freshwater fishes of conservation concern are impacted by invasive alien fishes. Many of these native species are endemic to the mountains of the Western Cape. The invasive species (e.g. Bass \[Micopterus\] species) impact on native species mainly through predation of juveniles and outcompeting adults for resources. This reduces population sizes and has caused population extirpation of many native species. In some cases, invasive species have hybridised with native species (e.g. invasive Nile Tilapia (Oreochromis niloticus) and the native Mozambique Tilapia (Oreochromis mossambicus)). Invasive plants in natural rivers and wetlands threaten ecosystem integrity, alter fire regimes and change hydrological processes due to their high water consumption.
 
-etc.
+
+### 5. Other pressures
+
+
+## Technical documentation
+
+-   **Publications**:
+
+-   **Technical reports**: Add link to synthesis report \[plus technical report?\] in PDF format
 
 ## Recommended citation for this webpage
 
 Individual boxes and sections each have their own citations.
 
-names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
-
-## Associated documentation
-
--   **Publications**:
-
--   **Technical reports**: Add link to synthesis report \[plus technical report?\] in PDF format
+Names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
 
 ## References for this webpage
 

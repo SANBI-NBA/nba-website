@@ -53,3 +53,10 @@ rsconnect/
 
 # Website related folders/files
 _site/
+site_libs/
+
+# Any rendered html
+*.html
+
+# Any folder named _files
+*_files/

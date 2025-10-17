@@ -1,6 +1,3 @@
-# ignore html output 
+# Rendered content
+*_files/
 *.html
-README.html
-
-# ignore .quarto folders
-/.quarto/

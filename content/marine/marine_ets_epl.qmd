@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Integration of Ecosystem Threat Status and Protection Level" # Compulsory
+title: "Intersection of ecosystem threat status and protection levels" # Compulsory
 subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -45,9 +45,29 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Threatened and under-protected ecosystem types
+**Of South Africa’s 163 marine ecosystem types, 27 (17%) are both highly threatened and under-protected. Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve [ecosystem condition](marine_condition.qmd) through flow restoration, reduced fishing pressure and improved ecosystem management.**
 
-There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected. This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include some several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
+```{r}
+#| label: fig-rle_map
+#| fig-cap: Threatened and under-protected benthopelagic and deepsea benthic ecosystem types.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+#devtools::install_github("SANBI-NBA/nbaR")
+library(tidyverse)
+library(nbaR)
+library(sf)
+
+
+
+knitr::include_graphics("imgs/rle_unluckies.png")
+
+
+```
+
+The headline indicators of the NBA provide information on the pressures faced by species and ecosystems and on the progress made in protecting them. Combining the indicators provides an additional perspective on the status of marine ecosystems. There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected (Table x). This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
 
 ```{r}
 #| label: tbl-ets_epl
@@ -57,16 +77,6 @@ There are 27 marine ecosystem types that are both highly threatened and under-pr
 library(dplyr)
 library(nbaR)
 # library(sf)
-
-
-# mem <-  st_read(
-#     dir("data",
-#         "marine_ecosystems.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE) %>% 
-#   st_drop_geometry() %>%  
-#   select(c(ecosystem_type, protection_level, threat_status))
 
 
 thr_pro <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
@@ -86,95 +96,6 @@ thr_pro
 Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
 
 There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
-
-```{r}
-#| label: fig-rle_map
-#| fig-cap: Threatened and under-protected benthopelagic and deepsea benthic ecosystem types.
-#| echo: false
-#| message: false
-#| warning: false
-#| out-width: 100%
-
-#devtools::install_github("SANBI-NBA/nbaR")
-library(tidyverse)
-library(nbaR)
-library(sf)
-
-
-# #marine linewidth
-# m_lwd = 0.001
-# 
-# 
-# dat <-  st_read(
-#     dir("data",
-#         "marine_results_for_integration.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE)
-# 
-# eez <- st_read(list.files(path="data", 
-#                              pattern="^eez_MEM2018.gpkg$", 
-#                              recursive = T, 
-#                              full.names = T)[1],
-#   quiet = TRUE)
-# 
-# marine_benth <- dat %>%
-#   group_by(type_name,zone, RLE_EPL) %>% #
-#   summarise(geometry = st_union(geom)) %>%
-#   st_cast(to = "MULTIPOLYGON") %>%
-#   filter(zone !="Pelagic ocean waters",
-#          RLE_EPL %in% c("CR_NP", "CR_PP", "EN_NP", "EN_PP"))%>% 
-#   st_transform(crs = 4326)
-#                              
-# 
-# 
-# RLEmap <- nbaR::nba_map(marine_benth,
-#                            "vector",
-#                            FILL = RLE_EPL, 
-#                         LEGEND = T) +
-#   geom_sf(data=eez, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
-#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
-#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
-#         # ,
-#         # legend.key.size = ggplot2::unit(1,"line"),
-#         #  legend.position = "inside",
-#         #  legend.justification = c("right", "bottom"),
-#         # legend.title = element_blank()
-#         ) +  #remove white space around the plot
-#   coord_sf(expand = FALSE)    # <-- prevents padding around data
-# # theme_void()
-# 
-# #ggsave(plot = RLEmap, filename = "imgs/ets_benth.jpg")
-# 
-# ## add the donut plot
-# 
-# rle_donut <- marine_benth %>% 
-#   st_drop_geometry() %>% 
-#   ungroup() %>% 
-#   count(RLE_EPL) %>% 
-#   tidyr::pivot_wider(names_from = RLE_EPL, values_from = n) %>% 
-#   mutate(RLE = "RLE") %>% 
-#   select(RLE, CR_NP,CR_PP, EN_NP, EN_PP) %>% 
-#   nbaR::nba_plot(GROUPS = RLE, 
-#                  COLS = 2:5, 
-#                  CHRT = "donut",
-#                  NUM = TRUE, 
-#                  LAB = "", 
-#                  GRP = F) +
-#   theme(legend.position = "none") 
-# 
-# final_plot <- RLEmap + 
-#   annotation_custom(ggplotGrob(rle_donut),
-#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
-# 
-# print(final_plot)
-
-
-
-knitr::include_graphics("imgs/rle_unluckies.png")
-
-
-```
 
 ## Technical documentation
 

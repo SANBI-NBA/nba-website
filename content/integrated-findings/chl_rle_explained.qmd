@@ -1,9 +1,13 @@
 ---
 title: "Ecosystem threat status and the Red List of Ecosystems"
-subtitle: "General introduction to the indicator"
+subtitle: "General introduction to the ecosystem-based indicators"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 bibliography: intf_references.bib
+
+format:
+  html:
+    self-contained: true
 ---
 
 South Africa is one of few countries that started assessing ecosystem threat status (circa 2004), using national criteria, before the [IUCN Red List of Ecosystems](https://iucnrle.org/){target="blank"} (RLE) was developed [@botts2020]. For the National Biodiversity Assessment 2018 efforts were made to transition to the IUCN RLE framework for terrestrial ecosystem assessments [@skowno2021] and partially for estuaries and marine ecosystems, with some deviations in the thresholds that were applied. For the NBA 2025, there was full application of the IUCN RLE criteria for the first time in South Africa across all realms following the latest guidelines [@iucn2024] to ensure best practice and global alignment.
@@ -12,7 +16,7 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 
 |  |  |
 |------------------------------------|:----------------------------------:|
-| The RLE is a framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](imgs/RLE%20logo%20new.png) |
+| The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](imgs/RLE%20logo%20new.png) |
 
 1.  can be applied systematically across realms and geographic areas;
 
@@ -24,37 +28,133 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 
 5.  complement the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) (RLS) framework
 
-The goal of the RLE is to identify ecosystems that are at risk of losing their constituent biodiversity. The unit of assessment in the RLE is an ecosystem type. The RLE framework used the concept of ecosystem collapse as the “end point” of ecosystem decline. This is equivalent to species extinction in the RLS.
+The goal of this global framework is to identify ecosystems that are at risk of losing their constituent biodiversity. The unit of assessment in the RLE is an ecosystem type. The RLE framework used the concept of ecosystem collapse as the “end point” of ecosystem decline. This is equivalent to species extinction in the RLS.
 
-## Application of the IUCN RLE criteria
+### Key elements of the IUCN RLE framework
 
-There are [five criteria](https://iucnrle.org/documents_and_publications){target="blank"} in the RLE that can be used to assess ecosystem threat status, each of which have subcriteria:
+As outlined above, the IUCN Red List of Ecosystems (RLE) framework comprises [three key components](https://iucnrle.org/documents_and_publications){target="blank"} which provides a transparent and structured approach for assessing the risk of ecosystem collapse across diverse realms and different regions (@fig-criteria-categories). These include:
 
--   A: Reduction in geographic distribution
+-   a set of criteria that describe different ways in which ecosystems may become threatened;
+-   a set of thresholds that measure how close ecosystems are to collapsing; and
+-   a set of ordinal categories that rank the risk of ecosystem collapse.
 
--   B: Restricted geographic distribution
+The adoption of the IUCN RLE standards by more than 100 countries underscores its growing global relevance and has greatly advanced efforts toward establishing a comprehensive inventory of the world’s threatened ecosystems. Beyond ecosystem red-listing, the framework also supports ecosystem monitoring, prioritisation of conservation actions, and the identification of restoration opportunities, making it a cornerstone of global biodiversity conservation planning [@bland2019].
 
--   C: Environmental degradation
+::::::: {#fig-criteria-categories fig-cap="The five IUCN Red List of Ecosystems criteria represent different symptoms of ecosystem decline and pathways to collapse (A)[@valderrabano2021using] and ordinal categories (B)[@iucn2024]."}
+:::::: {.col width="100%"}
+::::: {layout-ncol="2"}
+::: left
+**(A)**\
+![](imgs/rle-restoration-graphic.png){style="display: block; margin: auto;"}
+:::
 
--   D: Disruption of biotic processes or interactions
+::: right
+**(B)**\
+![](imgs/categories.png){style="display: block; margin-top: 80px; margin-left: auto; margin-right: auto;"}
+:::
+:::::
+::::::
+:::::::
 
--   E: Quantitative estimate of the probability of ecosystem collapse within 50 or 100 years.
+### Application of the IUCN RLE criteria and categories
 
 Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case. Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
 
-| Realm           | Criteria assessed            |
-|-----------------|------------------------------|
-| Terrestrial     | Criteria A2b, A3, B1, B2, D3 |
-| Rivers          | Criteria B1, B2, D3          |
-| Inland wetlands | Criteria A2b, A3, B1, B2, D3 |
-| Estuaries       | Criteria A2b, A3, B3, D1, D3 |
-| Marine          | Criteria A3, B1, B2, C3, D3  |
+```{r}
+#| label: tbl-applied-criteria
+#| tbl-cap: A set of the IUCN RLE criteria applied in South Africa across realms
+#| classes: plain
 
-### RLE calculation methods
+library(dplyr)
+library(gt)
 
-Details of the RLE calculations per realm can be accessed here:
+# Correct data frame
+Dataframe <- data.frame(Realms = c("", "", "Realms", "", ""),
+                        Realm = c("Terrestrial", "Rivers", "Inland wetlands", "Estuaries", "Marine"),
+                        A2b = c('✓', '', '✓', '✓', ''),
+                        A3  = c('✓', '', '✓', '✓', '✓'),
+                        B1  = c('✓', '✓', '✓', '', '✓'),
+                        B2  = c('✓', '✓', '✓', '', '✓'),
+                        B3  = c('', '', '', '✓', ''),
+                        C3  = c('', '', '', '', '✓'),
+                        D1  = c('✓', '', '', '✓', ''),
+                        D3  = c('✓', '✓', '✓', '✓','✓'), check.names = FALSE)
 
-link to RLE_terr git repo
+# Create gt table
+table1 <- gt(Dataframe) %>%
+  
+          tab_options(heading.align = 'left',
+                      table.width = "100%",
+                      table.font.size = 13,
+                      table.border.top.width = 2) %>%
+  
+          tab_style(style = list(cell_fill(color = "#adb5bd"),
+                                 cell_text(color = "white", weight = "bold")),
+                    locations = cells_column_labels(columns = everything())) %>%
+  
+          tab_style(style = cell_text(weight = "bold"),
+                    locations = cells_body(columns = c(Realm, Realms))) %>%
+  
+          tab_style(style = cell_borders(sides = c("top", "bottom"),
+                                         color = "white",
+                                         weight = px(0)),
+                                         locations = cells_body(columns = Realms)) %>%
+          cols_label(Realms = "",
+                     Realm = "") 
+
+table1
+
+```
+
+## Red List Index of ecosystems
+
+The Red List Index of Ecosystems (RLIe) is one of the new headline indicators formally recognised in December 2022 as part of the expanded suite of ecosystem monitoring tools under the post-2020 Global Biodiversity Framework. This indicator provides a systematic mechanism for tracking progress towards achieving [Goal A](https://www.gbf-indicators.org/), which focuses on maintaining and enhancing ecosystem integrity.
+
+Conceptually, the RLIe mirrors and complements the Red List Index[@butchart2007] (of species), offering comparable insights into ecosystem-level risk. It tracks changes in the threat status of ecosystems over time [@nicholson2024; @rowland2020], with all trend assessments derived directly from the outcomes of IUCN RLE assessments. This indicator reflects genuine changes in ecosystem status, accounting for improvements in data and understanding across assessment periods. Broad speaking, the RLIe represents the mean of ordinal ranks assigned to each risk category and is defined as follows:
+
+::: {#eq-rlie .equation}
+$$
+RLIE_t = 1 - \frac{\sum_{i = 1}^{n} W_{C_{i,t}}}{W_{C_O} \cdot n}
+$$
+:::
+
+Where:
+
+-   $W_{C_{i,t}}$ represents the **risk category rank** for ecosystem $i$ in year $t$.
+-   $W_{C_O}$ is the **maximum category rank** (Collapsed = 5).
+-   $n$ is the **total number of ecosystems**, excluding Data-Deficient and/or Not Evaluated ecosystems.
+
+Risk category ranks:
+
+-   Collapsed = 5
+-   Critically Endangered = 4
+-   Endangered = 3
+-   Vulnerable = 2
+-   Near Threatened = 1
+-   Least Concern = 0
+
+RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear and comparable measure of ecosystem health across time and space. The indicator is designed for flexible application, allowing trends to be assessed for overall risk categories, or by individual criteria to reveal key drivers of ecosystem change. In addition, the RLIe can be disaggregated by country, biome, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020].
+
+## RLE and RLIe calculation methods
+
+Details of the calculations per realm can be accessed here:
+
+**Terrestrial realm**
+
+-   [RLE Code repository](https://github.com/askowno/RLE_terr)
+-   [RLIe Code repository](https://github.com/SANBI-NBA/terrestrial/tree/main/analysis)
+
+**Freshwater realm**
+
+-   [RLE Code repository](https://github.com/SANBI-NBA/freshwater/tree/main/scripts)
+
+**Estuarine realm**
+
+-   [RLE Code repository](https://github.com/SANBI-NBA/estuaries/tree/main/scripts)
+
+**Marine realm**
+
+-   [RLE Code repository](https://github.com/SANBI-NBA/marine/tree/main/scripts)
 
 ## References
 

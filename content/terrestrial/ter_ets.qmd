@@ -5,9 +5,14 @@ subtitle: "Terrestrial realm"
 title-block-banner: "#617016" 
 title-block-banner-color: white 
 
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: af1
+  
   - name:
       given: Andrew L. 
       family: Skowno 
@@ -15,15 +20,6 @@ author:
     affiliations:
       - ref: af1       
       - ref: af2
-       
-  - name:
-      given: Maphale S. 
-      family: Monyeki 
-    orcid: 0000-0002-5083-7461 
-    affiliations:
-      - ref: af1
-      - ref: af3 
-      
             
 affiliations:
   - id: af1 
@@ -32,12 +28,8 @@ affiliations:
 
   - id: af2 
     number: 2    
-    name: University of Cape Town    
+    name: University of Cape Town   
             
-  - id: af3 
-    number: 3    
-    name: University of Cape Town    
-    
 date: last-modified
 bibliography: terrestrial.bib
 
@@ -46,7 +38,7 @@ citation:
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
+
 appendix-cite-as: false
 google-scholar: true
 
@@ -59,10 +51,13 @@ format:
 
 ------------------------------------------------------------------------
 
-Habitat loss and the impact of invasive alein plant species are the dominant factors in determining ecosystem threat status in the terrestrial realm. Croplands established in the last two centuries have replaced and fragmented many ecosystem types, but in recent years expanding human settlements have become a key factor in Red List of Ecosystems assessments for the terrestrial realm.
+*Habitat loss and the impact of invasive alien plant species are the dominant factors in determining ecosystem threat status in the terrestrial realm. Croplands established in the last two centuries have replaced and fragmented many ecosystem types, but in recent years expanding human settlements have become a key factor in Red List of Ecosystems assessments for the terrestrial realm.*
 
-:::::: columns
-::: {.column width="33.3%"}
+<center>![](imgs/EasternHighveldGrassland_dayaram_crop.png){fig-alt="Eastern Highveld Grassland (EN)"}\
+[Eastern Highveld Grassland (Endangered). ©Anisha Dayaram]{style="font-size:65%;"}</center>
+
+::::: columns
+::: {.column width="50%"}
 <center>
 
 | [30%]{.inline-style-threatened}
@@ -72,7 +67,7 @@ Habitat loss and the impact of invasive alein plant species are the dominant fac
 </center>
 :::
 
-::: {.column width="33.3%"}
+::: {.column width="50%"}
 <center>
 
 | [11%]{.inline-style-well-protected}
@@ -81,12 +76,7 @@ Habitat loss and the impact of invasive alein plant species are the dominant fac
 
 </center>
 :::
-
-::: {.column width="30%"}
-<center>![](imgs/EasternHighveldGrassland.png){fig-alt="Eastern Highveld Grassland (EN)"}\
-[Eastern Highveld Grassland (EN). ©Anisha Dayaram]{style="font-size:65%;"}</center>
-:::
-::::::
+:::::
 
 ------------------------------------------------------------------------
 
@@ -113,16 +103,14 @@ Biome.nat <- readxl::read_xlsx(here::here("quarto/data/Biome RLE remnants.xlsx")
 
 ```
 
-### Summary
+### Ecosystem threat status results
 
-The Ecosystem Threat Status is a headline indicator established for assessing how close ecosystem types are to collapsing or losing vital aspects of their structure, function, or composition. For NBA 2025 (as for the NBA2018) the IUCN Red List of Ecosystems framework was applied systematically across all terrestrial ecosystem types. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. Read more here: **ADD LINKS TO RLE EXPLAINED PAGES = chl_rle_explained.qmd**
+The Ecosystem Threat Status is a headline indicator established for assessing how close ecosystem types are to collapsing or losing vital aspects of their structure, function, or composition. For NBA 2025 (as for the NBA2018) the IUCN Red List of Ecosystems framework was applied systematically across all terrestrial ecosystem types. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. Read more [here](integrated-findings/quarto/chl_rle_explained.qmd).
 
-Nearly one-third (141/463) of nationally recognised terrestrial ecosystems, representing 11% of the remaining natural habitat of South Africa, are threatened. Among these 63 are listed as Critically Endangered, 68 as Endangered, and 10 as Vulnerable (@tbl-overall). Many of these ecosystems are concentrated in the key economic hubs, particularly in the south-western, north-eastern, and north-western regions of the country, where anthropogenic land-use activities and associated degradation pressures are major drivers of ecosystem change (@fig-RLE). Many of these threatened ecosystems have naturally restricted distributions, and accelerated habitat loss over the past three decades in these regions has compounded their vulnerability to collapse.
+Nearly one-third (141/463) of nationally recognised terrestrial ecosystems, representing 11% of the remaining natural habitat of South Africa, are threatened. Among these 63 are listed as Critically Endangered, 68 as Endangered, and 10 as Vulnerable (@tbl-overall). Many of these ecosystems are concentrated in the key economic hubs, particularly in the south-western, north-eastern, and north-western regions of the country, where anthropogenic land-use activities and associated degradation pressures are major drivers of ecosystem change (@fig-RLE-map). Many of these threatened ecosystems have naturally restricted distributions, and accelerated habitat loss over the past three decades in these regions has compounded their vulnerability to collapse.
 
-::: {#box-2 .callout-note .terrestrial title="Box 2. Terrestrial box" collapse="true"}
-#### Box. Changes to the National Vegetation Map
-
-Since 2018, the National Vegetation Map has been refined, increasing the number of nationally recognised terrestrial ecosystems from 456 to 463. These boundary adjustments and the addition of new types have influenced both the potential/historical extent of some ecosystems and their threat status categorisation. For a detailed summary of these changes, see the [Terrestrial Ecosystem map](terr_ecosystems.qmd) webpage.
+::: {#box-2 .callout-note .terrestrial title="Box. Changes to the National Vegetation Map" collapse="true"}
+Since 2018, the National Vegetation Map has been refined, increasing the number of nationally recognised terrestrial ecosystems from 456 to 463. These boundary adjustments and the addition of new types have influenced both the potential/historical extent of some ecosystems and their threat status categorisation. For a detailed summary of these changes, see the [Terrestrial Ecosystem map](ter_ecosystems.qmd) webpage.
 :::
 
 ```{r overall}
@@ -153,15 +141,13 @@ gt::gt(RLE.summary) %>%
 
 ```
 
-Historically, the main pressures on terrestrial ecosystems include habitat loss due to croplands, human settlements and plantation forestry. Since 1990, croplands and plantations have not expanded significantly but human settlements continue to expand; these pressures are key factors in the Red List of Ecosystem assessments. Pressures such as invasive alien plants and rangeland overstocking are also important; degrading ecosystem processes and functions. New data on the distribution of invasive alien plants[@kotze2019; @kotzé2025; @rebelo; @skosana; @cogill] over large portions of South Africa has contributed to improved assessments, especially of Fynbos and Grassland ecosystem types. However, there is still no comprehensive, spatially explicit dataset on land degradation for the country, which limits the ability to fully assess and track these impacts. For a more detailed summary of pressures in the terrestrial realm: **ADD LINK to Terrestrial Pressures = ter_pressures-condition.qmd**
+Historically, the main pressures on terrestrial ecosystems include habitat loss due to croplands, human settlements and plantation forestry. Since 1990, croplands and plantations have not expanded significantly but human settlements continue to expand; these pressures are key factors in the Red List of Ecosystem assessments. Pressures such as invasive alien plants and rangeland overstocking are also important; degrading ecosystem processes and functions. New data on the distribution of invasive alien plants[@kotze2019; @kotzé2025; @rebelo; @skosana; @cogill] over large portions of South Africa has contributed to improved assessments, especially of Fynbos and Grassland ecosystem types. However, there is still no comprehensive, spatially explicit dataset on land degradation for the country, which limits the ability to fully assess and track these impacts. For a more detailed summary of pressures in the terrestrial realm, refer to: [Terrestrial Pressures](terrestrial/quarto/ter_pressures-condition.qmd).
 
-**ADD MAPS with circle PLOTS = fig-rle**
+![Maps showing (A) the historical extent of ecosystem types in South Africa (based on Mucina and Rutherford, 2006), with the inset graph indicating the number of ecosystem types in each threat category; and (B) the remaining natural extent (circa 2022) of threatened terrestrial ecosystems. White areas represent croplands, built-up areas, mines, and tree plantations. The inset graph in (B) shows the percentage of the total remaining natural habitat (980,945 km²) within each threat category.](imgs/RLE_combined_maps.png){#fig-RLE-map fig-cap="Maps showing (A) the historical extent of ecosystem types in South Africa (based on Mucina and Rutherford, 2006), with the inset graph indicating the number of ecosystem types in each threat category. (B) Shows the remaining natural extent (circa 2022) of threatened terrestrial ecosystems; white areas represent croplands, built-up areas, mines, and tree plantations. The inset graph in (B) shows the percentage of the total remaining natural habitat (980,945 km²) within each threat category." width="100%"}
 
-### Biome results
+#### Biome results
 
 A pattern first highlighted in the 2018 RLE assessment [@skowno2021] remains evident: threat levels vary widely across South Africa’s biomes. Fynbos and Grassland are most affected by human-driven and degrading pressures. In Fynbos, 40 ecosystems are Critically Endangered and 27 Endangered, together accounting for 53% of its 126 types. Grassland has 24 (33%) threatened ecosystems, encompassing four Critically Endangered, 14 Endangered, and six Vulnerable. These threatened ecosystems cover about 25% of the remaining natural extent in Fynbos and 28% in Grassland. The Indian Ocean Coastal Belt is the most threatened biome, with all its ecosystem types listed as threatened. Other biomes face moderate risk, including Albany Thicket (nine threatened ecosystems, 20% of remaining extent) and Savanna (19, 7%). The Nama-Karoo is the least threatened, reflecting relatively lower pressure on its ecosystems (@tbl-biome, @fig-barplots).
-
-Although most of South Africa's ecosystems remain in the Least Concern category, this does not imply they are free from drivers of ecosystem change. RLE assessments in the terrestrial realm will improve over time as data on ecosystem condition within forests and rangelands (inlcuding much of the Grassland, Savanna, Succulent Karoo and Nama-Karoo biomes) are gathered, validated and incorporated.
 
 ```{r}
 #| label: tbl-biome
@@ -194,6 +180,8 @@ gt::gt(Biome.RLEsummary) %>%
 
 ```
 
+Although most of South Africa's ecosystems remain in the Least Concern category, this does not imply they are free from drivers of ecosystem change. RLE assessments in the terrestrial realm will improve over time as data on ecosystem condition within forests and rangelands (including much of the Grassland, Savanna, Succulent Karoo, Nama-Karoo and Desert biomes) are gathered, validated and incorporated.
+
 ```{r, fig.width = 12, fig.height = 6}
 #| label: fig-barplots
 #| fig-cap: "Threatened ecosystems per biome, showing (A) the percentage of ecosystem types per biome that fall within each threat category, and (B) the percentage of the total natural habitat remaining in each biome that falls within each threat category"
@@ -211,24 +199,27 @@ Biome.count.barplot <- nba_plot(Biome.RLEcount,
                                 CHRT = "bar",
                                 NUM = TRUE,
                                 LAB = "Percentage of ecosystem types",
-                                SAVE = NULL)
+                                SAVE = NULL,
+                                SCALE_TEXT = 1.5)
 
 # ---- Plot 2: Percentage of natural habitat remaining ----
 Biome.extent.barplot <- Biome.nat %>%
                         rename_with(~stringr::str_remove(.,"\\.perc$")) %>%
+                        mutate(across(where(is.numeric), ~ round(., 0)))%>%
                         nba_plot(Biome, 
                                  COLS = c(2:4,6),
                                  CHRT = "bar",
-                                 NUM = FALSE,
+                                 NUM = TRUE,
                                  LAB = "Percentage of natural remaining habitat",
-                                 SAVE = NULL)
+                                 SAVE = NULL,
+                                 SCALE_TEXT = 1.5)
 
 # ---- Arrange plots side by side with common legend ----
 ggpubr::ggarrange(Biome.count.barplot, Biome.extent.barplot, ncol = 2, labels = c("(A)", "(B)"), common.legend = TRUE, legend = "bottom")
 
 ```
 
-### Provincial results
+#### Provincial results
 
 Similarly, threat levels also vary considerably across the nine provinces of South Africa. Gauteng, the country’s economic hub, has the highest share of threatened habitat by extent (52%), followed by KwaZulu-Natal (39%) and Mpumalanga (34%). In the Western Cape, Limpopo and North West approximately 15% of the remaining habitat is categorised as threatened, though there are many more threatened ecosystem types in the Western Cape, a product of the extremely high landscape and plant diversity. In contrast the Northern Cape, with its vast arid landscapes has only 11 threatened ecosystems (covering less than 1% of the remaining natural habitat), making it the least threatened province in the country, however, rapidly expanding mining footprints on the coast and interior combined with landscape level changes in plant community composition (linked to a combination of rangeland management, drought, climate change), are cause for concern (@tbl-province).
 

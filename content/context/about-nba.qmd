@@ -22,7 +22,7 @@ google-scholar: true
 
 ## What is the NBA
 
-*South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision making across multiple sectors, and contribute to national development priorities*.
+*South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities*.
 
 ![This infographic summarises what the NBA is and what it is used for © SANBI](imgs/nba-infoGraphic.jpg){fig-align="center"}
 
@@ -38,13 +38,13 @@ Read more about the purposes and uses of all the NBA products here. **ADD LINK T
 
 The breadth and scope of the NBA calls for a major collaborative effort between multiple institutions and individual contributors. There are many ways that individuals become involved in the NBA, from contributing data or providing advice, to helping undertake analyses and being part of the author team. This fosters collective ownership of the assessment by the biodiversity community in South Africa; and this co-production of knowledge for the NBA enables scientists, practitioners and decision makers to work towards a common vision for priority actions and responses following the assessment.
 
-For NBA 2025, over **XXX** ndividuals from **YYY** institutions contributed – the vast majority on a volunteer basis without any financial compensation from SANBI. Without these voluntary contributions from experts and institutions outside of SANBI, the NBA would not be possible.
+The vast majority of contributions to the NBA is on a volunteer basis without any financial compensation from SANBI. Without these voluntary contributions from experts and institutions outside of SANBI, the NBA would not be possible.
 
 ## When the NBA is updated
 
 An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.
 
-The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the 'What's New?' section on the landing page to see what has been updated.
+The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the 'What's New?' section to see what has been updated. **NOTE: LINK TO WHATSNEW.QMD**
 
 ## Further reading
 

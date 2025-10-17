@@ -1,0 +1,22 @@
+---
+title: "A4. Building on past successes, opportunities exist for more sustainable and equitable fisheries"
+subtitle: ""
+title-block-banner: "#FAA755"
+title-block-banner-color: white
+---
+
+\| *Multiple fishing pressures impact many aquatic ecosystems and species (established). There are opportunities to improve fisheries sustainability at the ecosystem, species and genetic level while supporting more fair fisheries. Fisheries management plans that apply an ecosystem approach to fisheries can allow fisheries resources to recover for the benefit of food security and livelihoods.* \|  
+
+------------------------------------------------------------------------
+
+Fishing is one of the most enduring marine activities that supports food and job security. However, fishing exerts the greatest pressure on estuarine and marine biodiversity, with impacts on ecosystems, species and genetic diversity. Concentrated fishing pressure by multiple actors, including recreational fisheries, is the cause of ecosystem degradation in some areas and increases extinction risk of target and bycatch species. The many coastal species threatened by fishing include some endemic seabreams, several kob species and some invertebrates. Formerly common species like South African abalone (*Haliotis midae*), West Coast rock lobster (*Jasus lalandii*) and white mussels (*Donax serra*) are now Endangered due to overexploitation. Fishing has led to genetic consequences for seventy-four seabream (*Polysteganus undulosus*) and kob species (*Sciaenidae*). It also affects many seabirds, including the Critically Endangered African penguin (Spheniscus demersus), and many sharks and rays. Fisheries management efforts have resulted in the partial recovery of some seabream species, including slinger (*Chrysoblephus puniceus*), carpenter (*Argyrozona argyrozona*) and *Pachymetopon blochii*.   
+
+Overfishing has consequences for food security and livelihoods affecting small-scale, recreational and commercial fisheries. The marine recreational fishery includes at least 700 000 anglers and has substantial yet unquantified impacts on marine biodiversity and other fishery sectors. Recreational fishers compete with small-scale and commercial fisheries, but remain largely unmonitored and ineffectively regulated. 
+
+To ensure fair and sustainable fisheries that support ocean life and human livelihoods, effective management plans based on scientific evidence should be implemented for all sectors, to manage the impacts on ecosystems, species, genes and people. Fortunately, the number of assessed stocks has grown due to new methods in stock assessment, and South Africa has made progress with ecological risk assessments. The country can expand on this foundation to implement an ecosystem approach to fisheries. Better inclusion of recreational fisheries in policy and planning could reduce sectoral conflict and ensure equitable resource distribution. Key strategies include rebuilding overfished stocks, enhancing monitoring, and ensuring sufficient capacity for Red List and stock assessments. Specific actions should focus on reducing harmful practices, reducing bycatch, regulating (especially online sales/imports) and reducing gill net use, increasing compliance, improving spatial management, preserving genetic diversity, and promoting responsible resource use. Diversifying shark control measures can help reduce fishing pressure on threatened shark, ray, mammal and turtle species. Ensuring policy coherence and aligning monitoring efforts will be essential to manage growing demand and limited marine resources sustainably. 
+
+![*A, Pachymetopon blochii (© Joris van Alphen)*](imgs/22a.%20Pg28_KMA5_seabream_(c)Joris_van_%20Alphen.png)
+
+![*B, slinger (Chrysoblephus puniceus) (©  Geoff Spiby)*](imgs/22b.%20Pg%2028%20slinger%206%20(c)%20Geoff%20Spiby.png)
+
+*Effective fisheries management has supported the partial recovery of seabream species such as A, Pachymetopon blochii (© Joris van Alphen) and B, slinger (Chrysoblephus puniceus) (©  Geoff Spiby)*

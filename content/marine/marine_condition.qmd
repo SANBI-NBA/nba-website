@@ -1,0 +1,126 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecological Condition" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: marine_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+**Areas of high cumulative pressures and poor ecological condition have been identified, particularly along the southwest Atlantic shelf edge and in the inner shelf of much of the western Cape, parts of the south coast and shelf and several areas in the KwaZulu-Natal Bight (Figure 1). The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure updates have been underway. The first ground-truthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring is needed to support more accurate assessments of ecological condition (Link to KMC2).**
+
+<!-- Additional high pressure areas include the area offshore of the Orange River, the shelf edge on the west and south coast, large portions of the Cape inner and middle shelf, the Agulhas Bank and the KwaZulu-Natal Bight. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).** -->
+
+```{r}
+#| label: fig-cum-press
+#| fig-cap: Map of marine condition
+#| echo: false
+#| out-width: 100%
+
+knitr::include_graphics("imgs/marine_condition_map.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+
+```
+
+Like the terrestrial realm, the marine realm has a relatively high percentage of natural/near-natural ecosystem extent (\~x%). In these extensive realms, ecosystem modification tends to be focussed in pressure hotspots, usually linked to local characteristics such as high productivity, accessibility and valuable natural resources; while large areas remain relatively unmodified or intact.
+
+**Port photo?**
+
+**Mining photo?**
+
+Mining, coastal development, trawling and mariculture have the highest impact scores among the 31 pressures included in the and led to poor ecological condition in some areas. Fishing is the greatest cause of degradation in the offshore environment, whereas coastal development and fishing are the greatest drivers of poor condition in inshore ecosystems. Flow reduction, waster water discharge and lethal shark control measures also drive poor condition in some areas.
+
+Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (Figure 1).
+
+![Pic – caption – choose an eco type with bad condition with Tash – in Bight](imgs/cc.jpg)
+
+Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight.
+
+Improved bycatch management, and … measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
+
+## Approach
+
+Ecological condition is estimated using a range of different approaches across the realms, but is essentially the product of spatially representing the various pressures exerted on biodiversity. In the marine realm, a total of 31 mapped pressure layers were used to assess ecological condition (Sink et al. 2018 threat chapter) using an ecosystem pressure matrix. The ecosystem pressure matrix was developed using expert scoring supported by literature and the synthesis of information regarding the impacts of marine pressures (link to pressure section). A guided group consensus method was used to score “functional impact” and “recovery”, simplified from an existing method (Teck et al. (2010) for each pressure and Ecosystem Functional Group. Impact scores reflect the equal weighted average of the functional impact and recovery scores for different broad ecosystem groups per pressure. Condition of an ecosystem at a site (30 x30 m pixels) was classified based on the cumulative impact scores at that site.
+
+Severity Extent Very severely modified(\>90) Heavily /Severely modified (70-90) Moderately modified degraded (\>50)\
+\>90% CR EN VU\
+\>70% EN VU\
+\>50% VU
+
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+### Git repositories
+
+-   **Cumulative pressure and condition calculations and mapping**: [gitlab.com/marine_pressure_layers/pressure_layers](https://gitlab.com/marine_pressure_layers/pressure_layers)
+
+### Key publications
+
+### References
+
+::: {#refs}
+:::
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```

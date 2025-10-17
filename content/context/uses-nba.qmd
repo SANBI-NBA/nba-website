@@ -4,7 +4,7 @@ title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
 
-***South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision making across multiple sectors, and contribute to national development priorities.***
+***South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities.***
 
 ## Objectives of the NBA
 

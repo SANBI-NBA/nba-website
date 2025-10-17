@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Inland Wetland Ecosystem Protection Level" # Compulsory
+title: "Wetland Ecosystem Protection Level" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -79,15 +79,13 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-**Inland wetlands are severely under-protected, with just under 80% of wetland ecosystem types categorised as Poorly Protected or Not Protected (referred to as under protected). This is driven in part by poor ecosystem condition (only intact or moderately modified ecosystem extent contributes fully to the ecosystem target).**
-
-## Summary {#summary}
+**Inland wetlands are severely under-protected, with nearly 80% of wetland ecosystem types categorised as Poorly Protected or Not Protected (referred to as under protected). This is driven in part by poor ecosystem condition (only intact or moderately modified ecosystem extent contributes fully to the ecosystem target).**
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [5%]{.inline-style-well-protected}
+| [x%]{.inline-style-well-protected}
 | of 82 inland wetland types
 | [Well Protected]{.inline-style-indicator}
 
@@ -97,9 +95,9 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [20%]{.inline-style-not-protected}
-| of 82 inland wetland types
-| [Not protected]{.inline-style-indicator}
+| [5%]{.inline-style-well-protected}
+| of wetland extent
+| [Well Protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -114,13 +112,11 @@ By area, approximately 5% of inland wetland ecosystem extent is Well Protected, 
 
 Well Protected wetland ecosystem types are clustered within the Kruger National Park in eastern Mpumalanga, iSimangaliso Wetland Park World Heritage Site on the Maputaland Coastal Plain in KwaZulu-Natal, and across the Western Cape.
 
-![](imgs/wet_epl_map.png) Figure 1. Ecosystem protection level for inland wetland ecosystem types. <!-- jock plse help with figure 1 and inset donut graph by number of types. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
+![Ecosystem protection level for inland wetland ecosystem types.](imgs/wet_epl_map.png){#fig-epl_wet_map}
 
-Approximately 55% of unchannelled valley-bottom types are Not Protected, while 32% and 33% respectively of floodplain and seep wetland types are Not Protected. Depression wetlands have the highest protection level, with 33% of ecosystem types and 37% of extent considered to be Well Protected, while 11% and 10% respectively of floodplain and seep wetland types are considered Well Protected.
+<!-- jock plse help with figure heading - I can't find where to adjust "Figure 1. " to be bold-->
 
-<!-- Jock please help with scrollable table 1 - list of all river ecosystem types and their EPL from geopackage - "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg" -->
-
-<!-- Caption for Table 1. Ecosystem protection level of inland wetland ecosystem types. WP = Well Protected; MP = Moderately Protected; PP = Poorly Protected; NP = Not Protected.  -->
+Add a sentence here.
 
 ```{r}
 #| label: tbl-epl
@@ -162,11 +158,11 @@ reactable(
 
 ```
 
-<!-- ![](images/%7B40D12240-A997-47FE-8D3A-B4AAB138BC7D%7D.png) -->
+\[photo\]
 
-<!-- Figure 2. Inland Wetland ecosystem protection level within each hydrogeomorphological (HGM) category; (a) the percentage of ecosystem types per category (labelled with actual value) with the total for all inland wetland at the bottom; (b) the percentage of river length (square km) within each category with the total area for all inland wetlands at the bottom – providing an indication of the relative extent of each category. -->
+In terms of wetland hydrogeomorphic type, approximately 55% of unchannelled valley-bottom types are Not Protected, while 32% and 33% respectively of floodplain and seep wetland types are Not Protected. Depression wetlands have the highest protection level, with 33% of ecosystem types and 37% of extent considered to be Well Protected, while 11% and 10% respectively of floodplain and seep wetland types are considered Well Protected.
 
-<!-- Apologies Jock - I think below should revert back to the side by side graphs of number of ecosystem types and percentage of ecosystem types. See screenshot above. It will be Figure 2. Caption should read: "Figure 2. Inland Wetland ecosystem protection level within each hydrogeomorphological (HGM) category; (a) the percentage of ecosystem types per category (labelled with actual value) with the total for all inland wetland at the bottom; (b) the percentage of river length (square km) within each category with the total area for all inland wetlands at the bottom – providing an indication of the relative extent of each category."  -->
+<!-- jock plse help with figure heading below, i vaguely remember from the tutorial we should put caption and Figure # into the panel tabset or at the elipsis. Here, I would like to change figure number to be 2-->
 
 :::: panel-tabset
 ## Figure
@@ -175,7 +171,7 @@ reactable(
 
 ```{r}
 #| label: fig-wetland_epl_bargraph
-#| fig-cap: "Figure 2. Inland Wetland Ecosystem Protection Level shown for each hydrogeomorphological (HGM) category and their total; (a) the percentage of ecosystem types (labelled with their counts) in each protection level category; (b) the percentage of wetland extents (km^2^) in each protection level category." 
+#| fig-cap: "Inland Wetland Ecosystem Protection Level according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each protection level category; (b) the percentage of wetland extent (km^2^) in each protection level category." 
 
 library(tidyverse)
 library(stringr)
@@ -276,7 +272,7 @@ epl_combined_plot
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-river_epl
+#| label: tbl-wetland_epl
 #| tbl-cap: "Table of inland Wetland protection level data." 
 #| classes: plain
 
@@ -299,17 +295,21 @@ gt(tbl_dat) %>% nba_tbl_theme()
 Download the data [here](outputs/wetlands_EPL.csv).
 ::::
 
-<!-- ![](images/clipboard-2393070426.png) -->
-
-<!-- Figure caption. River ecosystem protection level within each geomorphological zone (i.e. slope category); (a) the percentage of ecosystem types per category (labelled with actual value) with the total for all rivers at the bottom; (b) the percentage of river length (km) within each category with the total length for all rivers at the bottom – providing an indication of the relative extent of each category. -->
-
-<!-- ![](images/clipboard-4294154395.png) -->
-
-\[photo\] ADDO ENP and KNP (rivers); Golden Gate and Agulhas wetlands
-
 Seventeen (20%) out of 82 inland wetland types are both threatened (i.e. CR, EN and VU) and under-protected (Not Protected). They are found on the Highveld, along the eastern escarpment, in the Cape Fold Mountains and the arid Northern Cape.
 
-\[More text, prep an EPLI for wetlands?\]\[consider discussing highly threatened and least protected here, to guide where to focus protection going forward. also discuss rehabilitation as a means to improve protection level and further shift the EPLI\]
+<!-- jock plse help with "Figure 3. Highly threatened and under-protected inland wetland ecosystems" using the brown and orange colour palette for (CR-NP, CR-PP, CR-MP, EN-NP, EN-MP, EN-PP, VU-NP, CVU-PP, VU-MP) from "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg" -->
+
+<!--and Figure 4. a table of highly threatened and under-protected inland wetland ecosystems showing # types for each of the four categories (CR-NP, CR-PP, CR-MP, EN-NP, EN-MP, EN-PP, VU-NP, CVU-PP, VU-MP). I am not 100% sure if this is how other realms are choosing to show eg of area or % or # of types and if they are showing WP and LC as well, like the screenshot below "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
+
+\<!--
+
+![](imgs/clipboard-3399808471.png)
+
+example of Figure 4. Highly threatened and under-protected inland wetland ecosystems (from 2018) --\>
+
+<!--  TBD: add EPLI for wetlands? -->
+
+<!-- jock plse can you teach me how to change the colour of these boxes, it looks as though the freshwater colour 4097C2 is in the instruction, but I don't know how to adjust it away from maroon-->
 
 ::: {#box-1 .callout-note collapse="true" style="#4097C2"}
 ## **Box 1. Primary Catchments and Inland Wetland Ecosystem Protection Level**
@@ -318,9 +318,11 @@ Acknowledgements
 
 Text
 
-***Heading 3*** given their location at the interface between the terrestrial and aquatic environments, especially in South Africa, with its generally poor performance of wastewater treatment works and declining state of catchment water quality (Rivers-Moore 2016; Edokpayi et al. 2018; Cullis et al. 2019; Sindane and Modley 2023).
+Figure 1.1. Ecosystem Protection Level of inland wetlands according to primary catchment and Water Management Area.
 
-### *Protection Level of South Africa's major rivers*
+Text
+
+Table 1.1. Ecosystem Protection Level of inland wetlands according to primary catchment and Water Management Area.
 
 **References**
 
@@ -332,9 +334,13 @@ Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global conce
 
 Acknowledgements
 
-Text Note that wetlands are still being mapped and validated within Provincial Nature Reserves around the country.
+Note that wetlands are still being mapped and validated within Provincial Nature Reserves around the country.
 
-***Heading 3*** xxxx.
+Figure 2.1. Ecosystem Protection Level of inland wetlands across the provinces of South Africa.
+
+Text
+
+Table 2.1. Ecosystem Protection Level of inland wetlands across the provinces of South Africa.
 
 **References**
 
@@ -350,49 +356,45 @@ Text Note that wetlands are still being mapped and validated within National Par
 
 MZNP etc for rivers and wetlands it is essential to validate and feedback eg many wetlands are missed, rivers are mis classified and condition needs to be validated.
 
-***Heading 3*** xxxx.
+New grasslands park xxx additional wetlands.
+
+Figure 3.1. National Parks of South Africa
+
+Text
+
+Table 3.1 Ecosystem Protection Level of inland wetlands across National Parks.
 
 **References**
 
-Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
+Roux et al, 2006. Mainstreaming freshwater biodiversity.
 :::
 
-## Methods
+## Approach
 
-Ecosystem Protection Level measures how well represented South Africa's inland wetland ecosystem types[^1] are within the Protected Areas[^2] network. Ecosystem Protection Level was calculated for each of the 82 inland wetland ecosystem types.
+Ecosystem Protection Level measures the degree to which South Africa's inland wetland ecosystem types \[link\] are represented within the protected area[^1] network. Ecosystem Protection Level was calculated for each of the 82 inland wetland ecosystem types. In line with Target 3 of the Global Biodiversity Framework, we measured whether **30% of every inland wetland ecosystem type falls within a Protected Area**[^2]**.** This target was met if 100% of an inland wetland ecosystem type target (i.e the entire 30%) falls within the Protected Area network. **Importantly, the current condition of the wetland is also taken into consideration in the calculation**[^3]**.**
 
-[^1]: River ecosystem types \[link to page\] are xxx.
+[^1]: Protected Areas include xxx
 
-[^2]: Protected Areas include xxx
+[^2]: For the previous National Biodiversity Assessment (2018), the Ecosystem Protection Level target was set at 20% for freshwater ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework, the Ecosystem Protection Level target has been increased to 30% in the EPL calculations.
 
-**We measured whether 30% of every inland wetland ecosystem type falls within a Protected Area. This is the current "target" we have set for our inland wetland ecosystems.** For the previous National Biodiversity Assessment (2018), the Ecosystem Protection Level target was set at 20% for freshwater ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework, the Ecosystem Protection Level target has been increased to 30% in the EPL calculations. The extent of each ecosystem type within the Protected Areas network is expressed as a proportion (target) of the total extent of that type. This target was met if 100% of an inland wetland ecosystem type target (i.e the entire 30%) falls within the Protected Area network.
+[^3]: Ecosystem condition for inland wetland ecosystems was derived through GIS automation of the Level 1A land use impact weightings outlined in WET-Health (MacFarlane et al. 2020). The resulting overall PES score (A to F) per wetland was used in the EPL calculation. This allowed for only good condition wetlands to be considered as representative of Well Protected status; while for MP PP and NP the condition of the wetland used to calculate their contribution to meeting targets - higher integrity / condition wetlands contribute more to meeting PA targets than low integrity / condition wetlands.
 
-**Importantly, the current condition of the wetland is also taken into consideration in the calculation.** Ecosystem condition for inland wetland ecosystems was derived through GIS automation of the Level 1A land use impact weightings outlined in WET-Health (MacFarlane et al. 2020). The resulting overall PES score (A to F) per wetland was used in the EPL calculation. This allowed for only good condition wetlands to be considered as representative of Well Protected status; while for MP PP and NP the condition of the wetland used to calculate their contribution to meeting targets - higher integrity / condition wetlands contribute more to meeting PA targets than low integrity / condition wetlands.
-
-There are four classes of protection and they are calculated as follows: **Well** **Protected**: 100% of an inland wetland ecosystem type's target falls within the Protected Area network; but only wetlands in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of an inland wetland ecosystem type's target falls within the Protected Area network; and wetlands in an A and B condition contribute 100%, wetlands in a C and D condition contribute 30%, while E and F condition wetlands contribute only 10%; **Poorly Protected**: 5% to 49% of an inland wetland ecosystem type's target falls within the Protected Area network; and A&B condition wetlands contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%; **Not Protected**: less than 5% of a river ecosystem type's target falls within the Protected Area network; and A and B condition wetlands contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%.
-
-\[define formal protection, what is included in the protected area network, link to related NBA page\]
+The extent of each ecosystem type within the Protected Areas network is expressed as a proportion (target) of the total extent of that type according to four classes of protection: **Well** **Protected**: 100% of an inland wetland ecosystem type's target falls within the Protected Area network; but only wetlands in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of an inland wetland ecosystem type's target falls within the Protected Area network; and wetlands in an A and B condition contribute 100%, wetlands in a C and D condition contribute 30%, while E and F condition wetlands contribute only 10%; **Poorly Protected**: 5% to 49% of an inland wetland ecosystem type's target falls within the Protected Area network; and A&B condition wetlands contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%; **Not Protected**: less than 5% of a river ecosystem type's target falls within the Protected Area network; and A and B condition wetlands contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%.
 
 ## Acknowledgements
 
 Add names, including mentioning SANParks inventory efforts
 
-### Technical
+## Technical documentation
 
--   **RLE assessment code repository**
-
--   **Code repository**: [github.com/SANBI-NBA/](https://github.com/SANBI-NBA/templates)\[[EPL_riv/README.md at main · askowno/EPL_riv](https://github.com/askowno/EPL_riv/blob/main/README.md)\]
+-   **Code repository**: https://github.com/askowno/EPL_wetl
 
 -   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - \[link to the specific page within these websites containing your data\]
 
-## Additional documentation
-
-For the NBA 2025, documentation is in the form of journal publications and technical reports.
-
 -   **Publications**:
 
--   **Technical reports**: Add link to synthesis report \[plus technical report?\] in PDF format
+-   **Technical reports**:
 
 ## Recommended citation
 
-Job, N.M., names xx. 2025. Freshwater (inland aquatic) realm synthesis. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
+Job, N.M., Skowno, A.L xx. 2025. Freshwater (inland aquatic) realm synthesis. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za

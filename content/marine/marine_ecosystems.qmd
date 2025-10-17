@@ -47,45 +47,65 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## Summary
+<!-- authors: sink, currie, besseling, adams, mzimela, dunga, hambile, dayaram  -->
 
-South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans with the contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current (Figure 1) interacting with the diverse geological setting and topography (Figure 2) to drive exceptional marine biodiversity. The marine realm around mainland South Africa extends from the dune base to a depth of about 5 500 m. The broad range of oceanographic, climatic and geological settings result in a high diversity of marine ecosystem types around mainland South Africa. Globally, South Africa is reported to have the third highest marine endemism with an estimated 33% of its marine fauna found only in South Africa. There is particularly high marine endemism in the warm temperate Agulhas region that extends from False Bay in Cape Town to the transition area near East London and extends offshore on the Agulhas Bank. The 2025 assessment uses the 163 marine ecosystem types as mapped in the 2023 Marine Ecosystem Map (Figure 3). These ecosystems are nested within 17 Ecosystem Functional Groups in alignment with the [IUCN global ecosystem typology](https://global-ecosystems.org/).
+## Summary [not a summary anymore; headline message here]
 
-::::: columns
-::: {.column width="50%"}
-<center>![South Africa’s wide range of oceanographic, bioclimatic, topographical and geological settings result in exceptional marine biodiversity. © Otto Whitehead](imgs/sa_oceanography.jpg){fig-align="center"} <!-- We should perhaps check with Otto, I somehow doubt that he created that image and he probably found or received it from someone, in which case its a bit weird attributing copyright to him?  --></center>
+South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans with the contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current (@fig-context; left) interacting with the diverse geological setting and topography (@fig-context; right) to drive exceptional marine biodiversity. The marine realm around mainland South Africa extends from the dune base to a depth of about 5 500 m. The broad range of oceanographic, climatic and geological settings result in a high diversity of marine ecosystem types around mainland South Africa. Globally, South Africa is reported to have the third highest marine endemism with an estimated 33% of its marine fauna found only in South Africa. There is particularly high marine endemism in the warm temperate Agulhas region that extends from False Bay in Cape Town to the transition area near East London and extends offshore on the Agulhas Bank. The 2025 assessment uses the 163 marine ecosystem types as mapped in the 2023 Marine Ecosystem Map (@fig-eco_map). These ecosystems are nested within 17 Ecosystem Functional Groups in alignment with the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
+
+::: {#fig-context layout-ncol="2"}
+![](imgs/sa_oceanography.jpg)
+
+![](imgs/sa_currents.jpg)
+
+South Africa’s wide range of oceanographic, bioclimatic, topographical and geological settings result in exceptional marine biodiversity.
 :::
 
-::: {.column width="50%"}
-<center>
+<!-- 2 alternate ways of including the two figures -->
 
-![Schematic of major oceanographic processes that occur off Southern Africa.](imgs/sa_currents.jpg){fig-align="center"}
+<!-- ```{r} -->
 
-</center>
-:::
-:::::
+<!-- #| label: fig-context_images -->
 
-In the past five years, a substantial amount of data have been collated to improve marine ecosystem mapping and South Africa has shared lessons on our approach of iterative improvements in ecosystem classification and mapping ([\@sink2023](https://www.frontiersin.org/articles/10.3389/fevo.2023.1108118)). Recent advancements include a new 100-m^2^ resolution national bathymetry map (Manikam et al. 2023), a 600% increase in sediment records and interpolated sediment maps sourced from [dbSEABED](https://instaar.colorado.edu/~jenkinsc/dbseabed/), multiple new oceanographic layers and a cumulative marine biodiversity data set spanning \>1.8 million records, \>7 000 species and \> 100 000 unique localities from more than 125 years of marine science efforts. [(Kelp map published Dunga et al. 2024) Luther AI? Cite reference image report Figure x.]{.mark} Investment in greater research and data science capacity enable such advancements that will improve marine ecosystem classification and mapping, spatial biodiversity assessment and management advice.
+<!-- #| fig-cap: South Africa’s wide range of oceanographic, bioclimatic, topographical and geological settings result in exceptional marine biodiversity. © Otto Whitehead -->
 
-There is rapid escalation in the variety and volume of marine data that monitor biodiversity and environmental conditions and that can be used to characterise patterns, habitats and ecosystems in the ocean. In recognition of this escalation of data, SANBI is implementing data science tools, workflows and statistical approaches for delineating and describing marine ecosystem types[@dunga2024]. Like its predecessors, the 2023 marine ecosystem map relied heavily on thematic approaches and expert-informed decision-making. The updated approach is to develop a framework of data-ingesting and analytical workflows that are reproducible, can be improved as new data or better methods become available, and can be maintained through turnover in staff and guiding experts. The new way of working aims for effectively curated data structures, accessed, manipulated and analysed with scripted workflows, which are documented in online repositories. These repositories ease collaboration and version control and can be shared in publication of the results or products, enhancing transparency of the methods.
+<!-- #| fig-subcap: true -->
 
-## Marine Ecosystem Types
+<!-- #| echo: false -->
 
-<!-- ```{=html} -->
+<!-- #| layout-ncol: 2 -->
 
-<!-- <style type="text/css"> -->
+<!-- knitr::include_graphics(c("imgs/sa_oceanography.jpg","imgs/sa_currents.jpg")) -->
 
-<!-- div.callout-note { -->
-
-<!--   border-left-color: #02268A !important; -->
-
-<!--   background: #02268A !important; -->
-
-<!-- } -->
-
-<!-- </style> -->
+<!-- # Schematic of major oceanographic processes that occur off Southern Africa. -->
 
 <!-- ``` -->
+
+<!-- ::::: columns -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- <center> -->
+
+<!-- ![South Africa’s wide range of oceanographic, bioclimatic, topographical and geological settings result in exceptional marine biodiversity. © Otto Whitehead](imgs/sa_oceanography.jpg){fig-align="center"} <!-- We should perhaps check with Otto, I somehow doubt that he created that image and he probably found or received it from someone, in which case its a bit weird attributing copyright to him?  -->
+
+<!-- </center> -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+
+<!-- <center> -->
+
+<!-- ![Schematic of major oceanographic processes that occur off Southern Africa.](imgs/sa_currents.jpg){fig-align="center"} -->
+
+<!-- </center> -->
+
+<!-- ::: -->
+
+<!-- ::::: -->
+
+In the past five years, substantial amounts of data have been collated to [improve marine ecosystem mapping](#sec-updatingMEM) and South Africa has shared lessons on our approach of [iterative improvements in ecosystem classification and mapping](https://doi.org/10.3389/fevo.2023.1108118) [@sink2023]. Recent advancements include a new 100-m^2^ resolution national bathymetry map (Manikam et al. 2023), a 600% increase in sediment records and interpolated sediment maps sourced from [dbSEABED](https://instaar.colorado.edu/~jenkinsc/dbseabed/), multiple new oceanographic layers, a cumulative marine biodiversity dataset spanning \>1.8 million records, \>7 000 species and \> 100 000 unique localities from more than 125 years of marine science efforts, and developing capacity in AI models to automate annotation of underwater imagery. [(Kelp map published Dunga et al. 2024) Cite reference image report Figure x.]{.mark}
 
 ::: {.panel-tabset appearance="minimal" collapse="false"}
 <!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
@@ -111,19 +131,27 @@ knitr::include_graphics("imgs/benthic_pelagic_map_panel.png")
 ![Key for the pelagic Marine Ecosystem Map](imgs/nba_pelagic_map_legend.png){fig-align="center"}
 :::
 
-## Marine ecosystem types in South Africa
+## Marine ecosystem types
+
+The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@fig-eco_map) to assess the state of 163 marine ecosystem types around mainland South Africa. See the [sub-Antarctic page](#ant_intro.qmd) for an overview of the marine ecosystem types in the Prince Edward Islands. South Africa’s mainland maritime domain (territorial seas plus exclusive economic zone) extends from the dune base to 200 NM seaward, representing an area of approximately 1.07 million km^2^ and extending to a depth of about 5 500 m. The continental shelf width varies between \~2 and 260 km, and the shelf break depth ranges between 80 and 600 m, being terraced in places (de Wet and Compton, 2021). The southern shelf includes the wide Agulhas Bank, a 116 000 km^2^ triangular extension of the shelf that supports many endemic species. The continental shelf constitutes approximately 40% of the mainland maritime domain with slope and abyssal ecosystems constituting the remaining 60%. South Africa has a coastline length of over 3 000 km. A separate [coastal chapter](cst_synthesis.qmd) covers the ecologically determined coastal zone.
+
+![Overview of South Africa’s 2023 hierarchical marine ecosystem classification with four bathomes (inner ring), 17 Ecosystem Functional Groups (central ring), 58 Biogeographic Ecotypes (segments in outer ring) and 163 national Marine Ecosystem Types (not shown as a distinct ring). The number and relative width of each segment in the outer ring reflects the number of national marine ecosystem types nested within each of the Biogeographic Ecotypes. Where there is no number, there is only one ecosystem type associated with that biogeographic ecotype. Note that the shore and shelf do not separate into benthic and pelagic components but the deepsea includes overlapping benthic and pelagic layers. Adapted from Sink et al. (2023).](imgs/ecosystems_sunburst_screenshot_sinketal23.png){#fig-sunburst}
+
+The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) includes 128 shore and shelf ecosystem types which are considered bentho-pelagic, with 22 deepsea benthic and 13 deepsea pelagic ecosystem types (@fig-sunburst). These fall within 17 functional ecosystem groups that, except for Bays, are aligned as far as possible with the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
+
+::: {#box-eco_tbl .callout .marine collapse="False"}
 
 ```{r marine_ecosystem_types}
-#<span style="color:white">Marine ecosystem types in South Africa</span>
 #| label: tbl-eco_types
 #| echo: false
 #| classes: plain
-#| tbl-cap: Marine ecosystem types in South Africa and the IUCN functional group codes that they align with in the [Global Ecosystem Typology](https://global-ecosystems.org/).
+#| tbl-cap: Marine ecosystem types in South Africa and the functional group codes that they align with in the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
 
 # library(here)
-library(gt)
+library(reactable)
+# library(gt)
 library(tidyverse)
-library(sf)
+# library(sf)
 
 # marine_ecotype <-  st_read(
 #     dir("data",
@@ -135,17 +163,36 @@ library(sf)
 # 
 marine_ecotype <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^marine_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
 
-marine_ecotype %>%
-  gt() %>%
-  gt::tab_style(style = list(gt::cell_fill(color = "#02268A"),
-    gt::cell_borders(sides = c("top", "bottom"), color = "black",
-      weight = gt::px(2), style = "solid"), gt::cell_borders(sides = c("left",
-      "right"), color = "lightgray"), gt::cell_text(weight = "bold")),
-    locations = gt::cells_column_labels()) %>%
-  gt::tab_style(style = list(gt::cell_text(weight = "bold", color = "white", align = "left")),
-    locations = gt::cells_column_labels()) %>%
-  tab_options(container.height = px(600),
-              container.overflow.y = TRUE)
+# create the table
+# with reactable()
+reactable(
+  marine_ecotype,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 600,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
+
+# # with gt():
+# marine_ecotype %>%
+#   gt() %>%
+#   gt::tab_style(style = list(gt::cell_fill(color = "#02268A"),
+#     gt::cell_borders(sides = c("top", "bottom"), color = "black",
+#       weight = gt::px(2), style = "solid"), gt::cell_borders(sides = c("left",
+#       "right"), color = "lightgray"), gt::cell_text(weight = "bold")),
+#     locations = gt::cells_column_labels()) %>%
+#   gt::tab_style(style = list(gt::cell_text(weight = "bold", color = "white", align = "left")),
+#     locations = gt::cells_column_labels()) %>%
+#   tab_options(container.height = px(600),
+#               container.overflow.y = TRUE)
 
 ## change this to be bathone, efg, efg code, and national eco types. 
 ##link to iucn website
@@ -153,32 +200,63 @@ marine_ecotype %>%
 ##link to jock reports
 
 ```
+:::
 
-## Technical documentation
+## Approach
 
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+Since 2004, South Africa has followed an approach that [iteratively improves the classification and mapping of marine ecosystem types](https://doi.org/10.3389/fevo.2023.1108118). The Marine Ecosystem Map is informed by a broad range of data (@fig-schematic) derived from many types of surveys, including bathymetric, geological, oceanographic and biodiversity research. It is a large collaborative effort and the 2023 map was developed with contributions from 29 authors from 18 different institutions. South Africa’s national Marine Ecosystem Map follows a nested hierarchy, with 163 marine ecosystem types nested within 17 functional ecosystem groups (@fig-sunburst), which align with the Ecosystem Functional Groups (EFGs) of the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/), though there are some differences in terminology and South Africa also includes Bays as a distinct EFG.
 
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+<!-- – Luther to make this figure -->
 
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+![The range of data that are being used to inform revisions to South Africa’s Marine Ecosystem Map. Increased research and data science investment is improving the marine ecosystem classification and map to support spatial biodiversity assessment and management.](imgs/data_sources.jpeg){#fig-schematic}
 
-<!--# Always use DOI to link to published papers - never use the journal's website -->
+### Updating the Marine Ecosystem Map {#sec-updatingMEM}
 
-### GitLab repositories
+Like its predecessors, the 2023 marine ecosystem map relied heavily on thematic approaches and expert-informed decision-making. Technological advancements are continuously improving our ability to monitor and survey ocean spaces, rapidly increasing the data available to characterise, delineate and understand marine ecosystems. Work is ongoing to update and improve the next version of the Marine Ecosystem Map, which will inform the following National Biodiversity Assessment.
+
+SANBI is implementing data and analytical frameworks to leverage the rapidly escalating volumes of ocean data to improve the Marine Ecosystem Map. This framework consists of a collection of scripted and documented workflows hosted in [online project repositories](https://gitlab.com/marine-map). The scripted workflows can be updated as new data or better methods become available, can be maintained despite turnover in staff and guiding experts, and are making inroads towards more transparent and reproducible science. This data-driven and reproducible approach has included preparation of a suite of environmental gridded data layers and biodiversity survey datasets.
+
+In regions where sufficient biodiversity data occur, the environmental layers and occurrence records are combined in statistical assemblage distribution models that estimate the co-occurring species assemblages and their preferred habitats, thereby predicting biodiversity patterns and characterising their composition. In regions where insufficient biodiversity data have been collected for the biodiversity analyses, gridded environmental layers are combined in cluster analyses to delineate unique habitats. The outputs from the assemblage distribution models and the environmental clusters are used as layers of evidence, together with published biogeographic patterns, to consider updates to the ecosystem map. [Newly mapped ecosystem components or types, such as]{.mark} [kelp forests mapped from satellite data](https://doi.org/10.1016/j.ecss.2024.108989) [@dunga2024] and [newly mapped submarine canyons](#box-canyons)[, are incorporated in the ecosystem map updates.]{.mark}
+
+The updated environmental layers were organised by topical project groups, which include oceanography, geology and geomorphology. A suite of oceanographic (physical, chemical and phytoplankton) variables for surface and seafloor depths were downloaded from the [Bio-ORACLE](https://bio-oracle.org/) platform and calculated from [Copernicus Marine Service](https://data.marine.copernicus.eu/products) satellite products and regional ocean model hindcasts provided by SAEON and SOMISANA. Updated sediment data were sourced from collaborators, greatly increasing the inventory of marine sediment sample and seafloor description records. Interpolated maps of sediment characteristics were additionally sourced from [dbSEABED](https://dbseabed.com/). Geomorphological variables included a new, national-scale, 100-m^2^ resolution [bathymetry map](https://doi.org/10.15493/SANBI.220424) (Manikam et al. 2023), from which derived variables such as slope angle, bathymetric position index and rugosity were calculated.
+
+::: {#box-canyons .callout-note .marine collapse="False" appearance="minimal"}
+### South Africa’s submarine canyons
+
+Submarine canyons are steep-sided valleys that cut into the continental slope and play an important role in connecting coastal and deep-sea environments by facilitating the vertical movement of water, sediments, and nutrients. Many of these canyons host complex terrain, diverse substrate types, habitats and species, including vulnerable marine ecosystem indicators, such as cold-water corals and sponges. They act as important nursery and feeding grounds for a variety of benthic and pelagic species, some of which are conservation priorities, such as the African coelacanth, *Latimeria chalumnae*. Furthermore, submarine canyons can act as refuges from anthropogenic pressures, such as trawling, in areas where steep slopes and complex terrain limit human access.
+
+Despite their ecological importance, many of South Africa’s submarine canyons have remained unknown and unmapped due to limited coverage of high-resolution bathymetry data. The release of the 2024 national-scale bathymetric map at 100-m resolution, combined with additional unpublished multibeam echosounder datasets, has enabled a substantial advance in the mapping of submarine canyon features in South Africa, increasing the number of canyon polygons from 39 in 2018 to over 120. This updated canyon map enhances knowledge on canyon classification and geomorphological processes, identifies shelf-breaching canyons that influence shelf ecology, supports habitat predictions for coelacanths and other species, and will improve the delineation of canyon ecosystem types in the next Marine Ecosystem Map.
+
+![South Africa's newly mapped submarine canyons (red outline) overlayed on the new bathymetry map ([Manikam et al. 2024](https://doi.org/10.15493/SANBI.220424)).](imgs/canyons_map_shelf_edge.png){#fig-canyons}
+:::
+
+### \[Loy & Neli kelp box\]
+
+Significant strides were also made in the collation of marine biodiversity records in a biodiversity occurrence database. Data were sourced from online data repositories, such as OBIS and GBIF and requested from a network of collaborators at a variety of government and tertiary research institutions. In October 2025, the database contained 1 310 081 records from 7 726 marine species and 12 data sources, representing a growing collection of biodiversity data in waters around South Africa. Although only a selection of marine survey datasets have been used in assemblage distribution models, the vision is to build a comprehensive biodiversity database that will enable presence-only modelling of biodiversity patterns and turnover across broad taxonomic groups sourced from many datasets.
+
+::: {#box-ai .callout .marine collapse="False"}
+### Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection
+
+As underwater imaging technology becomes more accessible and widespread, the volume of visual data from marine surveys has outpaced capacity for manual annotations. This has created a need to improve para-taxonomic capacity and AI-powered solutions that can reliably and efficiently extract species occurrence and count data from underwater biodiversity surveys. In South Africa, [YOLOv8](https://docs.ultralytics.com/models/yolov8/) and [BioCLIP2](https://huggingface.co/imageomics/bioclip-2) models have been fine-tuned to identify marine fishes and invertebrates in Remotely Operated Vehicle (ROV) and Stereo Baited Remote Underwater Video (BRUV) footage. These models rely on hierarchical taxonomic labels paired with curated images of species. More than 350 benthic invertebrate species across nine phyla have been indexed and catalogued in a standardised [reference image database](https://oneoceanhub.org/wp-content/uploads/2024/09/Adams-et-al-2024-OOH-Reference-image-report_Final-submitted.pdf) using the [SMaTaR_ID](https://smartar-id.app/) framework. Pipelines have been developed for automating the detection of vulnerable marine ecosystem taxa in ROV videos, threatened seabreams of commercial importance in BRUVs and benthic epifauna for marine ecosystem classification and mapping. Ongoing work aims to expand the species included in the models through curation of high quality and diverse training datasets that underpin model accuracy.
+:::
+
+The adoption of reproducible data and analytical pipelines marks a shift in ecosystem mapping methods, one that should improve efficiency, transparency and foster greater understanding and confidence in the resulting ecosystem map, which informs biodiversity management, spatial planning, and conservation efforts in South Africa. Further investment in data science will be needed to curate and integrate rapidly expanding data streams if South Africa is to maintain a robust evidence base to underpin improved ecosystem classification, mapping, assessment, planning, mainstreaming and decision-making.
+
+<!-- ### GitLab repositories -->
 
 <!-- -   **Bathymetry map**: [gitlab.com/marine-map/geomorphology/attribute_layers](https://gitlab.com/marine-map/geomorphology/attribute_layers) -->
 
 <!-- -   **Oceanographic variables**: [gitlab.com/marine-map/geomorphology/attribute_layers](https://gitlab.com/marine-map/geomorphology/attribute_layers) -->
 
--   **Sediment layers**: [gitlab.com/marine-map/sediment/sediment-map](https://gitlab.com/marine-map/sediment/sediment-map)
+<!-- -   **Sediment layers**: [gitlab.com/marine-map/sediment/sediment-map](https://gitlab.com/marine-map/sediment/sediment-map) -->
 
--   **Species occurrence records**: [gitlab.com/marine-map/biodiversity/Occurrence](https://gitlab.com/marine-map/biodiversity/Occurrence)
+<!-- -   **Species occurrence records**: [gitlab.com/marine-map/biodiversity/Occurrence](https://gitlab.com/marine-map/biodiversity/Occurrence) -->
 
--   **RCP models**: [gitlab.com/marine-map/environmental_clustering](https://gitlab.com/marine-map/environmental_clustering)
+<!-- -   **RCP models**: [gitlab.com/marine-map/environmental_clustering](https://gitlab.com/marine-map/environmental_clustering) -->
 
-### Data availability
+<!-- ### Data availability -->
 
--   **Marine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/Projects/Detail/2246)
+<!-- -   **Marine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) -->
 
 ### Key Publications
 
@@ -203,6 +281,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
+
+## References
 
 ::: {#refs}
 :::

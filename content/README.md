@@ -14,6 +14,14 @@ A folder containing miscellaneous contextual pages for the website. Some are par
 
 **Source:** <https://github.com/SANBI-NBA/about_webpages>
 
+### key-messages
+
+Policy advice based on the findings of the NBA, summarised into 15 key messages
+
+**Maintainer:** Andrew Skowno
+
+**Source:** <https://github.com/SANBI-NBA/key-messages>
+
 ### integrated-findings
 
 A section summarising overall status and trends of South Africa's biodiversity, including the headline indicators for species and ecosystems.
@@ -66,9 +74,9 @@ Detailed findings for the coast.
 
 Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Islands).
 
-**Maintainer:**
+**Maintainer:** Stephni van der Merwe, Andrew Skowno
 
-**Source:**
+**Source:** <https://github.com/SANBI-NBA/subantarctic>
 
 ### species
 
@@ -80,8 +88,8 @@ Detailed findings for species.
 
 ## Workflow for extracting website content from repositories
 
-1.  Clone each of the repos listed above - it is best to place them within a parent folder to allow recursive content extraction
+1.  Clone each of the repos listed above - it is best to place them within a parent folder to enable recursive content extraction.
 
-2.  Make sure that the local folder name containing the repo matches the content folder listed here
+2.  Make sure that the local folder name containing the repo matches the content folder listed here.
 
 3.  Run the script `collect-content.R` in the `scripts` folder to copy the contents of the `quarto` folder of each repo to here

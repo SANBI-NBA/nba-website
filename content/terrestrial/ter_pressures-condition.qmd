@@ -150,3 +150,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
 nba_citation(meta)
 ```
+
+### References
+
+::: {#refs}
+:::

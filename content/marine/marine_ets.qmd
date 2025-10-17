@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Threat Status" # Compulsory
+title: "Ecosystem threat status" # Compulsory
 subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -19,6 +19,150 @@ author:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Stephen #Add author's first name here. Abbreviate the middle name
+      family: Holness #Add author's surname here
+    orcid: https://orcid.org/0000-0002-4060-7312 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Stephen #Add author's first name here. Abbreviate the middle name
+      family: Kirkman #Add author's surname here
+    orcid: https://orcid.org/0000-0001-5428-7375 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: dffe4 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Sean #Add author's first name here. Abbreviate the middle name
+      family: Porter #Add author's surname here
+    orcid: https://orcid.org/0000-0001-8890-7982 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: ori5 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Prideel #Add author's first name here. Abbreviate the middle name
+      family: Majiedt #Add author's surname here
+    orcid: https://orcid.org/0000-0001-7530-3442 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Victor #Add author's first name here. Abbreviate the middle name
+      family: Dunga #Add author's surname here
+    affiliations:
+      - ref: sgh6 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: Atkinson #Add author's surname here
+    orcid: https://orcid.org/0000-0001-6724-9589 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: saeon7 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Anthony #Add author's first name here. Abbreviate the middle name
+      family: Bernard #Add author's surname here
+    orcid: https://orcid.org/0000-0003-0482-6283 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: saiab3 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+      
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Mari-Lise #Add author's first name here. Abbreviate the middle name
+      family: Franken #Add author's surname here
+    orcid: https://orcid.org/0000-0003-3441-9013 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+      
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Karenyi #Add author's surname here
+    orcid: https://orcid.org/0000-0002-2992-4528 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: uct8 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Shakirah #Add author's first name here. Abbreviate the middle name
+      family: Rylands #Add author's surname here
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kaylee #Add author's first name here. Abbreviate the middle name
+      family: Smit #Add author's surname here
+    orcid: https://orcid.org/0000-0003-3453-9082 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu2
+      - ref: saiab3 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+     
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Jock #Add author's first name here. Abbreviate the middle name
+      family: Currie #Add author's surname here
+    orcid: https://orcid.org/0000-0002-7226-2988 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+   
+   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Andrew #Add author's first name here. Abbreviate the middle name
+      family: Skowno #Add author's surname here
+    orcid: https://orcid.org/0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+     
+ 
+
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -27,6 +171,40 @@ affiliations:
   - id: sanbi1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu2 # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+# Make sure you maintain indentations exactly as they are here
+  - id: saiab3 # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: South African Institute for Aquatic Biodiversity
+
+# Make sure you maintain indentations exactly as they are here
+  - id: dffe4 # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Department of Forestry, Fisheries and the Environment
+
+# Make sure you maintain indentations exactly as they are here
+  - id: ori5 # Use this as the affiliation ref with authors above
+    number: 5 # This number is used to associate authors with affiliations
+    name: Oceanographic Research Institute
+
+# Make sure you maintain indentations exactly as they are here
+  - id: sgh6 # Use this as the affiliation ref with authors above
+    number: 6 # This number is used to associate authors with affiliations
+    name: Seas of Good Hope
+
+# Make sure you maintain indentations exactly as they are here
+  - id: saeon7 # Use this as the affiliation ref with authors above
+    number: 7 # This number is used to associate authors with affiliations
+    name: South African Environmental Observation Network
+
+# Make sure you maintain indentations exactly as they are here
+  - id: uct8 # Use this as the affiliation ref with authors above
+    number: 8 # This number is used to associate authors with affiliations
+    name: Univeristy of Cape Town
+
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -45,7 +223,61 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+
+# load the data 
+ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+## extent
+eco_extent <- ets_combined %>% 
+  pivot_longer(cols = 2:6) %>% 
+  filter(metric == "extent")
+
+thr_extent <- ets_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_cr_extent <- round((sum(thr_extent$`Critically Endangered`)/total_extent)*100, digits = 1)
+perc_en_extent <- round((sum(thr_extent$`Endangered`)/total_extent)*100, digits = 1)
+perc_vu_extent <- round((sum(thr_extent$`Vulnerable`)/total_extent)*100, digits = 1)
+perc_nt_extent <- round((sum(thr_extent$`Near Threatened`)/total_extent)*100, digits = 1)
+perc_lc_extent <- round((sum(thr_extent$`Least Concern`)/total_extent)*100, digits = 1)
+perc_thr_extent <- round(perc_cr_extent+perc_en_extent+perc_vu_extent)
+
+##count
+eco_count <- ets_combined %>% 
+  pivot_longer(cols = 2:6) %>% 
+  filter(metric == "count")
+
+thr_count <- ets_combined %>% 
+  filter(metric == "count")
+
+
+total_count <- sum(eco_count$value)
+
+perc_cr_count<- round((sum(thr_count$`Critically Endangered`)/total_count)*100)
+perc_en_count<- round((sum(thr_count$`Endangered`)/total_count)*100)
+perc_vu_count<- round((sum(thr_count$`Vulnerable`)/total_count)*100)
+perc_nt_count <- round((sum(thr_count$`Near Threatened`)/total_count)*100)
+perc_lc_count <- round((sum(thr_count$`Least Concern`)/total_count)*100)
+perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
+
+```
+
 ------------------------------------------------------------------------
+
+*Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy [KMA2](KMA2.qmd). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning and strategic Marine Spatial Planning can safeguard natural capital while enabling development.*
+
+![Cape Bay is now considered an Endangered ecosystem type. © Peter Chadwick](imgs/cape_bay.png)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
@@ -81,154 +313,42 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## Approach
+## Ecosystem threat status results
 
-The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using [the 2024 aligned]{.mark} to the IUCN guidelines for red listing ecosystems and drawing from previous marine NBA assessments.
+While `r perc_thr_count`% of South Africa’s `r total_count` marine ecosystem types are threatened, only `r perc_thr_extent`% of the total area is constituted by threatened ecosystem types. Note that the area estimates include both benthic and pelagic area beyond the shelf. Inshore and shelf ecosystem types are generally more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Overall, six ecosystem types (`r perc_cr_count`% of types) are Critically Endangered, with 31 Endangered (`r perc_en_count`%) and 36 Vulnerable (`r perc_vu_count`%). Of the remaining ecosystem types, 19 (`r perc_nt_count`%) and 71 (`r perc_lc_count`%) were respectively, Near Threatened and Least Concern.
 
-Criteria A to E Both the extent and severity of ecosystem degradation were considered by calculating the extent of each ecosystem type in each of the ecosystem condition categories (good and fair, moderately modified, severely modified, very severely degraded). Condition assessments are based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+The locations of the threatened ecosystem types are shown in @fig-ets_map_benth and @fig-ets_map_pel. The cold temperate Southern Benguela region has more threatened ecosystem types than the warm temperate Agulhas region with Kwa-Zulu Natal also having many threatened ecosystem types.
 
-A more detailed explanation of the assessment method can be found at [RLE explanation page](rle_explain.html).
-
-## Ecosystem Threat Status Assessment
 
 ```{r}
 #| label: fig-ets_map_benth
-#| fig-cap: Benthopelagic and deepsea benthic marine ecosystem type threat status.
+#| fig-cap: Threat status of benthopelagic and deepsea benthic marine ecosystem types.
 #| echo: false
 #| message: false
 #| warning: false
 #| out-width: 100%
 
-#devtools::install_github("SANBI-NBA/nbaR")
-# library(tidyverse)
-# library(nbaR)
-# library(sf)
-# 
-# 
-# #marine linewidth
-# m_lwd = 0.001
-# 
-# 
-# dat <-  st_read(
-#     dir("data",
-#         "marine_ecosystems.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE)
-# 
-# marine_benth <- dat %>%
-#   group_by(ecosystem_type,ecosystem_functional_type_getl3, threat_status, protection_level) %>% #
-#   summarise(geometry = st_union(geom)) %>%
-#   st_cast(to = "MULTIPOLYGON") %>%
-#   filter(ecosystem_functional_type_getl3 !="Pelagic ocean waters")%>% 
-#   st_transform(crs = 4326)
-# 
-# marine_pel <- dat %>%
-#   group_by(ecosystem_type,ecosystem_functional_type_getl3, threat_status, protection_level) %>% #
-#   summarise(geometry = st_union(geom)) %>%
-#   st_cast(to = "MULTIPOLYGON") %>%
-#   filter(ecosystem_functional_type_getl3 =="Pelagic ocean waters")%>% 
-#   st_transform(crs = 4326)
-# 
-# 
-# 
-# 
-# RLEmap <- nbaR::nba_map(marine_benth,
-#                            "vector",
-#                            FILL = threat_status, 
-#                         LEGEND = T) +
-# #  geom_sf(data=marine_benth, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
-#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
-#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
-#         # ,
-#         # legend.key.size = ggplot2::unit(1,"line"),
-#         #  legend.position = "inside",
-#         #  legend.justification = c("right", "bottom"),
-#         # legend.title = element_blank()
-#         ) +  #remove white space around the plot
-#   coord_sf(expand = FALSE)    # <-- prevents padding around data
-# # theme_void()
-# 
-# #ggsave(plot = RLEmap, filename = "imgs/ets_benth.jpg")
-# 
-# ## add the donut plot
-# 
-# rle_donut <- marine_benth %>% 
-#   st_drop_geometry() %>% 
-#   ungroup() %>% 
-#   count(threat_status) %>% 
-#   tidyr::pivot_wider(names_from = threat_status, values_from = n) %>% 
-#   mutate(RLE = "RLE") %>% 
-#   select(RLE, `Critically Endangered`,Endangered, Vulnerable, `Near Threatened`, `Least Concern`) %>% 
-#   nbaR::nba_plot(GROUPS = RLE, 
-#                  COLS = 2:6, 
-#                  CHRT = "donut",
-#                  NUM = TRUE, 
-#                  LAB = "", 
-#                  GRP = F) +
-#   theme(legend.position = "none") 
-# 
-# final_plot <- RLEmap + 
-#   annotation_custom(ggplotGrob(rle_donut),
-#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
-# 
-# print(final_plot)
-
-knitr::include_graphics("imgs/ets_benthic_with_donut.png")
+knitr::include_graphics("imgs/ets_benthic_with_donut.png") #"imgs/ets_benthic_with_donut_border.png"
 
 ```
 
 ```{r}
 #| label: fig-ets_map_pel
-#| fig-cap: Pelagic marine ecosystem type threat status.
+#| fig-cap: Threat status of pelagic marine ecosystem types.
 #| echo: false
 #| out-width: 100%
-
-
-# RLEmap <- nbaR::nba_map(marine_pel,
-#                            "vector",
-#                            FILL = threat_status, 
-#                         LEGEND = T)+
-# #  geom_sf(data=marine_pel, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
-#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
-#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
-#         # ,
-#         # legend.key.size = ggplot2::unit(1,"line"),
-#         #  legend.position = "inside",
-#         #  legend.justification = c("right", "bottom"),
-#         # legend.title = element_blank()
-#         ) + #remove white space around the plot
-#   coord_sf(expand = FALSE)    # <-- prevents padding around data
-# # theme_void()
-# 
-# #ggsave(plot = RLEmap, filename = "imgs/ets_pel.jpg")
-# 
-# ## add the donut plot
-# 
-# rle_donut <- marine_pel %>% 
-#   st_drop_geometry() %>% 
-#   ungroup() %>% 
-#   count(threat_status) %>% 
-#   tidyr::pivot_wider(names_from = threat_status, values_from = n) %>% 
-#   mutate(RLE = "RLE") %>% 
-#   select(RLE, Vulnerable, `Least Concern`) %>% 
-#   nbaR::nba_plot(GROUPS = RLE, 
-#                  COLS = 2:3, 
-#                  CHRT = "donut",
-#                  NUM = TRUE, 
-#                  LAB = "", 
-#                  GRP = F) +
-#   theme(legend.position = "none") 
-# 
-# final_plot <- RLEmap + 
-#   annotation_custom(ggplotGrob(rle_donut),
-#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
-# 
-# print(final_plot)
 
 knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
 
 ```
+
+The most **threatened functional groups** include bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf (@fig-ets_bargraphs).
+
+A more detailed explanation of the assessment method used to calculate threat status can be found at the [RLE explanation page](rle_explain.qmd).
+
+
+:::: panel-tabset
+## Figure
 
 ```{r}
 #| label: fig-ets_bargraphs
@@ -236,79 +356,7 @@ knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
 #| fig-cap: Threat status of marine ecosystem types by functional group.
 #| out-width: 100%
 
-library(tidyverse)
-library(nbaR)
 
-# ecosystem_summary <- dat %>%
-#      st_drop_geometry() %>%
-#       group_by(ecosystem_functional_type_getl3, 
-#                threat_status) %>%
-#       summarise(count = n(),
-#                 extent = sum(eco_extent_km2)) %>% 
-#   mutate(ecosystem_functional_type_getl3 = str_replace_all(ecosystem_functional_type_getl3,"Mesophotic and sub-photic rocky shelves", "rocky shelves"))
-# 
-# count <- ecosystem_summary %>%
-#       pivot_wider(
-#         id_cols = ecosystem_functional_type_getl3,
-#         names_from = threat_status,
-#         values_from = count) %>%
-#       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
-# 
-# extent <- ecosystem_summary %>%
-#       pivot_wider(
-#         id_cols = ecosystem_functional_type_getl3,
-#         names_from = threat_status,
-#         values_from = extent) %>%
-#       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
-# 
-# 
-# # ets <- count %>%
-# #   mutate(metric = "count") %>%
-# #   bind_rows(extent %>% mutate(metric = "extent"))
-# # 
-# # nba_plot_comb(DF = ets,
-# #          GROUPS = ecosystem_functional_type_getl3,
-# #          METRIC_COL = "metric", 
-# #          METRICS = c("count", "extent"),
-# #          COLS = 2:6,
-# #          CHRT = "bar",
-# #          NUM = T,
-# #          LAB = "Percentage of ecosystem",
-# #          SAVE = NULL)+
-# #   theme(legend.position = "bottom",
-# #     legend.location = "plot")
-# 
-# 
-# rle_count_all <- nba_plot(count,
-#          ecosystem_functional_type_getl3,
-#          2:6,
-#          CHRT = "bar",
-#          NUM = T,
-#          LAB = "Percentage of ecosystem counts",
-#          SAVE = NULL)+
-#   theme(legend.position = "bottom",
-#     legend.location = "plot")
-# 
-# rle_ext_all <- nba_plot(extent,
-#          ecosystem_functional_type_getl3,
-#          2:6,
-#          CHRT = "bar",
-#          NUM = F,
-#          LAB = "Percentage of ecosystem extent",
-#          SAVE = NULL)+
-#   theme(legend.position = "bottom",
-#     legend.location = "plot")+
-#   ggpubr::rremove("y.text") + 
-#   ggpubr::rremove("y.ticks")
-# 
-# rle_combined <- count %>%
-# mutate(metric = "count") %>%
-# bind_rows(extent %>%
-# mutate(metric = "extent"))
-
-# load the data 
-ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
 #Combine RLE plot
 nba_plot_comb(ets_combined,
               ecosystem_functional_type_getl3,
@@ -323,59 +371,101 @@ nba_plot_comb(ets_combined,
 
 ```
 
+## Data
+
+::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-ets
-#| tbl-cap: "Threat status of marine ecosystem types in South Africa."
-# ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern. Type values in any of the search boxes to filter the list to rows of interest.
+#| label: tbl-ets_bargraphs
+#| echo: false
+#| tbl-cap: Threat status of marine ecosystem types by functional group.
+#| out-width: 100%
 
-# library(here)
-#library(gt)
-library(reactable)
-library(dplyr)
+library(gt)
 
-# marine_ecotype <-  st_read(
-#     dir(here::here("data"),
-#         "marine_ecosystems.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE) %>%
-#   st_drop_geometry() %>%  
-#   select(c(ecoregion, ecosystem_type, threat_status, threat_basis)) %>% 
-#   mutate(threat_status = factor(threat_status, levels = c("Critically Endangered",
-#                                  "Endangered",
-#                                  "Vulnerable",
-#                                  "Near Threatened",
-#                                  "Least Concern"),
-#                       ordered = TRUE)) %>%
-#   rename(Ecoregion = ecoregion, 
-#          `Ecosystem type` = ecosystem_type,
-#          `Threat status` = threat_status, 
-#          `Threat basis` = threat_basis) %>% 
-#   arrange(Ecoregion, `Ecosystem type`, `Threat status`, `Threat basis`) 
+tbl <- ets_combined %>% 
+  arrange(ecosystem_functional_type_getl3) %>% 
+  select(ecosystem_functional_type_getl3, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Near Threatened`, `Least Concern`) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "ecosystem_functional_type_getl3",
+    row_group_as_column = TRUE)%>% 
+  nbaR::nba_tbl_theme(HEADER = "Marine") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
 
-# load data
-ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(-'Protection level') # removing the threat status, assuming we only want to show that in the ETS page?
 
-# create the table
-reactable(
-  ets,
-  filterable = TRUE,
-  searchable = FALSE,
-  pagination = FALSE,
-  height = 600,
-  defaultColDef = colDef(
-    headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
-  ),
-  theme = reactableTheme(
-    inputStyle = list(
-      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
-      backgroundColor = "white",
-      border = "1px solid #ccc"
-    )))
-
+tbl
 ```
+:::
+::::
+
+The six ecosystem types that are **Critically Endangered** cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling which persists over much of the extent of this ecosystem type in addition to flow reduction. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort which have led to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 under Criterion C/D with four additional small ecosystem types listed under this category in 2025 when strictly applying Criterion B. The Orange Cone Inner Shelf Mud Reef Mosaic is impacted by ongoing flow reduction and marine mining. Cape Bay, which includes Table and Saldahna Bay have very high cumulative pressures with ongoing degradation linked to port and harbour activities. The Aliwal Shoal Reef Complex falls entirely within a Marine Protected Area (MPA) but ongoing linefishing, waster water discharge and (lethal?) shark control cause this ecosystem type of restricted distribution to be classified as Critically Endangered. Further work to support reef classification and measure ecosystem condition is recommended along with management to reduce pressures in the MPA.
+
+![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf Edge. © Kerry Sink](imgs/Nan18_T16_25m_28.JPG)
+
+There are 31 **Endangered ecosystem types** (`r perc_en_count`%) which cover `r perc_en_extent`% by extent. Many of these are ecosystem types of limited extent that were uplisted (considered more threatened) relative to 2019 due to the application of global standards in 2025. For example, False and Walker Bay, St Helena Bay and Eastern Agulhas Bays (Algoa and St Francis) are all Endangered under Criterion B.
+
+![False and Walker Bay ecosystem type is now considered Endangered. © Peter Chadwick](imgs/Walker_bay_southern_Right_Whales.jpg)
+
+**Vulnerable** ecosystem types cover `r perc_vu_extent`% of the ocean space, with 36 ecosystem types (`r perc_vu_count`%) falling within this category. All three kelp ecosystem types in South Africa are Vulnerable with cumulative fishing activities playing a key role in declining condition. Two of the 13 pelagic ecosystem types are threatened (South Atlantic Productive Margin Water and Upwelled Agulhas Current Margin Water) and both of these are Vulnerable with key pressures driving decline in condition including large pelagic fishing and mid water trawling. All three coral communities were assessed as Vulnerable under B3 with climate change and coral bleaching considered a key threat that could lead to a rapid increase in the risk of ecosystem collapse. This also aligns with the regional result from regional coral reef assessments [@obura2021].
+
+
+![South Africa’s three national coral community ecosystem types were assessed as Vulnerable in 2025 due their restricted distribution and the risk of climate change. These reef types are part of a regional ecosystem type, Delagoa xx ([@obura2021]) which was also assessed as Vulnerable at the regional scale. © Geoff Spiby](imgs/Sodwana_4_bouy_arches_coral_gardens_reef_02-12-118.jpg)
+
+**Near Threatened** (NT) ecosystem types are those that were evaluated to be within 10% of the threshold for Vulnerable. These ecosystems are at risk of ecosystem collapse if increasing pressures lead to further degradation in ecological condition. Examples include the Kingklip Koppies and the Agulhas Exposed Stromatolite Rocky Shore.
+
+![The Kingkilp Koppies is a Near Threatened ecosystem type off Gqeberha. A co-developed seabed management area will protect this ecosystem type from trawling but further collaborations are needed to secure this area from other activities that may impact the seabed.](imgs/kingklip_koppies_KSink.png)
+
+
+## Approach
+
+The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using the 2024 Guidelines for the application of [IUCN Red List of Ecosystems Categories and Criteria](https://iucnrle.org/rle-categ-and-criteria) and drawing from previous marine NBA assessments. See the [Ecosystem Threat Status and Redlist of Ecosystems](rle_explain.qmd) explainer page for further information on South Africa’s approach to the assessment of Ecosystem Threat Status. The threat status of South Africa’s 163 marine ecosystem types was evaluated using IUCN Criteria A-D using pressure and condition maps from the 2018 assessment. Both the extent and severity of ecosystem degradation were considered by calculating the extent of each ecosystem type in each of the four ecosystem [condition categories](marine_condition.qmd). Condition assessments are based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+
+As pressure and condition data sets were not updated, it is important to note that changes in ecosystem threat status are largely as a result of improved methods rather than genuine change related to increasing loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included consideration of habitat loss (Criterion A), and the number of threat defined locations, ongoing drivers of ecological degradation (as opposed to pressures that have ceased e.g. due to new protected areas or changes in sea use) and stochastic events including climate change (Criterion B). Several ecosystem types are more threatened due to the automatic ecosystem extent thresholds provided by the IUCN but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline.
+
+The application of the IUCN global standards supported a fuller understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen future assessments.
+
+<!-- ::: {#box-8 .callout .marine collapse="False"} -->
+<!-- ##  -->
+
+<!-- ```{r} -->
+<!-- #| label: tbl-ets -->
+<!-- #| tbl-cap: "Threat status of marine ecosystem types in South Africa." -->
+<!-- # ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern. Type values in any of the search boxes to filter the list to rows of interest. -->
+
+<!-- ::: {#box-ets_tbl .callout  .marine collapse="False"} -->
+<!-- # library(here) -->
+<!-- #library(gt) -->
+<!-- library(reactable) -->
+<!-- library(dplyr) -->
+
+
+<!-- # load data -->
+<!-- ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE),  -->
+<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>%  -->
+<!--   select(-'Protection level') # removing the threat status, assuming we only want to show that in the ETS page? -->
+
+<!-- # create the table -->
+<!-- reactable( -->
+<!--   ets, -->
+<!--   filterable = TRUE, -->
+<!--   searchable = FALSE, -->
+<!--   pagination = FALSE, -->
+<!--   height = 600, -->
+<!--   defaultColDef = colDef( -->
+<!--     headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold") -->
+<!--   ), -->
+<!--   theme = reactableTheme( -->
+<!--     inputStyle = list( -->
+<!--       color = "black", # create black searching text in the filter box, otherwise one doesn't see it! -->
+<!--       backgroundColor = "white", -->
+<!--       border = "1px solid #ccc" -->
+<!--     ))) -->
+
+<!-- ``` -->
+<!-- ::: -->
 
 ## Technical documentation
 
@@ -387,11 +477,14 @@ reactable(
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### GitLab repositories
+### Git repositories
 
--   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+-   **Methods and workflows of the marine threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
-### Key Publications
+### References
+
+::: {#refs}
+:::
 
 ## Recommended citation
 
@@ -413,5 +506,4 @@ nba_citation(meta)
 
 ```
 
-::: {#refs}
-:::
+
