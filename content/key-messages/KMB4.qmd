@@ -5,7 +5,7 @@ title-block-banner: "#70B276"
 title-block-banner-color: white
 ---
 
-\| *South Africa has made progress towards expanding protected areas to be more ecologically representative of ecosystems and species (well established). Spatial biodiversity planning tools continue to guide strategic expansion efforts. By enabling better participation in conservation and restoration, addressing gaps in sustainable finance and enhancing effectiveness of protected and conserved areas, pressures on ecosystems and species can be further mitigated.* \| 
+\| South Africa has made progress towards expanding protected areas to be more ecologically representative of ecosystems and species (well established). Spatial biodiversity planning tools continue to guide strategic expansion efforts. By enabling better participation in conservation and restoration, addressing gaps in sustainable finance and enhancing effectiveness of protected and conserved areas, pressures on ecosystems and species can be further mitigated. \| 
 
 ------------------------------------------------------------------------
 

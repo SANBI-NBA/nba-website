@@ -5,7 +5,7 @@ title-block-banner: "#70B276"
 title-block-banner-color: white
 ---
 
-\| *The first assessment of genetic health based on two international indicators suggests declines in the genetic diversity of South Africa’s species (established but incomplete). More South African taxa need to be assessed to better understand the full extent of genetic loss within South Africa, and genetic richness analyses need to be incorporated into protected area expansion strategies.*  \| 
+\| The first assessment of genetic health based on two international indicators suggests declines in the genetic diversity of South Africa’s species (established but incomplete). More South African taxa need to be assessed to better understand the full extent of genetic loss within South Africa, and genetic richness analyses need to be incorporated into protected area expansion strategies. \| 
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ title-block-banner: "#9D85BE"
 title-block-banner-color: white
 ---
 
-\| *Investment in biodiversity monitoring is essential to inform effective biodiversity management, decision-making, research and reporting. Without monitoring, there is no way to know if efforts are making a difference or if targets are being met. Yet, data collection and monitoring are under resourced and uncoordinated. Investment in strategic and collaborative biodiversity monitoring will provide the evidence needed to guide adaptive management and ensure resources are used effectively.* \| 
+\| Investment in biodiversity monitoring is essential to inform effective biodiversity management, decision-making, research and reporting. Without monitoring, there is no way to know if efforts are making a difference or if targets are being met. Yet, data collection and monitoring are under resourced and uncoordinated. Investment in strategic and collaborative biodiversity monitoring will provide the evidence needed to guide adaptive management and ensure resources are used effectively. \| 
 
 ------------------------------------------------------------------------
 

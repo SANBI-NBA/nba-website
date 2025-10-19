@@ -5,7 +5,7 @@ title-block-banner: "#FAA755"
 title-block-banner-color: white
 ---
 
-\|***The negative impacts of pollution continue to increase in South Africa’s aquatic ecosystems, exceeding sustainable limits and affecting biodiversity, human wellbeing, and economic development (established). South Africa has advanced water policy, however, there is a need to strengthen compliance monitoring and enforcement for aquatic ecosystems.*** \|
+\| The negative impacts of pollution continue to increase in South Africa’s aquatic ecosystems, exceeding sustainable limits and affecting biodiversity, human wellbeing, and economic development (established). South Africa has advanced water policy, however, there is a need to strengthen compliance monitoring and enforcement for aquatic ecosystems. \|
 
 ------------------------------------------------------------------------
 

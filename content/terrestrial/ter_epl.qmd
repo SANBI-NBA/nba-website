@@ -121,7 +121,7 @@ epli_2024 <- read.csv(here::here("quarto/data/results_df_EPL_2024_biome_invasive
 
 ### Ecosystem protection level results
 
-Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. Ecosystem types are assigned to one of four categories based on a set of predefined ecosystem targets (ranging from 16 to 32%)[@reyers2007; @desmet2004]. Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP).
+Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. Ecosystem types are assigned to one of four categories based on a set of predefined ecosystem targets (ranging from 16 to 32%)[@reyers2007; @desmet2004]. Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP). Read more about his indicator [here](../integrated-findings/chl_epl_explained.qmd).
 
 **\[Ecosystem protection level - explained\]**
 
@@ -147,7 +147,7 @@ epl_summary %>%
 
 ```
 
-The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass.
+The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass ([Key Message B4](../key-messages/kmb4.qmd)).
 
 ![Protected Areas in the Terrestrial realm circa 2024](imgs/pa_ter.png){#fig-pa_map fig-align="center" width="600"}
 

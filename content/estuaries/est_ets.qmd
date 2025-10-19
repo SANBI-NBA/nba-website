@@ -2,7 +2,7 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Ecosystem Threat Status" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+subtitle: "Estuarine Realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -10,23 +10,43 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
 # List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Kerry #Add author's first name here. Abbreviate the middle name
-      family: Sink #Add author's surname here
-    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+      given: Lara
+      family: van Niekerk
+    orcid: 0000-0001-5761-1337 
     affiliations:
-      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
+      - ref: csir1
+      - ref: nmu1
+  - name:
+      given: Andrew L.
+      family: Skowno 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: sanbi1 
+  - name:
+      given: Kerry 
+      family: Sink 
+    orcid: 0000-0001-5051-573X 
+    affiliations:
+      - ref: sanbi1 
+      - ref: nmu1
+   - name:
+      given: Linda R.
+      family: Harris 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: nmu1     
 
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: sanbi1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: South African National Biodiversity Institute
+  - id: csir1
+    number: 1
+    name: Council for Scientific and Industrial Research (CSIR), Stellenbosch,South Africa   
+  - id: nmu1
+    number: 2
+    name: Institute for Coastal and Marine Research (CMR), Nelson Mandela University,Gqeberha, South Africa 
+  - id: sanbi1
+    number: 3
+    name: South African National Biodiversity Institute (SANBI)
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -53,12 +73,12 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [45%]{.inline-style-threatened}
-| of 163 ecosystem types
+| [59%]{.inline-style-threatened}
+| of 22 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
-| [4%]{.inline-style-threatened}
-| of 163 ecosystem types
+| [23%]{.inline-style-threatened}
+| of 22 ecosystem types
 | [Critically endangered]{.inline-style-indicator}
 
 </center>
@@ -67,12 +87,12 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [19%]{.inline-style-threatened}
-| of 163 ecosystem types
+| [18%]{.inline-style-threatened}
+| of 22 ecosystem types
 | [Endangered]{.inline-style-indicator}
 
-| [22%]{.inline-style-threatened}
-| of 163 ecosystem types
+| [18%]{.inline-style-threatened}
+| of 22 ecosystem types
 | [Vulnerable]{.inline-style-indicator}
 
 </center>
@@ -83,9 +103,21 @@ google-scholar: true
 
 ## Approach
 
-The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using [the 2024 aligned]{.mark} to the IUCN guidelines for red listing ecosystems and drawing from previous marine NBA assessments.
+The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments.
 
-Criteria A to E Both the extent and severity of ecosystem degradation were considered by calculating the extent of each ecosystem type in each of the ecosystem condition categories (good and fair, moderately modified, severely modified, very severely degraded). Condition assessments are based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+The IUCN RLE (Ver 2) framework was applied and following criterion were assessed:
+
+-   **Criterion A2b** (current rate of decline in ecosystem extent); based on land cover change rates between 1990 and 2022 - projected forward to 2040.
+
+-   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022
+
+-   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there is ongoing decline defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH, OR b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment is greater than 30% of type extent. This captures increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating applies to the whole type and is scaled by estuarine extent.
+
+-   **Criterion D1** was applied using fishing pressure scores for each estuary. The scores were converted to an index 0-1 and aligned to severity rating (1 highest severity - 100%; 0 lowest severity - 0%). The rating applies to the whole type and is scaled by estuarine extent.
+
+-   **Criterion D3** was applied to the Estuarine Ecological State Class (PES) data such that severity of biotic disruption of \>= 90% was assumed for PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F. The rating applies to the whole type and is scaled by estuarine extent.
+
+Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for these two criteria is selected as the threat / risk status for each river type.
 
 A more detailed explanation of the assessment method can be found at [RLE explanation page](rle_explain.html).
 

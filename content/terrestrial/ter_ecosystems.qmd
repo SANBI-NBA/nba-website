@@ -58,7 +58,8 @@ table-caption-location: top        # puts captions above tables
 table-caption-prefix: "Table"      # the prefix used for numbering
 table-caption-auto-number: true    # enable automatic numbering
 ---
---------------------------------------------------------------------
+
+------------------------------------------------------------------------
 
 The ecosystem units for terrestrial ecosystem assessments in the NBA 2025 are based on The vegetation of South Africa, Lesotho and Swaziland - version 2024[@mucina; @Dayaram2019]. This digital map, underpinned by numerous publications, delineates and describes 463 national vegetation types nested within nine terrestrial biomes[@rutherford2006]. The moist, winter-rainfall region in the southwest of the country is home to the unique Fynbos biome. Adjacent to this lies the Succulent Karoo biome, an arid winter-rainfall biome with the highest diversity of succulent plants in the world. The Nama-Karoo biome covers the arid, summer-rainfall, central interior of the country. The Savanna biome dominates the northern and eastern summer rainfall regions of South Africa, and is the largest biome in Africa. The Grassland biome occurs mostly on the cooler high lying central plateau and has high levels of endemism. The Albany Thicket biome occurs in the eastern and southern cape and contains a unique combination of plant forms with an Eocene origin and unique evolutionary history[@cowling2005]. The Forest biome is characterised by small patches distributed across the winter and summer rainfall areas of the country. The Indian Ocean Coastal Belt biome represents the southernmost extent of the moist tropical seaboard of East Africa. The Desert biome occupies a small portion of the extreme north west of the country, forming the southernmost extent of the Namib Desert.
 

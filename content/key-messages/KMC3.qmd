@@ -5,7 +5,7 @@ title-block-banner: "#9D85BE"
 title-block-banner-color: white
 ---
 
-\| *A sufficiently resourced biodiversity sector is crucial to managing biodiversity for all. Resource constraints compromise the ability to understand, track and address the impacts of biodiversity loss and degradation on people and nature. To protect the country’s natural heritage for future generations, South Africa must move beyond business-as-usual and mobilise private sector investment and innovative finance solutions to fund biodiversity.* \| 
+\| A sufficiently resourced biodiversity sector is crucial to managing biodiversity for all. Resource constraints compromise the ability to understand, track and address the impacts of biodiversity loss and degradation on people and nature. To protect the country’s natural heritage for future generations, South Africa must move beyond business-as-usual and mobilise private sector investment and innovative finance solutions to fund biodiversity. \| 
 
 ------------------------------------------------------------------------
 

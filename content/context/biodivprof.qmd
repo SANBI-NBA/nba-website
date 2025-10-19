@@ -1,5 +1,6 @@
 ---
 title: "South Africa’s biodiversity profile" # Compulsory
+subtitle: "Biodiversity profile" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#A7A9AC" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -14,81 +15,69 @@ author:
     affiliations:
       - ref: af1
       - ref: af2 
-  
   - name:
       given: Dewidine 
       family: van der Colff 
     orcid: 0000-0002-0906-7098 
     affiliations:
       - ref: af1 
-  
   - name:
       given: Hlengiwe 
       family: Mtshali 
     orcid: 0000-0003-0131-2498 
     affiliations:
       - ref: af1 
-  
   - name:
       given: Ronell 
       family: Klopper 
     orcid: 0000-0002-0948-5038
     affiliations:
       - ref: af1
-      - ref: af5 
-  
+      - ref: af3 
   - name:
       given: Marianne 
       family: Le Roux 
     orcid: 0000-0003-4705-2513
     affiliations:
       - ref: af1 
-      - ref: af6
-  
+      - ref: af4
   - name:
       given: Carol 
       family: Poole 
     orcid: 0000-0003-4718-8349 
     affiliations:
       - ref: af1 
-  
   - name:
       given: Thobile 
       family: Dlamini 
     orcid: 00000-0002-1217-3940
     affiliations:
       - ref: af1 
-  
   - name:
       given: Kerry 
       family: Sink
     orcid: 0000-0001-5051-573X 
     affiliations:
       - ref: af1
-      - ref: af4  
-  
+      - ref: af5  
   - name:
       given: Jock
       family: Currie 
     orcid: 0000-0002-7226-2988 
     affiliations:
       - ref: af1 
-      - ref: af7 
-  
   - name:
       given: Andrew 
       family:  Skowno 
     orcid: 0000-0002-2726-7886 
     affiliations:
       - ref: af1
-      - ref: af3 
-  
+      - ref: af6 
   - name:
       given: Georgina
-      family: Jones 
-    orcid: 0000-0000-0000-0000 
+      family: Jones
     affiliations:
-      - ref: af1 
+      - ref: af7 
 
   - name:
       given: Sediqa 
@@ -96,33 +85,30 @@ author:
     orcid: 0009-0009-6464-0908 
     affiliations:
       - ref: af1 
-  
   - name:
       given: Kagiso 
       family: Mogajane 
     orcid: 0000-0003-4131-5634 
     affiliations:
       - ref: af1 
-  
   - name:
       given: Michelle 
       family: Hamer
-    orcid: 0000-0002-8650-890X
+    orcid: 0000-0002-8650-890X 
     affiliations:
-      - ref: af9
-  
+      - ref: af8 
   - name:
       given: Mariette
       family: Truter 
     orcid: 0000-0002-9129-8169
     affiliations:
-      - ref: af8 
+      - ref: af9 
   - name:
-      given: Riana
-      family: Jacobs-Venter 
-    orcid: 0000-0003-1378-6682 
+      given: Adriana
+      family: Jacobs
+    orcid: 0000-0002-6318-6514 
     affiliations:
-      - ref: af8 
+      - ref: af9 
   - name:
       given: Fanus 
       family: Venter 
@@ -138,6 +124,8 @@ author:
       - ref: af3
 
 
+
+
 affiliations:
 
   - id: af1 
@@ -150,31 +138,34 @@ affiliations:
 
   - id: af3 
     number: 3 
-    name: University of Cape Town
+    name: University of Pretoria
 
   - id: af4 
     number: 4 
-    name: Nelson Mandela University
+    name: University of Johannesburg
 
   - id: af5 
     number: 5 
-    name: University of Pretoria
+    name: Nelson Mandela University
 
   - id: af6 
     number: 6 
-    name: University of Johannesburg
+    name: University of Cape Town
 
   - id: af7 
     number: 7 
-    name: Seychelles Islands Foundation
+    name: Southern Underwater Research Group
 
   - id: af8 
     number: 8 
-    name: Agricultural Research Council
+    name: University of KwaZulu-Natal
 
   - id: af9 
     number: 9 
-    name: University of Kwa-Zulu Natal
+    name: Agricultural Research Council
+
+
+
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -247,9 +238,9 @@ species_long <- species_data %>%
                values_to = "Count")
 
 # Define custom colours
-custom_colors <- c("South_Africa_Endemics" = "#F19B45",
-                   "South_Africa_Species" = "#009ED6",
-                   "Global_Estimates" = "#385723")
+custom_colors <- c("South_Africa_Endemics" = "#f9a755",
+                   "South_Africa_Species" = "#9e85bd",
+                   "Global_Estimates" = "#6fb174")
 
 # Plot side-by-side horizontal bars
 bioprofplot<-ggplot(species_long, aes(x = Count, y = Taxonomic_group, fill = Category)) +
@@ -265,8 +256,8 @@ bioprofplot<-ggplot(species_long, aes(x = Count, y = Taxonomic_group, fill = Cat
   scale_y_discrete(expand = expansion(mult = c(0.01, 0.3))) +  # increases space between groups
   scale_fill_manual(values = custom_colors,
                     labels = c("Global estimates",
-                               "South African species",
-                               "South African endemics")) +
+                               "South African endemics",
+                               "South African species")) +
   labs(x = "Species richness",
        y = "Taxonomic group",
        title = "Species richness: South Africa vs Global",
@@ -274,6 +265,8 @@ bioprofplot<-ggplot(species_long, aes(x = Count, y = Taxonomic_group, fill = Cat
   theme_minimal(base_size = 14) +
   theme(
     legend.position = "top",
+    legend.spacing.y = unit(-0.3, "cm"),     # 🔹 NEW LINE → reduces space below
+    legend.margin = margin(b = -220),         # 🔹 NEW LINE → pulls plot closer  
     panel.grid.major = element_blank(),  # remove major gridlines
     panel.grid.minor = element_blank()   # remove minor gridlines
   )

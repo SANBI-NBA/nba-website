@@ -1,38 +1,56 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Integration of Ecosystem Threat Status and Protection Level" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+title: "Integration of Ecosystem Threat Status and Protection Level" 
+subtitle: "Estuarine Realm" 
 
-title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "##028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Kerry #Add author's first name here. Abbreviate the middle name
-      family: sink #Add author's surname here
-    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+      given: Lara
+      family: van Niekerk
+    orcid: 0000-0001-5761-1337 
     affiliations:
-      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
+      - ref: csir1
+      - ref: nmu1
+  - name:
+      given: Andrew L.
+      family: Skowno 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: sanbi1 
+  - name:
+      given: Kerry 
+      family: Sink 
+    orcid: 0000-0001-5051-573X 
+    affiliations:
+      - ref: sanbi1 
+      - ref: nmu1
+   - name:
+      given: Linda R.
+      family: Harris 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: nmu1     
 
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: sanbi1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: South African National Biodiversity Institute
+  - id: csir1
+    number: 1
+    name: Council for Scientific and Industrial Research (CSIR), Stellenbosch,South Africa   
+  - id: nmu1
+    number: 2
+    name: Institute for Coastal and Marine Research (CMR), Nelson Mandela University,Gqeberha, South Africa 
+  - id: sanbi1
+    number: 3
+    name: South African National Biodiversity Institute (SANBI)
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
 # Remember to rename the default .bib file and change the name here
-bibliography: marine_references.bib
+bibliography: est_references.bib
 
 # This section sets up the page citation format. DO NOT EDIT
 citation:

@@ -5,7 +5,7 @@ title-block-banner: "#70B276"
 title-block-banner-color: white
 ---
 
-\| *South Africa’s estuaries, rivers and wetlands remain highly threatened and under protected (established), despite providing many services that are vital to people. Achieving biodiversity conservation and socio-economic benefits will depend on innovative, integrated management of these ecosystems that combines regulatory enforcement with empowered community stewardship.* \| 
+\| South Africa’s estuaries, rivers and wetlands remain highly threatened and under protected (established), despite providing many services that are vital to people. Achieving biodiversity conservation and socio-economic benefits will depend on innovative, integrated management of these ecosystems that combines regulatory enforcement with empowered community stewardship*.* \| 
 
 ------------------------------------------------------------------------
 

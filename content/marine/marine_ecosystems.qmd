@@ -19,6 +19,62 @@ author:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Jock #Add author's first name here. Abbreviate the middle name
+      family: Currie #Add author's surname here
+    orcid: https://orcid.org/0000-0002-7226-2988 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
+# List authors here in the order you want them displayed in the title block
+  - name:
+      given: Luther #Add author's first name here. Abbreviate the middle name
+      family: Adams #Add author's surname here
+    orcid: 0000-0003-4906-3005 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
+# List authors here in the order you want them displayed in the title block
+  - name:
+      given: Nokubonga #Add author's first name here. Abbreviate the middle name
+      family: Mzimela #Add author's surname here
+    orcid: 0000-0002-6751-1900 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
+# Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Victor #Add author's first name here. Abbreviate the middle name
+      family: Dunga #Add author's surname here
+    affiliations:
+      - ref: sanbi1 # Ref must match the id of one of the affiliations listed below
+      - ref: sgh6 # Ref must match the id of one of the affiliations listed below
+
+# List authors here in the order you want them displayed in the title block
+  - name:
+      given: Nelisiwe #Add author's first name here. Abbreviate the middle name
+      family: Hambile #Add author's surname here
+    # orcid:  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
+# List authors here in the order you want them displayed in the title block
+  - name:
+      given: Anisha #Add author's first name here. Abbreviate the middle name
+      family: Dayaram #Add author's surname here
+    orcid: 0000-0003-4160-812X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -27,6 +83,10 @@ affiliations:
   - id: sanbi1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
+# Make sure you maintain indentations exactly as they are here
+  - id: sgh6 # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: Seas of Good Hope
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -49,9 +109,7 @@ google-scholar: true
 
 <!-- authors: sink, currie, besseling, adams, mzimela, dunga, hambile, dayaram  -->
 
-## Summary [not a summary anymore; headline message here]
-
-South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans with the contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current (@fig-context; left) interacting with the diverse geological setting and topography (@fig-context; right) to drive exceptional marine biodiversity. The marine realm around mainland South Africa extends from the dune base to a depth of about 5 500 m. The broad range of oceanographic, climatic and geological settings result in a high diversity of marine ecosystem types around mainland South Africa. Globally, South Africa is reported to have the third highest marine endemism with an estimated 33% of its marine fauna found only in South Africa. There is particularly high marine endemism in the warm temperate Agulhas region that extends from False Bay in Cape Town to the transition area near East London and extends offshore on the Agulhas Bank. The 2025 assessment uses the 163 marine ecosystem types as mapped in the 2023 Marine Ecosystem Map (@fig-eco_map). These ecosystems are nested within 17 Ecosystem Functional Groups in alignment with the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
+South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans with the contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current interacting with the diverse geological setting and topography to drive exceptional marine biodiversity with high endemism. South Africa is iteratively improving the map of marine ecosystem types with 163 types used in the 2025 assessment. These 163 types nest within 17 Ecosystem Functional Groups in alignment with the IUCN Global Ecosystem Typology (GET). Further progress is underway to leverage rapidly expanding marine data for improved ecosystem mapping and further investment in data science capacity will be critical to integrate expanding knowledge into robust ecosystem classifications, assessments and plans.
 
 ::: {#fig-context layout-ncol="2"}
 ![](imgs/sa_oceanography.jpg)
@@ -105,7 +163,7 @@ South Africa’s wide range of oceanographic, bioclimatic, topographical and geo
 
 <!-- ::::: -->
 
-In the past five years, substantial amounts of data have been collated to [improve marine ecosystem mapping](#sec-updatingMEM) and South Africa has shared lessons on our approach of [iterative improvements in ecosystem classification and mapping](https://doi.org/10.3389/fevo.2023.1108118) [@sink2023]. Recent advancements include a new 100-m^2^ resolution national bathymetry map (Manikam et al. 2023), a 600% increase in sediment records and interpolated sediment maps sourced from [dbSEABED](https://instaar.colorado.edu/~jenkinsc/dbseabed/), multiple new oceanographic layers, a cumulative marine biodiversity dataset spanning \>1.8 million records, \>7 000 species and \> 100 000 unique localities from more than 125 years of marine science efforts, and developing capacity in AI models to automate annotation of underwater imagery. [(Kelp map published Dunga et al. 2024) Cite reference image report Figure x.]{.mark}
+<!-- In the past five years, substantial amounts of data have been collated to [improve marine ecosystem mapping](#sec-updatingMEM) and South Africa has shared lessons on our approach of [iterative improvements in ecosystem classification and mapping](https://doi.org/10.3389/fevo.2023.1108118) [@sink2023]. Recent advancements include a new 100-m^2^ resolution national bathymetry map (Manikam et al. 2023), a 600% increase in sediment records and interpolated sediment maps sourced from [dbSEABED](https://instaar.colorado.edu/~jenkinsc/dbseabed/), multiple new oceanographic layers, a cumulative marine biodiversity dataset spanning \>1.8 million records, \>7 000 species and \> 100 000 unique localities from more than 125 years of marine science efforts, and developing capacity in AI models to automate annotation of underwater imagery. [(Kelp map published Dunga et al. 2024) Cite reference image report Figure x.]{.mark} -->
 
 ::: {.panel-tabset appearance="minimal" collapse="false"}
 <!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
@@ -133,11 +191,11 @@ knitr::include_graphics("imgs/benthic_pelagic_map_panel.png")
 
 ## Marine ecosystem types
 
-The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@fig-eco_map) to assess the state of 163 marine ecosystem types around mainland South Africa. See the [sub-Antarctic page](#ant_intro.qmd) for an overview of the marine ecosystem types in the Prince Edward Islands. South Africa’s mainland maritime domain (territorial seas plus exclusive economic zone) extends from the dune base to 200 NM seaward, representing an area of approximately 1.07 million km^2^ and extending to a depth of about 5 500 m. The continental shelf width varies between \~2 and 260 km, and the shelf break depth ranges between 80 and 600 m, being terraced in places (de Wet and Compton, 2021). The southern shelf includes the wide Agulhas Bank, a 116 000 km^2^ triangular extension of the shelf that supports many endemic species. The continental shelf constitutes approximately 40% of the mainland maritime domain with slope and abyssal ecosystems constituting the remaining 60%. South Africa has a coastline length of over 3 000 km. A separate [coastal chapter](cst_synthesis.qmd) covers the ecologically determined coastal zone.
+The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@fig-eco_map) to assess the state of 163 marine ecosystem types around mainland South Africa. See the [sub-Antarctic page](../subantarctic/sub-all_sections.qmd) for an overview of the marine ecosystem types in the Prince Edward Islands. South Africa’s mainland maritime domain (territorial seas plus exclusive economic zone) extends from the dune base to 200 NM seaward, representing an area of approximately 1.07 million km^2^ and extending to a depth of about 5 500 m. The continental shelf width varies between \~2 and 260 km, and the shelf break depth ranges between 80 and 600 m, being terraced in places (de Wet and Compton, 2021). The Agulhas Bank is a 116 000-km^2^ triangular extension of the continental shelf that supports many endemic species. Shelf areas constitute approximately 40% of the mainland maritime domain with slope and abyssal ecosystems constituting the remaining 60%. South Africa has a coastline length of over 3 000 km. A separate [coastal chapter](../coast/cst_synthesis.qmd) covers the ecologically determined coastal zone.
 
 ![Overview of South Africa’s 2023 hierarchical marine ecosystem classification with four bathomes (inner ring), 17 Ecosystem Functional Groups (central ring), 58 Biogeographic Ecotypes (segments in outer ring) and 163 national Marine Ecosystem Types (not shown as a distinct ring). The number and relative width of each segment in the outer ring reflects the number of national marine ecosystem types nested within each of the Biogeographic Ecotypes. Where there is no number, there is only one ecosystem type associated with that biogeographic ecotype. Note that the shore and shelf do not separate into benthic and pelagic components but the deepsea includes overlapping benthic and pelagic layers. Adapted from Sink et al. (2023).](imgs/ecosystems_sunburst_screenshot_sinketal23.png){#fig-sunburst}
 
-The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) includes 128 shore and shelf ecosystem types which are considered bentho-pelagic, with 22 deepsea benthic and 13 deepsea pelagic ecosystem types (@fig-sunburst). These fall within 17 functional ecosystem groups that, except for Bays, are aligned as far as possible with the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
+The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) includes 128 shore and shelf ecosystem types which are considered bentho-pelagic, with 22 deepsea benthic and 13 deepsea pelagic ecosystem types (@fig-sunburst). These fall within 17 functional ecosystem groups that, except for Bays, are aligned as far as possible with the [IUCN GET](https://global-ecosystems.org/). [The functional ecosystem groups are nested within bathomes, which represent geomorphological depth categories equivalent to 'biomes' in the IUCN GET.]{.mark}
 
 ::: {#box-eco_tbl .callout .marine collapse="False"}
 
@@ -145,7 +203,7 @@ The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) inc
 #| label: tbl-eco_types
 #| echo: false
 #| classes: plain
-#| tbl-cap: Marine ecosystem types in South Africa and the functional group codes that they align with in the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/).
+#| tbl-cap: Marine ecosystem types in South Africa and the functional group codes that they align with in the [IUCN GET](https://global-ecosystems.org/).
 
 # library(here)
 library(reactable)
@@ -204,7 +262,7 @@ reactable(
 
 ## Approach
 
-Since 2004, South Africa has followed an approach that [iteratively improves the classification and mapping of marine ecosystem types](https://doi.org/10.3389/fevo.2023.1108118). The Marine Ecosystem Map is informed by a broad range of data (@fig-schematic) derived from many types of surveys, including bathymetric, geological, oceanographic and biodiversity research. It is a large collaborative effort and the 2023 map was developed with contributions from 29 authors from 18 different institutions. South Africa’s national Marine Ecosystem Map follows a nested hierarchy, with 163 marine ecosystem types nested within 17 functional ecosystem groups (@fig-sunburst), which align with the Ecosystem Functional Groups (EFGs) of the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/), though there are some differences in terminology and South Africa also includes Bays as a distinct EFG.
+Since 2004, South Africa has followed an approach that [iteratively improves the classification and mapping of marine ecosystem types](https://doi.org/10.3389/fevo.2023.1108118). The Marine Ecosystem Map is informed by a broad range of data (@fig-schematic) derived from many types of surveys, including bathymetric, geological, oceanographic and biodiversity research. It is a large collaborative effort and the 2023 map was developed with contributions from 29 authors from 18 different institutions. South Africa’s national Marine Ecosystem Map follows a nested hierarchy, with 163 marine ecosystem types nested within 17 functional ecosystem groups (@fig-sunburst), which align with the Ecosystem Functional Groups (EFGs) of the [IUCN GET](https://global-ecosystems.org/), though there are some differences in terminology and South Africa also includes Bays as a distinct EFG.
 
 <!-- – Luther to make this figure -->
 
@@ -220,8 +278,8 @@ In regions where sufficient biodiversity data occur, the environmental layers an
 
 The updated environmental layers were organised by topical project groups, which include oceanography, geology and geomorphology. A suite of oceanographic (physical, chemical and phytoplankton) variables for surface and seafloor depths were downloaded from the [Bio-ORACLE](https://bio-oracle.org/) platform and calculated from [Copernicus Marine Service](https://data.marine.copernicus.eu/products) satellite products and regional ocean model hindcasts provided by SAEON and SOMISANA. Updated sediment data were sourced from collaborators, greatly increasing the inventory of marine sediment sample and seafloor description records. Interpolated maps of sediment characteristics were additionally sourced from [dbSEABED](https://dbseabed.com/). Geomorphological variables included a new, national-scale, 100-m^2^ resolution [bathymetry map](https://doi.org/10.15493/SANBI.220424) (Manikam et al. 2023), from which derived variables such as slope angle, bathymetric position index and rugosity were calculated.
 
-::: {#box-canyons .callout-note .marine collapse="False" appearance="minimal"}
-### South Africa’s submarine canyons
+::: {#box-canyons .callout-note .marine collapse="False" appearance="minimal" title="Box 1. South Africa’s submarine canyons"}
+<!-- ### South Africa’s submarine canyons -->
 
 Submarine canyons are steep-sided valleys that cut into the continental slope and play an important role in connecting coastal and deep-sea environments by facilitating the vertical movement of water, sediments, and nutrients. Many of these canyons host complex terrain, diverse substrate types, habitats and species, including vulnerable marine ecosystem indicators, such as cold-water corals and sponges. They act as important nursery and feeding grounds for a variety of benthic and pelagic species, some of which are conservation priorities, such as the African coelacanth, *Latimeria chalumnae*. Furthermore, submarine canyons can act as refuges from anthropogenic pressures, such as trawling, in areas where steep slopes and complex terrain limit human access.
 
@@ -234,8 +292,8 @@ Despite their ecological importance, many of South Africa’s submarine canyons 
 
 Significant strides were also made in the collation of marine biodiversity records in a biodiversity occurrence database. Data were sourced from online data repositories, such as OBIS and GBIF and requested from a network of collaborators at a variety of government and tertiary research institutions. In October 2025, the database contained 1 310 081 records from 7 726 marine species and 12 data sources, representing a growing collection of biodiversity data in waters around South Africa. Although only a selection of marine survey datasets have been used in assemblage distribution models, the vision is to build a comprehensive biodiversity database that will enable presence-only modelling of biodiversity patterns and turnover across broad taxonomic groups sourced from many datasets.
 
-::: {#box-ai .callout .marine collapse="False"}
-### Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection
+::: {#box-ai .callout .marine collapse="False" title="Box 2. Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection"}
+<!-- ### Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection -->
 
 As underwater imaging technology becomes more accessible and widespread, the volume of visual data from marine surveys has outpaced capacity for manual annotations. This has created a need to improve para-taxonomic capacity and AI-powered solutions that can reliably and efficiently extract species occurrence and count data from underwater biodiversity surveys. In South Africa, [YOLOv8](https://docs.ultralytics.com/models/yolov8/) and [BioCLIP2](https://huggingface.co/imageomics/bioclip-2) models have been fine-tuned to identify marine fishes and invertebrates in Remotely Operated Vehicle (ROV) and Stereo Baited Remote Underwater Video (BRUV) footage. These models rely on hierarchical taxonomic labels paired with curated images of species. More than 350 benthic invertebrate species across nine phyla have been indexed and catalogued in a standardised [reference image database](https://oneoceanhub.org/wp-content/uploads/2024/09/Adams-et-al-2024-OOH-Reference-image-report_Final-submitted.pdf) using the [SMaTaR_ID](https://smartar-id.app/) framework. Pipelines have been developed for automating the detection of vulnerable marine ecosystem taxa in ROV videos, threatened seabreams of commercial importance in BRUVs and benthic epifauna for marine ecosystem classification and mapping. Ongoing work aims to expand the species included in the models through curation of high quality and diverse training datasets that underpin model accuracy.
 :::

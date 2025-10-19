@@ -65,7 +65,7 @@ table-caption-auto-number: true    # enable automatic numbering
 
 ------------------------------------------------------------------------
 
-Terrestrial ecosystems and species face pressures from a range of human activities, including loss of natural habitat through intensive land uses (croplands, settlements, infrastructure, mining, plantations, and dams), invasive alien species, over utilisation of rangelands, pollution and waste, unsustainable biological resource use and climate change. These pressures interact in complex ways to impact biodiversity and disrupt important ecological processes.
+Terrestrial ecosystems and species face pressures from a range of human activities, including loss of natural habitat through intensive land uses (croplands, settlements, infrastructure, mining, plantations, and dams), invasive alien species, over utilisation of rangelands, pollution and waste, unsustainable biological resource use and climate change. These pressures interact in complex ways to impact biodiversity and disrupt important ecological processes (Key Messages [A1](../key-messages/kma1.qmd), [A2](../key-messages/kma2.qmd), [A4](../key-messages/kma4.qmd), [A6](../key-messages/kma6.qmd))
 
 ![Figure 1. Rate of habitat loss (RoL) indicator for the period 1990–2022, calculated for each terrestrial ecosystem type.](imgs/RoD_map_Kagiso.png){#landcover width="600"}
 
