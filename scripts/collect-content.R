@@ -39,7 +39,30 @@ for(qdir in quarto_dirs){
     message("Created destination folder: ", dest_dir)
   } else {
     message("Destination folder already exists: ", dest_dir)
-  }
+    # First delete everything in the destination folder
+    # This gets around renamed files remaining in the destination folder
+    # And files that were deleted from the folder
+    items_to_delete <- dir_ls(dest_dir, all = TRUE)
+    
+    if (length(items_to_delete) == 0) {
+      message("⚠️ No items found in: ", dest_dir)
+    } else {
+      message("Items to delete:")
+      print(items_to_delete)
+      
+      # Delete each file/folder
+      for (item in items_to_delete) {
+        dest_path <- path(dest_dir, path_file(item))
+        if (is_dir(item)) {
+          message("📁 Deleting folder: ", item)
+          dir_delete(item)
+        } else {
+          message("📄 Deleting file: ", item)
+          file_delete(item)
+        }
+      }
+    }
+ }
   
   # Check what’s inside this 'quarto' folder
   items_to_copy <- dir_ls(qdir, all = TRUE)

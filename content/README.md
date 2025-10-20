@@ -92,4 +92,6 @@ Detailed findings for species.
 
 2.  Make sure that the local folder name containing the repo matches the content folder listed here.
 
-3.  Run the script `collect-content.R` in the `scripts` folder to copy the contents of the `quarto` folder of each repo to here
+3.  Run the script `collect-content.R` in the `scripts` folder to copy the contents of the `quarto` folder of each repo to here.
+
+4.  The folder `scripts/pulling-content-from-git` contains a bash script for pulling the latest version of each content repo. The workflow for content improvement is to list tasks in the issues of each of the source repos. When contributors have addressed the issues, a new version of their repo is pulled using `scripts/pulling-content-from-git/update_repos.sh` and then the updated content is collected back into `content` using `scripts/collect-content.R`.
