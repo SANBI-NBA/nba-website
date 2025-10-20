@@ -86,7 +86,7 @@ google-scholar: true
 
 ## Preamble
 
-This is the first time in the National Biodiversity Assessments that there is a Species section in the Coast Assessment. For now, we are starting with IUCN Red List assessments of sandy beach invertebrates, but will expand this over time to include more coastal species, including those already assessed in the terrestrial, estuarine and marine realms. This will allow more comprehensive analyses of species to determine, for example, whether coastal species are more threatened than non-coastal species as a result of the disproportionate pressures on coastal ecosystems. <!--# link to coast pressures page -->
+This is the first time in the National Biodiversity Assessments that there is a Species section in the Coast Assessment. For now, we are starting with IUCN Red List assessments of sandy beach invertebrates, but will expand this over time to include more coastal species, including those already assessed in the terrestrial, estuarine and marine realms. This will allow more comprehensive analyses of species to determine, for example, whether coastal species are more threatened than non-coastal species as a result of the disproportionate [pressures on coastal ecosystems](../coast/cst_pressures-condition.qmd){target="_blank"}.
 
 ## First assessments of sandy beach species
 
@@ -130,9 +130,11 @@ View the species in the image gallery below ([Box 2](#box2)), and click on the p
 #| fig-cap: "Threat status of beach invertebates; categories follow the IUCN 3.1 Red List Categories and Criteria. The percentage of species in each category is shown, and the total number of taxa that have been assessed is shown in the inner circle."
 
 library(nbaR)
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(ggplot2)
 
-beach_sts <- read_csv("data/coast-species-beach_sts.csv")
+beach_sts <- read_csv(here::here("data/coast-species-beach_sts.csv"))
 
 rls<-nba_plot(beach_sts,
                 GROUPS='species',
@@ -166,7 +168,7 @@ rls
 :::::::::::::::::::::::: {.callout-note .coast collapse="false"}
 ## Box 2. Access the species red list assessments {#box2}
 
-Photo credits: © Linda Harris (CC-BY-NC-ND) <!--# need to update links to the IUCN RLS pages once available online (should be in Oct 2025) -->
+Photo credits: © Linda Harris (CC-BY-NC-ND)
 
 ::::::::::::::::::::::: grid
 ::: {.g-col-lg-4 .g-col-6 .text-center}
@@ -253,7 +255,7 @@ Photo credits: © Linda Harris (CC-BY-NC-ND) <!--# need to update links to the I
 
 ## Key pressures on threatened species
 
-Read more details about each of the pressures mentioned below on the Coastal Pressures and Ecological Condition page. <!--# link to coastal pressures page -->
+Read more details about each of the pressures mentioned below on the [Coastal Pressures and Ecological Condition](../coast/cst_pressures-condition.qmd){target="_blank"} page.
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}

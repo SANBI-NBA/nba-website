@@ -49,17 +49,28 @@ Summary
 
 Marine ecosystems and species face pressures from an increasing range and intensity of human activities which continue to expand and diversity as South Africa develops its ocean economy. The main pressures impacting marine biodiversity include fishing (commercial, recreational and small-scale), coastal development (including ports and harbours), pollution, shipping, freshwater flow reduction, lethal shark control and climate change. All bays incurred high cumulative pressures, with the highest cumulative pressure recorded for Saldanha Bay. Additional high pressure areas include the area offshore of the Orange River, the shelf edge on the west and south coast, large portions of the Cape inner and middle shelf, the Agulhas Bank and the KwaZulu-Natal Bight. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).
 
-{r} #\| label: fig-cum-press #\| fig-cap: Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas ahve the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. #\| echo: false #\| out-width: 100%
+```{r} 
+#| label: fig-cum-press 
+#| fig-cap: Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas ahve the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. 
+#| echo: false 
+#| out-width: 100%
 
-knitr::include_graphics("imgs/cum_press_low_res.jpeg") \# knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+knitr::include_graphics("imgs/cum_press_low_res.jpeg") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+```
 
 Fishing as an activity can be considered to constitute multiple pressures including species extraction, bycatch and abrasion with effects on the highest number of ecosystem components leading to widespread impacts. Fishing affects most inshore and offshore ecosystems, with greater impact on inshore ecosystems and resources than those in the deepsea. To ensure sustainable fisheries that can support ocean life and livelihoods, impacts on ecosystems, species and genetic diversity need to be effectively managed.
 
 Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species (Figure 2).
 
-{r} #\| label: fig-risk-ass #\| fig-cap: South African marine ecosystem risk assessment Sankey diagram illustrating links among sectors (left), their associated pressures (middle) and the ecological components (right) that are impacted by these pressures. The width of the lines represent the Impact Risk (describing the exposure and severity of an interaction). Sectors, pressures and ecological components appear in descending order based on sum Impact Risk scores (From Skein et al. 2022 hyperlink) #\| echo: false #\| out-width: 100%
+```{r} 
+#| label: fig-risk-ass 
+#| fig-cap: South African marine ecosystem risk assessment Sankey diagram illustrating links among sectors (left), their associated pressures (middle) and the ecological components (right) that are impacted by these pressures. The width of the lines represent the Impact Risk (describing the exposure and severity of an interaction). Sectors, pressures and ecological components appear in descending order based on sum Impact Risk scores (From Skein et al. 2022 hyperlink) 
+#| echo: false 
+#| out-width: 100%
 
-knitr::include_graphics("imgs/pressure_impact.png") \# knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+knitr::include_graphics("imgs/pressure_impact.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+
+```
 
 Pressure overviews
 
@@ -101,9 +112,15 @@ Marine petroleum activities in South Africa were initiated in 1969 check with mo
 
 Production has been suspended at the Oribi/Oryx and Sable oil fields (Block 9 off Mossel Bay) and the F-A Gas field and satellites with field development plans underway at the Ibhubesi gas filed off Hondeklip Baai. The impacts of petroleum activities span those impacts associated with drilling and production and also exploration by seismic surveys (link to Figure seismic map or make this the picture?).
 
-{r} #\| label: fig-seismic-pressure #\| fig-cap: Spatial mapping of seismic surveys in South African waters between 1980 and 2020. Sink et al. 2025 #\| echo: false #\| out-width: 100%
 
-knitr::include_graphics("imgs/seismic_pressure.png") \# knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+```{r} 
+#| label: fig-seismic-pressure 
+#| fig-cap: Spatial mapping of seismic surveys in South African waters between 1980 and 2020. Sink et al. 2025 
+#| echo: false 
+#| out-width: 100%
+
+knitr::include_graphics("imgs/seismic_pressure.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+```
 
 Biodiversity impacts associated with drilling and production include habitat loss from infrastructure installation; chemical pollution from water- and oil-based drilling muds, noise and light pollution. These impacts can cause physical and physiological damage and can disrupt marine species feeding, communication and migration and alter species distributions and aggregations. Petroleum infrastructure can also introduce, provide refuge for and facilitate spread of alien and invasive species. Associated increases in shipping activity elevate the risk of ship-strikes to large marine animals. Oil spills and blowouts pose risks with the potential to cause catastrophic impacts to marine biodiversity by oiling species, degrading ecosystems, and disrupting ecological processes, also causing health risks to people. Further, the chemical dispersants used in cleaning up oil spills may impact marine life, and in some cases, are considered more toxic than the oil itself. Although oil and gas production has decreased in South Africa (check with Pumla/stable? See Linda), exploration activities have increased, especially in deep water (Figure 3) and there has been increasing concern about the impacts of seismic surveys on marine species and ecosystems. (Steve to help here) Underwater noise is recognised as a key emerging pressure of increasing concern as ocean industrialisation and shipping is planned for expansion. A cumulative map of seismic surveys was recently compiled (link to map Figure 3) and there is some progress in planning for the integration of underwater noise into assessments and planning (Steve- should we make tech report available?).
 
@@ -153,9 +170,14 @@ Light pollution or artificial light at night can impact species and ecosystems b
 
 Noise pollution is an increasing concern, particularly in aquatic environments where sound conductivity is greater than in air and were many species rely on sound for prey location and communication. Sources of sound include seismic surveys, shipping traffic, bunkering, various other commercial activities, and boating. Elevated underwater noise can cause direct mortality, lower immunity and increase health risks, change species distributions and disrupt foraging when predators, prey, or both avoid noisy areas, disrupt reproduction and animal communication and social behaviour. Marine mammals and soniferous fish are particularly at risk, including commercially important species such as kingklip, recreationally important species such as grunter and threatened species such as dusky kob and Syngnathid seahorses and pipefish. Recently, penguins have shown sensitivity to underwater noise. Although there are many known impacts from underwater noise, there are still many gaps in our understanding of these pressures and how they may translate into ecosystem impacts. (check in with Steve- what will we make available- Kuhle box Sound Seas link?)
 
-{r} #\| label: fig-oil-gas-pressure #\| fig-cap: Map of cumulative pressure used in the NBA 2018. #\| echo: false #\| out-width: 100%
+```{r} 
+#| label: fig-oil-gas-pressure 
+#| fig-cap: Map of cumulative pressure used in the NBA 2018. 
+#| echo: false 
+#| out-width: 100%
 
-knitr::include_graphics("imgs/oil_gas_pressure.png") \# knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+knitr::include_graphics("imgs/oil_gas_pressure.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+```
 
 Renewable energy production is important in achieving energy security, reducing climate change impacts, and supporting socio-economic growth in South Africa. The potential for marine renewable energy (MRE) in South Africa includes offshore wind, current, wave, and thermal energy sources. Although no MRE projects currently exist, there are plans for development, e.g. a floating offshore windfarm at Richard’s Bay is under assessment. Potential impacts of MRE include habitat disturbance and loss during construction, and collision risks with wind or current turbines for seabirds and ocean life and increased ocean noise. Wave and current devices may impact cetaceans, turtles, and fish through collision risk, electromagnetic fields, and underwater noise, and marine benthic and pelagic habitats and communities could be impacted by changes to natural seawater flows and sediment transport. Small installations would likely have localised minor impacts but large commercial arrays could significantly alter marine systems over time.
 
@@ -227,7 +249,7 @@ Pressure data are a key input into ecosystem assessments including the assessmen
 
 Limited progress in pressure mapping was achieved for the 2025 assessment but seismic surveys were and submarine cables were mapped for inclusion in future assessments and an improved finer resolution demersal trawl fishing layer has been compiled (Currie et al. 2023) demersal trawl fishing layer.
 
-Technical documentation
+## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
 
@@ -237,17 +259,19 @@ Technical documentation
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-Git repositories
+### Code repositories
 
 Cumulative pressure and condition calculations and mapping: gitlab.com/marine_pressure_layers/pressure_layers
 
-Key publications
+### Key publications
 
-References
 
-Recommended citation
 
-{r} #\| output: asis #\| label: lst-citation-code
+## Recommended citation
+
+```{r} 
+#| output: asis 
+#| label: lst-citation-code
 
 library(nbaR) library(knitr) library(rmarkdown)
 
@@ -255,6 +279,11 @@ library(nbaR) library(knitr) library(rmarkdown)
 
 # Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
 
-meta \<- knitr::opts_knit\$get("rmarkdown.pandoc.to") \# forces knitr to load metadata meta \<- rmarkdown::metadata \# full YAML is now in `meta`
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to") # forces knitr to load metadata meta \<- rmarkdown::metadata \# full YAML is now in `meta`
 
 nba_citation(meta)
+```
+
+## References
+::: {#refs}
+:::

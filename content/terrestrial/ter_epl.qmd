@@ -149,7 +149,7 @@ epl_summary %>%
 
 The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass ([Key Message B4](../key-messages/kmb4.qmd)).
 
-![Protected Areas in the Terrestrial realm circa 2024](imgs/pa_ter.png){#fig-pa_map fig-align="center" width="600"}
+![Protected Areas in the Terrestrial realm circa 2024](imgs/PA_map.png){#fig-pa_map fig-align="center" width="650"}
 
 #### Biome and provincial summary
 

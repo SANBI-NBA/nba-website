@@ -65,15 +65,22 @@ format:
 
 ::::: columns
 ::: {.column width="50%"}
+<center>
+
 | [23%]{.inline-style-threatened}
 | of 463 ecosystem types
 | [Highly threatened and under protected]{.inline-style-indicator}
+
+</center>
 :::
 
 ::: {.column width="50%"}
+<center>
+
 | [57%]{.inline-style-well-protected}
 | of 30 renosterveld ecosystem types
-| 
+
+</center>
 :::
 :::::
 

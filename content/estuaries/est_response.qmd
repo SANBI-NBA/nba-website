@@ -167,13 +167,15 @@ Catalyse research and monitoring to address critical social and natural science 
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
+### Code repositoreis
+
 -   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
 -   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
 
 -   **Marine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/SpatialDataset/Detail/7749)
 
-**Key publications**
+### Key publications
 
 ## Recommended citation
 
@@ -195,7 +197,8 @@ nba_citation(meta)
 
 ```
 
+## References
+
 ::: {#refs}
 :::
-::::
-:::::
+

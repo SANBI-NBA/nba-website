@@ -138,7 +138,7 @@ We prefer the publications to be cited rather than the website pages because thi
 
 ## Introduction
 
-**South Africa's coast is a national asset, rich in biodiversity, history and cultures that are all woven into the fabric of our national heritage.** Despite comprising only 4% of the mainland extent, the ecologically determined coastal zone (EDCZ) includes nearly a fifth (`r percent_types(cet_n, all_et)`%, i.e., `r cet_n`) of its `r all_et` ecosystem types. <!--# Check number of mainland ecosystem types. From the IEM, I understand it to be 467 T, 22 E, and 163 M ecosystem types = 652... but don't know latest stats for freshwater. I've excluded micro-estuaries. In 2018 we reported it as approximately a fifth of all ecosystem types. Need to update with final numbers. -->
+**South Africa's coast is a national asset, rich in biodiversity, history and cultures that are all woven into the fabric of our national heritage.** Despite comprising only 4% of the mainland extent, the ecologically determined coastal zone (EDCZ) includes nearly a fifth (`r percent_types(cet_n, all_et)`%, i.e., `r cet_n`) of its `r all_et` ecosystem types.
 
 **The South African coast has exceptional biodiversity, with many endemic species found nowhere else on earth**, particularly along the national south coast. This is largely a result of the strongly contrasting conditions around the coast, driven by the warm Agulhas Current sweeping down the east coast, and cool Benguela Current up the west coast, with distinct patterns in temperature, rainfall and geology that create the physical underpinning of South Africa's coastal biological diversity [@harris2025].
 
@@ -213,7 +213,8 @@ cst_cond
 library(ggpubr)
 library(nbaR)
 library(here)
-library(tidyverse)
+library(dplyr)
+library(readr)
 subrealm_ets_p <- read_csv(here("outputs/cst_subrealm-ets-p.csv"))
 c_ets_t <- subrealm_ets_p %>% 
   filter(`Sub-realm`=="Total") %>% 
@@ -274,7 +275,8 @@ These results are not comparable with the results from the NBA 2018 given the di
 library(ggpubr)
 library(nbaR)
 library(here)
-library(tidyverse)
+library(dplyr)
+library(readr)
 subrealm_epl_p <- read_csv(here("outputs/cst_subrealm-epl-p.csv"))
 c_epl_t <- subrealm_epl_p %>% 
   filter(`Sub-realm`=="Total") %>% 
@@ -326,7 +328,8 @@ These results are also not comparable with those from the NBA 2018 because of ch
 #| tbl-cap: "NBA 2025 assessment results for South Africa's coastal ecosystem types. Threat status: CR = Critically Endangered, EN = Endangered, VU = Vulnerable, NT = Near Threatened, LC = Least Concern. Protection level: WP = Well Protected, MP = Moderately Protected, PP = Poorly Protected, NP = Not Protected. Type values in any of the search boxes below to filter the list to rows of interest."
 
 library(here)
-library(tidyverse)
+library(dplyr)
+library(readr)
 
 cst_results <- read_csv(here("outputs/cst_results_for_integration.csv")) %>%
   rename(`Ecosystem type` = type,
@@ -387,7 +390,7 @@ The Endangered coastal species are all endemic, and are impacted primarily by mi
 
 ## Priority actions
 
-In addition to the overall priority actions distilled from this assessment<!--# insert link to overall priority actions/responses page -->, the 10 priority actions specifically for South Africa's coastal zone are given below.
+In addition to the [overall priority actions](../integrated-findings%20/pakg_actions.qmd){target="_blank"} distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are given below.
 
 ::: {.callout-note .coast collapse="false" appearance="minimal" icon="false"}
 **1. Restore the coast**

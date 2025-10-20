@@ -13,11 +13,66 @@ author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Kerry #Add author's first name here. Abbreviate the middle name
-      family: sink #Add author's surname here
+      family: Sink #Add author's surname here
     orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Stephen #Add author's first name here. Abbreviate the middle name
+      family: Kirkman #Add author's surname here
+    orcid: https://orcid.org/0000-0001-5428-7375 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: dffe2 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Megan #Add author's first name here. Abbreviate the middle name
+      family: van der Bank #Add author's surname here
+    orcid: https://orcid.org/0000-0002-8033-3360 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Loyiso #Add author's first name here. Abbreviate the middle name
+      family: Dunga #Add author's surname here
+    affiliations:
+      - ref: sgh3 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu4 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Jock #Add author's first name here. Abbreviate the middle name
+      family: Currie #Add author's surname here
+    orcid: https://orcid.org/0000-0002-7226-2988 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+   
+
 
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
@@ -27,6 +82,19 @@ affiliations:
   - id: sanbi1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
+# Make sure you maintain indentations exactly as they are here
+  - id: dffe2 # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: The Department of Forestry, Fisheries and the Environment 
+# Make sure you maintain indentations exactly as they are here
+  - id: sgh3 # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: Seas of Good Hope
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu4 # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -45,9 +113,61 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
 
-**‘headline message’**
+<!-- add lauryn as an author -->
+
+```{r}
+
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+
+# load the data 
+epl_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+## extent
+eco_extent <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "extent")
+
+pro_extent <- epl_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_wp_extent <- round((sum(pro_extent$`Well Protected`)/total_extent)*100, digits = 1)
+perc_mp_extent <- round((sum(pro_extent$`Moderately Protected`)/total_extent)*100, digits = 1)
+perc_pp_extent <- round((sum(pro_extent$`Poorly Protected`)/total_extent)*100, digits = 1)
+perc_np_extent <- round((sum(pro_extent$`Not Protected`)/total_extent)*100, digits = 1)
+
+
+##count
+eco_count <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "count")
+
+pro_count <- epl_combined %>% 
+  filter(metric == "count")
+
+
+total_count <- sum(eco_count$value)
+
+perc_wp_count<- round((sum(pro_count$`Well Protected`)/total_count)*100)
+perc_mp_count<- round((sum(pro_count$`Moderately Protected`)/total_count)*100)
+perc_pp_count<- round((sum(pro_count$`Poorly Protected`)/total_count)*100)
+perc_np_count <- round((sum(pro_count$`Not Protected`)/total_count)*100)
+
+```
+
+
+*There is progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs, which reveal gaps in participation, ecosystem protection,  connectivity and governance. Diversified conservation measures can help address gaps and provide new opportunities to contribute to cultural heritage protection. Increasing extent of protection alone will not advance marine ecosystems to Well Protected with a need to improve the condition of marine ecosystems in conservation areas. South Africa needs to better include people in the design, implementation and co-management of conservation areas.*
+
+![Caption needed](imgs/PIC_20090810_umlalazi_beach_dunes.jpg)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
@@ -59,7 +179,7 @@ google-scholar: true
 | of 163 ecosystem types
 | [Well Protected]{.inline-style-indicator}
 
-| [34%]{.inline-style-well-protected}
+| [34%]{.inline-style-poorly-protected}
 | of 163 ecosystem types
 | [Poorly Protected]{.inline-style-indicator}
 
@@ -69,11 +189,11 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [29%]{.inline-style-well-protected}
+| [29%]{.inline-style-moderately-protected}
 | of 163 ecosystem types
 | [Moderately Protected]{.inline-style-indicator}
 
-| [17%]{.inline-style-well-protected}
+| [17%]{.inline-style-not-protected}
 | of 163 ecosystem types
 | [Not Protected]{.inline-style-indicator}
 
@@ -83,15 +203,8 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## Summary
 
-Of South Africa’s 163 national marine ecosystem types, 83% have some representation in the MPA network but only 32 ecosystem types (20%) are Well Protected. Twenty seven ecosystem types (16%) are Not Protected. Note that relative to the previous assessment, these changes are due to differences in targets and methods to improve alignment globally and among realms in South Africa. South Africa advanced protection levels in 2019 with the proclamation of the Phakisa Marine Protected Areas (MPAs) network with no progress in protection since 2019. New work is underway to support the recognition of Other Effective Conservation Measures which may help diversify protection models.
 
-There is progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs, which reveal gaps in participation, cultural heritage protection, connectivity and governance limiting progress in protection. Increasing extent of protection alone will not advance marine ecosystems to well protected. The condition of marine ecosystems in MPAs needs improvement with a need to better include people in the design, implementation and co-management of conservation areas.
-
-## Benthic ecosystem protection level
-
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
 ```{r}
 #| label: fig-epl_map_benthic
@@ -106,7 +219,7 @@ knitr::include_graphics("imgs/epl_benthic_with_donut.png")
 
 ```
 
-## Pelagic ecosystem protection level
+
 
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
@@ -121,61 +234,106 @@ knitr::include_graphics("imgs/epl_pelagic_with_donut.png")
 
 ```
 
-## Ecosystem porotection level results
+## Ecosystem protection level results
 
-The 2025 Ecosystem Protection Level assessment for the marine realm found that 83% of marine ecosystem types have some representation in the MPA network but only 20% of ecosystem types (32 types) are Well Protected. Twenty seven ecosystem types (17%) are Not Protected.
+Of South Africa’s 163 national marine ecosystem types, 83% have some representation in the MPA network but only 32 ecosystem types (20%) are Well Protected. Twenty seven ecosystem types (17%) are Not Protected. Note that relative to the previous assessment, these changes are due to differences in targets and methods to improve alignment globally and among realms in South Africa. 
 
-Of the 70 ecosystem types that were Not Protected in 2018, 58 (check) received their first protection, including 7 of 13 pelagic ecosystem types in 2019. In 2019, an additional x (used to be 17) ecosystem types advanced to Well Protected with a total of 20% of ecosystem types now falling within this category.
+South Africa advanced protection levels in 2019 with the proclamation of the Phakisa Marine Protected Areas (MPAs) network (Sink et al. 2023) with no progress in protection since 2019. New work is underway to support the recognition of Other Effective Conservation Measures which may help diversify protection models (Kirkman et al. in press).
 
-Ecosystem types on the KwaZulu-Natal shelf generally have higher protection levels and ecosystem types in the Southern Benguela are the least protected (Figure 3). Protection in the deep ocean beyond the shelf edge is less than on continental shelves, but the deep benthic and pelagic ecosystems are also less threatened.
+Of the 83 ecosystem types that were Not Protected in 2018, 67 types received their first protection in 2019, including 7 of 13 pelagic ecosystem types in 2019. In 2019, an additional 18 ecosystem types advanced to Well Protected with a total of 20% of ecosystem types now falling within this category. 
 
-Offshore ecosystem types are still less represented in South Africa’s MPA network than shore and shelf ecosystem types. Slopes, abyssal plains, muddy and rocky shelves are the most poorly protected ecosystem functional groups (Figures 4 and 5). Unless these functional groups are targeted for inclusion in MPAs or OECMs, gaps in representation will persist. Increasing extent of protection alone will not advance marine ecosystems to well protected. The condition of marine ecosystems in MPAs needs improvement.
+Ecosystem types on the KwaZulu-Natal shelf generally have higher protection levels and ecosystem types in the Southern Benguela are the least protected (@fig-epl_map_benthic). Protection in the deep ocean beyond the shelf edge is less than on continental shelves, but the deep benthic and pelagic ecosystems are also less threatened.
 
-There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through ecosystem restoration and strengthened MPA management to reduce ecosystem degradation. Additional offshore MPAs will need to be established to represent ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected.
+Offshore ecosystem types are still less represented in South Africa’s MPA network than shore and shelf ecosystem types. Slopes, abyssal plains, muddy and rocky shelves are the most poorly protected ecosystem functional groups (@fig-epl_bargraphs). Unless these functional groups are targeted for inclusion in MPAs or OECMs, gaps in representation will persist. Increasing extent of protection alone will not advance marine ecosystems to well protected. The condition of marine ecosystems in MPAs needs improvement. Restoration and strengthened ecosystem management in protected areas can provide an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected.
+
+
+:::: panel-tabset
+## Figure
 
 ```{r}
 #| label: fig-epl_bargraphs
 #| echo: false
-#| fig-cap: Protection level of marine ecosystem types by functional group. a) represents the number of ecosystem types and b) the extent of ecosystem types in each protection. Slopes, abyssal plains, muddy and rocky shelves and open oceans are the most poorly protected ecosystem functional groups category.
-
-library(tidyverse)
-library(nbaR)
-library(sf)
+#| fig-cap: Protection level of marine ecosystem types by functional group. Numbers reflected in A indicate number of ecosystems in each protection level, while length of bars indicate percentage of ecosystems in each protection level. 
+#| out-width: 100%
 
 
 
-# load the data 
-epl_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+#Combine RLE plot
+nba_plot_comb(epl_combined,
+              ecosystem_functional_type_getl3,
+              METRIC_COL = metric,
+              METRICS = c("count", "extent"),
+              2:5,
+              CHRT = "bar",
+              NUM = FALSE,
+              LAB = "Percentage of ecosystem",
+              SAVE = NULL,
+              SCALE_TEXT = 0.75) +
+  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
 
-# Combined EPL plot
-epl_combined_plot <- nba_plot_comb(epl_combined,
-                                   ecosystem_functional_type_getl3,
-                                   METRIC_COL = metric,
-                                   METRICS = c("count", "extent"),
-                                   2:5,
-                                   CHRT = "bar",
-                                   NUM = FALSE,
-                                   LAB = "Percentage of ecosystem",
-                                   SAVE = NULL)
 
-epl_combined_plot
+
+
 
 ```
 
+## Data
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-ets_bargraphs
+#| echo: false
+#| tbl-cap: Protection level of marine ecosystem types by functional group.
+#| out-width: 100%
+
+
+##must round values
+
+library(gt)
+
+tbl <- epl_combined %>% 
+  mutate(metric = str_replace_all(metric, "extent", "extent_km2")) %>% 
+  arrange(ecosystem_functional_type_getl3) %>% 
+  select(ecosystem_functional_type_getl3, metric, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>% 
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "ecosystem_functional_type_getl3",
+    row_group_as_column = TRUE)%>% 
+  nbaR::nba_tbl_theme(HEADER = "Marine") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+tbl
+```
+:::
+::::
+
+
 ![An excellent area to improve protection of the Poorly Protected Eastern Agulhas Outer Shelf Mosaic is in the Seaview Horse Mussel Seabed Management Area near Gqeberha. This area has high biodiversity and Remotely Operated Vehicle surveys found clumps of horse mussels that were not observed in areas with more inshore trawling activity © ACEP Deep Forests Project, Kerry Sink.](imgs/Seaview_Horse_mussels.jpg)
 
-There is progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al al. 2021, 2023, Mann Lang et al. 2021). These studies reveal gaps in connectivity, participation, cultural heritage protection and governance which limit progress in protection. Ecological effectiveness of MPAs…An evaluation of socio-economic effectiveness….Governance effectiveness (Stephen).
 
-Overall, it is increasingly evident that MPAs won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures offer new opportunities for a broader diversify of conservation models to contribute to marine protection ( cite Kirkman et al in review ?link). (more text)
+Ecosystem types that are Not Protected include the Kingklip Koppies, the vast Southeast Atlantic Lower Slope, the expansive Southwest Indian Lower slope and  four pelagic ecosystem types. Among the latter, the Agulhas Retroflection and Southern Ocean Transitional Water is of particular interest as a globally unique area. The uThukela Canyon, the Cape Lower Canyon and St Helena Bay are also Not Protected.
 
-Photo – St Francis compilation. Remotely Operated Vehicle surveys within the trawl closure off Cape St Francis suggest that this area has biodiversity value and could be evaluated as a potential Other Effective Area-based Conservation Measure (OECM) which, if recognized as an OECM, could contribute to improved ecosystem protection levels for the Endangered and Not Protected Easten Agulhas Bay.
+![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected. ](imgs/canyons_map.png)
 
-**Small scale fishing image**
 
-## Ecosystem protection level approach
+Poorly Protected Ecosystem Types include several types that fall into this category because of high levels of ecosystem modification within protected areas. These include Agulhas and Cape Kelp Forests and Cape Bay and False and Walker Bay. Other ecosystem types that could advance from  their current Poorly Protected status to Moderately Protected through improved ecological condition include Agulhas Mid Shelf Reef, the Agulhas Coarse Sediment Shelf Edge and Amathole Lace Corals.
 
-The history and approach to the development of South Africa’s protection level assessment is explained on the [EPL explanation page](epl_explain.qmd). The 2025 Ecosystem Protection Level (EPL) assessment for marine ecosystems was adjusted to align with global targets (with the methodology shown in Figure 2 eg old fig 91). While the 2018 assessment used a standard 20% marine target with an additional rule applied, the 2025 assessment applied a 30% target for all ecosystem types. In order for a marine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition. If this rule was not met, the ecosystem was categorised as Moderately Protected. As such changes in EPL between 2018 and 2025 are non-genuine and are driven by the increased target and improved methodology rather than changes in protection or ecological condition. Note that Other Effective Conservation Measures (OECMs) will contribute to ecosystem protection once these have been recognised in the marine realm (?WWF links?).
+![Protection level of Cape Kelp Forest can improve from the current Poorly Protected Status with improvement in ecological condition through more effective management of pressures. © Geoff Spiby](imgs/Oudekraal_snorkel_1009_037.jpg)
+
+
+Forty eight marine ecosystem types are Moderately Protected. Several of these could advance to Well Protected through improved ecological condition but 27 types will require increased coverage in MPAs or OECMs.  For example Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon can improve protection level with increased representation in South Africa’s marine conservation estate. (Tash I cant find any types that dropped from WP to MP because of condition but I think we have some- lets check and add a sentence and flagship type).
+
+![ Agulhas Boulder Shore is currently Moderately Protected and needs increased coverage in protected or conserved area to advance to Well Protected. This could be achieved adjacent to the Agulhas National Park © ](imgs/)
+
+
+Agulhas Boulder Shore requires increased representation in South Africa network of protected and conserved areas to advance to Well Protected.
+
+Only 20% of South Africa’s 163 marine ecosystem types are Well Protected with poor ecological condition in many protected areas being part of this challenge. Well Protected ecosystem types include many from the Delagoa ecoregion where the iSimangaliso Marine Protected Area and World Heritage Site provides protection to many ecosystem types. Agulhas Inner Shelf Reef,  Natal Exposed Rocky Shore and seamount ecosystem types in the South east Atlantic are other examples of Well Protected types.
+
 
 ## Marine protected and conserved areas
 
@@ -191,47 +349,6 @@ knitr::include_graphics("imgs/mpa_map.png")
 
 ```
 
-In 2018, South Africa had 25 coastal Marine Protected Areas (MPAs) covering less than 0.6% of the ocean around South Africa (6 260 km2), up from 0.4% (4 711 km2) in 2011. The MPA estate increased significantly between 2018 and 2019 and now covers 5.4% of the ocean around South Africa (51 477 km2) (Figure 1). No further progress in MPA establishment has been made since 2019 and no marine areas have been recognised as Other Effective Conservation Measures in the marine realm as of December 2025. A map of the 41 MPAs around South Africa is shown in Figure 1, noting that the Prince Edward island MPA in South Africa’s subantarctic territory (link to chapter subantarctic) is the biggest of the South African MPAs and lies more than 1700 km south of Gqeberha.
-
-**Key MPA statistics ?(Stephen?)**
-
-::: {#box-8 .callout .marine collapse="False"}
-## 
-
-```{r}
-#| label: tbl-epl
-#| tbl-cap: "Protection level and threat status of marine ecosystem types in South Africa."
-
-# library(here)
-#library(gt)
-library(reactable)
-library(dplyr)
-
-
-# load data
-epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(-'Threat status', -'Threat basis') # removing the threat status, assuming we only want to show that in the ETS page?
-
-# create the table
-reactable(
-  epl,
-  filterable = TRUE,
-  searchable = FALSE,
-  pagination = FALSE,
-  height = 600,
-  defaultColDef = colDef(
-    headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
-  ),
-  theme = reactableTheme(
-    inputStyle = list(
-      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
-      backgroundColor = "white",
-      border = "1px solid #ccc"
-    )))
-
-```
-:::
 
 ## Technical documentation
 
@@ -243,9 +360,13 @@ reactable(
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### GitLab repositories
+### Code repositories
 
--   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+-   **Methods and workflows of the marine protection level assessment:** [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+
+### Data
+
+[Protection level of ecosystem types table](data/epl_ets_ecotypes.csv)
 
 ### Key Publications
 
@@ -268,6 +389,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
+
+## References
 
 ::: {#refs}
 :::

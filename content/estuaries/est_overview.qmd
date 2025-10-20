@@ -5,13 +5,9 @@ title-block-banner: "#02268A" #imgs/overview_banner.jpg #
 title-block-banner-color: white
 ---
 
-
-
 *South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems interacting with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and is part of the deep cultural and spiritual values of South Africa’s oceans. The 2025 National Biodiversity Assessment identified key marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life and livelihoods, and maintain the many benefits of South Africa’s exceptional marine biodiversity.*
 
-
 ![do we need a caption?](imgs/overview_banner.jpg)
-
 
 ::::: columns
 ::: {.column width="50%"}

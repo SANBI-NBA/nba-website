@@ -1,5 +1,10 @@
 project:
   type: website
+  render: 
+    - index.qmd
+    - contents.qmd
+    - "content/context/*.qmd"
+    - "content/key-messages/*.qmd"
   
 website:
   title: "National Biodiversity Assessment"
@@ -10,8 +15,6 @@ website:
   search:
     location: sidebar
     type: textbox
-  page-navigation: true
-  back-to-top-navigation: true
   navbar:
     logo: imgs/sanbi-logo-medium.png
     logo-href: "https://www.sanbi.org/"
@@ -28,26 +31,26 @@ website:
       - icon: github
         href: https://github.com/SANBI-NBA
     right: 
-      - href: index.qmd
-        text: "Home"
-      - href: contents.qmd
-        text: "Contents"
+      - text: "Home"
+        href: index.qmd
+      - text: "Contents"
+        href: contents.qmd
   sidebar:
-    title: "Contents"
-    style: "floating"
-    contents:
-      - text: "About the NBA"
-        href: content/context/about-nba.qmd
-      - text: "Using the NBA"
-        href: content/context/uses-nba.qmd
-      - text: "South Africa's biodiversity profile"
-        href: content/context/biodivprof.qmd
-      - text: "The importance of biodiversity"
-        href: content/context/importance.qmd
-      - text: "Key messages"
-        href: content/key-messages/index.qmd
-    alignment: center
-    collapse-level: 1
+    - title: Contents
+      collapse-level: 1
+      contents:
+        - text: "Overview"
+          href: contents.qmd
+        - text: "About the NBA"
+          href: content/context/about-nba.qmd
+        - text: "Using the NBA"
+          href: content/context/uses-nba.qmd
+        - text: "South Africa's biodiversity profile"
+          href: content/context/biodivprof.qmd
+        - text: "The importance of biodiversity"
+          href: content/context/importance.qmd
+        - text: "Key messages"
+          href: content/key-messages/index.qmd
 
 editor: visual
 
@@ -115,45 +118,4 @@ format:
     toc-depth: 4
     toc-expand: true
 
-website:
-  page-footer: 
-    left: |
-      <div style=" text-align: center; max-width: 260px; line-height: 1.2; font-size: 0.8rem; margin-left: 6em">
-        <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 900;">
-          <a href="about-nba.qmd" style="color: inherit; text-decoration: none;">About the NBA</a>
-        </h4>
-        <p style="margin-top: 0; font-size = 0.8">
-          The National Biodiversity Assessment (NBA) is a collaborative effort 
-          to synthesise the best available science on South Africa’s biodiversity. 
-        </p>
-      </div>
 
-    center: |
-      ```{=html}
-      <div style="text-align: center; line-height: 1.6;">
-        <div>
-          <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Important links</h4>
-          <a href="acknowledgementsnba2025.qmd">Acknowledgements</a><br>
-          <a href="cite-nba.qmd">How to cite</a><br>
-          <a href="whatsnew-nba.qmd">What's new</a><br>
-          <a href="glossary.qmd">Terminology and glossay</a><br>          
-          <a href="disclaimerterms.qmd">Disclaimer</a>          
-        </div>
-      </div>
-      ```
-
-    right: |
-      ```{=html}
-      <div style="text-align: center; line-height: 1.4;">
-        <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Contact</h4>
-        <p style="margin: 0.2em 0;">
-          Email the National Biodiversity Assessment Unit: <br>
-          <a href="mailto:nba@sanbi.org.za" style="color: inherit; text-decoration: none;">nba@sanbi.org.za</a>
-        </p>
-        <div style="margin-top: 0.5em; font-size: 0.85rem;">
-          <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
-            <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc.svg" alt="CC BY-NC 4.0" style="height: 31px; border-style: none;">
-          </a>
-        </div>
-      </div>
-      ```

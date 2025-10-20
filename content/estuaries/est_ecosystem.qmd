@@ -7,68 +7,97 @@ subtitle: "Estuarine Realm"
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
+
+# List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Lara
-      family: van Niekerk
-    orcid: 0000-0001-5761-1337 
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: CSIR1
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Janine B.
-      family: Adams
-    orcid: 0000-0001-7204-123X
+      given: Janine B. #Add author's first name here. Abbreviate the middle name
+      family: Adams #Add author's surname here
+    orcid: 0000-0001-7204-123X  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: NMU2 
+      - ref: NMU2 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Nicola C.
-      family: James 
-    orcid: 0000-0002-9472-5314
+      given: Nicola C. #Add author's first name here. Abbreviate the middle name
+      family: James #Add author's surname here
+    orcid: 0000-0002-9472-5314  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: SAIAB1
+      - ref: SAIAB1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Stephen J.
-      family: Lamberth
-    orcid: 0000-0002-4076-3622
+      given: Stephen J. #Add author's first name here. Abbreviate the middle name
+      family: Lamberth #Add author's surname here
+    orcid: 0000-0002-4076-3622   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: DFFE1
+      - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Fiona C.
-      family: Mackay
-    orcid: 0000-0001-5255-1910
+      given: Fiona C. #Add author's first name here. Abbreviate the middle name
+      family: Mackay #Add author's surname here
+    orcid: 0000-0001-5255-1910   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: ORI1
+      - ref: ORI1 # Ref here must match the id of one of the affiliations listed below
       - ref: UKZN1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Jane K.
-      family: Turpie
-    orcid: 0000-0003-1220-6295
+      given: Jane K. #Add author's first name here. Abbreviate the middle name
+      family: Turpie #Add author's surname here
+    orcid: 0000-0003-1220-6295   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: Anchor1
+      - ref: Anchor1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Anusha 
-      family: Rajkaran
-    orcid: 0000-0001-7360-3660
+      given: Anusha #Add author's first name here. Abbreviate the middle name
+      family: Rajkaran #Add author's surname here
+    orcid: 0000-0001-7360-3660   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: UWC1
+      - ref: UWC1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Steven P.
-      family: Weerts
-    orcid: 0000-0002-9826-3209
+      given: Steven P. #Add author's first name here. Abbreviate the middle name
+      family: Weerts #Add author's surname here
+    orcid: 0000-0002-9826-3209   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: CSIR1
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
       - ref: CRUZ1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Alan K.
-      family: Whitfield
-    orcid: 0000-0003-1452-7367
+      given: Alan K. #Add author's first name here. Abbreviate the middle name
+      family: Whitfield #Add author's surname here
+    orcid: 0000-0003-1452-7367  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: SAIAB1
+      - ref: SAIAB1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
 
 affiliations:
 # See README for common examples - they can be copied and pasted here
@@ -265,7 +294,7 @@ est_ecotypes %>%
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### GitLab repositories
+### Code repositories
 
 ### Data availability
 

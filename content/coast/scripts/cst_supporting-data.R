@@ -6,7 +6,8 @@
 library(nbaR)
 library(english)
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 ## 2. SET UP THE DATA ##########################################################
 ### (1) Read in the coast data -------------------------------------------------
@@ -133,10 +134,11 @@ risky_n <- coast_data %>%
 
 #### (r) Number of ecosystem types total (Terrestrial, Estuarine, Marine) ----
 # Values taken from the IEM - excluding microestuaries, and including pelagic types
-all_et <- 467+ #terrestrial
+all_et <- 463+ #terrestrial
           22+ #estuaries
           163+ #marine
-          0 #freshwater
+          222+ #rivers
+          82   #wetland
 
 ### (2) Percentage of types -----------------------------------------------------
 #### (a) Percentage of ecosystem types ----

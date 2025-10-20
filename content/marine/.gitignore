@@ -1,5 +1,0 @@
-# quarto html outputs
-*.html
-
-# the folders created by the qmd files
-*_files/

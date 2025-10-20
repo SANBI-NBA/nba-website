@@ -208,7 +208,7 @@ Threat status changed to Least Concern - species team compiling...note that this
 
 There are 28 threatened or Near Threatened seabird species breeding at the PEIs that are taxa of conservation concern, especially with escelating mouse attacks on eggs, chicks and adult nesting birds on Marion Island [@risi_escalating_2025]. These include the endemic Lesser Sheathbill (VU), the Crozet Shag (EN), Macaroni Penguin (VU), Southern Rockhopper Penguin (EN), Wandering Albatross (VU), Sooty Albatross (EN), Indian Yellow-nosed Albatross (EN) and Grey-headed Albatross (EN). Future species assessments will require data from entire species’ distributions on and around nearby islands to assess threat status. See <https://www.birdlife.org.za/bird-group/seabirds/> for more detail on seabird conservation statuses.
 
-![The Endangered Grey-headed Albatross. Photo credit: ](imgs/grey.png){width="600"}
+![The Endangered Grey-headed Albatross. Photo credit:](imgs/grey.png){width="600"}
 
 While the limited evidence suggests that genetic diversity is surprisingly high[@ansorge_exploring_2017] in the terrestrial ecosystems of the PEIs, data limitations are a challenge in assessing genetic diversity.
 

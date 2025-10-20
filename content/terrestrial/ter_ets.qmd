@@ -109,8 +109,8 @@ The Ecosystem Threat Status is a headline indicator established for assessing ho
 
 Nearly one-third (141/463) of nationally recognised terrestrial ecosystems, representing 11% of the remaining natural habitat of South Africa, are threatened. Among these 63 are listed as Critically Endangered, 68 as Endangered, and 10 as Vulnerable (@tbl-overall). Many of these ecosystems are concentrated in the key economic hubs, particularly in the south-western, north-eastern, and north-western regions of the country, where anthropogenic land-use activities and associated degradation pressures are major drivers of ecosystem change (@fig-RLE-map). Many of these threatened ecosystems have naturally restricted distributions, and accelerated habitat loss over the past three decades in these regions has compounded their vulnerability to collapse.
 
-::: {#box-2 .callout-note .terrestrial title="Box. Changes to the National Vegetation Map" collapse="true"}
-Since 2018, the National Vegetation Map has been refined, increasing the number of nationally recognised terrestrial ecosystems from 456 to 463. These boundary adjustments and the addition of new types have influenced both the potential/historical extent of some ecosystems and their threat status categorisation. For a detailed summary of these changes, see the [Terrestrial Ecosystem map](ter_ecosystems.qmd) webpage.
+::: {#box-2 .callout-note .terrestrial title="Box 1. Changes to the National Vegetation Map" collapse="true"}
+Since 2018, the National Vegetation Map has been refined, increasing the number of nationally recognised terrestrial ecosystems from 456 to 463. These boundary adjustments and the addition of new types have influenced both the potential/historical extent of some ecosystems and their threat status categorisation. Refer to [Terrestrial Ecosystem map](ter_ecosystems.qmd) for a more detailed summary of these changes.
 :::
 
 ```{r overall}

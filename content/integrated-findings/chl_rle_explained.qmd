@@ -60,16 +60,13 @@ The adoption of the IUCN RLE standards by more than 100 countries underscores it
 
 Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case. Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
 
-```{r}
-#| label: tbl-applied-criteria
-#| tbl-cap: A set of the IUCN RLE criteria applied in South Africa across realms
-#| classes: plain
 
+```{r}
+#| classes: plain
 library(dplyr)
 library(gt)
 
-# Correct data frame
-Dataframe <- data.frame(Realms = c("", "", "Realms", "", ""),
+Dataframe <- data.frame(Realms_merge = c("", "", "Realms", "", ""),
                         Realm = c("Terrestrial", "Rivers", "Inland wetlands", "Estuaries", "Marine"),
                         A2b = c('✓', '', '✓', '✓', ''),
                         A3  = c('✓', '', '✓', '✓', '✓'),
@@ -78,29 +75,44 @@ Dataframe <- data.frame(Realms = c("", "", "Realms", "", ""),
                         B3  = c('', '', '', '✓', ''),
                         C3  = c('', '', '', '', '✓'),
                         D1  = c('✓', '', '', '✓', ''),
-                        D3  = c('✓', '✓', '✓', '✓','✓'), check.names = FALSE)
+                        D3  = c('✓', '✓', '✓', '✓', '✓'),
+                       check.names = FALSE)
 
-# Create gt table
+n_rows <- nrow(Dataframe)
+
 table1 <- gt(Dataframe) %>%
-  
           tab_options(heading.align = 'left',
                       table.width = "100%",
-                      table.font.size = 13,
-                      table.border.top.width = 2) %>%
+                      table.font.size = 13.5,
+                      table.border.top.width = px(3),
+                      table.border.top.color = "black",
+                      table.border.bottom.width = px(0),  # disable outer bottom
+                      table.border.bottom.color = "transparent") %>%
   
-          tab_style(style = list(cell_fill(color = "#adb5bd"),
-                                 cell_text(color = "white", weight = "bold")),
-                    locations = cells_column_labels(columns = everything())) %>%
+  # Header cell styling
+  tab_style(style = list(cell_fill(color = "#adb5bd"),
+                         cell_text(color = "white", weight = "bold")),
+                         locations = cells_column_labels(columns = everything())) %>%
   
-          tab_style(style = cell_text(weight = "bold"),
-                    locations = cells_body(columns = c(Realm, Realms))) %>%
+  # Add a solid black bottom border to the header row
+  tab_style(style = cell_borders( sides = "bottom",
+            color = "black",
+            weight = px(3)),
+            locations = cells_column_labels(columns = everything())) %>%
   
-          tab_style(style = cell_borders(sides = c("top", "bottom"),
-                                         color = "white",
-                                         weight = px(0)),
-                                         locations = cells_body(columns = Realms)) %>%
-          cols_label(Realms = "",
-                     Realm = "") 
+  # Bold realm labels
+  tab_style(style = cell_text(weight = "bold"),
+            locations = cells_body(columns = c(Realm, Realms_merge))) %>%
+  
+  # Remove inner borders for the "Realms" column
+  tab_style(style = cell_borders(sides = c("top", "bottom"), color = "white", weight = px(0)),
+                                 locations = cells_body(columns = Realms_merge)) %>%
+  
+  # Add a bold black bottom border to the last table row
+  tab_style(style = cell_borders(sides = "bottom", color = "black", weight = px(3)),
+            locations = cells_body(rows = n_rows, columns = everything())) %>%
+  
+  cols_label(Realms_merge = "", Realm = "")
 
 table1
 

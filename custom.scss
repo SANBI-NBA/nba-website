@@ -16,29 +16,34 @@ $gray-800: #333 !default;
 $gray-900: #222 !default;
 $black:    #000 !default;
 
-$freshwater:        #4097C2 !default; //changed to freshwater blue
-$freshwater-light:  #CBDDED !default;
-$marine:            #02268A !default; //changed to marine blue
-$marine-light:      #B2B2CD !default;
-$purple:            #9D85BE !default; //changed to sanbi purple
-$pink:              #e83e8c !default;
-$red:               #f04124 !default; 
-$orange:            #FAA755 !default; //changed to sanbi orange
-$coast:             #DEA004 !default; //changed to coastal yellow
-$coast-light:       #F5E2C1 !default;
-$green:             #70B276 !default; //changed to sanbi green
-$estuarine:         #028A85 !default; //changed to estuarine teal
-$estuarine-light:   #C2D6D5 !default;
-$cyan:              #5bc0de !default;
-$terrestrial:       #617016 !default;
-$terrestrial-light: #CBCCB7 !default;
-$threatened:        #C38443 !default;
-$well-protected:    #4B6E00 !default;
-$not-protected:     #A6A6A6 !default;
-$species:           #DE2104 !default;
-$species-light:     #F6C6B4 !default;
-$genetics:          #99BD41 !default;
-$genetics-light:    #E0EAC6 !default;
+$freshwater:            #4097C2 !default; //changed to freshwater blue
+$freshwater-light:      #CBDDED !default;
+$marine:                #02268A !default; //changed to marine blue
+$marine-light:          #B2B2CD !default;
+$purple:                #9D85BE !default; //changed to sanbi purple
+$pink:                  #e83e8c !default;
+$red:                   #f04124 !default; 
+$orange:                #FAA755 !default; //changed to sanbi orange
+$coast:                 #DEA004 !default; //changed to coastal yellow
+$coast-light:           #F5E2C1 !default;
+$green:                 #70B276 !default; //changed to sanbi green
+$estuarine:             #028A85 !default; //changed to estuarine teal
+$estuarine-light:       #C2D6D5 !default;
+$cyan:                  #5bc0de !default;
+$terrestrial:           #617016 !default;
+$terrestrial-light:     #CBCCB7 !default;
+$threatened:            #C38443 !default;
+$well-protected:        #4B6E00 !default;
+$not-protected:         #A6A6A6 !default;
+$species:               #DE2104 !default;
+$species-light:         #F6C6B4 !default;
+$genetics:              #99BD41 !default;
+$genetics-light:        #E0EAC6 !default;
+$moderately-protected:  #84AB5C !default;
+$poorly-protected:      #D5DEC4 !default;
+$critically-endangered: #D81E05 !default;
+$endangered:            #FC7F3F !default;
+$vulnerable:            #000 !default;
 
 $primary:       $gray-200 !default; //This sets the colour of the topmost navbar (unless you overrule it with navbar-bg)
 $secondary:     $green !default; //SANBI green
@@ -295,6 +300,36 @@ div.callout-note.callout-style-default .callout-header {
   color:$not-protected;
   font-size: 300%;
   font-weight: 600;
+}
+
+.inline-style-moderately-protected {
+color:$moderately-protected;
+font-size: 300%;
+font-weight: 600;
+}
+
+.inline-style-poorly-protected {
+color:$poorly-protected;
+font-size: 300%;
+font-weight: 600;
+}
+
+.inline-style-critically-endangered {
+color:$critically-endangered;
+font-size: 300%;
+font-weight: 600;
+}
+
+.inline-style-endangered {
+color:$endangered;
+font-size: 300%;
+font-weight: 600;
+}
+
+.inline-style-vulnerable {
+color:$vulnerable;
+font-size: 300%;
+font-weight: 600;
 }
 
 /* Custom styling element for affiliations */

@@ -1,5 +1,8 @@
 ---
 toc: false
+format:
+  html:
+    sidebar: true
 ---
 
 ## Headline indicators

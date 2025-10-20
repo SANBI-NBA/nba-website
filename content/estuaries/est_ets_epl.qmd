@@ -4,7 +4,7 @@
 title: "Integration of Ecosystem Threat Status and Protection Level" 
 subtitle: "Estuarine Realm" 
 
-title-block-banner: "##028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 author:
@@ -28,7 +28,7 @@ author:
     affiliations:
       - ref: sanbi1 
       - ref: nmu1
-   - name:
+  - name:
       given: Linda R.
       family: Harris 
     orcid: 0000-0000-0000-0000  
@@ -204,7 +204,7 @@ knitr::include_graphics("imgs/rle_unluckies.png")
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### GitLab repositories
+### Code repositories
 
 -   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
 
