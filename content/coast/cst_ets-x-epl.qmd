@@ -188,7 +188,8 @@ The highly threatened and under-protected ecosystem types are found all along th
 #| label: tbl-highrisklist
 #| tbl-cap: "List of highly threatened and under-protected ecosystem types in South Africa's coastal zone. CR = Critically Endangered, EN = Endangered, NP = Not Protected, PP = Poorly Protected. Type values in any of the search boxes to filter the list to rows of interest."
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 unlucky <- read_csv(here("outputs/cst_unlucky-CR-EN-NP-PP.csv")) %>% 
   select(c(Realm, `Ecosystem type`,`Threat status`, `Protection level`)) 

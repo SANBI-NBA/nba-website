@@ -59,7 +59,7 @@ format:
 
 ------------------------------------------------------------------------
 
-*The intersection of ecosystem threat status and protection levels reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
+*The intersection of ecosystem threat status and protection level reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
 
 ![Black Harrier (Critically Endangered); an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome ©Odette Curtis-Scott](imgs/blackharrier_crop_ocs.png){fig-align="center"}
 
@@ -102,9 +102,8 @@ library(gt)
 #| tbl-cap: Terrestrial ecosystem threat status and ecosystem protection level
 #| classes: plain
 
-unluckies_summary <- read.csv(here::here("quarto/data/ter_results_type_rle_epl.csv")) %>%
+unluckies_summary <- read.csv("data/ter_results_type_rle_epl.csv") %>%
                      rename(MapCode = T_MAPCODE) %>%
-
                      mutate(RLE = factor(RLE,levels = c("CR", "EN", "VU", "LC"),
                                    labels = c("Critically Endangered", "Endangered", "Vulnerable", "Least Concern")),
                         
@@ -146,7 +145,3 @@ nba_citation(meta)
 
 ```
 
-### References
-
-::: {#refs}
-:::

@@ -148,7 +148,7 @@ Each ecosystem type is assessed according to these criteria, and is then placed 
 
 -   Data deficient (DD)
 
-For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see <!--# INSERT LINK TO ETS EXPLAINER PAGE -->.
+For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings /chl_rle_explained.qmd){target="_blank"} to this headline indicator.
 
 ## Coastal Ecosystem Threat Status
 
@@ -163,7 +163,8 @@ The South African coast is proportionately more threatened than the rest of the 
 library(ggpubr)
 library(nbaR)
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 subrealm_ets_p <- read_csv(here("outputs/cst_subrealm-ets-p.csv"))
 c_ets_t <- subrealm_ets_p %>% 
   filter(`Sub-realm`=="Total") %>% 
@@ -220,6 +221,7 @@ In comparison, there are `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%
 #| classes: plain
 
 library(gt)
+library(readr)
 
 # Format with gt, bold the Total rows, and colour the header row
 
@@ -258,7 +260,8 @@ subrealm_ets_n %>%
 
 library(gt)
 library(nbaR)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 # Format with gt, bold the Total rows, and colour the header row
 
@@ -290,6 +293,8 @@ subrealm_ets_p %>%
 #| classes: plain
 
 library(gt)
+library(readr)
+library(dplyr)
 
 # Format with gt, bold the Total rows, and colour the header row
 
@@ -328,7 +333,8 @@ Because the data and/or assessment methodologies have changed in the realm asses
 #| tbl-cap: "Threat status of coastal ecosystem types in South Africa. ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern."
 
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>% 
   select(c(realm, zone, type, RLE)) %>% 

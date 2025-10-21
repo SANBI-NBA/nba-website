@@ -146,7 +146,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ## Defining and delineating the ecologically determined coastal zone
 
-Unlike the terrestrial, inland aquatic, estuarine and marine assessments, all of which assess ecosystem types per realm, the coast assessment is undertaken in a cross-realm zone. The reason for focusing on the coast specifically is because the majority of the world's population lives in this zone [@cosby2024], concentrating pressures on biodiversity <!--# insert link to coast pressures paper -->. Unless assessed separately, trends in coastal biodiversity relative to the rest of the land and sea are lost in the individual realm assessments.
+Unlike the terrestrial, inland aquatic, estuarine and marine assessments, all of which assess ecosystem types per realm, the coast assessment is undertaken in a cross-realm zone. The reason for focusing on the coast specifically is because the majority of the world's population lives in this zone [@cosby2024], concentrating pressures on biodiversity<!--# insert link to coast pressures paper when available -->. Unless assessed separately, trends in coastal biodiversity relative to the rest of the land and sea are lost in the individual realm assessments.
 
 There are lots of different definitions and boundaries of coastal zones. For purposes like biodiversity assessments, the extent of the coast needs to comprise whole ecosystem types because that is the unit of assessment. Using whole ecosystem types also means that the results from the separate realm assessments can be extracted and summarized for the coast.
 
@@ -194,7 +194,8 @@ The coastal ecosystem types are listed below (@tbl-edcztypes). For a descriptive
 
 library(here)
 library(gt)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 cst_ecotype <- read_csv(here("data/coast-e-ecosystem_types.csv")) %>% 
   select(c(Realm, Subrealm, `Broad Type`, `Ecosystem Type`))

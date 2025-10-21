@@ -287,14 +287,15 @@ For a more detailed explanation of each of these pressures, refer to the [**publ
 
 ## Cumulative impacts and disproportionately high pressure on coastal biodiversity
 
-Pressures and impacts on biodiversity in the coastal zone are generally more intense than further inland and offshore. This is evident by comparing the severity of pressures on biodiversity cross-realm: South Africa's coastal zone has one of the highest overall pressure profiles (@fig-pressureprofile). For a broader comparison of pressures among realms, see <!--# insert link to overall pressure profile page -->.
+Pressures and impacts on biodiversity in the coastal zone are generally more intense than further inland and offshore. This is evident by comparing the severity of pressures on biodiversity cross-realm: South Africa's coastal zone has one of the highest overall pressure profiles (@fig-pressureprofile). For a broader comparison of pressures among realms, see the [integrated findings](../integrated-findings /intf_pressures-condition.qmd){target="_blank"}.
 
 ```{r pressureprofileplot, results = 'hide', eval=FALSE}
 
 #devtools::install_github("SANBI-NBA/nbaR")
 #https://github.com/SANBI-NBA/nbaR
 library(nbaR)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 d_pressureprofile <- read_csv("data/intf-realm_pressure_scores.csv") %>% 
   filter(!realm %in% c("Sub-Antarctic", "Freshwater")) %>% 
@@ -333,7 +334,7 @@ The disproportionate impact of pressures on coastal biodiversity is also evident
 #| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
 
 library(nbaR)
-library(tidyverse)
+library(readr)
 
 d_landcover <- read_csv("data/coast-landcover_stats_2025.csv")
 
@@ -356,7 +357,9 @@ nba_plot(d_landcover,
 
 library(gt)
 library(nbaR)
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(tidyr)
 
 d_landcover_long <- d_landcover %>% 
     pivot_longer(cols=2:7, names_to="Landcover Class", values_to = "Extent") %>% 
@@ -380,7 +383,7 @@ Download the data here. <!--# make data available for download? -->
 
 <!--# I'm not sure what to put here. In the summary book, the condition figure is much more simplified than the figure I have below, and the booklet presents a legend with all 6 categories but the map only seems to be displaying 3 categories. Realm leads need to help here please. -->
 
-Mapping ecological condition essentially gives a spatial representation of the overall effect of various pressures on biodiversity, and is one of the input datasets for calculating ecosystem threat status. Ecological condition is estimated using different approaches in the separate realms: in the terrestrial assessment it relies primarily on land-cover change; in the estuarine assessment, a multi-criteria framework is used; and in the marine assessment, cumulative pressure mapping is used. For details on the realm-specific methods, see <!--# Insert link to the condition 101 page and/or realm pages -->.
+Mapping ecological condition essentially gives a spatial representation of the overall effect of various pressures on biodiversity, and is one of the input datasets for calculating ecosystem threat status. Ecological condition is estimated using different approaches in the separate realms: in the terrestrial assessment it relies primarily on land-cover change; in the estuarine assessment, a multi-criteria framework is used; and in the marine assessment, cumulative pressure mapping is used. For details on the realm-specific methods, see the Ecological condition across realms section of the [integrated findings](../integrated-findings /intf_pressures-condition.qmd){target="_blank"} and the individual realm pages on ecological condition ([terrestrial](../terrestrial /ter_pressures-condition.qmd), [estuaries](../estuaries /est_condition.qmd), [marine](../marine /marine_condition.qmd)).
 
 Although different methods for calculating ecological condition were used in the separate realm assessments, they were aligned as far as possible to allow for cross-realm comparisons and unified terminology. Ultimately, these are presented in the coastal assessment in four <!--# three? --> simplified categories (that link to the IUCN Red List of Ecosystems categories): natural/near-natural; moderately modified; heavily modified; and critically modified. Importantly, severely modified habitat is included differently among realms. For terrestrial and marine habitat, severely modified areas are included with heavily modified, and for estuarine habitat, severely modified areas are included with critically modified. <!--# Possibly delete the last sentence? -->
 
@@ -399,7 +402,7 @@ The ecological condition of all coastal ecosystem types was extracted from the t
 
 library(here)
 library(nbaR)
-library(tidyverse)
+library(readr)
 
 cst_cond_wd <- read_csv(here("outputs/cst_condition.csv"))
 
@@ -423,7 +426,8 @@ cst_cond
 library(here)
 library(gt)
 library(nbaR)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 cst_cond_wd <- read_csv(here("outputs/cst_condition.csv"))
 

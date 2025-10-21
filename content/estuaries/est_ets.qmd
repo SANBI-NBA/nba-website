@@ -13,40 +13,40 @@ author:
   - name:
       given: Lara
       family: van Niekerk
-    orcid: 0000-0001-5761-1337 
+    orcid: 0000-0001-5761-1337
     affiliations:
       - ref: csir1
       - ref: nmu1
   - name:
       given: Andrew L.
-      family: Skowno 
-    orcid: 0000-0000-0000-0000 
+      family: Skowno
+    orcid: 0000-0000-0000-0000
     affiliations:
-      - ref: sanbi1 
+      - ref: sanbi1
   - name:
-      given: Kerry 
-      family: Sink 
-    orcid: 0000-0001-5051-573X 
+      given: Kerry
+      family: Sink
+    orcid: 0000-0001-5051-573X
     affiliations:
-      - ref: sanbi1 
+      - ref: sanbi1
       - ref: nmu1
   - name:
       given: Linda R.
-      family: Harris 
-    orcid: 0000-0000-0000-0000  
+      family: Harris
+    orcid: 0000-0000-0000-0000
     affiliations:
-      - ref: nmu1     
+      - ref: nmu1
 
 affiliations:
   - id: csir1
     number: 1
-    name: Council for Scientific and Industrial Research (CSIR), Stellenbosch,South Africa   
+    name: Council for Scientific and Industrial Research
   - id: nmu1
     number: 2
-    name: Institute for Coastal and Marine Research (CMR), Nelson Mandela University,Gqeberha, South Africa 
+    name: Institute for Coastal and Marine Research (CMR), Nelson Mandela University
   - id: sanbi1
     number: 3
-    name: South African National Biodiversity Institute (SANBI)
+    name: South African National Biodiversity Institute
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -176,7 +176,6 @@ nba_plot_comb(ets_combined,
   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
 
 ```
-
 
 ## Technical documentation
 

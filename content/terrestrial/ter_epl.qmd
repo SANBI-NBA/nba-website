@@ -61,7 +61,7 @@ format:
 
 *The protected area network is growing across South Africa, thanks to innovative biodiversity stewardship programs, leading to a general increase terrestrial ecosystem protection levels.*
 
-<center>![](imgs/Community_conservation_area_KZN_SteveMcKean.png){fig-alt="Community conservation efforts in KwaZlu-Natal"}\
+<center>![](imgs/Community_conservation_area_KZN_SteveMcKean.png){fig-alt="Community conservation efforts in KwaZlu-Natal" width="800"}\
 [Community conservation efforts in KwaZlu-Natal ©Steve McKean]{style="font-size:65%;"}</center>
 
 ::::: columns
@@ -109,13 +109,13 @@ library(nbaR)
 ```{r data, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, cache=FALSE}
 
 # ---- PL Data ----
-rle_epl <- read.csv(here::here("quarto/data/ter_results_type_rle_epl.csv"))
-rle_epl_stats <- readxl::read_xlsx(here::here("quarto/data/RLE EPL stats.xlsx"))
-epl_biome <- readxl::read_xlsx(here::here("quarto/data/Biome EPL count.xlsx"))
-epl_summary <- readxl::read_xlsx(here::here("quarto/data/EPL summary results.xlsx"))
-epl_province <- readxl::read_xlsx(here::here("quarto/data/Provincial EPL summary results.xlsx"))
-epli_2018 <- read.csv(here::here("quarto/data/results_df_EPL_2018_biome_invasives2.csv"))
-epli_2024 <- read.csv(here::here("quarto/data/results_df_EPL_2024_biome_invasives2.csv"))
+rle_epl <- read.csv("data/ter_results_type_rle_epl.csv")
+rle_epl_stats <- readxl::read_xlsx("data/RLE EPL stats.xlsx")
+epl_biome <- readxl::read_xlsx("data/Biome EPL count.xlsx")
+epl_summary <- readxl::read_xlsx("data/EPL summary results.xlsx")
+epl_province <- readxl::read_xlsx("data/Provincial EPL summary results.xlsx")
+epli_2018 <- read.csv("data/results_df_EPL_2018_biome_invasives2.csv")
+epli_2024 <- read.csv("data/results_df_EPL_2024_biome_invasives2.csv")
 
 ```
 
@@ -128,7 +128,7 @@ Ecosystem protection level measures the degree to which ecosystem types are repr
 Over three-quarters (76%) of South Africa’s 463 terrestrial ecosystems received some form of statutory protection. However, levels of protection vary widely; 121 ecosystems are Well Protected, 67 are Moderately Protected, 163 are Poorly Protected and 112 are Not Protected.
 
 ```{r}
-#| label: tbl-overall
+#| label: tbl-overall_epl
 #| tbl-cap: Summary of the Protection Level assessment outcomes; including the number of ecosystem types per category & proportion of the natural areas remaining per category.
 #| classes: plain
 
@@ -190,7 +190,7 @@ ggpubr::ggarrange(Biome_epl_barplot, Prov_epl_barplot,
 
 ### Ecosystem Protection Level Index
 
-Ecosystem Protection Level can be tracked over time using methods related to the Red List of Species \[ADD LINK TO EPL Explained\]. The overall (aggregate) trend between 2018 and 2024 reflects the steady increase in the PA estate overall, mostly due to various biodiversity stewardship programs and establishment of a new National Park in the Nama-Karoo (note the low level of protection for the Nama-Karoo and the more pronounced increase in protection level since 2018). The EPLI plot shows how well protected the Forest Biome is, but it also shows that that no increase in protection have occurred in the biome recently.
+Ecosystem Protection Level can be tracked over using the [Ecosystem Protection level Index](../integrated-findings/chl_epl_explained.qmd) (EPLI). The overall (aggregate) trend between 2018 and 2024 reflects the steady increase in the PA estate overall, mostly due to various biodiversity stewardship programs and the establishment of a new National Park in the Nama-Karoo (note the low level of protection for the Nama-Karoo and the more pronounced increase in protection level since 2018). The EPLI plot shows how well protected the Forest Biome is, but it also shows that that no increase in protection have occurred in the biome recently.
 
 ```{r, echo=FALSE, fig.width = 7, fig.height = 5}
 #| label: fig-EPLI
@@ -257,7 +257,7 @@ epli_plot
 
 ### Approach
 
-Terrestrial Ecosystem Protection Level was calculated by assessing the degree to which protected areas targets for each ecosystem were met. Land cover, invasive alien plant data, terrestrial ecosystem maps (vegetation map) and protected areas maps for 2018 and 2024 were cross tabulated, allowing the calculation for each ecosystem type: i) the full extent of the type ii) the full extent of the type within the PA network, iii) natural remaining the extent of the type within the PA network (including invaded areas), iv) the extent of invasion by alien plants within the PA network for each type.
+Terrestrial [Ecosystem Protection Level](../integrated-findings/chl_epl_explained.qmd) was calculated by assessing the degree to which protected areas targets for each ecosystem were met. Land cover, invasive alien plant data, terrestrial ecosystem maps (vegetation map) and protected areas maps for 2018 and 2024 were cross tabulated, allowing the calculation for each ecosystem type: i) the full extent of the type ii) the full extent of the type within the PA network, iii) natural remaining the extent of the type within the PA network (including invaded areas), iv) the extent of invasion by alien plants within the PA network for each type.
 
 The extent of of each type within the PA network was adjusted for habitat loss and invasion. The natural remaining extent within the PA network was adjusted downwards by subtracting 70% of the invaded extent within the PA network. This step ensures that effectiveness of PA network is accounted for to a degree by preventing areas heavily degraded by invasive alien plants from fully contributing to ecosystem representation targets.
 
@@ -265,11 +265,13 @@ EPL Index calculation (Harris et al., in review) is based on the concept of the 
 
 ![Workflow diagram for the Ecosystem Protection Level Index](imgs/EPLI_mermaid.png){fig-align="center" width="800"}
 
-### Technical documentation
+#### Technical documentation
 
--   **Code repository**: <https://github.com/askowno/EPL_terr>
+Code repository: <https://github.com/askowno/EPL_terr>
 
--   **Key publications**: Linda R. Harris, Andrew L. Skowno,Stephen D. Holness, Kerry J. Sink,Lara van Niekerk, Heidi van Deventer,Lindie Smith-Adao,Nancy Job,Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
+#### Key publications
+
+Linda R. Harris, Andrew L. Skowno,Stephen D. Holness, Kerry J. Sink,Lara van Niekerk, Heidi van Deventer,Lindie Smith-Adao,Nancy Job,Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
 ### References
 

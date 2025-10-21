@@ -139,11 +139,11 @@ After comparing the extent extent of each ecosystem type under protection relati
 
 -   **Not Protected (NP)**: \<5% of the extent target for the ecosystem type is met within the protected area network
 
-For NBA 2025, the EPL indicator was calculated across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on EPL, see <!--# INSERT LINK TO EPL EXPLAINER PAGE -->.
+For NBA 2025, the EPL indicator was calculated across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on EPL, see the [general introduction](../integrated-findings /chl_epl_explained.qmd){target="_blank"} to this headline indicator.
 
 ## Coastal Ecosystem Protection Level
 
-Proportionately, the coast is slightly more protected than the rest of the land and sea (@fig-eplgraph, @tbl-eplnumbers). This is positive given the myriad of benefits provided by coastal ecosystems and their disproportionately impacted <!--# insert link to coastal pressures and condition page --> and threatened status<!--# insert link to coast ets page -->.
+Proportionately, the coast is slightly more protected than the rest of the land and sea (@fig-eplgraph, @tbl-eplnumbers). This is positive given the myriad of benefits provided by coastal ecosystems and their [disproportionately impacted](../coast /cst_pressures-condition.qmd) and [threatened](../coast /cst_ets.qmd) status.
 
 Although `r percent_types(c_prot_n, cet_n)`% of coastal ecosystem types have some level of protection (`r c_prot_n` of `r cet_n` types), only `r percent_types(c_epl_n("WP"), cet_n)`% are Well Protected, which accounts for `r percent_extent(epl, "WP", "coast")`% of the coastal extent (@fig-eplgraph, @tbl-eplnumbers).
 
@@ -160,7 +160,9 @@ Ideally, coastal ecosystem types should have cross-realm protection in contiguou
 library(ggpubr)
 library(nbaR)
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
+
 subrealm_epl_p <- read_csv(here("outputs/cst_subrealm-epl-p.csv"))
 c_epl_t <- subrealm_epl_p %>% 
   filter(`Sub-realm`=="Total") %>% 
@@ -323,7 +325,8 @@ Because the targets and assessment methodologies have changed in the realm asses
 #| tbl-cap: "Protection level of coastal ecosystem types in South Africa. EPL = Ecosystem Protection Level. WP = Well Protected. MP = Moderately Protected. PP = Poorly Protected. NP = Not Protected."
 
 library(here)
-library(tidyverse)
+library(readr)
+library(dplyr)
 
 cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>% 
   select(c(realm, zone, type, EPL)) %>% 
@@ -380,6 +383,8 @@ nba_tbl_colr(DF = cst,
 #   ))
 
 ```
+
+<!--# EPL column is coming out in ETS colours in the table - must check with Tash -->
 
 ## Technical documentation
 

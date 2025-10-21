@@ -371,20 +371,20 @@ To see which specific ecosystem types are highly threatened and under-protected,
 The Endangered coastal species are all endemic, and are impacted primarily by mining, wrack harvesting, coastal development and artificial light at night (*Tylos granulatus, Tylos capensis, Acanthoscelis ruficornis*), and over-harvesting, mining, and harmful algal blooms (*Donax serra*).
 
 ::::::: grid
-::: {.g-col-lg-3 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-granulatus_Linda-Harris.png" alt="Tylos granulatus EN" class="img-fluid"/></a> <br>*Tylos granulatus*<br>© Linda Harris
+::: {.g-col-lg-3 .g-col-6 .text-center target="_blank"}
+<a href="https://www.iucnredlist.org/species/254657182/254662322"><img src="imgs/cst-s-Tylos-granulatus_Linda-Harris.png" alt="Tylos granulatus EN" class="img-fluid"/></a> <br>*Tylos granulatus*<br>© Linda Harris
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Tylos-capensis_Linda-Harris.png" alt="Tylos capensis EN" class="img-fluid"/></a> <br>*Tylos capensis*<br>© Linda Harris
+::: {.g-col-lg-3 .g-col-6 .text-center target="_blank"}
+<a href="https://www.iucnredlist.org/species/254657167/254662282/"><img src="imgs/cst-s-Tylos-capensis_Linda-Harris.png" alt="Tylos capensis EN" class="img-fluid"/></a> <br>*Tylos capensis*<br>© Linda Harris
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png" alt="Acanthoscelis ruficornis EN" class="img-fluid"/></a> <br>*Acanthoscelis ruficornis*<br>© Linda Harris
+::: {.g-col-lg-3 .g-col-6 .text-center target="_blank"}
+<a href="https://www.iucnredlist.org/species/254559963/254662352/"><img src="imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png" alt="Acanthoscelis ruficornis EN" class="img-fluid"/></a> <br>*Acanthoscelis ruficornis*<br>© Linda Harris
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
-<a href="https://www.iucnredlist.org/"><img src="imgs/cst-s-Donax-serra_Linda-Harris.png" alt="Donax serra EN" class="img-fluid"/></a> <br>*Donax serra*<br>© Linda Harris
+::: {.g-col-lg-3 .g-col-6 .text-center target="_blank"}
+<a href="https://www.iucnredlist.org/species/254661607/254662297/"><img src="imgs/cst-s-Donax-serra_Linda-Harris.png" alt="Donax serra EN" class="img-fluid"/></a> <br>*Donax serra*<br>© Linda Harris
 :::
 :::::::
 

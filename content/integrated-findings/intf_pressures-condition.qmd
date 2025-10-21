@@ -9,7 +9,7 @@ title-block-banner-color: white
 
 The International Union for the Conservation of Nature (IUCN) proposes a threats classification scheme with a hierarchical structure for various pressures on biodiversity. The NBA 2025 adopted this approach with some minor language changes. @fig-bub is for the realms, the coast and the subantarctic, and @fig-bub-sp is for taxonomic groups.
 
-![Key pressures on biodiversity in each realm, informed by Red List of Threatened Species and Red List of Ecosystems assessments. The size of the bubbles indicates the relative importance of each pressure class.](imgs/realm-bubble-plot4.png){#fig-realm-bub fig-align="center" width="600"}
+![Key pressures on biodiversity in each realm, informed by Red List of Threatened Species and Red List of Ecosystems assessments. The size of the bubbles indicates the relative importance of each pressure class.](imgs/realm-bubble-plot4.png){#fig-realm-bub fig-align="center" width="400"}
 
 In the estuarine and marine realms, and in coastal areas, **unsustainable use of biological resources** (in this case overfishing of key species, along with associated impacts on non-target species) is a significant pressure on biodiversity. There is increasing illegal harvesting and trade of numerous high value species in the terrestrial and aquatic realms, with population declines and near extinction of several species. Overuse of rangelands, which results in loss of shrub and herbaceous cover and leads to increased erosion, is a direct pressure to terrestrial species and ecosystems and an indirect pressure on freshwater ecosystems.
 

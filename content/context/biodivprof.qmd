@@ -76,6 +76,7 @@ author:
   - name:
       given: Georgina
       family: Jones
+    orcid: NA 
     affiliations:
       - ref: af7 
 
@@ -290,7 +291,7 @@ Two-thirds of South Africa’s plant species are endemic, and its cycads represe
 
 Microorganisms (e.g., bacteria, protozoa, fungi, viruses), an often-overlooked and largely unassessed group, are essential for healthy functioning of natural and agricultural systems in both terrestrial and aquatic environments. Given the country’s immense diversity of floral and faunal species, and that each species has its own array of microbial species associated with it, it is likely that these are also diverse. For example, it has been estimated that each unique vascular plant species in South Africa is associated with at least seven unique fungal species, implying more than 171 000 fungi species (an underestimate, as fungi associated with invertebrates are not included).
 
-Click here for more details and a downloadable fact sheet.
+Click here for more details and a downloadable [Biodiversity profile fact sheet](https://hdl.handle.net/20.500.12143/9521 "Slightly further details on the statistics quoted in this page").
 
 ### Sources
 

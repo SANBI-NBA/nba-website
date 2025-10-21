@@ -273,7 +273,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Tylos capensis*** (Cape pillbug) is endemic to South Africa. It has a limited range and restricted habitat along the South African south coast, with between 9 and 12 locations extant. It is experiencing ongoing loss, degradation and fragmentation of habitat to expanding **coastal development** and **artificial light at night** (ALAN), and has been lost from at least four locations, including inside protected areas. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+***Tylos capensis*** (Cape calloused beach pillbug) is endemic to South Africa. It has a limited range and restricted habitat along the South African south coast, with between 9 and 12 locations extant. It is experiencing ongoing loss, degradation and fragmentation of habitat to expanding **coastal development** and **artificial light at night** (ALAN), and has been lost from at least four locations, including inside protected areas. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
 :::
 :::::
 
@@ -283,7 +283,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Tylos granulatus*** (giant pillbug) is restricted to the coast of Namibia and South Africa. It generally occurs in low numbers, and is found in large abundances (hundreds to thousands of individuals) in only a few places. **Extirpations** have been recorded at the southern end of its range due to **coastal development**, there are no recent records in the northern part of its range, and it is impacted by **mining**. **Kelp wrack removal** takes away an important source of food for this species. Collectively these pressures are causing notable declines in its habitat availability and quality, and declines in the number of mature individuals. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+***Tylos granulatus*** (granulated calloused beach pillbug) is restricted to the coast of Namibia and South Africa. It generally occurs in low numbers, and is found in large abundances (hundreds to thousands of individuals) in only a few places. **Extirpations** have been recorded at the southern end of its range due to **coastal development**, there are no recent records in the northern part of its range, and it is impacted by **mining**. **Kelp wrack removal** takes away an important source of food for this species. Collectively these pressures are causing notable declines in its habitat availability and quality, and declines in the number of mature individuals. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
 :::
 :::::
 

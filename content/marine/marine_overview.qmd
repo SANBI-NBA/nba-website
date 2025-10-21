@@ -16,7 +16,7 @@ title-block-banner-color: white
 
 *South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and contributes to deep cultural and spiritual values for South Africa’s oceans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
 
-![](imgs/Sodwana_Grants%20beach_02-12-022.jpg)
+![](imgs/Sodwana_Grants_beach_02-12-022.jpg)
 
 ::::: columns
 ::: {.column width="50%"}
@@ -92,7 +92,7 @@ Sharks, rays and chimaeras are one of the most threatened groups across all real
 
 Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring ([Key Message C3](../key-messages/kmc3.qmd)), and increase capacity for marine species red listing ([Key Message C3](../key-messages/kmc3.qmd)). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.
 
-## Pressures and condition
+## Pressures and ecological condition
 
 ::::: grid
 ::: {.g-col-lg-8 .g-col-12}
@@ -101,8 +101,8 @@ There are many interacting pressures cumulatively affecting marine ecosystems an
 Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity ([Key Message A5](../key-messages/kma5.qmd)) impacting ecosystems, species and genetic diversity ([Key Message B3](../key-messages/kmb3.qmd)).
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.jpeg){style="width:400;"}
+::: {.g-col-lg-4 .g-col-12}
+![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.jpeg){.lightbox}
 :::
 :::::
 
@@ -115,8 +115,8 @@ The first groundtruthing of marine ecosystem condition shows that pressure mappi
 The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment ([Key Message A2](../key-messages/kma2.qmd)).
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
+::: {.g-col-lg-4 .g-col-12}
+![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){.lightbox}
 :::
 :::::
 

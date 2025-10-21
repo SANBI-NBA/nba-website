@@ -80,7 +80,7 @@ google-scholar: true
 
 <!--# I haven't invested a lot in this page because I don't know how this section will play out for the realms. This is the NBA 2018 content. -->
 
-In addition to the overall priority actions distilled from this assessment<!--# inset link to overall priority actions/responses page -->, the 10 priority actions specifically for South Africa's coastal zone are:
+In addition to the [overall priority actions](../integrated-findings /pakg_actions.qmd) distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are:
 
 **1. Restore the coast**
 
@@ -158,7 +158,7 @@ Nineteen knowledge gaps have been identified as research priorities to strengthe
 
 **3. Address realm-specific foundational knowledge gaps to strengthen the coastal assessment**
 
--   See realm-specific pages for foundational knowledge gaps; addressing these would contribute to strengthening the coastal assessment. <!--# Insert links to other realm pages -->
+-   See realm-specific pages for foundational knowledge gaps; addressing these would contribute to strengthening the coastal assessment. <!--# Insert links to other realm pages if they have these sections -->
 
 </details>
 

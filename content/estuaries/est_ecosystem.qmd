@@ -8,11 +8,14 @@ title-block-banner: "#028A85" #Background colour of the title block: Apply compo
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 
+
 # List authors here in the order you want them displayed in the title block
 # See examples in README
+
 author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
+
       given: Lara #Add author's first name here. Abbreviate the middle name
       family: van Niekerk #Add author's surname here
     orcid: 0000-0001-5761-1337  # Author's orcid ID. Delete this line if author is not on orcid
@@ -100,13 +103,12 @@ author:
 
 
 affiliations:
-# See README for common examples - they can be copied and pasted here
   - id: CSIR1
     number: 1
-    name: Council for Scientific and Industrial Research 
+    name: Council for Scientific and Industrial Research
   - id: NMU1
     number: 2
-    name: Institute for Coastal and Marine Research, Nelson Mandela University 
+    name: Institute for Coastal and Marine Research, Nelson Mandela University
   - id: NMU2
     number: 3
     name: DST/NRF Research Chair in Shallow Water Ecosystems, Nelson Mandela University
@@ -118,19 +120,19 @@ affiliations:
     name: Department of Environment, Forestry and Fisheries
   - id: ORI1
     number: 6
-    name: Oceanographic Research Institute, SAAMBR   
+    name: Oceanographic Research Institute, SAAMBR
   - id: UKZN1
     number: 7
-    name: University of KwaZulu-Natal   
+    name: University of KwaZulu-Natal
   - id: Anchor1
     number: 8
-    name: Anchor Environmental Consultants    
+    name: Anchor Environmental Consultants
   - id: UWC1
     number: 9
-    name: University of the Western Cape   
+    name: University of the Western Cape
   - id: CRUZ1
     number: 10
-    name: University of Zululand   
+    name: University of Zululand
    
 # This date determines the PUBLISHED date in the title block
 date: last-modified

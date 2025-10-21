@@ -5,66 +5,89 @@ project:
     - contents.qmd
     - "content/context/*.qmd"
     - "content/key-messages/*.qmd"
-  
+    - "content/integrated-findings/*.qmd"
+    - "content/terrestrial/*.qmd"
+    - "content/species/*.qmd"
+
 website:
   title: "National Biodiversity Assessment"
   description: "The status of South Africa's ecosystems and biodiversity"
   site-url: "https://nba.sanbi.org.za/"
   repo-url: "https://github.com/SANBI-NBA/nba-website"
   favicon: imgs/sanbi-icon.png
+  
   search:
-    location: sidebar
+    location: navbar
     type: textbox
+  
   navbar:
     logo: imgs/sanbi-logo-medium.png
     logo-href: "https://www.sanbi.org/"
     pinned: true
-    tools:
-      - icon: imgs/sanbi-icon.png
-        href: https://www.sanbi.org/
-      - icon: twitter
-        href: https://x.com/sanbi_za
-      - icon: facebook
-        href: https://www.facebook.com/SouthAfricanNationalBiodiversityInstitute/
-      - icon: linkedin
-        href: https://www.linkedin.com/in/sa-biodiversity-south-african-national-biodiversity-institute-9444b7140/
-      - icon: github
-        href: https://github.com/SANBI-NBA
     right: 
       - text: "Home"
         href: index.qmd
       - text: "Contents"
         href: contents.qmd
+  
   sidebar:
     - id: id-contents
-      title: Contents
+      title: "Contents"
       collapse-level: 1
       contents:
-        - text: "Overview"
+        - section: "Contents"
           href: contents.qmd
-        - text: "About the NBA"
-          href: content/context/about-nba.qmd
-        - text: "Using the NBA"
-          href: content/context/uses-nba.qmd
-        - text: "South Africa's biodiversity profile"
-          href: content/context/biodivprof.qmd
-        - text: "The importance of biodiversity"
-          href: content/context/importance.qmd
-        - text: "Key messages"
-          href: content/key-messages/index.qmd
+          contents:
+            - text: "About the NBA"
+              href: content/context/about-nba.qmd
+            - text: "Using the NBA"
+              href: content/context/uses-nba.qmd
+            - text: "South Africa's biodiversity profile"
+              href: content/context/biodivprof.qmd
+            - text: "The importance of biodiversity"
+              href: content/context/importance.qmd
+            - text: "Key messages"
+              href: content/key-messages/index.qmd
+            - section: "Integrated findings"
+              contents:  
+                - section: "Headline indicators"
+                  href: content/integrated-findings/intf_headline.qmd
+                  contents:
+                     - content/integrated-findings/intf_ecosystems.qmd
+                     - content/integrated-findings/chl_rle_explained.qmd
+                     - content/integrated-findings/chl_epl_explained.qmd
+                     - content/integrated-findings/intf-species.qmd
+                - text: "Pressures on biodiversity"
+                  href: content/integrated-findings/intf_pressures-condition.qmd
+            - section: "Findings by realm"
+              contents:
+                - section: "Terrestrial"
+                  href: content/terrestrial/ter_overview.qmd
+                  contents:
+                     - content/terrestrial/ter_ecosystems.qmd
+                     - content/terrestrial/ter_pressures-conditions.qmd
+                     - content/terrestrial/ter_ets.qmd
+                     - content/terrestrial/ter_epl.qmd
+                     - content/terrestrial/ter_ets_x_epl.qmd
+                     - content/species/ter_sp.qmd    
     - id: id-key-messages
-      title: Key messages
-      collapse-level: 1
-      contents: key-messages/*
+      title: "Key messages"
+      collapse-level: 2
+      contents: 
+        - section: "Key messages"
+          href: content/key-messages/index.qmd
+          contents: content/key-messages/km*     
+
+
   page-footer: 
     left: |
       <div style=" text-align: center; max-width: 260px; line-height: 1.2; font-size: 0.8rem; margin-left: 6em">
         <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 900;">
           <a href="/content/context/about-nba.qmd" style="color: inherit; text-decoration: none;">About the NBA</a>
         </h4>
-        <p style="margin-top: 0; font-size = 0.8">
+        <p style="margin-top: 0; font-size = 1">
           The National Biodiversity Assessment (NBA) is a collaborative effort 
-          to synthesise the best available science on South Africa’s biodiversity. 
+          to synthesise the best available science on the status of South Africa’s biodiversity. 
         </p>
       </div>
 
@@ -89,6 +112,12 @@ website:
         <div style="margin-top: 0.5em; font-size: 0.85rem;">
           <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/by-nc.svg" alt="Creative Commons BY-NC 4.0 license" style="height: 31px; border: none;">
+          </a>
+        </div>
+        </p>
+        <div style="margin-top: 0.3em; font-size: 0.85rem;">
+          <a href="https://github.com/SANBI-NBA" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/github-mark.svg" alt="NBA on GitHub" style="height: 31px; border: none;">
           </a>
         </div>
       </div>

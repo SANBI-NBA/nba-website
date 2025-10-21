@@ -24,9 +24,9 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-![Agriculture in the Hemel-en-Aarde Valley, Western Cape ©Andrew Skowno](imgs/canola_wc_skowno_crop.png){fig-align="center"}
+![Agriculture in the Hemel-en-Aarde Valley, Western Cape ©Andrew Skowno](imgs/canola_wc_skowno_crop.png){fig-align="center" width="800"}
 
-South Africa's unique terrestrial biodiversity is globally recognised, with high species diversity and exceptional levels of endemism (especially for plants). The wide climatic range and varied geology and topography result in an equally diverse set of 463 terrestrial ecosystem types. This natural heritage supports vibrant rural and urban land uses, from farming to tourism to expanding cities, through essential ecosystem services. The steady loss of terrestrial habitat and decline in species populations to various human activities set against a backdrop of accelerating climate change paints an overall picture of decline in the biodiversity and ecosystem services on which we rely. Gains in protection of species and ecosystems (through biodiversity stewardship programs) and growing sustainable use and restoration efforts are a positive trend. Biodiversity inclusive spatial planning, a well established and formalised practice in South Africa, is a key tool in striking the balance between development and biodiversity ([Key Message A2](../key-messages/kma2.qmd)).
+South Africa's unique terrestrial biodiversity is globally recognised, with high species diversity and exceptional levels of endemism (especially for plants). The wide climatic range and varied geology and topography result in an equally diverse set of 463 terrestrial ecosystem types (Terrestrial ecosystem [page](./ter_ecosystems.qmd)). This natural heritage supports vibrant rural and urban land uses, from farming to tourism to expanding cities, and provides essential ecosystem services. The steady loss of terrestrial habitat and decline in species populations to various human activities, set against a backdrop of accelerating climate change, paints an overall picture of decline in the biodiversity and ecosystem services on which we rely (Key Messages [A1](../key-messages/kma1.qmd), [A4](../key-messages/kma4.qmd), [B1](../key-messages/kmb1.qmd)). Gains in protection of species and ecosystems (through biodiversity stewardship programs) and growing sustainable use and restoration efforts are a positive trend (Key Messages [B4](../key-messages/kmb4.qmd), [B5](../key-messages/kmb5.qmd)) . Biodiversity inclusive spatial planning, a well established and formalised practice in South Africa, is a key tool in striking the balance between development and biodiversity (Key Messages [A2](../key-messages/kma2.qmd),[C1](../key-messages/kmc1.qmd)).
 
 ::::: columns
 ::: {.column width="50%"}
@@ -60,43 +60,13 @@ South Africa's unique terrestrial biodiversity is globally recognised, with high
 
 ------------------------------------------------------------------------
 
-Thirty percent of South Africa's terrestrial ecosystem types are listed as threatened, this translates to 11% of the remaining natural habitat. There has been an overall increase in the risk of collapse of terrestrial ecosystems since 2014. While a quarter of terrestrial ecosystem types are Well Protected the same percentage are Not Protected. The overall trend for protection is positive, with a steady increase in the Protected Areas network - primarily due to biodiversity stewardship programs.
-
-**\[Ecosystem threat status; Ecosystem protection level\]**
+Thirty percent of South Africa's terrestrial ecosystem types are listed as threatened, this translates to 11% of the remaining natural habitat. There has been an overall increase in the risk of collapse of terrestrial ecosystems since 2014. While a quarter of terrestrial ecosystem types are Well Protected the same percentage are Not Protected. The overall trend for protection is positive, with a steady increase in the Protected Areas network - primarily due to biodiversity stewardship programs. Terrestrial ecosystem threat status [page](./ter_ets.qmd). Terrestrial ecosystem protection level [page](./ter_epl.qmd).
 
 **ADD species overview text - species...ts an pl** <!--# Species team to insert a blurb that speaks to stats above ...eg Of the xx terr species assessed, yy% are threatened with extinction. Terrestrial species continue to decline over time. Species Protection Levels are increasing but greater gains could be made through more effective protected areas  -->
 
-The state of biodiversity is shaped by both current and historical pressures. Croplands cover a very large portion of the terrestrial realm (\>16%) but there has been limited expansion into natural areas in recent times. In contrast the expansion of settlements and mining are relevant both historically and currently. Certain activities, such as targeted poaching of succulent plant species ([Key Message A6](../key-messages/kma6.qmd)) and renewable energy installations represent new pressures on biodiversity. Climate change impacts on terrestrial biodiversity are increasingly prominent, with studies more clearly attributing species declines and landscape changes to temperature and rainfall regime change ([Key Message A1](../key-messages/kma1.qmd)).
+The state of biodiversity is shaped by both current and historical pressures. Croplands cover a very large portion of the terrestrial realm (\>16%) but there has been limited expansion into natural areas in recent times. In contrast the expansion of settlements and mining are relevant both historically and currently. Certain activities, such as targeted poaching of succulent plant species and renewable energy installations represent new pressures on biodiversity. Climate change impacts on terrestrial biodiversity are increasingly prominent, with studies more clearly attributing species declines and landscape changes to temperature and rainfall regime change. Terrestrial pressures [page](./ter_pressures-condition.qmd)
 
-**\[Pressures\]**
+### Priority Actions
 
-**ADD Photo of species pressures**
+Priority actions across all realms are summarised [here](../integrated-findings/pakg_actions.qmd), and discussed in Key messages [A2](../key-messages/kma2.qmd), [A4](../key-messages/kma4.qmd), [A6](../key-messages/kma4.qmd), [B1](../key-messages/kma4.qmd), [B3](../key-messages/kmb3.qmd), [B4](../key-messages/kmb4.qmd), [B5](../key-messages/kmb5.qmd).
 
-Priority Actions
-
-see pakg section and KM A2 A4 A6 B1 B3 B4 B5
-
-## Recommended citation
-
-```{r}
-#| output: asis
-#| label: lst-citation-code
-
-library(nbaR) 
-library(knitr)
-library(rmarkdown)
-
-# Code for fetching the yaml metadata
-# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
-
-meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
-meta <- rmarkdown::metadata  # full YAML is now in `meta`
-
-nba_citation(meta)
-
-```
-
-## References
-
-::: {#refs}
-:::
