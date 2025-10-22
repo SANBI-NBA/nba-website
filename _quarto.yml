@@ -71,12 +71,28 @@ website:
                      - content/terrestrial/ter_ets_x_epl.qmd
                      - content/species/ter_sp.qmd    
     - id: id-key-messages
-      title: "Key messages"
       collapse-level: 2
       contents: 
+        - text: "Back to contents"
+          href: contents.qmd
         - section: "Key messages"
           href: content/key-messages/index.qmd
-          contents: content/key-messages/km*     
+          contents:
+            - content/key-messages/kma1.qmd
+            - content/key-messages/kma2.qmd
+            - content/key-messages/kma3.qmd
+            - content/key-messages/kma4.qmd
+            - content/key-messages/kma5.qmd
+            - content/key-messages/kma6.qmd
+            - content/key-messages/kma7.qmd
+            - content/key-messages/kmb1.qmd
+            - content/key-messages/kmb2.qmd
+            - content/key-messages/kmb3.qmd
+            - content/key-messages/kmb4.qmd
+            - content/key-messages/kmb5.qmd
+            - content/key-messages/kmc1.qmd
+            - content/key-messages/kmc2.qmd
+            - content/key-messages/kmc3.qmd
 
 
   page-footer: 
@@ -113,13 +129,11 @@ website:
           <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/by-nc.svg" alt="Creative Commons BY-NC 4.0 license" style="height: 31px; border: none;">
           </a>
-        </div>
-        </p>
-        <div style="margin-top: 0.3em; font-size: 0.85rem;">
           <a href="https://github.com/SANBI-NBA" target="_blank" rel="noopener noreferrer">
             <img src="/imgs/github-mark.svg" alt="NBA on GitHub" style="height: 31px; border: none;">
-          </a>
+          </a>        
         </div>
+        </p>
       </div>
       ```
 

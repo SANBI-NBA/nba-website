@@ -3,6 +3,7 @@ title: "NBA 2025 Key Messages"
 subtitle: ""
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
+sidebar: id-key-messages
 ---
 
 The **NBA 2025 Key messages** distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
