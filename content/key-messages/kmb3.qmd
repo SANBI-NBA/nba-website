@@ -1,0 +1,22 @@
+---
+title: "B3. Genetic diversity of South African indigenous species' populations is declining"
+subtitle: ""
+title-block-banner: "#70B276"
+title-block-banner-color: white
+---
+
+\| The first assessment of genetic health based on two international indicators suggests declines in the genetic diversity of South Africa’s species (established but incomplete). More South African taxa need to be assessed to better understand the full extent of genetic loss within South Africa, and genetic richness analyses need to be incorporated into protected area expansion strategies. \| 
+
+------------------------------------------------------------------------
+
+The Kunming-Montreal Global Biodiversity Framework (Target 4) uses the proportion of populations with an effective population size (Ne) above 500 (Ne 500 indicator) to assess genetic health. Ne represents the number of breeding individuals in a population. When Ne is above 500, populations are large enough to sustain genetic diversity. Populations below this threshold lose genetic diversity, increasing their risk of extinction. An initial assessment of 126 species from various taxonomic groups in South Africa, across different ecosystems and threat levels, found an Ne 500 score of 0.42, meaning that 58% of assessed populations are below the threshold, suggesting substantial genetic erosion. These populations are smaller than is necessary to ensure their long-term persistence and the overall adaptive potential of the species. Alarmingly, even Least Concern and Near Threatened species showed poor genetic indicators, suggesting undetected genetic decline not captured by extinction risk assessments. Similar trends have been seen globally. A complementary indicator tracks the proportion of species’ populations still present (PM indicator). South Africa scored 0.95, suggesting that most populations of the assessed species have not yet disappeared. This offers hope that with effective management, the genetic health of South Africa’s species can still be recovered. 
+
+Genetic diversity underpins a species ability to adapt to environmental changes. Low genetic diversity increases extinction risk, especially under pressures such as climate change, habitat fragmentation, inbreeding, hybridisation, unsustainable use and poorly managed translocations. Safeguarding evolutionarily distinctive species will enable adaptive potential to be maintained within an ever-changing environment. 
+
+To better understand the full extent of genetic loss within South Africa, efforts are underway to assess complete taxonomic groups. Increased investment is needed in genetic monitoring (i.e., comparing genetic metrics at multiple time points) to acquire more precise estimates of genetic indicators. Additional indicators based on phylogenetic diversity (e.g., the EDGE index – evolutionarily distinct, globally endangered; and the Expected Loss of Phylogenetic Diversity indicator) are being piloted, and are important for ensuring that evolutionarily distinctive species are protected. Importantly, environmental impact assessments and spatial planning should integrate landscape-level genetic richness, particularly for threatened species, by using genetic data or their proxies in the identification of Key Biodiversity Areas, in systematic biodiversity planning and for strengthening the National Protected Areas Expansion Strategy. 
+
+![*A. The grey rhebok (Pelea capreolus) (© Tim Kuiper)*](imgs/29a.%20Pg33_KMB3_DSC00820%20Grey%20Rhebok%20(c)%20Tim%20Kruiper.png)
+
+![*The brown hyena (Parahyaena brunnea) (© Endangered Wildlife Trust)*](imgs/29b.%20Pg33_KMB3_Brown%20Hyaena_25984%20(c)%20EWT.png)
+
+*A, the grey rhebok (Pelea capreolus) (© Tim Kuiper) and B, the brown hyena (Parahyaena brunnea) (© Endangered Wildlife Trust) are both categorised as Near Threatened on the IUCN Red List of Threatened Species, yet their genetic population size (Ne) may already fall below the threshold for long-term survival. Falling below the threshold of Ne \> 500 raises concerns about species' abilities to maintain genetic health and adapt to environmental change.* 

@@ -269,7 +269,7 @@ library(sf)
 
 #| out-width: 100%
 
-est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
+est_ecotypes <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
 
 est_ecotypes %>%
   gt() %>%

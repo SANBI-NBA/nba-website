@@ -151,12 +151,12 @@ Catalyse research and monitoring to address critical social and natural science 
 ![TBA](imgs/PA_9.png){.lightbox}
 :::
 
-::: {#box-10 .callout-note collapse="true"}
+::::: {#box-10 .callout-note collapse="true"}
 ## Reduce climate risks to people and nature.
 
 ![TBA](imgs/PA_10.png){.lightbox}
 
-:::
+:::: >
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->

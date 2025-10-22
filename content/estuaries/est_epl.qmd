@@ -173,7 +173,7 @@ library(sf)
 
 
 # load the data 
-epl_combined <- read.csv(file=list.files(path = "./data", pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+epl_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE)
 
 # Combined EPL plot
@@ -208,7 +208,7 @@ library(dplyr)
 
 
 # load data
-epl <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(-'Threat status', -'Threat basis') # removing the threat status, assuming we only want to show that in the ETS page?
 

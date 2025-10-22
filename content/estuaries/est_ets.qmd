@@ -161,7 +161,7 @@ library(nbaR)
 
 
 # load the data 
-ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE)
 #Combine RLE plot
 nba_plot_comb(ets_combined,
