@@ -109,7 +109,7 @@ google-scholar: true
 
 Add text here
 
-![Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.](imgs/wet_ets_map.png){#fig-ets_wet_map} 
+![Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
 
 Approximately 65% of inland wetland extent and 72% of inland wetland ecosystem types are threatened. In terms of threatened inland wetland ecosystem types, approximately 18% are Critically Endangered, 24% Endangered and 30% are Vulnerable. In terms of wetland extent, approximately 20% is Critically Endangered, 21% Endangered and 45% is Vulnerable.
 
@@ -125,7 +125,7 @@ library(reactable)
 library(dplyr)
 
 # load data
-ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+ets <- read.csv(file=list.files(path = "data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, RLE24) %>% # , RLE24, extent, RLE_RLE24) #
     mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
@@ -174,7 +174,7 @@ library(stringr)
 library(nbaR)
 
 # load and prep the data
-ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+ets <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                 stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, RLE24, extent) %>% # , RLE24, extent, RLE_RLE24) #
       mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
@@ -246,7 +246,7 @@ ets_combined <- count %>%
 # ets_combined
     
 ## save the data to downloadable csv for the link, before arranging by zone for the plot
-write.csv(ets_combined, file = paste0(here::here(),"/quarto/outputs/wetlands_ETS.csv"), row.names = FALSE)
+write.csv(ets_combined, file = "./outputs/wetlands_ETS.csv", row.names = FALSE)
 
 # create ets plot
 ets_combined_plot <- ets_combined %>% 

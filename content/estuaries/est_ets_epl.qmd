@@ -87,7 +87,7 @@ library(nbaR)
 #   select(c(ecosystem_type, protection_level, threat_status))
 
 
-thr_pro <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+thr_pro <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 

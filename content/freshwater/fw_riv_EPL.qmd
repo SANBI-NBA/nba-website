@@ -320,7 +320,7 @@ library(dplyr)
 
 ## temporarily putting in wetland table:
 # load data
-epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+epl <- read.csv(file=list.files(path = "data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, EPL24) %>% # , RLE24, extent, RLE_EPL24) #
   mutate(EPL24 = str_replace_all(EPL24, "WP","Well Protected"),
@@ -521,7 +521,7 @@ library(stringr)
 library(nbaR)
 
 # load and prep the data
-epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+epl <- read.csv(file=list.files(path = "data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                 stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, EPL24, extent) %>% # , RLE24, extent, RLE_EPL24) #
   mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),

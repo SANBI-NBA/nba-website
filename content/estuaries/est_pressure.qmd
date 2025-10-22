@@ -49,7 +49,7 @@ Summary
 
 Marine ecosystems and species face pressures from an increasing range and intensity of human activities which continue to expand and diversity as South Africa develops its ocean economy. The main pressures impacting marine biodiversity include fishing (commercial, recreational and small-scale), coastal development (including ports and harbours), pollution, shipping, freshwater flow reduction, lethal shark control and climate change. All bays incurred high cumulative pressures, with the highest cumulative pressure recorded for Saldanha Bay. Additional high pressure areas include the area offshore of the Orange River, the shelf edge on the west and south coast, large portions of the Cape inner and middle shelf, the Agulhas Bank and the KwaZulu-Natal Bight. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).
 
-```{r} 
+```{r}
 #| label: fig-cum-press 
 #| fig-cap: Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas ahve the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. 
 #| echo: false 
@@ -62,7 +62,7 @@ Fishing as an activity can be considered to constitute multiple pressures includ
 
 Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species (Figure 2).
 
-```{r} 
+```{r}
 #| label: fig-risk-ass 
 #| fig-cap: South African marine ecosystem risk assessment Sankey diagram illustrating links among sectors (left), their associated pressures (middle) and the ecological components (right) that are impacted by these pressures. The width of the lines represent the Impact Risk (describing the exposure and severity of an interaction). Sectors, pressures and ecological components appear in descending order based on sum Impact Risk scores (From Skein et al. 2022 hyperlink) 
 #| echo: false 
@@ -112,8 +112,7 @@ Marine petroleum activities in South Africa were initiated in 1969 check with mo
 
 Production has been suspended at the Oribi/Oryx and Sable oil fields (Block 9 off Mossel Bay) and the F-A Gas field and satellites with field development plans underway at the Ibhubesi gas filed off Hondeklip Baai. The impacts of petroleum activities span those impacts associated with drilling and production and also exploration by seismic surveys (link to Figure seismic map or make this the picture?).
 
-
-```{r} 
+```{r}
 #| label: fig-seismic-pressure 
 #| fig-cap: Spatial mapping of seismic surveys in South African waters between 1980 and 2020. Sink et al. 2025 
 #| echo: false 
@@ -170,7 +169,7 @@ Light pollution or artificial light at night can impact species and ecosystems b
 
 Noise pollution is an increasing concern, particularly in aquatic environments where sound conductivity is greater than in air and were many species rely on sound for prey location and communication. Sources of sound include seismic surveys, shipping traffic, bunkering, various other commercial activities, and boating. Elevated underwater noise can cause direct mortality, lower immunity and increase health risks, change species distributions and disrupt foraging when predators, prey, or both avoid noisy areas, disrupt reproduction and animal communication and social behaviour. Marine mammals and soniferous fish are particularly at risk, including commercially important species such as kingklip, recreationally important species such as grunter and threatened species such as dusky kob and Syngnathid seahorses and pipefish. Recently, penguins have shown sensitivity to underwater noise. Although there are many known impacts from underwater noise, there are still many gaps in our understanding of these pressures and how they may translate into ecosystem impacts. (check in with Steve- what will we make available- Kuhle box Sound Seas link?)
 
-```{r} 
+```{r}
 #| label: fig-oil-gas-pressure 
 #| fig-cap: Map of cumulative pressure used in the NBA 2018. 
 #| echo: false 
@@ -265,25 +264,26 @@ Cumulative pressure and condition calculations and mapping: gitlab.com/marine_pr
 
 ### Key publications
 
-
-
 ## Recommended citation
 
-```{r} 
-#| output: asis 
+```{r}
+#| output: asis
 #| label: lst-citation-code
 
-library(nbaR) library(knitr) library(rmarkdown)
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
 
 # Code for fetching the yaml metadata
-
 # Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
 
-meta <- knitr::opts_knit$get("rmarkdown.pandoc.to") # forces knitr to load metadata meta \<- rmarkdown::metadata \# full YAML is now in `meta`
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
 nba_citation(meta)
 ```
 
 ## References
+
 ::: {#refs}
 :::

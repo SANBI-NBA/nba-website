@@ -9,6 +9,7 @@ project:
     - "content/terrestrial/*.qmd"
     - "content/species/*.qmd"
     - "content/freshwater/*.qmd"
+    - "content/estuaries/*.qmd"
 
 website:
   title: "National Biodiversity Assessment"
@@ -84,6 +85,17 @@ website:
                      - content/freshwater/fw_wet_epl.qmd
                      - content/freshwater/fw_riv_epl.qmd
                      - content/species/fw_sp.qmd
+                - section: "Estuarine"
+                  href: content/estuaries/est_overview.qmd
+                  contents:
+                     - content/estuaries/est_ecosystem.qmd
+                     - content/estuaries/est_habitat.qmd
+                     - content/estuaries/est_pressure.qmd
+                     - content/estuaries/est_condition.qmd
+                     - content/estuaries/est_ets.qmd
+                     - content/estuaries/est_epl.qmd
+                     - content/estuaries/est_ets_epl.qmd
+                     - content/species/est_sp.qmd
     - id: id-key-messages
       collapse-level: 2
       contents: 

@@ -81,6 +81,8 @@ format:
 ------------------------------------------------------------------------
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#devtools::install_github("SANBI-NBA/nbaR", force = T)
+
 library(gt)
 library(nbaR)
 library(tidyverse)
@@ -90,16 +92,16 @@ library(tidyverse)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, cache=FALSE}
 
 # ---- RLE Data ----
-RLE.2025 <- read.csv("data/RLE_full_compiled_adjusted.csv")
-RLE.summary <- readxl::read_xlsx("data/RLE summary results.xlsx")
-RLIe <- readxl::read_xlsx("data/RLE index scores bootstrap.xlsx")
+RLE.2025 <- read.csv("./data/RLE_full_compiled_adjusted.csv")
+RLE.summary <- readxl::read_xlsx("./data/RLE summary results.xlsx")
+RLIe <- readxl::read_xlsx("./data/RLE index scores bootstrap.xlsx")
 
-EPL <- read.csv("data/ter_results_type_rle_epl.csv")
-Prov.results <- readxl::read_xlsx("data/Provincial RLE summary results.xlsx")
+EPL <- read.csv("./data/ter_results_type_rle_epl.csv")
+Prov.results <- readxl::read_xlsx("./data/Provincial RLE summary results.xlsx")
 
-Biome.RLEsummary <- readxl::read_xlsx("data/Biome RLE summary results.xlsx")
-Biome.RLEcount <- readxl::read_xlsx("data/Biome RLE count.xlsx")
-Biome.nat <- readxl::read_xlsx("data/Biome RLE remnants.xlsx")
+Biome.RLEsummary <- readxl::read_xlsx("./data/Biome RLE summary results.xlsx")
+Biome.RLEcount <- readxl::read_xlsx("./data/Biome RLE count.xlsx")
+Biome.nat <- readxl::read_xlsx("./data/Biome RLE remnants.xlsx")
 
 ```
 
