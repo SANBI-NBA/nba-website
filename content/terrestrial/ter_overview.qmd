@@ -69,4 +69,3 @@ The state of biodiversity is shaped by both current and historical pressures. Cr
 ### Priority Actions
 
 Priority actions across all realms are summarised [here](../integrated-findings/pakg_actions.qmd), and discussed in Key messages [A2](../key-messages/kma2.qmd), [A4](../key-messages/kma4.qmd), [A6](../key-messages/kma4.qmd), [B1](../key-messages/kma4.qmd), [B3](../key-messages/kmb3.qmd), [B4](../key-messages/kmb4.qmd), [B5](../key-messages/kmb5.qmd).
-

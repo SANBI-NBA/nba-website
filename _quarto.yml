@@ -8,6 +8,7 @@ project:
     - "content/integrated-findings/*.qmd"
     - "content/terrestrial/*.qmd"
     - "content/species/*.qmd"
+    - "content/freshwater/*.qmd"
 
 website:
   title: "National Biodiversity Assessment"
@@ -70,6 +71,19 @@ website:
                      - content/terrestrial/ter_epl.qmd
                      - content/terrestrial/ter_ets_x_epl.qmd
                      - content/species/ter_sp.qmd    
+                - section: "Freshwater"
+                  href: content/freshwater/fw_overview.qmd
+                  contents:
+                     - content/freshwater/fw_wet_type.qmd
+                     - content/freshwater/fw_riv_type.qmd
+                     - content/freshwater/fw_wet_condition.qmd
+                     - content/freshwater/fw_wet_pressures.qmd
+                     - content/freshwater/fw_riv_condition.qmd
+                     - content/freshwater/fw_wet_ets.qmd
+                     - content/freshwater/fw_riv_ets.qmd
+                     - content/freshwater/fw_wet_epl.qmd
+                     - content/freshwater/fw_riv_epl.qmd
+                     - content/species/fw_sp.qmd
     - id: id-key-messages
       collapse-level: 2
       contents: 

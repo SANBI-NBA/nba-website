@@ -9,7 +9,13 @@ title-block-banner-color: white
 
 South Africa has assessed the threat status of 25 474 indigenous taxa from 15 taxonomic groups using the IUCN Red List of Threatened Species Categories and Criteria, which reflects a species’ extinction risk. There are several extinct categories, three threatened categories (Critically Endangered \[CR\], Endangered \[EN\], Vulnerable \[VU\]), as well as categories for Near Threatened (NT), Data Deficient (DD) and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range restricted endemic species that have a global extent of occurrence of less than 500 km^2^ occurring where there are no anthropogenic pressures. Rare species are priorities for inclusion in national conservation interventions despite them qualifying as Least Concern under the IUCN system.
 
-![Critically Endangered Brenton blue butterfly (Orachrysops niobe), known only from Knysna, has been listed as possibly extinct, with the only known population lost during the 2017 Garden Route fires where the extensive spread of woody invasive alien plants were the main driver of the intensity and extent of the fires. (© Justin Bode)](imgs/O_niobe_female_Justin_Bode.png){fig-align="center" width="600"}
+::: {layout-ncol=2}
+
+![Critically Endangered Brenton blue butterfly (Orachrysops niobe) (a), known only from Knysna, has been listed as possibly extinct, with the only known population lost during the 2017 Garden Route fires where the extensive spread of woody invasive alien plants were the main driver of the intensity and extent of the fires (© Justin Bode).](imgs/O_niobe_female_Justin_Bode.png){}
+
+![A sample of 20 sandy beach invertebrates have been assessed for the first time in NBA 2025 and the giant granulated calloused beach pillbug (Tylos granulatus) (b) is one of four Endangered species, with much of its habitat along the West Coast being impacted or lost due to mining, coastal development and associated artificial light at night, and removal of washed-up kelp (© Linda Harris).](imgs/Tylos-granulatus_picture_Linda_Harris.png){}
+
+:::
 
 Of the assessed taxa, 0.5% are extinct or possibly extinct (1224 taxa ) and a further 3 659 taxa are threatened with extinction (14%). South Africa has high levels of species endemism – 75% of freshwater crab, 67% of plant, 57% of spider, 56% of amphibian, 52% of butterfly, 49% of freshwater fish, 44% of fairy shrimp (Anostraca), 38% of reptile and 36% of seabream taxa are endemic. For all of these groups, levels of threat to endemic taxa are higher than for all indigenous taxa (@fig-sp-bicycle). Overall, 20% of endemic taxa are threatened with extinction (3 213 taxa) and 0.8% are extinct or possibly extinct (120 taxa).
 
@@ -18,8 +24,6 @@ The most threatened taxonomic groups in South Africa are cartilaginous fishes (s
 ![Threat status of the 15 assessed South African taxonomic groups; categories follow the IUCN 3.1 Red List Categories and Criteria with an additional national category of Rare added for range-restricted, localised endemics that are not declining. The portion of species in each category is shown in the larger circle, and the proportion of endemic species per category is shown in the smaller circle. The total number of taxa that have been assessed are shown in the inner circle. sample of sandy beach invertebrate species. sample of economically important marine invertebrate species.](imgs/sp-bicycle9.png){#fig-sp-bicycle}
 
 First time assessments for two groups of invertebrates show that spiders have very low levels of threat compared to other taxa (only 3% threatened), while fairy shrimps (Anostraca) are within the top three groups with the highest levels of threat (44% threatened). Degradation to South Africa’s arid wetland ecosystems is threatening this unique group of species, as Anostraca are dependent on ephemeral wetlands. Freshwater crabs were first assessed in South Africa in 2007, and a repeat assessment for this NBA indicates that 13% of species are threatened. Due to poor taxonomic knowledge and a paucity of occurrence records, most marine and coastal invertebrates cannot be assessed, however, a sample of utilised marine species show that 18% are threatened. Of the 20 coastal invertebrates assessed (the first sandy beach invertebrates to be added to the IUCN Red List of Threatened Species globally), four (20%) are listed as Endangered and a further three (15%) are Near Threatened. The pressures on coastal invertebrates are mainly mining on the West Coast, coastal development and associated artificial light at night, and removal of washed-up kelp from the shore.
-
-![A sample of 20 sandy beach invertebrates have been assessed for the first time in NBA 2025 and the giant granulated calloused beach pillbug (Tylos granulatus) is one of four Endangered species, with much of its habitat along the West Coast being impacted or lost due to mining, coastal development and associated artificial light at night, and removal of washed-up kelp. © Linda Harris](imgs/Tylos-granulatus_picture_Linda_Harris.png){fig-align="center" width="600"}
 
 ![Species threat status across the realms with the bars representing percentage of taxa in each category.](imgs/sp-bar10.png){#fig-sts-bar}
 
@@ -35,17 +39,19 @@ This indicator has been used to assess terrestrial and freshwater species within
 
 Except for freshwater fishes, South Africa’s protected area network protects species relatively well, with most groups having over 50% of taxa qualifying as Well Protected (@fig-spl-bar A). The protection level of birds and reptiles is particularly good, with both groups having over 85% of their taxa qualifying as Well Protected.
 
-![Daubenya namaquensis, a rare and restricted range species from Namaqualand, experienced a genuine improvement in protection level status as a result of the declaration of new protected areas between 2018 and 2025. © Nick Helme.](imgs/Daubenya_namaquensis_NickHelme.png){fig-align="center" width="600"}
-
 Protection levels of endemic species are lower than for all species (@fig-spl-bar B). Freshwater fishes and amphibians have the highest proportion of endemic species that are Not Protected, 36% and 19% respectively. Endemic mammals are of some concern as 20 taxa (34%) are Poorly Protected and four taxa (7%) are Not Protected.
-
-![The Critically Endangered Cape Flats frog (Microbatrachella capensis) (© Kurt van Wyk) improved in protection level due to rehabilitation of wetland habitats within the Table Mountain National Park.](imgs/Microbatrachella_capensis_Micro%20Frog_Kurt%20van%20Wyk.png){fig-align="center" width="600"}
 
 The effectiveness of protected areas in mitigating threats to species within their borders reveals some interesting case studies. While 38% of freshwater fishes are well represented within protected areas, many species are not being effectively protected due to the presence of invasive alien fish species within the protected areas’ freshwater systems and limited management interventions in place to control these invasive species. Pollution and over-abstraction of water upstream of the protected area boundary further compromise protection effectiveness. Consequently, only 23% of South African freshwater fish species qualify as Well Protected once the impact of these pressures is taken into account.
 
-For birds, 55 species (8.3%) experienced protection level category downgrades once effectiveness is included. The effectiveness adjustment reduces the protection level score particularly for wetland species (e.g., flamingos, cranes, pelicans) and raptors (e.g., vultures, harriers).
+::: {layout-ncol=2}
 
-![The white-winged flufftail (Sarothrura ayresi) is Critically Endangered due to the high rate of loss and degradation of its preferred habitat, seasonal marshland, however, its Protection Level has improved from Not Protected to Poorly Protected, through concerted expansion of protected areas in Mpumalanga and southern KwaZulu-Natal. © Kyle Lloyd](imgs/KyleLloyd_White-winged_Flufftail.png){fig-align="center" width="400"}
+![Daubenya namaquensis, a rare and restricted range species from Namaqualand, experienced a genuine improvement in protection level status as a result of the declaration of new protected areas between 2018 and 2025. © Nick Helme.](imgs/Daubenya_namaquensis_NickHelme.png){}
+
+![The Critically Endangered Cape Flats frog (Microbatrachella capensis) (© Kurt van Wyk) improved in protection level due to rehabilitation of wetland habitats within the Table Mountain National Park.](imgs/Microbatrachella_capensis_Micro%20Frog_Kurt%20van%20Wyk.png){}
+
+:::
+
+For birds, 55 species (8.3%) experienced protection level category downgrades once effectiveness is included. The effectiveness adjustment reduces the protection level score particularly for wetland species (e.g., flamingos, cranes, pelicans) and raptors (e.g., vultures, harriers).
 
 Amphibians and plants are also significantly impacted by threats occurring within protected area boundaries. As a result, 7% of amphibian species and plant taxa drop down a category of protection. While amphibians are impacted by high levels of invasive alien species within protected areas, the main reason for plants not being effectively protected is due to high levels of plant poaching in the protected areas of Namaqualand.
 
@@ -63,4 +69,10 @@ Some species have benefited from the expansion of protected areas and targeted m
 
 Species threat status and protection level assessments provide a useful basis for guiding prioritisation processes. Highly threatened (Critically Endangered and Endangered) and under protected (Not Protected and Poorly Protected) species represent the most urgent need for conservation action, particularly when they are endemic to South Africa. Across all taxon groups 5% of taxa (127/2449) fall into this category, and the majority of these are South African endemics (80%, 104/127 taxa). Freshwater fishes and amphibians have the highest proportion of species in this category, 27% (26/96 assessed fishes) and 13% (17/133 assessed amphibians), respectively. Both groups make use of freshwater habitats, which are also typically threatened ecosystems. Five per cent of plant species and close to 10% of all assessed mammal species are both highly threatened and under protected. Bird and reptile taxon groups have fewer species (less than 2%) within this category, and these species include habitat specialists and very range-restricted species that require specific targeted protected area expansion.
 
-![The Clanwilliam sandfish (Labeo seeberi) is Endangered and Poorly Protected, as only one of its seven subpopulations receives protection in the Oorlogskloof Nature Reserve. © Jeremy Shelton](imgs/Labeo_seeberi_Clanwilliam_sandfish_JeremyShelton.png){width="600"}
+::: {layout-ncol=2}
+
+![The white-winged flufftail (Sarothrura ayresi) is Critically Endangered due to the high rate of loss and degradation of its preferred habitat, seasonal marshland, however, its Protection Level has improved from Not Protected to Poorly Protected, through concerted expansion of protected areas in Mpumalanga and southern KwaZulu-Natal (© Kyle Lloyd)](imgs/KyleLloyd_White-winged_Flufftail.png){}
+
+![The Clanwilliam sandfish (Labeo seeberi) is Endangered and Poorly Protected, as only one of its seven subpopulations receives protection in the Oorlogskloof Nature Reserve (© Jeremy Shelton)](imgs/Labeo_seeberi_Clanwilliam_sandfish_JeremyShelton.png){}
+
+:::

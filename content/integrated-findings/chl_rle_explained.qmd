@@ -1,5 +1,5 @@
 ---
-title: "Ecosystem threat status and the Red List of Ecosystems"
+title: "About ecosystem threat status and the RLE"
 subtitle: "General introduction to the ecosystem-based indicators"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
@@ -62,7 +62,6 @@ The adoption of the IUCN RLE standards by more than 100 countries underscores it
 
 Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case. Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
 
-
 ```{r}
 #| classes: plain
 #| label: fig-applied-criteria
@@ -120,8 +119,6 @@ table1 <- gt(Dataframe) %>%
 table1
 
 ```
-
-
 
 ## Red List Index of ecosystems
 

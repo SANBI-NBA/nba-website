@@ -7,7 +7,7 @@ title-block-banner-color: white
 
 ### Pressures on ecosystems and species
 
-The International Union for the Conservation of Nature (IUCN) proposes a threats classification scheme with a hierarchical structure for various pressures on biodiversity. The NBA 2025 adopted this approach with some minor language changes. @fig-bub is for the realms, the coast and the subantarctic, and @fig-bub-sp is for taxonomic groups.
+The International Union for the Conservation of Nature (IUCN) proposes a threats classification scheme with a hierarchical structure for various pressures on biodiversity. The NBA 2025 adopted this approach with some minor language changes. @fig-realm-bub is for the realms, the coast and the subantarctic, and @fig-bub-sp is for taxonomic groups.
 
 ![Key pressures on biodiversity in each realm, informed by Red List of Threatened Species and Red List of Ecosystems assessments. The size of the bubbles indicates the relative importance of each pressure class.](imgs/realm-bubble-plot4.png){#fig-realm-bub fig-align="center" width="400"}
 
