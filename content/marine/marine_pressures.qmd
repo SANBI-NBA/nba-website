@@ -95,14 +95,14 @@ Fishing methods in South Africa include trawling (demersal and mid-water), longl
 
 ### Lethal shark control
 
-::: {#box-2 .callout-note .marine collapse="true"}
+:::: {#box-2 .callout-note .marine collapse="true"}
 ## South Africa has employed lethal shark control measures in the province of KwaZulu-Natal since 1952 in order to reduce shark numbers to protect bathers from the risk of shark attack.
 
 Lethal shark control (gill nets and baited drum lines) measures are implemented between Richards Bay and Port Edward with …Shanan (current km). Biodiversity concerns associated with the shark control program include the overexploited and threatened status of several target and bycatch species of cartilaginous fishes (link to shark page), turtles and marine mammal species (link to marine species page)and potential ecosystem effects linked to the removal of predatory sharks. (Shanan- Bycatch of harmless elasmobranchs, marine mammals and turtles). Shark control programs add to the already severe pressure on elasmobranchs from other fisheries, particularly longlining and trawl fisheries. Ecosystem effects from shark control programs are difficult to quantify and remain poorly understood. Historical and current nets were considered in the assessment of ecosystem condition.
 
-::: #box-3 .callout-note title="Box 1. lethal measures blow out"} Box in lethal measures blow out: In False Bay in the western Cape, non-lethal measures are effectively employed with little to no impact on marine life and these measures are not included as a pressure layer in this assessment. Bather exclusion nets and a shark spotter programme help protect bathers in Cape Town. The KwaZulu-Natal Sharks Board has taken steps to reduce the impacts of shark control by replacing nets with baited drum lines in some areas with a reported 70% reduction in net installations and 64% reduced mortalities of sharks and other marine species. Nets are also removed during the annual sardine run to reduce mortalities on sharks and other species and the height of nets has also been increased to reduce capture of rays, skates and wedgefish ( Netting has been reduced in recent times with 28 km of nets reported in 2003, 23 km in 2011 and x km in 2025.
+::: {#box-3 .callout-note title="Box 1. lethal measures blow out"}
+Box in lethal measures blow out: In False Bay in the western Cape, non-lethal measures are effectively employed with little to no impact on marine life and these measures are not included as a pressure layer in this assessment. Bather exclusion nets and a shark spotter programme help protect bathers in Cape Town. The KwaZulu-Natal Sharks Board has taken steps to reduce the impacts of shark control by replacing nets with baited drum lines in some areas with a reported 70% reduction in net installations and 64% reduced mortalities of sharks and other marine species. Nets are also removed during the annual sardine run to reduce mortalities on sharks and other species and the height of nets has also been increased to reduce capture of rays, skates and wedgefish ( Netting has been reduced in recent times with 28 km of nets reported in 2003, 23 km in 2011 and x km in 2025.
 :::
-
 ::::
 
 ### Coastal and offshore mining

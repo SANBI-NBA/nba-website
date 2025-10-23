@@ -232,7 +232,7 @@ library(nbaR)
 
 
 # load the data 
-ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE)
 
 ## extent
@@ -405,15 +405,15 @@ The six ecosystem types that are **Critically Endangered** cover `r perc_cr_exte
 
 The Orange Cone Inner Shelf Mud Reef Mosaic is impacted by ongoing flow reduction and marine mining. Cape Bay, which includes Table and Saldahna Bay have very high cumulative pressures with ongoing degradation linked to port and harbour activities. The Aliwal Shoal Reef Complex falls entirely within a Marine Protected Area (MPA) but ongoing linefishing, waste water discharge and lethal shark control measures cause this ecosystem type, of restricted distribution, to be classified as Critically Endangered. Further work to support reef classification and measure ecosystem condition is recommended along with management to reduce pressures in the MPA.
 
-![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf. © Kerry Sink](imgs/Nan18_T16_25m_28.JPG)
+![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf. © Kerry Sink](imgs/Nan18_T16_25m_28.png)
 
 There are 31 **Endangered ecosystem types** (`r perc_en_count`%) which cover `r perc_en_extent`% extent of the marine realm area. Many of these are ecosystem types of limited extent that were uplisted (considered more threatened) relative to 2019 due to the application of global standards in 2025. For example, False and Walker Bay, St Helena Bay and Eastern Agulhas Bays (Algoa and St Francis) are all Endangered under either IUCN RLE Criterion B1 or B2.
 
-![False and Walker Bay ecosystem type is now considered Endangered. © Peter Chadwick](imgs/Walker_bay_southern_Right_Whales.jpg)
+![False and Walker Bay ecosystem type is now considered Endangered. © Peter Chadwick](imgs/Walker_bay_southern_Right_Whales.png)
 
 **Vulnerable** ecosystem types cover `r perc_vu_extent`% of the ocean space, with 36 ecosystem types (`r perc_vu_count`%) falling within this category. All three kelp ecosystem types in South Africa are Vulnerable with cumulative fishing activities playing a key role in declining condition. Two of the 13 pelagic ecosystem types are threatened (South Atlantic Productive Margin Water and Upwelled Agulhas Current Margin Water), both of these being Vulnerable. Key pressures driving decline in condition include large pelagic fishing and mid water trawling. In 2025 all three coral communities were assessed as Vulnerable under the IUCN RLE criterion B3 with climate change and coral bleaching considered a key threat that could lead to a rapid increase in the risk of ecosystem collapse. This also aligns with the IUCN RLE result for the Delagoa ecoregion in the regional assessments for the Western Indian ocean [@obura2021].
 
-![South Africa’s three national coral community ecosystem types were assessed as Vulnerable in 2025 due their restricted distribution and the risk of climate change. These reef types are part of a regional ecosystem type. © Geoff Spiby](imgs/Sodwana_4_bouy_arches_coral_gardens_reef_02-12-118.jpg)
+![South Africa’s three national coral community ecosystem types were assessed as Vulnerable in 2025 due their restricted distribution and the risk of climate change. These reef types are part of a regional ecosystem type. © Geoff Spiby](imgs/Sodwana_4_bouy_arches_coral_gardens_reef_02-12-118.png)
 
 **Near Threatened** (NT) ecosystem types are those that were evaluated to be within 10% of the threshold for Vulnerable. These ecosystems are at risk of ecosystem collapse if increasing pressures lead to further degradation in ecological condition. Examples include the Kingklip Koppies and the Agulhas Exposed Stromatolite Rocky Shore.
 
@@ -426,72 +426,6 @@ The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted
 As pressure and condition data sets were not updated for the 2025 assessment, it is important to note that changes in ecosystem threat status are largely as a result of refined methods rather than genuine status change related to increasing loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included consideration of habitat loss (Criterion A), and the number of threat defined locations, ongoing drivers of ecological degradation (as opposed to pressures that have ceased e.g. due to new protected areas or changes in sea use) and stochastic events including climate change (Criterion B). Several ecosystem types have shifted into more threatened categories due to the automatic ecosystem extent thresholds provided by the IUCN but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline in ecological condition.
 
 The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen future assessments.
-
-<!-- ::: {#box-8 .callout .marine collapse="False"} -->
-
-<!-- ##  -->
-
-<!-- ```{r} -->
-
-<!-- #| label: tbl-ets -->
-
-<!-- #| tbl-cap: "Threat status of marine ecosystem types in South Africa." -->
-
-<!-- # ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern. Type values in any of the search boxes to filter the list to rows of interest. -->
-
-<!-- ::: {#box-ets_tbl .callout  .marine collapse="False"} -->
-
-<!-- # library(here) -->
-
-<!-- #library(gt) -->
-
-<!-- library(reactable) -->
-
-<!-- library(dplyr) -->
-
-<!-- # load data -->
-
-<!-- ets <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE),  -->
-
-<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>%  -->
-
-<!--   select(-'Protection level') # removing the threat status, assuming we only want to show that in the ETS page? -->
-
-<!-- # create the table -->
-
-<!-- reactable( -->
-
-<!--   ets, -->
-
-<!--   filterable = TRUE, -->
-
-<!--   searchable = FALSE, -->
-
-<!--   pagination = FALSE, -->
-
-<!--   height = 600, -->
-
-<!--   defaultColDef = colDef( -->
-
-<!--     headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold") -->
-
-<!--   ), -->
-
-<!--   theme = reactableTheme( -->
-
-<!--     inputStyle = list( -->
-
-<!--       color = "black", # create black searching text in the filter box, otherwise one doesn't see it! -->
-
-<!--       backgroundColor = "white", -->
-
-<!--       border = "1px solid #ccc" -->
-
-<!--     ))) -->
-
-<!-- ``` -->
-
-<!-- ::: -->
 
 ## Technical documentation
 
@@ -509,9 +443,11 @@ The application of the IUCN global standards supported a more comprehensive unde
 
 ### Data
 
-[IUCN RLE threat status and basis table](data/epl_ets_ecotypes.csv)
+[Table of IUCN RLE threat status and basis](data/epl_ets_ecotypes.csv)
 
-### Key Publications
+### Key publications
+
+Sink, *et. al.* in prep. Iterative improvement in marine ecosystem threat status assessment in South Africa to support sustainable ocean economy decisions.
 
 Harris, L.R., Raimondo, D., Sink, K.J., Holness, S.D. and Skowno, A.L., 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine, Coastal and Shelf Science, p.109447. https://doi.org/10.1016/j.ecss.2025.109447
 

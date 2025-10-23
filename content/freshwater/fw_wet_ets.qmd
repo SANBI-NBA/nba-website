@@ -125,7 +125,7 @@ library(reactable)
 library(dplyr)
 
 # load data
-ets <- read.csv(file=list.files(path = "data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+ets <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, RLE24) %>% # , RLE24, extent, RLE_RLE24) #
     mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
@@ -174,7 +174,7 @@ library(stringr)
 library(nbaR)
 
 # load and prep the data
-ets <- read.csv(file=list.files(path = "data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+ets <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
                 stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(type, zone, RLE24, extent) %>% # , RLE24, extent, RLE_RLE24) #
       mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
@@ -246,7 +246,7 @@ ets_combined <- count %>%
 # ets_combined
     
 ## save the data to downloadable csv for the link, before arranging by zone for the plot
-write.csv(ets_combined, file = paste0(here::here(),"/quarto/outputs/wetlands_ETS.csv"), row.names = FALSE)
+write.csv(ets_combined, file = "./outputs/wetlands_ETS.csv", row.names = FALSE)
 
 # create ets plot
 ets_combined_plot <- ets_combined %>% 

@@ -8,8 +8,11 @@ project:
     - "content/integrated-findings/*.qmd"
     - "content/terrestrial/*.qmd"
     - "content/species/*.qmd"
+    - "content/marine/*.qmd"
     - "content/freshwater/*.qmd"
     - "content/estuaries/*.qmd"
+    - "content/subantarctic/*.qmd"
+
 
 website:
   title: "National Biodiversity Assessment"
@@ -96,6 +99,49 @@ website:
                      - content/estuaries/est_epl.qmd
                      - content/estuaries/est_ets_epl.qmd
                      - content/species/est_sp.qmd
+                - section: "Marine"
+                  href: content/marine/marine_overview.qmd
+                  contents:
+                     - content/marine/marine_ecosystems.qmd
+                     - content/marine/marine_pressures.qmd
+                     - content/marine/marine_condition.qmd
+                     - content/marine/marine_ets.qmd
+                     - content/marine/marine_epl.qmd
+                     - content/marine/marine_ets_epl.qmd
+                     - content/species/marine_sp.qmd
+                     - content/marine/marine_priority_actions.qmd
+                - section: "Coast"
+                  href: content/coast/cst_synthesis.qmd
+                  contents:
+                     - content/coast/cst_ecosystems.qmd
+                     - content/coast/cst_pressures-condition.qmd
+                     - content/coast/cst_ets.qmd
+                     - content/coast/cst_epl.qmd
+                     - content/coast/cst_ets-x-epl.qmd
+                     - content/coast/cst_species.qmd
+                     - content/coast/cst_priorities-actions.qmd
+                - text: "Sub-Antarctic"
+                  href: content/subantarctic/sub-all_sections.qmd
+            - section: "Species"
+              href: content/species/sp.qmd
+              contents:
+                - content/species/sp_plants.qmd
+                - content/species/sp_mammals.qmd
+                - content/species/sp_reptiles.qmd
+                - content/species/sp_birds.qmd
+                - content/species/sp_spiders.qmd
+                - content/species/sp_butterflies.qmd
+                - content/species/sp_amphibians.qmd
+                - content/species/sp_fwf.qmd
+                - content/species/sp_fwfcrabs.qmd
+                - content/species/sp_anonstraca.qmd
+                - content/species/sp_dragons.qmd
+                - content/species/sp_sharks.qmd
+                - content/species/sp_sparids.qmd
+            - section: "Priority actions, responses and interventions"
+              contents:
+                - content/integrated-findings/pakg_actions.qmd
+                - content/integrated-findings/pakg_gaps.qmd
     - id: id-key-messages
       collapse-level: 2
       contents: 

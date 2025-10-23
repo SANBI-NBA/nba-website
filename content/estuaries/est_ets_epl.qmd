@@ -87,7 +87,7 @@ library(nbaR)
 #   select(c(ecosystem_type, protection_level, threat_status))
 
 
-thr_pro <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+thr_pro <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 
@@ -117,75 +117,6 @@ There is good progress in evaluating the ecological, socio-economic and governan
 library(tidyverse)
 library(nbaR)
 library(sf)
-
-
-# #marine linewidth
-# m_lwd = 0.001
-# 
-# 
-# dat <-  st_read(
-#     dir("data",
-#         "marine_results_for_integration.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE)
-# 
-# eez <- st_read(list.files(path="data", 
-#                              pattern="^eez_MEM2018.gpkg$", 
-#                              recursive = T, 
-#                              full.names = T)[1],
-#   quiet = TRUE)
-# 
-# marine_benth <- dat %>%
-#   group_by(type_name,zone, RLE_EPL) %>% #
-#   summarise(geometry = st_union(geom)) %>%
-#   st_cast(to = "MULTIPOLYGON") %>%
-#   filter(zone !="Pelagic ocean waters",
-#          RLE_EPL %in% c("CR_NP", "CR_PP", "EN_NP", "EN_PP"))%>% 
-#   st_transform(crs = 4326)
-#                              
-# 
-# 
-# RLEmap <- nbaR::nba_map(marine_benth,
-#                            "vector",
-#                            FILL = RLE_EPL, 
-#                         LEGEND = T) +
-#   geom_sf(data=eez, colour = "black", fill = NA, lwd = m_lwd) + #add ecosystem outlines for marine
-#   #geom_sf(data=eez, colour = "black", fill = NA, lwd = t_lwd) + #add province outlines
-#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")
-#         # ,
-#         # legend.key.size = ggplot2::unit(1,"line"),
-#         #  legend.position = "inside",
-#         #  legend.justification = c("right", "bottom"),
-#         # legend.title = element_blank()
-#         ) +  #remove white space around the plot
-#   coord_sf(expand = FALSE)    # <-- prevents padding around data
-# # theme_void()
-# 
-# #ggsave(plot = RLEmap, filename = "imgs/ets_benth.jpg")
-# 
-# ## add the donut plot
-# 
-# rle_donut <- marine_benth %>% 
-#   st_drop_geometry() %>% 
-#   ungroup() %>% 
-#   count(RLE_EPL) %>% 
-#   tidyr::pivot_wider(names_from = RLE_EPL, values_from = n) %>% 
-#   mutate(RLE = "RLE") %>% 
-#   select(RLE, CR_NP,CR_PP, EN_NP, EN_PP) %>% 
-#   nbaR::nba_plot(GROUPS = RLE, 
-#                  COLS = 2:5, 
-#                  CHRT = "donut",
-#                  NUM = TRUE, 
-#                  LAB = "", 
-#                  GRP = F) +
-#   theme(legend.position = "none") 
-# 
-# final_plot <- RLEmap + 
-#   annotation_custom(ggplotGrob(rle_donut),
-#                     xmin=18, ymin=-33, xmax=29, ymax=-27)
-# 
-# print(final_plot)
 
 
 

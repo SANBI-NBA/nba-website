@@ -4,7 +4,7 @@
 title: "Ecosystem Threat Status" # Compulsory
 subtitle: "Estuarine Realm" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
@@ -19,8 +19,8 @@ author:
       - ref: nmu1
   - name:
       given: Andrew L.
-      family: Skowno
-    orcid: 0000-0000-0000-0000
+      family: Skowno 
+    orcid: 0000-0002-2726-7886 
     affiliations:
       - ref: sanbi1
   - name:
@@ -32,8 +32,8 @@ author:
       - ref: nmu1
   - name:
       given: Linda R.
-      family: Harris
-    orcid: 0000-0000-0000-0000
+      family: Harris 
+    orcid: 0000-0003-4719-0481  
     affiliations:
       - ref: nmu1
 
@@ -65,9 +65,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
 ::::: columns
 ::: {.column width="50%"}
@@ -77,9 +75,9 @@ google-scholar: true
 | of 22 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
-| [23%]{.inline-style-threatened}
+| [23%]{.inline-style-critically-endangered}
 | of 22 ecosystem types
-| [Critically endangered]{.inline-style-indicator}
+| [Critically Endangered]{.inline-style-indicator}
 
 </center>
 :::
@@ -87,11 +85,11 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [18%]{.inline-style-threatened}
+| [18%]{.inline-style-endangered}
 | of 22 ecosystem types
 | [Endangered]{.inline-style-indicator}
 
-| [18%]{.inline-style-threatened}
+| [18%]{.inline-style-vulnerable}
 | of 22 ecosystem types
 | [Vulnerable]{.inline-style-indicator}
 
@@ -99,7 +97,15 @@ google-scholar: true
 :::
 :::::
 
-------------------------------------------------------------------------
+<!-- creates spaces -->
+
+\
+
+More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.
+
+This represent an overall 1% decline in Natural/Near Natural estuaries & 7% increase in degraded extent. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.
+
+Estuaries requires increase protection and interventions across multiple sectors to arrest ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining & farming).
 
 ## Approach
 
@@ -123,6 +129,8 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 
 ## Ecosystem Threat Status Assessment
 
+#REPLACE WITH ANDREW'S ETS MAP
+
 ```{r}
 #| label: fig-ets_map_benth
 #| fig-cap: Benthopelagic and deepsea benthic marine ecosystem type threat status.
@@ -136,18 +144,7 @@ knitr::include_graphics("imgs/ets_benthic_with_donut.png")
 
 ```
 
-```{r}
-#| label: fig-ets_map_pel
-#| fig-cap: Pelagic marine ecosystem type threat status.
-#| echo: false
-#| out-width: 100%
-
-
-
-
-knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
-
-```
+#REPLACE WITH ANDREW'S ETS GRAPHS
 
 ```{r}
 #| label: fig-ets_bargraphs
@@ -161,7 +158,7 @@ library(nbaR)
 
 
 # load the data 
-ets_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE)
 #Combine RLE plot
 nba_plot_comb(ets_combined,
@@ -190,6 +187,8 @@ nba_plot_comb(ets_combined,
 ### Code repositories
 
 -   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+
+#ADD ANDREW'S ETS FILE
 
 ### Key Publications
 

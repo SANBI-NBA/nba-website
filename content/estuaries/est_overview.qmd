@@ -63,7 +63,7 @@ In the marine realm, 17% of ecosystem types are both highly threatened and under
 
 ```{r}
 #| label: fig-eco_map
-#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined bentho-pelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) and the key is available on the [Marine Ecosystems](marine_ecosystems.qmd) page.
+#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined bentho-pelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) and the key is available on the [Marine Ecosystems page](../marine/marine_ecosystems.qmd).
 #| echo: false
 
 knitr::include_graphics("imgs/benthic_pelagic_map_panel.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")

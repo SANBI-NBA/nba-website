@@ -110,7 +110,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-Rivers and inland wetlands are among the [most threatened](intf_ecosystems.qmd)[^1] and least protected ecosystems in South Africa. More than 64% of river ecosystem types and 65% of wetland ecosystem types are threatened ([KM B2](key_messages_B2.qmd))[^2][^3].
+Rivers and inland wetlands are among the [most threatened](../integrated-findings/intf_ecosystems.qmd)[^1] and least protected ecosystems in South Africa. More than 64% of river ecosystem types and 65% of wetland ecosystem types are threatened ([KM B2](../key-messages/kmb2.qmd))[^2][^3].
 
 [^1]: Ecosystem types and species are referred to as 'threatened' when they have been categorised as Critically Endangered, Endangered or Vulnerable.
 
@@ -130,7 +130,7 @@ Freshwater fishes are the most threatened of all taxa in South Africa. With esca
 
 ![Figure 1. Nieuwoudtville ephemeral salt pan, a Vulnerable ecosystem type (Nancy Job) {#fig-nville1}](imgs/20210821_105714_nvlle_v3.png)
 
-In the face of increasing **pressures**, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([KM A3](key_messages_A3.qmd))[^4], direct habitat loss and biological invasions ([KM A4](key_messages_A4.qmd))[^5], as well as the exacerbating effect of climate change ([KM A1](key_messages_A1.qmd))[^6].
+In the face of increasing **pressures**, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([KM A3](../key-messages/kma3.qmd))[^4], direct habitat loss and biological invasions ([KM A4](../key-messages/kma4.qmd))[^5], as well as the exacerbating effect of climate change ([KM A1](../key-messages/kma1.qmd))[^6].
 
 [^4]: Pollution reduces water quality, impacting aquatic ecosystems and their dependent economic activities.
 
@@ -138,7 +138,7 @@ In the face of increasing **pressures**, South African freshwater ecosystems con
 
 [^6]: Accelerated climate change has widespread impacts on biodiversity and people.
 
-As freshwater ecosystems are affected by land use within their receiving catchment ([KM A2](key_messages_A2.qmd))[^7], often at far distances, they are not easily protected within nature reserves and, thus, implementation of other effective area-based conservation measures (OECM[^8]s) are vital. We must collaborate across all levels of society ([KM C1](key_messages_C1.qmd))[^9] to conserve and wisely manage our remaining intact rivers and inland wetlands, and the freshwater species that they support. We must take urgent **action** to increase attention and funding on freshwater ecosystems and species, and to implement extensive restorative actions in strategically identified areas.
+As freshwater ecosystems are affected by land use within their receiving catchment ([KM A2](../key-messages/kma2.qmd))[^7], often at far distances, they are not easily protected within nature reserves and, thus, implementation of other effective area-based conservation measures (OECM[^8]s) are vital. We must collaborate across all levels of society ([KM C1](../key-messages/kmc1.qmd))[^9] to conserve and wisely manage our remaining intact rivers and inland wetlands, and the freshwater species that they support. We must take urgent **action** to increase attention and funding on freshwater ecosystems and species, and to implement extensive restorative actions in strategically identified areas.
 
 [^7]: Unsustainable land use and sea use changes erode natural capital and undermine ecosystem services.
 

@@ -36,7 +36,7 @@ author:
   - name:
       given: Linda R.
       family: Harris 
-    orcid: 0000-0000-0000-0000  
+    orcid: 0000-0003-4719-0481  
     affiliations:
       - ref: nmu1
 
@@ -69,6 +69,8 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
+*Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From a ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.*
+
 ------------------------------------------------------------------------
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
@@ -77,12 +79,12 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [20%]{.inline-style-well-protected}
-| of 163 ecosystem types
+| [1%]{.inline-style-well-protected}
+| of estuarine extent
 | [Well Protected]{.inline-style-indicator}
 
-| [34%]{.inline-style-well-protected}
-| of 163 ecosystem types
+| [32%]{.inline-style-well-protected}
+| of estuarine extent
 | [Poorly Protected]{.inline-style-indicator}
 
 </center>
@@ -91,12 +93,42 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [29%]{.inline-style-well-protected}
-| of 163 ecosystem types
+| [59%]{.inline-style-well-protected}
+| of estuarine extent
 | [Moderately Protected]{.inline-style-indicator}
 
-| [17%]{.inline-style-well-protected}
-| of 163 ecosystem types
+| [8%]{.inline-style-well-protected}
+| of estuarine extent
+| [Not Protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [9%]{.inline-style-well-protected}
+| of 22 ecosystem types
+| [Well Protected]{.inline-style-indicator}
+
+| [41%]{.inline-style-well-protected}
+| of 22 ecosystem types
+| [Poorly Protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [36%]{.inline-style-well-protected}
+| of 22 ecosystem types
+| [Moderately Protected]{.inline-style-indicator}
+
+| [14%]{.inline-style-well-protected}
+| of 22 ecosystem types
 | [Not Protected]{.inline-style-indicator}
 
 </center>
@@ -105,15 +137,11 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## Approach {#summary}
-
-The protection level assessment for marine ecosystems was adjusted to align with global targets. While the 2018 assessment used a standard 20% target with an addition rule applied, the 2025 assessment applied a 30% target: In order for a marine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this rule was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside an MPA that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.
-
-In 2018, South Africa had 25 coastal Marine Protected Areas (MPAs) covering less than 0.6% of the ocean around South Africa (6 260 km2), up from 0.4% (4 711 km2) in 2011. The MPA estate increased significantly between 2018 and 2019 and now covers 5.4% of the ocean around South Africa (51 477 km2). No further progress in MPA establishment has been made since 2019. The total number of MPAs in South Africa increased to 42 (Figure 65).
+#SEE IF WE CAN FIND MAP OF PROTECTED AREAS FOR COAST FROM LINDA.
 
 ```{r}
 #| label: fig-mpa_map
-#| fig-cap: South Africa's Marine Protected Area network.
+#| fig-cap: South Africa's coastal Protected Area network.
 #| echo: false
 #| message: false
 #| warning: false
@@ -125,17 +153,23 @@ knitr::include_graphics("imgs/mpa_map.png")
 
 ```
 
-## Ecosystem protection level Assessment
+## Ecosystem protection level assessment
 
-Of the 70 ecosystem types that were previously Not Protected, 58 received their first protection, including 7 of 13 pelagic ecosystem types. In 2019, an additional x (used to be 17) ecosystem types have advanced to Well Protected with a total of 20% of ecosystem types now falling within this category. There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through ecosystem restoration and strengthened MPA management to reduce ecosystem degradation.
+Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From an ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.
 
-## Estuary ecosystem protection level
+Since 2011 there has been erosion of protection in historical protected areas caused by removal of no-take restrictions and developing commercial fisheries in Marine protected Areas (MPAs). This is further exasperated by increased illegal gillnetting in protected areas in KZN.
+
+An investment in estuarine protection is needed in ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate are least protected.
+
+## Opportunities to improve ecosystem protection level
 
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
+#REPLACE WITH EPL MAP FROM ANDREW'S FILE
+
 ```{r}
-#| label: fig-epl_map_benthic
-#| fig-cap: Benthic marine ecosystem type protection level.
+#| label: fig-est_epl_map
+#| fig-cap: Estuarine ecosystem type protection level.
 #| echo: false
 #| message: false
 #| warning: false
@@ -146,56 +180,19 @@ knitr::include_graphics("imgs/epl_benthic_with_donut.png")
 
 ```
 
-## Pelagic ecosystem protection level
+There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
 
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+Several under protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi.
 
-```{r}
-#| label: fig-epl_map_pelagic
-#| fig-cap: Pelagic marine ecosystem type protection level.
-#| echo: false
-#| out-width: 100%
+The global support for 30% protection target (2030 Global Biodiversity Framework Target 3) represent a unique opportunity to garden international support and present funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process to evaluate and extend estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
 
+Ongoing efforts to develop OECMs and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats. It is less clear, if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increase formal protection over time or as a sufficient measure one its own.
 
+While the larger and more biodiversity rich estuaries are undoubtedly protection priorities, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond.Unless some ecosystem types or functional groups, e.g. Cool Temperate large fluvially dominated are targeted for inclusion in Marine Protected Areas, Protected areas or OECMs, gaps in representation will persist.
 
-knitr::include_graphics("imgs/epl_pelagic_with_donut.png")
+It is increasingly evident that protected areas won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures (OECMs) and/or Stewardship offer new opportunities for a broader diversify of conservation models to contribute to marine protection. Lastly, increasing extent of protection alone will not advance estuarine ecosystems to well protected. The condition of ecosystems in protected areas needs improvement.
 
-```
-
-```{r}
-#| label: fig-epl_bargraphs
-#| echo: false
-#| fig-cap: Protection level of marine ecosystem types by functional group. a) represents the number of ecosystem types and b) the extent of ecosystem types in each protection category.
-
-library(tidyverse)
-library(nbaR)
-library(sf)
-
-
-# load the data 
-epl_combined <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
-
-# Combined EPL plot
-epl_combined_plot <- nba_plot_comb(epl_combined,
-                                   ecosystem_functional_type_getl3,
-                                   METRIC_COL = metric,
-                                   METRICS = c("count", "extent"),
-                                   2:5,
-                                   CHRT = "bar",
-                                   NUM = FALSE,
-                                   LAB = "Percentage of ecosystem",
-                                   SAVE = NULL)
-
-epl_combined_plot
-
-```
-
-Additional offshore MPAs will need to be established to represent ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Natal-Delagoa ecoregion are the best protected of the shelf ecoregions and ecosystem types in the Southern Benguela are less protected. Protection in the deep ocean beyond the shelf edge is less than on continental shelves, but the deep benthic and pelagic ecosystems are also less threatened
-
-Offshore ecosystem types are still less represented in South Africa’s MPA network than shore and shelf ecosystem types. Slopes, abyssal plains, muddy and rocky shelves are the most poorly protected ecosystem functional groups. Unless these functional groups are targeted for inclusion in MPAs or OECMs, gaps in representation will persist. Increasing extent of protection alone will not advance marine ecosystems to well protected. The condition of marine ecosystems in MPAs needs improvement.
-
-There is progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs, which reveal gaps in connectivity, participation, cultural heritage protection and governance limiting progress in protection. It is increasingly evident that MPAs won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures offer new opportunities for a broader diversify of conservation models to contribute to marine protection.
+#REPLACE WITH EPL TABLE SUMMARY FROM ANDREW'S FILE
 
 ```{r}
 #| label: tbl-epl
@@ -208,7 +205,7 @@ library(dplyr)
 
 
 # load data
-epl <- read.csv(file=list.files(path = paste0(here::here(), "/quarto/data"), pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+epl <- read.csv(file=list.files(path = "./data/", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
   select(-'Threat status', -'Threat basis') # removing the threat status, assuming we only want to show that in the ETS page?
 
@@ -220,7 +217,7 @@ reactable(
   pagination = FALSE,
   height = 600,
   defaultColDef = colDef(
-    headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
+    headerStyle = list(background = "#028A85", color = "white", fontWeight = "bold")
   ),
   theme = reactableTheme(
     inputStyle = list(
@@ -230,6 +227,28 @@ reactable(
     )))
 
 ```
+
+## Approach {#summary}
+
+The protection level assessment for estuarine ecosystems was adjusted to align with global targets. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.
+
+Using as input data the South African Protected Areas Database (SAPAD) 2024Q4 (Department of Forestry Fisheries and Environment), South African estuary ecosystem map (van Niekerk 2020) and estuarine health condition as input data.
+
+Estuarine Condition (Health) scores (0-100) are assigned to Department of Water and Sanitation Present Ecological Status (PES) categories (A-F) and NBA Modification categories (Natural - Severely modified) according to the table below.
+
+#INSERT TABLE WITH HEALTH CATEGORIES: est_ets_cat.csv
+
+Protection Level is an indicator developed in South Africa that measures the representation of ecosystem types within the protected area network. The extent of each ecosystem type within the network is expressed as a proportion of the total extent. Four categories of Ecosystem Protection Level are calculated per ecosystem type (n= 22).
+
+-   Well Protected: 100% of the PA target within PA network; AND only A&B condition estuaries contribute; AND areas under heavy and very heavy fishing pressure are excluded from contributing
+
+-   Moderately Protected: 50% to 99% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
+
+-   Poorly Protected: 5% to 49% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
+
+-   Not Protected: less than 5% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
+
+The PA target was historically set at 20% for marine and estuarine ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework - the protected areas target was increased to 30% in the EPL calculations (previous time points (2018) were recalculated using this higher target). Ecosystem condition data (van Niekerk et al., 2025) for each time point allow for only good condition estuaries without heavey fishing pressure (especially systems under severe gill-netting pressure) to be considered representative for Well Protected status; while for Moderately Protected, Poorly Protected and Not Protected the condition of the estuaries is used to calculate their contribution to meeting targets such that higher integrity / condition estuaries contribute more to meeting protected areas targets than low integrity / condition estuaries.
 
 ## Technical documentation
 
@@ -244,6 +263,8 @@ reactable(
 ### Code repositories
 
 -   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+
+#INSERT ANDREW'S EPL FILE
 
 ### Key Publications
 
