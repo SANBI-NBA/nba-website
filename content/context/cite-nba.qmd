@@ -4,10 +4,18 @@ title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
 
-**Please use the recommended citation that is found on each webpage when citing a particular result or dataset from the NBA**.
+## Technical pages
 
-The NBA has numerous modules, and each webpage lists a specific citation that recognises the module leads and contributors for that module. The recommended citation will also contain a clear explanation of the version (of data, analysis, etc.).
+To reference the content of this website please use the **Recommended citation** at the bottom of each (technical) page. These pages have specific author lists at the top of the page.
 
-Within an NBA cycle (i.e., between releases of a publication like the Summary of Findings and Key Messages), not all datasets or results will be versioned at the same time point. For example, the NBA 2025 summary may use a 2023 marine ecosystem map, 2024 terrestrial threat status and the spider Red List assessment from 2019. Due to the online form of the NBA, it will be possible to update certain data and indicators between when a summary publication is released at a particular point in time (usually for before a report to the Convention on Biological Diversity is due).
+#### e.g. Recommended citation
 
-It is therefore [extremely important to use the recommended citation as stated on each webpage]{.underline}.
+da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic Diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
+
+## General pages
+
+Some pages do not have a specific author list or recommended citation, this general NBA content should be referenced as follows:
+
+#### Recommended citation
+
+South African National Biodiversity Institute (SANBI). 2025. National Biodiversity Assessment 2025: The status of South Africa’s biodiversity - Website. South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. <https://nba.sanbi.org.za/>

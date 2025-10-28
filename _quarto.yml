@@ -13,6 +13,7 @@ project:
     - "content/estuaries/*.qmd"
     - "content/subantarctic/*.qmd"
     - "content/coast/*.qmd"
+    - "content/genetics/*.qmd"
 
 
 website:
@@ -135,10 +136,15 @@ website:
                 - content/species/sp_amphibians.qmd
                 - content/species/sp_fwf.qmd
                 - content/species/sp_fwfcrabs.qmd
-                - content/species/sp_anonstraca.qmd
+                - content/species/sp_anostraca.qmd
                 - content/species/sp_dragons.qmd
                 - content/species/sp_sharks.qmd
                 - content/species/sp_sparids.qmd
+            - section: "Genetic diversity"
+              href: content/genetics/genetic-indicators.qmd
+              contents:
+                - content/genetics/chl-biobank.qmd
+                - content/genetics/chl-forensics.qmd
             - section: "Priority actions, responses and interventions"
               contents:
                 - content/integrated-findings/pakg_actions.qmd

@@ -86,6 +86,14 @@ Detailed findings for species.
 
 **Source:** <https://github.com/SANBI-NBA/species>
 
+### genetics
+
+Indicators for genetic diversity.
+
+**Maintainer:** Jessica da Silva
+
+**Source:** <https://github.com/SANBI-NBA/genetics>
+
 ## Workflow for extracting website content from repositories
 
 1.  Clone each of the repos listed above - it is best to place them within a parent folder to enable recursive content extraction.
