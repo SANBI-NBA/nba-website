@@ -1,13 +1,12 @@
 ---
 title: "About ecosystem threat status and the RLE"
-subtitle: "General introduction to the ecosystem-based indicators"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 bibliography: intf_references.bib
 
 format:
   html:
-    self-contained: true
+    self-contained: false
 ---
 
 South Africa is one of few countries that started assessing ecosystem threat status (circa 2004), using national criteria, before the [IUCN Red List of Ecosystems](https://iucnrle.org/){target="blank"} (RLE) was developed [@botts2020]. For the National Biodiversity Assessment 2018 efforts were made to transition to the IUCN RLE framework for terrestrial ecosystem assessments [@skowno2021] and partially for estuaries and marine ecosystems, with some deviations in the thresholds that were applied. For the NBA 2025, there was full application of the IUCN RLE criteria for the first time in South Africa across all realms following the latest guidelines [@iucn2024] to ensure best practice and global alignment.
@@ -15,7 +14,7 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 ### The IUCN Red List of Ecosystems Framework
 
 |  |  |
-|------------------------------------|:----------------------------------:|
+|----|:--:|
 | The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](imgs/RLE%20logo%20new.png) |
 
 1.  can be applied systematically across realms and geographic areas;
@@ -60,12 +59,12 @@ The adoption of the IUCN RLE standards by more than 100 countries underscores it
 
 ### Application of the IUCN RLE criteria and categories
 
-Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case. Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
+Data availability to assess all the criteria differs per realm. Therefore, the following criteria were assessed in each case (@tbl-applied-criteria). Broadly speaking, each realm assessment evaluated ecosystem types that are at risk of collapse because of habitat loss (A), because they are small in extent and declining in ecological condition (B), or because of declining ecological condition in their abiotic and/or biotic components (C, D). Criterion E is currently assessed as Data Deficient (DD) in all realms.
 
 ```{r}
 #| classes: plain
-#| label: fig-applied-criteria
-#| fig-cap: The IUCN Red List of Ecosystem criteria applied across realms in South Africa
+#| label: tbl-applied-criteria
+#| tbl-cap: The IUCN Red List of Ecosystem criteria applied across realms in South Africa
 library(dplyr)
 library(gt)
 
@@ -175,7 +174,7 @@ Details of the calculations per realm can be accessed here:
 
 **Marine realm**
 
--   [RLE Code repository](https://github.com/SANBI-NBA/marine/tree/main/scripts)
+-   [RLE Code repository](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
 ## References
 

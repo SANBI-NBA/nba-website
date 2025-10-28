@@ -157,6 +157,14 @@ strong, b {
     line-height: 1.5;
 }
 
+// Global link styling
+// This has to be defined here to enable custom styling for callout-notes
+
+a {
+  color: $link-color;
+  link-decoration: $link-decoration;
+}
+
 // Callout customization
 
 div.callout-note {
@@ -165,6 +173,11 @@ div.callout-note {
   border-top: solid 1px #7E576B !important;
   border-bottom: solid 1px #7E576B !important;
   background-color: #C7B0BC !important;
+}
+
+div.callout-note a {
+  color: $gray-900;
+  text-decoration: underline;
 }
 
 div.callout-note.callout-style-default .callout-header {

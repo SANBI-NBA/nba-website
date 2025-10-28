@@ -1,5 +1,5 @@
 ---
-title: "Pressures and ecological condition"
+title: "Pressures on biodiversity"
 subtitle: "Terrestrial realm"
 
 title-block-banner: "#617016"
@@ -26,6 +26,19 @@ author:
     affiliations:
       - ref: af1
       - ref: af3
+  - name:
+      given: Tsungai
+      family: Zengeya
+    orcid: 0000-0003-0946-0452
+    affiliations:
+      - ref: af1
+      - ref: af4
+  - name:
+      given: Domitilla C.
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: af1
       
 affiliations:
   - id: af1
@@ -40,6 +53,10 @@ affiliations:
     number: 3
     name: Stellenbosch University
 
+  - id: af4
+    number: 4
+    name: University of Pretoria
+    
 date: last-modified
 bibliography: terrestrial.bib
 
@@ -54,7 +71,7 @@ google-scholar: true
 
 format:
   html:
-    self-contained: true
+    self-contained: false
     citation: true
     
 # --- Table numbering settings ---
@@ -67,28 +84,28 @@ table-caption-auto-number: true    # enable automatic numbering
 
 *Terrestrial ecosystems and species face pressures from a range of human activities, including loss of natural habitat through intensive land uses (croplands, settlements, infrastructure, mining, plantations, and dams), invasive alien species, over utilisation of rangelands, pollution and waste, unsustainable biological resource use and climate change. These pressures interact in complex ways to impact biodiversity and disrupt important ecological processes (Key Messages [A1](../key-messages/kma1.qmd), [A2](../key-messages/kma2.qmd), [A4](../key-messages/kma4.qmd), [A6](../key-messages/kma6.qmd))*
 
-![Figure 1. Rate of habitat loss (RoL) indicator for the period 1990–2022, calculated for each terrestrial ecosystem type.](imgs/RoD_map_Kagiso.png){#landcover fig-align="center" width="600"}
+![Rate of habitat loss (RoL) indicator for the period 1990–2022, calculated for each terrestrial ecosystem type.](imgs/RoD_map_Kagiso.png){#fig-rod fig-align="center" width="600"}
 
 ### Habitat loss
 
 The loss of natural habitat is the single biggest cause of loss of biodiversity and ecosystem functioning in the terrestrial environment. Outright loss of natural habitat takes place mainly as a result of conversion of natural vegetation for cultivation of croplands, mining, plantation forestry, human settlements and other infrastructure development [@skowno2021]. Patterns and trends linked to land-use and land cover change are closely linked to changes in terrestrial biodiversity and ecosystem extent. Habitat loss is also usually associated with habitat fragmentation, which further impacts ecological functioning and viability of species, particularly in the context of climate change and biological invasions.
 
-Based on the national land cover, 81% of South Africa (986 038 km^2^) was in a natural state in 1990 (Table 1). By 2022 natural areas were estimated to have declined to 78% (946 226 km^2^). Habitat loss, as a result of historical (1750–1990) and recent (1990– 2022) clearing of natural habitat for field crops, horticultural crops and planted pastures, is the largest pressure on terrestrial ecosystems and biodiversity in South Africa and has affected 17% of the land area.
+Based on the national land cover, 81% of South Africa (986 038 km^2^) was in a natural state in 1990 (@tbl-habloss). By 2022 natural areas were estimated to have declined to 78% (946 226 km^2^). Habitat loss, as a result of historical (1750–1990) and recent (1990– 2022) clearing of natural habitat for field crops, horticultural crops and planted pastures, is the largest pressure on terrestrial ecosystems and biodiversity in South Africa and has affected 17% of the land area.
 
-Clearing of natural habitat for new croplands between 1990 and 2022 amounted to 13 676 km2. The relatively mesic eastern portions of South Africa and the Fynbos and Renosterveld of the Cape lowlands were the most impacted by this clearing (Figure 1). Built-up areas (including rural and urban settlements, industrial and commercial areas and large infrastructure) also contribute to natural habitat loss and currently cover over 2.9% of the country. The rate of habitat loss linked to new built-up areas is increasing, especially in Gauteng and along the KwaZulu-Natal coast and adjacent interior. Plantation forestry (including non-native pine, eucalyptus and acacia species) is an important historical driver of habitat loss, in mesic grassland regions in particular (covering 21 574 km^2^). Although new plantations are being established, the rate of habitat loss to this activity is decreasing. The impact of mining as a direct driver of habitat loss is relatively low (2 534 km^2^); however, the highly uneven distribution of mining areas means that the impacts are focussed on particular ecosystems, and the impacts are often persistent and extend well beyond the mined area.
+Clearing of natural habitat for new croplands between 1990 and 2022 amounted to 13 676 km^2^. The relatively mesic eastern portions of South Africa and the Fynbos and Renosterveld of the Cape lowlands were the most impacted by this clearing (@fig-rod). Built-up areas (including rural and urban settlements, industrial and commercial areas and large infrastructure) also contribute to natural habitat loss and currently cover over 2.9% of the country. The rate of habitat loss linked to new built-up areas is increasing, especially in Gauteng and along the KwaZulu-Natal coast and adjacent interior. Plantation forestry (including non-native pine, eucalyptus and acacia species) is an important historical driver of habitat loss, in mesic grassland regions in particular (covering 21 574 km^2^). Although new plantations are being established, the rate of habitat loss to this activity is decreasing. The impact of mining as a direct driver of habitat loss is relatively low (2 534 km^2^); however, the highly uneven distribution of mining areas means that the impacts are focussed on particular ecosystems, and the impacts are often persistent and extend well beyond the mined area.
 
-**The rates and patterns of habitat loss in South Africa are explored at biome level and provincial level in these pages.**
-
-Table 1. The key drivers of habitat loss for mainland South Africa prior to 1990 and between 1990 and 2012, based on the land cover change dataset. This table does not show transitions between all classes, it summarises all transitions between natural areas and anthropogenic land cover / landuse classes.
+**Still to add when pages are completed:** The rates and patterns of habitat loss in South Africa are explored at biome level and provincial level in these pages.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: tbl-habloss
+#| tbl-cap: The key drivers of habitat loss for mainland South Africa prior to 1990 and between 1990 and 2012, based on the land cover change dataset. This table does not show transitions between all classes, it summarises all transitions between natural areas and anthropogenic land cover - landuse classes.
 #| classes: plain
 
 library(nbaR)
 library(tidyverse)
 library(gt)
 
-lc_tbl <- read.csv("data/landcover_table.csv", check.names = FALSE) %>%
+lc_tbl <- read.csv("./data/landcover_table.csv", check.names = FALSE) %>%
   gt() %>%
   cols_align(align = "center", columns = 2:3) %>%
   cols_label(
@@ -104,7 +121,7 @@ lc_tbl
 
 ### Rangeland degradation
 
-In addition to land clearing related habitat loss, large portions of South Africa’s rangelands have seen extensive modifications from centuries of livestock farming. The ecological condition in these modified areas ranges from near-natural to critically modified depending on the degree to which ecosystem structure, function and composition have been altered through livestock and game management. Fire plays a crucial role in Fynbos, Grassland and Savanna ecology; disruption of natural fire regimes (fire season, frequency and intensity) presents an important pressure on biodiversity. Biological invasions also impact rangelands and discussed below. Unfortunately, there is currently limited spatial data with which to assess these impacts at the scale of ecosystem types, though various assessments of South African rangelands have shown that bush encroachment is widespread. Recent work indicates lower levels of utilization and an improvement in primary productivity and natural vegetation cover in some rangelands [@hoffman2018].
+In addition to land clearing related habitat loss, large portions of South Africa’s rangelands have seen extensive modifications from centuries of livestock farming. The ecological condition in these modified areas ranges from near-natural to critically modified depending on the degree to which ecosystem structure, function and composition have been altered through livestock and game management. Fire plays a crucial role in Fynbos, Grassland and Savanna ecology; disruption of natural fire regimes (fire season, frequency and intensity) presents an important pressure on biodiversity. Biological invasions also impact rangelands and discussed below. Unfortunately, there is currently limited spatial data with which to assess these impacts at the scale of ecosystem types, though various assessments of South African rangelands have shown that bush encroachment is widespread. Recent work indicates lower levels of utilization and an improvement in primary productivity and natural vegetation cover in some rangelands[@hoffman2018; @bell2021a].
 
 ### Biological invasions
 
@@ -126,9 +143,9 @@ Waste generated by mining, agriculture, energy production, manufacturing and urb
 
 Proactive mapping and management of noise sensitive areas is recommended while scientists continue to strengthen the knowledge for soundscapes and the impacts of noise pollution.
 
-Renewables energy installations are a new form of land use expanding throughout South Africa. Crucial for the just energy transition and supporting the reduction in reliance on fossil fuels, these developments present novel pressures on biodiversity and ecosystems and innovative mitigation initiatives are being implemented with the industry \[**extensive references on birdlife site, choose best**\]
+Renewables energy installations are a new form of land use expanding throughout South Africa. Crucial for the just energy transition and supporting the reduction in reliance on fossil fuels, these developments present novel pressures on biodiversity and ecosystems and innovative [mitigation initiatives](https://www.birdlife.org.za/what-we-do/policy-and-advocacy/what-we-do/birds-renewable-energy) are being implemented with the industry.
 
-### Recommended Citation
+## Recommended Citation
 
 ```{r}
 #| output: asis
@@ -147,7 +164,7 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-### References
+## References
 
 ::: {#refs}
 :::

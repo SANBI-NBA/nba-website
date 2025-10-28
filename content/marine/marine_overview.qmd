@@ -5,20 +5,44 @@ title-block-banner: "#02268A" #imgs/overview_banner.jpg #
 title-block-banner-color: white
 ---
 
-```{r, echo=FALSE, error=FALSE}
+```{r error=FALSE}
+#| eval: false
+#| include: false
 
 ### this is a code chunk to list outstanding tasks on THIS page; 
 # make sure everything is commented
 
-# 
+
+
+
+library(tools)
+library(magick)
+
+# Assuming your working directory is the quarto folder (else set it to be that)
+
+# Read in files from your imgs library -----------------------------------------
+# (or set the file path in brackets to where ever the original jpegs are saved)
+files <- file_path_sans_ext(list.files("imgs")) 
+files
+
+# Pick your photo number -------------------------------------------------------
+# The number in square brackets is the only thing you need to change in this 
+# script
+picname <- files[84] 
+
+# Read in the image and rescale to 800 pixel width -----------------------------
+img <- image_read(paste0("imgs/", picname, ".jpg")) %>% 
+  image_resize(., "800x")
+
+# Write the rescaled image with a 72 pixel resolution --------------------------
+image_write(img, path = paste0("imgs/", picname,".png"), 
+            format = "png", density = "72x72")
 
 ```
 
 *South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and contributes to deep cultural and spiritual values for South Africa’s oceans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
 
-
-![](imgs/Sodwana_Grants_beach_02-12-022.jpg)
-
+![Caption to be added. (c) Peter Timm/Chadwick](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png)
 
 ::::: columns
 ::: {.column width="50%"}
@@ -86,9 +110,9 @@ Marine species are assessed in terms of their stock status and/or threat status.
 
 There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management ([Key Message A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and west coast rock lobster are Endangered. Illegal fishing plays a key role in the poor status of these species ([Key Message A6](../key-messages/kma6.qmd)).
 
-![Caption to be added](imgs/spp_plate_overview.jpg)
+![Caption to be added](imgs/spp_plate_overview.png)
 
-Of the 497 [**(update post corals)**]{.mark} marine species assessed using the IUCN Red List of Threatened Species criteria and thresholds, **36% [(update)]{.mark}** are considered threatened ([Key Message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+Of the 494 marine species assessed using the IUCN Red List of Threatened Species criteria and thresholds, 36% are considered threatened ([Key Message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
 
 Sharks, rays and chimaeras are one of the most threatened groups across all realms. A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 [(may need update)]{.update} South African shallow reef building corals assessed globally, 34% are threatened by climate change ([Key Message A1](../key-messages/kma1.qmd)).
 
@@ -104,7 +128,7 @@ Fishing, petroleum activities and shipping are widespread sectors resulting in m
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.jpeg){.lightbox}
+![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.png){.lightbox}
 :::
 :::::
 
@@ -118,7 +142,7 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){.lightbox}
+![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){.lightbox}
 :::
 :::::
 
@@ -130,7 +154,7 @@ More than 70 individual actions were advanced (see [priority actions](marine_pri
 
 Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified, and are being improved with increased participation, collaboration, and technical innovation.
 
-![The Science to Policy Workshop, November 2024. (c) Kerry Sink](imgs/workshop.jpg)
+![The Science to Policy Workshop, November 2024. (c) Kerry Sink](imgs/workshop.png)
 
 <!-- ## Key publications -->
 

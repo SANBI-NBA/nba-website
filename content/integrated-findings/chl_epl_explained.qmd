@@ -1,6 +1,5 @@
 ---
 title: "About ecosystem protection level"
-subtitle: "General introduction to the indicator"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 bibliography: intf_references.bib
@@ -8,7 +7,7 @@ bibliography: intf_references.bib
 
 ## Summary {#summary}
 
-Ecosystem Protection Level (EPL) is an indicator that was developed and refined in South Africa between 2004 and 2025 \[REF Linda new paper and Reyers 2007\]. It measures the degree to which ecosystem types are represented in the protected area network. The indicator has been used as a headline indicator in national reporting since 2005. Protection level is determined by calculating the proportion of each ecosystem type in a protected area, and evaluating this against a biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection. Ecosystem types are assigned one of four categories of protection: Well Protected - biodiversity target is met; Moderately Protected - at least half the biodiversity target is met; Poorly Protected - more than 5% of the biodiversity target is met, and Not Protected if less than 5% of the target is met.
+Ecosystem Protection Level (EPL) is an indicator that was developed and refined in South Africa between 2004 and 2025[@reyers2007]. It measures the degree to which ecosystem types are represented in the protected area network. The indicator has been used as a headline indicator in national reporting since 2005. Protection level is determined by calculating the proportion of each ecosystem type in a protected area, and evaluating this against a biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection. Ecosystem types are assigned one of four categories of protection: Well Protected - biodiversity target is met; Moderately Protected - at least half the biodiversity target is met; Poorly Protected - more than 5% of the biodiversity target is met, and Not Protected if less than 5% of the target is met.
 
 ## Building blocks of the Ecosystem Protection Level indicator
 
@@ -16,7 +15,7 @@ Ecosystem Protection Level (EPL) is an indicator that was developed and refined 
 
 Protected areas are areas of land or sea that are protected by law and managed mainly for biodiversity conservation. Protected areas are vital for ecological sustainability and climate-change adaptation. They also serve as the backbone of the ecological infrastructure network, protecting the areas that deliver important ecosystem services to people.
 
-EPL is calculated using protected areas, recognised under the National Environmental Management: Protected Areas Act (Act 57 of 2003). The Act provides for several categories of protected areas, including Special Nature Reserves, National Parks, Nature Reserves, Marine Protected Areas, and Protected Environments. In addition, it also recognises World Heritage Core Sites, especially Protected Forest Areas, and Mountain Catchment Areas. The EPL indicator does include a narrow range of legally secure Other Effective Conservation Measures (OECMs) as contributing to meeting protection targets (@fig-pa-map) and, as additional OECMs are evaluated and mapped across the country they will be considered in the computation of the indicator.
+EPL is calculated using protected areas, recognised under the National Environmental Management: Protected Areas Act (Act 57 of 2003)[@governmentofsouthafrica2004]. The Act provides for several categories of protected areas, including Special Nature Reserves, National Parks, Nature Reserves, Marine Protected Areas, and Protected Environments. In addition, it also recognises World Heritage Core Sites, especially Protected Forest Areas, and Mountain Catchment Areas. The EPL indicator does include a narrow range of legally secure Other Effective Conservation Measures (OECMs) as contributing to meeting protection targets (@fig-pa-map) and, as additional OECMs are evaluated and mapped across the country they will be considered in the computation of the indicator.
 
 ![Protected Areas across South Africa's mainland and EEZ (A), and in the Prince Edward Islands and associated EEZ (B).](imgs/pa_webmap.png){#fig-pa-map fig-align="center"}
 
@@ -34,9 +33,9 @@ Details of the EPL calculations per realm can be accessed here:
 
 [Estuarine EPL](../estuaries/est_epl.qmd),
 
-[River EPL](../freshwater/fw_riv_EPL.qmd),
+[River EPL](../freshwater/fw_riv_epl.qmd),
 
-[Inland Wetland EPL](../freshwater/fw_wet_EPL.qmd)
+[Inland Wetland EPL](../freshwater/fw_wet_epl.qmd)
 
 ## References
 

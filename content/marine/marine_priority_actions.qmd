@@ -14,7 +14,7 @@ author:
   - name:
       given: Kerry #Add author's first name here. Abbreviate the middle name
       family: Sink #Add author's surname here
-    orcid: https://orcid.org/0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
@@ -69,7 +69,7 @@ Enable participation in ocean planning, assessment and management through robust
 ![TBA](imgs/PA_1.png){.lightbox}
 :::
 
-![TBA](imgs/workshop.jpg){.lightbox}
+![TBA](imgs/workshop.png){.lightbox}
 
 ::: {#box-2 .callout-note collapse="true"}
 ## Take a whole of society and whole of government approach for effective ocean governance (improve co-ordination)
@@ -134,10 +134,19 @@ Catalyse research and monitoring to address critical social and natural science 
 :::
 
 ::: {#box-7 .callout-note collapse="true"}
-## Make sure South Africa has the skills and infrastructure to deliver the right data for good ocean decision making.
+## Ensure South Africa has the skills and infrastructure to manage and deliver expanding data and knowledge products for informed ocean planning and decision-making.
+
+Invest in data science capacity and infrastructure to ensure effective data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean.
+
+-   Data managers, data scientists and spatial analysts are part of the staff complement of organizations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean.
+
+-   Researchers and key staff are trained in relevant data science tools, data standards and reproducible workflows.
+
+-   Organisational data infrastructure, IT policies and capacity are enabling for effective database storage, curation and data sharing.
+
+-   FAIR (Findable, Accessible, Interoperable, and Reusable) data principles and reproducible science workflows are prioritised.
 
 ![TBA](imgs/PA_7.png){.lightbox}
-:::
 
 ::: {#box-8 .callout-note collapse="true"}
 ## Make existing Marine Protected Areas work through co-management, proper funding, and restorative action.

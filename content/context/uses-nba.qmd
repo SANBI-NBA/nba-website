@@ -38,7 +38,7 @@ The NBA's products can be summarised as follows:
 
 -   **Input datasets:** The NBA has a strong focus on presenting spatial information (e.g. maps of ecosystem types, maps of ecological condition, species distribution maps, maps of threat status and protection level, etc.), and also makes non-spatial datasets available (e.g. species checklists). Each of these datasets are accompanied by their metadata.
 
--   **Workflows for analyses and indicators:** A key focus of NBA 2025 was to ensure that the workflows for undertaking these analyses were published on repositories such as GitHub. This ensures that the NBA analyses are reproducible and mitigates any loss of knowledge or data should there be a change in staff undertaking the analyses.
+-   **Workflows for analyses and indicators:** A key focus of NBA 2025 was to ensure that the workflows for undertaking these analyses were published in repositories hosted on platforms such as GitHub and GitLab. This ensures that the NBA analyses are reproducible and mitigates any loss of knowledge or data should there be a change in staff undertaking the analyses.
 
 -   **Results of analyses:** The results of NBA analyses are usually graphs or maps, and these are made available for users, with a recommended citation.
 

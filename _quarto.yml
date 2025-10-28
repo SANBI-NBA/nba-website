@@ -12,6 +12,7 @@ project:
     - "content/freshwater/*.qmd"
     - "content/estuaries/*.qmd"
     - "content/subantarctic/*.qmd"
+    - "content/coast/*.qmd"
 
 
 website:

@@ -54,10 +54,10 @@ rsconnect/
 # Website related folders/files
 _site/
 site_libs/
-_freeze/
 
-# Any rendered html
-*.html
+
+# Any rendered htmls in content folder
+content/**/*.html
 
 # Any folder named _files
 *_files/

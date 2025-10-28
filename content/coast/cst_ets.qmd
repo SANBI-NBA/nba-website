@@ -148,7 +148,7 @@ Each ecosystem type is assessed according to these criteria, and is then placed 
 
 -   Data deficient (DD)
 
-For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings /chl_rle_explained.qmd){target="_blank"} to this headline indicator.
+For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings%20/chl_rle_explained.qmd){target="_blank"} to this headline indicator.
 
 ## Coastal Ecosystem Threat Status
 
@@ -353,7 +353,26 @@ cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>%
                                           "Marine"),
                         ordered = TRUE)) %>%
   arrange(realm, RLE, zone, type) %>% 
-  rename(Realm = realm, Subrealm = zone, `Ecosystem Type`=type, ETS = RLE)
+  rename(Realm = realm, Subrealm = zone, `Ecosystem Type`=type, 
+         `Threat Status` = RLE) %>% 
+  mutate(`Threat Status` = recode(`Threat Status`,
+                                  "CR" = "Critically Endangered",
+                                  "EN" = "Endangered",
+                                  "VU" = "Vulnerable",
+                                  "NT" = "Near Threatened",
+                                  "LC" = "Least Concern"))
+
+library(gt)
+library(nbaR)
+nba_tbl_colr(DF = cst,
+             COL = `Threat Status`,
+             HEADER = "Coast") %>%
+  tab_options(container.height = px(550),
+              container.overflow.y = TRUE) %>% 
+    tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  )
 
 # Output as regular table
 # library(gt)
@@ -366,18 +385,6 @@ cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>%
 #   )%>%
 #   tab_options(container.height = px(600),
 #               container.overflow.y = TRUE)
-
-library(gt)
-library(nbaR)
-nba_tbl_colr(DF = cst,
-             COL = ETS,
-             HEADER = "Coast") %>%
-  tab_options(container.height = px(550),
-              container.overflow.y = TRUE) %>% 
-    tab_style(
-    style = cell_fill(color = "#EDCA8D"),
-    locations = cells_column_labels(columns = everything())
-  )
 
 # Output as filterable table. Add to caption: Type values in any of the search boxes to filter the list to rows of interest.
 #library(reactable)
