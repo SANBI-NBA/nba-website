@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
   push:
-    branches: main
+    branches: [main, dev]
 
 name: Quarto Publish
 
@@ -17,9 +17,20 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
+      - name: Render Quarto Project
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            quarto render
+          else
+            quarto render --output-dir _site/dev
+          fi
+      
+      - name: Deploy to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          publish_dir: ./_site
+          keep_files: true  # Important: preserves dev folder when deploying main
+          destination_dir: ${{ github.ref == 'refs/heads/dev' && 'dev' || '.' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
