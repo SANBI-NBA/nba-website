@@ -25,5 +25,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_dir: ${{ github.ref == 'refs/heads/dev' && 'dev' || '.' }}
+          destination_dir: ${{ github.ref == 'refs/heads/dev' && 'site-preview' || '.' }}
           keep_files: true
