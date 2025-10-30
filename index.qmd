@@ -9,8 +9,6 @@ format:
 
 ## National Biodiversity Assessment 2025 is coming soon! {#summary}
 
-BIANCA TESTING THE DEV SITE ROUND 2
-
 The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa, and is produced by the South African National Biodiversity Institute in partnership with numerous institutions and individuals.
 
 National Biodiversity Assessment 2025 is presented in two formats:
