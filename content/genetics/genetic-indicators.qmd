@@ -1,0 +1,226 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Genetic Diversity" # Compulsory
+subtitle: ""
+title-block-banner: "#99BD41" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Jessica M. #Add author's first name here. Abbreviate the middle name
+      family: da Silva #Add author's surname here
+    orcid: 0000-0001-8385-1166 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      - ref: af2 # Ref here must match the id of one of the affiliations listed below
+            # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: J. Alexander #Add author's first name here. Abbreviate the middle name
+      family: Nieto Lawrence #Add author's surname here
+    orcid: 0000-0002-5982-5803 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      - ref: af2 # Ref here must match the id of one of the affiliations listed below
+            # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Krystal A. #Add author's first name here. Abbreviate the middle name
+      family: Tolley #Add author's surname here
+    orcid: 0000-0002-9297-5408 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      - ref: af2 # Ref here must match the id of one of the affiliations listed below
+            # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: af1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: af2 # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: University of Johannesburg
+ 
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: genetics.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+![Left to right: Rose's mountain toadlet (*Capensibufo rosei*) © Jeremy Shelton; Geometric tortoise (*Psammobates geometricus*) © Andre Botha; Southern white rhinoceros (*Ceratotherium simum simum*) © Greg Martindale; Grey rhebok (*Pelea capreolus*) © Tim Kuiper.](imgs/genetics-sp-banner.png)
+
+## Monitoring Genetic Diversity using Indicators
+
+Genetic diversity underpins all biological diversity, playing a key role in individual fitness (an organism’s ability to survive and reproduce), species’ ability to adapt to changing environments, and overall ecosystem resilience. The genetic diversity of many wild species has declined in recent decades and greater declines are projected through ongoing habitat loss and population size reductions. Local extinctions, reduced population sizes and disruption of genetic connectivity mean that many of the populations that exist today have insufficient genetic diversity to persist in the long term.
+
+**Core Conservation Genetic Principles**
+
+Conservation monitoring is guided by key principles (@fig-con-gen-princ), which together capture genetic diversity at multiple scales:
+
+-   ***Safeguard evolutionary distinctiveness*** – preserves unique branches of the tree of life.
+
+-   ***Protect genetically distinct populations*** – maintains adaptive potential within species.
+
+-   ***Ensure populations are large enough for long-term persistence*** – reduces loss of diversity through genetic drift[^1] and inbreeding.
+
+[^1]: Genetic drift is a random change in the genetic makeup of a population from one generation to the next that happens by chance.
+
+![Representation of three core conservation genetic principles focused on safeguarding evolutionary distinctiveness (A & B), protecting genetically distinct populations to minimize the risk of losing evolutionary evolutionary distinctiveness and ensuring all populations are large enough to ensure their long-term persistence (C). Red lines represent deep phylogenetic branches at risk, which can be caused by either entire clades of species being threatened with extinction (e.g., pangolins; A) or by threatened species isolated on long branches of the phylogenetic tree (e.g., secretary bird, B). C: Dashed lines represent the loss of a genetically distinct amphibian population, while polygons with solid lines represent different existing populations, each differing in size with the largest being the most likely to avoid genetic erosion. A & B taken from Gumbs et al., 2023.](imgs/con-gen-princip.png){#fig-con-gen-princ}
+
+In line with these principles, South Africa has adopted four genetic indicators from the Kunming-Montreal Global Biodiversity Framework, which can be based on direct genetic data or on proxies (when genetic data are not available; namely the [Ne 500](#box-1) and [PM](#box-2) indicators).
+
+::: {#box-1 .callout-note collapse="true"}
+## Box 1. Proportion of populations with an effective population size greater than 500 (Ne 500 indicator)
+
+A headline indicator in the Convention on Biological Diversity's Global Biodiversity Framework. This is a high-level, mandatory metric that captures the overall scope of Goal A and Target 4 of the GBF.
+
+Effective population size (Ne) represents the number of individuals in a population contributing to the gene pool. At any given time or reproductive cycle not all adults reproduce, consequently Ne is a subset of the number of individuals in a population (typically 10 to 30% of the census size). Studies have identified a threshold of Ne greater than 500 signifying a genetically stable and healthy population into the long term; while below 500, the risk of extinction increases. The Ne 500 indicator ranges from 0 to 1, with 0 indicating no populations of a species have Ne above 500 and 1 indicating all populations exceed the 500 threshold.
+:::
+
+::: {#box-2 .callout-note collapse="true"}
+## Box 2. Proportion of populations maintained within species (PM indicator)
+
+A complementary indicator in Convention on Biological Diversity's Global Biodiversity Framework, providing additional context for in-depth analysis but is not required for reporting.
+
+This indicator is based on the principle that genetic differences increase as populations are farther apart in geographic and/or environmental distance. By maintaining distinct populations, species are more able to adapt and evolve. The PM indicator ranges from 0 to 1, with 0 indicating all populations have been lost (species is extinct) and 1 indicating that all populations are still present.
+:::
+
+::: {#box-3 .callout-note collapse="true"}
+## Box 3. Changing status of evolutionary distinct and globally endangered species (EDGE index)
+
+A component indicator in Convention on Biological Diversity's Global Biodiversity Framework. This is a detailed metric that measures progress towards a specific target or goal within the framework.
+
+This index is grounded in the understanding that genetically distinctive and threatened species would represent a significant loss to the tree of life if they are lost, making their preservation crucial. It is a tool for monitoring the changes in the conservation status of South Africa’s evolutionary heritage. For each taxonomic group that has a phylogeny, a value of 0 indicates that none of the genetically distinctive species are threatened and a value of 1 indicates that all genetically distinctive species are threatened with extinction.
+:::
+
+::: {#box-4 .callout-note collapse="true"}
+## Box 4. Expected loss of phylogenetic diversity (PD)
+
+This complementary indicator is estimated as the total phylogenetic diversity in a phylogeny weighted by the probability of extinction for each species. This can be expressed as a percentage of the total phylogenetic diversity for the clade, where 100% would indicate that all species have the highest possible probability of extinction and all PD is expected to be lost, while 0% suggests that all species are safe from extinction and no PD is expected to be lost. The larger number of threatened species that contribute to high phylogenetic diversity, the more diversity is expected to be lost into the future.
+:::
+
+## South Africa’s Ne 500 and PM indicator scores
+
+------------------------------------------------------------------------
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [95%]{.inline-style-well-protected}
+| of 90 species assessed have
+| [Populations Maintained (PM)]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [42%]{.inline-style-threatened}
+| of 61 species assessed have
+| [Populations with Ne greater than 500]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. South Africa reported a **PM value of 0.95** and **Ne 500 value of 0.42**. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
+
+Importantly, these national metrics can be dissagregated in various ways, such as by taxonomic group (@tbl-taxagrp) or conservation status (@fig-ne-by-threatstatus), to explore patterns and trends across different biodiversity components, similar to [species](../integrated-findings/intf-species.qmd) and [ecosystems](../integrated-findings/intf_ecosystems.qmd) assessments.
+
+```{r}
+#| label: tbl-taxagrp
+#| tbl-cap: "Population genetic indicators dissaggregated by taxonomic group." 
+#| classes: plain
+
+library(dplyr) 
+library(nbaR) 
+library(gt)
+
+dat <- read.csv("data/tbl_taxa.csv", header = TRUE, fileEncoding = "UTF-8",  stringsAsFactors = FALSE) 
+
+tbl_taxa <- dat %>% 
+  select(taxonomic_group, pm, ne500) %>% 
+  arrange(taxonomic_group)
+
+colnames(tbl_taxa) <- c("Taxonomic Group", "PM", "Ne 500")
+
+gt(tbl_taxa) %>% nba_tbl_theme()
+```
+
+Of concern is that even Least Concern and Near Threatened taxa have indicator scores \< 1 (@fig-ne-by-threatstatus), indicating a loss of diversity that has gone undetected using other measures of extinction risk.
+
+![Violin plots illustrating the spread in Ne \>500 indicator values across National IUCN Red List categories. Abbreviations reflect official IUCN Red List categories for species assessed in [@mastretta2024]. Sample sizes (n) are provided for each threat category.](imgs/ne500-pilot_sanbi.png){#fig-ne-by-threatstatus .illustration fig-align="left" width="650"}
+
+To better understand the genetic health of South African biodiversity, efforts are underway to expand this work across complete taxonomic groups (see Mammal Red List [page](../species/sp_mammals.qmd)).
+
+## Tracking the Expected Loss of Phylogenetic Diversity
+
+### A Case Study on South Africa’s Amphibians and Reptiles
+
+South Africa is home to exceptionally rich and evolutionarily unique biodiversity, the loss of which would represent a significant erosion of the country’s evolutionary heritage. Using comprehensive Red List assessments together with detailed evolutionary (phylogenetic) trees, researchers can estimate how much of this evolutionary hertiage could be lost if threatened species for extinct - a metric known as **Expected Loss of Phylogenetic Diversity** — the proportion of evolutionary history likely to be lost if currently threatened species go extinct.
+
+In a recent case study [@nietolawrence], this approach was applied to South Africa’s amphibians and reptiles, both of which have exceptionally high levels of endemism (around 50%). By integrating extinction risk data with measures of **phylogenetic diversity (PD)**, researchers found that, without conservation action, **about 6.5% of amphibian PD and 5% of reptile PD could be lost over the next 50 years** (@fig-PD).
+
+![The PD indicator for South African amphibians (red) and reptiles (purple), calculated at three intervals between 1990 and 2020. Values are estimated as the percentage of phylogenetic diversity (PD) expected to be lost within 50 years [@gumbs2023]. Dated national phylogenies were used along with probabilities of extinction, inferred from backcasted IUCN scores weighted according to Gumbs et al. (2023) (CR = 0.97, EN = 0.49, VU = 0.24, NT = 0.12, and LC = 0.06).](imgs/PD_Indicator.png){#fig-PD fig-align="center" width="450"}
+
+Importantly, areas rich in PD did not always coincide with regions of high species richness, revealing new priorities for conservation to protect large portions of South Africa’s evolutionary heritage (@fig-xLPD).
+
+![Expected loss of phylogenetic diversity for South African A) amphibians and B) reptiles, generated using national phylogenies where branch lengths were weighted by the probability of all descendant species becoming extinct [@gumbs2023]. The highest risk for both groups is estimated to be found in the tropical east, while for amphibians, notable concentrations appear in montane regions of the Western and Eastern Cape provinces. For reptiles, extreme concentrations of expected PD loss can be found in the north-east of KwaZulu-Natal and in the north-west of the Northern Cape Province.](imgs/xPDL.png){#fig-xLPD}
+
+This study provides a **national framework for monitoring phylogenetic biodiversity and its expected loss**, aligned with global biodiversity monitoring goals. It demonstrates an approach that can be extended to other taxonomic groups, helping ensure that conservation strategies safeguard not only species, but also the deep evolutionary lineages and adaptive potential that make South Africa’s biodiversity globally unique.
+
+## Available Genetic Tools
+
+As technology advances and the cost of molecular processing continues to decrease, monitoring the genetic health of species and their populations through time is becoming increasingly feasible. South Africa utilizes a growing suite of genetic tools, including:
+
+-   **Forensic genetics** [here](./chl-forensics.qmd) — identifying illegally traded wildlife products to enforce conservation laws.
+
+-   **Biobanking** [here](./chl-biobank.qmd) — long-term preservation of genetic material from threatened species for future research and restoration.
+
+-   **DNA barcoding** — building reference libraries for species identification and monitoring.
+
+-   **Environmental DNA (eDNA)** — detecting species and tracking biodiversity changes through genetic traces in soil, water, or air samples.
+
+## Technical documentation
+
+***Populations Maintained & Ne 500 indicator repositories***
+
+-   **Code repository**: [github.com/AliciaMstt/GeneticIndicators/blob/main/4_plots_by_country](https://github.com/AliciaMstt/GeneticIndicators/blob/main/4_plots_by_country.Rmd)
+
+-   **Data repository**: [DRYAD](https://doi.org/10.5061/dryad.bk3j9kdkm)
+
+***Expected Loss of Phylogenetic Diversity repositories***:
+
+-   **Data and Code:** [Figshare](https://figshare.com/s/408db7d5714c44fe41c7)
+
+## Recommended citation
+
+da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic Diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
+
+## References
+
+::: {#refs}
+:::

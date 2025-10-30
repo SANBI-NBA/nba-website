@@ -1,0 +1,29 @@
+---
+title: "B2. Estuaries, rivers and wetlands are the most threatened and least protected ecosystems in South Africa"
+subtitle: ""
+title-block-banner: "#70B276"
+title-block-banner-color: white
+---
+
+\| South Africa’s estuaries, rivers and wetlands remain highly threatened and under protected (established), despite providing many services that are vital to people. Achieving biodiversity conservation and socio-economic benefits will depend on innovative, integrated management of these ecosystems that combines regulatory enforcement with empowered community stewardship*.* \| 
+
+------------------------------------------------------------------------
+
+Estuaries, rivers and wetlands in South Africa are more threatened than ecosystems in other realms. Over 90% of estuarine ecosystem types are threatened and less than 10% are Well Protected. Over 60% of river and wetland types are threatened, while less than 10% are Well Protected. These ecosystems face multiple pressures from altered water flows, pollution, land-use changes, poor land management and biological invasions. Barrier structures, such as roads, and commercial forestry further alter stream flow, groundwater recharge, and hydrology of rivers and wetlands. In estuaries, the availability of cheap gill nets from online retailers has led to an increase in illegal fishing, especially in KwaZulu-Natal. This indiscriminate fishing method impacts many biota, such as sharks, rays, invertebrates, birds, turtles, terrapins, and crocodiles, beyond just the targeted fish species. Freshwater ecosystems and estuaries are complex and do not respond linearly to pressures.
+
+:::{.fgure}
+:::{layout-ncol=2}
+![*A. No buffer alongside a river channel; encroachment increases flood (© Jeremy Shelton)*](imgs/28a.%20Pg32_KMB2_floodplainagriculture_(c)Jeremy%20Shelton-NBA2025-60.png)
+
+![*B. the Heuningnes Estuary in the De Mond Nature Reserve is one of South Africa's 12 estuarine lakes (© Peter Chadwick)*.](imgs/28b.%20Pg32_KMB2_heuningness_estuary_(c)Peter_Chadwick.png)
+:::
+*A and B. Rivers, wetlands and estuaries are essential ecological infrastructure for water security, food security, tourism, recreation, disaster risk reduction and carbon sequestration. Careful management and restoration of Strategic Water Source Areas, river floodplains and estuaries are essential for these benefits to continue. A, there is no buffer alongside this river channel, leading to extensive encroachment of human land uses into the floodplain, heightening risk to agriculture and downstream areas during flooding (© Jeremy Shelton); B, the Heuningnes Estuary in the De Mond Nature Reserve is one of South Africa’s 12 estuarine lakes (© Peter Chadwick).*
+
+Estuaries, rivers and wetlands are essential ecological infrastructure for water security, food security, tourism, recreation, spiritual and cultural services, as well as disaster risk reduction and carbon sequestration. They are important havens for many threatened and endemic species. Improving their condition will increase the diversity of benefits delivered as well as the number of people who benefit from aquatic ecosystem services.
+
+The dire status of South Africa’s aquatic ecosystems has been documented since the National Spatial Biodiversity Assessment 2004. In response, ecological infrastructure, including rivers and wetlands, has received attention in various policy instruments, such as the National Infrastructure Plan and the recent National Wetland Policy. There have also been efforts to secure ecological infrastructure, and protect and rehabilitate rivers and wetlands. Estuary Management Plans have been or are being developed for more than 20% of systems. Most freshwater resources have been classified into levels of resource utilisation, although environmental allocations sometimes fall short of biodiversity requirements. However, these responses have yet to improve the threat status or protection level of aquatic ecosystems.
+
+Innovative approaches are needed that integrate social, economic and ecological considerations, and place people at the centre of environmental stewardship. Citizen science monitoring of aquatic systems is a powerful tool that assists communities to understand and appreciate these ecosystems, and the services they derive from them. In addition, the implementation of regulatory mechanisms such as environmental authorisations, water use licences and biodiversity offsets must include the requisite resources and capacity for compliance monitoring and enforcement. The recovery of fish and invertebrate resources in estuaries calls for a reduction in fishing pressure, prioritising ecological water reserves for estuaries, and increasing citizen awareness.
+
+
+:::

@@ -1,0 +1,290 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Types"
+subtitle: "Coastal Zone"
+
+title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda R. #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu 
+  - name:
+      given: Kerry J. #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: nmu
+  - name:
+      given: Andrew L. #Add author's first name here. Abbreviate the middle name
+      family: Skowno #Add author's surname here
+    orcid: 0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: uct
+  - name:
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: Van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: csir
+      - ref: nmu
+  - name:
+      given: Anisha #Add author's first name here. Abbreviate the middle name
+      family: Dayaram #Add author's surname here
+    orcid: 0000-0003-4160-812X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: wits
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: uct # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: University of Cape Town
+  - id: csir # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Council for Scientific and Industrial Research
+  - id: wits # Use this as the affiliation ref with authors above
+    number: 5 # This number is used to associate authors with affiliations
+    name: University of the Witwatersrand
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: cst_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+```{r setting up data}
+#| message: false
+#| warning: false
+#| include: false
+
+source(here::here("scripts/cst_supporting-data.R"))
+```
+
+::::::: columns
+::: {.column width="100%"}
+<center>
+
+| [`r cet_n`]{.inline-style-threatened}
+| [Coastal Ecosystem Types]{.inline-style-indicator}
+| comprising
+
+</center>
+:::
+
+::: {.column width="33.3%"}
+<center>
+
+| [`r ret_n("T")`]{.inline-style-not-protected}
+| [Terrestrial]{.inline-style-indicator}
+| ecosystem types
+
+</center>
+:::
+
+::: {.column width="33.3%"}
+<center>
+
+| [`r ret_n("E")`]{.inline-style-not-protected}
+| [Estuarine]{.inline-style-indicator}
+| ecosystem types
+
+</center>
+:::
+
+::: {.column width="33.3%"}
+<center>
+
+| [`r ret_n("M")`]{.inline-style-not-protected}
+| [Marine]{.inline-style-indicator}
+| ecosystem types
+
+</center>
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## Summary {#summary}
+
+**South Africa arguably has one of the most diverse and scenic coasts in the world, supporting a wealth of unique biodiversity. Altogether, there are `r cet_n` coastal ecosystem types that comprise the ecologically determined coastal zone (EDCZ). These include `r ret_n("T")` vegetation types, `r ret_n("E")` estuarine ecosystem types, and `r ret_n("M")` marine ecosystem types. Freshwater ecosystem types are not currently included in the EDCZ, but there is planned inclusion in future.**
+
+![The ecological determined coastal zone is a cross-realm zone that includes terrestrial, estuarine and marine ecosystem types, as illustrated here at Nature's Valley. Photo credit: © Linda Harris (CC-BY-NC-ND)](imgs/cst-e-naturesvalley_Linda-Harris.png)
+
+## Defining and delineating the ecologically determined coastal zone
+
+Unlike the terrestrial, inland aquatic, estuarine and marine assessments, all of which assess ecosystem types per realm, the coast assessment is undertaken in a cross-realm zone. The reason for focusing on the coast specifically is because the majority of the world's population lives in this zone [@cosby2024], concentrating pressures on biodiversity<!--# insert link to coast pressures paper when available -->. Unless assessed separately, trends in coastal biodiversity relative to the rest of the land and sea are lost in the individual realm assessments.
+
+There are lots of different definitions and boundaries of coastal zones. For purposes like biodiversity assessments, the extent of the coast needs to comprise whole ecosystem types because that is the unit of assessment. Using whole ecosystem types also means that the results from the separate realm assessments can be extracted and summarized for the coast.
+
+Substantial effort went into delineating an ecologically determined coastal zone (EDCZ) for the National Biodiversity Assessment (NBA) 2018 by seamlessly aligning the separate realm ecosystem maps, and tagging relevant ecosystem types in the terrestrial, estuarine and marine realm as 'coastal' based on a set of criteria [@harris2019]. The premise underpinning these criteria is that ecosystem types are considered coastal if they have a direct influence from both the land and sea:
+
+-   **Terrestrial ecosystem types:** all vegetation types influenced by the sea, including:
+
+    -   Coastal Vegetation – vegetation types with purely coastal descriptions, and/or with\>95% of their extent within 2.5 km of the seashore
+
+    -   Semi-Coastal Vegetation – vegetation types with coastal affinities mentioned in description, and/or with\>70% of their extent within 10 km of the seashore
+
+-   **Estuarine ecosystem types:** all estuary and micro-estuary types are included in the EDCZ
+
+-   **Marine ecosystem types:** all marine ecosystem types influenced by land are coastal, including:
+
+    -   All ecosystem types between the shore and the fair-weather wave base (depth at which ocean waves start to interact with the sea floor)
+
+    -   All river-influenced marine ecosystem types
+
+This criteria-based approach means that as ecosystem maps update per realm, the changes are incorporated in updates of the EDCZ.
+
+## South Africa's coastal ecosystem types
+
+The cool Benguela and warm Agulhas currents that flow around South Africa drive steep gradients in climate and environmental conditions from west to east, resulting in diverse coastal ecosystem types and associated species, many of which are found no where else on earth [@harris2025]. The west coast is cool and arid, and the east coast is warm and wet, with a moderate south coast between them. The biogeography around the South African coast thus ranges from cool temperate in the west, through warm temperate in the south, to subtopical and tropical in the east.
+
+The EDCZ has been updated for the NBA 2025 based on updates to the respective realm maps, and currently comprises `r cet_n` ecosystem types [@harris2025] (@fig-edczmap):
+
+-   **`r ret_n("T")` vegetation types**: dunes and seashore vegetation, strandveld, duneveld, dune thicket, and coastal thicket, forests and fynbos
+
+-   **`r ret_n("E")` estuary ecosystem types**: predominantly open, temporarily closed, and fluvially dominated estuaries, and estuarine lakes, bays and lagoon
+
+-   **`r ret_n("M")` marine ecosystem types**: sandy beaches, shingle shores and boulder shores, mixed shores, rocky shores, microbialites, islands, reefs, kelp forests, bays, hard and soft inner shelf, and river-influenced ecosystem types
+
+![South Africa's ecologically determined coastal zone comprises `r cet_n` ecosystem types from the terrestrial, estuarine, and marine realms that all support a rich diversity of species, many of which are endemic to South Africa.](imgs/cst-ecoystems-coastmap_Jan25.png){#fig-edczmap fig-align="center"}
+
+Technically, there are an additional three microestuary ecosystem types that are also included in the EDCZ [@harris2025]. However, because microestuaries are not assessed in the National Biodiversity Assessments, they are excluded from the count of coastal ecosystem types in the NBA 2025 content to simplify the statistics and reporting.
+
+Although there is not yet enough information to systematically identify inland aquatic ecosystem types as coastal and non-coastal, this is an area of work that needs more research. There is planned inclusion of freshwater types in future (e.g., freshwater forested wetlands, dune slacks, groundwater, aquifers, seeps and springs, and river–estuary transition zones).
+
+The coastal ecosystem types are listed below (@tbl-edcztypes). For a descriptive overview of these ecosystem types, and inland aquatic ecosystem types proposed to be included in future, refer to the [publication].
+
+```{r}
+#| label: tbl-edcztypes
+#| tbl-cap: "Ecosystem types in South Africa that comprise the ecologically determined coastal zone" 
+
+library(here)
+library(gt)
+library(readr)
+library(dplyr)
+
+cst_ecotype <- read_csv(here("data/coast-e-ecosystem_types.csv")) %>% 
+  select(c(Realm, Subrealm, `Broad Type`, `Ecosystem Type`))
+
+cst_ecotype %>%
+  gt() %>% 
+  nba_tbl_theme() %>%
+tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  )%>%
+  tab_options(container.height = px(600),
+              container.overflow.y = TRUE) 
+
+
+#library(nbaR)
+
+#cst_ecotype2 <- cst_ecotype %>% 
+#  nba_tbl_colr(COL=Realm, HEADER = "Coast")%>%
+#  tab_options(container.height = px(600),
+#              container.overflow.y = TRUE)
+
+#cst_ecotype2
+```
+
+## Technical documentation
+
+### Publication
+
+Harris, L.R., Adams, J.B., Dayaram, A., Dunga, L.V., Job, N., Kirkman, S.P., Lamberth, S.J., Pfaff, M.C., Raw, J.L., Rishworth, G.M., Robbins, A., Sink, K.J., Skowno, A.L., van Deventer, H., van Niekerk, L., 2025. **Cross-realm biodiversity profile of the South African coastal zone**. African Journal of Marine Science 47, 1-18. [https://doi.org/10.2989/1814232X.2025.2463342](https://doi.org/10.2989/1814232X.2025.2463342){.uri target="_blank"}\
+*Description of the different types of coastal ecosystem types and broad biodiversity patterns in the South African coastal zone. The supplementary material includes a glossary of terms, guidance regarding map layers to use, and a table of the ecosystem types and their areas.*
+
+### Data availability
+
+The following datasets are available for download:
+
+1.  [**Map of coastal ecosystem types / ecologically determined coastal zone**](https://bgis.sanbi.org/Projects/Detail/213){target="_blank"}
+
+2.  [**Dune base line**](https://bgis.sanbi.org/SpatialDataset/Detail/3694){target="_blank"}: proxy representation of a decadal-scale high-water mark and recommended ecological line to represent the 'coastline'
+
+3.  [**Landmass line**](https://dwa.maps.arcgis.com/home/item.html?id=9d139e8cbe4248e3ba389aa7fbd3af54){target="_blank"}: recognized administrative boundary of the South African mainland landmass
+
+### Related publications and supporting information
+
+1.  [**South African National Ecosystem Classification System (SA-NECS)**](https://bgis.sanbi.org/Projects/Detail/1237)**\
+    ***Details on South Africa's ecosystem classification system, with a link to download the SA-NECS handbook*
+
+2.  Dunga, L., Lück-Vogel, M., Blamey, L.K., Bolton, J., Rothman, M., Desmet, P., Sink, K., 2024. **Mapping South Africa's canopy-forming kelp forests using low-cost, high-resolution Sentinel-2 imagery**. Estuarine, Coastal and Shelf Science 310, 108989. [https://doi.org/10.1016/j.ecss.2024.108989](https://doi.org/10.1016/j.ecss.2024.108989){.uri target="_blank"}\
+    *Technical details regarding the mapping of kelp forests using remote imagery*
+
+3.  [**Vegetation Map Updates 2024**](https://opus.sanbi.org/items/5d2f7441-b7c4-4d56-a4bd-5b8b3f7f1c5b/full){target="_blank"}\
+    *Collection of technical reports describing the updates to the 2024 version of the National Vegetation Map.*
+
+4.  Sink, K.J., Adams, L.A., Franken, M., Harris, L.R., Currie, J.C., Karenyi, N., Dayaram, A., Porter, S.N., Kirkman, S.P., Pfaff, M., van Niekerk, L., Atkinson, L., Bernard, A., Bessinger, M., Cawthra, H., de Wet, W., Dunga, L.V., Filander, Z., Green, A., Herbert, D., Holness, S.D., Lamberth, S., Livingstone, T., Lück-Vogel, M., Mackay, F., Makwela, M., Palmer, R., van Zyl, W., Skowno, A.L., 2023. **Iterative mapping of marine ecosystems for spatial status assessment, prioritisation and decision support.** Frontiers in Ecology and Evolution 11, 1108118. [https://doi.org/10.3389/fevo.2023.1108118](https://doi.org/10.3389/fevo.2023.1108118){.uri target="_blank"}\
+    *Technical details regarding the Marine Ecosystem Map*
+
+5.  Van Niekerk, L., Adams, J.B., James, N.C., Lamberth, S.J., MacKay, C.F., Turpie, J.K., Rajkaran, A., Weerts, S.P., Whitfield, A.K., 2020. **An Estuary Ecosystem Classification encompassing biogeography, size and types of diversity that supports estuarine protection, conservation and management.** African Journal of Aquatic Science 45, 199-216. [https://doi.org](https://doi.org/10.2989/16085914.2019.1685934){.uri}[/10.2989/16085914.2019.1685934](https://doi.org/10.2989/16085914.2019.1685934){.uri target="_blank"}\
+    *Technical details regarding the Estuarine Ecosystem Classification*
+
+6.  Harris, L.R., Bessinger, M., Dayaram, A., Holness, S., Kirkman, S., Livingstone, T.-C., Lombard, A.T., Lück-Vogel, M., Pfaff, M., Sink, K.J., Skowno, A.L., Van Niekerk, L., 2019. **Advancing land-sea integration for ecologically meaningful coastal conservation and management**. Biological Conservation 237, 81-89. [https://doi.org/10.1016/j.biocon.2019.06.020](https://doi.org/10.1016/j.biocon.2019.06.020){.uri target="_blank"}\
+    *Technical details regarding the conceptualisation and delineation of the land-sea interface into ecosystem types*
+
+7.  Harris, L.R., Nel, R., Schoeman, D.S., 2011. **Mapping beach morphodynamics remotely: A novel application tested on South African sandy shores**. Estuarine, Coastal and Shelf Science 92, 78-89. [https://doi.org/10.1016/j.ecss.2010.12.013](https://doi.org/10.1016/j.ecss.2010.12.013){.uri target="_blank"}\
+    *Technical details of a methodology to map beach ecosystem types using remote imagery such as Google Earth*
+
+## Recommended citation
+
+The [publication] is the preferred citation for this content, otherwise use:
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+#devtools::install_github("SANBI-NBA/nbaR")
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

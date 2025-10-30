@@ -1,0 +1,277 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Estuarine Species" # Compulsory
+subtitle: "" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  
+  - name:
+      given: Domitilla C.
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi
+  
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098 
+    affiliations:
+      - ref: sanbi
+  
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: birdlife # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: Birdlife South Africa
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: species.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+::::: columns
+::: {.column .content width="50%"}
+<center>
+
+| 
+| 
+| [00%]{.inline-style-threatened}
+| taxa assessed
+| [Threatened]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-0
+#| fig-cap: "*Palinurus gilchristi*"
+#| out-width: "100%"
+#knitr::include_graphics("imgs/sp_mar_3.png")
+```
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Key findings
+
+::::: columns
+::: {.column width="50%"}
+-   Key findings related to diversity, richness of the group in South Africa, or relative to global diversity.
+
+-   Key finding related to Threat status
+
+-   Key finding related to Trends
+
+-   Key finding related to Major pressures
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-1
+#| fig-cap: "Distribution of threatened marine species in the marine realm of South Africa, including sharks, sparids, birds, mammals and reptiles."
+#knitr::include_graphics("imgs/Marine.png")
+```
+:::
+:::::
+
+### Threat status, trends and pressures
+
+1.  ***Threat status***
+
+add text
+
+::: {#box-1 .callout-note .species title="Box 1. Species box" collapse="true"}
+## Box 1.
+
+add text
+:::
+
+:::: panel-tabset
+## Figure
+
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+
+```{r}
+#| label: fig-2
+#| fig-cap: "Add caption " 
+#| out-width: "100%"
+#| out-height: "auto"
+
+#knitr::include_graphics("imgs/Marine_bar.png")
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-tab-0
+#| tbl-cap: "Add data" 
+#| classes: plain
+
+library(dplyr)
+library(nbaR)
+library(gt)
+
+#df <- read_xlsx("data/NBA_example_full_tocc.xlsx")
+
+
+
+```
+:::
+::::
+
+::: {#box-2 .callout-note .species title="Box 2. Species box" collapse="true"}
+## Box 2:
+
+Click to expand this section:
+
+<details>
+
+<summary>*Add specie*</summary>
+
+<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+
+***Add specie***\*\*
+
+</details>
+
+<details>
+
+<summary>*Add specie*</summary>
+
+<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+
+***Add specie***\*\*
+
+</details>
+
+<details>
+
+<summary>*Add specie*</summary>
+
+<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+
+***Add specie***\*\*
+
+</details>
+:::
+
+2.  ***Trends (RLI)***
+
+Add text & figure
+
+```{r}
+#| label: fig-3
+#| fig-cap: "The Red List Index (RLI) for marine species including birds, mammals, reptiles, sharks and sparids assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). "
+
+#knitr::include_graphics("imgs/marine_rli.png")
+```
+
+```{r}
+#| label: fig-4
+#| fig-cap: "The distribution of estuarine species that have increased in threat status since NBA 2018."
+
+#knitr::include_graphics("imgs/Marine.png")
+```
+
+::: {#box-3 .callout-note .species title="Box 3. Species box" collapse="true"}
+## Box 3. Title
+
+add text
+
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}-->
+:::
+
+3.  ***Pressures***
+
+Add text
+
+```{r}
+#| label: fig-5
+#| fig-cap: "Key pressures on South Africa’s threatened marine species based on x taxa. This analysis presents the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme. The size of the bubbles indicates the relative importance of each pressure class. (currently missing marine turtle data) "
+#| out.width: 100%
+
+
+#knitr::include_graphics("imgs/Marine_pressure.png")
+```
+
+:::::: {#box-4 .callout-note .species title="Box 4. Species box" collapse="true"}
+## Box 4. Title
+
+::::: columns
+::: {.column width="100%"}
+Add text
+:::
+
+::: {.column width="25%"}
+:::
+:::::
+::::::
+
+:::::: {#box-5 .callout-note .species title="Box 5. Species box" collapse="true"}
+## Box 5. Title
+
+::::: columns
+::: {.column width="100%"}
+Add text
+:::
+
+::: {.column width="25%"}
+:::
+:::::
+::::::
+
+## Conservation strategy
+
+Add text
+
+::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
+## Box 6.
+
+Add text
+:::
+
+## Knowledge gaps
+
+Add text
+
+## Acknowledgements
+
+Add text
+
+## References
+
+Add reference

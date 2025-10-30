@@ -1,0 +1,444 @@
+---
+# ---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Protection Level" # Compulsory
+subtitle: "Coastal zone"
+
+title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Linda R. #Add author's first name here. Abbreviate the middle name
+      family: Harris #Add author's surname here
+    orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: nmu 
+  - name:
+      given: Natasha #Add author's first name here. Abbreviate the middle name
+      family: Besseling #Add author's surname here
+    orcid: 0009-0007-8464-3482 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Kerry J. #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: nmu
+  - name:
+      given: Andrew L. #Add author's first name here. Abbreviate the middle name
+      family: Skowno #Add author's surname here
+    orcid: 0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi
+      - ref: uct
+  - name:
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: Van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: csir
+      - ref: nmu
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: uct # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: University of Cape Town
+  - id: csir # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: Council for Scientific and Industrial Research
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: cst_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+```{r setting up data}
+#| message: false
+#| warning: false
+#| include: false
+
+source(here::here("scripts/cst_supporting-data.R"))
+```
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [`r c_epl_n("WP")`%]{.inline-style-well-protected}
+| of `r cet_n` ecosystem types
+| [Well Protected]{.inline-style-indicator}
+
+| [`r c_epl_n("NP")`%]{.inline-style-not-protected}
+| of `r cet_n` ecosystem types
+| [Not protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [`r percent_extent(epl, "WP", "coast")`%]{.inline-style-well-protected}
+| of the coastal extent
+| [Well Protected]{.inline-style-indicator}
+
+| [`r percent_extent(epl, "NP", "coast")`%]{.inline-style-not-protected}
+| of the coastal extent
+| [Not protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Introduction
+
+Ecosystem protection level (EPL) is one of the headline indicators of the National Biodiversity Assessment. This indicator measures the degree to which ecosystem types are represented in South Africa's protected area network, and has been used as in national reporting since 2005.
+
+After comparing the extent extent of each ecosystem type under protection relative to its predefined biodiversity target (ranging 16-32%), with heuristics regarding the ecological condition within protected areas, ecosystem types are assigned to one of four categories:
+
+-   **Well Protected (WP)**: the extent target for the ecosystem type is met or exceeded within the protected area network
+
+-   **Moderately Protected (MP):** 50 - 99% of the extent target for the ecosystem type is met within the protected area network
+
+-   **Poorly Protected (PP)**: 5 - 49% of the extent target for the ecosystem type is met within the protected area network
+
+-   **Not Protected (NP)**: \<5% of the extent target for the ecosystem type is met within the protected area network
+
+For NBA 2025, the EPL indicator was calculated across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on EPL, see the [general introduction](../integrated-findings%20/chl_epl_explained.qmd){target="_blank"} to this headline indicator.
+
+## Coastal Ecosystem Protection Level
+
+Proportionately, the coast is slightly more protected than the rest of the land and sea (@fig-eplgraph, @tbl-eplnumbers). This is positive given the myriad of benefits provided by coastal ecosystems and their [disproportionately impacted](../coast%20/cst_pressures-condition.qmd) and [threatened](../coast%20/cst_ets.qmd) status.
+
+Although `r percent_types(c_prot_n, cet_n)`% of coastal ecosystem types have some level of protection (`r c_prot_n` of `r cet_n` types), only `r percent_types(c_epl_n("WP"), cet_n)`% are Well Protected, which accounts for `r percent_extent(epl, "WP", "coast")`% of the coastal extent (@fig-eplgraph, @tbl-eplnumbers).
+
+There is good progress in protecting coastal ecosystem types, but the national protected area network does need to be strengthened to afford protection to most of the coastal zone that is currently Poorly Protected or Not Protected (`r percent_types((c_epl_n("PP")+c_epl_n("NP")), cet_n)`% of types and `r percent_extent(epl, "PP", "coast")+percent_extent(epl, "NP", "coast")`% of extent), especially for coastal terrestrial and estuarine ecosystem types.
+
+Ideally, coastal ecosystem types should have cross-realm protection in contiguous land-based and marine protected areas. Good examples of cross-realm protection are: Garden Route National Park and Tsitsikamma Marine Protected Area (MPA); iSimangaliso Wetland Park and MPA; De Hoop Nature Reserve and MPA; Addo Elephant National Park and MPA; and Namaqua National Park and MPA.
+
+![Coastal ecosystem protection level, 2025.](imgs/cst_epl-map.png){#fig-eplmap fig-align="center"}
+
+```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
+#| fig.cap: "Ecosystem protection level of coastal ecosystem types by (A) number of types and (B) extent of types"
+#| label: fig-eplgraph
+
+library(ggpubr)
+library(nbaR)
+library(here)
+library(readr)
+library(dplyr)
+
+subrealm_epl_p <- read_csv(here("outputs/cst_subrealm-epl-p.csv"))
+c_epl_t <- subrealm_epl_p %>% 
+  filter(`Sub-realm`=="Total") %>% 
+  select(!c(`Sub-realm`, Total)) %>% 
+  rename(`Well Protected` = WP,
+         `Moderately Protected` = MP,
+         `Poorly Protected` = PP,
+         `Not Protected` = NP)%>%
+  arrange(desc(row_number()))
+
+
+subrealm_epl_e_p <-read_csv(here("outputs/cst_subrealm-epl-e_proportions.csv"))
+c_epl_e <- subrealm_epl_e_p %>% 
+  filter(`Sub-realm`=="Total") %>% 
+  select(!c(`Sub-realm`, Total)) %>% 
+  rename(`Well Protected` = WP,
+         `Moderately Protected` = MP,
+         `Poorly Protected` = PP,
+         `Not Protected` = NP)%>%
+  arrange(desc(row_number()))
+
+epl_t<-nba_plot(c_epl_t,
+     GROUPS=Realm,
+     COLS = 2:5,
+     CHRT = "bar",
+     NUM = FALSE,
+     LAB = "Percentage of ecosystem types",
+     SAVE=NULL)
+epl_e<-nba_plot(c_epl_e,
+     GROUPS = Realm,
+     COLS = 2:5,
+     CHRT = "bar",
+     NUM = FALSE,
+     LAB = "Percentage of ecosystem extent",
+     SAVE=NULL)
+
+
+ggarrange(epl_t, epl_e, ncol = 2, labels = c("A","B"), common.legend = T, legend = "bottom")
+```
+
+Coastal terrestrial ecosystem types are most Well Protected (`r percent_types(r_epl_n("T", "WP"), ret_n("T"))`% of types, and `r percent_extent(epl, "WP", "T")`% of extent); coastal marine ecosystem types have the largest percentage of ecosystem types in the top two categories, Well Protected and Moderately Protected (`r percent_types((r_epl_n("M", "WP")+r_epl_n("M", "MP")), ret_n("M"))`% of types); and estuarine ecosystem types have the highest extent of protection across Well, Moderately and Poorly Protected (`r percent_extent(epl, "prot", "E")`% of extent) (@fig-eplgraph, @tbl-eplnumbers).
+
+In terms of Not Protected ecosystem types, the highest proportion of types is in the (coastal) terrestrial realm (`r percent_types(r_epl_n("T", "NP"), ret_n("T"))`%), and the highest proportion of extent is in the (coastal) marine realm (`r percent_extent(epl, "NP", "M")`%) (@fig-eplgraph, @tbl-eplnumbers).
+
+::: panel-tabset
+## Number of types <!--#  have csvs for each of these tables - is it worth including them as downloads? -->
+
+```{r}
+#| label: tbl-eplnumbers
+#| tbl-cap: "Ecosystem protection level of coastal ecosystem types: number of types per protection category, given per across-shore zone (inland to offshore). WP = Well Protected; MP = Moderately Protected; PP = Poorly Protected; NP = Not Protected."
+#| classes: plain
+
+library(gt)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_epl_n <- read_csv(here("outputs/cst_subrealm-epl-n.csv"))
+subrealm_epl_n %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>%
+  nba_tbl_theme() %>% 
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = "Total")
+  )
+
+
+```
+
+## Proportion of types
+
+```{r}
+#| label: tbl-eplproptypes
+#| tbl-cap: "Ecosystem protection level of coastal ecosystem types: proportion of types per protection category, given per across-shore zone (inland to offshore). WP = Well Protected; MP = Moderately Protected; PP = Poorly Protected; NP = Not Protected." 
+#| classes: plain
+
+library(gt)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_epl_p <- read_csv(here("outputs/cst_subrealm-epl-p.csv"))
+subrealm_epl_p %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>%
+  nba_tbl_theme() %>% 
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = "Total")
+  )
+
+```
+
+## Proportion of extent
+
+```{r}
+#| label: tbl-eplpropext
+#| tbl-cap: "Ecosystem protection level of coastal ecosystem types: proportion of extent per protection category, given per across-shore zone (inland to offshore). WP = Well Protected; MP = Moderately Protected; PP = Poorly Protected; NP = Not Protected."
+#| classes: plain
+
+library(gt)
+
+# Format with gt, bold the Total rows, and colour the header row
+
+subrealm_epl_e_p <- read_csv(here("outputs/cst_subrealm-epl-e_proportions.csv"))
+subrealm_epl_e_p %>%
+  gt() %>%
+  # Style total rows
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      rows = `Sub-realm` == "Total" | Realm == "Total"
+    )
+  ) %>%
+  nba_tbl_theme() %>% 
+  # Style column headers
+  tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = "Total")
+  )
+
+```
+:::
+
+Because the targets and assessment methodologies have changed in the realm assessments since the NBA 2018, the results are not comparable between the two assessments as a time series. However, the latest results do show that the South African coastal zone is less protected than was previously reported.
+
+```{r}
+#| label: tbl-epl
+#| tbl-cap: "Protection level of coastal ecosystem types in South Africa. EPL = Ecosystem Protection Level. WP = Well Protected. MP = Moderately Protected. PP = Poorly Protected. NP = Not Protected."
+
+library(here)
+library(readr)
+library(dplyr)
+
+cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>% 
+  select(c(realm, zone, type, EPL)) %>% 
+  mutate(realm = recode(realm, 
+                        "ter" = "Terrestrial",
+                        "est" = "Estuarine",
+                        "marine" = "Marine"),
+    EPL = factor(EPL, levels = c("WP",
+                                 "MP",
+                                 "PP",
+                                 "NP"),
+                      ordered = TRUE),
+         realm = factor(realm, levels = c("Terrestrial",
+                                          "Estuarine",
+                                          "Marine"),
+                        ordered = TRUE)) %>%
+  arrange(realm, EPL, zone, type) %>% 
+  rename(Realm = realm, Subrealm = zone, `Ecosystem Type`=type, `Protection Level` = EPL) %>% 
+  mutate(`Protection Level` = recode(`Protection Level`,
+                                  "WP" = "Well Protected",
+                                  "MP" = "Moderately Protected",
+                                  "PP" = "Poorly Protected",
+                                  "NP" = "Not Protected"))
+
+library(gt)
+library(nbaR)
+nba_tbl_colr(DF = cst,
+             COL = `Protection Level`,
+             HEADER = "Coast") %>%
+  tab_options(container.height = px(550),
+              container.overflow.y = TRUE) %>% 
+    tab_style(
+    style = cell_fill(color = "#EDCA8D"),
+    locations = cells_column_labels(columns = everything())
+  )
+
+# Output as regular table
+# library(gt)
+# cst %>%
+#   gt() %>%
+#   nba_tbl_theme() %>% 
+# tab_style(
+#     style = cell_fill(color = "#EDCA8D"),
+#     locations = cells_column_labels(columns = everything())
+#   )%>%
+#   tab_options(container.height = px(600),
+#               container.overflow.y = TRUE)
+
+# Output as filterable table. Add to caption: Type values in any of the search boxes to filter the list to rows of interest.
+#library(reactable)
+# reactable(
+#   cst,
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#EDCA8D", fontWeight = "bold")
+#   ))
+
+```
+
+<!--# EPL column is coming out in ETS colours in the table - must check with Tash -->
+
+## Technical documentation
+
+### Github repositories {data-link="publication"}
+
+Coastal synthesis: <https://github.com/lrharris/nba2025_coast/>
+
+Terrestrial EPL assessment: <https://github.com/askowno/EPL_terr>
+
+Estuarine EPL assessment: <https://github.com/askowno/EPL_est>
+
+Marine EPL assessment: <!--# insert link to marine EPL repo -->
+
+### Data availability
+
+The following datasets are available for download:
+
+1.  [Map of ecosystem protection level of South Africa's coastal ecosystem types](https://bgis.sanbi.org/Projects/Detail/226){target="blank"}
+
+### Related publications and supporting information
+
+1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+    *Technical details regarding the protection level assessment of coastal ecosystem types from the NBA 2018*
+2.  Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. **Indicators for tracking progress in effective, representative ecosystem protection.** Conservation Biology, in review.\
+    *Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa*
+3.  Harris, L.R., van Niekerk, L., Holness, S.D., Sink, K.J., Skowno, A.L., Dayaram, A., van Deventer, H., Job, N., Lamberth, S.J., Adams, J.B., Raw, J.L., Riddin, T., MacKay, C.F., Perschke, M.J., 2025. **Conserving cross-realm coastal biodiversity when real-world planning and implementation processes split the land and sea**. Ocean & Coastal Management 263, 107586. <https://doi.org/10.1016/j.ocecoaman.2025.107586>\
+    *Technical details regarding cross-realm conservation planning to ensure inclusion of land-sea processes and biodiversity, with proposed management recommendations for restoring and conserving coastal biodiversity*
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

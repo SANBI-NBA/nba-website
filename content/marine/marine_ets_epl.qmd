@@ -1,0 +1,139 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Intersection of ecosystem threat status and protection levels" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: marine_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+**Of South Africa’s 163 marine ecosystem types, 27 (17%) are both highly threatened and under-protected. Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve [ecosystem condition](marine_condition.qmd) through flow restoration, reduced fishing pressure and improved ecosystem management.**
+
+```{r}
+#| label: fig-rle_map
+#| fig-cap: Threatened and under-protected benthopelagic and deepsea benthic ecosystem types.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+#devtools::install_github("SANBI-NBA/nbaR")
+library(tidyverse)
+library(nbaR)
+library(sf)
+
+
+
+knitr::include_graphics("imgs/rle_unluckies.png")
+
+
+```
+
+The headline indicators of the NBA provide information on the pressures faced by species and ecosystems and on the progress made in protecting them. Combining the indicators provides an additional perspective on the status of marine ecosystems. There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected (Table x). This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
+
+```{r}
+#| label: tbl-ets_epl
+#| echo: false
+#| tbl-cap: Table summarising the distribution of protection levels across different threat status categories for marine ecosystem types.
+
+library(dplyr)
+library(nbaR)
+# library(sf)
+
+
+thr_pro <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
+  # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
+  rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 
+  select(ecosystem_type, threat_status, protection_level) %>%
+  nbaR::nba_tbl_comb(GROUP = ecosystem_type,
+                     THR =threat_status,
+                     PRO = protection_level,
+                     FILE ="csv")
+
+thr_pro
+
+```
+
+Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
+
+There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
+
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+### GitLab repositories
+
+-   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+
+-   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+
+### Key Publications
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+::: {#refs}
+:::

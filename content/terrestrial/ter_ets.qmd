@@ -1,0 +1,370 @@
+---
+title: "Ecosystem threat status"  
+subtitle: "Terrestrial realm" 
+
+title-block-banner: "#617016" 
+title-block-banner-color: white 
+
+author:
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: af1
+  
+  - name:
+      given: Andrew L. 
+      family: Skowno 
+    orcid: orcid.org/0000-0002-2726-7886 
+    affiliations:
+      - ref: af1       
+      - ref: af2
+            
+affiliations:
+  - id: af1 
+    number: 1 
+    name: South African National Biodiversity Institute
+
+  - id: af2 
+    number: 2    
+    name: University of Cape Town   
+            
+date: last-modified
+bibliography: terrestrial.bib
+
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+
+appendix-cite-as: false
+google-scholar: true
+
+format:
+  html:
+    self-contained: false
+    execute: 
+      echo: false
+---
+
+------------------------------------------------------------------------
+
+*Habitat loss and the impact of invasive alien plant species are the dominant factors in determining ecosystem threat status in the terrestrial realm. Croplands established in the last two centuries have replaced and fragmented many ecosystem types, but in recent years expanding human settlements have become a key factor in Red List of Ecosystems assessments for the terrestrial realm.*
+
+![Eastern Highveld Grassland - Endangered (©Anisha Dayaram)](./imgs/EasternHighveldGrassland_dayaram_crop.png)
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [30%]{.inline-style-threatened}
+| of 463 terrestrial ecosystem types
+| [Threatened]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [11%]{.inline-style-well-protected}
+| of 980 945 km² natural extent
+| [Threatened]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#devtools::install_github("SANBI-NBA/nbaR", force = T)
+
+library(gt)
+library(nbaR)
+library(tidyverse)
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, cache=FALSE}
+
+# ---- RLE Data ----
+RLE.2025 <- read.csv("./data/RLE_full_compiled_adjusted.csv")
+RLE.summary <- readxl::read_xlsx("./data/RLE summary results.xlsx")
+RLIe <- readxl::read_xlsx("./data/RLE index scores bootstrap.xlsx")
+
+EPL <- read.csv("./data/ter_results_type_rle_epl.csv")
+Prov.results <- readxl::read_xlsx("./data/Provincial RLE summary results.xlsx")
+
+Biome.RLEsummary <- readxl::read_xlsx("./data/Biome RLE summary results.xlsx")
+Biome.RLEcount <- readxl::read_xlsx("./data/Biome RLE count.xlsx")
+Biome.nat <- readxl::read_xlsx("./data/Biome RLE remnants.xlsx")
+
+```
+
+## Ecosystem threat status results
+
+Ecosystem threat status is a headline indicator established to assess how close ecosystem types are to collapsing (losing vital aspects of their structure, function, or composition). For the NBA 2025 (as for the NBA2018) the IUCN Red List of Ecosystems (RLE) framework was applied systematically across all terrestrial ecosystem types. Ecosystem types are placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. Read more about this indicator on the [About ecosystem threat status](../integrated-findings/chl_rle_explained.qmd) page.
+
+Nearly one-third (141/463) of nationally recognised terrestrial ecosystems, representing 11% of the remaining natural habitat of South Africa, are threatened. Among these 63 are listed as Critically Endangered, 68 as Endangered, and 10 as Vulnerable (@tbl-overall). Many of these ecosystems are concentrated in the key economic hubs, particularly in the south-western, north-eastern, and north-western regions of the country, where anthropogenic land-use activities and associated degradation pressures are major drivers of ecosystem change (@fig-RLE-map). Many of these threatened ecosystems have naturally restricted distributions, and accelerated habitat loss over the past three decades in these regions has compounded their vulnerability to collapse.
+
+::: {#box-2 .callout-note .terrestrial title="Box 1. Changes to the National Vegetation Map" collapse="true"}
+Since 2018, the National Vegetation Map has been refined, increasing the number of nationally recognised terrestrial ecosystems from 456 to 463. These boundary adjustments and the addition of new types have influenced both the potential/historical extent of some ecosystems and their threat status categorisation. Refer to [National Vegetation Map Project](https://bgis.sanbi.org/Projects/Detail/2258) for more details on these changes.
+:::
+
+```{r}
+#| label: tbl-overall
+#| tbl-cap: Summary of the assessment outcomes; including the number of ecosystem types per category & proportion of the natural areas remaining per category.
+#| classes: plain
+
+gt::gt(RLE.summary) %>% 
+       nba_tbl_theme() %>% 
+       #gt::tab_options(table.font.size = px(13L)) %>% 
+
+       gt::tab_style(style = list(cell_fill(color = "#7C8E2E"), cell_text(color = "white")),
+                     locations = cells_column_labels()) %>%     
+
+       gt::tab_style(style = cell_text(align = "center"), 
+                     locations = cells_column_labels(columns = 2:6)) %>%
+  
+       gt::tab_style(style = cell_text(align = "center"),
+                     locations = cells_body(columns = 2:6)) %>%
+
+       gt::tab_style(style = cell_text(weight = "bold"),
+                     locations = cells_body(rows = nrow(RLE.summary))) %>% 
+  
+       gt::cols_width(`Category (IUCN RLE)` ~ pct(20),
+                      `Number of ecosystems` ~ pct(15), 
+                      `Natural extent remaining within South Africa in 2022 (km²)`~ pct(15), 
+                       everything() ~ pct(20))
+
+```
+
+Historically, the main pressures on terrestrial ecosystems include habitat loss due to croplands, human settlements and plantation forestry. Since 1990, croplands and plantations have not expanded significantly but human settlements continue to expand; these pressures are key factors in the Red List of Ecosystem assessments. Pressures such as invasive alien plants and rangeland overstocking are also important; degrading ecosystem processes and functions. New data[@kotzé2025; @cogill; @skosana; @rebelo] on the distribution of invasive alien plants over large portions of South Africa has contributed to improved assessments, especially of Fynbos and Grassland ecosystem types ([Key Message A4](../key-messages/kma4.qmd)). However, there is still no comprehensive, spatially explicit dataset on land degradation for the country, which limits the ability to fully assess and track these impacts. For a more about pressures in the terrestrial realm refer to the [Terrestrial pressures](./ter_pressures-condition.qmd) page.
+
+![Maps showing (A) the historical extent of ecosystem types in South Africa, with the inset graph indicating the number of ecosystem types in each threat category; and (B) the remaining natural extent (circa 2022) of threatened terrestrial ecosystems. White areas represent croplands, built-up areas, mines, and tree plantations. The inset graph in (B) shows the percentage of the total remaining natural habitat (980,945 km²) within each threat category.](./imgs/RLE_combined_maps.png){#fig-RLE-map fig-cap="Maps showing (A) the historical extent of ecosystem types in South Africa (based on Mucina and Rutherford, 2006), with the inset graph indicating the number of ecosystem types in each threat category. (B) Shows the remaining natural extent (circa 2022) of threatened terrestrial ecosystems; white areas represent croplands, built-up areas, mines, and tree plantations. The inset graph in (B) shows the percentage of the total remaining natural habitat (980,945 km²) within each threat category." width="100%"}
+
+### Biome level results
+
+A pattern first highlighted in the 2018 RLE assessment[@skowno2021] remains evident: threat levels vary widely across South Africa’s biomes. Fynbos and Grassland are most affected by human-driven and degrading pressures. In Fynbos, 40 ecosystems are Critically Endangered and 27 Endangered, together accounting for 53% of its 126 types. Grassland has 24 (33%) threatened ecosystems, encompassing four Critically Endangered, 14 Endangered, and six Vulnerable. These threatened ecosystems cover about 25% of the remaining natural extent in Fynbos and 28% in Grassland. The Indian Ocean Coastal Belt is the most threatened biome, with all its ecosystem types listed as threatened. Other biomes face moderate risk, including Albany Thicket (nine threatened ecosystems, 20% of remaining extent) and Savanna (19, 7%). The Nama-Karoo is the least threatened, reflecting relatively lower pressure on its ecosystems (@tbl-biome, @fig-barplots).
+
+```{r}
+#| label: tbl-biome
+#| tbl-cap: "Percentage natural habitat within each IUCN RLE threat category, listed per biome. The number of ecosystem types per threat category, per biome is shown in parenthesis." 
+#| classes: plain
+
+gt::gt(Biome.RLEsummary) %>% 
+            nba_tbl_theme() %>% 
+            #gt::tab_options(table.font.size = px(13L)) %>% 
+  
+            gt::tab_style(style = list(cell_fill(color = "#7C8E2E"), cell_text(color = "white")),
+                           locations = cells_column_labels()) %>% 
+  
+            gt::tab_style(style = cell_text(weight = "bold"),
+                          locations = cells_body(columns = "Threatened ecosystem types")) %>%
+  
+            gt::tab_style(style = cell_text(align = "center"), 
+                          locations = cells_body(columns = 2:7)) %>%
+  
+            gt::tab_style(style = cell_text(align = "center"), 
+                          locations = cells_column_labels(columns = 2:7)) %>%
+ 
+            gt::tab_style(style = cell_text(weight = "bold"), 
+                          locations = cells_body(columns = c(Total))) %>% 
+   
+            gt::cols_width(Biome ~ pct(20),
+                          `Critically Endangered` ~ pct(15),
+                           Total ~ pct(45),
+                           everything() ~ pct(15))
+
+```
+
+Although most of South Africa's ecosystems remain in the Least Concern category, this does not imply they are free from drivers of ecosystem change. RLE assessments in the terrestrial realm will improve over time as data on ecosystem condition within forests and rangelands (including much of the Grassland, Savanna, Succulent Karoo, Nama-Karoo and Desert biomes) are gathered, validated and incorporated.
+
+```{r, fig.width = 12, fig.height = 6}
+#| label: fig-barplots
+#| fig-cap: "Threatened ecosystems per biome, showing (A) the percentage of ecosystem types per biome that fall within each threat category, and (B) the percentage of the total natural habitat remaining in each biome that falls within each threat category"
+
+#-----------------
+# Biome bar plots
+#-----------------
+
+SCALE_TEXT <- 1.5  # adjust text scaling
+
+# ---- Plot 1: Percentage of ecosystem types ----
+Biome.count.barplot <- nba_plot(Biome.RLEcount,
+                                Biome,
+                                c(2:4,6),
+                                CHRT = "bar",
+                                NUM = TRUE,
+                                LAB = "Percentage of ecosystem types",
+                                SAVE = NULL,
+                                SCALE_TEXT = 1.5)
+
+# ---- Plot 2: Percentage of natural habitat remaining ----
+Biome.extent.barplot <- Biome.nat %>%
+                        rename_with(~stringr::str_remove(.,"\\.perc$")) %>%
+                        mutate(across(where(is.numeric), ~ round(., 0)))%>%
+                        nba_plot(Biome, 
+                                 COLS = c(2:4,6),
+                                 CHRT = "bar",
+                                 NUM = TRUE,
+                                 LAB = "Percentage of natural remaining habitat",
+                                 SAVE = NULL,
+                                 SCALE_TEXT = 1.5)
+
+# ---- Arrange plots side by side with common legend ----
+ggpubr::ggarrange(Biome.count.barplot, Biome.extent.barplot, ncol = 2, labels = c("(A)", "(B)"), common.legend = TRUE, legend = "bottom")
+
+```
+
+### Provincial level results
+
+Similarly, threat levels also vary considerably across the nine provinces of South Africa. Gauteng, the country’s economic hub, has the highest share of threatened habitat by extent (52%), followed by KwaZulu-Natal (39%) and Mpumalanga (34%). In the Western Cape, Limpopo and North West approximately 15% of the remaining habitat is categorised as threatened, though there are many more threatened ecosystem types in the Western Cape, a product of the extremely high landscape and plant diversity. In contrast the Northern Cape, with its vast arid landscapes has only 11 threatened ecosystems (covering less than 1% of the remaining natural habitat), making it the least threatened province in the country, however, rapidly expanding mining footprints on the coast and interior combined with landscape level changes in plant community composition (linked to a combination of rangeland management, drought, climate change), are cause for concern (@tbl-province).
+
+```{r, echo=FALSE}
+#| label: tbl-province
+#| tbl-cap: Table showing the percentage of the natural remaining habitat in each province that falls with each IUCN RLE category; in parenthesis is the number of ecosystem types per category per province (note these do not sum to a national number of threatened ecosystems as ecosystem types cross provincial boundaries). 
+#| classes: plain
+
+gt::gt(Prov.results) %>% 
+            nba_tbl_theme() %>% 
+            #gt::tab_options(table.font.size = px(13L)) %>%
+
+            gt::tab_style(style = list(cell_fill(color = "#7C8E2E"), cell_text(color = "white")),
+                           locations = cells_column_labels()) %>% 
+  
+            gt::tab_style(style = cell_text(weight = "bold"),
+                          locations = cells_body(columns = "Threatened ecosystem types")) %>%
+  
+            gt::tab_style(style = cell_text(align = "center"), # center specified column text
+                          locations = cells_body(columns = 2:7)) %>%
+  
+            gt::tab_style(style = cell_text(align = "center"), # center specified column headings
+                          locations = cells_column_labels(columns = 2:7)) %>%
+ 
+            gt::tab_style(style = cell_text(weight = "bold"), # bold selected column
+                          locations = cells_body(columns = c(Total))) %>% 
+   
+            gt::cols_width(Province ~ pct(20),
+                          `Critically Endangered` ~ pct(15),
+                           Total ~ pct(45),
+                           everything() ~ pct(15)) %>%
+
+           # footnote just for North West, Critically Endangered
+           gt::tab_footnote(footnote = "North West has one Critically Endangered ecosystem type, but extremely restricted in area that it contributes less than 0.05% of the province’s remaining natural habitat.",
+                           locations = gt::cells_body(columns = "Critically Endangered",
+                           rows = Province == "North West"))
+
+```
+
+## Red List Index of Ecosystems {#red-list-index-of-ecosystems}
+
+The Red List Index of Ecosystems (RLIe) tracks changes in ecosystem threat status over time[@nicholson2024; @rowland2020]. The methods focus the indicator on genuine changes in status by accounting for the impact of improved data at later time points. RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear, comparable measure of ecosystem health across time and space. RLIe was calculated for 463 terrestrial ecosystems at the biome level, across four RLE assessment periods: 2014, 2018, 2020, and 2024. The emerging trends reveal a complex picture of both resilience and vulnerability across South Africa’s biomes.
+
+The Indian Ocean Coastal Belt has experienced the steepest decline and has the lowest overall RLIe, falling from 0.50 in 2014 to 0.43 in 2024. All ecosystem types in this biome are threatened and over time they are moving into higher risk categories. This steep downward trend reflects growing pressures from land-use conversion, including the expansion of croplands, urban development, and plantations. The Fynbos Biome, renowned for its exceptional biodiversity, faced substantial histroical pressures resulting low RLIe scores (0.62) but these are reasonably stable since 2018 suggesting that the main drivers of change, particularly agricultural pressure in lowland areas, have been entrenched for many years. In the Desert, Albany Thicket and Grassland biomes there are fewer threatened ecosystems and hence slightly higher RLIe (\~0.8) but these scores dropped substantially since 2014, suggesting accelerating pressures.
+
+At the national level, South Africa’s overall RLIe declined slightly from 0.82 to 0.79 between 2014 and 2024, signaling a slow but steady increase in ecosystem threat. The divergent trajectories seen across individual biomes highlight the importance of targeted, biome-specific conservation efforts to address the primary drivers of change shaping ecosystem threat status across the country.
+
+```{r, echo=FALSE, fig.width = 10, fig.height = 6}
+#| label: tbl-RLIe
+#| tbl-cap: "Red List Index of terrestrial ecosystems at the South African biome level"
+
+# ---- Data Prep ----
+biomes <- RLIe %>%
+          filter(!is.na(Biome)) %>%
+          pull(Biome) %>%
+          factor() %>%
+          droplevels() %>%
+          levels()
+
+biome_data   <- filter(RLIe, !is.na(Biome))
+overall_data <- filter(RLIe,  is.na(Biome))
+
+# ---- Color Palette ----
+biome_colors <- setNames(RColorBrewer::brewer.pal(length(biomes), "Paired"), biomes)
+
+# ---- Plot ----
+RLIe_plot <- ggplot() +
+  
+             # Biomes
+             geom_line(data = biome_data, aes(x = Year, y = RLIE,  color = Biome), size = 1.0) +
+             geom_point(data = biome_data, aes(x = Year, y = RLIE,  color = Biome), size = 4) +
+  
+             # Aggregate
+             geom_line(data = overall_data, aes(x = Year, y = RLIE, linetype = "Aggregate", shape = "Aggregate"), color = "black", size = 1.2) +
+             geom_point(data = overall_data, aes(x = Year, y = RLIE, shape = "Aggregate"), color = "black", size = 5.5) +
+
+             # ---- Scales ----
+             scale_color_manual(name   = "Biome", values = biome_colors) +
+             scale_linetype_manual(name   = "", values = c("Aggregate" = "dotted"), guide  = guide_legend(order = 2)) +
+             scale_shape_manual(name   = "", values = c("Aggregate" = 20), guide  = guide_legend(order = 2)) +
+  
+             scale_x_continuous(breaks = unique(RLIe$Year)) +
+             scale_y_continuous(limits = c(0.4, 1), breaks = seq(0.5, 1, 0.1)) +
+
+             # ---- Labels ----
+             labs(x = "Year", y = "Red List Index of ecosystems") +
+
+             # ---- Theme ----
+             theme_classic() +
+             theme(legend.position    = "right",
+                   legend.box         = "vertical",
+                   legend.text        = element_text(size = 12),
+                   legend.title       = element_text(size = 14),
+                   legend.key.size    = unit(0.6, "cm"),
+                   legend.key.height  = unit(0.8, "cm"),   # increased vertical spacing between rows
+                   legend.key.width   = unit(1.0, "cm"),
+                   legend.spacing.x   = unit(0.5, "cm"),
+                   legend.box.spacing = unit(1.0, "cm"),
+                   axis.title.x       = element_text(size = 14, margin = margin(t = 25)), # more space above x-axis title
+                   axis.title.y       = element_text(size = 14, margin = margin(r = 25)), # more space to the right of y-axis title
+                   axis.text          = element_text(size = 12))
+
+RLIe_plot
+```
+
+## Approach
+
+The terrestrial RLE assessment follows the IUCN RLE 2.0 in an approach described by Skowno & Monyeki, 2021[@skowno2021], using additional input data to assess a wider range of criteria. New land cover data, invasive alien plant data and ecosystem condition data from two additional regions were employed[@bell2021; @kirsten2023; @rebelo; @kotzé2025; @cogill; @skosana].
+
+## Technical documentation
+
+**Code repository**: <https://github.com/askowno/RLE_terr>
+
+**Key publications**
+
+Skowno, A.L.; Monyeki, M.S. South Africa’s Red List of Terrestrial Ecosystems (RLEs). Land 2021, 10, 1048. <https://doi.org/10.3390/land10101048>
+
+Rowland, J.A., Bland, L.M., Keith, D.A., Juffe-Bignoli, D., Burgman, M.A., Ferrer-Paris, J.R., Miller, R.M., Skowno, A.L., Nicholson, E., 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. <https://doi.org/10.1111/conl.12680>
+
+## Acknowledgements
+
+Thanks to Agricultural Research Council's Alanna Rebelo, and post grad students Liam Cogill and Thandeka Skosana, for making their data on invasive alien plants available for the ecosystem assessments of the NBA 2025. Read more about their work on the [MAPWAPS](https://sites.google.com/view/alanna-rebelo/mapwaps) home page. Thanks also to Andrew Wannenburgh (DFFE) and Johann Kotze for sharing the National Invasive Alien Plan Survey data. Tim Kirsten and Wesley Bell (UCT) kindly shared their PhD work on degradation in the Karoo. Thanks to Cape Nature (Boyd Escott), Mpumalanga Parks and Tourism (Mervyn Lotter), Ezemvelo-KZN Wildlife (Debbie Jewitt), GDARD (Marc Leroy), City of Cape Town (Charmaine Oxtoby and Johnathn Bell) for sharing provincial / metro land cover and condition data.
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

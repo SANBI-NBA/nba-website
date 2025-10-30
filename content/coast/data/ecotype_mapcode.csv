@@ -1,0 +1,655 @@
+type,mapcode
+Aggeneys Gravel Vygieveld,SKr19
+Agter-Sederberg Shrubland,SKv3
+Agulhas Limestone Fynbos,FFl1
+Agulhas Sand Fynbos,FFd7
+Albany Alluvial Vegetation,AZa6
+Albany Arid Thicket,AT15
+Albany Bontveld,AT16
+Albany Broken Veld,NKl4
+Albany Mesic Thicket,AT17
+Albany Valley Thicket,AT18
+Albertinia Sand Fynbos,FFd9
+Alexander Bay Coastal Duneveld,Dn1
+Algoa Sandstone Fynbos,FFs29
+Aliwal North Dry Grassland,Gh2
+Amathole Mistbelt Grassland,Gd2
+Amathole Montane Grassland,Gd1
+Amersfoort Highveld Clay Grassland,Gm13
+Andesite Mountain Bushveld,SVcb11
+Anenous Plateau Shrubland,SKr15
+Atlantis Sand Fynbos,FFd4
+Auob Duneveld,SVkd3
+Barberton Montane Grassland,Gm17
+Barberton Serpentine Sourveld,SVl13
+Basotho Montane Shrubland,Gm5
+Baviaans Valley Thicket,AT19
+Baviaanskloof Shale Renosterveld,FRs18
+Bedford Dry Grassland,Gs18
+Besemkaree Koppies Shrubland,Gh4
+Bethelsdorp Bontveld,AT20
+Bhisho Thornveld,SVs7
+Bloemfontein Dry Grassland,Gh5
+Bloemfontein Karroid Shrubland,Gh8
+Blouputs Karroid Thornveld,NKb2
+Bokkeveld Sandstone Fynbos,FFs1
+Boland Granite Fynbos,FFg2
+Breede Alluvium Fynbos,FFa2
+Breede Alluvium Renosterveld,FRa1
+Breede Quartzite Fynbos,FFq4
+Breede Sand Fynbos,FFd8
+Breede Shale Fynbos,FFh4
+Breede Shale Renosterveld,FRs8
+Buffels Mesic Thicket,AT21
+Buffels Valley Thicket,AT22
+Bushmanland Arid Grassland,NKb3
+Bushmanland Basin Shrubland,NKb6
+Bushmanland Inselberg Shrubland,SKr18
+Bushmanland Sandy Grassland,NKb4
+Bushmanland Vloere,AZi5
+Canca Limestone Fynbos,FFl3
+Cape Flats Dune Strandveld,FS6
+Cape Flats Sand Fynbos,FFd5
+Cape Lowland Alluvial Vegetation,AZa2
+Cape Seashore Vegetation,AZd3
+Cape Winelands Shale Fynbos,FFh5
+Carletonville Dolomite Grassland,Gh15
+Cathedral Mopane Bushveld,SVmp3
+Cederberg Sandstone Fynbos,FFs4
+Central Coastal Shale Band Vegetation,FFb4
+Central Free State Grassland,Gh6
+Central Inland Shale Band Vegetation,FFb3
+Central Knersvlakte Vygieveld,SKk2
+Central Mountain Shale Renosterveld,FRs5
+Central Richtersveld Mountain Shrubland,SKr1
+Central Ruens Shale Renosterveld,FRs12
+Central Sandy Bushveld,SVcb12
+Central Sandy Mountain Bushveld,SVcb29
+Ceres Shale Renosterveld,FRs4
+Citrusdal Shale Renosterveld,FRs20
+Citrusdal Vygieveld,SKk7
+Crocodile Gorge Mountain Bushveld,SVl27
+Crossroads Grassland Thicket,AT23
+De Hoop Limestone Fynbos,FFl2
+Delagoa Lowveld,SVl4
+Die Plate Succulent Shrubland,SKr10
+Doringrivier Quartzite Karoo,SKv1
+Doubledrift Karroid Thicket,AT24
+Drakensberg Afroalpine Heathland,Gd10
+Drakensberg Foothill Moist Grassland,Gs10
+Drakensberg-Amathole Afromontane Fynbos,Gd6
+Dry Coast Hinterland Grassland,Gs19
+Dwaalboom Thornveld,SVcb1
+Dwarsberg-Swartruggens Mountain Bushveld,SVcb4
+East Griqualand Grassland,Gs12
+Eastern Coastal Shale Band Vegetation,FFb6
+Eastern Free State Clay Grassland,Gm3
+Eastern Free State Sandy Grassland,Gm4
+Eastern Gariep Plains Desert,Dg9
+Eastern Gariep Rocky Desert,Dg10
+Eastern Gwarrieveld,AT25
+Eastern Highveld Grassland,Gm12
+Eastern Inland Shale Band Vegetation,FFb5
+Eastern Little Karoo,SKv11
+Eastern Lower Karoo,NKl2
+Eastern Ruens Shale Renosterveld,FRs13
+Eastern Upper Karoo,NKu4
+Eastern Valley Bushveld,SVs6
+Eenriet Plains Succulent Shrubland,SKr17
+Egoli Granite Grassland,Gm10
+Elands Forest Thicket,AT26
+Elgin Shale Fynbos,FFh6
+Elim Ferricrete Fynbos,FFf1
+Escarpment Arid Thicket,AT27
+Escarpment Mesic Thicket,AT28
+Escarpment Valley Thicket,AT29
+Fish Arid Thicket,AT30
+Fish Mesic Thicket,AT31
+Fish Valley Thicket,AT32
+Frankfort Highveld Grassland,Gm6
+Fynbos Riparian Vegetation,AZa1
+Gabbro Grassy Bushveld,SVl6
+Gamka Arid Thicket,AT33
+Gamka Karoo,NKl1
+Gamka Valley Thicket,AT34
+Garden Route Granite Fynbos,FFg5
+Garden Route Shale Fynbos,FFh9
+Gauteng Shale Mountain Bushveld,SVcb10
+Geluk Grassland Thicket,AT35
+Ghaap Plateau Vaalbosveld,SVk7
+Goariep Mountain Succulent Shrubland,SKr3
+Gold Reef Mountain Bushveld,SVcb9
+Gordonia Duneveld,SVkd1
+Gordonia Kameeldoring Bushveld,SVkd2
+Gordonia Plains Shrubland,SVk16
+Goukamma Dune Thicket,AT36
+Goukamma Strandveld,FS13
+Gouritz Valley Thicket,AT37
+Graafwater Sandstone Fynbos,FFs2
+Grahamstown Grassland Thicket,AT38
+Granite Lowveld,SVl3
+Grassridge Bontveld,AT39
+Gravelotte Rocky Bushveld,SVl7
+Greyton Shale Fynbos,FFh7
+Groot Brak Dune Strandveld,FS9
+Grootbos Strandveld,FS11
+Grootrivier Quartzite Fynbos,FFq5
+Hamburg Dune Thicket,AT56
+Hangklip Sand Fynbos,FFd6
+Hantam Karoo,SKt2
+Hantam Plateau Dolerite Renosterveld,FRd2
+Hartenbos Dune Thicket,AT40
+Hawequas Sandstone Fynbos,FFs10
+Helskloof Canyon Desert,Dg6
+Highveld Alluvial Vegetation,AZa5
+Hopefield Sand Fynbos,FFd3
+Humansdorp Shale Renosterveld,FRs19
+Income Sandy Grassland,Gs7
+Ironwood Dry Forest,FOz9
+Ithala Quartzite Sourveld,Gs2
+Kaalrug Mountain Bushveld,SVl12
+Kahams Mountain Desert,Dg5
+Kalahari Karroid Shrubland,NKb5
+Kamiesberg Granite Fynbos,FFg1
+Kamiesberg Mountains Shrubland,SKn6
+Kango Conglomerate Fynbos,FFt1
+Kango Limestone Renosterveld,FRl1
+KaNgwane Montane Grassland,Gm16
+Karoo Escarpment Grassland,Gh1
+Kasouga Dune Thicket,AT41
+Kathu Bushveld,SVk12
+Kimberley Thornveld,SVk4
+Klawer Sandy Shrubland,SKs13
+Klerksdorp Thornveld,Gh13
+Knersvlakte Dolomite Vygieveld,SKk6
+Knersvlakte Quartz Vygieveld,SKk3
+Knersvlakte Shale Vygieveld,SKk4
+Knysna Sand Fynbos,FFd10
+Kobee Succulent Shrubland,SKk9
+Koedoesberge-Moordenaars Karoo,SKv6
+Koedoeskloof Karroid Thicket,AT42
+Kogelberg Sandstone Fynbos,FFs11
+Koranna-Langeberg Mountain Bushveld,SVk15
+Kosiesberg Succulent Shrubland,SKr12
+Kouebokkeveld Alluvium Fynbos,FFa1
+Kouebokkeveld Shale Fynbos,FFh1
+Kouga Grassy Sandstone Fynbos,FFs28
+Kouga Sandstone Fynbos,FFs27
+Kuruman Mountain Bushveld,SVk10
+Kuruman Thornveld,SVk9
+Kuruman Vaalbosveld,SVk8
+Kwaggarug Mountain Desert,Dg4
+KwaZulu-Natal Coastal Belt Grassland,CB3
+KwaZulu-Natal Coastal Belt Thornveld,CB6
+KwaZulu-Natal Highland Thornveld,Gs6
+KwaZulu-Natal Hinterland Thornveld,SVs3
+KwaZulu-Natal Sandstone Sourveld,SVs5
+Lambert's Bay Strandveld,FS1
+Langebaan Dune Strandveld,FS5
+Langkloof Shale Renosterveld,FRs17
+Lebombo Summit Sourveld,SVl17
+Legogote Sour Bushveld,SVl9
+Leipoldtville Sand Fynbos,FFd2
+Lekkersing Succulent Shrubland,SKr4
+Leolo Summit Sourveld,Gm20
+Lesotho Highland Basalt Grassland,Gd8
+Limpopo Ridge Bushveld,SVmp2
+Limpopo Sweet Bushveld,SVcb19
+Little Karoo Quartz Vygieveld,SKv10
+Loerie Conglomerate Fynbos,FFt2
+Long Tom Pass Montane Grassland,Gm31
+Loskop Mountain Bushveld,SVcb13
+Loskop Thornveld,SVcb14
+Lourensford Alluvium Fynbos,FFa4
+Low Escarpment Moist Grassland,Gs3
+Lower Gariep Alluvial Vegetation,AZa3
+Lower Gariep Broken Veld,NKb1
+Lowveld Riverine Forest,FOa1
+Lowveld Rugged Mopaneveld,SVmp6
+Lydenburg Thornveld,Gm21
+Mabela Sandy Grassland,Gs13
+Madikwe Dolomite Bushveld,SVcb2
+Mafikeng Bushveld,SVk1
+Makatini Clay Thicket,SVl21
+Makhado Sweet Bushveld,SVcb20
+Makuleke Sandy Bushveld,SVl1
+Malelane Mountain Bushveld,SVl11
+Mamabolo Mountain Bushveld,SVcb24
+Mangrove Forest,FOa3
+Maputaland Coastal Belt,CB1
+Maputaland Pallid Sandy Bushveld,SVl25
+Maputaland Wooded Grassland,CB2
+Marikana Thornveld,SVcb6
+Matjiesfontein Quartzite Fynbos,FFq3
+Matjiesfontein Shale Fynbos,FFh2
+Matjiesfontein Shale Renosterveld,FRs6
+Midlands Mistbelt Grassland,Gs9
+Moist Coast Hinterland Grassland,Gs20
+Molopo Bushveld,SVk11
+Mons Ruber Fynbos Thicket,AT43
+Montagu Shale Fynbos,FFh8
+Montagu Shale Renosterveld,FRs7
+Mooi River Highland Grassland,Gs8
+Moot Plains Bushveld,SVcb8
+Mopane Basalt Shrubland,SVmp4
+Mopane Gabbro Shrubland,SVmp8
+Morokweng Thornveld,SVk18
+Mossel Bay Shale Renosterveld,FRs14
+Motherwell Karroid Thicket,AT44
+Mthatha Moist Grassland,Gs14
+Muscadel Riviere,AZi8
+Musina Mopane Bushveld,SVmp1
+Muzi Palm Veld and Wooded Grassland,SVl26
+Namaqualand Arid Grassland,SKs11
+Namaqualand Blomveld,SKn3
+Namaqualand Coastal Duneveld,SKs8
+Namaqualand Granite Renosterveld,FRg1
+Namaqualand Heuweltjie Strandveld,SKs14
+Namaqualand Heuweltjieveld,SKn4
+Namaqualand Inland Duneveld,SKs9
+Namaqualand Klipkoppe Shrubland,SKn1
+Namaqualand Riviere,AZi1
+Namaqualand Sand Fynbos,FFd1
+Namaqualand Seashore Vegetation,AZd2
+Namaqualand Shale Shrubland,SKn2
+Namaqualand Spinescent Grassland,SKs12
+Namaqualand Strandveld,SKs7
+Namib Lichen Fields,Dn2
+Namib Seashore Vegetation,AZd1
+Nanaga Savanna Thicket,AT45
+Nardouw Sandstone Fynbos,FFs32
+Ngongoni Veld,SVs4
+Nieuwoudtville Shale Renosterveld,FRs2
+Nieuwoudtville-Roggeveld Dolerite Renosterveld,FRd1
+Noms Mountain Desert,Dg1
+Norite Koppies Bushveld,SVcb7
+North Hex Sandstone Fynbos,FFs7
+North Kammanassie Sandstone Fynbos,FFs25
+North Langeberg Sandstone Fynbos,FFs15
+North Outeniqua Sandstone Fynbos,FFs18
+North Rooiberg Sandstone Fynbos,FFs21
+North Sonderend Sandstone Fynbos,FFs13
+North Swartberg Sandstone Fynbos,FFs23
+Northern Afrotemperate Forest,FOz2
+Northern Coastal Forest,FOz7
+Northern Drakensberg Highland Grassland,Gd5
+Northern Escarpment Afromontane Fynbos,Gm24
+Northern Escarpment Dolomite Grassland,Gm22
+Northern Escarpment Quartzite Sourveld,Gm23
+Northern Free State Shrubland,Gm7
+Northern Inland Shale Band Vegetation,FFb1
+Northern Knersvlakte Vygieveld,SKk1
+Northern KwaZulu-Natal Moist Grassland,Gs4
+Northern Lebombo Bushveld,SVl15
+Northern Mistbelt Forest,FOz4
+Northern Nababiepsberge Mountain Desert,Dg7
+Northern Richtersveld Scorpionstailveld,SKr7
+Northern Richtersveld Yellow Duneveld,SKs2
+Northern Upper Karoo,NKu3
+Northern Zululand Mistbelt Grassland,Gs1
+Northern Zululand Sourveld,SVl22
+Nossob Bushveld,SVkd4
+Nwambyia-Pumbe Sandy Bushveld,SVl2
+Ohrigstad Mountain Bushveld,SVcb26
+Olifants Sandstone Fynbos,FFs3
+Olifantshoek Plains Thornveld,SVk13
+Oograbies Plains Sandy Grassland,SKs6
+Oudtshoorn Karroid Thicket,AT46
+Overberg Dune Strandveld,FS7
+Overberg Sandstone Fynbos,FFs12
+Paulpietersburg Moist Grassland,Gm15
+Peninsula Granite Fynbos,FFg3
+Peninsula Sandstone Fynbos,FFs9
+Peninsula Shale Fynbos,FFh11
+Peninsula Shale Renosterveld,FRs10
+Phalaborwa-Timbavati Mopaneveld,SVmp7
+Piketberg Quartz Succulent Shrubland,SKk8
+Piketberg Sandstone Fynbos,FFs6
+Pilanesberg Mountain Bushveld,SVcb5
+Platbakkies Succulent Shrubland,SKn5
+Polokwane Plateau Bushveld,SVcb23
+Pondoland-Ugu Sandstone Coastal Sourveld,CB4
+Postmasburg Thornveld,SVk14
+Potberg Ferricrete Fynbos,FFf2
+Potberg Sandstone Fynbos,FFs17
+Poung Dolomite Mountain Bushveld,SVcb25
+Pretoriuskop Sour Bushveld,SVl10
+Prince Albert Succulent Karoo,SKv13
+Queenstown Thornveld,Gs16
+Rand Highveld Grassland,Gm11
+Richtersberg Mountain Desert,Dg2
+Richtersveld Coastal Duneveld,SKs1
+Richtersveld Red Duneveld,SKs5
+Richtersveld Sandy Coastal Scorpionstailveld,SKs4
+Richtersveld Sheet Wash Desert,Dg3
+Riethuis-Wallekraal Quartz Vygieveld,SKs10
+Robertson Granite Fynbos,FFg4
+Robertson Granite Renosterveld,FRg3
+Robertson Karoo,SKv7
+Roggeveld Karoo,SKt3
+Roggeveld Shale Renosterveld,FRs3
+Roodeberg Bushveld,SVcb18
+Rooiberg Quartz Vygieveld,SKr11
+Rosyntjieberg Succulent Shrubland,SKr8
+Ruens Silcrete Renosterveld,FRc2
+Saldanha Flats Strandveld,FS3
+Saldanha Granite Strandveld,FS2
+Saldanha Limestone Strandveld,FS4
+Saltaire Karroid Thicket,AT47
+Sand Forest,FOz8
+Sardinia Forest Thicket,AT48
+Scarp Forest,FOz5
+Schmidtsdrif Thornveld,SVk6
+Schweizer-Reneke Bushveld,SVk3
+Sekhukhune Montane Grassland,Gm19
+Sekhukhune Mountain Bushveld,SVcb28
+Sekhukhune Plains Bushveld,SVcb27
+Senqu Montane Shrubland,Gm2
+South Eastern Coastal Thornveld,SVs8
+South Hex Sandstone Fynbos,FFs8
+South Kammanassie Sandstone Fynbos,FFs26
+South Langeberg Sandstone Fynbos,FFs16
+South Outeniqua Sandstone Fynbos,FFs19
+South Rooiberg Sandstone Fynbos,FFs22
+South Sonderend Sandstone Fynbos,FFs14
+South Swartberg Sandstone Fynbos,FFs24
+Southeastern Strandveld,FS12
+Southern Afrotemperate Forest,FOz1
+Southern Cape Dune Fynbos,FFd11
+Southern Coastal Forest,FOz6
+Southern Drakensberg Highland Grassland,Gd4
+Southern Kalahari Mekgacha,AZi3
+Southern Karoo Riviere,AZi6
+Southern KwaZulu-Natal Moist Grassland,Gs11
+Southern Lebombo Bushveld,SVl16
+Southern Mistbelt Forest,FOz3
+Southern Nababiepsberge Mountain Desert,Dg8
+Southern Namaqualand Quartzite Klipkoppe Shrubland,SKn7
+Southern Richtersveld Inselberg Shrubland,SKr14
+Southern Richtersveld Scorpionstailveld,SKr13
+Southern Richtersveld Yellow Duneveld,SKs3
+Southwestern Strandveld,FS10
+Soutpansberg Mountain Bushveld,SVcb21
+Soutpansberg Summit Sourveld,Gm28
+Soweto Highveld Grassland,Gm8
+Springbokvlakte Thornveld,SVcb15
+St Francis Dune Thicket,AT57
+St Francis Strandveld,FS14
+Steenkampsberg Montane Grassland,Gm30
+Stella Bushveld,SVk2
+Steytlerville Karoo,SKv14
+Stinkfonteinberge Eastern Apron Shrubland,SKr6
+Stinkfonteinberge Quartzite Fynbos,FFq1
+Stormberg Plateau Grassland,Gd3
+Strydpoort Summit Sourveld,Gm27
+Subtropical Alluvial Vegetation,AZa7
+Subtropical Dune Thicket,AZs3
+Subtropical Seashore Vegetation,AZd4
+Sundays Arid Thicket,AT49
+Sundays Mesic Thicket,AT50
+Sundays Valley Thicket,AT51
+Suurberg Quartzite Fynbos,FFq6
+Suurberg Shale Fynbos,FFh10
+Swamp Forest,FOa2
+Swartberg Altimontane Sandstone Fynbos,FFs31
+Swartberg Shale Fynbos,FFh3
+Swartberg Shale Renosterveld,FRs15
+Swartland Alluvium Fynbos,FFa3
+Swartland Alluvium Renosterveld,FRa2
+Swartland Granite Renosterveld,FRg2
+Swartland Shale Renosterveld,FRs9
+Swartland Silcrete Renosterveld,FRc1
+Swartruggens Quartzite Fynbos,FFq2
+Swartruggens Quartzite Karoo,SKv2
+Swaziland Sour Bushveld,SVl14
+Swellendam Silcrete Fynbos,FFc1
+Tanqua Escarpment Shrubland,SKv4
+Tanqua Karoo,SKv5
+Tanqua Wash Riviere,AZi7
+Tarkastad Montane Shrubland,Gs17
+Tatasberg Mountain Succulent Shrubland,SKr9
+Tembe Sandy Bushveld,SVl18
+Thorndale Forest Thicket,AT52
+Thukela Thornveld,SVs2
+Thukela Valley Bushveld,SVs1
+Transkei Coastal Belt,CB5
+Tsakane Clay Grassland,Gm9
+Tsende Mopaneveld,SVmp5
+Tshokwane-Hlane Basalt Lowveld,SVl5
+Tsitsikamma Sandstone Fynbos,FFs20
+Tsomo Grassland,Gs15
+Tzaneen Sour Bushveld,SVl8
+uKhahlamba Basalt Grassland,Gd7
+Umdaus Mountains Succulent Shrubland,SKr16
+Umtiza Forest Thicket,AT53
+Uniondale Shale Renosterveld,FRs16
+Upper Annisvlakte Succulent Shrubland,SKr2
+Upper Gariep Alluvial Vegetation,AZa4
+Upper Karoo Hardeveld,NKu2
+Vaal Reefs Dolomite Sinkhole Woodland,Gh12
+Vaalbos Rocky Shrubland,SVk5
+Vaal-Vet Sandy Grassland,Gh10
+Vanrhynsdorp Gannabosveld,SKk5
+Vanrhynsdorp Shale Renosterveld,FRs1
+Vanstadens Forest Thicket,AT54
+VhaVenda Miombo,SVcb22
+Vredefort Dome Granite Grassland,Gh11
+Vryburg Thornveld,SVk17
+Vyftienmyl se Berge Succulent Shrubland,SKr5
+Wakkerstroom Montane Grassland,Gm14
+Waterberg Mountain Bushveld,SVcb17
+Waterberg-Magaliesberg Summit Sourveld,Gm29
+Western Altimontane Sandstone Fynbos,FFs30
+Western Bushmanland Klipveld,SKt1
+Western Coastal Shale Band Vegetation,FFb2
+Western Free State Clay Grassland,Gh9
+Western Gariep Hills Desert,Dn5
+Western Gariep Lowland Desert,Dn4
+Western Gariep Plains Desert,Dn3
+Western Gwarrieveld,AT55
+Western Highveld Sandy Grassland,Gh14
+Western Lesotho Basalt Shrubland,Gd9
+Western Little Karoo,SKv8
+Western Maputaland Clay Bushveld,SVl20
+Western Maputaland Sandy Bushveld,SVl19
+Western Ruens Shale Renosterveld,FRs11
+Western Sandy Bushveld,SVcb16
+Western Upper Karoo,NKu1
+Willowmore Gwarrieveld,AT58
+Winburg Grassy Shrubland,Gh7
+Winterhoek Sandstone Fynbos,FFs5
+Wolkberg Dolomite Grassland,Gm26
+Woodbush Granite Grassland,Gm25
+Xhariep Karroid Grassland,Gh3
+Zastron Moist Grassland,Gm1
+Zeerust Thornveld,SVcb3
+Zululand Coastal Thornveld,SVl24
+Zululand Lowveld,SVl23
+Tropical Estuarine Lake,TR1
+Subtropical Estuarine Bay,ST1s
+Subtropical Estuarine Lake,ST2s
+Subtropical Large Fluvially Dominated,ST3s
+Subtropical Large Temporarily Closed,ST4s
+Subtropical Micro-estuary,ST5s
+Subtropical Predominantly Open,ST6s
+Subtropical Small Temporarily Closed,ST7s
+Warm Temperate Estuarine Bay,WT1s
+Warm Temperate Estuarine Lake,WT2s
+Warm Temperate Large Fluvially Dominated,WT3s
+Warm Temperate Large Temporarily Closed,WT4s
+Warm Temperate Micro-estuary,WT5s
+Warm Temperate Predominantly Open,WT6s
+Warm Temperate Small Fluvially Dominated,WT7s
+Warm Temperate Small Temporarily Closed,WT8s
+Cool Temperate Arid Predominantly Closed,CT1s
+Cool Temperate Estuarine Lagoon,CT2
+Cool Temperate Estuarine Lake,CT3s
+Cool Temperate Large Fluvially Dominated,CT4
+Cool Temperate Large Temporarily Closed,CT5s
+Cool Temperate Micro-estuary,CT6s
+Cool Temperate Predominantly Open,CT7s
+Cool Temperate Small Fluvially Dominated,CT8s
+Cool Temperate Small Temporarily Closed,CT9s
+Agulhas Basin Abyss,SwI1
+Agulhas Basin Complex Abyss,SwI2
+Agulhas Blues,Ags3
+Agulhas Boulder Shore,SHa1
+Agulhas Coarse Sediment Shelf Edge,Ags4
+Agulhas Dissipative Intermediate Sandy Shore,SHa3
+Agulhas Dissipative Sandy Shore,SHa2
+Agulhas Exposed Rocky Shore,SHa4
+Agulhas Exposed Stromatolite Rocky Shore,SHa5
+Agulhas Inner Shelf Mosaic,Ags6
+Agulhas Inner Shelf Reef,Ags5
+Agulhas Intermediate Sandy Shore,SHa6
+Agulhas Island,SHi1
+Agulhas Kelp Forest,Kf1
+Agulhas Lower Canyon,SwI3
+Agulhas Mid Shelf Mosaic,Ags8
+Agulhas Mid Shelf Reef,Ags7
+Agulhas Mixed Shore,SHa7
+Agulhas Muddy Mid Shelf,Ags9
+Agulhas Muddy Outer Shelf,Ags10
+Agulhas Plateau,SwI4
+Agulhas Reflective Sandy Shore,SHa8
+Agulhas Rocky Outer Shelf,Ags14
+Agulhas Rocky Plateau,SwI5
+Agulhas Rocky Shelf Edge,Ags15
+Agulhas Sandy Inner Shelf,Ags16
+Agulhas Sandy Mid Shelf,Ags17
+Agulhas Sandy Outer Shelf,Ags18
+Agulhas Sheltered Rocky Shore,SHa9
+Agulhas Stromatolite Mixed Shore,SHa10
+Agulhas Upper Canyon,Ags19
+Agulhas Very Exposed Rocky Shore,SHa11
+Agulhas Very Exposed Stromatolite Rocky Shore,SHa12
+Aliwal Shoal Reef Complex,Ntl1
+Alphard Bank,Ags20
+Amathole Hard Shelf Edge,Ags21
+Amathole Lace Corals,Ntl2
+Browns Bank Rocky Shelf Edge,SoB11
+Cape Basin Abyss,SeA1
+Cape Basin Complex Abyss,SeA2
+Cape Bay,Cpe1
+Cape Boulder Shore,SHc1
+Cape Exposed Rocky Shore,SHc2
+Cape Island,SHi2
+Cape Kelp Forest,Kf2
+Cape Lower Canyon,SoB1
+Cape Mixed Shore,SHc3
+Cape Rocky Inner Shelf,Cpe2
+Cape Rocky Mid Shelf Mosaic,Cpe3
+Cape Sandy Inner Shelf,Cpe4
+Cape Sheltered Rocky Shore,SHc4
+Cape Upper Canyon,SoB2
+Cape Very Exposed Rocky Shore,SHc5
+Central Agulhas Outer Shelf Mosaic,Ags11
+Childs Bank Coral,SoB3
+Childs Bank Plateau,SoB4
+Delagoa Deep Shelf Edge,Dlg1
+Delagoa Lower Canyon,Dlg2
+Delagoa Mixed Shore,SHd1
+Delagoa Rocky Mid Shelf,Dlg3
+Delagoa Sandy Inner Shelf,Dlg4
+Delagoa Sandy Mid Shelf,Dlg5
+Delagoa Shelf Edge,Dlg6
+Delagoa Upper Canyon,Dlg7
+Delagoa Very Exposed Rocky Shore,SHd2
+Durnford Inner Shelf Reef Complex,NtB1
+Durnford Mid Shelf Reef Complex,NtB2
+Eastern Agulhas Bay,Ags1
+Eastern Agulhas Outer Shelf Mosaic,Ags12
+False and Walker Bay,Ags22
+Kei Fluvial Fan,Ags23
+Kei Reef Mosaic,Ntl3
+Kingklip Koppies,Ags24
+Kingklip Ridge,SwI7
+Kosi Coral Community,Dlg8
+KZN Bight Deep Shelf Edge,NtB3
+KZN Bight Mid Shelf Mosaic,NtB5
+KZN Bight Mid Shelf Reef Complex,NtB4
+KZN Bight Muddy Inner Shelf,NtB6
+KZN Bight Muddy Shelf Edge,NtB7
+KZN Bight Outer Shelf Mosaic,NtB8
+KZN Bight Sandy Inner Shelf,NtB9
+Leadsman Coral Community,Dlg9
+Namaqua Exposed Rocky Shore,SHn1
+Namaqua Kelp Forest,Kf3
+Namaqua Mid Shelf Fossils,Nmq1
+Namaqua Mixed Shore,SHn2
+Namaqua Muddy Mid Shelf Mosaic,Nmq2
+Namaqua Muddy Sands,SoB7
+Namaqua Sandy Inner Shelf,Nmq3
+Namaqua Sandy Mid Shelf,SHn5
+Namaqua Sheltered Rocky Shore,SHn3
+Namaqua Very Exposed Rocky Shore,SHn4
+Natal Boulder Shore,SHna1
+Natal Deep Shelf Edge,Ntl4
+Natal Delagoa Dissipative Intermediate Sandy Shore,SHnad2
+Natal Delagoa Dissipative Sandy Shore,SHnad1
+Natal Delagoa Intermediate Sandy Shore,SHnad3
+Natal Delagoa Reflective Sandy Shore,SHnad4
+Natal Exposed Rocky Shore,SHna2
+Natal Lower Canyon,Ntl7
+Natal Mixed Shore,SHna3
+Natal Upper Canyon,Ntl9
+Natal Very Exposed Rocky Shore,SHna4
+Orange Cone Inner Shelf Mud Reef Mosaic,Nmq5
+Orange Cone Muddy Mid Shelf,Nmq6
+Port St Johns Inner Shelf Mosaic,Ntl13
+Port St Johns Muddy Mid Shelf,Ntl14
+Port St Johns Muddy Shelf Edge,Ntl15
+Protea Mid Shelf Reef Complex,Ntl16
+Sodwana Coral Community,Dlg10
+Southeast Atlantic Lower Slope,SeA3
+Southeast Atlantic Mid Slope,SeA4
+Southeast Atlantic Seamount,SeA5
+Southeast Atlantic Slope Seamount,SeA6
+Southeast Atlantic Upper Slope,SeA7
+Southern Benguela Dissipative Intermediate Sandy Shore,SHsb2
+Southern Benguela Dissipative Sandy Shore,SHsb1
+Southern Benguela Intermediate Sandy Shore,SHsb3
+Southern Benguela Muddy Outer Shelf Mosaic,SoB6
+Southern Benguela Muddy Shelf Edge,SoB8
+Southern Benguela Outer Shelf Mosaic,SoB9
+Southern Benguela Reflective Sandy Shore,SHsb4
+Southern Benguela Rocky Shelf Edge,SoB10
+Southern Benguela Sandy Outer Shelf,SoB12
+Southern Benguela Sandy Shelf Edge,SoB13
+Southern Benguela Shelf Edge Mosaic,SoB5
+Southern KZN Inner Shelf Mosaic,Ntl5
+Southern KZN Mid Shelf Mosaic,Ntl6
+Southern KZN Shelf Edge Mosaic,Ntl8
+Southwest Indian Lower Slope,SwI10
+Southwest Indian Mid Slope,SwI11
+Southwest Indian Seamount,SwI12
+Southwest Indian Slope Seamount,SwI13
+Southwest Indian Upper Slope,SwI14
+St Helena Bay,Cpe5
+St Lucia Mid Shelf Mosaic,Dlg11
+St Lucia Sandy Inner Shelf,NtB10
+St Lucia Sandy Mid Shelf,NtB11
+Trafalgar Reef Complex,Ntl17
+Transkei Basin Abyss,SwI9
+uThukela Canyon,SwI15
+uThukela Mid Shelf Mosaic,NtB12
+uThukela Mid Shelf Mud Coarse Sediment Mosaic,NtB13
+uThukela Outer Shelf Muddy Reef Mosaic,NtB14
+Western Agulhas Bay,Ags2
+Western Agulhas Outer Shelf Mosaic,Ags13
+Wild Coast Inner Shelf Mosaic,Ntl10
+Wild Coast Mid Shelf Mosaic,Ntl11
+Wild Coast Shelf Edge Mosaic,Ntl12
+South Atlantic Productive Margin Water,Ab3
+Cold Southeast Atlantic Water,Ba1
+Variable Indo-Atlantic Water,Ba2
+Stable Southeast Atlantic Water,Bb1
+South Atlantic-Benguela Transitional Waters,Bb2
+Indian Ocean Frontal Water,Bc1
+Agulhas Retroflection and South Ocean Transitional Water,Bc2
+Warm Stable Indian Ocean Water,Ca1
+Stable Indian Ocean Water,Ca2
+Stable Agulhas Current Water,Cb1
+Variable Agulhas current core,Cb2
+Upwelled Agulhas Current Margin Water,Cb3
+Indian Ocean Frontal Margin Water,Cb4

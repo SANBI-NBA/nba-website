@@ -1,0 +1,210 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Priority Actions and Recommendations" # Compulsory
+subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Kerry #Add author's first name here. Abbreviate the middle name
+      family: Sink #Add author's surname here
+    orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi1 # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: marine_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+## Co-developed Actions to improve the state of marine ecosystems
+
+**(72 actions in ten categories)**
+
+------------------------------------------------------------------------
+
+::: {#box-1 .callout-note collapse="true"}
+## Enable participation in ocean assessment, planning and management
+
+Enable participation in ocean planning, assessment and management through robust and inclusive stakeholder processes, strengthened capacity for social process across institutions and innovations in industry and community partnerships.
+
+-   Establish a National Ocean People’s Forum through which government institutions can actively engage indigenous peoples, traditional leaders, traditional healers, small-scale fishers (including women and youth) and traditional knowledge holders on matters related to ocean planning and decision making.
+
+-   Ensure that at least 50% of South Africa’s marine protected areas have established and active local MPA Fora.
+
+-   Develop guidelines and pilot the inclusion of Indigenous Knowledge in South Africa’s National Biodiversity Assessment.
+
+-   Co-develop a national small-scale fisheries priority areas map to represent the spatial interests of this vulnerable sector in national planning and decision making processes.
+
+![TBA](imgs/PA_1.png){.lightbox}
+:::
+
+![TBA](imgs/workshop.png){.lightbox}
+
+::: {#box-2 .callout-note collapse="true"}
+## Take a whole of society and whole of government approach for effective ocean governance (improve co-ordination)
+
+Streamline, strengthen and co-ordinate institutional and sectoral arrangements, relationships and frameworks for integrated, efficient and effective ocean governance.
+
+-   Leverage momentum of the National Ocean People’s Forum (to be established) to strengthen stakeholder dialogue and participation in the development of MSP sector plans (including but not limited to sector plans for biodiversity, fisheries, heritage and tourism).
+
+-   Ensure all government institutions with ocean interests or impacts participate in WG7 (Ocean Governance) with clear institutional reporting modalities identified.
+
+![TBA](imgs/PA_2.png){.lightbox}
+:::
+
+::: {#box-3 .callout-note collapse="true"}
+## Avoid, reduce and manage industrial impacts
+
+Avoid, reduce and manage industrial impacts on marine biodiversity through effective Marine Spatial Planning, strengthened mitigation and restoration (including water quality and underwater noise), and strategic mainstreaming within key production sectors.
+
+-   Mainstream Critical Biodiversity Areas and Sea-Use guidelines within production sectors and ensure that these are included in screening tools used for Environmental Impact Assessments.
+
+-   Leverage resources and research capacity for improved understanding of the impacts of underwater noise and cumulative impacts on marine biodiversity so that these can be accounted for in biodiversity assessments, Marine Spatial Planning and mining authorizations.
+
+-   Pilot at least one innovative finance tool in South Africa which demonstrates how industrial sectors can fund marine conservation and restoration (e.g., marine biodiversity offsets, polluter pay).
+
+![TBA](imgs/PA_3.png){.lightbox}
+:::
+
+::: {#box-4 .callout-note collapse="true"}
+## Improve water quality and ensure enough fresh water reaches the sea.
+
+-   Lead department established to coordinate and ensure that flow requirements for fluvially dependent marine ecosystems and resources are determined and secured.
+
+-   Method for determining flow requirements is officially accepted and adopted as a standard protocol.
+
+-   Priority catchments are identified and communicated in next NBA.
+
+-   Marine flow requirements recognised in legislation and integrated into water resource management, coastal management and living resource management processes.
+
+![TBA](imgs/PA_4.png){.lightbox}
+:::
+
+::: {#box-5 .callout-note collapse="true"}
+## Manage fisheries better and more fairly to improve ocean health and food and livelihood security.
+
+![TBA](imgs/PA_5.png){.lightbox}
+:::
+
+::: {#box-6 .callout-note collapse="true"}
+## Improve social and natural science monitoring and research.
+
+Catalyse research and monitoring to address critical social and natural science knowledge gaps that limit the assessment of marine biodiversity, the identification of joint solutions and decision-making for a sustainable oceans economy.
+
+-   Identify and map noise sensitive species and ecosystems so that these can be better included in biodiversity assessment and spatial prioritisations.
+
+-   Secure dedicated capacity to advance redlist assessments of marine species.
+
+-   Groundtruth South Africa’s ecosystem condition map in at least two new ecosystem functional groups.
+
+-   Pilot at least one participatory and interdisciplinary fisheries monitoring initiative in South Africa (preferably for near shore resources).
+
+![TBA](imgs/PA_6.png){.lightbox}
+:::
+
+::: {#box-7 .callout-note collapse="true"}
+## Ensure South Africa has the skills and infrastructure to manage and deliver expanding data and knowledge products for informed ocean planning and decision-making.
+
+Invest in data science capacity and infrastructure to ensure effective data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean.
+
+-   Data managers, data scientists and spatial analysts are part of the staff complement of organizations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean.
+
+-   Researchers and key staff are trained in relevant data science tools, data standards and reproducible workflows.
+
+-   Organisational data infrastructure, IT policies and capacity are enabling for effective database storage, curation and data sharing.
+
+-   FAIR (Findable, Accessible, Interoperable, and Reusable) data principles and reproducible science workflows are prioritised.
+
+![TBA](imgs/PA_7.png){.lightbox}
+
+::: {#box-8 .callout-note collapse="true"}
+## Make existing Marine Protected Areas work through co-management, proper funding, and restorative action.
+
+![TBA](imgs/PA_8.png){.lightbox}
+:::
+
+::: {#box-9 .callout-note collapse="true"}
+## Assess and explain the benefits of biodiversity better to maintain and increase benefits.
+
+![TBA](imgs/PA_9.png){.lightbox}
+:::
+
+::::: {#box-10 .callout-note collapse="true"}
+## Reduce climate risks to people and nature.
+
+![TBA](imgs/PA_10.png){.lightbox}
+
+:::: >
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+-   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+
+-   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+
+-   **Marine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/SpatialDataset/Detail/7749)
+
+**Key publications**
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+::: {#refs}
+:::
+::::
+:::::

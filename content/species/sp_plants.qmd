@@ -1,0 +1,499 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Plants" # Compulsory
+subtitle: "" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  - name:
+      given: Hlengiwe
+      family: Mtshali
+    orcid: 0000-0003-0131-2498
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Domitilla C.
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi    
+  - name: 
+      given: Dewidine #Add author's first name here. Abbreviate the middle name
+      family: van Der Colff #Add author's surname here
+    orcid: 0000-0002-0906-7098 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi # Ref here must match the id of one of the affiliations listed 
+  - name:
+      given: Lize
+      family: von Staden
+    #orcid: 0000-0000-0000-0000
+    affiliations:
+      - ref: sanbi    
+  - name:
+      given: Nokukhanya N.
+      family: Nozipho
+    orcid: 0000-0002-6214-3475
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi    
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 1 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: species.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+::::::: columns
+::: {.column width="25%"}
+<center>
+
+| [17%]{.inline-style-threatened}
+| taxa assessed
+| [Threatened]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="25%"}
+<center>
+
+| [70%]{.inline-style-well-protected}
+| taxa assessed
+| [Well Protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="25%"}
+<center>
+
+| [14%]{.inline-style-not-protected}
+| taxa assessed
+| [Not protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="25%"}
+```{r}
+#| label: fig-0
+#| fig-cap: "*Ixia ebrahimii*"
+knitr::include_graphics("imgs/Ixia ebrahimii.jpeg")
+```
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## Red List status and trends {#summary}
+
+### 
+
+::::: columns
+::: {.column width="50%"}
+-   South Africa’s flora shows very high levels of species diversity and endemism: 13,642 of the 20,248 taxa (67%), with high concentration in the Fynbos biome.
+
+-   1 in 5 endemic taxa are threatened.
+
+-   Trends in species status over time were assessed using a representative sample of 900 plant taxa, revealing an increase in extinction risks. Plants threatened with extinction increased by 2% between 2017 and 2024.
+
+-   Plant taxa are experiencing a severe crisis, driven mainly by habitat loss and further intensified by invasive species, overexploitation/illegal harvesting and by the intensifying impacts of climate change.
+
+-   Protected area expansion has improved plant protection.
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-1
+#| fig-cap: "Concentration of threatened species"
+knitr::include_graphics("imgs/figure 46 - Copy 1.jpg")
+```
+:::
+:::::
+
+### Threat status, trends and pressures
+
+1.  ***Threat status***
+
+South Africa has assessed the threat status of 20,248 indigenous plant species using the IUCN Red List of Threatened Species categories and criteria, which reflect a species’ risk of extinction. The Red List includes several extinct categories, three threatened categories - Critically Endangered (CR), Endangered (EN), and Vulnerable (VU) - as well as categories for Near Threatened (NT), Data Deficient (DD), and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range- restricted endemic species with a global extent of occurrence of less than 500 km² that occur in areas with no significant anthropogenic pressures. Rare species are prioritized for national conservation interventions, even if they qualify as Least Concern under the IUCN system. 
+
+Among assessed taxa, 0.2% (36) are extinct or possibly extinct, and 15% (3,195) are threatened. The country also has high endemism, with 13,648 taxa (67%) found only in South Africa. 
+
+Given this exceptional diversity and high levels of threat, monitoring all species is not practical. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant taxa was used. Of the assessed sample taxa, 17% taxa are threatened with extinction (Figure 3 C).
+
+:::: panel-tabset
+## Figure
+
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+
+```{r}
+#| label: fig-2
+#| fig-cap: "Threat status of South African plant taxa, here represented by a representative sample of 900 plant species; categories follow the IUCN 3.1 Red List Categories and Criteria with an additional national category of Rare added for range-restricted, localised endemics that are not declining. The portion of species in each category is shown in the larger circle, and the proportion of endemic species per category is shown in the smaller circle. The total number of taxa that have been assessed is shown in the inner circle. A) shows the threat status for all taxa; (B) shows the status for South African endemics." 
+#| out-width: 100%
+#| out-height: "auto"
+
+library(dplyr)
+library(tidyr)
+library(nbaR)
+library(readxl)
+library(patchwork)
+library(ggplot2)
+library(grid)
+
+# ---- Dataset ----
+
+df <- read_excel("data/2025_Overall_status_summary.xlsx",
+                 sheet = "Summary")
+df2 <- read_excel("data/2025_Overall_status_summary.xlsx",
+                  sheet = "All_taxa_summary")
+
+
+# ---- Functions ----
+
+# Collapse rare categories into "Rare"
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
+                           "Rare", Status))
+}
+
+# Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
+  
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
+  
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
+}
+
+# Add total number to donut hole
+add_total <- function(plot, total, SCALE_TEXT = 1) {
+  plot + annotate("text",
+                  x = 2, y = 0,
+                  label = total,
+                  size = 3.5 * SCALE_TEXT,
+                  fontface = "bold")
+}
+
+# ---- Setup ----
+all_levels <- c("CR", "CR (PE)", "VU", "NT", "EN", "DD", "LC", "EW", "EX", "Rare")   # or names(NBA_colours)
+
+# ---- Plants sample ----
+df_plants     <- df  %>% filter(`Taxonomic grouping` == "Plants") %>% collapse_rare()
+df_plants_en  <- df  %>% filter(`Taxonomic grouping` == "Plants", Endemism == "Endemic") %>% collapse_rare()
+
+df_plants_wide    <- make_wide(df_plants,    "Overall", all_levels)
+df_plants_en_wide <- make_wide(df_plants_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_plants_wide, df_plants_en_wide)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+
+sample_overall <- dat1 %>% select(all_of(all_levels)) %>% rowSums()
+sample_endemic <- dat2 %>% select(all_of(all_levels)) %>% rowSums()
+
+# ---- All plants ----
+df2_plants    <- df2 %>% filter(`Taxonomic grouping` == "Plants") %>% collapse_rare()
+df2_plants_en <- df2 %>% filter(`Taxonomic grouping` == "Plants", Endemism == "Endemic") %>% collapse_rare()
+
+df2_plants_wide    <- make_wide(df2_plants,    "Overall", all_levels)
+df2_plants_en_wide <- make_wide(df2_plants_en, "Endemic", all_levels)
+
+df2_combined <- bind_rows(df2_plants_wide, df2_plants_en_wide)
+
+dat3 <- filter(df2_combined, Type == "Overall")
+dat4 <- filter(df2_combined, Type == "Endemic")
+
+total_overall <- dat3 %>% select(all_of(all_levels)) %>% rowSums()
+total_endemic <- dat4 %>% select(all_of(all_levels)) %>% rowSums()
+
+# ---- Plots ----
+plot1 <- nba_plot(dat1, biome, 3:(2 + length(all_levels)),
+                  CHRT = "donut", NUM = FALSE, LAB = "C. Overall sample") %>%
+  add_total(sample_overall)
+
+plot2 <- (nba_plot(dat2, biome, 3:(2 + length(all_levels)),
+           CHRT = "donut", NUM = FALSE, LAB = "D. Endemic sample") +
+    xlim(c(2, 4.5))) %>% add_total(sample_endemic)
+
+plot3 <- nba_plot(dat3, biome, 3:(2 + length(all_levels)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A. Overall") %>%
+  add_total(total_overall)
+
+plot4 <- (nba_plot(dat4, biome, 3:(2 + length(all_levels)),
+                  CHRT = "donut", NUM = FALSE, LAB = "B. Overall endemic") +
+  xlim(c(2, 4.5))) %>%
+  add_total(total_endemic)
+
+# ---- Combine with one legend ----
+combined_donut_plot <- (plot3 | plot4) / (plot1 | plot2) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom",
+        legend.justification = "center")
+
+combined_donut_plot
+
+
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-tab
+#| tbl-cap: "Status of all indigenous taxa assessed and the representative sample" 
+#| classes: plain
+
+library(gt)
+
+# First, select only the columns we want and rename Type → Taxon
+dat1_sel <- dat1 %>% select(1, 3:12) %>% rename(Taxon = Type)
+dat2_sel <- dat2 %>% select(1, 3:12) %>% rename(Taxon = Type)
+dat3_sel <- dat3 %>% select(1, 3:12) %>% rename(Taxon = Type)
+dat4_sel <- dat4 %>% select(1, 3:12) %>% rename(Taxon = Type)
+
+# Now assign custom row names (or first column values)
+dat1_sel$Taxon <- "Sample endemic plants*"
+dat2_sel$Taxon <- "Sample plants*"
+dat3_sel$Taxon <- "Overall plants"
+dat4_sel$Taxon <- "Overall endemic plants"
+
+# Combine into one table
+dat_combined_final <- bind_rows(dat3_sel, dat4_sel, dat1_sel, dat2_sel)
+
+dat_combined_final <- dat_combined_final %>%
+  rowwise() %>%
+  mutate(Total = sum(c_across(2:11), na.rm = TRUE)) %>%
+  ungroup() 
+
+gt(dat_combined_final) %>% nba_tbl_theme()
+
+```
+:::
+::::
+
+2.  ***Trends (RLI)***
+
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLIs). The RLIs is calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. The Red List Index of plants is calculated using a sample of 900 plant taxa.  
+
+An increase in extinction risk is evident for plant taxa occurring in the Desert and Succulent Karoo biomes (Figure 4). Rising threat levels for plants have largely been driven by climate change and habitat loss caused by mining and renewable energy developments. Most of the plants that have been uplisted due to increasing extinction risk are found in the Northern Cape. The province has been severely affected by drought over the past decade and continues to face pressure from mining and renewable energy developments. 
+
+```{r}
+#| label: fig-3
+#| fig-cap: "The Red List Index (RLI) for plant taxa assessed in South Africa. The  slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
+knitr::include_graphics("imgs/RLIbiomes 1.png")
+```
+
+```{r}
+#| label: fig-4
+#| fig-cap: "The distribution of plant species that have increased in threat status since NBA 2018. "
+knitr::include_graphics("imgs/Plant_heatmap.png")
+```
+
+::: {#box-2 .callout-note .species title="Box 1. Conservation interventions for medicinal plants reversing extinction risk trends (Warbrugia salutaris)" collapse="true"}
+
+A pioneering conservation model developed in the Kruger National Park and spread to other parts of South Africa, has successfully resulted in the highly popular medicinal plant the pepper bark tree being downlisted from Endangered to Vulnerable. The conservation intervention that supplies traditional healers with cultivated plants to grow in home gardens, has reduced pressure on wild populations while ensuring continued access to culturally important resources. The intervention has slowed and reversed the species’ decline, leading to a genuine improvement in its Red List status. Building on this success, the model is now being expanded to other medicinal plant species, offering a replicable blueprint for balancing cultural practices with biodiversity conservation. <https://redlist.sanbi.org/species.php?species=925-2>
+
+![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"} ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}
+:::
+
+3.  ***Pressures***
+
+Species in terrestrial ecosystems face pressures from habitat loss, invasive alien species, pollution, resource use, and climate change. Habitat loss is the single biggest cause of biodiversity decline, mainly from conversion of natural vegetation for croplands, mining, plantations, settlements, and infrastructure. Habitat fragmentation further affects ecological functioning and the viability of species, especially under climate change and biological invasions.
+
+The increasing extinction risk for plant taxa is a result of multiple pressures, with a shift in the most significant drivers. Previously, the primary threats were identified as competition from invasive plant species, crop cultivation, urban development, and livestock overgrazing However, recent analysis highlights a growing influence of climate change and habitat loss due to mining and renewable energy developments. This trend is particularly evident in the Northern Cape province, where most plants that have been uplisted due to increasing extinction risk. The province was severely impacted by drought over the past decade and continues to face pressure from mining and renewable energy developments.
+
+```{r}
+#| label: fig-5
+#| fig-cap: "Key pressures on South Africa’s plant taxa, based on a representative sample of 900 plant taxa. This bar chart shows the relative frequency of pressures affecting threatened plant species. Pressures are categorized using the IUCN Threat Classification Scheme and are ranked from most to least frequent. "
+#| out.width: 100%
+library(stringr)
+
+df <- read_excel("data/Combined_Threat_Summary.xlsx", 
+                 sheet = "Overall_Maj")
+
+df <- df %>%
+  filter(Taxon == "Plants*")
+
+df$pressure <- factor(df$pressure, levels = df$pressure[order(df$percentage, decreasing = TRUE)])
+
+p<- ggplot(df, aes(x = pressure, y = percentage, fill = pressure)) +
+  geom_col(width = 0.7) +
+  scale_fill_manual(values = nbaR::NBA_colours, 
+#labels = str_wrap(names(nbaR::NBA_colours), width = 12)
+) +
+  scale_y_continuous(
+    breaks = seq(0, 70, by = 10),        # major grid lines (every 10%)
+    minor_breaks = seq(0, 70, by = 5)    # minor grid lines (every 5%)
+  ) +
+  ylab("") +
+  theme_void() +
+  theme(
+    axis.title.y = element_text(margin = margin(r = 15)),
+    axis.text.y = element_text(),
+    axis.ticks.length.y = unit(0.2, "cm"),  # length of y-axis ticks
+    axis.ticks.y = element_line(color = "black", size = 0.8),  # draw y-axis ticks
+    legend.position = "bottom",
+    legend.direction = "horizontal",
+    legend.justification = "left",       
+    legend.box.just = "center",
+legend.title = element_blank()) +
+  guides(fill = guide_legend(ncol = 2)) 
+  
+
+p+theme(
+  legend.text = element_text(size = 10),                 
+  legend.key.size = unit(0.2, "cm"),                     
+  legend.spacing.x = unit(0.2, "cm"),                    
+  legend.spacing.y = unit(0.2, "cm"),                    
+  legend.box.spacing = unit(0.0, "cm")                   
+)
+```
+
+:::::: {#box-2 .callout-note .species title="Box 2. llegal trade in succulent plants" collapse="true"}
+
+::::: columns
+::: {.column width="100%"}
+Since 2019, a total of 878 South Africa succulent, caudiform and geophytic plant species have been illegally removed from the wild as part of a growing trade in ornamental plants facilitated through online trade platforms such as EBay, Facebook and Instagram. SANBI and the Department of Environment, Forestry and Fisheries are co-ordinating the implementation of the National Response Strategy and Action Plant to address the illegal trade in succulent plants
+
+![](imgs/Euphorbias%20received.jpg){fig-alt="box_2_fig_2" width="45%"} ![](imgs/fd44b009-60e2.jpg){fig-alt="box_2_fig_1" width="45%"}
+
+![](imgs/1000067813.jpg){fig-alt="box_2_fig_1" width="45%"} ![](imgs/20221203_074211.jpg){fig-alt="box_2_fig_1" width="45%"}
+:::
+
+::: {.column width="25%"}
+:::
+:::::
+::::::
+
+## Protection level
+
+### Main findings
+
+Plants were assessed using a representative sample of 900 taxa. Peripheral taxa with less than 5% of their distribution in South Africa were excluded from the analysis. Protection levels were calculated for this sample to track changes in extinction risk over time. The effectiveness of protected areas in mitigating threats to species within their boundaries has also revealed some interesting case studies.
+
+```{r}
+#| label: fig-6
+#| fig-cap: "Protection level for six South Africa’s indigenous terrestrial and freshwater taxonomic groups. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa); (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics.  *Due to the extremely high number of plant species occurring in South Africa, the protection level is calculated for a statistically representative sample of 900 plant taxa." 
+
+library(dplyr)
+library(tidyr)
+library(nbaR)
+library(readxl)
+library(patchwork)
+
+dat1 <- read_excel("data/NBA_example_pro_data.xlsx", 
+    sheet = "2025")
+dat2 <- read_excel("data/NBA_example_pro_data.xlsx", 
+    sheet = "2025_en")
+
+
+plot1 <- nba_plot(dat1,
+                  biome,
+                  2:5,
+                  CHRT = "donut",
+                  NUM = FALSE,
+                  LAB = "A. Overall",
+                  SAVE = NULL)  # return ggplot object
+
+plot2 <- nba_plot(dat2,
+                  biome,
+                  2:5,
+                  CHRT = "donut",
+                  NUM = FALSE,
+                  LAB = "B. Endemic",
+                  SAVE = NULL)  # return ggplot object
+
+# Combine and put shared legend at bottom center
+combined_plot <- plot1 + plot2 +
+  patchwork::plot_layout(guides = "collect") & 
+  ggplot2::theme(legend.position = "bottom",
+        legend.justification = "center")
+
+combined_plot
+
+
+```
+
+```{r}
+#| label: fig-7
+#| fig-cap: "*Daubenya namaquensis*, a rare and  restricted range species from Namaqualand experienced a genuine improvement in protection level status as a result of the declaration of new protected areas between 2018 and 2025. © Nick Helme"
+knitr::include_graphics("imgs/Daubenya_namaquensis.png")
+```
+
+Further analysis and main findings can be found on the [Assessment Summary Statistics page](assessment-summary-statistics.html)
+
+## Monitoring
+
+Add text
+
+## Species recovery
+
+Add text
+
+::: {#box-3 .callout-note .species title="Box 3. Recovery work on plants" collapse="true"}
+
+With over 3000 plants threatened with extinction, multiple interventions to address threatened species declines are required including the expansion of protected areas, the restoration of habitats that are being degraded by invasive species, and the inclusion of threatened plants in biodiversity sector plans. In addition, 293, critically endangered and endangered plants need active recovery projects to take place in order toensure that they do not go extinct in the next decade. Between 2020 and 2023 the South African National Biodiversity Institute has run a process to prioritise plants in urgent need of recovery using the IUCN Red List categories and criteria to select those in most urgent need of recovery. A species recovery working group with conservation agencies and indigenous plant growers has been established and each stakeholder has been allocated a handful of species to implement recovery work on. A major upscaling of resources to support species recovery is required as only 14 of the 293 species that require recovery have active recovery projects being implemented. If you would like to financially support the recovery of a critically endangered plant species from extinction please email. [i.Ebrahim\@sanbi.org.za](i.Ebrahim@sanbi.org.za)
+
+![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.jpg){fig-alt="box_3_fig_2" width="45%"}
+
+![](imgs/Recovery_work.jpeg)
+:::
+
+## Knowledge gaps
+
+Add text
+
+## References
+
+::: {#refs}
+[@SANBI]
+:::

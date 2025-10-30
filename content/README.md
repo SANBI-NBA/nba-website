@@ -14,6 +14,14 @@ A folder containing miscellaneous contextual pages for the website. Some are par
 
 **Source:** <https://github.com/SANBI-NBA/about_webpages>
 
+### key-messages
+
+Policy advice based on the findings of the NBA, summarised into 15 key messages
+
+**Maintainer:** Andrew Skowno
+
+**Source:** <https://github.com/SANBI-NBA/key-messages>
+
 ### integrated-findings
 
 A section summarising overall status and trends of South Africa's biodiversity, including the headline indicators for species and ecosystems.
@@ -38,9 +46,9 @@ Detailed findings for the freshwater realm.
 
 **Source:** <https://github.com/SANBI-NBA/freshwater>
 
-### estuarine
+### estuaries
 
-Detailed findings for the freshwater realm.
+Detailed findings for the estuarine realm.
 
 **Maintainer:** Lara van Niekerk
 
@@ -66,14 +74,32 @@ Detailed findings for the coast.
 
 Detailed findings for South Africa's Sub-Antarctic territory (Prince Edward Islands).
 
-**Maintainer:**
+**Maintainer:** Stephni van der Merwe, Andrew Skowno
 
-**Source:**
+**Source:** <https://github.com/SANBI-NBA/subantarctic>
 
 ### species
 
 Detailed findings for species.
 
-**Maintainer:**
+**Maintainer:** Shae-Lynn Hendricks
 
-**Source:**
+**Source:** <https://github.com/SANBI-NBA/species>
+
+### genetics
+
+Indicators for genetic diversity.
+
+**Maintainer:** Jessica da Silva
+
+**Source:** <https://github.com/SANBI-NBA/genetics>
+
+## Workflow for extracting website content from repositories
+
+1.  Clone each of the repos listed above - it is best to place them within a parent folder to enable recursive content extraction.
+
+2.  Make sure that the local folder name containing the repo matches the content folder listed here.
+
+3.  Run the script `collect-content.R` in the `scripts` folder to copy the contents of the `quarto` folder of each repo to here.
+
+4.  The folder `scripts/pulling-content-from-git` contains a bash script for pulling the latest version of each content repo. The workflow for content improvement is to list tasks in the issues of each of the source repos. When contributors have addressed the issues, a new version of their repo is pulled using `scripts/pulling-content-from-git/update_repos.sh` and then the updated content is collected back into `content` using `scripts/collect-content.R`.

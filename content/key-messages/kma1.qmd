@@ -1,0 +1,22 @@
+---
+title: "A1. Accelerated climate change has widespread impacts on biodiversity and people"
+subtitle: ""
+title-block-banner: "#FAA755"
+title-block-banner-color: white
+---
+
+\| Accelerated climate change has caused widespread adverse impacts on biodiversity and people, with increasing irreversible losses and disturbances (well established). Intact and well-managed biodiversity helps people to build resilience against the impacts of climate change. Integrated solutions involving biodiversity, society and climate action are key to adapting to climate change. \|
+
+------------------------------------------------------------------------
+
+Climate change has caused irreversible losses of species and range shifts, as well as changes in ecosystem structure and disturbance regimes in all realms. More than 200 South African species have experienced severe population declines and increased extinction risk due to climate change, such as the iconic halfmens (*Pachypodium namaquanum*) and Namaqua dune mole rat (*Bathyergus janetta*). In the South African ocean, climate-driven shifts in prey species’ ranges contribute to a decline in seabird numbers and the worst coral bleaching in history is currently underway. Estuarine fish species (e.g., spotted grunter, *Pomadasys commersonnii*) have extended their ranges by hundreds of kilometres, changing estuarine food webs. Climate change also amplifies other pressures on biodiversity such as biological invasions, habitat loss, pollution and changes to freshwater flow.
+
+::: {layout-ncol="2"}
+![Scaling up renewable energy is part of South Africa’s Just Energy Transition, and must be accomplished in a way that considers biodiversity. For example, this blade patterning experiment is ongoing at the Umoya wind farm in Hopefield, where painted blades show reduced bird fatalities (© Robert Simmons).](imgs/15.%20Pg24_KMA1%20Patterned%20and%20un-painted%20blades,%20Hopefield%20(c)%20Simmons.png)
+
+![Disruptive flooding is now a seasonal reality in several provinces due to climate change. In 2022, KwaZulu-Natal experienced extensive flood damage like the Umdloti beachfront in this image. The Palmiet area was less affected thanks to the Palmiet Rehabilitation Project. The project had recruited EnviroChamps from the community to clear alien vegetation along the river and monitor for blockages of sewers and stormwater drains in the two years prior to the 2022 floods. (© Ryan Daly) \[Attempting to get Palmiet photo instead\] {.underline}](imgs/16.%20Pg24_KMA1_KZN_Flood_4_IMG_8757_(c)%20Ryan%20Daly.png)
+:::
+
+Globally, climate thresholds have now been reached. The year 2024 was the first on record with a mean temperature more than 1.5°C above the 1850–1900 mean. South Africa will likely become drier in the west and have intensified rainfall events in the east, with the interior warming faster than the global terrestrial mean. Biomes will likely change (e.g., Fynbos and Succulent Karoo drier and Savanna more woody), and species extinction risk is likely to increase. Environmental cycles and ecosystem processes that humans depend on are changing. Rising sea levels cause coastal erosion and infrastructure damage; shifting fire regimes impact property and air quality; warmer temperatures threaten water quality through increased eutrophication; and extreme weather events like droughts, heavy rainfalls and strong winds undermine safety and livelihoods.
+
+Greenhouse gas reductions and biodiversity-friendly renewable energy remain important for mitigating climate change. Recognising the connection between climate, biodiversity and society helps to identify additional integrated solutions. Ecosystem-based adaptation is the use of biodiversity to help people adapt to and build resilience to the impacts of climate change. Ecological infrastructure, such as wetlands, rivers, estuaries, coastal dunes and kelp forests, helps to protect people and built infrastructure from the impacts of extreme weather events. Well-managed ecological infrastructure can support resilient agricultural production and maintain a steady supply of water. Programmes that maintain and restore ecological infrastructure and ensure connectivity across landscapes and seascapes are cost-effective ways to preserve nature’s adaptive capacity. Investment in inclusive climate action that reduces risk and prioritises equity and justice is essential.

@@ -1,40 +1,221 @@
 project:
   type: website
-  
+  render: 
+    - index.qmd
+    - contents.qmd
+    - "content/context/*.qmd"
+    - "content/key-messages/*.qmd"
+    - "content/integrated-findings/*.qmd"
+    - "content/terrestrial/*.qmd"
+    - "content/species/*.qmd"
+    - "content/marine/*.qmd"
+    - "content/freshwater/*.qmd"
+    - "content/estuaries/*.qmd"
+    - "content/subantarctic/*.qmd"
+    - "content/coast/*.qmd"
+    - "content/genetics/*.qmd"
+
+
 website:
   title: "National Biodiversity Assessment"
   description: "The status of South Africa's ecosystems and biodiversity"
   site-url: "https://nba.sanbi.org.za/"
   repo-url: "https://github.com/SANBI-NBA/nba-website"
   favicon: imgs/sanbi-icon.png
+  
   search:
-    location: sidebar
+    location: navbar
     type: textbox
-  page-navigation: true
-  back-to-top-navigation: true
+  
   navbar:
     logo: imgs/sanbi-logo-medium.png
     logo-href: "https://www.sanbi.org/"
     pinned: true
-    tools:
-      - icon: imgs/sanbi-icon.png
-        href: https://www.sanbi.org/
-      - icon: twitter
-        href: https://x.com/sanbi_za
-      - icon: facebook
-        href: https://www.facebook.com/SouthAfricanNationalBiodiversityInstitute/
-      - icon: linkedin
-        href: https://www.linkedin.com/in/sa-biodiversity-south-african-national-biodiversity-institute-9444b7140/
-      - icon: github
-        href: https://github.com/SANBI-NBA
-  sidebar:
-    title: "Contents"
-    style: "floating"
-    contents:
+    right: 
       - text: "Home"
         href: index.qmd
-    alignment: center
-    collapse-level: 1
+      - text: "Contents"
+        href: contents.qmd
+  
+  sidebar:
+    - id: id-contents
+      title: "Contents"
+      collapse-level: 1
+      contents:
+        - section: "Contents"
+          href: contents.qmd
+          contents:
+            - text: "About the NBA"
+              href: content/context/about-nba.qmd
+            - text: "Using the NBA"
+              href: content/context/uses-nba.qmd
+            - text: "South Africa's biodiversity profile"
+              href: content/context/biodivprof.qmd
+            - text: "The importance of biodiversity"
+              href: content/context/importance.qmd
+            - text: "Key messages"
+              href: content/key-messages/index.qmd
+            - section: "Integrated findings"
+              contents:  
+                - section: "Headline indicators"
+                  href: content/integrated-findings/intf_headline.qmd
+                  contents:
+                     - content/integrated-findings/intf_ecosystems.qmd
+                     - content/integrated-findings/chl_rle_explained.qmd
+                     - content/integrated-findings/chl_epl_explained.qmd
+                     - content/integrated-findings/intf-species.qmd
+                - text: "Pressures on biodiversity"
+                  href: content/integrated-findings/intf_pressures-condition.qmd
+            - section: "Findings by realm"
+              contents:
+                - section: "Terrestrial"
+                  href: content/terrestrial/ter_overview.qmd
+                  contents:
+                     - content/terrestrial/ter_ecosystems.qmd
+                     - content/terrestrial/ter_pressures-conditions.qmd
+                     - content/terrestrial/ter_ets.qmd
+                     - content/terrestrial/ter_epl.qmd
+                     - content/terrestrial/ter_ets_x_epl.qmd
+                     - content/species/ter_sp.qmd    
+                - section: "Freshwater"
+                  href: content/freshwater/fw_overview.qmd
+                  contents:
+                     - content/freshwater/fw_wet_type.qmd
+                     - content/freshwater/fw_riv_type.qmd
+                     - content/freshwater/fw_wet_condition.qmd
+                     - content/freshwater/fw_wet_pressures.qmd
+                     - content/freshwater/fw_riv_condition.qmd
+                     - content/freshwater/fw_wet_ets.qmd
+                     - content/freshwater/fw_riv_ets.qmd
+                     - content/freshwater/fw_wet_epl.qmd
+                     - content/freshwater/fw_riv_epl.qmd
+                     - content/species/fw_sp.qmd
+                - section: "Estuarine"
+                  href: content/estuaries/est_overview.qmd
+                  contents:
+                     - content/estuaries/est_ecosystem.qmd
+                     - content/estuaries/est_habitat.qmd
+                     - content/estuaries/est_pressure.qmd
+                     - content/estuaries/est_condition.qmd
+                     - content/estuaries/est_ets.qmd
+                     - content/estuaries/est_epl.qmd
+                     - content/estuaries/est_ets_epl.qmd
+                     - content/species/est_sp.qmd
+                - section: "Marine"
+                  href: content/marine/marine_overview.qmd
+                  contents:
+                     - content/marine/marine_ecosystems.qmd
+                     - content/marine/marine_pressures.qmd
+                     - content/marine/marine_condition.qmd
+                     - content/marine/marine_ets.qmd
+                     - content/marine/marine_epl.qmd
+                     - content/marine/marine_ets_epl.qmd
+                     - content/species/marine_sp.qmd
+                     - content/marine/marine_priority_actions.qmd
+                - section: "Coast"
+                  href: content/coast/cst_synthesis.qmd
+                  contents:
+                     - content/coast/cst_ecosystems.qmd
+                     - content/coast/cst_pressures-condition.qmd
+                     - content/coast/cst_ets.qmd
+                     - content/coast/cst_epl.qmd
+                     - content/coast/cst_ets-x-epl.qmd
+                     - content/coast/cst_species.qmd
+                     - content/coast/cst_priorities-actions.qmd
+                - text: "Sub-Antarctic"
+                  href: content/subantarctic/sub-all_sections.qmd
+            - section: "Species"
+              href: content/species/sp.qmd
+              contents:
+                - content/species/sp_plants.qmd
+                - content/species/sp_mammals.qmd
+                - content/species/sp_reptiles.qmd
+                - content/species/sp_birds.qmd
+                - content/species/sp_spiders.qmd
+                - content/species/sp_butterflies.qmd
+                - content/species/sp_amphibians.qmd
+                - content/species/sp_fwf.qmd
+                - content/species/sp_fwfcrabs.qmd
+                - content/species/sp_anostraca.qmd
+                - content/species/sp_dragons.qmd
+                - content/species/sp_sharks.qmd
+                - content/species/sp_sparids.qmd
+            - section: "Genetic diversity"
+              href: content/genetics/genetic-indicators.qmd
+              contents:
+                - content/genetics/chl-biobank.qmd
+                - content/genetics/chl-forensics.qmd
+            - section: "Priority actions, responses and interventions"
+              contents:
+                - content/integrated-findings/pakg_actions.qmd
+                - content/integrated-findings/pakg_gaps.qmd
+    - id: id-key-messages
+      collapse-level: 2
+      contents: 
+        - text: "Back to contents"
+          href: contents.qmd
+        - section: "Key messages"
+          href: content/key-messages/index.qmd
+          contents:
+            - content/key-messages/kma1.qmd
+            - content/key-messages/kma2.qmd
+            - content/key-messages/kma3.qmd
+            - content/key-messages/kma4.qmd
+            - content/key-messages/kma5.qmd
+            - content/key-messages/kma6.qmd
+            - content/key-messages/kma7.qmd
+            - content/key-messages/kmb1.qmd
+            - content/key-messages/kmb2.qmd
+            - content/key-messages/kmb3.qmd
+            - content/key-messages/kmb4.qmd
+            - content/key-messages/kmb5.qmd
+            - content/key-messages/kmc1.qmd
+            - content/key-messages/kmc2.qmd
+            - content/key-messages/kmc3.qmd
+
+
+  page-footer: 
+    left: |
+      <div style=" text-align: center; max-width: 260px; line-height: 1.2; font-size: 0.8rem; margin-left: 6em">
+        <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 900;">
+          <a href="/content/context/about-nba.qmd" style="color: inherit; text-decoration: none;">About the NBA</a>
+        </h4>
+        <p style="margin-top: 0; font-size = 1">
+          The National Biodiversity Assessment (NBA) is a collaborative effort 
+          to synthesise the best available science on the status of South Africa’s biodiversity. 
+        </p>
+      </div>
+
+    center: |
+      <div style="text-align: center; line-height: 1.6;">
+        <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Important links</h4>
+        <a href="/content/context/acknowledgementsnba2025.qmd">Acknowledgements</a><br>
+        <a href="/content/context/cite-nba.qmd">How to cite</a><br>
+        <a href="/content/context/whatsnew-nba.qmd">What's new</a><br>
+        <a href="/content/context/glossary.qmd">Terminology and glossary</a><br>
+        <a href="/content/context/disclaimerterms.qmd">Disclaimer</a>
+      </div>
+      
+    right: |
+      ```{=html}
+      <div style="text-align: center; line-height: 1.4;">
+        <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Contact</h4>
+        <p style="margin: 0.2em 0;">
+          Email the National Biodiversity Assessment Unit:<br>
+          <a href="mailto:nba@sanbi.org.za" style="color: inherit; text-decoration: none;">nba@sanbi.org.za</a>
+        </p>
+        <div style="margin-top: 0.5em; font-size: 0.85rem;">
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/by-nc.svg" alt="Creative Commons BY-NC 4.0 license" style="height: 31px; border: none;">
+          </a>
+          <a href="https://github.com/SANBI-NBA" target="_blank" rel="noopener noreferrer">
+            <img src="/imgs/github-mark.svg" alt="NBA on GitHub" style="height: 31px; border: none;">
+          </a>        
+        </div>
+        </p>
+      </div>
+      ```
+
 
 editor: visual
 
@@ -50,6 +231,7 @@ execute:
   echo: false 
   warning: false 
   message: false
+  freeze: auto
 
 format: 
   html:
@@ -101,4 +283,5 @@ format:
     toc-location: right
     toc-depth: 4
     toc-expand: true
+
 

@@ -1,0 +1,14 @@
+Condition score (0-100),PES category,Modification category
+>= 90,A,Natural
+>=75 & < 90,B,Near Natural
+>= 60 & < 75,C,Moderately Modified
+>=40 & < 60,D,Heavily Modified
+< 40,E/F,Severely/Critically Modified
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,

@@ -1,0 +1,329 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "Ecosystem Types" 
+subtitle: "Estuarine Realm" 
+
+title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Janine B. #Add author's first name here. Abbreviate the middle name
+      family: Adams #Add author's surname here
+    orcid: 0000-0001-7204-123X  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: NMU2 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nicola C. #Add author's first name here. Abbreviate the middle name
+      family: James #Add author's surname here
+    orcid: 0000-0002-9472-5314  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: SAIAB1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Stephen J. #Add author's first name here. Abbreviate the middle name
+      family: Lamberth #Add author's surname here
+    orcid: 0000-0002-4076-3622   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Fiona C. #Add author's first name here. Abbreviate the middle name
+      family: Mackay #Add author's surname here
+    orcid: 0000-0001-5255-1910   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: ORI1 # Ref here must match the id of one of the affiliations listed below
+      - ref: UKZN1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Jane K. #Add author's first name here. Abbreviate the middle name
+      family: Turpie #Add author's surname here
+    orcid: 0000-0003-1220-6295   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: Anchor1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Anusha #Add author's first name here. Abbreviate the middle name
+      family: Rajkaran #Add author's surname here
+    orcid: 0000-0001-7360-3660   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: UWC1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Steven P. #Add author's first name here. Abbreviate the middle name
+      family: Weerts #Add author's surname here
+    orcid: 0000-0002-9826-3209   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
+      - ref: CRUZ1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Alan K. #Add author's first name here. Abbreviate the middle name
+      family: Whitfield #Add author's surname here
+    orcid: 0000-0003-1452-7367  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: SAIAB1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+
+
+affiliations:
+  - id: CSIR1
+    number: 1
+    name: Council for Scientific and Industrial Research
+  - id: NMU1
+    number: 2
+    name: Institute for Coastal and Marine Research, Nelson Mandela University
+  - id: NMU2
+    number: 3
+    name: DST/NRF Research Chair in Shallow Water Ecosystems, Nelson Mandela University
+  - id: SAIAB1
+    number: 4
+    name: South African Institute for Aquatic Biodiversity
+  - id: DFFE1
+    number: 5
+    name: Department of Environment, Forestry and Fisheries
+  - id: ORI1
+    number: 6
+    name: Oceanographic Research Institute, SAAMBR
+  - id: UKZN1
+    number: 7
+    name: University of KwaZulu-Natal
+  - id: Anchor1
+    number: 8
+    name: Anchor Environmental Consultants
+  - id: UWC1
+    number: 9
+    name: University of the Western Cape
+  - id: CRUZ1
+    number: 10
+    name: University of Zululand
+   
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: est_references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+------------------------------------------------------------------------
+
+<!-- italics main/ key message -->
+
+<!-- picture -->
+
+## Summary
+
+Estuary ecosystem types can serve as surrogates for ecosystem processes and enable predictions of biophysical characteristics. Understanding ecological processes and patterns associated with an estuary type facilitates an assessment of its resilience to anthropogenic pressures. This allows for extrapolation in data-limited environments @fig-ecotypes.
+
+The estuarine classification scheme divided the biogeographical regions that characterise the South African coast into four major zones: the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi), with the latter being a new addition to the estuarine biogeographical provinces.
+
+All rivers or streams with outlets to the sea were categorised broadly as estuaries and micro-systems. South Africa's 290 estuaries are categorised into nine functional types, namely Estuarine lake, Estuarine bay, Estuarine lagoon (e.g. the groundwater-fed Langebaan system), Predominantly open, Large and Small temporarily closed, Large and Small fluvially dominated, and Arid predominantly closed. Micro-systems were further divided into micro-estuaries (42), micro-outlets, and coastal waterfalls based on spatial features and biotic observations in the field.
+
+```{r}
+#| label: fig-ecotypes
+#| fig-cap:  Estuarine ecosystem typology
+
+
+knitr::include_graphics("imgs/est_ecotypes_1.png")
+```
+
+## Biographical regions
+
+The traditional biogeographic organisation of South African estuaries has included only three dominant regions, viz. subtropical, warm-temperate and cool-temperate (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). However, the tropical distribution of some species recorded in the Kosi and uMgobezeleni estuaries in the north, prompted subdividing the subtropical region and include a tropical transition zone in the north-east of South Africa. Both of these systems, albeit differing in size and function, are unique clear water estuaries on a small section of South African coast.
+
+Kosi Estuary has uniquely tropical flora indicated by presence of the seagrass (*Halodule* *universis*) and mangrove species *Lumnitzera racemosa*, *Ceriops* *tagal* and *Xylocarpus* *granatum* that are found in no other South African systems (Van Niekerk et al 2020). Tropical species such as the Snake Sea Cucumber (*Synapta* *maculate*) and Pen Shell (*Pinna* *muricata*) (associated with *H. universis*) also point to a tropical influence on the system’s invertebrate fauna. The ichthyofaunal comprises a wide diversity of fishes, including tropical species not reported from any other South African estuaries (Blaber & Cyrus 1981). This is evidenced by the abundance and large sizes of several members of the Lutjanidae (snappers) in the system.
+
+To the south, St Lucia Estuary supports invertebrate communities common in subtropical estuaries (MacKay *et al*. 2010). The Tropical zone aligns with marine biogeographic patterns evident for marine biogeographic map that includes the Natal-Delagoa tropical region (Sink *et al*. 2019).
+
+Thus, the Estuarine Ecosystem Classification scheme defined the biogeographical regions as:
+
+-   Cool-temperate from Orange Estuary on the Northern Cape to Uilkraals Estuary in the Western Cape;
+
+-   Warm-temperate from the Ratel Estuary near Cape Agulhas to Mendwana Estuary in the Eastern Cape;
+
+-   Subtropical stretches from the Mbashe Estuary in the Eastern Cape to the St Lucia Estuary in KwaZulu-Natal; and
+
+-   Tropical from uMgobezeleni to Kosi Estuary in Northen KwaZulu-Natal.
+
+## What is an estuary?
+
+The NBA 2025 defines an estuary as ‘*a partially enclosed permanent water body, either continuously or periodically open to the sea on decadal time scales, extending as far as the upper limit of tidal action, salinity penetration or back-flooding under closed mouth conditions. During floods an estuary can become a river mouth with no seawater entering the formerly estuarine area or, when there is little or no fluvial input, an estuary can be isolated from the sea by a sandbar and become fresh or even hypersaline*’ (Van Niekerk et al. 2020). A defining feature of this definition is that complex estuarine abiotic processes distinguish estuaries from other aquatic ecosystem types i.e. restricted tidal action, mixing of fresh and salt water, increased retention and/or increased water levels under closed mouth conditions.
+
+## Estuary functional types
+
+South Africa's 290 estuaries are categorised into nine functional types, namely Estuarine lake, Estuarine bay, Estuarine lagoons (e.g. the groundwater-fed Langebaan system), Predominantly open, Large and Small temporarily closed, Large and Small fluvially dominated, and Arid predominantly closed @fig-estuary-types.
+
+```{r}
+#| label: fig-estuary-types
+#| fig-cap:  Examples of South African estuary types
+
+
+knitr::include_graphics("imgs/est_ecotype_map.png")
+```
+
+### Estuarine lakes
+
+Estuarine lakes comprise one or more typically large circular water bodies connected to the sea by a constricted inlet channel. Maximum water levels are determined by berm height, mouth state and freshwater input. Marine connectivity varies from almost permanently open to closed on annual scales. Salinities are highly variable, ranging from fresh to hypersaline because of differing freshwater input (surface and ground water), evaporation and the extent of the marine connection. Mixing processes are dominated by wind and, to a lesser extent fluvial inputs, owing to their restricted mouths and relatively large surface areas. Average tidal amplitudes are negligible (15 – 20 cm) when connected to the sea, primarily due to restricted mouth conditions. Sediment processes tend to be stable, with infilling occurring over long time scales and resetting confined to larger flood events.
+
+### Estuarine bays
+
+Estuarine bays are permanently linked to the sea by unrestricted, deep mouths and are dominated by tidal processes, with tidal amplitudes close to those of the sea. These are large systems (\>1200 ha) with generally round basins where only the upper reaches experience a degree of constriction to tidal flows. As a result of relatively low river inputs they have a predominantly euhaline salinity regime in the lower and mid reaches, with freshwater mixing processes being mostly confined to the restricted upper areas. Sediments are typically marine in origin and grain size distributions are stable. There are two natural occurrences of Estuarine bays in South Africa (viz. Knysna and Durban Bay.
+
+### Estuarine lagoons
+
+Langebaan Lagoon has many of the characteristics of an estuary (Whitfield 2005), including calm waters that are protected from marine wave action and biota that reflect many of the species usually found in estuaries. However, despite groundwater seeps into some areas, it lacks surface water inflow and a normal estuarine salinity gradient. Langebaan Lagoon represents a unique coastal ecosystem type and is recognised as an estuary because its ecological functioning includes both freshwater and marine inputs into a semi-enclosed embayment. Estuarine lagoons, as defined here, are permanently connected to the sea and are therefore marine dominated. Tidal action is the dominant mixing process and sedimentary processes are thus generally stable. Tidal amplitude and water levels are close to those of the sea.
+
+### Predominantly open estuaries
+
+These estuaries are open to the sea for more than 90% of the time. Some are permanently open owing to perennial river flows or the presence of large tidal prisms. Tidal amplitude ranges from 0.75-1.5 m. Predominantly Open estuaries are linear systems in which mixing processes are dominated by both fluvial inputs and tidal action creating vertical and horizontal salinity gradients. Under low flows, hypersalinity can develop in the upper reaches. The degree to which the mouth is restricted depends on the rate and volume of freshwater inflow. Some systems become severely constricted during low flow periods. Regular flooding results in relatively mobile sediments. These estuaries usually support wetlands, salt marshes, macrophyte beds and marine and estuarine fauna. Surprisingly, their size varies considerably ranging from 10 to 7500ha, with smaller systems afforded a degree of protection against direct wave action by rocky headlands or subtidal reefs, which assists in maintaining an open mouth.
+
+### Large and small temporarily closed estuaries
+
+The sizable temporarily open/closed category of Whitfield (1992) was divided into Small and Large temporarily closed estuaries using a total habitat area of 15ha (associated with \~10ha of open water area) as the dividing threshold. The division was based on differences in biophysical processes and patterns. Small systems are likely to experience rapid increases and decreases freshwater runoff over a few hours making them strongly event driven. There will be little scouring during breachings, and a semi-closed mouth condition can easily develop owing to a small, perched, outflow channel that restricts tidal amplitude to 10 to 15cm. There is minimal water column area during the open state. Habitat diversity is likely to be low (and without intertidal salt marshes) and species diversity and abundance reduced.
+
+Both large and small systems tend to be linear or funnel shaped with highly restricted inlets. Smaller systems especially tend to be ‘perched’ above normal tidal levels, resulting in little to no open water area during the open mouth low tide state. Water levels are dominated by the state of the mouth, with highest levels of 1 m to 2 m above mean sea level during the closed phase. Tidal ranges are very restricted, varying from 25-50 cm in Large temporarily closed estuaries to 15-30 cm in Small temporarily closed estuaries. Open phase mixing processes are dominated by fluvial input and partially by tides. When closed, wind and seepage losses through the berm play a key role. Sediment composition is largely stable, resetting mainly during floods. Salinity regimes range from almost fresh to hypersaline, which in large systems can develop during times of low flow or droughts. Small temporarily closed estuaries tend to be fresher in character as they have less connectivity with the sea.
+
+### Small and large fluvially dominated estuaries
+
+Small and Large fluvially dominated systems to distinguish between small (\<15 ha), black water dominated, rocky temperate southern coast estuaries, and large, shallow, sediment rich, freshwater dominated systems of the east and west coasts. The larger systems have very high sediment turnover, often develop ebb-tidal deltas, are turbid and can close during periods of low flow, e.g. uThukela and Orange estuaries. Small, sediment-starved, fluvially-dominated systems have unrestricted mouths as they usually occur along rocky shores and receive clear humic-stained water from Table Mountain Sandstone catchments. Large fluvially dominated estuaries tend to be constricted and can even periodically close during low flows. River processes are dominant and salinities are mostly fresh throughout the estuary for more than half the time. During peak flood conditions, outflows can influence salinities for considerable distances offshore.
+
+### Arid predominantly closed estuaries
+
+This type comprises six small estuaries (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord) and Wadrift) located in the arid Namaqua west coast region. They are linear or funnel shaped and closed on annual to decadal scales. Salinities tend to be high to hypersaline (\>35) as a result of low fluvial input and high evaporation rates. Thus, mixing processes tend to occur over long time periods and are dominated by the effects of evaporation, winds and seepage. Occasional breaching and over-washing during high sea conditions provide for marine connectivity. Sediment processes are generally stable on decadal time scales and are reset by large intermittent flash floods. Water levels are determined by the interplay between sand berm level, evaporation rates and seepage losses. Groundwater and inflows from local fountains replenish these losses and influence the salinity regimes of these estuaries.
+
+Arid conditions promote the growth of unique vegetation such as salt tolerant, succulent *Sarcocornia* spp. and *Salicornia* spp. thatcan flourish despite open water salinities reaching above 200. Fish relies on ‘suicidal’ recruitment that is largely a function of connectivity with the sea and overwash during high seas. Fish survival depends on groundwater maintaining salinity gradients and hypersalinity not exceeding 40 in parts of the systems. Invertebrate diversity, abundance and community structure are related to changing salinity gradients including long cycles of hypersalinity, e.g. Shrimp *Artemia* sp. that hatch at salinities above 40 and encyst when salinities exceed 150. Cycles of *Artemia* abundance follow salinity regimes that in turn affect the diversity, abundance and occurrence of flamingos and other birds that feed on them.
+
+## Estuarine ecosystem types in South Africa
+
+The Estuarine Ecosystem Classification system for South Africa’s 290 estuaries are derived from interplay between **biogeographical regions** and **estuary functional types,** stemming from the country’s diverse climatic, oceanographic and geological drivers.
+
+Estuarine lagoons are the rarest South African estuary type with only one member in the Cool Temperate region, followed by Estuarine bays with two in the Subtropical and one in the Warm Temperate region. Arid predominantly closed estuaries are confined to six systems in the Cool Temperate region. The Large and Small fluvially dominated types comprise seven systems each, occurring in three and two biogeographical regions, respectively. Small temporarily closed (116), Large temporarily closed (93), and Predominantly open (45) are the most dominant types occurring across the Cool Temperate, Warm Temperate and Subtropical biogeographical regions. Estuarine lakes occur across all four biogeographical zones. While not numerically dominant, this type represents the largest surface area of all estuary functional types, with Lake St Lucia representing more than half of South Africa’s estuarine surface area.
+
+::: {.panel-tabset appearance="minimal" collapse="false"}
+<!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
+
+## Estuarine ecosystem examples
+
+```{r}
+#| label: fig-eco_typology
+#| fig-cap: Estuarine ecosystem types in South Africa 
+
+
+knitr::include_graphics("imgs/est_ecotypes_1.png")
+
+```
+
+## Data
+
+```{r}
+library(gt)
+library(tidyverse)
+library(sf)
+
+#| out-width: 100%
+
+est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
+
+est_ecotypes %>%
+  gt() %>%
+  nbaR::nba_tbl_theme(HEADER = "Estuarine") %>% 
+  gt::tab_style(style = list(gt::cell_text(weight = "bold")),
+    locations = cells_body(
+      columns = Total
+    ))%>% 
+  gt::tab_style(style = list(gt::cell_text(color  = "white")),
+    locations = cells_column_labels() ) %>% 
+  gt::tab_style(style = list(gt::cell_text(weight = "bold")),
+    locations = cells_body(
+      rows  = 10
+    ))
+  
+```
+:::
+
+## Technical documentation
+
+<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
+
+<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
+
+<!--# Always use DOI to link to published papers - never use the journal's website -->
+
+### Code repositories
+
+### Data availability
+
+-   **Estuarine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/Projects/Detail/2246)
+
+### Key Publications
+
+-   Van Niekerk, L, Adams JB, James, N, Lamberth S, Mackay F, Rajkaran A, Turpie J, Weerts S, Whitfield AK. 2020. An Estuary Ecosystem Classification that encompasses biogeography and a high diversity of types in support of protection and management. *African Journal of Aquatic Science*, 45: 199-216. doi: <https://doi.org/10.2989/16085914.2019.1685934>
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR)
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+::: {#refs}
+:::

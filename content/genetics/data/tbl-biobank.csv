@@ -1,0 +1,15 @@
+﻿Taxon_category,Type_of_biomaterial,Institutions,No._biobanks,Estimated_no._accessions
+Mammals and Birds,"Wide range of tissues, preparations, DNA",SANParks; SANBI; DNSM,4,333500
+Reptiles,"Tissue, DNA extracts",SANBI ,1,16000
+Amphibians,"Tissue, DNA extracts",SANBI; SAIAB,2,850
+Fish,"Tissue, DNA extracts",SAIAB; SANParks,2,75000
+Invertebrates - terrestrial,Whole specimens,ARC,1,500
+Invertebrates - aquatic,"Tissue, DNA extracts",SAIAB ,1,350
+Indigenous plants,Seeds,SANBI/MSB; ARC,4,12620
+Indigenous plants,DNA extracts,SANBI/RBG-Kew,2,5400
+Fungi,"Cultures, DNA extracts",ARC; UP-CMW-IA; UFS-YCC ,3,46100
+Bacteria,Cultures,UWC-IMBM; ARC,3,6300
+Viruses (agriculturally relevant),"Serum, antiserum, plant virus positive samples",ARC-OVR; ARC,2,80000
+Livestock genebanks,Blood; reproductive tissues,ARC; DoA-GADI,3,1300000
+Crops,"Seeds, tissue cultures",ARC; DoA-NPGRC,5,50000
+Environmental samples,"Soil, sediments, water",ARC; SAIAB; SANBI; UWC-IMBM,4,80

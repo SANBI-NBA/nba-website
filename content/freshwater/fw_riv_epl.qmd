@@ -1,0 +1,778 @@
+---
+# indentations are critical in YAML headers, be careful when editing this section
+
+title: "River Ecosystem Protection Level" # Compulsory
+subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
+
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner-color: white # Header text colour: DO NOT CHANGE
+
+# List authors here in the order you want them displayed in the title block
+# See examples in README
+author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Nancy 
+      family: Job 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: sanbi
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Andrew  
+      family: Skowno 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: sanbi
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Jock  
+      family: Currie 
+    orcid: 0000-0000-0000-0000 
+    affiliations:
+      - ref: destea
+      # If an author has more than one affiliation, add more - ref: lines here
+      
+affiliations:
+# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
+# Write out institutional names in full
+# See README for common examples - they can be copied and pasted here
+# Make sure you maintain indentations exactly as they are here
+  - id: sanbi 
+    number: 1 
+    name: South African National Biodiversity Institute
+  - id: destea 
+    number: 2 
+    name: xx
+  - id: other 
+    number: 3 
+    name: South African National Biodiversity Institute
+
+# This date determines the PUBLISHED date in the title block
+date: last-modified
+
+# Remember to rename the default .bib file and change the name here
+bibliography: fw-references.bib
+
+# This section sets up the page citation format. DO NOT EDIT
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+# Do not edit or change any of the following entries
+appendix-cite-as: false
+google-scholar: true
+---
+
+**Less than x% of river extent is considered Well Protected, placing rivers among the least protected ecosystems in South Africa. A whole catchment approach is needed to bend the curve on river conservation, as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. Xx of rivers within Protected Areas that were assessed to be Poorly Protected due to their ecological condition may be prime targets for effective restoration.**
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [13%]{.inline-style-well-protected}
+| of 222 river ecosystem types
+| [Well Protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [61%]{.inline-style-not-protected}
+| of 222 river ecosystem types
+| [Not protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+:::: columns
+::: {.column width="50%"}
+:::
+::::
+
+Approximately #% of the country’s river length occurs in protected areas. Of the rivers within protected areas, only #% of these were assessed to be in a natural or near-natural condition. For this reason, only #% of river ecosystem types in South Africa are considered Moderately to Well Protected[^1] while #% are considered Not Protected[^2].
+
+[^1]: Well-protected ecosystem types are those where 100% of the target for an ecosystem type is included in one or more protected areas, and overall condition is xxx.
+
+[^2]: Under-protected ecosystem types are those categorised as Not Protected, Poorly Protected and Moderately Protected in the protection level assessment.
+
+```{r}
+#| label: fig-riv_epl_map
+#| fig-cap: Map showing the river Ecosystem Protection Level (EPL) and a donut plot summarising the number of river types in each EPL category. # checkNancy, check caption
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+# ## packages
+# library(tidyverse)
+# library(nbaR)
+# library(sf)
+# 
+# #river linewidth
+# rv_lwd = 0.1
+# 
+# # load data
+# dat <-  st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "riv_results_vector.gpkg",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   ## rename some variables for use below
+#   rename(protection_level = EPL,
+#          threat_status = RLE) %>% 
+#   ## transform the CRS to WGS84 for ease of plotting (and coordinate placement of the donut plot)
+#   st_transform(crs = 4326) %>% 
+#   ## rename the abbreviated levels
+#   # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# 
+# # have a look at the data
+# # dim(dat)
+# # names(dat)
+# 
+# ## borrowing from Tash's booklet maps code:
+# 
+# # load province boundaries
+# sa_boundary <- st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "SA_boundaries_v12.shp",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   st_transform(crs = 4326)
+# 
+# # province outlines with eez
+# provinces <- sa_boundary %>% 
+#   select(PROVINCE) %>% 
+#   # drop the marine areas and Lesotho and Eswatini
+#   filter(!PROVINCE %in% c("EEZ - Prince Edward Isla*", 
+#                           "Prince Edward Islands", 
+#                           "EEZ - mainland marine",
+#                           "Lesotho", 
+#                           "Eswatini"))
+# # plot(provinces)
+# 
+# # prep rivers data
+# rivers <- dat %>%
+#   select(RIVTYPE, protection_level) %>% # 
+#   group_by(RIVTYPE, protection_level) %>% # grouping by river type, which is not needed for the map but is for the donut plot
+#   summarise(geometry = st_union(geom)) %>%
+#   st_cast(to = "MULTILINESTRING") %>%
+#   mutate(protection_level = factor(protection_level, levels = c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected"))) # specify the sequence of protection categories so that they appear in that sequence in the legend
+# # filter(!is.na(protection_level)) # %>% 
+# # filter(!is.na(threat_status))
+# 
+# # wet <- wet %>%
+# #   select(type, extent, threat_status, protection_level) %>% 
+# # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" ))%>%
+# # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" ))%>%
+# # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" ))%>%
+# # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" ))%>%
+# # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" ))%>%
+# #   
+# # mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" ))%>%
+# # mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" ))%>%
+# # mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" ))%>%
+# # mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" )) %>% 
+# # filter(!is.na(protection_level)) %>% 
+# # filter(!is.na(threat_status))
+# 
+# ## map EPL
+# 
+# # plot; I'm not certain why Tash used a custom plot here instead of her package function, but it does allow for greater customisation and I assume that was needed.
+# pro_level <- ggplot() +
+#   geom_sf(data = rivers, aes(fill = protection_level, colour = protection_level), lwd = rv_lwd*2) +
+#   scale_fill_manual(values = nbaR::NBA_colours) +
+#   scale_colour_manual(values = nbaR::NBA_colours) +
+#   ggplot2::theme(legend.position = "inside",
+#                  legend.position.inside = c(0.05,0.9), # uses relative x,y plot coordinates
+#                  legend.text = element_text(size = 8),
+#                  # legend.spacing.y = unit(0.1, "cm"), # this didn't work to reduce space between legend items
+#                  legend.title=element_blank(),
+#                  plot.background = ggplot2::element_blank(),
+#                  panel.background = ggplot2::element_blank(),
+#                  panel.border = ggplot2::element_blank(),
+#                  axis.text = ggplot2::element_blank(),
+#                  axis.ticks = ggplot2::element_blank()) +
+#   # geom_sf(data = le_esw, colour = "white", fill = "white") + # make lesotho and eswatini white
+#   geom_sf(data = provinces, colour = "black", fill = NA, lwd = rv_lwd) +  
+#   theme(plot.margin=grid::unit(c(0,0,0,0), "pt"))  +  # remove white space around the plot
+#   scale_x_continuous(expand = expansion(add = c(0, 3.5))) + # Add  space for the donut plot
+#   guides(color = guide_legend(override.aes = list(linewidth = rv_lwd*3))) # increase the thickness of the legend symbol lines
+# # coord_sf(expand = FALSE)    # prevents padding around data
+# # pro_level
+# 
+# # ggsave(here::here("outputs/EPL_rivers_0.1.tiff"), height = height, width = width, units = 'cm',  bg = "white", dpi = 300, device = "tiff")
+# # ggsave(here::here("outputs/EPL_rivers.pdf"), height = height, width = width, units = 'cm',  bg = "white", dpi = 300)
+# 
+# # we need a custom donut plot (modified from the nbaR plot function) that has a transparent plotting background:
+# source(list.files(pattern = "^custom_nba_plot_donut.R$", full.names = TRUE, recursive = TRUE) )# paste0(here::here(), "/quarto/custom_nba_plot_donut.R"))
+# 
+# # donut plot
+# epl_donut <- rivers %>% 
+#   st_drop_geometry() %>%
+#   ungroup() %>%
+#   count(protection_level) %>% 
+#   tidyr::pivot_wider(names_from = protection_level, values_from = n) %>% 
+#   mutate(EPL = "EPL") %>% 
+#   select(EPL, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>% 
+#   nba_plot_donut(GROUPS = EPL, 
+#                  COLS = 2:5, 
+#                  # CHRT = "donut",
+#                  NUM = TRUE, 
+#                  LAB = "", 
+#                  GRP = FALSE) +
+#   theme(legend.position = "none")
+# #       panel.background = element_rect(fill = 'transparent'), # Transparent panel background; didn't work as the background and plotting area were already set to white in Tash's function and this doesn't overwrite it.
+# #       )
+# # epl_donut
+# 
+# # add the two plots together:
+# pro_level + 
+#   annotation_custom(ggplotGrob(epl_donut),
+#                     xmin=30, ymin=-35.5, xmax=36.5, ymax=-28.5)
+
+knitr::include_graphics("imgs/{F2F1974B-14FC-410A-BAFE-1C327C20C621}.png") # ("imgs/riv_epl_map.png")
+
+```
+
+<!-- ![](images/%7BF2F1974B-14FC-410A-BAFE-1C327C20C621%7D.png) -->
+
+<!-- Figure 1. Ecosystem Protection Level (EPL) of river ecosystem types. -->
+
+<!-- jock plse help with figure 1 and inset donut graph by number of types. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\riv_results_vector.gpkg"-->
+
+The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally less threatened than other regions of the country. Protection levels are particularly low in the northern interior of the country, reflecting the spatial distribution of the current protected areas network.
+
+```{r}
+#| label: tbl-epl
+#| tbl-cap: "Ecosystem protection level of river ecosystem types."
+
+# library(here)
+library(stringr)
+library(reactable)
+library(dplyr)
+
+# # load data
+# dat <-  st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "riv_results_vector.gpkg",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   ## rename some variables for use below
+#   rename(protection_level = EPL,
+#          threat_status = RLE) %>% 
+#   ## rename the abbreviated levels
+#   # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# 
+# # have a look at the data
+# # dim(dat)
+# # names(dat)
+# 
+# ## borrowing from Tash's booklet maps code:
+# 
+# # prep rivers data
+# rivers <- dat %>%
+#   st_drop_geometry() %>% 
+#   select(RIVTYPE, protection_level) %>% # 
+#   group_by(RIVTYPE, protection_level) %>% # grouping by river type, which is not needed for the map but is for the donut plot
+#   mutate(protection_level = factor(protection_level, levels = c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected"))) %>% # specify the sequence of protection categories so that they appear in that sequence in the legend
+#   distinct() %>% 
+#   # count(protection_level) %>% 
+#   # tidyr::pivot_wider(names_from = protection_level, values_from = n) %>% 
+#   # mutate(EPL = "EPL") %>% 
+#   # select(EPL, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) 
+#   rename('River type' = RIVTYPE,
+#          'Protection level' = protection_level) # %>%
+# 
+# # create table object
+# reactable(
+#   rivers,
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#4097C2", color = "white",  fontWeight = "bold")
+#   ))
+
+## temporarily putting in wetland table:
+# load data
+epl <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, EPL24) %>% # , RLE24, extent, RLE_EPL24) #
+  mutate(EPL24 = str_replace_all(EPL24, "WP","Well Protected"),
+         EPL24 = str_replace_all(EPL24, "MP","Moderately Protected"),
+         EPL24 = str_replace_all(EPL24, "PP","Poorly Protected"),
+         EPL24 = str_replace_all(EPL24, "NP","Not Protected" )) %>% 
+  rename("Wetland type" = type,
+         Zone = zone,
+         "Ecosystem Protection Level" = EPL24)
+
+# create the table
+reactable(
+  epl,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 600,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
+
+
+
+```
+
+<!-- Jock please help with scrollable table 1 - list of all river ecosystem types and their EPL from geopackage - "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\riv_results_vector.gpkg" Also see "https://github.com/askowno/EPL_riv" -->
+
+<!-- Caption for Table 1. Ecosystem protection level of river ecosystem types. WP = Well Protected; MP = Moderately Protected; PP = Poorly Protected; NP = Not Protected.  -->
+
+In terms of river geomorphological zone, only 16% of the river ecosystem types within the lower foothill and mountain stream zones are Well Protected. More than half of lowland river ecosystem types are Not Protected (61%), reflecting the bias of the protected area network towards mountain versus lowland areas. It is evident that formal protection does not guarantee biodiversity conservation as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. A whole catchment and OECM approach, including conservation corridors, to river conservation is therefore required since most land-based protected areas were not designed to protect rivers.
+
+<!-- Apologies Jock - I think below should revert back to the side by side graphs of number of ecosystem types and percentage of ecosystem types. See screenshot below. It will be Figure 2 -->
+
+<!-- ![](images/%7B9BA3C185-DAF7-4E63-B6CE-2EC4103A1B94%7D.png) -->
+
+:::: panel-tabset
+## Figure
+
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+
+```{r}
+#| label: fig-river_epl_bargraph
+#| fig-cap: "Figure 2. River ecosystem protection level within each geomorphological zone (i.e. slope category); (a) the percentage of ecosystem types per category (labelled with the number per type) with the total for all rivers at the bottom; (b) the percentage of river length (km) within each category with the total length for all rivers at the bottom – providing an indication of the relative extent of each category." 
+
+# library(tidyverse)
+# # library(tidyr)
+# library(nbaR)
+# library(sf)
+# 
+# # load data
+# dat <-  st_read(
+#   dir(Sys.getenv("NBA_DATA"), # use the data directory specified in .Renviron, which should point to the shared NBA OneDrive
+#       "riv_results_vector.gpkg",
+#       full.names = T,
+#       recursive = T)[1],
+#   quiet = TRUE) %>% 
+#   ## rename some variables for use below
+#   rename(protection_level = EPL) %>% 
+#   select(RIVTYPE, zone, protection_level, leng) %>%
+#   group_by(RIVTYPE, zone, protection_level) %>% # group by and sum the lengths and counts by river type
+#   summarise(# count = n(),
+#             leng = sum(leng)) %>% 
+#   ## rename the abbreviated levels
+#   # mutate(threat_status = str_replace_all(threat_status, "CR","Critically Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "EN","Endangered" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "VU","Vulnerable" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "NT","Near Threatened" )) %>%
+#   # mutate(threat_status = str_replace_all(threat_status, "LC","Least Concern" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "WP","Well Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "MP","Moderately Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "PP","Poorly Protected" )) %>%
+#   mutate(protection_level = str_replace_all(protection_level, "NP","Not Protected" ))
+# 
+# # have a look at the data
+# # dim(dat)
+# # names(dat)
+# 
+# # prep the data
+# ecosystem_summary <- dat %>%
+#      st_drop_geometry() %>%
+#       group_by(zone, protection_level) %>%
+#       summarise(count = n(),
+#                 leng = sum(leng))
+# 
+# count <- ecosystem_summary %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = protection_level,
+#     values_from = count) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # count
+# 
+# ## add a totals row:
+# count <- count %>%
+#   bind_rows(
+#     count %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total count") %>%
+#       select(zone, everything())
+#   )
+# # count
+# 
+# # extent (length)
+# # checkNancy: is the length in m? (and if so, should be converted to km?)
+# extent <- ecosystem_summary %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = protection_level,
+#     values_from = leng) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # extent
+# 
+# # add a totals row:
+# extent <- extent %>%
+#   bind_rows(
+#     extent %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total extent") %>%
+#       select(zone, everything())
+#   )
+# # extent
+# 
+# #
+# # ets <- count %>% 
+# #   mutate(metric = "count") %>% 
+# #   bind_rows(extent %>% mutate(metric = "extent"))
+# 
+# epl_combined <- count %>%
+#   mutate(metric = "count") %>%
+#   bind_rows(extent %>%
+#               mutate(metric = "extent")) %>% # calling it extent though it is river length; checkNancy; otherwise this and the next 'extent' should be replaced with 'length'
+#   mutate(zone = factor(zone, levels = c("Mountain stream", "Upper foothill", "Lower foothill", "Lowland river", "Total count", "Total extent"))) %>% 
+#   arrange(desc(zone))
+# # epl_combined
+# 
+# #Combine RLE plot
+# epl_combined_plot <- nba_plot_comb(epl_combined,
+#                                    zone,
+#                                    METRIC_COL = metric,
+#                                    METRICS = c("count", "extent"),
+#                                    2:5,
+#                                    CHRT = "bar",
+#                                    NUM = FALSE,
+#                                    LAB = "Percentage of ecosystem",
+#                                    SAVE = NULL) 
+# 
+# epl_combined_plot
+# 
+# ## previously from summarised table:
+# # 
+# # data_file_path <- Sys.getenv("NBA_DATA")
+# # dta <- read.csv(file = list.files(path = data_file_path,
+# #                            pattern = "^riv_epl24_sum_count.csv$",
+# #                            recursive = TRUE,
+# #                            full.names = TRUE),
+# #                  stringsAsFactors = F)
+# # 
+# # 
+# # ecosystem_summary <- dta %>% 
+# #   as_tibble() %>% 
+# #   select(-X, -EPLI) %>% 
+# #   ## because the protection level categories are as acronyms at the moment and the function only recognises them as written out in full, we need to rename them:
+# #   rename('Well Protected' = WP,
+# #          'Moderately Protected' = MP,
+# #          'Poorly Protected' = PP,
+# #          'Not Protected' = NP)  
+# #   
+# # 
+# # nba_plot(ecosystem_summary,
+# #          zone,
+# #          2:5,
+# #          CHRT = "bar",
+# #          NUM = TRUE, # change to FALSE if you don't want the numbers plotted on the bars
+# #          LAB = "Percentage of ecosystem types",
+# #          SAVE = NULL)
+# 
+
+# temporarily putting in wetland graph here:
+
+library(tidyverse)
+library(stringr)
+library(nbaR)
+
+# load and prep the data
+epl <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
+                stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, EPL24, extent) %>% # , RLE24, extent, RLE_EPL24) #
+  mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
+         EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
+  group_by(zone, EPL24) %>%
+  summarise(count = n(),
+            extent = sum(extent))
+  # rename("Wetland type" = type,
+  #        Zone = zone,
+  #        "Ecosystem Protection Level" = EPL24)
+
+# count table
+count <- epl %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = EPL24,
+    values_from = count) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  ungroup()
+# count
+
+## add a totals row:
+count <- count %>%
+  bind_rows(
+    count %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total count") %>%
+      select(zone, everything())
+  )
+# count
+
+# extent table
+extent <- epl %>%
+  pivot_wider(
+    id_cols = zone,
+    names_from = EPL24,
+    values_from = extent) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+  rowwise() %>% 
+  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  ungroup()
+# extent
+
+# add a totals row:
+extent <- extent %>%
+  bind_rows(
+    extent %>%
+      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+      mutate(zone = "Total extent") %>%
+      select(zone, everything())
+  )
+# extent
+
+# combine count and extent in a single table
+epl_combined <- count %>%
+  mutate(metric = "count") %>%
+  bind_rows(extent %>%
+              mutate(metric = "extent")) %>%
+  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
+# epl_combined
+    
+## save the data to downloadable csv for the link, before arranging by zone for the plot
+write.csv(epl_combined, file = "outputs/wetlands_EPL.csv", row.names = FALSE)
+
+# create EPL plot
+epl_combined_plot <- epl_combined %>% 
+    arrange(desc(zone)) %>% 
+    nba_plot_comb(
+      zone,
+                                   METRIC_COL = metric,
+                                   METRICS = c("count", "extent"),
+                                   2:5,
+                                   CHRT = "bar",
+                                   NUM = FALSE,
+                                   LAB = "Percentage of ecosystem",
+                                   SAVE = NULL) 
+
+epl_combined_plot
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label:  tbl-river_epl
+#| tbl-cap: "Table of protection level data. The extent metric represents the length (m) of river types." 
+#| classes: plain
+
+library(dplyr)
+library(nbaR)
+library(gt)
+
+## create the table
+# as we prepared the data above for the combined plot, simply provide those? checkNancy
+tbl_dat <- epl_combined %>% 
+  arrange(metric,zone) %>% 
+  rename(Zone = zone,
+         Metric = metric)
+
+gt(tbl_dat) %>% nba_tbl_theme()
+
+# # previously:
+# # ecosystem_summary above is prepared in a suitable format, simply assign it to tbl_dat (but rename Zone to upper case)
+# tbl_dat <- ecosystem_summary %>% 
+#   rename(Zone = zone)
+#   # dat %>% 
+#   # select(-X, -EPLI) # %>% 
+#   # rename(newname = oldname) %>% 
+#   # arrange(biome, ecosystem) %>% 
+# 
+# ## comment the following if you would not like to move the total row to the bottom of the table
+# ecosystem_summary <- ecosystem_summary %>% 
+#   filter(zone != "Total") %>% 
+#   bind_rows(ecosystem_summary %>% filter(zone == "Total"))
+#   
+# ## rename above or can rename column names like this
+# # colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
+# 
+# gt(ecosystem_summary) %>% nba_tbl_theme()
+
+```
+:::
+
+Download the data [here](outputs/wetlands_EPL.csv).
+::::
+
+<!-- ![](images/clipboard-2393070426.png) -->
+
+<!-- Figure caption. River ecosystem protection level within each geomorphological zone (i.e. slope category); (a) the percentage of ecosystem types per category (labelled with actual value) with the total for all rivers at the bottom; (b) the percentage of river length (km) within each category with the total length for all rivers at the bottom – providing an indication of the relative extent of each category. -->
+
+<!-- ![](images/clipboard-4294154395.png) -->
+
+\[photo\]
+
+It is encouraging that the extent of river length within the Protected Area network has increased by 10% / xx km \[check\] since the previous NBA analysis and that there is increased attention to rehabilitation of freshwater ecosystems within National Parks \[cite\] and Provincial Nature Reserves \[cite\]. While mountain streams have always enjoyed a stronger coverage than other river zones, it is \[positive\] to see an improved protected extent of lowland rivers as we strive to ensure that a well represented range of river types and geomorphological zones are conserved.
+
+Rivers along PA boundaries are not considered well-protected.
+
+<!-- Note to self In future we hope to report on the network of OECMs and their contribution to river conservation. In the interim, please see the text on Provincial Nature Reserves below\]. -->
+
+<!-- figure tab and table tab - rivers EPLI per geomorph zone, is it too busy to do per ecosystem type\] -->
+
+<!-- consider discussing highly threatened and least protected here, to guide where to focus protection going forward. also discuss rehabilitation as a means to improve protection level and further shift the EPLI\] -->
+
+::: {#box-1 .callout-note collapse="true"}
+## **Box 1. Primary Catchments and River Ecosystem Protection Level**
+
+Acknowledgements
+
+Text
+
+***Heading 3*** given their location at the interface between the terrestrial and aquatic environments, especially in South Africa, with its generally poor performance of wastewater treatment works and declining state of catchment water quality (Rivers-Moore 2016; Edokpayi et al. 2018; Cullis et al. 2019; Sindane and Modley 2023).
+
+### *Protection Level of South Africa's major rivers*
+
+**References**
+
+Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
+:::
+
+::: {.callout-note collapse="true"}
+## **Box 2. River Ecosystem Protection Level across the Provinces**
+
+Acknowledgements
+
+Text
+
+***Heading 3*** xxxx.
+
+**References**
+
+Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
+:::
+
+::: {.callout-note collapse="true"}
+## **Box 3. River Ecosystem Protection Level across National Parks**
+
+Acknowledgements
+
+Text
+
+***Heading 3*** xxxx.
+
+**References**
+
+Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
+:::
+
+## Methods
+
+\[Link to EPL_explained.qmd\] Ecosystem Protection Level measures how well represented South Africa's river ecosystem types[^3] are within the Protected Areas[^4] network.
+
+[^3]: River ecosystem types \[link to page\] are xxx.
+
+[^4]: Protected Areas include xxx
+
+**We measured whether 30% of every river ecosystem type falls within a Protected Area. This is the current "target" we have set for our river ecosystems. This target is met if 100% of a river ecosystem type target (i.e the entire 30%) falls within the Protected Area network.** The extent of each ecosystem type within the Protected Areas network is expressed as a proportion (target) of the total extent of that type. For the previous National Biodiversity Assessment (2018), the Ecosystem Protection Level target was set at 20% for freshwater ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework, the Ecosystem Protection Level target has been increased to 30% in the EPL calculations.
+
+**Importantly, the current condition of the river is also taken into consideration in the calculation.** Ecosystem condition data \[for each time point\], was derived from the WRC-DWS Present Ecological State xxxx project. This allowed that only good condition river reaches were able to be considered as representative of Well Protected status; \[while for MP PP and NP the condition of the rivers is used to calculate their contribution to meeting targets - higher integrity / condition rivers contribute more to meeting PA targets than low integrity / condition rivers.\]
+
+There are four classes of protection and they are calculated as follows: **Well** **Protected**: 100% of a river ecosystem type's target falls within the Protected Area network; but only rivers in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of a river ecosystem type's target falls within the Protected Area network; and rivers in an A and B condition contribute 100%, rivers in a C and D condition contribute 30%, while E and F condition rivers contribute only 10%; **Poorly Protected**: 5% to 49% of a river ecosystem type's target falls within the Protected Area network; and A&B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%; **Not Protected**: less than 5% of a river ecosystem type's target falls within the Protected Area network; and A and B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%.
+
+## Acknowledgements
+
+Michael Silberbauer, WRC and DWS project team and specialists, SANParks assessment
+
+## Technical documentation
+
+### Github repositories
+
+Skowno. 2025. Methodology and R code.
+
+[github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+
+### Data availability
+
+The following datasets and their associated metadata are available for download from the indicated data repository:
+
+[BGIS](https://bgis.sanbi.org/) Map of Ecosystem Protection Level of South Africa’s river ecosystem types
+
+[OPUS](https://opus.sanbi.org/home)
+
+### Related \[supporting\] publications and information
+
+In addition to this webpage, supporting documentation is available in the form of technical reports and journal articles. Please use the recommended citation that is found on each webpage when you cite a particular result or data from the webpage. The following documents are available for further information:
+
+**Journal articles**:
+
+River EPL. In prep
+
+Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao,L., Job, N., Khatieb, S., Monyeki, M. *Indicators for tracking progress in effective,representative ecosystem protection.* Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.
+
+**Technical reports**:
+
+South African National Biodiversity Institute (SANBI). 2025. *National Biodiversity Assessment 2025: The* *status of South Africa’s biodiversity. Summary of Findings and Key Messages*. Skowno, A.L., Poole, C.J., Besseling, N., Currie, J., da Silva, J.M., Dayaram, A., Job, N., Harris, L.R., Monyeki, M., Mtshali, H., Raimondo, D.C., Sink, K.J., van der Bank, M.G., van der Colff, D., van Niekerk, L., von Staden, L. (eds) South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. Handle:  
+
+Mapping Biodiversity Priorities
+
+SANParks. Mainstreaming
+
+## Recommended citation
+
+Job, N.M., Skowno, A.L., other names xx. 2025. Freshwater (inland aquatic) realm - River Ecosystem Protection Level (EPL). National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za

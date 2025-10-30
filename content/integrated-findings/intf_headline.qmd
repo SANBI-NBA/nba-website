@@ -1,0 +1,20 @@
+---
+title: "Headline indicators"
+subtitle: "Integrated findings"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+---
+
+The NBA has four headline indicators, providing information on the threat status and protection level of ecosystems and species.
+
+The threat status indicators use established IUCN Red List of Ecosystems and Red List of Threatened Species assessment frameworks. The risk of collapse (ecosystems) or extinction (species) is evaluated across all realms and for taxonomic groups for which sufficient data exist. The protection level indicators reflect how well species and ecosystem types are represented in the protected area network.
+
+![Figure 1. The NBA’s four national headline indicators are threat status and protection level for ecosystems and species. Symbols in Species Threat Status graph: \*sample of 900 plant taxa, \*\*sample of sandy beach invertebrate species, \*\*\*sample of economically important marine invertebrate species](imgs/Fig%203%20mockup.jpg){fig-alt="Headline Indicators figure" fig-align="center"}
+
+**Ecosystem Threat Status:** Almost half of the 986 ecosystem types assessed in the NBA 2025 are threatened. Estuaries, wetlands, rivers and the coast have the highest proportion of threatened ecosystem types.
+
+**Ecosystem Protection Level:** Over three-quarters of ecosystem types are represented in the current protected area network, leaving 24% in the Not Protected category. River, wetland and estuary types have the lowest levels of protection.
+
+**Species Threat Status:** Of 20 248 plant species assessed, 16% are threatened. Of 5 227 animal species assessed, 10% are threatened. The most threatened taxonomic groups are freshwater fishes and cartilaginous fishes (sharks, rays and chimaeras).
+
+**Species Protection Level:** Almost 80% of plant species are Well Protected (based on a random sample of 900 taxa). All mammal, reptile, bird, amphibian, freshwater fish and butterfly species were assessed and overall 74% are Well Protected.

@@ -1,0 +1,11 @@
+Functional Group,Cool temperate,Warm temperate,Subtropical,Tropical,Total
+Estuarine Lagoon,1,,,,1
+Estuarine Bay,,1,1,,2
+Estuarine Lake,4,3,4,2,13
+Predominantly Open,3,25,17,,45
+Large Fluvially Dominated,1,1,5,,7
+Small Fluvially Dominated,1,6,,,7
+Large Temporarily Closed,9,40,44,,93
+Small Temporarily Closed,8,48,60,,116
+Arid Predominantly Closed,6,,,,6
+Total,33,124,131,2,290

@@ -1,0 +1,461 @@
+mapcode,type,zone,extent,RLE,EPL,realm
+AT34,Gamka Valley Thicket,Non-coastal,161.674,LC,NP,ter
+AT50,Sundays Mesic Thicket,Non-coastal,515.4424,LC,WP,ter
+AT51,Sundays Valley Thicket,Non-coastal,1693.7084,LC,MP,ter
+AT54,Vanstadens Forest Thicket,Non-coastal,184.8992,LC,WP,ter
+AT19,Baviaans Valley Thicket,Non-coastal,1061.8264,LC,WP,ter
+AT25,Eastern Gwarrieveld,Non-coastal,2109.2204,LC,MP,ter
+AT27,Escarpment Arid Thicket,Non-coastal,1230.8536,LC,WP,ter
+AT29,Escarpment Valley Thicket,Non-coastal,768.056,LC,WP,ter
+AT33,Gamka Arid Thicket,Non-coastal,484.0704,LC,PP,ter
+AT43,Mons Ruber Fynbos Thicket,Non-coastal,265.86,LC,NP,ter
+AT46,Oudtshoorn Karroid Thicket,Non-coastal,552.0688,LC,WP,ter
+AT49,Sundays Arid Thicket,Non-coastal,5524.0148,VU,MP,ter
+AT55,Western Gwarrieveld,Non-coastal,741.59760000000006,LC,PP,ter
+AT58,Willowmore Gwarrieveld,Non-coastal,2221.2952,LC,NP,ter
+AZa6,Albany Alluvial Vegetation,Non-coastal,286.0296,EN,PP,ter
+AZa2,Cape Lowland Alluvial Vegetation,Non-coastal,116.1724,EN,NP,ter
+AZi1,Namaqualand Riviere,Non-coastal,1200.1276,LC,PP,ter
+AZa1,Fynbos Riparian Vegetation,Non-coastal,18.1868,LC,WP,ter
+AZi5,Bushmanland Vloere,Non-coastal,4815.0392,LC,PP,ter
+AZi6,Southern Karoo Riviere,Non-coastal,4534.9768,LC,PP,ter
+AZi7,Tanqua Wash Riviere,Non-coastal,1983.6596,LC,MP,ter
+AZi8,Muscadel Riviere,Non-coastal,143.7668,EN,NP,ter
+FFs19,South Outeniqua Sandstone Fynbos,Non-coastal,1047.7296,LC,WP,ter
+FFt2,Loerie Conglomerate Fynbos,Non-coastal,181.5708,LC,PP,ter
+FFd2,Leipoldtville Sand Fynbos,Non-coastal,756.9556,EN,NP,ter
+FFb4,Central Coastal Shale Band Vegetation,Non-coastal,54.0568,LC,WP,ter
+FFs15,North Langeberg Sandstone Fynbos,Non-coastal,906.3568,LC,WP,ter
+FFb2,Western Coastal Shale Band Vegetation,Non-coastal,128.2068,EN,WP,ter
+FFg2,Boland Granite Fynbos,Non-coastal,279.5672,EN,MP,ter
+FRg2,Swartland Granite Renosterveld,Non-coastal,153.8836,EN,NP,ter
+FRc2,Ruens Silcrete Renosterveld,Non-coastal,28.494,EN,NP,ter
+FRs12,Central Ruens Shale Renosterveld,Non-coastal,195.7052,CR,NP,ter
+FRs13,Eastern Ruens Shale Renosterveld,Non-coastal,397.7656,EN,NP,ter
+FFs27,Kouga Sandstone Fynbos,Non-coastal,2155.9756,LC,WP,ter
+FFs28,Kouga Grassy Sandstone Fynbos,Non-coastal,3696.5036,LC,WP,ter
+FFs2,Graafwater Sandstone Fynbos,Non-coastal,937.778,LC,PP,ter
+FFh6,Elgin Shale Fynbos,Non-coastal,67.108,CR,PP,ter
+FRc1,Swartland Silcrete Renosterveld,Non-coastal,12.802,CR,NP,ter
+FRs9,Swartland Shale Renosterveld,Non-coastal,486.2376,CR,NP,ter
+FRa1,Breede Alluvium Renosterveld,Non-coastal,174.4068,EN,NP,ter
+FRg3,Robertson Granite Renosterveld,Non-coastal,18.8332,LC,MP,ter
+FRs11,Western Ruens Shale Renosterveld,Non-coastal,153.0492,CR,NP,ter
+FRs8,Breede Shale Renosterveld,Non-coastal,616.4812,EN,PP,ter
+FFb5,Eastern Inland Shale Band Vegetation,Non-coastal,95.8256,LC,WP,ter
+FFh10,Suurberg Shale Fynbos,Non-coastal,277.9484,LC,WP,ter
+FFq5,Grootrivier Quartzite Fynbos,Non-coastal,388.316,LC,NP,ter
+FFq6,Suurberg Quartzite Fynbos,Non-coastal,668.574,LC,MP,ter
+FFs18,North Outeniqua Sandstone Fynbos,Non-coastal,732.3164,LC,PP,ter
+FRs16,Uniondale Shale Renosterveld,Non-coastal,1104.1168,LC,PP,ter
+FRs17,Langkloof Shale Renosterveld,Non-coastal,64.1688,EN,NP,ter
+FRs18,Baviaanskloof Shale Renosterveld,Non-coastal,118.6764,LC,WP,ter
+FRs20,Citrusdal Shale Renosterveld,Non-coastal,11.4372,CR,NP,ter
+FRd1,Nieuwoudtville-Roggeveld Dolerite Renosterveld,Non-coastal,197.2376,LC,PP,ter
+FRd2,Hantam Plateau Dolerite Renosterveld,Non-coastal,565.3256,LC,NP,ter
+FRs1,Vanrhynsdorp Shale Renosterveld,Non-coastal,196.0464,LC,PP,ter
+FRs2,Nieuwoudtville Shale Renosterveld,Non-coastal,104.3384,CR,NP,ter
+FRs3,Roggeveld Shale Renosterveld,Non-coastal,3148.2664,LC,PP,ter
+FRs5,Central Mountain Shale Renosterveld,Non-coastal,1199.1376,LC,NP,ter
+FFg1,Kamiesberg Granite Fynbos,Non-coastal,64.0224,LC,NP,ter
+FRg1,Namaqualand Granite Renosterveld,Non-coastal,252.788,LC,NP,ter
+FFa1,Kouebokkeveld Alluvium Fynbos,Non-coastal,52.9628,CR,PP,ter
+FFb1,Northern Inland Shale Band Vegetation,Non-coastal,258.2252,LC,WP,ter
+FFh1,Kouebokkeveld Shale Fynbos,Non-coastal,198.7996,CR,MP,ter
+FFq2,Swartruggens Quartzite Fynbos,Non-coastal,1617.4104,LC,MP,ter
+FFs1,Bokkeveld Sandstone Fynbos,Non-coastal,800.52,LC,PP,ter
+FFs3,Olifants Sandstone Fynbos,Non-coastal,469.3428,LC,WP,ter
+FFs30,Western Altimontane Sandstone Fynbos,Non-coastal,37.4804,LC,WP,ter
+FFs4,Cederberg Sandstone Fynbos,Non-coastal,2232.7588,LC,WP,ter
+FFs5,Winterhoek Sandstone Fynbos,Non-coastal,1051.0576,LC,WP,ter
+FFs6,Piketberg Sandstone Fynbos,Non-coastal,370.706,CR,PP,ter
+FFs7,North Hex Sandstone Fynbos,Non-coastal,371.0828,LC,WP,ter
+FFs8,South Hex Sandstone Fynbos,Non-coastal,315.7336,LC,WP,ter
+FFc1,Swellendam Silcrete Fynbos,Non-coastal,388.6148,EN,PP,ter
+FFh8,Montagu Shale Fynbos,Non-coastal,144.4432,LC,PP,ter
+FFs16,South Langeberg Sandstone Fynbos,Non-coastal,1173.312,LC,WP,ter
+FFa2,Breede Alluvium Fynbos,Non-coastal,168.948,EN,PP,ter
+FFa3,Swartland Alluvium Fynbos,Non-coastal,136.9996,EN,PP,ter
+FFd8,Breede Sand Fynbos,Non-coastal,43.4192,CR,PP,ter
+FFg4,Robertson Granite Fynbos,Non-coastal,14.1344,LC,WP,ter
+FFh4,Breede Shale Fynbos,Non-coastal,203.6124,EN,MP,ter
+FFh7,Greyton Shale Fynbos,Non-coastal,148.176,CR,PP,ter
+FFq4,Breede Quartzite Fynbos,Non-coastal,91.3208,LC,PP,ter
+FFs10,Hawequas Sandstone Fynbos,Non-coastal,1008.654,LC,WP,ter
+FFs13,North Sonderend Sandstone Fynbos,Non-coastal,520.876,LC,WP,ter
+FFs14,South Sonderend Sandstone Fynbos,Non-coastal,333.1052,CR,WP,ter
+FRa2,Swartland Alluvium Renosterveld,Non-coastal,36.5332,CR,NP,ter
+FFb3,Central Inland Shale Band Vegetation,Non-coastal,97.7068,LC,WP,ter
+FFh2,Matjiesfontein Shale Fynbos,Non-coastal,101.2808,LC,WP,ter
+FFh3,Swartberg Shale Fynbos,Non-coastal,63.6852,LC,PP,ter
+FFq3,Matjiesfontein Quartzite Fynbos,Non-coastal,1249.804,LC,PP,ter
+FFs21,North Rooiberg Sandstone Fynbos,Non-coastal,318.0388,LC,WP,ter
+FFs22,South Rooiberg Sandstone Fynbos,Non-coastal,385.3768,LC,WP,ter
+FFs23,North Swartberg Sandstone Fynbos,Non-coastal,846.108,LC,WP,ter
+FFs24,South Swartberg Sandstone Fynbos,Non-coastal,1082.2572,LC,WP,ter
+FFs25,North Kammanassie Sandstone Fynbos,Non-coastal,330.9052,LC,WP,ter
+FFs26,South Kammanassie Sandstone Fynbos,Non-coastal,287.084,LC,WP,ter
+FFs31,Swartberg Altimontane Sandstone Fynbos,Non-coastal,50.79,LC,WP,ter
+FFs32,Nardouw Sandstone Fynbos,Non-coastal,354.3128,CR,NP,ter
+FFt1,Kango Conglomerate Fynbos,Non-coastal,395.7416,LC,PP,ter
+FRl1,Kango Limestone Renosterveld,Non-coastal,432.6812,LC,PP,ter
+FRs15,Swartberg Shale Renosterveld,Non-coastal,264.244,LC,PP,ter
+FRs4,Ceres Shale Renosterveld,Non-coastal,211.3784,CR,PP,ter
+FRs6,Matjiesfontein Shale Renosterveld,Non-coastal,1809.988,LC,PP,ter
+FRs7,Montagu Shale Renosterveld,Non-coastal,1293.4608,LC,PP,ter
+Gh1,Karoo Escarpment Grassland,Non-coastal,8138.5332,LC,WP,ter
+Gh4,Besemkaree Koppies Shrubland,Non-coastal,9249.242,LC,PP,ter
+Gs17,Tarkastad Montane Shrubland,Non-coastal,4170.7988,LC,PP,ter
+NKb3,Bushmanland Arid Grassland,Non-coastal,40919.9956,LC,PP,ter
+NKb4,Bushmanland Sandy Grassland,Non-coastal,2670.3192,LC,NP,ter
+NKb6,Bushmanland Basin Shrubland,Non-coastal,40909.9712,LC,PP,ter
+NKl1,Gamka Karoo,Non-coastal,20074.7364,LC,PP,ter
+NKl2,Eastern Lower Karoo,Non-coastal,8164.2908,LC,MP,ter
+NKu1,Western Upper Karoo,Non-coastal,16965.0208,LC,NP,ter
+NKu2,Upper Karoo Hardeveld,Non-coastal,11706.3608,LC,MP,ter
+NKu3,Northern Upper Karoo,Non-coastal,40004.2396,LC,NP,ter
+NKu4,Eastern Upper Karoo,Non-coastal,48084.2452,LC,PP,ter
+SKk3,Knersvlakte Quartz Vygieveld,Non-coastal,1298.8296,LC,WP,ter
+SKs12,Namaqualand Spinescent Grassland,Non-coastal,423.524,LC,PP,ter
+SKk1,Northern Knersvlakte Vygieveld,Non-coastal,1666.85,LC,MP,ter
+SKk2,Central Knersvlakte Vygieveld,Non-coastal,129.1548,LC,WP,ter
+SKk4,Knersvlakte Shale Vygieveld,Non-coastal,979.3724,LC,PP,ter
+SKk5,Vanrhynsdorp Gannabosveld,Non-coastal,829.1768,LC,NP,ter
+SKk6,Knersvlakte Dolomite Vygieveld,Non-coastal,57.032,LC,MP,ter
+SKk7,Citrusdal Vygieveld,Non-coastal,130.8612,LC,PP,ter
+SKk8,Piketberg Quartz Succulent Shrubland,Non-coastal,0.6144,CR,NP,ter
+SKk9,Kobee Succulent Shrubland,Non-coastal,140.2268,LC,NP,ter
+SKn1,Namaqualand Klipkoppe Shrubland,Non-coastal,7342.0048,LC,PP,ter
+SKn3,Namaqualand Blomveld,Non-coastal,2891.024,LC,PP,ter
+SKn4,Namaqualand Heuweltjieveld,Non-coastal,4581.266,LC,PP,ter
+SKn5,Platbakkies Succulent Shrubland,Non-coastal,650.5384,LC,NP,ter
+SKn6,Kamiesberg Mountains Shrubland,Non-coastal,391.506,LC,NP,ter
+SKn7,Southern Namaqualand Quartzite Klipkoppe Shrubland,Non-coastal,907.9312,LC,PP,ter
+SKs10,Riethuis-Wallekraal Quartz Vygieveld,Non-coastal,133.9984,LC,WP,ter
+SKs11,Namaqualand Arid Grassland,Non-coastal,286.6852,LC,WP,ter
+SKs13,Klawer Sandy Shrubland,Non-coastal,108.1508,CR,NP,ter
+SKv1,Doringrivier Quartzite Karoo,Non-coastal,447.9824,LC,NP,ter
+SKv10,Little Karoo Quartz Vygieveld,Non-coastal,226.2656,LC,PP,ter
+SKv11,Eastern Little Karoo,Non-coastal,1369.166,EN,PP,ter
+SKv13,Prince Albert Succulent Karoo,Non-coastal,2513.968,LC,PP,ter
+SKv14,Steytlerville Karoo,Non-coastal,769.2448,LC,NP,ter
+SKv2,Swartruggens Quartzite Karoo,Non-coastal,557.15,LC,MP,ter
+SKv3,Agter-Sederberg Shrubland,Non-coastal,902.9904,LC,PP,ter
+SKv4,Tanqua Escarpment Shrubland,Non-coastal,1313.5804,LC,MP,ter
+SKv5,Tanqua Karoo,Non-coastal,6923.8212,LC,MP,ter
+SKv6,Koedoesberge-Moordenaars Karoo,Non-coastal,4674.8652,LC,NP,ter
+SKv7,Robertson Karoo,Non-coastal,496.252,LC,PP,ter
+SKv8,Western Little Karoo,Non-coastal,3931.7928,LC,MP,ter
+SKt1,Western Bushmanland Klipveld,Non-coastal,101.3284,LC,NP,ter
+SKt2,Hantam Karoo,Non-coastal,7313.0976,LC,NP,ter
+SKt3,Roggeveld Karoo,Non-coastal,5222.7172,LC,NP,ter
+AT21,Buffels Mesic Thicket,Non-coastal,310.8976,LC,PP,ter
+AT31,Fish Mesic Thicket,Non-coastal,210.196,LC,PP,ter
+AT38,Grahamstown Grassland Thicket,Non-coastal,849.7652,LC,MP,ter
+AT45,Nanaga Savanna Thicket,Non-coastal,430.4944,LC,MP,ter
+AT18,Albany Valley Thicket,Non-coastal,1034.7104,LC,MP,ter
+AT24,Doubledrift Karroid Thicket,Non-coastal,2598.0464,LC,PP,ter
+AT15,Albany Arid Thicket,Non-coastal,14.5748,LC,PP,ter
+AT16,Albany Bontveld,Non-coastal,51.1648,LC,PP,ter
+AT22,Buffels Valley Thicket,Non-coastal,92.3968,CR,NP,ter
+AT23,Crossroads Grassland Thicket,Non-coastal,268.2796,LC,MP,ter
+AT28,Escarpment Mesic Thicket,Non-coastal,908.232,LC,PP,ter
+AT30,Fish Arid Thicket,Non-coastal,625.3256,LC,WP,ter
+AT32,Fish Valley Thicket,Non-coastal,3450.6652,LC,MP,ter
+AT35,Geluk Grassland Thicket,Non-coastal,18.3744,LC,MP,ter
+AT42,Koedoeskloof Karroid Thicket,Non-coastal,51.7304,LC,NP,ter
+AT47,Saltaire Karroid Thicket,Non-coastal,886.1536,LC,PP,ter
+AT52,Thorndale Forest Thicket,Non-coastal,30.2416,LC,PP,ter
+AZa7,Subtropical Alluvial Vegetation,Non-coastal,859.3644,LC,WP,ter
+AZa4,Upper Gariep Alluvial Vegetation,Non-coastal,1248.4128,LC,PP,ter
+FOz5,Scarp Forest,Non-coastal,946.1864,LC,WP,ter
+SVs6,Eastern Valley Bushveld,Non-coastal,7037.5756,LC,NP,ter
+FOz2,Northern Afrotemperate Forest,Non-coastal,182.4208,LC,WP,ter
+FOz3,Southern Mistbelt Forest,Non-coastal,884.3512,LC,MP,ter
+Gd1,Amathole Montane Grassland,Non-coastal,4202.9276,LC,PP,ter
+Gd2,Amathole Mistbelt Grassland,Non-coastal,153.586,LC,NP,ter
+Gd3,Stormberg Plateau Grassland,Non-coastal,2409.262,LC,NP,ter
+Gd4,Southern Drakensberg Highland Grassland,Non-coastal,5993.8588,LC,PP,ter
+Gd8,Lesotho Highland Basalt Grassland,Non-coastal,17291.3664,LC,PP,ter
+Gh2,Aliwal North Dry Grassland,Non-coastal,5660.4316,LC,NP,ter
+Gh3,Xhariep Karroid Grassland,Non-coastal,12357.1816,LC,PP,ter
+Gm1,Zastron Moist Grassland,Non-coastal,2813.2064,LC,NP,ter
+Gm5,Basotho Montane Shrubland,Non-coastal,2462.3852,LC,PP,ter
+Gs10,Drakensberg Foothill Moist Grassland,Non-coastal,7576.2196,LC,PP,ter
+Gs11,Southern KwaZulu-Natal Moist Grassland,Non-coastal,1020.7256,EN,PP,ter
+Gs12,East Griqualand Grassland,Non-coastal,4698.084,EN,PP,ter
+Gs13,Mabela Sandy Grassland,Non-coastal,148.2664,CR,PP,ter
+Gs14,Mthatha Moist Grassland,Non-coastal,2135.8588,EN,NP,ter
+Gs15,Tsomo Grassland,Non-coastal,3708.014,LC,NP,ter
+Gs16,Queenstown Thornveld,Non-coastal,2980.22,LC,NP,ter
+Gs18,Bedford Dry Grassland,Non-coastal,1407.3916,LC,NP,ter
+Gs19,Dry Coast Hinterland Grassland,Non-coastal,1334.6488,VU,NP,ter
+Gs20,Moist Coast Hinterland Grassland,Non-coastal,2257.522,VU,NP,ter
+Gs6,KwaZulu-Natal Highland Thornveld,Non-coastal,3303.6124,LC,PP,ter
+Gs9,Midlands Mistbelt Grassland,Non-coastal,2020.0288,EN,PP,ter
+CB6,KwaZulu-Natal Coastal Belt Thornveld,Non-coastal,411.5112,EN,NP,ter
+NKl4,Albany Broken Veld,Non-coastal,683.2128,LC,MP,ter
+SVs7,Bhisho Thornveld,Non-coastal,4782.816,LC,NP,ter
+SVs4,Ngongoni Veld,Non-coastal,325.9052,EN,NP,ter
+SVs5,KwaZulu-Natal Sandstone Sourveld,Non-coastal,250.3336,EN,NP,ter
+AZa3,Lower Gariep Alluvial Vegetation,Non-coastal,530.9836,LC,PP,ter
+AZi3,Southern Kalahari Mekgacha,Non-coastal,1914.6164,LC,MP,ter
+Dg1,Noms Mountain Desert,Non-coastal,332.8976,LC,WP,ter
+Dg10,Eastern Gariep Rocky Desert,Non-coastal,2084.2796,LC,NP,ter
+Dg2,Richtersberg Mountain Desert,Non-coastal,361.3932,LC,WP,ter
+Dg3,Richtersveld Sheet Wash Desert,Non-coastal,156.4688,LC,WP,ter
+Dg4,Kwaggarug Mountain Desert,Non-coastal,107.1928,LC,WP,ter
+Dg5,Kahams Mountain Desert,Non-coastal,591.9344,LC,WP,ter
+Dg6,Helskloof Canyon Desert,Non-coastal,8.1068,LC,WP,ter
+Dg7,Northern Nababiepsberge Mountain Desert,Non-coastal,244.0452,LC,NP,ter
+Dg8,Southern Nababiepsberge Mountain Desert,Non-coastal,342.9244,LC,NP,ter
+Dg9,Eastern Gariep Plains Desert,Non-coastal,1198.2608,LC,PP,ter
+Dn4,Western Gariep Lowland Desert,Non-coastal,194.7612,CR,NP,ter
+Dn5,Western Gariep Hills Desert,Non-coastal,384.4044,LC,PP,ter
+FFq1,Stinkfonteinberge Quartzite Fynbos,Non-coastal,49.024,LC,WP,ter
+NKb1,Lower Gariep Broken Veld,Non-coastal,4637.4332,LC,PP,ter
+NKb2,Blouputs Karroid Thornveld,Non-coastal,601.392,LC,WP,ter
+NKb5,Kalahari Karroid Shrubland,Non-coastal,8543.5324,LC,NP,ter
+SVk10,Kuruman Mountain Bushveld,Non-coastal,5539.6844,LC,NP,ter
+SVk11,Molopo Bushveld,Non-coastal,13624.6808,LC,PP,ter
+SVk12,Kathu Bushveld,Non-coastal,7252.688,LC,PP,ter
+SVk13,Olifantshoek Plains Thornveld,Non-coastal,8409.2552,LC,PP,ter
+SVk14,Postmasburg Thornveld,Non-coastal,880.8224,LC,NP,ter
+SVk15,Koranna-Langeberg Mountain Bushveld,Non-coastal,1617.2148,LC,MP,ter
+SVk16,Gordonia Plains Shrubland,Non-coastal,7905.7652,LC,MP,ter
+SVk4,Kimberley Thornveld,Non-coastal,12455.3472,LC,PP,ter
+SVk5,Vaalbos Rocky Shrubland,Non-coastal,1418.3416,LC,PP,ter
+SVk6,Schmidtsdrif Thornveld,Non-coastal,4220.3792,LC,NP,ter
+SVk7,Ghaap Plateau Vaalbosveld,Non-coastal,13112.6348,LC,NP,ter
+SVk8,Kuruman Vaalbosveld,Non-coastal,3235.7984,LC,NP,ter
+SVk9,Kuruman Thornveld,Non-coastal,5504.2496,LC,NP,ter
+SVkd1,Gordonia Duneveld,Non-coastal,37004.7196,LC,MP,ter
+SVkd2,Gordonia Kameeldoring Bushveld,Non-coastal,2239.5116,LC,WP,ter
+SVkd3,Auob Duneveld,Non-coastal,2897.932,LC,WP,ter
+SVkd4,Nossob Bushveld,Non-coastal,762.2544,LC,WP,ter
+SKr14,Southern Richtersveld Inselberg Shrubland,Non-coastal,365.2156,LC,NP,ter
+SKn2,Namaqualand Shale Shrubland,Non-coastal,534.2036,LC,NP,ter
+SKs5,Richtersveld Red Duneveld,Non-coastal,565.6908,LC,NP,ter
+SKs6,Oograbies Plains Sandy Grassland,Non-coastal,122.7916,LC,NP,ter
+SKr1,Central Richtersveld Mountain Shrubland,Non-coastal,1199.7416,LC,WP,ter
+SKr10,Die Plate Succulent Shrubland,Non-coastal,127.1424,LC,NP,ter
+SKr11,Rooiberg Quartz Vygieveld,Non-coastal,128.1204,LC,WP,ter
+SKr12,Kosiesberg Succulent Shrubland,Non-coastal,611.8968,LC,NP,ter
+SKr13,Southern Richtersveld Scorpionstailveld,Non-coastal,721.8316,CR,NP,ter
+SKr15,Anenous Plateau Shrubland,Non-coastal,200.304,LC,NP,ter
+SKr16,Umdaus Mountains Succulent Shrubland,Non-coastal,432.3352,LC,NP,ter
+SKr17,Eenriet Plains Succulent Shrubland,Non-coastal,259.666,LC,NP,ter
+SKr18,Bushmanland Inselberg Shrubland,Non-coastal,812.362,LC,PP,ter
+SKr19,Aggeneys Gravel Vygieveld,Non-coastal,367.7144,LC,WP,ter
+SKr2,Upper Annisvlakte Succulent Shrubland,Non-coastal,191.3312,CR,MP,ter
+SKr3,Goariep Mountain Succulent Shrubland,Non-coastal,170.7376,LC,WP,ter
+SKr4,Lekkersing Succulent Shrubland,Non-coastal,827.1612,LC,MP,ter
+SKr5,Vyftienmyl se Berge Succulent Shrubland,Non-coastal,18.3652,LC,WP,ter
+SKr6,Stinkfonteinberge Eastern Apron Shrubland,Non-coastal,65.8232,LC,WP,ter
+SKr7,Northern Richtersveld Scorpionstailveld,Non-coastal,326.5544,EN,WP,ter
+SKr8,Rosyntjieberg Succulent Shrubland,Non-coastal,50.5104,LC,WP,ter
+SKr9,Tatasberg Mountain Succulent Shrubland,Non-coastal,3.2652,LC,WP,ter
+SVcb11,Andesite Mountain Bushveld,Non-coastal,2493.6388,LC,PP,ter
+SVk1,Mafikeng Bushveld,Non-coastal,12001.9708,LC,NP,ter
+SVk18,Morokweng Thornveld,Non-coastal,953.0492,LC,NP,ter
+SVk2,Stella Bushveld,Non-coastal,3227.4224,LC,NP,ter
+SVk17,Vryburg Thornveld,Non-coastal,3751.572,LC,NP,ter
+AZa5,Highveld Alluvial Vegetation,Non-coastal,2106.648,LC,PP,ter
+FOa1,Lowveld Riverine Forest,Non-coastal,133.4168,VU,WP,ter
+FOz8,Sand Forest,Non-coastal,244.2452,LC,WP,ter
+FOz4,Northern Mistbelt Forest,Non-coastal,288.9104,LC,WP,ter
+FOz9,Ironwood Dry Forest,Non-coastal,81.2604,LC,WP,ter
+Gd10,Drakensberg Afroalpine Heathland,Non-coastal,2753.284,LC,WP,ter
+Gd5,Northern Drakensberg Highland Grassland,Non-coastal,1116.0928,LC,WP,ter
+Gd6,Drakensberg-Amathole Afromontane Fynbos,Non-coastal,21.5476,LC,WP,ter
+Gd7,uKhahlamba Basalt Grassland,Non-coastal,1345.922,LC,WP,ter
+Gh10,Vaal-Vet Sandy Grassland,Non-coastal,5813.4168,EN,NP,ter
+Gh11,Vredefort Dome Granite Grassland,Non-coastal,416.9716,CR,NP,ter
+Gh12,Vaal Reefs Dolomite Sinkhole Woodland,Non-coastal,221.1288,LC,NP,ter
+Gh15,Carletonville Dolomite Grassland,Non-coastal,5468.9772,LC,PP,ter
+Gh5,Bloemfontein Dry Grassland,Non-coastal,2576.7764,LC,PP,ter
+Gh6,Central Free State Grassland,Non-coastal,10488.0812,LC,PP,ter
+Gh7,Winburg Grassy Shrubland,Non-coastal,1286.1452,LC,PP,ter
+Gh8,Bloemfontein Karroid Shrubland,Non-coastal,66.1308,LC,MP,ter
+Gh9,Western Free State Clay Grassland,Non-coastal,5306.9972,LC,PP,ter
+Gm10,Egoli Granite Grassland,Non-coastal,183.1432,CR,PP,ter
+Gm11,Rand Highveld Grassland,Non-coastal,4209.3672,VU,PP,ter
+Gm12,Eastern Highveld Grassland,Non-coastal,3707.4124,EN,PP,ter
+Gm13,Amersfoort Highveld Clay Grassland,Non-coastal,2126.2596,LC,PP,ter
+Gm14,Wakkerstroom Montane Grassland,Non-coastal,2950.1124,LC,PP,ter
+Gm15,Paulpietersburg Moist Grassland,Non-coastal,1967.0736,EN,PP,ter
+Gm16,KaNgwane Montane Grassland,Non-coastal,5328.8756,EN,PP,ter
+Gm17,Barberton Montane Grassland,Non-coastal,805.2008,LC,WP,ter
+Gm19,Sekhukhune Montane Grassland,Non-coastal,847.0616,LC,NP,ter
+Gm20,Leolo Summit Sourveld,Non-coastal,18.3784,LC,NP,ter
+Gm21,Lydenburg Thornveld,Non-coastal,1192.6756,LC,PP,ter
+Gm22,Northern Escarpment Dolomite Grassland,Non-coastal,352.086,EN,PP,ter
+Gm23,Northern Escarpment Quartzite Sourveld,Non-coastal,759.7868,LC,MP,ter
+Gm24,Northern Escarpment Afromontane Fynbos,Non-coastal,9.3328,LC,WP,ter
+Gm25,Woodbush Granite Grassland,Non-coastal,103.7852,CR,PP,ter
+Gm26,Wolkberg Dolomite Grassland,Non-coastal,242.2212,LC,WP,ter
+Gm27,Strydpoort Summit Sourveld,Non-coastal,261.144,LC,WP,ter
+Gm28,Soutpansberg Summit Sourveld,Non-coastal,91.556,LC,WP,ter
+Gm29,Waterberg-Magaliesberg Summit Sourveld,Non-coastal,502.7088,LC,WP,ter
+Gm3,Eastern Free State Clay Grassland,Non-coastal,6008.3952,VU,NP,ter
+Gm30,Steenkampsberg Montane Grassland,Non-coastal,2611.3308,LC,PP,ter
+Gm31,Long Tom Pass Montane Grassland,Non-coastal,536.1616,LC,WP,ter
+Gm4,Eastern Free State Sandy Grassland,Non-coastal,7447.7704,LC,PP,ter
+Gm6,Frankfort Highveld Grassland,Non-coastal,5464.9784,LC,NP,ter
+Gm7,Northern Free State Shrubland,Non-coastal,27.6196,LC,PP,ter
+Gm8,Soweto Highveld Grassland,Non-coastal,5504.348,VU,NP,ter
+Gm9,Tsakane Clay Grassland,Non-coastal,435.8432,EN,PP,ter
+Gs1,Northern Zululand Mistbelt Grassland,Non-coastal,281.4492,EN,PP,ter
+Gs2,Ithala Quartzite Sourveld,Non-coastal,1242.8228,LC,MP,ter
+Gs3,Low Escarpment Moist Grassland,Non-coastal,1563.8912,LC,PP,ter
+Gs4,Northern KwaZulu-Natal Moist Grassland,Non-coastal,4242.93,VU,PP,ter
+Gs7,Income Sandy Grassland,Non-coastal,2366.6848,EN,NP,ter
+Gs8,Mooi River Highland Grassland,Non-coastal,1664.26,EN,PP,ter
+SVcb1,Dwaalboom Thornveld,Non-coastal,5108.8792,LC,MP,ter
+SVcb10,Gauteng Shale Mountain Bushveld,Non-coastal,919.6632,EN,PP,ter
+SVcb12,Central Sandy Bushveld,Non-coastal,10862.8848,LC,PP,ter
+SVcb13,Loskop Mountain Bushveld,Non-coastal,1920.4356,LC,MP,ter
+SVcb14,Loskop Thornveld,Non-coastal,441.2272,LC,PP,ter
+SVcb15,Springbokvlakte Thornveld,Non-coastal,2856.3324,EN,PP,ter
+SVcb16,Western Sandy Bushveld,Non-coastal,9880.8072,LC,MP,ter
+SVcb17,Waterberg Mountain Bushveld,Non-coastal,8214.646,LC,MP,ter
+SVcb18,Roodeberg Bushveld,Non-coastal,5101.8224,LC,MP,ter
+SVcb19,Limpopo Sweet Bushveld,Non-coastal,10665.7168,LC,PP,ter
+SVcb2,Madikwe Dolomite Bushveld,Non-coastal,1075.8564,LC,WP,ter
+SVcb20,Makhado Sweet Bushveld,Non-coastal,6219.6988,EN,PP,ter
+SVcb21,Soutpansberg Mountain Bushveld,Non-coastal,3045.662,LC,MP,ter
+SVcb22,VhaVenda Miombo,Non-coastal,0.5316,LC,WP,ter
+SVcb23,Polokwane Plateau Bushveld,Non-coastal,2519.1048,EN,PP,ter
+SVcb24,Mamabolo Mountain Bushveld,Non-coastal,596.7168,LC,PP,ter
+SVcb25,Poung Dolomite Mountain Bushveld,Non-coastal,823.9772,LC,MP,ter
+SVcb26,Ohrigstad Mountain Bushveld,Non-coastal,1747.8652,LC,MP,ter
+SVcb27,Sekhukhune Plains Bushveld,Non-coastal,1210.104,EN,PP,ter
+SVcb28,Sekhukhune Mountain Bushveld,Non-coastal,1809.8568,LC,PP,ter
+SVcb6,Marikana Thornveld,Non-coastal,708.9796,EN,PP,ter
+SVcb7,Norite Koppies Bushveld,Non-coastal,360.9508,EN,PP,ter
+SVcb8,Moot Plains Bushveld,Non-coastal,843.362,EN,PP,ter
+SVcb9,Gold Reef Mountain Bushveld,Non-coastal,2593.0128,LC,MP,ter
+SVl1,Makuleke Sandy Bushveld,Non-coastal,1579.2596,LC,WP,ter
+SVl10,Pretoriuskop Sour Bushveld,Non-coastal,615.1964,LC,WP,ter
+SVl11,Malelane Mountain Bushveld,Non-coastal,596.5872,LC,WP,ter
+SVl12,Kaalrug Mountain Bushveld,Non-coastal,368.3856,LC,MP,ter
+SVl13,Barberton Serpentine Sourveld,Non-coastal,72.4612,LC,WP,ter
+SVl14,Swaziland Sour Bushveld,Non-coastal,3420.6212,LC,WP,ter
+SVl15,Northern Lebombo Bushveld,Non-coastal,1334.5932,LC,WP,ter
+SVl16,Southern Lebombo Bushveld,Non-coastal,2251.9056,LC,MP,ter
+SVl17,Lebombo Summit Sourveld,Non-coastal,42.6524,EN,NP,ter
+SVl18,Tembe Sandy Bushveld,Non-coastal,865.0132,LC,MP,ter
+SVl19,Western Maputaland Sandy Bushveld,Non-coastal,80.776,CR,MP,ter
+SVl2,Nwambyia-Pumbe Sandy Bushveld,Non-coastal,181.6164,LC,WP,ter
+SVl20,Western Maputaland Clay Bushveld,Non-coastal,648.648,EN,MP,ter
+SVl21,Makatini Clay Thicket,Non-coastal,268.5708,LC,WP,ter
+SVl22,Northern Zululand Sourveld,Non-coastal,3681.678,LC,MP,ter
+SVl23,Zululand Lowveld,Non-coastal,5704.3004,LC,WP,ter
+SVl24,Zululand Coastal Thornveld,Non-coastal,182.28,CR,NP,ter
+SVl25,Maputaland Pallid Sandy Bushveld,Non-coastal,472.9328,LC,MP,ter
+SVl26,Muzi Palm Veld and Wooded Grassland,Non-coastal,510.344,CR,PP,ter
+SVl27,Crocodile Gorge Mountain Bushveld,Non-coastal,426.688,LC,MP,ter
+SVl3,Granite Lowveld,Non-coastal,14882.14,LC,WP,ter
+SVl4,Delagoa Lowveld,Non-coastal,1968.0536,LC,WP,ter
+SVl5,Tshokwane-Hlane Basalt Lowveld,Non-coastal,2975.3692,LC,WP,ter
+SVl6,Gabbro Grassy Bushveld,Non-coastal,757.7016,LC,WP,ter
+SVl7,Gravelotte Rocky Bushveld,Non-coastal,286.2132,LC,MP,ter
+SVl8,Tzaneen Sour Bushveld,Non-coastal,1748.3556,EN,PP,ter
+SVl9,Legogote Sour Bushveld,Non-coastal,1115.6136,EN,PP,ter
+SVmp1,Musina Mopane Bushveld,Non-coastal,8133.022,LC,MP,ter
+SVmp2,Limpopo Ridge Bushveld,Non-coastal,2718.2392,LC,WP,ter
+SVmp3,Cathedral Mopane Bushveld,Non-coastal,276.878,LC,WP,ter
+SVmp4,Mopane Basalt Shrubland,Non-coastal,2800.2144,LC,WP,ter
+SVmp5,Tsende Mopaneveld,Non-coastal,4722.0828,LC,WP,ter
+SVmp6,Lowveld Rugged Mopaneveld,Non-coastal,2431.4684,LC,WP,ter
+SVmp7,Phalaborwa-Timbavati Mopaneveld,Non-coastal,2027.626,LC,WP,ter
+SVmp8,Mopane Gabbro Shrubland,Non-coastal,310.2836,LC,WP,ter
+SVs1,Thukela Valley Bushveld,Non-coastal,1972.284,LC,NP,ter
+SVs2,Thukela Thornveld,Non-coastal,1631.75,LC,PP,ter
+SVs3,KwaZulu-Natal Hinterland Thornveld,Non-coastal,1014.296,LC,PP,ter
+SVcb29,Central Sandy Mountain Bushveld,Non-coastal,373.6608,LC,WP,ter
+SVcb4,Dwarsberg-Swartruggens Mountain Bushveld,Non-coastal,3661.8716,LC,PP,ter
+Gh13,Klerksdorp Thornveld,Non-coastal,2123.7648,LC,PP,ter
+SVcb5,Pilanesberg Mountain Bushveld,Non-coastal,359.8116,LC,WP,ter
+Gh14,Western Highveld Sandy Grassland,Non-coastal,3675.5048,EN,NP,ter
+SVcb3,Zeerust Thornveld,Non-coastal,889.586,LC,PP,ter
+Gm2,Senqu Montane Shrubland,Non-coastal,2818.7752,LC,NP,ter
+SVk3,Schweizer-Reneke Bushveld,Non-coastal,576.2632,VU,PP,ter
+SwI1,Agulhas Basin Abyss,Non-coastal,56942.810860365,LC,PP,marine
+SwI2,Agulhas Basin Complex Abyss,Non-coastal,3748.37724314446,LC,NP,marine
+Ags3,Agulhas Blues,Non-coastal,8379.64577534558,NT,NP,marine
+Ags4,Agulhas Coarse Sediment Shelf Edge,Non-coastal,3990.51122860643,VU,NP,marine
+SwI3,Agulhas Lower Canyon,Non-coastal,1152.52390228667,LC,MP,marine
+Ags8,Agulhas Mid Shelf Mosaic,Non-coastal,3632.55998927126,NT,MP,marine
+Ags7,Agulhas Mid Shelf Reef,Non-coastal,51.8875901479681,VU,PP,marine
+Ags10,Agulhas Muddy Outer Shelf,Non-coastal,1278.0487674512,NT,PP,marine
+SwI4,Agulhas Plateau,Non-coastal,5469.13037551092,LC,MP,marine
+Bc2,Agulhas Retroflection and South Ocean Transitional Water,Non-coastal,98084.7628768811,LC,NP,marine
+Ags14,Agulhas Rocky Outer Shelf,Non-coastal,4214.82119883301,LC,WP,marine
+SwI5,Agulhas Rocky Plateau,Non-coastal,8592.86430790231,LC,MP,marine
+Ags15,Agulhas Rocky Shelf Edge,Non-coastal,5232.98060109642,LC,MP,marine
+Ags17,Agulhas Sandy Mid Shelf,Non-coastal,20233.0888154781,NT,PP,marine
+Ags18,Agulhas Sandy Outer Shelf,Non-coastal,7058.5123582321,NT,PP,marine
+Ags19,Agulhas Upper Canyon,Non-coastal,101.993641538527,LC,MP,marine
+Ags20,Alphard Bank,Non-coastal,31.8615057019809,LC,WP,marine
+Ags21,Amathole Hard Shelf Edge,Non-coastal,468.735966369063,NT,MP,marine
+Ntl2,Amathole Lace Corals,Non-coastal,131.635631094592,LC,PP,marine
+SoB11,Browns Bank Rocky Shelf Edge,Non-coastal,2164.06348441316,CR,PP,marine
+SeA1,Cape Basin Abyss,Non-coastal,57854.9605379709,LC,PP,marine
+SeA2,Cape Basin Complex Abyss,Non-coastal,73071.0038086917,LC,PP,marine
+SoB1,Cape Lower Canyon,Non-coastal,2838.07730038375,EN,NP,marine
+Cpe3,Cape Rocky Mid Shelf Mosaic,Non-coastal,3904.94948298784,VU,PP,marine
+SoB2,Cape Upper Canyon,Non-coastal,2394.81872120074,EN,PP,marine
+Ags11,Central Agulhas Outer Shelf Mosaic,Non-coastal,2452.94266352652,LC,MP,marine
+SoB3,Childs Bank Coral,Non-coastal,505.477531383285,VU,MP,marine
+SoB4,Childs Bank Plateau,Non-coastal,1620.27639447407,LC,WP,marine
+Ba1,Cold Southeast Atlantic Water,Non-coastal,9525.99325742229,LC,NP,marine
+Dlg1,Delagoa Deep Shelf Edge,Non-coastal,605.364337503834,LC,WP,marine
+Dlg2,Delagoa Lower Canyon,Non-coastal,3.26935743049247,LC,WP,marine
+Dlg3,Delagoa Rocky Mid Shelf,Non-coastal,22.9897245766035,LC,WP,marine
+Dlg5,Delagoa Sandy Mid Shelf,Non-coastal,274.196272726062,LC,WP,marine
+Dlg6,Delagoa Shelf Edge,Non-coastal,189.793567647057,LC,WP,marine
+Dlg7,Delagoa Upper Canyon,Non-coastal,43.9627070201745,LC,WP,marine
+Ags12,Eastern Agulhas Outer Shelf Mosaic,Non-coastal,25966.2287160908,LC,PP,marine
+Cb4,Indian Ocean Frontal Margin Water,Non-coastal,30552.9555989413,LC,PP,marine
+Bc1,Indian Ocean Frontal Water,Non-coastal,143707.668995447,LC,PP,marine
+Ags24,Kingklip Koppies,Non-coastal,642.858643446311,NT,NP,marine
+SwI7,Kingklip Ridge,Non-coastal,103.590412382089,EN,MP,marine
+Ntl4,Natal Deep Shelf Edge,Non-coastal,1377.22208854261,LC,MP,marine
+Ntl7,Natal Lower Canyon,Non-coastal,1308.25045777874,LC,MP,marine
+Ntl9,Natal Upper Canyon,Non-coastal,256.190865736934,LC,WP,marine
+Ntl16,Protea Mid Shelf Reef Complex,Non-coastal,15.5395334303534,EN,MP,marine
+Ab3,South Atlantic Productive Margin Water,Non-coastal,27747.3473158703,VU,PP,marine
+Bb2,South Atlantic-Benguela Transitional Waters,Non-coastal,63591.6609561783,LC,NP,marine
+SeA3,Southeast Atlantic Lower Slope,Non-coastal,86412.8879522145,LC,NP,marine
+SeA4,Southeast Atlantic Mid Slope,Non-coastal,18140.1341054933,LC,NP,marine
+SeA5,Southeast Atlantic Seamount,Non-coastal,1576.25073288586,LC,WP,marine
+SeA6,Southeast Atlantic Slope Seamount,Non-coastal,887.913638748351,LC,WP,marine
+SeA7,Southeast Atlantic Upper Slope,Non-coastal,15242.0935369506,LC,PP,marine
+SoB6,Southern Benguela Muddy Outer Shelf Mosaic,Non-coastal,5574.43236684411,LC,NP,marine
+SoB8,Southern Benguela Muddy Shelf Edge,Non-coastal,814.044755511982,EN,PP,marine
+SoB9,Southern Benguela Outer Shelf Mosaic,Non-coastal,19508.7097186023,LC,NP,marine
+SoB10,Southern Benguela Rocky Shelf Edge,Non-coastal,2380.68802149114,VU,PP,marine
+SoB12,Southern Benguela Sandy Outer Shelf,Non-coastal,36057.0725766166,LC,PP,marine
+SoB13,Southern Benguela Sandy Shelf Edge,Non-coastal,7397.87066782645,VU,PP,marine
+SoB5,Southern Benguela Shelf Edge Mosaic,Non-coastal,2181.79251150682,LC,NP,marine
+Ntl6,Southern KZN Mid Shelf Mosaic,Non-coastal,989.630326080083,EN,MP,marine
+Ntl8,Southern KZN Shelf Edge Mosaic,Non-coastal,669.562722421381,NT,WP,marine
+SwI10,Southwest Indian Lower Slope,Non-coastal,197988.126366343,LC,NP,marine
+SwI11,Southwest Indian Mid Slope,Non-coastal,78270.7167705021,LC,PP,marine
+SwI12,Southwest Indian Seamount,Non-coastal,2072.41259062144,LC,WP,marine
+SwI13,Southwest Indian Slope Seamount,Non-coastal,1614.36086629061,LC,NP,marine
+SwI14,Southwest Indian Upper Slope,Non-coastal,17527.1727092983,LC,MP,marine
+Dlg11,St Lucia Mid Shelf Mosaic,Non-coastal,4.76019267807473,LC,WP,marine
+Cb1,Stable Agulhas Current Water,Non-coastal,14407.2212832057,LC,WP,marine
+Ca2,Stable Indian Ocean Water,Non-coastal,59193.7305023398,LC,NP,marine
+Bb1,Stable Southeast Atlantic Water,Non-coastal,71745.1448397762,LC,NP,marine
+SwI9,Transkei Basin Abyss,Non-coastal,210710.39744288,LC,NP,marine
+Cb3,Upwelled Agulhas Current Margin Water,Non-coastal,6831.86742960935,VU,PP,marine
+Cb2,Variable Agulhas current core,Non-coastal,21217.0919114643,LC,PP,marine
+Ba2,Variable Indo-Atlantic Water,Non-coastal,125467.44336544,LC,PP,marine
+Ca1,Warm Stable Indian Ocean Water,Non-coastal,169872.242678316,LC,PP,marine
+Ags13,Western Agulhas Outer Shelf Mosaic,Non-coastal,2786.45386084413,VU,NP,marine
+Ntl11,Wild Coast Mid Shelf Mosaic,Non-coastal,2385.88902667652,LC,MP,marine
+Ntl12,Wild Coast Shelf Edge Mosaic,Non-coastal,1435.23586282032,LC,MP,marine
+SwI15,uThukela Canyon,Non-coastal,417.805734816642,LC,NP,marine

@@ -1,0 +1,300 @@
+---
+title: "Ecosystem protection level"  
+subtitle: "Terrestrial realm" 
+
+title-block-banner: "#617016" 
+title-block-banner-color: white 
+
+author:
+  - name:
+      given: Andrew L. 
+      family: Skowno 
+    orcid: orcid.org/0000-0002-2726-7886 
+    affiliations:
+      - ref: af1       
+      - ref: af2
+       
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: af1
+      
+  - name:
+      given: Sediqa. 
+      family: Khatieb 
+    orcid: 0009-0009-6464-0908
+    affiliations:
+      - ref: af1
+
+affiliations:
+  - id: af1 
+    number: 1 
+    name: South African National Biodiversity Institute
+
+  - id: af2 
+    number: 2    
+    name: University of Cape Town   
+ 
+date: last-modified
+bibliography: terrestrial.bib
+
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+
+
+appendix-cite-as: false
+google-scholar: true
+
+format:
+  html:
+    self-contained: false
+    execute: 
+      echo: false
+---
+
+------------------------------------------------------------------------
+
+*The protected area network is growing across South Africa, thanks to innovative biodiversity stewardship programs, leading to a general increase terrestrial ecosystem protection levels.*
+
+![Community conservation efforts in KwaZulu-Natal (©Steve McKean)](./imgs/Community_conservation_area_KZN_SteveMcKean.png)
+
+::::: columns
+::: {.column width="50%"}
+<center>
+
+| [26%]{.inline-style-threatened}
+| of 463 terrestrial ecosystem types
+| [Well Protected]{.inline-style-indicator}
+
+</center>
+:::
+
+::: {.column width="50%"}
+<center>
+
+| [10%]{.inline-style-well-protected}
+| of landmass
+| [Protected]{.inline-style-indicator}
+
+</center>
+:::
+:::::
+
+------------------------------------------------------------------------
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+#if (!require("devtools")) install.packages("devtools")
+#devtools::install_github("SANBI-NBA/nbaR")
+
+library(dplyr)
+library(gt)
+library(ggplot2)
+library(ggtext)
+library(ggrepel)
+library(gridExtra)
+library(RColorBrewer)
+library(grid)
+#library(terra)
+#library(sf)
+library(nbaR)
+
+```
+
+```{r data, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE, cache=FALSE}
+
+# ---- PL Data ----
+rle_epl <- read.csv("./data/ter_results_type_rle_epl.csv")
+rle_epl_stats <- readxl::read_xlsx("./data/RLE EPL stats.xlsx")
+epl_biome <- readxl::read_xlsx("./data/Biome EPL count.xlsx")
+epl_summary <- readxl::read_xlsx("./data/EPL summary results.xlsx")
+epl_province <- readxl::read_xlsx("./data/Provincial EPL summary results.xlsx")
+epli_2018 <- read.csv("./data/results_df_EPL_2018_biome_invasives2.csv")
+epli_2024 <- read.csv("./data/results_df_EPL_2024_biome_invasives2.csv")
+
+```
+
+## Ecosystem protection level results
+
+Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. Ecosystem types are assigned to one of four categories based on a set of predefined ecosystem targets (ranging from 16 to 32%)[@reyers2007; @desmet2004]. Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP). Read more about this indicator on the [About ecosystem protection level](../integrated-findings/chl_epl_explained.qmd) page.
+
+Over three-quarters (76%) of South Africa’s 463 terrestrial ecosystems received some form of statutory protection. However, levels of protection vary widely; 121 ecosystems are Well Protected, 67 are Moderately Protected, 163 are Poorly Protected and 112 are Not Protected.
+
+```{r}
+#| label: tbl-overall_epl
+#| tbl-cap: Summary of the Protection Level assessment outcomes; including the number of ecosystem types per category & proportion of the natural areas remaining per category.
+#| classes: plain
+
+epl_summary %>%
+      select(-6) %>%
+      gt::gt() %>% 
+      nba_tbl_theme() %>% 
+      
+      gt::tab_style(style = cell_text(color = "white"), 
+                         locations = cells_column_labels()) %>% 
+
+       gt::cols_width(`Categories (Protection Level)` ~ pct(20),
+                      `Number of ecosystems` ~ pct(15), 
+                      `Natural extent remaining by Protection Level in South Africa, 2022 (km²)`~ pct(15),
+                       everything() ~ pct(20))
+
+```
+
+The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2004] has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass ([Key Message B4](../key-messages/kmb4.qmd)).
+
+![Protected Areas in the Terrestrial realm circa 2024](./imgs/PA_map.png){#fig-pa_map fig-align="center" width="650"}
+
+### Biome and provincial level results
+
+At a biome level, most Well Protected ecosystems are concentrated in the Fynbos (38) and Savanna (27). The very large National Parks (Khalahari Gemsbok and Kruger) in the Savanna Biome and the extensive Provincial Protected Areas and Mountain Catchment Areas in the Fynbos Biome mean that protection targets for numerous ecosystem types are met or exceeded. The Forest Biome, which has a limited natural extent in South Africa, is Well Protected, in part due to regulations related to the National Forests Act[@governmentofsouthafrica1998] and cultural practices. In contrast lowland Fynbos, grassland and Karoo ecosystems tend to be under protected (Poorly Protected or Not Protected) (@fig-biome-prov) reflecting the need to improve their representation in the protected area network (@fig-EPL-map).
+
+![Protection level map of terrestrial ecosystem types. The inset graph shows the percentage of ecosystem types that fall within each protection category.](./imgs/EPLmap_with_donut.png){#fig-EPL-map fig-cap="Protection level map of terrestrial ecosystem types. The inset graph shows the percentage of ecosystem types that fall within each protection category." width="600"}
+
+Ecosystem protection patterns at the provincial scale largely mirror those observed at the biome level. The Western Cape, Northern Cape, and Eastern Cape contain the highest numbers of under-represented ecosystems within the protected area network (@fig-biome-prov), many of which overlap with the Cape Floristic Region, a globally recognised biodiversity hotspot with exceptionally high ecosystem diversity. In contrast, provinces such as Gauteng and Limpopo, which have fewer ecosystems overall, still exhibit a high proportion of under-protected ecosystems (@fig-EPL-map), highlighting persistent gaps in representation even where total ecosystem numbers are lower.
+
+```{r, fig.width = 12, fig.height = 6, fig.align='center'}
+#| label: fig-biome-prov
+#| fig-cap: "Protection level per terrestrial biome (A) and per province (B); the percentage of ecosystem types within each protection level category."
+
+Biome_epl_barplot <- nba_plot(epl_biome,
+                              GROUPS = Biome,
+                              COLS = c(2:4,6),
+                              CHRT = "bar",
+                              NUM = TRUE,
+                              LAB = "Percentage of ecosystem types",
+                              SAVE = NULL,
+                              SCALE_TEXT = 1.6)
+
+Prov_epl_barplot <- nba_plot(epl_province,
+                             GROUPS = Province,
+                             COLS = c(2:5),
+                             CHRT = "bar",
+                             NUM = TRUE,
+                             LAB = "Percentage of ecosystem types",
+                             SAVE = NULL,
+                             SCALE_TEXT = 1.6) 
+
+ggpubr::ggarrange(Biome_epl_barplot, Prov_epl_barplot,     
+                  ncol = 2,                                
+                  labels = c("(A)", "(B)"),                
+                  common.legend = TRUE,                    
+                  legend = "bottom")
+```
+
+## Ecosystem Protection Level Index
+
+Ecosystem Protection Level can be tracked over using the [ecosystem protection level index](../integrated-findings/chl_epl_explained.qmd) (EPLI). The overall (aggregate) trend between 2018 and 2024 reflects the steady increase in the PA estate overall, mostly due to various biodiversity stewardship programs and the establishment of a new National Park in the Nama-Karoo (note the low level of protection for the Nama-Karoo and the more pronounced increase in protection level since 2018). The EPLI plot shows how well protected the Forest Biome is, but it also shows that that no increase in protection have occurred in the biome recently.
+
+```{r, echo=FALSE, fig.width = 7, fig.height = 5}
+#| label: fig-EPLI
+#| fig-cap: "Ecosystem protection level index of terrestrial ecosystems at the South African biome level"
+
+# ---- Combine datasets ----
+epli_all <- bind_rows(epli_2018 %>% mutate(Year = 2018),
+                      epli_2024 %>% mutate(Year = 2024)) %>%
+            rename(Biome = T_BIOME) %>%
+            filter(!is.na(Biome))
+ 
+ 
+# ---- Data Prep ----
+biomes <- epli_all %>%
+          filter(!is.na(Biome)) %>%
+          pull(Biome) %>%
+          factor() %>%
+          droplevels() %>%
+          levels()
+ 
+biome_data   <- epli_all %>%
+                filter(Biome != "Total")
+overall_data <- epli_all %>%
+                filter(Biome == "Total")
+ 
+# ---- Color Palette ----
+biome_colors <- setNames(RColorBrewer::brewer.pal(length(biomes), "Paired"), biomes)
+ 
+# ---- Plot ----
+epli_plot <- ggplot() +
+             # Biomes
+             geom_line(data = biome_data, aes(x = Year, y = EPLI,  color = Biome), size = 1.0) +
+             geom_point(data = biome_data, aes(x = Year, y = EPLI,  color = Biome), size = 4) +
+             # Aggregate
+             geom_line(data = overall_data, aes(x = Year, y = EPLI, linetype = "Aggregate", shape = "Aggregate"), color = "black", size = 1.2) +
+             geom_point(data = overall_data, aes(x = Year, y = EPLI, shape = "Aggregate"), color = "black", size = 5.5) +
+ 
+             # ---- Scales ----
+             scale_color_manual(name   = "Biome", values = biome_colors) +
+             scale_linetype_manual(name   = "", values = c("Aggregate" = "dotted"), guide  = guide_legend(order = 2)) +
+             scale_shape_manual(name   = "", values = c("Aggregate" = 20), guide  = guide_legend(order = 2)) +
+             scale_x_continuous(breaks = unique(epli_all$Year)) +
+             scale_y_continuous(limits = c(0.3, 1), breaks = seq(0.3, 1, 0.1)) +
+              # ---- Labels ----
+             labs(x = "Year", y = "Ecosystem Protection Level Index") +
+               # ---- Theme ----
+             theme_classic() +
+             theme(legend.position    = "right",
+                   legend.box         = "vertical",
+                   legend.text        = element_text(size = 10),
+                   legend.title       = element_text(size = 12),
+                   legend.key.size    = unit(0.6, "cm"),
+                   legend.key.height  = unit(0.8, "cm"),   # increased vertical spacing between rows
+                   legend.key.width   = unit(1.0, "cm"),
+                   legend.spacing.x   = unit(0.5, "cm"),
+                   legend.box.spacing = unit(1.0, "cm"),
+                   axis.title.x       = element_text(size = 12, margin = margin(t = 15)), # more space above x-axis title
+                   axis.title.y       = element_text(size = 12, margin = margin(r = 15)), # more space to the right of y-axis title
+                   axis.text          = element_text(size = 12))
+
+epli_plot
+
+```
+
+## Approach
+
+Terrestrial ecosystem protection level was calculated by assessing the degree to which protected areas targets for each ecosystem were met. Land cover, invasive alien plant data, terrestrial ecosystem maps (vegetation map) and protected areas maps for 2018 and 2024 were cross tabulated, allowing the calculation for each ecosystem type: i) the full extent of the type ii) the full extent of the type within the PA network, iii) natural remaining the extent of the type within the PA network (including invaded areas), iv) the extent of invasion by alien plants within the PA network for each type.
+
+The extent of of each type within the PA network was adjusted for habitat loss and invasion. The natural remaining extent within the PA network was adjusted downwards by subtracting 70% of the invaded extent within the PA network. This step ensures that effectiveness of PA network is accounted for to a degree by preventing areas heavily degraded by invasive alien plants from fully contributing to ecosystem representation targets.
+
+Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection categories between time points (@fig-EPLI-workflow).
+
+![Workflow diagram for the Ecosystem Protection Level Index.](./imgs/EPLI_mermaid.png){#fig-EPLI-workflow}
+
+## Technical documentation
+
+**Code repository:** <https://github.com/askowno/EPL_terr>
+
+**Key publications**
+
+Linda R. Harris, Andrew L. Skowno, Stephen D. Holness, Kerry J. Sink, Lara van Niekerk, Heidi van Deventer, Lindie Smith-Adao, Nancy Job, Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
+
+## Acknowledgements
+
+Thanks to Agricultural Research Council's Alanna Rebelo, and post grad students Liam Cogill and Thandeka Skosana, for making their data on invasive alien plants available for the ecosystem assessments of the NBA 2025. Read more about their work on the [MAPWAPS](https://sites.google.com/view/alanna-rebelo/mapwaps) home page. Thanks also to Andrew Wannenburg (DFFE) and Johan Kotze for sharing the National Invasive Alien Plan Survey data. Tim Kirsten and Wesley Bell (UCT) kindly shared their PhD work on degradation in the Karoo. Thanks to Cape Nature (Boyd Escott), Mpumalanga Parks and Tourism (Mervyn Lotter), Ezemvelo-KZN Wildlife (Debbie Jewitt), GDARD (Marc Leroy), City of Cape Town (Charmaine Oxtoby and Johnathn Bell) for sharing provincial / metro land cover and condition data.
+
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::
