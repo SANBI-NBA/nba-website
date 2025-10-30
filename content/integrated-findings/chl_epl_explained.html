@@ -111,6 +111,35 @@ background: #adb5bd;
 }
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -350,13 +379,13 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/freshwater/fw_wet_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater (inland aquatic) realm</span></a>
+ <span class="menu-text">Inland Wetland Ecosystem Type</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/freshwater/fw_riv_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater (inland aquatic) realm</span></a>
+ <span class="menu-text">River Ecosystem Type</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -374,7 +403,7 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/freshwater/fw_riv_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater (inland aquatic) realm</span></a>
+ <span class="menu-text">River Ecological Condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -445,7 +474,7 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ecosystem Threat Status</span></a>
+ <span class="menu-text">Ecosystem threat status</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -740,8 +769,8 @@ background: #adb5bd;
   <ul>
   <li><a href="#map-of-protected-areas" id="toc-map-of-protected-areas" class="nav-link" data-scroll-target="#map-of-protected-areas">Map of protected areas</a></li>
   <li><a href="#ecosystem-targets" id="toc-ecosystem-targets" class="nav-link" data-scroll-target="#ecosystem-targets">Ecosystem targets</a></li>
-  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
   </ul></li>
+  <li><a href="#ecosystem-protection-level-index-epli" id="toc-ecosystem-protection-level-index-epli" class="nav-link" data-scroll-target="#ecosystem-protection-level-index-epli">Ecosystem protection level index (EPLI)</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
@@ -778,15 +807,31 @@ Figure&nbsp;1. Protected Areas across South Africa’s mainland and EEZ (A), and
 <h3 class="anchored" data-anchor-id="ecosystem-targets">Ecosystem targets</h3>
 <p>In previous national assessments, targets for ecosystem protection level in the marine, freshwater and estuarine realms were set to 20% representation. With the publication the Global Biodiversity Framework (most notably Target 3) a 30% target has been adopted for the NBA 2025 ecosystem protection level indicator. The targets used in the terrestrial assessment are based on species-area curves per ecosystem type (targets range from 16% to 36%)<span class="citation" data-cites="desmet2004"><sup><a href="#ref-desmet2004" role="doc-biblioref">3</a></sup></span>; these remain in effect for NBA 2025.</p>
 </section>
-<section id="approach" class="level3">
-<h3 class="anchored" data-anchor-id="approach">Approach</h3>
-<p>Details of the EPL calculations per realm can be accessed here:</p>
-<p><a href="../../content/terrestrial/ter_epl.html">Terrestrial EPL</a>;</p>
-<p><a href="../../content/marine/marine_epl.html">Marine EPL</a>;</p>
-<p><a href="../../content/estuaries/est_epl.html">Estuarine EPL</a>,</p>
-<p><a href="../../content/freshwater/fw_riv_epl.html">River EPL</a>,</p>
-<p><a href="../../content/freshwater/fw_wet_epl.html">Inland Wetland EPL</a></p>
 </section>
+<section id="ecosystem-protection-level-index-epli" class="level2">
+<h2 class="anchored" data-anchor-id="ecosystem-protection-level-index-epli">Ecosystem protection level index (EPLI)</h2>
+<p>Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection level categories between time points. Broad speaking, the EPLI represents the mean of ordinal ranks assigned to each protection category and is defined as follows:</p>
+<div id="eq-epli" class="equation">
+<p><span class="math display">\[
+EPLI =  \frac{\sum_{i = 1}^{n} W_{P_{i,t}}}{W_{Well} \cdot n}
+\]</span></p>
+</div>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(W_{P_{i,t}}\)</span> represents the <strong>protection category rank</strong> for ecosystem <span class="math inline">\(i\)</span> in year <span class="math inline">\(t\)</span>.</p></li>
+<li><p><span class="math inline">\(W_{Well}\)</span> is the <strong>maximum category rank</strong> (Well Protected = 3).</p></li>
+<li><p><span class="math inline">\(n\)</span> is the <strong>total number of ecosystems</strong>.</p></li>
+</ul>
+<p>Risk category ranks:</p>
+<ul>
+<li><p>Well Protected = 3</p></li>
+<li><p>Moderately Protected = 2</p></li>
+<li><p>Poorly Protected = 1</p></li>
+<li><p>Not Protected = 0</p></li>
+</ul>
+<p>EPLI scores range from 0 (all ecosystems not Protected) to 1 (all ecosystems classified as Well Protected), providing a clear and comparable measure of ecosystem protection across time and space. The EPLI can be disaggregated by South African biome for naitonal reporting, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology<span class="citation" data-cites="Keith2020GET rowland2020"><sup><a href="#ref-Keith2020GET" role="doc-biblioref">4</a>,<a href="#ref-rowland2020" role="doc-biblioref">5</a></sup></span> for global reporting.</p>
+<p><strong>Key publications</strong></p>
+<p>Linda R. Harris, Andrew L. Skowno,Stephen D. Holness, Kerry J. Sink,Lara van Niekerk, Heidi van Deventer,Lindie Smith-Adao,Nancy Job,Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
@@ -799,6 +844,12 @@ Figure&nbsp;1. Protected Areas across South Africa’s mainland and EEZ (A), and
 </div>
 <div id="ref-desmet2004" class="csl-entry" role="listitem">
 3. Desmet, P. &amp; R. Cowling. 2004. Using the Species Area Relationship to Set Baseline Targets for Conservation. <em>Ecology and Society</em> 9: <a href="https://doi.org/10.5751/ES-01206-090211">https://doi.org/10.5751/ES-01206-090211</a>
+</div>
+<div id="ref-Keith2020GET" class="csl-entry" role="listitem">
+4. Keith, D.A. et al. 2020. <em>The IUCN global ecosystem typology 2.0: Descriptive profiles for biomes and ecosystem functional groups</em>. IUCN, Gland, Switzerland. <a href="https://doi.org/10.2305/IUCN.CH.2020.13.en">https://doi.org/10.2305/IUCN.CH.2020.13.en</a>
+</div>
+<div id="ref-rowland2020" class="csl-entry" role="listitem">
+5. Rowland, J.A. et al. 2020. Ecosystem indices to support global biodiversity conservation. <em>Conservation Letters</em> 13: e12680. <a href="https://doi.org/10.1111/conl.12680">https://doi.org/10.1111/conl.12680</a>
 </div>
 </div>
 
