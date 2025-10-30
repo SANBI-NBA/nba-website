@@ -1,24 +1,39 @@
 ---
 title: "Overview"
-subtitle: "Marine"
-title-block-banner: "#02268A" #imgs/overview_banner.jpg #
+subtitle: "Estuarine Realm"
+title-block-banner: "#028A85" #imgs/overview_banner.jpg #
 title-block-banner-color: white
+bibliography: references.bib
 ---
 
-*South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems interacting with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and is part of the deep cultural and spiritual values of South Africa’s oceans. The 2025 National Biodiversity Assessment identified key marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life and livelihoods, and maintain the many benefits of South Africa’s exceptional marine biodiversity.*
+## Biodiversity Profile
 
-![do we need a caption?](imgs/overview_banner.jpg)
+*South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This represents a high diversity of estuary types stemming from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
+
+
+![Knysna Estuarine Bay @ Duran de villiers](imgs/est_knysna_duran_de_villiers2.png)
+
+
+In South Africa, there are *circa* 176 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat. Key estuary habitats in South Africa cover a total area of 103 500 ha, with reeds and sedges (17 500 ha) overall the dominant habitat type. On a bioregional scale, supratidal salt marsh dominates in the Cool temperate region (6 300 ha) and Warm temperate region (2 400 ha, reeds and sedges in the Subtropical region (10 800 ha), and swamp forest in the Tropical region (2 000 ha). Estuaries with the largest extent are St Lucia (44 800 ha), Groot Berg (8 000 ha) and Knysna (2 400 ha). The number of macrophyte species per estuary varied from 1 to 54 (recorded at Kosi). Macrophyte species richness in estuaries of the Cool and Warm Temperate region is higher than that in the Subtropical and Tropical region. Macrophyte species are distributed amongst 58 families . Only 66 plant species occurred in five or more estuaries in the country.
+
+Approximately 50 of the 150 estuarine-associated fish species that regularly occur in estuaries are Southern African endemics of which 20 are exclusively found in South African waters with some species confined to only a few systems. For example, the iconic Knysna seahorse only occurs in three estuaries (Knysna, Swartvlei, Keurbooms), the Bot River Klipvis in two estuaries (Bot/Kleinmond and Klein) and the Estuarine Pipefish in five estuaries (historically Bushmans, Kariega, Kasouga, East and West Kleinemonde but only confirmed extant in two of these systems).
+
+The importance of South Africa’s estuaries for resident and migratory waterbirds has long been recognised. A total of 35 bird species are considered highly dependent on estuaries as more than 15% of their regional population is found in these systems. The 118 waterbird species found in South African estuaries belong to eight orders, 25 families and 73 genera. While most species are found throughout the coast, there are some species which are predominantly confined to the west of the country, and in general, species richness increases towards the east, into the subtropical and tropical regions.
+
+Even important ‘bait’ invertebrate species Sandprawn (*Callichirus kraussii*), Mud Prawn (*Upogebia africana*) and *Macrobrachium petersii* are southern African endemics, while the freshwater Sand-shrimp (*Palaemon capensis*) is a South African endemic.
+
+*Our estuarine biodiversity underpins food security and economic opportunities, and is part of the deep cultural and spiritual values of South Africa’s coast. The 2025 National Biodiversity Assessment identified key estuarine ecosystems and benefits at risk, and high lights priority actions to safeguard life and livelihoods, and maintain the many benefits of South Africa’s exceptional biodiversity*
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [45%]{.inline-style-threatened}
-| of 163 ecosystem types
+| [59%]{.inline-style-threatened}
+| of 22 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
-| [20%]{.inline-style-well-protected}
-| of 163 ecosystem types
+| [9%]{.inline-style-well-protected}
+| of 22 ecosystem types
 | [Well Protected]{.inline-style-indicator}
 
 </center>
@@ -27,13 +42,13 @@ title-block-banner-color: white
 ::: {.column width="50%"}
 <center>
 
-| [17%]{.inline-style-not-protected}
-| of 163 ecosystem types
+| [14%]{.inline-style-not-protected}
+| of 22 ecosystem types
 | [Not protected]{.inline-style-indicator}
 
-| [36%]{.inline-style-threatened}
-| of 496 taxa assessed
-| [Threatened]{.inline-style-indicator}
+| [70%]{.inline-style-threatened}
+| of estuarine area are
+| [Heavily degraded to Critically degraded]{.inline-style-indicator}
 
 </center>
 :::
@@ -41,91 +56,90 @@ title-block-banner-color: white
 
 ------------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
 
 <!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
 
-![Caption to be added](imgs/Marine_Biodiveristy_Assessment.jpg){fig-align="center"}
-
 ## Ecosystem assessments
 
-Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food, job and climate security (link to KMA2).
+The Estuarine Realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s 22 estuarine ecosystem types, 59% are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
 
-Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk (link to KMA2).
+Overall, Cool Temperate and Subtropical ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed systems. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk.
 
-More than 80% of South Africa's 163 marine ecosystem types now have some representation in the MPA network, but only 20% are Well Protected (link to KMB4). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.
+More than 80% of South Africa's 22 estuarine ecosystem types now have some representation in the protected areas network, but only 1% are Well Protected (link to KMB4). **Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.**
 
-Increasing the extent of South Africa’s marine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of marine ecosystems in MPAs also needs improvement (link to KMC2) for ecosystem types to advance to Well Protected status. Marine conservation also needs to better consider and involve people (link to KMC1), diversify protection models, and address issues that undermine legitimacy.
+Increasing the extent of South Africa’s estuarine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of estuaries in protected areas also needs improvement (link to KMC2) for ecosystem types to advance to Well Protected status. Estuarine conservation also needs to better consider and involve people (link to KMC1), diversify protection models, and address issues that undermine legitimacy.
 
-In the marine realm, 17% of ecosystem types are both highly threatened and under protected (link to intersection of ets and epl section), prevalent on the West Coast, the western Agulhas Bank shelf edge, the inshore of the Agulhas Bank and parts of the KwaZulu-Natal Bight.
+**In the estuarine realm, 17% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and KwaZulu-Natal.**
 
-```{r}
-#| label: fig-eco_map
-#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined bentho-pelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) and the key is available on the [Marine Ecosystems page](../marine/marine_ecosystems.qmd).
-#| echo: false
+## Condition
 
-knitr::include_graphics("imgs/benthic_pelagic_map_panel.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
+More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.
 
-```
+This represent an overall 1% decline in Natural/Near Natural estuaries and 7% increase in degraded extent. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.
+
+Estuaries require increased protection and interventions across multiple sectors to arrest the ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining & farming).
+
+### *ADD BUBBLE MAP OF CONDITION*
+
+::::: grid
+::: {.g-col-lg-8 .g-col-12}
+
+There are many interacting pressures cumulatively affecting estuarine ecosystems and species. The main pressures impacting estuarine biodiversity include escalating gillnet pressure, declining water quality, increased flow reduction and land-use change in EFZ (coastal development, mining & farming).
+
+ 
+:::
+::: {.g-col-lg-4 .g-col-12 .text-center}
+ 
+![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
+
+:::
+:::::
+
+## Pressures
+
+Pressure evaluation shows that a third of freshwater flow no longer reaches the coast (22% of systems severely impacted). Wastewater discharges amount to about 655 000 m^3^/d (32% of estuaries under severe pollution pressure), with harmful algal blooms (HABs) now recorded in 18% of estuaries in response to declining water quality. Estuaries, especially in KwaZulu-Natal and Wild Coast, are under severe pressure from illegal gillnetting, with systems under severe pressure increasing from 15% to 21% to 28% between 2011, 2018 and 2025 (75%, 78% and 85% of area), significantly compromising the multiple benefits derived from estuaries. Over 22% of estuaries are also subjected to severe habitat modification.
+
+Overall multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
+
+### *ADD BUBBLE MAP OF PRESSURE*
+::::: grid
+
+::: {.g-col-lg-8 .g-col-12}
+ 
+The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment (link to KMA2).
+108
+ 
+:::
+::: {.g-col-lg-4 .g-col-12 .text-center}
+ 
+![Map of 31 cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure.](imgs/cum_press_low_res.jpeg){style="width:400;"}
+ 
+:::
+:::::
 
 ## Species assessments
 
-**Marine species are assessed in terms of their stock status and threat status (IUCN Red List of Species).**
+Of the 66 species included in this assessment, 18 (27%) are threatened with extinction. While this finding corresponds well with the ecosystem assessment where a high proportion of ecosystems are highly threatened, it is based on a limited set of species assessments that include a high proportion of range restricted endemics, economically important species or habitat forming species. Of the groups considered, only birds were comprehensively assessed. Future assessments need to include all representatives of a taxonomic group to remedy this bias.
 
-There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species that is linked to improved fisheries and spatial management (link to KMA5). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and west coast rock lobster are Endangered. Illegal fishing is playing a key role in the poor status of these species (link to KMA6).
+Increased extinction risk for estuarine species is attributed to multiple pressures, with overfishing (including by recreational, small-scale, commercial and illegal fisheries), pollution, flow reduction, biological invasions, coastal development, agriculture and mining contributing most to the threatened status of estuarine species.
 
-![Caption to be added](imgs/spp_plate_overview.jpg)
+## Responses
 
-Of the 497 (update post corals) marine species assessed using the IUCN Red List of Species criteria and thresholds, 36% (update) are considered threatened (link to KMB1). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+**South Africa has a strong policy and legislative framework to protect and manage estuaries.** Excellent progress has been made in the management of estuaries in water and land use/planning sector. DWS has determined the ecological water requirements of all estuaries, with 100% of these being subject to the “Classification” of freshwater resources. In addition, about 20% of estuaries have Estuary Management Plans in various stages of completion under the guidance of DFFE, provinces and conservation agencies. These noteworthy progresses since 2018 play a critical role in ensuring estuary health and the multiple benefits that society derives from them.
 
-Sharks, rays and chimaeras are one of the most threatened groups across all realms with 41% being threatened (link to shark page). A re-assessment of South Africa’s seabreams (link to seabream page) show 10 (24%) of the 42 assessed seabreams are threatened, but three seabreams have improved in terms of threat status and two have become more threatened. Of the 128 (may need update) South African shallow reef building corals assessed globally, 34% are threatened by climate change (link to KMA1).
+The above measures are proactive in that they set management objectives for estuarine resources on the strategic level through the engagement of society in the decision-making process. Unfortunately, there has been a deterioration in the management of extractive use in estuaries, with sand, mineral and diamond mining key concerns.
 
-Increased extinction risk for marine species is attributed to multiple pressures (link to pressures?), with overfishing (including by industrial, recreational and illegal fisheries), lethal shark control measures, coastal mining, estuarine degradation, flow reduction, climate change and pollution contributing most to the threatened status of marine species.
+There is an urgent need to strengthen bilateral arrangements between sectors dealing with Environment, Water, Fishing & Mining to ensure optimum resource allocation. In many of the above sectors, management measures and processes, biodiversity requirements were not met, e.g. flow allocation to the Mlalazi Estuary in the Thukela MPA was not sufficient to prevent increased constricted/closed mouth conditions and associated poor water quality. Given that estuarine management straddles multiple sectors, a more robust intergovernmental engagement could assist in ensuring a balance in sectoral requirements and preventing mandate conflict between departments.
 
-Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring (link to KMC3), and increase capacity for marine species red listing (link to KMC3). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.
+```{r}
 
-## Pressures and condition
+#| label: fig-kromme
+#| fig-cap:  Kromme Estuary with extensive sal tmarsh @Riaan Weitz
 
-::::: grid
-::: {.g-col-lg-8 .g-col-12}
-There are many interacting pressures cumulatively affecting marine ecosystems and species. The main pressures impacting marine biodiversity include fishing, coastal development (including ports and harbours), pollution, shipping, freshwater flow reduction, lethal shark control and climate change.
 
-Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).
-:::
-
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas ahve the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.jpeg){style="width:400;"}
-:::
-:::::
-
-Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Pollution including chemical, agricultural, municipal and noise pollution are key escalating pressures. Seismic surveys to detect potential offshore oil and gas resources have been expanding into deeper waters and, together with shipping and other sources of underwater noise, pose uncertain risks to marine ecosystems. Renewable energy installations xxx
-
-::::: grid
-::: {.g-col-lg-8 .g-col-12}
-Despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and underestimation of pressure impacts on ecosystem condition. Consequently, the first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring is needed to support assessment of ecosystem and species (link to KMB5), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.
-
-The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment (link to KMA2).
-:::
-
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
-:::
-:::::
-
-## Priority actions and areas
-
-Drawing from the key findings of this assessment, a number of priority actions were co- developed to improve the state of marine ecosystems and species. Science-policy workshops and other engagements were held to bring researchers, decision makers and knowledge holders together to consider evidence and make joint recommendations to address findings.
-
-More than 70 (update) individual actions were advanced (link to priority action page), and have been packaged into broad areas of action, with several indicators developed to support tracking progress in identified actions to improve the state of marine biodiversity in South Africa.
-
-Spatial biodiversity priority areas (link to CBA map) to protect, restore and recover marine ecosystems and species have been identified, and are being improved with increased participation, collaboration, and technical innovation.
-
-(note- knowledge gaps? End)
-
-![The Science to Policy Workshop November 2024. (c) Kerry Sink](imgs/workshop.jpg){.lightbox}
+knitr::include_graphics("imgs/est_kromme_saltmarsh3.png")
+```
 
 ## Key publications
 
-Sink, K.J., van der Bank, M., Majiedt, P.A., Harris, L., Atkinson, L. & Karenyi, N., 2019. *National Biodiversity Assessment 2018: Technical Report Volume 4: Marine Realm*. Pretoria: South African National Biodiversity Institute.
+Van Niekerk, L., Adams, J.B., Lamberth, S.J., MacKay, C.F., Taljaard, S., Turpie, J.K., Weerts S.P. & Raimondo, D.C., 2019 (eds). *National Biodiversity Assessment 2018 Technical Report Volume 3: Estuarine Realm*. CSIR report. South African National Biodiversity Institute, Pretoria.

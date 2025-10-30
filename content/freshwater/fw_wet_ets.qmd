@@ -109,7 +109,7 @@ google-scholar: true
 
 Add text here
 
-![Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.](imgs/wet_ets_map.png){#fig-ets_wet_map} 
+![Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
 
 Approximately 65% of inland wetland extent and 72% of inland wetland ecosystem types are threatened. In terms of threatened inland wetland ecosystem types, approximately 18% are Critically Endangered, 24% Endangered and 30% are Vulnerable. In terms of wetland extent, approximately 20% is Critically Endangered, 21% Endangered and 45% is Vulnerable.
 

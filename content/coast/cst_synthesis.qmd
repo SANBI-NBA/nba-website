@@ -390,7 +390,7 @@ The Endangered coastal species are all endemic, and are impacted primarily by mi
 
 ## Priority actions
 
-In addition to the [overall priority actions](../integrated-findings%20/pakg_actions.qmd){target="_blank"} distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are given below.
+In addition to the [overall priority actions](../integrated-findings/pakg_actions.qmd){target="_blank"} distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are given below.
 
 ::: {.callout-note .coast collapse="false" appearance="minimal" icon="false"}
 **1. Restore the coast**

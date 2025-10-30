@@ -2,6 +2,7 @@
 title: "Products and uses of the NBA" # 
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
+bibliography: refs-about-nba.bib
 ---
 
 *South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities.*
@@ -28,7 +29,7 @@ The NBA has seven objectives, which are to:
 
 ## Uses and users of the NBA
 
-Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used.
+Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used. A recent publication by da Silva et al., (2025) delves into the impact of the National Biodiversity Assessment in South Africa[@dasilva2025].
 
 The website form of the NBA allows information to be presented at increasing levels of detail, and each user can delve as deeply as they choose. Users who want to only read the key messages, for example, can study the Summary of Findings and Key Messages publication and the key messages section of the website. Users who are developing response strategies and action plans for a particular realm or taxonomic group or pressure can study those webpages in detail and delve into the references provided. Users such as scientists or biodiversity planners can access the underlying datasets and can investigate the analytical methods by reviewing the workflows and script that underpin the NBA, accessible in public repositories.
 
@@ -40,13 +41,12 @@ The NBA's products can be summarised as follows:
 The NBA has a strong focus on presenting spatial information (e.g. maps of ecosystem types, maps of ecological condition, species distribution maps, maps of threat status and protection level, etc.), and also makes non-spatial datasets available (e.g. species checklists). Each of these datasets are accompanied by their metadata.
 :::
 
-
 ::: {.callout-note collapse="true" title="Workflows for analyses and indicators"}
 A key focus of NBA 2025 was to ensure that the workflows for undertaking these analyses were published on repositories such as GitHub. This ensures that the NBA analyses are reproducible and mitigates any loss of knowledge or data should there be a change in staff undertaking the analyses.
 :::
 
 ::: {.callout-note collapse="true" title="Results of analyses"}
-The results of NBA analyses are usually graphs or maps, and these are made available for users, with a recommended citation.
+The results of NBA analyses are usually indicators or other metrics, dispalyed as graphs or maps. These are all made available for users, with a recommended citation. Workflows and analytical code and documentation are available in various repositories (e.g. GitHub), technical reports are (available through FigShare, Dryad or similar, or SANBIs institutional document library - OPUS) and through publised scientific articles.
 :::
 
 ::: {.callout-note collapse="true" title="Key messages"}
@@ -147,4 +147,9 @@ The [Ramsar](https://www.ramsar.org/) treaty was adopted in 1971 and serves as t
 Key Ramsar indicator to which the NBA has links:
 
 -   8.6 Total and disaggregated area for the extent of wetlands (according to the Convention’s definition) for the year of available data
+:::
+
+## References
+
+::: {#refs}
 :::

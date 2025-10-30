@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Threat Status" # Compulsory
-subtitle: "Estuarine Realm" # Optional: delete if you are not using a subtitle
+title: "Ecosystem threat status" # Compulsory
+subtitle: "Estuarine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -65,7 +65,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* 
+
+<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
 ::::: columns
 ::: {.column width="50%"}
@@ -100,12 +102,170 @@ google-scholar: true
 <!-- creates spaces -->
 
 \
+<!-- The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.  -->
 
-More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.
 
-This represent an overall 1% decline in Natural/Near Natural estuaries & 7% increase in degraded extent. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.
+## Ecosystem threat status assessment
 
-Estuaries requires increase protection and interventions across multiple sectors to arrest ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining & farming).
+\
+
+About 59% of the 22 estuary types are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
+
+Multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
+
+
+```{r}
+#| label: fig-ets_map
+#| fig-cap: LARA PLEASE ADD THE CAPTION HERE
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+
+knitr::include_graphics("imgs/ets_with_donut.png")
+
+```
+
+
+\
+\
+
+
+:::: panel-tabset
+## Figure
+
+```{r}
+#| label: fig-ets_bargraphs
+#| echo: false
+#| fig-cap: LARA PLEASE ADD CAPTION HERE
+#| out-width: 100%
+
+library(gt)
+library(nbaR)
+library(tidyverse)
+
+# load the data 
+ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+
+#Combine RLE plot
+nba_plot_comb(ets_combined,
+              zone,
+              METRIC_COL = metric,
+              METRICS = c("count", "extent"),
+              2:5,
+              CHRT = "bar",
+              NUM = FALSE,
+              LAB = "Percentage of ecosystem",
+              SAVE = NULL,
+              SCALE_TEXT = 1) +
+  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
+
+```
+
+## Data
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label: tbl-ets_bargraphs
+#| echo: false
+#| tbl-cap: LARA PLEASE ADD CAPTION HERE
+#| out-width: 100%
+
+
+##must round values
+
+
+
+tbl <- ets_combined %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "count", "Count")) %>% 
+  arrange(zone) %>% 
+  select(zone, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Least Concern`) %>%
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "zone",
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
+  nbaR::nba_tbl_theme(HEADER = "Estuarine") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+tbl %>% 
+  gt::tab_options(
+    table.width = pct(100),
+    data_row.padding = px(5),
+    column_labels.font.size = px(15),
+    row_group.font.size = px(15),
+    table.font.size = px(15)
+  )
+```
+:::
+::::
+
+
+\
+\
+
+```{r}
+#| label: tbl-ets
+#| tbl-cap: NEEDS A CAPTION
+
+# library(here)
+#library(gt)
+library(reactable)
+library(dplyr)
+
+
+# load data
+ets <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(-'protection_level') %>% 
+  mutate(
+    threat_status = factor(threat_status, levels = c("Critically Endangered",
+                                 "Endangered",
+                                 "Vulnerable",
+                                 "Least Concern"),
+                      ordered = TRUE)) %>%
+  arrange(threat_status, NAME) 
+
+nba_tbl_colr(DF = ets,
+             COL = threat_status,
+             HEADER = "Estuarine") %>%
+  tab_options(container.height = px(550),
+              container.overflow.y = TRUE) %>% 
+    tab_style(
+    style = cell_fill(color = "#028A85"),
+    locations = cells_column_labels(columns = everything())
+  )
+
+# # create the table
+# reactable(
+#   epl,
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#028A85", color = "white", fontWeight = "bold")
+#   ),
+#   theme = reactableTheme(
+#     inputStyle = list(
+#       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+#       backgroundColor = "white",
+#       border = "1px solid #ccc"
+#     )))
+
+```
 
 ## Approach
 
@@ -127,52 +287,8 @@ Each of the 22 estuary ecosystem types were assigned to one of the four risk cat
 
 A more detailed explanation of the assessment method can be found at [RLE explanation page](../integrated-findings/chl_rle_explained.qmd).
 
-## Ecosystem Threat Status Assessment
-
-#REPLACE WITH ANDREW'S ETS MAP
-
-```{r}
-#| label: fig-ets_map_benth
-#| fig-cap: Benthopelagic and deepsea benthic marine ecosystem type threat status.
-#| echo: false
-#| message: false
-#| warning: false
-#| out-width: 100%
 
 
-knitr::include_graphics("imgs/ets_benthic_with_donut.png")
-
-```
-
-#REPLACE WITH ANDREW'S ETS GRAPHS
-
-```{r}
-#| label: fig-ets_bargraphs
-#| echo: false
-#| fig-cap: Threat status of marine ecosystem types by functional group.
-#| out-width: 100%
-
-library(tidyverse)
-library(nbaR)
-
-
-
-# load the data 
-ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
-#Combine RLE plot
-nba_plot_comb(ets_combined,
-              ecosystem_functional_type_getl3,
-              METRIC_COL = metric,
-              METRICS = c("count", "extent"),
-              2:6,
-              CHRT = "bar",
-              NUM = FALSE,
-              LAB = "Percentage of ecosystem",
-              SAVE = NULL) +
-  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
-
-```
 
 ## Technical documentation
 
@@ -186,11 +302,10 @@ nba_plot_comb(ets_combined,
 
 ### Code repositories
 
--   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+-   [**Threat status assessment**](https://github.com/askowno/RLE_est/tree/main)
 
-#ADD ANDREW'S ETS FILE
 
-### Key Publications
+### Key publications
 
 ## Recommended citation
 

@@ -167,7 +167,7 @@ All rivers or streams with outlets to the sea were categorised broadly as estuar
 
 ```{r}
 #| label: fig-ecotypes
-#| fig-cap:  Estuarine ecosystem typology
+#| fig-cap:  "Estuarine ecosystem typology"
 
 
 knitr::include_graphics("imgs/est_ecotypes_1.png")
@@ -245,8 +245,9 @@ The Estuarine Ecosystem Classification system for South Africa’s 290 estuaries
 
 Estuarine lagoons are the rarest South African estuary type with only one member in the Cool Temperate region, followed by Estuarine bays with two in the Subtropical and one in the Warm Temperate region. Arid predominantly closed estuaries are confined to six systems in the Cool Temperate region. The Large and Small fluvially dominated types comprise seven systems each, occurring in three and two biogeographical regions, respectively. Small temporarily closed (116), Large temporarily closed (93), and Predominantly open (45) are the most dominant types occurring across the Cool Temperate, Warm Temperate and Subtropical biogeographical regions. Estuarine lakes occur across all four biogeographical zones. While not numerically dominant, this type represents the largest surface area of all estuary functional types, with Lake St Lucia representing more than half of South Africa’s estuarine surface area.
 
-::: {.panel-tabset appearance="minimal" collapse="false"}
+:::: {.panel-tabset appearance="minimal" collapse="false"}
 <!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
+
 
 ## Estuarine ecosystem examples
 
@@ -260,7 +261,7 @@ knitr::include_graphics("imgs/est_ecotypes_1.png")
 ```
 
 ## Data
-
+::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
 library(gt)
 library(tidyverse)
@@ -272,20 +273,24 @@ est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotyp
 
 est_ecotypes %>%
   gt() %>%
-  nbaR::nba_tbl_theme(HEADER = "Estuarine") %>% 
-  gt::tab_style(style = list(gt::cell_text(weight = "bold")),
-    locations = cells_body(
-      columns = Total
-    ))%>% 
-  gt::tab_style(style = list(gt::cell_text(color  = "white")),
-    locations = cells_column_labels() ) %>% 
-  gt::tab_style(style = list(gt::cell_text(weight = "bold")),
-    locations = cells_body(
-      rows  = 10
-    ))
+  nbaR::nba_tbl_theme(HEADER = "Estuarine") 
+
+# %>% 
+#   gt::tab_style(style = list(gt::cell_text(weight = "bold")),
+#     locations = cells_body(
+#       columns = Total
+#     ))%>% 
+#   gt::tab_style(style = list(gt::cell_text(color  = "white")),
+#     locations = cells_column_labels() ) %>% 
+#   gt::tab_style(style = list(gt::cell_text(weight = "bold")),
+#     locations = cells_body(
+#       rows  = 10
+#     ))
   
 ```
 :::
+::::
+
 
 ## Technical documentation
 

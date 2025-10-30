@@ -1,32 +1,13 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Overview of freshwater species and ecosystems" # Compulsory
+title: "Overview" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
-# List authors here in the order you want them displayed in the title block
-# See examples in README
-author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
-  - name:
-      given: Nancy #Add author's first name here. Abbreviate the middle name
-      family: Job #Add author's surname here
-    orcid: 0000-0002-4929-7592 # Author's orcid ID. Delete this line if author is not on orcid
-    affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
 
-affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: South African National Biodiversity Institute
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -45,7 +26,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-**Freshwater ecosystems – rivers and inland wetlands – are the lifeblood of South Africa, underpinning our water security, economy, and cultural heritage. However, more than 60% are in a compromised ecological condition. This places at risk the vital services they provide, and the incredible biodiversity they support. It is of great concern that the number of threatened freshwater species continues to rise.**
+*Freshwater ecosystems – rivers and inland wetlands – are the lifeblood of South Africa, underpinning our water security, economy, and cultural heritage. However, more than 60% are in a compromised ecological condition. This places at risk the vital services they provide, and the incredible biodiversity they support. It is of great concern that the number of threatened freshwater species continues to rise.*
+
+![Nieuwoudtville ephemeral salt pan, a Vulnerable ecosystem type (Nancy Job)](imgs/20210821_105714_nvlle_v3.png)
 
 ::::: columns
 ::: {.column width="50%"}
@@ -110,60 +93,34 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-Rivers and inland wetlands are among the [most threatened](../integrated-findings/intf_ecosystems.qmd)[^1] and least protected ecosystems in South Africa. More than 64% of river ecosystem types and 65% of wetland ecosystem types are threatened ([KM B2](../key-messages/kmb2.qmd))[^2][^3].
+Rivers and inland wetlands are among the [most threatened](../integrated-findings/intf_ecosystems.qmd)[^1] and least protected ecosystems in South Africa. More than 64% of river ecosystem types and 65% of wetland ecosystem types are threatened ([Key Message B2](../key-messages/kmb2.qmd)).
 
 [^1]: Ecosystem types and species are referred to as 'threatened' when they have been categorised as Critically Endangered, Endangered or Vulnerable.
 
-[^2]: KM = key message
-
-[^3]: Estuaries, rivers and wetlands are the most threatened and least protected ecosystems in South Africa.
-
-Over 30% (82/222) of **river** ecosystem types are both highly threatened and under protected (Not Protected). They are found predominantly xxx.
-
-Over 20% (17/82) of **inland wetland** ecosystem types are both threatened and under-protected (Not Protected). They are found on the Highveld, along the eastern escarpment, in the Cape Fold Mountains and the arid Northern Cape.
+Over 30% (82/222) of **river** ecosystem types are both highly threatened and under protected (Not Protected). Over 20% (17/82) of **inland wetland** ecosystem types are both threatened and under-protected (Not Protected).
 
 It follows that the **freshwater species** which these ecosystems support are increasingly highly threatened.
 
 Over 36% of all assessed freshwater taxa and 66% of assessed endemic freshwater taxa are threatened, while 36% of all freshwater fishes and 66% of endemic freshwater fishes are threatened.
 
-Freshwater fishes are the most threatened of all taxa in South Africa. With escalating pressures from human activities and climate change, it is highly concerning that 59 waterbird species have been uplisted, with 5 listed as Endangered, 11 Vulnerable and the remaining Near Threatened, while the African Shaggy Rat (previously African Marsh Rat) and the Laminate Vlei Rat have been uplisted from Least Concern to Near Threatened during the current assessment. This is the first time that freshwater invertebrates xxx
+Freshwater fishes are the most threatened of all taxa in South Africa. With escalating pressures from human activities and climate change, it is highly concerning that 59 waterbird species have been uplisted, with 5 listed as Endangered, 11 Vulnerable and the remaining Near Threatened, while the African Shaggy Rat (previously African Marsh Rat) and the Laminate Vlei Rat have been uplisted from Least Concern to Near Threatened during the current assessment. This is the first time that freshwater invertebrates have been included into the national biodiversity assessment.
 
-![Figure 1. Nieuwoudtville ephemeral salt pan, a Vulnerable ecosystem type (Nancy Job) {#fig-nville1}](imgs/20210821_105714_nvlle_v3.png)
+In the face of increasing **pressures**, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([Key Message A3](../key-messages/kma3.qmd)), direct habitat loss and biological invasions ([Key Message A4](../key-messages/kma4.qmd)), as well as the exacerbating effect of climate change ([Key Message A1](../key-messages/kma1.qmd)).
 
-In the face of increasing **pressures**, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([KM A3](../key-messages/kma3.qmd))[^4], direct habitat loss and biological invasions ([KM A4](../key-messages/kma4.qmd))[^5], as well as the exacerbating effect of climate change ([KM A1](../key-messages/kma1.qmd))[^6].
+As freshwater ecosystems are affected by land use within their receiving catchment ([Key Message A2](../key-messages/kma2.qmd)), they are not easily protected within nature reserves and, therefore, implementation of other effective area-based conservation measures (OECMs[^2]), ecological corridors and connectivity[^3] is vital. We must collaborate across all levels of society ([Key Message C1](../key-messages/kmc1.qmd)) to conserve and wisely manage our remaining intact rivers and inland wetlands, and the freshwater species that they support. We must take urgent **action** to increase attention and funding on freshwater ecosystems and species, and to implement restorative actions in strategically identified areas.
 
-[^4]: Pollution reduces water quality, impacting aquatic ecosystems and their dependent economic activities.
+[^2]: Other effective area-based conservation measures (OECMs) are defined as "a geographically defined area other than a Protected Area, which is governed and managed in ways that achieve positive and sustained long-term outcomes for the in-situ conservation of biodiversity, with associated ecosystem functions and services and where applicable, cultural, spiritual, socio-economic, and other locally relevant values" (CBD, 2018).
 
-[^5]: The prevention and management of biological invasions remain a priority.
-
-[^6]: Accelerated climate change has widespread impacts on biodiversity and people.
-
-As freshwater ecosystems are affected by land use within their receiving catchment ([KM A2](../key-messages/kma2.qmd))[^7], often at far distances, they are not easily protected within nature reserves and, thus, implementation of other effective area-based conservation measures (OECM[^8]s) are vital. We must collaborate across all levels of society ([KM C1](../key-messages/kmc1.qmd))[^9] to conserve and wisely manage our remaining intact rivers and inland wetlands, and the freshwater species that they support. We must take urgent **action** to increase attention and funding on freshwater ecosystems and species, and to implement extensive restorative actions in strategically identified areas.
-
-[^7]: Unsustainable land use and sea use changes erode natural capital and undermine ecosystem services.
-
-[^8]: Other effective area-based conservation measures (OECMs) can include xxxx and are part of the suite of conservation tools. Conservation can include formal protection, stewardship, OECMs, and targeted species efforts.
-
-[^9]: Safeguarding South Africa’s biodiversity calls for a whole-of-government and whole-of-society approach.
+[^3]: Develop footnote on connectivity
 
 ## For more information on river ecosystems
 
-Click on the following links to find more information on **river** types, ecological condition, key pressures, Ecosystem Threat Status, Ecosystem Protection Level, key actions and knowledge gaps
+Click on the following or see the links in the left panel of this page to find more information on river ecosystem types, river ecological condition, key pressures, river Ecosystem Threat Status, river Ecosystem Protection Level, key actions and knowledge gaps.
 
 ## For more information on inland wetland ecosystems
 
-Click on the following to find more information on **inland wetland** types, ecological condition, key pressures, Ecosystem Threat Status, Ecosystem Protection Level, key actions and knowledge gaps
+Click on the following or see the links in the left panel of this page to find more information on inland wetland ecosystem types, wetland ecological condition, key pressures, wetland Ecosystem Threat Status, wetland Ecosystem Protection Level, key actions and knowledge gaps.
 
 ## For more information on freshwater species
 
-Click on the following to find more information on the status of assessed **freshwater species** as well as for all freshwater species.
-
-### Supporting publications and information
-
-**Technical reports**:
-
-South African National Biodiversity Institute (SANBI). 2025. *National Biodiversity Assessment 2025: The* *status of South Africa’s biodiversity. Summary of Findings and Key Messages*. Skowno, A.L., Poole, C.J., Besseling, N., Currie, J., da Silva, J.M., Dayaram, A., Job, N., Harris, L.R., Monyeki, M., Mtshali, H., Raimondo, D.C., Sink, K.J., van der Bank, M.G., van der Colff, D., van Niekerk, L., von Staden, L. (eds) South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. Handle:  
-
-## Recommended citation
-
-Job, N.M., other names xx. 2025. Freshwater (inland aquatic) realm - Status of Freshwater Species and Ecosystems. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
+Click on the following or see the link in the left panel of this page to find more information on the status of assessed freshwater species.

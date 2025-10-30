@@ -48,10 +48,9 @@ author:
       # If an author has more than one affiliation, add more - ref: lines here
 
 
-
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+    # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Stephen #Add author's first name here. Abbreviate the middle name
+      given: Stephen P. #Add author's first name here. Abbreviate the middle name
       family: Kirkman #Add author's surname here
     orcid: 0000-0001-5428-7375 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -61,7 +60,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Sean #Add author's first name here. Abbreviate the middle name
+      given: Sean N. #Add author's first name here. Abbreviate the middle name
       family: Porter #Add author's surname here
     orcid: 0000-0001-8890-7982 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -71,7 +70,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Prideel #Add author's first name here. Abbreviate the middle name
+      given: Prideel A. #Add author's first name here. Abbreviate the middle name
       family: Majiedt #Add author's surname here
     orcid: 0000-0001-7530-3442 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -81,7 +80,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Loyiso #Add author's first name here. Abbreviate the middle name
+      given: Loyiso V. #Add author's first name here. Abbreviate the middle name
       family: Dunga #Add author's surname here
     affiliations:
       - ref: sgh6 # Ref here must match the id of one of the affiliations listed below
@@ -90,7 +89,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Lara #Add author's first name here. Abbreviate the middle name
+      given: Lara J. #Add author's first name here. Abbreviate the middle name
       family: Atkinson #Add author's surname here
     orcid: 0000-0001-6724-9589 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -100,7 +99,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Anthony #Add author's first name here. Abbreviate the middle name
+      given: Anthony T.F. #Add author's first name here. Abbreviate the middle name
       family: Bernard #Add author's surname here
     orcid: 0000-0003-0482-6283 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -134,7 +133,7 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Kaylee #Add author's first name here. Abbreviate the middle name
+      given: Kaylee P. #Add author's first name here. Abbreviate the middle name
       family: Smit #Add author's surname here
     orcid: 0000-0003-3453-9082 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -145,7 +144,7 @@ author:
      
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Jock #Add author's first name here. Abbreviate the middle name
+      given: Jock C. #Add author's first name here. Abbreviate the middle name
       family: Currie #Add author's surname here
     orcid: 0000-0002-7226-2988 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -154,14 +153,13 @@ author:
    
    # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Andrew #Add author's first name here. Abbreviate the middle name
+      given: Andrew L. #Add author's first name here. Abbreviate the middle name
       family: Skowno #Add author's surname here
     orcid: 0000-0002-2726-7886 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
      
- 
 
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
@@ -279,7 +277,7 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ------------------------------------------------------------------------
 
-*Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy [Key Message A2](../key-messages/kma2.qml). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning and strategic Marine Spatial Planning can safeguard natural capital while enabling development.*
+*Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened, with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy ([Key Message A2](../key-messages/kma2.qml)). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning. Strategic Marine Spatial Planning can safeguard natural capital while enabling economic development.*
 
 ![Cape Bay is now considered an Endangered ecosystem type. © Peter Chadwick](imgs/cape_bay.png)
 

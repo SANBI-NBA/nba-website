@@ -23,19 +23,39 @@ EPL is calculated using protected areas, recognised under the National Environme
 
 In previous national assessments, targets for ecosystem protection level in the marine, freshwater and estuarine realms were set to 20% representation. With the publication the Global Biodiversity Framework (most notably Target 3) a 30% target has been adopted for the NBA 2025 ecosystem protection level indicator. The targets used in the terrestrial assessment are based on species-area curves per ecosystem type (targets range from 16% to 36%) [@desmet2004]; these remain in effect for NBA 2025.
 
-### Approach
+## Ecosystem protection level index (EPLI)
 
-Details of the EPL calculations per realm can be accessed here:
+Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection level categories between time points. Broad speaking, the EPLI represents the mean of ordinal ranks assigned to each protection category and is defined as follows:
 
-[Terrestrial EPL](../terrestrial/ter_epl.qmd);
+::: {#eq-epli .equation}
+$$
+EPLI =  \frac{\sum_{i = 1}^{n} W_{P_{i,t}}}{W_{Well} \cdot n}
+$$
+:::
 
-[Marine EPL](../marine/marine_epl.qmd);
+Where:
 
-[Estuarine EPL](../estuaries/est_epl.qmd),
+-   $W_{P_{i,t}}$ represents the **protection category rank** for ecosystem $i$ in year $t$.
 
-[River EPL](../freshwater/fw_riv_epl.qmd),
+-   $W_{Well}$ is the **maximum category rank** (Well Protected = 3).
 
-[Inland Wetland EPL](../freshwater/fw_wet_epl.qmd)
+-   $n$ is the **total number of ecosystems**.
+
+Risk category ranks:
+
+-   Well Protected = 3
+
+-   Moderately Protected = 2
+
+-   Poorly Protected = 1
+
+-   Not Protected = 0
+
+EPLI scores range from 0 (all ecosystems not Protected) to 1 (all ecosystems classified as Well Protected), providing a clear and comparable measure of ecosystem protection across time and space. The EPLI can be disaggregated by South African biome for naitonal reporting, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
+
+**Key publications**
+
+Linda R. Harris, Andrew L. Skowno,Stephen D. Holness, Kerry J. Sink,Lara van Niekerk, Heidi van Deventer,Lindie Smith-Adao,Nancy Job,Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
 ## References
 

@@ -292,8 +292,6 @@ Microorganisms (e.g., bacteria, protozoa, fungi, viruses), an often-overlooked a
 
 Click here for more details and a downloadable [Factsheet](assets/SANBI2025_south_africa_biodiversity_profile_factsheet.pdf)
 
-
-
 ### Recommended citation
 
 ```{r}

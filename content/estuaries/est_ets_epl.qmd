@@ -70,34 +70,20 @@ There are 27 marine ecosystem types that are both highly threatened and under-pr
 ```{r}
 #| label: tbl-ets_epl
 #| echo: false
-#| tbl-cap: Table summarising the distribution of protection levels across different threat status categories for marine ecosystem types.
+#| tbl-cap: NEEDS CAPTION
 
-library(dplyr)
+
+#devtools::install_github("SANBI-NBA/nbaR")
+library(tidyverse)
 library(nbaR)
-# library(sf)
+library(sf)
 
 
-# mem <-  st_read(
-#     dir("data",
-#         "marine_ecosystems.gpkg",
-#         full.names = T,
-#         recursive = T)[1],
-#   quiet = TRUE) %>% 
-#   st_drop_geometry() %>%  
-#   select(c(ecosystem_type, protection_level, threat_status))
+
+knitr::include_graphics("imgs/epl_ets_tbl.png")
 
 
-thr_pro <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
-  # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
-  rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 
-  select(ecosystem_type, threat_status, protection_level) %>%
-  nbaR::nba_tbl_comb(GROUP = ecosystem_type,
-                     THR =threat_status,
-                     PRO = protection_level,
-                     FILE ="csv")
 
-thr_pro
 
 ```
 
@@ -107,7 +93,9 @@ There is good progress in evaluating the ecological, socio-economic and governan
 
 ```{r}
 #| label: fig-rle_map
-#| fig-cap: Threatened and under-protected benthopelagic and deepsea benthic ecosystem types.
+#| fig-cap: NEEDS CAPTION
+
+
 #| echo: false
 #| message: false
 #| warning: false
@@ -120,7 +108,7 @@ library(sf)
 
 
 
-knitr::include_graphics("imgs/rle_unluckies.png")
+knitr::include_graphics("imgs/epl_ets_with_donut.png")
 
 
 ```

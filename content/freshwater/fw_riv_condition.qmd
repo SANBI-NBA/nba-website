@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Freshwater (inland aquatic) realm" # Compulsory
-subtitle: "River Ecosystem Condition" # Optional: delete if you are not using a subtitle
+title: "River Ecological Condition" # Compulsory
+subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE

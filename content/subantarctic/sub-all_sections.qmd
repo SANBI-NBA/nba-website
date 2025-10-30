@@ -197,7 +197,7 @@ Historically, the marine environment of the PEIs has been heavily exploited by t
 
 ## Species Assessments
 
-IUCN Species Red List assessments have been conducted for birds and marine mammals that also frequent the mainland waters, and are included in the [marine realm's species page](../marine/marine_sp.qmd). Dedicated species assessments have not been conducted for other taxa at the PEIs, as few are endemic and very limited foundational data is available to conduct species threat assessments.
+IUCN Species Red List assessments have been conducted for birds and marine mammals that also frequent the mainland waters, and are included in the [marine realm's species page](../species/marine_sp.qmd). Dedicated species assessments have not been conducted for other taxa at the PEIs, as few are endemic and very limited foundational data is available to conduct species threat assessments.
 
 There are 28 threatened or Near Threatened seabird species breeding at the PEIs that are taxa of conservation concern, especially with escalating mouse attacks on eggs, chicks and adult nesting birds on Marion Island [@risi_escalating_2025]. These include the endemic Lesser Sheathbill (VU), the Crozet Shag (EN), Macaroni Penguin (VU), Southern Rockhopper Penguin (EN), Wandering Albatross (VU), Sooty Albatross (EN), Indian Yellow-nosed Albatross (EN) and Grey-headed Albatross (EN). Future species assessments will require data from entire species’ distributions on and around nearby islands to assess threat status.
 

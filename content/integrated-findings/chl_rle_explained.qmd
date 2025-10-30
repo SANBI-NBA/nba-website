@@ -13,9 +13,16 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 
 ### The IUCN Red List of Ecosystems Framework
 
-|  |  |
-|----|:--:|
-| The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods | ![](imgs/RLE%20logo%20new.png) |
+::: {.columns}
+::: {.column width="60%"}
+The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods.
+:::
+
+::: {.column width="40%"}
+![](imgs/RLE%20logo%20new.png){width=150px}
+:::
+:::
+
 
 1.  can be applied systematically across realms and geographic areas;
 
@@ -153,28 +160,7 @@ Risk category ranks:
 
 -   Least Concern = 0
 
-RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear and comparable measure of ecosystem health across time and space. The indicator is designed for flexible application, allowing trends to be assessed for overall risk categories, or by individual criteria to reveal key drivers of ecosystem change. In addition, the RLIe can be disaggregated by country, biome, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020].
-
-## RLE and RLIe calculation methods
-
-Details of the calculations per realm can be accessed here:
-
-**Terrestrial realm**
-
--   [RLE Code repository](https://github.com/askowno/RLE_terr)
--   [RLIe Code repository](https://github.com/SANBI-NBA/terrestrial/tree/main/analysis)
-
-**Freshwater realm**
-
--   [RLE Code repository](https://github.com/SANBI-NBA/freshwater/tree/main/scripts)
-
-**Estuarine realm**
-
--   [RLE Code repository](https://github.com/SANBI-NBA/estuaries/tree/main/scripts)
-
-**Marine realm**
-
--   [RLE Code repository](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear and comparable measure of ecosystem health across time and space. The indicator is designed for flexible application, allowing trends to be assessed for overall risk categories, or by individual criteria to reveal key drivers of ecosystem change. In addition, the RLIe can be disaggregated by South African biome for naitonal reporitng, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
 
 ## References
 

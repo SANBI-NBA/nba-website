@@ -147,6 +147,7 @@ Invest in data science capacity and infrastructure to ensure effective data pipe
 -   FAIR (Findable, Accessible, Interoperable, and Reusable) data principles and reproducible science workflows are prioritised.
 
 ![TBA](imgs/PA_7.png){.lightbox}
+:::
 
 ::: {#box-8 .callout-note collapse="true"}
 ## Make existing Marine Protected Areas work through co-management, proper funding, and restorative action.
@@ -160,12 +161,12 @@ Invest in data science capacity and infrastructure to ensure effective data pipe
 ![TBA](imgs/PA_9.png){.lightbox}
 :::
 
-::::: {#box-10 .callout-note collapse="true"}
+::: {#box-10 .callout-note collapse="true"}
 ## Reduce climate risks to people and nature.
 
 ![TBA](imgs/PA_10.png){.lightbox}
 
-:::: >
+:::
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -206,5 +207,4 @@ nba_citation(meta)
 
 ::: {#refs}
 :::
-::::
-:::::
+

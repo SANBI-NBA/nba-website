@@ -148,7 +148,7 @@ Each ecosystem type is assessed according to these criteria, and is then placed 
 
 -   Data deficient (DD)
 
-For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings%20/chl_rle_explained.qmd){target="_blank"} to this headline indicator.
+For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings/chl_rle_explained.qmd){target="_blank"} to this headline indicator.
 
 ## Coastal Ecosystem Threat Status
 
@@ -355,12 +355,13 @@ cst <- read_csv(here("outputs/cst_results_for_integration.csv")) %>%
   arrange(realm, RLE, zone, type) %>% 
   rename(Realm = realm, Subrealm = zone, `Ecosystem Type`=type, 
          `Threat Status` = RLE) %>% 
-  mutate(`Threat Status` = recode(`Threat Status`,
-                                  "CR" = "Critically Endangered",
-                                  "EN" = "Endangered",
-                                  "VU" = "Vulnerable",
-                                  "NT" = "Near Threatened",
-                                  "LC" = "Least Concern"))
+  mutate(`Threat Status` =  case_match(`Threat Status`,
+                                  "CR" ~ "Critically Endangered",
+                                  "EN" ~ "Endangered",
+                                  "VU" ~ "Vulnerable",
+                                  "NT" ~ "Near Threatened",
+                                  "LC" ~ "Least Concern"))
+
 
 library(gt)
 library(nbaR)

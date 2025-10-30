@@ -80,7 +80,7 @@ google-scholar: true
 
 <!--# I haven't invested a lot in this page because I don't know how this section will play out for the realms. This is the NBA 2018 content. -->
 
-In addition to the [overall priority actions](../integrated-findings /pakg_actions.qmd) distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are:
+In addition to the [overall priority actions](../integrated-findings/pakg_actions.qmd) distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are:
 
 **1. Restore the coast**
 
