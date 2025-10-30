@@ -18,19 +18,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Project
-        run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            quarto render
-          else
-            quarto render --output-dir _site/dev
-          fi
+        run: quarto render
       
       - name: Deploy to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          keep_files: true  # Important: preserves dev folder when deploying main
           destination_dir: ${{ github.ref == 'refs/heads/dev' && 'dev' || '.' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          keep_files: true
