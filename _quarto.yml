@@ -64,15 +64,16 @@ website:
                      - content/integrated-findings/chl_rle_explained.qmd
                      - content/integrated-findings/chl_epl_explained.qmd
                      - content/integrated-findings/intf-species.qmd
+                     - content/integrated-findings/intf-species-rli.qmd
                 - text: "Pressures on biodiversity"
                   href: content/integrated-findings/intf_pressures-condition.qmd
-            - section: "Findings by realm"
+            - section: "Realm findings"
               contents:
                 - section: "Terrestrial"
                   href: content/terrestrial/ter_overview.qmd
                   contents:
                      - content/terrestrial/ter_ecosystems.qmd
-                     - content/terrestrial/ter_pressures-conditions.qmd
+                     - content/terrestrial/ter_pressures-condition.qmd
                      - content/terrestrial/ter_ets.qmd
                      - content/terrestrial/ter_epl.qmd
                      - content/terrestrial/ter_ets_x_epl.qmd
@@ -124,7 +125,7 @@ website:
                      - content/coast/cst_priorities-actions.qmd
                 - text: "Sub-Antarctic"
                   href: content/subantarctic/sub-all_sections.qmd
-            - section: "Species"
+            - section: "Species findings"
               href: content/species/sp.qmd
               contents:
                 - content/species/sp_plants.qmd
