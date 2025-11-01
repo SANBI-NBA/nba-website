@@ -8,11 +8,15 @@ The focus of NBA 2025 was on creating transparent and repeatable workflows hoste
 
 -   Excellent progress has been made regarding **automated condition assessments** to support the NBA 2025 **inland wetlands** threat status; NBA 2025 provides interim regional wetland types while a rigorous update of the typology is underway to provide more detailed characterisations; and work towards a revised National Wetland Map remains ongoing using a multi-partner, mixed approach that integrates GIS-based wetland predictive modelling, remote sensing and specialist mapping and validation (both field and desktop).
 
+-   River **condition data (PES) was updated nationally as part of WRC project** and this data was used to update and improve river ecosystem threat status and protection level assessments.
+
 -   The **Marine Ecosystem Map** **Version 2023** is used in this NBA and represents a minor update to the 2018 map, with the reintroduction of a pelagic layer in deeper waters beyond the shelf. In the meantime, a data-driven framework for updating the map has been in development and will represent a more substantial update in time for the next NBA. Condition data was not updated, however assessment methods have been improved.
+
+-   **Various research and mapping projects have made new data available on the distribution and abundance of invasive alien plants**; these data have been used to improve terrestrial ecosystem threat status and protection level assessments.
 
 -   The NBA shows **trends in terrestrial ecosystem threat status** with one of the world’s first applications of the Red List Index for ecosystems (RLIe), showing trends in ecosystem risk. The index can be disaggregated using national biomes or the IUCN Global Ecosystems Typology Level 3 – the latter useful for international comparisons.
 
--   **Three new taxonomic groups** have been included in NBA 2025: freshwater crabs, Anostraca (fairy shrimps) and spiders.
+-   **Three new taxonomic groups** have been included in NBA 2025: freshwater crabs, Anostraca (fairy shrimps) and spiders, and revised assessments of birds, mammals, reptile and amphibians have improved the Red List Index that tracks changes in threat status over time.
 
 -   Building on the efforts begun for NBA 2018, the genetic component of the NBA now pilots **international indicators of genetic diversity**.
 

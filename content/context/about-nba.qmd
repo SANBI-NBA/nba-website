@@ -43,13 +43,10 @@ The vast majority of contributions to the NBA is on a volunteer basis without an
 
 An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.
 
-The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the '[What's New](./whatsnew-nba.qmd) section to see what has been updated. 
+The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the '[What's New](./whatsnew-nba.qmd) section to see what has been updated.
 
 ### Further reading
 
 Read more about the origins, context, goals, form, scope and approach of the NBA in the document called [South Africa's National Biodiversity Assessment: Contextual and Operational Framework](https://hdl.handle.net/20.500.12143/9058).
 
-Poole, C.J., Skowno, A.L., Currie, J.C., Sink, K.J., Daly, B., von Staden, L., 2023. Taking state of biodiversity reporting into the information age – A South African perspective. Frontiers in Ecology and Evolution 1–6. https://doi.org/10.3389/fevo.2023.1107956
-
-
-
+Poole, C.J., Skowno, A.L., Currie, J.C., Sink, K.J., Daly, B., von Staden, L., 2023. Taking state of biodiversity reporting into the information age – A South African perspective. Frontiers in Ecology and Evolution 1–6. <https://doi.org/10.3389/fevo.2023.1107956>

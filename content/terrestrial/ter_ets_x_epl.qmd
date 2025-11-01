@@ -61,7 +61,7 @@ format:
 
 *The intersection of ecosystem threat status and protection level reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
 
-![the Endangered Black Harrier; an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome ©Odette Curtis-Scott](./imgs/blackharrier_crop_ocs.png)
+![The Endangered Black Harrier; an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome (© Odette Curtis-Scott)](./imgs/blackharrier_crop_ocs.png)
 
 ::::: columns
 ::: {.column width="50%"}
@@ -77,7 +77,7 @@ format:
 ::: {.column width="50%"}
 <center>
 
-| [57%]{.inline-style-well-protected}
+| [57%]{.inline-style-threatened}
 | of 30 renosterveld ecosystem types
 
 </center>
@@ -99,7 +99,7 @@ library(gt)
 
 ```{r}
 #| label: tbl-unluckies_table
-#| tbl-cap: Terrestrial ecosystem threat status and ecosystem protection level
+#| tbl-cap: The intersection of terrestrial ecosystem threat status and protection level reveals potential priority areas of action.
 #| classes: plain
 
 unluckies_summary <- read.csv("./data/ter_results_type_rle_epl.csv") %>%

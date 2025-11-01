@@ -170,7 +170,7 @@ affiliations:
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
-#bibliography: biodivprof.bib
+#bibliography: 
 
 
 citation:
@@ -207,9 +207,9 @@ South Africa has a wide range of bioclimatic, oceanographic, geological and topo
 
 **Cross-realm coastal zone**: An ecological definition of the coast is used for biodiversity assessments. It comprises 190 ecosystem types from the terrestrial (83 types), estuarine (22 types) and marine (85 types) ecosystem maps to form a cross-realm coastal zone.
 
-South Africa’s **subantarctic territory** consists of Prince Edward Island, Marion Island and surrounding maritime domain. There are five terrestrial and 29 marine ecosystem types.
+South Africa’s **subantarctic** territory consists of Prince Edward Island, Marion Island and surrounding maritime domain. There are five terrestrial and 29 marine ecosystem types.
 
-## Species facts 
+## Species facts
 
 ```{r, message=FALSE,warning=FALSE, echo=FALSE,fig.height=14,fig.width=10}
 #| label: fig-rich

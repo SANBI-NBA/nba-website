@@ -13,16 +13,15 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 
 ### The IUCN Red List of Ecosystems Framework
 
-::: {.columns}
+::::: columns
 ::: {.column width="60%"}
 The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods.
 :::
 
 ::: {.column width="40%"}
-![](imgs/RLE%20logo%20new.png){width=150px}
+![](imgs/RLE%20logo%20new.png){fig-cap="*Click to enlarge*" width="150px"}
 :::
-:::
-
+:::::
 
 1.  can be applied systematically across realms and geographic areas;
 

@@ -13,23 +13,23 @@ bibliography: refs-about-nba.bib
 
 The NBA has seven objectives, which are to:
 
-1.  inform policy and decision making across multiple sectors;
+1.  Inform policy and decision making across multiple sectors;
 
-2.  support prioritisation and planning for conservation action;
+2.  Support prioritisation and planning for conservation action;
 
-3.  highlight the benefits of biodiversity for people and the economy;
+3.  Highlight the benefits of biodiversity for people and the economy;
 
-4.  present indicators for both national and international reporting;
+4.  Present indicators for both national and international reporting;
 
-5.  raise key issues for education and fundraising;
+5.  Raise key issues for education and fundraising;
 
-6.  provide a platform for collaboration and capacity development within the biodiversity sector; and
+6.  Provide a platform for collaboration and capacity development within the biodiversity sector; and
 
-7.  identify crucial data and knowledge gaps to stimulate future research and improvement.
+7.  Identify crucial data and knowledge gaps to stimulate future research and improvement.
 
 ## Uses and users of the NBA
 
-Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used. A recent publication by da Silva et al., (2025) delves into the impact of the National Biodiversity Assessment in South Africa[@dasilva2025].
+Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used. A recent publication by da Silva et al., (2025)[@dasilva2025] delves into the impact of the National Biodiversity Assessment in South Africa.
 
 The website form of the NBA allows information to be presented at increasing levels of detail, and each user can delve as deeply as they choose. Users who want to only read the key messages, for example, can study the Summary of Findings and Key Messages publication and the key messages section of the website. Users who are developing response strategies and action plans for a particular realm or taxonomic group or pressure can study those webpages in detail and delve into the references provided. Users such as scientists or biodiversity planners can access the underlying datasets and can investigate the analytical methods by reviewing the workflows and script that underpin the NBA, accessible in public repositories.
 

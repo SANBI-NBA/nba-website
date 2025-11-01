@@ -109,9 +109,11 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
+\
+
 ## Summary {#summary}
 
-**Many people live and work in coastal areas, and as a result, pressure on coastal biodiversity is disproportionately high. The coastal pressures in South Africa are summarised cross-realm under 10 themes: (1) biological resource use; (2) energy production and mining; (3) pollution; (4) coastal development; (5) transportation and service corridors; (6) natural systems modifications; (7) human intrusions and disturbance; (8) aquaculture, agriculture and plantation forestry; (9) invasive and other problematic species and diseases; and (10) climate change, severe weather, and ocean acidification. The impact of these pressures on coastal ecosystem types is analysed using realm-specific methods to generate a map of coastal ecological condition. Overall, the coast is in worse ecological condition than the rest of the country (non-coastal land and sea).**
+Many people live and work in coastal areas, and as a result, pressure on coastal biodiversity is disproportionately high. The coastal pressures in South Africa are summarised cross-realm under 10 themes: (1) biological resource use; (2) energy production and mining; (3) pollution; (4) coastal development; (5) transportation and service corridors; (6) natural systems modifications; (7) human intrusions and disturbance; (8) aquaculture, agriculture and plantation forestry; (9) invasive and other problematic species and diseases; and (10) climate change, severe weather, and ocean acidification. The impact of these pressures on coastal ecosystem types is analysed using realm-specific methods to generate a map of coastal ecological condition. Overall, the coast is in worse ecological condition than the rest of the country (non-coastal land and sea).
 
 ![Pressures, such as mining, are intense in the coastal zone, causing declines in the ecological condition of coastal ecosystem types and increasing species extinction risk. Photo credit: © Jacque Smit](imgs/cst-condition-coastal-mining_Jacque-Smit.png)
 

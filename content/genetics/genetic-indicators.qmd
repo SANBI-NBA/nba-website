@@ -88,7 +88,7 @@ Conservation monitoring is guided by key principles (@fig-con-gen-princ), which 
 
 In line with these principles, South Africa has adopted four genetic indicators from the Kunming-Montreal Global Biodiversity Framework, which can be based on direct genetic data or on proxies (when genetic data are not available; namely the [Ne 500](#box-1) and [PM](#box-2) indicators).
 
-::: {#box-1 .callout-note collapse="true"}
+::: {#box-1 .callout-note .genetics collapse="true"}
 ## Box 1. Proportion of populations with an effective population size greater than 500 (Ne 500 indicator)
 
 A headline indicator in the Convention on Biological Diversity's Global Biodiversity Framework. This is a high-level, mandatory metric that captures the overall scope of Goal A and Target 4 of the GBF.
@@ -96,7 +96,7 @@ A headline indicator in the Convention on Biological Diversity's Global Biodiver
 Effective population size (Ne) represents the number of individuals in a population contributing to the gene pool. At any given time or reproductive cycle not all adults reproduce, consequently Ne is a subset of the number of individuals in a population (typically 10 to 30% of the census size). Studies have identified a threshold of Ne greater than 500 signifying a genetically stable and healthy population into the long term; while below 500, the risk of extinction increases. The Ne 500 indicator ranges from 0 to 1, with 0 indicating no populations of a species have Ne above 500 and 1 indicating all populations exceed the 500 threshold.
 :::
 
-::: {#box-2 .callout-note collapse="true"}
+::: {#box-2 .callout-note .genetics collapse="true"}
 ## Box 2. Proportion of populations maintained within species (PM indicator)
 
 A complementary indicator in Convention on Biological Diversity's Global Biodiversity Framework, providing additional context for in-depth analysis but is not required for reporting.
@@ -104,7 +104,7 @@ A complementary indicator in Convention on Biological Diversity's Global Biodive
 This indicator is based on the principle that genetic differences increase as populations are farther apart in geographic and/or environmental distance. By maintaining distinct populations, species are more able to adapt and evolve. The PM indicator ranges from 0 to 1, with 0 indicating all populations have been lost (species is extinct) and 1 indicating that all populations are still present.
 :::
 
-::: {#box-3 .callout-note collapse="true"}
+::: {#box-3 .callout-note .genetics collapse="true"}
 ## Box 3. Changing status of evolutionary distinct and globally endangered species (EDGE index)
 
 A component indicator in Convention on Biological Diversity's Global Biodiversity Framework. This is a detailed metric that measures progress towards a specific target or goal within the framework.
@@ -112,7 +112,7 @@ A component indicator in Convention on Biological Diversity's Global Biodiversit
 This index is grounded in the understanding that genetically distinctive and threatened species would represent a significant loss to the tree of life if they are lost, making their preservation crucial. It is a tool for monitoring the changes in the conservation status of South Africa’s evolutionary heritage. For each taxonomic group that has a phylogeny, a value of 0 indicates that none of the genetically distinctive species are threatened and a value of 1 indicates that all genetically distinctive species are threatened with extinction.
 :::
 
-::: {#box-4 .callout-note collapse="true"}
+::: {#box-4 .callout-note .genetics collapse="true"}
 ## Box 4. Expected loss of phylogenetic diversity (PD)
 
 This complementary indicator is estimated as the total phylogenetic diversity in a phylogeny weighted by the probability of extinction for each species. This can be expressed as a percentage of the total phylogenetic diversity for the clade, where 100% would indicate that all species have the highest possible probability of extinction and all PD is expected to be lost, while 0% suggests that all species are safe from extinction and no PD is expected to be lost. The larger number of threatened species that contribute to high phylogenetic diversity, the more diversity is expected to be lost into the future.

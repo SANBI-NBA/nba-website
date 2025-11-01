@@ -61,13 +61,13 @@ format:
 
 *The protected area network is growing across South Africa, thanks to innovative biodiversity stewardship programs, leading to a general increase terrestrial ecosystem protection levels.*
 
-![Community conservation efforts in KwaZulu-Natal (©Steve McKean)](./imgs/Community_conservation_area_KZN_SteveMcKean.png)
+![Community conservation efforts in KwaZlu-Natal (©Steve McKean)](./imgs/Community_conservation_area_KZN_SteveMcKean.png)
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [26%]{.inline-style-threatened}
+| [26%]{.inline-style-well-protected}
 | of 463 terrestrial ecosystem types
 | [Well Protected]{.inline-style-indicator}
 
@@ -86,7 +86,9 @@ format:
 :::::
 
 ------------------------------------------------------------------------
+
 \
+
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 #if (!require("devtools")) install.packages("devtools")
 #devtools::install_github("SANBI-NBA/nbaR")
@@ -132,10 +134,10 @@ Over three-quarters (76%) of South Africa’s 463 terrestrial ecosystems receive
 epl_summary %>%
       select(-6) %>%
       gt::gt() %>% 
-      nba_tbl_theme() %>% 
+      nba_tbl_theme(HEADER="Terrestrial") %>% 
       
-      gt::tab_style(style = cell_text(color = "white"), 
-                         locations = cells_column_labels()) %>% 
+     gt::tab_style(style = cell_text(color = "white"),
+                    locations = cells_column_labels()) %>%  
 
        gt::cols_width(`Categories (Protection Level)` ~ pct(20),
                       `Number of ecosystems` ~ pct(15), 
@@ -144,13 +146,13 @@ epl_summary %>%
 
 ```
 
-The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2004] has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass ([Key Message B4](../key-messages/kmb4.qmd)).
+The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass ([Key Message B4](../key-messages/kmb4.qmd)).
 
 ![Protected Areas in the Terrestrial realm circa 2024](./imgs/PA_map.png){#fig-pa_map fig-align="center" width="650"}
 
 ### Biome and provincial level results
 
-At a biome level, most Well Protected ecosystems are concentrated in the Fynbos (38) and Savanna (27). The very large National Parks (Khalahari Gemsbok and Kruger) in the Savanna Biome and the extensive Provincial Protected Areas and Mountain Catchment Areas in the Fynbos Biome mean that protection targets for numerous ecosystem types are met or exceeded. The Forest Biome, which has a limited natural extent in South Africa, is Well Protected, in part due to regulations related to the National Forests Act[@governmentofsouthafrica1998] and cultural practices. In contrast lowland Fynbos, grassland and Karoo ecosystems tend to be under protected (Poorly Protected or Not Protected) (@fig-biome-prov) reflecting the need to improve their representation in the protected area network (@fig-EPL-map).
+At a biome level, most Well Protected ecosystems are concentrated in the Fynbos (38) and Savanna (27). The very large National Parks (Khalahari Gemsbok and Kruger) in the Savanna Biome and the extensive Provincial Protected Areas and Mountain Catchment Areas in the Fynbos Biome mean that protection targets for numerous ecosystem types are met or exceeded. The Forest Biome, which has a limited natural extent in South Africa, is Well Protected, in part due to regulations related tot he National Forests Act[@governmentofsouthafrica1998] and cultural practices. In contrast lowland Fynbos, grassland and Karoo ecosystems tend to be under protected (Poorly Protected or Not Protected) (@fig-biome-prov) reflecting the need to improve their representation in the protected area network (@fig-EPL-map).
 
 ![Protection level map of terrestrial ecosystem types. The inset graph shows the percentage of ecosystem types that fall within each protection category.](./imgs/EPLmap_with_donut.png){#fig-EPL-map fig-cap="Protection level map of terrestrial ecosystem types. The inset graph shows the percentage of ecosystem types that fall within each protection category." width="600"}
 
@@ -180,7 +182,7 @@ Prov_epl_barplot <- nba_plot(epl_province,
 
 ggpubr::ggarrange(Biome_epl_barplot, Prov_epl_barplot,     
                   ncol = 2,                                
-                  labels = c("(A)", "(B)"),                
+                  labels = c("A", "B"),                
                   common.legend = TRUE,                    
                   legend = "bottom")
 ```
@@ -258,7 +260,7 @@ Terrestrial ecosystem protection level was calculated by assessing the degree to
 
 The extent of of each type within the PA network was adjusted for habitat loss and invasion. The natural remaining extent within the PA network was adjusted downwards by subtracting 70% of the invaded extent within the PA network. This step ensures that effectiveness of PA network is accounted for to a degree by preventing areas heavily degraded by invasive alien plants from fully contributing to ecosystem representation targets.
 
-Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection categories between time points (@fig-EPLI-workflow).
+Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection categories between time points (@figEPLI-workflow).
 
 ![Workflow diagram for the Ecosystem Protection Level Index.](./imgs/EPLI_mermaid.png){#fig-EPLI-workflow}
 
@@ -268,11 +270,7 @@ Ecosystem protection level index (EPLI) calculation (Harris et al., in review) i
 
 **Key publications**
 
-Linda R. Harris, Andrew L. Skowno, Stephen D. Holness, Kerry J. Sink, Lara van Niekerk, Heidi van Deventer, Lindie Smith-Adao, Nancy Job, Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
-
-## Acknowledgements
-
-Thanks to Agricultural Research Council's Alanna Rebelo, and post grad students Liam Cogill and Thandeka Skosana, for making their data on invasive alien plants available for the ecosystem assessments of the NBA 2025. Read more about their work on the [MAPWAPS](https://sites.google.com/view/alanna-rebelo/mapwaps) home page. Thanks also to Andrew Wannenburg (DFFE) and Johan Kotze for sharing the National Invasive Alien Plan Survey data. Tim Kirsten and Wesley Bell (UCT) kindly shared their PhD work on degradation in the Karoo. Thanks to Cape Nature (Boyd Escott), Mpumalanga Parks and Tourism (Mervyn Lotter), Ezemvelo-KZN Wildlife (Debbie Jewitt), GDARD (Marc Leroy), City of Cape Town (Charmaine Oxtoby and Johnathn Bell) for sharing provincial / metro land cover and condition data.
+Linda R. Harris, Andrew L. Skowno,Stephen D. Holness, Kerry J. Sink,Lara van Niekerk, Heidi van Deventer,Lindie Smith-Adao,Nancy Job,Sediqa Khatieb, Maphale Monyeki (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
 ## Recommended citation
 

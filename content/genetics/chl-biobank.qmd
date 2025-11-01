@@ -17,7 +17,7 @@ author:
 affiliations:
   - id: af1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
-    name: South African National Biodiversity Institute, Department of Science and Innovation and partners
+    name: South African National Biodiversity Institute, Department of Science, Technology and Innovation, and BBSA partners
                         
 # This date determines the PUBLISHED date in the title block
 date: last-modified

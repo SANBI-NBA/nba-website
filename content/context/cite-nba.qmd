@@ -8,7 +8,9 @@ title-block-banner-color: white
 
 To reference the content of this website please use the **Recommended citation** at the bottom of each (technical) page. These pages have specific author lists at the top of the page.
 
-#### e.g. Recommended citation
+#### Recommended citation of a technical NBA page
+
+Example: 
 
 da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic Diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
 
@@ -16,6 +18,6 @@ da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic Diversity. Na
 
 Some pages do not have a specific author list or recommended citation, this general NBA content should be referenced as follows:
 
-#### Recommended citation
+#### Recommended citation of general NBA webpages
 
 South African National Biodiversity Institute (SANBI). 2025. National Biodiversity Assessment 2025: The status of South Africa’s biodiversity - Website. South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. <https://nba.sanbi.org.za/>
