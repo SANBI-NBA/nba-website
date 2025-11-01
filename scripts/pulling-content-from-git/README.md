@@ -13,7 +13,8 @@ The workflow described here should be set up outside the `nba-website` repo, but
 4.  Open a git bash terminal in the parent folder and run this code:
 
 ```         
-chmod +x update_repos.sh ./update_repos.sh
+chmod +x update_repos.sh 
+./update_repos.sh
 ```
 
 This will run `update_repos.sh` which iterates through all the cloned repos and will checkout to main and then pull from main. Important to note that NBA website will only be compiled from main branches on content repos. For new content to be pulled through to the website, editing or development branches must first be merged to main.

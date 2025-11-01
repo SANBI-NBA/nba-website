@@ -65,7 +65,6 @@ table-caption-auto-number: true    # enable automatic numbering
 ::: {.column width="50%"}
 The ecosystem units for terrestrial ecosystem assessments in the NBA 2025 are based on The vegetation of South Africa, Lesotho and Swaziland - version 2024[@mucina; @Dayaram2019]. This digital map, underpinned by numerous publications, delineates and describes 463 national vegetation types nested within nine terrestrial biomes[@rutherford2006] *Click on map to enlarge*.
 :::
-
 ::: {.column width="50%"}
 ![](imgs/biomesmap2.png){.lightbox fig-align="right" width="300px"}
 :::

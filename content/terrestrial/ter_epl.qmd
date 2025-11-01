@@ -260,7 +260,7 @@ Terrestrial ecosystem protection level was calculated by assessing the degree to
 
 The extent of of each type within the PA network was adjusted for habitat loss and invasion. The natural remaining extent within the PA network was adjusted downwards by subtracting 70% of the invaded extent within the PA network. This step ensures that effectiveness of PA network is accounted for to a degree by preventing areas heavily degraded by invasive alien plants from fully contributing to ecosystem representation targets.
 
-Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection categories between time points (@figEPLI-workflow).
+Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection categories between time points (@fig-EPLI-workflow).
 
 ![Workflow diagram for the Ecosystem Protection Level Index.](./imgs/EPLI_mermaid.png){#fig-EPLI-workflow}
 
