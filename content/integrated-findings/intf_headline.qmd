@@ -1,6 +1,7 @@
 ---
 title: "Headline indicators"
 subtitle: "Integrated findings"
+   
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
@@ -11,34 +12,47 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 
 <!-- [Figure 1. The NBA’s four national headline indicators are threat status and protection level for ecosystems and species. Symbols in Species Threat Status graph: \*sample of 900 plant taxa, \*\*sample of sandy beach invertebrate species, \*\*\*sample of economically important marine invertebrate species](imgs/Fig%203%20mockup.jpg){fig-alt="Headline Indicators figure" fig-align="center"} -->
 
-::::: columns
+:::: columns
 ::: {.column width="60%"}
-**Ecosystem Threat Status:** Almost half of the 986 ecosystem types assessed in the NBA 2025 are threatened. Estuaries, wetlands, rivers and the coast have the highest proportion of threatened ecosystem types. *Click the figure to enlarge*. [Link to view the results page](./intf_ecosystems.qmd#ets). 
+**Ecosystem Threat Status:** Almost half of the 986 ecosystem types assessed in the NBA 2025 are threatened. Estuaries, wetlands, rivers and the coast have the highest proportion of threatened ecosystem types.[View findings](./intf_ecosystems.qmd#ets). *Click to enlarge image →*
 :::
+
 ::: {.column width="40%"}
 ![](imgs/fig3brle.png){.lightbox width="200px" fig-align="right"}
-:::::
-
-::::: columns
-::: {.column width="60%"}
-**Ecosystem Protection Level:** Over three-quarters of ecosystem types are represented in the current protected area network, leaving 24% in the Not Protected category. River, wetland and estuary types have the lowest levels of protection. *Click the figure to enlarge*. [Link to view the results page](./intf_ecosystems.qmd#epl).
 :::
+::::
+
+:::: columns
+::: {.column width="60%"}
+**Ecosystem Protection Level:** Over three-quarters of ecosystem types are represented in the current protected area network, leaving 24% in the Not Protected category. River, wetland and estuary types have the lowest levels of protection. [View findings](./intf_ecosystems.qmd#epl). *Click to enlarge image →*
+:::
+
 ::: {.column width="40%"}
 ![](imgs/fig3depl.png){.lightbox width="200px" fig-align="right"}
-:::::
 
-::::: columns
-::: {.column width="50%"}
-**Species Threat Status:** Of 20 248 plant species assessed, 16% are threatened. Of 5 227 animal species assessed, 10% are threatened. The most threatened taxonomic groups are freshwater fishes and cartilaginous fishes (sharks, rays and chimaeras). *Click the figure to enlarge*. [Link to view the results page](./intf-species.qmd#sts).
+
 :::
+::::
+
+:::: columns
+::: {.column width="50%"}
+**Species Threat Status:** Of 20 248 plant species assessed, 16% are threatened. Of 5 227 animal species assessed, 10% are threatened. The most threatened taxonomic groups are freshwater fishes and cartilaginous fishes (sharks, rays and chimaeras). [View findings](./intf-species.qmd#sts). *Click to enlarge image →*
+:::
+
 ::: {.column width="50%"}
 ![](imgs/fig3arls.png){.lightbox width="300px" fig-align="right"}
-:::::
-
-::::: columns
-::: {.column width="50%"}
-**Species Protection Level:** Almost 70% of plant species are Well Protected (based on a random sample of 900 taxa). All mammal, reptile, bird, amphibian and freshwater fish species were assessed and overall 77% are Well Protected. *Click the figure to enlarge*. [Link to visit the results page](./intf-species.qmd#spl).
 :::
+::::
+
+:::: columns
+::: {.column width="50%"}
+**Species Protection Level:** Almost 70% of plant species are Well Protected (based on a random sample of 900 taxa). All mammal, reptile, bird, amphibian and freshwater fish species were assessed and overall 77% are Well Protected. [View findings](./intf-species.qmd#spl). *Click to enlarge image →*
+:::
+
 ::: {.column width="50%"}
 ![](imgs/fig3cspl.png){.lightbox width="300px" fig-align="right"}
-:::::
+:::
+::::
+
+
+

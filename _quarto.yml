@@ -123,7 +123,7 @@ website:
                      - content/coast/cst_ets-x-epl.qmd
                      - content/coast/cst_species.qmd
                      - content/coast/cst_priorities-actions.qmd
-                - text: "Sub-Antarctic"
+                - text: "Subantarctic"
                   href: content/subantarctic/sub-all_sections.qmd
             - section: "Species findings"
               href: content/species/sp.qmd
