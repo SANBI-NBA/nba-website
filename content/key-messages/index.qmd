@@ -8,25 +8,25 @@ title-block-banner-color: white
 sidebar: id-key-messages
 ---
 
-The **NBA 2025 Key messages** distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
+The NBA 2025 Key messages distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
 
-Each message includes a summary paragraph with a confidence statement. The messages draw on evidence from NBA analyses (e.g., Red List status, ecological condition), explain, **why this matters** (e.g., consequences for people), and point to **practical actions, responses, and interventions** that can be taken.
+Each message includes a summary paragraph with a confidence statement. The messages draw on evidence from NBA analyses (e.g., Red List status, ecological condition), explain, why this matters (e.g., consequences for people), and point to practical actions, responses, and interventions that can be taken.
 
 ```{=html}
-{{< include "./imgs/km_svg_als.svg" >}}
+{{< include "./imgs/km_table_links.svg" >}}
 ```
 \
 
 
 ## How to use these messages
 
--   Read each key message with its **underlying data** and analyses.
+-   Read each key message with its underlying data and analyses.
 
--   Use them to inform **sector strategies, cross-sector planning, research, scenario planning,** and **implementation roadmaps.**
+-   Use them to inform sector strategies, cross-sector planning, research, scenario planning, and implementation roadmaps.
 
 -   Treat confidence statements as guidance on **certainty, evidence quality,** and **agreement.**
 
-The NBA provides a **summary of the state of biodiversity at a point in time**. It cannot list every action or intervention; instead, it serves as a **strategic tool** that should stimulate discussions among stakeholders and inform sector specific strategies and action plans, cross-sectoral planning, research strategies, scenario planning, and co-produced response strategies that follow from the NBA.
+The NBA provides a summary of the state of biodiversity at a point in time. It cannot list every action or intervention; instead, it serves as a strategic tool that should stimulate discussions among stakeholders and inform sector specific strategies and action plans, cross-sectoral planning, research strategies, scenario planning, and co-produced response strategies that follow from the NBA.
 
 ## CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people
 

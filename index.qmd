@@ -5,9 +5,9 @@ format:
     sidebar: false
 ---
 
-# NBA staging website: content under development {style="color: red"}
+#### NBA staging website: content under development {style="color: red"}
 
-![](imgs/nba-banner.jpg)
+![](imgs/nba-banner.png)
 
 ## National Biodiversity Assessment 2025 is coming soon! {#summary}
 
@@ -17,18 +17,18 @@ National Biodiversity Assessment 2025 is presented in two formats:
 
 -   a *Summary of Findings and Key Messages* publication (that will be available in print and PDF), and
 
--   this dedicated website, which will feature around 100 webpages of scientifically referenced, citable content, with links to detailed technical documentation and academic publications.
+-   this website, which will feature around 60 webpages of scientifically referenced, citable content, with links to detailed technical documentation and academic publications.
 
 ***NBA 2025 will be released in late 2025.***
 
 In the meantime, read more about the following:
 
-About the National Biodiversity Assessment **NOTE: LINK TO ABOUT-NBA.QMD**
+[About the National Biodiversity Assessment](./content/context/about-nba.qmd)
 
-Using the NBA **NOTE: LINK TO USES-NBA.QMD**
+[Using the NBA](./content/context/uses-nba.qmd)
 
-South Africa's biodiversity profile **NOTE: LINK TO BIODIVPROF.QMD**
+[South Africa's biodiversity profile](./content/context/biodivprof.qmd)
 
-What is new in NBA 2025 **NOTE: LINK TO WHATSNEW-NBA.QMD**
+[What is new in NBA 2025](./content/context/whatsnew-nba.qmd)
 
-Information about citing NBA 2025 content **NOTE: LINK TO CITE-NBA.QMD**
+[Information about citing NBA 2025 content](./content/context/cite-nba.qmd)

@@ -17,7 +17,7 @@ project:
 
 
 website:
-  title: "National Biodiversity Assessment"
+  title: ""
   description: "The status of South Africa's ecosystems and biodiversity"
   site-url: "https://nba.sanbi.org.za/"
   repo-url: "https://github.com/SANBI-NBA/nba-website"
@@ -28,7 +28,7 @@ website:
     type: textbox
   
   navbar:
-    logo: imgs/sanbi-logo-medium.png
+    logo: imgs/nba-logo-combo.png
     logo-href: "https://www.sanbi.org/"
     pinned: true
     right: 
