@@ -1,128 +1,165 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
+title: "Amphibians" 
+subtitle: "" 
 
-title: "Amphibians" # Compulsory
-subtitle: "" # Optional: delete if you are not using a subtitle
+title-block-banner: "#ad180d" 
+title-block-banner-color: white 
 
-title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Jeanne 
+      family: Tarrant
+    orcid: 0000-0001-7470-8915
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
-
+      - ref: AA
+      
+  - name:
+      given: Joshua  
+      family: Weeber
+    orcid: 0000-0001-9939-0210  
+    affiliations:
+      - ref: EWT      
+      
+  - name:
+      given: Domitilla C.
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi  
+        
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098 
+    affiliations:
+      - ref: sanbi 
+ 
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi   
+      
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi
+              
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: Name of Affiliation
+  - id: AA 
+    number: 1 
+    name: Anura Africa/Amphibian Specialist Group
+    
+  - id: EWT 
+    number: 2 
+    name: Endangered Wildlife Trust
+   
+  - id: sanbi 
+    number: 3 
+    name: South African National Biodiversity Institute
 
-# This date determines the PUBLISHED date in the title block
 date: last-modified
-
-# Remember to rename the default .bib file and change the name here
 bibliography: species.bib
 
-# This section sets up the page citation format. DO NOT EDIT
 citation:
   type: webpage
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
+
 appendix-cite-as: false
 google-scholar: true
+format:
+  html:
+    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
 
-::::::: columns
-::: {.column width="25%"}
 <center>
 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+![](./imgs/sp_amphibian_img_1.png){fig-alt="amphibian" width="800"}
+
+[*Hyperolius pickersgilli*, a species that has received extensive conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. Image credit: © Tyrone Ping.]{style="font-size:75%; display: inline-block; vertical-align: middle;"}
+
+</center>
+
+:::::: columns
+::: {.column width="32%"}
+<center>
+
+| [22%]{.inline-style-threatened}
+| of 135 taxa assessed are
 | [Threatened]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="32%"}
 <center>
 
-| [00%]{.inline-style-well-protected}
-| taxa assessed
+| [73%]{.inline-style-well-protected}
+| of 135 assessed taxa are
 | [Well Protected]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="34%"}
 <center>
 
-| [00%]{.inline-style-not-protected}
-| taxa assessed
-| [Not protected]{.inline-style-indicator}
+| [\~80%]{.inline-style-not-protected}
+| of threatened amphibians are considered
+| [under-protected]{.inline-style-indicator}
 
 </center>
 :::
-
-::: {.column width="25%"}
-```{r}
-#| label: fig-0
-#| fig-cap: "*add image*"
-#knitr::include_graphics("")
-```
-:::
-:::::::
+::::::
 
 ------------------------------------------------------------------------
 
 ## Key findings
 
-::::: columns
-::: {.column width="50%"}
--   
+-   In the current assessment, 135 taxa have been evaluated, and 82 (61%) of these species are endemic or near-endemic to South Africa, Eswatini, and Lesotho.
 
--   
+-   Twenty-two percent of assessed amphibians (30 species) are threatened with extinction, with another 10% (13) assessed as Near Threatened.
 
--   
-:::
+-   Thirty-nine percent of South Africa’s endemic amphibians are threatened with extinction, placing full responsibility for their protection on South Africa.
 
-::: {.column width="50%"}
+-   Amphibians are becoming increasingly threatened with extinction, even though only three species have experienced a genuine increase in threat status; many species are still experiencing ongoing pressures.
+
+-   The main pressures causing population declines are invasive and other problematic species, impacting 83% of threatened species. Impacts range from infectious diseases to drying out and replacement of habitat by invasive alien plants. This is followed by habitat loss and degradation due to agricultural activities (72%) and natural system modification (69%) related to, for example, wetland drainage, overgrazing, and inappropriate fire cycles. Recognized as the most important emerging threat globally, climate change impacts are also becoming an important driver of amphibian declines in South Africa affecting nearly half of threatened species, although the impacts of this threat are challenging to quantify.
+
+-   A large proportion of amphibians are assessed as Well protected (73%) within the South African Protected Area Network; however, 11% (15) of amphibians are Not Protected. Of the 29 threatened species, 79% are considered under-protected (Moderately Protected, Poorly Protected or Not Protected). Meaning that our most threatened species require improved protection, and most protected areas do not consider amphibians in their management activities.
+
+-   Almost 50% (17) of South Africa’s threatened species occur in the Western Cape province. Given the high endemicity within this province, and the disproportional number of endemic species that are threatened, this spatial pattern is not surprising. The Eastern Cape and KwaZulu-Natal provinces support six threatened species respectively.
+
 ```{r}
-#| label: fig-1
-#| fig-cap: "Species richness map..."
-#knitr::include_graphics("")
+#| label: fig-richness-map
+#| fig-cap: "Species richness map of threatened amphibian species in South Africa."
+#| fig-alt: "Species richness map"
+#| out-width: 75%
+#| fig-align: center
+knitr::include_graphics("./imgs/amphibians_thrt_10km_HD.png")
 ```
-:::
-:::::
 
-### Threat status, trends and pressures
+## Threat status, Trends and Pressures
 
-1.  ***Threat status***
+1.  Threat status
 
-add text
+Seventy-six amphibian species (56%) are endemic to South Africa, with 30 of these (39%) threatened with extinction, placing full responsibility for their protection on South Africa. Most threatened species occur in and are endemic to the Western Cape (24 species), followed by KwaZulu-Natal (10 species) and then the Eastern Cape (5 species).
+
+Twenty-two percent (30 species) of amphibians were assessed as threatened (Critically Endangered, Endangered, Vulnerable), and a further 10% (13 species) were assessed as Near Threatened. There have been significant shifts in the number of species per category since the 2016 assessments, with 23% of species experiencing a category change, although most of these have been non-genuine either because of improved application of the red list criteria or because of extensive survey efforts resulting in better knowledge of the status of populations. These changes include a decrease from 6 to 4 Critically Endangered species; an increase from 9 to 18 Endangered species; an increase from 1 to 8 Vulnerable; and a reduction of 4 to 2 Data Deficient. All 135 species were able to be assessed, with no Not Evaluated species remaining.
 
 :::: panel-tabset
 ## Figure
 
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
-
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of South African ... " 
+#| fig-cap: "Threat status of 135 South African amphibian taxa assessed following the IUCN 3.1 Red List Categories and Criteria. The proportion of all assessed taxa in the different IUCN Red List Categories is shown in the larger circle (A) while the smaller circle (B) shows the status for South African endemics." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -135,45 +172,56 @@ library(ggplot2)
 library(grid)
 
 # ---- Dataset ----
-df <- read_excel("data/2025_Overall_status_summary.xlsx", 
+
+df <- read_excel("./data/overall_status_summary_2025.xlsx",
                  sheet = "Summary")
 
-# ---- Function ----
+
+# ---- Recode Status ----
+df <- df %>%
+  mutate(Status = recode(Status,
+    "CR" = "Critically Endangered",
+    "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+    "EN" = "Endangered",
+    "VU" = "Vulnerable",
+    "NT" = "Near Threatened",
+    "DD" = "Data Deficient",
+    "LC" = "Least Concern",
+    "EW" = "Extinct in the Wild",
+    "EX" = "Extinct",
+    "Rare" = "Rare"
+  ))
+
+
+# ---- Functions ----
 
 # Collapse rare categories into "Rare"
-prep_taxon_data <- function(df, taxon) {
-  df_overall <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
                            "Rare", Status))
-  
-  df_endemic <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           Endemism == "Endemic",
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
-                           "Rare", Status))
-  
+}
+
 # Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
   
-make_wide <- function(dat, type_name) {
-    dat %>%
-      group_by(`Taxonomic grouping`, Status) %>%
-      summarise(Count = n(), .groups = "drop") %>%
-      pivot_wider(names_from = Status, values_from = Count, values_fill = 0) %>%
-      mutate(Type = type_name) %>%
-      select(Type, everything())
-  }
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
   
-df_combined <- bind_rows(make_wide(df_overall, "Overall"),
-                           make_wide(df_endemic, "Endemic"))
-  
-  list(
-    combined = df_combined,
-    dat_overall = df_combined %>% filter(Type == "Overall"),
-    dat_endemic = df_combined %>% filter(Type == "Endemic")
-  )
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
 }
 
 # Add total number to donut hole
@@ -185,194 +233,509 @@ add_total <- function(plot, total, SCALE_TEXT = 1) {
                   fontface = "bold")
 }
 
-# Change name of taxon according to the webpage
-taxon_data <- prep_taxon_data(df, "Amphibians")
-dat1 <- taxon_data$dat_overall
-dat2 <- taxon_data$dat_endemic
-
-total_overall <- sum(rowSums(dat1[, 3:ncol(dat1)], na.rm = TRUE))
-total_endemic <- sum(rowSums(dat2[, 3:ncol(dat2)], na.rm = TRUE))
-
-# Define your lookup for threat abbreviations → full names
-threat_lookup <- c(
-  "CR" = "Critically Endangered",
-  "CR (PE)" = "Critically Endangered, Possibly Extinct",
-  "EN" = "Endangered",
-  "VU" = "Vulnerable",
-  "NT" = "Near Threatened",
-  "LC" = "Least Concern",
-  "DD" = "Data Deficient",
-  "NE" = "Not Evaluated",
-  "EX" = "Extinct",
-  "RE" = "Regionally Extinct",
-  "Rare" = "Rare"
+# ---- Setup ----
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
 )
 
-# Rename threat status to full text
-dat1 <- dat1 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+all_levels <- status_levels
 
-dat2 <- dat2 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+# ---- amphibians ----
+df_amphibians <- df %>%
+  filter(`Taxonomic grouping` == "Amphibians") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_amphibians_en <- df %>%
+  filter(`Taxonomic grouping` == "Amphibians", Endemism == "Endemic") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_amphibians_wide    <- make_wide(df_amphibians, "Overall", all_levels)
+df_amphibians_en_wide <- make_wide(df_amphibians_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_amphibians_wide, df_amphibians_en_wide)
+
+# Identify which threat categories actually have data
+available_levels <- df_combined %>%
+  select(all_of(all_levels)) %>%
+  summarise(across(everything(), sum)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  pull(Status)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+# Filter columns and update status levels
+dat1 <- dat1 %>% select(Type, all_of(available_levels))
+dat2 <- dat2 %>% select(Type, all_of(available_levels))
 
 
-# ---- Plot -----
-plot1 <- nba_plot(dat1, biome, 3:ncol(dat1),
-                  CHRT = "donut", NUM = FALSE, LAB = "A. Overall") %>%
-  add_total(total_overall)
-
-plot2 <- nba_plot(dat2, biome, 3:ncol(dat2),
-                  CHRT = "donut", NUM = FALSE, LAB = "B. Endemic") +
-  xlim(c(2, 4.5))   # shrink the donut
-plot2 <- add_total(plot2, total_endemic)
+overall <- dat1 %>% select(all_of(available_levels)) %>% rowSums()
+endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 
+# ---- Plots ----
+plot1 <- nba_plot(dat1, biome, 2:(ncol(dat1)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A.") %>%
+  add_total(overall)
 
-# Combine your plots (as before)
-combined_donut_plot <- plot1 + plot2 +
+plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
+           CHRT = "donut", NUM = FALSE, LAB = "B.") +
+    xlim(c(2, 4.5))) %>% add_total(endemic)
+
+
+# ---- specify legend order ----
+
+my_fill_scale <- scale_fill_manual(
+   values = NBA_colours[available_levels],
+  breaks = available_levels,
+  guide = guide_legend(ncol = 4),
+  drop = FALSE
+)
+
+plot1 <- plot1 + my_fill_scale
+plot2 <- plot2 + my_fill_scale
+
+
+# ---- Combine with one legend ----
+combined_donut_plot <- (plot1 | plot2) +
   plot_layout(guides = "collect") &
-  theme(
-    legend.position = "bottom",
-    legend.justification = "center"
-  ) 
+  theme(legend.position = "bottom",
+        legend.justification = "center")
+
 combined_donut_plot
 
 ```
 
 ## Data
 
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-tab-0
-#| tbl-cap: "Plant threat status." 
+#| tbl-cap: "Summary statistics for percentage threatened and endemic amphibians, and the number of species within each threat category." 
 #| classes: plain
 
-library(dplyr)
-library(nbaR)
 library(gt)
 
-
 # First, select only the columns we want and rename Type → Taxon
-dat1_sel <- dat1 %>% select(1, 3:ncol(dat1)) %>% rename(Taxon = Type)
-dat2_sel <- dat2 %>% select(1, 3:ncol(dat2)) %>% rename(Taxon = Type)
+dat1_sel <- dat1 %>% select(1, 2:ncol(dat1)) %>% rename(Taxon = Type)
+dat2_sel <- dat2 %>% select(1, 2:ncol(dat2)) %>% rename(Taxon = Type)
 
 # Now assign custom row names (or first column values)
-dat1_sel$Taxon <- "Overall amphibians"
-dat2_sel$Taxon <- "Endemic amphibians"
+dat1_sel$Taxon <- "Overall spiders"
+dat2_sel$Taxon <- "Endemic spiders"
 
 # Combine into one table
 dat_combined_final <- bind_rows(dat1_sel, dat2_sel)
 
 dat_combined_final <- dat_combined_final %>%
-  rowwise() %>%
-  mutate(Total = sum(c_across(where(is.numeric)), na.rm = TRUE)) %>%
-  ungroup() 
+                      rowwise() %>%
+                      mutate(Total = sum(c_across(2:ncol(dat_combined_final)), na.rm = TRUE)) %>%
+                      ungroup() %>%
+  select(Taxon, all_of(available_levels), Total)
+  
+gt(dat_combined_final) %>% 
+  nba_tbl_theme() %>%
+  tab_options(table.width = pct(100),
+              data_row.padding = px(12)) %>%
 
-gt(dat_combined_final) %>% nba_tbl_theme()
+  tab_style(style = cell_fill(color = "gray90"),
+            locations = cells_column_labels(columns = everything())) %>%
+
+  cols_width(Taxon ~ pct(15),
+             everything() ~ pct(10))
 ```
 :::
 ::::
 
-2.  ***Trends (RLI)***
+:::::::::::: {.callout-note .species collapse="true"}
+## Box 1: How new knowledge informs our understanding of extinction risk.
 
-add text
+::::: {layout-ncol="2"}
+## Moonlight Mountain Toadlet (*Capensibufo selenophos*)
+
+::: left
+Thirteen species were assessed for the first time (three assessed as EN, one as VU, four as NT, four as LC, and one as DD). Three of four previously DD species were assessed (one as EN and two as NT). This provides evidence that DD species are often more threatened than ‘data-sufficient’ species as proposed by Borgelt et al. 2022 and demonstrates the value of prioritizing DD species for funding and dedicated surveys. An example of this is the Moonlight Mountain Toadlet, *Capensibufo selenophos*. The Endangered Wildlife Trust secured funding to carry out extensive surveys between 2020 and 2023, and drive habitat protection processes with landowners. Seven previously unknown subpopulations of *C. selenophos* were confirmed across the
+:::
+
+::: right
+![](./imgs/Capensibufo%20selenophos_Bionerds.png){style="width:100%; border-radius:10px;" fig-alt="Moonlight Mountain Toadlet Capensibufo selenophos ©Keir Lynch."}
+
+[Moonlight Mountain Toadlet\* (*Capensibufo selenophos*) © Keir Lynch.]{style="font-size:75%;"}
+
+Akkedisberg, Kleinrivier and Soetmuisberg Mountains in the Western Cape. Knowledge on threats was improved, and one property (approximately 700 ha) has been put forward for formal declaration through Biodiversity Stewardship and is being actively managed for control of alien invasive plants. This new information resulted in a non-genuine change from DD to EN based on an EOO of 478 km2, deterioration of habitat quality, and suspected declines
+:::
+:::::
+
+::::: {layout-ncol="2"}
+## Boston Rain Frog *Breviceps batrachophiliorum*
+
+::: left
+An example of a newly described species being assessed is the hot-off-the-press Boston Rain Frog, *Breviceps batrachophiliorum* (du Preez et al. 2025), which was previously assessed as *B. bagginsi*. Based on morphological, call and genetic analyses, the new species has been redescribed and split, resulting in an assessment of Endangered for *B. batrachophiliorum* and Critically Endangered for *B. bagginsi*. This grassland-associated species is restricted to the
+:::
+
+::: right
+![](./imgs/Breviceps%20batrachophiliorum_Louis%20du%20Preez.png){style="width:100%; border-radius:10px;" fig-alt="Boston Rain Frog *Breviceps batrachophiliorum* ©Louis Du Preez."}
+
+[Boston Rain Frog *Breviceps batrachophiliorum* ©Louis Du Preez.]{style="font-size:75%;"}
+
+midlands area in south central KwaZulu-Natal province. Records are confirmed from the Boston (type locality), Richmond, the Karkloof and Bulwer areas. Currently, the species is understood to occur at three subpopulations across less than 3000 km2.
+:::
+:::::
+
+::::: {layout-ncol="2"}
+## Table Mountain Ghost *Heleophryne rosei*
+
+::: left
+The Table Mountain Ghost Frog (*Heleophryne rosei*) provides an interesting example of how new information, and correct application of the IUCN Criteria and Categories, can impact the perceived extinction risk of a species. *Heleophryne rosei* has been listed as Critically Endangered for over 20 years, during which the same four threats have been implicated in reducing stream quality and extent. Despite this, there were no detailed studies undertaken to link specific threats to aspects of the species’ ecology to understand presumed declines and inform conservation actions. As such, the species remained listed as Critically Endangered because of on-going declines in habitat quality, small EOO, and one threat defined location. This began to change in 2019 when a multi-stakeholder project was launched to obtain fine-scale data on the species, increasing our understanding of magnitude and source of threats. While this habitat
+:::
+
+::: right
+![](./imgs/sp_amphibian_img_2.png){style="width:100%; border-radius:10px;" fig-alt="Heleophryne-rosei"}
+
+[The Table Mountain Ghost *Heleophryne rosei* ©Joshua Weeber.]{style="font-size:75%;"}
+
+specialist is still extremely range-restricted and experiencing continued habitat loss, the project revealed that the location and source of known threats are diverse and the species is therefore considered to occur at 2-4 threat locations (different streams on Table Mountain). Data from this project are now being used to inform management frameworks for headwater mountain streams, emphasizing the importance of fine-scale studies in amphibian conservation in South Africa, and supporting the view that priority research needs to inform conservation of amphibians [\@campbell2023a](Campbell%20Grant%20et%20al.%202023).
+:::
+:::::
+::::::::::::
+
+2.  ***Trends***
+
+The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs) [@butchart2004]. The RLIs are calculated based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The Red List Index of amphibians was calculated for all amphibian taxa that have been reassessed (n = 135).
+
+Thirty-two species have had a change in status during the latest assessment (2016 to 2025). Only three species have had a genuine change in status (*Breviceps macrops* – desert rain frog (NT to VU), *Amietia hymenopus* - Phofung river frog (NT to VU) and *Hyperolius poweri* Power's reed frog (LC to NT). These three species are spatially isolated; however, they share some pressures, as both *Breviceps macrops* and *Amietia hymenopus* are likely to be impacted by climate change, where the former is restricted to the dry West Coast and relies on limited precipitation in the form of fog, and the latter occurs in streams along the Drakensberg Escarpment and Lesotho, which may face increased drying and extreme weather events. Both species are also impacted by the expansion of mining activities, *B. macros* specifically on the West Coast, due to the future planned development of the Green Hydrogen and *A. hymenopus* in the highlands of Lesotho into South Africa (@tbl-2). *Hyperolius poweri* has experienced a reduction in its range size due to the continued impacts of existing pressures and the intensification of urban coastal development, mining, afforestation, and agriculture (especially sugar cane plantations), which have caused wetland drainage and degradation through trampling from cattle.
+
+The remaining thirty species that have had a change in their status were considered to be non-genuine changes due to new information, taxonomic changes, application of criteria, etc. There has been no improvement in status for amphibians during the assessment period. This is important to note: amphibians remain threatened by pressures that haven’t ceased and are increasing in most instances. Of particular concern are the impacts of invasive alien species, which affect 83% of threatened species, particularly in cases where the spread of invasive species is continuing or increasing. Impacts of this threat include drying out and replacement of habitat by alien invasive plants, diseases such as *chytridiomycosis*, and competition with problematic native species ([Box 2](#box-2)).
+
+::: panel-tabset
+## Figure
 
 ```{r}
-#| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for ..."
+#| label: fig-RLI
+#| fig-cap: "The Red List Index (RLI) for amphibian taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
 
-#knitr::include_graphics("imgs/RLIbiomes 1.png")
+library(tidyverse)
+library(nbaR)
+# --- Dataset ---
+
+df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
+
+df_amphibians <- df_rlis%>%
+  filter(Taxon %in% c("Amphibians", "Aggregate"))
+
+nba_index_plot(
+  TYPE = "RLIs",
+  DF = df_amphibians,
+  YEAR = Year,
+  RLI = RLI,
+  ASSESSMENT_YEAR = Assessment_Year,
+  GROUP = Taxon,
+  PALETTE = "taxon",
+ # AGGREGATE = TRUE,
+  SAVE = NULL
+)
+
 ```
+
+## Data
+
+```{r}
+#| label: tbl-2
+#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate endemism levels: * endemic and ** near-endemic."
+#| classes: plain
+library(dplyr)
+library(gt)
+library(stringr)
+library(nbaR)
+library(purrr)
+
+species_change <- readxl::read_xlsx("./data/sp_am_table2.xlsx") %>%
+  rename(`Reason for change` = `Reason of change`) %>%
+  filter(!if_all(everything(), is.na)) %>%
+  mutate(
+    # First, normalize all whitespace around ] and (
+    Taxon = str_replace_all(Taxon, "\\s+", " "),
+    # Extract escaped asterisks after ]
+    trailing_asterisks = str_extract(Taxon, "(?<=\\])\\s*(\\\\\\*+)"),
+    # Clean up trailing asterisks
+    trailing_asterisks = str_replace_all(trailing_asterisks, "\\\\\\*", "*"),
+    trailing_asterisks = str_trim(trailing_asterisks),
+    # Remove all escaped asterisks from anywhere in the string
+    Taxon = str_replace_all(Taxon, "\\\\\\*", ""),
+    # Remove all extra spaces
+    Taxon = str_replace_all(Taxon, "\\s+", " "),
+    # Remove spaces between ] and (
+    Taxon = str_replace_all(Taxon, "\\]\\s*\\(", "]("),
+    # Add back the trailing asterisks after the closing )
+    Taxon = if_else(!is.na(trailing_asterisks) & trailing_asterisks != "",
+                    str_replace(Taxon, "\\)", paste0(")", trailing_asterisks)),
+                    Taxon),
+    # Store image paths and photographer credits separately
+    image_path = case_when(
+      str_detect(Taxon, "Amietia hymenopus") ~ "./imgs/sp_amphibian_img_3.png",
+      str_detect(Taxon, "Breviceps macrops") ~ "./imgs/sp_amphibian_img_4.png",
+      str_detect(Taxon, "Hyperolius poweri") ~ "./imgs/Hyperolius_poweri_DylanLeonard.png",
+      TRUE ~ NA_character_
+    ),
+    photographer = case_when(
+      str_detect(Taxon, "Amietia hymenopus") ~ "© Louis Du Preez",
+      str_detect(Taxon, "Breviceps macrops") ~ "© Nick Telford",
+      str_detect(Taxon, "Hyperolius poweri") ~ "© Dylan Leonard",
+      TRUE ~ NA_character_
+    )
+  )
+# Store image paths and credits before removing column
+img_paths <- species_change$image_path
+photographers <- species_change$photographer
+# Remove helper columns
+species_change <- species_change %>%
+  select(-trailing_asterisks, -image_path, -photographer)
+gt(species_change) %>% 
+  fmt_markdown(columns = Taxon) %>%
+  text_transform(
+    locations = cells_body(columns = Taxon),
+    fn = function(x) {
+      # Add images below the taxon text with photographer credit
+      pmap_chr(list(x, img_paths, photographers), function(taxon_text, img_path, photographer) {
+        if (!is.na(img_path)) {
+          paste0(
+            taxon_text, 
+            "<br>", 
+            local_image(filename = img_path, height = 100),
+            "<br><span style='font-size: 9px; font-style: italic; color: #666;'>Image credit: </span>", #UPDATED: Changed "Photo:" to "Image credit:"
+            "<span style='font-size: 9px; color: #666;'>", 
+            photographer, 
+            "</span>"
+          )
+        } else {
+          taxon_text
+        }
+      })
+    }
+  ) %>%
+  nba_tbl_theme() %>%
+  tab_options(table.width = pct(100),
+              data_row.padding = px(12)) %>%
+  tab_style(style = cell_fill(color = "gray90"),
+            locations = cells_column_labels(columns = everything())) %>%
+ 
+  tab_style(style = cell_text(size = px(12)),  
+            locations = cells_column_labels(columns = everything())) %>%
+  
+  tab_style(style = cell_text(align = "left", v_align = "top"),
+            locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_text(align = "left"),
+            locations = cells_body(columns = everything())) %>%
+  cols_width(Taxon ~ pct(10),
+             `Reason for change` ~ pct(20),
+             everything() ~ pct(10))
+```
+:::
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "The distribution of ... "
-
-#knitr::include_graphics("imgs/Plant_heatmap.png")
+#| fig-cap: "The distribution of three amphibian species that have experienced a genuine increase in threat status since the NBA 2018, including from the West Coast of South Africa, *Breviceps macrops* (NT → VU), on the Drakensberg Escarpment between South Africa and Lesotho, *Amietia hymenopus* (NT → VU), and the KwaZulu-Natal east coast *Hyperolius poweri* (LC → NT)."
+#| fig-alt: "Three amphibian species that have experienced a genuine increase in threat status since the NBA 2018."
+#| out-width: 75%
+#| fig-align: center
+knitr::include_graphics("./imgs/amphibians_in_10km_HD.png")
 ```
-
-::: {#box-1 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 1. Title
-
-add text
-
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}-->
-:::
 
 3.  ***Pressures***
 
-add text
+Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@re2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 83% of threatened species threatened. These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes, and alteration of natural fire regimes.
+
+:::::::::::::: {#box-1 .callout-note .species collapse="true"}
+## Box 2: Invasive species impacts on range-restricted
+
+::::: {layout-ncol="2"}
+::: left
+The Critically Endangered Rough Moss Frog, *Arthroleptella rugosa* is restricted to the Klein Swartberg Mountain in the Western Cape. Within less than a decade, large portions of its fynbos and seep habitat was invaded by Cluster Pines, *Pinus pinaster*. A study using bioacoustics to estimate frog densities found that numbers at invaded sites were directly affected by P. pinaster infestations [@angus2023a]. At invaded sites, call densities (and hence population numbers) were
+:::
+
+::: right
+![](./imgs/sp_amphibian_img_13.png){style="width:100%; border-radius:10px;" fig-alt="Arthroleptella rugosa"}
+:::
+:::::
+
+reduced, while at uninvaded sites call denisties were notable higher. This relationship held over time, with reduced call density recorded at sites with increasing invasion of alien Cluster Pines, and conversely an increase in call density at sites that became less invaded. These results confirm previous suggestions that invasive pine trees cause population declines in *A. rugosa*.
+
+------------------------------------------------------------------------
+
+:::::: {layout-ncol="2"}
+::: left
+These findings were used as motivation for conservation action and a joint initiative through CapeNature, the Endangered Wildlife Trust, Fynbos Trust, 18 landowners and the Klein Swartberg Conservancy, resulted in adaptive fire management to control pine invasion across the range. An ecological burn was carried out, which covered approximately 4000 hectares, and eradicated pines from areas where *A. rugosa* occurs. Post-fire monitoring has confirmed increasing numbers of frogs, and a 10-year management plan has been developed with the Conservancy, including ongoing alien plant management. This is a great example of conservation
+:::
+
+:::: right
+![](./imgs/sp_amphibian_img_6.png){style="width:100%; border-radius:10px;" fig-alt="Pine infestation of fynbos habitat"}
+
+::: {style="font-size:80%; margin-right: -10px; line-height: 1.7;"}
+Pine infestation of fynbos habitat on Klein Swartberg where the Critically Endangered Rough Moss Frog, <i>Arthroleptella rugosa</i>, occurs. © Rob Erasmus, Enviro Wildfire.
+:::
+::::
+::::::
+
+needs being guided by expert knowledge and Red List assessment information, which have also resulted in the designation of this species entire range as an Alliance for Zero Extinction site, thus gaining international attention, strengthening partnerships and work with landowners towards formal habitat protection for this species.
+
+------------------------------------------------------------------------
+
+::::: {layout-ncol="2"}
+::: right
+![](./imgs/sp_amphibian_img_7.png){style="width:100%; height:300px; object-fit:cover; border-radius:10px;" fig-alt="Pine invasion"}
+:::
+
+::: left
+![](./imgs/sp_amphibian_img_8.png){style="width:100%; height:300px; object-fit:cover; border-radius:10px;" fig-alt="Pine invasion"}
+:::
+:::::
+
+::: {style="font-size:80%; margin-right: -10px; line-height: 1.7;"}
+Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. <i>Image credits:</i> © Alouis and Keir Lynch Bionerds.
+:::
+::::::::::::::
+
+This is followed by habitat loss and degradation due to agricultural activities (impacting 72% of threatened species) and natural system modification related to, for example, inappropriate fire cycles, impacting 69% of South Africa’s 30 threatened species. Globally, climate change is now recognised as the most serious emerging challenge facing amphibians, with 29% of threatened species worldwide impacted. With projected increases in temperature and changes in precipitation, this threat is expected to affect more species in the future. In South Africa, almost half (48%) of our threatened species are impacted, or projected to be impacted by climate change and extreme weather, including through shifts in habitat, droughts and flooding. These impacts require improved data, both in terms of species monitoring and climate data such as regional projections to feed into modelling exercises. This will help us understand how changes to climatic variables may impact amphibians in South Africa. Thirteen threatened species (43%) are affected by pollution, particularly from agricultural effluents and domestic and urban wastewater, with for example subpopulations of the Kloof Frog, *Natalobatrachus bonebergi*, in the Durban area being impacted by sewage overflows into streams and increased sedimentation from urban construction severely impacting stream health and breeding sites. So, even while this species has been downlisted to NT due to overall EOO, the KwaZulu-Natal subpopulations face increasing levels of threat. These impacts reflect that state of South Africa’s freshwater ecosystems, with 85% of freshwater species experiencing declines.
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s ... "
+#| fig-cap: "Key pressures on South Africa’s mammals, based on the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme (IUCN, 2025)."
+#| fig-align: center
 #| out.width: 100%
 
+library(stringr)
 
-#knitr::include_graphics("imgs/Plant_OA.svg")
+df <- readxl::read_excel("./data/combined_threat_summary.xlsx", 
+                 sheet = "Overall_Maj")
+
+
+spiders<- nba_pressure_bar_plot(
+                          df,
+                          TAXON = "Amphibians")
+
+spiders
 ```
 
-:::::: {#box-2 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 2. Title
+:::: {.callout-note .species collapse="true"}
+## Box 3: The impact of habitat loss and degradation on South Africa’s amphibians
 
-::::: columns
 ::: {.column width="100%"}
-Add text
+All 30 of South Africa’s threatened (CR, EN, VU) frog species are affected in one way or another by habitat loss and degradation (driven by agriculture, natural systems modifications, residential and commercial development, energy production and mining, and linear infrastructure for transportation and service corridors). As with global trends, agriculture is the main driver, impacting 77% of threatened species [@re2023a], while in South Africa agriculture impacts on 93% of threatened frog species. This includes impacts from livestock farming, including overgrazing, non-native tree plantations, non-timber crops, and erosion and siltation. System modifications include changes to fire frequency and intensity, water abstraction, and dam construction.
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/Euphorbias%20received.jpg){fig-alt="box_2_fig_2" width="45%"} ![](imgs/fd44b009-60e2.jpg){fig-alt="box_2_fig_1" width="45%"}
+![](./imgs/sp_amphibian_img_14.png){fig-alt="Before ecological burn" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} © Alouis and Keir Lynch Bionerds
 
-![](imgs/1000067813.jpg){fig-alt="box_2_fig_1" width="45%"} ![](imgs/20221203_074211.jpg){fig-alt="box_2_fig_1" width="45%"} -->
+------------------------------------------------------------------------
+
+The Endangered Amathole Toad, *Vandijkophrynus amatolicus*, occurs in an area of the Eastern Cape highlands where original grassland habitat has been heavily transformed by both agriculture and timber production. However, working with livestock farmers to improve grazing management through regenerative agriculture approaches and facilitating habitat protection processes through Biodiversity Stewardship may prove beneficial to this toad, while supporting livelihoods within this strategic water source area.
+
+![](./imgs/sp_amphibian_img_15.png){style="width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:10px;"} The Western Leopard Toad (<i>Scelophrys pantherina</i>) © Luke Verburght.
 :::
+::::
 
-::: {.column width="25%"}
+Habitat loss due to residential and commercial development impacts many of the country’s amphibians, perhaps none more so than the Western Leopard Toad (*Scelophrys pantherina*). Typically associated with low lying wetlands and vleis in the Western Cape province, the species has lost over 75% of suitable habitat predominantly due to urban infrastructure expansion, leading to several local extinctions and severe population declines throughout its range. Urban infrastructure in the form of roads also causes significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding habitat.
+
+Sightings (including roadkill) of this species by the public can be uploaded to iNaturalist, with sightings in the Overberg specifically to: https://www.inaturalist.org/projects/leopard-toads-of-the-overberg.
+
+Contributions of occurrence records of any species are extremely valuable and have made up a significant proportion of data used in the current assessments (see [Box 4](#box-4)).
+
+:::: {#Box-4 .callout-note .species collapse="true"}
+## Box 4. Calling all citizen scientists who might have an interest in these creatures.
+
+To contribute to the future Red List assessments and monitoring of amphibians, join iNaturalist!
+
+[Amphibians of South Africa](https://www.inaturalist.org/observations?place_id=6986&taxon_id=20978&verifiable=any)
+
+New to iNaturalist (or never heard of it) and want to contribute? Watch these [video tutorials](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started and sign up on the [iNaturalist website](https://www.inaturalist.org/observations?place_id=6986&taxon_id=121773) or download the app on your smartphone.\
+
+To see how valuable your nature photographs can be, watch this inspiring [TED talk](https://www.ted.com/talks/148410).
+
+::: {style="text-align:center;"}
+![](./imgs/sp_logo_inat.png){style="width:80px;"}
 :::
-:::::
-::::::
+::::
 
 ## Protection level
 
-### Main findings
-
-Add text
+The protection level assessment was conducted for 133 of South Africa’s 135 described amphibian species. Two peripheral taxa with less than 5% of their distribution in South Africa were excluded from the analysis. Protection level (PL) categories include ‘Poorly protected’, ‘Moderately Protected’, ‘Not Protected’ and ‘Well Protected’, Protection levels were calculated for amphibians by intersecting amphibian occurrence records with the protected area spatial layer, and calculating the area required to protect a target population of 10 000 individuals. Protection levels were also adjusted based on the management effectiveness of protected areas.
 
 ```{r}
 #| label: fig-6
-#| fig-cap: "" 
+#| fig-cap: "Protection level for amphibians was assessed for 133 taxa. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa); (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics" 
 
 library(dplyr)
 library(tidyr)
 library(nbaR)
 library(readxl)
 library(patchwork)
+library(ggplot2)
+library(grid)
 
-dat1 <- read_excel("data/NBA_example_pro_data.xlsx", 
+dat1 <- read_excel("data/nba_example_pro_data.xlsx", 
     sheet = "2025")
-dat2 <- read_excel("data/NBA_example_pro_data.xlsx", 
+dat1 <- dat1 %>%
+  filter(`Taxon groups`== "Amphibians")
+dat2 <- read_excel("data/nba_example_pro_data.xlsx", 
     sheet = "2025_en")
+dat2 <- dat2 %>%
+  filter(`Taxon groups`== "Amphibians")
 
-dat1 <- dat1 %>% filter(dat1$`Taxon groups` == "Amphibians")
-dat2 <- dat2 %>% filter(dat2$`Taxon groups` == "Amphibians")
+# Add total number to donut hole
+# Updated add_total() function
+add_total <- function(plot, total, SCALE_TEXT = 1) {
+  plot + annotate("text",
+                  x = 2, y = 0,
+                  label = total,
+                  size = 3.5 * SCALE_TEXT,
+                  fontface = "bold")
+}
+
+
+
+# Calculating totals  
+total_a <- dat1 %>%
+  select(2:5) %>%
+  mutate(across(everything(), as.numeric)) %>%
+  rowSums(na.rm = TRUE) %>%
+  sum(na.rm = TRUE)
+total_b <- dat2 %>%
+  select(2:5) %>%
+  mutate(across(everything(), as.numeric)) %>%
+  rowSums(na.rm = TRUE) %>%
+  sum(na.rm = TRUE)  
+
+
 plot1 <- nba_plot(dat1,
                   biome,
                   2:5,
                   CHRT = "donut",
                   NUM = FALSE,
                   LAB = "A. Overall",
-                  SAVE = NULL)  # return ggplot object
+                  SAVE = NULL)%>%
+  add_total(total_a)
 
-plot2 <- nba_plot(dat2,
-                  biome,
-                  2:5,
-                  CHRT = "donut",
-                  NUM = FALSE,
-                  LAB = "B. Endemic",
-                  SAVE = NULL)  # return ggplot object
+plot2 <- (
+  nba_plot(dat2,
+           biome,
+           2:5,
+           CHRT = "donut",
+           NUM = FALSE,
+           LAB = "B. Endemic",
+           SAVE = NULL) +
+    xlim(c(2, 4.5))
+) %>%
+  add_total(total_b)
 
 # Combine and put shared legend at bottom center
 combined_plot <- plot1 + plot2 +
@@ -381,35 +744,42 @@ combined_plot <- plot1 + plot2 +
         legend.justification = "center")
 
 combined_plot
-
-
-
-
 ```
+
+Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians are considered well protected, 22% are poorly or not protected. Species-specific management within protected areas is generally lacking for amphibians, with7% (9 species) less well protected once we took PA management effectiveness into account. For the 75 endemic amphibians assessed, 57% are Well Protected, 17% (13 species) are Not Protected, and a further 17% (13 species) are Poorly Protected. Sixteen highly threatened (CR and EN) species are under-protected.
 
 ```{r}
-#| label: fig-7
-#| fig-cap: "image caption"
+#| label: fig-9
+#| fig-cap: "The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the Micro Frog, *Microbatrachella capensis* was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. © Keir Lynch Bionerds"
 
-#knitr::include_graphics("imgs/Daubenya_namaquensis.png")
+knitr::include_graphics("./imgs/sp_amphibian_img_9.png")
 ```
 
-Further analysis and main findings can be found on the [Assessment Summary Statistics page](assessment-summary-statistics.html)
+Nine species have had improvements in their protection level, from Poorly Protected to Moderately Protected (8 species) or Well Protected (1 species). Examples of threatened species that have benefitted from improved protection include the Endangered Micro Frog (*Microbatrachella capensis*), Pickersgill’s Reed Frog (*Hyperolius pickersgilli*), and the Cape Platanna (*Xenopus gilli*). In the case of *H. pickersgilli*, an additional 16 sites have been confirmed for the species since 2017, with several of these occurring within protected areas [@armstrong2025a]. Habitat protection gains have been a key outcome of the coordination of the Biodiversity Management Plan for this species, with several sites (totaling 127 hectares) being declared through the Biodiversity Stewardship Programme, as well as improved management and wetland health for these, and existing protected areas [@armstrong2025a]. For *M. capensis*, the confirmation of the species in the Nuwejaars Wetlands Special Management Area in 2021, which is now being managed with the frog as a management target, has resulted in both an expansion of the species’ range with Protected Areas, as well as improved management effectiveness scores from fair to good. It is important to recognize the contribution to the protected area estate that Biodiversity Stewardship and conservation servitudes (or OECMs) through agreements with landowners for targeting unprotected populations of species makes.
 
-## Monitoring
+```{r}
+#| label: fig-10
+#| fig-cap: "The previously Critically Endangered Micro Frog, *Microbatrachella capensis*,  is now listed as Endangered due to its discovery at a new locality, it has also changed protection status from Poorly Protected to Moderately Protected resulting in a range extension. © Alouise Lynch Bionerds"
 
-add text
+knitr::include_graphics("./imgs/sp_amphibian_img_10.png")
+```
 
 ## Species recovery
+
+As part of the Red List process for southern Africa, the Amphibian Ark (AArk) joined the expert workshop and worked with the coordinators to produce a Conservation Needs Assessment (CNA) for threatened South African amphibian species [@brunner2025a]. This used a process developed by AArk to determine which species have the most urgent conservation needs, based on action plans that combine in situ and ex situ actions, as appropriate. Six South African species were identified as needing ex situ conservation actions, including ex situ rescue (n = 5) and ex situ research (n = 1). Due to their level of threat, the five species recommended for ex situ rescue are also recommended for biobanking. Twenty-five species were recommended for in situ conservation, and 34 species are recommended for in situ research, while 15 species were identified for conservation education programs.
+
+In addition, subsequent work to identify species requiring urgent recovery under Target 4 of the Global Biodiversity Framework resulted in 10 species being prioritised. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This speaks to the level of targeted management within protected areas that has not traditionally been focused on for amphibians and the need for research into responses to management interventions.
+
+South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behavior and ecology (Table 4). This in part was guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments. While good strides have been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context.
 
 ::: {#box-3 .callout-note .species title="Box 6. Species box" collapse="true"}
 ## Box 3. Title
 
 Add text
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.jpg){fig-alt="box_3_fig_2" width="45%"}-->
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.png){fig-alt="box_3_fig_2" width="45%"}-->
 
-![](imgs/Recovery_work.jpeg)
+![](imgs/Recovery_work.png)
 :::
 
 ## Knowledge gaps

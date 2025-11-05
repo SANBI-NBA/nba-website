@@ -112,6 +112,7 @@ website:
                      - content/marine/marine_epl.qmd
                      - content/marine/marine_ets_epl.qmd
                      - content/species/marine_sp.qmd
+                     - content/species/marine_bird_sp.qmd
                      - content/marine/marine_priority_actions.qmd
                 - section: "Coast"
                   href: content/coast/cst_synthesis.qmd
@@ -146,6 +147,7 @@ website:
               contents:
                 - content/genetics/chl-biobank.qmd
                 - content/genetics/chl-forensics.qmd
+                - content/genetics/chl-barcoding.qmd
             - section: "Priority actions, responses and interventions"
               contents:
                 - content/integrated-findings/pakg_actions.qmd

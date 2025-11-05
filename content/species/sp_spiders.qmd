@@ -4,29 +4,88 @@
 title: "Spiders" # Compulsory
 subtitle: "" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Ansie
+      family: Dippenaar-Schoeman
+    orcid: 0000-0003-1532-1379
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
-
+      - ref: arc
+  - name:
+      given: Robin
+      family: Lyle
+    orcid: 0000-0002-5279-5306
+    affiliations:
+      - ref: arc    
+  - name:
+      given: Domitilla C
+      family: Raimondo
+    #orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi    
+  - name:
+      given: Theresa 
+      family: Sethusa
+    orcid: 0000-0001-6330-6531
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Stefan 
+      family: Foord
+    orcid: 0000-0002-9195-2562
+    affiliations:
+      - ref: uv
+  - name:
+      given: Charles
+      family: Haddad
+    orcid: 0000-0002-2317-7760
+    affiliations: 
+      - ref: ufs
+  - name: 
+      given: Leon
+      family: Lotz
+    orchid: 0009-0009-3370-2520 
+    affiliation:
+      - ref: nmb
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi 
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098
+    affiliations:
+      - ref: sanbi
+     
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
 # See README for common examples - they can be copied and pasted here
 # Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
+  - id: arc # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
-    name: Name of Affiliation
+    name: Agricultural Reseach Council
+
+  - id: sanbi # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: South African National Biodiversity Institute
+  - id: uv
+    number: 3
+    name: University of Venda
+  - id: ufs
+    number: 4
+    name: University of the Free State
+  - id: nmb
+    number: 5
+    name: National Museum Bloemfontein
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -45,75 +104,118 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
+```{=html}
+<style>
+
+.inline-style-endemic {
+  color: #FFEBB0;
+  font-size: 300%;
+  font-weight: 600;
+}
+.inline-style-rare {
+  color: #C1B5A5;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.img-align {
+  width: 400;
+  height: 180px;
+  object-fit: cover;
+}
+
+.img-align1 {
+  width: 100%;          
+  height: 250px;        
+  display: block;
+}
+
+
+</style>
+```
+
 ------------------------------------------------------------------------
 
-::::::: columns
-::: {.column width="25%"}
 <center>
 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. © Peter Webb.](./imgs/sp_spider_img_1.png){fig-align="right" fig-alt="Pycnacantha tribulus"}
+
+</center>
+
+:::::: columns
+::: {.column width="33.3%"}
+<center>
+
+| [78]{.inline-style-threatened}
+| of 2214 species assessed are
 | [Threatened]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-well-protected}
-| taxa assessed
-| [Well Protected]{.inline-style-indicator}
+| [60]{.inline-style-rare}
+| of 2214 species assessed are
+| [Rare or Critically Rare]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-not-protected}
-| taxa assessed
-| [Not protected]{.inline-style-indicator}
+| [1303]{.inline-style-endemic}
+| species of spiders (58%) are
+| [Endemic]{.inline-style-indicator}
 
 </center>
 :::
-
-::: {.column width="25%"}
-```{r}
-#| label: fig-0
-#| fig-cap: "*add image*"
-#knitr::include_graphics("")
-```
-:::
-:::::::
+::::::
 
 ------------------------------------------------------------------------
 
 ## Key findings
 
-::::: columns
-::: {.column width="50%"}
--   
+-   South Africa has a rich diversity of spider species, with 2265 described species [@a2023a], representing 4% of the world's spiders.
 
--   
+-   A comprehensive assessment of 2214 spider species was conducted for the first time between 2016 and 2019 using the IUCN Red List Categories and Criteria to classify their risk of extinction and represents a global first and a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group.
 
--   
-:::
+-   The spider assessment was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species, and during this project, there was a 350% rise in specimen accessions in the national collection.
 
-::: {.column width="50%"}
+-   Of the assessed species, only 78 of the species (4%) were assessed as threatened.
+
+-   Most species (1419 spp., 64%) are widely distributed with no known threats and are of Least Concern.
+
+-   However, almost a third of the species (707 spp., 32%) are Data Deficient.
+
+-   Endemism is high, and 1303 species (58%) are only found in South Africa, representing \~2% of the world’s spiders.
+
+-   When conducting the IUCN Red List Index (RLI) assessment, spiders have the highest RLI score compared to other taxonomic groups in South Africa, resulting in it being the least threatened taxonomic group.
+
+-   The major threats to spiders are habitat loss due to fire, overgrazing, invasive plants, mining, agricultural practices, and urban development.
+
 ```{r}
 #| label: fig-1
-#| fig-cap: "Species richness map..."
-#knitr::include_graphics("")
+#| fig-cap: "Density of threatened spider species (10 x 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat and the economic hub of South Africa, Gauteng. These patterns might be influenced by sampling bias in urban areas."
+#| out-width: 75%
+knitr::include_graphics("./imgs/spiders_thrt_10km_HD.png")
 ```
-:::
-:::::
 
-### Threat status, trends and pressures
+## Threat status, trends and pressures
 
-1.  ***Threat status***
+1.  Threat status
 
-add text
+In 2016, South Africa assessed 2214 spider species for the first time using the IUCN Red List categories and criteria, which measure extinction risk [@foord2020a]. Only South African species were included; Eswatini and Lesotho were excluded from the assessment. Of the assessed species, 78 (4%) were threatened with extinction: 23 are Critically Endangered (CR), 24 are Endangered (EN), and 31 are Vulnerable (VU). No species were found to be extinct or possibly extinct.
+
+Highly threatened spiders occur in the three major urban centers of South Africa (Western Cape, Gauteng and KwaZulu-Natal major metropolitan areas). This could be an indication of sample bias, but also identifies areas that have lost large areas of habitat to urban expansion (@fig-1). Some species have very restricted ranges but face no anthropogenic threats. These are listed under South Africa’s national rarity categories: Rare (extent of occurrence \<500 km²) or Critically Rare (known from a single location). Sixteen species were classified as Critically Rare and 44 species as Rare. Although such species qualify as Least Concern under the IUCN system, they remain a priority for national conservation and are included as taxa of conservation concern along with threatened, Near Threatened and Data Deficient species.
+
+Most species (1419; 63%) are widespread, face no known threats, and are assessed as Least Concern (@fig-2). A large proportion (675; 30%) are Data Deficient, highlighting the need for more research, particularly providing more detailed taxonomic descriptions, describing unknown sexes and providing additional distribution data through field sampling and examination of museum material ([Box 1](#box-1)).
+
+Endemism is high, with 1325 species (59%) found only in South Africa, representing 2% of global spider diversity. Of the 72 spider families recorded, *Salticidae* (jumping spiders) is the most species-rich (354), followed by *Gnaphosidae* (195) and *Thomisidae* (143) [@a2023a]. Because of its size, *Salticidae* also has the highest number of threatened (6) and Data Deficient (98) species.
+
+However, the greatest conservation concern lies with smaller, cryptic species in isolated habitats such as caves and fragmented habitats. Families such as *Pholcidae*, *Archaeidae*, and *Corinnidae* each include four threatened species. Families with the highest numbers of Rare or Critically Rare species are *Pholcidae* (18), *Salticidae* (5) and *Drymusidae* (4) [@foord2020a].
 
 :::: panel-tabset
 ## Figure
@@ -122,7 +224,7 @@ add text
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of South African ... " 
+#| fig-cap: "Threat status of 2214 South African spider species assessed following the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle, and the proportion of endemic species per category is shown in the smaller circle. The total number of taxa assessed is shown in the inner circle." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -135,45 +237,56 @@ library(ggplot2)
 library(grid)
 
 # ---- Dataset ----
-df <- read_excel("data/2025_Overall_status_summary.xlsx", 
+
+df <- read_excel("./data/overall_status_summary_2025.xlsx",
                  sheet = "Summary")
 
-# ---- Function ----
+
+# ---- Recode Status ----
+df <- df %>%
+  mutate(Status = recode(Status,
+    "CR" = "Critically Endangered",
+    "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+    "EN" = "Endangered",
+    "VU" = "Vulnerable",
+    "NT" = "Near Threatened",
+    "DD" = "Data Deficient",
+    "LC" = "Least Concern",
+    "EW" = "Extinct in the Wild",
+    "EX" = "Extinct",
+    "Rare" = "Rare"
+  ))
+
+
+# ---- Functions ----
 
 # Collapse rare categories into "Rare"
-prep_taxon_data <- function(df, taxon) {
-  df_overall <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
                            "Rare", Status))
-  
-  df_endemic <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           Endemism == "Endemic",
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
-                           "Rare", Status))
-  
+}
+
 # Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
   
-make_wide <- function(dat, type_name) {
-    dat %>%
-      group_by(`Taxonomic grouping`, Status) %>%
-      summarise(Count = n(), .groups = "drop") %>%
-      pivot_wider(names_from = Status, values_from = Count, values_fill = 0) %>%
-      mutate(Type = type_name) %>%
-      select(Type, everything())
-  }
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
   
-df_combined <- bind_rows(make_wide(df_overall, "Overall"),
-                           make_wide(df_endemic, "Endemic"))
-  
-  list(
-    combined = df_combined,
-    dat_overall = df_combined %>% filter(Type == "Overall"),
-    dat_endemic = df_combined %>% filter(Type == "Endemic")
-  )
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
 }
 
 # Add total number to donut hole
@@ -185,61 +298,89 @@ add_total <- function(plot, total, SCALE_TEXT = 1) {
                   fontface = "bold")
 }
 
-# Change name of taxon according to the webpage
-taxon_data <- prep_taxon_data(df, "Spiders")
-dat1 <- taxon_data$dat_overall
-dat2 <- taxon_data$dat_endemic
-
-total_overall <- sum(rowSums(dat1[, 3:ncol(dat1)], na.rm = TRUE))
-total_endemic <- sum(rowSums(dat2[, 3:ncol(dat2)], na.rm = TRUE))
-
-# Define your lookup for threat abbreviations → full names
-threat_lookup <- c(
-  "CR" = "Critically Endangered",
-  "CR (PE)" = "Critically Endangered, Possibly Extinct",
-  "EN" = "Endangered",
-  "VU" = "Vulnerable",
-  "NT" = "Near Threatened",
-  "LC" = "Least Concern",
-  "DD" = "Data Deficient",
-  "NE" = "Not Evaluated",
-  "EX" = "Extinct",
-  "RE" = "Regionally Extinct",
-  "Rare" = "Rare"
+# ---- Setup ----
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
 )
 
-# Rename threat status to full text
-dat1 <- dat1 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+all_levels <- status_levels
 
-dat2 <- dat2 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+# ---- Spiders ----
+df_spiders <- df %>%
+  filter(`Taxonomic grouping` == "Spiders") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_spiders_en <- df %>%
+  filter(`Taxonomic grouping` == "Spiders", Endemism == "Endemic") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_spiders_wide    <- make_wide(df_spiders, "Overall", all_levels)
+df_spiders_en_wide <- make_wide(df_spiders_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_spiders_wide, df_spiders_en_wide)
+
+# Identify which threat categories actually have data
+available_levels <- df_combined %>%
+  select(all_of(all_levels)) %>%
+  summarise(across(everything(), sum)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  pull(Status)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+# Filter columns and update status levels
+dat1 <- dat1 %>% select(Type, all_of(available_levels))
+dat2 <- dat2 %>% select(Type, all_of(available_levels))
 
 
-# ---- Plot -----
-plot1 <- nba_plot(dat1, biome, 3:ncol(dat1),
-                  CHRT = "donut", NUM = FALSE, LAB = "A. Overall") %>%
-  add_total(total_overall)
-
-plot2 <- nba_plot(dat2, biome, 3:ncol(dat2),
-                  CHRT = "donut", NUM = FALSE, LAB = "B. Endemic") +
-  xlim(c(2, 4.5))   # shrink the donut
-plot2 <- add_total(plot2, total_endemic)
+overall <- dat1 %>% select(all_of(available_levels)) %>% rowSums()
+endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 
+# ---- Plots ----
+plot1 <- nba_plot(dat1, biome, 2:(ncol(dat1)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A.") %>%
+  add_total(overall)
 
-# Combine your plots (as before)
-combined_donut_plot <- plot1 + plot2 +
+plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
+           CHRT = "donut", NUM = FALSE, LAB = "B.") +
+    xlim(c(2, 4.5))) %>% add_total(endemic)
+
+
+# ---- specify legend order ----
+
+my_fill_scale <- scale_fill_manual(
+   values = NBA_colours[available_levels],
+  breaks = available_levels,
+  guide = guide_legend(ncol = 4),
+  drop = FALSE
+)
+
+plot1 <- plot1 + my_fill_scale
+plot2 <- plot2 + my_fill_scale
+
+
+# ---- Combine with one legend ----
+combined_donut_plot <- (plot1 | plot2) +
   plot_layout(guides = "collect") &
-  theme(
-    legend.position = "bottom",
-    legend.justification = "center"
-  ) 
+  theme(legend.position = "bottom",
+        legend.justification = "center")
+
 combined_donut_plot
+
 
 ```
 
@@ -249,18 +390,15 @@ combined_donut_plot
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-tab-0
-#| tbl-cap: "Plant threat status." 
+#| label: tbl-1
+#| tbl-cap: "Summary statistics of all South African indigenous spiders and endemics, the number of species within each IUCN Red List category are indicated." 
 #| classes: plain
 
-library(dplyr)
-library(nbaR)
 library(gt)
 
-
 # First, select only the columns we want and rename Type → Taxon
-dat1_sel <- dat1 %>% select(1, 3:ncol(dat1)) %>% rename(Taxon = Type)
-dat2_sel <- dat2 %>% select(1, 3:ncol(dat2)) %>% rename(Taxon = Type)
+dat1_sel <- dat1 %>% select(1, 2:ncol(dat1)) %>% rename(Taxon = Type)
+dat2_sel <- dat2 %>% select(1, 2:ncol(dat2)) %>% rename(Taxon = Type)
 
 # Now assign custom row names (or first column values)
 dat1_sel$Taxon <- "Overall spiders"
@@ -270,154 +408,291 @@ dat2_sel$Taxon <- "Endemic spiders"
 dat_combined_final <- bind_rows(dat1_sel, dat2_sel)
 
 dat_combined_final <- dat_combined_final %>%
-  rowwise() %>%
-  mutate(Total = sum(c_across(where(is.numeric)), na.rm = TRUE)) %>%
-  ungroup() 
+                      rowwise() %>%
+                      mutate(Total = sum(c_across(2:ncol(dat_combined_final)), na.rm = TRUE)) %>%
+                      ungroup() %>%
+  select(Taxon, all_of(available_levels), Total)
+  
+gt(dat_combined_final) %>% 
+  nba_tbl_theme() %>%
+  tab_options(table.width = pct(100),
+              data_row.padding = px(12)) %>%
 
-gt(dat_combined_final) %>% nba_tbl_theme()
+  tab_style(style = cell_fill(color = "gray90"),
+            locations = cells_column_labels(columns = everything())) %>%
+
+  cols_width(Taxon ~ pct(15),
+             everything() ~ pct(10))
 ```
 :::
 ::::
 
-2.  ***Trends (RLI)***
+:::::: {#box-1 .callout-note .species collapse="true"}
+## Box 1. The South African National Survey of Arachnida (SANSA)
 
-add text
+The South African National Survey of Arachnida (SANSA) was initiated in 1997, with the main aim of documenting the arachnid fauna of South Africa at a national level and to unify and strengthen biodiversity research on the spiders of South Africa [@dippenaar-schoeman2015a]. SANSA was managed by the Arachnida Unit at the National Collection of Arachnida (NCA) at the ARC – PHP in Pretoria, with support from the Universities of the Free State and Venda, the National Museum in Bloemfontein, and the South African National Biodiversity Institute (SANBI) Threatened Species Programme, who funded SANSA phase 2 [@dippenaar-schoeman2015a].
 
-```{r}
-#| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for ..."
+The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all existing spider data into a MySQL relational database developed at the ARC. The study of South African spiders was significantly influenced by colonial expansion and the visits of scientists, who dispatched hundreds of specimens to museums in Belgium, France, Germany and the United Kingdom. The data date back to 1781, when the first species was described from South Africa. Records of all known South African species with their distribution were extracted from original descriptions, re-descriptions and revisionary work, as listed on the World Spider Catalogue. SANBI joined the project for its second phase, known as SANSA II, from 2006 to 2010. Gap analyses were done to determine the spatial coverage of the species, and targeted surveys were undertaken in degree squares throughout South Africa in particular areas with poor historic coverage. Due to extensive fieldwork by SANSA field managers and research from other projects, student projects and public participation, more than 40 degree-squares were sampled in previously poorly sampled areas, providing valuable material that improved our knowledge of species distributions and yielding valuable specimens for future taxonomic studies. In 2010, the [First Atlas of South African Spiders](https://zenodo.org/records/7628809) (FASSA) was published online, listing 2003 species from 70 families, with georeferenced records and distribution maps [@a2010a]. The last decade, however, has seen considerable growth in the knowledge of spiders in South Africa, and the number of species known from the country has increased to 2265 species [@a2023a]. Even after retiring from the ARC-PHP, Dr Dippenaar-Schoeman still continues to work on the SANSA project as the project manager, updating taxonomy.
 
-#knitr::include_graphics("imgs/RLIbiomes 1.png")
-```
+<center>
 
-```{r}
-#| label: fig-4
-#| fig-cap: "The distribution of ... "
+![The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. © Robyn Lyle.](./imgs/sp_spider_img_2.png){fig-align="center"}
 
-#knitr::include_graphics("imgs/Plant_heatmap.png")
-```
+</center>
 
-::: {#box-1 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 1. Title
-
-add text
-
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}-->
+::::: grid
+::: {.g-col-lg-6 .g-col-6 .text-center}
+![Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. © Elsa van Niekerk.](./imgs/sp_spider_img_3.png){.img-align1}
 :::
 
-3.  ***Pressures***
-
-add text
-
-```{r}
-#| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s ... "
-#| out.width: 100%
-
-
-#knitr::include_graphics("imgs/Plant_OA.svg")
-```
-
-:::::: {#box-2 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 2. Title
-
-::::: columns
-::: {.column width="100%"}
-Add text
-
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/Euphorbias%20received.jpg){fig-alt="box_2_fig_2" width="45%"} ![](imgs/fd44b009-60e2.jpg){fig-alt="box_2_fig_1" width="45%"}
-
-![](imgs/1000067813.jpg){fig-alt="box_2_fig_1" width="45%"} ![](imgs/20221203_074211.jpg){fig-alt="box_2_fig_1" width="45%"} -->
-:::
-
-::: {.column width="25%"}
+::: {.g-col-lg-6 .g-col-6 .text-center}
+![Reginald Christiaan, a BIOTA intern, sampling plant-dwellers at Soebatsfontein, Northern Cape province. © Robin Lyle.](./imgs/sp_spider_img_4.png){.img-align1}
 :::
 :::::
 ::::::
 
-## Protection level
+2.  Trends (RLI)
 
-### Main findings
-
-Add text
+The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index(RLI) [@butchart2004]. The RLI value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e., if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (Figure 4). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group.
 
 ```{r}
-#| label: fig-6
-#| fig-cap: "" 
+#| label: fig-3
+#| fig-cap: "The Red List Index (RLI) for spider species assessed in South Africa, relative to other taxon groups. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Spiders are indicated in purple and have a relatively high RLI value indicating that levels of extinction risk are low."
 
-library(dplyr)
-library(tidyr)
+library(tidyverse)
 library(nbaR)
-library(readxl)
-library(patchwork)
 
-dat1 <- read_excel("data/NBA_example_pro_data.xlsx", 
-    sheet = "2025")
-dat2 <- read_excel("data/NBA_example_pro_data.xlsx", 
-    sheet = "2025_en")
+# --- Dataset ---
 
-dat1 <- dat1 %>% filter(dat1$`Taxon groups` == "Spiders")
-dat2 <- dat2 %>% filter(dat2$`Taxon groups` == "Spiders")
-plot1 <- nba_plot(dat1,
-                  biome,
-                  2:5,
-                  CHRT = "donut",
-                  NUM = FALSE,
-                  LAB = "A. Overall",
-                  SAVE = NULL)  # return ggplot object
+df_rlis <- readxl::read_excel("./data/nba_example_rli_data_trim.xlsx")
 
-plot2 <- nba_plot(dat2,
-                  biome,
-                  2:5,
-                  CHRT = "donut",
-                  NUM = FALSE,
-                  LAB = "B. Endemic",
-                  SAVE = NULL)  # return ggplot object
+df_spiders <- df_rlis %>%
+  filter(Taxon %in% c("Spiders","Aggregate"))
 
-# Combine and put shared legend at bottom center
-combined_plot <- plot1 + plot2 +
-  patchwork::plot_layout(guides = "collect") & 
-  ggplot2::theme(legend.position = "bottom",
-        legend.justification = "center")
-
-combined_plot
-
-
-
+nba_index_plot(
+  TYPE = "RLIs",
+  DF = df_spiders,
+  YEAR = Year,
+  RLI = RLI,
+  ASSESSMENT_YEAR = Assessment_Year,
+  GROUP = Taxon,
+  PALETTE = "taxon",
+  SAVE = NULL
+)
 
 ```
+
+3.  ***Pressures***
+
+Spiders face an array of threats—both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire, overgrazing and invasive alien species infestations has a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Agriculture, forestry, and mining are the leading causes of habitat loss for spiders. This is especially critical for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as the Fynbos [@dippenaar-schoeman2024a], with 28% endemic species to this biome, and the Savanna [@foord2011a], with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
+
+Spiders are present in relatively high numbers in agroecosystems; however, it has been shown that they are negatively impacted by pesticide use [@dippenaar-schoeman2013a]. Thus far, 51 families from 413 species have been recorded from crops in South Africa, and five agrobiont species have been identified that play an important role as natural control agents of pests. However, chemical use can directly kill spiders or disrupt their prey base. Integrated pest management (IPM) and organic farming are recommended to reduce chemical exposure that harms spiders and their prey. Altered temperature and rainfall patterns (climate change) can affect spider distribution, reproduction, and prey availability, and they may be severely impacted by drought.
+
+Some spiders are threatened due to poaching and are used as pets, for example, the species in the Theraphosidae family (baboon spiders). Regulations need to be enforced to prevent the overcollection of charismatic species like baboon spiders for the pet trade.
 
 ```{r}
-#| label: fig-7
-#| fig-cap: "image caption"
+#| label: fig-4
+#| fig-cap: "Key pressures on South Africa’s spider taxa. This analysis presents the relative frequency of pressures affecting threatened species using the IUCN Threat Classification Scheme [@i2025a])"
+#| out.width: 100%
 
-#knitr::include_graphics("imgs/Daubenya_namaquensis.png")
+library(stringr)
+
+df <- readxl::read_excel("./data/combined_threat_summary.xlsx", 
+                 sheet = "Overall_Maj")
+
+
+spiders<- nba_pressure_bar_plot(
+                          df,
+                          TAXON = "Spiders")
+
+spiders
 ```
 
-Further analysis and main findings can be found on the [Assessment Summary Statistics page](assessment-summary-statistics.html)
+::: {#box-2 .callout-note .species collapse="true"}
+## Box 2. Spider species' ability to respond to fire events, a natural ecological process, which is expected to become much more frequent and unpredictable in a changing climate.
 
-## Monitoring
+Most of the studies of spider ecology in South Africa are local-scale studies focusing on spider assemblage responses to habitat complexity, landscape-scale variables, ecosystem rehabilitation and plant invasions, and disturbance effects such as fire [@haddad2015a], grazing [@jansen2013a], invasive plants [@robbertson2011a] and chemical control [@berg1990a].
 
-add text
+Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, but some ground-dwellers that remain in their burrows (particularly trapdoor spiders) or that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as *Lycosidae* (wolf spiders) and *Gnaphosidae* (ground spiders), persisted post-fire, while others declined. *Caponiidae* (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a]
 
-## Species recovery
+<center>
 
-::: {#box-3 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 3. Title
+![Veld fire in the grassland and savannah systems. © Robin Lyle.](./imgs/sp_spiders_img_6.png){fig-align="center"}
 
-Add text
-
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.jpg){fig-alt="box_3_fig_2" width="45%"}-->
-
-![](imgs/Recovery_work.jpeg)
+</center>
 :::
 
 ## Knowledge gaps
 
-add text
+A significant portion of the South African spider fauna remains undescribed. In the Cape Floristic Region, 24% of species are classified as Data Deficient, and two families (Synotaxidae and Theridiosomatidae) are only known from undescribed species. Studies on mygalomorph trapdoor spiders (e.g., *Stasimopus*, *Ancylotrypa*, *Galeosoma*) show taxonomic resolution as low as 15–29%, indicating high uncertainty in species delimitation.
+
+Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a] [@a2023a] [@mescht2024a]. These sampling biases impede conservation assessments and ecological modelling.Making use of citizen science to contribute to observation both helps fill sampling gaps and also raises awareness ([Box 3](#box-3)).
+
+::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
+To contribute to the future Red List assessments and monitoring of spiders, join iNaturalist!
+
+[Spiders of South Africa iNaturalist](https://www.inaturalist.org/projects/spiders-of-south-africa)
+
+New to iNaturalist (or never heard of it) and want to play along? Watch these [**video tutorials**](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started, and sign up on the iNaturalist website or download the app on your smartphone.
+
+To see how valuable your nature photographs can be, watch this inspiring [**TED talk**](https://www.ted.com/talks/148410).
+
+<center>![](./imgs/sp_logo_inat.png){fig-align="center" width="10%"}</center>
+:::
+
+Morphological variation is poorly understood due to limited sampling, making it difficult to confidently define species boundaries. Despite SANSA’s efforts, many natural history collections lack comprehensive coverage or standardised metadata, limiting their utility for taxonomic synthesis, as large numbers of specimens in collections remain unidentified due to a lack of spider taxonomists. For example, a recent meta-analysis of South African spider data from seven collections found that only slightly more than half of the \~121 000 records had been identified to species level, indicating a major taxonomic gap in the available data [@mescht2024a]. Presently, there is only one spider taxonomist employed at a natural history collection. The shortage of taxonomic expertise will have direct consequences for resolving Data Deficient taxa and developing taxonomic products related to species descriptions, revisions, and the integration of molecular tools.
+
+Addressing the taxonomic impediment for spiders in South Africa requires a multi-pronged strategy that blends capacity building, infrastructure development, and policy integration. Here is a breakdown of effective solutions:
+
+-   **Expansion of taxonomic capacity**, by creating employment for specialist taxonomists and providing the required skills transfer opportunities ([Box 4](#box-4)).
+
+-   **Accelerate species descriptions through building capacity and collaborative research**, particularly with international partners.
+
+-   **Integrate molecular tools and promote DNA barcoding and phylogenetics to resolve species boundaries**, especially in morphologically conservative groups.
+
+-   **Develop a national spider barcode reference library**, linked to voucher specimens and ecological metadata. Currently, sequence data on South African spiders (\~10 600 specimens processed, mainly COI-5P) is scattered among several projects with very contrasting levels of taxonomic resolution.
+
+-   **Digitize and standardise collections**: with high-resolution imaging, georeferencing, and standardized metadata.
+
+-   **Ensure the SANSA database evolves to be more accessible by creating a centralized database** accessible to researchers, conservationists, and policymakers.
+
+-   **Encourage citizen science platforms like iNaturalist** to crowdsource observations and expand distribution data ([Box 3](#box-3)).
+
+-   **Relax permit conditions so that members of the public can sample specimens without fear of prosecution**, particularly those linked to photographic observations, to enable species-level identifications.
+
+-   **Link taxonomic work to spatial tools for species conservation**, e.g. Key Biodiversity Areas (KBAs) and the DFFE Screening tool for Environmental Impact Assessments (EIAs) to justify funding and urgency. This can be further linked to understanding biodiversity data and the role it could play in South Africa’s biosecurity with regards to emerging pests and diseases.
+
+-   **Foster international collaboration**, partner with global arachnological networks for training, data sharing, and joint revisions.
+
+-   **Invite and fund visiting taxonomists to work on South African material** and co-author species descriptions.
+
+-   **Facilitate the training of taxonomists from other African countries** to expand the skills base on the continent.
+
+:::::::::::::::::::: {#box-4 .callout-note .species collapse="true"}
+## Box 4. Profile on Data Deficient spiders of South Africa
+
+Although South Africa has the richest described spiders on the continent that has been researched the most thoroughly in the past, many families have never been subjected to revision and continue to present a considerable identification challenge to taxonomists and ecologists alike. Surveys and research have shown that in several families, a large proportion of species remain undescribed. For example, the National Collection of Arachnida has around 45% of specimens that are still unidentified.
+
+Preliminary research on the following families reveals that many species remain unidentified. All images are credited to © Peter Webb, if not, it is indicated.
+
+::::::::::::::::::: grid
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Araneus coccinella* [Araneidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47535) (estimated to be 29 spp.)](./imgs/sp_spider_img_7.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Clubiona durbana* [Clubionidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=121773) (estimated to be 150 spp.)](./imgs/sp_spiders_img_8.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Copuetta lacustris* [Corinnidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47418) (estimated to be 14 spp.)](./imgs/sp_spiders_img_9.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Dictyna sp.* [Dictynidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=84523) (estimated to be 6 spp.)](./imgs/sp_spiders_img_10.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Afrofilistata fradei* © G. Wilson [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.)](./imgs/sp_spiders_img_11.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Aphantaulax sp.* [Gnaphosidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=50168) (estimated to be 10 spp.)](./imgs/sp_spiders_img_12.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Macrobunidae sp.* [Macrobunidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=1525719) (estimated to be 13 spp.)](./imgs/sp_spiders_img_13.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Mimetidae sp.* [Mimetidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=60351) (estimated to be 8 spp.)](./imgs/sp_spiders_img_14.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Orsolobidae sp.* [Orsolobidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=373104) (estimated to be 3 spp.)](./imgs/sp_spiders_img_15.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Peucetia striata* [Oxyopidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=83843) (estimated to be 15 spp.)](./imgs/sp_spiders_img_16.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Philodromidae sp.* [Philodromidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47868) (estimated to be 6 spp.)](./imgs/sp_spiders_img_17.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Sctodidae sp.* [Scytodidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47431) (estimated to be 80 spp.)](./imgs/sp_spiders_img_18.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Selenopidae sp.* [Selenopidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47487) (estimated to be 23 spp.)](./imgs/sp_spiders_img_19.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Latrodectus cinctus* [Theridiidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47371) (estimated to be 28 spp.)](./imgs/sp_spiders_img_20.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Afroceto martini* [Trachelidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=416721) (estimated to be 35 spp.)](./imgs/sp_spiders_img_21.png){.img-align}
+:::
+
+::: {.g-col-lg-3 .g-col-6 .text-center}
+![*Zodarridae sp.* [Zodariidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=48893) (stimated to be 8 spp.)](./imgs/sp_spiders_img_22.png){.img-align}
+:::
+:::::::::::::::::::
+::::::::::::::::::::
+
+## Acknowledgements
+
+The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo).All the field workers, museum staff and other members contributing to completion of the assessment (@tbl-1)
+
+<center>![](./imgs/logo_spiders_1.png){style="width:50%;"}</center>
+
+```{r}
+#| label: tbl-2
+#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments ad support with field work during SANSA." 
+#| classes: plain
+
+library(gt)
+
+# Create example data
+data <- data.frame(
+  'Contributor' = c(
+"Eugene Modiseng", "Mohale Mokoena", "Esethu Nkibi ", "Keenan Meissenheimer ","Sma Chiloane ", "Reginald Christiaan"),
+  'Affiliation'  = c("Agricultural Research Council", "South African National Biodiversity Institute", "South African National Biodiversity Institute", "South African National Biodiversity Institute", "Agricultural Research Council", "South African National Biodiversity Institute"))
+
+# Create gt table
+#gt_table <- gt(data)
+
+gt(data) %>% 
+  nba_tbl_theme() %>%
+  tab_options(table.width = pct(100),
+              data_row.padding = px(12)) %>%
+
+  tab_style(style = cell_fill(color = "gray90"),
+            locations = cells_column_labels(columns = everything()))
+
+```
+
+## Approach
+
+The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA).
+
+Data Sources and Methods
+
+The assessment utilized data from the First Atlas of South African Spiders [@a2010a], which compiled information from two primary sources: the National Collection of Arachnida (NCA) at the Agricultural Research Council – Plant Health and Protection (ARC-PHP) in Roodeplaat, Pretoria (with over 60,000 records) and published taxonomic literature from 17 museum collections.
+
+The distribution of occurrence records across South Africa, Lesotho and Swaziland was visualized using quarter-degree, degree-square and density kernel plots for all 76,069 records. However, records in the NCA that were not identified to species level were excluded from the Red List assessments, reducing the analytical dataset to 23,827 species-level records covering 2,253 known South African spider species.
+
+Calculation of parameters
+
+The calculation of Red List parameters was performed using the R package red (v1.6.3) [@cardoso2017a]. Spatial analyses on observed occurrences used functions for calculating Extent of Occurrence (EOO), Area of Occupancy (AOO), and elevational range. EOO was calculated as the minimum convex polygon around all occurrences, while AOO was determined by the number of 2 km² cells occupied. When EOOs were smaller than the AOO, they were made equal. Assessments were drafted as per the IUCN documentation standards and reviewed by relevant experts.
+
+Assessment Criteria and Limitations
+
+Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends—a critical data gap known as the Prestonian shortfall—which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
 
 ## References
 
 ::: {#refs}
-[@SANBI]
 :::

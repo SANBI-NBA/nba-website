@@ -135,45 +135,56 @@ library(ggplot2)
 library(grid)
 
 # ---- Dataset ----
-df <- read_excel("data/2025_Overall_status_summary.xlsx", 
+
+df <- read_excel("./data/overall_status_summary_2025.xlsx",
                  sheet = "Summary")
 
-# ---- Function ----
+
+# ---- Recode Status ----
+df <- df %>%
+  mutate(Status = recode(Status,
+                         "CR" = "Critically Endangered",
+                         "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+                         "EN" = "Endangered",
+                         "VU" = "Vulnerable",
+                         "NT" = "Near Threatened",
+                         "DD" = "Data Deficient",
+                         "LC" = "Least Concern",
+                         "EW" = "Extinct in the Wild",
+                         "EX" = "Extinct",
+                         "Rare" = "Rare"
+  ))
+
+
+# ---- Functions ----
 
 # Collapse rare categories into "Rare"
-prep_taxon_data <- function(df, taxon) {
-  df_overall <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
                            "Rare", Status))
-  
-  df_endemic <- df %>%
-    filter(`Taxonomic grouping` == taxon,
-           Endemism == "Endemic",
-           !Status %in% c("NA", "NE")) %>%
-    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"), 
-                           "Rare", Status))
-  
+}
+
 # Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
   
-make_wide <- function(dat, type_name) {
-    dat %>%
-      group_by(`Taxonomic grouping`, Status) %>%
-      summarise(Count = n(), .groups = "drop") %>%
-      pivot_wider(names_from = Status, values_from = Count, values_fill = 0) %>%
-      mutate(Type = type_name) %>%
-      select(Type, everything())
-  }
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
   
-df_combined <- bind_rows(make_wide(df_overall, "Overall"),
-                           make_wide(df_endemic, "Endemic"))
-  
-  list(
-    combined = df_combined,
-    dat_overall = df_combined %>% filter(Type == "Overall"),
-    dat_endemic = df_combined %>% filter(Type == "Endemic")
-  )
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
 }
 
 # Add total number to donut hole
@@ -185,61 +196,87 @@ add_total <- function(plot, total, SCALE_TEXT = 1) {
                   fontface = "bold")
 }
 
-# Change name of taxon according to the webpage
-taxon_data <- prep_taxon_data(df, "Freshwater Fishes")
-dat1 <- taxon_data$dat_overall
-dat2 <- taxon_data$dat_endemic
-
-total_overall <- sum(rowSums(dat1[, 3:ncol(dat1)], na.rm = TRUE))
-total_endemic <- sum(rowSums(dat2[, 3:ncol(dat2)], na.rm = TRUE))
-
-# Define your lookup for threat abbreviations → full names
-threat_lookup <- c(
-  "CR" = "Critically Endangered",
-  "CR (PE)" = "Critically Endangered, Possibly Extinct",
-  "EN" = "Endangered",
-  "VU" = "Vulnerable",
-  "NT" = "Near Threatened",
-  "LC" = "Least Concern",
-  "DD" = "Data Deficient",
-  "NE" = "Not Evaluated",
-  "EX" = "Extinct",
-  "RE" = "Regionally Extinct",
-  "Rare" = "Rare"
+# ---- Setup ----
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
 )
 
-# Rename threat status to full text
-dat1 <- dat1 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+all_levels <- status_levels
 
-dat2 <- dat2 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup),
-                       threat_lookup[.x],
-                       .x))
+# ---- fwf ----
+df_fwf <- df %>%
+  filter(`Taxonomic grouping` == "Freshwater Fishes") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_fwf_en <- df %>%
+  filter(`Taxonomic grouping` == "Freshwater Fishes", Endemism == "Endemic") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_fwf_wide    <- make_wide(df_fwf, "Overall", all_levels)
+df_fwf_en_wide <- make_wide(df_fwf_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_fwf_wide, df_fwf_en_wide)
+
+# Identify which threat categories actually have data
+available_levels <- df_combined %>%
+  select(all_of(all_levels)) %>%
+  summarise(across(everything(), sum)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  pull(Status)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+# Filter columns and update status levels
+dat1 <- dat1 %>% select(Type, all_of(available_levels))
+dat2 <- dat2 %>% select(Type, all_of(available_levels))
 
 
-# ---- Plot -----
-plot1 <- nba_plot(dat1, biome, 3:ncol(dat1),
-                  CHRT = "donut", NUM = FALSE, LAB = "A. Overall") %>%
-  add_total(total_overall)
-
-plot2 <- nba_plot(dat2, biome, 3:ncol(dat2),
-                  CHRT = "donut", NUM = FALSE, LAB = "B. Endemic") +
-  xlim(c(2, 4.5))   # shrink the donut
-plot2 <- add_total(plot2, total_endemic)
+overall <- dat1 %>% select(all_of(available_levels)) %>% rowSums()
+endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 
+# ---- Plots ----
+plot1 <- nba_plot(dat1, biome, 2:(ncol(dat1)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A.") %>%
+  add_total(overall)
 
-# Combine your plots (as before)
-combined_donut_plot <- plot1 + plot2 +
+plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
+                   CHRT = "donut", NUM = FALSE, LAB = "B.") +
+            xlim(c(2, 4.5))) %>% add_total(endemic)
+
+
+# ---- specify legend order ----
+
+my_fill_scale <- scale_fill_manual(
+  values = NBA_colours[available_levels],
+  breaks = available_levels,
+  guide = guide_legend(ncol = 4),
+  drop = FALSE
+)
+
+plot1 <- plot1 + my_fill_scale
+plot2 <- plot2 + my_fill_scale
+
+
+# ---- Combine with one legend ----
+combined_donut_plot <- (plot1 | plot2) +
   plot_layout(guides = "collect") &
-  theme(
-    legend.position = "bottom",
-    legend.justification = "center"
-  ) &
-  guides(fill = guide_legend(ncol = 3))
+  theme(legend.position = "bottom",
+        legend.justification = "center")
+
 combined_donut_plot
 
 ```
@@ -254,37 +291,11 @@ combined_donut_plot
 #| tbl-cap: "Plant threat status." 
 #| classes: plain
 
-library(dplyr)
-library(nbaR)
 library(gt)
 
-threat_lookup_rev <- c(
-  "Critically Endangered" = "CR",
-  "Critically Endangered, Possibly Extinct" = "CR (PE)",
-  "Endangered" = "EN",
-  "Vulnerable" = "VU",
-  "Near Threatened" = "NT",
-  "Least Concern" = "LC",
-  "Data Deficient" = "DD",
-  "Not Evaluated" = "NE",
-  "Extinct" = "EX",
-  "Regionally Extinct" = "RE",
-  "Rare" = "Rare"
-)
-
-# Apply to both datasets
-dat1 <- dat1 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup_rev),
-                       threat_lookup_rev[.x],
-                       .x))
-
-dat2 <- dat2 %>%
-  rename_with(~ ifelse(.x %in% names(threat_lookup_rev),
-                       threat_lookup_rev[.x],
-                       .x))
 # First, select only the columns we want and rename Type → Taxon
-dat1_sel <- dat1 %>% select(1, 3:ncol(dat1)) %>% rename(Taxon = Type)
-dat2_sel <- dat2 %>% select(1, 3:ncol(dat2)) %>% rename(Taxon = Type)
+dat1_sel <- dat1 %>% select(1, 2:ncol(dat1)) %>% rename(Taxon = Type)
+dat2_sel <- dat2 %>% select(1, 2:ncol(dat2)) %>% rename(Taxon = Type)
 
 # Now assign custom row names (or first column values)
 dat1_sel$Taxon <- "Overall freshwater fishes"
@@ -295,10 +306,20 @@ dat_combined_final <- bind_rows(dat1_sel, dat2_sel)
 
 dat_combined_final <- dat_combined_final %>%
   rowwise() %>%
-  mutate(Total = sum(c_across(where(is.numeric)), na.rm = TRUE)) %>%
-  ungroup() 
+  mutate(Total = sum(c_across(2:ncol(dat_combined_final)), na.rm = TRUE)) %>%
+  ungroup() %>%
+  select(Taxon, all_of(available_levels), Total)
 
-gt(dat_combined_final) %>% nba_tbl_theme()
+gt(dat_combined_final) %>% 
+  nba_tbl_theme() %>%
+  tab_options(table.width = pct(100),
+              data_row.padding = px(12)) %>%
+  
+  tab_style(style = cell_fill(color = "gray90"),
+            locations = cells_column_labels(columns = everything())) %>%
+  
+  cols_width(Taxon ~ pct(15),
+             everything() ~ pct(10))
 ```
 :::
 ::::
@@ -311,7 +332,26 @@ add text
 #| label: fig-3
 #| fig-cap: "The Red List Index (RLI) for ..."
 
-#knitr::include_graphics("imgs/RLIbiomes 1.png")
+library(tidyverse)
+library(nbaR)
+# --- Dataset ---
+
+df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
+
+df_fwf <- df_rlis%>%
+  filter(Taxon %in% c("Freshwater Fishes", "Aggregate"))
+
+nba_index_plot(
+  TYPE = "RLIs",
+  DF = df_fwf,
+  YEAR = Year,
+  RLI = RLI,
+  ASSESSMENT_YEAR = Assessment_Year,
+  GROUP = Taxon,
+  PALETTE = "taxon",
+  # AGGREGATE = TRUE,
+  SAVE = NULL
+)
 ```
 
 ```{r}
@@ -326,7 +366,7 @@ add text
 
 add text
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}-->
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.png){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.png){fig-alt="box_1_fig_2" width="45%"}-->
 :::
 
 3.  ***Pressures***
@@ -338,8 +378,16 @@ add text
 #| fig-cap: "Key pressures on South Africa’s ... "
 #| out.width: 100%
 
+library(stringr)
 
-#knitr::include_graphics("imgs/Plant_OA.svg")
+df <- readxl::read_excel("./data/combined_threat_summary.xlsx", 
+                         sheet = "Overall_Maj")
+
+
+nba_pressure_bar_plot(
+  df,
+  TAXON = "Freshwater Fishes")
+
 ```
 
 :::::: {#box-2 .callout-note .species title="Box 2. Species box" collapse="true"}
@@ -349,9 +397,9 @@ add text
 ::: {.column width="100%"}
 Add text
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/Euphorbias%20received.jpg){fig-alt="box_2_fig_2" width="45%"} ![](imgs/fd44b009-60e2.jpg){fig-alt="box_2_fig_1" width="45%"}
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/Euphorbias%20received.jpg){fig-alt="box_2_fig_2" width="45%"} ![](imgs/fd44b009-60e2.png){fig-alt="box_2_fig_1" width="45%"}
 
-![](imgs/1000067813.jpg){fig-alt="box_2_fig_1" width="45%"} ![](imgs/20221203_074211.jpg){fig-alt="box_2_fig_1" width="45%"} -->
+![](imgs/1000067813.png){fig-alt="box_2_fig_1" width="45%"} ![](imgs/20221203_074211.png){fig-alt="box_2_fig_1" width="45%"} -->
 :::
 
 ::: {.column width="25%"}
@@ -375,34 +423,66 @@ library(nbaR)
 library(readxl)
 library(patchwork)
 
-dat1 <- read_excel("data/NBA_example_pro_data.xlsx", 
-    sheet = "2025")
-dat2 <- read_excel("data/NBA_example_pro_data.xlsx", 
-    sheet = "2025_en")
+dat1 <- read_excel("data/nba_example_pro_data.xlsx", 
+                   sheet = "2025")
+dat1 <- dat1 %>%
+  filter(`Taxon groups`== "Freshwater Fishes")
+dat2 <- read_excel("data/nba_example_pro_data.xlsx", 
+                   sheet = "2025_en")
+dat2 <- dat2 %>%
+  filter(`Taxon groups`== "Freshwater Fishes")
 
-dat1 <- dat1 %>% filter(dat1$`Taxon groups` == "Freshwater Fishes")
-dat2 <- dat2 %>% filter(dat2$`Taxon groups` == "Freshwater Fishes")
+# Add total number to donut hole
+# Updated add_total() function
+add_total <- function(plot, total, SCALE_TEXT = 1) {
+  plot + annotate("text",
+                  x = 2, y = 0,
+                  label = total,
+                  size = 3.5 * SCALE_TEXT,
+                  fontface = "bold")
+}
+
+
+
+# Calculating totals  
+total_a <- dat1 %>%
+  select(2:5) %>%
+  mutate(across(everything(), as.numeric)) %>%
+  rowSums(na.rm = TRUE) %>%
+  sum(na.rm = TRUE)
+total_b <- dat2 %>%
+  select(2:5) %>%
+  mutate(across(everything(), as.numeric)) %>%
+  rowSums(na.rm = TRUE) %>%
+  sum(na.rm = TRUE)  
+
+
 plot1 <- nba_plot(dat1,
                   biome,
                   2:5,
                   CHRT = "donut",
                   NUM = FALSE,
                   LAB = "A. Overall",
-                  SAVE = NULL)  # return ggplot object
+                  SAVE = NULL)%>%
+  add_total(total_a)
 
-plot2 <- nba_plot(dat2,
-                  biome,
-                  2:5,
-                  CHRT = "donut",
-                  NUM = FALSE,
-                  LAB = "B. Endemic",
-                  SAVE = NULL)  # return ggplot object
+plot2 <- (
+  nba_plot(dat2,
+           biome,
+           2:5,
+           CHRT = "donut",
+           NUM = FALSE,
+           LAB = "B. Endemic",
+           SAVE = NULL) +
+    xlim(c(2, 4.5))
+) %>%
+  add_total(total_b)
 
 # Combine and put shared legend at bottom center
 combined_plot <- plot1 + plot2 +
   patchwork::plot_layout(guides = "collect") & 
   ggplot2::theme(legend.position = "bottom",
-        legend.justification = "center")
+                 legend.justification = "center")
 
 combined_plot
 
@@ -431,9 +511,9 @@ add text
 
 Add text
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.jpg){fig-alt="box_3_fig_2" width="45%"}-->
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!--![](imgs/image%20(3).png){fig-alt="box_3_fig_1" width="45%"} ![](imgs/image.png){fig-alt="box_3_fig_2" width="45%"}-->
 
-![](imgs/Recovery_work.jpeg)
+![](imgs/Recovery_work.png)
 :::
 
 ## Knowledge gaps

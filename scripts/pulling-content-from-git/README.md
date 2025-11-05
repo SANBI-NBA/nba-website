@@ -18,3 +18,11 @@ chmod +x update_repos.sh
 ```
 
 This will run `update_repos.sh` which iterates through all the cloned repos and will checkout to main and then pull from main. Important to note that NBA website will only be compiled from main branches on content repos. For new content to be pulled through to the website, editing or development branches must first be merged to main.
+
+## Collect step: 
+
+The next step is to collect the webcontent and include it in the nba-website repo
+
+BEFORE doing this for the first time create a .Renviron txt file and add this line
+
+CONTENT_PATH="C:/Rdata/nba-webcontent"

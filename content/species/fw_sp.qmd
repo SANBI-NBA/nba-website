@@ -53,6 +53,9 @@ citation:
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
+format:
+  html:
+    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
@@ -212,7 +215,7 @@ Add text & figure
 
 add text
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.jpg){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.jpg){fig-alt="box_1_fig_2" width="45%"}-->
+remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.png){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.png){fig-alt="box_1_fig_2" width="45%"}-->
 :::
 
 3.  ***Pressures***
