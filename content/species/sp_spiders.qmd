@@ -138,7 +138,7 @@ google-scholar: true
 
 <center>
 
-![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. © Peter Webb.](./imgs/sp_spider_img_1.png){fig-align="right" fig-alt="Pycnacantha tribulus"}
+![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. © Peter Webb.](./imgs/sp_spider_img_1.png){fig-align="center"}
 
 </center>
 
@@ -691,6 +691,26 @@ The calculation of Red List parameters was performed using the R package red (v1
 Assessment Criteria and Limitations
 
 Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends—a critical data gap known as the Prestonian shortfall—which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
+
+### Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
 
 ## References
 

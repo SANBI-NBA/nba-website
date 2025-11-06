@@ -4,13 +4,15 @@ title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
 
+Within an NBA cycle (i.e., between releases of a summary publication, usually before a report to the Convention on Biological Diversity is due), the various datasets or results will be versioned at different time points. For example, the NBA 2025 summary publication may use a 2023 marine ecosystem map, 2024 terrestrial threat status and the spider Red List assessment from 2019. The online form of the NBA will allow updates of certain indicators more regularly, making the NBA a ‘living’ assessment that reflects the most current data available. It is therefore extremely important to use the recommended citation as stated on each webpage.
+
 ## Technical pages
 
 To reference the content of this website please use the **Recommended citation** at the bottom of each (technical) page. These pages have specific author lists at the top of the page.
 
 #### Recommended citation of a technical NBA page
 
-Example: 
+Example:
 
 da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic Diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
 

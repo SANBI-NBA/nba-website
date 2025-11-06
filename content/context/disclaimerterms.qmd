@@ -8,7 +8,7 @@ The information provided on the National Biodiversity Assessment website is on a
 
 SANBI will not be liable for any claims whatsoever, whether for damages or otherwise, which may arise as a result of inaccuracies in the information supplied.
 
-Please read the [recommendations for how to cite NBA information](./cite-nba.qmd)
+Please read the [recommendations for how to cite NBA information](./cite-nba.qmd).
 
 All NBA datasets and results are licensed under a [Creative Commons Attribution Non-Commercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 

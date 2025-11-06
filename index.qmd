@@ -5,23 +5,34 @@ format:
     sidebar: false
 ---
 
+
+::: {style="margin: 0; padding: 0;"}
+
+<!-- Full-width banner with no top gap -->
+<div style="
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: -2.5rem; /* pull up to remove top space */
+">
+  <img src="imgs/nba-banner2.png" style="width: 100%; height: auto; display: block; margin: 0;" />
+</div>
+
+:::
+
+
+
 #### NBA staging website: content under development {style="color: red"}
+<!--![](imgs/nba-banner.png)-->
 
-![](imgs/nba-banner.png)
-
-## National Biodiversity Assessment 2025 is coming soon! {#summary}
+## National Biodiversity Assessment 2025 {#summary}
 
 The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa, and is produced by the South African National Biodiversity Institute in partnership with numerous institutions and individuals.
 
 National Biodiversity Assessment 2025 is presented in two formats:
 
--   a *Summary of Findings and Key Messages* publication (that will be available in print and PDF), and
+-   a *Summary of Findings and Key Messages* publication (available in print and PDF), and
 
--   this website, which will feature around 60 webpages of scientifically referenced, citable content, with links to detailed technical documentation and academic publications.
-
-***NBA 2025 will be released in late 2025.***
-
-In the meantime, read more about the following:
+-   this website, which will feature \~100 pages of scientifically referenced, citable content, with links to relevant detailed technical documentation and academic publications.
 
 [About the National Biodiversity Assessment](./content/context/about-nba.qmd)
 

@@ -436,8 +436,6 @@ library(patchwork)
 #knitr::include_graphics("imgs/Daubenya_namaquensis.png")
 ```
 
-
-
 ## Monitoring
 
 add text
@@ -457,6 +455,26 @@ remove the syntax "<!-- -->" for inserting the images replace existing with appr
 ## Knowledge gaps
 
 add text
+
+### Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
 
 ## References
 

@@ -10,13 +10,13 @@ NBA 2025 would not have been possible without the substantial in-kind contributi
 
 SANBI is particularly grateful for the strategic and long-term partnerships that supported leadership of the Estuarine (Council for Scientific and Industrial Research) and Coastal (the Institute for Coastal and Marine Research at Nelson Mandela University) Components of the NBA. Their clear and experienced leadership of these complex components was invaluable.
 
-:::{layout-ncol=2}
+::: {layout-ncol="2"}
 ![](imgs/csir.png)
 
 ![](imgs/mandelauni.png)
 :::
 
-Various governance structures guide the NBA, ensuring a broad range of experts and stakeholders contributed to the assessment. We extend our thanks to the members of the various ecosystem committees and species working groups for their technical inputs; the NBA 2025 Core Reference Group for leading the complex content; the internal SANBI Cross Functional Steering Committee for oversight and support; and the Strategic Advisory Committee (consisting of senior officials from various government departments and entities, non-governmental organisations and private sector associations) for cross-sectoral inputs and advice on communicating NBA findings. Appreciation also goes to the Department of Forestry, Fisheries and the Environment intergovernmental structures where the NBA key messages were tabled for inputs.
+Various governance structures guide the NBA, ensuring a broad range of experts and stakeholders contributed to the assessment. We extend our thanks to the members of the various ecosystem committees and species working groups for their technical inputs; the NBA 2025 Core Reference Group for leading the complex content; the internal SANBI Cross Functional Steering Committee for oversight and support; and the Strategic Advisory Committee (consisting of senior officials from various government departments and entities, non-governmental organisations and private sector associations) for cross-sectoral inputs and advice on communicating NBA 2025 findings. Appreciation also goes to the Department of Forestry, Fisheries and the Environment intergovernmental structures where the NBA key messages were tabled for inputs.
 
 Finally, thanks to all the talented photographers who generously donated their images for use in NBA 2025, both in this publication and on the website. Their contributions greatly enrich the presentation and communication of the state of South Africa’s biodiversity.
 

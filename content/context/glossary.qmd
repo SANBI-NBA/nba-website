@@ -4,7 +4,7 @@ title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
 
-Acronyms and abbreviations: the use of these on the NBA website has been restricted to those that are in common usage.  
+Acronyms and abbreviations: The use of these on the NBA website has been restricted to those that are in common usage.  
 
 Terminology: Users of the NBA are encouraged to refer to the [Lexicon of Spatial Biodiversity Assessment, Prioritisation and Planning in South Africa (Second Edition, 2023)](http://hdl.handle.net/20.500.12143/8261) for standard definitions of key concepts and frequently used terms. 
 

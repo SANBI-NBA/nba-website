@@ -13,19 +13,19 @@ bibliography: refs-about-nba.bib
 
 The NBA has seven objectives, which are to:
 
-1.  Inform policy and decision making across multiple sectors;
+1.  inform policy and decision making across multiple sectors;
 
-2.  Support prioritisation and planning for conservation action;
+2.  support prioritisation and planning for conservation action;
 
-3.  Highlight the benefits of biodiversity for people and the economy;
+3.  highlight the benefits of biodiversity for people and the economy;
 
-4.  Present indicators for both national and international reporting;
+4.  present indicators for both national and international reporting;
 
-5.  Raise key issues for education and fundraising;
+5.  raise key issues for education and fundraising;
 
-6.  Provide a platform for collaboration and capacity development within the biodiversity sector; and
+6.  provide a platform for collaboration and capacity development within the biodiversity sector; and
 
-7.  Identify crucial data and knowledge gaps to stimulate future research and improvement.
+7.  identify crucial data and knowledge gaps to stimulate future research and improvement.
 
 ## Uses and users of the NBA
 
@@ -54,7 +54,7 @@ The key messages distill some of the most important findings of the NBA in a way
 :::
 
 ::: {.callout-note collapse="true" title="Facts and statistics about the benefits of biodiversity"}
-One of the seven goals of the NBA is to highlight the benefits of biodiversity for people and the economy. There is a chapter on the 'importance of South Africa's biodiversity' and each key message contains some information on why the finding is important. Links to additional information about nature's contributions to people are also provided throughout the NBA website.
+One of the seven goals of the NBA is to highlight the benefits of biodiversity for people and the economy. There is a webpage on the 'importance of South Africa's biodiversity' and each key message contains some information on why the finding is important. Links to additional information about nature's contributions to people are also provided throughout the NBA website.
 :::
 
 ::: {.callout-note collapse="true" title="Priority actions, responses and interventions"}

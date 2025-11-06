@@ -1,108 +1,133 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
+title: "Anostraca" # 
+title-block-banner: "#ad180d" 
+title-block-banner-color: white 
 
-title: "Anostraca" # Compulsory
-subtitle: "" # Optional: delete if you are not using a subtitle
-
-title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
   - name:
       given: Bestie
       family: Milne 
     orcid: 0000-0002-9431-8540
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+      - ref: bec 
+      - ref: saeon   
+          
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Daksha 
+      family: Bills 
+    #orcid: 0000-0000-0000-0000 
     affiliations:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+      - ref: am
+
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Keenan
+      family: Meissenheimer 
+    orcid: 0000-0002-4148-2718 
     affiliations:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+      - ref: sanbi  
+      - ref: birdlife 
+
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098 
+    affiliations:
+      - ref: sanbi 
+ 
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
     affiliations:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+      - ref: sanbi   
+      
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
     affiliations:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+      - ref: sanbi
+      
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Musa 
+      family: Mlambo 
+    #orcid: 0000-0000-0000-0000 
     affiliations:
+      - ref: am      
 
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: Name of Affiliation
+  - id: bec  
+    number: 1 
+    name: Boscia Ecological Consulting 
+    
+  - id: saeon  
+    number: 2 
+    name: South African Environmental Observation Network    
 
-# This date determines the PUBLISHED date in the title block
+  - id: am 
+    number: 3 
+    name: Albany Museum
+    
+  - id: sanbi 
+    number: 4 
+    name: South African National Biodiversity Institute 
+    
+  - id: birdlife  
+    number: 5 
+    name: BirdLife South Africa
+    
 date: last-modified
-
-# Remember to rename the default .bib file and change the name here
 bibliography: species.bib
 
-# This section sets up the page citation format. DO NOT EDIT
 citation:
   type: webpage
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
+
 appendix-cite-as: false
 google-scholar: true
+
+format: 
+  html:
+    embed-resources: true
 ---
 
-------------------------------------------------------------------------
+--------------------------------------------------------------
 
-::::::: columns
-::: {.column width="25%"}
 <center>
 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+![*Streptocephalus namibiensis*(LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore accurate species identification requires specialised expertise. © Betsie Milne.](./imgs/sp_anostraca_img_1.png){fig-align="center"}
+
+</center>
+
+::::::: columns
+::: {.column width="33.3%"}
+<center>
+
+| [25%]{.inline-style-threatened}
+| of 36 assessed species are
 | [Threatened]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-well-protected}
-| taxa assessed
-| [Well Protected]{.inline-style-indicator}
+| [64%]{.inline-style-not-protected}
+| of 36 species are assessed as 
+| [Least Concern]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-not-protected}
-| taxa assessed
-| [Not protected]{.inline-style-indicator}
+| [44%]{.inline-style-not-protected}
+| species are 
+| [Endemic]{.inline-style-indicator}
 
 </center>
 :::
@@ -119,6 +144,22 @@ google-scholar: true
 ------------------------------------------------------------------------
 
 ## Key findings
+
+-  There are 38 described Anostraca species in South Africa, representing ~11% of the world's species (~353)[@rogers2013a]. 
+
+-  A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List Categories and Criteria to classify their risk of extinction (two species are still in review, which will take the total assessed species to 38). 
+
+-	 Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) (Meyer-Milne et al. in prep).
+
+-	 Endemism is high, with 44% (16) species only found in South Africa. Of these, 56% (9 species) are threatened with extinction, placing sole responsibility on South Africa to protect and conserve these species (Meyer-Milne et al. in prep).
+
+-
+This assessment of Anostraca contributed to 58% of the global Anostraca IUCN assessments, making a sizeable contribution to the understanding of the current state of these temporary freshwater habitat indicator species. 
+
+-  The IUCN Red List Index (RLI) assessment revealed that Anostraca have the third lowest RLI score (0.84), making it one of the most threatened taxonomic groups in South Africa. This illustrates the need for further surveys of temporary freshwater systems in the country, to understand their drivers of threat better as well as guide efforts to prevent further losses.
+
+-  Major threats to Anostraca are habitat loss and degradation due to urban and agricultural expansion, and mining. 
+
 
 ::::: columns
 ::: {.column width="50%"}
@@ -553,8 +594,29 @@ remove the syntax "<!-- -->" for inserting the images replace existing with appr
 
 add text
 
+### Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+
 ## References
 
 ::: {#refs}
-[@SANBI]
+
 :::

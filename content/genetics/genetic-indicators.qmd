@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Genetic Diversity" # Compulsory
+title: "Genetic diversity" # Compulsory
 subtitle: ""
 title-block-banner: "#99BD41" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -196,11 +196,11 @@ This study provides a **national framework for monitoring phylogenetic biodivers
 
 As technology advances and the cost of molecular processing continues to decrease, monitoring the genetic health of species and their populations through time is becoming increasingly feasible. South Africa utilizes a growing suite of genetic tools, including:
 
--   **Forensic genetics** [here](./chl-forensics.qmd) — identifying illegally traded wildlife products to enforce conservation laws.
+-   **Forensic genetics** [read more here](./chl-forensics.qmd) — identifying illegally traded wildlife products to enforce conservation laws.
 
--   **Biobanking** [here](./chl-biobank.qmd) — long-term preservation of genetic material from threatened species for future research and restoration.
+-   **Biobanking** [read more here](./chl-biobank.qmd) — long-term preservation of genetic material from threatened species for future research and restoration.
 
--   **DNA barcoding** — building reference libraries for species identification and monitoring.
+-   **DNA barcoding** [read more here](./chl_barcoding.qmd)— building reference libraries for species identification and monitoring.
 
 -   **Environmental DNA (eDNA)** — detecting species and tracking biodiversity changes through genetic traces in soil, water, or air samples.
 
