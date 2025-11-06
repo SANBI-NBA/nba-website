@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-873486f3db474cc0cfb34b8517f191db.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -760,18 +763,22 @@ background: #A7A9AC;
 
 <section id="what-is-the-nba" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-the-nba">What is the NBA</h2>
-<p><em>South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities</em>.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities. <em>Click on image to enlarge →</em></p>
+</div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imgs/nba-infoGraphic.jpg" class="img-fluid figure-img"></p>
-<figcaption>This infographic summarises what the NBA is and what it is used for © SANBI</figcaption>
+<p><a href="imgs/nba-infoGraphic.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="imgs/nba-infoGraphic.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="300"></a></p>
 </figure>
+</div>
+</div>
 </div>
 </section>
 <section id="why-the-nba-is-done" class="level2">
 <h2 class="anchored" data-anchor-id="why-the-nba-is-done">Why the NBA is done</h2>
-<p>The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa. It is prepared as part of the South African National Biodiversity Institute’s (SANBI) mandate, in terms of the National Environmental Management: Biodiversity Act (Act 10 of 2004).&nbsp;The Act specifically states that SANBI ‘must monitor and report regularly to the Minister on (i) the status of the Republic’s biodiversity and (ii) the conservation status of all listed threatened or protected species and listed ecosystems’.</p>
-<p>The scope of the NBA is broad, assessing biodiversity at the ecosystem and species level, and addressing aspects of genetic diversity. The assessment covers all of South Africa’s territory, across land and sea, including its subantarctic territory of the Prince Edward Islands. Information is organised by realm (terrestrial, freshwater (rivers and inland wetlands), estuarine and marine (benthic and pelagic)), and the cross-ream coastal zone and the subantarctic region.&nbsp;</p>
+<p>The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa. It is prepared as part of the South African National Biodiversity Institute’s (SANBI) mandate, in terms of the National Environmental Management: Biodiversity Act (Act 10 of 2004). The Act specifically states that SANBI ‘must monitor and report regularly to the Minister on (i) the status of the Republic’s biodiversity and (ii) the conservation status of all listed threatened or protected species and listed ecosystems’.</p>
+<p>The scope of the NBA is broad, assessing biodiversity at the ecosystem and species level, and addressing aspects of genetic diversity. The assessment covers all of South Africa’s territory, across land and sea, including its subantarctic territory of the Prince Edward Islands. Information is organised by realm (terrestrial, freshwater (rivers and inland wetlands), estuarine and marine (benthic and pelagic)), and the cross-ream coastal zone and the subantarctic region.</p>
 <p>Read more about the purposes and uses of all the NBA products <a href="../../content/context/uses-nba.html">here</a>.</p>
 </section>
 <section id="how-the-nba-is-undertaken" class="level2">
@@ -782,7 +789,7 @@ background: #A7A9AC;
 <section id="when-the-nba-is-updated" class="level2">
 <h2 class="anchored" data-anchor-id="when-the-nba-is-updated">When the NBA is updated</h2>
 <p>An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.</p>
-<p>The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the ’<a href="../../content/context/whatsnew-nba.html">What’s New</a> section to see what has been updated.</p>
+<p>The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the <a href="../../content/context/whatsnew-nba.html">What’s New</a> section to see what has been updated.</p>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
 <p>Read more about the origins, context, goals, form, scope and approach of the NBA in the document called <a href="https://hdl.handle.net/20.500.12143/9058">South Africa’s National Biodiversity Assessment: Contextual and Operational Framework</a>.</p>
@@ -1255,6 +1262,38 @@ Important links
       });
   });
 </script>   
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
