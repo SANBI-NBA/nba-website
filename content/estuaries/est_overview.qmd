@@ -8,11 +8,9 @@ bibliography: references.bib
 
 ## Biodiversity Profile
 
-*South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This represents a high diversity of estuary types stemming from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
+*South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
 
-
-![Knysna Estuarine Bay @ Duran de villiers](imgs/est_knysna_duran_de_villiers2.png)
-
+![Knysna Estuarine Bay ©Duran de Villers](imgs/est_knysna_duran_de_villiers2.png)
 
 In South Africa, there are *circa* 176 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat. Key estuary habitats in South Africa cover a total area of 103 500 ha, with reeds and sedges (17 500 ha) overall the dominant habitat type. On a bioregional scale, supratidal salt marsh dominates in the Cool temperate region (6 300 ha) and Warm temperate region (2 400 ha, reeds and sedges in the Subtropical region (10 800 ha), and swamp forest in the Tropical region (2 000 ha). Estuaries with the largest extent are St Lucia (44 800 ha), Groot Berg (8 000 ha) and Knysna (2 400 ha). The number of macrophyte species per estuary varied from 1 to 54 (recorded at Kosi). Macrophyte species richness in estuaries of the Cool and Warm Temperate region is higher than that in the Subtropical and Tropical region. Macrophyte species are distributed amongst 58 families . Only 66 plant species occurred in five or more estuaries in the country.
 
@@ -56,7 +54,6 @@ Even important ‘bait’ invertebrate species Sandprawn (*Callichirus kraussii*
 
 ------------------------------------------------------------------------
 
-
 <!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
 
 ## Ecosystem assessments
@@ -83,15 +80,11 @@ Estuaries require increased protection and interventions across multiple sectors
 
 ::::: grid
 ::: {.g-col-lg-8 .g-col-12}
-
 There are many interacting pressures cumulatively affecting estuarine ecosystems and species. The main pressures impacting estuarine biodiversity include escalating gillnet pressure, declining water quality, increased flow reduction and land-use change in EFZ (coastal development, mining & farming).
-
- 
 :::
-::: {.g-col-lg-4 .g-col-12 .text-center}
- 
-![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
 
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
 :::
 :::::
 
@@ -102,18 +95,14 @@ Pressure evaluation shows that a third of freshwater flow no longer reaches the 
 Overall multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
 
 ### *ADD BUBBLE MAP OF PRESSURE*
-::::: grid
 
+::::: grid
 ::: {.g-col-lg-8 .g-col-12}
- 
-The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment (link to KMA2).
-108
- 
+The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment (link to KMA2). 108
 :::
+
 ::: {.g-col-lg-4 .g-col-12 .text-center}
- 
 ![Map of 31 cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure.](imgs/cum_press_low_res.jpeg){style="width:400;"}
- 
 :::
 :::::
 

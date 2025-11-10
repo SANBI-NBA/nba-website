@@ -1,56 +1,53 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
+title: "Terrestrial Species" 
+title-block-banner: "#De2104" 
+title-block-banner-color: white 
 
-title: "Terrestrial Species" # Compulsory
-subtitle: "" # Optional: delete if you are not using a subtitle
-
-title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
-  
   - name:
       given: Domitilla C.
       family: Raimondo
     orcid: 0000-0003-3998-752X
     affiliations:
-      - ref: sanbi
-  
+      - ref: sanbi 
+         
   - name: 
       given: Dewidine 
       family: van Der Colff 
     orcid: 0000-0002-0906-7098 
     affiliations:
+      - ref: sanbi 
+
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi   
+      
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
       - ref: sanbi
   
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: sanbi # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
+  - id: sanbi 
+    number: 1 
     name: South African National Biodiversity Institute
-  - id: birdlife # Use this as the affiliation ref with authors above
-    number: 2 # This number is used to associate authors with affiliations
+  - id: birdlife 
+    number: 2
     name: Birdlife South Africa
 
-# This date determines the PUBLISHED date in the title block
 date: last-modified
-
-# Remember to rename the default .bib file and change the name here
 bibliography: species.bib
 
-# This section sets up the page citation format. DO NOT EDIT
 citation:
   type: webpage
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
 ---

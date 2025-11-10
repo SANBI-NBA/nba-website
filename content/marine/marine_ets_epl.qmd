@@ -2,7 +2,7 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Intersection of ecosystem threat status and protection levels" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+subtitle: "Marine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE

@@ -2,7 +2,7 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Ecosystem Types" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+subtitle: "Marine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -17,6 +17,7 @@ author:
     orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -55,9 +56,11 @@ author:
   - name:
       given: Loyiso V. #Add author's first name here. Abbreviate the middle name
       family: Dunga #Add author's surname here
+    orcid: 0000-0001-6448-8285
     affiliations:
       - ref: sanbi1 # Ref must match the id of one of the affiliations listed below
-      # - ref: sgh6 # Ref must match the id of one of the affiliations listed below
+      - ref: nmu # Ref must match the id of one of the affiliations listed below
+      - ref: sgh6 # Ref must match the id of one of the affiliations listed below
 
 # List authors here in the order you want them displayed in the title block
   - name:
@@ -66,6 +69,7 @@ author:
     # orcid:  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: uct # Ref must match the id of one of the affiliations listed below
 
 # List authors here in the order you want them displayed in the title block
   - name:
@@ -84,9 +88,17 @@ affiliations:
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
 # Make sure you maintain indentations exactly as they are here
-  # - id: sgh6 # Use this as the affiliation ref with authors above
-  #   number: 2 # This number is used to associate authors with affiliations
-  #   name: Parley for the Oceans
+  - id: nmu # Use this as the affiliation ref with authors above
+    number: 2 # This number is used to associate authors with affiliations
+    name: Nelson Mandela University
+# Make sure you maintain indentations exactly as they are here
+  - id: sgh6 # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: Parley South Africa – The Seas of Good Hope
+# Make sure you maintain indentations exactly as they are here
+  - id: uct # Use this as the affiliation ref with authors above
+    number: 4 # This number is used to associate authors with affiliations
+    name: University of Cape Town
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -172,7 +184,7 @@ The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) inc
 #| label: tbl-eco_types
 #| echo: false
 #| classes: plain
-#| tbl-cap: Marine ecosystem types in South Africa and the functional group codes that they align with in the [IUCN GET](https://global-ecosystems.org/).
+#| tbl-cap: Marine ecosystem types in South Africa and the functional group codes that they align with in the [**IUCN GET**](https://global-ecosystems.org/).
 
 # library(here)
 library(reactable)
@@ -245,18 +257,35 @@ SANBI is implementing data and analytical frameworks to leverage the rapidly esc
 
 In regions where sufficient biodiversity data occur, the environmental layers and occurrence records are combined in statistical assemblage distribution models that estimate the co-occurring species assemblages and their preferred habitats, thereby predicting biodiversity patterns and characterising their composition. In regions where insufficient biodiversity data have been collected for the biodiversity analyses, gridded environmental layers are combined in environmental classifications (cluster analyses) to delineate unique habitats (@fig-schematic). The outputs from the assemblage distribution models and the environmental clusters are used as evidence, together with published biogeographic patterns, to consider updates to the ecosystem map. Updates to ecosystem components or types, such as [newly mapped submarine canyons](#box-canyons) and [kelp forests mapped from satellite data](https://doi.org/10.1016/j.ecss.2024.108989) [@dunga2024] are being incorporated in the ecosystem map.
 
-::: {#box-kelps .callout-note .marine collapse="False" appearance="minimal" title="Box 1 . Kelp ecosystem types"}
-<!-- ### South Africa’s submarine canyons -->
+::: {#box-kelps .callout-note .marine collapse="False" appearance="minimal" title="Box 1. The Great African Sea Forest: Kelp forest ecosystem types of South Africa"}
+Large brown seaweeds of the order Laminariales fringe rocky shores of temperate and high-latitude regions, creating kelp forest ecosystem types that cover over 30% of shallow rocky reefs globally. They are among the most productive ecosystems on earth and offer many social and economic benefits, including fishing, ecotourism, a variety of kelp-derived products and play a role in fixing atmospheric carbon [@blamey2018]. Evidence of consumption of species associated with kelp forests has been dated to about 70 000 years ago in South Africa. The extent of kelp forests has been documented to change, with expansion reported locally [@bolton2012] and cases of kelp loss documented internationally [@coleman2022].
 
-Large brown algae of the order Laminariales fringe rocky shores of temperate and high-latitude regions, creating kelp forest ecosystem types that cover over 30% of shallow rocky reefs globally. They are among the most productive ecosystems on earth and offer many social and economic benefits, including fishing, ecotourism and a variety of kelp-derived products that include animal and human food products, fertilisers, cosmetic and health care products. Evidence of human use of kelp ecosystem species in South Africa has been dated to about 70 000 years ago.
+[**Dunga et al. (2024)**](https://doi.org/10.1016/j.ecss.2024.108989) created the first comprehensive high-resolution map of canopy forming coastal kelp in South Africa, covering the spatial distribution of *Ecklonia maxima*, *Laminaria pallida* and *Macrocystis pyrifera* [@dunga2024]. This work highlighted the need for improved long-term monitoring to understand distributional changes and better mapping of subsurface kelp, particularly *Ecklonia radiata*, which has been recorded in deeper waters from trawl and remotely operated vehicle surveys on the eastern shelf of South Africa [@qwabe2023; @sink2018]. The kelp map enabled the classification and delineation of three kelp forest ecosystem types in South Africa, the Namaqua, Cape, and Agulhas kelp forests and supported their ecosystem threat status assessment using the [**IUCN Red List of Ecosystems**](https://iucnrle.org/) criteria [@dunga2020].
 
-[Dunga et al. (2024)](https://doi.org/10.1016/j.ecss.2024.108989) created the first comprehensive high-resolution map of canopy forming coastal kelp in South Africa, covering the spatial distribution of Ecklonia maxima, Laminaria pallida and Macrocystis pyrifera[@dunga2024]. That work highlighted the need for improved long-term monitoring and a complete national map of kelp distribution.
+<!-- :::::: {#fig-nely .figure width="100%"} -->
 
-Emerging and ongoing research is addressing some of these gaps. The IUCN Seaweed Specialist Group will review available data globally by region, while fostering research collaborations. Local projects advancing kelp forest research include an [investigation of marine biodiversity in South African kelp forests](https://www.su.ac.za/en/faculties/medicine/famcru/news/su-and-sea-change-project-join-forces-document-marine-biodiversity-south-african-kelp-forests) and a Masters project to map subsurface kelp forests in South Africa using remotely sensed data, and to assess how they will respond under different climate change scenarios.
+<!-- ::::: grid -->
 
- <!-- led by [1001 Seaforest Species](https://seachangeproject.com/1001-seaforest-species/) and the [Department of Botany and Zoology at Stellenbosch University](https://www.su.ac.za/en/faculties/science/departments/botany-and-zoology) -->
- 
-<!-- ![Masters student, Ms. Nelisiwe Hambile, is embarking on work to map subsurface kelp forests in South Africa using remotely sensed data, and to assess how they will respond under different climate change scenarios. This work is in collaboration with the Seas of Good Hope, SANBI and the University of Cape Town. ](imgs/picture_kelp.png){#fig-kelps} -->
+<!-- ::: {.g-col-lg-6 .g-col-12} -->
+
+<!-- ![](imgs/neli_cropped.png) -->
+
+<!-- ::: -->
+
+<!-- ::: {.g-col-lg-6 .g-col-12} -->
+
+<!-- ![](imgs/Kelp_Forest_2_Geoff_Spiby.jpg) -->
+
+<!-- ::: -->
+
+<!-- ::::: -->
+
+<!-- **Figure:** Masters student, Ms. Nelisiwe Hambile, is embarking on work to map subsurface kelp forests in South Africa using remotely sensed data, and to assess environmental drivers of change. This work is in collaboration with the [**Seas of Good Hope**](https://seasofgoodhope.org/), SANBI and the University of Cape Town. -->
+
+<!-- :::::: -->
+
+![Masters student, Ms. Nelisiwe Hambile, is embarking on work to map subsurface kelp forests in South Africa using remotely sensed data, and to assess how they will respond under different climate change scenarios. This work is in collaboration with the Seas of Good Hope, SANBI and the University of Cape Town and is funded by the Joan Wrench Kirstenbosch Scholarship Fund.](imgs/neli_kelp.png){#fig-kelps}
+
 :::
 
 The updated environmental layers have been organised by topical project groups, which include oceanography, geology and geomorphology. A suite of oceanographic (physical, chemical and phytoplankton) variables for surface and seafloor depths were downloaded from the [Bio-ORACLE](https://bio-oracle.org/) platform and calculated from [Copernicus Marine Service](https://data.marine.copernicus.eu/products) satellite products and regional ocean model hindcasts provided by [SAEON](https://www.saeon.ac.za/) and [SOMISANA](https://somisana.ac.za/). Updated sediment data were sourced from collaborators, greatly increasing the inventory of marine sediment sample and seafloor description records. Interpolated maps of sediment characteristics were additionally sourced from [dbSEABED](https://dbseabed.com/). Geomorphological variables included a new, national-scale, 100-m^2^ resolution [bathymetry map](https://doi.org/10.15493/SANBI.220424)[@manikam2024], from which derived variables such as slope angle, bathymetric position index and rugosity were calculated.
@@ -266,9 +295,9 @@ The updated environmental layers have been organised by topical project groups, 
 
 Submarine canyons are steep-sided valleys that cut into the continental slope and play an important role in connecting coastal and deep-sea environments by facilitating the vertical movement of water, sediments, and nutrients. Many of these canyons host complex terrain, diverse substrate types, habitats and species, including vulnerable marine ecosystem indicators, such as cold-water corals and sponges. They act as important nursery and feeding grounds for a variety of benthic and pelagic species, some of which are conservation priorities, such as the African coelacanth, *Latimeria chalumnae*. Furthermore, submarine canyons can act as refuges from anthropogenic pressures, such as trawling, in areas where steep slopes and complex terrain limit human access.
 
-Despite their ecological importance, many of South Africa’s submarine canyons have remained unknown and unmapped due to limited coverage of high-resolution bathymetry data. The release of the 2024 national-scale bathymetric map at 100-m resolution, combined with additional unpublished multibeam echosounder datasets, has enabled a substantial advance in the mapping of submarine canyon features in South Africa, increasing the number of canyon polygons from 39 in 2018 to over 120. This updated canyon map enhances knowledge on canyon classification and geomorphological processes, identifies shelf-breaching canyons that influence shelf ecology, supports habitat predictions for coelacanths and other species, and will improve the delineation of canyon ecosystem types in the next Marine Ecosystem Map.
+Despite their ecological importance, many of South Africa’s submarine canyons have remained unknown and unmapped due to limited coverage of high-resolution bathymetry data. The release of the 2024 national-scale bathymetric map at 100-m resolution, combined with additional unpublished multibeam echosounder datasets, has enabled a substantial advance in the mapping of submarine canyon features in South Africa, increasing the number of canyon polygons from 39 in 2018 to over 120. This work, led by Nokubonga Mzimela, enhances knowledge on canyon classification and geomorphological processes, identifies shelf-breaching canyons that influence shelf ecology, supports habitat predictions for coelacanths and other species, and will improve the delineation of canyon ecosystem types in the next Marine Ecosystem Map.
 
-![South Africa's newly mapped submarine canyons (red outline) overlayed on the new [bathymetry map](https://doi.org/10.15493/SANBI.220424)[@manikam2024].](imgs/canyons_map.png){#fig-canyons}
+![South Africa's newly mapped submarine canyons (red outline) overlayed on the new [**bathymetry map**](https://doi.org/10.15493/SANBI.220424)[@manikam2024].](imgs/canyons_map.png){#fig-canyons}
 :::
 
 Significant strides were also made in the collation of marine biodiversity records in a biodiversity occurrence database. Data were sourced from online data repositories, such as OBIS and GBIF and requested from a network of collaborators at a variety of government and tertiary research institutions. In October 2025, the database contained 1 310 081 records from 7 726 marine species and 12 data sources, representing a growing collection of biodiversity data in waters around South Africa. Although only a selection of marine survey datasets have been used in assemblage distribution models, the vision is to build a comprehensive biodiversity database that will enable presence-only modelling of biodiversity patterns and species turnover across broad taxonomic groups sourced from many datasets.
@@ -276,7 +305,7 @@ Significant strides were also made in the collation of marine biodiversity recor
 ::: {#box-ai .callout .marine collapse="False" title="Box 3. Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection"}
 <!-- ### Artificial intelligence and the Southern Africa Marine Biodiversity Reference Image Collection -->
 
-As underwater imaging technology becomes more accessible and widespread, the volume of visual data from marine surveys has outpaced capacity for manual annotations. This has created a need to improve para-taxonomic capacity and AI-powered solutions that can reliably and efficiently extract species occurrence and count data from underwater biodiversity surveys. In South Africa, [YOLOv8](https://docs.ultralytics.com/models/yolov8/) and [BioCLIP2](https://huggingface.co/imageomics/bioclip-2) models have been fine-tuned to identify marine fishes and invertebrates in Remotely Operated Vehicle (ROV) and Stereo Baited Remote Underwater Video (BRUV) footage. These models rely on hierarchical taxonomic labels paired with curated images of species. More than 350 benthic invertebrate species across nine phyla have been indexed and catalogued in a standardised [reference image database](https://oneoceanhub.org/wp-content/uploads/2024/09/Adams-et-al-2024-OOH-Reference-image-report_Final-submitted.pdf) using the [SMaTaR_ID](https://smartar-id.app/) framework. Pipelines have been developed for automating the detection of vulnerable marine ecosystem taxa in ROV videos, threatened seabreams of commercial importance in BRUVs and benthic epifauna for marine ecosystem classification and mapping. Ongoing work aims to expand the species included in the models through curation of high quality and diverse training datasets that underpin model accuracy.
+As underwater imaging technology becomes more accessible and widespread, the volume of visual data from marine surveys has outpaced capacity for manual annotations. This has created a need to improve para-taxonomic capacity and AI-powered solutions that can reliably and efficiently extract species occurrence and count data from underwater biodiversity surveys. In South Africa, [**YOLOv8**](https://docs.ultralytics.com/models/yolov8/) and [**BioCLIP2**](https://huggingface.co/imageomics/bioclip-2) models have been fine-tuned to identify marine fishes and invertebrates in Remotely Operated Vehicle (ROV) and Stereo Baited Remote Underwater Video (BRUV) footage. These models rely on hierarchical taxonomic labels paired with curated images of species. More than 350 benthic invertebrate species across nine phyla have been indexed and catalogued in a standardised [**reference image database**](https://oneoceanhub.org/wp-content/uploads/2024/09/Adams-et-al-2024-OOH-Reference-image-report_Final-submitted.pdf) using the [**SMaTaR_ID**](https://smartar-id.app/) framework. Pipelines have been developed for automating the detection of vulnerable marine ecosystem taxa in ROV videos, threatened seabreams of commercial importance in BRUVs and benthic epifauna for marine ecosystem classification and mapping. Ongoing work aims to expand the species included in the models through curation of high quality and diverse training datasets that underpin model accuracy.
 :::
 
 The adoption of reproducible data and analytical pipelines marks a shift in ecosystem mapping methods, one that should improve efficiency, transparency and foster greater understanding and confidence in the resulting ecosystem map, which informs biodiversity management, spatial planning, and conservation efforts in South Africa. Further investment in data science will be needed to curate and integrate rapidly expanding data streams if South Africa is to maintain a robust evidence base to underpin improved ecosystem classification, mapping, assessment, planning, mainstreaming and decision-making.
@@ -302,6 +331,8 @@ The adoption of reproducible data and analytical pipelines marks a shift in ecos
 [Table of marine ecosystem types](data/marine_ecotypes.csv)
 
 ### Key publications
+
+Dayaram, A. et al. 2021. The South African National Ecosystem Classification System Handbook, First Edition. South African National Biodiversity Institute, Pretoria.
 
 Sink, K.J. et al. 2023. Iterative mapping of marine ecosystems for spatial status assessment, prioritization, and decision support. Frontiers in Ecology and Evolution 11: <https://doi.org/10.3389/fevo.2023.1108118>
 

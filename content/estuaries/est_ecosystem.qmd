@@ -248,7 +248,6 @@ Estuarine lagoons are the rarest South African estuary type with only one member
 :::: {.panel-tabset appearance="minimal" collapse="false"}
 <!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
 
-
 ## Estuarine ecosystem examples
 
 ```{r}
@@ -261,6 +260,7 @@ knitr::include_graphics("imgs/est_ecotypes_1.png")
 ```
 
 ## Data
+
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
 library(gt)
@@ -290,7 +290,6 @@ est_ecotypes %>%
 ```
 :::
 ::::
-
 
 ## Technical documentation
 

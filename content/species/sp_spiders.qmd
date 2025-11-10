@@ -125,8 +125,8 @@ google-scholar: true
 }
 
 .img-align1 {
-  width: 100%;          
-  height: 250px;        
+  width: 80%;          
+  height: 230px;        
   display: block;
 }
 
@@ -138,7 +138,7 @@ google-scholar: true
 
 <center>
 
-![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. © Peter Webb.](./imgs/sp_spider_img_1.png){fig-align="center"}
+![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. © Peter Webb](./imgs/sp_spider_img_1.png){fig-align="center"}
 
 </center>
 
@@ -436,19 +436,31 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 <center>
 
-![The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. © Robyn Lyle.](./imgs/sp_spider_img_2.png){fig-align="center"}
+![The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. © Robyn Lyle](./imgs/sp_spider_img_2.png){fig-align="center"}
 
 </center>
 
-::::: grid
-::: {.g-col-lg-6 .g-col-6 .text-center}
-![Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. © Elsa van Niekerk.](./imgs/sp_spider_img_3.png){.img-align1}
-:::
 
-::: {.g-col-lg-6 .g-col-6 .text-center}
-![Reginald Christiaan, a BIOTA intern, sampling plant-dwellers at Soebatsfontein, Northern Cape province. © Robin Lyle.](./imgs/sp_spider_img_4.png){.img-align1}
-:::
-:::::
+
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+
+  <figure style="margin: 0; text-align: center; flex: 1 1 45%;">
+    <img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" 
+         style="width:100%; height:250px; object-fit: cover;">
+    <figcaption>
+      Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. © Elsa van Niekerk
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center; flex: 1 1 45%;">
+    <img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" 
+         style="width:100%; height:250px; object-fit: cover;">
+    <figcaption>
+      SANBI para-ecologists sampling at the Makana Botanical Gardens, Grahamstown, Eastern Cape Province. © Robin Lyle
+    </figcaption>
+  </figure>
+
+</div>
 ::::::
 
 2.  Trends (RLI)
@@ -501,11 +513,16 @@ df <- readxl::read_excel("./data/combined_threat_summary.xlsx",
                  sheet = "Overall_Maj")
 
 
-spiders<- nba_pressure_bar_plot(
-                          df,
-                          TAXON = "Spiders")
-
-spiders
+p <- nba_pressure_bar_plot(df, TAXON = "Spiders")
+p + scale_x_discrete(
+  labels = function(x) {
+    sapply(x, function(lbl) {
+      wrapped <- str_wrap(lbl, width = 20)  # wrap at ~30 characters
+      lines <- unlist(strsplit(wrapped, "\n"))
+      paste(head(lines, 3), collapse = "\n")  # max 3 lines
+    })
+  }
+)
 ```
 
 ::: {#box-2 .callout-note .species collapse="true"}
@@ -517,7 +534,7 @@ Fire is a factor that can significantly impact spider populations, but its effec
 
 <center>
 
-![Veld fire in the grassland and savannah systems. © Robin Lyle.](./imgs/sp_spiders_img_6.png){fig-align="center"}
+![Veld fire in the grassland and savannah systems. © Robin Lyle](./imgs/sp_spiders_img_6.png){fig-align="center"}
 
 </center>
 :::
@@ -531,9 +548,9 @@ Sampling bias and geographic gaps are a concern. Spider records are heavily conc
 ::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
 To contribute to the future Red List assessments and monitoring of spiders, join iNaturalist!
 
-[Spiders of South Africa iNaturalist](https://www.inaturalist.org/projects/spiders-of-south-africa)
+<center>[Spiders of South Africa iNaturalist](https://www.inaturalist.org/projects/spiders-of-south-africa)</center>
 
-New to iNaturalist (or never heard of it) and want to play along? Watch these [**video tutorials**](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started, and sign up on the iNaturalist website or download the app on your smartphone.
+<br> New to iNaturalist (or never heard of it) and want to play along? Watch these [**video tutorials**](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started, and sign up on the iNaturalist website or download the app on your smartphone.
 
 To see how valuable your nature photographs can be, watch this inspiring [**TED talk**](https://www.ted.com/talks/148410).
 
@@ -593,7 +610,7 @@ Preliminary research on the following families reveals that many species remain 
 :::
 
 ::: {.g-col-lg-3 .g-col-6 .text-center}
-![*Afrofilistata fradei* © G. Wilson [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.)](./imgs/sp_spiders_img_11.png){.img-align}
+![*Afrofilistata fradei* [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.) © G. Wilson](./imgs/sp_spiders_img_11.png){.img-align}
 :::
 
 ::: {.g-col-lg-3 .g-col-6 .text-center}

@@ -12,37 +12,11 @@ title-block-banner-color: white
 ### this is a code chunk to list outstanding tasks on THIS page; 
 # make sure everything is commented
 
-
-
-
-library(tools)
-library(magick)
-
-# Assuming your working directory is the quarto folder (else set it to be that)
-
-# Read in files from your imgs library -----------------------------------------
-# (or set the file path in brackets to where ever the original jpegs are saved)
-files <- file_path_sans_ext(list.files("imgs")) 
-files
-
-# Pick your photo number -------------------------------------------------------
-# The number in square brackets is the only thing you need to change in this 
-# script
-picname <- files[84] 
-
-# Read in the image and rescale to 800 pixel width -----------------------------
-img <- image_read(paste0("imgs/", picname, ".jpg")) %>% 
-  image_resize(., "800x")
-
-# Write the rescaled image with a 72 pixel resolution --------------------------
-image_write(img, path = paste0("imgs/", picname,".png"), 
-            format = "png", density = "72x72")
-
 ```
 
 *South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and contributes to deep cultural and spiritual values for South Africa’s oceans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
 
-![Caption to be added. (c) Peter Timm/Chadwick](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png)
+![Caption to be added. © Peter Chadwick](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png)
 
 ::::: columns
 ::: {.column width="50%"}
@@ -142,7 +116,7 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){.lightbox}
+![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/condition_with_donut.png){.lightbox}
 :::
 :::::
 
@@ -154,11 +128,11 @@ More than 70 individual actions were advanced (see [priority actions](marine_pri
 
 Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified, and are being improved with increased participation, collaboration, and technical innovation.
 
-![The Science to Policy Workshop, November 2024. (c) Kerry Sink](imgs/workshop.png)
+![The Science to Policy Workshop, November 2024. © Kerry Sink](imgs/workshop.png)
 
 <!-- ## Key publications -->
 
-<!-- Sink, K.J., van der Bank, M., Majiedt, P.A., Harris, L., Atkinson, L. & Karenyi, N., 2019. *National Biodiversity Assessment 2018: Technical Report Volume 4: Marine Realm*. Pretoria: South African National Biodiversity Institute. -->
+<!-- Sink, K.J., van der Bank, M., Majiedt, P.A., Harris, L., Atkinson, L. & Karenyi, N., 2019. *National Biodiversity Assessment 2018: Technical Report Volume 4: Marine realm*. Pretoria: South African National Biodiversity Institute. -->
 
 ## Acknowledgements
 

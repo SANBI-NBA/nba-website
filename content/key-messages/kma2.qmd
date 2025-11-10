@@ -5,22 +5,18 @@ title-block-banner: "#FAA755"
 title-block-banner-color: white
 ---
 
-\| Uncoordinated land- and sea-use changes cause biodiversity loss, degrade ecosystems and undermine the ecosystem services they provide (established). Biodiversity provides essential ecosystem services to support people and the economy. Strengthening collaborative, biodiversity-inclusive planning is essential to safeguard South Africa’s natural capital while enabling development. \|
+**Uncoordinated land- and sea-use changes cause biodiversity loss, degrade ecosystems and undermine the ecosystem services they provide (*established*). Biodiversity provides essential ecosystem services to support people and the economy. Strengthening collaborative, biodiversity-inclusive planning is essential to safeguard South Africa’s natural capital while enabling development.**
 
 ------------------------------------------------------------------------
 
 Across the country’s landscapes and seascapes, habitat loss, fragmentation and declining ecological function are reducing the capacity of natural systems to deliver crucial services. On land, habitat loss is primarily driven by expanding human settlements and the establishment of new croplands, with over 100 000ha lost annually between 1990 and 2022. Encouragingly, the rate of loss shows signs of slowing since 2014. In the freshwater and estuarine realms, direct habitat loss from, for example, mining, croplands and housing developments, is a major pressure on aquatic biodiversity, alongside flow reduction and pollution. Direct habitat loss from mining and energy generation is relatively limited compared to other forms of land use (\<1% of land in South Africa), but intense, persistent and cumulative impacts often extend beyond the direct footprint, especially in aquatic realms where effects cannot be easily contained. In the marine realm, there are substantial direct impacts on biodiversity from coastal and offshore mining, and oil and gas extraction.
 
-::: {layout-ncol=2}
+::: {layout-ncol="2"}
+![Sand mining is an escalating pressure on the South African coast and in estuaries, impacting coastal biodiversity and ecosystem services. Mining can be seen on the beach in the foreground and on the adjacent dunes (© Jacque Smit).](imgs/17.%20Pg25_KMA2%20Coastal_Mining_%20Tormin_with%20cliff%20collapses%20-(c)%20Jacque_Smit_PTWC-56.png)
 
-![*Sand mining is as escalating pressure on the South African coast and in estuaries, impacting coastal biodiversity and ecosystem services. (© Jacque Smit)*](imgs/17.%20Pg25_KMA2%20Coastal_Mining_%20Tormin_with%20cliff%20collapses%20-(c)%20Jacque_Smit_PTWC-56.png)
-
-![*Mixed land use, ensuring corridors for biodiversity, is possible in South Africa's production landscapes. (© Endangered Wildlife Trust)*](imgs/18.%20Pg25_KMA2_NBBN%20site%20visit_Mondi_1%20(c)%20EWT.png)
-
+![Mixed land use, ensuring corridors for biodiversity, is possible in South Africa’s production landscapes, such as this plantation forestry landscape (© Endangered Wildlife Trust).](imgs/18.%20Pg25_KMA2_NBBN%20site%20visit_Mondi_1%20(c)%20EWT.png)
 :::
 
 Development on land and in the sea is crucial for economic growth to address the country’s social challenges of poverty, inequality and unemployment. When these developments are positioned appropriately and managed sustainably, biodiversity loss and ecosystem degradation can be prevented. Healthy ecosystems are the foundation for South Africa’s social, economic, and environmental wellbeing. They provide essential services to sustain life and livelihoods such as clean water, food security, climate regulation and disaster risk reduction.
 
 South Africa has a strong foundation for systematic biodiversity planning and supportive legislation, but implementation gaps remain. Action is urgently needed to better integrate biodiversity into spatial planning and decision-making at all levels of government and across all sectors. Development decisions should be informed by the best available science and local knowledge, ensuring that future land- and sea-uses align with ecological sustainability. Strategic Environmental Assessments, updated environmental guidelines (such as the Mining and Biodiversity Guideline), and enhanced cross-sector coordination are required to manage cumulative impacts to safeguard species and ecosystems. By strengthening participatory, integrated, biodiversity-inclusive planning, and embedding biodiversity considerations into all development processes, South Africa can balance economic growth with the protection of its natural capital, securing the ecosystem services that are needed to support current and future generations. 
-
-

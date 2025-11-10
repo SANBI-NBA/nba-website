@@ -8,15 +8,15 @@ title-block-banner-color: white
 sidebar: id-key-messages
 ---
 
-The NBA 2025 Key messages distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
+The NBA 2025 key messages distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
 
 Each message includes a summary paragraph with a confidence statement. The messages draw on evidence from NBA analyses (e.g., Red List status, ecological condition), explain, why this matters (e.g., consequences for people), and point to practical actions, responses, and interventions that can be taken.
 
 ```{=html}
 {{< include "./imgs/km_table_links.svg" >}}
 ```
-\
 
+\
 
 ## How to use these messages
 
@@ -24,7 +24,7 @@ Each message includes a summary paragraph with a confidence statement. The messa
 
 -   Use them to inform sector strategies, cross-sector planning, research, scenario planning, and implementation roadmaps.
 
--   Treat confidence statements as guidance on **certainty, evidence quality,** and **agreement.**
+-   Treat confidence statements as guidance on **certainty, evidence quality,** and **agreement**. The confidence statements use the four-box model adopted by the Intergovernmental Panel on Biodiversity and Ecosystem Services (IPBES).
 
 The NBA provides a summary of the state of biodiversity at a point in time. It cannot list every action or intervention; instead, it serves as a strategic tool that should stimulate discussions among stakeholders and inform sector specific strategies and action plans, cross-sectoral planning, research strategies, scenario planning, and co-produced response strategies that follow from the NBA.
 
@@ -69,5 +69,3 @@ This cluster speaks to three all-inclusive and over-arching actions that are nee
 [C2. Investment in biodiversity monitoring is crucial for management, decision-making, research and reporting](kmc2.qmd)
 
 [C3. Innovative finance solutions are needed to address funding and capacity constraints in the biodiversity sector](kmc3.qmd)
-
-

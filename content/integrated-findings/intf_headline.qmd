@@ -12,7 +12,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 
 ::::: columns
 ::: {.column width="60%"}
-**Ecosystem Threat Status:** Almost half of the 986 ecosystem types assessed in the NBA 2025 are threatened. Estuaries, wetlands, rivers and the coast have the highest proportion of threatened ecosystem types.[View findings](./intf_ecosystems.qmd#ets). *Click to enlarge image →*
+**Ecosystem threat status:** Almost half of the 986 ecosystem types assessed in the NBA 2025 are threatened. Estuaries, wetlands, rivers and the coast have the highest proportion of threatened ecosystem types. [View findings](./intf_ecosystems.qmd#ets). *Click to enlarge image →*
 :::
 
 ::: {.column width="40%"}
@@ -22,7 +22,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 
 ::::: columns
 ::: {.column width="60%"}
-**Ecosystem Protection Level:** Over three-quarters of ecosystem types are represented in the current protected area network, leaving 24% in the Not Protected category. River, wetland and estuary types have the lowest levels of protection. [View findings](./intf_ecosystems.qmd#epl). *Click to enlarge image →*
+**Ecosystem protection level:** Over three-quarters of ecosystem types are represented in the current protected area network, leaving 24% in the Not Protected category. River, wetland and estuary types have the lowest levels of protection. [View findings](./intf_ecosystems.qmd#epl). *Click to enlarge image →*
 :::
 
 ::: {.column width="40%"}
@@ -32,7 +32,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 
 ::::: columns
 ::: {.column width="50%"}
-**Species Threat Status:** Of 20 248 plant species assessed, 16% are threatened. Of 5 227 animal species assessed, 10% are threatened. The most threatened taxonomic groups are freshwater fishes and cartilaginous fishes (sharks, rays and chimaeras). [View findings](./intf-species.qmd#sts). *Click to enlarge image →*
+**Species threat status:** Of 20 248 plant species assessed, 16% are threatened. Of 5 226 animal species assessed, 10% are threatened. The most threatened taxonomic groups are freshwater fishes and cartilaginous fishes (sharks, rays and chimaeras). [View findings](./intf-species.qmd#sts). *Click to enlarge image →*
 :::
 
 ::: {.column width="50%"}
@@ -42,7 +42,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 
 ::::: columns
 ::: {.column width="50%"}
-**Species Protection Level:** Almost 70% of plant species are Well Protected (based on a random sample of 900 taxa). All mammal, reptile, bird, amphibian and freshwater fish species were assessed and overall 77% are Well Protected. [View findings](./intf-species.qmd#spl). *Click to enlarge image →*
+**Species protection level:** Almost 70% of plant species are Well Protected (based on a random sample of 900 taxa). All mammal, reptile, bird, amphibian and freshwater fish species were assessed and overall 77% are Well Protected. [View findings](./intf-species.qmd#spl). *Click to enlarge image →*
 :::
 
 ::: {.column width="50%"}

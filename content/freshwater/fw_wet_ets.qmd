@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Wetland Ecosystem Threat Status" # Compulsory
+title: "Wetland ecosystem threat status" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -21,25 +21,24 @@ author:
   - name:
       given: Andrew 
       family: Skowno
+    orcid: 0000-0002-2726-7886
     affiliations:
       - ref: sanbi 
   - name:
       given: Jock 
       family: Currie 
-    orcid: 0000-0002-0000-0000 
+    orcid: 0000-0002-7226-2988 
     affiliations:
       - ref: other 
   - name:
       given: Nacelle  
       family: Collins 
-    orcid: 0000-0000-0000-0000 
     affiliations:
       - ref: destea
       # If an author has more than one affiliation, add more - ref: lines here
   - name:
       given: Adwoa  
       family: Awuah 
-    orcid: 0000-0000-0000-0000 
     affiliations:
       - ref: sanbi
       # If an author has more than one affiliation, add more - ref: lines here
@@ -76,7 +75,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-**Inland wetlands remain highly threatened and under-protected. This places the vital services they provide and the incredible biodiversity they support at great risk.**
+*Inland wetlands remain highly threatened and under-protected. This places the vital services they provide and the incredible biodiversity they support at great risk.*
+
+Add landscape photo. Umgeni Vlei Provincial Nature Reserve and Ramsar site, KwaZulu-Natal (Ⓒ xxxx)
 
 <!-- need to find the inline style for "critically endangered" -->
 
@@ -84,7 +85,7 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [20%]{.inline-style-threatened}
+| [18%]{.inline-style-threatened}
 | of wetland extent
 | [Critically Endangered]{.inline-style-indicator}
 
@@ -94,7 +95,7 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [85%]{.inline-style-threatened}
+| [86%]{.inline-style-threatened}
 | of wetland extent
 | [Threatened]{.inline-style-indicator}
 
@@ -107,17 +108,19 @@ google-scholar: true
 :::
 ::::
 
-Add text here
+Threatened wetland extent constitutes approximately 2.3 million ha of the more than 2.6 million hectares of inland wetlands mapped at the time of NBA 2025. Approximately 86% of inland wetland extent is Threatened, with 20% Critically Endangered, 21% Endangered, and 45% Vulnerable. The remaining 14% is Least Concern.
 
-![Ecosystem threat status for inland wetland ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
+According to inland wetland ecosystem type, 72% of wetland types are Threatened, with 15 (18%) of inland wetland ecosystem types Critically Endangered, 20 (24%) Endangered, and 25 (30%) Vulnerable. The remaining 22 (27%) wetland types are Least Concern. Threatened wetland ecosystem types are spread widely across South Africa, while Critically Endangered and Endangered wetlands are clustered within the wheat belt / “mielie belt” agricultural lands of the central Free State extending into NorthWest Province, central Northern Cape, the Swartland agricultural lands of the Western Cape, the mining belt of Limpopo Province and the coastal regions of KwaZulu-Natal.
 
-Approximately 65% of inland wetland extent and 72% of inland wetland ecosystem types are threatened. In terms of threatened inland wetland ecosystem types, approximately 18% are Critically Endangered, 24% Endangered and 30% are Vulnerable. In terms of wetland extent, approximately 20% is Critically Endangered, 21% Endangered and 45% is Vulnerable.
+![Ecosystem threat status for inland wetland ecosystem types. The inset graph shows percentage and number of ecosystem types per threat status category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
 
-<!-- jock is it possible for the text in the heading and the body of the table to both be one size smaller, across all of the freshwater webpages? For this table, instead of "zone" please replace with "HGM type" -->
+In terms of wetland hydrogeomorphic type, depression wetlands are the most threatened, with 24% of depression wetland types considered to be Threatened, 17% of both floodplain and unchannelled valley-bottom wetland types considered Threatened, and 15% of seep wetland types considered Threatened. Approximately 14% of depression wetland types and 19% of depression wetland extent considered to be Critically Endangered, while 2% of seep wetland types and 1% of unchannelled valley-bottom wetland types and no floodplain types are considered Critically Endangered.
+
+<!-- jock is it possible for the text in the heading and the body of the table here and across all of the freshwater webpages to both be one size smaller? I replaced "zone" with "HGM type". I have some envy of Lara's colour coding for EPL and ETS classes within the tables, can we borrow Natasha's code? -->
 
 ```{r}
 #| label: tbl-ets
-#| tbl-cap: "Ecosystem Threat Status of inland wetland ecosystem types."
+#| tbl-cap: "Ecosystem threat status and hydrogeomorphological (HGM) type for inland wetland ecosystem types."
 
 # library(here)
 library(stringr)
@@ -134,8 +137,8 @@ ets <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.cs
          RLE24 = str_replace_all(RLE24, "NT","Near Threatened" ), 
          RLE24 = str_replace_all(RLE24, "LC","Least Concern" )) %>% 
   rename("Wetland type" = type,
-         Zone = zone,
-         "Ecosystem Threat Status" = RLE24)
+         "HGM type" = zone,
+         "Ecosystem threat status" = RLE24)
 
 # create the table
 reactable(
@@ -158,8 +161,6 @@ reactable(
 
 Add text
 
-<!-- jock is it possible for the table / ie the coloured threat status part to be less compressed and to stretch across the page more? "unchannelled valley-bottom" could be two lines if this is what is causing the table to squash? -->
-
 :::: panel-tabset
 ## Figure
 
@@ -167,90 +168,93 @@ Add text
 
 ```{r}
 #| label: fig-wetland_ets_bargraph
-#| fig-cap: "Inland Wetland Ecosystem Threat Status shown for each hydrogeomorphological (HGM) category and (a) percentage of ecosystem types (labelled with their counts) in each protection level category; (b) percentage wetland extent (km^2^) in each protection level category." 
+#| fig-cap: "Inland wetland ecosystem threat status summarised by hydrogeomorphological (HGM) category, with (a) percentage of ecosystem types (labelled with their counts) in each threat status category, and (b) percentage wetland extent (km^2^) in each threat status category. 'Valley-bottom' represents the 'Unchannelled valley-bottom' HGM category." 
 
 library(tidyverse)
 library(stringr)
 library(nbaR)
 
-# load and prep the data
-ets <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
-                stringsAsFactors = FALSE, check.names = FALSE) %>% 
+# load data
+wet_ets_tbl <- read.csv(file=list.files(pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) %>%
   select(type, zone, RLE24, extent) %>% # , RLE24, extent, RLE_RLE24) #
       mutate(RLE24 = str_replace_all(RLE24, "CR","Critically Endangered" ),
          RLE24 = str_replace_all(RLE24, "EN","Endangered" ),
          RLE24 = str_replace_all(RLE24, "VU","Vulnerable" ),
-         RLE24 = str_replace_all(RLE24, "NT","Near Threatened" ), 
-         RLE24 = str_replace_all(RLE24, "LC","Least Concern" )) %>% 
+         RLE24 = str_replace_all(RLE24, "NT","Near Threatened" ),
+         RLE24 = str_replace_all(RLE24, "LC","Least Concern" )) %>%
   group_by(zone, RLE24) %>%
   summarise(count = n(),
-            extent = sum(extent))
+            extent = sum(extent)) # %>% 
   # rename("Wetland type" = type,
-  #        Zone = zone,
+  #        "HGM type" = zone,
   #        "Ecosystem Threat Status" = RLE24)
+# dim(wet_ets_tbl)
+# names(wet_ets_tbl)
 
 # count table
-count <- ets %>%
+count <- wet_ets_tbl %>%
   pivot_wider(
     id_cols = zone,
     names_from = RLE24,
     values_from = count) %>%
   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-  ungroup() %>% 
-  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>% # reorder the columns
-  rowwise() %>% 
-  mutate(Total = sum(as.numeric(c_across(!contains("zone"))), na.rm = TRUE)) %>% 
-  ungroup()
+  ungroup() %>%
+  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') # reorder the columns
+  # rowwise() %>% 
+  # mutate(Total = sum(as.numeric(c_across(!contains("zone"))), na.rm = TRUE)) %>% 
+  # ungroup()
 # count
 
-## add a totals row:
-count <- count %>%
-  bind_rows(
-    count %>%
-      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-      mutate(zone = "Total count") %>%
-      select(zone, everything())
-  )
-# count
+# ## add a totals row:
+# count <- count %>%
+#   bind_rows(
+#     count %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total count") %>%
+#       select(zone, everything())
+#   )
+# # count
 
 # extent table
-extent <- ets %>%
+extent <- wet_ets_tbl %>%
   pivot_wider(
     id_cols = zone,
     names_from = RLE24,
     values_from = extent) %>%
   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-  ungroup() %>% 
-select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>% # reorder the columns
-  rowwise() %>% 
-  mutate(Total = sum(as.numeric(c_across(!contains("zone"))), na.rm = TRUE)) %>% 
-  ungroup()
+  ungroup() %>%
+  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') # reorder the columns
+  # rowwise() %>% 
+  # mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  # ungroup()
 # extent
 
-# add a totals row:
-extent <- extent %>%
-  bind_rows(
-    extent %>%
-      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-      mutate(zone = "Total extent") %>%
-      select(zone, everything())
-  )
-# extent
+# # add a totals row:
+# extent <- extent %>%
+#   bind_rows(
+#     extent %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total extent") %>%
+#       select(zone, everything())
+#   )
+# # extent
 
 # combine count and extent in a single table
 ets_combined <- count %>%
   mutate(metric = "count") %>%
   bind_rows(extent %>%
               mutate(metric = "extent")) %>%
-  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
+  mutate(zone = factor(zone, levels = c("Depression", "Seep", "Unchannelled valley-bottom", "Floodplain"))) %>% # first depression then seep then unchannelled valley-bottom, then floodplain last , "Total count", "Total extent"
+  arrange(zone)
 # ets_combined
-    
-## save the data to downloadable csv for the link, before arranging by zone for the plot
+
+# save the table for downloads and table
 write.csv(ets_combined, file = "./outputs/wetlands_ETS.csv", row.names = FALSE)
 
 # create ets plot
 ets_combined_plot <- ets_combined %>% 
     arrange(desc(zone)) %>% 
+  mutate(zone = str_replace_all(zone, "Unchannelled valley-bottom","Valley-bottom")) %>% 
     nba_plot_comb(
       zone,
                                    METRIC_COL = metric,
@@ -269,8 +273,8 @@ ets_combined_plot
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-river_ets
-#| tbl-cap: "Table of inland Wetland protection level data." 
+#| label: tbl-wet_ets
+#| tbl-cap: Threat status of inland wetland ecosystem types summarised by HGM category. Note that extent figures have been rounded. 
 #| classes: plain
 
 library(dplyr)
@@ -278,35 +282,111 @@ library(nbaR)
 library(gt)
 
 ## create the table
-# as we prepared the data above for the combined plot, simply provide those? checkNancy
-tbl_dat <- ets_combined %>% 
-  arrange(metric,zone) %>% 
-  rename(Zone = zone,
-         Metric = metric)
 
-gt(tbl_dat) %>% nba_tbl_theme()
+tbl <- ets_combined %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "count", "Count")) %>% 
+  arrange(zone) %>% 
+  select(zone, metric, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>%
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "zone",
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
+  nbaR::nba_tbl_theme(HEADER = "Freshwater") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
 
+tbl
+
+
+# # as we prepared the data above for the combined plot, simply provide those? checkNancy
+# tbl_dat <- ets_combined %>% 
+#   arrange(metric,zone) %>% 
+#   rename(Zone = zone,
+#          Metric = metric)
+# 
+# gt(tbl_dat) %>% nba_tbl_theme()
+# 
 ```
 :::
 
 Download the data [here](outputs/wetlands_ETS.csv).
 ::::
 
-\[Photo\]
+*Note that the current wetland ecosystem threat status assessment is built on a robust interim wetland ecosystem typology. However, to ensure the most robust and defensible characterisation of wetland types, the National Wetland Map team is actively refining the typology into more detailed, validated subtypes in collaboration with specialist researchers and other national wetland map supporters. Ongoing work means the National Wetland Map is currently improving at a rapid rate and this may result in minor adjustments and an updated ecosystem threat assessment in the near future. For this reason, and as conditions on the ground may have changed since mapping, it is important for consistency that the national ecosystem threat status be referred to but also essential for the data to be verified in the field by a wetland professional and desirable that updates or discrepancies be reported back to the National Wetland Map team.*
 
-## Approach
+::: {#box-1 .callout-note .freshwater title="Box 1. Primary catchments and inland wetland ecosystem threat status" collapse="true"}
+South Africa supports 22 primary catchments, named according to a letter of the alphabet e.g. A, X. The primary catchments are further grouped into six Water Management Areas (WMAs). These are the Vaal-Orange, Pongola-Umzimkhulu, Mzimvubu-Tsitsikamma, Limpopo-Olifants, Breede-Olifants, and Inkomati-Usuthu. Each WMA is managed by an established or in process Catchment Management Agency (CMA) which is responsible for overseeing the allocation, protection, and conservation of water resources within their respective areas.
 
-Ecosystem Threat Status is a headline indicator established for assessing how close ecosystem types are to collapsing or losing vital aspects of their structure, function, or composition.
+To support the the consideration of biodiversity into emerging Catchment Management Strategies and implementation plans, the NBA headline indicators are presented in Table 1 according the 22 primary catchments, with an indication of which WMA each primary catchment falls within.
+
+Figure 1.1. Ecosystem threat status of inland wetlands according to primary catchment and Water Management Area.
+
+Knowing the spatial distribution of wetland ecosystem protection level per catchment as well as the distribution of highly threatened and under-protected wetland ecosystem types can xxx other measures such as xxx. These processes should take into consideration freshwater species ecosystem protection level and threat status, including Key Biodiversity Areas and ideally should be spatially located through a systematic conservation process such as those undertaken for Provincial Biodiversity Sector Plans and the National Freshwater Ecosystem Priority Areas.
+
+Table 1.1. Ecosystem threat status of inland wetlands according to primary catchment and Water Management Area.
+
+Acknowledgements
+
+**References**
+:::
+
+::: {#box-2 .callout-note .freshwater title="Box 2. Inland wetland ecosystem threat status across the Provinces" collapse="true"}
+Note that wetlands are still being mapped and validated within Provincial Nature Reserves around the country.
+
+Figure 2.1. Ecosystem threat status of inland wetlands across the provinces of South Africa.
+
+Text
+
+Table 2.1. Ecosystem threat status of inland wetlands across the provinces of South Africa.
+
+Acknowledgements
+
+**References**
+
+6-103.
+:::
+
+::: {#box-3 .callout-note .freshwater title="Box 3. Inland wetland ecosystem threat status across National Parks" collapse="true"}
+
+Text Note that wetlands are still being mapped and validated within National Parks around the country.
+
+MZNP etc for rivers and wetlands it is essential to validate and feedback eg many wetlands are missed, rivers are mis-classified and condition needs to be validated.
+
+New grasslands park xxx additional wetlands.
+
+Figure 3.1. National Parks of South Africa
+
+Text
+
+Table 3.1 Ecosystem threat status of inland wetlands across National Parks.
+
+Acknowledgements
+
+**References**
+
+Roux et al, 2006. Mainstreaming freshwater biodiversity.
+:::
+
+## Approach to assess this indicator
+
+Ecosystem threat status is a headline indicator established for assessing how close ecosystem types are to collapsing or losing vital aspects of their structure, function, or composition.
 
 Each of the 82 inland wetland ecosystem types were placed into one of four categories: Critically Endangered (CR), Endangered (EN), Vulnerable (VU) and Least Concern (LC); where CR, EN and VU together make up the threatened categories. The categories are based on assessments of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition and threatening processes. Read more here: chl_rle_explained.qmd // \[For consistency with NBA 2018, the NBA 2025 ETS assessment follows the methods developed by Nel et al. (2007) and modified by van Deventer et al. (2019).\] The approach uses the proportion of each ecosystem type that is in a good to fair condition (PES class A B and C) and a set of thresholds. If less than 20% of a type (measured by length of river segment) is in a A or B condition then the type is categorised as Critically Endangered; if between 20-35% of the type is in A or B condition then the type is categorised as Endangered; if less than 60% of the type is in A or or C condition then the type is categorised as Vulnerable; if none of these thresholds are crossed then the type is Least Concern. This method aligns with the South African Framework for Threatened ecosystems but not the IUCN RLE 1.1. Processes to transition to the IUCN framework are underway - but in the interest of comparing past results, the 2011 methods have been implemented.
 
 ## Technical documentation
 
--   **Code repository**: https://github.com/askowno/RLE_wetl
+**Code repository**: https://github.com/askowno/RLE_wetl
 
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
-
--   **Key publications:**
+**Key publications:**
 
 xx
 

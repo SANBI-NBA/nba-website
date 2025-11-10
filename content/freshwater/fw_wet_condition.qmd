@@ -19,17 +19,41 @@ author:
       - ref: destea 
       # If an author has more than one affiliation, add more - ref: lines here
   - name:
+      given: Adwoa 
+      family: Awuah 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: sanbi 
+  - name:
+      given: Ryan 
+      family: Kok 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: ecopulse 
+  - name:
       given: Nancy
       family: Job
     orcid: 0000-0000-0000-0000  
     affiliations:
       - ref: sanbi 
   - name:
-      given: Adwoa 
-      family: Awuah 
+      given: Jock
+      family: Currie
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Dean 
+      family: Ollis 
     orcid: 0000-0002-4929-7592 
     affiliations:
-      - ref: sanbi 
+      - ref: inlandwaters
+  - name:
+      given: Donovan 
+      family: Kotze 
+    orcid: 000-0000-0000-0000 
+    affiliations:
+      - ref: ukzn    
       
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
@@ -42,6 +66,15 @@ affiliations:
   - id: sanbi 
     number: 2 
     name: South African National Biodiversity Institute
+  - id: ecopulse 
+    number: 3 
+    name: EcoPulse 
+  - id: inlandwaters 
+    number: 4
+    name: Inland Waters
+  - id: ukzn 
+    number: 5 
+    name: University of KwaZulu-Natal
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -60,13 +93,13 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-**Inland wetland ecosystems are in poor condition, even in our protected areas. Lack of sufficient field collected information makes it hard to protect them properly, so improving how we monitor their health is crucial. It is concerning that South Africa's wetlands are degrading faster than we can rehabilitate them.**
+*While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate threat. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent, monitoring and reporting.*
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [xx%]{.inline-style-well-protected}
+| [58%]{.inline-style-well-protected}
 | of 82 inland wetland types
 | Natural or Near-natural
 
@@ -89,15 +122,11 @@ google-scholar: true
 :::
 ::::
 
-<!-- jock plse help with Figure 1. Inland Wetland ecological condition and inset donut graph of ecological condition classes by number of types. Please use attribute field "EC22_all" to find condition values A-F. However, please group into 3 classes "Natural/near-natural (A/B)" + "Moderately Modified (C)" + "Severely modified (D/E/F)". Do you have the colour code for these three classes? See the screenshot. Please could you add a donut graph for # of wetland types in each of the 3 classes. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
+![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem types within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
 
-Approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately x% of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
+Ecological condition was calculated for 171 303 wetlands. Of these, approximately 1 476 561 ha (49%) of inland wetland extent and \# (58%) of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately 808 325 ha (27%) of inland wetland extent and \# (x%) of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately 705 797 (27%) of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
 
-![](imgs/%7BB5DBFA74-1938-4020-AEF4-F2EA7ABA1479%7D.png)
-
-More text
-
-<!-- jock plse help with Figure 2. Inland Wetland Ecological Condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category. I started to attempt to do it myself by copying across the table from EPL. Please use attribute field "zone" for the hydrogeomorphological types and "EC22_all" to find condition values A-F. However, please group into 3 classes "Natural/near-natural (A/B)" + "Moderately Modified (C)" + "Severely modified (D/E/F)". Do you have the colour code for these three classes? See the screenshot. Please could you add a donut graph for # of wetland types in each of the 3 classes. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\wet_results_vector.gpkg"-->
+Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition. xxxxx \[Need to re-run numbers\]
 
 :::: panel-tabset
 ## Figure
@@ -105,101 +134,123 @@ More text
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
 ```{r}
-#| label: fig-wetland_epl_bargraph
-#| fig-cap: "Inland Wetland Ecological Condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category." 
+#| label: fig-wetland_condition_bargraph
+#| fig-cap: "Inland wetland ecological condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category. 'Valley-bottom' represents the 'Unchannelled valley-bottom' HGM category."
 
 library(tidyverse)
 library(stringr)
 library(nbaR)
 
-# load and prep the data
-epl <- read.csv(file=list.files(path = "./data", pattern = "^wet_metrics_type.csv$", recursive = TRUE, full.names = TRUE), 
-                stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(type, zone, EPL24, extent) %>% # , RLE24, extent, RLE_EPL24) #
-  mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
-         EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
-         EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
-         EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
-  group_by(zone, EPL24) %>%
-  summarise(count = n(),
-            extent = sum(extent))
-  # rename("Wetland type" = type,
-  #        Zone = zone,
-  #        "Ecosystem Protection Level" = EPL24)
+## load data
+condition_tbl <- read.csv(file=list.files(pattern = "^wetlands_condition_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) %>%
+  # filter()
+  mutate(zone = factor(zone, levels = c("Depression", "Seep", "Unchannelled valley-bottom", "Floodplain"))) # first depression then seep then unchannelled valley-bottom, then floodplain last , "Total count", "Total extent"
 
-# count table
-count <- epl %>%
-  pivot_wider(
-    id_cols = zone,
-    names_from = EPL24,
-    values_from = count) %>%
-  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-  ungroup() %>% 
-  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
-  rowwise() %>% 
-  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
-  ungroup()
-# count
-
-## add a totals row:
-count <- count %>%
-  bind_rows(
-    count %>%
-      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-      mutate(zone = "Total count") %>%
-      select(zone, everything())
-  )
-# count
-
-# extent table
-extent <- epl %>%
-  pivot_wider(
-    id_cols = zone,
-    names_from = EPL24,
-    values_from = extent) %>%
-  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-  ungroup() %>% 
-  select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
-  rowwise() %>% 
-  mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
-  ungroup()
-# extent
-
-# add a totals row:
-extent <- extent %>%
-  bind_rows(
-    extent %>%
-      summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-      mutate(zone = "Total extent") %>%
-      select(zone, everything())
-  )
-# extent
-
-# combine count and extent in a single table
-epl_combined <- count %>%
-  mutate(metric = "count") %>%
-  bind_rows(extent %>%
-              mutate(metric = "extent")) %>%
-  mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
-# epl_combined
-    
-## save the data to downloadable csv for the link, before arranging by zone for the plot
-write.csv(epl_combined, file = "outputs/wetlands_EPL.csv", row.names = FALSE)
-
-# create EPL plot
-epl_combined_plot <- epl_combined %>% 
+# bargraph combined plot
+condition_tbl %>% 
     arrange(desc(zone)) %>% 
-    nba_plot_comb(
-      zone,
-                                   METRIC_COL = metric,
-                                   METRICS = c("count", "extent"),
-                                   2:5,
-                                   CHRT = "bar",
-                                   NUM = FALSE,
-                                   LAB = "Percentage of ecosystem",
-                                   SAVE = NULL) 
+  mutate(zone = str_replace_all(zone, "Unchannelled valley-bottom","Valley-bottom")) %>%  # rename the long unchannelled valley-bottom
+         # metric = str_replace_all(metric, "count","dontcount")) %>%
+  nba_plot_comb(
+              GROUPS=zone,
+              METRIC_COL = metric,
+              METRICS = c("count", "extent"),
+              COLS = 2:7,
+              CHRT = "bar",
+              NUM = FALSE,
+              LAB = "Percentage of ecosystem",
+              SAVE = NULL) +
+  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
 
-epl_combined_plot
+# 
+# # load and prep the data
+# conditn <- read.csv(file=list.files(pattern = "^wet_metrics_type2.csv$", recursive = TRUE, full.names = TRUE), 
+#                 stringsAsFactors = FALSE, check.names = FALSE) %>% 
+#   select(type, zone, extent, A, B, C, D, E, F) %>% # , RLE24, extent, RLE_EPL24) #
+#   mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
+#          EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
+#          EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
+#          EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
+#   group_by(zone, EPL24) %>%
+#   summarise(count = n(),
+#             extent = sum(extent))
+#   # rename("Wetland type" = type,
+#   #        Zone = zone,
+#   #        "Ecosystem Protection Level" = EPL24)
+# 
+# # count table
+# count <- conditn %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = EPL24,
+#     values_from = count) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # count
+# 
+# ## add a totals row:
+# count <- count %>%
+#   bind_rows(
+#     count %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total count") %>%
+#       select(zone, everything())
+#   )
+# # count
+# 
+# # extent table
+# extent <- conditn %>%
+#   pivot_wider(
+#     id_cols = zone,
+#     names_from = EPL24,
+#     values_from = extent) %>%
+#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+#   ungroup() %>% 
+#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
+#   rowwise() %>% 
+#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+#   ungroup()
+# # extent
+# 
+# # add a totals row:
+# extent <- extent %>%
+#   bind_rows(
+#     extent %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total extent") %>%
+#       select(zone, everything())
+#   )
+# # extent
+# 
+# # combine count and extent in a single table
+# conditn_combined <- count %>%
+#   mutate(metric = "count") %>%
+#   bind_rows(extent %>%
+#               mutate(metric = "extent")) %>%
+#   mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
+# # conditn_combined
+#     
+# ## save the data to downloadable csv for the link, before arranging by zone for the plot
+# write.csv(conditn_combined, file = "outputs/wetlands_condition.csv", row.names = FALSE)
+# 
+# # create conditn plot
+# condition_combined_plot <- condition_combined %>% 
+#     arrange(desc(zone)) %>% 
+#     nba_plot_comb(
+#       zone,
+#                                    METRIC_COL = metric,
+#                                    METRICS = c("count", "extent"),
+#                                    2:5,
+#                                    CHRT = "bar",
+#                                    NUM = FALSE,
+#                                    LAB = "Percentage of ecosystem",
+#                                    SAVE = NULL) 
+# 
+# condition_combined_plot
 
 ```
 
@@ -207,8 +258,8 @@ epl_combined_plot
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-river_epl
-#| tbl-cap: "Table of inland Wetland ecological condition." 
+#| label: tbl-wetland_condition
+#| tbl-cap: Ecological condition of inland wetland ecosystem types summarised by HGM category. Note that extent figures have been rounded.
 #| classes: plain
 
 library(dplyr)
@@ -216,45 +267,69 @@ library(nbaR)
 library(gt)
 
 ## create the table
-# as we prepared the data above for the combined plot, simply provide those? checkNancy
-tbl_dat <- epl_combined %>% 
-  arrange(metric,zone) %>% 
-  rename(Zone = zone,
-         Metric = metric)
 
-gt(tbl_dat) %>% nba_tbl_theme()
+tbl <- condition_tbl %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "count", "Count")) %>% 
+  arrange(zone) %>% 
+  select(zone, metric, 'Natural', 'Near-natural', 'Moderately modified', 'Heavily modified', 'Severely modified', 'Critically modified') %>%
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "zone",
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
+  nbaR::nba_tbl_theme(HEADER = "Freshwater") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+tbl
+
+# # as we prepared the data above for the combined plot, simply provide those? checkNancy
+# tbl_dat <- condition_tbl %>% 
+#   arrange(metric,zone) %>% 
+#   rename(Zone = zone,
+#          Metric = metric)
+# 
+# gt(tbl_dat) %>% nba_tbl_theme()
 
 ```
 :::
 
-Download the data [here](outputs/wetlands_EPL.csv).
+Download the data [here](data/wetlands_condition_combined_count_extent.csv).
 ::::
 
-Add text
+Wetlands are complex systems that are influenced by multiple biotic and abiotic factors. Determining wetland ecological condition requires a multidisciplinary approach that allows for determining a single condition score from all the xxx/ While previous approaches to determine wetland condition at the national scale were sound, they lacked the wholistic and xxx approach of MacFarlane et al. (2020). The structured nature of this approach allows for a collaborative xxxx present ecological state (PES) scores, also allows for the inclusion of infield expert validated data that collect xxx approach for national wetland map assessment.
 
-Refer to DWS NWMF monitoring a subset of wetlands. Refer to dataset of field assessed wetlands contributing to national wetland map condition assessment. Desirable for future collaboration.
+## Approach to develop this input layer
 
-<!-- jock is it possible for the table / ie the coloured threat status part to be less compressed and to stretch across the page more? "unchannelled valley-bottom" could be two lines if this is what is causing the table to squash? -->
+Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described xxx MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands xxx those of a national wetland inventory. In addition to being typed according to Ollis et al. 2013, the method also requires xxx wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment, instead of buffers as were used during the previous NBA assessment (Van Deventer et al. 2019).
 
-## Approach
+Overall wetland condition was calculated from the combined state of wetland hydrology, water quality, geomorphology, and vegetation, which were all calculated from the inferred pressures of different land cover classes (MacFarlane et al. 2020).
 
-Excellent progress has been made regarding automated condition assessments to support the NBA 2025 inland wetlands threat status; Text
+The systematic nature of the PES process allows for the development of a base dataset which can be augmented by expert data. xxx has been initiated through selected expert engagements with the National Wetland Map team, during which spatial extent, typing, and PES data were xxx for individual wetlands and wetland complexes. While the expert scores \[were not adopted\], they represent the first step xxx building a reference dataset that will directly and indirectly inform future wetland ecological condition assessments.
+
+In addition to allowing for the rapid assessment of multiple wetlands, the automation of a standardised PES method xxx the opportunity for temporal analysis by applying land cover grids from different time periods as input data. This may potentially xxxx series analysis that will reveal not only the trajectory of change in wetland ecological condition over time, but also what is responsible for xxx.
 
 ## Technical documentation
 
--   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates) \[link to the specific page within github\]
+**Code repository**: <!--[github.com/SANBI-NBA/freshwater](https://github.com/SANBI-NBA/freshwater)-->
 
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - \[link to the specific page within these websites containing your data\]
+**Publications**
 
--   **Publications**:
+**Technical reports**
 
--   **Technical reports**:
+## Recommended citation
 
-## Recommended citation for this webpage
+Collins, N.B., Job, N.M., Awuah, A., Currie, J., other names xx. 2025. Inland wetland ecological condition assessment: Freshwater (inland aquatic) realm. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
 
-Collins, N.B., Job, N.M., Awuah, A., names xx. 2025. Inland aquatic condition assessment. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
-
-## References for this webpage
+## References
 
 ::: {#refs}
 :::

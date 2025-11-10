@@ -2,7 +2,7 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Ecosystem threat status" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+subtitle: "Marine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -56,7 +56,7 @@ author:
     affiliations:
       - ref: dffe4 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
-
+      - ref: nmu2
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
@@ -83,6 +83,8 @@ author:
       given: Loyiso V. #Add author's first name here. Abbreviate the middle name
       family: Dunga #Add author's surname here
     affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu2
       - ref: sgh6 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
@@ -181,7 +183,7 @@ affiliations:
 # Make sure you maintain indentations exactly as they are here
   - id: dffe4 # Use this as the affiliation ref with authors above
     number: 4 # This number is used to associate authors with affiliations
-    name: The Department of Forestry, Fisheries and the Environment
+    name: Department of Forestry, Fisheries and the Environment
 
 # Make sure you maintain indentations exactly as they are here
   - id: ori5 # Use this as the affiliation ref with authors above
@@ -191,7 +193,7 @@ affiliations:
 # Make sure you maintain indentations exactly as they are here
   - id: sgh6 # Use this as the affiliation ref with authors above
     number: 6 # This number is used to associate authors with affiliations
-    name: Seas of Good Hope
+    name: Parley South Africa – The Seas of Good Hope
 
 # Make sure you maintain indentations exactly as they are here
   - id: saeon7 # Use this as the affiliation ref with authors above
@@ -225,6 +227,8 @@ google-scholar: true
 
 <!-- change the 45% threatened stat to its own on one line; and the other three on their own line below it? -->
 
+<!-- standardise style of 'Key references' so that they match the References style -->
+
 ```{r}
 #| echo: false
 
@@ -232,10 +236,12 @@ library(tidyverse)
 library(nbaR)
 
 
-
 # load the data 
 ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  # fix the inconsistenly lower case spelled EFG 'rocky shores'
+  mutate(ecosystem_functional_type_getl3 = str_replace_all(ecosystem_functional_type_getl3, "rocky shelves", "Rocky shelves"))
+  
 
 ## extent
 eco_extent <- ets_combined %>% 
@@ -283,6 +289,8 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
+\
+
 ::::: columns
 ::: {.column width="50%"}
 <center>
@@ -315,11 +323,13 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ------------------------------------------------------------------------
 
+\
+
 ## Ecosystem threat status results
 
-While `r perc_thr_count`% of South Africa’s `r total_count` marine ecosystem types are threatened, this represents only `r perc_thr_extent`% of the total area of the marine realm. Note that the area estimates include both benthic and pelagic area beyond the shelf but do not include the [subantarctic territory](../subantarctic/sub-all_sections.qmd). Inshore and shelf ecosystem types are generally more threatened than those falling within the slope, abyss and open ocean regions. Ecosystem types of smaller extent and less widely distributed are at greater risk of extinction [@keith2013]. Overall, six ecosystem types (`r perc_cr_count`% of types) are Critically Endangered, with 31 Endangered (`r perc_en_count`%) and 36 Vulnerable (`r perc_vu_count`%). Of the remaining ecosystem types, 19 (`r perc_nt_count`%) and 71 (`r perc_lc_count`%) were respectively, Near Threatened and Least Concern.
+While `r perc_thr_count`% of South Africa’s `r total_count` marine ecosystem types are threatened, this represents only `r perc_thr_extent`% of the total area of the marine realm. Note that the area estimates include both benthic and pelagic area beyond the shelf but do not include the [subantarctic territory](../subantarctic/sub-all_sections.qmd). Inshore and shelf ecosystem types are generally more threatened than those falling within the slope, abyss and open ocean regions. Ecosystem types of smaller extent and that are less widely distributed are at greater risk of extinction [@keith2013]. Overall, six ecosystem types (`r perc_cr_count`% of types) are Critically Endangered, with 31 (`r perc_en_count`%) Endangered and 36 (`r perc_vu_count`%) Vulnerable. Of the remaining ecosystem types, 19 (`r perc_nt_count`%) and 71 (`r perc_lc_count`%) were respectively, Near Threatened and Least Concern.
 
-The locations of the threatened ecosystem types are shown in @fig-ets_map_benth and @fig-ets_map_pel. The cold temperate Southern Benguela region has more threatened ecosystem types than the warm temperate Agulhas region, with KwaZulu-Natal also having several threatened ecosystem types.
+The locations of the threatened ecosystem types are shown in @fig-ets_map_benth and @fig-ets_map_pel. The cold temperate Southern Benguela region has more threatened ecosystem types than the warm temperate Agulhas region, while KwaZulu-Natal also has several threatened ecosystem types.
 
 ```{r}
 #| label: fig-ets_map_benth
@@ -333,6 +343,8 @@ knitr::include_graphics("imgs/ets_benthic_with_donut.png") #"imgs/ets_benthic_wi
 
 ```
 
+\
+
 ```{r}
 #| label: fig-ets_map_pel
 #| fig-cap: Threat status of pelagic marine ecosystem types.
@@ -343,9 +355,7 @@ knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
 
 ```
 
-The most **threatened functional groups** include bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf (@fig-ets_bargraphs).
-
-A more detailed explanation of the assessment method used to calculate threat status can be found at the [RLE explanation page](../integrated-findings/chl_rle_explained.qmd) and is summarised in the [Approach](#approach) section below.
+The most **threatened functional groups** include bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf (@fig-ets_bargraphs). The assessment method used to calculate threat status is outlined in the [Approach](#approach) section below and further detail can be found in the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd).
 
 :::: panel-tabset
 ## Figure
@@ -353,7 +363,8 @@ A more detailed explanation of the assessment method used to calculate threat st
 ```{r}
 #| label: fig-ets_bargraphs
 #| echo: false
-#| fig-cap: Threat status of marine ecosystem types by functional group. Numbers reflected in A indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category. 
+#| fig-cap: Threat status of marine ecosystem types in each functional group, summarised by numbers of ecosystem types in (A) and by aerial extent in (B). 
+# <!-- #| Threat status of marine ecosystem types by functional group. Numbers reflected in (A) indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category.  -->
 #| out-width: 100%
 
 
@@ -377,26 +388,32 @@ nba_plot_comb(ets_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: Threat status of marine ecosystem types by functional group.
+#| tbl-cap: Threat status of marine ecosystem types by functional group. Note that extent figures have been rounded.
 #| out-width: 100%
 
 library(gt)
+library(dplyr)
 
 tbl <- ets_combined %>% 
-  mutate(metric = str_replace_all(metric, "extent", "extent_km2")) %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "count", "Count")) %>% 
   arrange(ecosystem_functional_type_getl3) %>% 
   select(ecosystem_functional_type_getl3, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Near Threatened`, `Least Concern`) %>%
   mutate(across(where(is.numeric), round)) %>% 
   gt::gt(
     rowname_col = "metric",
     groupname_col = "ecosystem_functional_type_getl3",
-    row_group_as_column = TRUE)%>% 
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
   nbaR::nba_tbl_theme(HEADER = "Marine") %>% 
   tab_style(
     style = cell_text(color = "white"),
     locations = cells_column_labels()
   )
-
 
 tbl
 ```
@@ -423,11 +440,11 @@ There are 31 **Endangered ecosystem types** (`r perc_en_count`%) which cover `r 
 
 ## Approach {#approach}
 
-The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using the 2024 Guidelines for the application of [IUCN Red List of Ecosystems Categories and Criteria](https://iucnrle.org/rle-categ-and-criteria) and drawing from previous marine NBA assessments. See the [Ecosystem Threat Status and Redlist of Ecosystems](../integrated-findings/chl_rle_explained.qmd) explainer page for further information on South Africa’s approach to the assessment of Ecosystem Threat Status. The threat status of South Africa’s 163 marine ecosystem types was evaluated applying the IUCN Criteria A-D using pressure and condition maps from the 2018 assessment. Both the extent and severity of ecosystem degradation were considered by calculating the extent of each ecosystem type in each of the four ecosystem [condition categories](../marine/marine_condition.qmd). Condition assessments are based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using the 2024 [Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria](https://portals.iucn.org/library/node/51533) and drawing from previous NBA assessments. The threat status of South Africa’s 163 marine ecosystem types was evaluated applying the IUCN Criteria A-D using pressure and condition maps from the 2018 assessment. Both the extent and severity of ecosystem degradation were considered by calculating the extent of ecosystem types in each of the four ecosystem [condition categories](../marine/marine_condition.qmd). Condition assessments were based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
 
-As pressure and condition data sets were not updated for the 2025 assessment, it is important to note that changes in ecosystem threat status are largely as a result of refined methods rather than recent loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included consideration of habitat loss (Criterion A), and the number of threat defined locations, ongoing drivers of ecological degradation (as opposed to pressures that have ceased e.g. due to new protected areas or changes in sea use) and stochastic events including climate change (Criterion B). Several ecosystem types have shifted into more threatened categories due to the automatic ecosystem extent thresholds provided by the IUCN but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline in ecological condition.
+As pressure and condition data sets were not updated for the 2025 assessment, it is important to note that changes in ecosystem threat status are largely as a result of refined methods rather than recent loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included [Criterion A, habitat loss, and Criterion B, number of threat defined locations, ongoing drivers of ecological degradation (as opposed to pressures that have ceased) and stochastic events]{.mark}. Several ecosystem types have shifted into more threatened categories due to the ecosystem extent thresholds provided by the IUCN, but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline in ecological condition.
 
-The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen future assessments.
+The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen assessments. See the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd) for further information on South Africa’s approach to the assessment of ecosystem threat status.
 
 ## Technical documentation
 
@@ -441,7 +458,7 @@ The application of the IUCN global standards supported a more comprehensive unde
 
 ### Code repositories
 
--   **Methods and workflows of the marine threat status assessment:** [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+-   [**Marine ecosystem threat status assessment**](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
 ### Data
 
@@ -449,13 +466,13 @@ The application of the IUCN global standards supported a more comprehensive unde
 
 ### Key publications
 
-Sink, *et. al.* in prep. Iterative improvement in marine ecosystem threat status assessment in South Africa to support sustainable ocean economy decisions.
+Sink, K.J. et. al. in prep. Iterative improvement in marine ecosystem threat status assessment in South Africa to support sustainable ocean economy decisions.
 
-Harris, L.R., Raimondo, D., Sink, K.J., Holness, S.D. and Skowno, A.L., 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine, Coastal and Shelf Science, p.109447. https://doi.org/10.1016/j.ecss.2025.109447
+Harris, L.R. et al. 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine, Coastal and Shelf Science, p.109447. https://doi.org/10.1016/j.ecss.2025.109447
 
-Rowland, J.A., Bland, L.M., Keith, D.A., Juffe-Bignoli, D., Burgman, M.A., Ferrer-Paris, J.R., Miller, R.M., Skowno, A.L., Nicholson, E., 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. https://doi.org/10.1111/conl.12680
+Rowland, J.A. et al. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. https://doi.org/10.1111/conl.12680
 
-IUCN (2024). Guidelines for the application of IUCN Red List of Ecosystems. Gland, Switzerland: IUCN. https://doi.org/10.2305/CJDF9122
+IUCN. 2024. Guidelines for the application of IUCN Red List of Ecosystems. Gland, Switzerland. https://doi.org/10.2305/CJDF9122
 
 ## Recommended citation
 

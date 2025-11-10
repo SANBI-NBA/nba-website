@@ -15,7 +15,7 @@ South Africa is one of few countries that started assessing ecosystem threat sta
 
 ::::: columns
 ::: {.column width="60%"}
-The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods.
+The IUCN RLE is a global framework for assessing the risks to ecosystems and identifying where ecosystems are threatened [@rodríguez2011; @keith2013]. Based on a set of criteria and thresholds developed collaboratively since 2008, the IUCN RLE was established to ensure that the assessment methods:
 :::
 
 ::: {.column width="40%"}
@@ -37,7 +37,7 @@ The goal of this global framework is to identify ecosystems that are at risk of 
 
 ### Key elements of the IUCN RLE framework
 
-As outlined above, the IUCN Red List of Ecosystems (RLE) framework comprises [three key components](https://iucnrle.org/documents_and_publications){target="blank"} which provides a transparent and structured approach for assessing the risk of ecosystem collapse across diverse realms and different regions (@fig-criteria-categories). These include:
+As outlined above, the IUCN Red List of Ecosystems (RLE) framework comprises [three key components](https://iucnrle.org/documents_and_publications){target="blank"} which provide a transparent and structured approach for assessing the risk of ecosystem collapse across diverse realms and different regions (@fig-criteria-categories). These include:
 
 -   a set of spatial and functional criteria that describe the different ways in which ecosystems may become threatened;
 
@@ -129,7 +129,7 @@ table1
 
 The Red List Index of Ecosystems (RLIe) is one of the new headline indicators formally recognised in December 2022 as part of the expanded suite of ecosystem monitoring tools under the post-2020 Kunming–Montreal Global Biodiversity Framework (GBF). This indicator provides a systematic mechanism for tracking progress towards achieving [Goal A](https://www.gbf-indicators.org/) of the GBF, which focuses on maintaining and enhancing ecosystem integrity.
 
-Conceptually, the RLIe mirrors and complements the Red List Index[@butchart2007] (of species), offering comparable insights into ecosystem-level risk. It tracks changes in the threat status of ecosystems over time [@nicholson2024; @rowland2020], with all trend assessments derived directly from the outcomes of IUCN RLE assessments. This indicator reflects genuine changes in ecosystem status, accounting for improvements in data and understanding across assessment periods. Broad speaking, the RLIe represents the mean of ordinal ranks assigned to each risk category and is defined as follows:
+Conceptually, the RLIe mirrors and complements the Red List Index[@butchart2007] (of species), offering comparable insights into ecosystem-level risk. It tracks changes in the threat status of ecosystems over time [@nicholson2024; @rowland2020], with all trend assessments derived directly from the outcomes of IUCN RLE assessments. This indicator reflects genuine changes in ecosystem status, accounting for improvements in data and understanding across assessment periods. Broadly speaking, the RLIe represents the mean of ordinal ranks assigned to each risk category and is defined as follows:
 
 ::: {#eq-rlie .equation}
 $$
@@ -159,7 +159,7 @@ Risk category ranks:
 
 -   Least Concern = 0
 
-RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear and comparable measure of ecosystem health across time and space. The indicator is designed for flexible application, allowing trends to be assessed for overall risk categories, or by individual criteria to reveal key drivers of ecosystem change. In addition, the RLIe can be disaggregated by South African biome for naitonal reporitng, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
+RLIe scores range from 0 (all ecosystems collapsed) to 1 (all ecosystems classified as Least Concern), providing a clear and comparable measure of ecosystem health across time and space. The indicator is designed for flexible application, allowing trends to be assessed for overall risk categories, or by individual criteria to reveal key drivers of ecosystem change. In addition, the RLIe can be disaggregated by South African biome for national reporting, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
 
 ## References
 

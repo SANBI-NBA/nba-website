@@ -392,9 +392,16 @@ df <- readxl::read_excel("./data/combined_threat_summary.xlsx",
                          sheet = "Overall_Maj")
 
 
-nba_pressure_bar_plot(
-  df,
-  TAXON = "Butterflies")
+p <- nba_pressure_bar_plot(df, TAXON = "Butterflies")
+p + scale_x_discrete(
+  labels = function(x) {
+    sapply(x, function(lbl) {
+      wrapped <- str_wrap(lbl, width = 20)  # wrap at ~30 characters
+      lines <- unlist(strsplit(wrapped, "\n"))
+      paste(head(lines, 3), collapse = "\n")  # max 3 lines
+    })
+  }
+)
 
 
 ```

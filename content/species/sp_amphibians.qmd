@@ -81,7 +81,7 @@ format:
 
 <center>
 
-![*Hyperolius pickersgilli*, a species that has received extensive conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. © Tyrone Ping.](./imgs/sp_amphibian_img_1.png){fig-align="center"}
+![*Hyperolius pickersgilli*, a species that has received extensive conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. © Tyrone Ping](./imgs/sp_amphibian_img_1.png){fig-align="center"}
 
 </center>
 
@@ -137,8 +137,9 @@ format:
 
 ```{r}
 #| label: fig-richness-map
-#| fig-cap: "Species richness map of threatened amphibian species in South Africa."
+#| fig-cap: "Density of threatened amphibian species (10 x 10 km grid), based on the distribution data of all threatened amphibian species."
 #| out-width: 75%
+#|
 knitr::include_graphics("./imgs/amphibians_thrt_10km_HD.png")
 ```
 
@@ -156,8 +157,8 @@ Twenty-two percent (30 species) of amphibians were assessed as threatened (Criti
 ```{r}
 #| label: fig-2
 #| fig-cap: "Threat status of 135 South African amphibian taxa assessed following the IUCN 3.1 Red List Categories and Criteria. The proportion of all assessed taxa in the different IUCN Red List Categories is shown in the larger circle (A) while the smaller circle (B) shows the status for South African endemics." 
-#| out-width: 100%
-#| out-height: "auto"
+#| out-width: 75%
+#| out-height: "75%"
 
 library(dplyr)
 library(tidyr)
@@ -364,13 +365,13 @@ Thirteen species were assessed for the first time (three assessed as EN, one as 
 :::
 
 ::: right
-![](./imgs/Capensibufo%20selenophos_Bionerds.png){style="width:100%; border-radius:10px;" fig-alt="Moonlight Mountain Toadlet Capensibufo selenophos ©Keir Lynch."}
-
-[Moonlight Mountain Toadlet\* (*Capensibufo selenophos*) © Keir Lynch.]{style="font-size:75%; color:#626262;"}
+![](./imgs/Capensibufo%20selenophos_Bionerds.png){fig-alt="Moonlight Mountain Toadlet" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Keir Lynch]{style="width:75%; color:#626262;"}
 
 Akkedisberg, Kleinrivier and Soetmuisberg Mountains in the Western Cape. Knowledge on threats was improved, and one property (approximately 700 ha) has been put forward for formal declaration through Biodiversity Stewardship and is being actively managed for control of alien invasive plants. This new information resulted in a non-genuine change from DD to EN based on an EOO of 478 km2, deterioration of habitat quality, and suspected declines.
 :::
 :::::
+
+------------------------------------------------------------------------
 
 ::::: {layout-ncol="2"}
 ## Boston Rain Frog (*Breviceps batrachophiliorum*)
@@ -380,13 +381,13 @@ An example of a newly described species being assessed is the hot-off-the-press 
 :::
 
 ::: right
-![](./imgs/Breviceps%20batrachophiliorum_Louis%20du%20Preez.png){style="width:100%; border-radius:10px;" fig-alt="Boston Rain Frog *Breviceps batrachophiliorum* ©Louis Du Preez."}
-
-[Boston Rain Frog *Breviceps batrachophiliorum* ©Louis Du Preez.]{style="font-size:75%;color:#626262;"}
+![](./imgs/Breviceps%20batrachophiliorum_Louis%20du%20Preez.png){fig-alt="Boston Rain Frog" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Louis Du Preez]{style="width:75%; color:#626262;"}
 
 midlands area in south central KwaZulu-Natal province. Records are confirmed from the Boston (type locality), Richmond, the Karkloof and Bulwer areas. Currently, the species is understood to occur at three subpopulations across less than 3000 km2.
 :::
 :::::
+
+------------------------------------------------------------------------
 
 ::::: {layout-ncol="2"}
 ## Table Mountain Ghost (*Heleophryne rosei*)
@@ -396,9 +397,7 @@ The Table Mountain Ghost Frog (*Heleophryne rosei*) provides an interesting exam
 :::
 
 ::: right
-![](./imgs/sp_amphibian_img_2.png){style="width:100%; border-radius:10px;" fig-alt="Heleophryne-rosei"}
-
-[The Table Mountain Ghost *Heleophryne rosei* ©Joshua Weeber.]{style="font-size:75%; color:#626262;"}
+![](./imgs/sp_amphibian_img_2.png){fig-alt="Table Mountain Ghost" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Joshua Weeber]{style="width:75%; color:#626262;"}
 
 specialist is still extremely range-restricted and experiencing continued habitat loss, the project revealed that the location and source of known threats are diverse and the species is therefore considered to occur at 2-4 threat locations (different streams on Table Mountain). Data from this project are now being used to inform management frameworks for headwater mountain streams, emphasizing the importance of fine-scale studies in amphibian conservation in South Africa, and supporting the view that priority research needs to inform conservation of amphibians [@campbell2023a].
 :::
@@ -446,7 +445,7 @@ nba_index_plot(
 ## Data
 
 ```{r}
-#| label: tbl-2
+#| label: tbl-20
 #| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate endemism levels: * endemic and ** near-endemic."
 #| classes: plain
 library(dplyr)
@@ -459,22 +458,21 @@ species_change <- readxl::read_xlsx("./data/sp_am_table2.xlsx") %>%
   rename(`Reason for change` = `Reason of change`) %>%
   filter(!if_all(everything(), is.na)) %>%
   mutate(
-    # First, normalize all whitespace around ] and (
+    # Normalize whitespace
     Taxon = str_replace_all(Taxon, "\\s+", " "),
-    # Extract escaped asterisks after ]
-    trailing_asterisks = str_extract(Taxon, "(?<=\\])\\s*(\\\\\\*+)"),
-    # Clean up trailing asterisks
-    trailing_asterisks = str_replace_all(trailing_asterisks, "\\\\\\*", "*"),
+    # Extract escaped asterisks that appear after ] (using lookbehind and lookahead)
+    trailing_asterisks = str_extract(Taxon, "(?<=\\])\\s*\\\\\\*+"),
+    # Convert escaped asterisks to regular asterisks
+    trailing_asterisks = str_replace_all(trailing_asterisks, "\\\\", ""),
     trailing_asterisks = str_trim(trailing_asterisks),
-    # Remove all escaped asterisks from anywhere in the string
-    Taxon = str_replace_all(Taxon, "\\\\\\*", ""),
-    # Remove all extra spaces
+    # Remove the escaped asterisks from between ] and (
+    Taxon = str_replace(Taxon, "(?<=\\])\\s*\\\\\\*+(?=\\s*\\()", ""),
+    # Clean up spaces
     Taxon = str_replace_all(Taxon, "\\s+", " "),
-    # Remove spaces between ] and (
     Taxon = str_replace_all(Taxon, "\\]\\s*\\(", "]("),
-    # Add back the trailing asterisks after the closing )
+    # Add asterisks back after the last closing )
     Taxon = if_else(!is.na(trailing_asterisks) & trailing_asterisks != "",
-                    str_replace(Taxon, "\\)", paste0(")", trailing_asterisks)),
+                    str_replace(Taxon, "\\)(?=[^)]*$)", paste0(")", trailing_asterisks)),
                     Taxon),
     # Store image paths and photographer credits separately
     image_path = case_when(
@@ -490,12 +488,15 @@ species_change <- readxl::read_xlsx("./data/sp_am_table2.xlsx") %>%
       TRUE ~ NA_character_
     )
   )
+
 # Store image paths and credits before removing column
 img_paths <- species_change$image_path
 photographers <- species_change$photographer
+
 # Remove helper columns
 species_change <- species_change %>%
   select(-trailing_asterisks, -image_path, -photographer)
+
 gt(species_change) %>% 
   fmt_markdown(columns = Taxon) %>%
   text_transform(
@@ -508,7 +509,7 @@ gt(species_change) %>%
             taxon_text, 
             "<br>", 
             local_image(filename = img_path, height = 100),
-            "<br><span style='font-size: 9px; font-style: italic; color: #666;'>Image credit: </span>", #UPDATED: Changed "Photo:" to "Image credit:"
+            "<br><span style='font-size: 9px; font-style: italic; color: #666;'>Image credit: </span>",
             "<span style='font-size: 9px; color: #666;'>", 
             photographer, 
             "</span>"
@@ -524,10 +525,8 @@ gt(species_change) %>%
               data_row.padding = px(12)) %>%
   tab_style(style = cell_fill(color = "gray90"),
             locations = cells_column_labels(columns = everything())) %>%
- 
   tab_style(style = cell_text(size = px(12)),  
             locations = cells_column_labels(columns = everything())) %>%
-  
   tab_style(style = cell_text(align = "left", v_align = "top"),
             locations = cells_column_labels(columns = everything())) %>%
   tab_style(style = cell_text(align = "left"),
@@ -560,7 +559,7 @@ The Critically Endangered Rough Moss Frog, *Arthroleptella rugosa* is restricted
 :::: right
 ![](./imgs/sp_amphibian_img_13.png){style="width:100%; border-radius:10px;" fig-alt="Arthroleptella rugosa"}
 
-::: {style="font-size:80%; color:#626262; margin-right: -10px; line-height: 1.7;"}
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
 © Alouis and Keir Lynch Bionerds
 :::
 ::::
@@ -578,7 +577,7 @@ These findings were used as motivation for conservation action and a joint initi
 :::: right
 ![](./imgs/sp_amphibian_img_6.png){style="width:100%; border-radius:10px;" fig-alt="Pine infestation of fynbos habitat"}
 
-::: {style="font-size:80%; color:#626262; margin-right: -10px; line-height: 1.7;"}
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
 Pine infestation of fynbos habitat on Klein Swartberg where the Critically Endangered Rough Moss Frog, <i>Arthroleptella rugosa</i>, occurs. © Rob Erasmus, Enviro Wildfire.
 :::
 ::::
@@ -598,8 +597,8 @@ needs being guided by expert knowledge and Red List assessment information, whic
 :::
 :::::
 
-::: {style="font-size:80%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. © Alouis and Keir Lynch Bionerds.
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
+Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. © Alouis and Keir Lynch Bionerds
 :::
 :::::::::::::::
 
@@ -607,7 +606,7 @@ This is followed by habitat loss and degradation due to agricultural activities 
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s mammals, based on the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme (IUCN, 2025)."
+#| fig-cap: "Key pressures on South Africa’s amphibians, based on the percentage of impacted threatened species, using the IUCN Threat Classification Scheme (IUCN, 2025)."
 #| fig-align: center
 #| out.width: 100%
 
@@ -618,30 +617,53 @@ df <- readxl::read_excel("./data/combined_threat_summary.xlsx",
                  sheet = "Overall_Maj")
 
 
-nba_pressure_bar_plot(
-                      df,
-                      TAXON = "Amphibians")
+p <- nba_pressure_bar_plot(df, TAXON = "Amphibians")
+p + scale_x_discrete(
+  labels = function(x) {
+    sapply(x, function(lbl) {
+      wrapped <- str_wrap(lbl, width = 20)  # wrap at ~30 characters
+      lines <- unlist(strsplit(wrapped, "\n"))
+      paste(head(lines, 3), collapse = "\n")  # max 3 lines
+    })
+  }
+)
 
 
 ```
 
-:::: {#box-3 .callout-note .species title="Box 3: The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
-::: {.column width="100%"}
-All 30 of South Africa’s threatened (CR, EN, VU) frog species are affected in one way or another by habitat loss and degradation (driven by agriculture, natural systems modifications, residential and commercial development, energy production and mining, and linear infrastructure for transportation and service corridors). As with global trends, agriculture is the main driver, impacting 77% of threatened species [@re2023a], while in South Africa agriculture impacts on 93% of threatened frog species. This includes impacts from livestock farming, including overgrazing, non-native tree plantations, non-timber crops, and erosion and siltation. System modifications include changes to fire frequency and intensity, water abstraction, and dam construction.
+::::::::: {#box-3 .callout-note .species title="Box 3: The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
+::::: {layout-ncol="2"}
+## Amathole Toad (*Vandijkophrynus amatolicus*)
 
-![](./imgs/sp_amphibian_img_14.png){fig-alt="Before ecological burn" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Alouis and Keir Lynch Bionerds.]{style="width:75%; color:#626262;"}
+::: left
+All 30 of South Africa’s threatened (CR, EN, VU) frog species are affected in one way or another by habitat loss and degradation (driven by agriculture, natural systems modifications, residential and commercial development, energy production and mining, and linear infrastructure for transportation and service corridors). As with global trends, agriculture is the main driver, impacting 77% of threatened species [@re2023a], while in South Africa agriculture impacts on 93% of threatened frog species. This includes impacts from livestock farming, including overgrazing, non-native tree plantations, non-timber crops, and erosion and siltation. System modifications include changes to fire frequency and intensity, water abstraction, and dam construction.
+:::
+
+::: right
+![](./imgs/sp_amphibian_img_14.png){fig-alt="Before ecological burn" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Alouis and Keir Lynch Bionerds]{style="width:75%; color:#626262;"}
+
+The Endangered Amathole Toad, *Vandijkophrynus amatolicus*, occurs in an area of the Eastern Cape highlands where original grassland habitat has been heavily transformed by both agriculture and timber production. However, working with livestock farmers to improve grazing management through regenerative agriculture approaches and facilitating habitat protection processes through Biodiversity Stewardship may prove beneficial to this toad, while supporting livelihoods within this strategic water source area.
+:::
+:::::
 
 ------------------------------------------------------------------------
 
-The Endangered Amathole Toad, *Vandijkophrynus amatolicus*, occurs in an area of the Eastern Cape highlands where original grassland habitat has been heavily transformed by both agriculture and timber production. However, working with livestock farmers to improve grazing management through regenerative agriculture approaches and facilitating habitat protection processes through Biodiversity Stewardship may prove beneficial to this toad, while supporting livelihoods within this strategic water source area.
+::::: {layout-ncol="2"}
+## The Western Leopard Toad (*Scelophrys pantherina*)
 
-![](./imgs/sp_amphibian_img_15.png){style="width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:10px; color:grey;"} [The Western Leopard Toad (<i>Scelophrys pantherina</i>) © Luke Verburght.]{style="width:75%; color:#626262;"}
+::: left
+Habitat loss due to residential and commercial development impacts many of the country’s amphibians, perhaps none more so than the Western Leopard Toad (*Scelophrys pantherina*). Typically associated with low lying wetlands and vleis in the Western Cape province, the species has lost over 75% of suitable habitat predominantly due to urban infrastructure expansion, leading to several local extinctions and severe population declines throughout its range. Urban infrastructure in the form of roads also causes
 :::
-::::
 
-Habitat loss due to residential and commercial development impacts many of the country’s amphibians, perhaps none more so than the Western Leopard Toad (*Scelophrys pantherina*). Typically associated with low lying wetlands and vleis in the Western Cape province, the species has lost over 75% of suitable habitat predominantly due to urban infrastructure expansion, leading to several local extinctions and severe population declines throughout its range. Urban infrastructure in the form of roads also causes significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding habitat.
+::: right
+![](./imgs/sp_amphibian_img_15.png){fig-alt="habitat loss" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Luke Verburght]{style="width:75%; color:#626262;"}
 
-Sightings (including roadkill) of this species by the public can be uploaded to iNaturalist, with sightings in the Overberg specifically to: https://www.inaturalist.org/projects/leopard-toads-of-the-overberg.
+significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding habitat.
+:::
+:::::
+:::::::::
+
+Sightings (including roadkill) of this species by the public can be uploaded to iNaturalist, with sightings in the Overberg specifically to: [iNaturalist](https://www.inaturalist.org/projects/leopard-toads-of-the-overberg).
 
 Contributions of occurrence records of any species are extremely valuable and have made up a significant proportion of data used in the current assessments (See [Box 4](@box-4)).
 
@@ -740,7 +762,7 @@ Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians a
 
 ```{r}
 #| label: fig-9
-#| fig-cap: "The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the Micro Frog, *Microbatrachella capensis* was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. © Keir Lynch Bionerds."
+#| fig-cap: "The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the Micro Frog, *Microbatrachella capensis* was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. © Keir Lynch Bionerds"
 #| out.width: 500px
 
 knitr::include_graphics("./imgs/sp_amphibian_img_9.png")
@@ -750,7 +772,7 @@ Nine species have had improvements in their protection level, from Poorly Protec
 
 ```{r}
 #| label: fig-10
-#| fig-cap: "The previously Critically Endangered Micro Frog, *Microbatrachella capensis*,  is now listed as Endangered due to its discovery at a new locality, it has also changed protection status from Poorly Protected to Moderately Protected resulting in a range extension. © Alouise Lynch Bionerds."
+#| fig-cap: "The previously Critically Endangered Micro Frog, *Microbatrachella capensis*,  is now listed as Endangered due to its discovery at a new locality, it has also changed protection status from Poorly Protected to Moderately Protected resulting in a range extension. © Alouise Lynch Bionerds"
 #| out.width: 500px
 
 
@@ -765,6 +787,7 @@ In addition, subsequent work to identify species requiring urgent recovery under
 
 South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behavior and ecology (@tbl-3). This in part was guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments. While good strides have been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context.
 
+::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-3
 #| tbl-cap: List of some of the active recovery projects focused on amphibians across South Africa lead by a range of different organisations.  
@@ -821,16 +844,25 @@ recovery_projects_gt <- recovery_projects %>%
 recovery_projects_gt
 
 ```
+:::
 
-::: {#box-5 .callout-note .species title="Box 5. Pickersgill’s reed frog: Conservation action at work" collapse="true"}
+<br>
+
+:::: {#box-5 .callout-note .species title="Box 5. Pickersgill’s reed frog: Conservation action at work" collapse="true"}
 The example of coordinated conservation action for Pickersgill’s Reed Frog, *Hyperolius pickersgilli*, provides a good case study of a relatively long-term recovery project in which new knowledge has not only resulted in a threat status reduction (from Critically Endangered in 2010 to Endangered in 2016), but also in concerted efforts to understand and mitigate threats. Stemming from recommendations in the 2011 Strategy for Conservation Research [@measey2011a], a Biodiversity Management Plan (BMP) was co-developed between key stakeholders and has resulted in many achievements over the past decade, including improvements in knowledge of distribution, genetics and habitat requirements, implementation of monitoring protocols, a captive breeding program, improved habitat protection gains (including a biodiversity offset) and improved habitat management. Research related to the project was published in four peer-reviewed articles and has contributed to seven post-graduate studies. Of the 16 actions identified for the first iteration of the BMP, 17% had been completed, 65% were on track, 6% had minor issues, and a further 12% were still in the planning phase by 2022. Overall, 24 participating organizations have been involved, and implementation of actions resulted in direct employment of over 150 people across institutions as well as stimulating an influx of funding to support actions [@armstrong2025a]. In 2008 the species was known from less than 10 sites; today it is known to occur at almost 40 localities, and multiple breeding wetlands within these localities. The BMP helped strengthen government support as well as improved integration of research outputs into spatial planning and environmental compliance. Interest in the project also generated vast exposure, including television, signage and social media campaigns, reaching thousands of people. While this species’ range continues to be within an area of rapid transformation, this project that has resulted in the species improving its protection level from Poorly Protected in 2018 to Moderately Protected in 2025 demonstrates the successes that can be achieved through collaboration and the commitment of partners from a range of influences.
 
-![](./imgs/sp_amphibian_img_11.png){style="width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:10px;"}[Release site for captive-bred Pickersgill’s Reed Frog in 2018 when 400 captive-bred individuals were released back into the wild through collaboration between Ezemvelo KZN Wildlife, Joburg Zoo and the Endangered Wildlife Trust.]{style="width:75%; color:#626262;"}
+![](./imgs/sp_amphibian_img_11.png){style="width:100%; height:auto; max-height:400px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+
+[Release site for captive-bred Pickersgill's Reed Frog in 2018 when 400 captive-bred individuals were released back into the wild through collaboration between Ezemvelo KZN Wildlife, Joburg Zoo and the Endangered Wildlife Trust.]{style="display:block; font-size:90%; color:#626262; line-height: 1.6;"}
 
 ------------------------------------------------------------------------
 
-![](./imgs/sp_amphibian_img_12.png){style="width:100%; height:auto; max-height:420px; object-fit:cover; border-radius:10px;"}[Partnering for Pickersgill’s Reed Frog’ - a sign put up at various *H. pickersgilli* sites explaining the Biodiversity Management Plan.]{style="width:75%; color:#626262;"}
+![](./imgs/sp_amphibian_img_12.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7; object-fit:cover; border-radius:10px;"}
+Partnering for Pickersgill’s Reed Frog’ - a sign put up at various *H. pickersgilli* sites explaining the Biodiversity Management Plan.
 :::
+::::
 
 ## Knowledge gaps
 

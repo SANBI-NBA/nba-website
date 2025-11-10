@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Protection Level" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+title: "Ecosystem protection level" # Compulsory
+subtitle: "Marine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -17,6 +17,7 @@ author:
     orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -25,7 +26,7 @@ author:
       family: Kirkman #Add author's surname here
     orcid: 0000-0001-5428-7375 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: dffe2 # Ref here must match the id of one of the affiliations listed below
+      - ref: dffe3 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -47,13 +48,15 @@ author:
       # If an author has more than one affiliation, add more - ref: lines here
 
 
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+# Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Loyiso V. #Add author's first name here. Abbreviate the middle name
       family: Dunga #Add author's surname here
+    orcid: 0000-0001-6448-8285
     affiliations:
-      - ref: sgh3 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
+      - ref: sanbi1 # Ref must match the id of one of the affiliations listed below
+      - ref: nmu2 # Ref must match the id of one of the affiliations listed below
+      - ref: sgh4 # Ref must match the id of one of the affiliations listed below
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
@@ -61,12 +64,13 @@ author:
       family: Harris #Add author's surname here
     orcid: 0000-0003-4719-0481 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: nmu4 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Sinothando #Add author's first name here. Abbreviate the middle name
       family: Shibe #Add author's surname here
+    orcid: 0000-0002-1194-0132 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanparks5 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
@@ -98,20 +102,20 @@ affiliations:
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
 # Make sure you maintain indentations exactly as they are here
-  - id: dffe2 # Use this as the affiliation ref with authors above
+  - id: nmu2 # Use this as the affiliation ref with authors above
     number: 2 # This number is used to associate authors with affiliations
-    name: The Department of Forestry, Fisheries and the Environment 
-# Make sure you maintain indentations exactly as they are here
-  - id: sgh3 # Use this as the affiliation ref with authors above
-    number: 3 # This number is used to associate authors with affiliations
-    name: Parley for the ocean - Seas of Good Hope
-# Make sure you maintain indentations exactly as they are here
-  - id: nmu4 # Use this as the affiliation ref with authors above
-    number: 4 # This number is used to associate authors with affiliations
     name: Nelson Mandela University
 # Make sure you maintain indentations exactly as they are here
-  - id: sanparks5 # Use this as the affiliation ref with authors above
+  - id: dffe3 # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name: Department of Forestry, Fisheries and the Environment 
+# Make sure you maintain indentations exactly as they are here
+  - id: sgh4 # Use this as the affiliation ref with authors above
     number: 4 # This number is used to associate authors with affiliations
+    name: Parley South Africa – The Seas of Good Hope
+# Make sure you maintain indentations exactly as they are here
+  - id: sanparks5 # Use this as the affiliation ref with authors above
+    number: 5 # This number is used to associate authors with affiliations
     name: South African National Parks
 
 # This date determines the PUBLISHED date in the title block
@@ -139,11 +143,7 @@ google-scholar: true
 
 <!-- fix sink paper in prep spelling! same problem with months  -->
 
-<!-- Tash: [Harris et al. (in review)\] needs to be replaced with citation -->
-
-<!-- Tash: add/replace the aliwal shoal report citation -->
-
-<!-- Tash: two sink et al 2023 iAtlantic references needed at 'the work undertaken through the iAtlantic project [@sink2023a]' -->
+<!-- Add eez lines to pei mpa picture -->
 
 ```{r}
 
@@ -196,9 +196,11 @@ per_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 *Progress has been made in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s Marine Protected Areas (MPAs). Advances in ecological effectiveness are evident but there are gaps in participation, ecosystem representation, connectivity and governance. Increasing extent of protection alone is not enough to advance marine ecosystems to Well Protected, the condition of marine ecosystems in conservation areas also needs to be improved. Diversified conservation measures can help address gaps and provide new opportunities to safeguard both biodiversity and cultural heritage. South Africa needs to better include people in the design, implementation and co-management of conservation areas.*
 
-![Fisherwoman in the iSimangaliso MPA and World Heritage Site © Kerry Sink](imgs/Blackrock_oct13_1_328.png)
+![Fisherwoman in the iSimangaliso MPA and World Heritage Site. © Kerry Sink.](imgs/Blackrock_oct13_1_328.png)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+
+\
 
 ::::: columns
 ::: {.column width="50%"}
@@ -232,6 +234,8 @@ per_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 ------------------------------------------------------------------------
 
+\
+
 ```{r}
 #| label: fig-epl_map_benthic
 #| fig-cap: Protection level map of bentho-pelagic and benthic marine ecosystem types. The inset graph shows the number and percentage of ecosystem types that fall within each protection category.
@@ -247,6 +251,8 @@ knitr::include_graphics("imgs/epl_benthic_with_donut.png")
 
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
+\
+
 ```{r}
 #| label: fig-epl_map_pelagic
 #| fig-cap: Protection level map of pelagic marine ecosystem types. The inset graph shows the number and percentage of ecosystem types that fall within each protection category.
@@ -258,11 +264,11 @@ knitr::include_graphics("imgs/epl_pelagic_with_donut.png")
 
 ```
 
-## Ecosystem Protection Level results
+## Ecosystem protection level results
 
-Of South Africa’s 163 national marine ecosystem types, `r per_protected_count`% (representing `r per_protected_extent`% of the mainland marine area) are represented in the Marine Protected Area (MPA) network to some extent, leaving 27 ecosystem types (17%) as Not Protected (representing `r perc_np_extent`% of the mainland marine area). However, while majority of ecosystems now have some protection only 32 ecosystem types (`r perc_wp_count`%), representing `r perc_wp_extent`% of the mainland marine area, are Well Protected. It should be noted that changes in relation to the previous assessment [@sink2019a] do not reflect genuine changes in Ecosystem Protection Level, but are due to revised targets and methods to improve alignment globally and among realms in South Africa.
+Of South Africa’s 163 national marine ecosystem types, `r per_protected_count`% (representing `r per_protected_extent`% of the mainland marine area) are represented in the Marine Protected Area (MPA) network to some extent, leaving 27 ecosystem types (17%) as Not Protected (representing `r perc_np_extent`% of the mainland marine area). However, while majority of ecosystems now have some protection only 32 ecosystem types (`r perc_wp_count`%), representing `r perc_wp_extent`% of the mainland marine area, are Well Protected. It should be noted that changes in relation to the previous assessment [@sink2019a] do not reflect genuine changes in ecosystem protection level, but are due to revised targets and methods to improve alignment globally and among realms in South Africa. A table detailing the results of the ecosystem protection level and threat status results can be downloaded from the [Data section](#data).
 
-South Africa advanced protection levels in 2019 with the proclamation of the Phakisa [MPA network](https://www.marineprotectedareas.org.za/explore). Of the 83 ecosystem types that were Not Protected before 2019, 67 types received their first protection in 2019 with the proclamation of 20 new or expanded MPAs [@sink2023a]. These included 7 of 13 pelagic ecosystem types. Additionally, 18 ecosystem types advanced to Well Protected in 2019, going from a total of 9% to 20%. Since 2019 there has been no further progress in protection. However, new work is underway to support the recognition of Other Effective Conservation Measures which may help diversify protection models @kirkman2025 .
+South Africa advanced protection levels in 2019 with the proclamation of the Phakisa [MPA network](https://www.marineprotectedareas.org.za/explore). Of the 83 ecosystem types that were Not Protected before 2019, 67 types received their first protection in 2019 with the proclamation of 20 new or expanded MPAs [@sink2023a]. These included 7 of 13 pelagic ecosystem types. Additionally, 18 ecosystem types advanced to Well Protected in 2019, going from a total of 9% to 20%. Since 2019 there has been no further progress in protection. However, new work is underway to support the recognition of Other Effective Conservation Measures which may help diversify protection models @kirkman2025.
 
 :::: panel-tabset
 ## Figure
@@ -270,7 +276,8 @@ South Africa advanced protection levels in 2019 with the proclamation of the Pha
 ```{r}
 #| label: fig-epl_bargraphs
 #| echo: false
-#| fig-cap: Slopes, abyssal plains, muddy and rocky shelves and open oceans are the most poorly protected ecosystem functional groups. Protection level is summarised by numbers of ecosystem types in (A) and by aerial extent in (B). 
+#| fig-cap: Protection level of marine ecosystem types in each functional group, summarised by numbers of ecosystem types in (A) and by aerial extent in (B). 
+# <!-- #| Slopes, abyssal plains, muddy and rocky shelves and open oceans are the most poorly protected ecosystem functional groups. Protection level is summarised by numbers of ecosystem types in (A) and by aerial extent in (B).  -->
 #| out-width: 100%
 
 #Combine RLE plot
@@ -288,13 +295,13 @@ nba_plot_comb(epl_combined,
 
 ```
 
-## Data
+## Data {#data}
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: Protection level of marine ecosystem types by functional group.
+#| tbl-cap: Protection level of marine ecosystem types by functional group. Note that extent figures have been rounded.
 #| out-width: 100%
 
 
@@ -334,7 +341,7 @@ Of the 27 **Poorly Protected** ecosystem types, several fall into this category 
 
 ![An excellent area to improve protection of the Poorly Protected Eastern Agulhas Outer Shelf Mosaic is in the Seaview Horse Mussel Seabed Management Area near Gqeberha. This area has high biodiversity and Remotely Operated Vehicle surveys found clumps of horse mussels that were not observed in areas with more inshore trawling activity © ACEP Deep Forests Project, Kerry Sink.](imgs/Seaview_Horse_mussels.png)
 
-Forty-eight marine ecosystem types are **Moderately Protected**. While several of these could advance to Well Protected through improved ecological condition, 27 types will require increased coverage in MPAs or OECMs. For example Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon can improve their Ecosystem Protection Level with increased representation in South Africa’s marine conservation estate.
+Forty-eight marine ecosystem types are **Moderately Protected**. While several of these could advance to Well Protected through improved ecological condition, 27 types will require increased coverage in MPAs or OECMs. For example Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon can improve their ecosystem protection level with increased representation in South Africa’s marine conservation estate.
 
 ![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected © Lloyd Edwards and ACEP Deep Secrets and Deep Forests projects.](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
 
@@ -348,7 +355,7 @@ Only 20% of South Africa’s 163 marine ecosystem types are **Well Protected**, 
 
 ```{r}
 #| label: fig-mpa_map
-#| fig-cap: South Africa's MPA network.
+#| fig-cap: South Africa's Marine Protected Area network.
 #| echo: false
 #| message: false
 #| warning: false
@@ -358,7 +365,7 @@ knitr::include_graphics("imgs/mpa_map.png")
 
 ```
 
-In 2018, South Africa had 25 [coastal MPAs](https://www.marineprotectedareas.org.za/coastal-mpas) covering less than 0.6% (6 (51 477 km2)260 km^2^) of the ocean around South Africa, up from 0.4% (4 (51 477 km2)711 km^2^) in 2011. The MPA estate increased significantly in 2019 and covers 5.4% (51 477 km2) of the ocean around South Africa. A map of the 41 MPAs around mainland South Africa is shown in @fig-mpa_map, noting that the Prince Edward Island MPA in South Africa’s [subantarctic territory](../subantarctic/sub-all_sections.qmd) is the biggest of the South African MPAs and lies more than 1 700 km south of Gqeberha. No further progress in MPA establishment has been made since 2019. [Learn more about South Africa's MPAs](https://www.marineprotectedareas.org.za/explore).
+In 2018, South Africa had 25 [coastal MPAs](https://www.marineprotectedareas.org.za/coastal-mpas) covering less than 0.6% (6 260 km^2^) of the ocean around South Africa, up from 0.4% (4 711 km^2^) in 2011. The MPA estate increased significantly in 2019 and covers 5.4% (51 477 km^2^) of the ocean around South Africa. A map of the 42 MPAs around South Africa is shown in @fig-mpa_map, noting that the Prince Edward Island MPA in South Africa’s [subantarctic territory](../subantarctic/sub-all_sections.qmd) is the biggest of the South African MPAs and lies more than 1 700 km south of Gqeberha. No further progress in MPA establishment has been made since 2019. Learn more about South Africa's MPAs at the [Marine Protected Areas website](https://www.marineprotectedareas.org.za/explore).
 
 No marine areas have been recognised as OECMs in South Africa as of December 2025. These areas are governed and managed in ways that achieve positive and sustained long-term outcomes for the *in situ* conservation of biodiversity values, whether or not biodiversity conservation is the primary management objective.
 
@@ -374,12 +381,12 @@ The concept of OECMs offers new opportunities for more inclusive and people-cent
 
 Exploratory assessments of various management measures that exist in the marine realm allowed for the identification of measures that hold most promise for OECM recognition. These included a marine buffer zone of a biosphere reserve, closed fishing areas adjacent to African penguin colonies, and estuarine management plans. Going forward, it may be strategic to prioritise sites under the above measures for formal assessment against OECM criteria.
 
-![Remotely Operated Vehicle surveys within the trawl closure off Cape St Francis suggest that this area meets the OECM criterion for high biodiversity value. This site, if recognised as an OECM, could contribute to improved Ecosystem Protection Level for the Endangered and Moderately Protected Eastern Agulhas Bay. © ACEP Deep Forests, K Sink](imgs/ST_Francis_Deep_Forest_KSink.png)
+![Remotely Operated Vehicle surveys within the trawl closure off Cape St Francis suggest that this area meets the OECM criterion for high biodiversity value. This site, if recognised as an OECM, could contribute to improved ecosystem protection level for the Endangered and Moderately Protected Eastern Agulhas Bay. © ACEP Deep Forests, K Sink.](imgs/ST_Francis_Deep_Forest_KSink.png)
 
 There are certain measures that South Africa's legislation makes provision for but are yet to be implemented, which could meet the criteria for OECM recognition, depending on where and how they are implemented. An example is special management areas under the [National Environmental Management: Integrated Coastal Management Act](https://www.gov.za/documents/national-environmental-management-integrated-coastal-management-act). Sites under this measure can be designated primarily for cultural purposes and could potentially constitute OECMs that uphold cultural sustainability, promote the connection of people with their environment and heritage, and facilitate greater inclusivity in marine conservation and management in the country.
 
 ::: {#box-1 .callout-note .marine title="Box 1. Cuturally Significant Areas"}
-![South Africa has committed to expanding protected and conserved areas to meet national and global goals. Realising this ambition will require strengthened community participation in establishing and managing these areas. Sites such as Gompo’s Rock (near East London, Eastern Cape), which hold both cultural and biodiversity significance could be explored for conservation relevance and recognition as OECMs in partnership with value holders. © Kerry Sink](imgs/csa_gompos_rock.png)
+![South Africa has committed to expanding protected and conserved areas to meet national and global goals. Realising this ambition will require strengthened community participation in establishing and managing these areas. Sites such as Gompo’s Rock (near East London, Eastern Cape), which hold both cultural and biodiversity significance could be explored for conservation relevance and recognition as OECMs in partnership with value holders. © Kerry Sink.](imgs/csa_gompos_rock.png)
 
 New research [@dunga2025] has supported progress in identifying and characterising cultural heritage sites in Marine Spatial Planning and coastal management. Eight categories of Culturally Significant Areas were identified drawing from literature, orature and expert knowledge [@dunga2025]. These cover tangible and intangible aspects of cultural heritage, including iconic seascapes, traditional fishing grounds, sites of spiritual and ceremonial importance and oral tradition. Spatial management in alignment with OECM criteria could help to safeguard the deep and diverse cultural ties many South Africans have to the coastal and marine environment. The establishment of small scale fishing zones, a provision under the Marine Living Resources Act, could also be explored as a mechanism for OECM recognition, providing protection to fishers’ tenure rights and livelihoods whilst safeguarding marine ecosystems and cultural heritage [@kowalski2025].
 
@@ -390,7 +397,7 @@ Improving marine ecosystem protection requires strategic collaborative expansion
 
 ```{r}
 #| label: fig-epl_schematic
-#| fig-cap: Schematic to show steps in determining marine Ecosystem Protection Level.
+#| fig-cap: Schematic to show steps in determining marine ecosystem protection level.
 #| echo: false
 #| message: false
 #| warning: false
@@ -400,11 +407,11 @@ knitr::include_graphics("imgs/epl_schematic.png")
 
 ```
 
-The history and approach to the development of South Africa’s protection level assessment is provided on the [Ecosystem Protection Level explainer page](../integrated-findings/chl_epl_explained.qmd) and will soon be published \[Harris et al. (in review)\]. The 2025 Ecosystem Protection Level (EPL) assessment for marine ecosystems was adjusted to align with global targets (@fig-epl_schematic). While the 2018 assessment used a standard 20% marine target with an additional rule applied, the 2025 assessment applied a 30% target for all ecosystem types. When calculating the percentage of area within an MPA, the area contributions were scaled by condition to account for the fact that areas of high modification do not contribute to an ecosystem's protection level as much as areas of natural condition. The areas were scaled in alignment with the IUCN RLE criteria C and D degrees of modification [@sinka]. Further, in order for a marine ecosystem type to qualify for the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition. If this rule was not met, the ecosystem was categorised as Moderately Protected.
+The history and approach to the development of South Africa’s protection level assessment is provided on the [ecosystem protection level explainer page](../integrated-findings/chl_epl_explained.qmd) and will be published [@harris2025]. The 2025 ecosystem protection level assessment for marine ecosystems was adjusted to align with global targets (@fig-epl_schematic). While the 2018 assessment used a standard 20% marine target with an additional rule applied, the 2025 assessment applied a 30% target for all ecosystem types. When calculating the percentage of area within an MPA, the area contributions were scaled by condition to account for the fact that areas of high modification do not contribute to an ecosystem's protection level as much as areas of natural condition. The areas were scaled in alignment with the IUCN RLE criteria C and D degrees of modification. (more information can be found in the [Marine realm ecological condition](marine_condition.qmd) page). Further, in order for a marine ecosystem type to qualify for the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition. If this rule was not met, the ecosystem was categorised as Moderately Protected.
 
-Changes in EPL between 2018 and 2025 are caused by the increased target and improved methodology rather than genuine changes in protection or ecological condition. Note that OECMs will contribute to Ecosystem Protection Level once these have been recognised in the marine realm [@kirkman2025; @kowalski2025].
+Changes in ecosystem protection level between 2018 and 2025 are caused by the increased target and improved methodology rather than genuine changes in protection or ecological condition. Note that OECMs will contribute to ecosystem protection level once these have been recognised in the marine realm [@kirkman2025; @kowalski2025].
 
-Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distill key findings beyond the spatial analysis of Ecosystem Protection Level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinka] and the work undertaken through the iAtlantic project [@sink2023a], Mission Atlantic project [@sinka], the Aliwal Shoal Working Group \[Aliwal Shoal Working Group 2024\], and **SeaPeople** were additional key informants [@sink2023a; @sink; @sinka] **(Sink et al. 2023 a,b, Sink et al. 2024)** , , (Van der Bank et al. 2025). Inputs from three workshops that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@vanderbank2025; @sink; @rylandsa].
+Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distil key findings beyond the spatial analysis of ecosystem protection level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinkd] and the work undertaken through the iAtlantic project [@sink2023a; @sink2023b], Mission Atlantic project [@sink], the ACEP Deep Connections and One Ocean Hub projects [@vanderbank2024; @vanderbank2025b] including the Aliwal Shoal Working Group [@aliwalshoalmpaworkinggroup2024], and SeaPeople [@vanderbank2025c] were additional key informants. Inputs from an additional workshop that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@rylands].
 
 ## Technical documentation
 
@@ -418,7 +425,7 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ### Code repositories
 
--   **[Methods and workflows of the marine Ecosystem Protection Level assessment](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)** 
+-   [**Methods and workflows of the marine ecosystem protection level assessment**](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
 
 ### Data
 
@@ -426,9 +433,9 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ### Key publications
 
-Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa
+Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.
 
-Sink et al. in prep- EPL & synthesis paper
+Sink, et al. *In prep*. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
 
 Sink KJ, Lombard AT, Attwood CG, Livingstone TC, Grantham H, Holness SD. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
 

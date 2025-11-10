@@ -225,7 +225,11 @@ format:
 
 *Globally, South Africa is reported to have the third highest level of marine endemism meaning we have a critical role to play in international marine species conservation. Several marine species are faring better in the country than elsewhere in the region. However, marine species have among the highest data deficiency across all realms signalling the need to build foundational knowledge and capacity to support assessment for informed management decision-making. Of the 506 species assessed using the IUCN Red List; sharks, rays and chimaeras; corals; seabirds and seabreams are among the most threatened species groups.*
 
-<center>![Jenkins’ whipray, Pateobatis jenkinsii, is wide ranging and is globally Endangered. © Geoff Spiby.](./imgs/sp_marine_img_1.png){fig-align="center"}</center>
+<center>
+
+![Jenkins’ whipray, Pateobatis jenkinsii, is wide ranging and is globally Endangered. © Geoff Spiby](./imgs/sp_marine_img_1.png){fig-align="center"}
+
+</center>
 
 ::::: columns
 ::: {.column .content width="50%"}
@@ -279,12 +283,11 @@ A comprehensive assessment of cartilaginous fishes (i.e. sharks, rays and chimae
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "The scalloped hammerhead is Critically Endangered. © Thomac Kotuc." 
+#| fig-cap: "The scalloped hammerhead is Critically Endangered. © Thomac Kotuc" 
 #| out-width: 100%
 #| out-height: "auto"
 knitr::include_graphics("./imgs/sp_marine_img_2.png")
 ```
-
 
 2.  Trends (RLI)
 
@@ -306,7 +309,7 @@ Seabream trends remain relatively stable with some species uplisted and others d
 
 South African kob species (*Argyrosomus* genus)—including dusky, silver, squaretail, and west-coast dusky kob—are highly valued food fish targeted by recreational, commercial and small-scale fishers, and are also caught as trawl bycatch. Once abundant, the populations of dusky (*Argyrosomus japonicus*), silver (*Argyrosomus inodorus*) and squaretail kob (*Argyrosomus thorpei*) have collapsed, largely due to a long history of overexploitation and habitat degradation.  Dusky kob has been assessed as Critically Endangered, whilst squaretail and silver kob have been assessed as Endangered and Vulnerable respectively [@farthing2025a].
 
-These sciaenids are inherently vulnerable: they are large, relatively slow growing and late maturing, spawn in predictable aggregations, and their juveniles show varying degrees of dependence on estuaries and associated critical ecosystem functions (such as food provision and refuge from predators). Their susceptibility to overfishing is worsened by habitat degradation from sedimentation, freshwater flow reduction, pollution, and agricultural runoff. Similar appearances among species complicate identification by fishers in the field, challenging effective species-specific management. Current regulations are inadequate, particularly for the large recreational sector, while climate change and the declining quality and quantity of estuarine habitats pose additional threats ((Box 1)\[#box-1\]).
+These sciaenids are inherently vulnerable: they are large, relatively slow growing and late maturing, spawn in predictable aggregations, and their juveniles show varying degrees of dependence on estuaries and associated critical ecosystem functions (such as food provision and refuge from predators). Their susceptibility to overfishing is worsened by habitat degradation from sedimentation, freshwater flow reduction, pollution, and agricultural runoff. Similar appearances among species complicate identification by fishers in the field, challenging effective species-specific management. Current regulations are inadequate, particularly for the large recreational sector, while climate change and the declining quality and quantity of estuarine habitats pose additional threats ([Box 1](#box-1)).
 
 ::: {#box-1 .callout-note .marine .box title="Box 1. South Africa co-developed a conservation strategy to improve the threat and stock status of kobs [@farthing2025a]. " collapse="true" style="overflow: auto;"}
 <img src="imgs/sp_marine_img_3.png" alt="box_1_img_3" style="width:30%; float:left; margin-right:15px;"/> A collaborative conservation strategy involving government and non-government stakeholders established five key objectives: (1) reform current regulations with public engagement; (2) foster stewardship among users and managers; (3) enhance spatial protection of spawning sites, nurseries, and bycatch hotspots; (4) ensure adequate freshwater flow to estuaries; and (5) address critical research gaps. Each objective includes specific actions, responsible parties, priorities, and timelines.
@@ -321,7 +324,11 @@ Of South Africa’s 6 marine reptiles, four of six species are threatened (@fig-
 Eight of 50 (16%) marine mammals are threatened (@fig-1 A) with the Endangered Indian Ocean humpback dolphin *Sousa plumbea* being a key species of concern in South African waters [@ploen2021a]. A major threat is lethal shark control measures ([Box 4](#box-2)), with pollution, coastal development and shipping also contributing to pressure on this species. Marine mammals show a positive trend (@fig-2) due to the improvement in status of a [subantarctic species](../subantartic/sub-all_sections.qmd), southern elephant seal (*Mirounga leonina*) downlisted from Near Threatened to Least Concern.
 
 ::: {#box-2 .callout-note .marine title="Box 2. The most threatened marine mammal in South Africa, the Endangered Indian Ocean humpback dolphin is at risk of extinction due to threats such as pollution, lethal shark control measures, shipping and coastal development." collapse="true"}
-<center>![There are likely less than 500 individuals of Endangered Indian Ocean humpback dolphins in South Africa . © Brett Atkins.](./imgs/sp_marine_img_4.png){fig-align="center"}</center>
+<center>
+
+![There are likely less than 500 individuals of Endangered Indian Ocean humpback dolphins in South Africa . © Brett Atkins](./imgs/sp_marine_img_4.png){fig-align="center"}
+
+</center>
 
 Recently re-assessed, nationally and globally, the status of Indian Ocean humpback dolphin Sousa plumbea remains Endangered and the situation is dire, but not without hope. A major threat to humpback dolphins - incidental bycatch in the lethal shark control programme in KwaZulu-Natal has been reduced following changes in fishing gear. However, levels of chemical pollutants in humpback dolphins, including persistent organic pollutants, also known as "forever chemicals", and heavy metals, continue to be the highest of any marine mammal in South Africa and amongst the highest globally. Shipping and coastal development are other major threats and the cumulative effects of multiple stressors, which are difﬁcult to pinpoint and mitigate, are impacting this small population which is currently estimated to be fewer than 500 individuals. The recent expansion of South Africa's MPA coverage (e.g., uThukela Marine Protected Area) may have a positive effect on this species, but pressures on this species need to better managed both inside and outside protected areas. The development of a National Biodiversity Management Plan remains a top priority to ensure the long‐term survival of the species in South Africa. International collaboration is being strengthened with the recent formation of the Indian Ocean Humpback Dolphin Conservation Network ([HuDoNET](https://www.hudonet.org/)), linking scientists and conservationists across the species' range.
 :::
@@ -330,17 +337,20 @@ Due to poor taxonomic knowledge and a paucity of occurrence records, most marine
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "South Africa experienced the worst coral bleaching observed to date in 2025, although this is still far less than more severe mass bleaching events recorded in other parts of the world. Coral bleaching is the loss of symbiotic algae, triggered by elevated sea temperatures and other environmental stressors, leaving corals white and compromised, often leading to mortality. © Kerry Sink." 
+#| fig-cap: "South Africa experienced the worst coral bleaching observed to date in 2025, although this is still far less than more severe mass bleaching events recorded in other parts of the world. Coral bleaching is the loss of symbiotic algae, triggered by elevated sea temperatures and other environmental stressors, leaving corals white and compromised, often leading to mortality. © Kerry Sink" 
 #| out-width: 100%
 #| out-height: "auto"
 knitr::include_graphics("./imgs/sp_marine_img_5.png")
 ```
 
-
 Corals show the steepest trend in worsening threat status (@fig-3), noting that these are global assessments with no national assessments conducted to date. South Africa's shallow water reef building corals, stony corals, have experienced less coral bleaching and are likely less threatened than elsewhere in the region and globally [@porter2021a] [@obura2022a].
 
 ::: {#box-3 .callout-note .marine title="Box 3. Abalone remains in crisis and was assessed as Endangered by the IUCN in 2021." collapse="true"}
-<center>![Endemic abalone (*Haliotis midae*) is Endangered. © Steve Benjamin.](./imgs/sp_marine_img_6.png){fig-align="center"}</center>
+<center>
+
+![Endemic abalone (*Haliotis midae*) is Endangered. © Steve Benjamin](./imgs/sp_marine_img_6.png){fig-align="center"}
+
+</center>
 
 ***Haliotis midae*****, commonly known as perlemoen**, was listed as Endangered on the IUCN Red List in 2021 [@peters2021a] due to the collapse of what was once a thriving commercial fishery that peaked at 2,800 tons in 1965 but has been severely reduced. Current legal quotas of only 96 tons is now allowed annually. The legal commercial fishery, managed through Total Allowable Catch allocations across seven zones in the Western Cape, has been systematically undermined and overwhelmed by industrial-scale illegal fishing operations. Organized criminal gangs, linked to international drug trafficking, have exploited this species at catastrophic levels, with illegal harvests estimated at over 2,000 tons annually compared to the tiny legal quotas. Population surveys reveal widespread recruitment failure throughout all commercial zones, as illegal fishing targets predominantly immature individuals below the legal minimum size, preventing reproduction and causing population densities to fall below levels necessary for successful breeding. The IUCN assessment projects continued steep decline in spawning biomass through 2035, with recovery possible only through a 59% reduction in poaching combined with robust enforcement measures.
 :::
@@ -348,7 +358,11 @@ Corals show the steepest trend in worsening threat status (@fig-3), noting that 
 Assessments from a small sample of utilized marine invertebrates in South Africa (10 spiny lobsters, abalone and the white mussel) found that 4 of 12 resources species are threatened. South African abalone *Haliotis midae* ([Box 3](#box-3)), white mussel *Donax serra* and West Coast rock lobster *Jasus lalandii* ([Box 4](#box-4)) are all Endangered, signaling the need to support recovery of these species.
 
 ::: {#box-4 .callout-note .marine title="Box 4. West coast rock lobster, *Jasus lalandii* is nationally assessed as Endangered with its status driven largely by illegal fishing and exacerbated by environmental changes. " collapse="true"}
-<center>![West Coast rock lobster was assessed as Endangered in 2025. © Geoff Spiby.](./imgs/sp_marine_img_7.png){fig-align="center"}</center>
+<center>
+
+![West Coast rock lobster was assessed as Endangered in 2025. © Geoff Spiby](./imgs/sp_marine_img_7.png){fig-align="center"}
+
+</center>
 
 ***Jasus lalandii*****, the West Coast rock lobster**, was globally assessed as Least Concern in 2009 [@cockcroft2011a] as part of international efforts to assess crustaceans. However, a national assessment in 2025 found this species to be Endangered, primarily due to severe population decline, with exploitable biomass falling by 68% over the past three generations (45 years) and current stock levels at only 1.2% of pre-fished levels from 1910. The species faces overwhelming pressure from illegal, unreported, and unregulated (IUU) fishing, which is estimated to remove more than twice as much biomass annually as legal fishing operations. Total Allowable Catch quotas were reduced by 91% from over 5,000 tons in the late 1970s to just 505 tons in 2024/2025, reflecting the resource's dire condition. A small positive trend in the recent stock assessment has led to an increased quota allocation for 2025/26 fishing season, however, overall, the resource remains at significantly reduced levels and requires ongoing cautious management. Environmental stresses have compounded fishing pressures, including significant reductions in somatic growth rates since the 1990s, mass strandings caused by low oxygen events (with an estimated 2,000 tons lost in the 1997 "walkout" alone), and an eastward distribution shift that has disrupted traditional fishing areas. Climate change effects, including increased frequency of algal blooms and hypoxic conditions, continue to threaten the species through habitat degradation and physiological stress. The species' biological characteristics make it particularly vulnerable to overexploitation, as it is slow-growing with a 15-year generation length and complex life cycle including an extended larval stage. Despite decades of management measures including minimum size limits, seasonal restrictions, and operational management procedures, the combination of heavy illegal fishing pressure and environmental changes has pushed this economically important species into crisis [@eggers2024a]
 :::
@@ -356,7 +370,11 @@ Assessments from a small sample of utilized marine invertebrates in South Africa
 The endemic South coast rock lobster *Palinurus gilchristi* ([Box 5](#box-5)) was assessed as Vulnerable in 2025 due to current overfishing, with historical illegal fishing also a key contributing factor. Abalone and South Coast rock lobster are endemic and their assessments are global, but the West Coast rock lobster assessment is a national assessment. Other rock lobster assessments are global and all are considered to be Least Concern.
 
 ::: {#box-5 .callout-note .marine title="Box 5. A national assessment of South Coast rock lobster, *Palinurus gilchristi* revealed that it is Vulnerable due to overexploitation." collapse="true"}
-<center>![South Coast rock lobster. © Unknown.](./imgs/sp_marine_img_8.png){fig-align="center"}</center>
+<center>
+
+![South Coast rock lobster. © Unknown](./imgs/sp_marine_img_8.png){fig-align="center"}
+
+</center>
 
 ***Palinurus gilchristi*****, the South Coast rock lobster**, was nationally assessed as Vulnerable using the IUCN Red List criteria in 2025 primarily due to historical overexploitation that caused significant population declines over the past three generations (48 years). The species' exploitable biomass has declined by 35% since the 1977/1978 fishing season, with current stock assessments indicating spawning biomass is at only 41% of pre-fished levels. A major contributing factor was illegal overharvesting by one company between 1987-2001, which significantly exceeded fishing quotas and caused concurrent decreases in both biomass and catch rates. The species' biological characteristics make it particularly vulnerable to overexploitation, as it is long-lived (up to 30 years), slow-growing, and doesn't reach sexual maturity until around 10 years of age. While improved management measures including reduced quotas and fishing effort controls have led to some recovery in recent years, the cumulative decline over three generations still qualifies the species for Vulnerable status under IUCN Red List criteria A 2d
 :::
@@ -418,7 +436,6 @@ The NBA 2025 assessment includes IUCN Red List assessments for kobs conducted as
 The trend in species IUCN Red List status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLI). The RLI is calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1, and the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. In 2025, sharks, rays and chimaeras, sparids, and corals were included in the RLI for the first time.
 
 Information about resource stock status is drawn from the Department of Forestry, Fisheries and Environment's State of Fishery Resources reports [@d2025a] to provide an overview of species stock status for fished taxa and examine main trends in marine resources over the assessment period.
-
 
 ## Acknowledgements
 

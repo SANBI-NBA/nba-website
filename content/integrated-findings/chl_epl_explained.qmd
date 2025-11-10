@@ -7,7 +7,7 @@ bibliography: intf_references.bib
 
 ## Summary {#summary}
 
-Ecosystem Protection Level (EPL) is an indicator that was developed and refined in South Africa between 2004 and 2025[@reyers2007]. It measures the degree to which ecosystem types are represented in the protected area network. The indicator has been used as a headline indicator in national reporting since 2005. Protection level is determined by calculating the proportion of each ecosystem type in a protected area, and evaluating this against a biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection. Ecosystem types are assigned one of four categories of protection: Well Protected - biodiversity target is met; Moderately Protected - at least half the biodiversity target is met; Poorly Protected - more than 5% of the biodiversity target is met, and Not Protected if less than 5% of the target is met.
+Ecosystem Protection Level (EPL) is an indicator that was developed and refined in South Africa between 2004 and 2025[@reyers2007]. It measures the degree to which ecosystem types are represented in the protected area network. The indicator has been used as a headline indicator in national reporting since 2005. Protection level is determined by calculating the proportion of each ecosystem type in a protected area, and evaluating this against a biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection. Ecosystem types are assigned to one of four categories, based on a set of predefined targets ranging from 16 to 32% (linked to the extent and condition of types within protected areas). Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moder­ately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP).
 
 ## Building blocks of the Ecosystem Protection Level indicator
 
@@ -21,11 +21,11 @@ EPL is calculated using protected areas, recognised under the National Environme
 
 ### Ecosystem targets
 
-In previous national assessments, targets for ecosystem protection level in the marine, freshwater and estuarine realms were set to 20% representation. With the publication the Global Biodiversity Framework (most notably Target 3) a 30% target has been adopted for the NBA 2025 ecosystem protection level indicator. The targets used in the terrestrial assessment are based on species-area curves per ecosystem type (targets range from 16% to 36%) [@desmet2004]; these remain in effect for NBA 2025.
+In previous national assessments, targets for ecosystem protection level in the marine, freshwater and estuarine realms were set to 20% representation. With the publication of the Global Biodiversity Framework (most notably Target 3), a 30% target has been adopted for the NBA 2025 ecosystem protection level indicator. The targets used in the terrestrial assessment are based on species-area curves per ecosystem type (targets range from 16% to 36%) [@desmet2004]; these remain in effect for NBA 2025.
 
 ## Ecosystem protection level index (EPLI)
 
-Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection level categories between time points. Broad speaking, the EPLI represents the mean of ordinal ranks assigned to each protection category and is defined as follows:
+Ecosystem protection level index (EPLI) calculation (Harris et al., in review) is based on the concept of the Red List Index of Species and tracks changes in protection level categories between time points. Broadly speaking, the EPLI represents the mean of ordinal ranks assigned to each protection category and is defined as follows:
 
 ::: {#eq-epli .equation}
 $$
@@ -51,7 +51,7 @@ Risk category ranks:
 
 -   Not Protected = 0
 
-EPLI scores range from 0 (all ecosystems not Protected) to 1 (all ecosystems classified as Well Protected), providing a clear and comparable measure of ecosystem protection across time and space. The EPLI can be disaggregated by South African biome for naitonal reporting, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
+EPLI scores range from 0 (all ecosystems not Protected) to 1 (all ecosystems classified as Well Protected), providing a clear and comparable measure of ecosystem protection across time and space. The EPLI can be disaggregated by South African biome for national reporting, or ecosystem functional group, aligning with the IUCN Global Ecosystem Typology [@Keith2020GET; @rowland2020] for global reporting.
 
 **Key publications**
 

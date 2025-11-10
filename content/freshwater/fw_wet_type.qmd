@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Inland Wetland Ecosystem Type" # Compulsory
+title: "Wetland Ecosystem Types" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -45,39 +45,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Summary {#summary}
+*South Africa’s globally recognised biodiversity richness also extends to inland wetlands. A wide range of climatic, geological and topographic settings have resulted in an exceptional diversity of wetland ecosystem types, from permanently saturated peatlands that accumulated in place over thousands of years to ephemeral salt pans harbouring newly described invertebrate species. In global terms, South Africa’s wetlands are small, with nearly 50% that are less than 1.5 hectares in size, but they are of outsized importance in a semi-arid context and they frequently function as an inter-connected network across a catchment. Wetlands provide vitally important benefits to people, such as improving water quality and controlling floods. They are water sources, habitats, and refuges for animals and people in times of drought.*
 
-**Use this section to summarise highlights or key messages of your page** Use bold text to highlight your main points.
-
-**Remember to use links to relevant sections elsewhere on the page**. To add a link, click on Insert \> Link. In the pop-up box, change the link to selection from URL to Heading, and select the heading of the section you want to link to. The display text will default to the header name. If you want to use different text, you need to tag your header. Select the header, and click on the three dots to the right. In the pop-up box, give the header a tag using the ID text box. The tag must start with #, e.g. #summary. Now you can link to it using the following syntax: [display text](#section-name). (Check how it is configured in Source view).
-
-South Africa's rivers are incredibly diverse and vital for our well-being. We have an interim typology in place and are currently at work on an updated national system to understand and manage our rivers as effectively as possible. The proposed river typology update will contribute significantly towards ensuring their long-term health and the benefits they provide to all South Africans.
-
-<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
-
-![Descriptive image captions. As in the 2018 synthesis report, photos get descriptive captions but are not numbered.](imgs/nba-banner.png){fig-align="center"}
-
-## Page body
-
-Organise this part of your webpage into sections and subsections as you see fit. Use it to give background, and present your results and discussions of results.
-
-Label main sections using Header 2. Header 1 is the style reserved for page titles at the top - do not use it anywhere else on the page. Use consecutive higher Header numbers to label subsections.
-
-### Subsection 1 (Header 3)
-
-#### Subsection 2 (Header 4)
-
-etc.
-
-## Inserting footnotes and references
-
-### Footnotes
-
-Use the built-in footnotes function to add notes to your text where necessary. Use notes sparingly - mainly to clarify terms.
-
-Some text with a footnote[^1].
-
-[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
+We have an interim typology in place and are currently at work on an updated national system to understand and manage our wetlands as effectively as possible. The proposed updated typology update will contribute significantly towards ensuring their long-term health and the benefits they provide to all South Africans.
 
 ### References
 
@@ -189,27 +159,55 @@ Download the data here.
 
 ## Information boxes
 
-Additional information can be added in collapsible information boxes using [callout blocks](https://quarto.org/docs/authoring/callouts.html). The callout block is styled using the scss file associated with this template, therefore it does not look exactly like the standard Quarto callouts. If you want to cross reference the box in the text, you need to give it a uniqe name starting with **\#** this will allow you to reference it as [Box 1](#box-1).
+::: {#box-1 .callout-note .freshwater title="Box 1. xxxxxxxx" collapse="true"}
+Prepared by Phumla Mayekiso, Jackie Jay and Nancy Job.
 
-::: {#box-1 .callout-note collapse="true"}
-## Box title
+Wetlands of International Importance, designated in accordance with the Ramsar Convention on Wetlands, are places of globally significant biodiversity and embody South Africa's commitment to conserve and ensure the wise use of its wetland ecosystems for the benefit of all humanity.
 
-Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+\[Landscape photo\]
+
+The total area under the Ramsar Convention in South Africa is approximately 300 000 ha or 0.5% of total wetlands in South Africa. Although Ramsar sites range widely from one large wetland to sites with multiple wetlands, occasionally with a broad mix of estuary, river, inland wetland and marine aquatic ecosystems all within one designated site, only inland wetlands are calculated per site for the purposes of this report.
+
+Figure 4.1. Ramsar sites of South Africa
+
+Ramsar wetland sites are provided a level of protection in that they require management plans and are afforded greater protection through higher water allocations through the National Water Act (Chapter 3). The majority (92%) of Ramsar inland wetlands fall within Protected Areas. They amount to 14 133 ha (x%) of the total of inland wetland wetlands within protected area in South Africa and x% of the extent of all inland wetlands. Approximately 936.6 ha (7.4%) of Ramsar inland wetlands do not overlap with the formal protected area network.
 :::
+
+::: {.callout-note .freshwater title="Box 4. Wetlands of International Importance (Ramsar Wetlands)" collapse="true"}
+Prepared by Phumla Mayekiso, Jackie Jay and Nancy Job.
+
+Wetlands of International Importance, designated in accordance with the Ramsar Convention on Wetlands, are places of globally significant biodiversity and embody South Africa's commitment to conserve and ensure the wise use of its wetland ecosystems for the benefit of all humanity.
+
+\[Landscape photo\]
+
+The total area under the Ramsar Convention in South Africa is approximately 300 000 ha or 0.5% of total wetlands in South Africa. Although Ramsar sites range widely from one large wetland to sites with multiple wetlands, occasionally with a broad mix of estuary, river, inland wetland and marine aquatic ecosystems all within one designated site, only inland wetlands are calculated per site for the purposes of this report.
+
+Figure 4.1. Ramsar sites of South Africa
+
+Ramsar wetland sites are provided a level of protection in that they require management plans and are afforded greater protection through higher water allocations through the National Water Act (Chapter 3). The majority (92%) of Ramsar inland wetlands fall within Protected Areas. They amount to 14 133 ha (x%) of the total of inland wetland wetlands within protected area in South Africa and x% of the extent of all inland wetlands. Approximately 936.6 ha (7.4%) of Ramsar inland wetlands do not overlap with the formal protected area network.
+:::
+
+## Approach to develop this input layer
+
+[Ecosystem Protection Level](../integrated-findings/chl_epl_explained.html) \[Harris et al. (in review)\] measures
+
+## Acknowledgements
+
+Reviewers of this web page xx
 
 ## Technical documentation
 
-The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
+**Code repository**: https://github.com/askowno/EPL_wetl
 
--   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+**Key Publications**:
 
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.
 
--   **Technical report**: Add link to technical report in PDF format
+**Technical reports**:
 
-**Other publications**
+## Recommended citation
 
-Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+Job, N.M., Skowno, A.L xx. 2025. Ecosystem protection level: Freshwater (inland aquatic) realm synthesis. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
 
 ## References
 

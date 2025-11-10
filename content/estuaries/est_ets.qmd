@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem threat status" # Compulsory
+title: "Ecosystem Threat Status" # Compulsory
 subtitle: "Estuarine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -65,9 +65,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* 
-
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
 ::::: columns
 ::: {.column width="50%"}
@@ -102,16 +100,16 @@ google-scholar: true
 <!-- creates spaces -->
 
 \
-<!-- The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.  -->
-
 
 ## Ecosystem threat status assessment
 
-\
+
+The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.
 
 About 59% of the 22 estuary types are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
 
 Multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
+
 
 
 ```{r}
@@ -181,7 +179,8 @@ nba_plot_comb(ets_combined,
 
 tbl <- ets_combined %>% 
   mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
-         metric = str_replace_all(metric, "count", "Count")) %>% 
+         metric = str_replace_all(metric, "count", "Type"),
+         metric = str_replace_all(metric, "perc", "Percentage")) %>% 
   arrange(zone) %>% 
   select(zone, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Least Concern`) %>%
   mutate(across(where(is.numeric), round)) %>% 
@@ -267,6 +266,7 @@ nba_tbl_colr(DF = ets,
 
 ```
 
+
 ## Approach
 
 The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments.
@@ -289,7 +289,6 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 
 
 
-
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -302,7 +301,8 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 
 ### Code repositories
 
--   [**Threat status assessment**](https://github.com/askowno/RLE_est/tree/main)
+-  [Threat status assessment](https://github.com/askowno/RLE_est)
+
 
 
 ### Key publications
