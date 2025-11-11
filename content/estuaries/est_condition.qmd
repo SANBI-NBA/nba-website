@@ -69,9 +69,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-
 *Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From a ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.*
-
 
 ------------------------------------------------------------------------
 
@@ -80,7 +78,6 @@ google-scholar: true
 ::::: columns
 ::: {.column width="50%"}
 <center>
-
 
 | [00%]{.inline-style-threatened}
 | of 220 ecosystem types
@@ -96,7 +93,6 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-
 | [00%]{.inline-style-not-protected}
 | of 220 ecosystem types
 | [Not protected]{.inline-style-indicator}
@@ -110,9 +106,6 @@ google-scholar: true
 :::::
 
 ------------------------------------------------------------------------
-
-
-
 
 ```{r}
 #| label: fig-mpa_map
@@ -171,16 +164,11 @@ Ongoing efforts to develop OECMs and stewardship approaches for estuaries presen
 
 ![Descriptive image captions. As in the 2018 synthesis report, photos get descriptive captions but are not numbered.](imgs/nba-banner.png){fig-align="center"}
 
-
 ### References
 
 See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references. The references.bib file in the `quarto` folder contains some example references:
 
-
-
 For a chapter or section in a book that is part of a series (e.g. Vegetation of South Africa) use the `@inproceedings` format[@vegsa2006]
-
-
 
 Add an appropriate descriptive caption next to **fig-cap.**
 
@@ -193,16 +181,12 @@ nbaR::nba_plot(nbaR::NBA_example_thr_data, `OVERALL types`, 2:5, CHRT = "bar", N
 
 ```
 
-
-
 ### Combine figures and related data
 
 It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
 
-
 :::: panel-tabset
 ## Figure
-
 
 ```{r}
 #| label: fig-epl_bargraphs
@@ -233,10 +217,7 @@ nba_plot_comb(epl_combined,
 
 ```
 
-
-
 ## Data
-
 
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
@@ -350,8 +331,6 @@ Protection Level is an indicator developed in South Africa that measures the rep
 
 The PA target was historically set at 20% for marine and estuarine ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework - the protected areas target was increased to 30% in the EPL calculations (previous time points (2018) were recalculated using this higher target). Ecosystem condition data (van Niekerk et al., 2025) for each time point allow for only good condition estuaries without heavey fishing pressure (especially systems under severe gill-netting pressure) to be considered representative for Well Protected status; while for Moderately Protected, Poorly Protected and Not Protected the condition of the estuaries is used to calculate their contribution to meeting targets such that higher integrity / condition estuaries contribute more to meeting protected areas targets than low integrity / condition estuaries.
 
-
-
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -361,7 +340,6 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 <!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
-
 
 ### Code repositories
 
@@ -383,7 +361,6 @@ The last section of your page should contain links to technical documentation of
 
 Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
 
-
 ## Recommended citation
 
 ```{r}
@@ -404,10 +381,7 @@ nba_citation(meta)
 
 ```
 
-
-
 ## References
-
 
 ::: {#refs}
 :::

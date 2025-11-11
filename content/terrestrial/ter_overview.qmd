@@ -4,11 +4,14 @@ subtitle: "Terrestrial realm"
 
 title-block-banner: "#617016" 
 title-block-banner-color: white 
-
+image: imgs/card_ter_Andrew-Skowno.png
+description: |
+  Findings of the NBA presented by realm
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
+  
 # Remember to rename the default .bib file and change the name here
 bibliography: terrestrial.bib
 

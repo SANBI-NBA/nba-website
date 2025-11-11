@@ -3,6 +3,9 @@ title: "Overview"
 subtitle: "Estuarine Realm"
 title-block-banner: "#028A85" #imgs/overview_banner.jpg #
 title-block-banner-color: white
+image: imgs/card_est_iSimangalisoWetlandPark.png
+description: | 
+  Findings of the NBA presented by realm
 bibliography: references.bib
 ---
 
@@ -74,17 +77,15 @@ More than 54% of South Africa's estuaries are relatively healthy, but this amoun
 
 This represent an overall 1% decline in Natural/Near Natural estuaries and 7% increase in degraded extent. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.
 
+::::: grid
+::: {.g-col-lg-7 .g-col-12}
 Estuaries require increased protection and interventions across multiple sectors to arrest the ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining & farming).
 
-### *ADD BUBBLE MAP OF CONDITION*
-
-::::: grid
-::: {.g-col-lg-8 .g-col-12}
 There are many interacting pressures cumulatively affecting estuarine ecosystems and species. The main pressures impacting estuarine biodiversity include escalating gillnet pressure, declining water quality, increased flow reduction and land-use change in EFZ (coastal development, mining & farming).
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of ecosystem degradation showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/marine_condition_map.png){style="width:400;"}
+::: {.g-col-lg-5 .g-col-12}
+![Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand.](imgs/cnd.png){.lightbox}
 :::
 :::::
 
@@ -101,8 +102,8 @@ Overall multiple interventions are required to avoid further decline in health. 
 The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment (link to KMA2). 108
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Map of 31 cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure.](imgs/cum_press_low_res.jpeg){style="width:400;"}
+::: {.g-col-lg-4 .g-col-12}
+![Map of 31 cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure.](imgs/cum_press_low_res.jpeg){.lightbox}
 :::
 :::::
 
@@ -120,14 +121,7 @@ The above measures are proactive in that they set management objectives for estu
 
 There is an urgent need to strengthen bilateral arrangements between sectors dealing with Environment, Water, Fishing & Mining to ensure optimum resource allocation. In many of the above sectors, management measures and processes, biodiversity requirements were not met, e.g. flow allocation to the Mlalazi Estuary in the Thukela MPA was not sufficient to prevent increased constricted/closed mouth conditions and associated poor water quality. Given that estuarine management straddles multiple sectors, a more robust intergovernmental engagement could assist in ensuring a balance in sectoral requirements and preventing mandate conflict between departments.
 
-```{r}
-
-#| label: fig-kromme
-#| fig-cap:  Kromme Estuary with extensive sal tmarsh @Riaan Weitz
-
-
-knitr::include_graphics("imgs/est_kromme_saltmarsh3.png")
-```
+![Kromme Estuary with extensive salt marsh © Riaan Weitz.](imgs/est_kromme_saltmarsh3.png)
 
 ## Key publications
 

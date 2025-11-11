@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Types" 
-subtitle: "Estuarine Realm" 
+title: "Ecosystem types" 
+subtitle: "Estuarine realm" 
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -201,7 +201,7 @@ South Africa's 290 estuaries are categorised into nine functional types, namely 
 
 ```{r}
 #| label: fig-estuary-types
-#| fig-cap:  Examples of South African estuary types
+#| fig-cap:  Examples of South African estuary types.
 
 
 knitr::include_graphics("imgs/est_ecotype_map.png")
@@ -272,20 +272,15 @@ library(sf)
 est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE)
 
 est_ecotypes %>%
+  rename(`Estuary name` = NAME, 
+         `Estuary type` = type, 
+         `Estuary functional type` = zone, 
+         `Protection level` = protection_level,
+         `Threat status` = threat_status) %>% 
   gt() %>%
-  nbaR::nba_tbl_theme(HEADER = "Estuarine") 
-
-# %>% 
-#   gt::tab_style(style = list(gt::cell_text(weight = "bold")),
-#     locations = cells_body(
-#       columns = Total
-#     ))%>% 
-#   gt::tab_style(style = list(gt::cell_text(color  = "white")),
-#     locations = cells_column_labels() ) %>% 
-#   gt::tab_style(style = list(gt::cell_text(weight = "bold")),
-#     locations = cells_body(
-#       rows  = 10
-#     ))
+  nbaR::nba_tbl_theme(HEADER = "Estuarine") %>%
+  gt::tab_style(style = list(gt::cell_text(color  = "white")),
+    locations = cells_column_labels() )
   
 ```
 :::
@@ -305,7 +300,7 @@ est_ecotypes %>%
 
 -   **Estuarine Ecosystem Map**: [BGIS](https://bgis.sanbi.org/Projects/Detail/2246)
 
-### Key Publications
+### Key publications
 
 -   Van Niekerk, L, Adams JB, James, N, Lamberth S, Mackay F, Rajkaran A, Turpie J, Weerts S, Whitfield AK. 2020. An Estuary Ecosystem Classification that encompasses biogeography and a high diversity of types in support of protection and management. *African Journal of Aquatic Science*, 45: 199-216. doi: <https://doi.org/10.2989/16085914.2019.1685934>
 

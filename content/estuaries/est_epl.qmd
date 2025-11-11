@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Protection Level" 
+title: "Ecosystem protection level" 
 subtitle: "Estuarine realm" 
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -121,7 +121,6 @@ google-scholar: true
 :::
 
 ::: {.column width="50%"}
-
 <center>
 
 | [36%]{.inline-style-moderately-protected}
@@ -137,7 +136,6 @@ google-scholar: true
 :::::
 
 ------------------------------------------------------------------------
-
 
 ```{r}
 #| label: fig-mpa_map
@@ -161,7 +159,6 @@ Since 2011 there has been erosion of protection in historical protected areas ca
 
 An investment in estuarine protection is needed in ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate are least protected.
 
-
 ```{r}
 #| label: fig-est_epl_map
 #| fig-cap: Estuarine ecosystem type protection level.
@@ -179,7 +176,6 @@ knitr::include_graphics("imgs/epl_with_donut.png")
 
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
-
 There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
 
 Several under protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi.
@@ -196,6 +192,8 @@ Ongoing efforts to develop OECMs and stewardship approaches for estuaries presen
 #| echo: false
 #| fig-cap: NEEDS A CAPTION
 #| out-width: 100%
+#| classes: plain
+
 
 library(gt)
 library(nbaR)
@@ -227,11 +225,10 @@ nba_plot_comb(epl_combined,
 #| echo: false
 #| tbl-cap: NEEDS A CAPTION
 #| out-width: 100%
-
+#| classes: plain
 
 ##must round values
 
-library(gt)
 
 tbl <- epl_combined %>% 
   mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
@@ -240,6 +237,7 @@ tbl <- epl_combined %>%
   arrange(zone) %>% 
   select(zone, metric, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>%
   mutate(across(where(is.numeric), round)) %>% 
+  #mutate(across(where(is.numeric), if_else(metric == "Percentage", paste(., "%")))) %>% 
   gt::gt(
     rowname_col = "metric",
     groupname_col = "zone",
@@ -273,14 +271,11 @@ While the larger and more biodiversity rich estuaries are undoubtedly protection
 
 It is increasingly evident that protected areas won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures (OECMs) and/or Stewardship offer new opportunities for a broader diversify of conservation models to contribute to marine protection. Lastly, increasing extent of protection alone will not advance estuarine ecosystems to well protected. The condition of ecosystems in protected areas needs improvement.
 
+::: {#box-eco_tbl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-epl
 #| tbl-cap: NEEDS A CAPTION
-
-# library(here)
-#library(gt)
-library(reactable)
-library(dplyr)
+#| classes: plain
 
 
 # load data
@@ -293,19 +288,27 @@ epl <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$"
                                  "Poorly Protected",
                                  "Not Protected"),
                       ordered = TRUE)) %>%
-  arrange(protection_level, NAME) 
+  arrange(protection_level, NAME) %>% 
+  rename(`Estuary name` = NAME, 
+         `Estuary type` = type, 
+         `Estuary functional type` = zone, 
+         `Protection level` = protection_level)
 
-nba_tbl_colr(DF = epl,
-             COL = protection_level,
+nba_tbl_colr(epl,
+             COL = `Protection level`,
              HEADER = "Estuarine") %>%
   tab_options(container.height = px(550),
-              container.overflow.y = TRUE) %>% 
+              container.overflow.y = TRUE) %>%
   tab_style(
     style = cell_text(color = "white"),
     locations = cells_column_labels()
   )
 
+
+
 ```
+:::
+
 
 ## Approach
 
@@ -315,17 +318,10 @@ Using as input data the South African Protected Areas Database (SAPAD) 2024Q4 (D
 
 Estuarine Condition (Health) scores (0-100) are assigned to Department of Water and Sanitation Present Ecological Status (PES) categories (A-F) and NBA Modification categories (Natural - Severely modified) according to the table below.
 
-#INSERT TABLE WITH HEALTH CATEGORIES: est_ets_cat.csv
-
-
 ```{r}
 #| label: tbl-ets_cat
 #| tbl-cap: NEEDS A CAPTION
 
-# library(here)
-#library(gt)
-library(reactable)
-library(dplyr)
 
 
 # load data
@@ -372,7 +368,7 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 
 ### Code repositories
 
-- [Protection level assessment](https://github.com/askowno/EPL_est)
+-   [Protection level assessment](https://github.com/askowno/EPL_est)
 
 ### Key publications
 

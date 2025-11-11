@@ -3,6 +3,9 @@ title: "Overview"
 subtitle: "Marine"
 title-block-banner: "#02268A" #imgs/overview_banner.jpg #
 title-block-banner-color: white
+image: imgs/card_mar_Eve_Marshall.png
+description: | 
+  Findings of the NBA presented by realm
 ---
 
 ```{r error=FALSE}
@@ -41,7 +44,7 @@ title-block-banner-color: white
 | [Not protected]{.inline-style-indicator}
 
 | [36%]{.inline-style-threatened}
-| of 496 taxa assessed
+| of 506 taxa assessed
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -63,15 +66,15 @@ Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly
 
 Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk ([Key Message A2](../key-messages/kma2.qmd)).
 
-More than 80% of South Africa's 163 marine ecosystem types now have some representation in the MPA network, but only 20% are Well Protected ([Key Message B4](../key-messages/kmb4.qmd)). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.
+More than 80% of South Africa's 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected ([Key Message B4](../key-messages/kmb4.qmd)). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.
 
 Increasing the extent of South Africa’s marine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of marine ecosystems in MPAs also needs improvement ([Key Message C2](../key-messages/kmc2.qmd)) for ecosystem types to advance to Well Protected status. Ocean governance also needs to better consider and involve people in conservation initiatives ([Key Message C1](../key-messages/kmc1.qmd)), diversify protection models, and address issues that undermine the legitimacy of conservation areas.
 
-In the marine realm, 17% of ecosystem types are both highly threatened and under protected (see [intersection of marine threat status and protection level page](marine_ets_epl.qmd)). These ecosystem types are found on the West Coast, the western Agulhas Bank shelf edge, parts of the Agulhas Bank and parts of the KwaZulu-Natal Bight.
+In the marine realm, 17% of ecosystem types are both highly threatened and under protected. These ecosystem types are found on the West Coast, the western Agulhas Bank shelf edge, parts of the Agulhas Bank and parts of the KwaZulu-Natal Bight (see [intersection of marine threat status and protection level page](marine_ets_epl.qmd#fig-rle_map)).
 
 ```{r}
 #| label: fig-eco_map
-#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined bentho-pelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) and the key is available on the [marine realm ecosystem types](marine_ecosystems.qmd) page.
+#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined benthopelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246) and the key is available on the [marine realm ecosystem types](marine_ecosystems.qmd) page.
 #| echo: false
 
 knitr::include_graphics("imgs/benthic_pelagic_map_panel.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg")
@@ -84,9 +87,11 @@ Marine species are assessed in terms of their stock status and/or threat status.
 
 There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management ([Key Message A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and west coast rock lobster are Endangered. Illegal fishing plays a key role in the poor status of these species ([Key Message A6](../key-messages/kma6.qmd)).
 
-![Caption to be added](imgs/spp_plate_overview.png)
 
-Of the 494 marine species assessed using the IUCN Red List of Threatened Species criteria and thresholds, 36% are considered threatened ([Key Message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+
+Of the 506 marine species assessed using the IUCN Red List of Threatened Species criteria and thresholds, 36% are considered threatened ([Key Message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+
+![Several marine invertebrate resources, seabreams and shark and rays were assessed as threated in 2025. West coast rocklobster are Endangered(© Geoff Spiby); dageraad are Critically Endangered (© Steve Benjamin); Bull sharks are Vulnerable (© Fiona Erst).](imgs/overview_species.png)
 
 Sharks, rays and chimaeras are one of the most threatened groups across all realms. A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 [(may need update)]{.update} South African shallow reef building corals assessed globally, 34% are threatened by climate change ([Key Message A1](../key-messages/kma1.qmd)).
 
@@ -102,7 +107,7 @@ Fishing, petroleum activities and shipping are widespread sectors resulting in m
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures.](imgs/cum_press_low_res.png){.lightbox}
+![Map of 31 cumulative pressures in South Africa's ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. Click to expand.](imgs/cum_press_low_res.png){.lightbox}
 :::
 :::::
 
@@ -116,7 +121,9 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state.](imgs/condition_with_donut.png){.lightbox}
+
+![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand.](imgs/condition.png){.lightbox}
+
 :::
 :::::
 

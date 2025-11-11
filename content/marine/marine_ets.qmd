@@ -390,12 +390,13 @@ nba_plot_comb(ets_combined,
 #| echo: false
 #| tbl-cap: Threat status of marine ecosystem types by functional group. Note that extent figures have been rounded.
 #| out-width: 100%
+#| classes: plain
 
 library(gt)
 library(dplyr)
 
 tbl <- ets_combined %>% 
-  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+  mutate(metric = str_replace_all(metric, "extent", "Extent (km<sup>2</sup>)"),
          metric = str_replace_all(metric, "count", "Count")) %>% 
   arrange(ecosystem_functional_type_getl3) %>% 
   select(ecosystem_functional_type_getl3, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Near Threatened`, `Least Concern`) %>%
@@ -417,7 +418,9 @@ tbl <- ets_combined %>%
 
 tbl
 ```
+
 :::
+
 ::::
 
 The six ecosystem types that are **Critically Endangered** cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling that persists over much of the extent of this ecosystem type [@currie2023] in addition to flow reduction. Similarly, the KwaZulu-Natal Bight Muddy Inner Shelf has been modified by flow reduction and the demersal inshore crustacean inshore fishery that has subsequently ceased. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort leading to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 [@sink2019] under IUCN RLE Criterion C/D with four additional small ecosystem types listed under this category in 2025 when strictly applying IUCN RLE Criterion B.
@@ -460,7 +463,7 @@ The application of the IUCN global standards supported a more comprehensive unde
 
 -   [**Marine ecosystem threat status assessment**](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
-### Data
+### Data {#data2}
 
 [Table of IUCN RLE threat status and basis](data/epl_ets_ecotypes.csv)
 

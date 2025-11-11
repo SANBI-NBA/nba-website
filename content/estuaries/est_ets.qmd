@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Threat Status" # Compulsory
+title: "Ecosystem threat status" # Compulsory
 subtitle: "Estuarine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -43,7 +43,7 @@ affiliations:
     name: Council for Scientific and Industrial Research
   - id: nmu1
     number: 2
-    name: Institute for Coastal and Marine Research (CMR), Nelson Mandela University
+    name: Nelson Mandela University
   - id: sanbi1
     number: 3
     name: South African National Biodiversity Institute
@@ -103,14 +103,11 @@ google-scholar: true
 
 ## Ecosystem threat status assessment
 
-
 The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.
 
 About 59% of the 22 estuary types are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
 
 Multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
-
-
 
 ```{r}
 #| label: fig-ets_map
@@ -125,10 +122,8 @@ knitr::include_graphics("imgs/ets_with_donut.png")
 
 ```
 
-
 \
 \
-
 
 :::: panel-tabset
 ## Figure
@@ -138,6 +133,7 @@ knitr::include_graphics("imgs/ets_with_donut.png")
 #| echo: false
 #| fig-cap: LARA PLEASE ADD CAPTION HERE
 #| out-width: 100%
+#| classes: plain
 
 library(gt)
 library(nbaR)
@@ -171,7 +167,7 @@ nba_plot_comb(ets_combined,
 #| echo: false
 #| tbl-cap: LARA PLEASE ADD CAPTION HERE
 #| out-width: 100%
-
+#| classes: plain
 
 ##must round values
 
@@ -211,13 +207,15 @@ tbl %>%
 :::
 ::::
 
-
 \
 \
 
+::: {#box-eco_tbl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-ets
 #| tbl-cap: NEEDS A CAPTION
+#| classes: plain
+
 
 # library(here)
 #library(gt)
@@ -235,16 +233,24 @@ ets <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$"
                                  "Vulnerable",
                                  "Least Concern"),
                       ordered = TRUE)) %>%
-  arrange(threat_status, NAME) 
+  arrange(threat_status, NAME) %>% 
+  rename(`Estuary name` = NAME, 
+         `Estuary type` = type, 
+         `Estuary functional type` = zone, 
+         `Threat status` = threat_status)
 
 nba_tbl_colr(DF = ets,
-             COL = threat_status,
+             COL = `Threat status`,
              HEADER = "Estuarine") %>%
   tab_options(container.height = px(550),
               container.overflow.y = TRUE) %>% 
     tab_style(
     style = cell_fill(color = "#028A85"),
     locations = cells_column_labels(columns = everything())
+  )%>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
   )
 
 # # create the table
@@ -265,6 +271,7 @@ nba_tbl_colr(DF = ets,
 #     )))
 
 ```
+:::
 
 
 ## Approach
@@ -287,8 +294,6 @@ Each of the 22 estuary ecosystem types were assigned to one of the four risk cat
 
 A more detailed explanation of the assessment method can be found at [RLE explanation page](../integrated-findings/chl_rle_explained.qmd).
 
-
-
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -301,9 +306,7 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 
 ### Code repositories
 
--  [Threat status assessment](https://github.com/askowno/RLE_est)
-
-
+-   [Threat status assessment](https://github.com/askowno/RLE_est)
 
 ### Key publications
 

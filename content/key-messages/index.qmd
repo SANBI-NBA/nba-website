@@ -28,7 +28,7 @@ Each message includes a summary paragraph with a confidence statement. The messa
 
 The NBA provides a summary of the state of biodiversity at a point in time. It cannot list every action or intervention; instead, it serves as a strategic tool that should stimulate discussions among stakeholders and inform sector specific strategies and action plans, cross-sectoral planning, research strategies, scenario planning, and co-produced response strategies that follow from the NBA.
 
-## CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people
+## CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people {#kma}
 
 This cluster highlights the key pressures on South Africa's biodiversity across realms, and how these pressures have impact on the numerous benefits people derive from biodiversity.
 
@@ -46,7 +46,7 @@ This cluster highlights the key pressures on South Africa's biodiversity across 
 
 [A7. Freshwater flows from land to sea are essential for coastal ecosystems, species and communities](kma7.qmd)
 
-## CLUSTER B: Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all
+## CLUSTER B: Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all {#kmb}
 
 This cluster relates to the status of South Africa's biodiversity, using national and international headline indicators. These messages encourage intensive effort towards ensuring a society living in harmony with nature, where biodiversity conservation and sustainable use ensure healthy ecosystems, with improved benefits that are fairly and equitably shared for present and future generations.
 
@@ -60,7 +60,7 @@ This cluster relates to the status of South Africa's biodiversity, using nationa
 
 [B5. Scientific and well-documented programmes are needed for ecosystem restoration and species recovery](kmb5.qmd)
 
-## CLUSTER C: Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people
+## CLUSTER C: Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people {#kmc}
 
 This cluster speaks to three all-inclusive and over-arching actions that are needed to accelerate the calls to action expressed in each message in cluster A and B.
 

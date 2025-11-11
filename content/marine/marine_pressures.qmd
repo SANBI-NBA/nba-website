@@ -308,9 +308,9 @@ In general, updating and improvement of pressure data sets is required. Outdated
 
 ![South African fisheries provide food, employment and revenue and are making progress in addressing impacts on marine biodiversity. © Peter Chadwick, African Conservation Photographer.](imgs/045_Fisheries_©PeterChadwick_AfricanConservationPhotographer.png){width="80%" fig-align="left"}
 
-::: {#box1 .callout-note .marine collapse="true"}
+::: {#box1 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Fishing incorporates at least 19 South African fishing sectors representing industrial, commercial, small-scale, artisanal and recreational fisheries, with a variety of methods employed to target a wide range of fish, invertebrate and seaweed resources.
-
+\
 Fishing methods include trawling (demersal and mid-water), longlining (demersal and pelagic), purse-seining, linefishing, squid jigging, trap fishing, hand harvesting, beach seining, and wet and dry kelp harvesting.
 
 More than 700 marine species are directly affected by fishing in South Africa [@vanderbank2019], with bycatch a key concern for trawl and longline fisheries. There have been improvements in managing incidental mortalities of seabirds, but bycatch of sharks, skates and rays is a driver of the threatened status of this group ([shark species page](../species/sp_sharks.qmd)) with work underway to support improved management [@departmentofforestryfisheriesandtheenvironment2022]. More information on fisheries impacts on stock status or species threat status is reported in the [species page for the marine realm](../species/marine_sp.qmd).
@@ -328,14 +328,14 @@ Overfishing can also impact genetic biodiversity of fishery species by reducing 
 
 ### Lethal shark control
 
-:::: {#box2 .callout-note .marine collapse="true"}
+:::: {#box2 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## South Africa has employed lethal shark control measures in the province of KwaZulu-Natal since 1952 to protect bathers from the risk of shark attack.
-
+\
 These measures, comprising gill nets and baited drum lines, are implemented to reduce the local or resident population of sharks in the vicinity of certain beaches, thereby reducing the probability of an ocean user encountering a shark. These measures are implemented between Richards Bay and Port Edward with 13.5 km of nets and 177 baited drumlines deployed in summer and 0.2 km of nets and 270 baited drumlines in winter ([See Improvements in shark control measures](#box3)). Biodiversity concerns associated with the shark control program include the overexploited and threatened status of several target and bycatch species of cartilaginous fishes ([shark, rays, and chimeras](../species/sp_sharks.qmd)), catches of turtles and marine mammal species ([marine species page](../species/marine_sp.qmd)) and potential ecosystem effects linked to the removal of predatory sharks. Of the 14 species of large sharks regularly caught by the KwaZulu-Natal sharks board, 11 are threatened. All of the affected marine mammal and turtle species are listed as Threatened or Protected species under the National Environmental Management: Biodiversity Act.
 
 Lethal shark control measures add to the pressure on elasmobranchs from other fisheries, particularly longlining and trawl fisheries, but ecosystem effects from shark control programs are difficult to quantify and remain poorly understood. Historical and current nets were considered in the assessment of ecosystem condition, noting ongoing efforts to reduce the ecological impacts of shark control measures in KwaZulu-Natal.
 
-::: {#box3 .callout-note .box-within-box collapse="false"}
+::: {#box3 .callout .box-within-box collapse="false"}
 ## Box 1. Improvements in shark control measures
 
 The KwaZulu-Natal Sharks Board has taken several steps to reduce the impacts of lethal shark control measures on marine species. These include reducing the average length of nets deployed per annum by 87% from a peak of 44.5 km in 1992 to 5.7 km in 2025. Nets have been replaced with baited drum lines in several areas and a seasonal targeting approach to reduce negative impacts while maintaining bather safety. Nets are removed during the annual sardine run in winter to reduce marine mammal entanglements and mortalities on sharks and other species. Experimental work on mesh size, acoustic pingers and other innovations to reduce impacts have also been conducted and there is ongoing research to improve the evidence base for shark management. Such measures have resulted in an 80% reduction in total catch and substantially reduced mortalities of sharks and other marine species (KZN Sharks Board pers. comm.). A network of researchers tag sharks and use satellite and acoustic tracking to better understand shark movement. Such data are useful in better understanding shark distribution and risks in terms of location, season and other temporal trends.
@@ -348,9 +348,9 @@ Other provinces have implemented non-lethal measures that have little to no impa
 
 ### Coastal and offshore mining
 
-::: {#box4 .callout-note .marine collapse="true"}
+::: {#box4 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Coastal and offshore mining is increasing in South Africa, targeting diamonds, heavy minerals and sand, and depending on the method of extraction, can have moderate to very severe negative impacts on biodiversity.
-
+\
 Impacts include habitat destruction and modification (including beach morphodynamic type), sediment suspension and increased turbidity, pollution, noise, changes in the distribution and feeding habits of species and the introduction of alien species. Ecosystems that are impacted include beaches and shallow and deep benthic ecosystems on the shelf [@biccard2018; @rangel-buitrago2023; @manona2024].
 
 Suspended and deposited sediments caused by operations decrease feeding efficiency of filter feeders and clog fish gills, while increased turbidity from mine tailings can reduce primary production with reported changes in community structure. The potential for phosphate mining to commence remains a concern because the impacts of this activity could severely modify large areas of ecosystems and could jeopardise the sustainability of fisheries. The cumulative impacts of mining are a concern with increasing mining activity along South Africa’s west coast and shelf. Currently, there is no marine biodiversity information in the National Web Based Environmental Screening Tool used when applying for environmental authorisation, and limited information for the marine realm in the biodiversity and mining guidelines. <!--# what screening tool? I assume you mean the EIA screening? Needs something here to make it clear -->
@@ -360,9 +360,9 @@ Suspended and deposited sediments caused by operations decrease feeding efficien
 
 ![Pretroleum infrastructure on the Agulhas bank. © Lara Atkinson.](imgs/oil_gas.png){width="80%" fig-align="left"}
 
-::: {#box5 .callout-note .marine collapse="true"}
+::: {#box5 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Marine petroleum activities in South Africa were initiated in 1969 with more than 300 offshore wells drilled to date and ongoing exploration by seismic survey.
-
+\
 The impacts of petroleum activities span the impacts associated with exploration, production and transport. Petroleum production has been suspended at the Oribi/Oryx and Sable oil fields (Block 9 off Mossel Bay) and the F-A Gas field and satellites but field development plans are underway at the Ibhubesi gas field off Hondeklipbaai. While production has largely decreased in recent years in South Africa, exploration activities have expanded into deeper water (@fig-seismic) and there has been increasing concern about the negative impacts of seismic surveys, in particular, on marine species and ecosystems. This is because of the intense and widespread noise that these surveys generate, which can have varied, far-reaching and cumulative impacts on multiple species and ecosystem processes. A cumulative map of seismic surveys was recently compiled and there is some progress in planning for the integration of underwater noise into assessments and planning ([(Sink et al. 2024 seismic report)]{.mark}). [**See Pollution section**](#pollution).
 
 Biodiversity impacts associated with drilling and production include habitat loss from infrastructure installation; chemical pollution from water- and oil-based drilling muds, noise and light pollution. These impacts can cause physical and physiological damage to marine organisms, disrupt feeding, communication and migration and alter species distributions and aggregations. Petroleum infrastructure including pipelines for transport can also introduce, provide refuge for and facilitate the spread of alien and invasive species. Oil spills, leaks and blowouts pose serious risks with the potential to cause catastrophic impacts to marine biodiversity by oiling marine organisms, degrading ecosystems, and disrupting ecological processes, while also causing health risks to people. The chemical dispersants used in cleaning up oil spills can also impact marine life, and in some cases, are considered more toxic than the oil itself.
@@ -370,25 +370,25 @@ Biodiversity impacts associated with drilling and production include habitat los
 
 ### Shipping
 
-::: {#box6 .callout-note .marine collapse="true"}
+::: {#box6 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Shipping is a widespread source of pressure in South Africa’s marine realm and is a key source of underwater noise and other pollution.
-
+\
 South Africa is a maritime nation with considerable ship traffic and one of the highest concentrations of cargo ship and oil tanker traffic globally. While shipping is the dominant form of underwater noise in the ocean, affecting a broad range of marine species [@duarte2021], there are also other environmental and biodiversity impacts, including other forms of pollution (e.g. chemical pollution, accidental oil spills, air pollution and other), the introduction of invasive alien species through ballast water discharge and hull fouling, and ship strikes (collisions between vessels and large marine animals). South Africa still needs to promulgate the Ballast Water Act which has been in Bill form since 2013. More effective management of shipping in noise sensitive areas such as marine protected areas, including by regulating the maximum speed of vessels, can strengthen protection by reducing underwater noise levels and the risk of collisions. [**See Pollution section**](#pollution).
 :::
 
 ### Coastal development
 
-::: {#box7 .callout-note .marine collapse="true"}
+::: {#box7 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Coastal development, including port development, is a significant cause of pressure on coastal and marine ecosystems, leading to ecosystem loss, interruption of physical and biological process, and compromises in ecosystem resilience and services [@majiedt2019; @claassens2022; @harris2025a; @harris2025].
-
+\
 Coastal development within the littoral active zone deprives beaches of the sand stored in dunes and reduces coastal resilience to storms, high wave-energy events and sea-level rise, increasing risks to coastal communities and infrastructure. Such development can require expensive artificial movement of sand or other coastal engineering solutions to mitigate downstream erosion. In addition to coastal development impacts, **ports and harbours** are the main points of introduction and refugia for invasive alien species, and activities associated with them contribute to ecosystem degradation from smothering, pollution, underwater noise and anchorage. Coastal disturbance is common at popular and accessible beaches (especially around access points), and includes trampling, dune destabilisation and disturbance of shore birds or other shore animals. For more information see the [**coastal page**](../coast/cst_synthesis.qmd).
 :::
 
 ### Mariculture
 
-::: {#box8 .callout-note .marine collapse="true"}
+::: {#box8 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## The biodiversity impacts of mariculture depend on the species, culture method, stocking density, feed type, husbandry practices and environmental conditions at the site.
-
+\
 Mariculture along the South African coast includes farming of shellfish or finfish and takes the form of land-based operations that abstract seawater, pass it through a culture facility, and return it to the sea, and sea-based operations using long-lines, rafts, racks or cages suspended directly in the sea and a limited number of estuaries. Little research has been undertaken on the impacts of mariculture in South Africa but local work has highlighted the risks associated with eutrophication and the introduction of alien species, pathogens and diseases that can be transferred to wild stocks. For example, high stocking densities could potentially result in the evolution of native pathogens (especially viral and bacterial agents) to which wild fish do not have resistance. As such, mariculture can impact on ecosystem services.
 
 Currently, sea-based mariculture takes place only in Saldanha Bay and Algoa Bay in South Africa. High retention and therefore lower rates of flushing of pollutants or elevated nutrient inputs in bays are likely to exacerbate the negative impacts of sea-based mariculture operations in these areas. Sea-based mariculture operations are also known to alter predator behaviour and movement patterns by causing them to aggregate in the vicinity of installations, and may therefore shift predation pressure on wild populations with resulting food web effects. Although there has been little success in sea-based aquaculture of bony fish in South Africa, mariculture remains a sector of projected growth, similar to petroleum and shipping.
@@ -398,9 +398,9 @@ Currently, sea-based mariculture takes place only in Saldanha Bay and Algoa Bay 
 
 ![Flow reduction threatens marine ecosystems, species and associated fisheries benefits. © Bronwyn Goble, Oceanographic Reasearch Institute.](imgs/uThukela_plume_fluvial_fan_Bronwyn_Goble_ORI.png){width="80%" fig-align="left"}
 
-::: {#box9 .callout-note .marine collapse="true"}
+::: {#box9 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Freshwater flow reduction to the coastal and marine environment occurs when water is abstracted from rivers or dammed higher up in the catchment, and/or the cycle of an estuary has been disrupted.
-
+\
 This results in freshwater, and the accompanying sediment that is vital to many marine biodiversity processes, failing to reach the sea. By reducing input of sediment that forms and maintain beaches, mud habitats and other unconsolidated sediment ecosystems, flow reduction leads to physical habitat changes including loss of beach and mud habitat, impacts on ecological functions and services including nursery functions, environmental cues, productivity, nutrient provision and food web processes. Potential reductions in key fisheries catches with associated negative economic impacts have also been reported in South Africa. **A third of South Africa’s freshwater flow in rivers is estimated to no longer reach the ocean,** including approximately two-thirds of the potential freshwater flow of the Orange River and nearly a third of that for the Thukela River (the two largest catchments in South Africa). Sustaining the vital flow of freshwater to the sea requires an integrated and coordinated approach that combines the management of flow, water quality and ecological and built infrastructure ([**key Message A7**](../key-messages/kma7.qmd)).
 :::
 
@@ -408,9 +408,9 @@ This results in freshwater, and the accompanying sediment that is vital to many 
 
 ![Waste water discharge impacts biodiversity, the economy and human health. © Jean Tresfon.](imgs/DSC_0853_edit.jpg){width="80%" fig-align="left"}
 
-::: {#box10 .callout-note .marine collapse="true"}
+::: {#box10 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Wastewater discharge represents a significant source of pollution and includes a range of inputs, including industrial and municipal effluents, brine discharges from desalination plants, effluents from aquaculture operations, and stormwater and agricultural runoff [@porter2018; @majiedt2019; @ojemaye2022; @tyohemba2022].
-
+\
 More than 3 billion cubic metres of waste is discharged annually into South Africa’s marine environment through estuaries and outfalls, with municipal wastewater treatment facilities accounting for a significant portion of this. Wastewater discharge impairs water and sediment quality, and causes changes in the primary producer and benthic invertebrate communities near discharge points. High organic and nutrient loading due to wastewater discharge causes excessive eutrophication, fuelling red tides, harmful algal blooms and anoxia, often leading to fish kills. Coastal groundwater discharge is similarly enriched by human settlements, impacting shore ecosystems.
 
 Typically, coastal water quality is substantially degraded near major urban centres, with greatest negative impacts in areas with weak flushing and long retention, in particular bays. Associated microbial pollution can also have serious health and socio-economic impacts. For example, poor water quality has resulted in beach closures and loss of recreational value and tourism income. [**See Pollution section**](#pollution).
@@ -418,9 +418,9 @@ Typically, coastal water quality is substantially degraded near major urban cent
 
 ### Dredge disposal
 
-::: {#box12 .callout-note .marine collapse="true"}
+::: {#box12 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Dredge disposal is the dumping at sea of accumulated sediment from dredge material leading to smothering, increased turbidity, decreased primary production and other potential impacts [@smith1995; @smith2001].
-
+\
 Dredging is a key service performed by the Ports Authority as part of harbour management and maintenance, whereby dredge material is collected from harbours to ensure that ships do not run aground. The type of disposal methodology applied, as well as the quality of the sediment being deposited, may amplify or mitigate these environmental impacts.
 :::
 
@@ -428,17 +428,18 @@ Dredging is a key service performed by the Ports Authority as part of harbour ma
 
 ![Ammunition disposal in the ocean poses several risks to both species and ecosystems. © Jana Ulrich.](imgs/Jana_Ulrich_ammunition_KolbergerHeide-ju.jpg){width="80%" fig-align="left"}
 
-::: {#box11 .callout-note .marine collapse="true"}
+::: {#box11 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Ammunition disposal was practised in demarcated areas of the offshore environment from 1970s until 1995, before the London Protocol (1996 Protocol to the 1972 Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter) came into effect.
-
+\
 Dumped ammunition can cause damage to or smothering of ecosystems and habitat-forming species; potentially detonate, causing localised destruction; and corrode, causing pollution and toxicity, especially from heavy metals. Elsewhere, there is evidence of munition compounds bioaccumulating in marine foodwebs, which is predicted to increase with time and with changes in ocean chemistry. Presumably, dumped munitions in South Africa have corroded over the past 30-50 years, but the impacts are largely unknown.
 :::
 
 ### Renewable energy production
 
-::: {#box13 .callout-note .marine collapse="true"}
-## Renewable energy production is important in achieving energy security, reducing climate change impacts and supporting socio-economic growth in South Africa.
+::: {#box13 .callout-note .freshwater appearance="minimal" collapse="true"}
 
+## Renewable energy production is important in achieving energy security, reducing climate change impacts and supporting socio-economic growth in South Africa.
+\
 The potential for marine renewable energy (MRE) in South Africa includes offshore wind, wave, current and thermal energy sources. Although no MRE projects currently exist, there are plans for development, e.g. a floating offshore windfarm at Richard’s Bay and energy generation from the Agulhas current has been under discussion for several years. Depending on the energy source, potential impacts of MRE include habitat disturbance and loss during construction, changes in hydrology, localised upwelling and electromagnetic fields, collision risks with wind or current turbines for seabirds and ocean life and increased ocean noise. Wave and current devices may negatively impact marine mammals, turtles, and fish through collision risk, electromagnetic fields, and underwater noise, and marine benthic and pelagic habitats and communities could be impacted by changes to natural seawater flows and sediment transport. Small installations would likely have localised minor impacts but large commercial arrays could significantly alter marine systems over time.
 
 Emerging renewable energy installations include planned photovoltaic solar plants for Saldanha and Cape Town, and planned green fuel (green hydrogen and green ammonia) initiatives for Boegoebaai, Saldanha Bay, and Coega. Green hydrogen development requires extensive new coastal and marine infrastructure, likely including desalination plants, with associated brine discharge being an important environmental concern for coastal ecosystems. Other potential impacts include pollution from the production and transportation of hydrogen derivatives, like ammonia or methanol, which use catalysts and chemicals that could contaminate soil or water if not properly managed.

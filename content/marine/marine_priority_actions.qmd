@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Priority actions and priority areas" # Compulsory
+title: "Knowledge gaps, priority actions and priority areas" # Compulsory
 subtitle: "Marine realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -142,6 +142,14 @@ author:
       - ref: saiab # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
+# List authors here in the order you want them displayed in the title block
+  - name:
+      given: Luther A. #Add author's first name here. Abbreviate the middle name
+      family: Adams #Add author's surname here
+    orcid: 0000-0003-4906-3005 # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Lara J. #Add author's first name here. Abbreviate the middle name
@@ -216,7 +224,9 @@ google-scholar: true
 
 ![Lighthouse at Cape Agulhas. © Peter Chadwick.](imgs/lighthouse_cape_agulhas_peter_chadwick.jpg)
 
-## Knowledge gaps
+## Knowledge progress and gaps
+
+During the assessment of threat status and protection level of marine ecosystems and species, many research gaps emerged that limit the assessment of marine biodiversity. The [2018 assessment](http://hdl.handle.net/20.500.12143/6372) also identified knowledge gaps and progress against these research priorities [@sink2019a] [was briefly evaluated (Table / Box x)]{.mark}. Persistent research priorities span foundational marine biodiversity research at the ecosystem, species and genetic level, to applied research for improving our understanding of the impacts of key pressures on ecological condition. New research priorities include the need for increased social science in the marine realm particularly to track progress in equitable protection (Ecosystem protection level).
 
 ![Citizen scientists have advanced the taxonomy and distribution records for nudibranchs and produced a beautiful publication that makes this information accessible. © Georgina Jones](imgs/nudibranch_georgina_jones.jpg)
 
@@ -224,7 +234,7 @@ google-scholar: true
 
 Drawing from the key findings of this assessment, a number of priority actions were co-developed to improve the state of marine biodiversity in South Africa (Sink et al. 2023, Rylands et al. 2025, van der Bank et al. 2025). More than 70 individual actions were co-developed and these were classified into ten broad thematic areas of action with more detailed recommended steps and indicators for each action in order to track progress.
 
-::: {#box-1 .callout .marine collapse="false"}
+::: {#box-1 .callout-note .freshwater collapse="false"}
 ## 1. Enable civil society participation in ocean planning, assessment, management and governance (Key messages [C1](../key-messages/kmc1.qmd) and [B4](../key-messages/kmb4.qmd)).
 
 Enable participation in ocean planning, assessment and management to support a whole-of-society approach for effective ocean governance. This can be advanced through robust and inclusive stakeholder processes, strengthened capacity for social process across institutions and innovations in industry and community partnerships.
@@ -343,6 +353,8 @@ Catalyse research and monitoring to address critical social and natural science 
 
 <!-- ![TBA](imgs/PA_6.png){.lightbox} -->
 :::
+
+![Marine species red listing strategy developed.](imgs/red_listing_strategy_slide.jpg){.lightbox}
 
 <!-- ######################################################### -->
 

@@ -6,8 +6,9 @@ subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not 
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-
+image: imgs/card_fw_Jeremy_Shelton.png
+description: | 
+  Findings of the NBA presented by realm
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -21,6 +22,7 @@ citation:
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
+
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true

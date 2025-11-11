@@ -3,31 +3,118 @@ format:
   html:
     toc: false
     sidebar: true
-#listing:
-#  type: default
-#  contents:
-#    - id: realm-list
-#      contents:
-#        - content/terrestrial/ter_overview.qmd
-#        - content/marine/marine_overview.qmd
-#        - content/estuaries/est_overview.qmd
-#        - content/freshwater/fw_overview.qmd
-#        - content/coast/cst_synthesis.qmd
-#        - content/subantarctic/sub-all_sections.qmd
+listing:
+  id: page-listings
+  contents:
+    - content/terrestrial/ter_overview.qmd
+    - content/freshwater/fw_overview.qmd
+    - content/marine/marine_overview.qmd
+    - content/estuaries/est_overview.qmd
+    - content/coast/cst_synthesis.qmd
+    - content/subantarctic/sub-all_sections.qmd
+  type: grid
+  fields: [image, subtitle, description]
+  sort: false
+  sort-ui: false
+  filter-ui: false
+  categories: false
 
 ---
 
-## Headline indicators
+***
+::::: columns
+::: {.column width="50%"}
+### Biodiversity profile
+South Africa's species and ecosystem diversity [facts and figures](./content/context/biodivprof.qmd) 
+:::
 
-Listing to be added here
+::: {.column width="50%"}
+[![](./imgs/card_profile.png){width="200px"}](./content/context/biodivprof.qmd)
+:::
+::::: 
 
-## Key messages
+***
+::::: columns
+::: {.column width="50%"}
+### Headline indicators
+Integrated findings for species and ecosystems across all realms, including threat status and protection level indicators [here](./content/integrated-findings/intf_headline.qmd) 
+:::
 
-Listing to be added here
+::: {.column width="50%"}
+[![](./imgs/card_hl.png){width="200px"}](./content/integrated-findings/intf_headline.qmd)
+:::
+::::: 
 
-## Realms
+***
 
+::::: columns
+::: {.column width="40%"}
+### Key messages
+Explore the key messages of the NBA [here](./content/key-messages/index.qmd) 
+:::
 
-## Species
+::: {.column width="20%"}
+[![](./imgs/card_kma.png)](./content/key-messages/index.qmd#kma)
+:::
 
-Listing to be added here
+::: {.column width="20%"}
+[![](./imgs/card_kmb.png)](./content/key-messages/index.qmd#kmb)
+:::
+
+::: {.column width="20%"}
+[![](./imgs/card_kmc.png)](./content/key-messages/index.qmd#kmc)
+:::
+
+:::::
+
+***
+
+### Explore realms and zones
+::: {#page-listings}
+:::
+
+***
+
+::::: columns
+::: {.column width="50%"}
+### Species findings
+Explore the NBA results for each of the taxonomic groups assessed [here](./content/species/sp.qmd). 
+:::
+
+::: {.column width="50%"}
+[![](./imgs/card_species.png){width="200px"}](./content/species/sp.qmd)
+:::
+::::: 
+
+***
+
+::::: columns
+::: {.column width="50%"}
+### Genetic diversity indicators
+Learn about genetic diversity indicators and approaches [here](./content/genetics/genetic-indicators.qmd). 
+:::
+
+::: {.column width="50%"}
+[![](./imgs/card_genetics.png){width="150px"}](./content/genetics/genetic-indicators.qmd)
+:::
+::::: 
+
+***
+
+::::: columns
+::: {.column width="40%"}
+### Priority actions and knowledge gaps
+Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd). 
+Selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
+:::
+
+::: {.column width="30%"}
+[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd)
+:::
+
+::: {.column width="30%"}
+[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd)
+:::
+:::::
+
+***

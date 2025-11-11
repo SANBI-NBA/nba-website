@@ -2,7 +2,7 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Pressures" 
-subtitle: "Estuarine Realm" 
+subtitle: "Estuarine realm" 
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -142,14 +142,8 @@ google-scholar: true
 
 *Overall multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.*
 
-```{r}
-#| label: fig-swartkops 
-#| fig-cap: Heavily degraded Swartkops Estuary under pressure from pollution, over fishing, coastal development and biological invations (Source - Riaan Weitz) 
-#| echo: false 
-#| out-width: 100%
+![Heavily degraded Swartkops Estuary under pressure from pollution, over fishing, coastal development and biological invations (Source - Riaan Weitz)](imgs/est_swartkops_riaan_weitz.png)
 
-knitr::include_graphics("imgs/est_swartkops_riaan_weitz.png") 
-```
 
 ## Pressure overviews
 
@@ -335,15 +329,8 @@ Awareness must be created among civil society and researchers on of the risk inv
 Research programs are needed that evaluate the impact of the full suite of invasive species in estuaries - marine, estuarine and freshwater – using innovative technologies such as eDNA and soundscapes. This includes understanding on the threats of associated pathogens, e.g., Epizootic Ulcerative Syndrome (EUS), liver or lung flukes pose to indigenous species.
 :::
 
-```{r}
-#| label: fig-great-brak 
-#| fig-cap: Heavily degraded Groot Brak Estuary (Source - Riaan Weitz) 
-#| echo: false 
-#| out-width: 100%
 
-knitr::include_graphics("imgs/est_great_brak_nmu2.png") 
-
-```
+![Heavily degraded Groot Brak Estuary (Source - Riaan Weitz)](imgs/est_great_brak_nmu2.png)
 
 ## Approach
 
@@ -400,3 +387,6 @@ nba_citation(meta)
 ```
 
 ## References
+
+::: {#refs}
+:::

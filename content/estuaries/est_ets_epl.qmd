@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Integration of Ecosystem Threat Status and Protection Level" 
-subtitle: "Estuarine Realm" 
+title: "Intesection of ecosystem threat status and protection level" 
+subtitle: "Estuarine realm" 
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -41,7 +41,7 @@ affiliations:
     name: Council for Scientific and Industrial Research
   - id: nmu1
     number: 2
-    name: Institute for Coastal and Marine Research, Nelson Mandela University
+    name: Nelson Mandela University
   - id: sanbi1
     number: 3
     name: South African National Biodiversity Institute
@@ -68,30 +68,6 @@ google-scholar: true
 There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected. This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include some several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
 
 ```{r}
-#| label: tbl-ets_epl
-#| echo: false
-#| tbl-cap: NEEDS CAPTION
-
-
-#devtools::install_github("SANBI-NBA/nbaR")
-library(tidyverse)
-library(nbaR)
-library(sf)
-
-
-
-knitr::include_graphics("imgs/epl_ets_tbl.png")
-
-
-
-
-```
-
-Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
-
-There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
-
-```{r}
 #| label: fig-rle_map
 #| fig-cap: NEEDS CAPTION
 
@@ -109,6 +85,46 @@ library(sf)
 
 
 knitr::include_graphics("imgs/epl_ets_with_donut.png")
+
+
+```
+
+
+
+Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
+
+There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
+
+```{r}
+#| label: tbl-ets_epl
+#| echo: false
+#| tbl-cap: NEEDS CAPTION
+#| out-width: 100%
+#| classes: plain
+
+library(tidyverse)
+library(gt)
+
+# load spatial data
+est <-  read.csv(
+  dir("data",
+      "^est.csv$",
+      full.names = T,
+      recursive = T)[1])
+
+unluckies_tbl <- est %>%
+  select(type, threat_status, protection_level) %>%
+  nbaR::nba_tbl_comb(GROUP = type,
+                     THR =threat_status,
+                     PRO = protection_level,
+                     FILE ="csv") %>% 
+  #gt::tab_options(table.font.size = px(13L)) %>%
+  gt::tab_options(table.width = gt::pct(100))
+
+unluckies_tbl
+
+
+
 
 
 ```

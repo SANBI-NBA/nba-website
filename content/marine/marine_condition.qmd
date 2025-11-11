@@ -57,11 +57,11 @@ google-scholar: true
 
 The marine realm has a relatively high percentage of natural/near-natural ecosystem extent (\~x%; @fig-cum_press, @fig-cum_press_pel), similar to the terrestrial realm. In these extensive realms, ecosystem modification tends to be focussed in pressure hotspots, usually linked to local characteristics such as high productivity, accessibility and valuable natural resources; while large areas remain relatively unmodified or intact.
 
-![Map of ecological condition showing the spatial distribution of marine bentho-pelagic and benthic areas in different degradation categories as calculated from cumulative pressures (see [@sec-approach] and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)).](imgs/condition_with_donut.png){#fig-cum_press}
+![Map of ecological condition showing the spatial distribution of marine benthopelagic and benthic areas in different degradation categories as calculated from cumulative pressures (see [@sec-approach] and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)).](imgs/condition_with_donut.png){#fig-cum_press}
 
 <!-- # ```{r} -->
 <!-- #| label: fig-cum-press -->
-<!-- #| fig-cap: Map of ecological condition showing the spatial distribution of marine bentho-pelagic and benthic areas in different degradation categories as calculated from cumulative pressures (see [@sec-approach] and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)). -->
+<!-- #| fig-cap: Map of ecological condition showing the spatial distribution of marine benthopelagic and benthic areas in different degradation categories as calculated from cumulative pressures (see [@sec-approach] and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)). -->
 <!-- #| echo: false -->
 <!-- #| out-width: 100% -->
 <!-- knitr::include_graphics("imgs/condition_with donut.png") # knitr::include_graphics("imgs/sa_benth_pel_eco_map.jpg") -->
@@ -79,7 +79,7 @@ Mining, coastal development, trawling and mariculture have the highest impact sc
 Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-cum_press).
 
 <!-- ![Pic – caption – choose an eco type with bad condition with Tash – in Bight](imgs/cc.JPG) -->
-![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe ecosystem modification (84%). © SAEON](imgs/image_awaiting_from_Lara.png)
+![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe ecosystem modification (84%). © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
 
 Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight.
 
