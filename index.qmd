@@ -5,16 +5,15 @@ format:
     sidebar: false
 ---
 
-:::: {style="margin: 0; padding: 0;"}
-::: {style="
-<a href="./contents.qmd" style="display: block;"> <img src="imgs/nba-banner.png" alt="NBA Banner" style="width: 100%; height: auto; display: block; margin: 0;"/> </a>
+::: {style="margin: 0; padding: 0;"}
 :::
-::::
+
+<a href="./contents.qmd" style="display: block;"> <img src="imgs/nba-banner.png" alt="NBA Banner" style="width: 100%; height: auto; display: block; margin: 0;"/> </a> ::: ::::
 
 #### NBA staging website: content under development {style="color: red"}
 
 ::: {style="text-align: center;"}
-<a href="./contents.qmd" style="display: inline-block;"> <img src="imgs/card_enter.jpg" alt="Enter site" style="width: 300px; display: block; margin: 0 auto;"/> </a>
+<a href="./contents.qmd" style="display: inline-block;"> <img src="imgs/card_enter.png" alt="Enter site" style="width: 300px; display: block; margin: 0 auto;"/> </a>
 :::
 
 ## National Biodiversity Assessment 2025 {#summary}

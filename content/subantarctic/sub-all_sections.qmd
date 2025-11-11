@@ -3,7 +3,7 @@ title: "Summary of findings"
 subtitle: "Subantarctic territory"
 title-block-banner: "#481C66" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
-image: imgs/card_sub_Stephni_van_der_merwe.png
+image: imgs/card_sub_Stephni_van_der_Merwe.png
 description: |
  Findings of the NBA for the terrestrial and marine realms of the Prince Edward Islands
 
