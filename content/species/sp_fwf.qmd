@@ -12,21 +12,80 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
 author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: First #Add author's first name here. Abbreviate the middle name
-      family: Author #Add author's surname here
-    orcid: 0000-0000-0000-0000 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Albert
+      family: Chakona 
+    orcid: 0000-0001-6844-7501
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
-
+      - ref: saiab
+  - name:
+      given: Martine
+      family: Jordaan 
+    orcid: 0000-0001-9461-6217
+    affiliations:
+      - ref: capenature
+  - name:
+      given: Jeremy 
+      family: Shelton 
+    orcid: 0000-0001-7174-5446
+    affiliations:
+      - ref: frc
+  - name:
+      given: Roger 
+      family: Bills 
+    orcid: 0000-0001-6034-4196
+    affiliations:
+      - ref: saiab
+  - name:
+      given: Andre 
+      family: Hoffman 
+    orcid: 
+    affiliations:
+      - ref: mtpa
+  - name:
+      given: Domitilla 
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Francois 
+      family: Roux
+    orcid: 
+    affiliations:
+      - ref: mtpa
+  - name:
+      given: Shae-Lynn E. 
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Dewidine 
+      family: van der Colff
+    orcid: 0000-0002-0906-7098
+    affiliations:
+      - ref: sanbi
+     
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
 # See README for common examples - they can be copied and pasted here
 # Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: Name of Affiliation
+  - id: saiab
+    number: 1
+    name: South African Institute for Aquatic Biodiversity
+  - id: capenature
+    number: 2
+    name: Cape Nature
+  - id: frc
+    number: 3
+    name: Freshwater Research Centre
+  - id: mtpa
+    number: 4
+    name: Mpumalanga Tourism and Parks Agency
+  - id: sanbi
+    number: 5
+    name: South African National Biodiversity Institute
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -47,43 +106,41 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-::::::: columns
-::: {.column width="25%"}
 <center>
 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+![The Twee River redfin, [*Cedercypris erubescens*](https://www.iucnredlist.org/species/2564/100140580 ) (CR), Heks River, Western Cape. Restricted to the Twee River catchment, this species has been heavily impacted by invasive alien fishes and intensive agriculture in the surrounding catchment. © Jeremy Shelton ](./imgs/sp_freshwater_fish_img_1.png){fig-align="center"}
+
+</center>
+
+::::::: columns
+::: {.column width="33.3%"}
+<center>
+
+| [36%]{.inline-style-threatened}
+| of 118 assessed taxa are
 | [Threatened]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-well-protected}
-| taxa assessed
+| [26%]{.inline-style-well-protected}
+| of 96 assessed taxa are
 | [Well Protected]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="25%"}
+::: {.column width="33.3%"}
 <center>
 
-| [00%]{.inline-style-not-protected}
-| taxa assessed
+| [18%]{.inline-style-not-protected}
+| of 96 assessed taxa are
 | [Not protected]{.inline-style-indicator}
 
 </center>
-:::
-
-::: {.column width="25%"}
-```{r}
-#| label: fig-0
-#| fig-cap: "*add image*"
-#knitr::include_graphics("")
-```
 :::
 :::::::
 
@@ -91,29 +148,32 @@ google-scholar: true
 
 ## Key findings
 
-::::: columns
-::: {.column width="50%"}
--   
+-  There are currently 139 formally described primary freshwater fishes in South Africa [@skelton2024a], representing ~0.8% of the world's freshwater fish species (~18 000 [@fricke2025a]).  
 
--   
+-  A comprehensive reassessment of extinction risk for 118 freshwater fishes was done in 2016/17 following the IUCN Red List Categories and Criteria.  
 
--   
-:::
+-  A total of 42 taxa (36%) were classified as facing a high risk of extinction. 
 
-::: {.column width="50%"}
+-  A total of 58 taxa (49%) are endemic to South Africa. A high proportion (38 taxa or 66%) of these face an elevated risk of extinction, thus placing sole responsibility on the country to protect and ensure persistence of these species. 
+
+-  Assessment of the IUCN Red List Index (RLI) indicated that freshwater fishes have the second-lowest RLI score (0.75) compared to other taxonomic groups in South Africa. This shows that it is one of the most threatened groups, consistent with the broader patterns of the vulnerability of freshwater ecosystems in the country. 
+
+-  The major threats to freshwater fishes are invasive alien fishes, pollution, excessive abstraction of water and habitat loss. 
+
 ```{r}
 #| label: fig-1
-#| fig-cap: "Species richness map..."
-#knitr::include_graphics("")
+#| fig-cap: "Density of threatened freshwater fish taxa (10 x 10 km grid) based on distribution records. Highest concentrations of threatened taxa coincide with areas of high endemism, highlighting the vulnerability of these range-restricted species to multiple anthropogenic pressures. These are chiefly related to invasive alien species, pollution and habitat degradation."
+#| out-width: 100% 
+
+knitr::include_graphics("./imgs/freshwater_fishes_thrt_10km_HD.png")
 ```
-:::
-:::::
 
-### Threat status, trends and pressures
 
-1.  ***Threat status***
+## Threat status, trends and pressures
 
-add text
+1.  Threat status
+
+The Red List assessment of all freshwater fishes in South Africa was done in 2016/17. A comparison with all comprehensively assessed taxonomic groups  in the country indicated that freshwater fishes have the second highest proportion of species that are threatened with extinction (36%), second to sharks, rays and chimaeras [@tbl-1].Overall, more than half (53% or 62 taxa) of freshwater fishes in the country are classified as Taxa of Conservation Concern (ToCC) ([@fig-1 & @fig-2]). Most of these taxa occur in the Cape Fold Ecoregion (CFE) [@ellender2017a] [@chakona2022a] [@skelton2024a]. Most concerning is that almost all the endemic freshwater fishes (88% or xx taxa) in the country are classified as ToCC ([@fig-1] & [@fig-2]). The elevated risk of extinction for freshwater fishes correspond to the poor condition of rivers. Estimates from the freshwater ecosystem assessment indicate that 75% of overall river length in the country has been modified and over 50% of rivers are threatened. A reassessment of the Red List status for freshwater fishes in the country is planned for 2027 to integrate new information, including new species and distribution records, that has been generated from a number of projects that were undertaken since the previous 2016/17 assessment (See further details in [Box 1](#box-1)). As these assessments are underpinned by correct taxonomy, ongoing work is focusing on expediting the resolution of the taxonomic statuses of selected priority groups ahead of the planned 2027 reassessment. Another important development over the last nine years was the establishment of the [freshwater fish observation network](../contents/fw_sp.qmd#box-1) that was constituted to provide a better coordinated approach to address the challenges that were identified in the 2018 NBA.
 
 :::: panel-tabset
 ## Figure
@@ -122,7 +182,7 @@ add text
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of South African ... " 
+#| fig-cap: "Summary of the threat status of freshwater fishes of South Africa based on the IUCN 3.1 Red List categories. The portion of species in each category is shown in the larger circle (A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa that have been assessed is shown in the inner circle." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -323,6 +383,29 @@ gt(dat_combined_final) %>%
 ```
 :::
 ::::
+
+
+::: {#box-1 .callout-note .species title="Box 1. Taxonomic advances since the 2018 National Biodiversity Assessment." collapse="true"}
+
+The latest Red List assessment for freshwater fishes of South Africa was done in 2016/17. These findings were integrated into the National Biodiversity Assessment (NBA 2018). Key outcomes of this assessment were the identification of substantial taxonomic gaps across several species, lack of ongoing monitoring and uncertainties about species distribution patterns; highlighting the need for targeted research. In response, several research initiatives, primarily led by NRF-SAIAB in collaboration with SANBI and other partners, were launched to advance taxonomic understanding and fill sampling gaps. These include the Topotypes Project (NRF FBIP), the BioGaps Project, the [Waterberg Biodiversity Project]() (NRF FBIP), the [Tilapia Mapping Project]() (DFFE & SANBI), the [REFRESH Project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/) (NRF FBIP) and the eDNA Project (WRC) that were initiated to fill the identified taxonomic and species distribution gaps. 
+
+These projects, some of which are still ongoing, have already yielded significant scientific breakthroughs: 28 new fish species have been formally described, 11 previously synonymised species have been revalidated, and several candidate species requiring further taxonomic investigation have been uncovered across southern Africa [@sithole20xxa], [@sithole20xxb], [@mutizwa2025a], [@skelton2024a], [@chakona2022a], [@fricke2025a]. Major milestones for South African species include comprehensive genetic assessments and taxonomic revisions of the genera Pseudobarbus, Galaxias, Enteromius, Labeo, Labeobarbus, Anoplopterus, Sandelia and Glossogobius which have collectively increased the number of freshwater fish species in the country from 105 in 2016 to 139 in 2025 (Chakona & Skelton, 2017; Chakona et al., 2020; Bronaugh et al., 2020; Mazungula & Chakona, 2021; Kambikambi et al., 2021; Zarei et al., xx, xx, xx; Ramoejane et al., 2025; Scheepers et al., xx, xx; Skelton 2024). Several additional new species are in the process of being formally described for inclusion into the 2027 reassessment.   
+
+Strategic research initiatives have significantly strengthened the evidence base for conservation planning in South Africa. The REFRESH project addressed critical sampling gaps and updated historical records for inclusion into future Red List assessments. The Waterberg Biodiversity Project expanded species occurrence data in a priority region and highlighted the role of existing terrestrial conservation areas in safeguarding the region’s unique ichthyofauna from escalating anthropogenic pressures [@woodford2025a]. In parallel, NRF-SAIAB is advancing the use of environmental DNA (eDNA) as a tool for long-term monitoring of freshwater fishes of conservation and socio-economic importance. However, the reliability of eDNA-based assessments depends on an accurate and resolved taxonomic framework. Continued efforts to address taxonomic uncertainty and uncover undocumented diversity, particularly for the Amatola-Winterberg, Southern Temperate and Zambezian Lowveld freshwater ecoregions of South Africa, remain essential as this has direct implications for future Red List Assessments and the broader conservation agenda.   
+
+<center>
+![NRF-SAIAB students Xiluva Mathebula and Nkululeko Zuma using a seine net to collect [*Enteromius*]() specimens as part of SAIAB’s ongoing freshwater fish research. © Mandla Magoro](./imgs/sp_freshwater_fish_img_2.png){fig-align="center" style="border-radius:8px;"}
+</center>
+
+<center>
+![Xiluva Mathebula using a backpack electrofisher to collect fish samples in the Mnyameni River, Eastern Cape. © Mandla Magoro ](./imgs/sp_freshwater_fish_img_3.png){fig-align="center" style="border-radius:8px;"}
+</center>
+
+<center>
+![The new generation of NRF-SAIAB scientists, Dr Lubabalo Mofu and Dr Mandla Magoro, deploying the boat electrofisher for a biodiversity and fisheries assessment in Glen Alpine Dam (Mogalakwena River) in the Limpopo Province. © Albert Chakona](./imgs/sp_freshwater_fish_img_4.png){fig-align="center" style="border-radius:8px;"}
+</center>
+
+::: 
 
 2.  ***Trends (RLI)***
 
