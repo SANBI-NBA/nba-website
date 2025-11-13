@@ -3,6 +3,7 @@ format:
   html:
     toc: false
     sidebar: true
+
 listing:
   id: page-listings
   contents:

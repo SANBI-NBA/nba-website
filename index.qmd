@@ -19,36 +19,28 @@ The National Biodiversity Assessment (NBA) is a collaborative effort to synthesi
 
 The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa, and is produced by the South African National Biodiversity Institute as part of its mandate under the National Environmental Management: Biodiversity Act (Act 10 of 2004), in partnership with numerous institutions and individuals.
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 #### National Biodiversity Assessment 2025 takes two forms:
 
 ::::: columns
 ::: {.column width="50%"}
-**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) published in hard copy and available in digital form.
+**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) published in hard copy and available in digital form, and **this website** - which presents the content of the book with additional analyses and sections presenting the findings per realm/zone and per taxonomic group..
 :::
 
 ::: {.column width="50%"}
-[![](./imgs/cover.png){width="150px" fig-align="center"}](https://%20hdl.handle.net/20.500.12143/9467)
+[![](./imgs/cover.png){width="180px" fig-align="right"}](https://%20hdl.handle.net/20.500.12143/9467)
 :::
 :::::
 
-::::: columns
-::: {.column width="50%"}
-**This website** - which presents the content of the book and includes additional analyses and sections presenting the findings per realm/zone and per taxonomic group.
+:::: {style="margin: 0; padding: 0;"}
+::: {style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 0rem; "}
+<a href="./contents.qmd" style="display: block;"> <img src="imgs/JSproteacard.png" alt="explorebanner" style="width: 100%; height: auto; display: block; margin: 0;"/> </a>
 :::
-
-::: {.column width="50%"}
-[![](./imgs/card_enter.png){width="300px" fig-align="center"}](./contents.qmd)
-:::
-:::::
-
-------------------------------------------------------------------------
+::::
 
 ### Archived assessments
 
 To find information from previous iterations of the National Biodiversity Assessment (2004, 2011, 2018) - click [here](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/national-biodiversity-assessment/)
 
-------------------------------------------------------------------------
-
-*Photo credits for top banner (left to right):  Kerry Sink, Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.*
+*Photo credits for top banner (left to right): Kerry Sink, Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.*
