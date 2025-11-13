@@ -144,7 +144,6 @@ google-scholar: true
 
 ![Heavily degraded Swartkops Estuary under pressure from pollution, over fishing, coastal development and biological invations (Source - Riaan Weitz)](imgs/est_swartkops_riaan_weitz.png)
 
-
 ## Pressure overviews
 
 Estuarine ecosystems and species face ever increasing pressures from range and intensity of human activities which continue to expand and diversity along the coast. The 2025 pressure evaluation shows that a third of freshwater flow no longer reaches the coast (22% of systems severely impacted). Wastewater discharges amount to about 655 000 m^3^/d (32% of estuaries under severe pollution pressure), with harmful algal blooms (HABs) now recorded in 18% of estuaries in response to declining water quality. Over 22% of estuaries are also subjected to severe habitat modification.
@@ -328,7 +327,6 @@ Awareness must be created among civil society and researchers on of the risk inv
 
 Research programs are needed that evaluate the impact of the full suite of invasive species in estuaries - marine, estuarine and freshwater – using innovative technologies such as eDNA and soundscapes. This includes understanding on the threats of associated pathogens, e.g., Epizootic Ulcerative Syndrome (EUS), liver or lung flukes pose to indigenous species.
 :::
-
 
 ![Heavily degraded Groot Brak Estuary (Source - Riaan Weitz)](imgs/est_great_brak_nmu2.png)
 

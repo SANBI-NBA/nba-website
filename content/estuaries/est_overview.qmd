@@ -1,9 +1,9 @@
 ---
 title: "Overview"
-subtitle: "Estuarine Realm"
-title-block-banner: "#028A85" #imgs/overview_banner.jpg #
+subtitle: "Estuarine realm"
+title-block-banner: "#028A85" 
 title-block-banner-color: white
-image: imgs/card_est_iSimangalisoWetlandPark.png
+image: imgs/est_knysna_duran_de_villiers2.png
 description: | 
   Findings of the NBA presented by realm
 bibliography: references.bib
@@ -121,7 +121,7 @@ The above measures are proactive in that they set management objectives for estu
 
 There is an urgent need to strengthen bilateral arrangements between sectors dealing with Environment, Water, Fishing & Mining to ensure optimum resource allocation. In many of the above sectors, management measures and processes, biodiversity requirements were not met, e.g. flow allocation to the Mlalazi Estuary in the Thukela MPA was not sufficient to prevent increased constricted/closed mouth conditions and associated poor water quality. Given that estuarine management straddles multiple sectors, a more robust intergovernmental engagement could assist in ensuring a balance in sectoral requirements and preventing mandate conflict between departments.
 
-![Kromme Estuary with extensive salt marsh © Riaan Weitz.](imgs/est_kromme_saltmarsh3.png)
+![Kromme Estuary with extensive salt marsh. © Riaan Weitz.](imgs/est_kromme_saltmarsh3.png)
 
 ## Key publications
 

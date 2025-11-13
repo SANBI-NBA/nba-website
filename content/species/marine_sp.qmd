@@ -274,7 +274,190 @@ A total of 506 marine species have been assessed using the IUCN Red List criteri
 #| fig-cap: "Summary of number of marine species within each IUCN Red List category. The total number of taxa that have been assessed is shown in (A) and number of South African endemics within each category are shown in (B)." 
 #| out-width: 100%
 #| out-height: "auto"
-knitr::include_graphics("./imgs/sp_marine_fig_1.png")
+
+library(dplyr)
+library(tidyr)
+library(nbaR)
+library(readxl)
+library(patchwork)
+library(ggplot2)
+library(grid)
+library(cowplot)
+
+# ---- Dataset ----
+
+df <- read_excel("./data/overall_status_summary_2025.xlsx", 
+                 sheet = "Summary", col_types = c("numeric", 
+                                                  "text", "text", "numeric", "text", 
+                                                  "text", "text", "text", "text", "text", 
+                                                  "numeric", "text", "numeric", "text", 
+                                                  "text", "numeric", "numeric", "text", 
+                                                  "text", "text", "numeric", "text", 
+                                                  "text"))
+
+
+# ---- Recode Status ----
+df <- df %>%
+  mutate(Status = recode(Status,
+                         "CR" = "Critically Endangered",
+                         "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+                         "EN" = "Endangered",
+                         "VU" = "Vulnerable",
+                         "NT" = "Near Threatened",
+                         "DD" = "Data Deficient",
+                         "LC" = "Least Concern",
+                         "EW" = "Extinct in the Wild",
+                         "EX" = "Extinct",
+                         "Rare" = "Rare"
+  ))
+
+
+# ---- Functions ----
+
+# Collapse rare categories into "Rare"
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
+                           "Rare", Status))
+}
+
+# Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
+  
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
+  
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
+}
+
+# Add total number to donut hole
+add_total <- function(plot, total, SCALE_TEXT = 1) {
+  plot + annotate("text",
+                  x = 2, y = 0,
+                  label = total,
+                  size = 3.5 * SCALE_TEXT,
+                  fontface = "bold")
+}
+
+# ---- Setup ----
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
+)
+
+all_levels <- status_levels
+
+# ---- amphibians ----
+df_marine <- df %>%
+  filter(Marine == "Y") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_marine_en <- df %>%
+  filter(Marine == "Y", Endemism == "Endemic") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_marine_wide    <- make_wide(df_marine, "Overall", all_levels)
+df_marine_en_wide <- make_wide(df_marine_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_marine_wide, df_marine_en_wide)
+
+# Identify which threat categories actually have data
+available_levels <- df_combined %>%
+  select(any_of(all_levels)) %>%
+  summarise(across(everything(), sum, na.rm = TRUE)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  arrange(factor(Status, levels = status_levels)) %>%   # preserve original order
+  pull(Status)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+# Filter columns and update status levels
+dat1 <- dat1 %>% select(`Taxonomic grouping`, all_of(available_levels))
+dat2 <- dat2 %>% select(`Taxonomic grouping`, all_of(available_levels))
+
+
+
+# ---- specify legend order ----
+
+my_fill_scale <- scale_fill_manual(
+  values = NBA_colours[available_levels],
+  breaks = available_levels,
+  guide = guide_legend(ncol = 3),
+  drop = FALSE
+)
+
+plot1 <- nba_plot(dat1, `Taxonomic grouping`, 2:(ncol(dat1)),
+                  CHRT = "bar", NUM = FALSE, LAB = "") +
+  scale_fill_manual(
+    values = NBA_colours[available_levels],
+    breaks = available_levels,
+    drop = FALSE
+  ) +
+  labs(tag = "A.") +
+  theme(
+    plot.tag.position = c(0.02, 0.02),  # bottom-left for A
+    plot.tag = element_text(hjust = 0, vjust = 0, size = 12),
+    legend.position = "none"             # remove individual legend
+  )
+
+plot2 <- nba_plot(dat2, `Taxonomic grouping`, 2:(ncol(dat2)),
+                  CHRT = "bar", NUM = FALSE, LAB = "") +
+  scale_fill_manual(
+    values = NBA_colours[available_levels],
+    breaks = available_levels,
+    drop = FALSE
+  ) +
+  labs(tag = "B.", y = "Percentage of Species") +
+  theme(
+    plot.tag.position = c(0.02, 0.0),  # slightly higher for B
+    plot.tag = element_text(hjust = 0, vjust = 0, size = 12),
+    legend.position = "none"             # remove individual legend
+  )
+
+# ---- Extract legend from one plot ----
+legend <- get_legend(
+  nba_plot(dat1, `Taxonomic grouping`, 2:(ncol(dat1)), CHRT = "bar", NUM = TRUE, LAB = "") +
+    scale_fill_manual(
+      values = NBA_colours[available_levels],
+      breaks = available_levels,
+      drop = FALSE
+    ) +
+    theme(legend.position = "bottom", legend.key.size = unit(0.5, "cm"), axis.title.x = element_text("Percentage"))    # only for extraction
+)
+
+# ---- Combine plots with patchwork ----
+combined_plot <- (plot1 / plot2) / legend +
+  plot_layout(heights = c(2, 1, 0.3))  # adjust heights of plot1, plot2, and legend
+
+# ---- Display final figure ----
+combined_plot
+
+
 ```
 
 Marine species continue to have the highest levels of data deficiency, with many taxonomic groups not evaluated for their risk of extinction, and \~8% of assessed species being Data Deficient. Capacity shortfalls, gaps in taxonomic knowledge, and the lack of information on species distribution, life histories and long-term population trends have led to limited assessments and high levels of data deficiency. These shortfalls signal the need to address knowledge gaps and increase capacity for foundational research on marine species (including taxonomy and strengthened distribution data) and comprehensive IUCN Red List assessments for entire taxonomic groups.
@@ -319,7 +502,7 @@ The strategy invites researchers, fishers, conservationists, and decision-makers
 
 Of South Africa’s 6 marine reptiles, four of six species are threatened (@fig-1 A) with 3 of 5 turtles at risk from fisheries bycatch or incidental mortalities. Leatherback turtles (*Dermochelys coriacea*) are regionally Critically Endangered and are a conservation priority. South Africa's only sea snake is Least Concern.
 
-[Seabirds](../marine/marine_bird_sp.qmd) are the most threatened group of birds in South Africa and globally. Approximately 39% are threatened (@fig-1 A) with albatrosses being the most threatened group of seabirds with incidental mortality linked to industrial trawl and longline fisheries posing the major threat (see [Subantartic](../subantartic/sub-all_sections.qmd)). All seven seabird species endemic to the southern Benguela are threatened, with worsening trends for three species over the last decade. Endemic seabird species include three species that specialise on small pelagic fish (primarily anchovy and sardine), the African penguin (now globally CR), Cape cormorant (EN) and Cape gannet (VU) [@lee2025a]. The threat status of these seabirds is driven by competition with the purse-seine fishery [@crawford2022a] and climate change. Crowned cormorant (now VU but NT in 2015) and Hartlaub’s gull (VU but LC in 2015) were uplisted due to a combination of threats including human disturbance at breeding colonies, predation and diseases. Bank cormorants (EN) are threatened by the decline of their major prey species, west coast rock lobster ([Box 4](#box-4)) and breeding failure associated with climate change and other human disturbance.
+[Seabirds](../species/marine_bird_sp.qmd) are the most threatened group of birds in South Africa and globally. Approximately 39% are threatened (@fig-1 A) with albatrosses being the most threatened group of seabirds with incidental mortality linked to industrial trawl and longline fisheries posing the major threat (see [Subantartic](../subantartic/sub-all_sections.qmd)). All seven seabird species endemic to the southern Benguela are threatened, with worsening trends for three species over the last decade. Endemic seabird species include three species that specialise on small pelagic fish (primarily anchovy and sardine), the African penguin (now globally CR), Cape cormorant (EN) and Cape gannet (VU) [@lee2025a]. The threat status of these seabirds is driven by competition with the purse-seine fishery [@crawford2022a] and climate change. Crowned cormorant (now VU but NT in 2015) and Hartlaub’s gull (VU but LC in 2015) were uplisted due to a combination of threats including human disturbance at breeding colonies, predation and diseases. Bank cormorants (EN) are threatened by the decline of their major prey species, west coast rock lobster ([Box 4](#box-4)) and breeding failure associated with climate change and other human disturbance.
 
 Eight of 50 (16%) marine mammals are threatened (@fig-1 A) with the Endangered Indian Ocean humpback dolphin *Sousa plumbea* being a key species of concern in South African waters [@ploen2021a]. A major threat is lethal shark control measures ([Box 4](#box-2)), with pollution, coastal development and shipping also contributing to pressure on this species. Marine mammals show a positive trend (@fig-2) due to the improvement in status of a [subantarctic species](../subantartic/sub-all_sections.qmd), southern elephant seal (*Mirounga leonina*) downlisted from Near Threatened to Least Concern.
 
@@ -379,7 +562,7 @@ The endemic South coast rock lobster *Palinurus gilchristi* ([Box 5](#box-5)) wa
 ***Palinurus gilchristi*****, the South Coast rock lobster**, was nationally assessed as Vulnerable using the IUCN Red List criteria in 2025 primarily due to historical overexploitation that caused significant population declines over the past three generations (48 years). The species' exploitable biomass has declined by 35% since the 1977/1978 fishing season, with current stock assessments indicating spawning biomass is at only 41% of pre-fished levels. A major contributing factor was illegal overharvesting by one company between 1987-2001, which significantly exceeded fishing quotas and caused concurrent decreases in both biomass and catch rates. The species' biological characteristics make it particularly vulnerable to overexploitation, as it is long-lived (up to 30 years), slow-growing, and doesn't reach sexual maturity until around 10 years of age. While improved management measures including reduced quotas and fishing effort controls have led to some recovery in recent years, the cumulative decline over three generations still qualifies the species for Vulnerable status under IUCN Red List criteria A 2d
 :::
 
-A total of 20 South African sandy *beach macrofauna* were recently assessed [@harris2025a] and are the first beach invertebrates to be added to the IUCN Red List globally. Of these, 4 (20%) are listed as Endangered and a further 3 (15%) are Near Threatened. Key species of concern include the pillbugs *Tylos granulatus* (EN) and *Tylos capensis* (EN), the beach ground beetle *Acanthoscelis ruficornis* (EN) and the white mussel *Donax serra* (EN) (([Box 6](#box-6)), Link to [coast species](../coast/cst_species.qmd)). The pressures on beach macrofauna include mining on the West Coast, coastal development and associated artificial light at night, overfishing, and removal of washed-up kelp from the shore (See [Pressures page](../intergrated-findings/intf_pressures-conditions.qmd)).
+A total of 20 South African sandy *beach macrofauna* were recently assessed [@harris2025a] and are the first beach invertebrates to be added to the IUCN Red List globally. Of these, 4 (20%) are listed as Endangered and a further 3 (15%) are Near Threatened. Key species of concern include the pillbugs *Tylos granulatus* (EN) and *Tylos capensis* (EN), the beach ground beetle *Acanthoscelis ruficornis* (EN) and the white mussel *Donax serra* (EN) (([Box 6](#box-6)), Link to [coast species](../coast/cst_species.qmd)). The pressures on beach macrofauna include mining on the West Coast, coastal development and associated artificial light at night, overfishing, and removal of washed-up kelp from the shore (See [Pressures page](../intergrated-findings/intf_pressures-condition.qmd)).
 
 ::: {#box-6 .callout-note .marine title="Box 6. White mussel, *Donax serra* is now Endangered primarily due to overharvesting" collapse="true"}
 ***Donax serra*****, the white mussel**, is listed as Endangered primarily due to severe population declines of 50-80% over the past decade, as evidenced by commercial fishery data showing catch-per-unit-effort more than halving and approximately 80% reduction in total catch in South Africa. The species faces multiple compounding threats, with commercial and recreational harvesting being the primary driver, particularly after management changes in 2007 that switched from total allowable catch limits to effort-based regulations, leading to reported harvests increasing from around 50,000 individuals annually in the 1990s-2000s to over 1-1.45 million per year after 2007/2008. Mining activities, which affect about 20-25% of the species' range, cause significant habitat degradation by changing beach sand grain size through tailings deposits, making the sediment too coarse for the clams to burrow effectively and essentially eliminating them from affected sites. Resurveyed beaches show dramatic declines, with abundance at four sites near Plettenberg Bay dropping to only 24-48% of 1980s levels. Anecdotal reports from both Namibia and South Africa describe former abundance hotspots where the species is now extremely difficult to find. The species is particularly vulnerable because it is restricted to specific fine-sand beach habitats and has limited dispersal ability despite having pelagic larvae, making recovery from local population crashes difficult when combined with the ongoing multiple stressors across its range.

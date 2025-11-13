@@ -182,5 +182,3 @@ The following folders must be included with all content submissions to the NBA w
 -   **imgs** - store all image files (.png or .webp) used within your quarto files here. Please reduce image resolution to a web-compatible size: maximum 800px width, and 72 DPI resolution.
 
 Note that it is not necessary to create an output folder for the results of code chunks (such as Figures or Tables) unless you want to make these outputs available for download. Quarto will create the appropriate outputs when the website is rendered and insert it into the html.
-
-

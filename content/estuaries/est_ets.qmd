@@ -273,7 +273,6 @@ nba_tbl_colr(DF = ets,
 ```
 :::
 
-
 ## Approach
 
 The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments.

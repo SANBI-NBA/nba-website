@@ -18,103 +18,109 @@ listing:
   sort-ui: false
   filter-ui: false
   categories: false
-
 ---
 
-***
+------------------------------------------------------------------------
+
 ::::: columns
 ::: {.column width="50%"}
 ### Biodiversity profile
-South Africa's species and ecosystem diversity [facts and figures](./content/context/biodivprof.qmd) 
+
+South Africa's species and ecosystem diversity [facts and figures](./content/context/biodivprof.qmd)
 :::
 
 ::: {.column width="50%"}
 [![](./imgs/card_profile.png){width="200px"}](./content/context/biodivprof.qmd)
 :::
-::::: 
+:::::
 
-***
+------------------------------------------------------------------------
+
 ::::: columns
 ::: {.column width="50%"}
 ### Headline indicators
-Integrated findings for species and ecosystems across all realms, including threat status and protection level indicators [here](./content/integrated-findings/intf_headline.qmd) 
+
+Integrated findings for species and ecosystems across all realms, including threat status and protection level indicators [here](./content/integrated-findings/intf_headline.qmd)
 :::
 
 ::: {.column width="50%"}
 [![](./imgs/card_hl.png){width="200px"}](./content/integrated-findings/intf_headline.qmd)
 :::
-::::: 
+:::::
 
-***
+------------------------------------------------------------------------
 
-::::: columns
-::: {.column width="40%"}
-### Key messages
-Explore the key messages of the NBA [here](./content/key-messages/index.qmd) 
-:::
+### Key Messages
 
-::: {.column width="20%"}
+The [key messages](./content/key-messages/index.qmd) of the NBA they are clustered as follows A) Cross realm pressures are impacting people B) Improving the status of biodiversity is key to a sustainable future C) Inclusive actions across the whole of society are needed.
+
+:::::: columns
+::: {.column width="33%"}
 [![](./imgs/card_kma.png)](./content/key-messages/index.qmd#kma)
 :::
 
-::: {.column width="20%"}
+::: {.column width="33%"}
 [![](./imgs/card_kmb.png)](./content/key-messages/index.qmd#kmb)
 :::
 
-::: {.column width="20%"}
+::: {.column width="33%"}
 [![](./imgs/card_kmc.png)](./content/key-messages/index.qmd#kmc)
 :::
+::::::
 
-:::::
-
-***
+------------------------------------------------------------------------
 
 ### Explore realms and zones
+
 ::: {#page-listings}
 :::
 
-***
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
 ### Species findings
-Explore the NBA results for each of the taxonomic groups assessed [here](./content/species/sp.qmd). 
+
+Explore the NBA results for each of the taxonomic groups assessed [here](./content/species/sp.qmd).
 :::
 
 ::: {.column width="50%"}
 [![](./imgs/card_species.png){width="200px"}](./content/species/sp.qmd)
 :::
-::::: 
+:::::
 
-***
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
 ### Genetic diversity indicators
-Learn about genetic diversity indicators and approaches [here](./content/genetics/genetic-indicators.qmd). 
+
+Learn about genetic diversity indicators and approaches [here](./content/genetics/genetic-indicators.qmd).
 :::
 
 ::: {.column width="50%"}
 [![](./imgs/card_genetics.png){width="150px"}](./content/genetics/genetic-indicators.qmd)
 :::
-::::: 
-
-***
-
-::::: columns
-::: {.column width="40%"}
-### Priority actions and knowledge gaps
-Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd). 
-Selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
-:::
-
-::: {.column width="30%"}
-[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd)
-:::
-
-::: {.column width="30%"}
-[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd)
-:::
 :::::
 
-***
+------------------------------------------------------------------------
+
+:::::: columns
+::: {.column width="50%"}
+### Priority actions and knowledge gaps
+
+Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd). Selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
+:::
+
+::: {.column width="25%"}
+[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd)
+**Actions**
+:::
+
+::: {.column width="25%"}
+[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd)
+**Gaps**
+:::
+::::::
+
+------------------------------------------------------------------------

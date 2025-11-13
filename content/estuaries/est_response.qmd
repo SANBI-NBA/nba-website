@@ -2,9 +2,9 @@
 # indentations are critical in YAML headers, be careful when editing this section
 
 title: "Priority Actions and Recommendations" # Compulsory
-subtitle: "Marine Realm" # Optional: delete if you are not using a subtitle
+subtitle: "Estuarine realm" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#02268A" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
@@ -71,7 +71,6 @@ Enable participation in ocean planning, assessment and management through robust
 
 ![TBA](imgs/workshop.jpg){.lightbox}
 
-
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -116,4 +115,3 @@ nba_citation(meta)
 
 ::: {#refs}
 :::
-

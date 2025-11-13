@@ -309,7 +309,6 @@ nba_tbl_colr(epl,
 ```
 :::
 
-
 ## Approach
 
 The protection level assessment for estuarine ecosystems was adjusted to align with global targets. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.

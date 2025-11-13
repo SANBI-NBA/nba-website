@@ -54,220 +54,399 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
+```{=html}
+<style>
+
+.inline-style-data-deficient {
+  color: #D1D1C6;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+.inline-style-under-protected {
+  color: #93A772;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+</style>
+```
+
+<center>
+
+![Sungazer Lizard, Smaug giganteus is a species threatened by habitat loss and biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. © Endangered Wildlife Trust](./imgs/Sungazer%20Lizard.JPG){fig-align="center"}
+
+</center>
+
 ::::: columns
 ::: {.column .content width="50%"}
 <center>
 
-| 
-| 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+| [14%]{.inline-style-threatened}
+| of 24 678 taxa assessed are
 | [Threatened]{.inline-style-indicator}
+
+| [77%]{.inline-style-well-protected}
+| of 2345 taxa assessed for protection are
+| [Well Protected]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="50%"}
-```{r}
-#| label: fig-0
-#| fig-cap: "*Palinurus gilchristi*"
-#| out-width: "100%"
-#knitr::include_graphics("imgs/sp_mar_3.png")
-```
+::: {.column .content width="50%"}
+<center>
+
+| [8%]{.inline-style-data-deficient}
+| of 24 678 taxa assessed are
+| [Data Deficient]{.inline-style-indicator}
+
+| [37%]{.inline-style-under-protected}
+| of endemic terrestrial taxa assessed for protection are
+| [Under Protected]{.inline-style-indicator}
+
+</center>
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-## Key findings
+South Africa has rich diversity of terrestrial species. Current estimates indicate that South Africa harbors approximately 6% of the globes vascular plant species; 7% of bird, 5% of mammal, 3% of reptile and 2% of amphibian. A lower proportion of terrestrial species (14%) are threatened with extinction in comparison to species that have been assessed for the marine (36%) and freshwater realms (19%). There has been a marked increase in the risk of extinction for reptiles, birds, mammals and plants since they were last assessed in 2018. Habitat conversion for agriculture remains the primary pressure to terrestrial species. However, the number of species threatened by energy production, mining, climate change, and illegal wildlife trade has increased over the past 8 years.
 
-::::: columns
-::: {.column width="50%"}
--   Key findings related to diversity, richness of the group in South Africa, or relative to global diversity.
+## Threat status, trends and pressures {#Threat-status-trends-and-pressures}
 
--   Key finding related to Threat status
+1.  **Threat status and pressures**
 
--   Key finding related to Trends
+A total of 24 678 terrestrial taxa have been assessed in 2025 using the IUCN Red List criteria. Of these, 14% of taxa are threatened, while in 2018, 13% of 22 667 assessed taxa were threatened. The overall increase in the proportion of species threatened is an indication of many vertebrates and plants becoming more threatened. The only new taxonomic group included are the Spiders (2214 taxa) that have very low levels of threat at only 4%.
 
--   Key finding related to Major pressures
-:::
+::: panel-tabset
+## Figures
 
-::: {.column width="50%"}
 ```{r}
 #| label: fig-1
-#| fig-cap: "Distribution of threatened marine species in the marine realm of South Africa, including sharks, sparids, birds, mammals and reptiles."
-#knitr::include_graphics("imgs/Marine.png")
-```
-:::
-:::::
+#| fig-cap: "Summary of the number of terrestrial species within each IUCN Red List category. The total number of taxa that have been assessed is shown in (A) while the number of South African endemics within each category are shown in (B). " 
+#| out-width: 100%
+#| fig-height: 4
 
-### Threat status, trends and pressures
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
 
-1.  ***Threat status***
+# ---- Load and clean data ----
+df_clean <- readxl::read_excel("./data/overall_status_summary_2025.xlsx", sheet = "Summary") %>%
+            mutate(Status = recode(Status, "CR" = "Critically Endangered", 
+                                           "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+                                           "EN" = "Endangered", 
+                                           "VU" = "Vulnerable", 
+                                           "NT" = "Near Threatened",
+                                           "DD" = "Data Deficient", 
+                                           "LC" = "Least Concern", 
+                                           "EW" = "Extinct in the Wild",
+                                           "EX" = "Extinct", 
+                                           "RE" = "Regionally Extinct", 
+                                           "Rare" = "Rare",
+                                           "Critically Rare" = "Rare", 
+                                           "NE" = "Not Evaluated"),
+                   
+                    Status = factor(Status, levels = c("Extinct", "Extinct in the Wild", "Regionally Extinct",
+                                                       "Critically Endangered (Possibly Extinct)", "Critically Endangered",
+                                                       "Endangered", "Vulnerable", "Near Threatened", "Data Deficient",
+                                                       "Rare", "Least Concern")),
+                   
+                   `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", TRUE ~`Taxonomic grouping`),
+                   `Taxonomic grouping` = factor(`Taxonomic grouping`, 
+                                                 levels = rev(c("Plants*", "Mammals", "Reptiles", "Birds",                                                                                         "Spiders", "Butterflies", "Amphibians")))) %>%
+                    
+                    filter(Terrestrial == "Y", Status != "Not Evaluated") %>%
+                    select(`Taxonomic grouping`, Endemism, Status) %>%
+                    drop_na()
 
-add text
+# ---- IUCN colors ----
+risk_colors <- c("Extinct" = "#000000", "Extinct in the Wild" = "#542344",
+                 "Regionally Extinct" = "#482B6D", "Critically Endangered (Possibly Extinct)" = "#9B0411",
+                 "Critically Endangered" = "#D81E05", "Endangered" = "#FC7F3F",
+                 "Vulnerable" = "#F9E814", "Near Threatened" = "#FFFFBE",
+                 "Data Deficient" = "#D1D1C6", "Rare" = "#C1B5A5", "Least Concern" = "#B4D79E")
 
-::: {#box-1 .callout-note .species title="Box 1. Species box" collapse="true"}
-## Box 1.
+# ---- Helper function for plots ----
+plot_status <- function(data, y_label) {
+                        data %>%
+                        mutate(Status = factor(Status, levels = rev(levels(df_clean$Status)))) %>%
+                        ggplot(aes(x = `Taxonomic grouping`, y = Count, fill = Status)) +
+                        geom_bar(stat = "identity", position = "fill", width = 0.5) +
+                        geom_hline(yintercept = c(0, 0.5, 1), color = "gray", linewidth = 0.05) +
+                        scale_y_continuous(labels = percent_format(), breaks = c(0, 0.5, 1)) +
+                        scale_fill_manual(values = risk_colors,
+                                          breaks = levels(df_clean$Status),
+                                          guide = guide_legend(title = NULL, 
+                                                               nrow = 2, 
+                                                               keywidth = unit(5, "mm"), 
+                                                               keyheight = unit(5, "mm"))) +
+                         coord_flip() +
+                         labs(x = "", y = y_label) +
+                         theme_minimal(base_size = 10.5) +
+                         theme(legend.position = "bottom",
+                               axis.text.y = element_text(margin = margin(r = 10)),
+                               axis.text.x = element_text(margin = margin(t = 10)),
+                               panel.grid = element_blank())
+  }
 
-add text
-:::
+# ---- Prepare data ----
+overall_df <- df_clean %>%
+              count(`Taxonomic grouping`, Status, name = "Count")
 
-:::: panel-tabset
-## Figure
+endemic_df <- df_clean %>%
+              filter(Endemism == "Endemic") %>%
+              count(`Taxonomic grouping`, Status, name = "Count")
 
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+# ---- Create plots ----
+overall <- plot_status(overall_df, "\nPercentage of indigenous taxa ")
+endemic <- plot_status(endemic_df, "\nPercentage of endemic taxa")
 
-```{r}
-#| label: fig-2
-#| fig-cap: "Add caption " 
-#| out-width: "100%"
-#| out-height: "auto"
-
-#knitr::include_graphics("imgs/Marine_bar.png")
-
+# ---- Combine plots ----
+ggpubr::ggarrange(overall, endemic, ncol = 2, labels = c("A", "B"),
+                  font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
 
 ## Data
-
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
-::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-tab-0
-#| tbl-cap: "Add data" 
 #| classes: plain
-
 library(dplyr)
-library(nbaR)
+library(tidyr)
 library(gt)
 
-#df <- read_xlsx("data/NBA_example_full_tocc.xlsx")
+# ---- Recreate dataframes ----
+overall_df <- df_clean %>%
+              count(`Taxonomic grouping`, Status, name = "Count") %>%
+              mutate(`Taxonomic grouping` = factor(`Taxonomic grouping`, levels = c("Plants*", "Mammals", "Reptiles",
+                                                                                   "Birds", "Spiders", "Butterflies", "Amphibians")))
+
+endemic_df <- df_clean %>%
+              filter(Endemism == "Endemic") %>%
+              count(`Taxonomic grouping`, Status, name = "Count") %>%
+              mutate(`Taxonomic grouping` = factor(`Taxonomic grouping`, levels = c("Plants*", "Mammals", "Reptiles",
+                                                                                  "Birds", "Spiders", "Butterflies", "Amphibians")))
+
+# ---- Add group column ----
+overall_df <- overall_df %>% mutate(group = "All indigenous")
+endemic_df <- endemic_df %>% mutate(group = "Endemic")
+df_combined <- bind_rows(overall_df, endemic_df)
+
+# ---- Combine ----
+df_wide <- df_combined %>%
+           select(`Taxonomic grouping`, group, Status, Count)  %>%
+           mutate(Status = factor(Status, levels = rev(names(risk_colors)))) %>% # arrange categories
+           pivot_wider(names_from = Status, values_from = Count, values_fill = 0) %>% 
+           select("Taxonomic grouping", "group", "Extinct", "Regionally Extinct",
+                  "Critically Endangered (Possibly Extinct)", "Critically Endangered",
+                  "Endangered", "Vulnerable", "Near Threatened",
+                  "Data Deficient", "Rare", "Least Concern") %>% 
+           arrange(`Taxonomic grouping`, group) %>%
+           group_by(`Taxonomic grouping`) %>%
+           rename(" " = group) %>%   
+           mutate(`Taxonomic grouping` = if_else(row_number() == 1, as.character(`Taxonomic grouping`), "")) %>%
+           ungroup()%>%
+           mutate(Total = rowSums(across(where(is.numeric)), na.rm = TRUE))
 
 
+# ---- Identify rows with blank taxonomic grouping (second row) ----
+empty_rows <- which(df_wide$`Taxonomic grouping` == "")
 
+# ---- Create GT table ----
+df_wide %>% gt() %>%
+            tab_options(table.width = "100%",
+            table.font.size = 13.5,
+            table.border.top.width = px(2),
+            table.border.top.color = "black",
+            table.border.bottom.width = px(0),
+            table.border.bottom.color = "transparent",
+            heading.align = 'left') %>%
+   
+            tab_style(style = cell_text(align = "center"),
+                      locations = cells_body(columns = where(is.numeric))) %>%
+    
+            tab_style(style = list(cell_text(color = "black", weight = "bold", align = "left"),
+                                   cell_borders(sides = c("top", "bottom"), color = "black", weight = px(2))),
+                      locations = cells_column_labels(columns = everything())) %>%
+  
+            tab_style(style = cell_borders(sides = c("top"), color = "white", weight = px(0)),
+                     locations = cells_body(columns = "Taxonomic grouping")) %>%
+   
+            tab_style(style = cell_borders(sides = "bottom", color = "gray", weight = px(1)),
+                     locations = cells_body(rows = empty_rows)) %>%
+  
+            tab_style(style = cell_fill(color = "gray90"),
+                      locations = cells_body(columns = "Total")) %>%
+  
+            tab_style(style = cell_fill(color = "gray90"),
+                      locations = cells_column_labels(columns = "Total"))
 ```
 :::
-::::
 
-::: {#box-2 .callout-note .species title="Box 2. Species box" collapse="true"}
-## Box 2:
+### [Birds](sp_plants.qmd)
 
-Click to expand this section:
+Ten percent of the 673 assessed terrestrial bird taxa are threatened with extinction, while 25% of South Africa's 20 endemic terrestrial bird species face extinction risk. The main pressures driving threat status changes include agriculture (impacting 67% of threatened taxa), natural system modifications (61%), and biological resource use (45%), with habitat loss from croplands, plantations, and livestock farming being particularly severe. Species like Botha's Lark face critical threats from the conversion of grasslands for agriculture.
 
-<details>
+### [Mammals](sp_mammals.qmd)
 
-<summary>*Add specie*</summary>
+A total of 20% of the 291 assessed terrestrial mammal taxa are threatened with extinction, with 42% of South Africa's 28 endemic mammals facing this risk. The main pressures are habitat loss and degradation from agricultural and urban expansion (impacting 79% of threatened mammal taxa), climate change and extreme weather conditions (particularly prolonged droughts causing severe declines in small mammals), and over-exploitation and poaching. Renewable energy development is also emerging as a significant threat, particularly affecting bat populations.
 
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+### [Reptiles](sp_reptiles.qmd)
 
-***Add specie***\*\*
+The proportion of reptiles threatened with extinction has increased from 5% in 2018 to 8% in 2022.  There are 407 reptile taxa in South Africa of which 155 are endemic. A total of 12% of endemic taxa are threatened. Declines are mainly due to habitat loss with agriculture impacting 80% of threatened taxa followed by residential and commercial development (46%). Species that have become more threatened since 2018 are facing escalating pressures from illegal wildlife trade and mining. 
 
-</details>
+### [Amphibians](sp_amphibians.qmd)
 
-<details>
+Twenty-one percent of the 135 assessed terrestrial amphibian taxa are threatened with extinction, with 35% of South Africa's 26 endemic terrestrial amphibians facing this risk. The main pressures driving threat status changes are invasive and other problematic species (affecting 76% of threatened taxa assessed through diseases, habitat replacement by invasive alien plants, and wetland degradation), followed by natural system modification (64%) related to wetland drainage, and inappropriate fire cycles. Habitat loss and degradation from agricultural activities (57%) is also a significant pressure while climate change is becoming an increasingly important driver, although the impacts of this emerging threat are challenging to quantify.
 
-<summary>*Add specie*</summary>
+### [Plants](sp_plants.qmd)
 
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+Seventeen percent of the representative sample of 900 plant taxa are threatened with extinction, and one in five endemic taxa face extinction risk.  Agriculture continues to affect the largest proportion of threatened taxa (68%), while invasive alien species (57%), illegal harvesting (28%), mining-related habitat loss (13%), and drought related mortality attributed to climate change (11%) remain significant pressures.  Since 2020 326 plant species have been uplisted to higher categories of threat, 153 of these (53%) have been uplisted due to the impacts of climate change and drought in the north western parts of South Africa, with 124 of these simultaneously impacted by livestock overgrazing (38%). A total of 118 plant taxa (36%) were uplisted due to the impacts of [illegal collection for the ornamental trade](#illegal-trade). 
 
-***Add specie***\*\*
+### [Spiders](sp_spiders.qmd)
 
-</details>
+South Africa is the first country to have undertaken a comprehensive assessment for spiders. This first assessment indicates very low levels of threat with only four percent of the 2,214 assessed spider taxa threatened with extinction.  When compared to assessments for plants where 17% of assessed taxa are threatened and vertebrates where12% of taxa are threatened, on first assessment spiders may appear to be more resilient than other groups. There are, however, high levels of data deficiency with 37% of assessed spider taxa lacking sufficient taxonomic resolution and ecological data to assign a threat category. The overall threat level for spiders will therefore only be known once these data deficiencies are addressed. The major threats to spiders are residential and commercial development (impacting 69% of threatened taxa) followed by agriculture, particularly crop cultivation which impacts 62% of threatened species. Ground-dwelling species with poor dispersal abilities are particularly impacted by habitat loss.
 
-<details>
+### [Butterflies](sp_butterflies.qmd)
 
-<summary>*Add specie*</summary>
+Ten percent of the 800 butterfly taxa assessed are threatened with extinction, while 18% of South Africa's 419 endemic terrestrial butterfly taxa face extinction risk. While butterflies were last comprehensively assessed in 2017, the leading causes of decline remain natural ecosystem modification (66%) due to inappropriate fire management and the spread of invasive alien plants, followed by loss of habitat to agriculture (60%). Monitoring by members of the Lepidoptera Society between 2017 and 2025 have shown that two species are no longer extant at formerly known populations. The Waterberg copper butterfly, *Erikssonia edgei* and the Brenton blue butterfly *Orachrysops niobe* are considered possibly extinct. The Waterberg copper has been lost from its former sites due to lack of burning of its grassland habitat and the Brenton blue butterfly was lost from its only known site due to unprecedented hot fires caused by alien fuel loads during the 2017 Knysna fires.  These possible extinctions are of high concern given South Africa’s commitment to halt extinctions through our ratification of the Global Biodiversity Framework of the Convention on Biological Diversity. 
 
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
+```{r}
+#| label: fig-2
+#| fig-cap: "Key pressures on South Africa’s threatened terrestrial species. This analysis presents the relative frequency of pressures affecting threatened species, categorized by taxonomic group, using the IUCN Threat Classification Scheme. The size of the bubbles indicates the percentage of taxa impacted by each pressure class. * Key pressures to plants were assessed using a representative sample of 900 plant taxa."
+#| fig-alt: "Pressures in terrestrial realm"
+#| out-width: 100%
+#| fig-align: center
 
-***Add specie***\*\*
+knitr::include_graphics("./imgs/Terrestrial_Maj.png")
+```
 
-</details>
-:::
+2.	**Trends**
 
-2.  ***Trends (RLI)***
+The trend in terrestrial species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs)[@butchart2004]. The RLIs is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where  the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. 
 
-Add text & figure
+The RLIs is calculated only for comprehensively assessed taxonomic groups or groups where a representative sample has been selected. Changes in status over time has been tracked for six taxonomic groups that occur in the terrestrial realm (@fig-3). Increases in extinction risk is evident for most groups, but a marked increase in rate of extinction since the last assessment is evident from the change in rate of declines for reptiles, birds, mammals and plants. Increases in threat status for birds has largely been because of increasing levels of pollution and other forms of habitat degradation, while the main drivers of declines for mammals, plants and reptiles have been climate change and loss of habitat for mining and renewable energy development (the taxa that have changed status and the reason causing the uplisting to high threat categories are included on each taxon page). Most of the declines to plants are taking place in the Northern Cape Province (@fig-4) with the Namaqualand region most severely impacted. Anthropogenic impacts from livestock farming, mining, and road construction are being amplified by climate change factors including an unprecedented nine-year drought (2011-2019), increased temperatures, and stronger winds that cause cascading desertification processes through soil erosion and sand burial2. This same region is being heavily impacted by illegal wildlife trade of ornamental succulent and geophytic plants. Animals that have increased in threat status are spread across South Africa but are concentrated in the areas with high rates of recent habitat loss.
+
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for marine species including birds, mammals, reptiles, sharks and sparids assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). "
+#| fig-cap: "The Red List Index (RLI) for terrestrial species, including birds, mammals, reptiles, amphibians, butterflies and a random sample of 900 plants. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). While spiders have not been repeatedly assessed, a single point for the RLI has been generated to show the relatively low level of pressure that this group is under." 
+#| fig-width: 6
+#| fig-align: center
 
-#knitr::include_graphics("imgs/marine_rli.png")
+RLI <- readxl::read_excel("./data/nba_example_RLI_data_trim_terrestrial.xlsx") %>%
+       mutate(Taxon = factor(Taxon, levels = c("Aggregate",
+                                               "Plants*",
+                                               "Mammals",
+                                               "Reptiles",
+                                               "Birds",
+                                               "Spiders",
+                                               "Butterflies",
+                                               "Amphibians")))
+nbaR::nba_index_plot(TYPE = "RLIs",
+                     DF = RLI,
+                     YEAR = Year,
+                     RLI = RLI,
+                     ASSESSMENT_YEAR = Assessment_Year,
+                     GROUP = Taxon,
+                     PALETTE = "taxon",
+                     AGGREGATE = TRUE,
+                     SAVE = NULL)
+
 ```
+
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "The distribution of estuarine species that have increased in threat status since NBA 2018."
+#| fig-cap: "The distribution of terrestrial plant (A) and animal (B) taxa that have increased in threat status since NBA 2018." 
+#| fig-width: 10
+#| fig-height: 4
+#| fig-align: center
 
-#knitr::include_graphics("imgs/Marine.png")
+
+library(magick)
+library(cowplot)
+library(patchwork)
+
+map1 <- image_read("./imgs/plant_thrt_10km_HD.png")
+map2 <- image_read("./imgs/mammals_in_10km_HD.png")
+
+p1 <- ggdraw() + draw_image(map1)
+p2 <- ggdraw() + draw_image(map2)
+
+
+ggpubr::ggarrange(p1, p2, ncol = 2, labels = c("A", "B"), font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
+
 ```
 
-::: {#box-3 .callout-note .species title="Box 3. Species box" collapse="true"}
-## Box 3. Title
+## Protection Level
 
-add text
+A total of 70% of plant species are Well Protected (based on a representative sample of 900 taxa). All mammal, reptile, bird, amphibians were assessed for protection level and overall 77% of these assessed terrestrial animals are Well Protected.
 
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.png){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.png){fig-alt="box_1_fig_2" width="45%"}-->
-:::
+The overall levels of protection for terrestrial species are shown in @fig-5. The details of protection level for each taxon group and the trends and changes in status since 2018 can be found at Species protection level integrated findings
 
-3.  ***Pressures***
 
-Add text
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s threatened marine species based on x taxa. This analysis presents the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme. The size of the bubbles indicates the relative importance of each pressure class. (currently missing marine turtle data) "
-#| out.width: 100%
+#| fig-cap: "Protection level for five South Africa’s indigenous terrestrial taxonomic groups. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa). Protection level for all taxa (A); protection level for South African endemics (B). *Due to the extremely high number of plant species occurring in South Africa, the protection level is calculated for a statistically representative sample of 900 plant taxa."
+#| out-width: 100%
+#| fig-height: 3
 
 
-#knitr::include_graphics("imgs/Marine_pressure.png")
+library(dplyr)
+library(nbaR)
+
+# ---- Load and clean data ----
+PL_clean <- readxl::read_excel("./data/overall_status_summary_2025.xlsx", sheet = "PL_Realm") %>% 
+            filter(Terrestrial == "Y", `Protection level status` != "")%>%
+            mutate(`Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", TRUE ~`Taxonomic grouping`),                             `Taxonomic grouping` = factor(`Taxonomic grouping`,
+                                  levels = rev(c("Plants*", "Mammals", "Reptiles",
+                                             "Birds", "Spiders", "Butterflies", "Amphibians"))))
+
+numeric_cols <- c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected")
+
+PLoverall_df <- PL_clean %>%
+                group_by(`Taxonomic grouping`, `Protection level status`) %>%
+                summarise(count = n(), .groups = "drop") %>%
+                tidyr::pivot_wider(names_from = `Protection level status`,
+                                   values_from = count,
+                                   values_fill = 0) %>%
+                mutate(across(all_of(numeric_cols), as.numeric))  
+
+PLendemic_df <- PL_clean %>%
+                group_by(`Taxonomic grouping`, `Protection level status`, Endemism) %>%
+                filter(Endemism == "Endemic") %>%
+                summarise(count = n(), .groups = "drop") %>%
+                tidyr::pivot_wider(names_from = `Protection level status`,
+                                   values_from = count,
+                                   values_fill = 0) %>%
+                mutate(across(all_of(numeric_cols), as.numeric))
+
+
+indigenous_PL <- nba_plot(DF = PLoverall_df,               
+                          GROUPS = `Taxonomic grouping`,   
+                          COLS = numeric_cols,             
+                          CHRT = "bar",
+                          NUM = FALSE,
+                          LAB = "Percentage of indigenous taxa",
+                          #SCALE_TEXT = 1.6,
+                          SAVE = NULL)
+
+endemic_PL <- nba_plot(DF = PLendemic_df,               
+                       GROUPS = `Taxonomic grouping`,   
+                       COLS = numeric_cols,             
+                       CHRT = "bar",
+                       NUM = FALSE,
+                       LAB = "Percentage of endemic taxa",
+                       #SCALE_TEXT = 0.8,
+                       SAVE = NULL) +
+                       geom_bar(stat = "identity", position = "fill", width = 0.) 
+
+# ---- Combine plots ----
+ggpubr::ggarrange(indigenous_PL, endemic_PL, ncol = 2, labels = c("A", "B"),
+                  font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
-
-:::::: {#box-4 .callout-note .species title="Box 4. Species box" collapse="true"}
-## Box 4. Title
-
-::::: columns
-::: {.column width="100%"}
-Add text
-:::
-
-::: {.column width="25%"}
-:::
-:::::
-::::::
-
-:::::: {#box-5 .callout-note .species title="Box 5. Species box" collapse="true"}
-## Box 5. Title
-
-::::: columns
-::: {.column width="100%"}
-Add text
-:::
-
-::: {.column width="25%"}
-:::
-:::::
-::::::
-
-## Conservation strategy
-
-Add text
-
-::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 6.
-
-Add text
-:::
-
-## Knowledge gaps
-
-Add text
-
-## Acknowledgements
-
-Add text
 
 ### Recommended citation
 
@@ -289,6 +468,8 @@ nba_citation(meta)
 
 ```
 
-## References
 
-Add reference
+### References
+
+::: {#refs}
+:::

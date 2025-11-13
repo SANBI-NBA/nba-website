@@ -148,7 +148,7 @@ website:
                 - content/genetics/chl-biobank.qmd
                 - content/genetics/chl-forensics.qmd
                 - content/genetics/chl_barcoding.qmd
-            - section: "Priority actions, responses and interventions"
+            - section: "Priority actions and knowledge gaps"
               contents:
                 - content/integrated-findings/pakg_actions.qmd
                 - content/integrated-findings/pakg_gaps.qmd
