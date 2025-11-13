@@ -52,7 +52,7 @@ Integrated findings for species and ecosystems across all realms, including thre
 
 ### Key Messages
 
-The [key messages](./content/key-messages/index.qmd) of the NBA they are clustered as follows A) Cross realm pressures are impacting people B) Improving the status of biodiversity is key to a sustainable future C) Inclusive actions across the whole of society are needed.
+The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as follows: A) Cross realm pressures are impacting people; B) Improving the status of biodiversity is key to a sustainable future; C) Inclusive actions across the whole of society are needed.
 
 :::::: columns
 ::: {.column width="33%"}
@@ -109,7 +109,7 @@ Learn about genetic diversity indicators and approaches [here](./content/genetic
 ::: {.column width="50%"}
 ### Priority actions and knowledge gaps
 
-Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd). Selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
+Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd), and selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
 :::
 
 ::: {.column width="25%"}
@@ -124,3 +124,4 @@ Read about the priority actions, responses and interventions emerging from the N
 ::::::
 
 ------------------------------------------------------------------------
+*Photo credits: Andrew Skowno (terrestrial); Jeremy Shelton (freshwater); Eve Marshall (marine); Duran de Villiers (estuaries); Linda Harris (coast); Stephni van der Merwe (subantarctic).*  
