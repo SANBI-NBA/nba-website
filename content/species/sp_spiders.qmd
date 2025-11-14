@@ -351,13 +351,13 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 
 # ---- Plots ----
-plot1 <- nba_plot(dat1, biome, 2:(ncol(dat1)),
-                  CHRT = "donut", NUM = FALSE, LAB = "A.") %>%
+plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A.")+
+    xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
-plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
-           CHRT = "donut", NUM = FALSE, LAB = "B.") +
-    xlim(c(2, 4.5))) %>% add_total(endemic)
+plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
+           CHRT = "donut", NUM = FALSE, LAB = "B.") %>% add_total(endemic)
 
 
 # ---- specify legend order ----
@@ -427,7 +427,7 @@ gt(dat_combined_final) %>%
 :::
 ::::
 
-:::::: {#box-1 .callout-note .species collapse="true"}
+:::: {#box-1 .callout-note .species collapse="true"}
 ## Box 1. The South African National Survey of Arachnida (SANSA)
 
 The South African National Survey of Arachnida (SANSA) was initiated in 1997, with the main aim of documenting the arachnid fauna of South Africa at a national level and to unify and strengthen biodiversity research on the spiders of South Africa [@dippenaar-schoeman2015a]. SANSA was managed by the Arachnida Unit at the National Collection of Arachnida (NCA) at the ARC – PHP in Pretoria, with support from the Universities of the Free State and Venda, the National Museum in Bloemfontein, and the South African National Biodiversity Institute (SANBI) Threatened Species Programme, who funded SANSA phase 2 [@dippenaar-schoeman2015a].
@@ -440,28 +440,24 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 </center>
 
+::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
+<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
 
+<img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" style="width:100%; height:250px; object-fit: cover;"/>
 
-<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+<figcaption>Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. © Elsa van Niekerk</figcaption>
 
-  <figure style="margin: 0; text-align: center; flex: 1 1 45%;">
-    <img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" 
-         style="width:100%; height:250px; object-fit: cover;">
-    <figcaption>
-      Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. © Elsa van Niekerk
-    </figcaption>
-  </figure>
+</figure>
 
-  <figure style="margin: 0; text-align: center; flex: 1 1 45%;">
-    <img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" 
-         style="width:100%; height:250px; object-fit: cover;">
-    <figcaption>
-      SANBI para-ecologists sampling at the Makana Botanical Gardens, Grahamstown, Eastern Cape Province. © Robin Lyle
-    </figcaption>
-  </figure>
+<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
 
-</div>
-::::::
+<img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" style="width:100%; height:250px; object-fit: cover;"/>
+
+<figcaption>SANBI para-ecologists sampling at the Makana Botanical Gardens, Grahamstown, Eastern Cape Province. © Robin Lyle</figcaption>
+
+</figure>
+:::
+::::
 
 2.  Trends (RLI)
 

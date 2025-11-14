@@ -286,13 +286,15 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 
 # ---- Plots ----
-plot1 <- nba_plot(dat1, biome, 2:(ncol(dat1)),
-                  CHRT = "donut", NUM = FALSE, LAB = "A.") %>%
+plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
+                  CHRT = "donut", NUM = FALSE, LAB = "A.")+
+    xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
-plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
-           CHRT = "donut", NUM = FALSE, LAB = "B.") +
-    xlim(c(2, 4.5))) %>% add_total(endemic)
+plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
+           CHRT = "donut", NUM = FALSE, LAB = "B.") %>% add_total(endemic)
+
+
 
 
 # ---- specify legend order ----
@@ -654,25 +656,25 @@ total_b <- dat2 %>%
   sum(na.rm = TRUE)  
 
 
-plot1 <- nba_plot(dat1,
+plot1 <- (nba_plot(dat1,
                   biome,
                   2:5,
                   CHRT = "donut",
                   NUM = FALSE,
                   LAB = "A.",
-                  SAVE = NULL)%>%
+                  SAVE = NULL) +
+    xlim(c(2, 4.5))
+)%>%
   add_total(total_a)
 
-plot2 <- (
+plot2 <- 
   nba_plot(dat2,
            biome,
            2:5,
            CHRT = "donut",
            NUM = FALSE,
            LAB = "B.",
-           SAVE = NULL) +
-    xlim(c(2, 4.5))
-) %>%
+           SAVE = NULL) %>%
   add_total(total_b)
 
 # Combine and put shared legend at bottom center

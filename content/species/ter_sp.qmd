@@ -74,7 +74,7 @@ google-scholar: true
 
 <center>
 
-![Sungazer Lizard, Smaug giganteus is a species threatened by habitat loss and biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. © Endangered Wildlife Trust](./imgs/Sungazer%20Lizard.JPG){fig-align="center"}
+![Sungazer Lizard, Smaug giganteus is a species threatened by habitat loss and biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. © Endangered Wildlife Trust](./imgs/Sungazer%20Lizard.png){fig-align="center"}
 
 </center>
 
@@ -205,10 +205,11 @@ endemic <- plot_status(endemic_df, "\nPercentage of endemic taxa")
 
 # ---- Combine plots ----
 ggpubr::ggarrange(overall, endemic, ncol = 2, labels = c("A", "B"),
-                  font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
+                  font.label = list(size = 12), common.legend = TRUE, legend = "bottom")
 ```
 
 ## Data
+
 ```{r}
 #| classes: plain
 library(dplyr)
@@ -293,7 +294,7 @@ A total of 20% of the 291 assessed terrestrial mammal taxa are threatened with e
 
 ### [Reptiles](sp_reptiles.qmd)
 
-The proportion of reptiles threatened with extinction has increased from 5% in 2018 to 8% in 2022.  There are 407 reptile taxa in South Africa of which 155 are endemic. A total of 12% of endemic taxa are threatened. Declines are mainly due to habitat loss with agriculture impacting 80% of threatened taxa followed by residential and commercial development (46%). Species that have become more threatened since 2018 are facing escalating pressures from illegal wildlife trade and mining. 
+The proportion of reptiles threatened with extinction has increased from 5% in 2018 to 8% in 2022. There are 407 reptile taxa in South Africa of which 155 are endemic. A total of 12% of endemic taxa are threatened. Declines are mainly due to habitat loss with agriculture impacting 80% of threatened taxa followed by residential and commercial development (46%). Species that have become more threatened since 2018 are facing escalating pressures from illegal wildlife trade and mining.
 
 ### [Amphibians](sp_amphibians.qmd)
 
@@ -301,15 +302,15 @@ Twenty-one percent of the 135 assessed terrestrial amphibian taxa are threatened
 
 ### [Plants](sp_plants.qmd)
 
-Seventeen percent of the representative sample of 900 plant taxa are threatened with extinction, and one in five endemic taxa face extinction risk.  Agriculture continues to affect the largest proportion of threatened taxa (68%), while invasive alien species (57%), illegal harvesting (28%), mining-related habitat loss (13%), and drought related mortality attributed to climate change (11%) remain significant pressures.  Since 2020 326 plant species have been uplisted to higher categories of threat, 153 of these (53%) have been uplisted due to the impacts of climate change and drought in the north western parts of South Africa, with 124 of these simultaneously impacted by livestock overgrazing (38%). A total of 118 plant taxa (36%) were uplisted due to the impacts of [illegal collection for the ornamental trade](#illegal-trade). 
+Seventeen percent of the representative sample of 900 plant taxa are threatened with extinction, and one in five endemic taxa face extinction risk. Agriculture continues to affect the largest proportion of threatened taxa (68%), while invasive alien species (57%), illegal harvesting (28%), mining-related habitat loss (13%), and drought related mortality attributed to climate change (11%) remain significant pressures. Since 2020 326 plant species have been uplisted to higher categories of threat, 153 of these (53%) have been uplisted due to the impacts of climate change and drought in the north western parts of South Africa, with 124 of these simultaneously impacted by livestock overgrazing (38%). A total of 118 plant taxa (36%) were uplisted due to the impacts of [illegal collection for the ornamental trade](#illegal-trade).
 
 ### [Spiders](sp_spiders.qmd)
 
-South Africa is the first country to have undertaken a comprehensive assessment for spiders. This first assessment indicates very low levels of threat with only four percent of the 2,214 assessed spider taxa threatened with extinction.  When compared to assessments for plants where 17% of assessed taxa are threatened and vertebrates where12% of taxa are threatened, on first assessment spiders may appear to be more resilient than other groups. There are, however, high levels of data deficiency with 37% of assessed spider taxa lacking sufficient taxonomic resolution and ecological data to assign a threat category. The overall threat level for spiders will therefore only be known once these data deficiencies are addressed. The major threats to spiders are residential and commercial development (impacting 69% of threatened taxa) followed by agriculture, particularly crop cultivation which impacts 62% of threatened species. Ground-dwelling species with poor dispersal abilities are particularly impacted by habitat loss.
+South Africa is the first country to have undertaken a comprehensive assessment for spiders. This first assessment indicates very low levels of threat with only four percent of the 2,214 assessed spider taxa threatened with extinction. When compared to assessments for plants where 17% of assessed taxa are threatened and vertebrates where12% of taxa are threatened, on first assessment spiders may appear to be more resilient than other groups. There are, however, high levels of data deficiency with 37% of assessed spider taxa lacking sufficient taxonomic resolution and ecological data to assign a threat category. The overall threat level for spiders will therefore only be known once these data deficiencies are addressed. The major threats to spiders are residential and commercial development (impacting 69% of threatened taxa) followed by agriculture, particularly crop cultivation which impacts 62% of threatened species. Ground-dwelling species with poor dispersal abilities are particularly impacted by habitat loss.
 
 ### [Butterflies](sp_butterflies.qmd)
 
-Ten percent of the 800 butterfly taxa assessed are threatened with extinction, while 18% of South Africa's 419 endemic terrestrial butterfly taxa face extinction risk. While butterflies were last comprehensively assessed in 2017, the leading causes of decline remain natural ecosystem modification (66%) due to inappropriate fire management and the spread of invasive alien plants, followed by loss of habitat to agriculture (60%). Monitoring by members of the Lepidoptera Society between 2017 and 2025 have shown that two species are no longer extant at formerly known populations. The Waterberg copper butterfly, *Erikssonia edgei* and the Brenton blue butterfly *Orachrysops niobe* are considered possibly extinct. The Waterberg copper has been lost from its former sites due to lack of burning of its grassland habitat and the Brenton blue butterfly was lost from its only known site due to unprecedented hot fires caused by alien fuel loads during the 2017 Knysna fires.  These possible extinctions are of high concern given South Africa’s commitment to halt extinctions through our ratification of the Global Biodiversity Framework of the Convention on Biological Diversity. 
+Ten percent of the 800 butterfly taxa assessed are threatened with extinction, while 18% of South Africa's 419 endemic terrestrial butterfly taxa face extinction risk. While butterflies were last comprehensively assessed in 2017, the leading causes of decline remain natural ecosystem modification (66%) due to inappropriate fire management and the spread of invasive alien plants, followed by loss of habitat to agriculture (60%). Monitoring by members of the Lepidoptera Society between 2017 and 2025 have shown that two species are no longer extant at formerly known populations. The Waterberg copper butterfly, *Erikssonia edgei* and the Brenton blue butterfly *Orachrysops niobe* are considered possibly extinct. The Waterberg copper has been lost from its former sites due to lack of burning of its grassland habitat and the Brenton blue butterfly was lost from its only known site due to unprecedented hot fires caused by alien fuel loads during the 2017 Knysna fires. These possible extinctions are of high concern given South Africa’s commitment to halt extinctions through our ratification of the Global Biodiversity Framework of the Convention on Biological Diversity.
 
 ```{r}
 #| label: fig-2
@@ -321,12 +322,11 @@ Ten percent of the 800 butterfly taxa assessed are threatened with extinction, w
 knitr::include_graphics("./imgs/Terrestrial_Maj.png")
 ```
 
-2.	**Trends**
+2.  **Trends**
 
-The trend in terrestrial species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs)[@butchart2004]. The RLIs is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where  the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. 
+The trend in terrestrial species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs)[@butchart2004]. The RLIs is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct.
 
 The RLIs is calculated only for comprehensively assessed taxonomic groups or groups where a representative sample has been selected. Changes in status over time has been tracked for six taxonomic groups that occur in the terrestrial realm (@fig-3). Increases in extinction risk is evident for most groups, but a marked increase in rate of extinction since the last assessment is evident from the change in rate of declines for reptiles, birds, mammals and plants. Increases in threat status for birds has largely been because of increasing levels of pollution and other forms of habitat degradation, while the main drivers of declines for mammals, plants and reptiles have been climate change and loss of habitat for mining and renewable energy development (the taxa that have changed status and the reason causing the uplisting to high threat categories are included on each taxon page). Most of the declines to plants are taking place in the Northern Cape Province (@fig-4) with the Namaqualand region most severely impacted. Anthropogenic impacts from livestock farming, mining, and road construction are being amplified by climate change factors including an unprecedented nine-year drought (2011-2019), increased temperatures, and stronger winds that cause cascading desertification processes through soil erosion and sand burial2. This same region is being heavily impacted by illegal wildlife trade of ornamental succulent and geophytic plants. Animals that have increased in threat status are spread across South Africa but are concentrated in the areas with high rates of recent habitat loss.
-
 
 ```{r}
 #| label: fig-3
@@ -354,7 +354,6 @@ nbaR::nba_index_plot(TYPE = "RLIs",
                      SAVE = NULL)
 
 ```
-
 
 ```{r}
 #| label: fig-4
@@ -384,8 +383,6 @@ ggpubr::ggarrange(p1, p2, ncol = 2, labels = c("A", "B"), font.label = list(size
 A total of 70% of plant species are Well Protected (based on a representative sample of 900 taxa). All mammal, reptile, bird, amphibians were assessed for protection level and overall 77% of these assessed terrestrial animals are Well Protected.
 
 The overall levels of protection for terrestrial species are shown in @fig-5. The details of protection level for each taxon group and the trends and changes in status since 2018 can be found at Species protection level integrated findings
-
-
 
 ```{r}
 #| label: fig-5
@@ -467,7 +464,6 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
-
 
 ### References
 
