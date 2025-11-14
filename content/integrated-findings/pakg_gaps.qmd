@@ -10,7 +10,7 @@ title-block-banner-color: white
 NBA 2018 attempted a comprehensive summary of knowledge gaps causing limitations to the NBA, which resulted in a long list of research, monitoring and data management priorities for all components of the NBA. This table summarises the progress that has been made, highlighting the gaps that still remain:
 
 |  |  |
-|-----------------------|------------------------------------------------|
+|----|----|
 | **Priority from NBA 2018** | **Summary of progress since NBA 2018** |
 | Biotic and abiotic monitoring | Long-term, focused, site-based monitoring of biodiversity and pressures on biodiversity, as well as the monitoring of specific species at larger scales (e.g., harvested species, invasive alien species, etc.) remain insufficient. While there are some long-term site-based and species monitoring programmes, many suffer from a lack of resources. Abiotic information (e.g., water turbidity, sediments, temperature, pesticide load, microplastics, etc.) is crucial for mapping ecosystems and their condition, and much of this information is not collected and/or poorly understood in terms of their impacts on ecological condition. Further investment in strategic monitoring and data systems is needed. See also key message C2. |
 | Incorporating genetic diversity measures | There is ongoing progress on emerging genetic diversity indicators (see the genetic diversity indicators section), however the species and taxonomic groups included in these indicators are a small sample and coverage needs to be expanded. |

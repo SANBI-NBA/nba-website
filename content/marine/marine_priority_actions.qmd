@@ -80,8 +80,9 @@ author:
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Sinothando #Add author's first name here. Abbreviate the middle name
+      given: Sinothando S. #Add author's first name here. Abbreviate the middle name
       family: Shibe #Add author's surname here
+    orcid: 0000-0002-1194-0132 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanparks5 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
@@ -247,12 +248,12 @@ Enable participation in ocean planning, assessment and management to support a w
 
 -   Ensure that at least 50% of South Africa’s marine protected areas have established and active local MPA Fora.
 
-<!-- ![Workshop participants](imgs/workshop.png){.lightbox} <!-- ![TBA](imgs/PA_1.png){.lightbox} -->
+<!-- ![Workshop participants](imgs/workshop.png) <!-- ![TBA](imgs/PA_1.png) -->
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-2 .callout .marine collapse="false"}
+::: {#box-2 .callout .freshwater collapse="false"}
 ## 2. Improve coordination within government and strengthen collaborations for improved ocean management and decision-making (Key Message [A2](../key-messages/kma2.qmd), Key message B1, and Key message C1).
 
 Simplify , strengthen and co-ordinate institutional and sectoral arrangements, relationships and frameworks to enable a whole-of government approach for effective and efficient ocean governance. This can be advanced through improved coordination and cooperative governance and, integrated spatial planning MSP).
@@ -263,12 +264,12 @@ Simplify , strengthen and co-ordinate institutional and sectoral arrangements, r
 
 -   Review marine inter-governmental and cross-sectoral working groups and task teams to clarify, simplify and streamline workstreams.
 
-<!-- ![TBA](imgs/PA_2.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_2.png) -->
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-3 .callout .marine collapse="false"}
+::: {#box-3 .callout .freshwater collapse="false"}
 ## 3. Avoid, reduce and manage industrial impacts (Key message A2, Key message A3, Key message A4, and Key message B5).
 
 Avoid, reduce and manage industrial impacts on marine biodiversity through effective Marine Spatial Planning, strengthened mitigation and restoration (including water quality and underwater noise), and strategic mainstreaming within key production sectors.
@@ -281,12 +282,12 @@ Avoid, reduce and manage industrial impacts on marine biodiversity through effec
 
 -   The Offshore Environment Forum is reconvened with inclusion of shipping, heritage and coastal communities.
 
-<!-- ![TBA](imgs/PA_3.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_3.png) -->
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-4 .callout .marine collapse="false"}
+::: {#box-4 .callout .freshwater collapse="false"}
 ## 4. Ensure sufficient quantity and quality of freshwater flows to marine ecosystems (Key message A3, A7, B2).
 
 South Africa needs to ensure sufficient fresh water is allocated and received by the marine realm and connect multiple initiatives to improve water quality.
@@ -299,15 +300,15 @@ South Africa needs to ensure sufficient fresh water is allocated and received by
 
 -   Marine flow requirements recognised in legislation and integrated into water resource management, coastal management and living resource management processes.
 
-<!-- ![TBA](imgs/PA_4.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_4.png) -->
 :::
 
-::: {#box-5 .callout .marine collapse="false"}
+::: {#box-5 .callout .freshwater collapse="false"}
 ## 5. Manage fisheries better and more fairly to improve ocean health and food and livelihood security (A2, A5, B1, B3, B5).
 
 Strengthen ecosystem-based fisheries management through reviews and updates to ecological risk assessments and the development and implementation of effective fisheries management plans, fisheries mainstreaming and marine resource stewardship initiatives.
 
--   Develop and implement Fisheries management plans for each fishing sector to ensure ecological sustainability for long term economic sustainability. These must ensure resource (target species) sustainability, include bycatch and habitat management objectives (where applicable) and, climate change considerations and address the human dimension of fisheries.
+-   Develop and implement Fisheries management plans for each fishing sector to ensure ecological sustainability for long-term economic sustainability. These must ensure resource (target species) sustainability, include bycatch and habitat management objectives (where applicable) and, climate change considerations and address the human dimension of fisheries.
 
 -   Review Ecological Risk Assessments and identify key steps to avoid and mitigate ecosystem risks.
 
@@ -325,12 +326,12 @@ Strengthen ecosystem-based fisheries management through reviews and updates to e
 
     -   Co-develop a multifaceted (normative and instrumental) recreational fisheries compliance strategy with stakeholders to effectively address high levels of non-compliance.
 
-<!-- ![TBA](imgs/PA_5.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_5.png) -->
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-6 .callout .marine collapse="false"}
+::: {#box-6 .callout .freshwater collapse="false"}
 ## 6. Improve social and natural science monitoring and research (Key message C2, Key message B3, and Key message A4)
 
 Catalyse research and monitoring to address critical social and natural science knowledge gaps that limit the assessment and collaborative management of marine biodiversity, the identification of joint solutions and decision-making for a sustainable oceans economy.
@@ -345,20 +346,20 @@ Catalyse research and monitoring to address critical social and natural science 
 
 -   Pilot at least one participatory and interdisciplinary small-scale fisheries monitoring initiative in South Africa (preferably for near shore resources).
 
--   Establish long term monitoring programmes in MPAs to monitor effectiveness of management interventions and to use MPAs to their potential as reference sites.
+-   Establish long-term monitoring programmes in MPAs to monitor effectiveness of management interventions and to use MPAs to their potential as reference sites.
 
 -   Genetic monitoring of fishery resources initiated.
 
 -   Standardised monitoring programmes for marine invasive species, and citizen science research to improve early detection.
 
-<!-- ![TBA](imgs/PA_6.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_6.png) -->
 :::
 
-![Marine species red listing strategy developed.](imgs/red_listing_strategy_slide.jpg){.lightbox}
+![A marine species red listing strategy was developed that addresses persistent gaps in this field.](imgs/red_listing_strategy_slide.jpg){#fig-redlist}
 
 <!-- ######################################################### -->
 
-::: {#box-7 .callout .marine collapse="false"}
+::: {#box-7 .callout .freshwater collapse="false"}
 ## 7. Ensure South Africa has the skills and infrastructure to manage and deliver expanding data and knowledge products for informed ocean planning and decision-making (Key message A2?, Key message B5, and Key message C2).
 
 Invest in data science capacity and infrastructure to ensure effective data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean.
@@ -373,12 +374,12 @@ Invest in data science capacity and infrastructure to ensure effective data pipe
 
 -   FAIR (Findable, Accessible, Interoperable, and Reusable) data principles and reproducible science workflows are prioritised.
 
-<!-- ![TBA](imgs/PA_7.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_7.png) -->
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-8 .callout .marine collapse="false"}
+::: {#box-8 .callout .freshwater collapse="false"}
 ## 8. Ensure that existing Marine Protected Areas work and expand South Africa’s conservation estate through new approaches, co-management and co-ordinated efforts to address persistent challenges (Key message B4, Key message C1, and Key message C3).
 
 -   Improve marine protection through more diverse and inclusive conservation models, improved social process and innovative finance; progress in co-management and steps to address critical capacity shortfalls and restorative action. Persistent barriers to effective protection must be overcome and key lessons in this process should be applied in future expansion efforts.
@@ -397,12 +398,12 @@ Invest in data science capacity and infrastructure to ensure effective data pipe
 
 -   Offshore protection levels improve for slope ecosystem types.
 
-<!-- ![TBA](imgs/PA_8.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_8.png) -->
 :::
 
 <!-- ######################################################### -->
 
-:::: {#box-9 .callout .marine collapse="false"}
+:::: {#box-9 .callout .freshwater collapse="false"}
 ## 9. Maintain and increase marine biodiversity benefits through improved statistics, communication and knowledge sharing (Key message C1, Key message C2, Key message C3).
 
 Diversify and improve the communication of marine biodiversity data (values and benefits, risks, usage), and mainstream biodiversity into key production sectors (especially fisheries). This will enable better understanding of the value of marine biodiversity and its contribution to the economy.
@@ -425,12 +426,12 @@ Natural Capital Accounting, developed under the SEEA Central Framework, is an ap
 Through the application of NCA in the marine and coastal realm, the value and contribution of marine and coastal ecosystems can be communicated in direct terms that link to the current System of National Accounts, illustrating the linkages and dependencies that exist between existing and future economic activities. For example, by linking the results of the NBA to maps of marine and coastal Ecological Infrastructure, NCA accounts can be developed to valuate and communicate the benefits from functional biodiversity in the availability and delivery of ecosystem services such as climate change mitigations, adaptation and resilience.
 :::
 
-<!-- ![TBA](imgs/PA_9.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_9.png) -->
 ::::
 
 <!-- ######################################################### -->
 
-::: {#box-10 .callout .marine collapse="false"}
+::: {#box-10 .callout .freshwater collapse="false"}
 ## 10. Reduce climate risks to people and nature (Key message A1, Key message B4, Key message C1, and Key message C3).
 
 -   Invest in the multiple opportunities for scaling up integrated climate action through inclusive choices that prioritise risk reduction, equity and justice.
@@ -445,8 +446,45 @@ Through the application of NCA in the marine and coastal realm, the value and co
 
 -   Climate Change Adaptation Response Plan for South Africa's Coastal Sector (CARP; work underway).
 
-<!-- ![TBA](imgs/PA_10.png){.lightbox} -->
+<!-- ![TBA](imgs/PA_10.png) -->
 :::
+
+```{r}
+#| label: tbl-48
+#| echo: false
+#| tbl-cap: GET FROM NBA 2018
+#| out-width: 100%
+#| classes: plain
+library(tidyverse)
+
+# load the data 
+tbl_48 <- read.csv(file=list.files(pattern = "^Table_48update.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+
+library(gt)
+
+tbl <- tbl_48 %>%
+  mutate(across(
+    everything(),
+    ~ {
+      x <- as.character(.)
+      x <- iconv(x, from = "", to = "UTF-8", sub = "")   # fix encoding first
+      x <- gsub("\u00a0", " ", x, fixed = TRUE)          # replace non-breaking spaces
+      x
+    }
+  ))
+
+  gt::gt(tbl)%>%
+  fmt_markdown(columns = everything())  %>%
+  nbaR::nba_tbl_theme(HEADER = "Marine") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+
+```
 
 ## Approach
 

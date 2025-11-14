@@ -66,7 +66,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-![Left to right: Rose's mountain toadlet (*Capensibufo rosei*) © Jeremy Shelton; Geometric tortoise (*Psammobates geometricus*) © Andre Botha; Southern white rhinoceros (*Ceratotherium simum simum*) © Greg Martindale; Grey rhebok (*Pelea capreolus*) © Tim Kuiper.](imgs/genetics-sp-banner.png)
+![Left to right: Rose's mountain toadlet (*Capensibufo rosei*) (© Jeremy Shelton); Geometric tortoise (*Psammobates geometricus*) (© Andre Botha); Southern white rhinoceros (*Ceratotherium simum simum*) (© Greg Martindale); Grey rhebok (*Pelea capreolus*) (© Tim Kuiper).](imgs/genetics-sp-banner.png)
 
 ## Monitoring Genetic Diversity using Indicators
 
@@ -146,7 +146,7 @@ This complementary indicator is estimated as the total phylogenetic diversity in
 
 ------------------------------------------------------------------------
 
-As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. South Africa reported a **PM value of 0.95** and **Ne 500 value of 0.42**. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
+As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. South Africa reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
 
 Importantly, these national metrics can be dissagregated in various ways, such as by taxonomic group (@tbl-taxagrp) or conservation status (@fig-ne-by-threatstatus), to explore patterns and trends across different biodiversity components, similar to [species](../integrated-findings/intf-species.qmd) and [ecosystems](../integrated-findings/intf_ecosystems.qmd) assessments.
 
@@ -180,7 +180,7 @@ To better understand the genetic health of South African biodiversity, efforts a
 
 ### A Case Study on South Africa’s Amphibians and Reptiles
 
-South Africa is home to exceptionally rich and evolutionarily unique biodiversity, the loss of which would represent a significant erosion of the country’s evolutionary heritage. Using comprehensive Red List assessments together with detailed evolutionary (phylogenetic) trees, researchers can estimate how much of this evolutionary hertiage could be lost if threatened species for extinct - a metric known as **Expected Loss of Phylogenetic Diversity** — the proportion of evolutionary history likely to be lost if currently threatened species go extinct.
+South Africa is home to exceptionally rich and evolutionarily unique biodiversity, the loss of which would represent a significant erosion of the country’s evolutionary heritage. Using comprehensive Red List assessments together with detailed evolutionary (phylogenetic) trees, researchers can estimate how much of this evolutionary hertiage could be lost if threatened species for extinct - a metric known as Expected Loss of Phylogenetic Diversity — the proportion of evolutionary history likely to be lost if currently threatened species go extinct.
 
 In a recent case study [@nietolawrence], this approach was applied to South Africa’s amphibians and reptiles, both of which have exceptionally high levels of endemism (around 50%). By integrating extinction risk data with measures of **phylogenetic diversity (PD)**, researchers found that, without conservation action, **about 6.5% of amphibian PD and 5% of reptile PD could be lost over the next 50 years** (@fig-PD).
 
@@ -190,7 +190,7 @@ Importantly, areas rich in PD did not always coincide with regions of high speci
 
 ![Expected loss of phylogenetic diversity for South African A) amphibians and B) reptiles, generated using national phylogenies where branch lengths were weighted by the probability of all descendant species becoming extinct [@gumbs2023]. The highest risk for both groups is estimated to be found in the tropical east, while for amphibians, notable concentrations appear in montane regions of the Western and Eastern Cape provinces. For reptiles, extreme concentrations of expected PD loss can be found in the north-east of KwaZulu-Natal and in the north-west of the Northern Cape Province.](imgs/xPDL.png){#fig-xLPD}
 
-This study provides a **national framework for monitoring phylogenetic biodiversity and its expected loss**, aligned with global biodiversity monitoring goals. It demonstrates an approach that can be extended to other taxonomic groups, helping ensure that conservation strategies safeguard not only species, but also the deep evolutionary lineages and adaptive potential that make South Africa’s biodiversity globally unique.
+This study provides a national framework for monitoring phylogenetic biodiversity and its expected loss, aligned with global biodiversity monitoring goals. It demonstrates an approach that can be extended to other taxonomic groups, helping ensure that conservation strategies safeguard not only species, but also the deep evolutionary lineages and adaptive potential that make South Africa’s biodiversity globally unique.
 
 ## Available Genetic Tools
 

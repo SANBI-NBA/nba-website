@@ -8,7 +8,7 @@ title-block-banner-color: white
 
 ## Technical pages
 
-To reference the technical pages of this website (those with an author list at the top of the page) please use the **Recommended citation** at the bottom of each page.
+To reference the technical pages of this website (those with an author list at the top of the page) please use the **Recommended citation** **at the bottom of each page**.
 
 *Example:*
 
@@ -16,12 +16,12 @@ To reference the technical pages of this website (those with an author list at t
 
 ## General pages
 
-Some pages on the site do not have a specific author list or recommended citation, this general NBA content should be referenced as follows:
+Some pages on the site do not have a specific author list or recommended citation, and this general NBA content should be referenced as follows:
 
 -   South African National Biodiversity Institute (SANBI). 2025. National Biodiversity Assessment 2025: The status of South Africa’s biodiversity - Website. South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. <https://nba.sanbi.org.za/>
 
-#### A note on dates and releases:  
+## A note on dates and releases
 
 The NBA aims to draw on the best available biodiversity data and analyses and present these periodically in a national report. As such, the NBA 2025 draws on input datasets from a range of sources, each with its own update and release cycle. For example the marine ecosystem map was published in 2023 and this informed the various ecosystem assessments that were conducted in 2024/2025; the spider Red List assessment was conducted in 2020 but continues to represent the best available data in 2025.
 
-With the development of the NBA website, regular updates of indicators are now possible. The "whats new" section will highlight updates and new content, ensuring the best available information is accessible, while archiving content that has been superseded.
+With the development of the NBA website, regular updates of indicators are now possible. The 'What's new' section will highlight updates and new content, ensuring the best available information is accessible, while archiving content that has been superseded.

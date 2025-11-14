@@ -36,6 +36,3 @@ The marine and terrestrial realms are similar in terms of their relatively high 
 In stark contrast, freshwater wetlands and rivers, as well as estuaries, are predominantly heavily modified, and in poor ecological condition. These realms are geographically constrained, and pressures tend to concentrate. Only 18% of estuarine area, 49% of wetland area and 25% of river length are considered to be in natural/near-natural condition. Coastal biodiversity is also under particularly high pressure and approximately half of the ecologically determined coastal zone remains in a natural/near-natural condition. [Key message B2](../key-messages/kmb2.qmd).
 
 ![Ecological condition map (terrestrial and marine). The legend shows the categories used across the different realms. Present Ecological State (PES) for freshwater and estuarine, severity of disruption of ecosystem function (IUCN Red List of Ecosystems) and NBA ecological condition categories.](imgs/fig6cond.png){#fig-cond-map width="600px"}
-
-
-

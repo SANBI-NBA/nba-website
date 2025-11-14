@@ -256,15 +256,15 @@ google-scholar: true
 
 <!-- Last thing to check before publication: did Kerry get permission from Frontiers to include Lisa Skein's flow diagram image? -->
 
-*Marine ecosystems and species face pressures from an increasing range and intensity of human activities that continue to expand and diversify as South Africa develops its ocean economy. Fishing, particularly widespread industrial fishing, continues to exert the greatest pressures on marine biodiversity, affecting ecosystems, species and genetic diversity. The impacts of fishing need to be effectively managed to ensure sustainable fisheries that can support ocean life and livelihoods and pressure mapping needs to be updated and improved for more accurate assessments, especially at finer scales. Mining, petroleum, port and harbour development and shipping also drive degradation with increasing pollution and climate change exacerbating concerns*
+*Marine ecosystems and species face pressures from an increasing range and intensity of human activities that continue to expand and diversify as South Africa develops its ocean economy. Fishing, particularly widespread industrial fishing, continues to exert the greatest pressures on marine biodiversity, affecting ecosystems, species and genetic diversity. The impacts of fishing need to be effectively managed to ensure sustainable fisheries that can support ocean life and livelihoods and pressure mapping needs to be updated and improved for more accurate assessments, especially at finer scales. Mining, petroleum, port and harbour development and shipping also drive degradation with increasing pollution and climate change exacerbating concerns.*
 
-![Coastal mining between Kleinzee and Lambertsbaai. © Jaque Smith.](imgs/Coastal_Mining_Tormin_Klienzee_to_Lamberts_Bay_©Jacque_Smit_PTWC-57.png)
+![Coastal mining between Kleinzee and Lambertsbaai. © Jaque Smith.](imgs/Coastal_Mining_Tormin_Lamberts_Bay_to_Klienzee_Jacque_Smit_PTWC-83.png)
 
 <!-- Additional high pressure areas include the area offshore of the Orange River, the shelf edge on the west and south coast, large portions of the Cape inner and middle shelf, the Agulhas Bank and the KwaZulu-Natal Bight. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).** -->
 
 ## Cumulative Pressures
 
-South Africa uses cumulative pressure mapping as a key input into the assessment of marine ecosystem threat status. A total of 31 pressures have been mapped to support biodiversity assessment and spatial planning [@majiedt2019]. These include historical pressures that may have ceased in some areas but have contributed to long term changes in ecological condition. Both the number and intensity of pressures is considered in cumulative pressure mapping.
+South Africa uses cumulative pressure mapping as a key input into the assessment of marine ecosystem threat status. A total of 31 pressures have been mapped to support biodiversity assessment and spatial planning [@majiedt2019]. These include historical pressures that may have ceased in some areas but have contributed to long-term changes in ecological condition. Both the number and intensity of pressures is considered in cumulative pressure mapping.
 
 ```{r}
 #| label: fig-cum-press
@@ -300,7 +300,7 @@ The indirect and cumulative impacts of expanding ocean activities need more atte
 
 ## Sector and pressure overviews
 
-Pressure data sets are important inputs into spatial assessments and planning. Marine pressure data for South Africa is described in the 2018 NBA marine technical report [@majiedt2019] that explained and mapped each pressure, summarised patterns in their extent and intensity, and reviewed their known biodiversity impacts, noting any known mitigation measures or relevant work that was underway. Drawing on the above and information that is available in more recent Marine Spatial Planning reports [@departmentofforestryfisheriesandtheenvironment2022; @departmentofforestryfisheriesandtheenvironment2025], a brief summary of sectors and pressures is provided below (only references not previously cited in Majiedt et al. (2019) are indicated).
+Pressure data sets are important inputs into spatial assessments and planning. Marine pressure data for South Africa is described in the 2018 NBA marine technical report [@majiedt2019] that explained and mapped each pressure, summarised patterns in their extent and intensity, and reviewed their known biodiversity impacts, noting any known mitigation measures or relevant work that was underway. Drawing on the above and information that is available in more recent marine spatial planning reports [@departmentofforestryfisheriesandtheenvironment2020] [departmentofforestryfisheriesandtheenvironment2025 relevant MSP report is missing from bib file]{.mark}, a brief summary of sectors and pressures is provided below (only references not previously cited in Majiedt et al. (2019) are indicated).
 
 In general, updating and improvement of pressure data sets is required. Outdated pressure maps, pressure data that are missing or of a poor resolution, and inaccurate estimation of pressure impacts on ecological condition, all reduce the accuracy of biodiversity assessments and the efficacy of spatial planning. For example, missing pressure data in certain areas or for certain sub-sectors (such as small-scale fishing) omits key rightsholders and compromises integrated and equitable spatial planning. Long-term pressure data series are needed for ecosystem and species assessment ([key message B5](../key-messages/kmb5.qmd)) and finer scale mapping for more accurate assessment of ecological condition.
 
@@ -310,6 +310,7 @@ In general, updating and improvement of pressure data sets is required. Outdated
 
 ::: {#box1 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Fishing incorporates at least 19 South African fishing sectors representing industrial, commercial, small-scale, artisanal and recreational fisheries, with a variety of methods employed to target a wide range of fish, invertebrate and seaweed resources.
+
 \
 Fishing methods include trawling (demersal and mid-water), longlining (demersal and pelagic), purse-seining, linefishing, squid jigging, trap fishing, hand harvesting, beach seining, and wet and dry kelp harvesting.
 
@@ -319,7 +320,7 @@ Fisheries affect benthic and pelagic ecosystems through multiple pathways of imp
 
 Unsustainable fishing includes overfishing of target or bycatch species and fishing practices that can have severe impacts on biodiversity and ecosystems. Overfishing can include unsustainable total numbers of fish being caught and overharvesting of specific size or age classes that are critical for maintaining population growth and fishery sustainability. Some fishing gear types are known to incidentally catch high numbers of non-target species (bycatch or incidental mortalities) and/or to impact seabed habitats. Illegal fishing and ghost fishing from lost fishing gear are difficult to map and qualify, but these unsustainable fishing practices can have negative impacts on the food web (trophic effects) and lead to ecosystem degradation.
 
-Although industrial fisheries generally have greater and more widespread impacts on marine ecosystems and species, all sectors contribute to pressures in the marine realm. In terms of participation, the recreational fishery is the largest of all the fishing sectors in South Africa (460-550 000 fishers [@potts2022]). This and the high technical capacity [@viana2025] of mobile recreational fishers dispersed across the coastline means that this sector has a significant impact on fisheries resources. Furthermore, the recreational fishery is currently ineffectively governed by inadequate policy and regulations and remains largely unmonitored and poorly enforced [@potts2020], with high levels of non-compliance (\~50% [@bova2022]) and poor environmental behaviours being the norm in many recreational fisher communities [@kramer2017; @farthing2025]. While some commercial linefish species have demonstrated recent recovery, many species, also targeted by the recreational fishery, remain overexploited [@departmentofforestryfisheriesandtheenvironment2022], especially kobs ([marine species page](../species/marine_sp.qmd)) and some [seabreams](../species/sp_sparids.qmd).
+Although industrial fisheries generally have greater and more widespread impacts on marine ecosystems and species, all sectors contribute to pressures in the marine realm. In terms of participation, the recreational fishery is the largest of all the fishing sectors in South Africa (460-550 000 fishers [@potts2022]). This and the high technical capacity [@viana2025] of mobile recreational fishers dispersed across the coastline means that this sector has a significant impact on fisheries resources. Furthermore, the recreational fishery is currently ineffectively governed by inadequate policy and regulations and remains largely unmonitored and poorly enforced [@potts2020], with high levels of non-compliance (\~50% [@bova2022]) and poor environmental behaviours being the norm in many recreational fisher communities [@kramer2017; @farthing2025]. While some commercial linefish species have demonstrated recent recovery, many species, also targeted by the recreational fishery, remain overexploited [@departmentofforestryfisheriesandtheenvironment2025a], especially kobs ([marine species page](../species/marine_sp.qmd)) and some [seabreams](../species/sp_sparids.qmd).
 
 There is evidence of some pro-active, conscientious recreational fishers adopting voluntary catch-and-release and other best practices in a growing social movement of self-reform [@mannheim2018; @allison2023]. However, while there is growing acceptance of catch-and-release (voluntary or mandatory) practice as an essential practice, there is a growing consensus that poor release practices can still contribute considerably to fishing mortality [@butler2017; @mann2018].
 
@@ -330,6 +331,7 @@ Overfishing can also impact genetic biodiversity of fishery species by reducing 
 
 :::: {#box2 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## South Africa has employed lethal shark control measures in the province of KwaZulu-Natal since 1952 to protect bathers from the risk of shark attack.
+
 \
 These measures, comprising gill nets and baited drum lines, are implemented to reduce the local or resident population of sharks in the vicinity of certain beaches, thereby reducing the probability of an ocean user encountering a shark. These measures are implemented between Richards Bay and Port Edward with 13.5 km of nets and 177 baited drumlines deployed in summer and 0.2 km of nets and 270 baited drumlines in winter ([See Improvements in shark control measures](#box3)). Biodiversity concerns associated with the shark control program include the overexploited and threatened status of several target and bycatch species of cartilaginous fishes ([shark, rays, and chimeras](../species/sp_sharks.qmd)), catches of turtles and marine mammal species ([marine species page](../species/marine_sp.qmd)) and potential ecosystem effects linked to the removal of predatory sharks. Of the 14 species of large sharks regularly caught by the KwaZulu-Natal sharks board, 11 are threatened. All of the affected marine mammal and turtle species are listed as Threatened or Protected species under the National Environmental Management: Biodiversity Act.
 
@@ -350,6 +352,7 @@ Other provinces have implemented non-lethal measures that have little to no impa
 
 ::: {#box4 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Coastal and offshore mining is increasing in South Africa, targeting diamonds, heavy minerals and sand, and depending on the method of extraction, can have moderate to very severe negative impacts on biodiversity.
+
 \
 Impacts include habitat destruction and modification (including beach morphodynamic type), sediment suspension and increased turbidity, pollution, noise, changes in the distribution and feeding habits of species and the introduction of alien species. Ecosystems that are impacted include beaches and shallow and deep benthic ecosystems on the shelf [@biccard2018; @rangel-buitrago2023; @manona2024].
 
@@ -362,6 +365,7 @@ Suspended and deposited sediments caused by operations decrease feeding efficien
 
 ::: {#box5 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Marine petroleum activities in South Africa were initiated in 1969 with more than 300 offshore wells drilled to date and ongoing exploration by seismic survey.
+
 \
 The impacts of petroleum activities span the impacts associated with exploration, production and transport. Petroleum production has been suspended at the Oribi/Oryx and Sable oil fields (Block 9 off Mossel Bay) and the F-A Gas field and satellites but field development plans are underway at the Ibhubesi gas field off Hondeklipbaai. While production has largely decreased in recent years in South Africa, exploration activities have expanded into deeper water (@fig-seismic) and there has been increasing concern about the negative impacts of seismic surveys, in particular, on marine species and ecosystems. This is because of the intense and widespread noise that these surveys generate, which can have varied, far-reaching and cumulative impacts on multiple species and ecosystem processes. A cumulative map of seismic surveys was recently compiled and there is some progress in planning for the integration of underwater noise into assessments and planning ([(Sink et al. 2024 seismic report)]{.mark}). [**See Pollution section**](#pollution).
 
@@ -372,6 +376,7 @@ Biodiversity impacts associated with drilling and production include habitat los
 
 ::: {#box6 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Shipping is a widespread source of pressure in South Africa’s marine realm and is a key source of underwater noise and other pollution.
+
 \
 South Africa is a maritime nation with considerable ship traffic and one of the highest concentrations of cargo ship and oil tanker traffic globally. While shipping is the dominant form of underwater noise in the ocean, affecting a broad range of marine species [@duarte2021], there are also other environmental and biodiversity impacts, including other forms of pollution (e.g. chemical pollution, accidental oil spills, air pollution and other), the introduction of invasive alien species through ballast water discharge and hull fouling, and ship strikes (collisions between vessels and large marine animals). South Africa still needs to promulgate the Ballast Water Act which has been in Bill form since 2013. More effective management of shipping in noise sensitive areas such as marine protected areas, including by regulating the maximum speed of vessels, can strengthen protection by reducing underwater noise levels and the risk of collisions. [**See Pollution section**](#pollution).
 :::
@@ -380,6 +385,7 @@ South Africa is a maritime nation with considerable ship traffic and one of the 
 
 ::: {#box7 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Coastal development, including port development, is a significant cause of pressure on coastal and marine ecosystems, leading to ecosystem loss, interruption of physical and biological process, and compromises in ecosystem resilience and services [@majiedt2019; @claassens2022; @harris2025a; @harris2025].
+
 \
 Coastal development within the littoral active zone deprives beaches of the sand stored in dunes and reduces coastal resilience to storms, high wave-energy events and sea-level rise, increasing risks to coastal communities and infrastructure. Such development can require expensive artificial movement of sand or other coastal engineering solutions to mitigate downstream erosion. In addition to coastal development impacts, **ports and harbours** are the main points of introduction and refugia for invasive alien species, and activities associated with them contribute to ecosystem degradation from smothering, pollution, underwater noise and anchorage. Coastal disturbance is common at popular and accessible beaches (especially around access points), and includes trampling, dune destabilisation and disturbance of shore birds or other shore animals. For more information see the [**coastal page**](../coast/cst_synthesis.qmd).
 :::
@@ -388,6 +394,7 @@ Coastal development within the littoral active zone deprives beaches of the sand
 
 ::: {#box8 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## The biodiversity impacts of mariculture depend on the species, culture method, stocking density, feed type, husbandry practices and environmental conditions at the site.
+
 \
 Mariculture along the South African coast includes farming of shellfish or finfish and takes the form of land-based operations that abstract seawater, pass it through a culture facility, and return it to the sea, and sea-based operations using long-lines, rafts, racks or cages suspended directly in the sea and a limited number of estuaries. Little research has been undertaken on the impacts of mariculture in South Africa but local work has highlighted the risks associated with eutrophication and the introduction of alien species, pathogens and diseases that can be transferred to wild stocks. For example, high stocking densities could potentially result in the evolution of native pathogens (especially viral and bacterial agents) to which wild fish do not have resistance. As such, mariculture can impact on ecosystem services.
 
@@ -400,6 +407,7 @@ Currently, sea-based mariculture takes place only in Saldanha Bay and Algoa Bay 
 
 ::: {#box9 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Freshwater flow reduction to the coastal and marine environment occurs when water is abstracted from rivers or dammed higher up in the catchment, and/or the cycle of an estuary has been disrupted.
+
 \
 This results in freshwater, and the accompanying sediment that is vital to many marine biodiversity processes, failing to reach the sea. By reducing input of sediment that forms and maintain beaches, mud habitats and other unconsolidated sediment ecosystems, flow reduction leads to physical habitat changes including loss of beach and mud habitat, impacts on ecological functions and services including nursery functions, environmental cues, productivity, nutrient provision and food web processes. Potential reductions in key fisheries catches with associated negative economic impacts have also been reported in South Africa. **A third of South Africa’s freshwater flow in rivers is estimated to no longer reach the ocean,** including approximately two-thirds of the potential freshwater flow of the Orange River and nearly a third of that for the Thukela River (the two largest catchments in South Africa). Sustaining the vital flow of freshwater to the sea requires an integrated and coordinated approach that combines the management of flow, water quality and ecological and built infrastructure ([**key Message A7**](../key-messages/kma7.qmd)).
 :::
@@ -410,6 +418,7 @@ This results in freshwater, and the accompanying sediment that is vital to many 
 
 ::: {#box10 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Wastewater discharge represents a significant source of pollution and includes a range of inputs, including industrial and municipal effluents, brine discharges from desalination plants, effluents from aquaculture operations, and stormwater and agricultural runoff [@porter2018; @majiedt2019; @ojemaye2022; @tyohemba2022].
+
 \
 More than 3 billion cubic metres of waste is discharged annually into South Africa’s marine environment through estuaries and outfalls, with municipal wastewater treatment facilities accounting for a significant portion of this. Wastewater discharge impairs water and sediment quality, and causes changes in the primary producer and benthic invertebrate communities near discharge points. High organic and nutrient loading due to wastewater discharge causes excessive eutrophication, fuelling red tides, harmful algal blooms and anoxia, often leading to fish kills. Coastal groundwater discharge is similarly enriched by human settlements, impacting shore ecosystems.
 
@@ -420,16 +429,18 @@ Typically, coastal water quality is substantially degraded near major urban cent
 
 ::: {#box12 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Dredge disposal is the dumping at sea of accumulated sediment from dredge material leading to smothering, increased turbidity, decreased primary production and other potential impacts [@smith1995; @smith2001].
+
 \
 Dredging is a key service performed by the Ports Authority as part of harbour management and maintenance, whereby dredge material is collected from harbours to ensure that ships do not run aground. The type of disposal methodology applied, as well as the quality of the sediment being deposited, may amplify or mitigate these environmental impacts.
 :::
 
 ### Ammunition disposal
 
-![Ammunition disposal in the ocean poses several risks to both species and ecosystems. © Jana Ulrich.](imgs/Jana_Ulrich_ammunition_KolbergerHeide-ju.jpg){width="80%" fig-align="left"}
+![Ammunition disposal in the ocean poses several risks to both species and ecosystems. © Jana Ulrich.](imgs/Jana_Ulrich_ammunition_KolbergerHeide-ju.png){width="80%" fig-align="left"}
 
 ::: {#box11 .callout-note .freshwater appearance="minimal" collapse="true"}
 ## Ammunition disposal was practised in demarcated areas of the offshore environment from 1970s until 1995, before the London Protocol (1996 Protocol to the 1972 Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter) came into effect.
+
 \
 Dumped ammunition can cause damage to or smothering of ecosystems and habitat-forming species; potentially detonate, causing localised destruction; and corrode, causing pollution and toxicity, especially from heavy metals. Elsewhere, there is evidence of munition compounds bioaccumulating in marine foodwebs, which is predicted to increase with time and with changes in ocean chemistry. Presumably, dumped munitions in South Africa have corroded over the past 30-50 years, but the impacts are largely unknown.
 :::
@@ -437,8 +448,8 @@ Dumped ammunition can cause damage to or smothering of ecosystems and habitat-fo
 ### Renewable energy production
 
 ::: {#box13 .callout-note .freshwater appearance="minimal" collapse="true"}
-
 ## Renewable energy production is important in achieving energy security, reducing climate change impacts and supporting socio-economic growth in South Africa.
+
 \
 The potential for marine renewable energy (MRE) in South Africa includes offshore wind, wave, current and thermal energy sources. Although no MRE projects currently exist, there are plans for development, e.g. a floating offshore windfarm at Richard’s Bay and energy generation from the Agulhas current has been under discussion for several years. Depending on the energy source, potential impacts of MRE include habitat disturbance and loss during construction, changes in hydrology, localised upwelling and electromagnetic fields, collision risks with wind or current turbines for seabirds and ocean life and increased ocean noise. Wave and current devices may negatively impact marine mammals, turtles, and fish through collision risk, electromagnetic fields, and underwater noise, and marine benthic and pelagic habitats and communities could be impacted by changes to natural seawater flows and sediment transport. Small installations would likely have localised minor impacts but large commercial arrays could significantly alter marine systems over time.
 
