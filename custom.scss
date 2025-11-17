@@ -60,7 +60,7 @@ $min-contrast-ratio:   1.9 !default;
 
 $navbar-bg: $white;
 $navbar-fg: $green;
-$navbar-hl: $gray-500;
+$navbar-hl: $green;
 $body-bg: $white;
 $body-color: $gray-900;
 $link-color: $green;
@@ -149,12 +149,18 @@ strong, b {
   }
 }
 
-// Sidebar references customization
+// Sidebar notes customization
 
 .column-margin figcaption,.margin-caption,div.aside,aside,.column-margin {
     color: #626262;
     font-size: .8rem;
     line-height: 1.5;
+}
+
+// Content sidebar active item customization
+
+div.sidebar-item-container .active {
+  color: $green !important;
 }
 
 // Global link styling
