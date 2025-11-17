@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Species Assessments"
-subtitle: "Coastal Zone"
+title: "Species assessments"
+subtitle: "Coastal zone"
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
@@ -80,9 +80,9 @@ google-scholar: true
 
 ## Summary {#summary}
 
-**Endemic coastal invertebrates living at the dune-beach interface are threatened by mining, coastal development, artificial nighttime lights, and wrack harvesting. In addition, South Africa's only commercially harvested beach clam is rapidly declining in abundance. The littoral active zone (connected dune-beach-surf zone) needs to be kept intact and restored, and sustainable harvesting of beach-associated resources is essential for conserving this unique coastal biodiversity.**
+Endemic coastal invertebrates living at the dune-beach interface are threatened by mining, coastal development, artificial nighttime lights, and wrack harvesting. In addition, South Africa's only commercially harvested beach clam is rapidly declining in abundance. The littoral active zone (connected dune-beach-surf zone) needs to be kept intact and restored, and sustainable harvesting of beach-associated resources is essential for conserving this unique coastal biodiversity.
 
-![The Endangered giant pillbug, *Tylos granulatus*, is one of several Taxa of Conservation Concern living at the dune-beach interface in South Africa. Image credit: © Linda Harris (CC-BY-NC-ND).](imgs/Tylos-granulatus_Linda-Harris.png){fig-alt="Picture of a giant pillbug on the beach"}
+![The Endangered giant pillbug, *Tylos granulatus*, is one of several Taxa of Conservation Concern living at the dune-beach interface in South Africa. (© Linda Harris).](imgs/Tylos-granulatus_Linda-Harris.png){fig-alt="Picture of a giant pillbug on the beach"}
 
 ## Preamble
 
@@ -259,7 +259,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![*Donax serra*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Donax-serra_Linda-Harris.png){style="width:400;"}
+![*Donax serra*<br>(© Linda Harris)](imgs/cst-s-Donax-serra_Linda-Harris.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -269,7 +269,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![*Tylos capensis*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Tylos-capensis_Linda-Harris.png){style="width:400;"}
+![*Tylos capensis*<br>(© Linda Harris)](imgs/cst-s-Tylos-capensis_Linda-Harris.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -279,7 +279,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![*Tylos granulatus*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Tylos-granulatus_Linda-Harris.png){style="width:400;"}
+![*Tylos granulatus*<br>(© Linda Harris)](imgs/cst-s-Tylos-granulatus_Linda-Harris.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -289,7 +289,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![*Acanthoscelis ruficornis*<br>© Linda Harris (CC-BY-NC-ND)](imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png){style="width:400;"}
+![*Acanthoscelis ruficornis*<br>(© Linda Harris)](imgs/cst-s-Acanthoscelis-ruficornis_Linda-Harris.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}

@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Pressures and Ecological Condition"
+title: "Pressures and ecological condition"
 subtitle: "Coastal zone"
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -111,9 +111,9 @@ google-scholar: true
 
 ## Summary {#summary}
 
-**Many people live and work in coastal areas, and as a result, pressure on coastal biodiversity is disproportionately high. The coastal pressures in South Africa are summarised cross-realm under 10 themes: (1) biological resource use; (2) energy production and mining; (3) pollution; (4) coastal development; (5) transportation and service corridors; (6) natural systems modifications; (7) human intrusions and disturbance; (8) aquaculture, agriculture and plantation forestry; (9) invasive and other problematic species and diseases; and (10) climate change, severe weather, and ocean acidification. The impact of these pressures on coastal ecosystem types is analysed using realm-specific methods to generate a map of coastal ecological condition. Overall, the coast is in worse ecological condition than the rest of the country (non-coastal land and sea).**
+Many people live and work in coastal areas, and as a result, pressure on coastal biodiversity is disproportionately high. The coastal pressures in South Africa are summarised cross-realm under 10 themes: (1) biological resource use; (2) energy production and mining; (3) pollution; (4) coastal development; (5) transportation and service corridors; (6) natural systems modifications; (7) human intrusions and disturbance; (8) aquaculture, agriculture and plantation forestry; (9) invasive and other problematic species and diseases; and (10) climate change, severe weather, and ocean acidification. The impact of these pressures on coastal ecosystem types is analysed using realm-specific methods to generate a map of coastal ecological condition. Overall, the coast is in worse ecological condition than the rest of the country (non-coastal land and sea).
 
-![Pressures, such as mining, are intense in the coastal zone, causing declines in the ecological condition of coastal ecosystem types and increasing species extinction risk. Photo credit: © Jacque Smit](imgs/cst-condition-coastal-mining_Jacque-Smit.png)
+![Pressures, such as mining, are intense in the coastal zone, causing declines in the ecological condition of coastal ecosystem types and increasing species extinction risk. (© Jacque Smit)](imgs/cst-condition-coastal-mining_Jacque-Smit.png)
 
 ## Introduction
 
@@ -130,7 +130,7 @@ The pressures on coastal biodiversity are briefly summarized below under the 10 
 <summary>**1. Biological resource use**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-wildcoast-fishing_Ryan-Daly.png" alt="Coastal fishing" width="100%"/><br> There are many forms of biological resource use in the coastal zone, with different levels of sustainability and impact to coastal biodiversity. Photo credit: © Ryan Daly
+<img src="imgs/cst-condition-wildcoast-fishing_Ryan-Daly.png" alt="Coastal fishing" width="100%"/><br> There are many forms of biological resource use in the coastal zone, with different levels of sustainability and impact to coastal biodiversity. (© Ryan Daly)
 :::
 
 South Africa's coast is rich in biological resources on land, in estuaries and in the sea that are harvested for food, medicine, symbolism, and materials. **Resources such as invertebrates, fish, birds, mammals, seaweeds, and plants are collected** both legally and illegally, with key concerns regarding over-harvesting, bycatch, and ghost fishing. Unsustainable resource use impacts populations of target and non-target species and their respective predators, causes changes in trophic and demographic structures of foodwebs, alters energy flow through and among ecosystems, and some collection methods cause habitat damage. Certain species are particularly impacted by poaching, e.g., abalone and succulent plants.
@@ -142,7 +142,7 @@ South Africa's coast is rich in biological resources on land, in estuaries and i
 <summary>**2. Energy production and mining**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-mining_Linda-Harris.png" alt="Coastal mining" width="100%"/><br>Mining is a key pressure on coastal biodiversity, particularly the serial mining along the west coast. © Linda Harris
+<img src="imgs/cst-condition-mining_Linda-Harris.png" alt="Coastal mining" width="100%"/><br>Mining is a key pressure on coastal biodiversity, particularly the serial mining along the west coast. (© Linda Harris)
 :::
 
 South Africa’s mineral wealth is comparable to its outstanding biodiversity, and **mining** is a key economic activity in the country. In the coastal zone, sand, diamonds, and heavy minerals are mined in legal and illegal operations. Mining is an intense pressure on biodiversity with long-term impacts from habitat fragmentation and loss, and species disturbance and extirpations. It can also cause pollution, proliferation of alien and invasive species, and changes in habitat characteristics that have knock-on effects to species.
@@ -158,7 +158,7 @@ Impacts to coastal biodiversity in South Africa from **petroleum exploration and
 <summary>**3. Pollution**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-plastic-pollution_Fiona-MacKay.png" alt="Plastic pollution" width="100%"/><br>Pollution from plastics, wastewater, artificial light at night, noise, and obsolete ammunition are degrading the ecological condition of coastal ecosystems. Photo credit: © Fiona MacKay
+<img src="imgs/cst-condition-plastic-pollution_Fiona-MacKay.png" alt="Plastic pollution" width="100%"/><br>Pollution from plastics, wastewater, artificial light at night, noise, and obsolete ammunition are degrading the ecological condition of coastal ecosystems. (© Fiona MacKay)
 :::
 
 **Plastic pollution** is present all along South Africa's coastal zone, with substantial quantities washing into the coastal zone during flood events. The impact of plastics on biodiversity, especially coastal and marine biodiversity, has become very apparent in recent years and there are numerous campaigns globally to stop single-use plastics in particular, and to reduce use of plastics generally. Key concerns include: animal entanglement, which can lead to injury, suffocation or drowning; ingestion causing gut blockages; accumulation of chemicals derived from plastic ingestion in animal tissue; and potential increases in spread of alien and invasive species.
@@ -169,7 +169,7 @@ Impacts to coastal biodiversity in South Africa from **petroleum exploration and
 
 Sound travels more readily through water, making **noise pollution** a particular concern in aquatic environments, especially as oceans become busier and noisier. Noise can cause direct mortality, impaired hearing, and lower immunity and increased health risks of species. It also disrupts animal communication and social behaviour, limits bird-call repertoires, impacts animal foraging behaviour and success, and alters species distributions as they avoid noisier areas.
 
-**Disposing ammunition**, such as artillery shells, and expired, unusable or obselete ammunition, at sea was practiced in South Africa from the 1970s until 1995. There are several concerns for marine biodiversity: corrosion of munitions and resulting pollution and toxicity (especially from heavy metals like lead and mercury) in the surrounding environment; potential detonation, causing localised destruction; and changes to the physical environment and potential damage or smothering of natural ecosystems due to presence of foreign structures and/or damage to habitat-forming species.
+**Disposing ammunition**, such as artillery shells, and expired, unusable or obsolete ammunition, at sea was practiced in South Africa from the 1970s until 1995. There are several concerns for marine biodiversity: corrosion of munitions and resulting pollution and toxicity (especially from heavy metals like lead and mercury) in the surrounding environment; potential detonation, causing localised destruction; and changes to the physical environment and potential damage or smothering of natural ecosystems due to presence of foreign structures and/or damage to habitat-forming species.
 
 </details>
 
@@ -178,7 +178,7 @@ Sound travels more readily through water, making **noise pollution** a particula
 <summary>**4. Coastal development**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-coastal-development_Linda-Harris.png" alt="Coastal development" width="100%"/><br>Coastal development is a significant pressure on coastal biodiversity, causing habitat fragmentation and loss. © Linda Harris
+<img src="imgs/cst-condition-coastal-development_Linda-Harris.png" alt="Coastal development" width="100%"/><br>Coastal development is a significant pressure on coastal biodiversity, causing habitat fragmentation and loss. (© Linda Harris)
 :::
 
 **Coastal development** is one of the most important pressures on coastal biodiversity because it causes largely irreversible habitat fragmentation and loss, with associated impacts to species distributions and population abundance, increasing extinction risk. Ecosystems are degraded further when ecological processes are disrupted, and ecological infrastructure and ecological resilience are compromised, in turn reducing ecosytem services and benefits to people. When infrastructure is built too close to the shore, beaches are at risk of complete inundation and loss as sea levels rise, with no option for them to naturally realign further inland. Broadly speaking, the areas in South Africa associated with ports and harbours are most intensively developed.
@@ -190,7 +190,7 @@ Sound travels more readily through water, making **noise pollution** a particula
 <summary>**5. Transportation and service corridors**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-ports_Riaan-Weitz.png" alt="Coega port" width="100%"/><br>Ports and harbours are sources of multiple pressures on coastal ecosystems, and transport corridors disrupt cross-realm connectivity and ecological processes. Photo credit: © Riaan Weitz<!--# Awaiting confirmation that it's ok to use this picture -->
+<img src="imgs/cst-condition-ports_Riaan-Weitz.png" alt="Coega port" width="100%"/><br>Ports and harbours are sources of multiple pressures on coastal ecosystems, and transport corridors disrupt cross-realm connectivity and ecological processes. (© Riaan Weitz)<!--# Awaiting confirmation that it's ok to use this picture -->
 :::
 
 **Ports and harbours** are hubs of activity, development, and access to the sea. The impacts to biodiversity from associated activities include being hotspots of pollution, and high-risk entry points and refugia for alien and invasive species, with local habitat modification and degradation from anchorage, maintenance dredging and dredge spoil dumping. Offshore bunkering (ship-to-ship transfer of fuel) can have deleterious impacts to marine life, especially threatened colonial seabirds, e.g., African Penguins and Cape Gannets.
@@ -206,10 +206,10 @@ Many **roads and railway lines** that run along South Africa's coastline break c
 <summary>**6.** **Natural systems modifications**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-nat-systems-modifications_Fiona-MacKay.png" alt="Weir in uThukela" width="100%"/><br>Altering natural flows of freshwater and sediments, e.g., the weir in the uThukela River, impacts estuarine systems and downstream beaches and marine mud belts. © Fiona MacKay
+<img src="imgs/cst-condition-nat-systems-modifications_Fiona-MacKay.png" alt="Weir in uThukela" width="100%"/><br>Altering natural flows of freshwater and sediments, e.g., the weir in the uThukela River, impacts estuarine systems and downstream beaches and marine mud belts. (© Fiona MacKay)
 :::
 
-**Interruption of sand-flow processes** impacts sand budgets that maintain beaches and dunes. Sand is transported to and along the coast by rivers and estuaries, wind (including through wind-driven mobile dunefields), and by waves and inshore currents. The dune-beach-surf zone within which sand moves is called the littoral active zone, where erosion (sand removal) and accretion (sand build up) are natural processes. Blocking these flows by stabilising sand dunes, replacing foredunes with coastal development, and contructing dams and weirs in estuaries reduces the amount of sand available to beaches and dunes, decreasing their resilience to large storms and sea-level rise.
+**Interruption of sand-flow processes** impacts sand budgets that maintain beaches and dunes. Sand is transported to and along the coast by rivers and estuaries, wind (including through wind-driven mobile dunefields), and by waves and inshore currents. The dune-beach-surf zone within which sand moves is called the littoral active zone, where erosion (sand removal) and accretion (sand build up) are natural processes. Blocking these flows by stabilising sand dunes, replacing foredunes with coastal development, and constructing dams and weirs in estuaries reduces the amount of sand available to beaches and dunes, decreasing their resilience to large storms and sea-level rise.
 
 Healthy functioning rivers deliver freshwater, nutrients and sediments to estuaries and the ocean, and sand to beaches and dunes. **Hydrological regime change and freshwater flow reduction** in estuaries from water abstraction, large impoundments and small farm dams impacts both estuarine ecosystems and downstream marine ecosystems. Without sufficient flow, water quality declines, salinity regimes are compromised, and sediment accumulates in estuary mouths, often increasing the risk of coastal flooding. Estuarine connectivity, and fish nursery functions are also compromised, with knock-on effects for marine fisheries. Trapping sediment in catchments also cuts off sand and mud supplies to downstream beaches and marine mud belts, respectively. Artificial breaching also alters natural hydrological regimes in estuaries, and can have potentially cascading impacts on the physico-chemistry of the estuary and its biological components.
 
@@ -222,7 +222,7 @@ Although coastal rangelands are generally a biodiversity-compatible land use, un
 <summary>**7. Human intrusions and disturbance**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-coastal-disturbance_Linda-Harris.png" alt="Coastal disturbance" width="100%"/><br>Coastal disturbance includes various forms of non-extractive human activities in the seashore zone that cause erosion and lethal and non-lethal impacts to species. © Linda Harris
+<img src="imgs/cst-condition-coastal-disturbance_Linda-Harris.png" alt="Coastal disturbance" width="100%"/><br>Coastal disturbance includes various forms of non-extractive human activities in the seashore zone that cause erosion and lethal and non-lethal impacts to species. (© Linda Harris)
 :::
 
 Coastal disturbance includes various forms of non-extractive human activities, such as trampling, off-road vehicle (ORV) driving, in-water recreation, and boating in estuaries and the sea. Biota can get crushed, injured, or disturbed, and shorebirds can be disturbed during breeding and foraging. Trampling in dunes also risks erosion and formation of blowouts. Virtually the entire South African shoreline is accessible by foot, and is thus potentially vulnerable to human disturbance in some form.
@@ -234,7 +234,7 @@ Coastal disturbance includes various forms of non-extractive human activities, s
 <summary>**8. Aquaculture, agriculture, and plantation forestry**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-agriculture_Daniel-Lemley.png" alt="Picture" width="100%"/><br>There is disproportionately more aquaculture, agriculture, and plantation forestry in the coastal zone than in the rest of the land and sea, causing a variety of impacts to coastal biodiversity. © Daniel Lemley
+<img src="imgs/cst-condition-agriculture_Daniel-Lemley.png" alt="Picture" width="100%"/><br>There is disproportionately more aquaculture, agriculture, and plantation forestry in the coastal zone than in the rest of the land and sea, causing a variety of impacts to coastal biodiversity. (© Daniel Lemley)
 :::
 
 Along the South African coast, **mariculture** **operations** take the form of in-situ aquatic operations using long-lines, rafts, racks or cages, and **land-based aquaculture operations** abstract sea water, pass it through a culture facility, and then return it to the marine environment. One of the main biodiversity concerns associated with aquaculture is introduction of alien and potentially invasive species to the natural environment. Other concerns include transfer of disease and pathogens to local populations; potential for emergence of superbugs due to the use of antibiotics; genetic exchange between farmed and wild populations; and changed behaviour of apex predators around installations.
@@ -250,7 +250,7 @@ Along the South African coast, **mariculture** **operations** take the form of i
 <summary>**9.** **Invasive and other problematic species and diseases**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-invasives_Linda-Harris.png" alt="Invasive coastal species" width="100%"/><br>Indigenous species are being impacted by invasive alien species, e.g., deliberately introduced species to stabilise dunes, and unintentionally introduced species from shipping, and other problematic species and diseases. © Linda Harris
+<img src="imgs/cst-condition-invasives_Linda-Harris.png" alt="Invasive coastal species" width="100%"/><br>Indigenous species are being impacted by invasive alien species, e.g., deliberately introduced species to stabilise dunes, and unintentionally introduced species from shipping, and other problematic species and diseases. (© Linda Harris)
 :::
 
 **Invasive alien species** are an established pressure on land, but an emerging pressure in estuaries and the sea. Many of the terrestrial invasive alien species in coastal areas are present because of deliberate introductions, e.g., to stabilize mobile dunes at a time when this was considered to be best practice. In contrast, introduction of invasive alien species to the estuarine and marine realms has been generally unintentional, e.g. through hull fouling and ballast water. Invasive alien species can change community composition and local ecological processes, with direct and indirect effects on indigenous species. Invasive alien species can also contribute to wildfires and alter natural fire regimes, reduce mean annual runoff, and can reduce light, oxygen and flow in estuaries, with knock-on affects to biodiversity.
@@ -266,16 +266,16 @@ Several other **pathogens and diseases** are impacting coastal species, includin
 <summary>**10. Climate change, severe weather, and ocean acidification**</summary>
 
 ::: text-center
-<img src="imgs/cst-condition-coral-bleaching_Kerry-Sink.png" alt="Coral bleaching" width="100%"/><br>Climate change is predicted to impact coastal ecosystems and species in a variety of ways, such as marine heatwaves causing coral bleaching. © Kerry Sink
+<img src="imgs/cst-condition-coral-bleaching_Kerry-Sink.png" alt="Coral bleaching" width="100%"/><br>Climate change is predicted to impact coastal ecosystems and species in a variety of ways, such as marine heatwaves causing coral bleaching. (© Kerry Sink)
 :::
 
 Where coasts are unconstrained, **sea-level rise** does not pose a risk to coastal biodiversity because the shore will naturally realign further inland. However, where the coast has been built up with development within the littoral active zone, particularly where it is defended with seawalls, the consequence is that the shores are trapped in a **coastal squeeze**, with long-term risks of infrastructure failure as well. Supralittoral and high shore species are most at risk of loss, including loss of nesting and foraging habitat for shorebirds. Sea-level rise will affect saline penetration and mouth state in estuaries, altering estuarine ecology, and mangroves and salt marsh habitats may be impacted too.
 
 Climate-change predictions for South Africa include **altered rainfall patterns** and more frequent **extreme events, such as droughts, storms and floods**. The South African east coast is predicted to get wetter, particularly from heavy rainfall events and floods, and the west coast is predicted to get drier, where recent droughts attributed to climate change have increased the extinction risk to endemic plants. Increased storminess increases coastal erosion, and can impact estuarine ecology. Although coastal ecosystems are generally able to return to pre-storm conditions, this is dependent on the frequency of events.
 
-Coastal species are shiting their ranges in response to **temperature change**. This could lead to various changes in communities as biological interactions change, and pioneer species may trigger ecological successions. Coastal endemic species along the south coast may also experience a temperature squeeze between the Cool Temperate and Subtropical bioregions. Other impacts include increased likelihood and spread of wildfires, dried up water holes, and altered animal behaviour.
+Coastal species are shifting their ranges in response to **temperature change**. This could lead to various changes in communities as biological interactions change, and pioneer species may trigger ecological successions. Coastal endemic species along the south coast may also experience a temperature squeeze between the Cool Temperate and Subtropical bioregions. Other impacts include increased likelihood and spread of wildfires, dried up water holes, and altered animal behaviour.
 
-**Extreme temperatures** may have more significant impacts than overall trends in warming and cooling. Heatwaves can cause mortality in indigenous plants and favour spead of invasives, and marine heatwaves can cause coral bleaching. Thermal shock to fish and invertebrates in the marine environment may be exacerbated when marine heatwaves are followed by upwelling events, causing washouts and mortalities.
+**Extreme temperatures** may have more significant impacts than overall trends in warming and cooling. Heatwaves can cause mortality in indigenous plants and favour spread of invasives, and marine heatwaves can cause coral bleaching. Thermal shock to fish and invertebrates in the marine environment may be exacerbated when marine heatwaves are followed by upwelling events, causing washouts and mortalities.
 
 South African waters are more susceptible to impacts from **ocean acidification** because of the biochemistry of upwelled water, making systems like the Benguela naturally more acidic (lower pH). However, macroalgal habitats are less acidic (higher pH) than their surrounding environment, and may act as refugia for coastal species. Ocean pH levels are variable around South Africa in both space and time. Natural fluctuations in ocean acidity may either help create resilience in coastal species, or combine with gradual trends to produce more extreme conditions and impacts.
 

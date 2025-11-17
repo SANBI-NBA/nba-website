@@ -25,7 +25,7 @@ The NBA is the primary tool for monitoring and reporting on the state of biodive
 
 ::::: columns
 ::: {.column width="50%"}
-**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) published in hard copy and available in digital form, and **this website** - which presents the content of the book with additional analyses and sections presenting the findings per realm/zone and per taxonomic group..
+**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) published in hard copy and available in digital form, and **this website** - which presents the content of the book with additional analyses and sections presenting the findings per realm/zone and per taxonomic group.
 :::
 
 ::: {.column width="50%"}

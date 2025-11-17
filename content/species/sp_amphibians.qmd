@@ -81,7 +81,7 @@ format:
 
 <center>
 
-![*Hyperolius pickersgilli*, a species that has received extensive conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. © Tyrone Ping](./imgs/sp_amphibian_img_1.png){fig-align="center"}
+![*Hyperolius pickersgilli*, a species that has received extensive conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. (© Tyrone Ping)](./imgs/sp_amphibian_img_1.png){fig-align="center"}
 
 </center>
 
@@ -406,7 +406,7 @@ specialist is still extremely range-restricted and experiencing continued habita
 
 2.  Trends
 
-The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs) [@butchart2004]. The RLIs are calculated based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The Red List Index of amphibians was calculated for all amphibian taxa that have been reassessed (n = 135).
+The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs) [@butchart2004a]. The RLIs are calculated based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The Red List Index of amphibians was calculated for all amphibian taxa that have been reassessed (n = 135).
 
 Thirty-two species have had a change in status during the latest assessment (2016 to 2025). Only three species have had a genuine change in status (*Breviceps macrops* – desert rain frog (NT to VU), *Amietia hymenopus* - Phofung river frog (NT to VU) and *Hyperolius poweri* Power's reed frog (LC to NT). These three species are spatially isolated; however, they share some pressures, as both *Breviceps macrops* and *Amietia hymenopus* are likely to be impacted by climate change, where the former is restricted to the dry West Coast and relies on limited precipitation in the form of fog, and the latter occurs in streams along the Drakensberg Escarpment and Lesotho, which may face increased drying and extreme weather events. Both species are also impacted by the expansion of mining activities, *B. macros* specifically on the West Coast, due to the future planned development of the Green Hydrogen and *A. hymenopus* in the highlands of Lesotho into South Africa (@tbl-3). *Hyperolius poweri* has experienced a reduction in its range size due to the continued impacts of existing pressures and the intensification of urban coastal development, mining, afforestation, and agriculture (especially sugar cane plantations), which have caused wetland drainage and degradation through trampling from cattle.
 
@@ -578,7 +578,7 @@ These findings were used as motivation for conservation action and a joint initi
 ![](./imgs/sp_amphibian_img_6.png){style="width:100%; border-radius:10px;" fig-alt="Pine infestation of fynbos habitat"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Pine infestation of fynbos habitat on Klein Swartberg where the Critically Endangered Rough Moss Frog, <i>Arthroleptella rugosa</i>, occurs. © Rob Erasmus, Enviro Wildfire.
+Pine infestation of fynbos habitat on Klein Swartberg where the Critically Endangered Rough Moss Frog, <i>Arthroleptella rugosa</i>, occurs. (© Rob Erasmus, Enviro Wildfire)
 :::
 ::::
 ::::::
@@ -598,7 +598,7 @@ needs being guided by expert knowledge and Red List assessment information, whic
 :::::
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. © Alouis and Keir Lynch Bionerds
+Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. (© Alouis and Keir Lynch Bionerds)
 :::
 :::::::::::::::
 
@@ -760,24 +760,19 @@ combined_plot
 
 Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians are considered well protected, 22% are poorly or not protected. Species-specific management within protected areas is generally lacking for amphibians, with7% (9 species) less well protected once we took PA management effectiveness into account. For the 75 endemic amphibians assessed, 57% are Well Protected, 17% (13 species) are Not Protected, and a further 17% (13 species) are Poorly Protected. Sixteen highly threatened (CR and EN) species are under-protected.
 
-```{r}
-#| label: fig-9
-#| fig-cap: "The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the Micro Frog, *Microbatrachella capensis* was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. © Keir Lynch Bionerds"
-#| out.width: 500px
+![](./imgs/sp_amphibian_img_9.png){fig-alt="Micro Frog" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
-knitr::include_graphics("./imgs/sp_amphibian_img_9.png")
-```
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
+The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the Micro Frog, *Microbatrachella capensis* was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. (© Keir Lynch Bionerds)
+:::
 
 Nine species have had improvements in their protection level, from Poorly Protected to Moderately Protected (8 species) or Well Protected (1 species). Examples of threatened species that have benefitted from improved protection include the Endangered Micro Frog (*Microbatrachella capensis*), Pickersgill’s Reed Frog (*Hyperolius pickersgilli*), and the Cape Platanna (*Xenopus gilli*). In the case of *H. pickersgilli*, an additional 16 sites have been confirmed for the species since 2017, with several of these occurring within protected areas [@armstrong2025a]. Habitat protection gains have been a key outcome of the coordination of the Biodiversity Management Plan for this species, with several sites (totaling 127 hectares) being declared through the Biodiversity Stewardship Programme, as well as improved management and wetland health for these, and existing protected areas [@armstrong2025a]. For *M. capensis*, the confirmation of the species in the Nuwejaars Wetlands Special Management Area in 2021, which is now being managed with the frog as a management target, has resulted in both an expansion of the species’ range with Protected Areas, as well as improved management effectiveness scores from fair to good. It is important to recognize the contribution to the protected area estate that Biodiversity Stewardship and conservation servitudes (or OECMs) through agreements with landowners for targeting unprotected populations of species makes.
 
-```{r}
-#| label: fig-10
-#| fig-cap: "The previously Critically Endangered Micro Frog, *Microbatrachella capensis*,  is now listed as Endangered due to its discovery at a new locality, it has also changed protection status from Poorly Protected to Moderately Protected resulting in a range extension. © Alouise Lynch Bionerds"
-#| out.width: 500px
+![](./imgs/sp_amphibian_img_10.png){fig-alt="Micro Frog" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
-
-knitr::include_graphics("./imgs/sp_amphibian_img_10.png")
-```
+::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
+The previously Critically Endangered Micro Frog, *Microbatrachella capensis*, is now listed as Endangered due to its discovery at a new locality, it has also changed protection status from Poorly Protected to Moderately Protected resulting in a range extension. (© Alouise Lynch Bionerds)
+:::
 
 ## Species recovery
 

@@ -461,7 +461,7 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 2.  Trends (RLI)
 
-The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index(RLI) [@butchart2004]. The RLI value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e., if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (Figure 4). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group.
+The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index(RLI) [@butchart2004a]. The RLI value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e., if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (Figure 4). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group.
 
 ```{r}
 #| label: fig-3

@@ -2,7 +2,7 @@
 # ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Protection Level" # Compulsory
+title: "Ecosystem protection level" # Compulsory
 subtitle: "Coastal zone"
 
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -127,7 +127,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ## Introduction
 
-Ecosystem protection level (EPL) is one of the headline indicators of the National Biodiversity Assessment. This indicator measures the degree to which ecosystem types are represented in South Africa's protected area network, and has been used as in national reporting since 2005.
+Ecosystem protection level is one of the headline indicators of the National Biodiversity Assessment. This indicator measures the degree to which ecosystem types are represented in South Africa's protected area network, and has been used as in national reporting since 2005.
 
 After comparing the extent extent of each ecosystem type under protection relative to its predefined biodiversity target (ranging 16-32%), with heuristics regarding the ecological condition within protected areas, ecosystem types are assigned to one of four categories:
 
@@ -139,9 +139,9 @@ After comparing the extent extent of each ecosystem type under protection relati
 
 -   **Not Protected (NP)**: \<5% of the extent target for the ecosystem type is met within the protected area network
 
-For NBA 2025, the EPL indicator was calculated across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on EPL, see the [general introduction](../integrated-findings/chl_epl_explained.qmd){target="_blank"} to this headline indicator.
+For NBA 2025, the ecosystem protection level indicator was calculated across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on the ecosystem protection level indicator, see the [general introduction](../integrated-findings/chl_epl_explained.qmd){target="_blank"} to this headline indicator.
 
-## Coastal Ecosystem Protection Level
+## Coastal ecosystem protection level
 
 Proportionately, the coast is slightly more protected than the rest of the land and sea (@fig-eplgraph, @tbl-eplnumbers). This is positive given the myriad of benefits provided by coastal ecosystems and their [disproportionately impacted](../coast/cst_pressures-condition.qmd) and [threatened](../coast/cst_ets.qmd) status.
 
@@ -322,7 +322,7 @@ Because the targets and assessment methodologies have changed in the realm asses
 
 ```{r}
 #| label: tbl-epl
-#| tbl-cap: "Protection level of coastal ecosystem types in South Africa. EPL = Ecosystem Protection Level. WP = Well Protected. MP = Moderately Protected. PP = Poorly Protected. NP = Not Protected."
+#| tbl-cap: "Protection level of coastal ecosystem types in South Africa. WP = Well Protected. MP = Moderately Protected. PP = Poorly Protected. NP = Not Protected."
 
 library(here)
 library(readr)
@@ -397,11 +397,11 @@ nba_tbl_colr(DF = cst,
 
 Coastal synthesis: <https://github.com/lrharris/nba2025_coast/>
 
-Terrestrial EPL assessment: <https://github.com/askowno/EPL_terr>
+Terrestrial ecosystem protection level assessment: <https://github.com/askowno/EPL_terr>
 
-Estuarine EPL assessment: <https://github.com/askowno/EPL_est>
+Estuarine ecosystem protection level assessment: <https://github.com/askowno/EPL_est>
 
-Marine EPL assessment: <!--# insert link to marine EPL repo -->
+Marine ecosystem protection level assessment: <!--# insert link to marine EPL repo -->
 
 ### Data availability
 

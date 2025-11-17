@@ -207,8 +207,7 @@ perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 ```
 
-*Progress has been made in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s Marine Protected Areas (MPAs). Advances in ecological effectiveness are evident but there are gaps in participation, ecosystem representation, connectivity and governance. Increasing extent of protection alone is not enough to advance marine ecosystems to Well Protected, as the condition of marine ecosystems in conservation areas also needs to be improved. Diversified conservation measures can help address gaps and provide new opportunities to safeguard both biodiversity and cultural heritage. South Africa needs to better include people in the design, implementation and co-management of conservation areas.*
-:::
+*Progress has been made in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s Marine Protected Areas (MPAs). Advances in ecological effectiveness are evident but there are gaps in participation, ecosystem representation, connectivity and governance. Increasing extent of protection alone is not enough to advance marine ecosystems to Well Protected, as the condition of marine ecosystems in conservation areas also needs to be improved. Diversified conservation measures can help address gaps and provide new opportunities to safeguard both biodiversity and cultural heritage. South Africa needs to better include people in the design, implementation and co-management of conservation areas.* :::
 
 ![Fisherwoman in the iSimangaliso MPA and World Heritage Site. © Kerry Sink](imgs/Blackrock_oct13_horizon_straightened.png)
 
@@ -436,7 +435,7 @@ The history and approach to the development of South Africa’s protection level
 
 Changes in ecosystem protection level between 2018 and 2025 are caused by the increased target and improved methodology rather than genuine changes in protection or ecological condition. Note that OECMs will contribute to ecosystem protection level once these have been recognised in the marine realm [@kirkman2025; @kowalski2025].
 
-Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distil key findings beyond the spatial analysis of ecosystem protection level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinkd] and the work undertaken through the iAtlantic project [@sink2023a; @sink2023b], Mission Atlantic project [@sink], the ACEP Deep Connections and One Ocean Hub projects [@vanderbank2024; @vanderbank2025b] including the Aliwal Shoal Working Group [@aliwalshoalmpaworkinggroup2024], and SeaPeople [@vanderbank2025c] were additional key informants. Inputs from an additional workshop that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@rylands].
+Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distil key findings beyond the spatial analysis of ecosystem protection level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinkd] and the work undertaken through the iAtlantic project [@sink2023a; @sink2023b], Mission Atlantic project [@sink2023c], the ACEP Deep Connections and One Ocean Hub projects [@vanderbank2024; @vanderbank2025b] including the Aliwal Shoal Working Group [@aliwalshoalmpaworkinggroup2024], and SeaPeople [@vanderbank2025c] were additional key informants. Inputs from an additional workshop that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@rylands].
 
 ## Technical documentation
 
@@ -458,11 +457,11 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ### Key publications
 
-Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. in review. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology. [Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.]{.mark}
+Harris, L. et al. 2025. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
 
-Sink, et al. *in prep*. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
+Sink, KJ. et al. *in prep*. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
 
-Sink KJ, Lombard AT, Attwood CG, Livingstone TC, Grantham H, Holness SD. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
+Sink, KJ. et al. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
 
 ## Recommended citation
 

@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Threat Status" 
+title: "Ecosystem threat status" 
 subtitle: "Coastal zone"
 
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -126,7 +126,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ## Introduction
 
-Ecosystem threat status (ETS), also called ecosystem red list status, is one of the headline indicators of the National Biodiversity Assessment. It is an indicator of the degree to which ecosystems are still intact or, alternatively, losing vital aspects of their structure, function or composition.
+Ecosystem threat status is one of the headline indicators of the National Biodiversity Assessment. It is an indicator of the degree to which ecosystems are still intact or, alternatively, losing vital aspects of their structure, function or composition.
 
 The IUCN Red List of Ecosystems (RLE) framework uses the concept of ecosystem collapse as the end point for ecosystem decline. The framework comprises a set of quantitative and qualitative criteria (and thresholds) linked to ecosystem extent, ecological condition, and threatening processes.
 
@@ -148,9 +148,9 @@ Each ecosystem type is assessed according to these criteria, and is then placed 
 
 -   Data deficient (DD)
 
-For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ETS, see the [general introduction](../integrated-findings/chl_rle_explained.qmd){target="_blank"} to this headline indicator.
+For NBA 2025, the RLE framework was applied across all realms, and the results are summarised here for the 190 coastal ecosystem types that were assessed. For more details on ecosystem threat status, see the [general introduction](../integrated-findings/chl_rle_explained.qmd){target="_blank"} to this headline indicator.
 
-## Coastal Ecosystem Threat Status
+## Coastal ecosystem threat status
 
 The South African coast is proportionately more threatened than the rest of the country (entire non-coastal territory combined, @fig-etsgraph, @tbl-etsnumbers). In fact, the coast (`r percent_types(cet_thr_n, cet_n)`% threatened ecosystem types) proportionately has `r c_nc_prop_thr_n` times more threatened ecosystem types than the rest of the country (`r round(ncet_thr_n/ncet_n*100)`%), which is proportionately `r c_nc_prop_thr_e` times more by extent (coastal: `r percent_extent(ets, "thr", "coast")`%, non-coastal: `r round(nc_thr_e/nc_e*100)`%). Areas where threatened ecosystem types are concentrated are around the Orange River mouth, through most of the Western Cape, in St Francis and Algoa bays, and along virtually the entire East Coast (@fig-etsmap).
 
@@ -330,7 +330,7 @@ Because the data and/or assessment methodologies have changed in the realm asses
 
 ```{r}
 #| label: tbl-ets
-#| tbl-cap: "Threat status of coastal ecosystem types in South Africa. ETS = Ecosystem Threat Status. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern."
+#| tbl-cap: "Threat status of coastal ecosystem types in South Africa. CR = Critically Endangered. EN = Endangered. VU = Vulnerable. NT = Near Threatened. LC = Least Concern."
 
 library(here)
 library(readr)
