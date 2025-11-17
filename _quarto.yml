@@ -60,11 +60,15 @@ website:
                 - section: "Headline indicators"
                   href: content/integrated-findings/intf_headline.qmd
                   contents:
-                     - content/integrated-findings/intf_ecosystems.qmd
-                     - content/integrated-findings/chl_rle_explained.qmd
-                     - content/integrated-findings/chl_epl_explained.qmd
-                     - content/integrated-findings/intf-species.qmd
-                     - content/integrated-findings/intf-species-rli.qmd
+                     - section: "Ecosystem threat status and protection level"
+                       href: content/integrated-findings/intf_ecosystems.qmd
+                       contents:
+                          - content/integrated-findings/chl_rle_explained.qmd
+                          - content/integrated-findings/chl_epl_explained.qmd
+                     - section: "Species threat status and protection level"
+                       href: content/integrated-findings/intf-species.qmd
+                       contents:
+                          - content/integrated-findings/intf-species-rli.qmd
                 - text: "Pressures on biodiversity"
                   href: content/integrated-findings/intf_pressures-condition.qmd
             - section: "Realm findings"
@@ -111,8 +115,10 @@ website:
                      - content/marine/marine_ets.qmd
                      - content/marine/marine_epl.qmd
                      - content/marine/marine_ets_epl.qmd
-                     - content/species/marine_sp.qmd
-                     - content/species/marine_bird_sp.qmd
+                     - section: "Species status"
+                       href: content/species/marine_sp.qmd
+                       contents:
+                          - content/species/marine_bird_sp.qmd
                      - content/marine/marine_priority_actions.qmd
                 - section: "Coast"
                   href: content/coast/cst_synthesis.qmd
@@ -136,7 +142,10 @@ website:
                 - content/species/sp_spiders.qmd
                 - content/species/sp_butterflies.qmd
                 - content/species/sp_amphibians.qmd
-                - content/species/sp_fwf.qmd
+                - section: "Freshwater fishes"
+                  href: content/species/sp_fwf.qmd
+                  contents:
+                      - content/species/fish_recovery.qmd
                 - content/species/sp_fwfcrabs.qmd
                 - content/species/sp_anostraca.qmd
                 - content/species/sp_dragons.qmd
