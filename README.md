@@ -185,7 +185,7 @@ The following branches are of interest:
 
     This branch is ahead of **main** (i.e., it contains new information that is not public yet) and gets published (i.e., merged into **main**) from time to time. A preview of these docs is available at <https://sanbi-nba.github.io/nba-website/site-preview\>.
 
-3.  **my-feature-branch**
+3.  **feature-branch**
 
     Feature branches created by authors to update existing documentation or contribute new documentation. Feature branches are merged into **dev**.
 
