@@ -159,45 +159,39 @@ TODO: Lize please add info here on the repo structure and which files should be 
 ## Git branches
 
 ```mermaid
-graph LR
-    main --> dev --> feature-branch
+flowchart LR
+    A[main] -->B[dev]
+    B --> C(feature-branch-1)
+    B --> D(feature-branch-2)
+    B --> E(feature-branch-3)
+
+classDef red stroke:#A80000,fill:#A8000050
+class A red
+
+classDef blue stroke:#12239E,fill:#12239E50
+class B blue
+
+classDef green stroke:#217346,fill:#21734650
+class C,D,E green
 ```
 
 The following branches are of interest:
 
-1.  [**main**]{style="color:Coral;"}
+1.  **main**
 
     Anything that is merged into this branch will be published on the production website (<https://sanbi-nba.github.io/nba-website\>). This branch is protected and only the `dev` branch can be merged into `main`.
 
-2.  [**dev**]{style="color:DarkSeaGreen;"}
+2.  **dev**
 
     This branch is ahead of **main** (i.e., it contains new information that is not public yet) and gets published (i.e., merged into **main**) from time to time. A preview of these docs is available at <https://sanbi-nba.github.io/nba-website/site-preview\>.
 
-3.  [**my-feature-branch**]{style="color:SteelBlue;"}
+3.  **my-feature-branch**
 
     Feature branches created by authors to update existing documentation or contribute new documentation. Feature branches are merged into **dev**.
 
 ## Contribute new PRs
 
-```mermaid
-graph TD
-    A[main] --> B[dev]
-    B --> C[feature-branch]
-    
-    B --> D["1. git switch dev"]
-    D --> E["2. git fetch"]
-    E --> F["3. git pull"]
-    F --> G["4. git checkout -b feature-branch"]
-    G --> H["5. Update/add docs"]
-    H --> I["6. git add → git commit → git push"]
-    I --> J["7. Create pull request"]
-    J -.-> B
-    J -.-> A
-    
-    style A fill:#e1f5ff
-    style B fill:#e1f5ff
-    style C fill:#ffe1f5
-```
+![](imgs/git-workflow.png)
 
 ### Create new PRs to add/modify content
 
@@ -205,10 +199,10 @@ graph TD
 |:--:|----|----|----|
 | 1 | Switch to the **dev** branch | `git switch dev` | \- |
 | 2 | Download all the latest changes from remote | `git fetch` | - |
-| 3 | Update your local **dev** branch | `git pull` | \- |
-| 4 | Create a new feature branch | `git checkout -b <feature-branch>` | `git checkout -b marine-updates` |
-| 5 | Update/add docs and save changes | \- | \- |
-| 6 | Add/stage changes | `git add filename` | `git add content/marine/marine_condition.qmd` |
+|  | Update your local **dev** branch | `git pull` | \- |
+| 3 | Create a new feature branch | `git checkout -b <feature-branch>` | `git checkout -b marine-updates` |
+| 4 | Update/add docs and save changes | \- | \- |
+| 5 | Add/stage changes | `git add filename` | `git add content/marine/marine_condition.qmd` |
 |  | Commit changes | `git commit -m "<commit message>"` | `git commit -m "Update marine conditions"` |
 |  | Push changes | `git push origin <feature-branch>` | `git push origin marine-updates` |
 | 6 | Create a pull request (PR)\* | \- | \- |
