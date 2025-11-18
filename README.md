@@ -119,7 +119,7 @@ git remote set-url origin git@github.com-sanbi:SANBI-NBA/nba-website.git
 
 Note the `-sanbi` that was added to correspond to the host in the `config` file.
 
-### 8. Configure Git to use Domino credentials:
+### 8. Configure Git to use SANBI credentials:
 
 In some cases, the username and/or email credentials for a specific repo can be different to your `global` git configuration. In this case, you can set up the `local` git configuration for that specific repo.
 
