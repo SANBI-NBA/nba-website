@@ -77,9 +77,9 @@ google-scholar: true
 
 ## Overview
 
-Wildlife forensic science has emerged as a critical tool in biodiversity conservation and law enforcement, particularly in combatting illegal wildlife trade. In South Africa, a country renowned for its rich and diverse fauna, the need for robust forensic tools has become increasingly urgent. The illegal trade in wildlife, ranging from rhinoceros horn and elephant ivory to abalone and pangolins, poses a significant threat to national conservation efforts and undermines legal frameworks designed to protect endangered species.
+Wildlife forensic science has emerged as a crucial tool in biodiversity conservation and law enforcement, particularly in combatting illegal wildlife trade. In South Africa, a country renowned for its rich and diverse fauna, the need for robust forensic tools has become increasingly urgent. The illegal trade in wildlife and derivitives, ranging from rhinoceros horn and elephant ivory to abalone and pangolins, poses a substantial threat to national conservation efforts and undermines legal frameworks designed to protect threatened species.
 
-In South Africa, laboratories responsible for wildlife forensic DNA analysis are contracted by local enforcement authorities (South African Police Service (SAPS) or Department of Forestry, Fisheries and the Environment (DFFE)) to provide this service based on their expertise and experience. Two laboratories within South Africa have mainly been responsible for the provision of wildlife forensic genetic analysis, namely the South African National Biodiversity Institute (SANBI) Genetic Services Unit (GSU) and the Veterinary Genetics Laboratory (VGL) of the University of Pretoria.
+In South Africa, laboratories responsible for wildlife forensic DNA analysis are contracted by local enforcement authorities (South African Police Service (SAPS) or Department of Forestry, Fisheries and the Environment (DFFE)) to provide this service based on their expertise and experience. Two laboratories within South Africa have mainly been responsible for the provision of wildlife forensic genetic analysis, namely the Genetic Services Unit (GSU) of the South African National Biodiversity Institute (SANBI) and the Veterinary Genetics Laboratory (VGL) of the University of Pretoria.
 
 These facilities provide routine forensic services that support regulatory authorities and law enforcement agencies. Their work includes:
 
@@ -90,7 +90,7 @@ These facilities provide routine forensic services that support regulatory autho
 
 <p style="margin: 0;">
 
-DNA barcoding, particularly targeting the *cytochrome oxidase I* (*COI*) and <em>cytochrome b (cytb)</em> regions, is widely used to identify species from forensic samples. These sequences are compared against reference databases such as GenBank and BOLD. South Africa has developed curated databases through the Barcode of Wildlife Project, including 37 mammal species for *COI* and 23 for *cytb*, ensuring admissibility in court [@baxter_dna_2024].
+DNA barcoding, particularly targeting the *cytochrome oxidase I* (*COI*) and <em>cytochrome b (cytb)</em> regions of mitochondrial DNA, is widely used to identify species from forensic samples. These sequences are compared against reference databases such as GenBank and BOLD. South Africa has developed curated databases through the Barcode of Wildlife Project, including 37 mammal species for *COI* and 23 for *cytb*, ensuring admissibility in court [@baxter_dna_2024].
 
 </p>
 :::
@@ -119,15 +119,15 @@ Short Tandem Repeats (STRs; otherwise known as microsatellites) and Single Nucle
 </p>
 :::
 
-The forensic data generated is **used in court proceedings and policy development**, reinforcing the role of science in environmental governance.
+The forensic data generated is used in court proceedings and policy development, reinforcing the role of science in environmental governance.
 
 ## Case review and findings
 
-A comprehensive review of wildlife forensic cases analyzed in South Africa between August 2017 and July 2024 was recently conducted [@de_bruyn_septennium_2025]. A total of 3 763 cases were examined, revealing significant trends in species representation and forensic demand (@fig-forensic-cases):
+A comprehensive review of wildlife forensic cases analysed in South Africa between August 2017 and July 2024 was conducted [@de_bruyn_septennium_2025]. A total of 3 763 cases were examined, revealing significant trends in species representation and forensic demand (@fig-forensic-cases):
 
 -   **Mammals** accounted for the vast majority of cases, reflecting the high incidence of poaching and illegal trade involving species such as black and white rhinoceros, African elephant (*Loxodonta africana*), lion (*Panthera leo*), and greater kudu (*Tragelaphus strepsiceros*).
 
--   **Invertebrate** cases predominantly involved abalone (*Haliotis midae*), a species heavily targeted for illegal harvesting.
+-   **Invertebrate** cases predominantly involved South African abalone (*Haliotis midae*), a species heavily targeted for illegal harvesting.
 
 -   **Fish** cases had a focus on shark species due to their commercial and ecological significance.
 
@@ -135,11 +135,11 @@ A comprehensive review of wildlife forensic cases analyzed in South Africa betwe
 
 -   **Birds** represented the fewest number of cases, and mainly involved ostrich (*Struthio camelus*) and white-backed vulture (*Gyps africanus*).
 
-![Taxonomic representation of cases analyzed in South Africa over a seven-year period (August 2017 to July 2024).](imgs/proportion-cases-taxon.png){#fig-forensic-cases width="max" height="max" fig-align="center"}
+![Taxonomic representation of cases analysed in South Africa over a seven-year period (August 2017 to July 2024).](imgs/proportion-cases-taxon.png){#fig-forensic-cases width="max" height="max" fig-align="center"}
 
-For a more indepth look at the species and their representation in the various wildlife forensic cases analysed in South Africa, refer to [@fig-list] .
+For a more in-depth look at the species and their representation in the various wildlife forensic cases analysed in South Africa, refer to [@fig-list] .
 
-![Species representation of cases analyzed in South Africa over a seven-year period (August 2017 to July 2024)](imgs/forensic-list-v3.png){#fig-list fig-align="center"}
+![Species representation of cases analysed in South Africa over a seven-year period (August 2017 to July 2024).](imgs/forensic-list-v3.png){#fig-list fig-align="center"}
 
 ## Geographical representation
 
@@ -147,7 +147,7 @@ Samples processed were predominantly from the north-eastern parts of the country
 
 ## Challenges and opportunities
 
-Wildlife forensic science in South Africa has made significant strides, but several challenges continue to limit its full potential. One of the most pressing issues is the lack of resources, including funding, laboratory infrastructure, and trained personnel. Many forensic laboratories operate under constrained budgets, which affects their ability to process cases efficiently and invest in new technologies. Another major challenge is the absence of standardized protocols across institutions. Without harmonised procedures, results may vary between laboratories, which can undermine the credibility of forensic evidence in legal proceedings. Establishing national standards for sample collection, DNA analysis, and data interpretation is essential to ensure consistency and reliability. A third challenge is the limited availability of species-specific reference databases. These databases are crucial for accurate species identification, individual profiling, and geographic origin determination. However, building such databases requires extensive sampling, expert taxonomic verification, and long-term investment. For rare and endangered species, collecting sufficient reference data is particularly difficult.
+Wildlife forensic science in South Africa has made significant strides, but several challenges continue to limit its full potential. One of the most pressing issues is the lack of resources, including funding, laboratory infrastructure, and trained personnel. Many forensic laboratories operate under constrained budgets, which affects their ability to process cases efficiently and invest in new technologies. Another major challenge is the absence of standardised protocols across institutions. Without harmonised procedures, results may vary between laboratories, which can undermine the credibility of forensic evidence in legal proceedings. Establishing national standards for sample collection, DNA analysis, and data interpretation is essential to ensure consistency and reliability. A third challenge is the limited availability of species-specific reference databases. These databases are crucial for accurate species identification, individual profiling, and geographic origin determination. However, building such databases requires extensive sampling, expert taxonomic verification, and long-term investment. For rare and endangered species, collecting sufficient reference data is particularly difficult.
 
 ## Future directions
 
