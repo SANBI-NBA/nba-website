@@ -77,7 +77,7 @@ author:
 
     # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Sinothando #Add author's first name here. Abbreviate the middle name
+      given: Sinothando S. #Add author's first name here. Abbreviate the middle name
       family: Shibe #Add author's surname here
     orcid: 0000-0002-1194-0132 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
@@ -183,6 +183,8 @@ perc_pp_extent <- round((sum(pro_extent$`Poorly Protected`)/total_extent)*100, d
 perc_np_extent <- round((sum(pro_extent$`Not Protected`)/total_extent)*100, digits = 1)
 perc_protected_extent <- perc_pp_extent+perc_mp_extent+perc_wp_extent
 
+
+
 ##count
 eco_count <- epl_combined %>% 
   pivot_longer(cols = 2:5) %>% 
@@ -205,9 +207,9 @@ perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 ```
 
-*Progress has been made in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s Marine Protected Areas (MPAs). Advances in ecological effectiveness are evident but there are gaps in participation, ecosystem representation, connectivity and governance. Increasing extent of protection alone is not enough to advance marine ecosystems to Well Protected, as the condition of marine ecosystems in conservation areas also needs to be improved. Diversified conservation measures can help address gaps and provide new opportunities to safeguard both biodiversity and cultural heritage. South Africa needs to better include people in the design, implementation and co-management of conservation areas.*
+*Progress has been made in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s Marine Protected Areas (MPAs). Advances in ecological effectiveness are evident but there are gaps in participation, ecosystem representation, connectivity and governance. Increasing extent of protection alone is not enough to advance marine ecosystems to Well Protected, as the condition of marine ecosystems in conservation areas also needs to be improved. Diversified conservation measures can help address gaps and provide new opportunities to safeguard both biodiversity and cultural heritage. South Africa needs to better include people in the design, implementation and co-management of conservation areas.* :::
 
-![Fisherwoman in the iSimangaliso MPA and World Heritage Site. © Kerry Sink.](imgs/Blackrock_oct13_horizon_straightened.png)
+![Fisherwoman in the iSimangaliso MPA and World Heritage Site. © Kerry Sink](imgs/Blackrock_oct13_horizon_straightened.png)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
@@ -277,12 +279,11 @@ knitr::include_graphics("imgs/epl_pelagic_with_donut.png")
 
 ## Ecosystem protection level results
 
-Of South Africa’s 163 national marine ecosystem types, `r perc_protected_count`% (representing `r perc_protected_extent`% of the mainland marine area) are represented in the Marine Protected Area (MPA) network to some degree, leaving 27 ecosystem types (17%) as Not Protected (representing `r perc_np_extent`% of the mainland marine area). While the majority of ecosystems have some protection, only 32 ecosystem types (`r perc_wp_count`%), representing `r perc_wp_extent`% of the mainland marine area, are Well Protected. It should be noted that changes in relation to the previous assessment [@sink2019a] do not reflect genuine changes in ecosystem protection level, but are due to revised targets and methods to improve alignment globally and among realms in South Africa. A table of the ecosystem protection level and threat status results can be downloaded from the [Data section](#data2) below.
+Of South Africa’s 163 national marine ecosystem types, `r perc_protected_count`% (representing `r perc_protected_extent`% of the mainland marine area) are represented in the MPA network to some degree, leaving 27 ecosystem types (17%) as Not Protected (representing `r perc_np_extent`% of the mainland marine area). While the majority of ecosystems have some protection, only 32 ecosystem types (`r perc_wp_count`%), representing `r perc_wp_extent`% of the mainland marine area, are Well Protected. It should be noted that changes in relation to the previous assessment [@sink2019a] do not reflect genuine changes in ecosystem protection level, but are due to revised targets and methods to improve alignment globally and among realms in South Africa. A table of the ecosystem protection level and threat status results can be downloaded from the [Data section](#data2) below.
 
-South Africa advanced protection levels in 2019 with the proclamation of the [Phakisa MPA network](https://www.marineprotectedareas.org.za/explore). Of the 83 ecosystem types that were Not Protected before 2019, 67 types received their first protection in 2019 with the proclamation of 20 new or expanded MPAs [@sink2023a]. These included 7 of 13 pelagic ecosystem types. Additionally, 18 ecosystem types advanced to Well Protected in 2019, going from a total of 9% to `r perc_wp_count`%. Since 2019, no new Marine Protected Areas have been established. However, protection for African penguin foraging areas has been strengthened through fishing closures around six breeding colonies [@kirkman2025]. In addition, new work is underway to support the recognition of Other Effective area-based Conservation Measures (OECMs), which may help diversify protection models [@kirkman2025].
+South Africa advanced protection levels in 2019 with the proclamation of the [Phakisa MPA network](https://www.marineprotectedareas.org.za/explore). Of the 83 ecosystem types that were Not Protected before 2019, 67 types received their first protection in 2019 with the proclamation of 20 new or expanded MPAs [@sink2023a]. These included 7 of 13 pelagic ecosystem types. Additionally, 18 ecosystem types advanced to Well Protected in 2019, going from a total of 9% to `r perc_wp_count`%. Since 2019, no new MPAs have been established. However, protection for African penguin foraging areas has been strengthened through fishing closures around six breeding colonies [@kirkman2025]. In addition, new work is underway to support the recognition of Other Effective area-based Conservation Measures (OECMs), which may help diversify protection models [@kirkman2025].
 
 :::: panel-tabset
-
 ## Figure
 
 ```{r}
@@ -345,9 +346,7 @@ tbl <- epl_combined %>%
 
 tbl
 ```
-
 :::
-
 ::::
 
 Ecosystem types on the KwaZulu-Natal shelf generally have higher protection levels while ecosystem types in the Southern Benguela are the least protected (@fig-epl_map_benthic and @fig-epl_map_pelagic). Offshore ecosystem types are still less represented in South Africa’s MPA network than shore and shelf ecosystem types. [Slopes](https://mzansea590234219.wordpress.com/ecosystems/slopes/), [abyssal plains](https://mzansea590234219.wordpress.com/ecosystems/the-abyss/), muddy and [rocky shelves](https://mzansea590234219.wordpress.com/ecosystems/rocky-shelves/) are the most poorly protected ecosystem functional groups (@fig-epl_bargraphs). Unless these functional groups are targeted for inclusion in MPAs or OECMs, gaps in representation will persist. However, while protection in the deep ocean beyond the shelf edge is less than on continental shelves and coastal areas, it should be noted that the deep benthic and pelagic ecosystems are also [less threatened](marine_ets.qmd).
@@ -356,21 +355,22 @@ Increasing extent of protection alone will not advance marine ecosystems to Well
 
 Ecosystem types that are **Not Protected** include the Kingklip Koppies, the vast Southeast Atlantic Lower Slope, the expansive Southwest Indian Lower Slope and four pelagic ecosystem types. Among the latter, the Agulhas Retroflection and Southern Ocean Transitional Water is of particular interest as a globally unique area. The uThukela Canyon, the Cape Lower Canyon and St Helena Bay are also Not Protected.
 
-![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures © SANBI.](imgs/canyons_legend.png)
+![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures. © SANBI](imgs/canyons_legend.png)
 
 Of the 27 **Poorly Protected** ecosystem types, several fall into this category because their areas that are within MPAs have high levels of ecosystem modification (i.e. poor [ecological condition](marine_condition.qmd) due to high past or ongoing [pressures](marine_pressures.qmd)), not because they have very limited areas within MPAs. Among others, these include two kelp ecosystem types, Agulhas and Cape Kelp Forests, and two bay ecosystem types, Cape Bay and False and Walker Bay. Other ecosystem types that could advance from their current Poorly Protected status to Moderately Protected by improving ecological condition include Agulhas Mid Shelf Reef, the Agulhas Coarse Sediment Shelf Edge and Amathole Lace Corals.
 
-![An excellent area to improve protection of the Poorly Protected Eastern Agulhas Outer Shelf Mosaic is in the Seaview Horse Mussel Seabed Management Area near Gqeberha. This area has high biodiversity and Remotely Operated Vehicle surveys found clumps of horse mussels that were not observed in areas with greater inshore trawling activity © ACEP Deep Forests Project, Kerry Sink.](imgs/Seaview_Horse_mussels.png)
+![An excellent area to improve protection of the Poorly Protected Eastern Agulhas Outer Shelf Mosaic is in the Seaview Horse Mussel Seabed Management Area near Gqeberha. This area has high biodiversity and Remotely Operated Vehicle surveys found clumps of horse mussels that were not observed in areas with greater inshore trawling activity. © ACEP Deep Forests Project, Kerry Sink](imgs/Seaview_Horse_mussels.png)
 
 Forty-eight marine ecosystem types are **Moderately Protected**. While several of these could advance to Well Protected through improved ecological condition, 27 types will require increased coverage in MPAs or OECMs. For example, Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon require increased representation in South Africa’s marine conservation estate to improve their ecosystem protection level.
 
-![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected © Lloyd Edwards and ACEP Deep Secrets and Deep Forests projects.](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
+![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected. © Lloyd Edwards and ACEP Deep Secrets and Deep Forests projects.](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
 
 Only 20% of South Africa’s 163 marine ecosystem types are **Well Protected**. This statistic could be increased through increasing the estate of representative protected areas and by reducing [pressures](marine_pressures.qmd) and thereby improving [ecological condition](marine_condition.qmd) within some existing MPAs. Well Protected ecosystem types include many from the Delagoa ecoregion where the iSimangaliso MPA and World Heritage Site provides protection to many ecosystem types. Other examples of Well Protected types include Agulhas Inner Shelf Reef, Natal Exposed Rocky Shore and [seamount](https://mzansea590234219.wordpress.com/ecosystems/seamounts-and-ridges/) ecosystem types in the South east Atlantic.
 
-![Delagoa Upper Canyon, which is home to at least 39 individual coelacanths, is a Well Protected ecosystem type. © ACEP Deep Connections, K. Sink.](imgs/well_protected_coeli.png)
+![Delagoa Upper Canyon, which is home to at least 39 individual coelacanths, is a Well Protected ecosystem type. © ACEP Deep Connections, Kerry Sink](imgs/well_protected_coeli.png)
 
 <!-- ## MPAs, MPA effectiveness and OECMs -->
+
 ## Marine protected and conserved areas
 
 ### MPAs
@@ -399,19 +399,18 @@ Common elements in these evaluations indicate a need to revisit MPA objectives f
 
 ### OECMs
 
-The concept of OECMs offers new opportunities for more inclusive and people-centred approaches to marine conservation that can encourage and support resource co-management, diverse cultural values, livelihoods and enhanced sustainability, while reducing the burden on MPA expansion in South Africa [@kirkman2023]. These areas are governed and managed in ways that achieve positive and sustained long-term outcomes for the *in situ* conservation of biodiversity values, whether or not biodiversity conservation is the primary management objective. No marine areas have been recognised as OECMs in South Africa as of December, 2025. 
+The concept of OECMs offers new opportunities for more inclusive and people-centred approaches to marine conservation that can encourage and support resource co-management, diverse cultural values, livelihoods and enhanced sustainability, while reducing the burden on MPA expansion in South Africa [@kirkman2023]. These areas are governed and managed in ways that achieve positive and sustained long-term outcomes for the *in situ* conservation of biodiversity values, whether or not biodiversity conservation is the primary management objective. No marine areas have been recognised as OECMs in South Africa as of December, 2025.
 
 Exploratory assessments of various management measures that exist in the marine realm allowed for the identification of measures that hold most promise for OECM recognition. These included a marine buffer zone of a biosphere reserve, closed fishing areas adjacent to African penguin colonies, and estuarine management plans. Going forward, it may be strategic to prioritise sites under the above measures for formal assessment against OECM criteria.
 
-![Remotely Operated Vehicle surveys within the trawl closure off Cape St Francis suggest that this area meets the OECM criterion for high biodiversity value. This site, if recognised as an OECM, could contribute to improved ecosystem protection level for the Endangered and Moderately Protected Eastern Agulhas Bay. © ACEP Deep Forests, K Sink.](imgs/ST_Francis_Deep_Forest_KSink.png)
+![Remotely Operated Vehicle surveys within the trawl closure off Cape St Francis suggest that this area meets the OECM criterion for high biodiversity value. This site, if recognised as an OECM, could contribute to improved ecosystem protection level for the Endangered and Moderately Protected Eastern Agulhas Bay. © ACEP Deep Forests, Kerry Sink](imgs/ST_Francis_Deep_Forest_KSink.png)
 
 There are certain measures that South Africa's legislation makes provision for but are yet to be implemented, which could meet the criteria for OECM recognition, depending on where and how they are implemented. An example is special management areas under the [National Environmental Management: Integrated Coastal Management Act](https://www.gov.za/documents/national-environmental-management-integrated-coastal-management-act). Sites under this measure can be designated primarily for cultural purposes and could potentially constitute OECMs that uphold cultural sustainability, promote the connection of people with their environment and heritage, and facilitate greater inclusivity in marine conservation and management in the country.
 
-
-::: {#box-1 .callout .freshwater title="Box 1. Cuturally Significant Areas"}
+::: {#box-1 .callout .freshwater title="Box 1. Culturally Significant Areas"}
 \
 
-![South Africa has committed to expanding protected and conserved areas to meet national and global goals. Realising this ambition will require strengthened community participation in establishing and managing these areas. Sites such as Gompo’s Rock (near East London, Eastern Cape), which hold both cultural and biodiversity significance could be explored for conservation relevance and recognition as OECMs in partnership with value holders. © Kerry Sink.](imgs/csa_gompos_rock.png)
+![South Africa has committed to expanding protected and conserved areas to meet national and global goals. Realising this ambition will require strengthened community participation in establishing and managing these areas. Sites such as Gompo’s Rock (near East London, Eastern Cape), which hold both cultural and biodiversity significance could be explored for conservation relevance and recognition as OECMs in partnership with value holders. © Kerry Sink](imgs/csa_gompos_rock.png)
 
 New research [@dunga2025] has supported progress in identifying and characterising cultural heritage sites in Marine Spatial Planning and coastal management. Eight categories of Culturally Significant Areas were identified drawing from literature, orature and expert knowledge [@dunga2025]. These cover tangible and intangible aspects of cultural heritage, including iconic seascapes, traditional fishing grounds, sites of spiritual and ceremonial importance and oral tradition. Spatial management in alignment with OECM criteria could help to safeguard the deep and diverse cultural ties many South Africans have to the coastal and marine environment. The establishment of small scale fishing zones, a provision under the Marine Living Resources Act, could also be explored as a mechanism for OECM recognition, providing protection to fishers’ tenure rights and livelihoods whilst safeguarding marine ecosystems and cultural heritage [@kowalski2025].
 
@@ -422,7 +421,7 @@ Improving marine ecosystem protection requires strategic collaborative expansion
 
 ```{r}
 #| label: fig-epl_schematic
-#| fig-cap: Schematic to show steps in determining marine ecosystem protection level.
+#| fig-cap: Schematic to illustrate steps in determining marine ecosystem protection level.
 #| echo: false
 #| message: false
 #| warning: false
@@ -436,7 +435,7 @@ The history and approach to the development of South Africa’s protection level
 
 Changes in ecosystem protection level between 2018 and 2025 are caused by the increased target and improved methodology rather than genuine changes in protection or ecological condition. Note that OECMs will contribute to ecosystem protection level once these have been recognised in the marine realm [@kirkman2025; @kowalski2025].
 
-Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distil key findings beyond the spatial analysis of ecosystem protection level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinkd] and the work undertaken through the iAtlantic project [@sink2023a; @sink2023b], Mission Atlantic project [@sink], the ACEP Deep Connections and One Ocean Hub projects [@vanderbank2024; @vanderbank2025b] including the Aliwal Shoal Working Group [@aliwalshoalmpaworkinggroup2024], and SeaPeople [@vanderbank2025c] were additional key informants. Inputs from an additional workshop that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@rylands].
+Recent evaluations of ecological, socio-economic and governance effectiveness for existing MPAs were synthesised to distil key findings beyond the spatial analysis of ecosystem protection level. Synergies in underlying themes related to effectiveness and in recommendations to improve effectiveness or the evaluation thereof were identified. An analysis of stakeholder comments that was undertaken to inform future MPA expansion efforts was also consulted [@sinkd] and the work undertaken through the iAtlantic project [@sink2023a; @sink2023b], Mission Atlantic project [@sink2023c], the ACEP Deep Connections and One Ocean Hub projects [@vanderbank2024; @vanderbank2025b] including the Aliwal Shoal Working Group [@aliwalshoalmpaworkinggroup2024], and SeaPeople [@vanderbank2025c] were additional key informants. Inputs from an additional workshop that discussed the draft results of the 2025 marine assessment and co-developed recommended priority actions, also provided useful insights [@rylands].
 
 ## Technical documentation
 
@@ -458,11 +457,11 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ### Key publications
 
-Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.
+Harris, L. et al. 2025. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
 
-Sink, et al. *In prep*. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
+Sink, KJ. et al. *in prep*. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
 
-Sink KJ, Lombard AT, Attwood CG, Livingstone TC, Grantham H, Holness SD. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
+Sink, KJ. et al. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
 
 ## Recommended citation
 

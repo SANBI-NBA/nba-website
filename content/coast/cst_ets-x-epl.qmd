@@ -2,7 +2,7 @@
 # ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Intersection of Ecosystem Threat Status and Protection Level" # Compulsory
+title: "Intersection of ecosystem threat status and protection level" # Compulsory
 subtitle: "Coastal zone"
 
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml

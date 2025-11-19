@@ -29,7 +29,7 @@ google-scholar: true
 
 *South Africa's unique terrestrial biodiversity is globally recognised, with high species diversity and exceptional levels of endemism (especially for plants). The wide climatic range and varied geology and topography result in an equally diverse set of 463 terrestrial ecosystem types. This natural heritage supports vibrant rural and urban land uses and provides essential ecosystem services. The steady loss of terrestrial habitat and decline in species populations due to various human activities, set against a backdrop of accelerating climate change, paints an overall picture of decline in the biodiversity and ecosystem services on which we rely. Gains in protection of species and ecosystems (through biodiversity stewardship programs) and growing sustainable use and restoration efforts are a positive trend. Biodiversity inclusive spatial planning, a well-established practice in South Africa, is a key tool in striking the balance between development and biodiversity.*
 
-![Agriculture in the Hemel-en-Aarde Valley, Western Cape (©Andrew Skowno)](imgs/canola_wc_skowno_crop.png){fig-align="center" width="800"}
+![Agriculture in the Hemel-en-Aarde Valley, Western Cape. (©Andrew Skowno)](imgs/canola_wc_skowno_crop.png){fig-align="center" width="800"}
 
 ::::: columns
 ::: {.column width="50%"}
@@ -73,8 +73,8 @@ Priority actions across all realms are summarised on the [Priority actions page]
 
 ### Acknowledgements
 
-The terrestrial species assessments in the NBA are supported by dozens of experts from institutions across South African and abroad, they are acknowledged in the species findings [pages](../species/sp.qmd). 
+The terrestrial species assessments in the NBA are supported by dozens of experts from institutions across South African and abroad, they are acknowledged in the species findings [pages](../species/sp.qmd).
 
-The terrestrial ecosystem threat status and protection level analyses for the NBA 2025 used input data from a wide range of sources. The National Vegetation Map Committee is acknowledged for their role in reviewing and guiding the map of terrestrial ecosystems. The following researchers and their institutions are thanked and acknowledged for providing full access to their data on ecosystem condition, distribution of alien invasive species and land cover. Without this collaboration the status of terrestrial ecosystems could not be assessed: 
+The terrestrial ecosystem threat status and protection level analyses for the NBA 2025 used input data from a wide range of sources. The National Vegetation Map Committee is acknowledged for their role in reviewing and guiding the map of terrestrial ecosystems. The following researchers and their institutions are thanked and acknowledged for providing full access to their data on ecosystem condition, distribution of alien invasive species and land cover. Without this collaboration the status of terrestrial ecosystems could not be assessed:
 
 Dr Alanna Rebelo of the Agricultural Research Council, and her PhD students Liam Cogill and Thandeka Skosana. Dr Wesley Bell and Tim Kirsten from UCT. Dr Johann Kotzé (Stellenbosch University) and Andrew Wannenburgh (DFFE). Leo Quayle from GeoNest. Prof Norbert Jürgens (University of Hamburg) and Pieter van Wyk (SanParks). Charmaine Oxtoby and Jonathan Bell form the City of Cape Town, and Boyd Escott from Cape Nature. Mervyn Lotter from the MPTA and Dr Debbie Jewitt from Ezemvelo KZN Wildlife.

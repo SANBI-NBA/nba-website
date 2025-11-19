@@ -366,7 +366,7 @@ The most **threatened functional groups** include bays, deepwater biogenic beds,
 #| fig-cap: Threat status of marine ecosystem types in each functional group, summarised by numbers of ecosystem types in (A) and by aerial extent in (B). 
 # <!-- #| Threat status of marine ecosystem types by functional group. Numbers reflected in (A) indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category.  -->
 #| out-width: 100%
-
+#| classes: plain
 
 #Combine RLE plot
 nba_plot_comb(ets_combined,
@@ -418,9 +418,7 @@ tbl <- ets_combined %>%
 
 tbl
 ```
-
 :::
-
 ::::
 
 The six ecosystem types that are **Critically Endangered** cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling that persists over much of the extent of this ecosystem type [@currie2023] in addition to flow reduction. Similarly, the KwaZulu-Natal Bight Muddy Inner Shelf has been modified by flow reduction and the demersal inshore crustacean inshore fishery that has subsequently ceased. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort leading to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 [@sink2019] under IUCN RLE Criterion C/D with four additional small ecosystem types listed under this category in 2025 when strictly applying IUCN RLE Criterion B.
@@ -470,6 +468,8 @@ The application of the IUCN global standards supported a more comprehensive unde
 ### Key publications
 
 Sink, K.J. et. al. in prep. Iterative improvement in marine ecosystem threat status assessment in South Africa to support sustainable ocean economy decisions.
+
+Sink, K.J. et al. 2019. Chapter 7: Ecosystem Threat Status, in: Sink, K.J. et al. (Eds.), South African National Biodiversity Assessment 2018 Technical Report Volume 4: Marine Realm. South African National Biodiversity Institute, Pretoria, pp. 249–282.
 
 Harris, L.R. et al. 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine, Coastal and Shelf Science, p.109447. https://doi.org/10.1016/j.ecss.2025.109447
 

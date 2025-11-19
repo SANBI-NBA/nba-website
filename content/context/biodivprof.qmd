@@ -189,13 +189,13 @@ google-scholar: true
 
 South Africa has exceptional biodiversity that is globally recognised, characterised by high species richness, high rates of endemism and a wide variety of ecosystem types. Although among the smaller of the world’s 17 megadiverse countries, which together contain more than two-thirds of the world’s biodiversity, South Africa ranks in the global top ten of countries in terms of plant species richness and third for marine species endemism. The country holds three of the world’s 36 recognised biodiversity hotspots, 31 Ramsar sites (wetlands of international importance, including the subantarctic Prince Edward Islands) and the Agulhas Bank that is an equivalently unique marine ecosystem (@fig-profile-map). Applying the international standard, South Africa has identified 263 terrestrial Key Biodiversity Areas (KBAs), which are sites of global biodiversity significance. This network of KBAs is expected to expand over time as the marine realm is assessed.
 
-![South Africa has exceptional biodiversity that is globally recognised – here ecosystem diversity is highlighted through several examples across the realms](imgs/BiodiversityProfileIEMCentre.png){#fig-profile-map fig-align="center"}
+![South Africa has exceptional biodiversity that is globally recognised – here ecosystem diversity is highlighted through several examples across the realms.](imgs/BiodiversityProfileIEMCentre.png){#fig-profile-map fig-align="center"}
 
 ## Ecosystem facts
 
 South Africa has a wide range of bioclimatic, oceanographic, geological and topographical settings. Together, these support high ecosystem diversity and endemism. Almost 1 000 distinct ecosystem types have been described and for the purposes of the NBA these are grouped into four realms: terrestrial, freshwater (rivers and inland wetlands), estuarine and marine. The cross-realm coastal zone is made up of selected terrestrial and marine ecosystems and all estuaries, and the Subantarctic is made up of the marine and terrestrial ecosystems of the Prince Edward Islands, 1 700 km south of mainland South Africa.
 
-![Tundra vegetation on Marion Island– part of South Africa’s subantarctic territory; waterlogged mires, fern-dominated slopes and coastal salt spray habitats can be seen. A colony of macaroni penguin (VU) occupy the habitat at the bottom left of the picture (© Stephni van der Merwe)](imgs/MarionIsland_MireSlope_Stephni_van_der_Merwe.JPG)
+![Tundra vegetation on Marion Island– part of South Africa’s subantarctic territory; waterlogged mires, fern-dominated slopes and coastal salt spray habitats can be seen. A colony of macaroni penguin (VU) occupy the habitat at the bottom left of the picture. (© Stephni van der Merwe)](imgs/MarionIsland_MireSlope_Stephni_van_der_Merwe.JPG)
 
 **Terrestrial realm**: Nine biomes and 463 ecosystem types, approximately 80% of which are endemic.
 

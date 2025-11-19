@@ -35,7 +35,7 @@ South Africa’s National Biodiversity Assessment is a collaborative effort to s
 
 The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa. It is prepared as part of the South African National Biodiversity Institute’s (SANBI) mandate, in terms of the National Environmental Management: Biodiversity Act (Act 10 of 2004). The Act specifically states that SANBI 'must monitor and report regularly to the Minister on (i) the status of the Republic’s biodiversity and (ii) the conservation status of all listed threatened or protected species and listed ecosystems'.
 
-![The NBA 2025 is the 4th edition released, and the first to be accompanied by a website](./imgs/nba2004-2025.png){fig-align="center" width="600"}
+![The NBA 2025 is the 4th edition released, and the first to be accompanied by a website.](./imgs/nba2004-2025.png){fig-align="center" width="600"}
 
 The scope of the NBA is broad, assessing biodiversity at the ecosystem and species level, and addressing aspects of genetic diversity. The assessment covers all of South Africa's territory, across land and sea, including its subantarctic territory of the Prince Edward Islands. Information is organised by realm (terrestrial, freshwater (rivers and inland wetlands), estuarine and marine (benthic and pelagic)), and the cross-ream coastal zone and the subantarctic region.
 

@@ -12,7 +12,7 @@ title-block-banner-color: white
 South Africa has several successful citizen science programmes, like the Custodians of Rare and Endangered Wildflowers, the Southern African Bird Atlas Project, programmes for water resource monitoring, and others, that generate invaluable biodiversity data and foster public engagement. However, gaps remain in the monitoring and detection of changes in species populations, ecological condition and community composition across realms.
 
 ::: {layout-ncol="2"}
-![Citizen science empowers individuals, schools and communities to contribute to biodiversity monitoring. Here a budding citizen scientist is taking a soil sample in a wetland area (© Tsamaelo Malebu).](imgs/33.%20Pg37_KMC2_Wetland%20citisci_(c)Tsamaelo%20Malebu%20-%20SMALL.png)
+![Citizen science empowers individuals, schools and communities to contribute to biodiversity monitoring. Here a budding citizen scientist is taking a soil sample in a wetland area. (© Tsamaelo Malebu)](imgs/33.%20Pg37_KMC2_Wetland%20citisci_(c)Tsamaelo%20Malebu%20-%20SMALL.png)
 
 ![Ms Sisipho Njokweni, and intern with SAEON, takes part in a long-term marine invertebrate monitoring programme (© Safiyya Sedick). Occurrence data from this programme was served through the SeaMap Project, and are contributing to a more data-driven marine ecosystem map and spatial biodiversity planning.](imgs/34.%20Pg37_KMC2_IMG_1343_SeaMap%20inverts%20(c)SAEON%20-%20SMALL.png)
 :::

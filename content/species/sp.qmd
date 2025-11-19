@@ -1,5 +1,29 @@
 ---
-title: "Species"
+format:
+  html:
+    toc: false
+    sidebar: true
+listing:
+  id: species-listings
+  contents:
+    - ../sp_plants.qmd    
+    - ../sp_mammals.qmd
+    - ../sp_reptiles.qmd
+    - ../sp_birds.qmd    
+    - ../sp_spiders.qmd
+    - ../sp_butterflies.qmd
+    - ../sp_amphibians.qmd  
+    - ../sp_fwf.qmd
+    - ../sp_fwfcrabs.qmd
+    - ../sp_anostraca.qmd
+    - ../sp_dragons.qmd
+    - ../sp_sharks.qmd 
+    - ../sp_sparids.qmd
+    
+  type: grid
+  fields: [image, title, subtitle]
+  sort: false
+  sort-ui: false
+  filter-ui: false
+  categories: false
 ---
-
-## 

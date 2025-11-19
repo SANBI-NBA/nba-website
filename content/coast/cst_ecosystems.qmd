@@ -1,8 +1,8 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Ecosystem Types"
-subtitle: "Coastal Zone"
+title: "Ecosystem types"
+subtitle: "Coastal zone"
 
 title-block-banner: "#DEA004" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
@@ -140,9 +140,9 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ## Summary {#summary}
 
-**South Africa arguably has one of the most diverse and scenic coasts in the world, supporting a wealth of unique biodiversity. Altogether, there are `r cet_n` coastal ecosystem types that comprise the ecologically determined coastal zone (EDCZ). These include `r ret_n("T")` vegetation types, `r ret_n("E")` estuarine ecosystem types, and `r ret_n("M")` marine ecosystem types. Freshwater ecosystem types are not currently included in the EDCZ, but there is planned inclusion in future.**
+South Africa arguably has one of the most diverse and scenic coasts in the world, supporting a wealth of unique biodiversity. Altogether, there are `r cet_n` coastal ecosystem types that comprise the ecologically determined coastal zone (EDCZ). These include `r ret_n("T")` vegetation types, `r ret_n("E")` estuarine ecosystem types, and `r ret_n("M")` marine ecosystem types. Freshwater ecosystem types are not currently included in the EDCZ, but there is planned inclusion in future.
 
-![The ecological determined coastal zone is a cross-realm zone that includes terrestrial, estuarine and marine ecosystem types, as illustrated here at Nature's Valley. Photo credit: © Linda Harris (CC-BY-NC-ND)](imgs/cst-e-naturesvalley_Linda-Harris.png)
+![The ecological determined coastal zone is a cross-realm zone that includes terrestrial, estuarine and marine ecosystem types, as illustrated here at Nature's Valley. (© Linda Harris)](imgs/cst-e-naturesvalley_Linda-Harris.png)
 
 ## Defining and delineating the ecologically determined coastal zone
 

@@ -61,7 +61,7 @@ format:
 
 *The intersection of ecosystem threat status and protection level reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
 
-![The Endangered Black Harrier: an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome (© Odette Curtis-Scott)](./imgs/blackharrier_crop_ocs.png)
+![The Endangered black harrier: an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome. (© Odette Curtis-Scott)](./imgs/blackharrier_crop_ocs.png)
 
 ::::: columns
 ::: {.column width="50%"}
