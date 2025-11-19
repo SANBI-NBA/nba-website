@@ -52,7 +52,7 @@ rsconnect/
 **/*.quarto_ipynb
 
 # Website related folders/files
-# _site/
+_site/
 
 
 # Any rendered htmls in content folder
