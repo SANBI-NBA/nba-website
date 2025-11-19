@@ -50,6 +50,7 @@ citation:
   url: http://nba.sanbi.org.za/
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/Sungazer Lizard.png"
 ---
 
 ------------------------------------------------------------------------
@@ -74,7 +75,7 @@ google-scholar: true
 
 <center>
 
-![Sungazer Lizard, Smaug giganteus is a species threatened by habitat loss and biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. © Endangered Wildlife Trust](./imgs/Sungazer%20Lizard.png){fig-align="center"}
+![Sungazer Lizard, (*Smaug giganteus*) is a species threatened by habitat loss and biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. (© Endangered Wildlife Trust)](./imgs/Sungazer%20Lizard.png){fig-align="center"}
 
 </center>
 
@@ -112,9 +113,7 @@ google-scholar: true
 
 South Africa has rich diversity of terrestrial species. Current estimates indicate that South Africa harbors approximately 6% of the globes vascular plant species; 7% of bird, 5% of mammal, 3% of reptile and 2% of amphibian. A lower proportion of terrestrial species (14%) are threatened with extinction in comparison to species that have been assessed for the marine (36%) and freshwater realms (19%). There has been a marked increase in the risk of extinction for reptiles, birds, mammals and plants since they were last assessed in 2018. Habitat conversion for agriculture remains the primary pressure to terrestrial species. However, the number of species threatened by energy production, mining, climate change, and illegal wildlife trade has increased over the past 8 years.
 
-## Threat status, trends and pressures {#Threat-status-trends-and-pressures}
-
-1.  **Threat status and pressures**
+## Threat status and pressures
 
 A total of 24 678 terrestrial taxa have been assessed in 2025 using the IUCN Red List criteria. Of these, 14% of taxa are threatened, while in 2018, 13% of 22 667 assessed taxa were threatened. The overall increase in the proportion of species threatened is an indication of many vertebrates and plants becoming more threatened. The only new taxonomic group included are the Spiders (2214 taxa) that have very low levels of threat at only 4%.
 
@@ -302,7 +301,7 @@ Twenty-one percent of the 135 assessed terrestrial amphibian taxa are threatened
 
 ### [Plants](sp_plants.qmd)
 
-Seventeen percent of the representative sample of 900 plant taxa are threatened with extinction, and one in five endemic taxa face extinction risk. Agriculture continues to affect the largest proportion of threatened taxa (68%), while invasive alien species (57%), illegal harvesting (28%), mining-related habitat loss (13%), and drought related mortality attributed to climate change (11%) remain significant pressures. Since 2020 326 plant species have been uplisted to higher categories of threat, 153 of these (53%) have been uplisted due to the impacts of climate change and drought in the north western parts of South Africa, with 124 of these simultaneously impacted by livestock overgrazing (38%). A total of 118 plant taxa (36%) were uplisted due to the impacts of [illegal collection for the ornamental trade](#illegal-trade).
+Seventeen percent of the representative sample of 900 plant taxa are threatened with extinction, and one in five endemic taxa face extinction risk. Agriculture continues to affect the largest proportion of threatened taxa (68%), while invasive alien species (57%), illegal harvesting (28%), mining-related habitat loss (13%), and drought related mortality attributed to climate change (11%) remain significant pressures. Since 2020 326 plant species have been uplisted to higher categories of threat, 153 of these (53%) have been uplisted due to the impacts of climate change and drought in the north western parts of South Africa, with 124 of these simultaneously impacted by livestock overgrazing (38%). A total of 118 plant taxa (36%) were uplisted due to the impacts of [illegal collection for the ornamental trade](sp_plants.qmd).
 
 ### [Spiders](sp_spiders.qmd)
 
@@ -322,9 +321,9 @@ Ten percent of the 800 butterfly taxa assessed are threatened with extinction, w
 knitr::include_graphics("./imgs/Terrestrial_Maj.png")
 ```
 
-2.  **Trends**
+## Trends-Red List Index
 
-The trend in terrestrial species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs)[@butchart2004]. The RLIs is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct.
+The trend in terrestrial species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs)[@butchart2004a]. The RLIs is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct.
 
 The RLIs is calculated only for comprehensively assessed taxonomic groups or groups where a representative sample has been selected. Changes in status over time has been tracked for six taxonomic groups that occur in the terrestrial realm (@fig-3). Increases in extinction risk is evident for most groups, but a marked increase in rate of extinction since the last assessment is evident from the change in rate of declines for reptiles, birds, mammals and plants. Increases in threat status for birds has largely been because of increasing levels of pollution and other forms of habitat degradation, while the main drivers of declines for mammals, plants and reptiles have been climate change and loss of habitat for mining and renewable energy development (the taxa that have changed status and the reason causing the uplisting to high threat categories are included on each taxon page). Most of the declines to plants are taking place in the Northern Cape Province (@fig-4) with the Namaqualand region most severely impacted. Anthropogenic impacts from livestock farming, mining, and road construction are being amplified by climate change factors including an unprecedented nine-year drought (2011-2019), increased temperatures, and stronger winds that cause cascading desertification processes through soil erosion and sand burial2. This same region is being heavily impacted by illegal wildlife trade of ornamental succulent and geophytic plants. Animals that have increased in threat status are spread across South Africa but are concentrated in the areas with high rates of recent habitat loss.
 
