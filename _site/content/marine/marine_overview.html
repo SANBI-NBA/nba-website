@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Findings of the NBA presented by realm">
+
+<title>Overview</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../imgs/sanbi-icon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4668a889dd5ab8863b370541ef21b266.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #02268A;
+      }
+</style>
+<style>
+@media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
+  .breadcrumb li a {
+    color: white !important;
+  }
+}
+</style>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://www.sanbi.org/" class="navbar-brand navbar-brand-logo">
+    <img src="../../imgs/nba-logo-combo.png" alt="" class="navbar-logo light-content">
+    <img src="../../imgs/nba-logo-combo.png" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contents.html"> 
+<span class="menu-text">Contents</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents.html">Contents</a></li><li class="breadcrumb-item"><a href="../../content/terrestrial/ter_overview.html">Realm findings</a></li><li class="breadcrumb-item"><a href="../../content/marine/marine_overview.html">Marine</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents.html">Contents</a></li><li class="breadcrumb-item"><a href="../../content/terrestrial/ter_overview.html">Realm findings</a></li><li class="breadcrumb-item"><a href="../../content/marine/marine_overview.html">Marine</a></li></ol></nav>
+      <h1 class="title">Overview</h1>
+            <p class="subtitle lead">Marine realm</p>
+                  <div>
+        <div class="description">
+          <p>Findings of the NBA presented by realm</p>
+        </div>
+      </div>
+                </div>
+  </div>
+    
+    <div class="quarto-title-meta-contents">
+      <p class="author">
+        
+      </p>
+    </div>
+    
+   <div class="quarto-title-meta-contents-affiliation">
+        </div>
+
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/about-nba.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About the NBA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/uses-nba.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using the NBA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/biodivprof.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">South Africa’s biodiversity profile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/importance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The importance of biodiversity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/key-messages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Key messages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Integrated findings</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf_headline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headline indicators</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status and protection level</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/chl_rle_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About ecosystem threat status and the RLE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/chl_epl_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About ecosystem protection level</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf-species.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species threat status and protection level</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/intf-species-rli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species trends - Red List Index</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/intf_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on biodiversity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Realm findings</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/terrestrial/ter_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terrestrial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on biodiversity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ets_x_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/ter_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terrestrial Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/freshwater/fw_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_type.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland Ecosystem Types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_type.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Type</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland Ecological Condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on Wetland Ecosystems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecological Condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Threat Status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Protection Level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/fw_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/estuaries/est_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estuarine</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ecosystem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_habitat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Habitat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estuarine Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/marine/marine_overview.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Marine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ets_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marine birds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge gaps, priority actions and priority areas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coast</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures and ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ets-x-epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_species.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species assessments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_priorities-actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Priority actions and research</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/subantarctic/sub-all_sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Subantarctic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species findings</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mammals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_reptiles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reptiles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spiders</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_butterflies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Butterflies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_amphibians.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Amphibians</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_fwf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater fishes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/fish_recovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SA Freshwater fish species recovery</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater Crabs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anostraca</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_sharks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sharks (incl. Rays &amp; Chimaeras)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sparids</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/genetics/genetic-indicators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genetic diversity</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl-biobank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biodiversity biobanks in South Africa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl-forensics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wildlife forensics in South Africa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl_barcoding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA barcoding in South Africa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Priority actions and knowledge gaps</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/pakg_actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Priority actions, responses and interventions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/pakg_gaps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge gaps and research priorities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ecosystem-assessments" id="toc-ecosystem-assessments" class="nav-link active" data-scroll-target="#ecosystem-assessments">Ecosystem assessments</a></li>
+  <li><a href="#species-assessments" id="toc-species-assessments" class="nav-link" data-scroll-target="#species-assessments">Species assessments</a></li>
+  <li><a href="#pressures-and-ecological-condition" id="toc-pressures-and-ecological-condition" class="nav-link" data-scroll-target="#pressures-and-ecological-condition">Pressures and ecological condition</a></li>
+  <li><a href="#priority-actions-and-areas" id="toc-priority-actions-and-areas" class="nav-link" data-scroll-target="#priority-actions-and-areas">Priority actions and areas</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><em>South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and contributes to deep cultural and spiritual values for South Africa’s oceans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, and co-developed priority actions to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png" class="img-fluid figure-img"></p>
+<figcaption><mark>South Africa’s seascape harbours rich biodiversity with many benefits to society</mark>. © Peter Chadwick</figcaption>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<center>
+<div class="line-block"><span class="inline-style-threatened">45%</span><br>
+of 163 ecosystem types<br>
+<span class="inline-style-indicator">Threatened</span></div>
+<div class="line-block"><span class="inline-style-well-protected">20%</span><br>
+of 163 ecosystem types<br>
+<span class="inline-style-indicator">Well Protected</span></div>
+</center>
+</div><div class="column" style="width:50%;">
+<center>
+<div class="line-block"><span class="inline-style-not-protected">17%</span><br>
+of 163 ecosystem types<br>
+<span class="inline-style-indicator">Not protected</span></div>
+<div class="line-block"><span class="inline-style-threatened">36%</span><br>
+of 506 taxa assessed<br>
+<span class="inline-style-indicator">Threatened</span></div>
+</center>
+</div>
+</div>
+<!-- \ to create an empty line (space) -->
+<p><br>
+<br>
+</p>
+<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
+<!-- ![Caption to be added](imgs/Marine_Biodiveristy_Assessment.jpg){fig-align="center"} -->
+<section id="ecosystem-assessments" class="level2">
+<h2 class="anchored" data-anchor-id="ecosystem-assessments">Ecosystem assessments</h2>
+<p>Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food, job and climate security (<a href="../../content/key-messages/kma2.html">Key Message A2</a>).</p>
+<p>Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk (<a href="../../content/key-messages/kma2.html">Key Message A2</a>).</p>
+<p>More than 80% of South Africa’s 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected (<a href="../../content/key-messages/kmb4.html">Key Message B4</a>). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.</p>
+<p>Increasing the extent of South Africa’s MPA estate will contribute to improving ecosystem protection levels. <mark>For certain ecosystem types to advance to Well Protected status, however, their ecological condition inside MPAs needs improvement</mark> (<a href="../../content/key-messages/kmc2.html">Key Message C2</a>). Ocean governance needs to better consider and involve people in conservation initiatives (<a href="../../content/key-messages/kmc1.html">Key Message C1</a>), diversify protection models, and address issues that undermine the legitimacy of conservation areas.</p>
+<p>In the marine realm, 17% of ecosystem types are both highly threatened and under protected. These ecosystem types are found on the West Coast, the western Agulhas Bank shelf edge, parts of the Agulhas Bank and parts of the KwaZulu-Natal Bight (see <a href="../../content/marine/marine_ets_epl.html#fig-rle_map">intersection of marine threat status and protection level page</a>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-eco_map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eco_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/benthic_pelagic_map_panel.png" class="img-fluid figure-img" width="400">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eco_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1. Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined benthopelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from <a href="https://bgis.sanbi.org/Projects/Detail/2246">BGIS</a> and the key is available on the <a href="../../content/marine/marine_ecosystems.html">marine realm ecosystem types</a> page.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="species-assessments" class="level2">
+<h2 class="anchored" data-anchor-id="species-assessments">Species assessments</h2>
+<p>Marine species are assessed in terms of their stock status and/or threat status. Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the <a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a> criteria.</p>
+<p>There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (<a href="../../content/key-messages/kma5.html">Key Message A5</a>). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and west coast rock lobster are Endangered. Illegal fishing plays a key role in the poor status of these species (<a href="../../content/key-messages/kma6.html">Key Message A6</a>).</p>
+<p>Of the 506 marine species assessed using the IUCN Red List of Threatened Species criteria and thresholds, 36% are considered threatened (<a href="../../content/key-messages/kmb1.html">Key Message B1</a>). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/overview_species.png" class="img-fluid figure-img"></p>
+<figcaption>Several marine invertebrate resources, seabreams and shark and rays were assessed as threated in 2025. West coast rocklobster are Endangered (© Geoff Spiby); dageraad are Critically Endangered (© Steve Benjamin); bull sharks are Vulnerable (© Fiona Erst).</figcaption>
+</figure>
+</div>
+<p>Sharks, rays and chimaeras are one of the most threatened groups across all realms. A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 <span class="update">(may need update)</span> South African shallow reef building corals assessed globally, 34% are threatened by climate change (<a href="../../content/key-messages/kma1.html">Key Message A1</a>).</p>
+<p>Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring (<a href="../../content/key-messages/kmc3.html">Key Message C3</a>), and increase capacity for marine species red listing (<a href="../../content/key-messages/kmc3.html">Key Message C3</a>). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.</p>
+</section>
+<section id="pressures-and-ecological-condition" class="level2">
+<h2 class="anchored" data-anchor-id="pressures-and-ecological-condition">Pressures and ecological condition</h2>
+<div class="grid">
+<div class="g-col-lg-8 g-col-12">
+<p>There are many interacting pressures cumulatively affecting marine ecosystems and species. Key pressures impacting marine biodiversity include fishing (including industrial, recreational and illegal fisheries), coastal development (including ports and harbours), pollution, shipping, mining, freshwater flow reduction, lethal shark control measures and climate change.</p>
+<p>Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (<a href="../../content/key-messages/kma5.html">Key Message A5</a>) impacting ecosystems, species and genetic diversity (<a href="../../content/key-messages/kmb3.html">Key Message B3</a>).</p>
+</div>
+<div class="g-col-lg-4 g-col-12">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imgs/cum_press_low_res.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Map of 31 cumulative pressures in South Africa’s ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. Click to expand."><img src="imgs/cum_press_low_res.png" class="img-fluid figure-img" alt="Map of 31 cumulative pressures in South Africa’s ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. Click to expand."></a></p>
+<figcaption>Map of 31 cumulative pressures in South Africa’s ocean. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure. White areas have no mapped pressures. Click to expand.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Pollution including industrial, municipal and noise pollution are key escalating pressures. Seismic surveys to detect potential offshore oil and gas resources have been expanding into deeper waters and, together with shipping and other sources of underwater noise, pose uncertain risks to marine ecosystems. Renewable energy production is important in achieving energy security and reducing climate change impacts but marine renewable energy development requires careful consideration of marine biodiversity impacts.</p>
+<div class="grid">
+<div class="g-col-lg-8 g-col-12">
+<p>The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. However, despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and inaccuracy of pressure impacts on ecosystem condition. Increased monitoring is needed to support assessment of ecosystem and species (<a href="../../content/key-messages/kmb5.html">Key Message B5</a>), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.</p>
+<p>The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment (<a href="../../content/key-messages/kma2.html">Key Message A2</a>).</p>
+</div>
+<div class="g-col-lg-4 g-col-12">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="imgs/condition.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand."><img src="imgs/condition.png" class="img-fluid figure-img" alt="Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand."></a></p>
+<figcaption>Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="priority-actions-and-areas" class="level2">
+<h2 class="anchored" data-anchor-id="priority-actions-and-areas">Priority actions and areas</h2>
+<p>Drawing from the key findings of this assessment, a number of priority actions were co-developed to improve the state of marine ecosystems and species. Science-policy workshops and other engagements were held to bring researchers, decision makers and knowledge holders together to consider evidence and make joint recommendations to address findings.</p>
+<p>More than 70 individual actions were advanced (see <a href="../../content/marine/marine_priority_actions.html">priority actions</a>), to improve the state of marine biodiversity in South Africa. These are being packaged into broad areas of action, with emerging indicators to support tracking of progress and outcomes.</p>
+<p>Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified, and are being improved with increased participation, collaboration, and technical innovation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/workshop.png" class="img-fluid figure-img"></p>
+<figcaption>The Science to Policy Workshop, November 2024. © Kerry Sink</figcaption>
+</figure>
+</div>
+<!-- ## Key publications -->
+<!-- Sink, K.J., van der Bank, M., Majiedt, P.A., Harris, L., Atkinson, L. & Karenyi, N., 2019. *National Biodiversity Assessment 2018: Technical Report Volume 4: Marine realm*. Pretoria: South African National Biodiversity Institute. -->
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>[paragraph to be written by Megan]</p>
+<p>Figure: construct logo cloud; see previous one and add: Wreckless Marine</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nba\.sanbi\.org\.za\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style=" text-align: center; max-width: 260px; line-height: 1.2; font-size: 0.8rem; margin-left: 6em">
+<h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 900;">
+<a href="../../content/context/about-nba.html" style="color: inherit; text-decoration: none;">About the NBA</a>
+</h4>
+<p style="margin-top: 0; font-size = 1">
+The National Biodiversity Assessment (NBA) is a collaborative effort to synthesise the best available science on the status of South Africa’s biodiversity.
+</p>
+</div>
+</div>   
+    <div class="nav-footer-center">
+<div style="text-align: center; line-height: 1.6;">
+<h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">
+Important links
+</h4>
+<p><a href="../../content/context/acknowledgementsnba2025.html">Acknowledgements</a><br> <a href="../../content/context/cite-nba.html">How to cite</a><br> <a href="../../content/context/whatsnew-nba.html">What’s new</a><br> <a href="../../content/context/glossary.html">Terminology</a><br> <a href="../../content/context/disclaimerterms.html">Disclaimer</a></p>
+</div>
+</div>
+    <div class="nav-footer-right">
+<div style="text-align: center; line-height: 1.4;">
+  <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Contact</h4>
+  <p style="margin: 0.2em 0;">
+    Email the National Biodiversity Assessment Unit:<br>
+    <a href="mailto:nba@sanbi.org.za" style="color: inherit; text-decoration: none;">nba@sanbi.org.za</a>
+  </p>
+  <div style="margin-top: 0.5em; font-size: 0.85rem;">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
+      <img src="../../imgs/by-nc.svg" alt="Creative Commons BY-NC 4.0 license" style="height: 31px; border: none;">
+    </a>
+    <a href="https://github.com/SANBI-NBA" target="_blank" rel="noopener noreferrer">
+      <img src="../../imgs/github-mark.svg" alt="NBA on GitHub" style="height: 31px; border: none;">
+    </a>        
+  </div>
+  <p></p>
+</div>
+</div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("figcaption").forEach(e => {
+          const text = e.innerHTML.trim();
+          // Only proceed if it starts with "Figure" or "Table"
+          if (/^(Figure|Table)\b/.test(text)) {
+            const match = text.match(/^([^<]*?\.)\s*(.*)$/s); // Match up to first period before any tag
+          if (match) {
+            const strongPart = `<strong>${match[1]}</strong>`;
+            const rest = match[2];
+            e.innerHTML = `${strongPart} ${rest}`;
+          }
+        }
+      });
+  });
+</script>   
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

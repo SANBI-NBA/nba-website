@@ -14,12 +14,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render Quarto Project
-        run: quarto render --no-render
-      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
