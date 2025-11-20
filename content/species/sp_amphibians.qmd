@@ -78,11 +78,7 @@ google-scholar: true
 
 <center>
 
-<<<<<<< HEAD
-![*Hyperolius pickersgilli*, a species that has received extensive collaborative conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. (© Tyrone Ping)](./imgs/sp_amphibian_img_1.png){fig-align="center"}
-=======
 ![Pickersgill's reed frog (*Hyperolius pickersgilli*), a species that has received extensive collaborative conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. (© Tyrone Ping)](./imgs/sp_amphibian_img_1.png){fig-align="center"}
->>>>>>> dev
 
 </center>
 
@@ -132,11 +128,7 @@ google-scholar: true
 
 -   The main pressures causing population declines are invasive and other problematic species, impacting 83% of threatened species. Impacts range from infectious diseases to drying out and replacement of habitat by invasive alien plants. This is followed by habitat loss and degradation due to agricultural activities (72%) and natural system modification (69%) related to, for example, wetland drainage, overgrazing, and inappropriate fire cycles. Recognized as the most important emerging threat globally, climate change impacts are also becoming an important driver of amphibian declines in South Africa affecting nearly half of threatened species, although the impacts of this threat are challenging to quantify.
 
-<<<<<<< HEAD
--   A large proportion of amphibians are assessed as Well Protected (73%) within the South African Protected Area Network; however, 11% (15) of amphibians are Not Protected. Of the 29 threatened species, 79% are considered under-protected (Moderately Protected, Poorly Protected or Not Protected). Meaning that our most threatened species require improved protection, and most protected areas do not consider amphibians in their management activities
-=======
 -   A large proportion of amphibians are assessed as Well Protected (73%) within the South African Protected Area Network; however, 11% (15) of amphibians are Not Protected. Of the 29 threatened species, 79% are considered under-protected (Moderately Protected, Poorly Protected or Not Protected). Meaning that our most threatened species require improved protection, and most protected areas do not consider amphibians in their management activities.
->>>>>>> dev
 
 -   Almost 50% (17) of South Africa’s threatened species occur in the Western Cape province. Given the high endemicity within this province, and the disproportional number of endemic species that are threatened, this spatial pattern is not surprising. The Eastern Cape and KwaZulu-Natal provinces support four and six threatened species, respectively.
 
@@ -152,11 +144,6 @@ knitr::include_graphics("./imgs/amphibians_thrt_10km_HD.png")
 
 Seventy-six amphibian species (56%) are endemic to South Africa, with 30 of these (39%) threatened with extinction, placing full responsibility for their protection on South Africa. Most threatened species occur in, and are endemic to, the Western Cape (17 species), followed by KwaZulu-Natal (6 species) and then the Eastern Cape (4 species).
 
-<<<<<<< HEAD
-Seventy-six amphibian species (56%) are endemic to South Africa, with 30 of these (39%) threatened with extinction, placing full responsibility for their protection on South Africa. Most threatened species occur in, and are endemic to, the Western Cape (17 species), followed by KwaZulu-Natal (6 species) and then the Eastern Cape (4 species).
-
-=======
->>>>>>> dev
 Twenty-two percent (30 species) of amphibians were assessed as threatened (Critically Endangered, Endangered, Vulnerable), and a further 10% (13 species) were assessed as Near Threatened. There have been significant shifts in the number of species per category since the 2016 assessments, with 23% of species experiencing a category change, although most of these have been non-genuine either because of improved application of the red list criteria or because of extensive survey efforts resulting in better knowledge of the status of populations. These changes include a decrease from 6 to 4 Critically Endangered species; an increase from 9 to 18 Endangered species; an increase from 1 to 8 Vulnerable; and a reduction of 4 to 2 Data Deficient. All 135 species were able to be assessed, with zero species classified as Not Evaluated [Box 1](#box-1).
 
 :::: panel-tabset
@@ -292,23 +279,12 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 # ---- Plots ----
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
-<<<<<<< HEAD
-                  CHRT = "donut", NUM = FALSE, LAB = "A.")) %>%
-          add_total(overall)
-
-plot2 <- (nba_plot(dat2, biome, 2:(ncol(dat2)),
-           CHRT = "donut", NUM = FALSE, LAB = "B.") +
-          xlim(c(2, 4.5))) %>% 
-          add_total(endemic)
-
-=======
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
     xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
->>>>>>> dev
 
 # ---- specify legend order ----
 
@@ -562,19 +538,6 @@ gt(species_change) %>%
               data_row.padding = px(16),
               table.font.size = px(14L)) %>%
   
-<<<<<<< HEAD
-  tab_style(style = cell_fill(color = "gray90"),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_text(size = px(14)),  
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_text(align = "left", v_align = "top"),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_text(align = "left"),
-            locations = cells_body(columns = everything())) %>%
-=======
  tab_style(style = cell_fill(color = "white"),
             locations = cells_column_labels(columns = everything())) %>%
   tab_style(
@@ -593,7 +556,6 @@ gt(species_change) %>%
     ),
     locations = cells_body(columns = everything())
   ) %>%
->>>>>>> dev
   
   cols_width(Taxon ~ pct(12),
              `Reason for change` ~ pct(20),
@@ -667,10 +629,6 @@ Before and after images showing a reduction in pine invasion from July 2021 (lef
 :::::::::::::::
 
 This is followed by habitat loss and degradation due to modification of natural system (impacting 64% of threatened and Near Threatened species) and agricultural activities (impacting 57% of threatened and Near Threatened species). Modifications can exacerbate inappropriate fire cycles. Globally, climate change is now recognised as the most serious emerging challenge facing amphibians, with 29% of threatened species worldwide impacted. This threat is expected to affect more species in the future with projected increases in temperature and changes in precipitation. In South Africa, 38% of our threatened and Near threatened species are impacted, or projected to be impacted by climate change and extreme weather, through shifts in habitat, droughts and flooding. These impacts require data to improve predictive models of amphibian habitats; for example, species monitoring and climate data. Fourteen threatened species (33%) are affected by pollution, particularly from agricultural effluents and domestic and urban waste water. A good example is the subpopulations of the Kloof frog, (*Natalobatrachus bonebergi*), in Durban that are impacted by sewage overflows into streams and increased sedimentation from urban construction, where it has a severe impact on stream health and breeding sites. Even while this species has been downlisted from EN to NT due to overall EOO and the correct application of the criteria, the KwaZulu-Natal subpopulations face increasing levels of threat. These impacts reflect the state of South Africa’s freshwater ecosystems, with many systems currently assessed as modified ([Freshwater ecosystem pressures](../freshwater/fw_riv_ets.qmd)).
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 
 ```{r}
 #| label: fig-5
@@ -699,14 +657,8 @@ p + scale_x_discrete(
 
 ```
 
-<<<<<<< HEAD
-::::::::: {#box-3 .callout-note .species title="Box 3: The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
-::::: {layout-ncol="2"}
-
-=======
 ::::::::::: {#box-3 .callout-note .species title="Box 3: The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
 :::::: {layout-ncol="2"}
->>>>>>> dev
 ## Habitat loss to agriculture and plantations
 
 ::: left
@@ -726,14 +678,8 @@ through regenerative agriculture approaches and facilitating habitat protection 
 
 ------------------------------------------------------------------------
 
-<<<<<<< HEAD
-::::: {layout-ncol="2"}
-
-## Residential and commercial development
-=======
 :::::: {layout-ncol="2"}
 ## Habitat loss due to residential and commercial development
->>>>>>> dev
 
 ::: left
 Habitat loss due to residential and commercial development impacts many of the country’s amphibians, perhaps none more so than the Western leopard toad (*Scelophrys pantherina*). Typically associated with low-lying wetlands and vleis in the Western Cape province. Urban infrastructure in the form of roads also causes significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding habitat.
@@ -771,10 +717,6 @@ To see how valuable your nature photographs can be, watch this inspiring [TED ta
 ## Protection level
 
 The protection level assessment was conducted for 133 of South Africa’s 135 described amphibian species. Two peripheral taxa with less than 5% of their distribution in South Africa were excluded from the analysis. Protection level (PL) categories include ‘Poorly Protected’, ‘Moderately Protected’, ‘Not Protected’ and ‘Well Protected’. Protection levels were calculated for amphibians by intersecting amphibian occurrence records with the protected area spatial layer, and calculating the area required to protect a target population of 10 000 individuals. Protection levels were also adjusted based on the management effectiveness of protected areas. For further details on the method used to conduct this assessment see [here](../integrated-findings/intf-species.qmd).
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 
 ```{r}
 #| label: fig-6
@@ -826,13 +768,6 @@ plot1 <- (nba_plot(dat1,
                   2:5,
                   CHRT = "donut",
                   NUM = FALSE,
-<<<<<<< HEAD
-                  LAB = "A.",
-                  SAVE = NULL))%>%
-  add_total(total_a)
-
-plot2 <- (nba_plot(dat2,
-=======
                   LAB = "A",
                   SAVE = NULL) +
     xlim(c(2, 4.5))
@@ -841,19 +776,12 @@ plot2 <- (nba_plot(dat2,
 
 plot2 <- 
   nba_plot(dat2,
->>>>>>> dev
            biome,
            2:5,
            CHRT = "donut",
            NUM = FALSE,
-<<<<<<< HEAD
-           LAB = "B.",
-           SAVE = NULL) +
-           xlim(c(2, 4.5))) %>%
-=======
            LAB = "B",
            SAVE = NULL) %>%
->>>>>>> dev
   add_total(total_b)
 
 # Combine and put shared legend at bottom center
@@ -865,11 +793,7 @@ combined_plot <- plot1 + plot2 +
 combined_plot
 ```
 
-<<<<<<< HEAD
-Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians are considered Well Protected, 22% are Poorly or Not Protected. Species-specific management within protected areas is generally lacking for amphibians, with7% (9 species) assessed as less well protected once Protected Area management effectiveness are taken into account. For the 75 endemic amphibians assessed, 57% are Well Protected, 17% (13 species) are Not Protected, and a further 17% (13 species) are Poorly Protected. Sixteen highly threatened (CR and EN) species are under-protected (including Not Protected, Poorly Protected and Moderately Protected). 
-=======
 Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians are considered Well Protected, 22% are Poorly or Not Protected. Species-specific management within protected areas is generally lacking for amphibians, with7% (9 species) assessed as less well protected once Protected Area management effectiveness are taken into account. For the 75 endemic amphibians assessed, 57% are Well Protected, 17% (13 species) are Not Protected, and a further 17% (13 species) are Poorly Protected. Sixteen highly threatened (CR and EN) species are under-protected (including Not Protected, Poorly Protected and Moderately Protected).
->>>>>>> dev
 
 ![](./imgs/sp_amphibian_img_9.png){fig-alt="Micro Frog" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
@@ -877,15 +801,9 @@ Overall, the 2025 PL was higher than in 2016. While close to 72% of amphibians a
 The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the micro frog (*Microbatrachella capensis*) was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using (*M. capensis*) as a management target. (© Keir Lynch Bionerds)
 :::
 
-<<<<<<< HEAD
-Nine species have had improvements in their protection level, from Poorly Protected to Moderately Protected (8 species) or Well Protected (1 species). Examples of threatened species that have benefitted from improved protection include the Endangered Micro Frog (*Microbatrachella capensis*), Pickersgill’s Reed Frog (*Hyperolius pickersgilli*), and the Cape Platanna (*Xenopus gilli*). In the case of *H. pickersgilli*, an additional 16 sites have been confirmed for the species since 2017, with several of these occurring within protected areas [@armstrong2025a]. 
-
-Habitat protection gains have been a key outcome of the coordination of the [Biodiversity Management Plan](https://www.gov.za/sites/default/files/gcis_document/201706/40883gen423.pdf) for this species, with several sites (totalling 127 hectares) being declared through the Biodiversity Stewardship Programme, as well as improved management and wetland health for these, and existing protected areas [@armstrong2025a]. For M. capensis, confirmation of the species in the Nuwejaars Wetlands Special Management Area in 2021, which is now being managed with the frog as a management target, has resulted in both an expansion of the species’ range with Protected Areas, as well as improved management effectiveness scores from fair to good. It is important to recognize the contribution that Biodiversity Stewardship and conservation servitudes (or OECMs) makes to the protected area estate through agreements with landowners for targeting unprotected populations of species. 
-=======
 Nine species have had improvements in their protection level, from Poorly Protected to Moderately Protected (8 species) or Well Protected (1 species). Examples of threatened species that have benefitted from improved protection include the Endangered Micro Frog (*Microbatrachella capensis*), Pickersgill’s Reed Frog (*Hyperolius pickersgilli*), and the Cape Platanna (*Xenopus gilli*). In the case of *H. pickersgilli*, an additional 16 sites have been confirmed for the species since 2017, with several of these occurring within protected areas [@armstrong2025a].
 
 Habitat protection gains have been a key outcome of the coordination of the [Biodiversity Management Plan](https://www.gov.za/sites/default/files/gcis_document/201706/40883gen423.pdf) for this species, with several sites (totalling 127 hectares) being declared through the Biodiversity Stewardship Programme, as well as improved management and wetland health for these, and existing protected areas [@armstrong2025a]. For M. capensis, confirmation of the species in the Nuwejaars Wetlands Special Management Area in 2021, which is now being managed with the frog as a management target, has resulted in both an expansion of the species’ range with Protected Areas, as well as improved management effectiveness scores from fair to good. It is important to recognize the contribution that Biodiversity Stewardship and conservation servitudes (or OECMs) makes to the protected area estate through agreements with landowners for targeting unprotected populations of species.
->>>>>>> dev
 
 ![](./imgs/sp_amphibian_img_10.png){fig-alt="Micro Frog" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
@@ -895,26 +813,18 @@ The previously Critically Endangered micro frog (*Microbatrachella capensis*), i
 
 ## Species recovery
 
-<<<<<<< HEAD
-As part of the Red List process for southern Africa, the Amphibian Ark (AArk) joined the expert workshop and worked with coordinators to produce a Conservation Needs Assessment (CNA) for threatened South African amphibian species [@brunner2025a]. This used a process developed by AArk to determine which species have the most urgent conservation needs, based on action plans that combine in situ and ex situ actions, as appropriate. Six South African species were identified for ex situ conservation actions, including ex situ rescue (n = 5) and ex situ research (n = 1). Due to their level of threat, the five species recommended for ex situ rescue are also recommended for biobanking. Twenty-five species were recommended for in situ conservation, and 34 species are recommended for in situ research, while 15 species were identified for conservation education programs. 
-
-In addition, subsequent work to identify species requiring urgent recovery under Target 4 of the Global Biodiversity Framework resulted in 10 species being prioritized. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
-
-South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behavior and ecology (@tbl-3). These activities were partially guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments (2025). While progress has been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context, with limited resources in general, and the constant need to balance development needs with conservation efforts. 
-
-=======
 As part of the Red List process for southern Africa, the Amphibian Ark (AArk) joined the expert workshop and worked with coordinators to produce a Conservation Needs Assessment (CNA) for threatened South African amphibian species [@brunner2025a]. This used a process developed by AArk to determine which species have the most urgent conservation needs, based on action plans that combine in situ and ex situ actions, as appropriate. Six South African species were identified for ex situ conservation actions, including ex situ rescue (n = 5) and ex situ research (n = 1). Due to their level of threat, the five species recommended for ex situ rescue are also recommended for biobanking. Twenty-five species were recommended for in situ conservation, and 34 species are recommended for in situ research, while 15 species were identified for conservation education programs.
 
 In addition, subsequent work to identify species requiring urgent recovery under Target 4 of the Global Biodiversity Framework resulted in 10 species being prioritized. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
 
 South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behavior and ecology (@tbl-3). These activities were partially guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments (2025). While progress has been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context, with limited resources in general, and the constant need to balance development needs with conservation efforts.
->>>>>>> dev
 
 ::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-3
-#| tbl-cap: List of some of the active recovery projects focused on amphibians across South Africa, led by a range of different organisations.   
+#| tbl-cap: List of some of the active recovery projects focused on amphibians across South Africa lead by a range of different organisations.  
 #| classes: plain
+
 library(readxl)
 library(dplyr)
 library(gt)
@@ -922,48 +832,16 @@ library(gt)
 # 1. Read Excel file
 recovery_projects <- readxl::read_xlsx("./data/sp_am_table5.xlsx")
 
-# 2. Format ORCID number as clickable links and replace NA with blank
+# 2. Format Contact and Get involved as clickable
 recovery_projects <- recovery_projects %>%
-<<<<<<< HEAD
-  mutate(`ORCID number` = case_when(
-    is.na(`ORCID number`) ~ "",
-    grepl("^http", `ORCID number`) ~ paste0('<a href="', `ORCID number`, '" target="_blank">', 
-                                             gsub("https://orcid.org/", "", `ORCID number`), 
-                                             '</a>'),
-    grepl("^[0-9]{4}-[0-9]{4}", `ORCID number`) ~ paste0('<a href="https://orcid.org/', `ORCID number`, '" target="_blank">', 
-                                                          `ORCID number`, 
-                                                          '</a>'),
-    TRUE ~ ""
-  ))
-=======
   mutate(`Get involved` = ifelse(
       grepl("^http", `Get involved`),
       paste0('<a href="', `Get involved`, '" target="_blank">', `Get involved`, '</a>'),
       `Get involved`))
->>>>>>> dev
 
 # 3. Build gt table and render HTML links
 recovery_projects_gt <- recovery_projects %>%
   gt() %>%
-<<<<<<< HEAD
-  
-  # Add padding to "Author affiliation/s" column (not "Reason for change")
-  text_transform(
-    locations = cells_body(columns = `Author affiliation/s`),
-    fn = function(x) {
-      paste0("<div style='padding: 8px 12px; line-height: 1.6;'>", x, "</div>")
-    }
-  ) %>%
-  
-  fmt_markdown(columns = c(`ORCID number`)) %>%
-  nbaR::nba_tbl_theme() %>%
-  tab_options(table.width = pct(100),
-              data_row.padding = px(10)) %>%
-  
-  tab_style(style = cell_fill(color = "gray90"),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-=======
   fmt_markdown(columns = c("Get involved")) %>%
 
   tab_options(table.width = pct(100),
@@ -971,7 +849,6 @@ recovery_projects_gt <- recovery_projects %>%
   #tab_style(style = cell_fill(color = "gray90"),
             #locations = cells_column_labels(columns = everything())) %>%
  
->>>>>>> dev
   tab_style(style = cell_text(size = px(12)),  
             locations = cells_column_labels(columns = everything())) %>%
   
@@ -984,21 +861,13 @@ recovery_projects_gt <- recovery_projects %>%
   tab_style(style = cell_text(align = "left"),
             locations = cells_body(columns = everything())) %>%
   
-<<<<<<< HEAD
-cols_width(Contributor ~ pct(15),
-           `Author affiliation/s` ~ pct(55),
-           `ORCID number` ~ pct(30))
-
-=======
   cols_width(`Focal species` ~ pct(15),
              `Conservation Action` ~ pct(30),
               everything() ~ pct(13))
->>>>>>> dev
 # 4. Render
 recovery_projects_gt
+
 ```
-
-
 :::
 
 <br>
