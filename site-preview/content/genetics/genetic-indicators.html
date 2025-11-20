@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jessica M. da Silva">
+<meta name="author" content="J. Alexander Nieto Lawrence">
+<meta name="author" content="Krystal A. Tolley">
+<meta name="dcterms.date" content="2025-11-20">
+
+<title>Genetic diversity</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../imgs/sanbi-icon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-100be9b10d8f736d19a9bddeadc075ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #99BD41;
+      }
+</style>
+<style>
+@media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
+  .breadcrumb li a {
+    color: white !important;
+  }
+}
+</style>
+
+
+<meta name="citation_title" content="Genetic diversity">
+<meta name="citation_author" content="Jessica M. da Silva">
+<meta name="citation_author" content="J. Alexander Nieto Lawrence">
+<meta name="citation_author" content="Krystal A. Tolley">
+<meta name="citation_publication_date" content="2025-11-20">
+<meta name="citation_cover_date" content="2025-11-20">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-11-20">
+<meta name="citation_fulltext_html_url" content="http://nba.sanbi.org.za/">
+<meta name="citation_language" content="en">
+<meta name="citation_journal_title" content="National Biodiversity Assessment 2025">
+<meta name="citation_publisher" content="South African National Biodiversity Institute">
+<meta name="citation_reference" content="citation_title=Advancing land-sea integration for ecologically meaningful coastal conservation and management;,citation_author=Linda R. Harris;,citation_author=Mariel Bessinger;,citation_author=Anisha Dayaram;,citation_author=Stephen Holness;,citation_author=Stephen Kirkman;,citation_author=Tamsyn-Claire Livingstone;,citation_author=Amanda T. Lombard;,citation_author=Melanie Lück-Vogel;,citation_author=Maya Pfaff;,citation_author=Kerry J. Sink;,citation_author=Andrew L. Skowno;,citation_author=Lara Van Niekerk;,citation_publication_date=2019-09;,citation_cover_date=2019-09;,citation_year=2019;,citation_fulltext_html_url=http://dx.doi.org/10.1016/j.biocon.2019.06.020;,citation_doi=10.1016/j.biocon.2019.06.020;,citation_volume=237;,citation_language=en;,citation_journal_title=Biological Conservation;">
+<meta name="citation_reference" content="citation_title=Megadiversity: Earth’s biologically wealthiest nations;,citation_author=R. A. Mittermeier;,citation_author=P. Robles-Gil;,citation_author=C. G. Mittermeier;,citation_publication_date=1997;,citation_cover_date=1997;,citation_year=1997;">
+<meta name="citation_reference" content="citation_title=Indicators;,citation_author=J. R. Wilson;,citation_author=B. W. Van Wilgen;,citation_author=K. Faulkner;,citation_author=D. Richardson;,citation_author=S. Rahlao;,citation_author=T. Zengeya;,citation_editor=B. W. Van Wilgen;,citation_editor=J. R. Wilson;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_inbook_title=The status of biological invasions and their management in south africa in 2017;">
+<meta name="citation_reference" content="citation_title=National terrestrial carbon sinks assessment: Technical report;,citation_author=Graham Von Maltitz;,citation_author=Bob Scholes;,citation_author=Marc Pienaar;,citation_author=Claire Davis-Reddy;,citation_author=Tony Knowles;,citation_author=Liesl Wiese;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_fulltext_html_url=https://csa.environment.gov.za/technical-reports#h.atp56x6v335w;,citation_technical_report_institution=Department of Environment, Forestry and Fisheries;">
+<meta name="citation_reference" content="citation_title=Chapter 3: Direct and indirect drivers of land degradation and restoration;,citation_author=N. N. Barger;,citation_author=T. A. Gardner;,citation_author=M. Sankaran;,citation_author=J. Belnap;,citation_author=L. Broadhurst;,citation_author=V. Brochier;,citation_author=F. Isbell;,citation_author=P. Meyfroidt;,citation_author=F. Moreira;,citation_author=T. M. Nieminen;,citation_author=T. Okuro;,citation_author=R. R. Rodrgiues;,citation_author=V. Saxena;,citation_author=M. C. Ross;,citation_editor=L. Montanarella;,citation_editor=R. Scholes;,citation_editor=A. Brainich;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_inbook_title=The IPBES assessment report on land degradation and restoration;">
+<meta name="citation_reference" content="citation_title=South african national biodiversity assessment 2018 technical report volume 1: Terrestrial realm;,citation_editor=A. L. Skowno;,citation_editor=D. C. Raimondo;,citation_editor=C. J. Poole;,citation_editor=B. Fizzotti;,citation_editor=J. A. Slingsby;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;">
+<meta name="citation_reference" content="citation_title=Investigating the direct and indirect drivers of land use and land cover change from agriculture to acacia plantations in banja district, awi zone, ethiopia;,citation_author=Engidayehu Melaku;,citation_author=Asabeneh Alemayehu;,citation_author=Kassa Chanie;,citation_publication_date=2024-06-08;,citation_cover_date=2024-06-08;,citation_year=2024;,citation_fulltext_html_url=http://dx.doi.org/10.37284/eajab.7.1.1973;,citation_issue=1;,citation_doi=10.37284/eajab.7.1.1973;,citation_volume=7;,citation_journal_title=East African Journal of Agriculture and Biotechnology;">
+<meta name="citation_reference" content="citation_title=Butterflies and Moths database home page;,citation_author=The Natural History Museum;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=http://www.nhm.ac.uk/our-science/data/butmoth;">
+<meta name="citation_reference" content="citation_title=Biomes and bioregions of Southern Africa;,citation_author=M. C. Rutherford;,citation_author=L. Mucina;,citation_author=L. W Powrie;,citation_editor=L. Mucina;,citation_editor=M. C. Rutherford;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_conference_title=The vegetation of South Africa, Lesotho and Swaziland;,citation_conference=South African National Biodiversity Institute;,citation_series_title=Strelitzia 19;">
+<meta name="citation_reference" content="citation_title=Multinational evaluation of genetic diversity indicators for the Kunming-Montreal Global Biodiversity Framework;,citation_author=A. Mastretta-Yanes;,citation_author=J. M. Silva;,citation_author=C. E. Grueber;,citation_author=L. Castillo-Reina;,citation_author=V. Köppä;,citation_author=B. R. Forester;,citation_author=W. C. Funk;,citation_author=F. Heuertz;,citation_author=R. Jordan;,citation_author=J. Mergeay;,citation_author=I. Paz-Vinas;,citation_author=V. J. Rincon-Parra;,citation_author=M. A. Rodriguez-Morales;,citation_author=L. Arredondo-Amezcua;,citation_author=G. Brahy;,citation_author=M. DeSaix;,citation_author=L. Durkee;,citation_author=A. Hamilton;,citation_author=M. E. Hunter;,citation_author=A. Koontz;,citation_author=I. Lang;,citation_author=M. C. Latorre-Cárdenas;,citation_author=T. Latty;,citation_author=A. Llanes-Quevedo;,citation_author=A. J. MacDonald;,citation_author=M. Mahoney;,citation_author=C. Miller;,citation_author=J. F. Ornelas;,citation_author=S. Ramírez-Barahona;,citation_author=E. Robertson;,citation_author=I-R.M. Russo;,citation_author=M. A. Santiago;,citation_author=R. E. Shaw;,citation_author=G. M. Shea;,citation_author=P. Sjögren-Gulve;,citation_author=E. Suzuki Spence;,citation_author=T. Stack;,citation_author=S. Suárez;,citation_author=A. Takenaka;,citation_author=H. Thurfjell;,citation_author=S. Turbek;,citation_author=M. Merwe;,citation_author=F. Visser;,citation_author=A. Wegier;,citation_author=G. Wood;,citation_author=E. Zarza;,citation_author=L. Laikre;,citation_author=S. Hoban;,citation_publication_date=2024-09;,citation_cover_date=2024-09;,citation_year=2024;,citation_fulltext_html_url=https://onlinelibrary.wiley.com/doi/10.1111/ele.14461;,citation_doi=10.1111/ele.14461;,citation_volume=27;,citation_language=en;,citation_journal_title=Ecology Letters;">
+<meta name="citation_reference" content="citation_title=Where lineages persist: phylogenetic patterns and evolutionary vulnerability in South Africa’s herpetofauna;,citation_author=A. Nieto Lawrence;,citation_author=J. Šmíd;,citation_author=R. Gumbs;,citation_author=K. A. Tolley;,citation_publication_date=00;,citation_cover_date=00;,citation_year=0;,citation_language=en;,citation_journal_title=Diversity and Distributions;">
+<meta name="citation_reference" content="citation_title=Indicators to monitor the status of the tree of life;,citation_author=R. Gumbs;,citation_author=A. Chaudhary;,citation_author=B. H. Daru;,citation_author=D. P. Faith;,citation_author=F. Forest;,citation_author=C. L. Gray;,citation_author=A. Kowalska;,citation_author=W. Lee;,citation_author=R. Pellens;,citation_author=S. Pipins;,citation_author=L. J. Pollock;,citation_author=J. Rosindell;,citation_author=R. A. Scherson;,citation_author=N. R. Owen;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_fulltext_html_url= https://doi.org/10.1111/cobi.14138;,citation_doi=10.1111/cobi.14138;,citation_volume=37;,citation_language=en;,citation_journal_title=Conservation Biology;">
+<meta name="citation_reference" content="citation_title=DNA barcoding of southern African mammal species and construction of a reference library for forensic application;,citation_author=Janine Rose Baxter;,citation_author=Antoinette Kotze;,citation_author=Marli Bruyn;,citation_author=Katlego Matlou;,citation_author=Kim Labuschagne;,citation_author=Monica Mwale;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=10;,citation_volume=67;,citation_journal_title=Genome;">
+<meta name="citation_reference" content="citation_title=A septennium review of wildlife forensic DNA analysis in South Africa;,citation_author=Marli De Bruyn;,citation_author=Desiré Lee Dalton;,citation_author=Cindy K Harper;,citation_author=Mamadi Theresa Sethusa;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_journal_title=Forensic Science International: Genetics;">
+<meta name="citation_reference" content="citation_title=The power of resolution of microsatellite markers and assignment tests to determine the geographic origin of cheetah (Acinonyx jubatus) in southern Africa;,citation_author=Antoinette Kotze;,citation_author=Karen Ehlers;,citation_author=DC Cilliers;,citation_author=JP Grobler;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_issue=6;,citation_volume=73;,citation_journal_title=Mammalian Biology;">
+<meta name="citation_reference" content="citation_title=Triangulating the provenance of African elephants using mitochondrial DNA;,citation_author=Yasuko Ishida;,citation_author=Nicholas J Georgiadis;,citation_author=Tomoko Hondo;,citation_author=Alfred L Roca;,citation_publication_date=2013;,citation_cover_date=2013;,citation_year=2013;,citation_issue=2;,citation_volume=6;,citation_journal_title=Evolutionary Applications;">
+<meta name="citation_reference" content="citation_title=Tortoise forensics: Conservation genetics of the leopard tortoise Stigmochelys pardalis in southern Africa;,citation_author=Urban Dajcman;,citation_author=Margaretha Hofmeyr;,citation_author=Flora Ihlow;,citation_author=others;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;">
+<meta name="citation_reference" content="citation_title=Isolation and characterization of 30 STRs in Temminck’s ground pangolin (Smutsia temminckii) and potential for cross amplification in other African species;,citation_author=Zelda Du Toit;,citation_author=Desiré L Dalton;,citation_author=Morné Du Plessis;,citation_author=Raymond Jansen;,citation_author=J Paul Grobler;,citation_author=Antoinette Kotzé;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_issue=1;,citation_volume=99;,citation_journal_title=Journal of Genetics;">
+<meta name="citation_reference" content="citation_title=Development and validation of a novel forensic STR multiplex assay for blue (Anthropoides paradiseus), wattled (Bugeranus carunculatus), and grey-crowned crane (Balearica regulorum);,citation_author=Marli De Bruyn;,citation_author=Desiré Lee Dalton;,citation_author=Monica Mwale;,citation_author=Karen Ehlers;,citation_author=Antoinette Kotze;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_volume=73;,citation_journal_title=Forensic Science International: Genetics;">
+<meta name="citation_reference" content="citation_title=Unlocking the potential of a validated single nucleotide polymorphism array for genomic monitoring of trade in cheetahs (Acinonyx jubatus);,citation_author=Michelle Magliolo;,citation_author=Stefan Prost;,citation_author=Pablo Orozco-terWengel;,citation_author=Pamela Burger;,citation_author=Anna S Kropff;,citation_author=Antoinette Kotze;,citation_author=J Paul Grobler;,citation_author=Desire Lee Dalton;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=1;,citation_volume=48;,citation_journal_title=Molecular Biology Reports;">
+<meta name="citation_reference" content="citation_title=RhODIS®(The Rhinoceros DNA Index System): The application of simple forensic and genetic tools help conserve African rhinoceros;,citation_author=Cindy Kim Harper;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_inbook_title=Wildlife Biodiversity Conservation: Multidisciplinary and Forensic Approaches;">
+<meta name="citation_reference" content="citation_title=National Environmental Management Act 10 of 2004: Amendments to the regulations on Bioprospecting, Access and Benefit-Sharing notice 447 of 2015;,citation_author=Government Africa;">
+<meta name="citation_reference" content="citation_title=DNA barcoding, an effective tool for species identification: A review;,citation_abstract=DNA barcoding is a powerful taxonomic tool to identify and discover species. DNA barcoding utilizes one or more standardized short DNA regions for taxon identification. With the emergence of new sequencing techniques, such as Next-generation sequencing (NGS), ONT MinION nanopore sequencing, and Pac Bio sequencing, DNA barcoding has become more accurate, fast, and reliable. Rapid species identification by DNA barcodes has been used in a variety of fields, including forensic science, control of the food supply chain, and disease understanding. The Consortium for Barcode of Life (CBOL) presents various working groups to identify the universal barcode gene, such as COI in metazoans; rbcL, matK, and ITS in plants; ITS in fungi; 16S rRNA gene in bacteria and archaea, and creating a reference DNA barcode library. In this article, an attempt has been made to analyze the various proposed DNA barcode for different organisms, strengths &amp;amp;amp; limitations, recent advancements in DNA barcoding, and methods to speed up the DNA barcode reference library construction. This study concludes that constructing a reference library with high species coverage would be a major step toward identifying species by DNA barcodes. This can be achieved in a short period of time by using advanced sequencing and data analysis methods.;,citation_author=Sandeep Antil;,citation_author=Jeeva Susan Abraham;,citation_author=S. Sripoorna;,citation_author=Swati Maurya;,citation_author=Jyoti Dagar;,citation_author=Seema Makhija;,citation_author=Pooja Bhagat;,citation_author=Renu Gupta;,citation_author=Utkarsh Sood;,citation_author=Rup Lal;,citation_author=Ravi Toteja;,citation_publication_date=2023-01;,citation_cover_date=2023-01;,citation_year=2023;,citation_issue=1;,citation_doi=10.1007/s11033-022-08015-7;,citation_issn=1573-4978;,citation_pmid=36308581;,citation_volume=50;,citation_language=en-US;,citation_journal_title=Molecular Biology Reports;">
+<meta name="citation_reference" content="citation_title=DNA barcoding, an effective tool for species identification: A review;,citation_abstract=DNA barcoding is a powerful taxonomic tool to identify and discover species. DNA barcoding utilizes one or more standardized short DNA regions for taxon identification. With the emergence of new sequencing techniques, such as Next-generation sequencing (NGS), ONT MinION nanopore sequencing, and Pac Bio sequencing, DNA barcoding has become more accurate, fast, and reliable. Rapid species identification by DNA barcodes has been used in a variety of fields, including forensic science, control of the food supply chain, and disease understanding. The Consortium for Barcode of Life (CBOL) presents various working groups to identify the universal barcode gene, such as COI in metazoans; rbcL, matK, and ITS in plants; ITS in fungi; 16S rRNA gene in bacteria and archaea, and creating a reference DNA barcode library. In this article, an attempt has been made to analyze the various proposed DNA barcode for different organisms, strengths &amp;amp;amp; limitations, recent advancements in DNA barcoding, and methods to speed up the DNA barcode reference library construction. This study concludes that constructing a reference library with high species coverage would be a major step toward identifying species by DNA barcodes. This can be achieved in a short period of time by using advanced sequencing and data analysis methods.;,citation_author=Sandeep Antil;,citation_author=Jeeva Susan Abraham;,citation_author=S. Sripoorna;,citation_author=Swati Maurya;,citation_author=Jyoti Dagar;,citation_author=Seema Makhija;,citation_author=Pooja Bhagat;,citation_author=Renu Gupta;,citation_author=Utkarsh Sood;,citation_author=Rup Lal;,citation_author=Ravi Toteja;,citation_publication_date=2023-01;,citation_cover_date=2023-01;,citation_year=2023;,citation_issue=1;,citation_doi=10.1007/s11033-022-08015-7;,citation_issn=1573-4978;,citation_pmid=36308581;,citation_volume=50;,citation_language=en-US;,citation_journal_title=Molecular Biology Reports;">
+<meta name="citation_reference" content="citation_title=DNA barcoding of southern African mammal species and construction of a reference library for forensic application;,citation_abstract=Combating wildlife crimes in South Africa requires accurate identification of traded species and their products. Diagnostic morphological characteristics needed to identify species are often lost when specimens are processed and customs officials lack the expertise to identify species. As a potential solution, DNA barcoding can be used to identify morphologically indistinguishable specimens in forensic cases. However, barcoding is hindered by the reliance on comprehensive, validated DNA barcode reference databases, which are currently limited. To overcome this limitation, we constructed a barcode library of cytochrome c oxidase subunit 1 and cytochrome b sequences for threatened and protected mammals exploited in southern Africa. Additionally, we included closely related or morphologically similar species and assessed the database’s ability to identify species accurately. Published southern African sequences were incorporated to estimate intraspecific and interspecific variation. Neighbor-joining trees successfully discriminated 94%–95% of the taxa. However, some widespread species exhibited high intraspecific distances ($&amp;amp;amp;gt;$2%), suggesting geographic sub-structuring or cryptic speciation. Lack of reliable published data prevented the unambiguous discrimination of certain species. This study highlights the efficacy of DNA barcoding in species identification, particularly for forensic applications. It also highlights the need for a taxonomic re-evaluation of certain widespread species and challenging genera.;,citation_author=J. R. Baxter;,citation_author=A. Kotze;,citation_author=M. De Bruyn;,citation_author=K. Matlou;,citation_author=K. Labuschagne;,citation_author=M. Mwale;,citation_publication_date=2024-10;,citation_cover_date=2024-10;,citation_year=2024;,citation_issue=10;,citation_doi=10.1139/gen-2023-0050;,citation_issn=0831-2796, 1480-3321;,citation_volume=67;,citation_language=en-US;,citation_journal_title=Genome;">
+<meta name="citation_reference" content="citation_title=DNA barcoding of southern African mammal species and construction of a reference library for forensic application;,citation_abstract=Combating wildlife crimes in South Africa requires accurate identification of traded species and their products. Diagnostic morphological characteristics needed to identify species are often lost when specimens are processed and customs officials lack the expertise to identify species. As a potential solution, DNA barcoding can be used to identify morphologically indistinguishable specimens in forensic cases. However, barcoding is hindered by the reliance on comprehensive, validated DNA barcode reference databases, which are currently limited. To overcome this limitation, we constructed a barcode library of cytochrome c oxidase subunit 1 and cytochrome b sequences for threatened and protected mammals exploited in southern Africa. Additionally, we included closely related or morphologically similar species and assessed the database’s ability to identify species accurately. Published southern African sequences were incorporated to estimate intraspecific and interspecific variation. Neighbor-joining trees successfully discriminated 94%–95% of the taxa. However, some widespread species exhibited high intraspecific distances ($&amp;amp;amp;gt;$2%), suggesting geographic sub-structuring or cryptic speciation. Lack of reliable published data prevented the unambiguous discrimination of certain species. This study highlights the efficacy of DNA barcoding in species identification, particularly for forensic applications. It also highlights the need for a taxonomic re-evaluation of certain widespread species and challenging genera.;,citation_author=J. R. Baxter;,citation_author=A. Kotze;,citation_author=M. De Bruyn;,citation_author=K. Matlou;,citation_author=K. Labuschagne;,citation_author=M. Mwale;,citation_publication_date=2024-10;,citation_cover_date=2024-10;,citation_year=2024;,citation_issue=10;,citation_doi=10.1139/gen-2023-0050;,citation_issn=0831-2796, 1480-3321;,citation_volume=67;,citation_language=en-US;,citation_journal_title=Genome;">
+<meta name="citation_reference" content="citation_title=Convention on Biological Diversity. Convention on Biological Diversity;,citation_author=undefined CBD;">
+<meta name="citation_reference" content="citation_title=Convention on Biological Diversity. Convention on Biological Diversity;,citation_author=CBD;">
+<meta name="citation_reference" content="citation_title=A review of over a decade of DNA barcoding in South Africa: A faunal perspective;,citation_abstract=For over a decade, molecular short standardised DNA fragments, termed DNA barcodes, have been developed for species discrimination around the world. As of 2010, the vast majority of barcoding research was biased toward particular taxonomic groups and geographic regions largely because researchers in developed countries were the ones with the resources and capacity to carry out such work. To rectify this, the International Barcode of Life Project was launched with the intent to extend the geographic and taxonomic coverage of the barcode reference library. South Africa committed to this mission in an attempt to catalogue all of its known biodiversity and, possibly, help identify new species. To date, approximately 48 000 South African faunal barcodes are housed in the Barcode of Life Data System (BOLD), which represent only 2.3% of all known South African animal species. Although insects are the best represented in absolute terms, with over 37 000 samples recorded, they are still grossly lacking with just over 1% representation. Much like the global trend, there is a general taxonomic bias, with fish, birds and mammals showing the greatest representation. Moreover, geographic bias is also present, with the Free State province particularly under-represented on BOLD, likely owing to limited human capacity. Although few studies have been published with respect to barcoding, the majority reveal that the cytochrome c oxidase 1 (CO1) gene, used in isolation or in conjunction with other molecular markers, can greatly benefit South African biodiversity research. Several limitations of DNA barcoding are discussed and recommendations specific to South Africa provided.;,citation_author=Jessica M Silva;,citation_author=Sandi Willows-Munro;,citation_publication_date=2016-01;,citation_cover_date=2016-01;,citation_year=2016;,citation_issue=1;,citation_doi=10.1080/15627020.2016.1151377;,citation_issn=1562-7020, 2224-073X;,citation_volume=51;,citation_language=en-US;,citation_journal_title=African Zoology;">
+<meta name="citation_reference" content="citation_title=A review of over a decade of DNA barcoding in South Africa: A faunal perspective;,citation_abstract=For over a decade, molecular short standardised DNA fragments, termed DNA barcodes, have been developed for species discrimination around the world. As of 2010, the vast majority of barcoding research was biased toward particular taxonomic groups and geographic regions largely because researchers in developed countries were the ones with the resources and capacity to carry out such work. To rectify this, the International Barcode of Life Project was launched with the intent to extend the geographic and taxonomic coverage of the barcode reference library. South Africa committed to this mission in an attempt to catalogue all of its known biodiversity and, possibly, help identify new species. To date, approximately 48 000 South African faunal barcodes are housed in the Barcode of Life Data System (BOLD), which represent only 2.3% of all known South African animal species. Although insects are the best represented in absolute terms, with over 37 000 samples recorded, they are still grossly lacking with just over 1% representation. Much like the global trend, there is a general taxonomic bias, with fish, birds and mammals showing the greatest representation. Moreover, geographic bias is also present, with the Free State province particularly under-represented on BOLD, likely owing to limited human capacity. Although few studies have been published with respect to barcoding, the majority reveal that the cytochrome c oxidase 1 (CO1) gene, used in isolation or in conjunction with other molecular markers, can greatly benefit South African biodiversity research. Several limitations of DNA barcoding are discussed and recommendations specific to South Africa provided.;,citation_author=Jessica M Da Silva;,citation_author=Sandi Willows-Munro;,citation_publication_date=2016-01;,citation_cover_date=2016-01;,citation_year=2016;,citation_issue=1;,citation_doi=10.1080/15627020.2016.1151377;,citation_issn=1562-7020, 2224-073X;,citation_volume=51;,citation_language=en-US;,citation_journal_title=African Zoology;">
+<meta name="citation_reference" content="citation_title=Environmental DNA for tracking waterhole visitation in savanna ecosystems;,citation_author=Maxwell J Farrell;,citation_author=Danny Govender;,citation_author=Mehrdad Hajibabaei;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Environmental DNA for tracking waterhole visitation in savanna ecosystems;,citation_author=Maxwell J Farrell;,citation_author=Danny Govender;,citation_author=Mehrdad Hajibabaei;,citation_language=en-US;">
+<meta name="citation_reference" content="citation_title=Biological identifications through DNA barcodes;,citation_abstract=Although much biological research depends upon species diagnoses, taxonomic expertise is collapsing. We are convinced that the sole prospect for a sustainable identification capability lies in the construction of systems that employ DNA sequences as taxon ’barcodes’. We establish that the mitochondrial gene cytochrome c oxidase I (COI) can serve as the core of a global bioidentification system for animals. First, we demonstrate that COI profiles, derived from the low-density sampling of higher taxonomic categories, ordinarily assign newly analysed taxa to the appropriate phylum or order. Second, we demonstrate that species-level assignments can be obtained by creating comprehensive COI profiles. A model COI profile, based upon the analysis of a single individual from each of 200 closely allied species of lepidopterans, was 100% successful in correctly identifying subsequent specimens. When fully developed, a COI identification system will provide a reliable, cost-effective and accessible solution to the current problem of species identification. Its assembly will also generate important new insights into the diversification of life and the rules of molecular evolution.;,citation_author=Paul D. N. Hebert;,citation_author=Alina Cywinska;,citation_author=Shelley L. Ball;,citation_author=Jeremy R. deWaard;,citation_publication_date=2003-02;,citation_cover_date=2003-02;,citation_year=2003;,citation_issue=1512;,citation_doi=10.1098/rspb.2002.2218;,citation_issn=0962-8452;,citation_pmid=12614582;,citation_volume=270;,citation_language=en-US;,citation_journal_title=Proceedings. Biological Sciences;">
+<meta name="citation_reference" content="citation_title=Biological identifications through DNA barcodes;,citation_abstract=Although much biological research depends upon species diagnoses, taxonomic expertise is collapsing. We are convinced that the sole prospect for a sustainable identification capability lies in the construction of systems that employ DNA sequences as taxon ’barcodes’. We establish that the mitochondrial gene cytochrome c oxidase I (COI) can serve as the core of a global bioidentification system for animals. First, we demonstrate that COI profiles, derived from the low-density sampling of higher taxonomic categories, ordinarily assign newly analysed taxa to the appropriate phylum or order. Second, we demonstrate that species-level assignments can be obtained by creating comprehensive COI profiles. A model COI profile, based upon the analysis of a single individual from each of 200 closely allied species of lepidopterans, was 100% successful in correctly identifying subsequent specimens. When fully developed, a COI identification system will provide a reliable, cost-effective and accessible solution to the current problem of species identification. Its assembly will also generate important new insights into the diversification of life and the rules of molecular evolution.;,citation_author=Paul D. N. Hebert;,citation_author=Alina Cywinska;,citation_author=Shelley L. Ball;,citation_author=Jeremy R. deWaard;,citation_publication_date=2003-02;,citation_cover_date=2003-02;,citation_year=2003;,citation_issue=1512;,citation_doi=10.1098/rspb.2002.2218;,citation_issn=0962-8452;,citation_pmid=12614582;,citation_volume=270;,citation_language=en-US;,citation_journal_title=Proceedings. Biological Sciences;">
+<meta name="citation_reference" content="citation_title=Advances in environmental DNA monitoring: Standardization, automation, and emerging technologies in aquatic ecosystems;,citation_author=Suxiang Lu;,citation_author=Honghui Zeng;,citation_author=Fan Xiong;,citation_author=Meng Yao;,citation_author=Shunping He;,citation_publication_date=2024-07;,citation_cover_date=2024-07;,citation_year=2024;,citation_issue=7;,citation_doi=10.1007/s11427-023-2493-5;,citation_issn=1674-7305, 1869-1889;,citation_volume=67;,citation_language=en-US;,citation_journal_title=Science China Life Sciences;">
+<meta name="citation_reference" content="citation_title=Advances in environmental DNA monitoring: Standardization, automation, and emerging technologies in aquatic ecosystems;,citation_author=Suxiang Lu;,citation_author=Honghui Zeng;,citation_author=Fan Xiong;,citation_author=Meng Yao;,citation_author=Shunping He;,citation_publication_date=2024-07;,citation_cover_date=2024-07;,citation_year=2024;,citation_issue=7;,citation_doi=10.1007/s11427-023-2493-5;,citation_issn=1674-7305, 1869-1889;,citation_volume=67;,citation_language=en-US;,citation_journal_title=Science China Life Sciences;">
+<meta name="citation_reference" content="citation_title=DNA Barcoding for Identification and Detection of Species;,citation_abstract=Identification is a very important part of the taxonomy. Since a species represents the basic unit of biological classification, identifying species is important to understand the systematics and the precise phylogenetic position of particular species. In recent years, species identification and delimitation have seen major improvements because of the incorporation of DNA sequence data. This review provides a comprehensive list of commonly employed nuclear and chloroplast regions used for the barcoding of plants.;,citation_author=R Mathur;,citation_author=I Gunwal;,citation_author=N Chauhan;,citation_author=Y Agrawal;,citation_publication_date=2021-09;,citation_cover_date=2021-09;,citation_year=2021;,citation_issue=2;,citation_doi=10.33263/LIANBS112.35423548;,citation_issn=2284-6808;,citation_volume=11;,citation_language=en-US;,citation_journal_title=Letters in Applied NanoBioScience;">
+<meta name="citation_reference" content="citation_title=DNA Barcoding for Identification and Detection of Species;,citation_abstract=Identification is a very important part of the taxonomy. Since a species represents the basic unit of biological classification, identifying species is important to understand the systematics and the precise phylogenetic position of particular species. In recent years, species identification and delimitation have seen major improvements because of the incorporation of DNA sequence data. This review provides a comprehensive list of commonly employed nuclear and chloroplast regions used for the barcoding of plants.;,citation_author=R Mathur;,citation_author=I Gunwal;,citation_author=N Chauhan;,citation_author=Y Agrawal;,citation_publication_date=2021-09;,citation_cover_date=2021-09;,citation_year=2021;,citation_issue=2;,citation_doi=10.33263/LIANBS112.35423548;,citation_issn=2284-6808;,citation_volume=11;,citation_language=en-US;,citation_journal_title=Letters in Applied NanoBioScience;">
+<meta name="citation_reference" content="citation_title=DNA Barcoding for Identification and Detection of Species;,citation_abstract=Identification is a very important part of the taxonomy. Since a species represents the basic unit of biological classification, identifying species is important to understand the systematics and the precise phylogenetic position of particular species. In recent years, species identification and delimitation have seen major improvements because of the incorporation of DNA sequence data. This review provides a comprehensive list of commonly employed nuclear and chloroplast regions used for the barcoding of plants.;,citation_author=M Mwale;,citation_author=D. L Dalton;,citation_author=R Jansen;,citation_author=M De Bruyn;,citation_author=D Pietersen;,citation_author=P. S Mokgokong;,citation_author=A Kotzé;,citation_publication_date=2021-09;,citation_cover_date=2021-09;,citation_year=2021;,citation_issue=2;,citation_doi=10.33263/LIANBS112.35423548;,citation_issn=2284-6808;,citation_volume=11;,citation_language=en-US;,citation_journal_title=Letters in Applied NanoBioScience;">
+<meta name="citation_reference" content="citation_title=DNA Barcoding for Identification and Detection of Species;,citation_abstract=Identification is a very important part of the taxonomy. Since a species represents the basic unit of biological classification, identifying species is important to understand the systematics and the precise phylogenetic position of particular species. In recent years, species identification and delimitation have seen major improvements because of the incorporation of DNA sequence data. This review provides a comprehensive list of commonly employed nuclear and chloroplast regions used for the barcoding of plants.;,citation_author=M Mwale;,citation_author=D. L Dalton;,citation_author=R Jansen;,citation_author=M De Bruyn;,citation_author=D Pietersen;,citation_author=P. S Mokgokong;,citation_author=A Kotzé;,citation_publication_date=2021-09;,citation_cover_date=2021-09;,citation_year=2021;,citation_issue=2;,citation_doi=10.33263/LIANBS112.35423548;,citation_issn=2284-6808;,citation_volume=11;,citation_language=en-US;,citation_journal_title=Letters in Applied NanoBioScience;">
+<meta name="citation_reference" content="citation_title=Unlocking the genetic code: Exploring the potential of DNA barcoding for biodiversity assessment;,citation_abstract=DNA barcoding is a crucial method for assessing and monitoring species diversity amidst escalating threats to global biodiversity. I explore DNA barcoding’s potential as a robust and reliable tool for biodiversity assessment. It begins with a comprehensive review of existing literature, delving into the theoretical foundations, methodologies and applications of DNA barcoding. The suitability of various DNA regions, like the COI gene, as universal barcodes are extensively investigated. Additionally, the advantages and limitations of different DNA sequencing technologies and bioinformatics tools are evaluated within the context of DNA barcoding. To evaluate the efficacy of DNA barcoding, diverse ecosystems, including terrestrial, freshwater and marine habitats, are sampled. Extracted DNA from collected specimens undergoes amplification and sequencing of the target barcode region. Comparison of the obtained DNA sequences with reference databases allows for the identification and classification of the sampled organisms. Findings demonstrate that DNA barcoding accurately identifies species, even in cases where morphological identification proves challenging. Moreover, it sheds light on cryptic and endangered species, aiding conservation efforts. I also investigate patterns of genetic diversity and evolutionary relationships among different taxa through the analysis of genetic data. This research contributes to the growing knowledge on DNA barcoding and its applicability for biodiversity assessment. The advantages of this approach, such as speed, accuracy and cost-effectiveness, are highlighted, along with areas for improvement. By unlocking the genetic code, DNA barcoding enhances our understanding of biodiversity, supports conservation initiatives and informs evidence-based decision-making for the sustainable management of ecosystems.;,citation_author=Mohammad Ahmad Ahmad Odah;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=4;,citation_doi=10.3934/molsci.2023016;,citation_issn=2372-0301;,citation_volume=10;,citation_language=en-US;,citation_journal_title=AIMS Molecular Science;">
+<meta name="citation_reference" content="citation_title=Unlocking the genetic code: Exploring the potential of DNA barcoding for biodiversity assessment;,citation_abstract=DNA barcoding is a crucial method for assessing and monitoring species diversity amidst escalating threats to global biodiversity. I explore DNA barcoding’s potential as a robust and reliable tool for biodiversity assessment. It begins with a comprehensive review of existing literature, delving into the theoretical foundations, methodologies and applications of DNA barcoding. The suitability of various DNA regions, like the COI gene, as universal barcodes are extensively investigated. Additionally, the advantages and limitations of different DNA sequencing technologies and bioinformatics tools are evaluated within the context of DNA barcoding. To evaluate the efficacy of DNA barcoding, diverse ecosystems, including terrestrial, freshwater and marine habitats, are sampled. Extracted DNA from collected specimens undergoes amplification and sequencing of the target barcode region. Comparison of the obtained DNA sequences with reference databases allows for the identification and classification of the sampled organisms. Findings demonstrate that DNA barcoding accurately identifies species, even in cases where morphological identification proves challenging. Moreover, it sheds light on cryptic and endangered species, aiding conservation efforts. I also investigate patterns of genetic diversity and evolutionary relationships among different taxa through the analysis of genetic data. This research contributes to the growing knowledge on DNA barcoding and its applicability for biodiversity assessment. The advantages of this approach, such as speed, accuracy and cost-effectiveness, are highlighted, along with areas for improvement. By unlocking the genetic code, DNA barcoding enhances our understanding of biodiversity, supports conservation initiatives and informs evidence-based decision-making for the sustainable management of ecosystems.;,citation_author=Mohammad Ahmad Ahmad Odah;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=4;,citation_doi=10.3934/molsci.2023016;,citation_issn=2372-0301;,citation_volume=10;,citation_language=en-US;,citation_journal_title=AIMS Molecular Science;">
+<meta name="citation_reference" content="citation_title=BOLD: The Barcode of Life Data System (http://www.barcodinglife.org);,citation_abstract=The Barcode of Life Data System (bold) is an informatics workbench aiding the acquisition, storage, analysis and publication of DNA barcode records. By assembling molecular, morphological and distributional data, it bridges a traditional bioinformatics chasm. bold is freely available to any researcher with interests in DNA barcoding. By providing specialized services, it aids the assembly of records that meet the standards needed to gain BARCODE designation in the global sequence databases. Because of its web-based delivery and flexible data security model, it is also well positioned to support projects that involve broad research alliances. This paper provides a brief introduction to the key elements of bold, discusses their functional capabilities, and concludes by examining computational resources and future prospects.;,citation_author=Sujeevan Ratnasingham;,citation_author=Paul D N Hebert;,citation_publication_date=2007-05;,citation_cover_date=2007-05;,citation_year=2007;,citation_issue=3;,citation_doi=10.1111/j.1471-8286.2007.01678.x;,citation_issn=1471-8278;,citation_pmid=18784790;,citation_volume=7;,citation_journal_title=Molecular Ecology Notes;">
+<meta name="citation_reference" content="citation_title=BOLD: The Barcode of Life Data System (http://www.barcodinglife.org);,citation_abstract=The Barcode of Life Data System (bold) is an informatics workbench aiding the acquisition, storage, analysis and publication of DNA barcode records. By assembling molecular, morphological and distributional data, it bridges a traditional bioinformatics chasm. bold is freely available to any researcher with interests in DNA barcoding. By providing specialized services, it aids the assembly of records that meet the standards needed to gain BARCODE designation in the global sequence databases. Because of its web-based delivery and flexible data security model, it is also well positioned to support projects that involve broad research alliances. This paper provides a brief introduction to the key elements of bold, discusses their functional capabilities, and concludes by examining computational resources and future prospects.;,citation_author=Sujeevan Ratnasingham;,citation_author=Paul D N Hebert;,citation_publication_date=2007-05;,citation_cover_date=2007-05;,citation_year=2007;,citation_issue=3;,citation_doi=10.1111/j.1471-8286.2007.01678.x;,citation_issn=1471-8278;,citation_pmid=18784790;,citation_volume=7;,citation_journal_title=Molecular Ecology Notes;">
+<meta name="citation_reference" content="citation_title=A DNA-Based Registry for All Animal Species: The Barcode Index Number (BIN) System;,citation_author=Sujeevan Ratnasingham;,citation_author=Paul D. N. Hebert;,citation_editor=Diego Fontaneto;,citation_publication_date=2013-07;,citation_cover_date=2013-07;,citation_year=2013;,citation_issue=7;,citation_doi=10.1371/journal.pone.0066213;,citation_issn=1932-6203;,citation_volume=8;,citation_language=en-US;,citation_journal_title=PLoS ONE;">
+<meta name="citation_reference" content="citation_title=A DNA-Based Registry for All Animal Species: The Barcode Index Number (BIN) System;,citation_author=Sujeevan Ratnasingham;,citation_author=Paul D. N. Hebert;,citation_editor=Diego Fontaneto;,citation_publication_date=2013-07;,citation_cover_date=2013-07;,citation_year=2013;,citation_issue=7;,citation_doi=10.1371/journal.pone.0066213;,citation_issn=1932-6203;,citation_volume=8;,citation_language=en-US;,citation_journal_title=PLoS ONE;">
+<meta name="citation_reference" content="citation_title=Unveiling vertebrate biodiversity in arid and semi-arid terrestrial ecosystems through eDNA metabarcoding at savanna waterholes;,citation_abstract=Applying environmental DNA (eDNA) metabarcoding to samples from waterholes and their surroundings offers a promising approach for monitoring terrestrial vertebrates in semi-arid and arid ecosystems, such as the southern African savannas. However, minimal guidance exists on key sampling design parameters for terrestrial ecosystems, which can significantly influence species detection. This study investigated the effects of sampled substrate, sampling season, and metabarcoding primer pair on species richness and taxonomic group detection in terrestrial vertebrates, with a focus on mammals, using eDNA samples from waterholes in Botsalano Game Reserve, South Africa. A total of 725 eDNA samples were collected from 94 sampling events across wet and dry seasons, detecting 95 species (45 birds, 42 mammals, 4 amphibians, 3 reptiles, and 1 fish). Sediment samples provided more reliable detection of abundant taxa, whereas water samples had higher detection frequencies of rare taxa. A mixed sampling approach yielded the highest species richness. Sampling during the wet season yielded higher species richness overall, while more mammal species were detected from dry season sampling. Overlap in species detection between the two metabarcoding primers tested was low (47%). We formulate recommendations for future eDNA metabarcoding study designs in similar systems, including remote sampling logistics and discuss potential sources of false positives in eDNA metabarcoding, including (1) secondary eDNA input, (2) incomplete genetic reference databases, and (3) the low genetic resolution of metabarcoding markers.;,citation_author=Tamara Schenekar;,citation_author=Janine Baxter;,citation_author=Irmgard Sedlmayr;,citation_author=Julia Gladitsch;,citation_author=Sibusiso Mahlangu;,citation_author=Monica Mwale;,citation_publication_date=2025-10;,citation_cover_date=2025-10;,citation_year=2025;,citation_doi=10.1101/2025.10.06.680638;,citation_issn=2692-8205;,citation_language=en-US;,citation_publisher=bioRxiv;">
+<meta name="citation_reference" content="citation_title=Unveiling vertebrate biodiversity in arid and semi-arid terrestrial ecosystems through eDNA metabarcoding at savanna waterholes;,citation_abstract=Applying environmental DNA (eDNA) metabarcoding to samples from waterholes and their surroundings offers a promising approach for monitoring terrestrial vertebrates in semi-arid and arid ecosystems, such as the southern African savannas. However, minimal guidance exists on key sampling design parameters for terrestrial ecosystems, which can significantly influence species detection. This study investigated the effects of sampled substrate, sampling season, and metabarcoding primer pair on species richness and taxonomic group detection in terrestrial vertebrates, with a focus on mammals, using eDNA samples from waterholes in Botsalano Game Reserve, South Africa. A total of 725 eDNA samples were collected from 94 sampling events across wet and dry seasons, detecting 95 species (45 birds, 42 mammals, 4 amphibians, 3 reptiles, and 1 fish). Sediment samples provided more reliable detection of abundant taxa, whereas water samples had higher detection frequencies of rare taxa. A mixed sampling approach yielded the highest species richness. Sampling during the wet season yielded higher species richness overall, while more mammal species were detected from dry season sampling. Overlap in species detection between the two metabarcoding primers tested was low (47%). We formulate recommendations for future eDNA metabarcoding study designs in similar systems, including remote sampling logistics and discuss potential sources of false positives in eDNA metabarcoding, including (1) secondary eDNA input, (2) incomplete genetic reference databases, and (3) the low genetic resolution of metabarcoding markers.;,citation_author=Tamara Schenekar;,citation_author=Janine Baxter;,citation_author=Irmgard Sedlmayr;,citation_author=Julia Gladitsch;,citation_author=Sibusiso Mahlangu;,citation_author=Monica Mwale;,citation_publication_date=2025-10;,citation_cover_date=2025-10;,citation_year=2025;,citation_doi=10.1101/2025.10.06.680638;,citation_issn=2692-8205;,citation_language=en-US;,citation_publisher=bioRxiv;">
+<meta name="citation_reference" content="citation_title=DNA barcoding and traditional taxonomy: An integrated approach for biodiversity conservation;,citation_abstract=Biological diversity is depleting at an alarming rate. Additionally, a vast amount of biodiversity still remains undiscovered. Taxonomy has been serving the purpose of describing, naming, and classifying species for more than 250 years. DNA taxonomy and barcoding have accelerated the rate of this process, thereby providing a tool for conservation practice. DNA barcoding and traditional taxonomy have their own inherent merits and demerits. The synergistic use of both methods, in the form of integrative taxonomy, has the potential to contribute to biodiversity conservation in a pragmatic timeframe and overcome their individual drawbacks. In this review, we discuss the basics of both these methods of biological identification (traditional taxonomy and DNA barcoding), the technical advances in integrative taxonomy, and future trends. We also present a comprehensive compilation of published examples of integrative taxonomy that refer to nine topics within biodiversity conservation. Morphological and molecular species limits were observed to be congruent in $\sim$41% of the 58 source studies. The majority of the studies highlighted the description of cryptic diversity through the use of molecular data, whereas research areas like endemism, biological invasion, and threatened species were less discussed in the literature.;,citation_author=Bhavisha P. Sheth;,citation_author=Vrinda S. Thaker;,citation_publication_date=2017-07;,citation_cover_date=2017-07;,citation_year=2017;,citation_issue=7;,citation_doi=10.1139/gen-2015-0167;,citation_issn=1480-3321;,citation_pmid=28431212;,citation_volume=60;,citation_language=en-US;,citation_journal_title=Genome;">
+<meta name="citation_reference" content="citation_title=DNA barcoding and traditional taxonomy: An integrated approach for biodiversity conservation;,citation_abstract=Biological diversity is depleting at an alarming rate. Additionally, a vast amount of biodiversity still remains undiscovered. Taxonomy has been serving the purpose of describing, naming, and classifying species for more than 250 years. DNA taxonomy and barcoding have accelerated the rate of this process, thereby providing a tool for conservation practice. DNA barcoding and traditional taxonomy have their own inherent merits and demerits. The synergistic use of both methods, in the form of integrative taxonomy, has the potential to contribute to biodiversity conservation in a pragmatic timeframe and overcome their individual drawbacks. In this review, we discuss the basics of both these methods of biological identification (traditional taxonomy and DNA barcoding), the technical advances in integrative taxonomy, and future trends. We also present a comprehensive compilation of published examples of integrative taxonomy that refer to nine topics within biodiversity conservation. Morphological and molecular species limits were observed to be congruent in $\sim$41% of the 58 source studies. The majority of the studies highlighted the description of cryptic diversity through the use of molecular data, whereas research areas like endemism, biological invasion, and threatened species were less discussed in the literature.;,citation_author=Bhavisha P. Sheth;,citation_author=Vrinda S. Thaker;,citation_publication_date=2017-07;,citation_cover_date=2017-07;,citation_year=2017;,citation_issue=7;,citation_doi=10.1139/gen-2015-0167;,citation_issn=1480-3321;,citation_pmid=28431212;,citation_volume=60;,citation_language=en-US;,citation_journal_title=Genome;">
+<meta name="citation_reference" content="citation_title=National Biodiversity Assessment 2018: The Status of South Africa’s Ecosystems and Biodiversity;,citation_author=A Skowno;,citation_author=C Poole;,citation_author=D Raimondo;,citation_author=K Sink;,citation_author=H Deventer;,citation_author=L Niekerk;,citation_author=L. R Harris;,citation_author=L Smith-Adao;,citation_author=T Zengeya;,citation_author=W Foden;,citation_author=G Midgley;,citation_author=A Driver;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;">
+<meta name="citation_reference" content="citation_title=An overview of DNA barcoding of biodiversity in south africa;,citation_author=M. M Kgatla;,citation_author=C Barker;,citation_author=J. R Baxter;,citation_author=A. E Bester-van der Merwe;,citation_author=M Chaisi;,citation_author=A Chakona;,citation_author=M. I Cherry;,citation_author=S. R Daniels;,citation_author=L. H Du Preez;,citation_author=C. R Haddad;,citation_author=P. G Hawkes;,citation_author=C Ho;,citation_author=T. B Hoareau;,citation_author=A Jacobs;,citation_author=K Jacobs;,citation_author=C Janion-Scheepers;,citation_author=B. J Vuuren;,citation_author=R. M Kabongo;,citation_author=T. T Khoza;,citation_author=N. L Khumalo;,citation_author=T Mahlanza;,citation_author=L Makapela;,citation_author=B. G Makhubo;,citation_author=G. W Maneveldt;,citation_author=K Mashego;,citation_author=G Matcher;,citation_author=C. A Matthee;,citation_author=M Mavhunga;,citation_author=J. M Midgley;,citation_author=M Mlambo;,citation_author=D. M Monsanto;,citation_author=R Mthombeni;,citation_author=S. L Murray;,citation_author=S Mynhardt;,citation_author=B-J Nang-Mba;,citation_author=M Ndlovu;,citation_author=S. P Parbhu;,citation_author=undefined Phetla;,citation_author=M Phukuntsi;,citation_author=T. R Pitcher;,citation_author=T Samaai;,citation_author=C. A Simon;,citation_author=K Sink;,citation_author=C. L Sole;,citation_author=G. L Theron;,citation_author=B Asch;,citation_author=M Bank;,citation_author=C. J. M Steenderen;,citation_author=M. H Villet;,citation_author=C. M Visagie;,citation_author=K. A Williams;,citation_author=S Willows-Munro;,citation_author=M. T Sethusa;,citation_author=J. M Silva;,citation_author=M Mwale;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="https://www.sanbi.org/" class="navbar-brand navbar-brand-logo">
+    <img src="../../imgs/nba-logo-combo.png" alt="" class="navbar-logo light-content">
+    <img src="../../imgs/nba-logo-combo.png" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../contents.html" aria-current="page"> 
+<span class="menu-text">Contents</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents.html">Contents</a></li><li class="breadcrumb-item"><a href="../../content/genetics/genetic-indicators.html">Genetic diversity</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../contents.html">Contents</a></li><li class="breadcrumb-item"><a href="../../content/genetics/genetic-indicators.html">Genetic diversity</a></li></ol></nav>
+      <h1 class="title">Genetic diversity</h1>
+                      </div>
+  </div>
+    
+    <div class="quarto-title-meta-contents">
+      <p class="author">
+        Jessica M. da Silva<sup>1, 2</sup> <a href="https://orcid.org/0000-0001-8385-1166" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>, J. Alexander Nieto Lawrence<sup>1, 2</sup> <a href="https://orcid.org/0000-0002-5982-5803" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>, Krystal A. Tolley<sup>1, 2</sup> <a href="https://orcid.org/0000-0002-9297-5408" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+      </p>
+    </div>
+    
+   <div class="quarto-title-meta-contents-affiliation">
+          <p class="affiliation">
+        1. 
+        
+        South African National Biodiversity Institute
+        
+      </p>
+          <p class="affiliation">
+        2. 
+        
+        University of Johannesburg
+        
+      </p>
+        </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 20, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../contents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/about-nba.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About the NBA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/uses-nba.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using the NBA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/biodivprof.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">South Africa’s biodiversity profile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/context/importance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The importance of biodiversity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/key-messages/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Key messages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Integrated findings</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf_headline.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Headline indicators</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status and protection level</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/chl_rle_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About ecosystem threat status and the RLE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/chl_epl_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About ecosystem protection level</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/integrated-findings/intf-species.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species threat status and protection level</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/intf-species-rli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species trends - Red List Index</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/intf_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on biodiversity</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Realm findings</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/terrestrial/ter_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terrestrial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on biodiversity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/terrestrial/ter_ets_x_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/ter_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Terrestrial Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/freshwater/fw_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_type.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland Ecosystem Types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_type.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Type</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland Ecological Condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on Wetland Ecosystems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecological Condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Threat Status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_wet_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/freshwater/fw_riv_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">River Ecosystem Protection Level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/fw_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/estuaries/est_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estuarine</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ecosystem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_habitat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Habitat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_pressure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estuarine Species</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/marine/marine_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marine</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_ets_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marine birds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge gaps, priority actions and priority areas</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coast</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem types</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_pressures-condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures and ecological condition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ecosystem protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_ets-x-epl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_species.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species assessments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/coast/cst_priorities-actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Priority actions and research</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/subantarctic/sub-all_sections.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Subantarctic</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species findings</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mammals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_reptiles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reptiles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spiders</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_butterflies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Butterflies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_amphibians.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Amphibians</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_fwf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater fishes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/fish_recovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SA Freshwater fish species recovery</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Freshwater Crabs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anostraca</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_sharks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sharks (incl. Rays &amp; Chimaeras)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sparids</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/genetics/genetic-indicators.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Genetic diversity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl-biobank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biodiversity biobanks in South Africa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl-forensics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wildlife forensics in South Africa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/genetics/chl_barcoding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DNA barcoding in South Africa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Priority actions and knowledge gaps</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/pakg_actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Priority actions, responses and interventions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/integrated-findings/pakg_gaps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge gaps and research priorities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#monitoring-genetic-diversity-using-indicators" id="toc-monitoring-genetic-diversity-using-indicators" class="nav-link active" data-scroll-target="#monitoring-genetic-diversity-using-indicators">Monitoring genetic diversity using indicators</a></li>
+  <li><a href="#south-africas-ne-500-and-pm-indicator-scores" id="toc-south-africas-ne-500-and-pm-indicator-scores" class="nav-link" data-scroll-target="#south-africas-ne-500-and-pm-indicator-scores">South Africa’s Ne 500 and PM indicator scores</a></li>
+  <li><a href="#tracking-the-expected-loss-of-phylogenetic-diversity" id="toc-tracking-the-expected-loss-of-phylogenetic-diversity" class="nav-link" data-scroll-target="#tracking-the-expected-loss-of-phylogenetic-diversity">Tracking the expected loss of phylogenetic diversity</a>
+  <ul>
+  <li><a href="#a-case-study-on-south-africas-amphibians-and-reptiles" id="toc-a-case-study-on-south-africas-amphibians-and-reptiles" class="nav-link" data-scroll-target="#a-case-study-on-south-africas-amphibians-and-reptiles">A case study on South Africa’s amphibians and reptiles</a></li>
+  </ul></li>
+  <li><a href="#available-genetic-tools-and-initiatives" id="toc-available-genetic-tools-and-initiatives" class="nav-link" data-scroll-target="#available-genetic-tools-and-initiatives">Available genetic tools and initiatives</a></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical documentation</a></li>
+  <li><a href="#recommended-citation" id="toc-recommended-citation" class="nav-link" data-scroll-target="#recommended-citation">Recommended citation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/genetics-sp-banner.png" class="img-fluid figure-img"></p>
+<figcaption>Left to right: Rose’s mountain toadlet (<em>Capensibufo rosei</em>) (©&nbsp;Jeremy Shelton); Geometric tortoise (<em>Psammobates geometricus</em>) (©&nbsp;Andre Botha); Southern white rhinoceros (<em>Ceratotherium simum simum</em>) (©&nbsp;Greg Martindale); Grey rhebok (<em>Pelea capreolus</em>) (©&nbsp;Tim Kuiper).</figcaption>
+</figure>
+</div>
+<section id="monitoring-genetic-diversity-using-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="monitoring-genetic-diversity-using-indicators">Monitoring genetic diversity using indicators</h2>
+<p>Genetic diversity underpins all biological diversity, playing a key role in individual fitness (an organism’s ability to survive and reproduce), species’ ability to adapt to changing environments, and overall ecosystem resilience. The genetic diversity of many wild species has declined in recent decades and greater declines are projected through ongoing habitat loss and population size reductions. Local extinctions, reduced population sizes and disruption of genetic connectivity mean that many of the populations that exist today have insufficient genetic diversity to persist in the long term.</p>
+<p><strong>Core Conservation Genetic Principles</strong></p>
+<p>Conservation monitoring is guided by key principles (<a href="#fig-con-gen-princ" class="quarto-xref">Figure&nbsp;1</a>), which together capture genetic diversity at multiple scales:</p>
+<ul>
+<li><p><strong><em>Safeguard evolutionary distinctiveness</em></strong> – preserves unique branches of the tree of life.</p></li>
+<li><p><strong><em>Protect genetically distinct populations</em></strong> – maintains adaptive potential within species.</p></li>
+<li><p><strong><em>Ensure populations are large enough for long-term persistence</em></strong> – reduces loss of diversity through genetic drift<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and inbreeding.</p></li>
+</ul>
+<div id="fig-con-gen-princ" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-con-gen-princ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/con-gen-princip.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-con-gen-princ-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1. Representation of three core conservation genetic principles focused on safeguarding evolutionary distinctiveness (A &amp; B), protecting genetically distinct populations to minimise the risk of losing evolutionary evolutionary distinctiveness and ensuring all populations are large enough to ensure their long-term persistence (C). Red lines represent deep phylogenetic branches at risk, which can be caused by either entire clades of species being threatened with extinction (e.g., pangolins; A) or by threatened species isolated on long branches of the phylogenetic tree (e.g., secretary bird, B). C: Dashed lines represent the loss of a genetically distinct amphibian population, while polygons with solid lines represent different existing populations, each differing in size with the largest being the most likely to avoid genetic erosion. A &amp; B taken from Gumbs et al., 2023.
+</figcaption>
+</figure>
+</div>
+<p>In line with these principles, South Africa has adopted four genetic indicators from the Kunming-Montreal Global Biodiversity Framework, which can be based on direct genetic data or on proxies (when genetic data are not available; namely the <a href="#box-1">Ne 500</a> and <a href="#box-2">PM</a> indicators).</p>
+<div id="box-1" class="genetics callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Box 1. Proportion of populations with an effective population size greater than 500 (Ne 500 indicator)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A headline indicator in the Convention on Biological Diversity’s Global Biodiversity Framework. This is a high-level, mandatory metric that captures the overall scope of Goal A and Target 4 of the GBF.</p>
+<p>Effective population size (Ne) represents the number of individuals in a population contributing to the gene pool. At any given time or reproductive cycle not all adults reproduce, consequently Ne is a subset of the number of individuals in a population (typically 10 to 30% of the census size). Studies have identified a threshold of Ne greater than 500 signifying a genetically stable and healthy population into the long term; while below 500, the risk of extinction increases. The Ne 500 indicator ranges from 0 to 1, with 0 indicating no populations of a species have Ne above 500 and 1 indicating all populations exceed the 500 threshold.</p>
+</div>
+</div>
+</div>
+<div id="box-2" class="genetics callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Box 2. Proportion of populations maintained within species (PM indicator)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A complementary indicator in Convention on Biological Diversity’s Global Biodiversity Framework, providing additional context for in-depth analysis but is not required for reporting.</p>
+<p>This indicator is based on the principle that genetic differences increase as populations are farther apart in geographic and/or environmental distance. By maintaining distinct populations, species are more able to adapt and evolve. The PM indicator ranges from 0 to 1, with 0 indicating all populations have been lost (species is extinct) and 1 indicating that all populations are still present.</p>
+</div>
+</div>
+</div>
+<div id="box-3" class="genetics callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Box 3. Changing status of evolutionary distinct and globally endangered species (EDGE index)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A component indicator in Convention on Biological Diversity’s Global Biodiversity Framework. This is a detailed metric that measures progress towards a specific target or goal within the framework.</p>
+<p>This index is grounded in the understanding that genetically distinctive and threatened species would represent a significant loss to the tree of life if they are lost, making their preservation crucial. It is a tool for monitoring the changes in the conservation status of South Africa’s evolutionary heritage. For each taxonomic group that has a phylogeny, a value of 0 indicates that none of the genetically distinctive species are threatened and a value of 1 indicates that all genetically distinctive species are threatened with extinction.</p>
+</div>
+</div>
+</div>
+<div id="box-4" class="genetics callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Box 4. Expected loss of phylogenetic diversity (PD)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This complementary indicator is estimated as the total phylogenetic diversity in a phylogeny weighted by the probability of extinction for each species. This can be expressed as a percentage of the total phylogenetic diversity for the clade, where 100% would indicate that all species have the highest possible probability of extinction and all PD is expected to be lost, while 0% suggests that all species are safe from extinction and no PD is expected to be lost. The larger number of threatened species that contribute to high phylogenetic diversity, the more diversity is expected to be lost into the future.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="south-africas-ne-500-and-pm-indicator-scores" class="level2">
+<h2 class="anchored" data-anchor-id="south-africas-ne-500-and-pm-indicator-scores">South Africa’s Ne 500 and PM indicator scores</h2>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<center>
+<div class="line-block"><span class="inline-style-well-protected">95%</span><br>
+of 90 species assessed have<br>
+<span class="inline-style-indicator">Populations Maintained (PM)</span></div>
+</center>
+</div><div class="column" style="width:50%;">
+<center>
+<div class="line-block"><span class="inline-style-threatened">42%</span><br>
+of 61 species assessed have<br>
+<span class="inline-style-indicator">Populations with Ne greater than 500</span></div>
+</center>
+</div>
+</div>
+<hr>
+<p>As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators<span class="citation" data-cites="mastretta2024"><sup><a href="#ref-mastretta2024" role="doc-biblioref">1</a></sup></span>, 126 South African species were assessed, allowing for national indicator values to be quantified. South Africa reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.</p>
+<p>Importantly, these national metrics can be disaggregated in various ways, such as by taxonomic group (<a href="#tbl-taxagrp" class="quarto-xref">Table&nbsp;1</a>) or conservation status (<a href="#fig-ne-by-threatstatus" class="quarto-xref">Figure&nbsp;2</a>), to explore patterns and trends across different biodiversity components, similar to <a href="../../content/integrated-findings/intf-species.html">species</a> and <a href="../../content/integrated-findings/intf_ecosystems.html">ecosystems</a> assessments.</p>
+<div class="cell plain">
+<div id="tbl-taxagrp" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-taxagrp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1. Population genetic indicators dissaggregated by taxonomic group.
+</figcaption>
+<div aria-describedby="tbl-taxagrp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="emftqmraos" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#emftqmraos table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#emftqmraos thead, #emftqmraos tbody, #emftqmraos tfoot, #emftqmraos tr, #emftqmraos td, #emftqmraos th {
+  border-style: none;
+}
+
+#emftqmraos p {
+  margin: 0;
+  padding: 0;
+}
+
+#emftqmraos .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#emftqmraos .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#emftqmraos .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#emftqmraos .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#emftqmraos .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#emftqmraos .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#emftqmraos .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#emftqmraos .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#emftqmraos .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#emftqmraos .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#emftqmraos .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#emftqmraos .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#emftqmraos .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#emftqmraos .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#emftqmraos .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#emftqmraos .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#emftqmraos .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#emftqmraos .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#emftqmraos .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#emftqmraos .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#emftqmraos .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#emftqmraos .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#emftqmraos .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#emftqmraos .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#emftqmraos .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#emftqmraos .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#emftqmraos .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#emftqmraos .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#emftqmraos .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#emftqmraos .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#emftqmraos .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#emftqmraos .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#emftqmraos .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#emftqmraos .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#emftqmraos .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#emftqmraos .gt_left {
+  text-align: left;
+}
+
+#emftqmraos .gt_center {
+  text-align: center;
+}
+
+#emftqmraos .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#emftqmraos .gt_font_normal {
+  font-weight: normal;
+}
+
+#emftqmraos .gt_font_bold {
+  font-weight: bold;
+}
+
+#emftqmraos .gt_font_italic {
+  font-style: italic;
+}
+
+#emftqmraos .gt_super {
+  font-size: 65%;
+}
+
+#emftqmraos .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#emftqmraos .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#emftqmraos .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#emftqmraos .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#emftqmraos .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#emftqmraos .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#emftqmraos .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#emftqmraos .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#emftqmraos div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell plain caption-top table" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="Taxonomic-Group" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="text-align: left; background-color: #70B276; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Taxonomic Group</th>
+<th id="PM" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #70B276; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">PM</th>
+<th id="Ne-500" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #70B276; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Ne 500</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Amphibian</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.92 +/- 0.17</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.13 +/- 0.25</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Angiosperm</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.83 +/- 0.28</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.06 +/- 0.19</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Bird</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1.00 +/- 0.00</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.33 +/- 0.47</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Fish</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1.00 +/- 0.00</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.30 +/- 0.48</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Mammal</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.99 +/- 0.04</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.61 +/-0.48</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Taxonomic Group" style="text-align: left; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">Reptile</td>
+<td class="gt_row gt_right" headers="PM" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0.87 +/- 0.25</td>
+<td class="gt_row gt_right" headers="Ne 500" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Of concern is that even Least Concern and Near Threatened taxa have indicator scores &lt; 1 (<a href="#fig-ne-by-threatstatus" class="quarto-xref">Figure&nbsp;2</a>), indicating a loss of diversity that has gone undetected using other measures of extinction risk.</p>
+<div id="fig-ne-by-threatstatus" class="illustration quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ne-by-threatstatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/ne500-pilot_sanbi.png" class="illustration img-fluid quarto-figure quarto-figure-left figure-img" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ne-by-threatstatus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2. Violin plots illustrating the spread in Ne &gt;500 indicator values across National IUCN Red List categories. Abbreviations reflect official IUCN Red List categories for species assessed in<span class="citation" data-cites="mastretta2024"><sup><a href="#ref-mastretta2024" role="doc-biblioref">1</a></sup></span>. Sample sizes (n) are provided for each threat category.
+</figcaption>
+</figure>
+</div>
+<p>To better understand the genetic health of South African biodiversity, efforts are underway to expand this work across complete taxonomic groups (see Mammal Red List <a href="../../content/species/sp_mammals.html">page</a>).</p>
+</section>
+<section id="tracking-the-expected-loss-of-phylogenetic-diversity" class="level2">
+<h2 class="anchored" data-anchor-id="tracking-the-expected-loss-of-phylogenetic-diversity">Tracking the expected loss of phylogenetic diversity</h2>
+<section id="a-case-study-on-south-africas-amphibians-and-reptiles" class="level3">
+<h3 class="anchored" data-anchor-id="a-case-study-on-south-africas-amphibians-and-reptiles">A case study on South Africa’s amphibians and reptiles</h3>
+<p>South Africa is home to exceptionally rich and evolutionarily unique biodiversity, the loss of which would represent a significant erosion of the country’s evolutionary heritage. Using comprehensive Red List assessments together with detailed evolutionary (phylogenetic) trees, researchers can estimate how much of this evolutionary heritage could be lost if threatened species go extinct – a metric known as Expected Loss of Phylogenetic Diversity – the proportion of evolutionary history likely to be lost if currently threatened species go extinct.</p>
+<p>In a recent case study<span class="citation" data-cites="nietolawrence"><sup><a href="#ref-nietolawrence" role="doc-biblioref">2</a></sup></span>, this approach was applied to South Africa’s amphibians and reptiles, both of which have exceptionally high levels of endemism (around 50%). By integrating extinction risk data with measures of phylogenetic diversity (PD), researchers found that, without conservation action, <strong>about 6.5% of amphibian PD and 5% of reptile PD could be lost over the next 50 years</strong> (<a href="#fig-PD" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<div id="fig-PD" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-PD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/PD_Indicator.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="450">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-PD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3. The PD indicator for South African amphibians (red) and reptiles (purple), calculated at three intervals between 1990 and 2020. Values are estimated as the percentage of phylogenetic diversity (PD) expected to be lost within 50 years<span class="citation" data-cites="gumbs2023"><sup><a href="#ref-gumbs2023" role="doc-biblioref">3</a></sup></span>. Dated national phylogenies were used along with probabilities of extinction, inferred from backcasted IUCN scores weighted according to Gumbs et al.&nbsp;(2023) (CR = 0.97, EN = 0.49, VU = 0.24, NT = 0.12, and LC = 0.06).
+</figcaption>
+</figure>
+</div>
+<p>Importantly, areas rich in PD did not always coincide with regions of high species richness, revealing new priorities for conservation to protect large portions of South Africa’s evolutionary heritage (<a href="#fig-xLPD" class="quarto-xref">Figure&nbsp;4</a>).</p>
+<div id="fig-xLPD" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xLPD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/xPDL.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xLPD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4. Expected loss of phylogenetic diversity for South African A) amphibians and B) reptiles, generated using national phylogenies where branch lengths were weighted by the probability of all descendant species becoming extinct<span class="citation" data-cites="gumbs2023"><sup><a href="#ref-gumbs2023" role="doc-biblioref">3</a></sup></span>. The highest risk for both groups is estimated to be found in the tropical east, while for amphibians, notable concentrations appear in montane regions of the Western and Eastern Cape provinces. For reptiles, extreme concentrations of expected PD loss can be found in the north-east of KwaZulu-Natal and in the north-west of the Northern Cape Province.
+</figcaption>
+</figure>
+</div>
+<p>This study provides a national framework for monitoring phylogenetic biodiversity and its expected loss, aligned with global biodiversity monitoring goals. It demonstrates an approach that can be extended to other taxonomic groups, helping ensure that conservation strategies safeguard not only species, but also the deep evolutionary lineages and adaptive potential that make South Africa’s biodiversity globally unique.</p>
+</section>
+</section>
+<section id="available-genetic-tools-and-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="available-genetic-tools-and-initiatives">Available genetic tools and initiatives</h2>
+<p>As technology advances and the cost of molecular processing continues to decrease, monitoring the genetic health of species and their populations through time is becoming increasingly feasible. South Africa utilizes a growing suite of genetic tools, including:</p>
+<ul>
+<li><p><strong>Forensic genetics</strong> <a href="../../content/genetics/chl-forensics.html">read more here</a> — identifying illegally traded wildlife products to enforce conservation laws.</p></li>
+<li><p><strong>Biobanking</strong> <a href="../../content/genetics/chl-biobank.html">read more here</a> — long-term preservation of genetic material from threatened species for future research and restoration.</p></li>
+<li><p><strong>DNA barcoding</strong> <a href="../../content/genetics/chl_barcoding.html">read more here</a>— building reference libraries for species identification and monitoring.</p></li>
+<li><p><strong>Environmental DNA (eDNA)</strong> — detecting species and tracking biodiversity changes through genetic traces in soil, water, or air samples.</p></li>
+</ul>
+</section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical documentation</h2>
+<p><strong><em>Populations Maintained &amp; Ne 500 indicator repositories</em></strong></p>
+<ul>
+<li><p><strong>Code repository</strong>: <a href="https://github.com/AliciaMstt/GeneticIndicators/blob/main/4_plots_by_country.Rmd">github.com/AliciaMstt/GeneticIndicators/blob/main/4_plots_by_country</a></p></li>
+<li><p><strong>Data repository</strong>: <a href="https://doi.org/10.5061/dryad.bk3j9kdkm">DRYAD</a></p></li>
+</ul>
+<p><strong><em>Expected Loss of Phylogenetic Diversity repositories</em></strong>:</p>
+<ul>
+<li><strong>Data and Code:</strong> <a href="https://figshare.com/s/408db7d5714c44fe41c7">Figshare</a></li>
+</ul>
+</section>
+<section id="recommended-citation" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-citation">Recommended citation</h2>
+<p>da Silva, J.M., Nieto Lawrence, J.A., &amp; Tolley, K.A. 2025. Genetic Diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-mastretta2024" class="csl-entry" role="listitem">
+1. Mastretta-Yanes, A. et al. 2024. Multinational evaluation of genetic diversity indicators for the Kunming-Montreal Global Biodiversity Framework. <em>Ecology Letters</em> 27: e14461. <a href="https://doi.org/10.1111/ele.14461">https://doi.org/10.1111/ele.14461</a>
+</div>
+<div id="ref-nietolawrence" class="csl-entry" role="listitem">
+2. Nieto Lawrence, A. et al. <a href="">Where lineages persist: phylogenetic patterns and evolutionary vulnerability in South Africa’s herpetofauna</a>. <em>Diversity and Distributions</em>.
+</div>
+<div id="ref-gumbs2023" class="csl-entry" role="listitem">
+3. Gumbs, R. et al. 2023. Indicators to monitor the status of the tree of life. <em>Conservation Biology</em> 37: e14138. <a href="https://doi.org/10.1111/cobi.14138">https://doi.org/10.1111/cobi.14138</a>
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notes</h2>
+
+<ol>
+<li id="fn1"><p>Genetic drift is a random change in the genetic makeup of a population from one generation to the next that happens by chance.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nba\.sanbi\.org\.za\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style=" text-align: center; max-width: 260px; line-height: 1.2; font-size: 0.8rem; margin-left: 6em">
+<h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 900;">
+<a href="../../content/context/about-nba.html" style="color: inherit; text-decoration: none;">About the NBA</a>
+</h4>
+<p style="margin-top: 0; font-size = 1">
+The National Biodiversity Assessment (NBA) is a collaborative effort to synthesise the best available science on the status of South Africa’s biodiversity.
+</p>
+</div>
+</div>   
+    <div class="nav-footer-center">
+<div style="text-align: center; line-height: 1.6;">
+<h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">
+Important links
+</h4>
+<p><a href="../../content/context/acknowledgementsnba2025.html">Acknowledgements</a><br> <a href="../../content/context/cite-nba.html">How to cite</a><br> <a href="../../content/context/whatsnew-nba.html">What’s new</a><br> <a href="../../content/context/glossary.html">Terminology</a><br> <a href="../../content/context/disclaimerterms.html">Disclaimer</a></p>
+</div>
+</div>
+    <div class="nav-footer-right">
+<div style="text-align: center; line-height: 1.4;">
+  <h4 style="margin-bottom: 0.3em; font-size: 1rem; font-weight: 400;">Contact</h4>
+  <p style="margin: 0.2em 0;">
+    Email the National Biodiversity Assessment Unit:<br>
+    <a href="mailto:nba@sanbi.org.za" style="color: inherit; text-decoration: none;">nba@sanbi.org.za</a>
+  </p>
+  <div style="margin-top: 0.5em; font-size: 0.85rem;">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
+      <img src="../../imgs/by-nc.svg" alt="Creative Commons BY-NC 4.0 license" style="height: 31px; border: none;">
+    </a>
+    <a href="https://github.com/SANBI-NBA" target="_blank" rel="noopener noreferrer">
+      <img src="../../imgs/github-mark.svg" alt="NBA on GitHub" style="height: 31px; border: none;">
+    </a>        
+  </div>
+  <p></p>
+</div>
+</div>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("figcaption").forEach(e => {
+          const text = e.innerHTML.trim();
+          // Only proceed if it starts with "Figure" or "Table"
+          if (/^(Figure|Table)\b/.test(text)) {
+            const match = text.match(/^([^<]*?\.)\s*(.*)$/s); // Match up to first period before any tag
+          if (match) {
+            const strongPart = `<strong>${match[1]}</strong>`;
+            const rest = match[2];
+            e.innerHTML = `${strongPart} ${rest}`;
+          }
+        }
+      });
+  });
+</script>   
+
+
+
+
+</body></html>
