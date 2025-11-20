@@ -1,0 +1,31 @@
+[
+  {
+    "listing": "/contents.html",
+    "items": [
+      "/content/terrestrial/ter_overview.html",
+      "/content/freshwater/fw_overview.html",
+      "/content/marine/marine_overview.html",
+      "/content/estuaries/est_overview.html",
+      "/content/coast/cst_synthesis.html",
+      "/content/subantarctic/sub-all_sections.html"
+    ]
+  },
+  {
+    "listing": "/content/species/sp.html",
+    "items": [
+      "/content/species/sp_plants.html",
+      "/content/species/sp_mammals.html",
+      "/content/species/sp_reptiles.html",
+      "/content/species/sp_birds.html",
+      "/content/species/sp_spiders.html",
+      "/content/species/sp_butterflies.html",
+      "/content/species/sp_amphibians.html",
+      "/content/species/sp_fwf.html",
+      "/content/species/sp_fwfcrabs.html",
+      "/content/species/sp_anostraca.html",
+      "/content/species/sp_dragons.html",
+      "/content/species/sp_sharks.html",
+      "/content/species/sp_sparids.html"
+    ]
+  }
+]
