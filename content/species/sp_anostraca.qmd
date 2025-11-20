@@ -1,5 +1,5 @@
 ---
-title: "Anostraca" # 
+title: "Anostraca" 
 title-block-banner: "#ad180d" 
 title-block-banner-color: white 
 
@@ -87,10 +87,7 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-
-format: 
-  html:
-    embed-resources: true
+image: "./imgs/sp_anostraca_img_1.png"
 ---
 
 ```{=html}
@@ -114,7 +111,7 @@ format:
 
 <center>
 
-![*Streptocephalus namibiensis*(LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore accurate species identification requires specialised expertise. © Betsie Milne](./imgs/sp_anostraca_img_1.png){fig-align="center"}
+![*Streptocephalus namibiensis*(LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore accurate species identification requires specialised expertise. (© Betsie Milne)](./imgs/sp_anostraca_img_1.png){fig-align="center"}
 
 </center>
 
@@ -171,16 +168,14 @@ format:
 ```{r}
 #| label: fig-1
 #| fig-cap: "Density of threatened Anostraca species (10 x 10 km grid) based on sampling records across South Africa."
-#| out-width: 75%
+#| out-width: 600px
 
 knitr::include_graphics("./imgs/anostraca_thrt_10km_HD.png")
 ```
 
-### Threat status, trends and pressures
+## Threat status
 
-1.  ***Threat status***
-
-For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN criteria and categories. This includes 38 species, of which 36 have been published and are presented here. The last two species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified (Meyer-Milne et al. in prep).
+For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN criteria and categories. This includes 40 species, of which 36 have been published and are presented here. The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified (Meyer-Milne et al. in prep).
 
 :::: panel-tabset
 ## Figure
@@ -315,12 +310,20 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 # ---- Plots ----
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
+<<<<<<< HEAD
                   CHRT = "donut", NUM = FALSE, LAB = "A.")+
+=======
+                  CHRT = "donut", NUM = FALSE, LAB = "A")+
+>>>>>>> dev
     xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
+<<<<<<< HEAD
            CHRT = "donut", NUM = FALSE, LAB = "B.") %>% add_total(endemic)
+=======
+           CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
+>>>>>>> dev
 
 
 
@@ -391,10 +394,10 @@ gt(dat_combined_final) %>%
 ::: {#box-1 .callout-note .species title="Box 1: The diverse range of freshwater habitats occupied by Anostraca often causes these habitats and their unique aquatic fauna to go unnoticed when dry." collapse="true"}
 The temporary aquatic habitats that anostracans inhabit include a range of endorheic wetlands, remnant riverine pools, rock pools, roadside ditches and even animal wallows. The biotic and abiotic variables associated with these habitats differ substantially, and species are highly sensitive to specific habitat conditions. Consequently, anostracans are habitat specialists and ideal indicators of environmental change.
 
-![](./imgs/sp_anostraca_img_2.png)[A range of different temporary habitats and at different levels of inundation. © Betsie Milne, Musa Mlambo and Daksha Bills]{style="font-size:90%; color:#626262;"}
+![](./imgs/sp_anostraca_img_2.png)[A range of different temporary habitats and at different levels of inundation. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{style="font-size:90%; color:#626262;"}
 :::
 
-2.  ***Trends***
+## Trends
 
 The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs). The RLIs is calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. The Red List Index of Anostraca was calculated for the first time for South Africa, and this group is relatively low on the RLI scale, with a value of 0.84. This indicates that the group has high levels of threat and that many species are at risk of extinction.
 
@@ -425,14 +428,14 @@ nba_index_plot(
 )
 ```
 
-3.  ***Pressures***
+## Pressures
 
 The major drivers of threat to Anostraca species are habitat loss and degradation caused by urban- and agricultural expansion and mining. Due to the temporary nature of the freshwater systems that Anostraca species inhabit, they seldom exhibit wetland indicators to alert water resource protection. Their soils do not always display typical soil wetness indicators and obligate- or facultative wetland plant species are often absent. In the arid regions of South Africa, the surfaces of many pan systems are bare or rocky, while along the escarpment or other large rock formations, the rock pools go unnoticed when dry. As a result, these habitats and their unique aquatic fauna do not get adequate recognition to allow for their protection against ongoing pressures.
 
 ```{r}
 #| label: fig-5
 #| fig-cap: "Key pressures on South Africa’s Anostraca species, based on the percentage of impacted threatened Anostraca species. Pressures are categorized using the IUCN Threat Classification Scheme and are ranked from the highest to the lowest percent of impacted species. "
-#| out.width: 75%
+#| out.width: 600px
 
 
 library(stringr)
@@ -445,7 +448,7 @@ Anostraca
 ```
 
 ::: {#box-2 .callout-note .species title="Box 2. Speeding events by vehicles pose egg bank destruction – an unusual pressure unique to large pans in the arid regions of South Africa." collapse="true"}
-Recreational speeding in general, as well as speeding events like Pandamonium in the Bushmanland, and official land speed record attempts like Bloodhound on Hakskeenpan in the Kalahari, favour the large, flat, hard and arid basins of pans for speed racing. Vehicle movement on these surfaces disturb the top layer of the crust where the dormant eggs of Anostraca and other aquatic invertebrates are located, eroding their egg banks (Box 3).
+Recreational speeding in general, as well as speeding events like Pandamonium in the Bushmanland, and official land speed record attempts like Bloodhound on Hakskeenpan in the Kalahari, favour the large, flat, hard and arid basins of pans for speed racing. Vehicle movement on these surfaces disturb the top layer of the crust where the dormant eggs of Anostraca and other aquatic invertebrates are located, eroding their egg banks ([Box 4](#box-4)).
 
 These large temporary systems fill only every few years, and the highly specialised aquatic invertebrate communities survive dry periods through their resting eggs that are contained in the top few centimetres of the sediment. The eggs are extremely fragile and unable to withstand more than \~1 Newton of force, so they depend on an intact crust for protection. Disturbances to the crust can therefore destroy the egg bank, disrupt the hatching cycle, and threaten the survival of aquatic invertebrates in these habitats.
 
@@ -458,23 +461,27 @@ Anostraca were not included in the formal protection level assessment following 
 
 ## Monitoring
 
-There is limited monitoring in temporary freshwater habitats in South Africa. Efforts are hindered mainly by lack of expertise and funding, but unpredictable- and limited rainfall, logistical limitations and inaccessibility across vast, rugged terrain prevent consistent sampling attempts. To date, initiatives have mainly focused on gathering foundational biodiversity data, since the biogeography of Anostraca in South Africa is still not fully understood. To reassess this group in the future and have a better understanding of the state of Anostraca species, monitoring of temporary freshwater species and their habitat conditions is required. To support the efforts of researchers, ordinary citizens can make contributions by posting their observations on iNaturalist [Box 3](@box-3).
+There is limited monitoring in temporary freshwater habitats in South Africa. Efforts are hindered mainly by lack of expertise and funding, but unpredictable- and limited rainfall, logistical limitations and inaccessibility across vast, rugged terrain prevent consistent sampling attempts. To date, initiatives have mainly focused on gathering foundational biodiversity data, since the biogeography of Anostraca in South Africa is still not fully understood. To reassess this group in the future and have a better understanding of the state of Anostraca species, monitoring of temporary freshwater species and their habitat conditions is required. To support the efforts of researchers, ordinary citizens can make contributions by posting their observations on iNaturalist ([Box 3](#box-3)).
 
-:::: {#box-3 .callout-note .species title="Box 3: Calling all citizen scientists who might have an interest in these creatures." collapse="true"}
+::::: {#box-3 .callout-note .species title="Box 3: Calling all citizen scientists who might have an interest in these creatures." collapse="true"}
 To contribute to the future Red List assessments and monitoring of Anostraca, join iNaturalist!
 
+::: {style="text-align:center;"}
 [Anostraca of South Africa](https://www.inaturalist.org/observations?place_id=6986&taxon_id=119123)
+:::
+
+Clear photos and a short habitat description are good enough for an observation. Even without fine details, your observations can reveal new localities and guide future fieldwork. This helps scientists understand fairy shrimp distribution and identify potential new sampling sites.
 
 New to iNaturalist (or never heard of it) and want to contribute? Watch these [video tutorials](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started and sign up on the [iNaturalist website](https://www.inaturalist.org/observations?place_id=6986&taxon_id=121773) or download the app on your smartphone. To see how valuable your nature photographs can be, watch this inspiring [TED talk](https://www.ted.com/talks/148410).
 
 ::: {style="text-align:center;"}
 ![](./imgs/sp_logo_inat.png){style="width:80px;"}
 :::
-::::
+:::::
 
 ## Knowledge gaps
 
-Many of the Anostraca species that are of conservation concern are considered under-sampled, as there are only a few experts actively conducting surveys, and the taxonomical skills to accurately identify the specimens to species level are scarce. Furthermore, the life history traits adopted by Anostraca to survive in their temporary habitats create an unpredictable sampling timeframe, which complicates sampling attempts. As a result, many promising potential habitat remain underexplored. Some of the important actions needed to address current knowledge gaps include:
+Many of the Anostraca species that are of conservation concern are considered under-sampled, as there are only a few experts actively conducting surveys, and the taxonomical skills to accurately identify the specimens to species level are scarce. Furthermore, the life history traits adopted by Anostraca to survive in their temporary habitats create an unpredictable sampling timeframe, which complicates sampling attempts. As a result, many promising potential habitats remain underexplored. Some of the important actions needed to address current knowledge gaps include:
 
 -   Many areas in South Africa and the subcontinent remain unsampled. Regional surveys specifically for Gauteng, Mpumalanga, Limpopo, Free State and North-West should be prioritised.
 
@@ -490,7 +497,7 @@ Many of the Anostraca species that are of conservation concern are considered un
 ![](./imgs/sp_anostraca_img_3.png){style="font-size:75%; color:#626262;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Anostracan eggs have species-specific morphologies, making them useful indicators of diversity and density in unpredictable habitats when live sampling is not possible[@meyer-milne2022a]. © Betsie Milne
+Anostracan eggs have species-specific morphologies, making them useful indicators of diversity and density in unpredictable habitats when live sampling is not possible[@meyer-milne2022a]. (© Betsie Milne)
 :::
 
 ------------------------------------------------------------------------
@@ -506,7 +513,7 @@ Anostracan eggs have species-specific morphologies, making them useful indicator
 :::::
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Using soils collected from dry habitats (left) to run hatching trials (right), has successfully contributed to filling distribution gaps and describing new species. © Betsie Milne
+Using soils collected from dry habitats (left) to run hatching trials (right), has successfully contributed to filling distribution gaps and describing new species. (© Betsie Milne)
 :::
 ::::::::
 
@@ -514,7 +521,9 @@ Using soils collected from dry habitats (left) to run hatching trials (right), h
 
 **Red List assessment**
 
-The IUCN Red List criteria and categories are used to assess the threat status of species. Categorisation of southern African anostracan species and their conservation status was attempted by Hamer and \[\@\]Brendonck (1997) and [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions, and 38 species were assessed, and 36 published, with two assessments still in process.
+The IUCN Red List criteria and categories are used to assess the threat status of species.
+
+Categorisation of southern African anostracan species and their conservation status was attempted by Hamer and Brendonck (1997) and [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions. From the 40 species that were assessed, 36 have been published, with four assessments still in process.
 
 ## Acknowledgements
 
@@ -544,15 +553,13 @@ gt(contributors_tbl) %>%
   
   tab_options(
     table.width = pct(80),
-    data_row.padding = px(14)) %>%
+    data_row.padding = px(12))  %>%
   
-  tab_style(
-    style = cell_text(size = px(14)),
-    locations = cells_body(columns = everything())) %>%
-  tab_style(
-    style = cell_fill(color = "gray90"),
-    locations = cells_column_labels(columns = everything())
-  )
+  tab_style(style = cell_text(size = px(12)),
+            locations = cells_column_labels(columns = everything()))%>%
+  
+  tab_style(style = cell_text(size = px(12)),
+            locations = cells_body(columns = everything()))
 
 ```
 

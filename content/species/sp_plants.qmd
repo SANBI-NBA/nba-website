@@ -71,9 +71,7 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-format:
-  html:
-    embed-resources: true
+image: "./imgs/Ixia 20ebrahimii_cropped.png"
 ---
 
 ------------------------------------------------------------------------

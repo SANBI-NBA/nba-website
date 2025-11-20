@@ -4,7 +4,7 @@
 title: "Freshwater Species" # Compulsory
 subtitle: "" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#De2104" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
@@ -53,9 +53,6 @@ citation:
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
-format:
-  html:
-    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
