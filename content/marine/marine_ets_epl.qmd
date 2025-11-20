@@ -72,14 +72,14 @@ The headline indicators of the NBA provide information on the pressures faced by
 ```{r}
 #| label: tbl-ets_epl
 #| echo: false
-#| tbl-cap: Table summarising the distribution of protection levels across different threat status categories for marine ecosystem types.
+#| tbl-cap: Table summarising protection levels across different threat status categories for marine ecosystem types.
 
 library(dplyr)
 library(nbaR)
 # library(sf)
 
 
-thr_pro <- read.csv(file=list.files(path = "./data", pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+thr_pro <- read.csv(file=list.files(pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>%
   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas
   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>% 

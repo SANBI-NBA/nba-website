@@ -108,7 +108,7 @@ google-scholar: true
 
 <!-- replace 'degraded' with 'modified' in the condition categories throughout marine results and ask Linda to update her Figure 3 in coast/cst_pressures-condition.qmd -->
 
-*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first ground-truthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, [further refinement of indicators and improved understanding of ecosystem responses to pressures are]{.mark} needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd))*
+*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, [further refinement of indicators and improved understanding of ecosystem responses to pressures are]{.mark} needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd))*
 
 ![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. © Eve Marshall, Triton Dive Charters](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
 

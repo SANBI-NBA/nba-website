@@ -9,8 +9,6 @@ description: |
 bibliography: references.bib
 ---
 
-## Biodiversity Profile
-
 *South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
 
 ![Knysna Estuarine Bay ©Duran de Villers](imgs/est_knysna_duran_de_villiers2.png)
