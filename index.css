@@ -1,0 +1,89 @@
+/* ----------------- Two column content --------------------*/
+
+
+.home-columns {
+  display: flex;
+  align-items: center;
+}
+
+.home-column-image {
+  width: 35%;
+  padding: 50px 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-column-text {
+  width: 65%;
+  padding: 50px 50px 50px 10px;
+  flex-direction: column;
+}
+
+.col-left {
+  float: left;
+}
+
+.col-right {
+  float:right;
+}
+
+img.home-img {
+  width: 100%;
+  border-style: none;
+  height: auto;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(184, 87, 62, 0.1) 0px 0px 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media (max-width: 1660px) {
+  .col-left {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .col-right {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  img.home-img {
+    margin-left: auto
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .home-column-image {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+  }
+  .home-column-text {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-left {
+    display: block;
+    margin-left: auto;
+  }
+
+  .col-right {
+    display: block;
+    margin-right: auto;
+  }
+
+  img.home-img {
+  width: 100%;
+  margin-left: auto;
+  }

@@ -3,8 +3,10 @@ toc: false
 format:
   html:
     sidebar: false
+    anchor-sections: false
     grid: 
       body-width: 1000px
+    css: index.css
 ---
 
 :::: {style="margin: 0; padding: 0;"}
@@ -13,7 +15,22 @@ format:
 :::
 ::::
 
+:::{.column-screen}
+:::{.column-body}
+
+<center>
+
+<span style="font-size:.7rem; color:#a7abb4;">Images: Kerry Sink, Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.</span>
+
+</center>
+
+:::
+:::
+
 #### NBA staging website: content under development {style="color: red"}
+
+:::{.column-screen}
+:::{.column-body}
 
 ## National Biodiversity Assessment {#summary}
 
@@ -23,18 +40,34 @@ The NBA is the primary tool for monitoring and reporting on the state of biodive
 
 ------------------------------------------------------------------------
 
+:::
+:::
+
 #### The National Biodiversity Assessment 2025 takes two forms
 
-::::: columns
-::: {.column width="70%"}
+:::{.column-screen}
+:::{.column-body}
+:::{.home-columns}
 
-**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) - published in hard copy and available in digital form, and **this website** - which presents the content of the book together with more in depth analyses and statistics for [terrestrial](./content/terrestrial/ter_overview.qmd), [freshwater](./content/freshwater/fw_overview.qmd), [estuarine](./content/estuaries/est_overview.qmd) and [marine](./content/marine/marine_overview.qmd) realms, as well as the [coastal zone](./content/coast/cst_synthesis.qmd) and South Africa's [Subantarctic territory](./content/subantarctic/sub-all_sections.qmd). Detailed findings are also presented for all [taxonomic groups](./content/species/sp.qmd) with national Red List assessments.
+:::{.home-column-image .col-right}
+
+<a href="https://%20hdl.handle.net/20.500.12143/9467s">
+![](./imgs/cover-small.png)
+</a>
+
 :::
 
-::: {.column width="30%"}
-[![](./imgs/cover.png){width="180px" fig-align="right"}](https://%20hdl.handle.net/20.500.12143/9467)
+:::{.home-column-text .col-left}
+
+**A book** - [National Biodiversity Assessment 2025: The status of South Africa’s biodiversity. Summary of Findings and Key Messages](https://%20hdl.handle.net/20.500.12143/9467) - published in hard copy and available in digital form, and **this website** - which presents the content of the book together with more in depth analyses and statistics for [terrestrial](./content/terrestrial/ter_overview.qmd), [freshwater](./content/freshwater/fw_overview.qmd), [estuarine](./content/estuaries/est_overview.qmd) and [marine](./content/marine/marine_overview.qmd) realms, as well as the [coastal zone](./content/coast/cst_synthesis.qmd) and South Africa's [Subantarctic territory](./content/subantarctic/sub-all_sections.qmd). Detailed findings are also presented for all [taxonomic groups](./content/species/sp.qmd) with national Red List assessments and [genetic diversity](./content/genetics/genetic-indicators.qmd).
+
 :::
-:::::
+
+:::
+:::
+:::
+
+
 
 :::: {style="margin: 0; padding: 0;"}
 ::: {style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: 0rem; "}
@@ -46,4 +79,4 @@ The NBA is the primary tool for monitoring and reporting on the state of biodive
 
 To find information from previous iterations of the National Biodiversity Assessment (2004, 2011, 2018) - click [here](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/national-biodiversity-assessment/)
 
-*Photo credits for top banner (left to right): Kerry Sink, Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.*
+
