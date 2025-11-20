@@ -289,20 +289,12 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 # ---- Plots ----
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
-<<<<<<< HEAD
-                  CHRT = "donut", NUM = FALSE, LAB = "A.")+
-=======
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
->>>>>>> dev
     xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
-<<<<<<< HEAD
-           CHRT = "donut", NUM = FALSE, LAB = "B.") %>% add_total(endemic)
-=======
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
->>>>>>> dev
 
 
 
@@ -589,11 +581,7 @@ p + scale_x_discrete(
 
 ```
 
-<<<<<<< HEAD
-::: {#box-2 .callout-note .species title="Habitat loss in the grasslands: Botha’s Lark (*Spizocorys fringillaris*)" collapse="true"}
-=======
 ::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s Lark (*Spizocorys fringillaris*)" collapse="true"}
->>>>>>> dev
 Botha’s Lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be left [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
 
 Recent field surveys, modelling of preferred habitat extent, and SABAP2 data trends confirm alarming range contractions, including the near disappearance of the species from its former northern and southern distribution limits. The few remaining strongholds, such as the Wakkerstroom–Daggakraal region, are under increasing pressure from maize farming, pasture improvement, and invasive alien plants. Habitat fragmentation further isolates subpopulations, limiting dispersal and increasing extinction risk.
@@ -620,26 +608,16 @@ Other sources of poisoning continue to exacerbate the crisis. Veterinary drugs (
 
 The decline of vultures has far-reaching consequences for ecosystems and people. As nature’s clean-up crew, vultures rapidly dispose of carcasses, helping to prevent the spread of diseases such as anthrax and rabies. Their disappearance risks creating a dangerous vacuum in which carcasses linger, promoting outbreaks that threaten wildlife, livestock, and human health alike.
 
-<<<<<<< HEAD
-Recognising the urgency of this crisis, governments and conservation organisations have developed targeted responses. The International Vulture Multi-species Action Plan [@botha2017a] and the [South African Multi-species Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] both identify poisoning as the top conservation priority. Actions include phasing out the most dangerous agrochemicals, raising awareness among farming and hunting communities, tracking individual vultures, and deploying rapid-response poison intervention units. One striking example of the latter occurred in May 2025 in Kruger National Park, when the Endangered Wildlife Trust and SANParks mounted a large-scale rescue after an elephant carcass was poisoned, managing to save more than 80 vultures through rapid detection, treatment, and rehabilitation. Such coordinated responses are vital, yet prevention remains the ultimate goal. Without urgent and sustained action to combat poisoning at its source, Africa risks losing much of its vulture guild within a generation.
-=======
 Recognising the urgency of this crisis, governments and conservation organisations have developed targeted responses. The International Vulture Multi-species Action Plan [@botha2017a] and the South African Multi-species [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] both identify poisoning as the top conservation priority. Actions include phasing out the most dangerous agrochemicals, raising awareness among farming and hunting communities, tracking individual vultures, and deploying rapid-response poison intervention units. One striking example of the latter occurred in May 2025 in Kruger National Park, when the Endangered Wildlife Trust and SANParks mounted a large-scale rescue after an elephant carcass was poisoned, managing to save more than 80 vultures through rapid detection, treatment, and rehabilitation. Such coordinated responses are vital, yet prevention remains the ultimate goal.
->>>>>>> dev
 
 Despite these efforts, numbers of Lappet-faced and other vultures continue to decline. They are wide-ranging and require engagement and action across many countries. If poisoning is not urgently and decisively addressed, southern Africa risks losing much of its vulture guild within a single human generation, with profound ecological and social consequences.
 :::
 
 ## Protection level
 
-<<<<<<< HEAD
-To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 667 terrestrial bird species, and a population-based method applied to 130 Red List species with available abundance estimates ([see approach below](@Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as “Well Protected” in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the [Retief and Marnewick (2017)](#retief2017a) study. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
-
-The population-based analysis paints a more sobering picture, revealing that only 10% of threatened species meet minimum viable population thresholds inside protected areas. However, there was a positive movement to improved category status from 2017 to 2025: 123 of the 130 red list species did not reach the ‘well protected’ category in 2017, compared to 117 for 2025, representing an improvement of 4.6%. Together, these results highlight both the conservation value of South Africa’s protected areas and the gaps that remain, particularly for threatened, range-restricted and habitat-dependent species that require targeted expansion and improved management of the network (@lee2025a).
-=======
 To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 667 terrestrial bird species, and a population-based method applied to 130 Red List species with available abundance estimates ([see approach below](#Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as “Well Protected” in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the study on measuring protection effectiveness for terrestrial bird species in protected areas and OECMs in South Africa [@retief2017a]. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
 
 The population-based analysis paints a more sobering picture, revealing that only 10% of threatened species meet minimum viable population thresholds inside protected areas. However, there was a positive movement to improved category status from 2017 to 2025: 123 of the 130 red list species did not reach the ‘well protected’ category in 2017, compared to 117 for 2025, representing an improvement of 4.6%. Together, these results highlight both the conservation value of South Africa’s protected areas and the gaps that remain, particularly for threatened, range-restricted and habitat-dependent species that require targeted expansion and improved management of the network [@lee2025a].
->>>>>>> dev
 
 ```{r}
 #| label: fig-6
@@ -692,11 +670,7 @@ plot1 <- (nba_plot(dat1,
                   2:5,
                   CHRT = "donut",
                   NUM = FALSE,
-<<<<<<< HEAD
-                  LAB = "A.",
-=======
                   LAB = "A",
->>>>>>> dev
                   SAVE = NULL) +
     xlim(c(2, 4.5))
 )%>%
@@ -708,11 +682,7 @@ plot2 <-
            2:5,
            CHRT = "donut",
            NUM = FALSE,
-<<<<<<< HEAD
-           LAB = "B.",
-=======
            LAB = "B",
->>>>>>> dev
            SAVE = NULL) %>%
   add_total(total_b)
 

@@ -206,23 +206,12 @@ image: "./imgs/sp_spider_img_1.png"
 
 ```{r}
 #| label: fig-1
-<<<<<<< HEAD
-#| fig-cap: "Density of threatened spider species (10 x 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat and secondly, Gauteng, the economic hub of South Africa. These patterns might be influenced by sampling bias in urban areas."
-#| out-width: 75%
-knitr::include_graphics("./imgs/spiders_thrt_10km_HD.png")
-```
-
-## Threat status, trends and pressures
-
-1.  ***Threat status***
-=======
 #| fig-cap: "Density of threatened spider species (10 x 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat. This is followed bu Gauteng, the economic hub of South Africa ad highly numbers in southern KwaZulu-Natal. These patterns might be influenced by sampling bias in urban areas."
 #| out-width: 650px
 knitr::include_graphics("./imgs/spiders_thrt_10km_HD.png")
 ```
 
 ## Threat status
->>>>>>> dev
 
 In 2016, South Africa assessed 2214 spider species for the first time using the IUCN Red List categories and criteria, which measure extinction risk [@foord2020a]. Only South African species were included; Eswatini and Lesotho were excluded from the assessment. Of the assessed species, 78 (4%) were threatened with extinction: 23 are Critically Endangered (CR), 24 are Endangered (EN), and 31 are Vulnerable (VU). No species were found to be extinct or possibly extinct.
 
@@ -369,20 +358,12 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 
 # ---- Plots ----
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
-<<<<<<< HEAD
-                  CHRT = "donut", NUM = FALSE, LAB = "A.")+
-=======
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
->>>>>>> dev
     xlim(c(2, 4.5)))  %>%
   add_total(overall)
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
-<<<<<<< HEAD
-           CHRT = "donut", NUM = FALSE, LAB = "B.") %>% add_total(endemic)
-=======
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
->>>>>>> dev
 
 
 # ---- specify legend order ----
@@ -476,39 +457,11 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 <center>![](./imgs/sp_spider_img_2.png){style="border-radius:10px;"}[The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. (© Elsa van Niekerk)]{style="width:75%; color:#626262;"}</center>
 
-<<<<<<< HEAD
-![The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. (© Elsa van Niekerk)](./imgs/sp_spider_img_2.png){fig-align="center"}
-=======
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
 <figure style="margin: 0; text-align: center; flex: 1 1 45%;">
->>>>>>> dev
 
 <img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<<<<<<< HEAD
-::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
-
-<img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" style="width:100%; height:250px; object-fit: cover;"/>
-
-<figcaption>Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. (© Elsa van Niekerk)</figcaption>
-
-</figure>
-
-<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
-
-<img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" style="width:100%; height:250px; object-fit: cover;"/>
-
-<figcaption>SANBI parataxonomist learning to collect spiders. (© Robin Lyle)</figcaption>
-
-</figure>
-:::
-::::
-
-2.  ***Trends (RLI)***
-
-The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index(RLI) [@butchart2004a]. The RLI value ranges from 0 to 1, and the lower the value, the faster the taxonomic group is heading towards extinction – i.e., if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (@fig-3). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group.
-=======
 <figcaption>Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. (© Elsa van Niekerk)</figcaption>
 
 </figure>
@@ -526,7 +479,6 @@ The trend in species status over time was measured using the globally recognized
 ## Trends - Red List Index
 
 The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (@fig-3). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group. Important to note, many Data Deficient species are included in the assessment, and hence there is still a high level of uncertainty associated with this result.
->>>>>>> dev
 
 ```{r}
 #| label: fig-3
@@ -557,11 +509,7 @@ nba_index_plot(
 
 ## Pressures
 
-<<<<<<< HEAD
-Spiders face an array of threats—both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire ([Box 2](#box-2)), overgrazing and invasive alien species infestations has a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Agriculture, forestry, and mining are the leading causes of habitat loss for spiders. This is especially critical for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as the Fynbos [@dippenaar-schoeman2024a], with 28% endemic species to this biome, and the Savanna [@foord2011a], with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
-=======
 Spiders face an array of threats—both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire ([Box 2](#box-2)), overgrazing and invasive alien species infestations has a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Urban expansion, agriculture, forestry, and mining are the leading causes of habitat loss for spiders. This is especially critical for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as the Fynbos [@dippenaar-schoeman2024a], with 28% endemic species to this biome, and the Savanna [@foord2011a], with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
->>>>>>> dev
 
 Spiders are present in relatively high numbers in agroecosystems; however, it has been shown that they are negatively impacted by pesticide use [@dippenaar-schoeman2013a]. Thus far, 51 families from 413 species have been recorded from crops in South Africa, and five agrobiont species have been identified that play an important role as natural control agents of pests. However, chemical use can directly kill spiders or disrupt their prey base. Integrated pest management (IPM) and organic farming are recommended to reduce chemical exposure that harms spiders and their prey. Altered temperature and rainfall patterns (climate change) can affect spider distribution, reproduction, and prey availability, and they may be severely impacted by drought.
 
@@ -595,11 +543,7 @@ p + scale_x_discrete(
 
 Most of the studies of spider ecology in South Africa are local-scale studies focusing on spider assemblage responses to habitat complexity, landscape-scale variables, ecosystem rehabilitation and plant invasions, and disturbance effects such as fire [@haddad2015a], grazing [@jansen2013a], invasive plants [@robbertson2011a] and chemical control [@berg1990a].
 
-<<<<<<< HEAD
-Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, but some ground-dwellers that remain in their burrows (particularly trapdoor spiders) or that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as Lycosidae (wolf spiders) and Gnaphosidae (ground spiders), persisted post-fire, while others declined. Caponiidae (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a]
-=======
 Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, but some ground-dwellers that remain in their burrows (particularly trapdoor spiders), and those that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as Lycosidae (wolf spiders) and Gnaphosidae (ground spiders), persisted post-fire, while others declined. Caponiidae (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a].
->>>>>>> dev
 
 <center>![](./imgs/sp_spiders_img_6.png){style="border-radius:10px;"}[Veld fire in the Grassland and Savannah systems. (© Robin Lyle)]{style="width:75%; color:#626262;"}</center>
 :::
@@ -608,11 +552,7 @@ Fire is a factor that can significantly impact spider populations, but its effec
 
 A significant portion of the South African spider fauna remains undescribed. In the Cape Floristic Region, 24% of species are classified as Data Deficient, and two families (Synotaxidae and Theridiosomatidae) are only known from undescribed species. Studies on mygalomorph trapdoor spiders (e.g., *Stasimopus*, *Ancylotrypa*, *Galeosoma*) show taxonomic resolution as low as 15–29%, indicating high uncertainty in species delimitation.
 
-<<<<<<< HEAD
-Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling.Making use of citizen science to contribute to observation both helps fill sampling gaps and also raises awareness ([Box 3](#box-3)).
-=======
 Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling. Making use of citizen science to contribute to observations, both helps fill sampling gaps and also raises awareness ([Box 3](#box-3)).
->>>>>>> dev
 
 ::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
 To contribute to the future Red List assessments and monitoring of spiders, join iNaturalist!
@@ -640,11 +580,7 @@ Addressing the taxonomic impediment for spiders in South Africa requires a multi
 
 -   **Digitize and standardise collections**: with high-resolution imaging, georeferencing, and standardized metadata.
 
-<<<<<<< HEAD
--   **Ensure the natural science collection databases evolve to be more accessible by creating a centralized database** accessible to researchers, conservationists, and policymakers.
-=======
 -   **Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database** accessible to researchers, conservationists, and policymakers.
->>>>>>> dev
 
 -   **Encourage citizen science platforms like iNaturalist** to crowdsource observations and expand distribution data ([Box 3](#box-3)).
 
