@@ -56,7 +56,7 @@ There are currently nine institutions (four national science councils, two insti
 
 ```{r}
 #| label: tbl-biobank
-#| tbl-cap: "Summary of biodiversity biobanks and holdings across institutions participating in the Biodiversity Biobanks South Africa (data as of 2025)."
+#| tbl-cap: "Summary of biodiversity biobanks and holdings across institutions participating in the Biodiversity Biobanks South Africa (data as of 2025). Acronyms follow those listed in the Acknowledgements, with the exception of DNSM (Durban Natural Science Museum), MSB (Millennium Seed Bank), RBG-Kew (Royal Botanic Gardens, Kew), and UP-CMW-IA (University of Pretoria, Culture Monitoring Wing, Innovation Africa)."
 #| classes: plain
 
 library(dplyr) 
@@ -84,27 +84,29 @@ Increasing demand for biobank materials for research purposes is a trend that ha
 
 The Nagoya Protocol on access to genetic resources and fair and equitable sharing of benefits arising from their utilisation is an international agreement adopted under the Convention on Biological Diversity and entered into force on 12 October 2014. The Nagoya Protocol requires that the relevant authority in a signatory country must give Prior Informed Consent (PIC) before genetic resources can be accessed and used, and that there is a Mutually Agreed Terms (MAT) agreement between the provider country and the users on the conditions of access and use of the resources and on the benefits to be shared by the two parties. Benefits can be both monetary and non-monetary, with the latter including joint research, training, and sharing of results. At a national level, the Bioprospecting, Access and Benefit Sharing Regulations (2008, amended in 2015)[@governmentofsouthafrica2015] are relevant for bioprospecting and biotrade but also the collection of samples that may have any use for type of biodiscovery or bioprospecting even if this is in future, and the export of samples from South Africa including for purely academic research. There is also legislation for Threatened and Protected Species, provincial legislation for collecting, sharing and exporting biomaterials and requirements for research involving biomaterials originating from animals or micro-organisms under the Animal Disease Control Act (1984). Microbial culture collections need to be registered with the Department of Trade and Industry in terms of the Non-Proliferation of Weapons of Mass Destruction Act, 1993 (Act no 87 of 1993). This is a complex regulatory environment that places a significant burden on researchers and on biodiversity biobanks.
 
-## Summary
+## Conclusion
 
-Biodiversity biobanks are a vital resource in the context of South Africa’s rich biodiversity and the high levels of threats to ecosystems and species, the significant knowledge gaps, and the need to increase economic growth to reduce poverty and unemployment. Ensuring that the biodiversity biobanks contribute to the conservation and sustainable use of South Africa’s biodiversity will require that they are valued as national assets that need sustained investment. Additionally, those responsible for them must be aware of global and national trends in data management and access, meet standards for sample management, expand the inventory of samples and the user base, and actively participate in and contribute to international and national networks.
+Biodiversity biobanks are a vital resource in South Africa, given it’s rich biodiversity, the high levels of threats to ecosystems and species, substantial knowledge gaps, and the need to increase economic growth to reduce poverty and unemployment. To ensure that these biobanks contribute effectively to the conservation and sustainable use of the country's biodiversity they need to be recognised as national assets that require sustained investment. Additionally, those responsible for managing them must be aware of global and national developments in data management and access, adhere to standards for sample management, expand both sample holdings and their user base, and actively participate in relevant national and international networks.
 
 ## Acknowledgements
 
 This content was compiled by various members of the BBSA.
 
-Agricultural Research Council – Riana Jacobs-Venter (National Collection of Fungi), Ahmed Idris Hassen (South African Rhizobium Culture Collection), Puseletso Johnson (Onderstepoort Veterinary Research)
+Agricultural Research Council (ARC) – Riana Jacobs-Venter (National Collection of Fungi), Ahmed Idris Hassen (South African Rhizobium Culture Collection), Puseletso Johnson (Onderstepoort Veterinary Research; OVR)
 
-Department of Agriculture – Gretha Snyman (Grootfontein Agricultural Development Institute), Noluthando Netnou Nkoana & Thabo Tjikane (National Plant Genetic Resource Center)
+Department of Agriculture (DoA) – Gretha Snyman (Grootfontein Agricultural Development Institute; GADI), Noluthando Netnou Nkoana & Thabo Tjikane (National Plant Genetic Resource Center; NPGRC)
 
 South African National Biodiversity Institute – Kim Labuschagne (SANBI Wildlife Biobank), Victoria Wilman (SANBI Wildflower Seed Bank), Mudzuli Mavhunga (Plant DNA Biobank)
 
-South African Institute of Aquatic Biodiversity – Willem Coetzer, Roger Bills, Seshnee Reddy
+South African Institute of Aquatic Biodiversity (SAIAB) – Willem Coetzer, Roger Bills, Seshnee Reddy
 
-SANParks – Peter Buss, Leana Freese, Tebogo Manamela, Zinhle Manda; UFS – Carolina Pohl-Albertyn, Adepemi Ogundeji (Yeast Culture Collection); UP – Cobus Visagie (Forestry & Agricultural Biotechnology Institute)
+South African National Parks (SANParks) – Peter Buss, Leana Freese, Tebogo Manamela, Zinhle Manda
 
-University of the Western Cape – Anita Burger, Stephanie Lawrence (Institute for Microbial Biotechnology and Metagenomics)
+University of the Free State (UFS) – Carolina Pohl-Albertyn, Adepemi Ogundeji (Yeast Culture Collection; YCC); UP – Cobus Visagie (Forestry & Agricultural Biotechnology Institute; FABI)
 
-University of KwaZulu-Natal - Michelle Hamer; BBSA Postdoctoral Fellows – Felix Fru, Rekha Sathyan
+University of the Western Cape (UWC) – Anita Burger, Stephanie Lawrence (Institute for Microbial Biotechnology and Metagenomics; IMBM)
+
+University of KwaZulu-Natal (UKZN) - Michelle Hamer; BBSA Postdoctoral Fellows – Felix Fru, Rekha Sathyan
 
 ## Recommended citation
 

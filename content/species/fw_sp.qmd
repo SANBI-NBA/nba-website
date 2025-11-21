@@ -1,28 +1,97 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Freshwater Species" # Compulsory
-subtitle: "" # Optional: delete if you are not using a subtitle
+title: "Species status" # Compulsory
+subtitle: "Freshwater realm" # Optional: delete if you are not using a subtitle
 
-title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
+title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 
 # List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
-  
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098 
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Nancy
+      family: Job
+    orcid: 0000-0002-4929-7592
+    affiliations:
+      - ref: sanbi
   - name:
       given: Domitilla C.
       family: Raimondo
     orcid: 0000-0003-3998-752X
     affiliations:
       - ref: sanbi
-  
+  - name:
+      given: Casey J.
+      family: Broom
+    orcid: 0000-0001-7189-8610
+    affiliations:
+      - ref: sanbi
+      - ref: scssu
+  - name:
+      given: Francios
+      family: Roux
+    orcid: 
+    affiliations:
+      - ref: mtpa
   - name: 
-      given: Dewidine 
-      family: van Der Colff 
-    orcid: 0000-0002-0906-7098 
+      given: Jeremy
+      family: Shelton
+    orcid: 0000-0001-7174-5446
+    affiliations:
+      - ref: frc
+  - name:
+      given: Betsie
+      family: Milne
+    orcid: 
+  - name:
+      given: Helen
+      family: Dallas
+    orcid: 0000-0001-8133-3365
+    affiliations:
+      - ref: frc
+  - name:
+      given: Nazley
+      family: Liddle
+    orcid: 0000-0001-6904-8174
+    affiliations:
+      - ref: frc
+  - name:
+      given: Martine
+      family: Jordaan
+    orcid: 0000-0001-9461-6217
+    affiliations:
+      - ref: capenature
+  - name:
+      given: Alan 
+      family: Lee
+    orcid: 
+    affiliations:
+      - ref: birdlife
+  - name:
+      given: Albert
+      family: Chakona
+    orcid: 0000-0001-6844-7501
+    affiliations:
+      - ref: saiab
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
     affiliations:
       - ref: sanbi
   
@@ -34,10 +103,25 @@ affiliations:
   - id: sanbi # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
     name: South African National Biodiversity Institute
-  - id: birdlife # Use this as the affiliation ref with authors above
+  - id: scssu # Use this as the affiliation ref with authors above
     number: 2 # This number is used to associate authors with affiliations
-    name: Birdlife South Africa
-
+    name: School for Climate Studies, Stellenbosch University
+  - id: mtpa
+    number: 3
+    name: Mpumalanga Tourism and Parks Agency
+  - id: frc
+    number: 4 
+    name: Freshwater Research Centre   
+  - id: capenature
+    number: 5
+    name: Cape Nature
+  - id: birdlife
+    number: 6
+    name: Birdlife
+  - id: saiab
+    number: 7
+    name: South African Institute for Aquatic Biodiversity
+    
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
@@ -57,220 +141,378 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-::::: columns
-::: {.column .content width="50%"}
 <center>
 
-| 
-| 
-| [00%]{.inline-style-threatened}
-| taxa assessed
+![(© Jeremy Shelton)](./imgs/fw_img_1.png){fig-align="center"}
+
+</center>
+
+:::::: columns
+::: {.column width="33.3%"}
+<center>
+
+| [78%]{.inline-style-threatened}
+| of 655 taxa assessed are
 | [Threatened]{.inline-style-indicator}
 
 </center>
 :::
 
-::: {.column width="50%"}
-```{r}
-#| label: fig-0
-#| fig-cap: "*Palinurus gilchristi*"
-#| out-width: "100%"
-#knitr::include_graphics("imgs/sp_mar_3.png")
-```
+::: {.column width="33.3%"}
+<center>
+
+| [66%]{.inline-style-well-protected}
+| of 396 taxa assessed are
+| [Well Protected]{.inline-style-indicator}
+
+</center>
 :::
-:::::
+
+::: {.column width="33.3%"}
+<center>
+
+| [8%]{.inline-style-not-protected}
+| of 396 taxa assessed are
+| [Not Protected]{.inline-style-indicator}
+
+</center>
+:::
+::::::
 
 ------------------------------------------------------------------------
 
-## Key findings
+## Threat status and pressures
 
-::::: columns
-::: {.column width="50%"}
--   Key findings related to diversity, richness of the group in South Africa, or relative to global diversity.
+::: panel-tabset
+## Figures
 
--   Key finding related to Threat status
-
--   Key finding related to Trends
-
--   Key finding related to Major pressures
-:::
-
-::: {.column width="50%"}
 ```{r}
 #| label: fig-1
-#| fig-cap: "Distribution of threatened marine species in the marine realm of South Africa, including sharks, sparids, birds, mammals and reptiles."
-#knitr::include_graphics("imgs/Marine.png")
-```
-:::
-:::::
+#| fig-cap: "Summary of number of freshwater species within each IUCN Red List category. The total number of taxa that have been assessed is shown in (A) and number of South African endemics within each category are shown in (B). " 
+#| out-width: 100%
+#| out-height: 500px
 
-### Threat status, trends and pressures
+library(dplyr)
+library(tidyr)
+library(nbaR)
+library(readxl)
+library(patchwork)
+library(ggplot2)
+library(grid)
+library(cowplot)
 
-1.  ***Threat status***
+# ---- Dataset ----
 
-add text
+df <- read_excel("./data/overall_status_summary_2025.xlsx", 
+                 sheet = "Summary", col_types = c("numeric", 
+                                                  "text", "text", "numeric", "text", 
+                                                  "text", "text", "text", "text", "text", 
+                                                  "numeric", "text", "numeric", "text", 
+                                                  "text", "numeric", "numeric", "text", 
+                                                  "text", "text", "numeric", "text", 
+                                                  "text"))
 
-::: {#box-1 .callout-note .species title="Box 1. Species box" collapse="true"}
-## Box 1.
 
-add text
-:::
+# ---- Recode Status ----
+df <- df %>%
+  mutate(Status = recode(Status,
+                         "CR" = "Critically Endangered",
+                         "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+                         "EN" = "Endangered",
+                         "VU" = "Vulnerable",
+                         "NT" = "Near Threatened",
+                         "DD" = "Data Deficient",
+                         "LC" = "Least Concern",
+                         "EW" = "Extinct in the Wild",
+                         "EX" = "Extinct",
+                         "Rare" = "Rare",
+                         "RE" = "Regionally Extinct"
+  ))
 
-:::: panel-tabset
-## Figure
 
-<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
+# ---- Functions ----
 
-```{r}
-#| label: fig-2
-#| fig-cap: "Add caption " 
-#| out-width: "100%"
-#| out-height: "auto"
+# Collapse rare categories into "Rare"
+collapse_rare <- function(df) {
+  df %>%
+    filter(!Status %in% c("NA", "NE")) %>%
+    mutate(Status = ifelse(Status %in% c("Rare", "Critically Rare", "Extremely Rare"),
+                           "Rare", Status))
+}
 
-#knitr::include_graphics("imgs/Marine_bar.png")
+# Convert to wide with consistent threat columns
+make_wide <- function(df, type, all_levels) {
+  df_wide <- df %>%
+    group_by(`Taxonomic grouping`, Status) %>%
+    summarise(Count = n(), .groups = "drop") %>%
+    filter(Status %in% all_levels) %>%
+    tidyr::pivot_wider(
+      names_from = Status,
+      values_from = Count,
+      values_fill = 0
+    )
+  
+  # add missing threat columns with zeros
+  missing <- setdiff(all_levels, names(df_wide))
+  for (m in missing) df_wide[[m]] <- 0
+  
+  df_wide %>%
+    mutate(Type = type) %>%
+    select(Type, everything(), all_of(all_levels))
+}
+
+# Add total number to donut hole
+add_total <- function(plot, total, SCALE_TEXT = 1) {
+  plot + annotate("text",
+                  x = 2, y = 0,
+                  label = total,
+                  size = 3.5 * SCALE_TEXT,
+                  fontface = "bold")
+}
+
+# ---- Setup ----
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
+)
+
+all_levels <- status_levels
+
+# ---- marine ----
+df_fw <- df %>%
+  filter(`Inland aquatic` == "Y") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_fw_en <- df %>%
+  filter(`Inland aquatic` == "Y", Endemism == "Endemic") %>%
+  collapse_rare() %>%
+  mutate(Status = factor(Status, levels = status_levels))
+
+df_fw_wide    <- make_wide(df_fw, "Overall", all_levels)
+df_fw_en_wide <- make_wide(df_fw_en, "Endemic", all_levels)
+
+df_combined <- bind_rows(df_fw_wide, df_fw_en_wide)
+
+# Identify which threat categories actually have data
+available_levels <- df_combined %>%
+  select(any_of(all_levels)) %>%
+  summarise(across(everything(), sum, na.rm = TRUE)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  arrange(factor(Status, levels = status_levels)) %>%   # preserve original order
+  pull(Status)
+
+dat1 <- filter(df_combined, Type == "Overall")
+dat2 <- filter(df_combined, Type == "Endemic")
+# Filter columns and update status levels
+dat1 <- dat1 %>% select(`Taxonomic grouping`, all_of(available_levels))
+dat2 <- dat2 %>% select(`Taxonomic grouping`, all_of(available_levels))
+
+
+
+
+plot1 <- nba_plot(dat1, `Taxonomic grouping`, 2:(ncol(dat1)),
+                  CHRT = "bar", NUM = FALSE, LAB = "Percentage of indigenous taxa",
+                          #SCALE_TEXT = 1.6,
+                          SAVE = NULL)+
+  guides(
+    fill = guide_legend(
+      ncol = 3,
+      #byrow = TRUE,
+      keywidth = unit(0.5, "cm"),
+      keyheight = unit(0.5, "cm")
+    )
+  )
+
+plot2 <- nba_plot(dat2, `Taxonomic grouping`, 2:(ncol(dat2)),
+                  CHRT = "bar", NUM = FALSE, LAB = "Percentage of endemic taxa",
+                       #SCALE_TEXT = 0.8,
+                       SAVE = NULL) +
+                       geom_bar(stat = "identity", position = "fill", width = 0.)+
+  guides(
+    fill = guide_legend(
+      ncol = 3,
+      #byrow = TRUE,
+      keywidth = unit(0.5, "cm"),
+      keyheight = unit(0.5, "cm")
+    )
+  )
+
+
+# ---- Combine plots ----
+ggpubr::ggarrange(plot1, plot2, ncol = 2, labels = c("A", "B"),
+                  font.label = list(size = 10), common.legend = TRUE, legend = "bottom", heights = c(5))
 
 ```
 
 ## Data
 
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
-::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
-#| label: tbl-tab-0
-#| tbl-cap: "Add data" 
 #| classes: plain
-
 library(dplyr)
-library(nbaR)
+library(tidyr)
 library(gt)
-
-#df <- read_xlsx("data/NBA_example_full_tocc.xlsx")
-
 
 
 ```
 :::
-::::
 
-::: {#box-2 .callout-note .species title="Box 2. Species box" collapse="true"}
-## Box 2:
-
-Click to expand this section:
-
-<details>
-
-<summary>*Add specie*</summary>
-
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
-
-***Add specie***\*\*
-
-</details>
-
-<details>
-
-<summary>*Add specie*</summary>
-
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
-
-***Add specie***\*\*
-
-</details>
-
-<details>
-
-<summary>*Add specie*</summary>
-
-<!--<img src="imgs/sp_mar_1.png" alt="box_2_img_1" style="width:45%; float:left; margin-right:15px;"/>-->
-
-***Add specie***\*\*
-
-</details>
+::: {#box-1 .callout-note .freshwater title="Box 1. Invasion expansion – Crayfish on the move" collapse="true"}
+add text
 :::
 
-2.  ***Trends (RLI)***
+### [Anostraca](sp_anostraca.qmd)
 
-Add text & figure
+::: {#box-2 .callout-note .freshwater title="Box 2. Anostraca first-time things" collapse="true"}
+add text
+:::
+
+### [Freshwater fishes](sp_fwf.qmd)
+
+::: {#box-3 .callout-note .freshwater title="Box 3. New active pressures in river systems that are impacting highly threatened species." collapse="true"}
+add text
+:::
+
+### [Birds](sp_birds.qmd)
+
+::: {#box-4 .callout-note .freshwater title="Box 4. Waterbirds are declining in South Africa, based on the most recent Regional assessment for South African birds led by BirdLife South Africa [@lee2025a]" collapse="true"}
+add text
+:::
+
+### [Reptiles](sp_reptiles.qmd)
+
+### [Amphibians](sp_amphibians.qmd)
+
+### [Mammals](sp_mammals.qmd)
+
+### [Plants](sp_plants.qmd)
+
+::: {#box-5 .callout-note .freshwater title="Box 5. Calling all citizen scientists who might have an interest in these freshwater creatures." collapse="true"}
+add text
+:::
+
+### [Dragonflies and Damselflies (Odonata)](sp_dragons.qmd)
+
+### [Freshwater crabs](sp_fwfcrabs.qmd)
+
+::: {#box-6 .callout-note .freshwater title="Box 6. Rising to South Africa’s freshwater data challenge" collapse="true"}
+add text
+:::
+
+## Trends - the Red List Index
+
+```{r}
+#| label: fig-2
+#| fig-cap: "The Red List Index (RLI) for freshwater species. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is towards extinction (if the value is 0, all species are extinct). While spiders have not had repeat assessments yet, a single point for the RLI has been generated to show the relatively low level of threat for this group." 
+#| fig-width: 6
+#| fig-align: center
+
+RLI <- readxl::read_excel("./data/nba_example_RLI_data_trim_freshwater.xlsx")
+      
+nbaR::nba_index_plot(TYPE = "RLIs",
+                     DF = RLI,
+                     YEAR = Year,
+                     RLI = RLI,
+                     ASSESSMENT_YEAR = Assessment_Year,
+                     GROUP = Taxon,
+                     PALETTE = "taxon",
+                     AGGREGATE = TRUE,
+                     SAVE = NULL)
+
+```
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for marine species including birds, mammals, reptiles, sharks and sparids assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). "
+#| fig-cap: "Key pressures on South Africa’s threatened freshwater species. This analysis presents the relative frequency of pressures affecting threatened species, categorised by taxonomic group, using the IUCN Threat Classification Scheme. The size of the bubbles indicates the percentage of taxa impacted by each pressure class. * Key pressures to plants were assessed using a representative sample of 900 plant taxa."
+#| fig-alt: "Pressures in terrestrial realm"
+#| out-width: 650%
+#| fig-align: center
 
-#knitr::include_graphics("imgs/marine_rli.png")
+knitr::include_graphics("./imgs/Inland_Aquatic_Maj.png")
 ```
+
+## Protection Level
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "The distribution of estuarine species that have increased in threat status since NBA 2018."
+#| fig-cap: "Protection level for South Africa’s indigenous freshwater taxonomic groups. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa). Protection level for all taxa (A); protection level for South African endemics (B). *Due to the extremely high number of plant species occurring in South Africa, the protection level is calculated for a statistically representative sample of 900 plant taxa."
+#| out-width: 100%
+#| fig-height: 3
 
-#knitr::include_graphics("imgs/Marine.png")
+
+library(dplyr)
+library(nbaR)
+
+# ---- Load and clean data ----
+PL_clean <- readxl::read_excel("./data/overall_status_summary_2025.xlsx", sheet = "PL_Realm") %>% 
+            filter(`Inland aquatic` == "Y", `Protection level status` != "")%>%
+            mutate(`Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", TRUE ~`Taxonomic grouping`))
+
+numeric_cols <- c("Well Protected", "Moderately Protected", "Poorly Protected", "Not Protected")
+
+PLoverall_df <- PL_clean %>%
+                group_by(`Taxonomic grouping`, `Protection level status`) %>%
+                summarise(count = n(), .groups = "drop") %>%
+                tidyr::pivot_wider(names_from = `Protection level status`,
+                                   values_from = count,
+                                   values_fill = 0) %>%
+                mutate(across(all_of(numeric_cols), as.numeric))  
+
+PLendemic_df <- PL_clean %>%
+                group_by(`Taxonomic grouping`, `Protection level status`, Endemism) %>%
+                filter(Endemism == "Endemic") %>%
+                summarise(count = n(), .groups = "drop") %>%
+                tidyr::pivot_wider(names_from = `Protection level status`,
+                                   values_from = count,
+                                   values_fill = 0) %>%
+                mutate(across(all_of(numeric_cols), as.numeric))
+
+
+indigenous_PL <- nba_plot(DF = PLoverall_df,               
+                          GROUPS = `Taxonomic grouping`,   
+                          COLS = numeric_cols,             
+                          CHRT = "bar",
+                          NUM = FALSE,
+                          LAB = "Percentage of indigenous taxa",
+                          #SCALE_TEXT = 1.6,
+                          SAVE = NULL)
+
+endemic_PL <- nba_plot(DF = PLendemic_df,               
+                       GROUPS = `Taxonomic grouping`,   
+                       COLS = numeric_cols,             
+                       CHRT = "bar",
+                       NUM = FALSE,
+                       LAB = "Percentage of endemic taxa",
+                       #SCALE_TEXT = 0.8,
+                       SAVE = NULL) +
+                       geom_bar(stat = "identity", position = "fill", width = 0.) 
+
+# ---- Combine plots ----
+ggpubr::ggarrange(indigenous_PL, endemic_PL, ncol = 2, labels = c("A", "B"),
+                  font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
 
-::: {#box-3 .callout-note .species title="Box 3. Species box" collapse="true"}
-## Box 3. Title
+## Conservation efforts
 
+::: {#box-7 .callout-note .freshwater title="Box 7. Active recovery project to improve the current status of the Clanwillian sandfish" collapse="true"}
 add text
-
-remove the syntax "<!-- -->" for inserting the images replace existing with appropriate images for current page <!-- ![](imgs/Fig%201.png){fig-alt="box_1_fig_1" width="45%"}--> <!-- ![](imgs/Figure%202.png){fig-alt="box_1_fig_2" width="45%"}-->
 :::
 
-3.  ***Pressures***
+## Monitoring
 
-Add text
+## Approach
 
-```{r}
-#| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s threatened marine species based on x taxa. This analysis presents the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme. The size of the bubbles indicates the relative importance of each pressure class. (currently missing marine turtle data) "
-#| out.width: 100%
-
-
-#knitr::include_graphics("imgs/Marine_pressure.png")
-```
-
-:::::: {#box-4 .callout-note .species title="Box 4. Species box" collapse="true"}
-## Box 4. Title
-
-::::: columns
-::: {.column width="100%"}
-Add text
-:::
-
-::: {.column width="25%"}
-:::
-:::::
-::::::
-
-:::::: {#box-5 .callout-note .species title="Box 5. Species box" collapse="true"}
-## Box 5. Title
-
-::::: columns
-::: {.column width="100%"}
-Add text
-:::
-
-::: {.column width="25%"}
-:::
-:::::
-::::::
-
-## Conservation strategy
-
-Add text
-
-::: {#box-6 .callout-note .species title="Box 6. Species box" collapse="true"}
-## Box 6.
-
-Add text
-:::
-
-## Knowledge gaps
-
-Add text
-
-## Acknowledgements
-
-Add text
+## Contributors
 
 ### Recommended citation
 
@@ -294,4 +536,5 @@ nba_citation(meta)
 
 ## References
 
-Add reference
+::: {#refs}
+:::

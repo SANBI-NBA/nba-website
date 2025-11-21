@@ -146,7 +146,7 @@ image: "./imgs/sp_spider_img_1.png"
 
 <center>
 
-![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. (© Peter Webb)](./imgs/sp_spider_img_1.png){fig-align="center"}
+![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. (© Peter Webb)](./imgs/sp_spider_img_1.png){fig-align="center"}
 
 </center>
 
@@ -155,7 +155,7 @@ image: "./imgs/sp_spider_img_1.png"
 <center>
 
 | [78]{.inline-style-threatened}
-| of 2214 species assessed are
+| of 2 214 species assessed are
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -165,7 +165,7 @@ image: "./imgs/sp_spider_img_1.png"
 <center>
 
 | [60]{.inline-style-rare}
-| of 2214 species assessed are
+| of 2 214 species assessed are
 | [Rare or Critically Rare]{.inline-style-indicator}
 
 </center>
@@ -174,7 +174,7 @@ image: "./imgs/sp_spider_img_1.png"
 ::: {.column width="33.3%"}
 <center>
 
-| [1303]{.inline-style-endemic}
+| [1 303]{.inline-style-endemic}
 | species of spiders (58%) are
 | [Endemic]{.inline-style-indicator}
 
@@ -186,40 +186,40 @@ image: "./imgs/sp_spider_img_1.png"
 
 ## Key findings
 
--   South Africa has a rich diversity of spider species, with 2265 described species [@a2023a], representing 4% of the world's spiders.
+-   South Africa has a rich diversity of spider species, with 2 265 described species [@a2023a], representing 4% of the world's spiders.
 
--   A comprehensive assessment of 2214 spider species was conducted for the first time between 2016 and 2019 using the IUCN Red List Categories and Criteria to classify their risk of extinction and represents a global first and a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group [@foord2020a].
+-   A comprehensive assessment of 2 214 spider species was conducted for the first time between 2016 and 2019 using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction; and represents a global first and a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group [@foord2020a].
 
--   The spider assessment was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species, and during this project, there was a 350% rise in specimen accessions in the national collection.
+-   The spider assessment was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and, during this project, a 350% rise in specimen accessions in the national collection.
 
 -   Of the assessed species, only 78 of the species (4%) were assessed as threatened.
 
--   Most species (1419 spp., 64%) are widely distributed with no known threats and are assessed as Least Concern.
+-   Most species (1 419 spp., 64%) are widely distributed with no known threats and are assessed as Least Concern.
 
 -   Importantly, almost a third of the species (707 spp., 32%) are assessed as Data Deficient, meaning that a large number of species need further research before their risk of extinction can be determined.
 
--   Endemism is high, with 1303 species (58%) found only in South Africa, representing \~2% of the world’s spiders.
+-   Endemism is high, with 1 303 species (58%) found only in South Africa, representing \~2% of the world’s spiders.
 
--   In the IUCN Red List Index (RLI) assessment, spiders currently have the highest RLI score of all South African taxonomic groups, making them appear the least threatened. However, many species remain unevaluated due to limited information. As a result, their true status is uncertain—more species may prove to be threatened, or many may be Least Concern. This uncertainty means the current RLI value should be interpreted with caution.
+-   In the IUCN Red List Index (RLI) assessment, spiders currently have the highest RLI score of all South African taxonomic groups, making them appear the least threatened. However, many species remain unevaluated due to limited information. As a result, their true status is uncertain – more species may prove to be threatened, or many may be Least Concern. This uncertainty means the current RLI value should be interpreted with caution.
 
 -   The major threats to spiders are habitat loss due to fire, overgrazing, invasive plants, mining, agricultural practices, and urban development.
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Density of threatened spider species (10 x 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat. This is followed bu Gauteng, the economic hub of South Africa ad highly numbers in southern KwaZulu-Natal. These patterns might be influenced by sampling bias in urban areas."
+#| fig-cap: "Density of threatened spider species (10 × 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat. This is followed bu Gauteng, the economic hub of South Africa ad highly numbers in southern KwaZulu-Natal. These patterns might be influenced by sampling bias in urban areas."
 #| out-width: 650px
 knitr::include_graphics("./imgs/spiders_thrt_10km_HD.png")
 ```
 
 ## Threat status
 
-In 2016, South Africa assessed 2214 spider species for the first time using the IUCN Red List categories and criteria, which measure extinction risk [@foord2020a]. Only South African species were included; Eswatini and Lesotho were excluded from the assessment. Of the assessed species, 78 (4%) were threatened with extinction: 23 are Critically Endangered (CR), 24 are Endangered (EN), and 31 are Vulnerable (VU). No species were found to be extinct or possibly extinct.
+In 2016, South Africa assessed 2 214 spider species for the first time using the IUCN Red List categories and criteria, which measure extinction risk [@foord2020a]. Only South African species were included; Eswatini and Lesotho were excluded from the assessment. Of the assessed species, 78 (4%) were threatened with extinction: 23 are Critically Endangered (CR), 24 are Endangered (EN), and 31 are Vulnerable (VU). No species were found to be extinct or possibly extinct.
 
-Highly threatened spiders occur in the three major urban centers of South Africa (Western Cape, Gauteng and KwaZulu-Natal major metropolitan areas). This could be an indication of sample bias, but also identifies areas that have lost large areas of habitat to urban expansion (@fig-1). Some species have very restricted ranges but face no anthropogenic threats. These are listed under [South Africa’s national rarity categories](https://redlist.sanbi.org/redcat.php): Rare (extent of occurrence \<500 km²) or Critically Rare (known from a single location). Sixteen species were classified as Critically Rare and 44 species as Rare. Although such species qualify as Least Concern under the IUCN system, they remain a priority for national conservation and are included as taxa of conservation concern along with threatened, Near Threatened and Data Deficient species.
+Highly threatened spiders occur in the three major urban centres of South Africa (Western Cape, Gauteng and KwaZulu-Natal major metropolitan areas). This could be an indication of sample bias, but also identifies areas that have lost large areas of habitat to urban expansion (@fig-1). Some species have very restricted ranges yet face no anthropogenic threats. These are listed under [South Africa’s national rarity categories](https://redlist.sanbi.org/redcat.php): Rare (extent of occurrence \<500 km²) or Critically Rare (known from a single location). Sixteen spider species were classified as Critically Rare and 44 species as Rare. Although such species qualify as Least Concern under the IUCN system, they remain a priority for national conservation and are included as taxa of conservation concern along with threatened, Near Threatened and Data Deficient species.
 
-Most species (1419; 63%) are widespread, face no known threats, and are assessed as Least Concern (@fig-2). A large proportion (675; 30%) are Data Deficient, highlighting the need for more research, particularly providing more detailed taxonomic descriptions, describing unknown sexes and providing additional distribution data through field sampling and examination of museum material ([Box 1](#box-1)).
+Most species (1 419; 63%) are widespread, face no known threats, and are assessed as Least Concern (@fig-2). A large proportion (675; 30%) are Data Deficient, highlighting the need for more research, particularly providing more detailed taxonomic descriptions, describing unknown sexes and providing additional distribution data through field sampling and examination of museum material (see Box 1).
 
-Endemism is high, with 1325 species (59%) found only in South Africa, representing 2% of global spider diversity. Of the 72 spider families recorded, Salticidae (jumping spiders) is the most species-rich (354), followed by Gnaphosidae (195) and Thomisidae (143) [@a2023a]. Because of its size, Salticidae also has the highest number of threatened (6) and Data Deficient (98) species.
+Endemism is high, with 1 325 species (59%) found only in South Africa, representing 2% of global spider diversity. Of the 72 spider families recorded, Salticidae (jumping spiders) is the most species-rich (354), followed by Gnaphosidae (195) and Thomisidae (143) [@a2023a]. Because of its size, Salticidae also has the highest number of threatened (6) and Data Deficient (98) species.
 
 However, the greatest conservation concern lies with smaller, cryptic species in isolated habitats such as caves and fragmented habitats. Families such as Pholcidae, Archaeidae, and Corinnidae each include four threatened species. Families with the highest numbers of Rare or Critically Rare species are Pholcidae (18), Salticidae (5) and Drymusidae (4) [@foord2020a].
 
@@ -230,7 +230,7 @@ However, the greatest conservation concern lies with smaller, cryptic species in
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of 2214 South African spider species assessed following the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle (A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa assessed is shown in the inner circle." 
+#| fig-cap: "Threat status of 2&nbsp;214 South African spider species assessed following the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle (A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa assessed is shown in the inner circle." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -451,9 +451,9 @@ gt(dat_combined_final) %>%
 :::: {#box-1 .callout-note .species collapse="true"}
 ## Box 1. The South African National Survey of Arachnida (SANSA)
 
-The South African National Survey of Arachnida (SANSA) was initiated in 1997, with the main aim of documenting the arachnid fauna of South Africa at a national level and to unify and strengthen biodiversity research on the spiders of South Africa [@dippenaar-schoeman2015a]. SANSA was managed by the Arachnida Unit at the National Collection of Arachnida (NCA) at the ARC – PHP in Pretoria, with support from the Universities of the Free State and Venda, the National Museum in Bloemfontein, and the South African National Biodiversity Institute (SANBI) Threatened Species Programme, who funded SANSA phase 2 [@dippenaar-schoeman2015a].
+The South African National Survey of Arachnida (SANSA) was initiated in 1997, with the main aim of documenting the arachnid fauna of South Africa at a national level and to unify and strengthen biodiversity research on the spiders of South Africa [@dippenaar-schoeman2015a]. SANSA was managed by the Arachnida Unit at the National Collection of Arachnida (NCA) at the Agricultural Research Council - Plant Health and Protection (ARC-PHP) unit in Pretoria, with support from the Universities of the Free State and Venda, the National Museum in Bloemfontein, and the South African National Biodiversity Institute (SANBI) Threatened Species Programme, who funded SANSA Phase 2 [@dippenaar-schoeman2015a].
 
-The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all existing spider data into a MySQL relational database developed at the ARC. The study of South African spiders was significantly influenced by colonial expansion and the visits of scientists, who dispatched hundreds of specimens to museums in Belgium, France, Germany and the United Kingdom. The data date back to 1781, when the first species was described from South Africa. Records of all known South African species and their distribution information, were extracted from original descriptions, re-descriptions and revisionary work, as listed on the World Spider Catalogue. SANBI joined the project for its second phase, known as SANSA II, from 2006 to 2010. Gap analyses were done to determine the spatial coverage of the species, and targeted surveys were undertaken in degree squares throughout South Africa in particular areas with poor historic coverage. Due to extensive fieldwork by SANSA field managers and research from other projects, student projects and public participation, more than 40 degree-squares were sampled in previously poorly sampled areas, providing valuable material that improved our knowledge of species distributions and yielding valuable specimens for future taxonomic studies. In 2010, the [First Atlas of South African Spiders](https://zenodo.org/records/7628809) (FASSA) was published online, listing 2003 species from 70 families, with georeferenced records and distribution maps [@a2010a]. The last decade, however, has seen considerable growth in the knowledge of spiders in South Africa, and the number of species known from the country has increased to 2265 species [@a2023a]. Dr Dippenaar-Schoeman still continues to work on the SANSA project as the project manager, updating taxonomy, even after retiring from the ARC-PHP.
+The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all existing spider data into a MySQL relational database developed at the ARC. The study of South African spiders was significantly influenced by colonial expansion and the visits of scientists, who dispatched hundreds of specimens to museums in Belgium, France, Germany and the United Kingdom. The data date back to 1781, when the first species was described from South Africa. Records of all known South African species and their distribution information were extracted from original descriptions, re-descriptions and revisionary work, as listed on the World Spider Catalogue. SANBI joined the project for its second phase, known as SANSA II, from 2006 to 2010. Gap analyses were done to determine the spatial coverage of the species, and targeted surveys were undertaken in degree-squares throughout South Africa, particularly in areas with poor historic coverage. Due to extensive fieldwork by SANSA field managers and research from other projects, student projects and public participation, more than 40 degree-squares were sampled in previously poorly sampled areas, providing valuable material that improved our knowledge of species distributions and yielding valuable specimens for future taxonomic studies. In 2010, the [First Atlas of South African Spiders](https://zenodo.org/records/7628809) (FASSA) was published online, listing 2003 species from 70 families, with georeferenced records and distribution maps [@a2010a]. The last decade, however, has seen considerable growth in the knowledge of spiders in South Africa, and the number of species known from the country has increased to 2 265 species [@a2023a]. Dr Dippenaar-Schoeman still continues to work on the SANSA project as the project manager, updating taxonomy, even after retiring from the ARC-PHP.
 
 <center>![](./imgs/sp_spider_img_2.png){style="border-radius:10px;"}[The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. (© Elsa van Niekerk)]{style="width:75%; color:#626262;"}</center>
 
@@ -462,7 +462,7 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 <img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. (© Elsa van Niekerk)</figcaption>
+<figcaption>Fogging trees at Lajuma, Limpopo province to sample arachnids in the tree canopy. (© Elsa van Niekerk)</figcaption>
 
 </figure>
 
@@ -470,19 +470,19 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 <img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>SANBI parataxonomist learning to collect spiders. <br> (© Robin Lyle)</figcaption>
+<figcaption>SANBI parataxonomist learning to collect spiders. <br> (© Robin Lyle)</figcaption>
 
 </figure>
 :::
 ::::
 
-## Trends - Red List Index
+## Trends - the Red List Index
 
-The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (@fig-3). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group. Important to note, many Data Deficient species are included in the assessment, and hence there is still a high level of uncertainty associated with this result.
+The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2 214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (@fig-3). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group. Important to note, many Data Deficient species are included in the assessment, and hence there is still a high level of uncertainty associated with this result.
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for spider species assessed in South Africa, relative to national aggregate (national average across all assessed taxonomic groups). The slope of the line indicates the rate at which species are becoming more threatened over time. The steeper the slope the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Spiders are indicated in yellow and have a relatively high RLI value, when comparing with other the national average, indicating that levels of extinction risk are low, however, many spiders were assessed as Data Deficient, that are not included in this calculation."
+#| fig-cap: "The Red List Index (RLI) for spider species assessed in South Africa, relative to national aggregate (national average across all assessed taxonomic groups). The slope of the line indicates the rate at which species are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Spiders are indicated in yellow and have a relatively high RLI value when compared with the national average, indicating that levels of extinction risk are low. However, many spiders were assessed as Data Deficient, that are not included in this calculation."
 
 library(tidyverse)
 library(nbaR)
@@ -509,11 +509,11 @@ nba_index_plot(
 
 ## Pressures
 
-Spiders face an array of threats—both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire ([Box 2](#box-2)), overgrazing and invasive alien species infestations has a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Urban expansion, agriculture, forestry, and mining are the leading causes of habitat loss for spiders. This is especially critical for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as the Fynbos [@dippenaar-schoeman2024a], with 28% endemic species to this biome, and the Savanna [@foord2011a], with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
+Spiders face an array of threats – both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire (see Box 2), overgrazing and invasive alien species infestations has a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Urban expansion, agriculture, forestry, and mining are the leading causes of habitat loss for spiders. These pressures are especially important for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as the Fynbos [@dippenaar-schoeman2024a] with 28% endemic species to this biome, and the Savanna [@foord2011a] with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
 
-Spiders are present in relatively high numbers in agroecosystems; however, it has been shown that they are negatively impacted by pesticide use [@dippenaar-schoeman2013a]. Thus far, 51 families from 413 species have been recorded from crops in South Africa, and five agrobiont species have been identified that play an important role as natural control agents of pests. However, chemical use can directly kill spiders or disrupt their prey base. Integrated pest management (IPM) and organic farming are recommended to reduce chemical exposure that harms spiders and their prey. Altered temperature and rainfall patterns (climate change) can affect spider distribution, reproduction, and prey availability, and they may be severely impacted by drought.
+Spiders are present in relatively high numbers in agroecosystems; however, it has been shown that they are negatively impacted by pesticide use [@dippenaar-schoeman2013a]. Thus far, 51 families from 413 species have been recorded from crops in South Africa, and five agrobiont species have been identified that play an important role as natural control agents of agricultural pests. However, chemical use can directly kill spiders or disrupt their prey base. Integrated pest management (IPM) and organic farming are recommended to reduce chemical exposure that harms spiders and their prey. Altered temperature and rainfall patterns (likely from climate change) can affect spider distribution, reproduction, and prey availability, and they may be severely impacted by drought.
 
-Some spiders are threatened due to poaching and are used as pets, for example, the species in the Theraphosidae family [(baboon spiders)](https://www.inaturalist.org/observations?captive=false&place_id=6986&quality_grade=research&taxon_id=47424&verifiable=any).Baboon spiders (family Theraphosidae) are ecologically significant predators within South African ecosystems, contributing to the regulation of a variety of insects speciespopulations [@campbell2018a]. However, these species face increasing threats from illegal collection for the exotic pet trade, driven by their popularity among arachnid enthusiasts and their slow life history traits, such as long lifespans and low reproductive rates [@campbell2018a; @a2010a]. Although national legislation provides protection for baboon spiders, enforcement remains inconsistent, and improved regulatory measures are essential to prevent overharvesting and ensure the persistence of these species in their natural habitats [@campbell2018a].
+Some spiders are threatened due to poaching and are used as pets, for example, the species in the Theraphosidae family [(baboon spiders)](https://www.inaturalist.org/observations?captive=false&place_id=6986&quality_grade=research&taxon_id=47424&verifiable=any). Baboon spiders (family Theraphosidae) are ecologically significant predators within South African ecosystems, contributing to the regulation of a variety of insect species' populations [@campbell2018a]. However, baboon spiders face increasing threats from illegal collection for the exotic pet trade, driven by their popularity among arachnid enthusiasts and their slow life history traits, such as long lifespans and low reproductive rates [@campbell2018a; @a2010a]. Although national legislation provides protection for baboon spiders, enforcement remains inconsistent, and improved regulatory measures are essential to prevent unsustainable harvesting and ensure the persistence of these species in their natural habitats [@campbell2018a].
 
 ```{r}
 #| label: fig-4
@@ -539,20 +539,20 @@ p + scale_x_discrete(
 ```
 
 ::: {#box-2 .callout-note .species collapse="true"}
-## Box 2. Spider species' ability to respond to fire events, a natural ecological process, which is expected to become much more frequent and unpredictable in a changing climate.
+## Box 2. Spider species' ability to respond to fire events, a natural ecological process that is expected to become much more frequent and unpredictable in a changing climate
 
 Most of the studies of spider ecology in South Africa are local-scale studies focusing on spider assemblage responses to habitat complexity, landscape-scale variables, ecosystem rehabilitation and plant invasions, and disturbance effects such as fire [@haddad2015a], grazing [@jansen2013a], invasive plants [@robbertson2011a] and chemical control [@berg1990a].
 
-Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, but some ground-dwellers that remain in their burrows (particularly trapdoor spiders), and those that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as Lycosidae (wolf spiders) and Gnaphosidae (ground spiders), persisted post-fire, while others declined. Caponiidae (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a].
+Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, while some ground-dwellers that remain in their burrows (particularly trapdoor spiders) and those that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as Lycosidae (wolf spiders) and Gnaphosidae (ground spiders), persisted post-fire, while others declined. Caponiidae (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a].
 
-<center>![](./imgs/sp_spiders_img_6.png){style="border-radius:10px;"}[Veld fire in the Grassland and Savannah systems. (© Robin Lyle)]{style="width:75%; color:#626262;"}</center>
+<center>![](./imgs/sp_spiders_img_6.png){style="border-radius:10px;"}[Veld fire in the Grassland and Savannah systems. (© Robin Lyle)]{style="width:75%; color:#626262;"}</center>
 :::
 
 ## Knowledge gaps
 
 A significant portion of the South African spider fauna remains undescribed. In the Cape Floristic Region, 24% of species are classified as Data Deficient, and two families (Synotaxidae and Theridiosomatidae) are only known from undescribed species. Studies on mygalomorph trapdoor spiders (e.g., *Stasimopus*, *Ancylotrypa*, *Galeosoma*) show taxonomic resolution as low as 15–29%, indicating high uncertainty in species delimitation.
 
-Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling. Making use of citizen science to contribute to observations, both helps fill sampling gaps and also raises awareness ([Box 3](#box-3)).
+Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling. Making use of citizen science to contribute to observations, both helps fill sampling gaps and also raises awareness (see Box 3).
 
 ::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
 To contribute to the future Red List assessments and monitoring of spiders, join iNaturalist!
@@ -566,29 +566,29 @@ To see how valuable your nature photographs can be, watch this inspiring [**TED 
 <center>![](./imgs/sp_logo_inat.png){width="10%" style="border-radius:10px;"}</center>
 :::
 
-Morphological variation is poorly understood due to limited sampling, making it difficult to confidently define species boundaries. Despite SANSA’s efforts, many natural history collections lack comprehensive coverage or standardised metadata, limiting their utility for taxonomic synthesis, as large numbers of specimens in collections remain unidentified due to a lack of spider taxonomists. For example, a recent meta-analysis of South African spider data from seven collections found that only slightly more than half of the \~121 000 records had been identified to species level, indicating a major taxonomic gap in the available data [@mescht2024a]. Presently, there is only one spider taxonomist employed at a natural history collection. The shortage of taxonomic expertise will have direct consequences for resolving Data Deficient taxa and developing taxonomic products related to species descriptions, revisions, and the integration of molecular tools.
+Morphological variation is poorly understood due to limited sampling, making it difficult to confidently define species boundaries. Despite SANSA’s efforts, many natural history collections lack comprehensive coverage or standardised metadata, limiting their utility for taxonomic synthesis, as large numbers of specimens in collections remain unidentified due to a lack of spider taxonomists. For example, a recent meta-analysis of South African spider data from seven collections found that only slightly more than half of the \~121 000 records had been identified to species level, indicating a major taxonomic gap in the available data [@mescht2024a]. Presently, there is only one spider taxonomist employed at a natural history collection. The shortage of taxonomic expertise will have direct consequences for resolving Data Deficient taxa and developing taxonomic products related to species descriptions, revisions, and the integration of molecular tools.
 
-Addressing the taxonomic impediment for spiders in South Africa requires a multi-pronged strategy that blends capacity building, infrastructure development, and policy integration. Here is a breakdown of suggested solutions:
+Addressing the taxonomic impediment for spiders in South Africa requires a multi-pronged strategy that blends capacity building, infrastructure development, and policy integration. The following is a breakdown of suggested solutions:
 
--   **Expansion of taxonomic capacity**, by creating employment for specialist taxonomists and providing the required skills transfer opportunities ([Box 4](#box-4)).
+-   **Expansion of taxonomic capacity** by creating employment for specialist taxonomists and providing the required skills transfer opportunities (see Box 4).
 
 -   **Accelerate species descriptions through building capacity and collaborative research**, particularly with international partners.
 
 -   **Integrate molecular tools and promote DNA barcoding and phylogenetics to resolve species boundaries**, especially in morphologically conservative groups.
 
--   **Develop a national spider barcode reference library**, linked to voucher specimens and ecological metadata. Currently, sequence data on South African spiders (\~10 600 specimens processed, mainly COI-5P) is scattered among several projects with very contrasting levels of taxonomic resolution.
+-   **Develop a national spider barcode reference library** linked to voucher specimens and ecological metadata. Currently, sequence data on South African spiders (\~10  600 specimens processed, mainly COI-5P) is scattered among several projects with very contrasting levels of taxonomic resolution.
 
--   **Digitize and standardise collections**: with high-resolution imaging, georeferencing, and standardized metadata.
+-   **Digitize and standardise collections** with high-resolution imaging, georeferencing, and standardised metadata.
 
--   **Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database** accessible to researchers, conservationists, and policymakers.
+-   **Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database** accessible to researchers, conservationists, and policy-makers.
 
--   **Encourage citizen science platforms like iNaturalist** to crowdsource observations and expand distribution data ([Box 3](#box-3)).
+-   **Encourage citizen science platforms like iNaturalist** to crowdsource observations and expand distribution data (see Box 3).
 
 -   **Relax permit conditions so that members of the public can sample specimens without fear of prosecution**, particularly those linked to photographic observations, to enable species-level identifications.
 
--   **Link taxonomic work to spatial tools for species conservation**, e.g. Key Biodiversity Areas (KBAs) and the DFFE Screening tool for Environmental Impact Assessments (EIAs) to justify funding and urgency. This can be further linked to understanding biodiversity data and the role it could play in South Africa’s biosecurity with regards to emerging pests and diseases.
+-   **Link taxonomic work to spatial tools for species conservation**, e.g. Key Biodiversity Areas (KBAs) and the DFFE [Environmental Screening Tool](https://screening.environment.gov.za/screeningtool/#/pages/welcome) for Environmental Impact Assessments (EIAs), to justify funding and urgency. This can be further linked to understanding biodiversity data and the role it could play in South Africa’s biosecurity with regards to emerging pests and diseases.
 
--   **Foster international collaboration**, partner with global arachnological networks for training, data sharing, and joint revisions.
+-   **Foster international collaboration** and partner with global arachnological networks for training, data sharing, and joint revisions.
 
 -   **Invite and fund visiting taxonomists to work on South African material** and co-author species descriptions.
 
@@ -597,9 +597,9 @@ Addressing the taxonomic impediment for spiders in South Africa requires a multi
 :::::::::::::::::::: {#box-4 .callout-note .species collapse="true"}
 ## Box 4. Profile on Data Deficient spiders of South Africa
 
-Although South Africa has the richest described spiders on the continent that has been researched the most thoroughly in the past, many families have never been subjected to revision and continue to present a considerable identification challenge to taxonomists and ecologists alike. Surveys and research have shown that in several families, a large proportion of species remain undescribed. For example, the National Collection of Arachnida has around 45% of specimens that are still unidentified.
+Although South Africa has the richest described spiders on the continent, some researched thoroughly in the past, many families have never been subjected to revision and continue to present a considerable identification challenge to taxonomists and ecologists alike. Surveys and research have shown that a large proportion of species remain undescribed in several families. For example, the National Collection of Arachnida has around 45% of specimens that are still unidentified.
 
-Preliminary research on the following families reveals that many species remain unidentified. All images are credited to © Peter Webb, if not, it is indicated.
+Preliminary research on the following families reveals that many species remain unidentified. All images are credited to © Peter Webb unless otherwise indicated.
 
 ::::::::::::::::::: grid
 ::: {.g-col-lg-3 .g-col-6 .text-center}
@@ -619,7 +619,7 @@ Preliminary research on the following families reveals that many species remain 
 :::
 
 ::: {.g-col-lg-3 .g-col-6 .text-center}
-![*Afrofilistata fradei* [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.) (© G. Wilson)](./imgs/sp_spiders_img_11.png){.img-align}
+![*Afrofilistata fradei* [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.) (© G. Wilson)](./imgs/sp_spiders_img_11.png){.img-align}
 :::
 
 ::: {.g-col-lg-3 .g-col-6 .text-center}
@@ -670,7 +670,7 @@ Preliminary research on the following families reveals that many species remain 
 
 ## Acknowledgements
 
-The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State, National Museum Bloemfontein, and the University of Venda (formerly University of Limpopo) and the National Re-search Foundation (NRF) for generously funding and support. South African National Parks and E. Oppenheimer & Son support and provide opportunities to collect in the parks and reserves and the provincial conservation agencies for collecting permits.
+The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council (ARC), the University of the Free State, National Museum Bloemfontein, and the University of Venda (formerly University of Limpopo), with the National Research Foundation (NRF) providing funding and support. South African National Parks and E. Oppenheimer & Son support and provide opportunities to collect in the parks and reserves and the provincial conservation agencies for collecting permits.
 
 All the field workers, museum staff and other members contributing to the completion of the assessment are acknowledged for their contributions (@tbl-2).
 
@@ -750,19 +750,19 @@ gt(data) %>%
 
 The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA).
 
-Data Sources and Methods
+***Data sources and methods***
 
-The assessment utilized data from the First Atlas of South African Spiders [@a2010a], which compiled information from two primary sources: the National Collection of Arachnida (NCA) at the Agricultural Research Council – Plant Health and Protection (ARC-PHP) in Roodeplaat, Pretoria (with over 60,000 records) and published taxonomic literature from 17 museum collections.
+The assessment utilised data from the First Atlas of South African Spiders [@a2010a], which compiled information from two primary sources: the National Collection of Arachnida (NCA) at the Agricultural Research Council – Plant Health and Protection (ARC-PHP) in Roodeplaat, Pretoria (with over 60 000 records) and published taxonomic literature from 17 museum collections.
 
-The distribution of occurrence records across South Africa, Lesotho and Swaziland was visualized using quarter-degree, degree-square and density kernel plots for all 76,069 records. However, records in the NCA that were not identified to species level were excluded from the Red List assessments, reducing the analytical dataset to 23,827 species-level records covering 2,253 known South African spider species.
+The distribution of occurrence records across South Africa, Lesotho and Eswatini was visualised using quarter-degree, degree-square and density kernel plots for all 76 069 records. However, records in the NCA that were not identified to species level were excluded from the Red List assessments, reducing the analytical dataset to 23,827 species-level records covering 2 253 known South African spider species.
 
-Calculation of parameters
+***Calculation of parameters***
 
-The calculation of Red List parameters was performed using the R package red (v1.6.3) [@cardoso2017a]. Spatial analyses on observed occurrences used functions for calculating Extent of Occurrence (EOO), Area of Occupancy (AOO), and elevational range. EOO was calculated as the minimum convex polygon around all occurrences, while AOO was determined by the number of 2 km² cells occupied. When EOOs were smaller than the AOO, they were made equal. Assessments were drafted as per the IUCN documentation standards and reviewed by relevant experts.
+The calculation of Red List parameters was performed using the R package red (v1.6.3) [@cardoso2017a]. Spatial analyses on observed occurrences used functions for calculating Extent of Occurrence (EOO), Area of Occupancy (AOO), and elevational range. EOO was calculated as the minimum convex polygon around all occurrences, while AOO was determined by the number of 2 km² cells occupied. When EOOs were smaller than the AOO, they were made equal. Assessments were drafted as per the IUCN documentation standards and reviewed by relevant experts.
 
-Assessment Criteria and Limitations
+***Assessment criteria and limitations***
 
-Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends—a critical data gap known as the Prestonian shortfall—which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
+Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends – a critical data gap known as the Prestonian shortfall – which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
 
 ### Recommended citation
 
