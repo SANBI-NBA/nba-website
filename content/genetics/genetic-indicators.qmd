@@ -66,7 +66,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-![Left to right: Rose's mountain toadlet (*Capensibufo rosei*) (© Jeremy Shelton); Geometric tortoise (*Psammobates geometricus*) (© Andre Botha); Southern white rhinoceros (*Ceratotherium simum simum*) (© Greg Martindale); Grey rhebok (*Pelea capreolus*) (© Tim Kuiper).](imgs/genetics-sp-banner.png)
+![Subset of species used in the genetic indicator analyses. Left to right: Rose's mountain toadlet (*Capensibufo rosei*) (© Jeremy Shelton); Geometric tortoise (*Psammobates geometricus*) (© Andre Botha); Southern white rhinoceros (*Ceratotherium simum simum*) (© Greg Martindale); Grey rhebok (*Pelea capreolus*) (© Tim Kuiper).](imgs/genetics-sp-banner.png)
 
 ## Monitoring genetic diversity using indicators
 
@@ -146,7 +146,7 @@ This complementary indicator is estimated as the total phylogenetic diversity in
 
 ------------------------------------------------------------------------
 
-As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. South Africa reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
+As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. Of these, 90 species had sufficient data to quantify the PM indicator, and 61 species had sufficient data to quantify the Ne 500 indicator. South reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
 
 Importantly, these national metrics can be disaggregated in various ways, such as by taxonomic group (@tbl-taxagrp) or conservation status (@fig-ne-by-threatstatus), to explore patterns and trends across different biodiversity components, similar to [species](../integrated-findings/intf-species.qmd) and [ecosystems](../integrated-findings/intf_ecosystems.qmd) assessments.
 
@@ -192,7 +192,11 @@ Importantly, areas rich in PD did not always coincide with regions of high speci
 
 This study provides a national framework for monitoring phylogenetic biodiversity and its expected loss, aligned with global biodiversity monitoring goals. It demonstrates an approach that can be extended to other taxonomic groups, helping ensure that conservation strategies safeguard not only species, but also the deep evolutionary lineages and adaptive potential that make South Africa’s biodiversity globally unique.
 
-## Available genetic tools and initiatives
+## Developing the EDGE indicator for South Africa
+
+In South Africa, the calculation of [EDGE indices](#box-3) is underway for all vertebrate groups. Preliminary insights suggest that species such as the geometric tortoise (*Psammobates geometricus*)&nbsp;and sungazer (*Smaug giganteus*)are likely to rank high for reptiles under the EDGE framework. Once completed, these results will enable targeted conservation planning, helping to prioritize species that contribute disproportionately to the country’s evolutionary heritage.
+
+##  Available genetic tools and initiatives
 
 As technology advances and the cost of molecular processing continues to decrease, monitoring the genetic health of species and their populations through time is becoming increasingly feasible. South Africa utilizes a growing suite of genetic tools, including:
 
