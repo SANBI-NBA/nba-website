@@ -14,7 +14,7 @@ listing:
     - content/coast/cst_synthesis.qmd
     - content/subantarctic/sub-all_sections.qmd
   type: grid
-  fields: [image, subtitle, description]
+  fields: [image, subtitle]
   sort: false
   sort-ui: false
   filter-ui: false
@@ -71,7 +71,7 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
 
 ------------------------------------------------------------------------
 
-### Explore realms and zones
+### Realms and zones
 
 ::: {#page-listings}
 :::
@@ -114,15 +114,14 @@ Read about the priority actions, responses and interventions emerging from the N
 :::
 
 ::: {.column width="25%"}
-[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd)
-**Actions**
+[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd) **Actions**
 :::
 
 ::: {.column width="25%"}
-[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd)
-**Gaps**
+[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd) **Gaps**
 :::
 ::::::
 
 ------------------------------------------------------------------------
-*Photo credits: Andrew Skowno (terrestrial); Jeremy Shelton (freshwater); Eve Marshall (marine); Duran de Villiers (estuaries); Linda Harris (coast); Stephni van der Merwe (subantarctic).*  
+
+*Photo credits: Andrew Skowno (terrestrial); Jeremy Shelton (freshwater); Eve Marshall (marine); Duran de Villiers (estuaries); Linda Harris (coast); Stephni van der Merwe (subantarctic).*
