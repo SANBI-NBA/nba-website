@@ -119,7 +119,7 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately modified, severely modified or very severely modified state. Click image to expand.](imgs/condition.png){#fig-condition .lightbox}
+![Map of ecological condition showing the spatial distribution of marine areas in natural/near natural, moderately modified, heavily modified or severely modified state. Click image to expand.](imgs/condition.png){#fig-condition .lightbox}
 :::
 :::::
 

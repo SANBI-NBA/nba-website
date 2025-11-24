@@ -188,7 +188,7 @@ ggpubr::ggarrange(Biome_epl_barplot, Prov_epl_barplot,
                   legend = "bottom")
 ```
 
-## Ecosystem Protection Level Index
+### Ecosystem Protection Level Index
 
 Ecosystem Protection Level can be tracked over time using the [ecosystem protection level index](../integrated-findings/chl_epl_explained.qmd) (EPLI). The overall (aggregate) trend between 2018 and 2024 reflects the steady increase in the PA estate overall, mostly due to various biodiversity stewardship programs and the establishment of a new National Park in the Nama-Karoo (note the low level of protection for the Nama-Karoo and the more pronounced increase in protection level since 2018). The EPLI plot shows how well protected the Forest Biome is, but it also shows that that no increase in protection have occurred in the biome recently.
 

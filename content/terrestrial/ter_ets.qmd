@@ -83,8 +83,9 @@ format:
 \
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-#devtools::install_github("SANBI-NBA/nbaR", force = T)
+# devtools::install_github("SANBI-NBA/nbaR", force = T)
 
+ 
 library(gt)
 library(nbaR)
 library(tidyverse)

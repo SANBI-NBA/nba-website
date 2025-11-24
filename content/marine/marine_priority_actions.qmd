@@ -219,8 +219,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
 *The 2025 National Biodiversity Assessment identified key marine ecosystems, species and benefits at risk, and knowledge gaps limiting the assessment. Priority actions to safeguard ocean life and livelihoods were co-developed in collaboration with knowledge holders and decision makers. Advancing these priority actions can help to improve the state of marine biodiversity and maintain its many benefits to South Africans.*
 
 ![Lighthouse at Cape Agulhas. (© Peter Chadwick)](imgs/lighthouse_cape_agulhas_peter_chadwick.jpg)

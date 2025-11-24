@@ -71,9 +71,48 @@ google-scholar: true
 
 South Africa has a thriving wildlife economy. Our wildlife species face varying levels of threat. Here we provide examples of the positive contribution made by the wildlife sector to species conservation and identify species still at risk of extinction, while describing the ongoing challenges in managing the wildlife sector.  
 
+<br>
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© ](./imgs/sp_img_recv_fwf_1.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### African savanna elephant (*Loxodonta africana*) 
+
+------------------------------------------------------------------------
+:::
+:::::
+
+
 The African savanna elephant (*Loxodonta africana*) is listed as Least Concern on South Africa’s national Red List, with approximately 43,681 individuals nationally, including 31,324 in Kruger National Park alone, reflecting stable to increasing trends. However, the global IUCN Red List classifies the species as Endangered, underscoring the broader continental decline. The white rhinoceros (*Ceratotherium simum*), listed as Near Threatened both nationally and globally, has shown encouraging recovery, with South Africa’s population estimated at 14,074 individuals by the end of 2023, an increase of 4.1% since 2021. In contrast, the black rhinoceros (*Diceros bicornis*) remains Endangered nationally and Critically Endangered globally. South Africa currently supports approximately 2,065 black rhinos, a remarkable recovery from near extinction in the mid-1990s when continental populations had fallen to about 2,410 individuals. By 2023, Africa’s black rhino population had increased to 6,448 individuals.
 
+::: grid
+::: {.g-col-lg-4 .g-col-12}
+![© James Warwick](./imgs/sp-img-17 James Warwick.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Lions (*Panthera leo*)
+
+------------------------------------------------------------------------
+:::
+:::
+
 Lions (*Panthera leo*) present a contrasting picture. Although listed as Vulnerable globally, South Africa’s population is classified as Least Concern nationally, with an estimated 2,007 mature individuals showing stable to increasing trends. These populations are largely managed within smaller fenced reserves functioning as a metapopulation network that supports demographic and genetic viability. Leopards (*Panthera pardus*), remain Vulnerable both nationally and globally, affected by habitat loss, human-wildlife conflict, retaliatory killings, and poaching for traditional medicine and cultural uses, despite their continued wide distribution across the country.
+
+::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Elsa Bussiere](./imgs/sp-img-19 Elsa Bussiere.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+Roan (*Hippotragus equinus*) and sable antelope (*Hippotragus niger*)
+---------------------------------------------------------------------
+:::
+:::
+
 
 Among South Africa’s rare antelope species, both the roan (*Hippotragus equinus*) and sable antelope (*Hippotragus niger*) are classified as Vulnerable on the national Red List, although both are listed as Least Concern globally. These species naturally occur at low densities within southern Africa, and South Africa represents a key stronghold for their continued persistence. Current estimates indicate approximately 860 wild roan antelope within their natural distribution range, of which only 197 occur in state-owned protected areas, a 43% decline over three generations. While there are many more roan in South Africa, our assessments only include animals that meet the wildness framework criteria (**Child et. al. 2019**) since intensively managed animals would not survive without continuous human intervention and hence cannot be considered part of South Africa’s wild population. Roan antelope experienced a 90% decline in the Kruger National Park between 1986 and 1993, but numbers have since stabilized. One of the primary causes of decline was the addition of artificial waterholes within the range of roan in Kruger which attracted other large grazers such as zebra and wildebeest and subsequent increases in predator numbers on the north of the park. 
 

@@ -71,7 +71,7 @@ The state of biodiversity is shaped by both current and historical pressures. Cr
 
 Priority actions across all realms are summarised on the [priority actions page](../integrated-findings/pakg_actions.qmd), and discussed in key messages [A2](../key-messages/kma2.qmd), [A4](../key-messages/kma4.qmd), [A6](../key-messages/kma6.qmd), [B1](../key-messages/kmb1.qmd), [B3](../key-messages/kmb3.qmd), [B4](../key-messages/kmb4.qmd), [B5](../key-messages/kmb5.qmd).
 
-### Acknowledgements
+## Acknowledgements
 
 The terrestrial species assessments in the NBA are supported by dozens of experts from institutions across South African and abroad, they are acknowledged in the [species findings pages](../species/sp.qmd).
 

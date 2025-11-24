@@ -108,7 +108,7 @@ google-scholar: true
 
 <!-- replace 'degraded' with 'modified' in the condition categories throughout marine results and ask Linda to update her Figure 3 in coast/cst_pressures-condition.qmd -->
 
-*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, further refinement of indicators and improved understanding of ecosystem responses to pressures are needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd))*
+*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, further refinement of indicators and improved understanding of ecosystem responses to pressures are needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd)).*
 
 ![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. © Eve Marshall, Triton Dive Charters](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
 
@@ -116,14 +116,14 @@ google-scholar: true
 
 ## Ecological condition results
 
-The condition map shows areas that are assessed to be in one of four categories of ecological condition: natural/near-natural, moderately modified, severely modified and very severely modified (Box 1). Critically modified areas were included in the severely modified category in this assessment. In South Africa's marine environment, critically modified components are only present in some shore ecosystem types, where (coastal development or ports) infrastructure has caused irreversible habitat loss.
+The condition map shows areas that are assessed to be in one of four categories of ecological condition: natural/near-natural, moderately modified, heavily modified and severely modified (Box 1). Critically modified areas were included in the heavily modified category in this assessment. In South Africa's marine environment, critically modified components are only present in some shore ecosystem types, where (coastal development or ports) infrastructure has caused irreversible habitat loss.
 
 ![Map of ecological condition showing the spatial distribution of marine benthopelagic and benthic areas in different ecological condition categories as calculated from cumulative pressures (see [@sec-approach] and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)).](imgs/condition_with_donut.png){#fig-condition_benthic .lightbox}
 
 ![Map of ecological condition showing the spatial distribution of marine pelagic areas in different ecological condition categories as calculated from cumulative pressures (see [@sec-approach].)](imgs/condition_pel_with_donut.png){#fig-condition_pelagic .lightbox}
 
 \
-Areas of very severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the south coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates have been underway.
+Areas of severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the south coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates have been underway.
 
 ![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
 
@@ -160,7 +160,7 @@ nba_plot(cnd,
 
 ```
 
-::: {#box-ecol_cats .callout-note .marine collapse="true" title="Box 1. Ecological condition categories."}
+::: {#box-ecol_cats .callout-note .marine collapse="true" title="Box 1. Categories of ecological condition."}
 ```{r}
 #| label: tbl-conditions
 #| echo: false
@@ -199,11 +199,11 @@ conditions %>%
 
 ![Sandy shores with effective protection of the connected land-sea interface can be maintained in natural/near natural ecological condition. (© Peter Chadwick)](imgs/PIC_20090810_umlalazi_beach_dunes.png)
 
-Mining, coastal development and demersal trawling have the highest impact scores among the 31 pressures included in the assessment of ecological condition and contributed to severely modified and very severely modified ecological condition in some areas [@sink2019]. Fishing is the greatest driver of modified ecological condition in the offshore environment, whereas coastal development and fishing are the greatest drivers of ecosystem modification in inshore ecosystems. Flow reduction, waste water discharge and lethal shark control measures also drive high levels of ecosystem modification in some areas.
+Mining, coastal development and demersal trawling have the highest impact scores among the 31 pressures included in the assessment of ecological condition and contributed to heavily modified and severely modified ecological condition in some areas [@sink2019]. Fishing is the greatest driver of modified ecological condition in the offshore environment, whereas coastal development and fishing are the greatest drivers of ecosystem modification in inshore ecosystems. Flow reduction, waste water discharge and lethal shark control measures also drive high levels of ecosystem modification in some areas.
 
 <!-- Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-condition_benthic). -->
 
-![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png)
+![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png){width=900}
 
 ## Groundtruthing ecological condition
 
@@ -254,7 +254,7 @@ impact_scores %>%
                                            color = "white", 
                                            align = "left")),
                 locations = gt::cells_column_labels()) %>%
-  tab_options(container.height = px(600),
+  tab_options(container.height = px(500),
               container.overflow.y = TRUE)
 
 
@@ -263,7 +263,7 @@ impact_scores %>%
 
 Impact scores were calculated using a combination of the functional impact and recovery scores and scaled to values between 0 and 100. Draft values of impact score components were iteratively refined and updated with guidance of key specialists with local knowledge, until consensus values were obtained [@sink2019].
 
-Individual pressure impact layers were developed by combining the ecosystem-pressure matrix with the pressure intensity layer [and ecosystem map]{.mark} to produce maps showing the impact of each activity across the seascape. In this way, each pixel of the pressure impact layer represents the extent to which the ecosystem type that exists there is impacted by the type and intensity of the pressure.
+Individual pressure impact layers were developed by combining the ecosystem-pressure matrix with the pressure intensity layer and ecosystem map to produce maps showing the impact of each activity across the seascape. In this way, each pixel of the pressure impact layer represents the extent to which the ecosystem type that exists there is impacted by the type and intensity of the pressure.
 
 <!-- [jock has worked/edited until here, the remainder I'm just pasting in as is] -->
 
@@ -289,7 +289,7 @@ Potential future improvements to the ecological condition mapping process includ
 
 • Continue to test and validate indicators for condition assessments under a variety of, and multiple, pressures.
 
-• Explore application of critically modified category in the marine realm (beyond shores).[ and novel or anthropogenic ecosystem types as defined by the IUCN global ecosystem typology. cut? this isn't condition?]{.mark}
+• Explore application of critically modified category in the marine realm (beyond shores) and its relationship to potentially novel or anthropogenic ecosystem types as defined by the IUCN Global Ecosystem Typology.
 
 • Increase alignment of condition categories across realms.
 

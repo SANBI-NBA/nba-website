@@ -29,7 +29,7 @@ The NBA has seven objectives, which are to:
 
 ## Uses and users of the NBA
 
-Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used. A recent publication by da Silva et al., (2025)[@dasilva] delves into the impact of the National Biodiversity Assessment in South Africa.
+Because the NBA has so many objectives, it also has a variety of users. The types of users of the NBA have been explored through literature reviews, surveys and inventories of how the NBA has been used. A recent publication by da Silva et al., (2025)[@dasilva2025] delves into the impact of the National Biodiversity Assessment in South Africa.
 
 The website form of the NBA allows information to be presented at increasing levels of detail, and each user can delve as deeply as they choose. Users who want to only read the key messages, for example, can study the Summary of Findings and Key Messages publication and the key messages section of the website. Users who are developing response strategies and action plans for a particular realm or taxonomic group or pressure can study those webpages in detail and delve into the references provided. Users such as scientists or biodiversity planners can access the underlying datasets and can investigate the analytical methods by reviewing the workflows and script that underpin the NBA, accessible in public repositories.
 
@@ -78,7 +78,7 @@ South Africa is a signatory to several Multilateral Environmental Agreements (ME
 ![](imgs/KMGBF.png){fig-align="left" width="180"}
 
 ::: {#box-kmgbf .callout-note collapse="true" title="Kunming-Montreal Global Biodiversity Framework (KM-GBF)"}
-In 2022, the Parties to the Convention on Biological Diversity (CBD) adopted the [Kunming-Montreal Global Biodiversity Framework (KM GBF).](https://www.cbd.int/gbf) The KM GBF is a global agreement aiming to halt and reverse biodiversity loss by 2030. It has 4 goals and 23 targets for 2030.
+In 2022, the Parties to the United Nations Convention on Biological Diversity (UNCBD) adopted the [Kunming-Montreal Global Biodiversity Framework (KM GBF).](https://www.cbd.int/gbf) The KM GBF is a global agreement aiming to halt and reverse biodiversity loss by 2030. It has 4 goals and 23 targets for 2030.
 
 Key GBF indicators to which the NBA has links:
 
@@ -142,11 +142,25 @@ Key UNCCD indicators to which the NBA has links: 
 ![](imgs/RAMSAR.png){width="100"}
 
 ::: {.callout-note collapse="true" title="Ramsar Convention on Wetlands of International Importance"}
-The [Ramsar](https://www.ramsar.org/) treaty was adopted in 1971 and serves as the framework for the conservation and effective management of welands.
+The [Ramsar](https://www.ramsar.org/) treaty was adopted in 1971 and serves as the framework for the conservation and effective management of wetlands.
 
 Key Ramsar indicator to which the NBA has links:
 
 -   8.6 Total and disaggregated area for the extent of wetlands (according to the Convention’s definition) for the year of available data
+:::
+
+![](imgs/UNFCCC.jpg){width="200"}
+
+::: {.callout-note collapse="true" title="United Nations Framework Convention on Climate Change (UNFCCC)"}
+The Adaptation Committee of the [UNFCCC](https://www.unfccc.int/) has proposed a number of Ecosystems and Biodiversity indicators of relevance to the NBA.
+
+Key linkages to NBA findings:
+
+-   Conservation and protection
+
+-   Enhancement and restoration
+
+-   Climate impacts on ecosystems and biodiversity
 :::
 
 ## References

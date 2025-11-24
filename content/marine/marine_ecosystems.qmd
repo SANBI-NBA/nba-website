@@ -117,19 +117,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
+<!-- ## Outstanding to do list: -->
 
-```{r}
-#| eval: false
-#| include: false
-
-## Outstanding to do list:
-
-# add map of biological occurrence records in south africa
-# consider adding a map showing occurrence records just ahead of AI box?
-
-
-```
+<!-- # consider adding a map showing occurrence records just ahead of AI box? -->
 
 *South Africa’s marine environment includes the Atlantic, Indian and Southern Oceans. The contrasting cold Benguela upwelling region and the warm, fast flowing Agulhas current interact with a diverse topography and geological setting to drive exceptional marine biodiversity and high endemism. South Africa is iteratively improving the map of marine ecosystem types as our knowledge of the ocean grows. The latest, 2023 Marine Ecosystem Map contains 163 ecosystem types that nest within 17 ecosystem functional groups in alignment with the IUCN Global Ecosystem Typology (GET). Progress is underway to leverage rapidly expanding marine data for improved ecosystem mapping. Further investment in data science capacity will be critical to integrate expanding knowledge into robust ecosystem classifications, assessments and plans.*
 

@@ -281,15 +281,13 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ```
 
-------------------------------------------------------------------------
-
 *Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened, with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy ([Key Message A2](../key-messages/kma2.qml)). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning. Strategic Marine Spatial Planning can safeguard natural capital while enabling economic development.*
 
 ![Cape Bay is now considered an Endangered ecosystem type. (© Peter Chadwick)](imgs/cape_bay.png)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
-\
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -322,7 +320,6 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 :::::
 
 ------------------------------------------------------------------------
-
 \
 
 ## Ecosystem threat status results

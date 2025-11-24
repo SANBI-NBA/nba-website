@@ -71,12 +71,20 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-image: "./imgs/Ixia ebrahimii_cropped.png"
+#image: "./imgs/Ixia ebrahimii_cropped.png"
+
+#format:
+#  html:
+#    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
 
-<center>![](./imgs/Ixia%20ebrahimii_cropped.png){fig-alt="Ixia ebrahimii" width="800"}[*Ixia ebrahimii*, a new Ixia species found by the Custodians of Rare and Endangered Wildflowers (CREW) team. Image credits: © Ismail Ebrahim]{style="font-size:65%;"}</center>
+<center>
+
+![*Ixia ebrahimii*, a new Ixia species found by the Custodians of Rare and Endangered Wildflowers (CREW) team. (© Ismail Ebrahim)](./imgs/Ixia%20ebrahimii_cropped.png){fig-align="center"}
+
+</center>
 
 :::::: columns
 ::: {.column width="33.3%"}
