@@ -108,9 +108,9 @@ google-scholar: true
 
 <!-- replace 'degraded' with 'modified' in the condition categories throughout marine results and ask Linda to update her Figure 3 in coast/cst_pressures-condition.qmd -->
 
-*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, [further refinement of indicators and improved understanding of ecosystem responses to pressures are]{.mark} needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd))*
+*Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, further refinement of indicators and improved understanding of ecosystem responses to pressures are needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd))*
 
-![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. © Eve Marshall, Triton Dive Charters](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
+![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. © Eve Marshall, Triton Dive Charters](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
 
 \
 
@@ -125,14 +125,14 @@ The condition map shows areas that are assessed to be in one of four categories 
 \
 Areas of very severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the south coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates have been underway.
 
-![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
+![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
 
-The marine realm has relatively high proportions of areas in the natural/near-natural ecological condition (@fig-condition_benthic, @fig-condition_pelagic). However, ecosystem modification tends to be focused in pressure hotspots, usually linked to local characteristics such as high productivity, accessibility and valuable natural resources (such as bays, inner shelf and shelf edge areas), while large and often remote areas remain relatively lightly used and unmodified.
+The marine realm has relatively high proportions of areas in the natural/near-natural ecological condition (@fig-condition_benthic, @fig-condition_pelagic). However, ecosystem modification tends to be focused in pressure hotspots, usually linked to local characteristics such as high productivity, accessibility and valuable natural resources (such as bays, inner shelf and shelf edge areas), while large and often remote areas remain relatively lightly used and unmodified. Deepwater biogenic beds, bays and kelp forests have the highest proportion of ecosystem modification in terms of their extent ([@fig-ets_bargraphs]).
 
 ```{r}
 #| label: fig-ets_bargraphs
 #| echo: false
-#| fig-cap: Condition of marine ecosystem types in each functional group, summarised by aerial extent.[ Do we want this Figure?]{.mark}
+#| fig-cap: Condition of marine ecosystem types in each functional group, summarised by aerial extent.
 # <!-- #| Threat status of marine ecosystem types by functional group. Numbers reflected in (A) indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category.  -->
 #| out-width: "100%"
 #| classes: plain
@@ -147,8 +147,6 @@ cnd <- read.csv(file=list.files(path = "./data", pattern = "^cnd_extent.csv$", r
   # fix the inconsistenly lower case spelled EFG 'rocky shores'
   mutate(ecosystem_functional_type_getl3 = str_replace_all(ecosystem_functional_type_getl3, "rocky shelves", "Rocky shelves"))
   
-
-
 # bar plot
 nba_plot(cnd,
               ecosystem_functional_type_getl3,
@@ -162,7 +160,7 @@ nba_plot(cnd,
 
 ```
 
-::: {#box1 .callout-note .freshwater collapse="false" title="Box 1. Ecological condition categories."}
+::: {#box-ecol_cats .callout-note .marine collapse="true" title="Box 1. Ecological condition categories."}
 ```{r}
 #| label: tbl-conditions
 #| echo: false
@@ -199,23 +197,21 @@ conditions %>%
 ```
 :::
 
-![Sandy shores with effective protection of the connected land-sea interface can be maintained in natural/near natural ecological condition. © [Tash must let us know]{.mark}](imgs/PIC_20090810_umlalazi_beach_dunes.png)
+![Sandy shores with effective protection of the connected land-sea interface can be maintained in natural/near natural ecological condition. (© Peter Chadwick)](imgs/PIC_20090810_umlalazi_beach_dunes.png)
 
-[**Port photo?** **Mining photo?**]{.mark}
-
-Mining, coastal development, trawling and mariculture ([check linefishing appears to have higher than 'sea-based aquaculture' in Table23]{.mark}) have the highest impact scores among the 31 pressures included in the assessment of ecological condition and contributed to [severely modified and very severely modified]{.mark} ecological condition in some areas [@sink2019]. Fishing is the greatest driver of modified ecological condition in the offshore environment, whereas coastal development and fishing are the greatest drivers of ecosystem modification in inshore ecosystems. Flow reduction, waste water discharge and lethal shark control measures also drive high levels of ecosystem modification in some areas.
+Mining, coastal development and demersal trawling have the highest impact scores among the 31 pressures included in the assessment of ecological condition and contributed to severely modified and very severely modified ecological condition in some areas [@sink2019]. Fishing is the greatest driver of modified ecological condition in the offshore environment, whereas coastal development and fishing are the greatest drivers of ecosystem modification in inshore ecosystems. Flow reduction, waste water discharge and lethal shark control measures also drive high levels of ecosystem modification in some areas.
 
 <!-- Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-condition_benthic). -->
 
-![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png)
+![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png)
 
 ## Groundtruthing ecological condition
 
-Few cumulative impact studies validate their assessments of ecological condition, and groundtruthing ecological condition was a recommendation of the 2018 NBA. Smit et al. (2023) identified suitable indicators for condition assessments and defined reference conditions for rocky reef ecosystems, an important step in ecosystem assessment [@keith2013]. Subsequently, Smit et al. (2024) used rocky reef ecological data to compare reference conditions from well established MPAs against sites with varying cumulative pressures. [\[This was later expanded to over 1000 baited remote underwater stereo-video samples across ten MPAs spanning three ecoregions to assess functional diversity patterns at a broader scale (Smit et al. 2026).(cut?)\]]{.mark}
+Few cumulative impact studies validate their assessments of ecological condition, and groundtruthing ecological condition was a recommendation of the 2018 NBA. Smit et al. (2023) identified suitable indicators for condition assessments and defined reference conditions for rocky reef ecosystems, an important step in ecosystem assessment [@keith2013]. Subsequently, Smit et al. (2024) used rocky reef ecological data to compare reference conditions from well established MPAs against sites with varying cumulative pressures. This was later expanded to over ten MPAs spanning three ecoregions to assess functional diversity patterns at a broader scale [@smit2026].
 
 Results showed that ecological condition was significantly but weakly correlated with NBA cumulative impact scores, with notable discrepancies at finer scales, where some reefs were in better condition than predicted while others were worse (Smit et al. 2024). The cumulative impact scores performed better as a proxy for the condition of fish communities than for benthic communities [@smit2024]. Although the cumulative impact map was an effective proxy at broad scales, the findings highlighted the need for finer-scale pressure mapping and ecological data to improve ecological condition maps and support more accurate spatial assessments.
 
-![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. © Steve Benjamin.](imgs/DeHoop_MPA_Steve_Benjamin.png)
+![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. © Steve Benjamin.](imgs/DeHoop_MPA_Steve_Benjamin.png){width=100%}
 
 ## Approach {#sec-approach}
 
@@ -225,10 +221,10 @@ Ecological condition in the marine realm is assessed by intersecting the spatial
 
 To develop the ecosystem-pressure matrix, expert scoring of 'functional impact' and 'recovery' is conducted by experts supported by a synthesis of information on [pressures on marine biodiversity](marine_pressures.qmd), using a guided group consensus method approach that was adapted from [Teck et al. (2010)](https://doi.org/10.1890/09-1173.1) [@teck2010], to develop impact scores per activity for each ecosystem functional group [@sink2019].
 
-::: {#box2 .callout-note .freshwater collapse="false" title="Box 2. Scoring of functional impact and recovery as part of an ecosystem-pressure matrix."}
-**'Functional impact'** is a broad evaluation of the degree to which the natural state of any given ecosystem (including constituent species, community structure, physical habitat structure and ecosystem function) is impacted by a specific pressure. This component incorporates the issue of spatial scale or extent of a single act of an activity (pressure event), and impacts on trophic structure of communities. Experts evaluated the functional impact of a specific pressure to each broad ecosystem group, based on their knowledge, the support of international and local literature, and guided by the 0-10 scale in @tbl-impact_scores.
+::: {#box2 .callout-note .marine collapse="true" title="Box 2. Scoring of functional impact and recovery as part of an ecosystem-pressure matrix."}
+'Functional impact' is a broad evaluation of the degree to which the natural state of any given ecosystem (including constituent species, community structure, physical habitat structure and ecosystem function) is impacted by a specific pressure. This component incorporates the issue of spatial scale or extent of a single act of an activity (pressure event), and impacts on trophic structure of communities. Experts evaluated the functional impact of a specific pressure to each broad ecosystem group, based on their knowledge, the support of international and local literature, and guided by the 0-10 scale in @tbl-impact_scores.
 
-**'Recovery'** is a measure of the time required for the ecosystem (including affected species, physical habitat structure, and community trophic structure) to return to a natural state following cessation of disturbance by a given activity. As above, experts evaluated the recovery based on their knowledge, the support of literature, and guided by the 0-10 scale in @tbl-impact_scores.
+'Recovery' is a measure of the time required for the ecosystem (including affected species, physical habitat structure, and community trophic structure) to return to a natural state following cessation of disturbance by a given activity. As above, experts evaluated the recovery based on their knowledge, the support of literature, and guided by the 0-10 scale in @tbl-impact_scores.
 
 ```{r}
 #| label: tbl-impact_scores
@@ -265,39 +261,37 @@ impact_scores %>%
 ```
 :::
 
-Impact scores were calculated using a combination of the functional impact and recovery scores and scaled to values between 0 and 100 for ease of applying the IUCN methodology [\[which IUCN methodology? needs elaboration\]]{.mark}. Draft values were iteratively refined and updated with guidance of key specialists with local knowledge, until stable [consensus values]{.mark} were obtained [@sink2019].
+Impact scores were calculated using a combination of the functional impact and recovery scores and scaled to values between 0 and 100. Draft values of impact score components were iteratively refined and updated with guidance of key specialists with local knowledge, until consensus values were obtained [@sink2019].
 
-Individual pressure impact layers were developed by combining the ecosystem-pressure matrix with the pressure intensity layer to produce maps showing the impact of each activity across the seascape. In this way, each pixel of the pressure impact layer represents the extent to which the ecosystem that exists there is impacted by the type and intensity of the pressure.
+Individual pressure impact layers were developed by combining the ecosystem-pressure matrix with the pressure intensity layer [and ecosystem map]{.mark} to produce maps showing the impact of each activity across the seascape. In this way, each pixel of the pressure impact layer represents the extent to which the ecosystem type that exists there is impacted by the type and intensity of the pressure.
 
 <!-- [jock has worked/edited until here, the remainder I'm just pasting in as is] -->
 
-A cumulative impact score was derived by summing all the individual pressure impact scores at a specific site using the individual pressure impact layers, allowing for the development of a cumulative impact map showing the cumulative impact across the seascape [@sink2019].
+A map of cumulative impact was calculated by summing all the individual pressure impact layers by calculating the sum of their scores at each location (pixel) [@sink2019]. The resultant map represents the cumulative impact to the ecosystem type in each pixel, based on the type and intensity of all pressures recorded at that location.
 
-To develop a map of ecosystem condition, the cumulative impact layer was recalibrated by assigning the cumulative impact scores into 4 condition categories (Box 1). This recalibration was achieved by distributing the mapped impact scores into 4 categories to align with the IUCN thresholds of more than 50%, 70% and 90% degradation or disruption based on natural breaks and expert inputs [@sink2019]. Numerical thresholds in the cumulative impact scores had to be defined in order to classify ecosystem degradation into 4 categories aligned to the IUCN degradation thresholds.
+To develop a map of ecosystem condition, the cumulative impact layer scores were divided into four condition categories ([Box 1](#box-ecol_cats)) that align with the four categories of degradation or disruption in criteria C and D of the IUCN Red List of Ecosystems methodology [@sink2019].
 
-It must be clarified that although the assessment was conducted using 30 x 30 m pixels, this does not imply that the ecosystem map or the results are accurate to this level. Rather, this raster-based approach was used to allow for the calculations to be done at a sufficiently fine scale while accommodating the unique combinations of multiple pressures, pressure intensities, impacts and ecosystem types. The 30 x 30 m pixels reflect the size of the units used for the numerical calculations whereas the actual spatial accuracy is linked to the underlying accuracy of the ecosystem map and the pressure mapping. Improved finer-scale ecosystem and pressure mapping is a key priority for future assessments.
+It must be clarified that although the assessment was conducted using 30 x 30 m pixels, this does not imply that the ecosystem map or the results are accurate to this resolution. This high resolution was used to enable calculations at a sufficiently fine scale while accommodating the unique combinations of multiple pressures, pressure intensities, impacts and ecosystem types. The 30 x 30 m pixels reflect the units used for the numerical calculations, whereas the spatial accuracy is linked to the underlying accuracy of the ecosystem map and the pressure mapping. Improved finer-scale ecosystem and pressure mapping is a key priority for future assessments.
 
-Smit et al. (2023, 2024, 2026)[@smit2023; @smit2024; @smit2026] made progress in field-based evaluations of site condition and this work must be expanded to other ecosystem functional groups. Such studies can be used to calibrate the cumulative impact scores and the classification thresholds used to subdivide categories. Further work is needed to investigate the use of different thresholds with better calibration guided by field surveys that measure condition representing the ideal approach.
+Smit et al. (2023, 2024, 2026)[@smit2023; @smit2024; @smit2026] made progress in field-based evaluations of site condition. This work must be expanded to other ecosystem functional groups. Such studies can be used to calibrate the cumulative impact scores and the classification thresholds used to assign condition categories. Further work is needed to investigate the use of different thresholds, ideally guided by field surveys that assess ecological condition indices.
 
-Potential future improvements to the ecological condition mapping process include: ecological assessments. These include
+Potential future improvements to the ecological condition mapping process include:
 
-• Revise scoring of impact and recovery scores with new literature and improved global collaboration.
+• Revise scoring of impact and recovery scores with new literature and greater international collaboration.
 
-• Refine scoring guidelines and definitions for improved clarity and repeatability.
+• Refine scoring guidelines and definitions for greater clarity and reproducibility.
 
-• Develop multiple layers for different assessment components (e.g. benthic, pelagic, ongoing decline verses pressures that have stopped, abiotic vs biotic degradation). These should be tailored to different IUCN criteria.
+• Develop different cumulative impact layers for different ecological condition assessment components (e.g. benthic, pelagic, ongoing decline versus pressures that have stopped, abiotic vs biotic degradation). These should be tailored to align with IUCN Red List of Ecosystems criteria.
 
-• Apply learnings from research that can inform calibration of ecological condition.
+• Apply learnings from research that can inform ecological condition thresholds.
 
-• Increase knowledge on reference state of marine ecosystems using a broader diversity of indicators and a broader range of ecosystem functional groups.
+• Increase knowledge on reference states of marine ecosystems for a diversity of indicators and a broader range of ecosystem functional groups.
 
-• Continue to test and validate indicators for condition assessments, and in response to multiple pressures
+• Continue to test and validate indicators for condition assessments under a variety of, and multiple, pressures.
 
-• Increase transparency and repeatability in assessing condition.
+• Explore application of critically modified category in the marine realm (beyond shores).[ and novel or anthropogenic ecosystem types as defined by the IUCN global ecosystem typology. cut? this isn't condition?]{.mark}
 
-• Explore application of critically modified category in marine realm (beyond shores) and novel or anthropogenic ecosystem types as defined by the IUCN global ecosystem typology.
-
-• Increase alignment of condition categories (and condition adjusted representation approaches in protection level assessments) across realms where feasible.
+• Increase alignment of condition categories across realms.
 
 ## Technical documentation
 
@@ -321,7 +315,7 @@ Smit, K.P. et al. 2023. Identifying suitable indicators to measure ecological co
 
 Smit, K.P. et al. 2024. Groundtruthing cumulative impact assessments with biodiversity data: Testing indicators and methods for marine ecosystem condition assessments in South Africa. Aquatic Conservation 34: e4096. https://doi.org/10.1002/aqc.4096
 
-1.  Smit, K.P. et al. 2026. Depth and habitat drive spatial patterns in fish functional diversity: a trait-based assessment across South Africa and southern Mozambique. Marine Environmental Research 213: 107620. https://doi.org/10.1016/j.marenvres.2025.107620
+Smit, K.P. et al. 2026. Depth and habitat drive spatial patterns in fish functional diversity: a trait-based assessment across South Africa and southern Mozambique. Marine Environmental Research 213: 107620. https://doi.org/10.1016/j.marenvres.2025.107620
 
 ### References
 

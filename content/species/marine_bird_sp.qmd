@@ -89,9 +89,9 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-format:
-  html:
-    embed-resources: true
+#format:
+#  html:
+#    embed-resources: true
 ---
 
 ```{=html}
@@ -311,7 +311,7 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
     xlim(c(2, 4.5)))  %>%
-  add_total(overall)
+  add_total(overall) 
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
@@ -362,13 +362,13 @@ gt(df) %>%
   tab_options(table.width = pct(100),
               data_row.padding = px(12)) %>%
   
-  tab_style(style = cell_fill(color = "gray90"),
-            locations = cells_body(columns = "Total")) %>%  
+  #tab_style(style = cell_fill(color = "gray90"),
+  #          locations = cells_body(columns = "Total")) %>%  
   
   tab_style(style = cell_text(size = px(12)),
             locations = cells_body(columns = everything())) %>%
  
-  tab_style(style = cell_text(size = px(12)),
+  tab_style(style = cell_text(size = px(12), weight = "bold" ),
             locations = cells_column_labels(columns = everything())) %>%
   
   tab_style(style = cell_text(align = "center"),
@@ -413,24 +413,35 @@ The trend in species status over time was measured using a global standard indic
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line shows the rate at which marine seabirds are becoming more threatened over time. Lower RLI values indicate a faster decline, meaning the group is moving more rapidly towards extinction (an RLI value of 0 indicates all species in the group are extinct)."
+#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
 
+library(tidyverse)
 library(nbaR)
 
 # --- Dataset ---
 
-df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx") %>%
-           filter(Taxon %in% c("Birds"))
+df <- read_csv("./data/sp_birds_rli.csv")
 
-nba_index_plot(TYPE = "RLIs",
-               DF = df_rlis,
-               YEAR = Year,
-               RLI = RLI,
-               ASSESSMENT_YEAR = Assessment_Year,
-               GROUP = Taxon,
-               PALETTE = "taxon",
-               #AGGREGATE = TRUE,
-               SAVE = NULL)
+# Plot the RLI trend
+ggplot(df, aes(x = Year, y = RLI, colour = Group)) +
+ geom_line(linewidth = 1, alpha = 0.5, linetype = "solid", size = 1.0) +
+ geom_point(size = 4, alpha = 0.8) +
+ ylim(c(0.5, 1))+
+ labs(
+   #title = "Red List Index (RLI) Trend",
+   x = "Year",
+   y = "Red List Index of Species"
+ ) +
+ theme_classic()+
+ theme(panel.grid = element_blank(),
+axis.title.x = element_text(size = 10, margin = margin(t = 12)),
+        axis.title.y = element_text(size = 10, margin = margin(r = 12)),)+
+   scale_x_continuous(
+   breaks = c(2015, 2025),
+   limits = c(2015, 2025),
+
+ )+
+ coord_equal(ratio = 20/1, expand =T)
 
 ```
 
@@ -506,7 +517,7 @@ The Benguela Upwelling Ecosystem supports seven endemic seabird species. The reg
 
 As part of the Global Biodiversity Framework (GBF) Target 4, signatories are committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030. Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. South Africa has initiated a process for each of the taxonomic groups that have been comprehensively assessed following the IUCN Red List criteria, to identify and prioritise species that are in urgent need of interventions to promote their recovery to contribute to achieving the GBF Target 4 goals.
 
-:::::::::: {#box-2 .callout-note .species title="Box 2: Mouse-Free Marion." collapse="true"}
+:::::::::: {#box-2 .callout-note .species title="Box 2: Mouse-Free Marion." collapse="false"}
 Globally, invasive species are among the greatest threats to seabirds. South Africa’s sub-Antarctic Prince Edward Island group (comprising Marion and Prince Edward islands) provides critical breeding grounds for Southern Ocean seabirds. In total, 29 seabird species breed on Prince Edward Island while 28 species breed on the larger Marion Island. Together, these islands host nearly half of the global population of Wandering Albatrosses (*Diomedea exulans*). However, Marion Island’s seabirds face a severe threat: invasive House Mice (*Mus musculus*), accidentally introduced in the 1800s, are pushing the island’s ecosystem, and its seabird populations, towards ecological collapse.
 
 In partnership with the South African Department of Forestry, Fisheries and the Environment, BirdLife South Africa established Saving Marion Island’s Seabirds: [The Mouse-Free Marion (MFM) Project](https://mousefreemarion.org/) in 2021. This project’s objective is the eradication of House Mice to restore Marion Island’s biodiversity and ecological integrity. The MFM Project is currently in its planning and preparatory phase, with the expected date of the eradication operation dependent on securing required funding and regulatory approvals well before the operation.
@@ -544,7 +555,7 @@ Wounded wandering albatross after being preyed on by House mice on Marion Island
 :::::::::
 ::::::::::
 
-:::: {#box-3 .callout-note .species title="Box 3: Albatross Task Force seabird conservation efforts." collapse="true"}
+:::: {#box-3 .callout-note .species title="Box 3: Albatross Task Force seabird conservation efforts." collapse="false"}
 Of the 18 species of albatrosses that breed in the Southern Ocean, 12 species forage in South African waters, all of which are impacted by fishing activities in the form of bycatch. Five of the 12 species of albatross breed on the Prince Edward Islands, including 40% of the world’s Wandering Albatross population. An additional 19 species of seabirds are impacted by bycatch, including 14 that breed in South Africa, of which five are Benguela Current endemics. Of the total 31 species impacted by bycatch, 14 (35%) are threatened with extinction, with an additional 7 species classified as Near threatened by the IUCN.
 
 At the forefront of dealing with seabird bycatch issues is BirdLife South Africa’s Albatross Task Force (ATF) team, active since 2004 and part of an international team of experts working directly with fishing crews and governments to implement and legislate seabird bycatch mitigation measures. The ATF has been instrumental in the development and adoption of Bird-scaring Lines (BSLs), a key mitigation measure that significantly reduces seabird interactions with trawl cables and baited hooks. In 2010, research carried out by the ATF demonstrated that the use of BSLs reduced annual seabird bycatch in the demersal hake trawl fishery by 90%, from an estimated 9,300 birds being killed annually (2004-2005) to under 1000 seabirds in 2010 **(Maree et al. 2014)**.
@@ -566,7 +577,7 @@ Bird-scaring lines preventing seabird mortalities from cable interactions in use
 :::
 ::::
 
-:::::::: {#box-4 .callout-note .species title="Box 4: De Hoop for penguins: Creating a new breeding colony for African Penguins." collapse="true"}
+:::::::: {#box-4 .callout-note .species title="Box 4: De Hoop for penguins: Creating a new breeding colony for African Penguins." collapse="false"}
 One of the major threats to the Critically Endangered African Penguin is a lack of food, driven by competition with the fishing industry and climate-induced changes in fish distribution and abundance. While there are several initiatives in place to address this, a novel conservation measure is to establish new penguin breeding colonies in areas of higher fish abundance where there is little competition from the fishery. This work is being led by BirdLife South Africa in partnership with CapeNature and SANCCOB. In late 2018, work began on the eastern edge of the De Hoop Nature Reserve. A small colony was established there in the early 2000s but was abandoned by about 2008 due to predation by caracal. A predator-proof fence was installed to protect the headland, which is monitored using CCTV cameras along the fence and trail cameras to determine the general abundance and movements of predators.
 
 The first phase of the project was to attract penguins to the site naturally, using social attraction techniques that mimic an already existing colony. Life-like penguin decoys were placed at high vantage points and a speaker playing penguin calls was set up. These were in place for 2 years before the second phase was implemented. This was to release hand-reared penguin fledglings. Abandoned eggs and chicks rescued from other colonies, are hand-reared by SANCCOB before being released back into the wild at the age they would fledge naturally. Since 2021, over 300 fledglings have been released.
@@ -592,8 +603,7 @@ African penguin alongside soiled penguin decoy at new penguin colony at De Hoop.
 :::::::
 ::::::::
 
-**Purse-seine fishery no-take zones around six major African penguin colonies**
-
+::::::: {#box-5 .callout-note .species title="Box 5: Purse-seine fishery no-take zones around six major African penguin colonies." collapse="false"}
 Competition for common anchovy and sardine prey between African Penguins and commercial purse-seine fishers has been recognized as a significant threat to the Critically Endangered African Penguin. This threat was suspected as early as the 1970s but it was not until 2008 that formal recognition of this threat was translated into action by the Department of Environmental Affairs and Tourism through the implementation of experimental ‘island closures’ including alternating 3-year open and closed periods around four major penguin colonies in two regions (Dassen and Robben islands on the west coast and St Croix and Bird islands in Algoa Bay) up until 2021. The results of this experiment demonstrated a meaningful effect of these closures to African penguin breeding success, although the experiment was limited in its ability to assess longer-term impacts of fishing closures on other important African Penguin population parameters such as survival. Despite these limitations and after a lengthy period of negotiations between the Department of Forestry, Fisheries and the Environment, the purse-seine fishing industry representatives and penguin scientists, including an international review of the scientific findings, between 2021 and 2024, no-take zones were implemented for a minimum of 10 years (pending reviews in 2031 and 2035) around six penguin colonies in 2025 (@fig-4 – @fig-6); these included the addition of the south coast colonies of Stony Point and Dyer Island (@fig-5). This resulted in meaningful closure extents, i.e. closure designs that incorporated the majority of important penguin foraging habitat, around at least one colony in each of the three major regions (@fig-4 – @fig-6).
 
 :::::: grid
@@ -609,6 +619,7 @@ Competition for common anchovy and sardine prey between African Penguins and com
 ![Purse-seine fishing closures around St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)](./imgs/seabirds_img_18.png){#fig-6 style="width:100%;"}
 :::
 ::::::
+:::::::
 
 ### Recommended citation
 

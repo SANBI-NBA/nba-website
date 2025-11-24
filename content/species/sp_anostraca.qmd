@@ -312,7 +312,7 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
     xlim(c(2, 4.5)))  %>%
-  add_total(overall)
+  add_total(overall) 
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)

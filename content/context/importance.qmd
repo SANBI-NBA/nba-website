@@ -4,7 +4,6 @@ title-block-banner: "#A7A9AC" #Background colour of the title block: Apply compo
 title-block-banner-color: white # Header text colour: DO NOT CHANGE
 ---
 
-------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -35,7 +34,7 @@ In a study completed in 2019, it was estimated that jobs directly related to bio
 
 Importantly, there are jobs dedicated to managing biodiversity and/or maintaining and restoring ecological infrastructure (e.g. in protected areas or conservation authorities) and/or research, and for every one of these jobs there are approximately five other jobs that depend on utilising biodiversity – either consumptive or non-consumptive use. These utilisation jobs are in sectors such as fisheries, wildlife ranching, biodiversity tourism, traditional medicine, crop agriculture, biotrade and more.
 
-![Healthy rangelands are vital to both livestock and wildlife ranching, and there are an estimated 245 000 jobs on these farms across South Africa (©John Power)](imgs/johnpowerrangelands.png)
+![Healthy rangelands are vital to both livestock and wildlife ranching, and there are an estimated 245 000 jobs on these farms across South Africa. (©John Power)](imgs/johnpowerrangelands.png)
 
 Many biodiversity-related jobs are outside major urban centres and are labour intensive, contributing to rural development, poverty alleviation and inclusive growth. In a context where employment in traditional sectors such as manufacturing and agriculture is declining, biodiversity-related employment is based on a renewable resource that, if appropriately managed, can provide the foundation for long-term economic activity and growing numbers of jobs. This means that efforts to conserve and manage biodiversity should be seen not as a cost to the economy but as an investment in a resource that supports wider economic activity and employment.
 
@@ -55,7 +54,7 @@ In many parts of South Africa, people rely on **foods collected directly from th
 
 Numerous coastal communities rely on subsistence fishing for food, and South Africa’s 22 commercial fisheries extract many tonnes of seafood from the ocean annually.
 
-![Approximately 147 coastal communities in South Africa participate in small-scale fishing, and the marine recreational fishery includes at least 700 000 anglers (© Ryan Daly).](imgs/ryandalyfishing.png)
+![Approximately 147 coastal communities in South Africa participate in small-scale fishing, and the marine recreational fishery includes at least 700 000 anglers. (© Ryan Daly)](imgs/ryandalyfishing.png)
 
 In addition to direct benefits, there are numerous **soil, nutrient cycling and water-related ecosystem services** that create the necessary environment for productive agriculture and that support the harvesting of wild species for food.
 :::
@@ -65,7 +64,7 @@ In addition to direct benefits, there are numerous **soil, nutrient cycling and 
 ::: {.callout-note collapse="true" title="South Africa is a water scarce country, and healthy rivers and wetlands help to ensure the flow and quality of water."}
 Strategic Water Source Areas (SWSAs) are the 10% of the land area of South Africa, Lesotho and Eswatini that supply 50% of water to these countries. They are a vital form of ecological infrastructure, feeding major dams and providing water that is essential for people and the economy, often in urban centres some distance from the SWSAs themselves. Sound science has been used to delineate SWSAs for surface water and groundwater, and to better understand their contributions and the pressures they face. Securing SWSAs will involve implementing a range of different mechanisms to protect, restore, manage and monitor them. Doing so across this small fraction of land will help to reduce risks to water security now and in the future. The benefits for water security will become even more important as South Africa adapts to the impacts of climate change.
 
-![SWSAs are vital ecological infrastructure for national water security (© Jeremy Shelton).](imgs/jeremysheltonriver.png)
+![SWSAs are vital ecological infrastructure for national water security. (© Jeremy Shelton)](imgs/jeremysheltonriver.png)
 
 Download the [Strategic Water Source Areas: vital ecological infrastructure for national water security](./assets/SANBI2023_SWSA_factsheet.pdf) factsheet.
 :::
@@ -97,7 +96,7 @@ Download the 2013 [Ecological infrastructure](./assets/SANBI2013_Ecological_infr
 ::: {.callout-note collapse="true" title="South Africa has a growing biodiversity economy based on indigenous mammals and our unique flora."}
 There are an estimated 10 000 **wildlife ranches** that engage in a range of commercial activities such as ecotourism, intensive game breeding, live game sales, trophy hunting and biltong hunting. Game meat and biltong are produced from 21 different species. The most recent estimates (2015) show that the economic contribution of the sector may be as much as R14.4 billion, directly providing 65 000 jobs. The fact that wildlife can be private or communal property has resulted in stable or increasing large mammal populations in South Africa. This industry relies heavily on biodiversity, and wildlife ranching is a vitally important land use for both socio-economic development and biodiversity conservation. However, it can have negative impacts on biodiversity if conducted too intensively.
 
-![Fencing in wildife ranches allows for intensive management but carries an environmental cost (© John Power).](imgs/John_Power_kudu_fence.png)
+![Fencing in wildife ranches allows for intensive management but carries an environmental cost. (© John Power)](imgs/John_Power_kudu_fence.png)
 
 A 2015 survey found that there are 549 retail products that contain South African indigenous plant resources and/or bee products from just 24 South African species. There is likely large potential for growth in the **bioprospecting** sector, with potential for more retail products that make use of resources from indigenous species.
 
@@ -115,7 +114,7 @@ Download the [The Biodiversity Economy Project](./assets/SANBI2023_Biodiversity_
 ::: {.callout-note collapse="true" title="Tourism is a large and growing contributor to the South African economy."}
 The country’s striking natural scenery and rich biodiversity are popular drawcards, with beaches, coral reefs, kelp forests, mountains and wildlife some of the top tourism attractions. **Biodiversity tourism** is tourism that involves the use or enjoyment of biodiversity. In 2019, domestic and international biodiversity visitors collectively spent R60.6 billion in South Africa, providing 91 836 jobs. Protecting South Africa’s wealth of biodiversity assets will safeguard one of the country’s most competitive tourism advantages, and ensure that biodiversity tourism can increasingly create revenue and jobs.
 
-![In 2019 biodiversity tourism contributed R27.7 billion to GDP (© John Power).](imgs/johnpowertourism.png)
+![In 2019 biodiversity tourism contributed R27.7 billion to GDP. (© John Power)](imgs/johnpowertourism.png)
 
 Download [Biodiversity is a tourism asset](./assets/SANBI2025_Biodiversity_tourism_factsheet.pdf) factsheet.
 :::
@@ -143,7 +142,7 @@ Increases in volumes traded are having a negative impact of the threat status of
 ::: {.callout-note collapse="true" title="Biodiversity plays a key role in our overall perception of life."}
 In many South African societies, people believe in a vital spiritual or cultural connection with an animal, plant or place. There is increasing evidence that interacting with nature brings measurable emotional and mental benefits to people as well as physical benefits, and that a decline in this interaction can cause deficits. Natural spaces and indigenous species have huge value and significance to South Africans no matter whether we live in an urban or rural environment. Biodiversity plays a key role in our overall perception of life, as well as a role in our enjoyment of life.
 
-![Natural places are important for various cultural and spiritual practices (© Peter Chadwick).](imgs/peterchadwickspiritual.png)
+![Natural places are important for various cultural and spiritual practices. (© Peter Chadwick)](imgs/peterchadwickspiritual.png)
 
 Our natural ecosystems, plants and animals have influenced our evolution and cultural and spiritual development. These influences are woven into languages and place names, as well as the religion and folklore supporting spiritual and cultural life. This web of associations with biodiversity forms an important part of South Africans’ national identity.
 

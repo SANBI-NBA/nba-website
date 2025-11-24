@@ -24,9 +24,10 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 :::
 :::::
 
-::: {.column-margin}
+::: column-margin
 *Click on images to enlarge*
 :::
+
 ------------------------------------------------------------------------
 
 ::::: columns

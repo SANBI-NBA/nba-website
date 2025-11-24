@@ -146,7 +146,7 @@ This complementary indicator is estimated as the total phylogenetic diversity in
 
 ------------------------------------------------------------------------
 
-As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. Of these, 90 species had sufficient data to quantify the PM indicator, and 61 species had sufficient data to quantify the Ne 500 indicator. South reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species. While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
+As part of a global study testing the feasibility of reporting on the PM and Ne 500 indicators [@mastretta2024], 126 South African species were assessed, allowing for national indicator values to be quantified. Of these, 90 species had sufficient data to quantify the PM indicator, and 61 species had sufficient data to quantify the Ne 500 indicator. South reported a PM value of 0.95 and Ne 500 value of 0.42. This indicates that, while South Africa has maintained the majority of its species’ populations, they are smaller than what is needed to ensure their long-term persistence and the overall adaptive potential of the species ([key message B3](../key-messages/kmb3.qmd)). While this first assessment incorporated a relatively small number of species, the species included were from a wide variety of taxonomic groups, ecosystems, distributions and conservation statuses.
 
 Importantly, these national metrics can be disaggregated in various ways, such as by taxonomic group (@tbl-taxagrp) or conservation status (@fig-ne-by-threatstatus), to explore patterns and trends across different biodiversity components, similar to [species](../integrated-findings/intf-species.qmd) and [ecosystems](../integrated-findings/intf_ecosystems.qmd) assessments.
 
@@ -182,7 +182,7 @@ To better understand the genetic health of South African biodiversity, efforts a
 
 South Africa is home to exceptionally rich and evolutionarily unique biodiversity, the loss of which would represent a significant erosion of the country’s evolutionary heritage. Using comprehensive Red List assessments together with detailed evolutionary (phylogenetic) trees, researchers can estimate how much of this evolutionary heritage could be lost if threatened species go extinct – a metric known as Expected Loss of Phylogenetic Diversity – the proportion of evolutionary history likely to be lost if currently threatened species go extinct.
 
-In a recent case study [@nietolawrence], this approach was applied to South Africa’s amphibians and reptiles, both of which have exceptionally high levels of endemism (around 50%). By integrating extinction risk data with measures of phylogenetic diversity (PD), researchers found that, without conservation action, **about 6.5% of amphibian PD and 5% of reptile PD could be lost over the next 50 years** (@fig-PD).
+In a recent case study [@nietolawrence], this approach was applied to South Africa’s amphibians and reptiles, both of which have exceptionally high levels of endemism (around 50%). By integrating extinction risk data with measures of phylogenetic diversity (PD), researchers found that, without conservation action, about 6.5% of amphibian PD and 5% of reptile PD could be lost over the next 50 years (@fig-PD).
 
 ![The PD indicator for South African amphibians (red) and reptiles (purple), calculated at three intervals between 1990 and 2020. Values are estimated as the percentage of phylogenetic diversity (PD) expected to be lost within 50 years [@gumbs2023]. Dated national phylogenies were used along with probabilities of extinction, inferred from backcasted IUCN scores weighted according to Gumbs et al. (2023) (CR = 0.97, EN = 0.49, VU = 0.24, NT = 0.12, and LC = 0.06).](imgs/PD_Indicator.png){#fig-PD fig-align="center" width="450"}
 
@@ -194,9 +194,9 @@ This study provides a national framework for monitoring phylogenetic biodiversit
 
 ## Developing the EDGE indicator for South Africa
 
-In South Africa, the calculation of [EDGE indices](#box-3) is underway for all vertebrate groups. Preliminary insights suggest that species such as the geometric tortoise (*Psammobates geometricus*)&nbsp;and sungazer (*Smaug giganteus*)are likely to rank high for reptiles under the EDGE framework. Once completed, these results will enable targeted conservation planning, helping to prioritize species that contribute disproportionately to the country’s evolutionary heritage.
+In South Africa, the calculation of [EDGE indices](#box-3) is underway for all vertebrate groups. Preliminary insights suggest that species such as the geometric tortoise (*Psammobates geometricus*) and sungazer (*Smaug giganteus*)are likely to rank high for reptiles under the EDGE framework. Once completed, these results will enable targeted conservation planning, helping to prioritize species that contribute disproportionately to the country’s evolutionary heritage.
 
-##  Available genetic tools and initiatives
+## Available genetic tools and initiatives
 
 As technology advances and the cost of molecular processing continues to decrease, monitoring the genetic health of species and their populations through time is becoming increasingly feasible. South Africa utilizes a growing suite of genetic tools, including:
 

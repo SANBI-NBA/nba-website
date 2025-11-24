@@ -57,11 +57,12 @@ format:
       echo: false
 ---
 
-------------------------------------------------------------------------
 
 *The protected area network is growing across South Africa, thanks to innovative biodiversity stewardship programs, leading to a general increase terrestrial ecosystem protection levels.*
 
 ![Community conservation efforts in KwaZlu-Natal. (©Steve McKean)](./imgs/Community_conservation_area_KZN_SteveMcKean.png)
+
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -122,7 +123,7 @@ epli_2024 <- read.csv("./data/results_df_EPL_2024_biome_invasives2.csv")
 
 ## Ecosystem protection level results
 
-Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. Ecosystem types are assigned to one of four categories based on a set of predefined ecosystem targets (ranging from 16 to 32%)[@reyers2007; @desmet2004]. Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP). Read more about this indicator on the [About ecosystem protection level](../integrated-findings/chl_epl_explained.qmd) page.
+Ecosystem protection level measures the degree to which ecosystem types are represented in the protected area network. Ecosystem types are assigned to one of four categories based on a set of predefined ecosystem targets (ranging from 16 to 32%)[@reyers2007; @desmet2004]. Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP). Read more about this indicator on the [about ecosystem protection level](../integrated-findings/chl_epl_explained.qmd) page.
 
 Over three-quarters (76%) of South Africa’s 463 terrestrial ecosystems received some form of statutory protection. However, levels of protection vary widely; 121 ecosystems are Well Protected, 67 are Moderately Protected, 163 are Poorly Protected and 112 are Not Protected.
 
@@ -146,7 +147,7 @@ epl_summary %>%
 
 ```
 
-The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass. [Key message B4](../key-messages/kmb4.qmd).
+The proportion of South Africa’s total terrestrial extent under formal protection (in categories recognised under the Protected Areas Act[@governmentofsouthafrica2003]) has increased steadily over the last 15 years, from approximately 7.8% in 2000 to 9.9% at the start of 2025 (@fig-pa_map). This expansion reflects the declaration of new protected areas primarily through biodiversity stewardship programs. Other effective area based conservation measures (OECMs) have not yet been fully assessed and mapped in South Africa and it is likely that the Protected and Conserved Areas estate (including both PAs and OECMs) covers substantially more than 10% of the landmass. [key message B4](../key-messages/kmb4.qmd).
 
 ![Protected Areas in the Terrestrial realm circa 2024.](./imgs/PA_map.png){#fig-pa_map fig-align="center" width="650"}
 

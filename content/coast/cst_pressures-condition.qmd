@@ -379,17 +379,13 @@ d_landcover_long %>%
 Download the data here. <!--# make data available for download? -->
 ::::
 
-## Ecological condition of coastal ecosystem types
+## Ecological condition of coastal ecosystem types {#cst-cond}
 
-<!--# I'm not sure what to put here. In the summary book, the condition figure is much more simplified than the figure I have below, and the booklet presents a legend with all 6 categories but the map only seems to be displaying 3 categories. Realm leads need to help here please. -->
+Mapping ecological condition essentially gives a spatial representation of the overall effect of various pressures on biodiversity, and is one of the input datasets for calculating ecosystem threat status. Ecological condition is estimated using different approaches in the separate realms: in the terrestrial assessment it relies primarily on land-cover change; in the estuarine assessment, a multi-criteria framework is used; and in the marine assessment, cumulative pressure mapping is used. For details on the realm-specific methods, see the ecological condition section of the [integrated findings](../integrated-findings/intf_pressures-condition.qmd){target="_blank"} and the individual realm pages on ecological condition ([terrestrial](../terrestrial/ter_pressures-condition.qmd), [estuaries](../estuaries/est_condition.qmd), [marine](../marine/marine_condition.qmd)).
 
-Mapping ecological condition essentially gives a spatial representation of the overall effect of various pressures on biodiversity, and is one of the input datasets for calculating ecosystem threat status. Ecological condition is estimated using different approaches in the separate realms: in the terrestrial assessment it relies primarily on land-cover change; in the estuarine assessment, a multi-criteria framework is used; and in the marine assessment, cumulative pressure mapping is used. For details on the realm-specific methods, see the Ecological condition across realms section of the [integrated findings](../integrated-findings/intf_pressures-condition.qmd){target="_blank"} and the individual realm pages on ecological condition ([terrestrial](../terrestrial/ter_pressures-condition.qmd), [estuaries](../estuaries/est_condition.qmd), [marine](../marine/marine_condition.qmd)).
+Although different methods for calculating ecological condition were used in the separate realm assessments, they were aligned as far as possible to allow for cross-realm comparisons and unified terminology. Ultimately, these are presented in the coastal assessment in four simplified categories: natural/near-natural; moderately modified; heavily modified; and severely/critically modified.
 
-Although different methods for calculating ecological condition were used in the separate realm assessments, they were aligned as far as possible to allow for cross-realm comparisons and unified terminology. Ultimately, these are presented in the coastal assessment in four <!--# three? --> simplified categories (that link to the IUCN Red List of Ecosystems categories): natural/near-natural; moderately modified; heavily modified; and critically modified. Importantly, severely modified habitat is included differently among realms. For terrestrial and marine habitat, severely modified areas are included with heavily modified, and for estuarine habitat, severely modified areas are included with critically modified. <!--# Possibly delete the last sentence? -->
-
-![Categories of ecological condition, summarised across realms. <!--# This figure or a different one? -->](imgs/cst-condition-framework-ajms.png){#fig-conditioncategories fig-align="center" width="650"}
-
-The ecological condition of all coastal ecosystem types was extracted from the three realms and compiled into a single map, revealing that half (48%) of the South African coast is in a modified state, and a quarter (26%) is severely/critically modified (@fig-coastconditionmap, @fig-condgraph). There is also more than double the amount of natural habitat that has been modified in the coastal zone than in non-coastal areas (@fig-condgraph). Broadly speaking, the places with the highest population density are associated with coastal areas in the most heavily to critically modified ecological condition. These include the southwestern Cape, southeastern Cape, and most of KwaZulu-Natal. Importantly, these areas are all associated with ports and harbours, and their related burgeoning development in the surrounding area.
+The ecological condition of all coastal ecosystem types was extracted from the three realms and compiled into a single map, revealing that almost half (48%) of the South African coast is in a modified state, and a quarter (26%) is severely/critically modified (@fig-coastconditionmap, @fig-condgraph). There is also more than double the amount of natural habitat that has been modified in the coastal zone than in non-coastal areas (@fig-condgraph). Broadly speaking, the places with the highest population density are associated with coastal areas in the most heavily to critically modified ecological condition. These include the southwestern Cape, southeastern Cape, and most of KwaZulu-Natal. Importantly, these areas are all associated with ports and harbours, and their related burgeoning development in the surrounding area.
 
 ![Ecological condition of South Africa's coast, 2025.](imgs/cst_cond-map.png){#fig-coastconditionmap fig-align="center"}
 
@@ -403,9 +399,9 @@ The ecological condition of all coastal ecosystem types was extracted from the t
 library(here)
 library(nbaR)
 library(readr)
+library(dplyr)
 
 cst_cond_wd <- read_csv(here("outputs/cst_condition.csv"))
-
 
 cst_cond <- nba_plot(cst_cond_wd,
                 GROUPS=realm,
@@ -450,7 +446,7 @@ cst_cond_wd %>%
 
 ### Publication {#publication}
 
-Harris, L.R., van Niekerk, L., Sink, K.J., Skowno, A.L., Kirkman, S.P., Adams, J.B., James, N.C., Lamberth, S., Lemley, D.A., Majiedt, P., MacKay, F., Newman, B., Pichegru, L., Porter, S.N., Taljaard, S., Van Der Merwe, S. **Pressures on coastal biodiversity in South Africa: a cross-realm review**. African Journal of Marine Science. In review.\
+Harris, L.R., van Niekerk, L., Sink, K.J., Skowno, A.L., Kirkman, S.P., Adams, J.B., James, N.C., Lamberth, S., Lemley, D.A., Majiedt, P., MacKay, F., Newman, B., Pichegru, L., Porter, S.N., Taljaard, S., Van Der Merwe, S. Pressures on coastal biodiversity in South Africa: a cross-realm review. African Journal of Marine Science. In review.\
 *Description of the different pressures on coastal ecosystem types and species in South Africa.*
 
 ### Data availability
@@ -463,13 +459,13 @@ Spatial data for the individual pressures should be requested from the relevant 
 
 ### Related publications and supporting information
 
-1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. An indicator-based approach for cross-realm coastal biodiversity assessments. African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
     *Technical details regarding the assessment of the ecological condition of coastal ecosystem types from the NBA 2018*
 
-2.  Harris, L.R., Majiedt, P., Sink, K.J., Skowno, A.L., Van Niekerk, L., Holness, S., Adams, J.B., Currie, J.C., Dunga, L.V., Lamberth, S., MacKay, C.F., Miza, S., Perschke, M., Taljaard, S., 2021. **Chapter 5: Pressures and ecological condition, In South African National Biodiversity Assessment 2018: Technical Report. Volume 5: Coast.** eds L.R. Harris, K.J. Sink, A.L. Skowno, L. Van Niekerk. South African National Biodiversity Institute, Pretoria. <http://hdl.handle.net/20.500.12143/6374.>\
+2.  Harris, L.R., Majiedt, P., Sink, K.J., Skowno, A.L., Van Niekerk, L., Holness, S., Adams, J.B., Currie, J.C., Dunga, L.V., Lamberth, S., MacKay, C.F., Miza, S., Perschke, M., Taljaard, S., 2021. Chapter 5: Pressures and ecological condition, In South African National Biodiversity Assessment 2018: Technical Report. Volume 5: Coast. eds L.R. Harris, K.J. Sink, A.L. Skowno, L. Van Niekerk. South African National Biodiversity Institute, Pretoria. <http://hdl.handle.net/20.500.12143/6374.>\
     *Additional technical details on coastal pressures as written up for the NBA 2018*
 
-3.  Harris, L.R., Nel, R., Holness, S., Schoeman, D.S., 2015. **Quantifying cumulative threats to sandy beach ecosystems: a tool to guide ecosystem-based management beyond coastal reserves.** Ocean & Coastal Management 110, 12-24. <https://doi.org/10.1016/j.ocecoaman.2015.03.003>\
+3.  Harris, L.R., Nel, R., Holness, S., Schoeman, D.S., 2015. Quantifying cumulative threats to sandy beach ecosystems: a tool to guide ecosystem-based management beyond coastal reserves. Ocean & Coastal Management 110, 12-24. <https://doi.org/10.1016/j.ocecoaman.2015.03.003>\
     *Technical details regarding cumulative pressure assessments for sandy beaches*
 
 4.  [*The Status of Biological Invasions and their Management in South Africa in 2017*](https://www.sanbi.org/wp-content/uploads/2018/11/National-Status-Report-web-6MB.pdf)
