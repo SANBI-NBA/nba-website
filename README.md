@@ -154,7 +154,7 @@ git config --local --list
 
 ## Understand the repo
 
-TODO: Lize please add info here on the repo structure and which files should be updated by whom.
+See [content/README.md](content/README.md).
 
 ## Git branches
 
@@ -207,9 +207,27 @@ The following branches are of interest:
 |  | Push changes | `git push origin <feature-branch>` | `git push origin marine-updates` |
 | 6 | Create a pull request (PR)\* | \- | \- |
 
-\*Create a pull request (PR) on GitHub and choose **dev** as the **base** branch. If you're still busy with this PR, make sure to mark it as a draft. Mark the PR as `ready for review` once you are done.
+\*Create a pull request (PR) on GitHub and choose **dev** as the **base** branch. If you're still busy with this PR, make sure to mark it as a draft. Mark the PR as `ready for review` once you are done. For detailed steps on how to create a PR, see the [official GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request)
 
-Lize or Andrew will review the PR and provide feedback or ask questions for clarification, and then merge into **dev**.
+Lize von Staden or Andrew Skowno will review the PR and provide feedback or ask questions for clarification, and then merge into **dev**.
+
+### Restore a file
+
+If you want to discard your changes and restore the file to how it was before you made changes, you can run the following command:
+
+`git restore <filename>` (e.g. `git restore file.R` or `git restore file.qmd`)
+
+You can also use this same command to restore a deleted file.
+
+If you want to restore a file from a specific commit:
+
+`git restore --source=<commit-hash> <filename>` (e.g. `git restore --source=abc123 file.R`)
+
+### Unstage a file
+
+If you already staged your file (i.e. you already ran the `git add` command), but you decide that you want to keep your changes but not commit them yet, you can unstage the file by running the following command:
+
+`git restore --staged <filename>`
 
 ### Revert a commit
 
