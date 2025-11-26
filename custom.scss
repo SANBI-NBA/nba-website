@@ -377,3 +377,106 @@ figure.quarto-float-tbl figcaption.quarto-float-caption-top {
   padding-top: 0.25em;  // keep Quarto’s default
 }
 
+/* Key messages table styling */
+
+.km-table {
+  width: 100%;
+  max-width: 100%;      /* prevent stretching beyond container */
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: left;
+  table-layout: fixed;  /* ensures wrapping works predictably */
+  box-sizing: border-box;
+}
+
+.km-table td,
+.km-table th {
+  box-sizing: border-box;
+  padding: 12px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.km-table td:first-child {
+  width: 20%; /* Column 1 width */
+}
+
+.km-table td:nth-child(2) {
+  width: 5%;
+  min-width: 0;        /* <- critical */
+  overflow: hidden;    /* or auto/visible depending on what you want */
+  white-space: nowrap; /* optional but helps keep A1. small */
+}
+
+/* wrap text in column 3 */
+.km-table td:nth-child(3),
+.km-table th:nth-child(3) {
+    white-space: normal;   /* allow wrapping */
+    word-break: break-word; /* break long words if necessary */
+    overflow-wrap: anywhere; /* extra aggressive wrapping */
+}
+
+/* Row background colors */
+.km-table .clustera td {
+  background-color: #FAA755;
+}
+
+.km-table .clusterb td {
+  background-color: #70B276;
+}
+
+.km-table .clusterc td {
+  background-color: #9D85BE;
+}
+
+.cluster-label {
+  font-weight: 800;   /* or 900 for maximum */
+  letter-spacing: 0.3px; /* optional: makes it look more like a heading */
+  display: inline-block;
+}
+
+/* Remove default link styling in table cells */
+.km-table .cell-link a {
+  text-decoration: none;
+  color: inherit;        /* inherits the white text you already set */
+  font-weight: inherit;
+}
+
+/* If you want the entire cell to be a clickable area */
+.km-table .cell-link {
+  position: relative;
+  padding: 0; /* move padding to the link so the whole visual area is clickable */
+}
+
+.km-table .cell-link a.fullcell {
+  display: block;         /* lets width/height/padding work like a box */
+  width: 100%;
+  height: 100%;
+  padding: 12px;          /* same padding you had on td */
+  box-sizing: border-box; /* ensure padding doesn't overflow */
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* keep the cell text colour (white) */
+  font-weight: inherit;
+  white-space: normal;    /* ensure wrapping */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.3;       /* optional: improve legibility */
+  cursor: pointer;
+}
+
+.km-table .cell-link .cell-text {
+  position: relative;
+  z-index: 2;      /* ensure it sits above the empty link */
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Make the table responsive on small screens */
+@media (max-width: 768px) {
+  .km-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+
