@@ -7,14 +7,26 @@ format:
 listing:
   id: page-listings
   contents:
-    - content/terrestrial/ter_overview.qmd
-    - content/freshwater/fw_overview.qmd
-    - content/marine/marine_overview.qmd
-    - content/estuaries/est_overview.qmd
-    - content/coast/cst_synthesis.qmd
-    - content/subantarctic/sub-all_sections.qmd
+    - href: content/terrestrial/ter_overview.qmd
+      title: Terrestrial realm
+      image: imgs/card_ter_Andrew-Skowno.png
+    - href: content/freshwater/fw_overview.qmd
+      title: Freshwater realm
+      image: imgs/card_fw_Jeremy_Shelton.png
+    - href: content/marine/marine_overview.qmd
+      title: Marine realm
+      image: imgs/card_mar_Eve_Marshall.png
+    - href: content/estuaries/est_overview.qmd
+      title: Estuarine realm
+      image: imgs/card_est_knysna_duran_de_villiers.png
+    - href: content/coast/cst_synthesis.qmd
+      title: Coastal zone
+      image: imgs/card_cst_Linda_Harris.png
+    - href: content/subantarctic/sub-all_sections.qmd
+      title: Subantarctic territory
+      image: imgs/card_sub_Stephni_van_der_Merwe.png
   type: grid
-  fields: [image, subtitle]
+  fields: [image, title]
   sort: false
   sort-ui: false
   filter-ui: false
@@ -75,6 +87,12 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
 
 ::: {#page-listings}
 :::
+
+:::: column-screen
+::: column-body
+<center>[Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Duran de Villiers (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).]{style="font-size:.7rem; color:#a7abb4;"}</center>
+:::
+::::
 
 ------------------------------------------------------------------------
 
