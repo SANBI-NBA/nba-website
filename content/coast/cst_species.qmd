@@ -52,6 +52,10 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
+*Endemic coastal invertebrates living at the dune-beach interface are threatened by mining, coastal development, artificial nighttime lights, and wrack harvesting. In addition, South Africa's only commercially harvested beach clam is rapidly declining in abundance. The littoral active zone (connected dune-beach-surf zone) needs to be kept intact and restored, and sustainable harvesting of beach-associated resources is essential for conserving this unique coastal biodiversity.*
+
+![The Endangered giant pillbug, *Tylos granulatus*, is one of several Taxa of Conservation Concern living at the dune-beach interface in South Africa. (© Linda Harris).](imgs/Tylos-granulatus_Linda-Harris.png){fig-alt="Picture of a giant pillbug on the beach"}
+
 ------------------------------------------------------------------------
 
 ::::: columns
@@ -77,12 +81,6 @@ google-scholar: true
 :::::
 
 ------------------------------------------------------------------------
-
-## Summary {#summary}
-
-Endemic coastal invertebrates living at the dune-beach interface are threatened by mining, coastal development, artificial nighttime lights, and wrack harvesting. In addition, South Africa's only commercially harvested beach clam is rapidly declining in abundance. The littoral active zone (connected dune-beach-surf zone) needs to be kept intact and restored, and sustainable harvesting of beach-associated resources is essential for conserving this unique coastal biodiversity.
-
-![The Endangered giant pillbug, *Tylos granulatus*, is one of several Taxa of Conservation Concern living at the dune-beach interface in South Africa. (© Linda Harris).](imgs/Tylos-granulatus_Linda-Harris.png){fig-alt="Picture of a giant pillbug on the beach"}
 
 ## Preamble
 
@@ -168,7 +166,7 @@ rls
 :::::::::::::::::::::::: {.callout-note .coast collapse="false"}
 ## Box 2. Access the species red list assessments {#box2}
 
-Photo credits: © Linda Harris (CC-BY-NC-ND)
+Photo credits: © Linda Harris
 
 ::::::::::::::::::::::: grid
 ::: {.g-col-lg-4 .g-col-6 .text-center}
@@ -263,7 +261,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Donax serra*** (white mussel) is a beach clam that is endemic to Namibia and South Africa. There is evidence of population declines by 50-80% based on **commercial catch** and catch per unit effort (CPUE) data in South Africa over the past 10 years, disappearance of the species at sites that have been **mined** in Namibia, and anecdotal evidence of **severe declines and/or disappearance** of the species at certain beaches in South Africa. **Harmful algal blooms** can also cause mass mortalities. The overall population is suspected to have declined by over 50% in the past decade and it is therefore assessed as **Endangered** under Criterion A2.
+***Donax serra*** (white mussel) is a beach clam that is endemic to Namibia and South Africa. There is evidence of population declines by 50-80% based on commercial catch and catch per unit effort (CPUE) data in South Africa over the past 10 years, disappearance of the species at sites that have been mined in Namibia, and anecdotal evidence of severe declines and/or disappearance of the species at certain beaches in South Africa. Harmful algal blooms can also cause mass mortalities. The overall population is suspected to have declined by over 50% in the past decade and it is therefore assessed as Endangered under Criterion A2.
 :::
 :::::
 
@@ -273,7 +271,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Tylos capensis*** (Cape calloused beach pillbug) is endemic to South Africa. It has a limited range and restricted habitat along the South African south coast, with between 9 and 12 locations extant. It is experiencing ongoing loss, degradation and fragmentation of habitat to expanding **coastal development** and **artificial light at night** (ALAN), and has been lost from at least four locations, including inside protected areas. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+***Tylos capensis*** (Cape calloused beach pillbug) is endemic to South Africa. It has a limited range and restricted habitat along the South African south coast, with between 9 and 12 locations extant. It is experiencing ongoing loss, degradation and fragmentation of habitat to expanding coastal development and artificial light at night (ALAN), and has been lost from at least four locations, including inside protected areas. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as Endangered under Criterion B.
 :::
 :::::
 
@@ -283,7 +281,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Tylos granulatus*** (granulated calloused beach pillbug) is restricted to the coast of Namibia and South Africa. It generally occurs in low numbers, and is found in large abundances (hundreds to thousands of individuals) in only a few places. **Extirpations** have been recorded at the southern end of its range due to **coastal development**, there are no recent records in the northern part of its range, and it is impacted by **mining**. **Kelp wrack removal** takes away an important source of food for this species. Collectively these pressures are causing notable declines in its habitat availability and quality, and declines in the number of mature individuals. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as **Endangered** under Criterion B.
+***Tylos granulatus*** (granulated calloused beach pillbug) is restricted to the coast of Namibia and South Africa. It generally occurs in low numbers, and is found in large abundances (hundreds to thousands of individuals) in only a few places. Extirpations have been recorded at the southern end of its range due to coastal development, there are no recent records in the northern part of its range, and it is impacted by mining. Kelp wrack removal takes away an important source of food for this species. Collectively these pressures are causing notable declines in its habitat availability and quality, and declines in the number of mature individuals. This species broods its young, has small broods and limited connectivity, and has been assessed as being severely fragmented based on the IUCN definition. It therefore qualifies as Endangered under Criterion B.
 :::
 :::::
 
@@ -293,7 +291,7 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
-***Acanthoscelis ruficornis*** (beach ground beetle) is a southern African endemic species, found only in the supralittoral habitat on sandy beaches along the west coast of South Africa and Namibia. It burrows in the sand or hides under kelp wrack, feeding on invertebrates associated with wrack. Approximately 80% of its recent (since 2000) range is exposed to **mining**, **coastal development** and/or **kelp wrack removal**. These pressures are causing declines in habitat extent, quality, and population abundance, and there is evidence that the species has been lost from some sites that have been mined. The population is inferred to be severely fragmented, comprising small, isolated subpopulations across its range. It is therefore listed as **Endangered** under Criterion B.
+***Acanthoscelis ruficornis*** (beach ground beetle) is a southern African endemic species, found only in the supralittoral habitat on sandy beaches along the west coast of South Africa and Namibia. It burrows in the sand or hides under kelp wrack, feeding on invertebrates associated with wrack. Approximately 80% of its recent (since 2000) range is exposed to mining, coastal development and/or kelp wrack removal. These pressures are causing declines in habitat extent, quality, and population abundance, and there is evidence that the species has been lost from some sites that have been mined. The population is inferred to be severely fragmented, comprising small, isolated subpopulations across its range. It is therefore listed as Endangered under Criterion B.
 :::
 :::::
 
@@ -301,15 +299,15 @@ Read more details about each of the pressures mentioned below on the [Coastal Pr
 
 ### Publication {data-link="publication"}
 
-Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. **Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration**. Estuarine, Coastal and Shelf Science, 324: 109447. [https://doi.org/10.1016/j.ecss.2025.109447](https://doi.org/10.1016/j.ecss.2025.109447){.uri target="_blank"}.\
+Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine, Coastal and Shelf Science, 324: 109447. [https://doi.org/10.1016/j.ecss.2025.109447](https://doi.org/10.1016/j.ecss.2025.109447){.uri target="_blank"}.\
 *Technical details on the IUCN Red List of Species assessments for sandy beach invertebrates.*
 
 ### Data availability
 
-1.  **Git Repository**\
+1.  Git Repository\
     [*Code*](https://github.com/lrharris/species-occurrences-for-red-listing/){target="_blank"} *to compile species records from GBIF, iNaturalist, and other records (e.g., from field sampling) stored in csv files. Also available as a pdf in the Supplementary Material of the [publication]*
 
-2.  **Species red list assessments** on the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/){target="_blank"}
+2.  Species red list assessments on the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/){target="_blank"}
 
 ## Recommended citation
 

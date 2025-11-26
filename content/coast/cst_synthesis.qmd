@@ -83,15 +83,19 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
-```{r setting up data}
-#| message: false
-#| warning: false
-#| include: false
+```{r settingupdata}
+#| message: false 
+#| warning: false 
+#| include: false  
 
 source(here::here("scripts/cst_supporting-data.R"))
 ```
+
+*South Africa's coastal zone has exceptional biodiversity, with `r cet_n` coastal ecosystem types supporting many endemic species found nowhere else on earth. The coast also provides numerous benefits to people, including food and materials, places to relax and play, and protection from storms and large waves. This means that the coast is also exposed to a number of pressures from human activities, on which the impacts of invasive species and climate change are superimposed. As a result, only half of South Africa's coast is still in a natural to near-natural state, and a quarter of the coast is severely to critically modified. Given the extent and severity of ecological degradation, `r percent_types(cet_thr_n, cet_n)`% of the coastal ecosystem types are threatened. There is good progress in protecting coastal biodiversity, with a third (`r percent_types(c_epl_n("WP"), cet_n)`%) of coastal ecosystem types meeting their targets for protection, such that they are considered Well Protected. This needs to be strengthened, however, because a quarter (`r percent_types(c_epl_n("NP"), cet_n)`%) of the coastal ecosystem types are Not Protected. There are also `r unlucky_n` ecosystem types that are highly threatened and under-protected (Critically Endangered or Endangered, and Not Protected or Poorly Protected). Restoring, managing and conserving coastal biodiversity in South Africa are key steps towards sustainable development, securing jobs and livelihoods, alleviating poverty, and enhancing human health and wellbeing. Planning cross-realm, in support of these actions, is essential.*
+
+![De Hoop dunefield is an iconic feature in South Africa's coastal zone. (© Peter Chadwick)](imgs/cst-syn-De-Hoop_Peter-Chadwick.png){fig-align="center"}
+
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -125,12 +129,6 @@ source(here::here("scripts/cst_supporting-data.R"))
 :::::
 
 ------------------------------------------------------------------------
-
-## Summary {#summary}
-
-South Africa's coastal zone has exceptional biodiversity, with `r cet_n` coastal ecosystem types supporting many endemic species found nowhere else on earth. The coast also provides numerous benefits to people, including food and materials, places to relax and play, and protection from storms and large waves. This means that the coast is also exposed to a number of pressures from human activities, on which the impacts of invasive species and climate change are superimposed. As a result, only half of South Africa's coast is still in a natural to near-natural state, and a quarter of the coast is severely to critically modified. Given the extent and severity of ecological degradation, `r percent_types(cet_thr_n, cet_n)`% of the coastal ecosystem types are threatened. There is good progress in protecting coastal biodiversity, with a third (`r percent_types(c_epl_n("WP"), cet_n)`%) of coastal ecosystem types meeting their targets for protection, such that they are considered Well Protected. This needs to be strengthened, however, because a quarter (`r percent_types(c_epl_n("NP"), cet_n)`%) of the coastal ecosystem types are Not Protected. There are also `r unlucky_n` ecosystem types that are highly threatened and under-protected (Critically Endangered or Endangered, and Not Protected or Poorly Protected). Restoring, managing and conserving coastal biodiversity in South Africa are key steps towards sustainable development, securing jobs and livelihoods, alleviating poverty, and enhancing human health and wellbeing. Planning cross-realm, in support of these actions, is essential.
-
-![De Hoop dunefield is an iconic feature in South Africa's coastal zone. (© Peter Chadwick)](imgs/cst-syn-De-Hoop_Peter-Chadwick.png){fig-align="center"}
 
 ## Preamble: the new format of the NBA Coast Assessment content
 
@@ -172,7 +170,7 @@ The coast is a relatively small area, but comprises a treasure trove of biodiver
 
 **Many forms of pollution are impacting coastal biodiversity cross-realm**, including chemicals (e.g., heavy metals, herbicides, pesticides, pharmaceuticals), sewage, plastics, light, noise, and dumped obsolete ammunition, but many of these pollutants are understudied and poorly understood, especially at a national scale. Deteriorating water quality from wastewater discharge, urban runoff, and agricultural runoff is a key issue in the coastal zone, particularly in retentive systems like estuaries and bays.
 
-**Both invasive species and climate change are exacerbating pressures to coastal biodiversity** by changing natural ecological processes and reducing resilience of indigenous species. Some of the most important climate change impacts for coastal systems are sea-level rise, increases in the frequency and intensity of extreme storms and floods, changes in rainfall and run-off, and temperature change, particularly temperature extremes in the form of heatwaves, and thermal shock when marine heatwaves are followed by upwelling.
+**Both invasive species and climate change are exacerbating pressures to coastal biodiversity** by changing natural ecological processes and reducing resilience of indigenous species. Some of the most important climate change impacts for coastal systems are sea-level rise, increases in the frequency and intensity of extreme storms and floods, changes in rainfall and runoff, and temperature change, particularly temperature extremes in the form of heatwaves, and thermal shock when marine heatwaves are followed by upwelling.
 
 [Read more »](./cst_pressures-condition.qmd)
 
@@ -182,18 +180,18 @@ The coast is a relatively small area, but comprises a treasure trove of biodiver
 
 **Given the intensity and number of pressures to coastal biodiversity, half (48%) of the South African coast is no longer in a natural to near-natural state, and a quarter (26%) is severely/critically modified** (@fig-condmap, @fig-condgraph). Proportionately, there more than double the amount of modified habitat in the coastal zone than in non-coastal areas. [Read more »](./cst_pressures-condition.qmd#cst-cond)
 
-![Coastal ecological condition, 2025.](imgs/cst_cond-map.png){#fig-condmap}
+![Coastal ecological condition, 2025.](imgs/cst_cond-map_new.png){#fig-condmap}
 
-```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
-#| fig.cap: "Ecological condition of the ecologically determined coastal zone."
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
 #| label: fig-condgraph
+#| fig-cap: Ecological condition of the ecologically determined coastal zone.
 
 library(nbaR)
 library(here)
 library(tidyverse)
 
 cst_cond_wd <- read_csv(here("outputs/cst_condition.csv")) %>%
-  rename(`Severely / critically modified` = `Severely/critically modified`)
+  rename(`Natural / near-natural ` = `Natural / near-natural`)
 
 
 cst_cond <- nba_plot(cst_cond_wd,
@@ -211,9 +209,9 @@ cst_cond
 
 **The criteria in the IUCN Red List of Ecosystems were applied to determine ecosystem threat status** for the terrestrial, estuarine and marine assessments, with the results summarised here for the coastal ecosystem types. Ecosystem types were assessed as Critically Endangered, Endangered, Vulnerable (collectively referred to as threatened), Near Threatened, or Least Concern.
 
-**There are `r cet_thr_n` (`r  percent_types(cet_thr_n, cet_n)`%) threatened coastal ecosystem types that comprise `r percent_extent(ets, "thr", "coast")`% of the coastal extent**, compared to `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r c_nc_prop_thr_n` times the number of threatened ecosystem types and almost an order of magnitude (`r c_nc_prop_thr_e` times) more threatened area than the rest of the South African mainland territory (@fig-etsmap, @fig-etsgraph). [Read more »](./cst_ets.qmd)
+**There are `r cet_thr_n` (`r  percent_types(cet_thr_n, cet_n)`%) threatened coastal ecosystem types that comprise `r percent_extent(ets, "thr", "coast")`% of the coastal extent**, compared to `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r astext(c_nc_prop_thr_n)` times the number of threatened ecosystem types and almost an order of magnitude (`r astext(c_nc_prop_thr_e)` times) more threatened area than the rest of the South African mainland territory (@fig-etsmap, @fig-etsgraph). [Read more »](./cst_ets.qmd)
 
-![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map.png){#fig-etsmap fig-align="center"}
+![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map_new.png){#fig-etsmap fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem threat status of coastal ecosystem types by (a) number of types and (b) extent of types"
@@ -267,11 +265,11 @@ ets_e<-nba_plot(c_ets_e,
 ggarrange(ets_t, ets_e, ncol = 2, labels = c("A","B"), common.legend = T, legend = "bottom")
 ```
 
-These results are not comparable with the results from the NBA 2018 given the different assessment methodologies between the two assessments, but improvements in data and methods have shown a more threatened status of the coast compared with that reported in 2018.
+These results are not comparable with the results from the NBA 2018 given the different assessment methodologies between the two assessments. However, improvements in data and methods have shown a more threatened status of the coast compared with that reported in 2018.
 
 ### Ecosystem protection level
 
-**Ecosystem protection level was determined by calculating the proportion of each ecosystem type in a protected area, and evaluating these against a predefined biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection.** Ecosystem types are assigned one of four categories of protection: Well Protected - biodiversity target is met; Moderately Protected - at least half the biodiversity target is met; Poorly Protected - more than 5% of the biodiversity target is met, and Not Protected - less than 5% of the biodiversity target is met.
+**Ecosystem protection level was determined by calculating the proportion of each ecosystem type in a protected area, and evaluating these against a predefined biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection.** Ecosystem types are assigned one of four categories of protection: Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP).
 
 **There is good progress in representing coastal ecosystem types in protected areas**, with `r percent_types(c_prot_n, cet_n)`% of 190 coastal ecosystem types now having some level of protection. However, only `r percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types are Well Protected, covering just `r percent_extent(epl, "WP", "coast")`% of the ecologically determined coastal zone (EDCZ), meaning `r 100-percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types covering `r 100-percent_extent(epl, "WP", "coast")`% of the EDCZ are not yet meeting their biodiversity targets for protection (@fig-eplmap, @fig-eplgraph). [Read more »](./cst_epl.qmd)
 
@@ -427,7 +425,7 @@ In addition to the [overall priority actions](../integrated-findings/pakg_action
 
 ## Knowledge gaps and research priorities
 
-**Nineteen knowledge gaps have been identified as research priorities** to strengthen further coastal biodiversity foundational knowledge and understanding of impacts to coastal biodiversity to improve assessment, and also to better understand the benefits of biodiversity and the best ways of communicating the these in a way that most inspires South African’s into action for change towards long-term sustainability. These 19 knowledge gap–research priority clusters are grouped under four themes.
+**Nineteen knowledge gaps have been identified as research priorities** to strengthen further coastal biodiversity foundational knowledge and understanding of impacts to coastal biodiversity to improve assessment, and also to better understand the benefits of biodiversity and the best ways of communicating the these in a way that most inspires South Africans into action for change towards long-term sustainability. These 19 knowledge gap–research priority clusters are grouped under four themes.
 
 :::: {.callout-note .coast collapse="false" appearance="minimal" icon="false"}
 ::: {style="max-height: 550px; overflow-y: auto;"}

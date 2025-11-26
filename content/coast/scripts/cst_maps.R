@@ -395,6 +395,7 @@ noncst_mar_cond_tbl <- st_set_geometry(out_sf2, NULL) %>%
 # coastal data 
 cst_cond_dat <- rbind(ter_cond_tbl, est_cond_tbl, mar_cond_tbl)
 #write_csv(cst_cond_dat, here("data/spatial_data/link2spatial_data/cst_cond_dat.csv"))
+#cst_cond_dat <- read_csv(here("data/spatial_data/link2spatial_data/cst_cond_dat.csv"))
 
 # non-coastal data
 noncst_cond_dat <- rbind(noncst_mar_cond_tbl, noncst_ter_cond_tbl) %>% 
@@ -446,6 +447,14 @@ cst_cond_wd <-  cst_cond %>%
 # Replace the NA with 0 (reverted to skipping this step because it is NA, not 0)
 # cst_cond_wd$`Moderately modified`[cst_cond_wd$realm == "Coastal Terrestrial"] <- 0
 
+# Rename to condition categories we settled on for NBA 2025
+#cst_cond_wd<-read_csv(here("outputs/cst_condition.csv"))
+cst_cond_wd <- cst_cond_wd %>% 
+  rename(
+    `Natural / near-natural`= "Natural",
+    `Severely / critically modified` = `Severely/critically modified`
+  )
+
 write_csv(cst_cond_wd, here("outputs/cst_condition.csv"))
 
 
@@ -467,35 +476,65 @@ cst_cond_map <- rbind(ter_cond_edcz, est_cond_edcz, mar_cond_edcz) %>%
                                               "Heavily / intensively modified",
                                               "Severely/critically modified"))
 st_write(cst_cond_map, here("data/spatial_data/link2spatial_data/cst_nba2025_cst_cond_map.shp"), append = FALSE)
-#cst_cond_map <- st_read(here("data/spatial_data/link2spatial_data/cst_nba2025_cst_cond_map.shp"))
+
+#fast read-in for the condition map to recode below:
+# cst_cond_map <- st_read(here("data/spatial_data/link2spatial_data/cst_nba2025_cst_cond_map.shp"))
+# cst_cond_map <- cst_cond_map %>%
+#   rename(
+#     `Ecological condition` = Eclgclc,
+#     area_km2 = are_km2
+#   )
+
+# recode to NBA 2025 condition categories
+cst_cond_map <- cst_cond_map %>% 
+  mutate(`Ecological condition` = recode(
+    `Ecological condition`,
+    "Natural / near natural" = "Natural / near-natural ",
+    "Heavily / intensively modified" = "Heavily modified",
+    "Severely/critically modified" = "Severely / critically modified")) %>% 
+  mutate(`Ecological condition` = fct_relevel(`Ecological condition`, 
+                                              "Natural / near-natural ", 
+                                              "Moderately modified", 
+                                              "Heavily modified",
+                                              "Severely / critically modified"))
 
 cst_condition_map <- nba_map(DF = cst_cond_map,
                        GEOM = 'vector',
                        FILL = `Ecological condition`,
                        LEGEND = TRUE,
-                       MOE = FALSE)
+                       MOE = FALSE,
+                       SCALE_TEXT = 0.55)
 
 ggsave(
-  filename = here("imgs/cst_cond-map.png"),
+  filename = here("imgs/cst_cond-map_new.png"),
   plot = cst_condition_map,
-  width = 800/100,   # inches = pixels / dpi
-  height = (800/100) * 0.51,  # adjust aspect ratio
-  dpi = 100
+  width = 800/120,   # inches = pixels / dpi
+  height = (800/120) * 0.51,  # adjust aspect ratio
+  dpi = 120
 )
+
+
+## Fast read in to edit and update maps below
+# nba2025cst <- st_read(here("data/spatial_data/link2spatial_data/cst_nba2025_edcz-map.shp"))
+# nba2025cst <- nba2025cst %>% 
+#   rename(`Threat status` = "Thrtstt",
+#          `Protection level` = "Prtctnl")
+
 
 # Create and save coastal ETS map ----------------------------------------------
 cst_ets_map <- nba_map(DF = nba2025cst,
                        GEOM = 'vector',
                        FILL = `Threat status`,
                        LEGEND = TRUE,
-                       MOE = FALSE)
+                       MOE = FALSE,
+                       SCALE_TEXT = 0.55)
 
 ggsave(
-  filename = here("imgs/cst_ets-map.png"),
+  filename = here("imgs/cst_ets-map_new.png"),
   plot = cst_ets_map,
-  width = 800/100,   # inches = pixels / dpi
-  height = (800/100) * 0.51,  # adjust aspect ratio
-  dpi = 100
+  width = 800/120,   # inches = pixels / dpi
+  height = (800/120) * 0.51,  # adjust aspect ratio
+  dpi = 120
 )
 
 # Create and save EPL map ------------------------------------------------------

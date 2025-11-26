@@ -111,7 +111,7 @@ Multiple interventions are required to avoid further decline in health. These in
 
 ```{r}
 #| label: fig-ets_map
-#| fig-cap: LARA PLEASE ADD THE CAPTION HERE
+#| fig-cap: Map showing the distribution of threatened estuarine ecosystems according to the IUCN Red List of Ecosystems (size of the dot represents area of the individual estuary)
 #| echo: false
 #| message: false
 #| warning: false
@@ -131,7 +131,7 @@ knitr::include_graphics("imgs/ets_with_donut.png")
 ```{r}
 #| label: fig-ets_bargraphs
 #| echo: false
-#| fig-cap: LARA PLEASE ADD CAPTION HERE
+#| fig-cap: Ecosystem threat status of South Africa’s estuaries presented as percentage of ecosystems types (a) and percentage ecosystems extent (b).
 #| out-width: 100%
 #| classes: plain
 
@@ -165,7 +165,7 @@ nba_plot_comb(ets_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: LARA PLEASE ADD CAPTION HERE
+#| tbl-cap:  Ecosystem threat status of South Africa’s estuaries tabulated by type, extent and percentage area
 #| out-width: 100%
 #| classes: plain
 
@@ -213,7 +213,7 @@ tbl %>%
 ::: {#box-eco_tbl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-ets
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: Ecosystem threat status of South Africa’s estuaries
 #| classes: plain
 
 

@@ -103,7 +103,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 | [`r c_epl_n("NP")`%]{.inline-style-not-protected}
 | of `r cet_n` ecosystem types
-| [Not protected]{.inline-style-indicator}
+| [Not Protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -117,7 +117,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 | [`r percent_extent(epl, "NP", "coast")`%]{.inline-style-not-protected}
 | of the coastal extent
-| [Not protected]{.inline-style-indicator}
+| [Not Protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -127,11 +127,11 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ## Introduction
 
-Ecosystem protection level is one of the headline indicators of the National Biodiversity Assessment. This indicator measures the degree to which ecosystem types are represented in South Africa's protected area network, and has been used as in national reporting since 2005.
+Ecosystem protection level is one of the headline indicators of the National Biodiversity Assessment. This indicator measures the degree to which ecosystem types are represented in South Africa's protected area network, and has been used in national reporting since 2005.
 
 After comparing the extent extent of each ecosystem type under protection relative to its predefined biodiversity target (ranging 16-32%), with heuristics regarding the ecological condition within protected areas, ecosystem types are assigned to one of four categories:
 
--   **Well Protected (WP)**: the extent target for the ecosystem type is met or exceeded within the protected area network
+-   **Well Protected (WP)**: 100% of the extent target for the ecosystem type is met (or exceeded) within the protected area network
 
 -   **Moderately Protected (MP):** 50 - 99% of the extent target for the ecosystem type is met within the protected area network
 
@@ -411,11 +411,11 @@ The following datasets are available for download:
 
 ### Related publications and supporting information
 
-1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. An indicator-based approach for cross-realm coastal biodiversity assessments. African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
     *Technical details regarding the protection level assessment of coastal ecosystem types from the NBA 2018*
-2.  Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. **Indicators for tracking progress in effective, representative ecosystem protection.** Conservation Biology, in review.\
+2.  Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review.\
     *Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa*
-3.  Harris, L.R., van Niekerk, L., Holness, S.D., Sink, K.J., Skowno, A.L., Dayaram, A., van Deventer, H., Job, N., Lamberth, S.J., Adams, J.B., Raw, J.L., Riddin, T., MacKay, C.F., Perschke, M.J., 2025. **Conserving cross-realm coastal biodiversity when real-world planning and implementation processes split the land and sea**. Ocean & Coastal Management 263, 107586. <https://doi.org/10.1016/j.ocecoaman.2025.107586>\
+3.  Harris, L.R., van Niekerk, L., Holness, S.D., Sink, K.J., Skowno, A.L., Dayaram, A., van Deventer, H., Job, N., Lamberth, S.J., Adams, J.B., Raw, J.L., Riddin, T., MacKay, C.F., Perschke, M.J., 2025. Conserving cross-realm coastal biodiversity when real-world planning and implementation processes split the land and sea. Ocean & Coastal Management 263, 107586. <https://doi.org/10.1016/j.ocecoaman.2025.107586>\
     *Technical details regarding cross-realm conservation planning to ensure inclusion of land-sea processes and biodiversity, with proposed management recommendations for restoring and conserving coastal biodiversity*
 
 ## Recommended citation
@@ -437,8 +437,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
-
-## References
-
-::: {#refs}
-:::

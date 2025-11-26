@@ -90,9 +90,9 @@ citation:
 appendix-cite-as: false
 google-scholar: true
 
-format:
-  html:
-    embed-resources: true
+#format:
+# html:
+#    embed-resources: true
 ---
 
 ```{=html}

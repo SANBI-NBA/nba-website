@@ -153,7 +153,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 -   There are 40 described Anostraca species in South Africa, representing \~11% of the world's species (\~353)[@rogers2013a].
 
--   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened  Species Categories and Criteria to classify their risk of extinction (four species are still in review, which will take the total assessed species to 40).
+-   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (four species are still in review, which will take the total assessed species to 40).
 
 -   Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) (Meyer-Milne et al. in prep).
 

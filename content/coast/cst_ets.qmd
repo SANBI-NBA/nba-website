@@ -152,7 +152,7 @@ For NBA 2025, the RLE framework was applied across all realms, and the results a
 
 ## Coastal ecosystem threat status
 
-The South African coast is proportionately more threatened than the rest of the country (entire non-coastal territory combined, @fig-etsgraph, @tbl-etsnumbers). In fact, the coast (`r percent_types(cet_thr_n, cet_n)`% threatened ecosystem types) proportionately has `r c_nc_prop_thr_n` times more threatened ecosystem types than the rest of the country (`r round(ncet_thr_n/ncet_n*100)`%), which is proportionately `r c_nc_prop_thr_e` times more by extent (coastal: `r percent_extent(ets, "thr", "coast")`%, non-coastal: `r round(nc_thr_e/nc_e*100)`%). Areas where threatened ecosystem types are concentrated are around the Orange River mouth, through most of the Western Cape, in St Francis and Algoa bays, and along virtually the entire East Coast (@fig-etsmap).
+The South African coast is proportionately more threatened than the rest of the country (entire non-coastal territory combined, @fig-etsgraph, @tbl-etsnumbers). In fact, the coast (`r percent_types(cet_thr_n, cet_n)`% threatened ecosystem types) proportionately has `r astext(c_nc_prop_thr_n)` times more threatened ecosystem types than the rest of the country (`r round(ncet_thr_n/ncet_n*100)`%), which is proportionately `r astext(c_nc_prop_thr_e)` times more by extent (coastal: `r percent_extent(ets, "thr", "coast")`%, non-coastal: `r round(nc_thr_e/nc_e*100)`%). Areas where threatened ecosystem types are concentrated are around the Orange River mouth, through most of the Western Cape, in St Francis and Algoa bays, and along virtually the entire East Coast (@fig-etsmap).
 
 ![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map.png){#fig-etsmap fig-align="center"}
 
@@ -421,9 +421,9 @@ The following datasets are available for download:
 
 ### Related publications and supporting information
 
-1.  Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. **Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration**. Estuarine Coastal and Shelf Science 324, 109447. <https://doi.org/10.1016/j.ecss.2025.109447>\
+1.  Harris, L.R., Raimondo, D., Sink, K., Holness, S.D., Skowno, A.L., 2025. Sandy beach ecosystem and species red listing highlight priorities for beach conservation and restoration. Estuarine Coastal and Shelf Science 324, 109447. <https://doi.org/10.1016/j.ecss.2025.109447>\
     *Technical details regarding the threat status assessment of sandy shore ecosystem types and species*
-2.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+2.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. An indicator-based approach for cross-realm coastal biodiversity assessments. African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
     *Technical details regarding the threat status assessment of coastal ecosystem types from the NBA 2018*
 
 ## Recommended citation
@@ -445,8 +445,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
-
-## References
-
-::: {#refs}
-:::

@@ -84,8 +84,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
 ```{r setting up data}
 #| message: false
 #| warning: false
@@ -93,6 +91,12 @@ google-scholar: true
 
 source(here::here("scripts/cst_supporting-data.R"))
 ```
+
+*South Africa arguably has one of the most diverse and scenic coasts in the world, supporting a wealth of unique biodiversity. Altogether, there are `r cet_n` coastal ecosystem types that comprise the ecologically determined coastal zone (EDCZ). These include `r ret_n("T")` vegetation types, `r ret_n("E")` estuarine ecosystem types, and `r ret_n("M")` marine ecosystem types. Freshwater ecosystem types are not currently included in the EDCZ, but there is planned inclusion in future.*
+
+![The ecological determined coastal zone is a cross-realm zone that includes terrestrial, estuarine and marine ecosystem types, as illustrated here at Nature's Valley. (© Linda Harris)](imgs/cst-e-naturesvalley_Linda-Harris.png)
+
+------------------------------------------------------------------------
 
 ::::::: columns
 ::: {.column width="100%"}
@@ -138,12 +142,6 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 ------------------------------------------------------------------------
 
-## Summary {#summary}
-
-South Africa arguably has one of the most diverse and scenic coasts in the world, supporting a wealth of unique biodiversity. Altogether, there are `r cet_n` coastal ecosystem types that comprise the ecologically determined coastal zone (EDCZ). These include `r ret_n("T")` vegetation types, `r ret_n("E")` estuarine ecosystem types, and `r ret_n("M")` marine ecosystem types. Freshwater ecosystem types are not currently included in the EDCZ, but there is planned inclusion in future.
-
-![The ecological determined coastal zone is a cross-realm zone that includes terrestrial, estuarine and marine ecosystem types, as illustrated here at Nature's Valley. (© Linda Harris)](imgs/cst-e-naturesvalley_Linda-Harris.png)
-
 ## Defining and delineating the ecologically determined coastal zone
 
 Unlike the terrestrial, inland aquatic, estuarine and marine assessments, all of which assess ecosystem types per realm, the coast assessment is undertaken in a cross-realm zone. The reason for focusing on the coast specifically is because the majority of the world's population lives in this zone [@cosby2024], concentrating pressures on biodiversity<!--# insert link to coast pressures paper when available -->. Unless assessed separately, trends in coastal biodiversity relative to the rest of the land and sea are lost in the individual realm assessments.
@@ -154,9 +152,9 @@ Substantial effort went into delineating an ecologically determined coastal zone
 
 -   **Terrestrial ecosystem types:** all vegetation types influenced by the sea, including:
 
-    -   Coastal Vegetation – vegetation types with purely coastal descriptions, and/or with\>95% of their extent within 2.5 km of the seashore
+    -   Coastal Vegetation – vegetation types with purely coastal descriptions, and/or with \>95% of their extent within 2.5 km of the seashore
 
-    -   Semi-Coastal Vegetation – vegetation types with coastal affinities mentioned in description, and/or with\>70% of their extent within 10 km of the seashore
+    -   Semi-Coastal Vegetation – vegetation types with coastal affinities mentioned in description, and/or with \>70% of their extent within 10 km of the seashore
 
 -   **Estuarine ecosystem types:** all estuary and micro-estuary types are included in the EDCZ
 
@@ -225,40 +223,40 @@ tab_style(
 
 ### Publication
 
-Harris, L.R., Adams, J.B., Dayaram, A., Dunga, L.V., Job, N., Kirkman, S.P., Lamberth, S.J., Pfaff, M.C., Raw, J.L., Rishworth, G.M., Robbins, A., Sink, K.J., Skowno, A.L., van Deventer, H., van Niekerk, L., 2025. **Cross-realm biodiversity profile of the South African coastal zone**. African Journal of Marine Science 47, 1-18. [https://doi.org/10.2989/1814232X.2025.2463342](https://doi.org/10.2989/1814232X.2025.2463342){.uri target="_blank"}\
+Harris, L.R., Adams, J.B., Dayaram, A., Dunga, L.V., Job, N., Kirkman, S.P., Lamberth, S.J., Pfaff, M.C., Raw, J.L., Rishworth, G.M., Robbins, A., Sink, K.J., Skowno, A.L., van Deventer, H., van Niekerk, L., 2025. Cross-realm biodiversity profile of the South African coastal zone. African Journal of Marine Science 47, 1-18. [https://doi.org/10.2989/1814232X.2025.2463342](https://doi.org/10.2989/1814232X.2025.2463342){.uri target="_blank"}\
 *Description of the different types of coastal ecosystem types and broad biodiversity patterns in the South African coastal zone. The supplementary material includes a glossary of terms, guidance regarding map layers to use, and a table of the ecosystem types and their areas.*
 
 ### Data availability
 
 The following datasets are available for download:
 
-1.  [**Map of coastal ecosystem types / ecologically determined coastal zone**](https://bgis.sanbi.org/Projects/Detail/213){target="_blank"}
+1.  [Map of coastal ecosystem types / ecologically determined coastal zone](https://bgis.sanbi.org/Projects/Detail/213){target="_blank"}
 
-2.  [**Dune base line**](https://bgis.sanbi.org/SpatialDataset/Detail/3694){target="_blank"}: proxy representation of a decadal-scale high-water mark and recommended ecological line to represent the 'coastline'
+2.  [Dune base line](https://bgis.sanbi.org/SpatialDataset/Detail/3694){target="_blank"}: proxy representation of a decadal-scale high-water mark and recommended ecological line to represent the 'coastline'
 
-3.  [**Landmass line**](https://dwa.maps.arcgis.com/home/item.html?id=9d139e8cbe4248e3ba389aa7fbd3af54){target="_blank"}: recognized administrative boundary of the South African mainland landmass
+3.  [Landmass line](https://dwa.maps.arcgis.com/home/item.html?id=9d139e8cbe4248e3ba389aa7fbd3af54){target="_blank"}: recognized administrative boundary of the South African mainland landmass
 
 ### Related publications and supporting information
 
-1.  [**South African National Ecosystem Classification System (SA-NECS)**](https://bgis.sanbi.org/Projects/Detail/1237)**\
-    ***Details on South Africa's ecosystem classification system, with a link to download the SA-NECS handbook*
+1.  [South African National Ecosystem Classification System (SA-NECS)](https://bgis.sanbi.org/Projects/Detail/1237)\
+    *Details on South Africa's ecosystem classification system, with a link to download the SA-NECS handbook*
 
-2.  Dunga, L., Lück-Vogel, M., Blamey, L.K., Bolton, J., Rothman, M., Desmet, P., Sink, K., 2024. **Mapping South Africa's canopy-forming kelp forests using low-cost, high-resolution Sentinel-2 imagery**. Estuarine, Coastal and Shelf Science 310, 108989. [https://doi.org/10.1016/j.ecss.2024.108989](https://doi.org/10.1016/j.ecss.2024.108989){.uri target="_blank"}\
+2.  Dunga, L., Lück-Vogel, M., Blamey, L.K., Bolton, J., Rothman, M., Desmet, P., Sink, K., 2024. Mapping South Africa's canopy-forming kelp forests using low-cost, high-resolution Sentinel-2 imagery. Estuarine, Coastal and Shelf Science 310, 108989. [https://doi.org/10.1016/j.ecss.2024.108989](https://doi.org/10.1016/j.ecss.2024.108989){.uri target="_blank"}\
     *Technical details regarding the mapping of kelp forests using remote imagery*
 
-3.  [**Vegetation Map Updates 2024**](https://opus.sanbi.org/items/5d2f7441-b7c4-4d56-a4bd-5b8b3f7f1c5b/full){target="_blank"}\
+3.  [Vegetation Map Updates 2024](https://opus.sanbi.org/items/5d2f7441-b7c4-4d56-a4bd-5b8b3f7f1c5b/full){target="_blank"}\
     *Collection of technical reports describing the updates to the 2024 version of the National Vegetation Map.*
 
-4.  Sink, K.J., Adams, L.A., Franken, M., Harris, L.R., Currie, J.C., Karenyi, N., Dayaram, A., Porter, S.N., Kirkman, S.P., Pfaff, M., van Niekerk, L., Atkinson, L., Bernard, A., Bessinger, M., Cawthra, H., de Wet, W., Dunga, L.V., Filander, Z., Green, A., Herbert, D., Holness, S.D., Lamberth, S., Livingstone, T., Lück-Vogel, M., Mackay, F., Makwela, M., Palmer, R., van Zyl, W., Skowno, A.L., 2023. **Iterative mapping of marine ecosystems for spatial status assessment, prioritisation and decision support.** Frontiers in Ecology and Evolution 11, 1108118. [https://doi.org/10.3389/fevo.2023.1108118](https://doi.org/10.3389/fevo.2023.1108118){.uri target="_blank"}\
+4.  Sink, K.J., Adams, L.A., Franken, M., Harris, L.R., Currie, J.C., Karenyi, N., Dayaram, A., Porter, S.N., Kirkman, S.P., Pfaff, M., van Niekerk, L., Atkinson, L., Bernard, A., Bessinger, M., Cawthra, H., de Wet, W., Dunga, L.V., Filander, Z., Green, A., Herbert, D., Holness, S.D., Lamberth, S., Livingstone, T., Lück-Vogel, M., Mackay, F., Makwela, M., Palmer, R., van Zyl, W., Skowno, A.L., 2023. Iterative mapping of marine ecosystems for spatial status assessment, prioritisation and decision support. Frontiers in Ecology and Evolution 11, 1108118. [https://doi.org/10.3389/fevo.2023.1108118](https://doi.org/10.3389/fevo.2023.1108118){.uri target="_blank"}\
     *Technical details regarding the Marine Ecosystem Map*
 
-5.  Van Niekerk, L., Adams, J.B., James, N.C., Lamberth, S.J., MacKay, C.F., Turpie, J.K., Rajkaran, A., Weerts, S.P., Whitfield, A.K., 2020. **An Estuary Ecosystem Classification encompassing biogeography, size and types of diversity that supports estuarine protection, conservation and management.** African Journal of Aquatic Science 45, 199-216. [https://doi.org](https://doi.org/10.2989/16085914.2019.1685934){.uri}[/10.2989/16085914.2019.1685934](https://doi.org/10.2989/16085914.2019.1685934){.uri target="_blank"}\
+5.  Van Niekerk, L., Adams, J.B., James, N.C., Lamberth, S.J., MacKay, C.F., Turpie, J.K., Rajkaran, A., Weerts, S.P., Whitfield, A.K., 2020. An Estuary Ecosystem Classification encompassing biogeography, size and types of diversity that supports estuarine protection, conservation and management. African Journal of Aquatic Science 45, 199-216. [https://doi.org](https://doi.org/10.2989/16085914.2019.1685934){.uri}[/10.2989/16085914.2019.1685934](https://doi.org/10.2989/16085914.2019.1685934){.uri target="_blank"}\
     *Technical details regarding the Estuarine Ecosystem Classification*
 
-6.  Harris, L.R., Bessinger, M., Dayaram, A., Holness, S., Kirkman, S., Livingstone, T.-C., Lombard, A.T., Lück-Vogel, M., Pfaff, M., Sink, K.J., Skowno, A.L., Van Niekerk, L., 2019. **Advancing land-sea integration for ecologically meaningful coastal conservation and management**. Biological Conservation 237, 81-89. [https://doi.org/10.1016/j.biocon.2019.06.020](https://doi.org/10.1016/j.biocon.2019.06.020){.uri target="_blank"}\
+6.  Harris, L.R., Bessinger, M., Dayaram, A., Holness, S., Kirkman, S., Livingstone, T.-C., Lombard, A.T., Lück-Vogel, M., Pfaff, M., Sink, K.J., Skowno, A.L., Van Niekerk, L., 2019. Advancing land-sea integration for ecologically meaningful coastal conservation and management. Biological Conservation 237, 81-89. [https://doi.org/10.1016/j.biocon.2019.06.020](https://doi.org/10.1016/j.biocon.2019.06.020){.uri target="_blank"}\
     *Technical details regarding the conceptualisation and delineation of the land-sea interface into ecosystem types*
 
-7.  Harris, L.R., Nel, R., Schoeman, D.S., 2011. **Mapping beach morphodynamics remotely: A novel application tested on South African sandy shores**. Estuarine, Coastal and Shelf Science 92, 78-89. [https://doi.org/10.1016/j.ecss.2010.12.013](https://doi.org/10.1016/j.ecss.2010.12.013){.uri target="_blank"}\
+7.  Harris, L.R., Nel, R., Schoeman, D.S., 2011. Mapping beach morphodynamics remotely: A novel application tested on South African sandy shores. Estuarine, Coastal and Shelf Science 92, 78-89. [https://doi.org/10.1016/j.ecss.2010.12.013](https://doi.org/10.1016/j.ecss.2010.12.013){.uri target="_blank"}\
     *Technical details of a methodology to map beach ecosystem types using remote imagery such as Google Earth*
 
 ## Recommended citation

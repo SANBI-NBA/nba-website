@@ -25,7 +25,14 @@ author:
       family: Raimondo
     orcid: 0000-0003-3998-752X
     affiliations:
-      - ref: sanbi  
+      - ref: sanbi 
+      
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi       
         
   - name: 
       given: Dewidine 
@@ -40,13 +47,6 @@ author:
     orcid: 0009-0003-1733-1156
     affiliations:
       - ref: sanbi   
-      
-  - name:
-      given: Maphale S. 
-      family: Monyeki 
-    orcid: 0000-0002-5083-7461 
-    affiliations:
-      - ref: sanbi
               
 affiliations:
   - id: AA 
@@ -75,6 +75,19 @@ google-scholar: true
 ---
 
 ------------------------------------------------------------------------
+
+
+```{=html}
+<style>
+
+.inline-style-under-protected {
+  color: #93A772;
+  font-size: 300%;
+  font-weight: 600;
+}
+
+</style>
+```
 
 <center>
 
@@ -106,7 +119,7 @@ google-scholar: true
 ::: {.column width="34%"}
 <center>
 
-| [\~80%]{.inline-style-not-protected}
+| [\~80%]{.inline-style-under-protected}
 | of threatened amphibians are considered
 | [under-protected]{.inline-style-indicator}
 
@@ -387,13 +400,13 @@ Knowledge on threats were improved, and one property (approximately 700 ha) has 
 ## Boston rain frog (*Breviceps batrachophiliorum*)
 
 ::: left
-An example of a newly described species being assessed at the time of this assessment in 2025 is the Boston rain frog (*Breviceps batrachophiliorum*) (du Preez et al. 2025)[@dupreez2025a], which was previously assessed as *B. bagginsi*. Based on morphological, call and genetic analyses, the new species has been redescribed and split, resulting in an assessment of Endangered for *B. batrachophiliorum* and Critically Endangered for *B. bagginsi*. This grassland-associated species is restricted to the
+An example of a newly described species being assessed at the time of this assessment in 2025 is the Boston rain frog (*Breviceps batrachophiliorum*) (du Preez et al. 2025)[@dupreez2025a], which was previously assessed as *B. bagginsi*. Based on morphological, call and genetic analyses, the new species has been redescribed and split, resulting in an assessment of Endangered for *B. batrachophiliorum* and Critically Endangered for *B. bagginsi*. This grassland-associated species is restricted to the midlands area in south central KwaZulu-Natal province.
 :::
 
 ::: right
 ![](./imgs/Breviceps%20batrachophiliorum_Louis%20du%20Preez.png){fig-alt="Boston Rain Frog" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Louis Du Preez]{style="width:75%; color:#626262;"}
 
-midlands area in south central KwaZulu-Natal province. Records are confirmed from the Boston (type locality), Richmond, the Karkloof and Bulwer areas. Currently, the species is understood to occur at three subpopulations across less than 3000 km^2^.
+Records are confirmed from the Boston (type locality), Richmond, the Karkloof and Bulwer areas. Currently, the species is understood to occur at three subpopulations across less than 3000 km^2^.
 :::
 :::::
 
@@ -534,30 +547,36 @@ gt(species_change) %>%
     }
   ) %>%
   nba_tbl_theme() %>%
-  tab_options(table.width = pct(100),
-              data_row.padding = px(16),
-              table.font.size = px(14L)) %>%
+  tab_options(data_row.padding = px(16),
+              table.font.size = px(14L),
+              table.width = pct(100),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black") %>%
   
- tab_style(style = cell_fill(color = "white"),
-            locations = cells_column_labels(columns = everything())) %>%
-  tab_style(
-    style = cell_borders(
-      sides = c("left", "right"),
-      color = "transparent",
-      weight = px(0)
-    ),
-    locations = cells_column_labels(columns = everything())
-  ) %>%
-  tab_style(
-    style = cell_borders(
-      sides = "bottom",
-      color = "grey", 
-      weight = px(1)
-    ),
-    locations = cells_body(columns = everything())
-  ) %>%
+ tab_style(style = cell_fill(color = "white"), 
+           locations = cells_column_labels(columns = everything())) %>%
   
-  cols_width(Taxon ~ pct(12),
+ tab_style(style = cell_borders(sides = c("left", "right"),
+                                color = "transparent",
+                                weight = px(0)),
+           locations = cells_column_labels(columns = everything())) %>%
+  
+ tab_style(style = cell_borders(sides = "bottom",
+                                color = "grey", 
+                                weight = px(1)),
+          locations = cells_body(columns = everything())) %>%
+  
+ tab_style(style = cell_text(align = "left"),
+           locations = cells_body(columns = c(Taxon, `Reason for change`))) %>%   
+ 
+tab_style(style = cell_text(align = "left"),
+           locations = cells_column_labels(columns = everything())) %>% 
+   
+ cols_width(Taxon ~ pct(12),
              `Reason for change` ~ pct(20),
              everything() ~ pct(8))
 ```
@@ -576,40 +595,44 @@ knitr::include_graphics("./imgs/amphibians_in_10km_HD.png")
 
 Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@re2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 76% of threatened and Near Threatened species. These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes.
 
-::::::::::::::: {#box-2 .callout-note .species title="Box 2: Invasive species impacts on range-restricted amphibians" collapse="true"}
-:::::: {layout-ncol="2"}
+::::::::::::::::: {#box-2 .callout-note .species title="Box 2: Invasive species impacts on range-restricted amphibians" collapse="true"}
+::::::: {layout-ncol="2"}
 ::: left
-The Critically Endangered rough moss frog, (*Arthroleptella rugosa*) is restricted to the Klein Swartberg Mountain in the Western Cape. Within less than a decade, large portions of its seepage habitat in the fynbos have been invaded by cluster pines (*Pinus pinaster*). A study using bioacoustics to estimate frog densities found that numbers at invaded sites were directly affected by *P. pinaster* infestations [@angus2023a]. At invaded sites, call densities (and hence population numbers) were reduced, while at uninvaded sites call
+The Critically Endangered rough moss frog, (*Arthroleptella rugosa*) is restricted to the Klein Swartberg Mountain in the Western Cape. Within less than a decade, large portions of its seepage habitat in the fynbos have been invaded by cluster pines (*Pinus pinaster*). A study using bioacoustics to estimate frog densities found that numbers at invaded sites were directly affected by *P. pinaster* infestations [@angus2023a]. At invaded sites, call densities (and hence population numbers) were reduced, while at uninvaded sites call densities were notably higher. These results confirm previous
 :::
 
-:::: right
+::::: right
 ![](./imgs/sp_amphibian_img_13.png){style="width:100%; border-radius:10px;" fig-alt="Arthroleptella rugosa"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
 © Alouis and Keir Lynch Bionerds
 :::
-::::
-::::::
 
-densities were notably higher. These results confirm previous suggestions that invasive pine trees cause population declines in *A. rugosa*.
+::: {style="margin-top:-10px;"}
+suggestions that invasive pine trees cause population declines in *A. rugosa*.
+:::
+:::::
+:::::::
 
 ------------------------------------------------------------------------
 
-:::::: {layout-ncol="2"}
+::::::: {layout-ncol="2"}
 ::: left
-These findings were used as motivation for conservation action and a joint initiative through CapeNature, the Endangered Wildlife Trust, Fynbos Trust, 18 landowners and the Klein Swartberg Conservancy, resulted in adaptive fire management to control pine invasion across the species range. An ecological burn was carried out, which covered approximately 4 000 hectares, and eradicated pines from areas where *A. rugosa* occurs. Post-fire monitoring has confirmed increasing numbers of frogs, and a 10-year management plan has been developed with the Conservancy, including ongoing alien plant management. This is a great example of conservation
+These findings were used as motivation for conservation action and a joint initiative through CapeNature, the Endangered Wildlife Trust, Fynbos Trust, 18 landowners and the Klein Swartberg Conservancy, resulted in adaptive fire management to control pine invasion across the species range. An ecological burn was carried out, which covered approximately 4 000 hectares, and eradicated pines from areas where *A. rugosa* occurs. Post-fire monitoring has confirmed increasing numbers of frogs, and a 10-year management plan has been developed with the Conservancy, including ongoing alien plant management. This is a great example of conservation needs being guided by expert knowledge and Red List assessment information, which have also resulted in the designation of this species entire range as an [Alliance for Zero Extinction](https://zeroextinction.org/) site, thus gaining international
 :::
 
-:::: right
+::::: right
 ![](./imgs/sp_amphibian_img_6.png){style="width:100%; border-radius:10px;" fig-alt="Pine infestation of fynbos habitat"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
 Pine infestation of fynbos habitat on Klein Swartberg where the Critically Endangered rough moss frog, <i>Arthroleptella rugosa</i>, occurs. (© Rob Erasmus, Enviro Wildfire)
 :::
-::::
-::::::
 
-needs being guided by expert knowledge and Red List assessment information, which have also resulted in the designation of this species entire range as an [Alliance for Zero Extinction](https://zeroextinction.org/) site, thus gaining international attention, strengthening partnerships and work with landowners towards formal habitat protection for this species.
+::: {style="margin-top:-10px;"}
+attention, strengthening partnerships and work with landowners towards formal habitat protection for this species.
+:::
+:::::
+:::::::
 
 ------------------------------------------------------------------------
 
@@ -626,7 +649,7 @@ needs being guided by expert knowledge and Red List assessment information, whic
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
 Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. (© Alouis and Keir Lynch Bionerds)
 :::
-:::::::::::::::
+:::::::::::::::::
 
 This is followed by habitat loss and degradation due to modification of natural system (impacting 64% of threatened and Near Threatened species) and agricultural activities (impacting 57% of threatened and Near Threatened species). Modifications can exacerbate inappropriate fire cycles. Globally, climate change is now recognised as the most serious emerging challenge facing amphibians, with 29% of threatened species worldwide impacted. This threat is expected to affect more species in the future with projected increases in temperature and changes in precipitation. In South Africa, 38% of our threatened and Near threatened species are impacted, or projected to be impacted by climate change and extreme weather, through shifts in habitat, droughts and flooding. These impacts require data to improve predictive models of amphibian habitats; for example, species monitoring and climate data. Fourteen threatened species (33%) are affected by pollution, particularly from agricultural effluents and domestic and urban waste water. A good example is the subpopulations of the Kloof frog, (*Natalobatrachus bonebergi*), in Durban that are impacted by sewage overflows into streams and increased sedimentation from urban construction, where it has a severe impact on stream health and breeding sites. Even while this species has been downlisted from EN to NT due to overall EOO and the correct application of the criteria, the KwaZulu-Natal subpopulations face increasing levels of threat. These impacts reflect the state of South Africa’s freshwater ecosystems, with many systems currently assessed as modified (see [Freshwater ecosystem pressures](../freshwater/fw_riv_ets.qmd)).
 
@@ -682,7 +705,7 @@ through regenerative agriculture approaches and facilitating habitat protection 
 ## Habitat loss due to residential and commercial development
 
 ::: left
-Habitat loss due to residential and commercial development impacts many of the country’s amphibians. Perhaps none more so than the Western leopard toad (*Scelophrys pantherina*), typically associated with low-lying wetlands and vleis in the Western Cape province. Urban infrastructure in the form of roads also causes significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding habitat.
+Habitat loss due to residential and commercial development impacts many of the country’s amphibians. Perhaps none more so than the Western leopard toad (*Scelophrys pantherina*), typically associated with low-lying wetlands and vleis in the Western Cape province. Urban infrastructure in the form of roads also causes significant individual mortalities of breeding adults every year when toads move from their summer foraging grounds through now developed areas towards suitable breeding
 :::
 
 :::: right
@@ -692,7 +715,7 @@ Habitat loss due to residential and commercial development impacts many of the c
 Western leopard toad (*Scelophrys pantherina*). (© Luke Verburght)
 :::
 
-Sightings (including roadkill) of this species by the public can be uploaded to iNaturalist, with sightings in the Overberg specifically to this [iNaturalist project](https://www.inaturalist.org/projects/leopard-toads-of-the-overberg).
+habitat. Sightings (including roadkill) of this species by the public can be uploaded to iNaturalist, with sightings in the Overberg specifically to this [iNaturalist project](https://www.inaturalist.org/projects/leopard-toads-of-the-overberg).
 ::::
 ::::::
 :::::::::::
@@ -844,10 +867,15 @@ recovery_projects_gt <- recovery_projects %>%
   gt() %>%
   fmt_markdown(columns = c("Get involved")) %>%
 
-  tab_options(table.width = pct(100),
-              data_row.padding = px(10)) %>%
-  #tab_style(style = cell_fill(color = "gray90"),
-            #locations = cells_column_labels(columns = everything())) %>%
+  tab_options(#data_row.padding = px(10),
+              table.width = pct(100),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black") %>%
+
  
   tab_style(style = cell_text(size = px(12)),  
             locations = cells_column_labels(columns = everything())) %>%
@@ -915,39 +943,66 @@ library(nbaR)
 
 # Create the data frame
 df <- data.frame(
+  "Protection level categories" = c(
+    "Well Protected",
+    "Moderately Protected",
+    "Poorly Protected",
+    "Not Protected"
+  ),
+  
   "Percentage of biodiversity target" = c(
-    "Well Protected — ≥100% of the persistence target met",
-    "Moderately Protected — 50–99% of the target met",
-    "Poorly Protected — 5–49% of the target met",
-    "Not Protected — <5% of the target met"),check.names = FALSE)
+    "≥100% of the persistence target met",
+    "50–99% of the target met",
+    "5–49% of the target met",
+    "<5% of the target met"
+  ),
+  check.names = FALSE
+)
 
 # Define colors
-row_colors <- list( "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
-                    "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
-                    "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
-                    "Not Protected" = rgb(166, 166, 166, maxColorValue = 255))
+row_colors <- list(
+  "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
+  "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
+  "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
+  "Not Protected" = rgb(166, 166, 166, maxColorValue = 255)
+)
 
-
+# Create gt table
 gt(df) %>%
-  tab_options(table.width = pct(80),
-              data_row.padding = px(14),
-    column_labels.hidden = TRUE) %>%
+  tab_options(
+    table.width = pct(80),
+    data_row.padding = px(14)
+  ) %>%
+
+  tab_style(
+    style = cell_text(size = px(12), weight = "bold"),  
+    locations = cells_column_labels(columns = everything())
+  ) %>%  
+    
+  tab_style(
+    style = cell_text(size = px(12), color = "white"),  
+    locations = cells_body(columns = everything())
+  ) %>%
   
-  tab_style(style = cell_text(size = px(14)),  
-            locations = cells_body(columns = everything())) %>%
-
-  tab_style(style = cell_fill(color = row_colors[["Well Protected"]]),
-            locations = cells_body(rows = grepl("Well Protected", df[[1]]))) %>%
-      
-  tab_style(style = cell_fill(color = row_colors[["Moderately Protected"]]),
-            locations = cells_body(rows = grepl("Moderately Protected", df[[1]]))) %>%
-    
-  tab_style(style = cell_fill(color = row_colors[["Poorly Protected"]]),
-            locations = cells_body(rows = grepl("Poorly Protected", df[[1]]))) %>%
-    
-  tab_style(style = cell_fill(color = row_colors[["Not Protected"]]),
-            locations = cells_body(rows = grepl("Not Protected", df[[1]])))
-
+  tab_style(
+    style = cell_fill(color = row_colors[["Well Protected"]]),
+    locations = cells_body(rows = 1)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Moderately Protected"]]),
+    locations = cells_body(rows = 2)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Poorly Protected"]]),
+    locations = cells_body(rows = 3)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Not Protected"]]),
+    locations = cells_body(rows = 4)
+  )
 ```
 
 This assessment was applied to 133 amphibian species with the persistence target set at the area required to protect 10 000 individuals.
@@ -1033,7 +1088,13 @@ recovery_projects_gt <- recovery_projects %>%
   fmt_markdown(columns = c(`ORCID number`)) %>%
   #nbaR::nba_tbl_theme() %>%
   tab_options(table.width = pct(100),
-              data_row.padding = px(10)) %>%
+              #data_row.padding = px(10),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black") %>%
   
   #tab_style(style = cell_fill(color = "gray90"),
            # locations = cells_column_labels(columns = everything())) %>%

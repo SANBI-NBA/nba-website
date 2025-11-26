@@ -46,8 +46,12 @@ author:
     orcid: 0000-0001-8668-1449 
     affiliation:
       - ref: birdlifesa 
-  
-     
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi     
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full

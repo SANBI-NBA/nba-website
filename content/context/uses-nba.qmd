@@ -7,11 +7,9 @@ bibliography: refs-about-nba.bib
 
 *South Africa’s National Biodiversity Assessment is a collaborative effort to synthesise the best available science on the country’s biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities.*
 
-![© Greg Martindale](imgs/gregmartindalebioblitz.png)
+![A team undertakes a BioBlitz in the proposed National Park in the grasslands of the Eastern Cape - these are citizen science driven events to find and identify as many species as possible over a short period of time. (© Greg Martindale)](imgs/gregmartindalebioblitz.png)
 
-## Objectives of the NBA
-
-The NBA has seven objectives, which are to:
+## The NBA has seven objectives
 
 1.  inform policy and decision making across multiple sectors;
 
