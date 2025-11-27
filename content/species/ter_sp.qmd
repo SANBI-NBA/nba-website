@@ -74,6 +74,9 @@ image: "./imgs/Sungazer Lizard.png"
 </style>
 ```
 
+
+*South Africa has rich diversity of terrestrial species. Current estimates indicate that South Africa harbours approximately 6% of the world's vascular plant species; and 7% of bird, 5% of mammal, 3% of reptile and 2% of amphibian species. A lower proportion of terrestrial species (14%) are threatened with extinction in comparison to species that have been assessed for the marine (36%) and freshwater (19%) realms. There has been a marked increase in the risk of extinction for reptiles, birds, mammals and plants since they were last assessed in 2018. Habitat conversion for agriculture remains the primary pressure to terrestrial species. However, the number of species threatened by energy production, mining, climate change, and illegal wildlife trade has increased over the past eight years.*
+
 <center>
 
 ![Sungazer lizard (*Smaug giganteus*) is a species threatened by habitat loss and unsustainable biological resource use. It is collected for trade in traditional medicine markets and is also exported to supply international illegal pet trade. (© Endangered Wildlife Trust)](./imgs/Sungazer%20Lizard.png){fig-align="center"}
@@ -111,8 +114,6 @@ image: "./imgs/Sungazer Lizard.png"
 :::::
 
 ------------------------------------------------------------------------
-
-South Africa has rich diversity of terrestrial species. Current estimates indicate that South Africa harbours approximately 6% of the world's vascular plant species; and 7% of bird, 5% of mammal, 3% of reptile and 2% of amphibian species. A lower proportion of terrestrial species (14%) are threatened with extinction in comparison to species that have been assessed for the marine (36%) and freshwater (19%) realms. There has been a marked increase in the risk of extinction for reptiles, birds, mammals and plants since they were last assessed in 2018. Habitat conversion for agriculture remains the primary pressure to terrestrial species. However, the number of species threatened by energy production, mining, climate change, and illegal wildlife trade has increased over the past eight years.
 
 ## Threat status and pressures
 

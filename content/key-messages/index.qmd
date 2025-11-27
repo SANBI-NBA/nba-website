@@ -1,22 +1,176 @@
 ---
-title: "NBA 2025 Key Messages"
+title: "NBA 2025 key messages"
 subtitle: ""
 #image: "./imgs/km_listing_image.png"
-#description: "Key Messages"
+#description: "Key messages"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 sidebar: id-key-messages
 ---
 
-The NBA 2025 key messages distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences.
+The NBA 2025 key messages (@tbl-km-summary) distill some of the most important findings of NBA 2025 in a way that is accessible to various audiences. The messages draw on evidence from NBA analyses (e.g. Red List status, ecological condition), explain why it matters (e.g. consequences for people), and point to practical actions, responses, and interventions that can be taken.
 
-Each message includes a summary paragraph with a confidence statement. The messages draw on evidence from NBA analyses (e.g., Red List status, ecological condition), explain, why this matters (e.g., consequences for people), and point to practical actions, responses, and interventions that can be taken.
-
+::: {#tbl-km-summary}
 ```{=html}
-{{< include "./imgs/km_table_links.svg" >}}
+
+<table class="km-table">
+  <colgroup>
+    <col style="width:20%">
+    <col style="width:5%">
+    <col style="width:75%">
+  </colgroup>
+
+  <tbody>
+    <!-- Cluster A -->
+    <tr class="clustera">
+      <td class="cell-link" rowspan="7">
+          <a class="fullcell" href="#kma">
+              <span class="cluster-label">CLUSTER A:</span><br>
+                Cross-realm pressures on South Africa’s biodiversity are impacting people
+          </a>
+      </td>
+      <td>A1.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma1.html">
+                Accelerated climate change has widespread impacts on biodiversity and people.
+          </a>
+      </td>
+    </tr>
+    <tr class="clustera">
+      <td>A2.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma2.html">
+            Unsustainable land use and sea use changes erode natural capital and undermine ecosystem services.
+          </a>
+      </td>
+    </tr>
+    <tr class="clustera">
+      <td>A3.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma3.html">
+            Pollution reduces water quality, impacting aquatic ecosystems and their dependent economic activities.
+          </a>
+      </td>
+    </tr>
+    <tr class="clustera">
+      <td>A4.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma4.html">
+              The prevention and management of biological invasions remain a priority.
+          </a>
+      </td>
+    </tr>    
+    <tr class="clustera">
+      <td>A5.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma5.html">
+              Building on past successes, opportunities exist for more sustainable and equitable fisheries.
+          </a>
+      </td>
+    </tr>
+    <tr class="clustera">
+      <td>A6.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma6.html">
+              Innovation is needed to address escalating illegal wildlife harvesting and trade.
+          </a>
+      </td>
+    </tr>
+    <tr class="clustera">
+      <td>A7.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kma7.html">
+              Freshwater flows from land to sea are essential for coastal ecosystems, species and communities.
+          </a>
+      </td>
+    </tr>
+
+    
+    <!-- Cluster B -->
+    <tr class="clusterb">
+      <td class="cell-link" rowspan="5">
+        <a class="fullcell" href="#kmb">
+          <span class="cluster-label">CLUSTER B:</span><br>
+                Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all
+        </a>
+      </td>
+      <td>B1.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmb1.html">
+              Recovery efforts are required to curb rising extinction risk and a growing number of threatened species.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterb">
+      <td>B2.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmb2.html">
+              Estuaries, rivers and wetlands are the most threatened and least protected ecosystems in South Africa.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterb">
+      <td>B3.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmb3.html">
+              Genetic diversity of South African indigenous species' populations is declining.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterb">
+      <td>B4.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmb4.html">
+              Enhancing effectiveness of protected and conserved areas for mitigating pressures on biodiversity will build on progress in representing ecosystems and species.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterb">  
+      <td>B5.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmb5.html">
+              Scientific and well-documented programmes are needed for ecosystem restoration and species recovery.
+          </a>
+      </td>
+    </tr>
+
+    <!-- Cluster C -->
+    <tr class="clusterc">
+      <td class="cell-link" rowspan="3">
+        <a class="fullcell" href="#kmc">
+          <span class="cluster-label">CLUSTER C:</span><br>
+                Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people
+        </a>
+      </td>
+      <td>C1.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmc1.html">
+              Safeguarding South Africa's biodiversity calls for a whole-of-government and whole-of-society approach.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterc">
+      <td>C2.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmc2.html">
+              Investment in biodiversity monitoring is crucial for management, decision-making, research and reporting.
+          </a>
+      </td>
+    </tr>
+    <tr class="clusterc">
+      <td>C3.</td>
+      <td class="cell-link">
+          <a class="fullcell" href="kmc3.html">
+              Innovative finance solutions are needed to address funding and capacity constraints in the biodiversity sector.
+          </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 ```
 
-\
+NBA 2025 key messages summary
+:::
 
 ## How to use these messages
 
@@ -28,6 +182,7 @@ Each message includes a summary paragraph with a confidence statement. The messa
 
 The NBA provides a summary of the state of biodiversity at a point in time. It cannot list every action or intervention; instead, it serves as a strategic tool that should stimulate discussions among stakeholders and inform sector specific strategies and action plans, cross-sectoral planning, research strategies, scenario planning, and co-produced response strategies that follow from the NBA.
 
+<!--
 ## CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people {#kma}
 
 This cluster highlights the key pressures on South Africa's biodiversity across realms, and how these pressures have impact on the numerous benefits people derive from biodiversity.
@@ -58,14 +213,15 @@ This cluster relates to the status of South Africa's biodiversity, using nationa
 
 [B4. Enhancing effectiveness of protected and conserved areas for mitigating pressures on biodiversity will build on progress in representing ecosystems and species](kmb4.qmd)
 
-[B5. Scientific and well-documented programmes are needed for ecosystem restoration and species recovery](kmb5.qmd)
+[B5. Scientific and well-documented programmes are needed for ecosystem restoration and species recovery](kmb5.qmd) 
 
 ## CLUSTER C: Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people {#kmc}
 
 This cluster speaks to three all-inclusive and over-arching actions that are needed to accelerate the calls to action expressed in each message in cluster A and B.
 
+ 
 [C1. Safeguarding South Africa's biodiversity calls for a whole-of-government and whole-of-society approach](kmc1.qmd)
 
 [C2. Investment in biodiversity monitoring is crucial for management, decision-making, research and reporting](kmc2.qmd)
 
-[C3. Innovative finance solutions are needed to address funding and capacity constraints in the biodiversity sector](kmc3.qmd)
+[C3. Innovative finance solutions are needed to address funding and capacity constraints in the biodiversity sector](kmc3.qmd) --> 

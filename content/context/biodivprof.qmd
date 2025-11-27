@@ -183,8 +183,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
 ## Summary {#summary}
 
 South Africa has exceptional biodiversity that is globally recognised, characterised by high species richness, high rates of endemism and a wide variety of ecosystem types. Although among the smaller of the world’s 17 megadiverse countries, which together contain more than two-thirds of the world’s biodiversity, South Africa ranks in the global top ten of countries in terms of plant species richness and third for marine species endemism. The country holds three of the world’s 36 recognised biodiversity hotspots, 31 Ramsar sites (wetlands of international importance, including the subantarctic Prince Edward Islands) and the Agulhas Bank that is an equivalently unique marine ecosystem (@fig-profile-map). Applying the international standard, South Africa has identified 263 terrestrial Key Biodiversity Areas (KBAs), which are sites of global biodiversity significance. This network of KBAs is expected to expand over time as the marine realm is assessed.
@@ -291,7 +289,7 @@ Two-thirds of South Africa’s plant species are endemic, and its cycads represe
 
 Microorganisms (e.g., bacteria, protozoa, fungi, viruses), an often-overlooked and largely unassessed group, are essential for healthy functioning of natural and agricultural systems in both terrestrial and aquatic environments. Given the country’s immense diversity of floral and faunal species, and that each species has its own array of microbial species associated with it, it is likely that these are also diverse. For example, it has been estimated that each unique vascular plant species in South Africa is associated with at least seven unique fungal species, implying more than 171 000 fungi species (an underestimate, as fungi associated with invertebrates are not included).
 
-Find out more in this downloadable biodiversity profile [Factsheet](./assets/South_Africa_Biodiversity_Profile_factsheet_20251106.pdf).
+Find out more in this downloadable biodiversity profile [factsheet](./assets/South_Africa_Biodiversity_Profile_factsheet_20251106.pdf).
 
 ### Recommended citation
 
@@ -323,9 +321,9 @@ nba_citation(meta)
 4.  Cabral, H., Díaz de Astarloa, J.M., Petrik, C.M., Costa, M.J. & Marques, J.F., 2025. The diversity and life-history patterns of marine fishes. In: H. Cabral, M. Lepage, J. Lobry & O. Le Pape, eds. *Ecology of Marine Fish*. Academic Press, pp.25–43. doi:10.1016/B978-0-323-99036-3.00011-8
 5.  Calonje, M., Stevenson, D.W. & Osborne, R., 2025. *The World List of Cycads* (Version 2025.09.04-r1). Montgomery Botanical Center. Available at: [https://cycadlist.org/](https://cycadlist.org/?utm_source=chatgpt.com) \[Accessed 01 August 2025\]
 6.  CERN, n.d. Zenodo. Available at: https://zenodo.org/\[Accessed 01 August 2025\].
-7.  Ebert, D.A., Wintner, S.P. & Kyne, P.M. (2021). An annotated checklist of the chondrichthyans of South Africa. Zootaxa, 4947 (1), 1–127. <https://doi.org/10.11646/zootaxa.4947.1.1>
+7.  Ebert, D.A., Wintner, S.P. & Kyne, P.M. 2021. An annotated checklist of the chondrichthyans of South Africa. Zootaxa, 4947 (1), 1–127. <https://doi.org/10.11646/zootaxa.4947.1.1>
 8.  Frost, D. R. (Ed.). (2025). Amphibian species of the world: An online reference (Version 6.0). American Museum of Natural History. Retrieved August 01, 2025, from <https://amphibiansoftheworld.amnh.org/>
-9.  Sayer, C.A., Fernando, E., Jimenez, R.R. et al. One-quarter of freshwater fauna threatened with extinction. Nature 638, 138–145 (2025). [https://doi.org/10.1038/s41586-024-08375-z](#0)
+9.  Sayer, C.A., Fernando, E., Jimenez, R.R. et al. One-quarter of freshwater fauna threatened with extinction. Nature 638, 138–145 2025. [https://doi.org/10.1038/s41586-024-08375-z](#0)
 10. Smithsonian Institution, n.d. *Butterflies*. Available at: [https://www.si.edu/spotlight/buginfo/butterfly](https://www.si.edu/spotlight/buginfo/butterfly?utm_source=chatgpt.com) \[Accessed 01 August 2025\].
 11. Uetz, P., Freed, P., Aguilar, R., Reyes, F., Kudera, J. & Hošek, J. (eds.), 2025. *The Reptile Database*. Available at: [https://www.reptile-database.org/](https://www.reptile-database.org/?utm_source=chatgpt.com) \[Accessed 01 August 2025\].
 12. World Flora Online, 2025. *World Flora Online plant list*. Available at: <https://wfoplantlist.org/> \[Accessed 01 August 2025\].
@@ -333,10 +331,10 @@ nba_citation(meta)
 
 **South African species richness**
 
-15. Foord, S. H., Dippenaar-Schoeman, A. S., Haddad, C. R., Lyle, R., Lotz, L. N., Sethusa, T., & Raimondo, D. (2020). The South African National Red List of spiders: patterns, threats, and conservation. *Journal of Arachnology*, 48(2), 110–118. <https://doi.org/10.1636/0161-8202-48.2.110>
+15. Foord, S. H., Dippenaar-Schoeman, A. S., Haddad, C. R., Lyle, R., Lotz, L. N., Sethusa, T., & Raimondo, D. 2020. The South African National Red List of spiders: patterns, threats, and conservation. *Journal of Arachnology*, 48(2), 110–118. <https://doi.org/10.1636/0161-8202-48.2.110>
 16. Klopper, R.R. & Winter, P.J.D. 2025. South African National Plant Checklist statistics, version 2025.1. South African National Biodiversity Institute, Pretoria. Available at: <https://hdl.handle.net/20.500.12143/6880.3> \[Accessed 25 June 2025\].
 17. Le Roux, M.M. & Klopper, R.R., 2025. Taking stock of South Africa's flora. *South African Journal of Botany*, 184, pp.571–579. doi:10.1016/j.sajb.2025.05.049
-18. Melin, A., Beale, C.M., Manning, J.C. & Colville, J.F. (2024) Fine-scale bee species distribution models: Hotspots of richness and endemism in South Africa with species-area comparisons. Insect Conservation and Diversity, 17(3), 474–487. Available from: <https://doi.org/10.1111/icad.12715>
+18. Melin, A., Beale, C.M., Manning, J.C. & Colville, J.F. 2024 Fine-scale bee species distribution models: Hotspots of richness and endemism in South Africa with species-area comparisons. Insect Conservation and Diversity, 17(3), 474–487. Available from: <https://doi.org/10.1111/icad.12715>
 19. South African National Biodiversity Institute. 2025. Botanical Database of Southern Africa (BODATSA) \[dataset\]. <https://posa.sanbi.org/>
 20. Tolley, K.A., Weeber, J., Maritz, B., Verburgt, L., Bates, M.F., Conradie, W., Hofmeyr, M.D., Turner, A.A., da Silva, J.M. & Alexander, G.J., 2019. No safe haven: Protection levels show imperilled South African reptiles not sufficiently safe-guarded despite low average extinction risk. *Biological Conservation*, 233, pp.61–72. doi:10.1016/j.biocon.2019.02.006
 21. University of Cape Town, Seaweed Research Group, n.d. South African Seaweeds: Systematic index. Available at: <http://southafrseaweeds.uct.ac.za/systematicindex.php> \[Accessed 01 August 2025\].

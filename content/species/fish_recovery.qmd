@@ -81,6 +81,14 @@ author:
     orcid: 0000-0002-5083-7461 
     affiliations:
       - ref: af6
+      
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: af6        
+      
   
 affiliations:
   - id: af1
@@ -139,7 +147,7 @@ Despite the large knowledge gaps and investment required to recover these specie
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_freshwater_fish_img_1.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_1.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -157,7 +165,7 @@ The Saving Sandfish project, led by the Freshwater Research Centre (FRC), aims
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_freshwaterfish_img_8.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_2.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -175,7 +183,7 @@ The Grootvadersbosch Conservancy is leading a conservation project for the Trado
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Andrew Deacon](./imgs/sp_freshwaterfish_img_9.png){style="width:400;"}
+![© Andrew Deacon](./imgs/sp_img_recv_fwf_3.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -197,7 +205,7 @@ Working with local farmers has enabled access to suitable dams and logistical su
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_freshwaterfish_img_12.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_4.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -215,7 +223,7 @@ The Bringing Back the Witvis project, led by the FRC, is working to re-establish
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_freshwaterfish_img_13.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_5.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -233,7 +241,7 @@ The Breekkrans River Restoration Project, led by the FRC, aims to restore 8 km o
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_freshwaterfish_img_6.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_6.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -251,7 +259,7 @@ The Krom Antonies Restoration Project, led by the FRC, focuses on the uppe
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Heather D’Alton](./imgs/sp_freshwaterfish_img_7.png){style="width:400;"}
+![© Heather D’Alton](./imgs/sp_img_recv_fwf_7.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}

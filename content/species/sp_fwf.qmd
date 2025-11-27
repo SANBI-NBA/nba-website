@@ -60,6 +60,12 @@ author:
     affiliations:
       - ref: sanbi
   - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi    
+  - name:
       given: Dewidine 
       family: van der Colff
     orcid: 0000-0002-0906-7098
@@ -109,7 +115,7 @@ image: "./imgs/sp_freshwater_fish_img_1.png"
 
 <center>
 
-![The Twee River redfin, [*Cedercypris erubescens*](https://www.iucnredlist.org/species/2564/100140580) (CR), Heks River, Western Cape. Restricted to the Twee River catchment, this species has been heavily impacted by invasive alien fishes and intensive agriculture in the surrounding catchment. (© Jeremy Shelton)](./imgs/sp_freshwater_fish_img_1.png){fig-align="center"}
+![The Twee River redfin ([*Cedercypris erubescens*](https://www.iucnredlist.org/species/2564/100140580)) (CR), Heks River, Western Cape. Restricted to the Twee River catchment, this species has been heavily impacted by invasive alien fishes and intensive agriculture in the surrounding catchment. (© Jeremy Shelton)](./imgs/sp_freshwater_fish_img_1.png){fig-align="center"}
 
 </center>
 
@@ -149,7 +155,7 @@ image: "./imgs/sp_freshwater_fish_img_1.png"
 
 ## Key findings
 
--   There are currently 139 formally described primary freshwater fishes in South Africa [@skelton2024a], representing \~0.8% of the world's freshwater fish species (\~18 000 [@fricke2025a]).
+-   There are currently 139 formally described primary freshwater fishes in South Africa [@skelton2024a], representing \~0.8% of the world's freshwater fish species (\~18 000 [@fricke2025a]).
 
 -   A comprehensive reassessment of extinction risk for 118 freshwater fishes was done in 2016/17 following the IUCN Red List Categories and Criteria.
 
@@ -349,7 +355,7 @@ combined_donut_plot
 ::: {#table .table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-1
-#| tbl-cap: "Plant threat status." 
+#| tbl-cap: "Summary statistics per IUCN Red List category for all South African indigenous freshwater fishes." 
 #| classes: plain
 
 library(gt)
@@ -402,7 +408,7 @@ gt(dat_combined_final) %>%
 ::::
 
 :::: {#box-1 .callout-note .species title="Box 1. Taxonomic advances since the 2018 National Biodiversity Assessment." collapse="true"}
-The latest Red List assessment for freshwater fishes of South Africa was done in 2016/17. These findings were integrated into the National Biodiversity Assessment (NBA 2018). Key outcomes of this assessment were the identification of substantial taxonomic gaps across several species, lack of ongoing monitoring and uncertainties about species distribution patterns; highlighting the need for targeted research. In response, several research initiatives, primarily led by NRF-SAIAB in collaboration with SANBI and other partners, were launched to advance taxonomic understanding and fill sampling gaps. These include the Topotypes Project (NRF FBIP), the BioGaps Project, the[Waterberg Biodiversity Project](https://fbip.co.za/news/waterberg-biodiversity-project-reminds-us-what-programme-is-about/)(NRF FBIP), the [Tilapia Mapping Project](https://saiab.ac.za/study-underway-to-determine-spread-of-invasive-alien-nile-tilapia-a-major-threat-to-south-africas-biodiversity/)(DFFE & SANBI), the [REFRESH Project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/) (NRF FBIP) and the eDNA Project (WRC) that were initiated to fill the identified taxonomic and species distribution gaps.
+The latest Red List assessment for freshwater fishes of South Africa was done in 2016/17. These findings were integrated into the National Biodiversity Assessment (NBA 2018). Key outcomes of this assessment were the identification of substantial taxonomic gaps across several species, lack of ongoing monitoring and uncertainties about species distribution patterns; highlighting the need for targeted research. In response, several research initiatives, primarily led by NRF-SAIAB in collaboration with SANBI and other partners, were launched to advance taxonomic understanding and fill sampling gaps. These include the Topotypes Project (NRF FBIP), the BioGaps Project, the [Waterberg Biodiversity Project](https://fbip.co.za/news/waterberg-biodiversity-project-reminds-us-what-programme-is-about/) (NRF FBIP), the [Tilapia Mapping Project](https://saiab.ac.za/study-underway-to-determine-spread-of-invasive-alien-nile-tilapia-a-major-threat-to-south-africas-biodiversity/) (DFFE & SANBI), the [REFRESH Project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/) (NRF FBIP) and the eDNA Project (WRC) that were initiated to fill the identified taxonomic and species distribution gaps.
 
 These projects, some of which are still ongoing, have already yielded significant scientific breakthroughs: 28 new fish species have been formally described, 11 previously synonymised species have been revalidated, and several candidate species requiring further taxonomic investigation have been uncovered across southern Africa [@sithole2024a; @sithole2023a; @mutizwa2025a; @skelton2024a; @chakona2022a; @fricke2025a]. Major milestones for South African species include comprehensive genetic assessments and taxonomic revisions of the genera *Pseudobarbus*, *Galaxias*, *Enteromius*, *Labeo*, *Labeobarbus*, *Anoplopterus*, *Sandelia* and *Glossogobius* which have collectively increased the number of freshwater fish species in the country from 105 in 2016 to 139 in 2025 [@chakona2017a; @chakona2020a; @bronaugh2020a; @mazungula2021a; @kambikambi2021a; @zarei2025a; @zarei2025b; @zarei2025c; @ramoejane2025a; @scheepers2025b; @scheepers2024b; @skelton2024a]. Several additional new species are in the process of being formally described for inclusion into the 2027 reassessment.
 
@@ -413,7 +419,7 @@ Strategic research initiatives have significantly strengthened the evidence base
 
 <img src="./imgs/sp_freshwater_fish_img_2.png" style="width:100%; height:400px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>NRF-SAIAB students Xiluva Mathebula and Nkululeko Zuma using a seine net to collect *Enteromius*</figcaption>
+<figcaption>NRF-SAIAB students Xiluva Mathebula and Nkululeko Zuma using a seine net to collect *Enteromius* specimens as part of SAIAB’s ongoing freshwater fish research. (© Mandla Magoro)</figcaption>
 
 </figure>
 
@@ -421,12 +427,12 @@ Strategic research initiatives have significantly strengthened the evidence base
 
 <img src="./imgs/sp_freshwater_fish_img_3.png" style="width:100%; height:400px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Xiluva Mathebula using a backpack electrofisher to collect fish samples in the Mnyameni River, Eastern Cape. (© Mandla Magoro)</figcaption>
+<figcaption>Xiluva Mathebula using a backpack electrofisher to collect fish samples in the Mnyameni River, Eastern Cape. (© Mandla Magoro)</figcaption>
 
 </figure>
 :::
 
-<center>![](./imgs/sp_freshwaterfish_img_4.png){style="width:100%;height:600px; border-radius:10px;"}[The new generation of NRF-SAIAB scientists, Dr Lubabalo Mofu and Dr Mandla Magoro, deploying the boat electrofisher for a biodiversity and fisheries assessment in Glen Alpine Dam (Mogalakwena River) in the Limpopo Province. (© Albert Chakona)]{style="width:75%; color:#626262;"}</center>
+<center>![](./imgs/sp_freshwaterfish_img_4.png){style="width:100%;height:600px; border-radius:10px;"}[The new generation of NRF-SAIAB scientists, Dr Lubabalo Mofu and Dr Mandla Magoro, deploying the boat electrofisher for a biodiversity and fisheries assessment in Glen Alpine Dam (Mogalakwena River) in the Limpopo Province. (© Albert Chakona)]{style="width:75%; color:#626262;"}</center>
 ::::
 
 ## Trends - the Red List Index
@@ -549,7 +555,7 @@ fn = function(x) x ) %>%
 
 <img src="./imgs/sp_freshwaterfish_img_5.png" style="width:100%;height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Prof Albert Chakona and Dr Pedro Bragança sampling in the Garden Route, Western Cape in search of biological material that enabled the description of the forest redfin *Pseudobarbus Outeniqua*.</figcaption>
+<figcaption>Prof Albert Chakona and Dr Pedro Bragança sampling in the Garden Route, Western Cape in search of biological material that enabled the description of the forest redfin (*Pseudobarbus Outeniqua*). (© Martine Jordaan)</figcaption>
 
 </figure>
 
@@ -557,7 +563,7 @@ fn = function(x) x ) %>%
 
 <img src="./imgs/sp_freshwaterfish_img_8.png" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Nkululeko Zuma, Dr Martinus Scheepers and Xiluva Mathebula are conducting river sampling near Eshowe, KwaZulu-Natal. (© Mandla Magoro)</figcaption>
+<figcaption>Nkululeko Zuma, Dr Martinus Scheepers and Xiluva Mathebula are conducting river sampling near Eshowe, KwaZulu-Natal. (© Mandla Magoro)</figcaption>
 
 </figure>
 :::
@@ -567,7 +573,7 @@ fn = function(x) x ) %>%
 
 <img src="./imgs/sp_freshwaterfish_img_7.png" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Gamtoos River redfin ([*Pseudobarbus swartzi*](https://www.iucnredlist.org/species/107662050/107937478)) (VU), image taken in the Groot River, Eastern Cape province of South Africa. (© Jeremy Skelton)</figcaption>
+<figcaption>Gamtoos River redfin ([*Pseudobarbus swartzi*](https://www.iucnredlist.org/species/107662050/107937478)) (VU), image taken in the Groot River, Eastern Cape province of South Africa. (© Jeremy Skelton)</figcaption>
 
 </figure>
 
@@ -575,7 +581,7 @@ fn = function(x) x ) %>%
 
 <img src="./imgs/sp_freshwaterfish_img_6.png" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Cape kurper ([*Sandelia capensis*](https://www.iucnredlist.org/species/19890/99447632)) (DD), Upper Berg River, part of the Cape Fold Ecoregion represents a species complex, requiring taxonomic revision. (© Jeremy Skelton)</figcaption>
+<figcaption>Cape kurper ([*Sandelia capensis*](https://www.iucnredlist.org/species/19890/99447632)) (DD), Upper Berg River, part of the Cape Fold Ecoregion represents a species complex, requiring taxonomic revision. (© Jeremy Skelton)</figcaption>
 
 </figure>
 :::
@@ -591,11 +597,11 @@ Invasive alien freshwater fish species
 
 South Africa is one of six global fish invasion hotspots [@leprieur2008a] and at least 55 freshwater fish species (alien and extralimital) have been introduced into novel environments in South Africa [@ellender2014a]. While invasive fish mainly affect native fish species through predation and competition, they can also have genetic impacts such as hybridization and be vectors for the introduction of pathogens and parasites. The group with the most severe impacts in terms of predation is the north American centrarchids (three species of black bass (*Micropterus spp.*) and bluegill sunfish (*Lepomis macrochirus*). Invasive rainbow trout is a common invader in headwater ecosystems due to its preference for cooler water and has invaded headwater habitats mainly in the Western Cape, KwaZulu-Natal (KZN) and Mpumalanga provinces. This is problematic as many headwater environments, especially those located in protected areas, provide refuge to threatened native fish populations. Many populations of smaller-bodied native species have been extirpated due to predation and competition by invasive alien species (IAS), especially in larger mainstream rivers [@walt2016a; @chakona2020a]. Alien species also pose a risk to native species from a genetic perspective and an example here is the invasive Nile tilapia (*Oreochromis niloticus*), which threatens the genetic integrity of the Mozambique tilapia (*Oreochromis mossambicus*) through hybridization. Historically, the main driver for alien fish introductions has been angling, but other significant pathways for invasion have been aquaculture, the ornamental fish trade, inter-basin water transfers, biocontrol and conservation translocations.
 
-Invasive fish populations are not limited to species originating outside the country as a number of indigenous species have established invasive extralimital populations outside their native ranges. Ill-conceived conservation translocations were historically a driver that led to the establishment of extralimital populations, some of which became invasive. For example, the Clanwilliam yellowfish (*Labeobarbus seeberi*) is a native cyprinid endemic to the Olifants-Doring system in the CFE, which has been translocated upstream of a natural barrier into the Twee River catchment to create a yellowfish sanctuary. While the yellowfish successfully established, they also had adverse impacts on the Critically Endangered and highly range-restricted Twee River redfin, *Sedercypris erubescens*. Presently, this redfin has been displaced from most of its native range by the Clanwilliam yellowfish and the Cape kurper, *Sandelia capensis*, another native CFE species that has an extralimital and invasive presence in the Twee catchment.
+Invasive fish populations are not limited to species originating outside the country as a number of indigenous species have established invasive extralimital populations outside their native ranges. Ill-conceived conservation translocations were historically a driver that led to the establishment of extralimital populations, some of which became invasive. For example, the Clanwilliam yellowfish (*Labeobarbus seeberi*) is a native cyprinid endemic to the Olifants-Doring system in the CFE, which has been translocated upstream of a natural barrier into the Twee River catchment to create a yellowfish sanctuary. While the yellowfish successfully established, they also had adverse impacts on the Critically Endangered and highly range-restricted Twee River redfin (*Sedercypris erubescens*). Presently, this redfin has been displaced from most of its native range by the Clanwilliam yellowfish and the Cape kurper (*Sandelia capensis*), another native CFE species that has an extralimital and invasive presence in the Twee catchment.
 
 Another problematic native species is the African sharptooth catfish (*Clarias gariepinus* – LC), which was identified in the previous Red List assessment (2007) as an upcoming potential future threat, and it has spread as predicted [@darwall2009a]. The native range of this species is the northern ecoregions, and it extends from the Orange River system in the west to the Mtamvuna, KZN in the east [@skelton2024a]. As a result of inter-basin water transfers and human-assisted dispersal, it now has an extensive invasive range in all the major river systems and many smaller coastal catchments of the Western and Eastern Cape [@weyl2016a]. While it favours large lowland rivers and floodplain habitats, @ellender2014a have shown that sharptooth catfish can readily invade sensitive headwater habitats. Both their ability to establish in these habitats and their impacts on sensitive headwater ecosystems remain poorly studied [@weyl2016a].
 
-Two invasive freshwater crayfish species, *Cherax quadricarinatus* and *Procambarus clarkii* are present in several river systems in South Africa. Recent records indicate that these species are expanding their ranges in South Africa and other parts of the region without much control. Of particular concern is the [recent detection of *P. clarkii*](../species/fw_sp#) in the Western Cape Province, a region with the highest concentration of highly threated freshwater fishes in the country.
+Two invasive freshwater crayfish species, *Cherax quadricarinatus* and *Procambarus clarkii* are present in several river systems in South Africa. Recent records indicate that these species are expanding their ranges in South Africa and other parts of the region without much control. Of particular concern is the [recent detection of *P. clarkii*](../species/fw_sp#) in the Western Cape Province, a region with the highest concentration of highly threatened freshwater fishes in the country.
 
 ```{r}
 #| label: fig-4
@@ -625,13 +631,13 @@ Loss of habitat quality and quantity
 
 South Africa is a water-scarce country with many competing water users. While the National Water Act 36 of 1998 (South Africa, 1998) recognises the environment as a legitimate water user, environmental flow requirements and pollution mitigation measures are not consistently implemented or enforced on a national scale. While some species have a higher tolerance for polluted systems such as the African sharptooth catfish and several tilapia species, most other species are intolerant of polluted water, and this is reflected by the increasing incidences of fish kills due to mining effluent and poorly maintained and managed Waste Water Treatment Works (WWTWs).
 
-Pollution in a range of forms, from agricultural and forestry effluent, domestic and urban wastewater, and industrial effluent, is impacting many freshwater fishes of conservation concern. Many rivers, especially mainstream and lowland reaches are impacted by pollution as [67% of rivers are considered degraded](../species/fw_sp.qmd). For example, the Elands River (Inkomti system) flowing past Machadodorp to its confluence with the Crocodile River, is polluted due to a Sappi’s Ngodwana paper mill as well as the Machado WWTW and informal settlements situated close to the river. These sources of pollution are all impacting the Incomati suckermouth catfish (*Chiloglanis bifurcus* – CR) [@roux2017a]. The Elands River and its tributaries have been identified as a priority freshwater environment for fish conservation through the National Freshwater Ecosystem Priority Areas (NFEPA) (Driver et al. 2012; Nel et al. 2011a; 2011b), however this needs updating to reflect the current state of knowledge. The Tradouw redfin (*Pseudobarbus burchelli* – CR) is affected by hydrological modification, agrichemical pollution as well as poorly functioning sewage works that impact the Tradouw River downstream of Barrydale [@jordaan2024a]. The Krom River minnow (Pseudobarbus senticeps – CR), restricted to the Krom River system, has been extirpated from its historic range mainly as a result of IAS, while in the Assegaaibosch River, the population is impacted by excessive pollution from settlements in the sub-catchment [@chakona2017a].
+Pollution in a range of forms, from agricultural and forestry effluent, domestic and urban wastewater, and industrial effluent, is impacting many freshwater fishes of conservation concern. Many rivers, especially mainstream and lowland reaches are impacted by pollution as [67% of rivers are considered degraded](../species/fw_sp.qmd). For example, the Elands River (Inkomti system) flowing past Machadodorp to its confluence with the Crocodile River, is polluted due to a Sappi’s Ngodwana paper mill as well as the Machado WWTW and informal settlements situated close to the river. These sources of pollution are all impacting the Incomati suckermouth catfish (*Chiloglanis bifurcus* – CR) [@roux2017a]. The Elands River and its tributaries have been identified as a priority freshwater environment for fish conservation through the National Freshwater Ecosystem Priority Areas (NFEPA) (Driver et al. 2012; Nel et al. 2011a; 2011b), however this needs updating to reflect the current state of knowledge. The Tradouw redfin (*Pseudobarbus burchelli* – CR) is affected by hydrological modification, agrichemical pollution as well as poorly functioning sewage works that impact the Tradouw River downstream of Barrydale [@jordaan2024a]. The Krom River minnow (*Pseudobarbus senticeps* – CR), restricted to the Krom River system, has been extirpated from its historic range mainly as a result of IAS, while in the Assegaaibosch River, the population is impacted by excessive pollution from settlements in the sub-catchment [@chakona2017a].
 
 Anthropogenic pollution can be exacerbated by unsustainable water use patterns and over-abstraction of surface water sources. Complete abstraction during the dry season can result in localised extirpations, as was observed for the smallscale redfin (*Pseudobarbus asper*). This species was historically widespread throughout the Gouritz and Gamtoos river systems in the CFE but presently persist as highly fragmented populations in larger tributaries. Sampling results suggest that it has been lost from mainstream habitat due to the impacts of invasive piscivorous fish, while two lowland river populations downstream of Towerkop Nature Reserve is likely extirpated because of complete abstraction of surface water during the dry summer season. Lowland species such as *Pseudobarbus asper* are especially vulnerable to water abstraction impacts as there are often no refuge populations in upstream areas from where the species can recolonise. Examples such as these illustrate that impacts on habitat quality and quantity is a significant pressure on freshwater fish and driving the highly threatened status of many taxa. Alarmingly, these pressures are only expected to worsen under future climate change predictions, especially for the CFE.
 
 <center>
 
-![Upstream and downstream views of the same river downstream of Towerkop Nature Reserve, showing the complete loss of habitat due to water abstraction in summer. While the weir structure (middle image) is relatively small, it diverts all surface flow into a drop-in grate and pipe system which channels the water downstream for irrigation purposes. (© Martine Jordaan)](./imgs/fwf_combined_fig.png){fig-align="center"}
+![Upstream and downstream views of the same river downstream of Towerkop Nature Reserve, showing the complete loss of habitat due to water abstraction in summer. While the weir structure (middle image) is relatively small, it diverts all surface flow into a drop-in grate and pipe system which channels the water downstream for irrigation purposes. (© Martine Jordaan)](./imgs/fwf_combined_fig.png){fig-align="center"}
 
 </center>
 
@@ -729,14 +735,14 @@ Thirty-three taxa are classified as Poorly Protected, with most also assessed as
 
 *A full technical report will be provided and uploaded soon.*
 
-::: {#box-3 .callout-note .species title="Box 3. An improvement in protection for one amongst many needing increased protection – celebrating the small wins: Pseudobarbus verloreni" collapse="true"}
-The Verlorenvlei redfin *Pseudobarbus verloreni* (EN) is a recently described range-restricted redfin minnow. It is endemic to the Verlorenvlei catchment in the CFE where it was historically widespread throughout the catchment (Chakona et al. 2014). It co-occurs with two additional native taxa, *Galaxias zebratus* and an undescribed lineage of the Cape kurper, *Sandelia* sp. ‘capensis west coast’.
+::: {#box-3 .callout-note .species title="Box 3. An improvement in protection for one amongst many needing increased protection – celebrating the small wins: *Pseudobarbus verloreni*" collapse="true"}
+The Verlorenvlei redfin (*Pseudobarbus verloreni)* (EN) is a recently described range-restricted redfin minnow. It is endemic to the Verlorenvlei catchment in the CFE where it was historically widespread throughout the catchment [@chakona2014a]. It co-occurs with two additional native taxa, *Galaxias zebratus* and an undescribed lineage of the Cape kurper, *Sandelia* sp. ‘capensis west coast’.
 
 Currently, *P. verloreni* persists as three remnant populations (the Krom Antonies, the upper Kruismans and the lower Verlorenvlei River). Of these, the Krom Antonies River population appears to be the only one that is viable in the long term as the riparian zone and water quality in the Krom Antonies River sub-catchment is relatively undisturbed. The viability of the other two subpopulations is uncertain due to their small size and pressures elsewhere in the catchment. The lower Verlorenvlei River is polluted and heavily invaded by invasive species including largemouth bass (*Micropterus nigricans*), banded tilapia (*Tilapia sparrmanii*) and common carp (*Cyprinus carpio*). Water abstraction throughout the catchment is also a significant threat that affects long term persistence of isolated pools which provide refugia for all three native species in the intermittent Verlorenvlei system during the dry season [@chakona2019a].
 
 In a recent evaluation of the value of protected areas for conserving the freshwater fishes of the CFE, @jordaan2020a found that *P. verloreni* was one of 19% of species that were assessed, and which did not intersect with any form of protected area. This, together with the severity of the threats facing the species, made the long-term survival of *P. verloreni* uncertain. The situation has however improved with the recent declaration of the Moutonshoek Protected Environment. This formally protected area intersects the upper Krom Antonies River and protects the headwaters of this river where *P. verloreni* is known to be present as a viable subpopulation. The declaration of the protected area also mitigates against proposed tungsten mining activity in the upper catchment. Threats such as water abstraction will be addressed as part of the management plan for the protected area and the risk of alien fish invasion is being mitigated by the proposed construction of an instream invasion barrier in the lower Krom Antonies River. This forms part of the Krom Antonies Restoration Project, led by the Freshwater Research Centre (FRC).
 
-<center>![](./imgs/sp_freshwaterfish_img_12.png){style="border-radius:8px;"}[[*Pseudobarbus verloreni*](https://www.iucnredlist.org/species/107628346/109192078) Verlorenvlei redfin specimen. (© Albert Chakona)]{style="width:75%; color:#626262;"}</center>
+<center>![](./imgs/sp_freshwaterfish_img_12.png){style="border-radius:8px;"}[[*Pseudobarbus verloreni*](https://www.iucnredlist.org/species/107628346/109192078) (Verlorenvlei redfin) specimen. (© Albert Chakona)]{style="width:75%; color:#626262;"}</center>
 :::
 
 ## Species recovery
@@ -757,7 +763,7 @@ The Western Cape Province has an extensive protected area (PA) network. Each pro
 
 <img src="./imgs/sp_freshwaterfish_img_13.png" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>CapeNature staff Dr Martine Jordaan and Khayakazi Breakfast conducting a fish survey in Bokkeriver Nature Reserve. (© Martine Jordaan)</figcaption>
+<figcaption>CapeNature staff Dr Martine Jordaan and Khayakazi Breakfast conducting a fish survey in Bokkeriver Nature Reserve. (© Martine Jordaan)</figcaption>
 
 </figure>
 
@@ -765,7 +771,7 @@ The Western Cape Province has an extensive protected area (PA) network. Each pro
 
 <img src="./imgs/sp_freshwaterfish_img_14.png" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Prof Albert Chakona and Dr Nkosinathi Mazungula from SAIAB sampling in the rivers of the Nuwejaars Conservancy in search of the novel freshwater fish taxa and to obtain distribution data for the compilation of a freshwater fish conservation and monitoring plan for the area. (© Martine Jordaan)</figcaption>
+<figcaption>Prof Albert Chakona and Dr Nkosinathi Mazungula from SAIAB sampling in the rivers of the Nuwejaars Conservancy in search of the novel freshwater fish taxa and to obtain distribution data for the compilation of a freshwater fish conservation and monitoring plan for the area. (© Martine Jordaan)</figcaption>
 
 </figure>
 :::
@@ -775,7 +781,7 @@ The reduction in specialist capacity has led to a heavy reliance on external par
 
 The River Eco-status Monitoring Programme (REMP) has replaced the South African River Health Programme (RHP), but its purpose is to assess river ecological condition by integrating abiotic drivers (hydrology, geomorphology, water quality) and biotic responses (fish, invertebrates, riparian vegetation) relative to reference or baseline conditions. It informs ecological categories, compliance with Resource Quality Objectives and early-warning thresholds. Where implemented, REMP provides assemblage-level rather than species-specific fish data. In many provinces, the programme has been curtailed due to funding constraints. For example, Mpumalanga Province once had three aquatic scientists but now has only one, making monitoring of freshwater fishes extremely challenging.
 
-::: {#box-5 .callout-note .species title="Box 5. Provincial monitoring efforts – Western Cape – Cape Nature" collapse="true"}
+::: {#box-5 .callout-note .species title="Box 5. Rehabilitation actions supporting monitoring and skills transfer." collapse="true"}
 A monitoring and rehabilitation program is underway in the Olifants and Wilger Rivers, Mpumalanga Province, through a partnership between MTPA and Thungela Coal Mining. The project was initiated in response to an acid mine drainage spill event in the Upper Saalboom River that killed all fish species along 98 km of river, down to the Loskop Dam inlet. A breeding facility has been established at Loskop Dam Nature Reserve ([Thugela Fish breeding facility](https://www.thungela.com/press-releases/thungela-launches-fish-breeding-facility-mpumalanga)), in response to the spill. This facility focuses on breeding nine indigenous fish species for reintroduction into the Wilger River. This ongoing initiative has been running since 2022. Reintroductions are ongoing, and intensive biomonitoring is being conducted to assess recovery. In addition to restocking, the project supports capacity building through knowledge transfer between experienced (including retired) staff and interns involved in the program.
 :::
 
@@ -803,9 +809,7 @@ Finally, although rehabilitation needs for highly threatened species are often k
 
 The IUCN Red List criteria and categories are used to assess the threat status of species. Freshwater fish species were assessed in 2016, utilising multiple workshops, including a three-day in-person workshop hosted by the South African Institute of Aquatic Biodiversity (NRF-SAIAB) in Makhanda, Eastern Cape, and funded by the South African National Biodiversity Institute (SANBI). All available spatial data were collated, and experts reviewed specimen records related to these data. Incorrect data were georeferenced, with a high investment in updating all threatened species records. The freshwater fish checklist was based on a very specific definition of freshwater fishes and included species occurring in neighboring countries Eswatini and Lesotho. See further details in @chakona2022a.
 
-**Protection Level Assessment**
-
-Species Protection Level Indicator
+**Species Protection Level Indicator**
 
 The species protection level indicator measures how effectively South Africa’s protected area network safeguards species. It evaluates progress towards achieving a “persistence target” for each species - the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
 

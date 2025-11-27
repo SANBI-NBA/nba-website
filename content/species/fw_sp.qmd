@@ -215,19 +215,26 @@ df <- read_excel("./data/overall_status_summary_2025.xlsx",
 
 # ---- Recode Status ----
 df <- df %>%
-  mutate(Status = recode(Status,
-                         "CR" = "Critically Endangered",
-                         "CR (PE)" = "Critically Endangered (Possibly Extinct)",
-                         "EN" = "Endangered",
-                         "VU" = "Vulnerable",
-                         "NT" = "Near Threatened",
-                         "DD" = "Data Deficient",
-                         "LC" = "Least Concern",
-                         "EW" = "Extinct in the Wild",
-                         "EX" = "Extinct",
-                         "Rare" = "Rare",
-                         "RE" = "Regionally Extinct"
-  ))
+  mutate(
+    Status = recode(
+      Status,
+      "CR" = "Critically Endangered",
+      "CR (PE)" = "Critically Endangered (Possibly Extinct)",
+      "EN" = "Endangered",
+      "VU" = "Vulnerable",
+      "NT" = "Near Threatened",
+      "DD" = "Data Deficient",
+      "LC" = "Least Concern",
+      "EW" = "Extinct in the Wild",
+      "EX" = "Extinct",
+      "Rare" = "Rare",
+      "RE" = "Regionally Extinct"
+    ),
+    `Taxonomic grouping` = case_when(
+      `Taxonomic grouping` == "Plants" ~ "Plants*",
+      TRUE ~ `Taxonomic grouping`
+    )
+  )
 
 
 # ---- Functions ----
@@ -363,6 +370,69 @@ library(dplyr)
 library(tidyr)
 library(gt)
 
+# ---- Load and clean data ----
+dat1_long <- dat1 %>%
+  pivot_longer(
+    cols = 2:ncol(dat2),
+    names_to = "Status",
+    values_to = "Count"
+  ) 
+
+dat2_long <- dat2 %>%
+  pivot_longer(
+    cols = 2:ncol(dat2),
+    names_to = "Status",
+    values_to = "Count"
+  ) 
+
+# ---- Add group column ----
+overall_df <- dat1_long %>% mutate(group = "All indigenous")
+endemic_df <- dat2_long %>% mutate(group = "Endemic")
+df_combined <- bind_rows(overall_df, endemic_df)
+
+# ---- Combine ----
+df_wide <- df_combined %>%
+           select(`Taxonomic grouping`, group, Status, Count)  %>%
+           pivot_wider(names_from = Status, values_from = Count, values_fill = 0) %>% 
+           arrange(`Taxonomic grouping`, group) %>%
+           group_by(`Taxonomic grouping`) %>%
+           rename(" " = group) %>%   
+           mutate(`Taxonomic grouping` = if_else(row_number() == 1, as.character(`Taxonomic grouping`), "")) %>%
+           ungroup()%>%
+           mutate(Total = rowSums(across(where(is.numeric)), na.rm = TRUE))
+
+
+# ---- Identify rows with blank taxonomic grouping (second row) ----
+empty_rows <- which(df_wide$`Taxonomic grouping` == "")
+
+# ---- Create GT table ----
+df_wide %>% gt() %>%
+            tab_options(table.width = "100%",
+            table.font.size = 13.5,
+            table.border.top.width = px(2),
+            table.border.top.color = "black",
+            table.border.bottom.width = px(0),
+            table.border.bottom.color = "transparent",
+            heading.align = 'left') %>%
+   
+            tab_style(style = cell_text(align = "center"),
+                      locations = cells_body(columns = where(is.numeric))) %>%
+    
+            tab_style(style = list(cell_text(color = "black", weight = "bold", align = "left"),
+                                   cell_borders(sides = c("top", "bottom"), color = "black", weight = px(2))),
+                      locations = cells_column_labels(columns = everything())) %>%
+  
+            tab_style(style = cell_borders(sides = c("top"), color = "gray", weight = px(0)),
+                     locations = cells_body(columns = "Taxonomic grouping")) %>%
+   
+            tab_style(style = cell_borders(sides = "bottom", color = "gray", weight = px(1)),
+                     locations = cells_body(rows = empty_rows)) %>%
+  
+            tab_style(style = cell_fill(color = "white"),
+                      locations = cells_body(columns = "Total")) %>%
+  
+            tab_style(style = cell_fill(color = "white"),
+                      locations = cells_column_labels(columns = "Total"))
 
 ```
 :::

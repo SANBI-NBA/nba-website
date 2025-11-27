@@ -143,6 +143,12 @@ author:
     orcid:
     affiliation: 
       - ref: dffe 
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi    
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -196,6 +202,10 @@ citation:
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
+
+#format:
+#  html:
+#    embed-resources: true
 ---
 
 ```{=html}
@@ -263,6 +273,9 @@ google-scholar: true
 ## Threat status
 
 A total of 506 marine species have been assessed using the IUCN Red List of Threatened Species criteria and are included in the NBA, drawing from a combination of national, regional and global assessments. Of these, approximately 36% of taxa are threatened in 2025, while 18% of 376 assessed species were threatened in 2018. This difference is due to the inclusion of additional species (including all sharks, rays and chimaeras, additional corals and selected marine invertebrates), many of which are threatened. However, the high proportion of threatened taxa is not fully representative of the extinction risks at the realm level because there has been a focus on assessing economically important species and groups known to be at risk (such as corals, sharks, rays and chimaeras, rock lobsters and abalone). The few comprehensively assessed marine taxonomic groups leads to an inflation of threat results.
+
+::: panel-tabset
+## Figures
 
 ```{r}
 #| label: fig-1
@@ -454,6 +467,135 @@ combined_plot
 
 
 ```
+
+## Data
+
+```{r}
+#| classes: plain
+library(dplyr)
+library(tidyr)
+library(gt)
+library(nbaR)
+
+status_levels <- c(
+  "Extinct",
+  "Extinct in the Wild",
+  "Regionally Extinct",
+  "Critically Endangered (Possibly Extinct)",
+  "Critically Endangered",
+  "Endangered",
+  "Vulnerable",
+  "Near Threatened",
+  "Data Deficient",
+  "Rare",
+  "Least Concern"
+)
+
+# ---- Load and clean data ----
+dat1_long <- dat1 %>%
+  pivot_longer(
+    cols = 2:ncol(dat2),
+    names_to = "Status",
+    values_to = "Count"
+  ) 
+
+dat2_long <- dat2 %>%
+  pivot_longer(
+    cols = 2:ncol(dat2),
+    names_to = "Status",
+    values_to = "Count"
+  ) 
+
+all_taxa   <- sort(unique(c(dat1_long$`Taxonomic grouping`, dat2_long$`Taxonomic grouping`)))
+
+overall_df <- dat1_long %>%
+  mutate(group = "All indigenous")
+
+available_levels <- dat1 %>%
+  select(any_of(status_levels)) %>%
+  summarise(across(everything(), sum, na.rm = TRUE)) %>%
+  pivot_longer(everything(), names_to = "Status", values_to = "Total") %>%
+  filter(Total > 0) %>%
+  arrange(factor(Status, levels = status_levels)) %>%   # preserve original order
+  pull(Status)
+
+endemic_df <- dat2_long %>%
+  tidyr::complete(`Taxonomic grouping` = all_taxa,
+                  Status = available_levels,
+                  fill = list(Count = 0)) %>%
+  mutate(group = "Endemic")
+
+df_combined <- bind_rows(overall_df, endemic_df)
+
+# ---- Combine and reorder Status columns ----
+# 1. Make Status a factor in NBA categories order
+# 2. Pivot wider
+# 3. Reorder columns according to NBA_categories that exist in df
+
+df_wide <- df_combined %>%
+  mutate(Status = factor(Status, levels = nbaR::NBA_categories)) %>%
+  select(`Taxonomic grouping`, group, Status, Count) %>%
+  pivot_wider(
+    names_from = Status,
+    values_from = Count,
+    values_fill = list(Count = 0)
+  )
+
+# Keep only existing NBA categories in the desired order
+existing_categories <- intersect(nbaR::NBA_categories, colnames(df_wide))
+
+df_wide <- df_wide %>%
+  select(`Taxonomic grouping`, group, all_of(existing_categories), everything()) %>%
+  arrange(`Taxonomic grouping`, group) %>%
+  group_by(`Taxonomic grouping`) %>%
+  rename(" " = group) %>%
+  mutate(`Taxonomic grouping` = if_else(row_number() == 1,
+                                        as.character(`Taxonomic grouping`), "")) %>%
+  ungroup() %>%
+  mutate(Total = rowSums(across(where(is.numeric)), na.rm = TRUE))
+
+# ---- Identify rows with blank taxonomic grouping ----
+empty_rows <- which(df_wide$`Taxonomic grouping` == "")
+
+# ---- Create GT table ----
+df_wide %>% gt() %>%
+  tab_options(
+    table.width = "100%",
+    table.font.size = 13.5,
+    table.border.top.width = px(2),
+    table.border.top.color = "black",
+    table.border.bottom.width = px(0),
+    table.border.bottom.color = "transparent",
+    heading.align = 'left'
+  ) %>%
+  tab_style(
+    style = cell_text(align = "center"),
+    locations = cells_body(columns = where(is.numeric))
+  ) %>%
+  tab_style(
+    style = list(cell_text(color = "black", weight = "bold", align = "left"),
+                 cell_borders(sides = c("top", "bottom"), color = "black", weight = px(2))),
+    locations = cells_column_labels(columns = everything())
+  ) %>%
+  tab_style(
+    style = cell_borders(sides = c("top"), color = "gray", weight = px(0)),
+    locations = cells_body(columns = "Taxonomic grouping")
+  ) %>%
+  tab_style(
+    style = cell_borders(sides = "bottom", color = "gray", weight = px(1)),
+    locations = cells_body(rows = empty_rows)
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "white"),
+    locations = cells_body(columns = "Total")
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "white"),
+    locations = cells_column_labels(columns = "Total")
+  )
+
+```
+:::
 
 In the marine realm, capacity shortfalls, gaps in taxonomic knowledge, and the lack of information on species distribution, life histories and long-term population trends have led to limited assessments with many groups not evaluated for their risk of extinction. Consequently, \~8% of species were assessed as Data Deficient, the highest among the four realms. Limited assessment efforts signal the need to address knowledge gaps and increase capacity for foundational research on marine species (including taxonomy and strengthened distribution data) and comprehensive IUCN Red List assessments for entire taxonomic groups.
 

@@ -78,7 +78,7 @@ google-scholar: true
 
 ## Priority actions
 
-<!--# I haven't invested a lot in this page because I don't know how this section will play out for the realms. This is the NBA 2018 content. -->
+<!--# This is the NBA 2018 content. -->
 
 In addition to the [overall priority actions](../integrated-findings/pakg_actions.qmd) distilled from this assessment, the 10 priority actions specifically for South Africa's coastal zone are:
 
@@ -112,7 +112,7 @@ Locate new ports and harbours appropriately through careful cross-sectoral plann
 
 **8. Use the National Coastal and Marine Spatial Biodiversity Plan to ‘close the gap’**
 
-Use the National Coastal and Marine Spatial Biodiversity Plan (CBA Map and associated land- and sea-use guidelines) to align governance, planning and decision-making across realms and across organs of state to achieve effective, science-based and proactive integrated coastal zone management.
+Use the [National Coastal and Marine Spatial Biodiversity Plan](https://cmr.mandela.ac.za/NCMSBP){target="_blank"} (and related work[@harris2025a]) to align governance, planning and decision-making across realms and across organs of state to achieve effective, science-based and proactive integrated coastal zone management.
 
 **9. Effectively communicate the benefits of coastal biodiversity**
 
@@ -124,7 +124,7 @@ Catalyse research to address critical knowledge gaps that limit the assessment o
 
 ## Knowledge gaps and research priorities
 
-Nineteen knowledge gaps have been identified as research priorities to strengthen further coastal biodiversity foundational knowledge and understanding of impacts to coastal biodiversity to improve assessment, and also to better understand the benefits of biodiversity and the best ways of communicating the these in a way that most inspires South African’s into action for change towards long-term sustainability. These 19 knowledge gap–research priority clusters are grouped under four themes:
+Nineteen knowledge gaps have been identified as research priorities to strengthen further coastal biodiversity foundational knowledge and understanding of impacts to coastal biodiversity [@harris2022]. Addressing these gaps will help to improve future assessments, and better understand the benefits of biodiversity and the best ways of communicating the these in a way that most inspires South African’s into action for change towards long-term sustainability. These 19 knowledge gap–research priority clusters are grouped under four themes:
 
 <details>
 
@@ -158,7 +158,7 @@ Nineteen knowledge gaps have been identified as research priorities to strengthe
 
 **3. Address realm-specific foundational knowledge gaps to strengthen the coastal assessment**
 
--   See realm-specific pages for foundational knowledge gaps; addressing these would contribute to strengthening the coastal assessment. <!--# Insert links to other realm pages if they have these sections -->
+-   Addressing realm-specific foundational knowledge gaps (e.g., relating to taxonomy, species distributions, genetic diversity, ecosystem mapping, and condition assessments) would contribute to strengthening the coastal assessment.
 
 </details>
 
@@ -268,12 +268,12 @@ Cross-realm planning is essential to ensure that land-sea ecological processes a
 
 ## Publication {#publication}
 
-Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. An indicator-based approach for cross-realm coastal biodiversity assessments. African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
 *The research gaps and research priorities presented here have been published as supplementary material in this paper*
 
 ### Data availability
 
-The following datasets are available for download (@harris2025a):
+The following datasets are available for download[@harris2025a]:
 
 [Cross-realm coastal biodiversity priority areas Version 1](https://figshare.com/articles/dataset/Coastal_Biodiversity_Priority_Areas_2023/22463890?file=39915325){target="_blank"}
 
@@ -281,10 +281,10 @@ The following datasets are available for download (@harris2025a):
 
 ### Related publications and supporting information
 
-Harris, L.R., van Niekerk, L., Holness, S.D., Sink, K.J., Skowno, A.L., Dayaram, A., van Deventer, H., Job, N., Lamberth, S.J., Adams, J.B., Raw, J.L., Riddin, T., MacKay, C.F., Perschke, M.J., 2025. **Conserving cross-realm coastal biodiversity when real-world planning and implementation processes split the land and sea**. Ocean & Coastal Management 263, 107586. <https://doi.org/10.1016/j.ocecoaman.2025.107586>\
+Harris, L.R., van Niekerk, L., Holness, S.D., Sink, K.J., Skowno, A.L., Dayaram, A., van Deventer, H., Job, N., Lamberth, S.J., Adams, J.B., Raw, J.L., Riddin, T., MacKay, C.F., Perschke, M.J., 2025. Conserving cross-realm coastal biodiversity when real-world planning and implementation processes split the land and sea. Ocean & Coastal Management 263, 107586. <https://doi.org/10.1016/j.ocecoaman.2025.107586>\
 *Technical details regarding cross-realm conservation planning to ensure inclusion of land-sea processes and biodiversity, with proposed management recommendations for restoring and conserving coastal biodiversity*
 
-Harris, L.R., Sink, K.J., Skowno, A.L., Van Niekerk, L. eds., 2021. **South African National Biodiversity Assessment 2018 Technical Report Volume 5: Coast**. South African National Biodiversity Institute, Pretoria. <http://hdl.handle.net/20.500.12143/6374.>\
+Harris, L.R., Sink, K.J., Skowno, A.L., Van Niekerk, L. eds., 2021. South African National Biodiversity Assessment 2018 Technical Report Volume 5: Coast. South African National Biodiversity Institute, Pretoria. <http://hdl.handle.net/20.500.12143/6374.>\
 *Full details on priority actions, knowledge gaps and research priorities are available in the technical report from the NBA 2018, updated in 2021*
 
 ## Recommended citation

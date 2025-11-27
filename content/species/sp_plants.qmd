@@ -71,12 +71,20 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-image: "./imgs/Ixia 20ebrahimii_cropped.png"
+#image: "./imgs/Ixia ebrahimii_cropped.png"
+
+#format:
+#  html:
+#    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
 
-<center>![](./imgs/Ixia%20ebrahimii_cropped.png){fig-alt="Ixia ebrahimii" width="800"}[*Ixia ebrahimii*, a new Ixia species found by the Custodians of Rare and Endangered Wildflowers (CREW) team. Image credits: © Ismail Ebrahim]{style="font-size:65%;"}</center>
+<center>
+
+![*Ixia ebrahimii*, a new Ixia species found by the Custodians of Rare and Endangered Wildflowers (CREW) team. (© Ismail Ebrahim)](./imgs/Ixia%20ebrahimii_cropped.png){fig-align="center"}
+
+</center>
 
 :::::: columns
 ::: {.column width="33.3%"}
@@ -172,7 +180,7 @@ df <- read_excel("./data/overall_status_summary_2025.xlsx",
                  sheet = "Summary")
 df2 <- read_excel("./data/overall_status_summary_2025.xlsx",
                   sheet = "All_taxa_summary")
-
+ 
 # ---- Recode Status ----
 df <- df %>%
   mutate(Status = recode(Status,
@@ -302,7 +310,7 @@ dat4 <- filter(df2_combined, Type == "Endemic")
 
 total_overall <- dat3 %>% select(all_of(all_levels)) %>% rowSums()
 total_endemic <- dat4 %>% select(all_of(all_levels)) %>% rowSums()
-
+ 
 
 # ---- Plots ----
 plot1 <- (nba_plot(dat1, biome, 3:(ncol(dat1)),
@@ -621,7 +629,7 @@ total_b <- dat2 %>%
   mutate(across(everything(), as.numeric)) %>%
   rowSums(na.rm = TRUE) %>%
   sum(na.rm = TRUE)  
-
+ 
 
 plot1 <- (nba_plot(dat1,
                   biome,
