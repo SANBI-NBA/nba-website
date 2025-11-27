@@ -29,7 +29,7 @@ website:
   
   navbar:
     logo: imgs/nba-logo-combo.png
-    logo-href: "https://www.sanbi.org/"
+    logo-href: "https://nba.sanbi.org.za/"
     pinned: true
     right: 
       - text: "Home"
@@ -69,6 +69,8 @@ website:
                        href: content/integrated-findings/intf-species.qmd
                        contents:
                           - content/integrated-findings/intf-species-rli.qmd
+                          - content/integrated-findings/chl_rls_explained.qmd
+                          - content/integrated-findings/chl_spl_explained.qmd
                 - text: "Pressures on biodiversity"
                   href: content/integrated-findings/intf_pressures-condition.qmd
             - section: "Realm findings"
@@ -136,7 +138,10 @@ website:
               href: content/species/sp.qmd
               contents:
                 - content/species/sp_plants.qmd
-                - content/species/sp_mammals.qmd
+                - section: "Mammals"
+                  href: content/species/sp_mammals.qmd
+                  contents:
+                      - content/species/sp_mammal_wildlife.qmd
                 - content/species/sp_reptiles.qmd
                 - content/species/sp_birds.qmd
                 - content/species/sp_spiders.qmd

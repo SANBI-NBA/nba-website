@@ -7,22 +7,22 @@ format:
 listing:
   id: page-listings
   contents:
-    - href: content/terrestrial/ter_overview.qmd
+    - path: content/terrestrial/ter_overview.qmd
       title: Terrestrial realm
       image: imgs/card_ter_Andrew-Skowno.png
-    - href: content/freshwater/fw_overview.qmd
+    - path: content/freshwater/fw_overview.qmd
       title: Freshwater realm
       image: imgs/card_fw_Jeremy_Shelton.png
-    - href: content/marine/marine_overview.qmd
+    - path: content/marine/marine_overview.qmd
       title: Marine realm
       image: imgs/card_mar_Eve_Marshall.png
-    - href: content/estuaries/est_overview.qmd
+    - path: content/estuaries/est_overview.qmd
       title: Estuarine realm
       image: imgs/card_est_knysna_duran_de_villiers.png
-    - href: content/coast/cst_synthesis.qmd
+    - path: content/coast/cst_synthesis.qmd
       title: Coastal zone
       image: imgs/card_cst_Linda_Harris.png
-    - href: content/subantarctic/sub-all_sections.qmd
+    - path: content/subantarctic/sub-all_sections.qmd
       title: Subantarctic territory
       image: imgs/card_sub_Stephni_van_der_Merwe.png
   type: grid
