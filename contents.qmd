@@ -18,7 +18,7 @@ listing:
       image: imgs/card_mar_Eve_Marshall.png
     - path: content/estuaries/est_overview.qmd
       title: Estuarine realm
-      image: imgs/card_est_knysna_duran_de_villiers.png
+      image: imgs/card_est_sout_nmu.png
     - path: content/coast/cst_synthesis.qmd
       title: Coastal zone
       image: imgs/card_cst_Linda_Harris.png
@@ -90,7 +90,7 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
 
 :::: column-screen
 ::: column-body
-<center>[Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Duran de Villiers (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).]{style="font-size:.7rem; color:#a7abb4;"}</center>
+<center>[Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Nelson Mandela University (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).]{style="font-size:.7rem; color:#a7abb4;"}</center>
 :::
 ::::
 
