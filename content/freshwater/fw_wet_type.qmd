@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Wetland Ecosystem Types" # Compulsory
+title: "Wetland ecosystem types" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -10,23 +10,71 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
 # List authors here in the order you want them displayed in the title block
 # See examples in README
 author:
-  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+ # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Nancy #Add author's first name here. Abbreviate the middle name
-      family: Job #Add author's surname here
-    orcid: 0000-0002-4929-7592 # Author's orcid ID. Delete this line if author is not on orcid
+      given: Nancy
+      family: Job
+    orcid: 0000-0000-0000-0000  
     affiliations:
-      - ref: af1 # Ref here must match the id of one of the affiliations listed below
+      - ref: sanbi
+  - name:
+      given: Suzanne 
+      family: Grenfell 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: ustell  
+  - name:
+      given: Dean 
+      family: Ollis 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: inlandwaters
+  - name:
+      given: Donovan 
+      family: Kotze 
+    orcid: 000-0000-0000-0000 
+    affiliations:
+      - ref: ukzn    
+  - name:
+      given: Nacelle B.
+      family: Collins 
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: destea 
       # If an author has more than one affiliation, add more - ref: lines here
-
+  - name:
+      given: Adwoa 
+      family: Awuah 
+    orcid: 0000-0002-4929-7592 
+    affiliations:
+      - ref: sanbi 
+  - name:
+      given: Erwin
+      family: Sieben
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: ukzn 
+      
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
 # See README for common examples - they can be copied and pasted here
 # Make sure you maintain indentations exactly as they are here
-  - id: af1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
+  - id: sanbi 
+    number: 1 
     name: South African National Biodiversity Institute
+  - id: ustell 
+    number: 2 
+    name: University of Stellenbosch
+  - id: inlandwaters 
+    number: 3
+    name: Inland Waters
+  - id: ukzn 
+    number: 4 
+    name: University of KwaZulu-Natal
+  - id: destea 
+    number: 5      
+    name: Free State Department of Economic, Small Business Development, Tourism and Environmental Affairs
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -49,161 +97,45 @@ google-scholar: true
 
 We have an interim typology in place and are currently at work on an updated national system to understand and manage our wetlands as effectively as possible. The proposed updated typology update will contribute significantly towards ensuring their long-term health and the benefits they provide to all South Africans.
 
-### References
-
-See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references
-
-Citing a journal article[@harris2019].
-
-Citing a book[@megadiversity1997].
-
-Citing a book chapter[@wilson2018].
-
-Citing a technical report[@vonmaltitz2020carbon].
-
-## Code blocks for graphs, maps and tables
-
-Use these code blocks to ensure that your graphs maps and tables are consistently numbered and labeled. Using these code blocks also lets you cross-reference tables and figures in the text.
-
-### Graphs and maps
-
-The **#\| label:** line in the code below makes it possible to reference the graph in the text. It must always start with **fig-** for Quarto to recognise it as a figure, and to apply correct styling and numbering to the figure caption. Each figure in your document must have a unique **fig**- name. To reference the figure in the text, use Insert \> Cross Reference, and look for the figure lable in the list.
-
-Add an appropriate descriptive caption next to **fig-cap.**
-
-```{r}
-#| label: fig-ref
-#| fig-cap: "Add figure caption here." 
-
-# Add R code for generating figure here
-
-```
-
-### Tables
-
-Follow the same system for creating tables. Do not use the visual editor to insert tables, as this will create a table in Quarto's default style, and you will have to type in the data manually, making the table less reproducible if your data changes. Note that here you must use the **tbl-** prefix to ensure that quarto recognises it as a table.
-
-```{r}
-#| label: tbl-ref
-#| tbl-cap: "Add table caption here." 
-#| classes: plain
-
-# Add R code for generating table here
-
-```
-
-### Combine figures and related data
-
-It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
-
-:::: panel-tabset
-## Figure
-
-```{r}
-#| label: fig-tab
-#| fig-cap: "Ecosystem threat status of terrestrial ecosystem types." 
-
-library(dplyr)
-library(tidyr)
-library(nbaR)
-
-# dat <- read.csv("data/terrestrial-ecosystems.csv", header = TRUE)
-# 
-# ecosystem_summary <- dat %>% 
-#                       group_by(biome, threat_status) %>% 
-#                       summarise(count = n()) %>% 
-#                       pivot_wider(
-#                         id_cols = biome,
-#                         names_from = threat_status,
-#                         values_from = count
-#                       ) %>% 
-#                       mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
-# 
-# nba_plot(ecosystem_summary,
-#          biome,
-#          2:5,
-#          CHRT = "bar",
-#          NUM = FALSE,
-#          LAB = "Percentage of ecosystem types",
-#          SAVE = "test-fig")
-
-```
-
-## Data
-
-<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
-
-::: {#table .table style="height:500px;overflow-y: auto"}
-```{r}
-#| label: tbl-tab
-#| tbl-cap: "Ecosystem threat status of terrestrial ecosystem types." 
-#| classes: plain
-
-# library(dplyr)
-# library(nbaR)
-# library(gt)
-# 
-# tbl_dat <- dat %>% 
-#             select(ecosystem, biome, threat_status) %>% 
-#             arrange(biome, ecosystem)
-# 
-# colnames(tbl_dat) <- c("Ecosystem", "Biome", "Threat status")
-# 
-# gt(tbl_dat) %>% nba_tbl_theme()
-
-```
-:::
-
-Download the data here.
-::::
-
-## Information boxes
-
 ::: {#box-1 .callout-note .freshwater title="Box 1. xxxxxxxx" collapse="true"}
-Prepared by Phumla Mayekiso, Jackie Jay and Nancy Job.
+WetMap
 
-Wetlands of International Importance, designated in accordance with the Ramsar Convention on Wetlands, are places of globally significant biodiversity and embody South Africa's commitment to conserve and ensure the wise use of its wetland ecosystems for the benefit of all humanity.
+Digital Earth Africa
 
-\[Landscape photo\]
+Field campaigns and photo
 
-The total area under the Ramsar Convention in South Africa is approximately 300 000 ha or 0.5% of total wetlands in South Africa. Although Ramsar sites range widely from one large wetland to sites with multiple wetlands, occasionally with a broad mix of estuary, river, inland wetland and marine aquatic ecosystems all within one designated site, only inland wetlands are calculated per site for the purposes of this report.
-
-Figure 4.1. Ramsar sites of South Africa
-
-Ramsar wetland sites are provided a level of protection in that they require management plans and are afforded greater protection through higher water allocations through the National Water Act (Chapter 3). The majority (92%) of Ramsar inland wetlands fall within Protected Areas. They amount to 14 133 ha (x%) of the total of inland wetland wetlands within protected area in South Africa and x% of the extent of all inland wetlands. Approximately 936.6 ha (7.4%) of Ramsar inland wetlands do not overlap with the formal protected area network.
+EcoPulse, Phil and team
 :::
 
 ::: {.callout-note .freshwater title="Box 4. Wetlands of International Importance (Ramsar Wetlands)" collapse="true"}
-Prepared by Phumla Mayekiso, Jackie Jay and Nancy Job.
-
-Wetlands of International Importance, designated in accordance with the Ramsar Convention on Wetlands, are places of globally significant biodiversity and embody South Africa's commitment to conserve and ensure the wise use of its wetland ecosystems for the benefit of all humanity.
-
-\[Landscape photo\]
-
-The total area under the Ramsar Convention in South Africa is approximately 300 000 ha or 0.5% of total wetlands in South Africa. Although Ramsar sites range widely from one large wetland to sites with multiple wetlands, occasionally with a broad mix of estuary, river, inland wetland and marine aquatic ecosystems all within one designated site, only inland wetlands are calculated per site for the purposes of this report.
-
-Figure 4.1. Ramsar sites of South Africa
-
-Ramsar wetland sites are provided a level of protection in that they require management plans and are afforded greater protection through higher water allocations through the National Water Act (Chapter 3). The majority (92%) of Ramsar inland wetlands fall within Protected Areas. They amount to 14 133 ha (x%) of the total of inland wetland wetlands within protected area in South Africa and x% of the extent of all inland wetlands. Approximately 936.6 ha (7.4%) of Ramsar inland wetlands do not overlap with the formal protected area network.
+Prepared by .
 :::
 
 ## Approach to develop this input layer
 
-[Ecosystem Protection Level](../integrated-findings/chl_epl_explained.html) \[Harris et al. (in review)\] measures
+measures
 
 ## Acknowledgements
 
-Reviewers of this web page xx
+Major contributors to the National Wetland Map
 
 ## Technical documentation
 
-**Code repository**: https://github.com/askowno/EPL_wetl
+**Code repository**: nwm link
 
 **Key Publications**:
 
-Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. Indicators for tracking progress in effective, representative ecosystem protection. Conservation Biology, in review. Technical details regarding development of new indicators of effective, representative ecosystem protection and their application in South Africa.
+Ollis
+
+Grenfell
+
+Floodplains infosheet
+
+Collins WetMap
 
 **Technical reports**:
+
+SANBI. 2025. National Wetland Map: South Africa’s official map of wetland extent, type and condition. SANBI Factsheet series. South African National Biodiversity Institute, Pretoria.
 
 ## Recommended citation
 

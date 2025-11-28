@@ -1,0 +1,223 @@
+"type","zone","protection_level","threat_status","RLE_EPL","leng"
+"10_N_L","Lower foothill","Not Protected","Vulnerable","VU_NP",1972.01022777634
+"10_N_M","Mountain stream","Well Protected","Least Concern","LC_WP",50330.6289617102
+"10_N_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",142321.496680765
+"10_P_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",377485.660332358
+"10_P_M","Mountain stream","Moderately Protected","Least Concern","LC_MP",147597.496265175
+"10_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",902386.940748308
+"11_N_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",259530.876561295
+"11_N_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",4796280.46726565
+"11_N_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",62993.2630414656
+"11_N_U","Upper foothill","Not Protected","Least Concern","LC_NP",3394225.29333632
+"11_P_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",4646375.54697109
+"11_P_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",8442242.96822967
+"11_P_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",89469.077517384
+"11_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",2760273.14287727
+"12_N_F","Lowland river","Not Protected","Least Concern","LC_NP",3304.26389859087
+"12_N_L","Lower foothill","Well Protected","Least Concern","LC_WP",179426.663127422
+"12_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",20929.1634595313
+"12_N_U","Upper foothill","Well Protected","Least Concern","LC_WP",264340.081871785
+"12_P_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",27294.6532986104
+"12_P_L","Lower foothill","Well Protected","Least Concern","LC_WP",111408.101476893
+"12_P_M","Mountain stream","Not Protected","Least Concern","LC_NP",2444.03890255562
+"12_P_U","Upper foothill","Not Protected","Least Concern","LC_NP",30389.7219426598
+"13_N_F","Lowland river","Well Protected","Critically Endangered","CR_WP",63674.2013757959
+"13_N_L","Lower foothill","Well Protected","Least Concern","LC_WP",93345.2696548601
+"13_N_U","Upper foothill","Well Protected","Least Concern","LC_WP",16610.7327366702
+"13_P_F","Lowland river","Moderately Protected","Endangered","EN_MP",536552.176927725
+"13_P_L","Lower foothill","Poorly Protected","Endangered","EN_PP",215740.101481715
+"13_P_M","Mountain stream","Well Protected","Least Concern","LC_WP",4377.76976835622
+"13_P_U","Upper foothill","Poorly Protected","Endangered","EN_PP",91026.6132518822
+"14_N_F","Lowland river","Not Protected","Endangered","EN_NP",25882.0604649125
+"14_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",311766.013096091
+"14_N_M","Mountain stream","Not Protected","Least Concern","LC_NP",54738.4121435363
+"14_N_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",458906.134771759
+"14_P_F","Lowland river","Poorly Protected","Endangered","EN_PP",472507.060726363
+"14_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",2299388.46057316
+"14_P_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",309182.278150968
+"14_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",2927831.20478517
+"15_N_F","Lowland river","Not Protected","Vulnerable","VU_NP",5740.39804225053
+"15_N_L","Lower foothill","Not Protected","Endangered","EN_NP",473256.179254681
+"15_N_M","Mountain stream","Moderately Protected","Endangered","EN_MP",146727.442321257
+"15_N_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",882760.41108747
+"15_P_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",600616.588628708
+"15_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",2188706.67696741
+"15_P_M","Mountain stream","Well Protected","Vulnerable","VU_WP",653748.5561604
+"15_P_U","Upper foothill","Poorly Protected","Endangered","EN_PP",2310447.57104808
+"16_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",40072.6925801995
+"16_N_M","Mountain stream","Not Protected","Endangered","EN_NP",56406.67558181
+"16_N_U","Upper foothill","Not Protected","Critically Endangered","CR_NP",205624.880755142
+"16_P_F","Lowland river","Not Protected","Vulnerable","VU_NP",417042.61666961
+"16_P_L","Lower foothill","Not Protected","Least Concern","LC_NP",4075777.5232424
+"16_P_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",732780.409567114
+"16_P_U","Upper foothill","Not Protected","Least Concern","LC_NP",6628821.18171514
+"17_N_M","Mountain stream","Not Protected","Critically Endangered","CR_NP",1950.64528383367
+"17_N_U","Upper foothill","Not Protected","Vulnerable","VU_NP",2095.6438150844
+"17_P_F","Lowland river","Poorly Protected","Least Concern","LC_PP",36610.4041393743
+"17_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",1461003.31661882
+"17_P_M","Mountain stream","Not Protected","Least Concern","LC_NP",111164.858167816
+"17_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",1994900.81687793
+"18_N_F","Lowland river","Not Protected","Critically Endangered","CR_NP",8077.42471529578
+"18_N_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",1633782.45699906
+"18_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",624191.606392944
+"18_N_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",5850307.69968309
+"18_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",15011.8238872434
+"18_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",2419014.43761511
+"18_P_M","Mountain stream","Not Protected","Endangered","EN_NP",85594.8370083992
+"18_P_U","Upper foothill","Not Protected","Vulnerable","VU_NP",1195913.30033669
+"19_N_F","Lowland river","Moderately Protected","Vulnerable","VU_MP",8379.07462880418
+"19_N_L","Lower foothill","Poorly Protected","Endangered","EN_PP",791929.90938896
+"19_N_M","Mountain stream","Well Protected","Endangered","EN_WP",460379.690577997
+"19_N_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",3522215.43846789
+"19_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",153588.193194327
+"19_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",1954122.26833324
+"19_P_M","Mountain stream","Moderately Protected","Endangered","EN_MP",383360.560550665
+"19_P_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",2112260.05162648
+"1_N_F","Lowland river","Moderately Protected","Endangered","EN_MP",45314.3492655055
+"1_N_L","Lower foothill","Moderately Protected","Least Concern","LC_MP",694177.473988492
+"1_N_M","Mountain stream","Moderately Protected","Vulnerable","VU_MP",6968.0500499585
+"1_N_U","Upper foothill","Poorly Protected","Endangered","EN_PP",707736.494475549
+"1_P_F","Lowland river","Poorly Protected","Least Concern","LC_PP",1478474.55647813
+"1_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",1004474.5382804
+"1_P_M","Mountain stream","Well Protected","Least Concern","LC_WP",4778.9301126457
+"1_P_U","Upper foothill","Moderately Protected","Vulnerable","VU_MP",60293.7280840812
+"20_N_F","Lowland river","Moderately Protected","Vulnerable","VU_MP",37107.5659989359
+"20_N_L","Lower foothill","Poorly Protected","Endangered","EN_PP",310333.681170983
+"20_N_M","Mountain stream","Moderately Protected","Endangered","EN_MP",32535.5626721596
+"20_N_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",610437.17720854
+"20_P_F","Lowland river","Moderately Protected","Critically Endangered","CR_MP",301062.221272897
+"20_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",565278.495686836
+"20_P_M","Mountain stream","Well Protected","Endangered","EN_WP",129732.187540563
+"20_P_U","Upper foothill","Moderately Protected","Endangered","EN_MP",875134.261467306
+"21_N_F","Lowland river","Not Protected","Endangered","EN_NP",23347.0514446664
+"21_N_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",3397027.88123237
+"21_N_M","Mountain stream","Poorly Protected","Critically Endangered","CR_PP",479169.708985965
+"21_N_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",7216204.39002568
+"21_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",2804.51661193631
+"21_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",599502.951979188
+"21_P_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",4435.52982995588
+"21_P_U","Upper foothill","Not Protected","Critically Endangered","CR_NP",115019.248421261
+"22_N_L","Lower foothill","Not Protected","Vulnerable","VU_NP",321393.814302824
+"22_N_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",40951.0961537509
+"22_N_U","Upper foothill","Not Protected","Vulnerable","VU_NP",471956.737718359
+"22_P_F","Lowland river","Poorly Protected","Vulnerable","VU_PP",368011.82223739
+"22_P_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",982205.51757877
+"22_P_M","Mountain stream","Moderately Protected","Endangered","EN_MP",143028.697180264
+"22_P_U","Upper foothill","Poorly Protected","Endangered","EN_PP",634133.222731253
+"23_N_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",2247.16526010169
+"23_N_L","Lower foothill","Not Protected","Critically Endangered","CR_NP",69237.6489363091
+"23_N_M","Mountain stream","Well Protected","Endangered","EN_WP",121106.727159035
+"23_N_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",409379.101988443
+"23_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",114283.761802501
+"23_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",647463.891095327
+"23_P_M","Mountain stream","Moderately Protected","Endangered","EN_MP",334547.942247815
+"23_P_U","Upper foothill","Moderately Protected","Endangered","EN_MP",1119350.87078135
+"24_N_F","Lowland river","Not Protected","Endangered","EN_NP",47252.9674656556
+"24_N_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",445762.118199506
+"24_N_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",80314.6149557962
+"24_N_U","Upper foothill","Not Protected","Vulnerable","VU_NP",429145.990998567
+"24_P_F","Lowland river","Poorly Protected","Vulnerable","VU_PP",318181.461051723
+"24_P_L","Lower foothill","Poorly Protected","Endangered","EN_PP",558368.061846397
+"24_P_M","Mountain stream","Moderately Protected","Critically Endangered","CR_MP",78796.0997761272
+"24_P_U","Upper foothill","Poorly Protected","Critically Endangered","CR_PP",399693.706165979
+"25_N_F","Lowland river","Moderately Protected","Critically Endangered","CR_MP",24080.4290621342
+"25_N_L","Lower foothill","Moderately Protected","Least Concern","LC_MP",877247.797191655
+"25_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",50628.4512629629
+"25_N_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",1081703.87133429
+"25_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",237488.445677664
+"25_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",192897.690520194
+"26_N_F","Lowland river","Poorly Protected","Least Concern","LC_PP",869895.079598495
+"26_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",11599133.4528958
+"26_N_M","Mountain stream","Poorly Protected","Endangered","EN_PP",173056.85029569
+"26_N_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",9146133.04316664
+"26_P_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",3206359.02265253
+"26_P_L","Lower foothill","Not Protected","Least Concern","LC_NP",2305603.59146371
+"26_P_M","Mountain stream","Moderately Protected","Critically Endangered","CR_MP",4257.1826443
+"26_P_U","Upper foothill","Not Protected","Critically Endangered","CR_NP",237470.081996084
+"27_N_F","Lowland river","Not Protected","Least Concern","LC_NP",5353.95765777203
+"27_N_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",870951.715431405
+"27_N_M","Mountain stream","Moderately Protected","Endangered","EN_MP",211672.424596578
+"27_N_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",2133167.27360999
+"28_N_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",159372.010129881
+"28_N_M","Mountain stream","Well Protected","Critically Endangered","CR_WP",64898.782534148
+"28_N_U","Upper foothill","Moderately Protected","Critically Endangered","CR_MP",946795.659824584
+"28_P_F","Lowland river","Poorly Protected","Critically Endangered","CR_PP",784678.558700798
+"28_P_L","Lower foothill","Poorly Protected","Critically Endangered","CR_PP",158257.970206326
+"28_P_U","Upper foothill","Moderately Protected","Critically Endangered","CR_MP",15878.5866131161
+"29_N_F","Lowland river","Poorly Protected","Least Concern","LC_PP",3191761.21040636
+"29_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",3361978.42904664
+"29_N_M","Mountain stream","Not Protected","Critically Endangered","CR_NP",11273.591651484
+"29_N_U","Upper foothill","Not Protected","Vulnerable","VU_NP",1352032.61500122
+"29_P_F","Lowland river","Not Protected","Endangered","EN_NP",1043967.77291155
+"29_P_L","Lower foothill","Not Protected","Least Concern","LC_NP",330557.259723932
+"29_P_U","Upper foothill","Not Protected","Endangered","EN_NP",31860.3237654752
+"2_N_F","Lowland river","Poorly Protected","Vulnerable","VU_PP",5395.68780990724
+"2_N_L","Lower foothill","Moderately Protected","Critically Endangered","CR_MP",84451.6502543459
+"2_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",43226.564445634
+"2_N_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",197960.565578426
+"2_P_F","Lowland river","Moderately Protected","Vulnerable","VU_MP",17424.5815589849
+"2_P_L","Lower foothill","Moderately Protected","Endangered","EN_MP",360712.91134815
+"2_P_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",12072.0462461128
+"2_P_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",123258.548301563
+"30_N_F","Lowland river","Not Protected","Vulnerable","VU_NP",40582.8005895432
+"30_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",1002393.18256512
+"30_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",4826.033627847
+"30_N_U","Upper foothill","Not Protected","Least Concern","LC_NP",670554.257352797
+"31_N_M","Mountain stream","Not Protected","Least Concern","LC_NP",3422.74756532744
+"31_N_U","Upper foothill","Not Protected","Least Concern","LC_NP",38199.8891755917
+"31_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",132813.30282139
+"31_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",1695599.943814
+"31_P_M","Mountain stream","Not Protected","Vulnerable","VU_NP",56075.5865055841
+"31_P_U","Upper foothill","Not Protected","Vulnerable","VU_NP",1884051.06934203
+"3_N_F","Lowland river","Well Protected","Least Concern","LC_WP",38009.8743979168
+"3_N_L","Lower foothill","Well Protected","Least Concern","LC_WP",1773870.76715417
+"3_N_M","Mountain stream","Moderately Protected","Least Concern","LC_MP",92412.2508840354
+"3_N_U","Upper foothill","Well Protected","Least Concern","LC_WP",1300906.28764871
+"3_P_F","Lowland river","Moderately Protected","Least Concern","LC_MP",470054.074319239
+"3_P_L","Lower foothill","Moderately Protected","Least Concern","LC_MP",3665915.9988949
+"3_P_M","Mountain stream","Moderately Protected","Least Concern","LC_MP",78542.6119653127
+"3_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",1150355.93702017
+"4_N_L","Lower foothill","Not Protected","Vulnerable","VU_NP",71160.3229953455
+"4_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",35372.6192625527
+"4_N_U","Upper foothill","Not Protected","Vulnerable","VU_NP",197382.639881359
+"4_P_F","Lowland river","Not Protected","Critically Endangered","CR_NP",54667.2462633978
+"4_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",360937.244052263
+"4_P_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",86575.2705248815
+"4_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",872090.519175196
+"5_N_L","Lower foothill","Not Protected","Least Concern","LC_NP",138069.451922758
+"5_N_M","Mountain stream","Not Protected","Vulnerable","VU_NP",9788.16941276801
+"5_N_U","Upper foothill","Poorly Protected","Endangered","EN_PP",285598.137990116
+"5_P_L","Lower foothill","Not Protected","Endangered","EN_NP",163856.23013326
+"5_P_M","Mountain stream","Not Protected","Vulnerable","VU_NP",3396.79188695271
+"5_P_U","Upper foothill","Not Protected","Critically Endangered","CR_NP",159288.436373699
+"6_N_L","Lower foothill","Poorly Protected","Endangered","EN_PP",59802.119040535
+"6_N_M","Mountain stream","Moderately Protected","Endangered","EN_MP",15520.1174121017
+"6_N_U","Upper foothill","Poorly Protected","Endangered","EN_PP",269448.619880507
+"6_P_F","Lowland river","Moderately Protected","Vulnerable","VU_MP",37106.8147834196
+"6_P_L","Lower foothill","Moderately Protected","Endangered","EN_MP",264570.824136285
+"6_P_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",26350.5078679653
+"6_P_U","Upper foothill","Poorly Protected","Endangered","EN_PP",520346.391410014
+"7_N_F","Lowland river","Not Protected","Least Concern","LC_NP",34474.9135126089
+"7_N_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",215348.449177988
+"7_N_M","Mountain stream","Moderately Protected","Vulnerable","VU_MP",45447.5643578212
+"7_N_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",614736.82483938
+"7_P_F","Lowland river","Moderately Protected","Endangered","EN_MP",134425.904862685
+"7_P_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",774150.959766759
+"7_P_M","Mountain stream","Poorly Protected","Endangered","EN_PP",26472.5826703895
+"7_P_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",813068.626513524
+"8_N_F","Lowland river","Not Protected","Vulnerable","VU_NP",7030.05433161144
+"8_N_L","Lower foothill","Not Protected","Vulnerable","VU_NP",1080894.89265859
+"8_N_M","Mountain stream","Poorly Protected","Endangered","EN_PP",31758.0665302363
+"8_N_U","Upper foothill","Poorly Protected","Endangered","EN_PP",771133.805025082
+"8_P_F","Lowland river","Poorly Protected","Vulnerable","VU_PP",621881.960902548
+"8_P_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",1402507.20370729
+"8_P_M","Mountain stream","Poorly Protected","Vulnerable","VU_PP",25379.084950378
+"8_P_U","Upper foothill","Not Protected","Vulnerable","VU_NP",778218.592390381
+"9_N_F","Lowland river","Not Protected","Critically Endangered","CR_NP",8109.32960668953
+"9_N_L","Lower foothill","Poorly Protected","Vulnerable","VU_PP",18703.2186247549
+"9_N_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",123859.34938626
+"9_N_U","Upper foothill","Poorly Protected","Vulnerable","VU_PP",717562.662369086
+"9_P_F","Lowland river","Not Protected","Endangered","EN_NP",18724.7800546778
+"9_P_L","Lower foothill","Poorly Protected","Least Concern","LC_PP",676233.151305552
+"9_P_M","Mountain stream","Poorly Protected","Least Concern","LC_PP",130194.71123596
+"9_P_U","Upper foothill","Poorly Protected","Least Concern","LC_PP",1521492.98000555
