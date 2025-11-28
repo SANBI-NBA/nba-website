@@ -1,16 +1,5 @@
 [
   {
-    "listing": "/contents.html",
-    "items": [
-      "/content/terrestrial/ter_overview.html",
-      "/content/freshwater/fw_overview.html",
-      "/content/marine/marine_overview.html",
-      "/content/estuaries/est_overview.html",
-      "/content/coast/cst_synthesis.html",
-      "/content/subantarctic/sub-all_sections.html"
-    ]
-  },
-  {
     "listing": "/content/species/sp.html",
     "items": [
       "/content/species/sp_plants.html",
@@ -27,5 +16,9 @@
       "/content/species/sp_sharks.html",
       "/content/species/sp_sparids.html"
     ]
+  },
+  {
+    "listing": "/contents.html",
+    "items": []
   }
 ]
