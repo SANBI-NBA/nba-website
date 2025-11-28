@@ -51,7 +51,7 @@ The vast majority of contributions to the NBA is on a volunteer basis without an
 
 An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.
 
-The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the [What's New](./whatsnew-nba.qmd) section to see what has been updated.
+The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the [what's new](./whatsnew-nba.qmd) section to see what has been updated.
 
 ### Further reading
 

@@ -77,7 +77,7 @@ google-scholar: true
 
 ## Overview
 
-Wildlife forensic science has emerged as a crucial tool in biodiversity conservation and law enforcement, particularly in combatting illegal wildlife trade. In South Africa, a country renowned for its rich and diverse fauna, the need for robust forensic tools has become increasingly urgent. The illegal trade in wildlife and derivitives, ranging from rhinoceros horn and elephant ivory to abalone and pangolins, poses a substantial threat to national conservation efforts and undermines legal frameworks designed to protect threatened species.
+Wildlife forensic science has emerged as a crucial tool in biodiversity conservation and law enforcement, particularly in combating illegal wildlife trade. In South Africa, a country renowned for its rich and diverse fauna, the need for robust forensic tools has become increasingly urgent. The illegal trade in wildlife and derivatives, ranging from rhinoceros horn and elephant ivory to abalone and pangolin, poses a substantial threat to national conservation efforts and undermines legal frameworks designed to protect threatened species.
 
 In South Africa, laboratories responsible for wildlife forensic DNA analysis are contracted by local enforcement authorities (South African Police Service (SAPS) or Department of Forestry, Fisheries and the Environment (DFFE)) to provide this service based on their expertise and experience. Two laboratories within South Africa have mainly been responsible for the provision of wildlife forensic genetic analysis, namely the Genetic Services Unit (GSU) of the South African National Biodiversity Institute (SANBI) and the Veterinary Genetics Laboratory (VGL) of the University of Pretoria.
 
@@ -159,7 +159,7 @@ To address current limitations and build on existing successes, several strategi
 
 -   **Developing regional databases**: Cross-border wildlife crime is a growing concern. Building shared genetic databases across southern Africa will support regional enforcement and facilitate international cooperation.
 
-## Summary
+## Conclusion
 
 Wildlife forensic science has become an indispensable component of biodiversity protection and law enforcement in South Africa. Through the use of molecular tools and DNA technologies, forensic laboratories have helped solve thousands of wildlife crime cases, supported legal trade regulation, and contributed to species conservation. While challenges remain, particularly in funding, standardisation, and database development, the opportunities for growth and innovation are substantial. Continued investment, collaboration, and research will be key to safeguarding South Africa’s rich biodiversity and ensuring that wildlife crime is met with robust scientific and legal responses.
 

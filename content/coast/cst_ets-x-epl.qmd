@@ -233,7 +233,7 @@ The following datasets are available for download:
 
 ### Related publications and supporting information
 
-1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. **An indicator-based approach for cross-realm coastal biodiversity assessments.** African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
+1.  Harris, L.R., Skowno, A.L., Sink, K.J., Van Niekerk, L., Holness, S.D., Monyeki, M., Majiedt, P., 2022. An indicator-based approach for cross-realm coastal biodiversity assessments. African Journal of Marine Science 44, 239-253. <https://doi.org/10.2989/1814232X.2022.2104373>\
     *Technical details regarding the ecosystem threat status and protection level assessments of coastal ecosystem types from the NBA 2018*
 
 ## Recommended citation
@@ -255,8 +255,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
-
-## References
-
-::: {#refs}
-:::
