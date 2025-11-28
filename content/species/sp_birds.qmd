@@ -80,10 +80,6 @@ citation:
 appendix-cite-as: false
 google-scholar: true
 image: "./imgs/sp_birds_img_1.png"
-
-format:
-  html:
-    embed-resources: true
 ---
 
 ------------------------------------------------------------------------
