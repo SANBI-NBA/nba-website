@@ -257,3 +257,6 @@ If you created a feature branch off of the wrong base branch (e.g. you created y
 
 3.  `git push --force-with-lease origin my-feature-branch`
 
+## Publish preview to the live site
+
+NB! Only Lize von Staden and Andrew Skowno can merge dev into main in order to publish content live.
