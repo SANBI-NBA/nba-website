@@ -111,7 +111,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 <center>
 
-![*Streptocephalus namibiensis*(LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore accurate species identification requires specialised expertise. (© Betsie Milne)](./imgs/sp_anostraca_img_1.png){fig-align="center"}
+![*Streptocephalus namibiensis* (LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore, accurate species identification requires specialised expertise. (© Betsie Milne)](./imgs/sp_anostraca_img_1.png){fig-align="center"}
 
 </center>
 
@@ -140,7 +140,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 <center>
 
 | [44%]{.inline-style-endemic}
-| species are
+| of 36 species are assessed are
 | [Endemic]{.inline-style-indicator}
 
 </center>
@@ -151,9 +151,9 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 ## Key findings
 
--   There are 38 described Anostraca species in South Africa, representing \~11% of the world's species (\~353)[@rogers2013a].
+-   There are 40 described Anostraca species in South Africa, representing \~11% of the world's species (\~353)[@rogers2013a].
 
--   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List Categories and Criteria to classify their risk of extinction (two species are still in review, which will take the total assessed species to 38).
+-   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (four species are still in review, which will take the total assessed species to 40).
 
 -   Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) (Meyer-Milne et al. in prep).
 
@@ -175,7 +175,7 @@ knitr::include_graphics("./imgs/anostraca_thrt_10km_HD.png")
 
 ## Threat status
 
-For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN criteria and categories. This includes 40 species, of which 36 have been published and are presented here. The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified (Meyer-Milne et al. in prep).
+For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN Red List of Threatened Species Categories and Criteria. This includes 40 species, of which 36 have been published and are presented here. The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified (Meyer-Milne et al. in prep).
 
 :::: panel-tabset
 ## Figure
@@ -312,7 +312,7 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
     xlim(c(2, 4.5)))  %>%
-  add_total(overall)
+  add_total(overall) 
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
@@ -386,16 +386,16 @@ gt(dat_combined_final) %>%
 ::: {#box-1 .callout-note .species title="Box 1: The diverse range of freshwater habitats occupied by Anostraca often causes these habitats and their unique aquatic fauna to go unnoticed when dry." collapse="true"}
 The temporary aquatic habitats that anostracans inhabit include a range of endorheic wetlands, remnant riverine pools, rock pools, roadside ditches and even animal wallows. The biotic and abiotic variables associated with these habitats differ substantially, and species are highly sensitive to specific habitat conditions. Consequently, anostracans are habitat specialists and ideal indicators of environmental change.
 
-![](./imgs/sp_anostraca_img_2.png)[A range of different temporary habitats and at different levels of inundation. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{style="font-size:90%; color:#626262;"}
+![](./imgs/sp_anostraca_img_2.png)[A diversity of temporary habitats, varying in how and how often they are inundated. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{style="font-size:90%; color:#626262;"}
 :::
 
-## Trends
+## Trends - the Red List Index
 
-The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs). The RLIs is calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. The Red List Index of Anostraca was calculated for the first time for South Africa, and this group is relatively low on the RLI scale, with a value of 0.84. This indicates that the group has high levels of threat and that many species are at risk of extinction.
+The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of Anostraca was calculated for the first time for South Africa, and this group is relatively low on the RLI scale, with a value of 0.84. This indicates that the group has high levels of threat and that many species are at risk of extinction.
 
 ```{r}
 #| label: fig-3
-#| fig-cap: " The Red List Index (RLI) for Anostraca taxa assessed in South Africa (RLI  value = 0.84). The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). This is the first assessment for Anostraca, and it is only represented by a single point."
+#| fig-cap: " The Red List Index (RLI) for Anostraca taxa assessed in South Africa (RLI  value = 0.84). The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is heading towards extinction (if the value is 0, all species are extinct). This is the first assessment for Anostraca, and it is only represented by a single point."
 #| out-width: 65%
 
 library(tidyverse)
@@ -426,7 +426,7 @@ The major drivers of threat to Anostraca species are habitat loss and degradatio
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s Anostraca species, based on the percentage of impacted threatened Anostraca species. Pressures are categorized using the IUCN Threat Classification Scheme and are ranked from the highest to the lowest percent of impacted species. "
+#| fig-cap: "Key pressures on South Africa’s Anostraca species, based on the percentage of impacted threatened Anostraca species. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from the highest to the lowest percent of impacted species. "
 #| out.width: 600px
 
 
@@ -513,7 +513,7 @@ Using soils collected from dry habitats (left) to run hatching trials (right), h
 
 **Red List assessment**
 
-The IUCN Red List criteria and categories are used to assess the threat status of species.
+The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of species.
 
 Categorisation of southern African anostracan species and their conservation status was attempted by Hamer and Brendonck (1997) and [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions. From the 40 species that were assessed, 36 have been published, with four assessments still in process.
 

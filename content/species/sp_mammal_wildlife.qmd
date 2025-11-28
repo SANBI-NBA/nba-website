@@ -1,0 +1,214 @@
+---
+title: "Wildlife species in South Africa" 
+title-block-banner: "#ad180d" 
+title-block-banner-color: white 
+
+author:
+  - name:
+      given: Domitilla C.  
+      family: Raimondo
+    orcid: 0000-0003-3998-752X  
+    affiliations:
+      - ref: af1 
+
+      
+  - name:
+      given: Jeanetta 
+      family: Selier
+    orcid: https://orcid.org/0000-0003-1598-464X
+    affiliations:
+      - ref: af1 
+
+  - name:
+      given: Michele
+      family: Pfab
+    #orcid: 
+    affiliations:
+      - ref: af1
+         
+  - name: 
+      given: Dewidine 
+      family: van Der Colff 
+    orcid: 0000-0002-0906-7098 
+    affiliations:
+      - ref: af1
+      
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: af1
+      
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: af1        
+      
+  
+affiliations:
+  - id: af1
+    number: 1
+    name: South African National Biodiversity Institute
+
+date: last-modified
+bibliography: species.bib
+
+citation:
+  type: webpage
+  container-title: National Biodiversity Assessment 2025
+  publisher: South African National Biodiversity Institute
+  url: http://nba.sanbi.org.za/
+appendix-cite-as: false
+google-scholar: true
+
+
+#format:
+#  html:
+#    embed-resources: true
+---
+
+------------------------------------------------------------------------
+
+## Status of selected wildlife species in South Africa
+
+South Africa has a thriving wildlife economy. Our wildlife species face varying levels of threat. Here we provide examples of the positive contribution made by the wildlife sector to species conservation and identify species still at risk of extinction, while describing the ongoing challenges in managing the wildlife sector.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Jeanetta Selier](./imgs/sp-img-22%20Jeanetta%20Selier.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### African savanna elephant (*Loxodonta africana*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+The African savanna elephant (*Loxodonta africana*) is listed as Least Concern on South Africa’s national Red List, with approximately 43,681 individuals nationally, including 31,324 in Kruger National Park alone, reflecting stable to increasing trends. However, the global IUCN Red List classifies the species as Endangered, underscoring the broader continental decline.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Geoffrey Oddie](./imgs/sp-img-16%20Geoffrey%20Oddie.png){style="width:400;"}
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### White rhinoceros (*Ceratotherium simum*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+The white rhinoceros (*Ceratotherium simum*), listed as Near Threatened both nationally and globally, has shown encouraging recovery, with South Africa’s population estimated at 14,074 individuals by the end of 2023, an increase of 4.1% since 2021.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© James Warwick](./imgs/sp-img-17%20James%20Warwick.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Black rhinoceros (*Diceros bicornis*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+In contrast, the black rhinoceros (*Diceros bicornis*) remains Endangered nationally and Critically Endangered globally. South Africa currently supports approximately 2,065 black rhinos, a remarkable recovery from near extinction in the mid-1990s when continental populations had fallen to about 2,410 individuals. By 2023, Africa’s black rhino population had increased to 6,448 individuals.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Elsa Bussiere](./imgs/sp-img-21%20Elsa%20Bussiere.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Lions (*Panthera leo*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+Lions (*Panthera leo*) present a contrasting picture. Although listed as Vulnerable globally, South Africa’s population is classified as Least Concern nationally, with an estimated 2,007 mature individuals showing stable to increasing trends. These populations are largely managed within smaller fenced reserves functioning as a metapopulation network that supports demographic and genetic viability.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Andrei Snyman](./imgs/sp-img-18%20Andrei%20Snyman.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Leopards (*Panthera pardus*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+Leopards (*Panthera pardus*), remain Vulnerable both nationally and globally, affected by habitat loss, human-wildlife conflict, retaliatory killings, and poaching for traditional medicine and cultural uses, despite their continued wide distribution across the country.
+
+Among South Africa’s rare antelope species, both the roan (*Hippotragus equinus*) and sable antelope (*Hippotragus niger*) are classified as Vulnerable on the national Red List, although both are listed as Least Concern globally. These species naturally occur at low densities within southern Africa, and South Africa represents a key stronghold for their continued persistence. Current estimates indicate approximately 860 wild roan antelope within their natural distribution range, of which only 197 occur in state-owned protected areas, a 43% decline over three generations. While there are many more roan in South Africa, our assessments only include animals that meet the wildness framework criteria (**Child et. al. 2019**) since intensively managed animals would not survive without continuous human intervention and hence cannot be considered part of South Africa’s wild population. Roan antelope experienced a 90% decline in the Kruger National Park between 1986 and 1993, but numbers have since stabilized. One of the primary causes of decline was the addition of artificial waterholes within the range of roan in Kruger which attracted other large grazers such as zebra and wildebeest and subsequent increases in predator numbers on the north of the park.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Charles Hall](./imgs/sp-img-20%20Charles%20Hall.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Sable antelope (*Hippotragus niger*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+Sable antelope populations show similar patterns, with about 1,107 wild individuals nationally and declines in most state-owned reserves, except in Kruger National Park and Loskop Dam Nature Reserve, where populations have increased by 441% over three generations. Both species are vulnerable to habitat degradation, competition with other herbivores, predation pressure, and ecological management challenges, including artificial water provisioning and overstocking.
+
+Against this backdrop, the wildlife sector has emerged as a cornerstone of conservation success in South Africa, contributing significantly to both species recovery and habitat restoration. Through the expansion of reserves, conservancies, and wildlife ranches, large tracts of former agricultural land have been restored to functional ecosystems, supporting viable populations of charismatic and threatened species such as roan and sable antelope, rhinoceroses, and elephants. For several of these species, private landholders now manage the majority of national populations.
+
+::::: grid
+::: {.g-col-lg-4 .g-col-12 .text-center}
+![© Charles Hall](./imgs/sp-img-19%20Elsa%20Bussiere.png)
+:::
+
+::: {.g-col-lg-8 .g-col-12}
+### Roan antelope (*Hippotragus equinus*)
+
+------------------------------------------------------------------------
+:::
+:::::
+
+Approximately 77% of South Africa’s roan antelope and substantial numbers of sable antelope occur on private land. Recent assessments using the wildness framework (**Child et al., 2019**) indicate that about half of private roan and 40% of private sable populations retain wild characteristics, contributing meaningfully to national conservation outcomes.
+
+The expansion of privately and communally managed conservation areas has also been instrumental in securing and reconnecting habitat for many of our wildlife species. Over half (53.2%) of South Africa’s white rhinoceroses are now held in private ownership, illustrating the critical contribution of private custodians to the species’ recovery and persistence (**‘t Sas Rolfes et al. 2022**). Many of these reserves depend on hunting, the hunting industry has therefore provided an incentive for recovery of rhinos. Poaching of rhinos for their horn threatens to undermine this species’ recovery since many landowners cannot afford the security costs and are starting to disinvest in rhinos (**Clements et al., 2023**).
+
+Additional challenges remain in the management of wildlife populations, particularly where intensive management and selective breeding practices are employed. Such approaches may reduce genetic diversity, alter natural evolutionary trajectories, or shift management priorities from conservation outcomes toward commercial production. The selective breeding of ungulates for specific morphological traits, such as exaggerated horn structures or colour variants (**Selier et al., 2018**), and the captive breeding of lions have been widely debated for their conservation relevance and animal welfare implications
+
+While some authors contend that captive-bred lions can serve as a buffer to pressures on wild lion populations by supplying the demand for trophy hunting and derived products (**Lindsey et al., 2012; Williams et al., 2015; Williams & ’t Sas Rolfes, 2019**), others argue that the conservation contribution of captive lions is minimal or negligible (**Coals et al., 2019; Coals et al., 2020; Elwin et al., 2024**). Concerns regarding welfare, ecological integrity, and reputational risks have contributed to a shift in policy direction. In 2024, the South African government adopted a policy position to phase out the captive keeping and breeding of lions, as outlined in the Policy Position for the Conservation and Sustainable Use of Elephant, Lion, Leopard and Rhinoceros (**DFFE, 2024**).
+
+Looking forward, certification schemes and incentive-based mechanisms could strengthen the positive impact of the wildlife sector by rewarding best practices, promoting transparency, and encouraging management that aligns with national biodiversity goals. By fostering stewardship and accountability, these approaches can ensure that managed populations remain genetically robust, ecologically functional, and as wild as possible.
+
+Overall, the wildlife sector stands as one of South Africa’s great conservation success stories demonstrating that when biodiversity and livelihoods are effectively linked, conservation and economic sustainability can go hand in hand.
+
+### Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+
+```
+
+## References
+
+::: {#refs}
+:::

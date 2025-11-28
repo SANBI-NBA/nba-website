@@ -161,7 +161,7 @@ An investment in estuarine protection is needed in ecosystem types that are Not 
 
 ```{r}
 #| label: fig-est_epl_map
-#| fig-cap: Estuarine ecosystem type protection level.
+#| fig-cap: Schematic representation of estuarine ecosystem protection levels (size of the dot represents area of the individual estuary). There are many overlaps between points that can obscure the status of smaller estuaries.
 #| echo: false
 #| message: false
 #| warning: false
@@ -190,7 +190,7 @@ Ongoing efforts to develop OECMs and stewardship approaches for estuaries presen
 ```{r}
 #| label: fig-epl_bargraphs
 #| echo: false
-#| fig-cap: NEEDS A CAPTION
+#| fig-cap: Estuarine Ecosystem Protection Levels in South Africa by percentage of types (# contributing estuaries indicated on bar) (a) and percentage extent (b).
 #| out-width: 100%
 #| classes: plain
 
@@ -223,7 +223,7 @@ nba_plot_comb(epl_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: Estuarine Ecosystem Protection Levels in South Africa tabulated by ecosystem type, extent (km2) and percentage extent (%)
 #| out-width: 100%
 #| classes: plain
 
@@ -267,14 +267,14 @@ tbl %>%
 :::
 ::::
 
-While the larger and more biodiversity rich estuaries are undoubtedly protection priorities, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond.Unless some ecosystem types or functional groups, e.g. Cool Temperate large fluvially dominated are targeted for inclusion in Marine Protected Areas, Protected areas or OECMs, gaps in representation will persist.
+While the larger and more biodiversity rich estuaries are undoubtedly protection priorities, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond.Unless some ecosystem types or functional groups, e.g. Cool Temperate large fluvially dominated are targeted for inclusion in Marine Protected Areas, Protected areas or Other Effective area-based Conservation Measure (OECMs), gaps in representation will persist.
 
 It is increasingly evident that protected areas won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures (OECMs) and/or Stewardship offer new opportunities for a broader diversify of conservation models to contribute to marine protection. Lastly, increasing extent of protection alone will not advance estuarine ecosystems to well protected. The condition of ecosystems in protected areas needs improvement.
 
 ::: {#box-eco_tbl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-epl
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: Estuarine Ecosystem Protection Levels in South Africa listed by estuary
 #| classes: plain
 
 

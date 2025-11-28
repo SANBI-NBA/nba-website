@@ -46,8 +46,12 @@ author:
     orcid: 0000-0001-8668-1449 
     affiliation:
       - ref: birdlifesa 
-  
-     
+  - name:
+      given: Maphale S. 
+      family: Monyeki 
+    orcid: 0000-0002-5083-7461 
+    affiliations:
+      - ref: sanbi     
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -291,7 +295,7 @@ endemic <- dat2 %>% select(all_of(available_levels)) %>% rowSums()
 plot1 <- (nba_plot(dat1, biome, 2:(ncol(dat1)),
                   CHRT = "donut", NUM = FALSE, LAB = "A")+
     xlim(c(2, 4.5)))  %>%
-  add_total(overall)
+  add_total(overall) 
 
 plot2 <- nba_plot(dat2, biome, 2:(ncol(dat2)),
            CHRT = "donut", NUM = FALSE, LAB = "B") %>% add_total(endemic)
@@ -664,7 +668,7 @@ total_b <- dat2 %>%
   rowSums(na.rm = TRUE) %>%
   sum(na.rm = TRUE)  
 
-
+ 
 plot1 <- (nba_plot(dat1,
                   biome,
                   2:5,

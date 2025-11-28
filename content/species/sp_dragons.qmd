@@ -125,7 +125,7 @@ add text
 #| fig-cap: "Threat status of South African ... " 
 #| out-width: 100%
 #| out-height: "auto"
-
+ 
 library(dplyr)
 library(tidyr)
 library(nbaR)

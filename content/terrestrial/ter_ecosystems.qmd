@@ -59,7 +59,6 @@ table-caption-prefix: "Table"      # the prefix used for numbering
 table-caption-auto-number: true    # enable automatic numbering
 ---
 
-------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}

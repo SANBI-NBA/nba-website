@@ -1,5 +1,4 @@
-Score,Functional impact score definition,Recovery definition
-N/A,Pressure not present.,N/A
+Score,Functional impact,Recovery
 0,No impact.,N/A
 1,Minor impact limited to a single species with minimal impact on overall system functioning.,Very quick recovery (< 1 year).
 2,Minor impact limited to a few (< 10) species with minimal impact on overall system functioning.,Quick recovery (> 1 year but < 2 years).
