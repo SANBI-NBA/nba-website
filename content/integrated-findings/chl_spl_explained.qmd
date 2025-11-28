@@ -1,0 +1,8 @@
+---
+title: "About species protection level"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+bibliography: intf_references.bib
+---
+
+Content to be added.
