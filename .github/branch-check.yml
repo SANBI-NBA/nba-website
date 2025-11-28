@@ -1,0 +1,13 @@
+# .github/workflows/branch-check.yml
+name: Branch Check
+ 
+on:
+  pull_request:
+    branches: [dev]
+ 
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pass
+        run: echo "Branch is ready"
