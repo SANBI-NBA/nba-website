@@ -260,3 +260,14 @@ If you created a feature branch off of the wrong base branch (e.g. you created y
 ## Publish preview to the live site
 
 NB! Only Lize von Staden and Andrew Skowno can merge dev into main in order to publish content live.
+
+1. Click `Pull requests`.
+2. You can either click the green `Compare & pull request` button in the yellow banner, or just click the green `New pull request` button.
+
+![](imgs/compare-dev-to-main.png)
+
+3. Choose `base: main` and `compare:dev` to compare changes, then click `Create pull request`.
+   
+![](imgs/comparing-changes.png)
+
+4. Review the changes and then merge into `main` if everything looks good.
