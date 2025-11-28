@@ -4,11 +4,11 @@
 
 - Production website:
 
-<https://sanbi-nba.github.io/nba-website\>
+<https://sanbi-nba.github.io/nba-website>
 
 - Testing website
 
-<https://sanbi-nba.github.io/nba-website/site-preview\>
+<https://sanbi-nba.github.io/nba-website/site-preview>
 
 ## Get started
 
