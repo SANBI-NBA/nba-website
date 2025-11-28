@@ -65,11 +65,27 @@ google-scholar: true
 
 ## Threatened and under-protected ecosystem types
 
-There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and five ecosystem types that are both Endangered and Not Protected. This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and poorly protected ecosystem types include some several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
+In the Estuarine realm, 31% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.\*\* These include the following seven ecosystem types:
+
+-   Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)
+
+-   Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)
+
+-   Cool Temperate Large Fluvially Dominated (Orange)
+
+-   Cool Temperate Predominantly Open (Olifants, Groot Berg, Uilkraals)
+
+-   Subtropical Estuarine Bay (Durban Bay)
+
+### Lara to revisit the types to list the estuaries that can contribute
+
+## JUST LIST NUMBER OF ECOSYSTEMS ON DONUT.
+
+## CAN WE HAVE A TABLE OF THE TYPES NEXT TO MAPS
 
 ```{r}
 #| label: fig-rle_map
-#| fig-cap: NEEDS CAPTION
+#| fig-cap: Map of threatened and under-protected ecosystem types
 
 
 #| echo: false
@@ -89,14 +105,14 @@ knitr::include_graphics("imgs/epl_ets_with_donut.png")
 
 ```
 
-Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, reduced fishing pressure and improved ecosystem management. Improved bycatch management and diversified measures to protect bathers from sharks using non-lethal measures could help improve ecosystem condition in KwaZulu-Natal.
+Threatened and under-protected ecosystem types are candidates for improved protection through formal protected areas expansion or other spatial management measures such as stewardship or Other Effective Conservation Measures (OECMs).
 
-There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs (Kirkman et al. 2021, 2023, Mann Lang et al. 2021, Sink et al. 2023), which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Sink et al. (2023) share lessons from the 2019 Marine Protected Area expansion which are relevant to future expansion efforts.
+In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, managment of pollution (wastewater, agricultural return flow or stormwater), reduced fishing pressure, restoration of degraded habitats, removal of invasive alien plants, and effective artificial breaching (where required).
 
 ```{r}
 #| label: tbl-ets_epl
 #| echo: false
-#| tbl-cap: NEEDS CAPTION
+#| tbl-cap: Intersection of threatened and under-protected ecosystem types
 #| out-width: 100%
 #| classes: plain
 

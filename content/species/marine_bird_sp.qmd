@@ -109,11 +109,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-<center>
-
-![Black-browed albatross (*Thalassarche melanophris*) taking off. The species has experienced an improvement in its threat status (Near Threatened to Least Concern), due to the wider implementation of fisheries bycatch mitigation measures. (© Alistair McInnes)](./imgs/seabirds_img_1.png){fig-align="center"}
-
-</center>
+![Black-browed albatross (*Thalassarche melanophris*) taking off. The species has experienced an improvement in its threat status (Near Threatened to Least Concern), due to the wider implementation of fisheries bycatch mitigation measures. (© Alistair McInnes)](./imgs/seabirds_img_1.png){fig-align="center"}
 
 ::::: columns
 ::: {.column width="50%"}

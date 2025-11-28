@@ -1,5 +1,5 @@
 ---
-title: "SA Freshwater fish species recovery" 
+title: "South African Freshwater fish species recovery actions" 
 title-block-banner: "#ad180d" 
 title-block-banner-color: white 
 
@@ -129,8 +129,6 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## South Africa’s freshwater fish conservation challenge
-
 Freshwater fish are among the most threatened species groups in South Africa, and the majority of the country’s endemic fish species are in ongoing decline. Key threats include human impacts on water quality and quantity, habitat destruction and the impacts of invasive species – threats that often act synergistically and can be compounded by climate change.
 
 In 2024, as groundwork for the Reverse the Red World Species Congress, members of the National Freshwater Fish Observation Group (including SANBI, SAIAB, CapeNature, Freshwater Research Centre) undertook a rapid assessment of South African freshwater fish species most urgently in need of recovery action, including species with recovery efforts already underway. The focus was on species with an Endangered or Critically Endangered conservation status, and those with a declining population trajectory.
@@ -147,7 +145,7 @@ Despite the large knowledge gaps and investment required to recover these specie
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_img_recv_fwf_1.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_1.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -165,7 +163,7 @@ The Saving Sandfish project, led by the Freshwater Research Centre (FRC), aims
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_img_recv_fwf_2.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_2.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -183,7 +181,7 @@ The Grootvadersbosch Conservancy is leading a conservation project for the Trado
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Andrew Deacon](./imgs/sp_img_recv_fwf_3.png){style="width:400;"}
+![© Andrew Deacon](./imgs/sp_img_recv_fwf_3.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -205,7 +203,7 @@ Working with local farmers has enabled access to suitable dams and logistical su
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_img_recv_fwf_4.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_4.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -223,7 +221,7 @@ The Bringing Back the Witvis project, led by the FRC, is working to re-establish
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_img_recv_fwf_5.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_5.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -241,7 +239,7 @@ The Breekkrans River Restoration Project, led by the FRC, aims to restore 8 km o
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Jeremy Shelton](./imgs/sp_img_recv_fwf_6.png){style="width:400;"}
+![© Jeremy Shelton](./imgs/sp_img_recv_fwf_6.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}
@@ -259,7 +257,7 @@ The Krom Antonies Restoration Project, led by the FRC, focuses on the uppe
 
 ::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![© Heather D’Alton](./imgs/sp_img_recv_fwf_7.png){style="width:400;"}
+![© Heather D’Alton](./imgs/sp_img_recv_fwf_7.png){style="width:400;"}
 :::
 
 ::: {.g-col-lg-8 .g-col-12}

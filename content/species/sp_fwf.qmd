@@ -645,7 +645,7 @@ Anthropogenic pollution can be exacerbated by unsustainable water use patterns a
 
 Freshwater systems across the assessment region face an expanding list of severe threats. These include acid mine drainage and mining-related sedimentation and effluent spills, forestry activities, alien invasive fish and their translocation, road-related chemical spills, agricultural impacts, alien plant invasions and associated control activities. These impacts are exacerbated by failures in municipal water services, including non-functional sewage works and refuse dumping in sensitive areas of catchments. Illegal gold mining within sensitive riverbeds is a growing concern, directly damaging habitats that support already highly threatened freshwater fish species.
 
-See Box X, [Freshwater Species Realm](../freshwater/fw_overview.qmd).
+See Box X, [Freshwater Species Realm](../freshwater/fw_overview.qmd).<!-- Will update when Freshwater page is complete -->
 
 ## Protection level
 
@@ -749,7 +749,7 @@ In a recent evaluation of the value of protected areas for conserving the freshw
 
 As part of the Global Biodiversity Framework (GBF) Target 4, signatories are committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030. Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. South Africa has initiated a process for each of the taxonomic groups that have been comprehensively assessed following the IUCN Red List criteria, to identify and prioritise species that are in urgent need of interventions to promote their recovery to contribute to achieving the GBF Target 4 goals.
 
-Here we present the process followed for freshwater fishes see more details [here](../species/fish_recovery.qmd)
+See more details on the process followed for freshwater fishes  [here](../species/fish_recovery.qmd)
 
 ## Monitoring
 
@@ -809,9 +809,9 @@ Finally, although rehabilitation needs for highly threatened species are often k
 
 The IUCN Red List criteria and categories are used to assess the threat status of species. Freshwater fish species were assessed in 2016, utilising multiple workshops, including a three-day in-person workshop hosted by the South African Institute of Aquatic Biodiversity (NRF-SAIAB) in Makhanda, Eastern Cape, and funded by the South African National Biodiversity Institute (SANBI). All available spatial data were collated, and experts reviewed specimen records related to these data. Incorrect data were georeferenced, with a high investment in updating all threatened species records. The freshwater fish checklist was based on a very specific definition of freshwater fishes and included species occurring in neighboring countries Eswatini and Lesotho. See further details in @chakona2022a.
 
-**Species Protection Level Indicator**
+### Protection level assessment
 
-The species protection level indicator measures how effectively South Africa’s protected area network safeguards species. It evaluates progress towards achieving a “persistence target” for each species - the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
+The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a “persistence target” for each species — the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
 
 Species are classified into four protection categories:
 
@@ -822,54 +822,85 @@ library(nbaR)
 
 # Create the data frame
 df <- data.frame(
+  "Protection level categories" = c(
+    "Well Protected",
+    "Moderately Protected",
+    "Poorly Protected",
+    "Not Protected"
+  ),
+  
   "Percentage of biodiversity target" = c(
-    "Well Protected — ≥100% of the persistence target met",
-    "Moderately Protected — 50-99% of the target met",
-    "Poorly Protected — 5-49% of the target met",
-    "Not Protected — <5% of the target met"),check.names = FALSE)
+    "≥100% of the persistence target met",
+    "50–99% of the target met",
+    "5–49% of the target met",
+    "<5% of the target met"
+  ),
+  check.names = FALSE
+)
 
 # Define colors
-row_colors <- list( "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
-                    "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
-                    "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
-                    "Not Protected" = rgb(166, 166, 166, maxColorValue = 255))
+row_colors <- list(
+  "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
+  "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
+  "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
+  "Not Protected" = rgb(166, 166, 166, maxColorValue = 255)
+)
 
-
+# Create gt table
 gt(df) %>%
-  tab_options(table.width = pct(80),
-              data_row.padding = px(14),
-    column_labels.hidden = TRUE) %>%
+  tab_options(table.font.size = px(14L),
+    table.width = pct(80),
+    data_row.padding = px(14)
+  ) %>%
+
+  tab_style(
+    style = cell_text(size = px(12), weight = "bold"),  
+    locations = cells_column_labels(columns = everything())
+  ) %>%  
+    
+  tab_style(
+    style = cell_text(size = px(12), color = "white"),  
+    locations = cells_body(columns = everything())
+  ) %>%
   
-  tab_style(style = cell_text(size = px(14)),  
-            locations = cells_body(columns = everything())) %>%
-
-  tab_style(style = cell_fill(color = row_colors[["Well Protected"]]),
-            locations = cells_body(rows = grepl("Well Protected", df[[1]]))) %>%
-      
-  tab_style(style = cell_fill(color = row_colors[["Moderately Protected"]]),
-            locations = cells_body(rows = grepl("Moderately Protected", df[[1]]))) %>%
-    
-  tab_style(style = cell_fill(color = row_colors[["Poorly Protected"]]),
-            locations = cells_body(rows = grepl("Poorly Protected", df[[1]]))) %>%
-    
-  tab_style(style = cell_fill(color = row_colors[["Not Protected"]]),
-            locations = cells_body(rows = grepl("Not Protected", df[[1]])))
-
+  tab_style(
+    style = cell_fill(color = row_colors[["Well Protected"]]),
+    locations = cells_body(rows = 1)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Moderately Protected"]]),
+    locations = cells_body(rows = 2)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Poorly Protected"]]),
+    locations = cells_body(rows = 3)
+  ) %>%
+  
+  tab_style(
+    style = cell_fill(color = row_colors[["Not Protected"]]),
+    locations = cells_body(rows = 4)
+  )
 ```
 
-This indicator has been applied to terrestrial and freshwater species in six taxonomic groups, including a representative sample of 900 plant taxa. Peripheral taxa with \<5% of their range in South Africa were excluded. Protection levels have been calculated for 2 449 taxa in total.
+This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses undertaken by **Hilbers et al. (2017)**.
 
-How the Indicator is calculated
+**There are two components included in the protection level assessment:**
 
-The indicator has two components:
+1.  Representation in protected areas— quantifies how much of the area of suitable habitat required to support the persistence target within existing protected areas.
 
-1.  Representation in protected areas - quantifies how much of a species’ distribution or viable population units fall within protected areas. This guides the prioritisation of species for protected area expansion.
+2.  Protected area effectiveness— adjusts for how well pressures that cause species declines such as invasive species, poaching, inappropriate fire regimes etc are mitigated within protected areas.
 
-2.  Protected area effectiveness - adjusts for how well pressures such as invasive species, poaching, inappropriate fire regimes or damaging land use are controlled. Not all protected areas contribute equally to species persistence.
+**The degree to which protected areas effectively mitigate threats are scored as:**
 
-Species-specific conservation targets reflect either the area required to support a minimum viable population, or for freshwater fishes, the presence of at least ten viable subpopulations.
+**Good**, when the protected area is fully effective in protecting the species against major threats;
 
-Scores for protected area effectiveness were developed with input from freshwater fish experts and protected area management agencies, based on species responses to management at specific sites.
+**Fair** if the protected area provides some mitigation of major threats to species but is not completely effective;
+
+**Poor** if the protected area provides no mitigation of the major threats to the species.
+
+Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
 
 **Freshwater Fish Reassessment (2025)**
 
@@ -877,7 +908,7 @@ The 2025 reassessment repeated the previous method using the 2018 protection lev
 
 ## Acknowledgements
 
-![](./imgs/)
+![](./imgs/logo_freshwater_fish_1){fig-align="center"}
 
 ```{r}
 #| label: tbl-4

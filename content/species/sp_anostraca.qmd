@@ -111,7 +111,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 <center>
 
-![*Streptocephalus namibiensis* (LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore, accurate species identification requires specialised expertise. (© Betsie Milne)](./imgs/sp_anostraca_img_1.png){fig-align="center"}
+![*Streptocephalus namibiensis* (LC) is endemic to southern Africa, occurring in Botswana, South Africa and Namibia, where it is widespread, but mainly occupies temporary brackish pans. As with all anostracans, their taxonomic features are complex and are only visible under high magnification. Therefore, accurate species identification requires specialised expertise. (© Betsie Milne)](./imgs/sp_anostraca_img_1.png){fig-align="center"}
 
 </center>
 
@@ -386,7 +386,7 @@ gt(dat_combined_final) %>%
 ::: {#box-1 .callout-note .species title="Box 1: The diverse range of freshwater habitats occupied by Anostraca often causes these habitats and their unique aquatic fauna to go unnoticed when dry." collapse="true"}
 The temporary aquatic habitats that anostracans inhabit include a range of endorheic wetlands, remnant riverine pools, rock pools, roadside ditches and even animal wallows. The biotic and abiotic variables associated with these habitats differ substantially, and species are highly sensitive to specific habitat conditions. Consequently, anostracans are habitat specialists and ideal indicators of environmental change.
 
-![](./imgs/sp_anostraca_img_2.png)[A diversity of temporary habitats, varying in how and how often they are inundated. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{style="font-size:90%; color:#626262;"}
+![](./imgs/sp_anostraca_img_2.png)[A diversity of temporary habitats, varying in how and how often they are inundated. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{style="font-size:90%; color:#626262;"}
 :::
 
 ## Trends - the Red List Index
@@ -489,7 +489,7 @@ Many of the Anostraca species that are of conservation concern are considered un
 ![](./imgs/sp_anostraca_img_3.png){style="font-size:75%; color:#626262;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Anostracan eggs have species-specific morphologies, making them useful indicators of diversity and density in unpredictable habitats when live sampling is not possible[@meyer-milne2022a]. (© Betsie Milne)
+Anostracan eggs have species-specific morphologies, making them useful indicators of diversity and density in unpredictable habitats when live sampling is not possible[@meyer-milne2022a]. (© Betsie Milne)
 :::
 
 ------------------------------------------------------------------------
@@ -505,7 +505,7 @@ Anostracan eggs have species-specific morphologies, making them useful indicator
 :::::
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Using soils collected from dry habitats (left) to run hatching trials (right), has successfully contributed to filling distribution gaps and describing new species. (© Betsie Milne)
+Using soils collected from dry habitats (left) to run hatching trials (right), has successfully contributed to filling distribution gaps and describing new species. (© Betsie Milne)
 :::
 ::::::::
 

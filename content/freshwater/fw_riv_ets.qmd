@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "River Ecosystem Threat Status" # Compulsory
+title: "River ecosystem threat status" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -23,12 +23,13 @@ author:
       family: Skowno
     affiliations:
       - ref: sanbi 
+      - ref: uct
   - name:
-      given: Other 
-      family: Other 
-    orcid: 0000-0002-0000-0000 
+      given: Jock 
+      family: Currie 
+    orcid: 0000-0002-7226-2988 
     affiliations:
-      - ref: other 
+      - ref: sanbi 
       
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
@@ -38,12 +39,9 @@ affiliations:
   - id: sanbi 
     number: 1 
     name: South African National Biodiversity Institute
-  - id: independent 
+  - id: uct 
     number: 2 
-    name: South African National Biodiversity Institute
-  - id: other 
-    number: 3 
-    name: South African National Biodiversity Institute
+    name: University of Cape Town
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -62,16 +60,17 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Summary {#summary}
+*Rivers are among the most threatened ecosystems in South Africa, with over 65% of river types categorised as Threatened. This places the vital ecosystem services they provide and the incredible biodiversity they support at great risk.* 
 
-**Rivers are the second most threatened ecosystem in South Africa, with over 60% of river types assessed as Threatened. This places the vital services they provide and the incredible biodiversity they support at great risk.**
+
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [13%]{.inline-style-well-protected}
-| of 222 river ecosystem types
+| [65%]{.inline-style-well-protected}
+| of river length
 | Threatened
 
 </center>
@@ -80,9 +79,9 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [61%]{.inline-style-not-protected}
+| [65%]{.inline-style-not-protected}
 | of 222 river ecosystem types
-| Least Concern
+| Threatened
 
 </center>
 :::
@@ -93,57 +92,279 @@ google-scholar: true
 :::
 ::::
 
-Of South Africa’s 222 river ecosystem types, 43% are Critically Endangered, 19% are Endangered, 2% are Vulnerable, and 36% are of Least Concern. Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
+------------------------------------------------------------------------
 
-![](imgs/clipboard-1952197093.png)
+Of South Africa’s 222 river ecosystem types, 22% (49) are Critically Endangered, 19% (44) are Endangered, 23% (52) are Vulnerable, and 34% (77) are of Least Concern. In terms of total river length, 2% is Critically Endangered, 6% Endangered, 56% Vulnerable, and 34% is of Least Concern.
 
-Figure 1. Ecosystem threat status for river ecosystem types. The inset doughnut shows the number of ecosystem types per threat category.
+![Ecosystem threat status for river ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/riv_ets_map.png){#fig-ets_riv_map} <!-- ![](imgs/clipboard-1952197093.png) --> <!-- Figure 1. Ecosystem threat status for river ecosystem types. The inset doughnut shows the number of ecosystem types per threat category. -->
 
-<!-- jock plse help with figure 1 and inset donut graph by number of types. "C:\Users\JobN\OneDrive - sanbi.org.za\NBA_data - nba_data\freshwater\riv_results_vector.gpkg" Also see Andrew's repo "https://github.com/askowno/RLE_riv" and Natasha's code for this info in the integrated assessment. -->
+Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
 
-![](imgs/clipboard-1015321969.png)
+```{r}
+#| label: tbl-ets
+#| tbl-cap: "Ecosystem threat status of river ecosystem types."
 
-![](imgs/clipboard-100401253.png)
+# library(here)
+library(stringr)
+library(reactable)
+library(dplyr)
 
-Figure 2. River ecosystem threat status within each geomorphological zone (i.e. slope category). (a) The percentage of ecosystem types per threat category (labelled with actual value) with the total for all rivers at the bottom (n = 222); (b) the percentage of river length (km) within each threat category with the total length for all rivers (length = 147 180 km) at the bottom – providing an indication of the relative extent of each category. \[a lot of tables, think about how to present them\]
+# load data
+ets <- read.csv(file=list.files(pattern = "^river_metrics_2.csv$", recursive = TRUE, full.names = TRUE), # ^riv_metrics_type.csv$
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, threat_status) %>% 
+  ## take out the NA zones
+  filter(!is.na(zone)) %>% 
+  rename("River type" = type,
+         Zone = zone,
+         "Ecosystem threat status" = threat_status)
+  # select(RIVTYPE, zone, protection_level) %>% # , RLE24, extent, RLE_EPL24) #
+  # mutate(EPL24_all = str_replace_all(EPL24_all, "WP","Well Protected"),
+  #        EPL24_all = str_replace_all(EPL24_all, "MP","Moderately Protected"),
+  #        EPL24_all = str_replace_all(EPL24_all, "PP","Poorly Protected"),
+  #        EPL24_all = str_replace_all(EPL24_all, "NP","Not Protected" )) %>% 
+  # rename("River type" = RIVTYPE,
+  #        Zone = zone,
+  #        "Ecosystem Protection Level" = EPL24_all)
 
-Insert tables, graphs and figures.
+# create the table
+reactable(
+  ets,
+  filterable = TRUE,
+  searchable = FALSE,
+  pagination = FALSE,
+  height = 600,
+  defaultColDef = colDef(
+    headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
+  ),
+  theme = reactableTheme(
+    inputStyle = list(
+      color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+      backgroundColor = "white",
+      border = "1px solid #ccc"
+    )))
 
-Some text with a footnote[^1].
+```
 
-[^1]: Insert a basic footnote by using the Visual editor's Insert \> Footnote. Type the footnote text into the box provided. Quarto will automatically number your references and footnotes in the order that they are inserted in the text.
+:::: panel-tabset
+## Figure
 
-<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
+<!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
-![](imgs/clipboard-2986255016.png)
+```{r}
+#| label: fig-river_ets_bargraph
+#| fig-cap: "River ecosystem threat status within each geomorphological zone (slope category). (a) The percentage of ecosystem types per category (labelled with the number per type); (b) the percentage of river length (km) within each threat category, providing an indication of the relative extent of each category." 
 
-::: {#box-1 .callout-note collapse="true"}
-## **Box 1.** Free-flowing rivers/rivers in SWSAs/
+library(tidyverse)
+library(stringr)
+library(nbaR)
+
+# load data
+riv_ets_tbl <- read.csv(file=list.files(pattern = "^river_metrics_2.csv$", recursive = TRUE, full.names = TRUE), # ^riv_metrics_type.csv$
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  select(type, zone, threat_status, leng) %>% 
+  ## take out the NA zones
+  filter(!is.na(zone)) %>% 
+  group_by(zone, threat_status) %>%
+  summarise(count = n(),
+            extent = sum(leng)) # %>%
+  
+# count table
+count <- riv_ets_tbl %>%
+  pivot_wider(
+    id_cols = zone, # zone
+    names_from = threat_status, # EPL24_all
+    values_from = count) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') # %>% # reorder the columns
+  # rowwise() %>% 
+  # mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  # ungroup()
+# count
+
+# ## add a totals row:
+# count <- count %>%
+#   bind_rows(
+#     count %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total count") %>%
+#       select(zone, everything())
+#   )
+# count
+
+# extent table
+extent <- riv_ets_tbl %>%
+  ## WARNING: DIVIDING BY 1000 TO TRANSFORM TO KM, ASSUMING THESE ARE IN M
+  mutate(extent = extent/1000) %>% 
+  pivot_wider(
+    id_cols = zone, # zone
+    names_from = threat_status, # EPL24_all
+    values_from = extent) %>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
+  ungroup() %>% 
+  select(zone, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') # %>% # reorder the columns
+  # rowwise() %>% 
+  # mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
+  # ungroup()
+# extent
+
+# # add a totals row:
+# extent <- extent %>%
+#   bind_rows(
+#     extent %>%
+#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
+#       mutate(zone = "Total extent") %>%
+#       select(zone, everything())
+#   )
+# extent
+
+# combine count and extent in a single table
+ets_combined <- count %>%
+  mutate(metric = "count") %>%
+  bind_rows(extent %>%
+              mutate(metric = "extent")) %>%
+  mutate(zone = factor(zone, levels = c("Mountain stream", "Upper foothill", "Lower foothill", "Lowland river")))
+# ets_combined
+    
+## save the data to downloadable csv for the link, before arranging by zone for the plot
+write.csv(ets_combined, file = "outputs/rivers_ETS.csv", row.names = FALSE)
+
+# create ETS plot
+ets_combined_plot <- ets_combined %>% 
+    arrange(desc(zone)) %>% # zone 
+  nba_plot_comb(
+    zone,
+    METRIC_COL = metric,
+    METRICS = c("count", "extent"),
+    2:5,
+    CHRT = "bar",
+    NUM = FALSE,
+    LAB = "Percentage of ecosystem",
+    SAVE = NULL) 
+
+ets_combined_plot
+
+
+```
+
+## Data
+
+<!--# If the table is long use the div to give it a vertical scroll bar. Otherwise the div can be excluded. -->
+
+::: {#table .table style="height:500px;overflow-y: auto"}
+```{r}
+#| label:  tbl-river_ets
+#| tbl-cap: Threat status of river ecosystem types summarised by geomorphological zone. Note that extent figures represent river length (km) and have been rounded. 
+#| classes: plain
+
+library(dplyr)
+library(nbaR)
+library(gt)
+
+## create the table
+## create the table
+
+tbl <- ets_combined %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km)"),
+         metric = str_replace_all(metric, "count", "Count")) %>% 
+  arrange(zone) %>% 
+  select(zone, metric, 'Critically Endangered', 'Endangered', 'Vulnerable', 'Least Concern') %>%
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "zone",
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
+  nbaR::nba_tbl_theme(HEADER = "Freshwater") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+tbl
+
+
+```
 :::
 
-::: {.callout-note collapse="true"}
-## Box 2. New case study
+Download the data [here](outputs/rivers_ETS.csv).
+::::
 
-Add the box content here. It can include text, pictures, tables and graphs. Add them as you would for general text.
+<!-- Figure 2. River ecosystem threat status within each geomorphological zone (slope category). (a) The percentage of ecosystem types per threat category (labelled with actual value) with the total for all rivers at the bottom (n = 222); (b) the percentage of river length (km) within each threat category with the total length for all rivers (length = 147 180 km) at the bottom – providing an indication of the relative extent of each category. -->
+
+Text
+
+::: {#box-1 .callout-note .freshwater title="Box 1. River ecosystem threat status across primary catchments." collapse="true"}
+## **Box 1. River ecosystem threat status across primary Catchments and Water Management Areas**
+
+Text
 :::
 
-## Methods
+::: {#box-2 .callout-note .freshwater title="Box 2. River ecosystem threat status across provinces." collapse="true"}
+## **Box 2. River ecosystem threat status across the Provinces**
 
-The Red List of Ecosystems (known as Ecosystem Threat Status in South Africa) assesses the risk of collapse of each ecosystem type based on a range of criteria on extent condition and pressures faced by each ecosystem type. For consistency with past NBAs this assessment follows the methods developed by \[Nel et al., 2007\](DOI: 10.1111/j.1472-4642.2006.00308.x) and modified by [van Deventer et al., 2019](http://hdl.handle.net/20.500.12143/5847). Each of the 222 river ecosystems types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern.
+Text
+:::
 
-The analysis approach of van Deventer et al., 2019 uses the proportion of each ecosystem type that is in a good to fair condition (PES class A B and C) and a set of thresholds. If less than 20% of a type (measured by length of river segment) is in a A or B condition then the type is categorised as Critically Endangered; if between 20-35% of the type is in A or B condition then the type is categorised as Endangered; if less than 60% of the type is in A or or C condition then the type is categorised as Vulnerable; if none of these thresholds are crossed then the type is Least Concern. This method aligns with the South African Framework for Threatened ecosystems but not the IUCN RLE 1.1. Processes to transition to the IUCN framework are underway - but in the interest of comparing past results, the 2011 methods have been implemented.
+::: {#box-3 .callout-note .freshwater title="Box 3. River ecosystem threat status across national parks." collapse="true"}
+## **Box 3. River ecosystem threat status across National Parks**
+
+Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact. Read more about this indicator on the [About ecosystem threat status page.](../integrated-findings/chl_rle_explained.qmd)
+
+***Heading 3*** xxxx.
+:::
+
+## Approach
+
+Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact.
+
+Key input layers include [river ecosystem types](fw_riv_type.qmd) and [river ecological condition](fw_riv_condition.qmd).
+
+The assessment was conducted using the IUCN Red List of Ecosystems framework (version 2), which has been applied across all realms for the 2025 assessments. The framework uses the concept of ecosystem collapse as the equivalent endpoint to species extinction. It evaluates the status of each ecosystem type using a set of quantitative and qualitative criteria linked to the key aspects of ecosystem decline, namely, Criterion A: reduction in extent, Criterion B: restricted distribution, Criterion C: environmental degradation and Criterion D: biotic degradation. Read more about this indicator on the [ecosystem threat status](https://sanbi-nba.github.io/nba-website/site-preview/content/integrated-findings/chl_ets_explained.html) explainer page.
+
+The IUCN RLE (version 2) approach was followed and the following criteria were assessed for river ecosystems:
+
+-   **Criterion B1aiii** was applied using extent of occupancy calculations with ongoing decline defined as an increase in the extent of D,E and F condition river length from the previous PES assessment period.
+
+-   **Criterion D2b** was applied using the rate of change in condition between 2018 and 2024, projected forward to 2068 (a 50 year period).
+
+-   **Criterion D3** was applied to the Present Ecological State (PES) data such that Severity \>=90% was assigned to PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F.
+
+Each river ecosystem type was assessed against these criteria and the **highest risk category** triggered by any single criterion was assigned as the overall ecosystem threat status for that type. Each of the 222 river ecosystem types was placed into one of four risk categories: **Critically Endangered**, **Endangered**, **Vulnerable**, or **Least concern**. Critically endangered, endangered, and vulnerable are collectively referred to as the threatened categories.
 
 ## Technical documentation
 
-**Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
+**Code repository**
 
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
+<https://github.com/askowno/ETS_riv>
 
--   **Technical report**: Add link to technical report in PDF format
+**Key publications**
 
-**Other publications**
+Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
-Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+## Recommended citation
+
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+```
 
 ## References
 
