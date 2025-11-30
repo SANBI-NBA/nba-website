@@ -5,4 +5,174 @@ title-block-banner-color: white
 bibliography: intf_references.bib
 ---
 
-Content to be added.
+South Africa's Species Protection Level (SPL) indicator was developed to complement the [Ecosystem Protection Level (EPL) indicator](./chl_epl_explained.qmd), which has been part of the NBA headline indicators since 2004.[@reyers2007] Species protection level was assessed for the first time in 2018.[@Skownonba2019]
+
+The SPL indicator measures the contribution of the protected area network to species persistence. The indicator considers two factors - the contribution of a protected area to meeting a [population target](#sec-targets), as well as the [effectiveness](#sec-effectiveness) of the protected area in mitigating pressures on the species. This factor is included because studies of the contributions of protected areas to species conservation consistently note that effective protected area management is as important for species persistence as increasing habitat protection.[@geldmann2018global; @costelloe2016global; @justin2023protected; @wauchope2022protected] Where protected areas are less than 100% effective in mitigating pressures, a penalty factor is applied to the protected area's contribution to the species target.
+
+A [protection score](#sec-protection-score) is calculated for each species, which is the summed scores for individual protected areas where they are confirmed present, and the protection score is compared to the population target and expressed as a percentage of the target met. Depending on the percentage of the target met, a species is placed in one of four protection level categories (@tbl-plcats).
+
+```{r}
+#| classes: plain
+#| label: tbl-plcats
+#| tbl-cap: "Species protection level categories."
+
+library(gt)
+library(nbaR)
+library(dplyr)
+
+pl_categories <- c("Not Protected", "Poorly Protected", "Moderately Protected", "Well Protected")
+target_percentage <- c("0-4.9", "5-49", "50-99", "100+")
+category_weight <- c(3,2,1,0)
+
+table_pl_categories <- as.data.frame(cbind(pl_categories, target_percentage, category_weight))
+table_pl_categories <- table_pl_categories %>% rename(Category = pl_categories,
+                                                      `Target percentage range` = target_percentage,
+                                                      `Index weight` = category_weight)
+
+gt::gt(table_pl_categories) %>% nba_tbl_theme() %>%
+                                gt::cols_align(align = "center", 
+                                                            columns = 2:3) %>% 
+                                
+                                tab_style(
+                                  style = list(
+                                    cell_fill(color = "white")
+                                  ),
+                                locations = cells_column_labels()
+                                      ) %>%
+                                tab_style(
+                                  style = cell_borders(
+                                    sides = c("left", "right"),
+                                    color = NA,
+                                    style = "hidden",
+                                    weight = px(0)
+                                  ),
+                                  locations = cells_column_labels()
+                                ) %>%
+                                tab_style(
+                                  style = list(
+                                    cell_fill(color = "#A6A6A6"),
+                                    cell_text(color = "white")
+                                  ),
+                                locations = cells_body(rows = 1)) %>% 
+                                tab_style(
+                                  style = list(
+                                    cell_fill(color = "#D5DEC4"),
+                                    cell_text(color = "white")
+                                  ),
+                                locations = cells_body(rows = 2)) %>% 
+                                tab_style(
+                                  style = list(
+                                    cell_fill(color = "#84AB5C"),
+                                    cell_text(color = "white")
+                                  ),
+                                locations = cells_body(rows = 3)) %>%
+                                tab_style(
+                                  style = list(
+                                    cell_fill(color = "#4B6E00"),
+                                    cell_text(color = "white")
+                                  ),
+                                locations = cells_body(rows = 4))
+
+
+
+```
+
+The SPL indicator is typically calculated for all species in a taxonomic group, but for exceptionally speciose groups such as plants, a sampled approach similar to the sampled Red List Index is used.[@baillie2008toward] The indicator is a summary of the proportion of species in each protection level category at a given point in time. However, to track changes in species protection level over time, protection level categories applied to species are combined into a single score, the [Species Protection Index (SPI)](#sec-spi) with a value ranging between 0 and 1. An index value of 1 indicates all species are Well Protected, while the score is 0 when all species are Not Protected.
+
+## Building blocks of the Species Protection Level indicator
+
+### Protected areas
+
+Protected areas are areas of land or sea that are protected by law and managed for biodiversity conservation. Protected areas in South Africa are areas declared under the National Environmental Management: Protected Areas Act (Act 57 of 2003).[@governmentofsouthafrica2004] The Department of Forestry, Fisheries and the Environment maintains a national register of areas recognised by the Act, and this database, known as the South African Protected Areas Database (SAPAD), informs the protection level assessments for species and ecosystems.
+
+For each protection level assessment, a spatial layer is prepared representing the extent of the national protected area network at that point in time. Protected areas that have been deproclaimed are excluded. Protected areas are grouped into clusters - which represent groups of adjacent protected areas. Species are considered present in a protected area when there is suitable habitat for the species in the protected area, and the species has been recorded present anywhere within the protected area's larger cluster.
+
+### Protected area effectiveness {#sec-effectiveness}
+
+Information on the effectiveness of protected areas in mitigating pressures on species is provided by protected area management effectiveness experts from South African conservation agencies. This information is augmented by national data on the distribution of alien invasive plants within protected areas,[@invterr2025] as well as changes in the extent of natural or near-natural areas inside protected areas.[@llcterr2025]
+
+Protected area effectiveness is rated in three categories and a penalty factor is applied to the protected area's contribution to a species' conservation target where it is not 100% effective in mitigating pressures (@tbl-effectiveness-categories). The effect of the penalty factors is that much larger populations of a species need to be in protected areas to meet the species' target, as a means to offset ongoing declines inside protected areas.
+
+```{r}
+#| classes: plain
+#| label: tbl-effectiveness-categories
+#| tbl-cap: "Effectiveness categories applied to protected areas in species protection level assessments."
+
+
+effectiveness_category <- c("Good", "Fair", "Poor")
+effectiveness_definition <- c("Protected area is fully effective in protecting species against pressures",
+                              "Protected area provides some mitigation of pressures on species, but is not fully effective",
+                              "Protected area provides no mitigation of pressures (areas often referred to as \"paper parks\")")
+penalty_factor <- c("1 (no penalty)","0.5", "0.1")
+
+tbl_effectiveness_categories <- as.data.frame(cbind(effectiveness_category, effectiveness_definition, penalty_factor))
+tbl_effectiveness_categories <- tbl_effectiveness_categories %>% rename(Category = effectiveness_category,
+                                                      Definition = effectiveness_definition,
+                                                      `Penalty factor` = penalty_factor)
+
+gt::gt(tbl_effectiveness_categories) %>% 
+                        nba_tbl_theme() %>% 
+                        tab_style(
+                                    style = cell_text(align = "left"),
+                                    locations = cells_body(columns = 2)
+                                  ) %>%
+                        tab_style(
+                                  style = list(
+                                    cell_fill(color = "#D1D3D4")
+                                  ),
+                                locations = cells_column_labels()
+                                      ) %>%
+                        tab_style(
+                                  style = cell_borders(
+                                    sides = c("left", "right"),
+                                    color = NA,
+                                    style = "hidden",
+                                    weight = px(0)
+                                  ),
+                                  locations = cells_column_labels())
+                        
+
+```
+
+### Species targets {#sec-targets}
+
+The SPL indicator uses population targets for species, which is the minimum number of individuals necessary to ensure the long-term persistence of the species. This approach is preferred over area-based targets because population size is most closely correlated with persistence,[@reed2003estimates; @mace2008quantification] while area of habitat and population size are less well correlated due to large variability in species density.[@santini2014incorporating] Individual taxonomic groups use various methods for setting population targets, to accommodate different levels of data availability, as well as the population dynamics and life-history patterns of different species. The methods used to set conservation targets are documented in technical reports referenced on species' [taxon pages](../species/sp.qmd).
+
+## Indicator calculation
+
+### Protection level category {#sec-protection-score}
+
+1.  Each protected area's contribution (C) to the species' conservation target is calculated, according to taxon-specific methods.
+2.  Protected area effectiveness penalty factors (E) are applied where protected areas are rated as fair or poor (C x E).
+3.  The effectiveness-adjusted protected area contributions are summed.
+4.  The species' protection score is calculated as a percentage of the species' conservation target by dividing the summed effectiveness-adjusted protected area contributions by the target.
+5.  The protection score determines the protection level category assigned to the species (@tbl-plcats).
+
+The formula for calculating species *j*'s protection score is therefore as follows:
+
+$$
+S_j = \frac{\displaystyle\sum_{i=1}^n C_i \cdot E_i}{T_j} \cdot 100
+$$ Where
+
+-   S~*j*~ is the protection score of species *j*
+-   C~*i*~ is the contribution of protected area *i* to species *j*'s conservation target
+-   E~*i*~ is the species-specific effectiveness penalty factor for protected area *i*
+-   T~*j*~ is the conservation target of species *j*
+
+### Species Protection Index {#sec-spi}
+
+The SPI is calculated by applying a weight to each protection level category (@tbl-plcats). Category weights are then combined into an index score similar to the calculation of the Red List Index.[@baillie2008toward] The index is calculated for individual time points in an assessment, to provide a time series indicating trends in species protection over time.
+
+The formula for calculating the SPI for a time point *t* is as follows:
+
+$$
+SPI_t = 1 - \frac{\displaystyle\sum_s W_{c(t,s)}}{W_{NP} \cdot N}
+$$
+
+where:
+
+-   W~*c(t,s)*~ is the weight for protection category *c* at time *t* for species *s*
+-   W~*NP*~ is the weight for the Not Protected category
+-   N is the number of species assessed
+
+This formula returns a value between 0 and 1, where 0 means all species are Not Protected and 1 means all species are Well Protected. The index value changes when species protection is improved or deteriorates enough to cross a protection level category threshold. Improvements can be achieved either through protected area expansion, or improvements in protected area effectiveness. However, improving protection for species that are already Well Protected makes no difference to the index. The index value decreases when protected areas are deproclaimed or when protected area effectiveness decline.

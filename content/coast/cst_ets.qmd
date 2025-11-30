@@ -154,7 +154,7 @@ For NBA 2025, the RLE framework was applied across all realms, and the results a
 
 The South African coast is proportionately more threatened than the rest of the country (entire non-coastal territory combined, @fig-etsgraph, @tbl-etsnumbers). In fact, the coast (`r percent_types(cet_thr_n, cet_n)`% threatened ecosystem types) proportionately has `r astext(c_nc_prop_thr_n)` times more threatened ecosystem types than the rest of the country (`r round(ncet_thr_n/ncet_n*100)`%), which is proportionately `r astext(c_nc_prop_thr_e)` times more by extent (coastal: `r percent_extent(ets, "thr", "coast")`%, non-coastal: `r round(nc_thr_e/nc_e*100)`%). Areas where threatened ecosystem types are concentrated are around the Orange River mouth, through most of the Western Cape, in St Francis and Algoa bays, and along virtually the entire East Coast (@fig-etsmap).
 
-![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map.png){#fig-etsmap fig-align="center"}
+![Coastal ecosystem threat status, 2025.](imgs/cst_ets_map_new2.png){#fig-etsmap fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem threat status of coastal ecosystem types by (A) number of types and (B) extent of types"

@@ -74,7 +74,6 @@ image: "./imgs/Sungazer Lizard.png"
 </style>
 ```
 
-
 *South Africa has rich diversity of terrestrial species. Current estimates indicate that South Africa harbours approximately 6% of the world's vascular plant species; and 7% of bird, 5% of mammal, 3% of reptile and 2% of amphibian species. A lower proportion of terrestrial species (14%) are threatened with extinction in comparison to species that have been assessed for the marine (36%) and freshwater (19%) realms. There has been a marked increase in the risk of extinction for reptiles, birds, mammals and plants since they were last assessed in 2018. Habitat conversion for agriculture remains the primary pressure to terrestrial species. However, the number of species threatened by energy production, mining, climate change, and illegal wildlife trade has increased over the past eight years.*
 
 <center>
@@ -212,6 +211,11 @@ ggpubr::ggarrange(overall, endemic, ncol = 2, labels = c("A", "B"),
 ## Data
 
 ```{r}
+#| label: tbl-1
+#| tbl-cap: "Summary statistics for percentage threatened and endemic terrestrial species, and number of species within each threat category." 
+#| classes: plain
+
+
 #| classes: plain
 library(dplyr)
 library(tidyr)
@@ -447,6 +451,9 @@ endemic_PL <- nba_plot(DF = PLendemic_df,
 ggpubr::ggarrange(indigenous_PL, endemic_PL, ncol = 2, labels = c("A", "B"),
                   font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
+
+##Approach
+NEED TO ADD
 
 ### Recommended citation
 

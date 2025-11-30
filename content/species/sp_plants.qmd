@@ -71,10 +71,6 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-
-#format:
-#  html:
-#    embed-resources: true
 ---
 
 ![*Ixia ebrahimii*, a new *Ixia* species found by the [Custodians of Rare and Endangered Wildflowers (CREW)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/) team. (© Ismail Ebrahim)](./imgs/Ixia%20ebrahimii_cropped.png){fig-align="center"}
