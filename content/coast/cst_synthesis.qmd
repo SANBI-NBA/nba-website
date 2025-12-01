@@ -121,7 +121,7 @@ source(here::here("scripts/cst_supporting-data.R"))
 
 | [`r percent_types(c_epl_n("NP"), cet_n)`%]{.inline-style-not-protected}
 | of `r cet_n` ecosystem types
-| [Not protected]{.inline-style-indicator}
+| [Not Protected]{.inline-style-indicator}
 | 
 
 </center>
@@ -182,6 +182,8 @@ The coast is a relatively small area, but comprises a treasure trove of biodiver
 
 ![Coastal ecological condition, 2025.](imgs/cst_cond-map_new.png){#fig-condmap}
 
+![Coastal ecological condition, 2025.](imgs/cst_cond_map_new2.png)
+
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
 #| label: fig-condgraph
 #| fig-cap: Ecological condition of the ecologically determined coastal zone.
@@ -212,6 +214,8 @@ cst_cond
 **There are `r cet_thr_n` (`r  percent_types(cet_thr_n, cet_n)`%) threatened coastal ecosystem types that comprise `r percent_extent(ets, "thr", "coast")`% of the coastal extent**, compared to `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r astext(c_nc_prop_thr_n)` times the number of threatened ecosystem types and almost an order of magnitude (`r astext(c_nc_prop_thr_e)` times) more threatened area than the rest of the South African mainland territory (@fig-etsmap, @fig-etsgraph). [Read more »](./cst_ets.qmd)
 
 ![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map_new.png){#fig-etsmap fig-align="center"}
+
+![Coastal ecosystem threat status, 2025.](imgs/cst_ets_map_new2.png){fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem threat status of coastal ecosystem types by (a) number of types and (b) extent of types"
@@ -273,7 +277,7 @@ These results are not comparable with the results from the NBA 2018 given the di
 
 **There is good progress in representing coastal ecosystem types in protected areas**, with `r percent_types(c_prot_n, cet_n)`% of 190 coastal ecosystem types now having some level of protection. However, only `r percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types are Well Protected, covering just `r percent_extent(epl, "WP", "coast")`% of the ecologically determined coastal zone (EDCZ), meaning `r 100-percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types covering `r 100-percent_extent(epl, "WP", "coast")`% of the EDCZ are not yet meeting their biodiversity targets for protection (@fig-eplmap, @fig-eplgraph). [Read more »](./cst_epl.qmd)
 
-![Coastal ecosystem protection level, 2025.](imgs/cst_epl-map.png){#fig-eplmap fig-align="center"}
+![Coastal ecosystem protection level, 2025.](imgs/cst_epl_map_new2.png){#fig-eplmap fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem protection level of coastal ecosystem types by (a) number of types and (b) extent of types"
@@ -365,7 +369,7 @@ reactable(
 
 Of the `r cet_thr_n` (of `r cet_n`) threatened coastal ecosystem types (Critically Endangered, Endangered, Vulnerable), `r risky_n` (`r percent_types(risky_n, cet_thr_n)`%) are under-protected (Moderately Protected, Poorly Protected, Not Protected). `r Astext(unlucky_n)` of these are high risk, because they are highly threatened and under-protected (Critically Endangered or Endangered and Poorly Protected or Not Protected) @fig-unlucky. [Read more »](./cst_ets-x-epl.qmd)
 
-![High-risk coastal ecosystem types that are highly threatened and under-protected (CR = Critically Endangered or EN = Endangered, and NP = Not Protected or PP = Poorly Protected).](imgs/cst_unluckies-map.png){#fig-unlucky}
+![High-risk coastal ecosystem types that are highly threatened and under-protected (CR = Critically Endangered or EN = Endangered, and NP = Not Protected or PP = Poorly Protected).](imgs/cst_unluckies_map_new2.png){#fig-unlucky}
 
 To see which specific ecosystem types are highly threatened and under-protected, filter @tbl-ets_epl to the categories indicated in @fig-unlucky.
 

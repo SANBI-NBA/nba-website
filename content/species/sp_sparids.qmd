@@ -488,5 +488,5 @@ nba_citation(meta)
 ## References
 
 ::: {#refs}
-[@SANBI]
+
 :::

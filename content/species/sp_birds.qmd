@@ -82,9 +82,9 @@ google-scholar: true
 image: "./imgs/sp_birds_img_1.png"
 ---
 
-------------------------------------------------------------------------
+![Climate change and habitat loss are two of the main drivers of declines of South Africa's bird species. Now Near Threatened, the Cape rockjumper (*Chaetops frenatus*), epitomises the threats that are faced by endemic and range-restricted bird species of South Africa. (© Krista Oswald)](./imgs/sp_birds_img_1.png){fig-align="center"}
 
-![Climate change and habitat loss are two of the main drivers of declines of South Africa's birds. Now Near Threatened, the Cape rockjumper (*Chaetops frenatus*) imaged here, epitomises the threats that are faced by endemic and range-restricted bird species of South Africa. (© Krista- Oswald)](./imgs/sp_birds_img_1.png){fig-align="center"}
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="33.3%"}
@@ -124,19 +124,19 @@ image: "./imgs/sp_birds_img_1.png"
 
 -   In the current assessment, 728 taxa have been evaluated, and 26 of these species are endemic to South Africa, Eswatini, and Lesotho.
 
--   Nearly 13% (93) of assessed birds are threatened with extinction, with another 7% (54) assessed as Near Threatened.
+-   Nearly 13% (93) of assessed bird species are threatened with extinction, with another 7% (54) assessed as Near Threatened.
 
--   Thirty-four percent (9 out of 26) of South Africa’s endemic birds are threatened with extinction, placing full responsibility for their protection on the Republic of South Africa.
+-   For South Africa’s endemic bird species, 34% (9 out of 26) of are threatened with extinction, placing full responsibility for their protection on the Republic of South Africa.
 
--   While eight species were downlisted, showing some improvement in threat status. Birds are in general becoming increasingly threatened with extinction, with 39 species uplisted to higher threat categories.
+-   Eight species were downlisted, showing some improvement in threat status. Birds are in general becoming increasingly threatened with extinction, with 39 species uplisted to higher threat categories.
 
--   The main pressures driving change in threat status have remained similar to those driving change in the previous assessments, but in this assessment, the plight of waterbirds has been highlighted, with many water birds being uplisted to a higher category of threat.
+-   The main pressures driving change in threat status have remained similar to those driving change in the previous assessments. However, in this assessment, the plight of waterbirds has been highlighted, with many waterbirds being uplisted to a higher category of threat.
 
--   Freshwater health needs improvement to protect these species; however, it will require strong political commitment and resources. Many freshwater species are congregatory and thus vulnerable to disease outbreaks, making protection of key sites and improvement in water quality in these systems essential to slow declines. Urban freshwater systems offer valuable opportunities for citizen-led restoration and monitoring.
+-   Freshwater condition needs improvement to protect these species; however, it will require strong political commitment and resources. Many freshwater species are congregatory and thus vulnerable to disease outbreaks, making protection of key sites and improvement in water quality in these systems essential to slow declines. Urban freshwater systems offer valuable opportunities for citizen-led restoration and monitoring.
 
--   Using a subpopulation method based on proximal protected areas, a large proportion of birds are Well protected within the South African Protected Area Network (86% - 561 species); with only 7% Poorly Protected and in need of intervention to increase their protection level.
+-   Using a subpopulation method based on proximal protected areas, a large proportion of bird species are Well Protected within the South African protected area network (86%, 561 species); with only 7% Poorly Protected and in need of intervention to increase their protection level.
 
--   When protection level is assessed using a Minimum Conservation Population (MCP) approach that incorporates species-specific abundance thresholds, protection levels are far lower: only 10% of Red Listed species are Well Protected, while the vast majority (90%) remain inadequately protected despite occurring within the protected area network.
+-   When protection level is assessed using a Minimum Conservation Population (MCP) approach that incorporates species-specific abundance thresholds, protection levels are far lower: only 10% of assessed species are Well Protected, while the vast majority (90%) remain inadequately protected despite occurring within the protected area network.
 
 ```{r}
 #| label: fig-1
@@ -147,9 +147,9 @@ knitr::include_graphics("./imgs/birds_thrt_10km_HD.png")
 
 ## Threat status
 
-South Africa, Lesotho, and Eswatini host a rich assemblage of bird species, many of which are endemic and have drawn global conservation interest. The region has a long history of publishing lists of threatened bird species, with Red Data Books published in 1976, 1984, 2000, and most recently in 2015, when 132 species were listed with an IUCN threat category greater than Least Concern. Given growing evidence of shifting population trends and continued anthropogenic pressures reshaping habitats, an updated Regional Red List assessment was conducted by BirdLife South Africa from late 2021 to early 2025, with contributions from 138 species experts ([see approach section below for further details on how the assessment was conducted](#Approach)).
+South Africa, Lesotho, and Eswatini host a rich assemblage of bird species, many of which are endemic and have drawn global conservation interest. The region has a long history of publishing lists of threatened bird species, with Red Data Books published in 1976, 1984, 2000 and most recently in [2025](https://www.birdlife.org.za/red-data-book/), when 132 species were listed with an IUCN threat category greater than Least Concern. Given growing evidence of shifting population trends and continued anthropogenic pressures reshaping habitats, an updated Regional Red List assessment was conducted by BirdLife South Africa from late 2021 to early 2025, with contributions from 138 species experts ([see approach section below for further details on how the assessment was conducted](#Approach)).
 
-Nearly 13% (93) of assessed birds are threatened with extinction, with another 7% (54) assessed as Near Threatened. Thirty-four percent (9 out of 26) of South Africa’s endemic birds are threatened with extinction (@fig-2).
+Nearly 13% (93) of assessed bird species are threatened with extinction, with another 7% (54) assessed as Near Threatened. Of South Africa’s endemic bird species, 34% (9 out of 26) are threatened with extinction (@fig-2).
 
 A total of 25 species were uplisted from LC or Not Evaluated to higher threat categories due to deterioration in status. Most of these (n = 16) were waterbirds, followed by terrestrial (n = 6), seabirds (n = 2) and a raptor species (n = 1).
 
@@ -160,7 +160,7 @@ A total of 25 species were uplisted from LC or Not Evaluated to higher threat ca
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of 728 South African bird taxa assessed following the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle(A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa assessed is shown in the inner circle." 
+#| fig-cap: "Threat status of 728 South African bird taxa assessed following the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle (A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa assessed is shown inside the circles." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -382,27 +382,27 @@ gt(dat_combined_final) %>%
 ::::
 
 ::::: {#box-1 .callout-note .species title="Box 1. Conservation success story: the White-winged Flufftail (*Sarothrura ayresi*) " collapse="true"}
-The White-winged flufftail is one of Africa’s rarest and most threatened waterbirds, with breeding confirmed only in South Africa and Ethiopia. Previously listed as Critically Endangered (CR), the species was downlisted to Endangered (EN) in South Africa in 2025. This change reflects not a reduction in threats, but a better scientific understanding of its distribution and population size, accompanied by significant conservation success in safeguarding its specialised wetland habitat.
+The white-winged flufftail (*Sarotheura ayresi*) is one of Africa’s rarest and most threatened waterbirds, with breeding confirmed only in South Africa and Ethiopia. Previously listed as Critically Endangered (CR), the species was downlisted to Endangered (EN) in South Africa in 2025. This change does not reflect a reduction in pressures, rather a better scientific understanding of its distribution and population size, accompanied by significant conservation success in safeguarding its specialised wetland habitat.
 
-Since 2020, BirdLife South Africa’s Wetland and White-winged flufftail Conservation Project has spearheaded efforts to conserve high-elevation wetlands, the species’ breeding habitat during the wet season. The project vision is to maintain and improve the quality and quantity of these wetlands to support threatened species and secure ecosystem services for local communities. The approach integrates management, restoration, protection, stewardship, advocacy, awareness, and research using the White-winged flufftail as a flagship species for wetland conservation.
+Since 2020, BirdLife South Africa’s Wetland and White-winged Flufftail Conservation Project has spearheaded efforts to conserve high-elevation wetlands, the species’ breeding habitat during the wet season. The project vision is to maintain and improve the quality and quantity of these wetlands to support threatened species and secure ecosystem services for local communities. The approach integrates management, restoration, protection, stewardship, advocacy, awareness, and research using the white-winged flufftail as a flagship species for wetland conservation.
 
 Key achievements include:
 
--   Management & restoration: Publication of Best Practice Guidelines for High-Elevation Wetland and Peatland Management in Southern Africa in multiple local languages, bridging the gap between scientific research and land users responsible for stewarding wetlands.
+-   Management & restoration: publication of Best Practice Guidelines for High-Elevation Wetland and Peatland Management in Southern Africa in multiple local languages, bridging the gap between scientific research and land users responsible for stewarding wetlands.
 
--   Protection & stewardship: Declaration of Middelpunt Nature Reserve (527 ha) and designation as a Ramsar Site, expansion of the Greater Lakenvlei Protected Environment (21,400 ha), and new stewardship agreements in Mpumalanga and KwaZulu-Natal to conserve biodiversity alongside daily land-use activities.
+-   Protection & stewardship: declaration of Middelpunt Nature Reserve (527 ha) and designation as a Ramsar Site, expansion of the Greater Lakenvlei Protected Environment (21 400 ha), and new stewardship agreements in Mpumalanga and KwaZulu-Natal to conserve biodiversity alongside daily land-use activities.
 
--   Community engagement: Establishment of the Steenkampsberg Birding Routes and employment of a community bird guide at Ntsikeni Nature Reserve to promote eco-tourism and local custodianship through financial incentives.
+-   Community engagement: establishment of the Steenkampsberg Birding Routes and employment of a community bird guide at Ntsikeni Nature Reserve to promote eco-tourism and local custodianship through financial incentives.
 
--   Policy & advocacy: Publication of surveying and mitigation guidelines for environmental impact assessments of developments within the bird’s distributional range, endorsed by the Department of Forestry, Fisheries and the Environment.
+-   Policy & advocacy: publication of surveying and mitigation guidelines for environmental impact assessments of developments within the species' distributional range, endorsed by the Department of Forestry, Fisheries and the Environment.
 
--   Awareness: Publication of two children’s books (and audiobooks) for different age groups and raising awareness among children and adults during the annual Flufftail Festival hosted on World Wetlands Day.
+-   Awareness: publication of two children’s books (and audiobooks) for different age groups and raising awareness among children and adults during the annual Flufftail Festival hosted on World Wetlands Day.
 
--   Research: Dedicated surveys using passive monitoring equipment provided the first empirical population estimate of \~900 breeding pairs (1,800 mature individuals) across just 20 km² of suitable habitat in South Africa.
+-   Research: dedicated surveys using passive monitoring equipment provided the first empirical population estimate of \~900 breeding pairs (1 800 mature individuals) across just 20 km² of suitable habitat in South Africa.
 
-These collective efforts, underpinned by partnerships with government, landowners, NGOs, universities, and international agreements (e.g., [AEWA](https://www.unep-aewa.org/) and [CMS](https://www.cms.int/species/appendix-i-ii-cms)), directly informed the 2025 [IUCN Regional Red List assessment for the White winged Flufftail](https://www.birdlife.org.za/red-list/white-winged-flufftail/). The protection level for the species has changed from “Not Protected” to “Poorly Protected” thanks to the declaration of key protected areas. The White-winged flufftail now qualifies as Endangered under criterion B2ab(iii), highlighting both its precarious status and the tangible conservation gains achieved through science-based collaborative action.
+These collective efforts, underpinned by partnerships with government, landowners, NGOs, universities, and international agreements (e.g., [AEWA](https://www.unep-aewa.org/) and [CMS](https://www.cms.int/species/appendix-i-ii-cms)), directly informed the 2025 [IUCN Regional Red List assessment for the white winged flufftail](https://www.birdlife.org.za/red-list/white-winged-flufftail/). The protection level for the species has changed from “Not Protected” to “Poorly Protected” thanks to the declaration of key protected areas. The white-winged flufftail now qualifies as Endangered under criterion B2ab(iii), highlighting both its precarious status and the tangible conservation gains achieved through science-based collaborative action.
 
-By using the White-winged flufftail as a flagship species for wetland conservation, conservationists have not only improved prospects for one of Africa’s most elusive birds, but also safeguarded critical wetlands that sustain biodiversity and provide water resources for many downstream communities.
+By using the white-winged flufftail as a flagship species for wetland conservation, conservationists have not only improved prospects for one of Africa’s most elusive birds, but also safeguarded critical wetlands that sustain biodiversity and provide water resources for many downstream communities.
 
 ::: {style="display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:0"}
 <img src="./imgs/sp_birds_img_2.png" style="width:49%; height:250px; object-fit:cover; border-radius:10px;"/> <img src="./imgs/sp_birds_img_3.png" style="width:49%; height:250px; object-fit:cover; border-radius:10px"/>
@@ -413,18 +413,18 @@ White-winged flufftail, landing (left), while monitoring is taking place in its 
 :::
 :::::
 
-## Trends - Red List Index
+## Trends – the Red List Index
 
-The trend in species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs) [@butchart2004a]. The RLIs are calculated based on genuine changes in Red List categories over time. The RLIs value ranges from 0 to 1, and the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are extinct. The Red List Index of birds was calculated for all taxa that have been reassessed (n = 729).
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI) [@butchart2004a]. The RLI is calculated based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The slope of the line indicates the rate at which species are becoming more threatened over time. The Red List Index of birds was calculated for all taxa that have been reassessed (n = 729).
 
-Through calculating the RLI, it was found that many species have shifted in their threat levels over the last decade. Results indicate that the average RLI score across 729 species decreased between 2015 and 2025, evidence that the overall extinction risk has worsened. 147 species had a threat status higher than Least Concern for 2025. Although 131 species showed no change in status, 39 deteriorated (moving into higher risk categories) and 8 improved. The analysis highlights that habitat degradation, invasive species, powerline collisions, climate change, and fisheries impacts remain pressing conservation issues. These pressures are not concentrated in only certain parts of South Africa but are spread quite widely across the country (@fig-4). Targeting these threats is essential, especially for species newly classified as Vulnerable or Endangered.
+Through calculating the RLI, it was found that many species have shifted in their threat levels over the last decade. Results indicate that the average RLI score across 729 species decreased between 2015 and 2025, evidence that the overall extinction risk has worsened. A total of 147 species had a threat status higher than Least Concern for 2025. Although 131 species showed no change in status, 39 deteriorated (moving into higher risk categories) and 8 improved. The analysis highlights that habitat degradation, invasive species, powerline collisions, climate change, and fisheries impacts remain pressing conservation issues. These pressures are not concentrated in only certain parts of South Africa, they are spread quite widely across the country (@fig-4). Targeting these pressures is essential, especially for species newly classified as Vulnerable or Endangered.
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
+#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
 
 library(tidyverse)
 library(nbaR)
@@ -543,17 +543,15 @@ knitr::include_graphics("./imgs/birds_in_10km_HD.png")
 
 ## Pressures
 
-This assessment identifies agriculture as the dominant threat to South African birds, representing 63% of cumulative pressure—nearly double the impact of natural system modifications at 43%. The agriculture category encompasses three critical sub-pressures: wood and pulp plantations contributing 24%, annual and perennial non-timber crops at 23%, and livestock farming at 16%. These findings reflect South Africa's extensive agricultural transformation, particularly in grassland and fynbos biomes. Grassland species such as Botha's (*Spizocorys fringillaris*) and Rudd's larks (*Heteromirafra ruddi*), blue swallow (*Hirundo atrocaerulea*), African grass owl (*Tyto capensis*) and Denham's bustard (*Neotis denhami*) are under extreme pressure with declining populations, while plantations similarly affect forest species such as Cape parrot (*Poicephalus robustus*) (@fig-5).
+This assessment identifies agriculture as the dominant pressure on South African birds, representing 63% of cumulative pressure – nearly double the impact of natural system modifications at 43%. The agriculture category encompasses three critical sub-pressures: wood and pulp plantations contributing 24%, annual and perennial non-timber crops at 23%, and livestock farming at 16%. These findings reflect South Africa's agricultural transformation, particularly in grassland and fynbos biomes. Grassland species such as Botha's (*Spizocorys fringillaris*) and Rudd's larks (*Heteromirafra ruddi*), blue swallow (*Hirundo atrocaerulea*), African grass owl (*Tyto capensis*) and Denham's bustard (*Neotis denhami*) are under extreme pressure with declining populations, while plantations similarly affect forest species such as Cape parrot (*Poicephalus robustus*) (@fig-5).
 
-Botha’s lark (*Spizocorys fringillaris*) and lappet-faced vulture (*Torgos tracheliotos*) were uplisted to Critically Endangered (CR). Their key threats, habitat loss and poisoning respectively, are well understood, and urgent conservation action is essential to prevent their extinction.
+Botha’s lark (*Spizocorys fringillaris*) and lappet-faced vulture (*Torgos tracheliotos*) were uplisted to Critically Endangered (CR). Their primary pressures, habitat loss and poisoning respectively, are well understood, and urgent conservation action is essential to prevent their extinction.
 
-Natural system modifications, the second-largest threat, primarily involve ecosystem alterations and fire suppression regimes that disrupt natural habitat dynamics.
-
-Waterbirds are particularly vulnerable to natural system modification (@fig-5), in addition to pollution of wetlands and waterways, with mangrove kingfisher (*Halcyon senegaloides*) being a notable example of a species undergoing declines. The decline of waterbirds not previously considered threatened is particularly concerning, though unsurprising given the poor state of [freshwater habitats](../freshwater/fw_overview.qmd). These habitats are highly vulnerable to pollution, invasive species, siltation, and extreme weather. Improving freshwater health will require significant political will and resources. Freshwater species also face added risks because many are congregatory, making them prone to disease outbreaks. Greater protection of key sites is needed to prevent accelerated declines, while urban freshwater systems present opportunities for citizen-led restoration and monitoring.
+Natural system modifications, the second-largest pressure, primarily involves ecosystem alterations and fire suppression regimes that disrupt natural habitat dynamics. Waterbirds are particularly vulnerable to natural system modification (@fig-5), in addition to pollution of wetlands and waterways, with mangrove kingfisher (*Halcyon senegaloides*) being a notable example of a species undergoing declines. The decline of waterbirds not previously considered threatened is particularly concerning, though unsurprising given the poor state of [freshwater habitats](../freshwater/fw_overview.qmd). These habitats are highly vulnerable to pollution, invasive species, siltation, and extreme weather. Improving freshwater health will require significant political will and resources. Freshwater species also face added risks because many are congregatory, making them prone to disease outbreaks. Better management of key sites is needed to prevent accelerated declines, while urban freshwater systems present opportunities for citizen-led restoration and monitoring.
 
 Climate change emerges as the third major pressure at 30%, driven predominantly by habitat shifting and alteration as species distributions respond to changing climatic conditions.
 
-Notably, biological resource use—primarily hunting and collecting terrestrial animals—accounts for 24% of pressure, while human development pressures including residential and transportation infrastructure collectively represent 28% of threats. The data aggregation reveals that while individual sub-pressures may appear manageable, their cumulative impact within broader pressure categories creates substantial conservation challenges requiring integrated landscape-scale management approaches. Scavenging birds such as vultures and tawny eagle (*Aquila rapax*) are experiencing rapid declines due to poisoning and persecution (@fig-5).
+Notably, biological resource use – primarily hunting and collecting terrestrial animals – accounts for 24% of pressures, while human development pressures including residential and transportation infrastructure collectively represent 28%. The data aggregation reveals that while individual sub-pressures may appear manageable, their cumulative impact within broader pressure categories creates substantial conservation challenges requiring integrated landscape-scale management approaches. Scavenging birds such as vultures and tawny eagle (*Aquila rapax*) are experiencing rapid declines due to poisoning and persecution (@fig-5).
 
 ```{r}
 #| label: fig-5
@@ -581,43 +579,43 @@ p + scale_x_discrete(
 
 ```
 
-::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s Lark (*Spizocorys fringillaris*)." collapse="true"}
-Botha’s lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be left [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
+::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s lark (*Spizocorys fringillaris*)" collapse="true"}
+Botha’s lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be remaining [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
 
-Recent field surveys, modelling of preferred habitat extent, and SABAP2 data trends confirm alarming range contractions, including the near disappearance of the species from its former northern and southern distribution limits. The few remaining strongholds, such as the Wakkerstroom–Daggakraal region, are under increasing pressure from maize farming, pasture improvement, and invasive alien plants. Habitat fragmentation further isolates subpopulations, limiting dispersal and increasing extinction risk.
+Recent field surveys, modelling of preferred habitat extent, and [SABAP2](https://sabap2.birdmap.africa/) data trends confirm alarming range contractions, including the near disappearance of the species from its former northern and southern distribution limits. The few remaining strongholds, such as the Wakkerstroom–Daggakraal region, are under increasing pressure from maize farming, pasture improvement, and invasive alien plants. Habitat fragmentation further isolates subpopulations, limiting dispersal and increasing extinction risk.
 
-Botha’s lark exemplifies the broader crisis facing South Africa’s sourveld and highland grasslands, ecosystems that provide critical ecosystem services such as water regulation and carbon storage but remain among the most poorly protected biomes. A range of other threatened species call these areas home, including Rudd’s lark (*Heteromirafra ruddi*) and yellow-breasted pipit (*Anthus chloris*).
+Botha’s lark exemplifies the broader crisis facing South Africa’s sourveld and highland grasslands, ecosystems that provide essential ecosystem services such as water regulation and carbon storage but remain among the most poorly protected ecosystem types. A range of other threatened species call these areas home, including Rudd’s lark (*Heteromirafra ruddi*) and yellow-breasted pipit (*Anthus chloris*).
 
 <center>![](./imgs/sp_birds_img_4.png){style="border-radius:10px"}[Botha’s lark (*Spizocorys fringillaris*) on its breeding grounds in the high altitude grasslands of Wakkerstroom, Mpumalanga. (© David Ehlers Smith)]{style="width:75%; color:#626262;"}</center>
 
-Unfortunately, most of the Botha’s Lark habitat falls outside of formally protected areas. Conservation responses have included stewardship agreements with private landowners, community outreach, and exploration of targeted habitat restoration. However, without urgent expansion of formal protection and sustainable land-use practices, this iconic species faces imminent extinction.
+Unfortunately, most of the Botha’s Lark habitat falls outside of formally protected areas. Conservation responses have included stewardship agreements with private landowners, community outreach, and exploration of targeted habitat restoration. However, without urgent expansion of formal protection and sustainable landuse practices, this iconic species faces imminent extinction.
 
 See full assessment details here - <https://www.birdlife.org.za/red-list/bothas-lark/>
 :::
 
-::: {#box-3 .callout-note .species title="Box 3. Poisoning crisis: Africa’s vultures on the brink." collapse="true"}
-<center>![](./imgs/sp_birds_img_5.png){style="border-radius:10px"}[African white backed vulture (*Gyps africanus*). Mass poisoning event of African white backed vultures in Zululand, KwaZulu-Natal. (© Chris Kelly)]{style="width:75%; color:#626262;"}</center>
+::: {#box-3 .callout-note .species title="Box 3. Poisoning crisis: Africa’s vultures on the brink" collapse="true"}
+![](./imgs/sp_birds_img_5.png){style="border-radius:10px"}[Mass poisoning event of African white backed vulture (*Gyps africanus*) in Zululand, KwaZulu-Natal. (© Chris Kelly)]{style="width:100%; color:#626262;"}
 
-Poisoning is the single greatest driver of vulture declines across Africa. In southern Africa and beyond, almost all scavenging vulture species are now listed as Critically Endangered: White-headed (*Trigonoceps occipitalis*), hooded (*Necrosyrtes monachus*), white-backed (*Gyps africanus*), bearded (*Gypaetus barbatus*), and lappet-faced (*Torgos tracheliotos*) vultures. Only the Cape vulture (*Gyps coprotheres*), which breeds in colonies and has benefited from decades of conservation action, and the palm-nut vulture (*Gypohierax angolensis*), with its specialised diet of raffia palm fruit and aquatic prey, are not considered Critically Endangered.
+Poisoning is the single greatest driver of vulture declines across Africa. In southern Africa and beyond, almost all scavenging vulture species are now listed as Critically Endangered: white-headed (*Trigonoceps occipitalis*), hooded (*Necrosyrtes monachus*), white-backed (*Gyps africanus*), bearded (*Gypaetus barbatus*), and lappet-faced (*Torgos tracheliotos*) vultures. Only the Cape vulture (*Gyps coprotheres*), which breeds in colonies and has benefited from decades of conservation action, and the palm-nut vulture (*Gypohierax angolensis*), with its specialised diet of raffia palm fruit and aquatic prey, are not considered Critically Endangered.
 
-Among the most devastating practices is **sentinel poisoning**, where poachers deliberately lace carcasses with toxic substances to eliminate vultures that might otherwise reveal illegal activities by circling above a kill. These events can wipe out hundreds of individuals in a single incident, erasing decades of conservation progress in a matter of hours.
+Among the most devastating practices is **sentinel poisoning**, where poachers deliberately lace carcasses with toxic substances to eliminate vultures that might otherwise reveal illegal activities by circling above a kill. These events can wipe out hundreds of individuals in a single incident, impacting decades of conservation efforts.
 
 Vultures are also highly vulnerable to **secondary poisoning**. In many rural areas, carcasses are baited with pesticides or poisons to target carnivores such as jackals, caracals, and lions. When vultures descend to feed, they are killed unintentionally in large numbers. Because these birds forage communally, even one poisoned carcass can have catastrophic consequences.
 
-Other sources of poisoning continue to exacerbate the crisis. Veterinary drugs (e.g. Diclofenic) used to treat livestock can remain in carcasses and are toxic to scavengers. Lead poisoning from ammunition fragments in carcasses has been detected in several vulture populations. Even contaminated water sources pose risks in areas where agricultural chemicals are poorly regulated. Collectively, these threats undermine not only vulture populations but also the ecological role they fulfil.
+Other sources of poisoning continue to exacerbate the crisis. Veterinary drugs (e.g., Diclofenac) used to treat livestock can remain in carcasses and are toxic to scavengers. Lead poisoning from ammunition fragments in carcasses has been detected in several vulture populations. Even contaminated water sources pose risks in areas where agricultural chemicals are poorly regulated. Collectively, these threats undermine not only vulture populations but also the ecological role they fulfil.
 
 The decline of vultures has far-reaching consequences for ecosystems and people. As nature’s clean-up crew, vultures rapidly dispose of carcasses, helping to prevent the spread of diseases such as anthrax and rabies. Their disappearance risks creating a dangerous vacuum in which carcasses linger, promoting outbreaks that threaten wildlife, livestock, and human health alike.
 
-Recognising the urgency of this crisis, governments and conservation organisations have developed targeted responses. The International Vulture Multi-species Action Plan [@botha2017a] and the South African Multi-species [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] both identify poisoning as the top conservation priority. Actions include phasing out the most dangerous agrochemicals, raising awareness among farming and hunting communities, tracking individual vultures, and deploying rapid-response poison intervention units. One striking example of the latter occurred in May 2025 in Kruger National Park, when the Endangered Wildlife Trust and SANParks mounted a large-scale rescue after an elephant carcass was poisoned, managing to save more than 80 vultures through rapid detection, treatment, and rehabilitation. Such coordinated responses are vital, yet prevention remains the ultimate goal.
+Recognising the urgency of this crisis, governments and conservation organisations have developed targeted responses. The International Vulture Multi-species Action Plan [@botha2017a] and the South African Multi-species [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] both identify poisoning as the top conservation priority. Actions include phasing out the most dangerous agrochemicals, raising awareness among farming and hunting communities, tracking individual vultures, and deploying rapid-response poison intervention units. One striking example of the latter occurred in May 2025 in Kruger National Park, when the Endangered Wildlife Trust and SANParks mounted a large-scale rescue after an elephant carcass was poisoned, managing to save more than 80 vultures through rapid detection, treatment and rehabilitation. Such coordinated responses are vital, yet prevention remains the ultimate goal.
 
-Despite these efforts, numbers of Lappet-faced and other vultures continue to decline. They are wide-ranging and require engagement and action across many countries. If poisoning is not urgently and decisively addressed, southern Africa risks losing much of its vulture guild within a single human generation, with profound ecological and social consequences.
+Despite these efforts, numbers of lappet-faced and other vultures continue to decline. They are wide-ranging and require engagement and action across many countries. If poisoning is not urgently and decisively addressed, southern Africa risks losing much of its vulture guild within a single human generation, with profound ecological and social consequences.
 :::
 
 ## Protection level
 
-To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 667 terrestrial bird species, and a population-based method applied to 130 Red List species with available abundance estimates ([see approach below](#Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as “Well Protected” in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the study on measuring protection effectiveness for terrestrial bird species in protected areas and OECMs in South Africa [@retief2017a]. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
+To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 667 terrestrial bird species, and a population-based method applied to 130 Red List species with available abundance estimates ([see approach below](#Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as Well Protected in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the study on measuring protection effectiveness for terrestrial bird species in protected areas and OECMs in South Africa [@retief2017a]. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
 
-The population-based analysis paints a more sobering picture, revealing that only 10% of threatened species meet minimum viable population thresholds inside protected areas. However, there was a positive movement to improved category status from 2017 to 2025: 123 of the 130 red list species did not reach the ‘well protected’ category in 2017, compared to 117 for 2025, representing an improvement of 4.6%. Together, these results highlight both the conservation value of South Africa’s protected areas and the gaps that remain, particularly for threatened, range-restricted and habitat-dependent species that require targeted expansion and improved management of the network [@lee2025a].
+The population-based analysis paints a more sobering picture, revealing that only 10% of threatened species meet minimum viable population thresholds inside protected areas. However, there was a positive movement to improved category status from 2017 to 2025: 123 of the 130 Red List species did not reach the Well Protected category in 2017, compared to 117 for 2025, representing an improvement of 4.6%. Together, these results highlight both the conservation value of South Africa’s protected areas and the gaps that remain, particularly for threatened, range-restricted and habitat-dependent species that require targeted expansion and improved management of the network [@lee2025a].
 
 ```{r}
 #| label: fig-6
@@ -698,7 +696,7 @@ combined_plot
 
 ```{r}
 #| label: fig-7
-#| fig-cap: "The overall protection level of bird species varies dramatically depending on the assessment method used as well as sets of species used. The analysis shown here is based on a subset of only 130 species that have detailed population data available assessed during the 2025 Red Listing process, it shows the difference between using a population-based target (number of mature individuals) versus a subpopulation based target.  ‘Subpopulations’ represents populations in connected protected area clusters, see the study on measuring protection effectiveness for terrestrial bird species in protected areas in South Africa [@lee2025a] for details on the two methods."
+#| fig-cap: "The overall protection level of bird species varies dramatically depending on the assessment method used as well as sets of species used. The analysis shown here is based on a subset of only 130 species that have detailed population data available assessed during the 2025 red listing process, it shows the difference between using a population-based target (number of mature individuals) versus a subpopulation based target.  ‘Subpopulations’ represents populations in connected protected area clusters, see the study on measuring protection effectiveness for terrestrial bird species in protected areas in South Africa [@lee2025a] for details on the two methods."
 #| fig-align: center
 #| out.width: 100%
 
@@ -772,25 +770,23 @@ ggplot(df_long, aes(
 
 ```
 
-<center>
-
 ![The endemic, range-restricted and Vulnerable red lark (*Calendulauda burra*) is an example of a species receiving marginal benefit from the Protected Area Network in 2017. However, with the advent of the declaration of Meerkat National Park, the number of pentads under the Protected Area Network rose from five to 28. (© David Ehlers Smith)](./imgs/sp_birds_img_6.png){fig-align="center"}
-
-</center>
 
 ## Species recovery
 
-Despite South Africa’s extensive protected area network, many bird species remain at high risk of extinction because they face pressures that persist even when habitat is nominally safeguarded. Large birds, including vultures and storks, are prime examples. Recovery interventions are therefore critical to prevent imminent extinctions and to reverse long-term declines. Birds requiring recovery action tend to fall into three groups: (1) highly range-restricted endemics whose tiny populations are declining faster than habitat loss alone can explain; (2) species exposed to direct anthropogenic pressures such as poisoning, fisheries interactions, or collisions with energy infrastructure; and (3) island or seabird populations threatened by invasive predators at breeding sites.
+Despite South Africa’s extensive protected area network, many bird species remain at high risk of extinction because they face pressures that persist even when habitat is nominally safeguarded. Large birds, including vultures and storks, are prime examples. Recovery interventions are therefore essential to prevent imminent extinctions and to reverse long-term declines. Birds requiring recovery action tend to fall into three groups: (1) highly range-restricted endemics whose tiny populations are declining faster than habitat loss alone can explain; (2) species exposed to direct anthropogenic pressures such as poisoning, fisheries interactions, or collisions with energy infrastructure; and (3) island or seabird populations threatened by invasive predators at breeding sites.
 
-Priority areas for bird recovery are guided by the 2025 Red List assessments and subsequent expert consultations. These processes identified species whose continued declines are unlikely to be halted by protected area coverage alone, and which therefore require targeted interventions. While the expansion of protected and conserved areas under [Global Biodiversity Framework (GBF) Target 3](https://www.cbd.int/gbf/targets/3) is essential, recovery planning shows that protection alone is insufficient unless paired with targeted species-focused measures. Where published prioritization exists, such as the [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] or the [Mouse-Free Marion Project](https://mousefreemarion.org/) plans, these form the basis for coordinated action. In other cases, BirdLife South Africa and partners use a combination of Red List urgency, ecological feasibility, and opportunity for partnerships with landowners or government to determine priorities.
+Priority areas for bird recovery are guided by the 2025 Red List assessments and subsequent expert consultations. These processes identified species whose continued declines are unlikely to be halted by protected area coverage alone, and which therefore require targeted interventions. While the expansion of protected and conserved areas under [Global Biodiversity Framework (GBF) Target 3](https://www.cbd.int/gbf/targets/3) is essential, recovery planning shows that protection alone is insufficient unless paired with targeted species-focused measures. Where published prioritisation exists, such as the [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] or the [Mouse-Free Marion Project](https://mousefreemarion.org/) plans, these form the basis for coordinated action. In other cases, BirdLife South Africa and partners use a combination of Red List urgency, ecological feasibility, and opportunity for partnerships with landowners or government to determine priorities.
 
-Selected active recovery projects are highlighted below (Table 4). This showcases both the diversity of interventions needed and the scale of resources required. Some species, such as Botha’s lark, require stewardship agreements and changes in land-use practices to secure remnant grassland habitat. Others, such as the Blue Swallow, demand artificial nest-site provisioning and alien clearing in addition to site protection. For marine birds such as the African Penguin, population recovery hinges on fisheries reform, fishery closures around key colonies, and advocacy on threats such as ship-to-ship bunkering.
+Selected active recovery projects are highlighted below (@tbl-3). This showcases both the diversity of interventions needed and the scale of resources required. Some species, such as Botha’s lark, require stewardship agreements and changes in land-use practices to secure remnant grassland habitat. Others, such as the blue swallow, demand artificial nest-site provisioning and alien clearing in addition to site protection. For marine birds such as the African penguin, population recovery hinges on fisheries reform, fishery closures around key colonies, and advocacy on threats such as ship-to-ship bunkering.
 
-Several threatened vultures (White-backed, lappet-faced, Hooded and White-headed vultures) require landscape-scale threat reduction, including poison-response networks, regulation of traditional medicine markets, a change in the hunting culture for a preference for lead-based ammunition, and mitigation of electrocution and collision risks. In contrast, the Bearded Vulture recovery strategy combines in situ action with a long-term ex situ programme [Bearded Vulture Captive Breeding Project](https://4vultures.org/blog/saving-bearded-vultures-in-southern-africa-through-a-captive-breeding-programme/), where harvested eggs are raised in captivity and juveniles reintroduced. Species like the Black Harrier highlight the urgent need for collision mitigation at wind energy facilities, given population viability models showing extreme sensitivity to adult mortality.
+Several threatened vultures (white-backed, lappet-faced, hooded and white-headed vultures) require landscape-scale pressure reduction, including poison-response networks, regulation of traditional medicine markets, a change in the hunting culture preference for lead-based ammunition, and mitigation of electrocution and collision risks. In contrast, the bearded vulture recovery strategy combines in situ action with a long-term ex situ programme [Bearded Vulture Captive Breeding Project](https://4vultures.org/blog/saving-bearded-vultures-in-southern-africa-through-a-captive-breeding-programme/), where harvested eggs are raised in captivity and juveniles reintroduced.
 
-On Marion Island, a suite of seabird species (including albatrosses, petrels, and prions) are threatened by invasive House Mice, which predate on chicks and even adults. Without eradication, local extinctions are predicted within a century. The [Mouse-Free Marion Project](https://mousefreemarion.org/), budgeted at over R560 million, represents the largest single bird recovery initiative underway in southern Africa. See [marine bird page](../species/marine_bird_sp.qmd) for further details.
+Species like the black harrier highlight the urgent need for collision mitigation at wind energy facilities, given population viability models showing extreme sensitivity to adult mortality.
 
-Collectively, these examples illustrate that recovery work is expensive and long-term, with estimated costs for the next five years exceeding R695 million and current funding falling short by hundreds of millions. While interventions are in place for many species, most require upscaling if they are to prevent extinctions. Success will depend on strong partnerships among government, NGOs, researchers, landowners, and local communities, and on mobilising significant new resources to match the scale of the challenge, in alignment with global commitments such as GBF Target 3 (expansion and effective management of protected areas) and GBF Target 4 (halting species extinctions and promoting recovery).
+On Marion Island, a suite of seabird species (including albatrosses, petrels, and prions) are threatened by the invasive house mouse (*Mus musculus*), which predate on chicks and even adults. Without eradication, local extinctions are predicted within a century. The [Mouse-Free Marion Project](#0){style="font-size: 11pt;"}, budgeted at over R560 million, represents the largest single bird recovery initiative underway in southern Africa. See [marine bird page](#0){style="font-size: 11pt;"} for further details.
+
+Collectively, these examples illustrate that recovery work is expensive and long-term, with estimated costs for the next five years exceeding R695 million and current funding falling short by hundreds of millions. While interventions are in place for many species, most require upscaling if they are to prevent extinctions. Success will depend on strong partnerships among government, NGOs, researchers, landowners, and local communities, and on mobilising significant new resources to match the scale of the challenge, in alignment with global commitments such as GBF Target 3 (expansion and effective management of protected areas) and GBF Target 4 (halting species extinctions and promoting recovery).
 
 ```{r}
 #| label: tbl-3
@@ -863,102 +859,43 @@ fn = function(x) x ) %>%
 
 ```
 
-::: {#box-4 .callout-note .species title="Box 4. Recovery efforts for Cape vultures. (*Gyps coprotheres*)" collapse="true"}
-The Cape vulture has suffered severe historical declines due to multiple threats, including poisoning (both intentional and accidental), collisions and electrocutions on powerlines, food shortages, disturbance at colonies, and illegal harvesting for the traditional medicine trade. Once widespread across southern Africa, the species has disappeared from large parts of its former range, and today is largely confined to South Africa, Lesotho, Botswana, and parts of Mozambique.
+::: {#box-4 .callout-note .species title="Box 4. Recovery efforts for Cape vultures (*Gyps coprotheres*)" collapse="true"}
+The Cape vulture (*Gyps coprotheres*) has suffered severe historical declines due to multiple threats, including poisoning (both intentional and accidental), collisions and electrocutions on powerlines, food shortages, disturbance at colonies, and illegal harvesting for the traditional medicine trade. Once widespread across southern Africa, the species has disappeared from large parts of its former range, and today is largely confined to South Africa, Lesotho, Botswana, and parts of Mozambique.
 
-In response, the species has become the focus of intensive conservation action. South African based NGO VulPro, established in 2007, has played a central role in rescue, rehabilitation, and release of injured birds, returning over 600 vultures to the wild and pioneering one of the only dedicated captive-breeding programmes for African vultures. Their facilities in Hartbeespoort and the Eastern Cape also provide a base for research on movement ecology, toxicology, and disease, alongside extensive education and community outreach.
+In response, the species has become the focus of intensive conservation action. South African based NGO VulPro, established in 2007, has played a central role in rescue, rehabilitation, and release of injured birds, returning over 600 vultures to the wild and pioneering dedicated captive-breeding programmes for African vultures (including through working with various partners such as a National Zoological Garden). Their facilities in Hartbeespoort and the Eastern Cape also provide a base for research on movement ecology, toxicology, and disease, alongside extensive education and community outreach.
 
-Complementary initiatives by the Endangered Wildlife Trust (EWT) address systemic threats at both national and continental scales. Through its Vultures for Africa Programme, the EWT has trained more than 6,500 people in 17 African countries to respond to and manage poisoning incidents, produced a multilingual Wildlife Poisoning Response Protocol, and supported the adoption of at least nine national response plans in poisoning hotspots. The organisation also spearheaded \[**International Vulture Awareness Day**\] (https://www.birdlife.org.za/ivad/), now celebrated annually in over 40 countries, as well as long-term tracking and monitoring programmes that have established tagged populations in Mozambique, Zambia, Malawi, Namibia, Botswana and Uganda. At home, EWT leads South Africa’s Wildlife and Energy Programme, marking thousands of kilometres of powerlines in partnership with Eskom, and sits on the National Vulture Task Force and the Lead Task Team addressing poisoning and lead exposure.
+Complementary initiatives by the Endangered Wildlife Trust (EWT) address systemic threats at both national and continental scales. Through its Vultures for Africa Programme, the EWT has trained more than 6 500 people in 17 African countries to respond to and manage poisoning incidents, produced a multilingual Wildlife Poisoning Response Protocol, and supported the adoption of at least nine national response plans in poisoning hotspots. The organisation also spearheaded [International Vulture Awareness Day](https://www.birdlife.org.za/ivad/), now celebrated annually in over 40 countries, as well as long-term tracking and monitoring programmes that have established tagged populations in Mozambique, Zambia, Malawi, Namibia, Botswana and Uganda. At home, EWT leads South Africa’s Wildlife and Energy Programme, marking thousands of kilometres of powerlines in partnership with Eskom, and sits on the National Vulture Task Force and the Lead Task Team addressing poisoning and lead exposure.
 
 At the international level, multiple conservation organisations have played a pivotal role in developing and reviewing the Multi-species Action Plan for African–Eurasian Vultures (Vulture MsAP) under the Convention on Migratory Species (CMS). Its 2023–24 mid-term review highlighted the escalating risks of belief-based use, bushmeat-related poisoning, and the collision threats posed by expanding renewable energy infrastructure. These findings underline the urgency of both national and transboundary collaboration to secure vulture populations.
 
-As a result of all the interventions described here, the Cape vulture was downlisted from Endangered (2015) to Vulnerable (2025). Despite these successes, ongoing recovery remains essential. Cape vultures face intensifying threats, particularly from collisions with rapidly expanding wind energy facilities where mitigation measures are not applied, and from increasing demand in the traditional medicine market. Sustained investment in rescue, rehabilitation, population supplementation, and systemic threat reduction (alongside continued political commitment, regional cooperation, and community involvement) will be vital to secure the long-term survival of this species.
+As a result of all the interventions described here, the Cape vulture was downlisted from Endangered (2015) to Vulnerable (2025). Despite these successes, ongoing recovery remains essential. Cape vultures face intensifying threats, particularly from collisions with rapidly expanding wind energy facilities where mitigation measures are not applied, and from increasing demand in the traditional medicine market. Sustained investment in rescue, rehabilitation, population supplementation, and systemic threat reduction, alongside continued political commitment, regional cooperation, and community involvement, will be vital to secure the long-term survival of this species.
 :::
 
 ## Knowledge gaps
 
-While many longstanding pressures on South Africa’s birds are well recognised, a number of emerging threats and uncertainties require urgent research attention.
+While many longstanding pressures on South Africa’s birds are well recognised, a number of emerging threats and uncertainties require urgent research attention. Addressing these gaps will require both targeted research and systematic integration of new pressures into future Red List and protection level assessments. Improved data on novel threats, particularly energy infrastructure, agrochemical exposure, and marine resource exploitation, will strengthen conservation planning and ensure that the National Biodiversity Assessment reflects the full scope of pressures shaping South Africa’s birdlife.
 
-**Agriculture and expansion of croplands continues to be linked to biodiversity loss**, but the dynamics of this have been poorly quantified. For example, the rapid expansion of shaded agriculture, where fruit orchards are increasingly sealed under giant greenhouse structures will likely have negative impacts on avian biodiversity. These prevent access to flowering trees by natural pollinators and may have cascading impacts on terrestrial biodiversity. Parallel to this, agrochemical use has grown substantially, yet its full impact on South African birds and other wildlife is poorly understood. In addition, the spread of novel crops, including genetically modified organisms introduced into new habitats, raises questions about long-term ecosystem impacts.
+**Agriculture and expansion of croplands continues to be linked to biodiversity loss**, however the dynamics of this have been poorly quantified. For example, the rapid expansion of shaded agriculture, where fruit orchards are increasingly sealed under giant greenhouse structures will likely have negative impacts on avian biodiversity. These prevent access to flowering trees by natural pollinators and may have cascading impacts on terrestrial biodiversity. Parallel to this, agrochemical use has grown substantially, yet its full impact on South African birds and other wildlife is poorly understood. In addition, the spread of novel crops, including genetically modified organisms introduced into new habitats, raises questions about long-term ecosystem impacts.
 
-**Climate change represents a cross-cutting pressure whose biodiversity impacts remain poorly quantified at the species level.** Although broad projections suggest range contractions and distribution shifts for many taxa, very few South African birds have been assessed using bespoke best-practice models that integrate climatic, habitat and demographic data. This leaves major uncertainty about which species are most vulnerable, the likely magnitude of impacts, and where conservation interventions should be prioritised. Incorporating climate velocity, dispersal capacity, and habitat quality into future assessments will be critical to identify both high-risk species and potential refugia.
+**Climate change represents a cross-cutting pressure where biodiversity impacts remain poorly quantified at the species level.** Although broad projections suggest range contractions and distribution shifts for many taxa, very few South African birds have been assessed using bespoke best-practice models that integrate climatic, habitat and demographic data. This leaves uncertainty about which species are most vulnerable, the likely magnitude of impacts, and where conservation interventions should be prioritised. Incorporating climate velocity, dispersal capacity, and habitat quality into future assessments will be essential to identify both high-risk species and potential refugia.
 
-**Energy demand is another fast-moving frontier. The growth of cryptocurrency mining and AI technologies is driving global electricity consumption, yet the scale and consequences for South Africa remain largely unquantified.** At the same time, renewable energy developments, particularly the rapid rollout of wind energy projects in Mpumalanga and along the coast, pose escalating risks for birds and bats. Offshore wind is also emerging as a potential future pressure on marine biodiversity.
+**Energy demand is another fast-moving frontier.** The growth of cryptocurrency mining and AI technologies is driving global electricity consumption, yet the scale and consequences for South Africa remain largely unquantified. At the same time, renewable energy developments, particularly the rapid rollout of wind energy projects in Mpumalanga and along the coast, pose escalating risks for birds and bats. Offshore wind energy generation is also emerging as a potential future pressure on marine biodiversity.
 
 **New biological challenges are also evident. The proliferation of novel diseases, often exacerbated by climate change and land-use shifts, poses unknown risks to terrestrial bird populations.** Bush encroachment in the karoo, grasslands and savannas, inappropriate fire regimes, and habitat fragmentation continue to alter habitat quality for specialist species. Illegal ploughing and clearing of natural habitats remain a widespread challenge, often circumventing environmental impact assessments.
 
-**Marine and coastal systems face their own suite of emerging pressures. Sardine stocks remain depleted, yet sardines are a keystone prey resource for seabirds and other predators; current operational management procedures inadequately account for ecosystem needs.** Coastal aquaculture, including reliance on fishmeal and bonemeal inputs, has ecological knock-on effects that are poorly quantified. Sand mining is expanding along the east coast, threatening coastal biodiversity. Meanwhile, ship-to-ship bunkering operations, paused off Algoa Bay but likely to increase elsewhere, introduce additional risks of oil spills, noise pollution, and chronic disturbance in sensitive seabird areas. See more on the [marine bird page](../species/marine_bird_sp.qmd) .
-
-**Addressing these gaps will require both targeted research and systematic integration of new pressures into future Red List and protection level assessments.** Improved data on novel threats, particularly energy infrastructure, agrochemical exposure, and marine resource exploitation, will strengthen conservation planning and ensure that the National Biodiversity Assessment reflects the full scope of pressures shaping South Africa’s birdlife.
-
-## Aknowledgement
-
-::::: {layout-ncol="3"}
-::: right
-## [Coordinated by:]{style="font-size:0.8em;"}
-
-<img src="./imgs/logo_bird_1.png" width="85%"/>
-:::
-
-::: middle
-## [Sponsored by:]{style="font-size:0.8em;"}
-
-<img src="./imgs/logo_bird_2.png" width="85%"/>
-:::
-:::::
-
-```{r}
-#| label: tbl-4
-#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments." 
-#| classes: plain
-
-library(gt)
-
-# Create example data
-data <- data.frame(
-  'Contributor' = c("Hanneline Smit-Robinson", "Chris Kelly"),
-  'Affiliation'  = c("Birdlife South Africa", "Wildlife ACT"))
-
-# Create gt table
-#gt_table <- gt(data)
-
-gt(data) %>% 
-  nba_tbl_theme() %>%
-  tab_options(table.width = pct(100),
-              data_row.padding = px(12)) %>%
-
-  tab_style(style = cell_fill(color = "white"),
-            locations = cells_column_labels(columns = everything())) %>%
-  tab_style(
-    style = cell_borders(
-      sides = c("left", "right"),
-      color = "transparent",
-      weight = px(0)
-    ),
-    locations = cells_column_labels(columns = everything())
-  ) %>%
-  tab_style(
-    style = cell_borders(
-      sides = "bottom",
-      color = "grey", 
-      weight = px(1)
-    ),
-    locations = cells_body(columns = everything())
-  ) 
-
-```
+**Marine and coastal systems face their own suite of emerging pressures.** Sardine stocks remain depleted, yet sardines are a keystone prey resource for seabirds and other predators; current operational management procedures inadequately account for ecosystem needs. Coastal aquaculture, including reliance on fishmeal and bonemeal inputs, has ecological knock-on effects that are poorly quantified. Sand mining is expanding along the coast, threatening coastal biodiversity. Meanwhile, ship-to-ship bunkering operations, paused off Algoa Bay but likely to increase elsewhere, introduce additional risks of oil spills, noise pollution, and chronic disturbance in sensitive seabird areas. See more on the [marine bird page](../species/marine_bird_sp.qmd).
 
 ## Approach {#Approach}
 
-### Threat Status Assessment
+### Threat status assessment
 
-The Regional Conservation Assessment for the birds of South Africa, Lesotho, and Eswatini was conducted by BirdLife South Africa with contributions from 138 species experts. It was initiated in late 2021, and assessments concluded at the start of 2025. This assessment builds upon the 2015 Eskom Red Data Book findings. All of Southern Africa’s non-vagrant species were assessed for signs of decline using citizen science datasets such as [SABAP2](https://sabap2.birdmap.africa/), [CWAC](https://cwac.birdmap.africa/) and [CAR](https://car.birdmap.africa/#:~:text=The%20Coordinated%20Avifaunal%20Roadcount%20(CAR)%20is%20a%20long%2Dterm,habitat%20use%2C%20and%20conservation%20needs.) [@brooks2022a]. Taxon experts conducted assessments, updating assessments conducted in 2015 and conducting new ones for newly identified species ([See Regional Red List of Birds of South Africa, Lesotho and Eswatini here](https://www.birdlife.org.za/red-data-book/)).
+The Regional Conservation Assessment for the birds of South Africa, Lesotho, and Eswatini was conducted by BirdLife South Africa with contributions from 138 species experts. It was initiated in late 2021, and assessments concluded at the start of 2025. This assessment builds upon the 2015 Eskom Red Data Book findings. All of Southern Africa’s non-vagrant species were assessed for signs of decline using citizen science datasets such as [SABAP2](https://sabap2.birdmap.africa/), [CWAC](https://cwac.birdmap.africa/) and [CAR](https://car.birdmap.africa/#:~:text=The%20Coordinated%20Avifaunal%20Roadcount%20(CAR)%20is%20a%20long%2Dterm,habitat%20use%2C%20and%20conservation%20needs.) [@brooks2022a]. Taxon experts conducted assessments, updating assessments conducted in 2015 and conducting new ones for newly identified species ([see Regional Red List of Birds of South Africa, Lesotho and Eswatini here](https://www.birdlife.org.za/red-data-book/)).
 
-Species deemed vagrants or introduced to the assessment region were excluded. At least 5% of a species' global population or distribution needed to fall within the region to qualify for an assessment. We used as a starting point BirdLife South Africa’s Checklist of South Africa’s birds for 2023. This lists 876 species, but 123 were vagrant and 10 introduced. Introduced and vagrant species are not assessed during the Red Listing process, leaving 753 species. The taxonomy followed is that of the [IOC World Bird List](https://www.worldbirdnames.org/new/) [@gill2025a]. During 2023, a focus was on assessing Seabird species, for which there are few public datasets available, and where assessments rely heavily on expert knowledge. In 2023, a comprehensive synthesis of citizen science datasets for terrestrial (including freshwater) bird species was undertaken and these datasets fed the 2024 assessments of terrestrial and freshwater birds [@brooks2022a] [@lee2025a]. The thresholds and methods follow IUCN Global and Regional Red List guidelines and take into account new data on distribution, population trends, and known threats (IUCN Red Listing process summary here).
+Species deemed vagrants or introduced to the assessment region were excluded. At least 5% of a species' global population or distribution needed to fall within the region to qualify for an assessment. We used BirdLife South Africa’s Checklist of South Africa’s birds for 2023 as a starting point. This lists 876 species, but 123 were vagrant and 10 introduced. Introduced and vagrant species are not assessed during the Red Listing process, leaving 753 species. The taxonomy followed is that of the [IOC World Bird List](https://www.worldbirdnames.org/new/) [@gill2025a]. During 2023, a focus was on assessing Seabird species, for which there are few public datasets available, and where assessments rely heavily on expert knowledge. In 2023, a comprehensive synthesis of citizen science datasets for terrestrial (including freshwater) bird species was undertaken and these datasets fed the 2024 assessments of terrestrial and freshwater birds [@brooks2022a] [@lee2025a]. The thresholds and methods follow IUCN Global and Regional Red List guidelines and take into account new data on distribution, population trends, and known threats (IUCN Red Listing process summary here).
 
 ### Protection level assessment
 
-The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a “persistence target” for each species — the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
+The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a persistence target for each species – the level of protection needed to support long-term population survival. Because persistence depends on the area protected and on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
 
 Species are classified into four protection categories:
 
@@ -1031,31 +968,94 @@ gt(df) %>%
   )
 ```
 
-This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses undertaken by **Hilbers et al. (2017)**.
-
 **There are two components included in the protection level assessment:**
 
-1.  Representation in protected areas— quantifies how much of the area of suitable habitat required to support the persistence target within existing protected areas.
+1.  Representation in protected areas – quantifies how much of the area of suitable habitat required to support the persistence target is within existing protected areas.
 
-2.  Protected area effectiveness— adjusts for how well pressures that cause species declines such as invasive species, poaching, inappropriate fire regimes etc are mitigated within protected areas.
+2.  Protected area effectiveness – adjusts for how well pressures that cause species declines (such as invasive species, poaching, inappropriate fire regimes, etc.) are mitigated within protected areas.
 
 **The degree to which protected areas effectively mitigate threats are scored as:**
 
-**Good**, when the protected area is fully effective in protecting the species against major threats;
+-   **Good** when the protected area is fully effective in protecting the species against major pressures;
 
-**Fair** if the protected area provides some mitigation of major threats to species but is not completely effective;
+-   **Fair** if the protected area provides some mitigation of major pressures on species but is not completely effective;
 
-**Poor** if the protected area provides no mitigation of the major threats to the species.
+-   **Poor** if the protected area provides no mitigation of the major pressures on the species.
 
 Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
 
-Protected areas are the backbone of biodiversity conservation in South Africa. To measure protection status, BirdLife South Africa first piloted a species-level Protection Level (PL) metric in 2017, measuring the number of viable bird subpopulations occurring in well-managed protected areas [@retief2017a]. Species occurring in \>20 protected areas were deemed to be well protected. The method was refined for the current National Biodiversity Assessment (NBA) using improved spatial data, updated land-cover information, and a cluster-based definition of subpopulations, with \>10 subpopulations required in protected area clusters. This framework allows a systematic comparison between 2017 and 2025, providing an evidence-based measure of how effectively the protected area network supports the long-term persistence of South Africa’s avifauna [@lee2025a].
+Protected areas are the backbone of biodiversity conservation in South Africa. To measure protection status, BirdLife South Africa first piloted a species-level Protection Level (PL) metric in 2017, measuring the number of viable bird subpopulations occurring in well-managed protected areas [@retief2017a]. Species occurring in \>20 protected areas were deemed to be well protected. The method was refined for the current National Biodiversity Assessment using improved spatial data, updated land-cover information, and a cluster-based definition of subpopulations, with \>10 subpopulations required in protected area clusters. This framework allows a systematic comparison between 2017 and 2025, providing an evidence-based measure of how effectively the protected area network supports the long-term persistence of South Africa’s avifauna [@lee2025a].
 
 #### Data source
 
 Barnes, K. N. (Ed.). 2000. The Eskom red data book of birds of South Africa, Lesotho and Swaziland. Johannesburg, South Africa: BirdLife South Africa.
 
 Lee, A. T. K., Rose, S., Banda, S., Bezeng, S. B., Maphalala, M. I., Maphisa, D. H., & Smit-Robinson, H. A. (Eds.). 2025. The 2025 Red Data Book of Birds of South Africa, Lesotho and Eswatini. Johannesburg, South Africa: BirdLife South Africa.
+
+## Aknowledgements
+
+::::: {layout-ncol="3"}
+::: right
+## [Coordinated by:]{style="font-size:0.8em;"}
+
+<img src="./imgs/logo_bird_1.png" width="85%"/>
+:::
+
+::: middle
+## [Sponsored by:]{style="font-size:0.8em;"}
+
+<img src="./imgs/logo_bird_2.png" width="85%"/>
+:::
+:::::
+
+```{r}
+#| label: tbl-4
+#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments." 
+#| classes: plain
+
+library(gt)
+
+# Create example data
+data <- data.frame(
+  'Contributor' = c("Hanneline Smit-Robinson", "Chris Kelly"),
+  'Affiliation'  = c("Birdlife South Africa", "Wildlife ACT"))
+
+# Create gt table
+#gt_table <- gt(data)
+
+ref<- gt(data) %>% 
+  nba_tbl_theme() %>%
+       tab_options(#data_row.padding = px(16),
+              table.font.size = px(13L),
+              table.width = pct(100),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black")%>%
+ tab_style(style = cell_fill(color = "white"), 
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = c("left", "right"),
+                                color = "transparent",
+                                weight = px(0)),
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = "bottom",
+                                color = "grey", 
+                                weight = px(1)),
+          locations = cells_body(columns = everything())) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_body(columns = everything())
+  ) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_column_labels(columns = everything())
+  )
+       
+htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
+
+```
 
 ### Recommended citation
 
