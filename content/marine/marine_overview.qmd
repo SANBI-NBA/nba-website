@@ -19,7 +19,9 @@ description: |
 
 *South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and and is integral to the deep cultural and spiritual values held by many South Africans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, identified knowledge gaps that limit the assessment, and identified priority areas, together with co-developed priority actions, to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
 
-![South Africa's seascape harbours rich biodiversity with many benefits to society. (© Peter Chadwick)](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png)
+![South Africa's seascape harbours rich biodiversity with many benefits to society. (© Peter Chadwick)](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png){fig-align="center"}
+
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -51,9 +53,9 @@ description: |
 :::
 :::::
 
-<!-- \ to create an empty line (space) -->
+------------------------------------------------------------------------
 
-\
+<!-- \ to create an empty line (space) -->
 \
 
 <!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
@@ -87,7 +89,7 @@ Marine species are assessed in terms of their stock status and/or threat status.
 
 There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management ([key message A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and West Coast rock lobster are Endangered. Illegal fishing plays a key role in the Endangered status of these species ([key message A6](../key-messages/kma6.qmd)).
 
-Of the 506 marine species assessed using the IUCN Red List of Threatened Species criteria, 36% are considered threatened ([key message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+Of the 506 marine species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria, 36% are considered threatened ([key message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
 
 ![Several marine invertebrate resources, seabreams and shark and rays were assessed as threatened in 2025. West Coast rocklobster are Endangered (© Geoff Spiby); dageraad are Critically Endangered (© Steve Benjamin); bull sharks are Vulnerable (© Fiona Erst).](imgs/overview_species.png)
 
@@ -125,11 +127,15 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 
 ## Knowledge gaps, priority actions and priority areas
 
-[The NBA 2025 identified knowledge gaps limiting the assessment and research priorities that could strengthen biodiveristy assessment, spatial and management planning, and enable decision-making underpinned by holistic science and diverse forms of knowledge.]{.mark} 
+[The NBA 2025 identified knowledge gaps limiting the assessment and research priorities that could strengthen biodiveristy assessment, spatial and management planning, and enable decision-making underpinned by holistic science and diverse forms of knowledge.]{.mark}
 
 [Priority actions for improving the state of marine biodiversity were co-developed in collaboration with knowledge holders, policy and decision makers through a series of science-policy-society dialogues. More than 80 actions were advanced and these were distilled into 10 overarching actions with proposed indicators against which progress could be measured (see [knowledge gaps, priority actions and priority areas](marine_priority_actions.qmd) page).]{.mark}
 
 Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified and [products]{.mark} are being improved with increased participation, collaboration and technical innovation.
+
+Drawing from key findings of the NBA, ten priority actions were co-developed for improving the state of marine biodiversity. Each of these are associated with several potential indicators for progress. The priority actions include:
+
+[add priority actions linked through to the priority actions page boxes]{.mark}
 
 ![Science-to-policy dialogue convened in November 2024 to co-develop priority management and policy actions for improving the state of South Africa's marine biodiversity for the benefit of nature and people. (© Kerry Sink)](imgs/workshop.png)
 
@@ -139,7 +145,7 @@ Spatial biodiversity priority areas to protect, restore and recover marine ecosy
 
 ## Acknowledgements
 
-The NBA is produced by the South African National Biodiversity Institute (SANBI) as part of its mandate to report regularly to the Minister of Forestry, Fisheries and the Environment on the status of the country’s biodiversity. SANBI's way of working is highly collaborative, recognising that such a technically demanding and wide-ranging scientific assessment cannot be achieved without substantial support from numerous partners and collaborators. The Marine Realm Assessment was conducted in collaboration with 211 individuals (25% Early Career Ocean Professionals), across 61 institutions, spanning academia, government and public organisations, industry associations, NGOs, community based organisations, and independent individuals. This Marine Realm Assessment would not have been possible without the substantial in-kind contributions of time, data and expertise from these individuals and institutions. Over the past six years, this multitude of dedicated collaborators invested 26 292 person hours (over 14 yrs of work) to strengthen the knowledge based that underpins the NBA 2025 Marine Realm Assessment. 
+The NBA is produced by the South African National Biodiversity Institute (SANBI) as part of its mandate to report regularly to the Minister of Forestry, Fisheries and the Environment on the status of the country’s biodiversity. SANBI's way of working is highly collaborative, recognising that such a technically demanding and wide-ranging scientific assessment cannot be achieved without substantial support from numerous partners and collaborators. The Marine Realm Assessment was conducted in collaboration with 211 individuals (25% Early Career Ocean Professionals), across 61 institutions, spanning academia, government and public organisations, industry associations, NGOs, community based organisations, and independent individuals. This Marine Realm Assessment would not have been possible without the substantial in-kind contributions of time, data and expertise from these individuals and institutions. Over the past six years, this multitude of dedicated collaborators invested 26 292 person hours (over 14 yrs of work) to strengthen the knowledge based that underpins the NBA 2025 Marine Realm Assessment.
 
 We sincerely thank the National Marine Ecosystem Committee and Network for their invaluable technical expertise and guidance. The National Marine Biodiversity Scientific Working Group is thanked for its role as reference group for the Marine Realm Assessment of the NBA. The National Working Group 7 (Oceans and Coasts) is thanked for it valuable inputs and contributions to the draft marine key messages. We also acknowledge members of the Biodiversity Planning Technical Working Group, the National Ecosystem Classification Committees, and the NBA Core Reference Group for their input.
 

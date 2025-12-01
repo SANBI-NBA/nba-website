@@ -387,7 +387,7 @@ The ecological condition of all coastal ecosystem types was extracted from the t
 
 Broadly speaking, the places with the highest population density are associated with coastal areas in the most heavily to critically modified ecological condition. These include the southwestern Cape, southeastern Cape, and most of KwaZulu-Natal. Importantly, these areas are all associated with ports and harbours, and their related burgeoning development in the surrounding area.
 
-![Ecological condition of South Africa's coast, 2025.](imgs/cst_cond-map_new.png){#fig-coastconditionmap fig-align="center"}
+![Ecological condition of South Africa's coast, 2025.](imgs/cst_cond_map_new2.png){#fig-coastconditionmap fig-align="center"}
 
 ::: panel-tabset
 ## Figure

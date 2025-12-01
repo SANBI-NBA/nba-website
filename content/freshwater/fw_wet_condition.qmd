@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Wetland Ecological Condition" # Compulsory
+title: "Wetland ecological condition" # Compulsory
 subtitle: "Freshwater (inland aquatic) realm" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#4097C2" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -19,6 +19,12 @@ author:
       - ref: destea 
       # If an author has more than one affiliation, add more - ref: lines here
   - name:
+      given: Nancy
+      family: Job
+    orcid: 0000-0000-0000-0000  
+    affiliations:
+      - ref: sanbi 
+  - name:
       given: Adwoa 
       family: Awuah 
     orcid: 0000-0002-4929-7592 
@@ -31,8 +37,8 @@ author:
     affiliations:
       - ref: ecopulse 
   - name:
-      given: Nancy
-      family: Job
+      given: Phumla
+      family: Mayekiso
     orcid: 0000-0000-0000-0000  
     affiliations:
       - ref: sanbi 
@@ -95,6 +101,8 @@ google-scholar: true
 
 *While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate threat. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent, monitoring and reporting.*
 
+![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
+
 ::::: columns
 ::: {.column width="50%"}
 <center>
@@ -122,11 +130,15 @@ google-scholar: true
 :::
 ::::
 
+------------------------------------------------------------------------
+
 ![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem types within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
 
 Ecological condition was calculated for 171 303 wetlands. Of these, approximately 1 476 561 ha (49%) of inland wetland extent and \# (58%) of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately 808 325 ha (27%) of inland wetland extent and \# (x%) of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately 705 797 (27%) of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
 
-Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition. xxxxx \[Need to re-run numbers\]
+Table: 82 types with their conditions (percent extent and extent)
+
+Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition. xxxxx
 
 :::: panel-tabset
 ## Figure
@@ -135,122 +147,37 @@ Of the different hydrogeomorphological types, depression wetlands are in the bes
 
 ```{r}
 #| label: fig-wetland_condition_bargraph
-#| fig-cap: "Inland wetland ecological condition according to hydrogeomorphological (HGM) category and (a) the percentage of ecosystem types (labelled with their counts) in each ecological condition category; (b) the percentage of wetland extent (km^2^) in each ecological condition category. 'Valley-bottom' represents the 'Unchannelled valley-bottom' HGM category."
+#| fig-cap: "Inland wetland ecological condition according to hydrogeomorphological (HGM) category, showing the percentage of wetland extent (km^2^). 'Valley-bottom' represents the 'Unchannelled valley-bottom' HGM category."
 
 library(tidyverse)
 library(stringr)
 library(nbaR)
 
 ## load data
-condition_tbl <- read.csv(file=list.files(pattern = "^wetlands_condition_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) %>%
-  # filter()
+condition_tbl <- read.csv(file=list.files(pattern = "^wetlands_condition_combined_extent_percent.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) %>%
   mutate(zone = factor(zone, levels = c("Depression", "Seep", "Unchannelled valley-bottom", "Floodplain"))) # first depression then seep then unchannelled valley-bottom, then floodplain last , "Total count", "Total extent"
 
-# bargraph combined plot
 condition_tbl %>% 
-    arrange(desc(zone)) %>% 
-  mutate(zone = str_replace_all(zone, "Unchannelled valley-bottom","Valley-bottom")) %>%  # rename the long unchannelled valley-bottom
-         # metric = str_replace_all(metric, "count","dontcount")) %>%
-  nba_plot_comb(
-              GROUPS=zone,
-              METRIC_COL = metric,
-              METRICS = c("count", "extent"),
-              COLS = 2:7,
-              CHRT = "bar",
-              NUM = FALSE,
-              LAB = "Percentage of ecosystem",
-              SAVE = NULL) +
-  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
-
-# 
-# # load and prep the data
-# conditn <- read.csv(file=list.files(pattern = "^wet_metrics_type2.csv$", recursive = TRUE, full.names = TRUE), 
-#                 stringsAsFactors = FALSE, check.names = FALSE) %>% 
-#   select(type, zone, extent, A, B, C, D, E, F) %>% # , RLE24, extent, RLE_EPL24) #
-#   mutate(EPL24 = stringr::str_replace_all(EPL24, "WP","Well Protected"),
-#          EPL24 = stringr::str_replace_all(EPL24, "MP","Moderately Protected"),
-#          EPL24 = stringr::str_replace_all(EPL24, "PP","Poorly Protected"),
-#          EPL24 = stringr::str_replace_all(EPL24, "NP","Not Protected" )) %>%
-#   group_by(zone, EPL24) %>%
-#   summarise(count = n(),
-#             extent = sum(extent))
-#   # rename("Wetland type" = type,
-#   #        Zone = zone,
-#   #        "Ecosystem Protection Level" = EPL24)
-# 
-# # count table
-# count <- conditn %>%
-#   pivot_wider(
-#     id_cols = zone,
-#     names_from = EPL24,
-#     values_from = count) %>%
-#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-#   ungroup() %>% 
-#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
-#   rowwise() %>% 
-#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
-#   ungroup()
-# # count
-# 
-# ## add a totals row:
-# count <- count %>%
-#   bind_rows(
-#     count %>%
-#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-#       mutate(zone = "Total count") %>%
-#       select(zone, everything())
-#   )
-# # count
-# 
-# # extent table
-# extent <- conditn %>%
-#   pivot_wider(
-#     id_cols = zone,
-#     names_from = EPL24,
-#     values_from = extent) %>%
-#   mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% 
-#   ungroup() %>% 
-#   select(zone, 'Well Protected', 'Moderately Protected', 'Poorly Protected', 'Not Protected') %>% # reorder the columns
-#   rowwise() %>% 
-#   mutate(Total = sum(as.numeric(c_across(contains("Protected"))), na.rm = TRUE)) %>% 
-#   ungroup()
-# # extent
-# 
-# # add a totals row:
-# extent <- extent %>%
-#   bind_rows(
-#     extent %>%
-#       summarise(across(where(is.numeric), ~ sum(.x, na.rm = TRUE))) %>%
-#       mutate(zone = "Total extent") %>%
-#       select(zone, everything())
-#   )
-# # extent
-# 
-# # combine count and extent in a single table
-# conditn_combined <- count %>%
-#   mutate(metric = "count") %>%
-#   bind_rows(extent %>%
-#               mutate(metric = "extent")) %>%
-#   mutate(zone = factor(zone, levels = c("Depression", "Floodplain", "Seep", "Unchannelled valley-bottom", "Total count", "Total extent")))
-# # conditn_combined
-#     
-# ## save the data to downloadable csv for the link, before arranging by zone for the plot
-# write.csv(conditn_combined, file = "outputs/wetlands_condition.csv", row.names = FALSE)
-# 
-# # create conditn plot
-# condition_combined_plot <- condition_combined %>% 
-#     arrange(desc(zone)) %>% 
-#     nba_plot_comb(
-#       zone,
-#                                    METRIC_COL = metric,
-#                                    METRICS = c("count", "extent"),
-#                                    2:5,
-#                                    CHRT = "bar",
-#                                    NUM = FALSE,
-#                                    LAB = "Percentage of ecosystem",
-#                                    SAVE = NULL) 
-# 
-# condition_combined_plot
+  filter(metric == "percent") %>% 
+  arrange(desc(zone)) %>% 
+  # rename the long unchannelled valley-bottom
+  mutate(zone = str_replace_all(zone, "Unchannelled valley-bottom","Valley-bottom")) %>%
+  # rename the two columns we're going to sum so that they can be excluded after summing
+  # rename(severe = `Severely modified`,
+  #        critical = `Critically modified`) %>% 
+  # mutate(`Severely modified` = `Severely modified` + `Critically modified`,
+  #        `Critically modified` = 0) %>%
+  select(zone, Natural, `Near-natural`, `Moderately modified`, `Heavily modified`, `Severely modified`, `Critically modified`) %>% # 
+  # round the percentages
+  mutate(across(where(is.numeric), ~ round(., digits=0))) %>% 
+  nba_plot(
+    GROUPS=zone,
+    COLS=Natural:`Critically modified`,
+    CHRT = "bar",
+    NUM = TRUE,
+    LAB = "Percentage of ecosystem extent",
+    SAVE = NULL) +
+  theme(plot.margin=grid::unit(c(0,43,0,0), "pt")) # need large righ margin to avoid cutting off the legend text; could be reduced if we merge groups? top, right, bottom, and left margins
 
 ```
 
@@ -270,7 +197,7 @@ library(gt)
 
 tbl <- condition_tbl %>% 
   mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
-         metric = str_replace_all(metric, "count", "Count")) %>% 
+         metric = str_replace_all(metric, "percent", "Percentage")) %>% 
   arrange(zone) %>% 
   select(zone, metric, 'Natural', 'Near-natural', 'Moderately modified', 'Heavily modified', 'Severely modified', 'Critically modified') %>%
   mutate(across(where(is.numeric), round)) %>% 
@@ -291,21 +218,85 @@ tbl <- condition_tbl %>%
 
 tbl
 
-# # as we prepared the data above for the combined plot, simply provide those? checkNancy
-# tbl_dat <- condition_tbl %>% 
-#   arrange(metric,zone) %>% 
-#   rename(Zone = zone,
-#          Metric = metric)
-# 
-# gt(tbl_dat) %>% nba_tbl_theme()
+```
+:::
+
+Download the data [here](data/wetlands_condition_combined_extent_percent.csv).
+::::
+
+Wetlands are complex systems that influenced by multiple biotic and abiotic factors. Determining wetland ecological condition requires a multidisciplinary approach that allows for determining a single condition score from all the xxx/ While previous approaches to determine wetland condition at the national scale were sound, they lacked the wholistic and xxx approach of MacFarlane et al. (2020). The structured nature of this approach allows for a collaborative xxxx present ecological state (PES) scores, also allows for the inclusion of infield expert validated data that collect xxx approach for national wetland map assessment.
+
+::: {.table style="height:500px;overflow-y: auto"}
+<!-- ::: {#box-eco_tbl .callout .freshwater collapse="False"} -->
+
+```{r}
+#| label: tbl-wetland_condition_bytype
+#| tbl-cap: Ecological condition of inland wetland ecosystem types. Note that extent figures have been rounded.
+#| classes: plain
+
+library(dplyr)
+library(nbaR)
+library(gt) # library(reactable)
+
+
+
+## load data
+condition_tbl <- read.csv(file=list.files(pattern = "^wetlands_condition_combined_extent_percent_by_type.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) #
+
+## create the table
+tbl <- condition_tbl %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "percent", "Percentage")) %>% 
+  arrange(type) %>% 
+  select(type, metric, 'Natural', 'Near-natural', 'Moderately modified', 'Heavily modified', 'Severely modified', 'Critically modified') %>%
+  mutate(across(where(is.numeric), round)) %>% 
+  gt::gt(
+    rowname_col = "metric",
+    groupname_col = "type",
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
+  nbaR::nba_tbl_theme(HEADER = "Freshwater") %>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  )
+
+tbl
+
+# create the table
+# with reactable()
+# tbl <- condition_tbl %>% 
+#   mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+#          metric = str_replace_all(metric, "percent", "Percentage")) %>% 
+#   arrange(type) %>% 
+#   select(type, metric, 'Natural', 'Near-natural', 'Moderately modified', 'Heavily modified', 'Severely modified', 'Critically modified') %>%
+#   mutate(across(where(is.numeric), round)) %>% 
+#   reactable(
+#   filterable = TRUE,
+#   searchable = FALSE,
+#   pagination = FALSE,
+#   height = 600,
+#   defaultColDef = colDef(
+#     headerStyle = list(background = "#02268A", color = "white", fontWeight = "bold")
+#   ),
+#   theme = reactableTheme(
+#     inputStyle = list(
+#       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
+#       backgroundColor = "white",
+#       border = "1px solid #ccc"
+#     )))
+# tbl
 
 ```
 :::
 
-Download the data [here](data/wetlands_condition_combined_count_extent.csv).
-::::
+Download the data by wetland type [here](data/wetlands_condition_combined_extent_percent_by_type.csv).
 
-Wetlands are complex systems that are influenced by multiple biotic and abiotic factors. Determining wetland ecological condition requires a multidisciplinary approach that allows for determining a single condition score from all the xxx/ While previous approaches to determine wetland condition at the national scale were sound, they lacked the wholistic and xxx approach of MacFarlane et al. (2020). The structured nature of this approach allows for a collaborative xxxx present ecological state (PES) scores, also allows for the inclusion of infield expert validated data that collect xxx approach for national wetland map assessment.
+<!-- :::: -->
 
 ## Approach to develop this input layer
 
@@ -319,7 +310,7 @@ In addition to allowing for the rapid assessment of multiple wetlands, the autom
 
 ## Technical documentation
 
-**Code repository**: <!--[github.com/SANBI-NBA/freshwater](https://github.com/SANBI-NBA/freshwater)-->
+**Code repository**:
 
 **Publications**
 
@@ -327,7 +318,7 @@ In addition to allowing for the rapid assessment of multiple wetlands, the autom
 
 ## Recommended citation
 
-Collins, N.B., Job, N.M., Awuah, A., Currie, J., other names xx. 2025. Inland wetland ecological condition assessment: Freshwater (inland aquatic) realm. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za
+Collins, N.B., Job, N.M., Awuah, A., Kok, R., Mayekiso, P., Currie, J., Ollis, D and Kotze, D. 2025. Inland wetland ecological condition assessment: Freshwater (inland aquatic) realm. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
 
 ## References
 

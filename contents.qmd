@@ -7,22 +7,22 @@ format:
 listing:
   id: page-listings
   contents:
-    - href: content/terrestrial/ter_overview.qmd
+    - path: content/terrestrial/ter_overview.qmd
       title: Terrestrial realm
       image: imgs/card_ter_Andrew-Skowno.png
-    - href: content/freshwater/fw_overview.qmd
+    - path: content/freshwater/fw_overview.qmd
       title: Freshwater realm
       image: imgs/card_fw_Jeremy_Shelton.png
-    - href: content/marine/marine_overview.qmd
+    - path: content/marine/marine_overview.qmd
       title: Marine realm
       image: imgs/card_mar_Eve_Marshall.png
-    - href: content/estuaries/est_overview.qmd
+    - path: content/estuaries/est_overview.qmd
       title: Estuarine realm
-      image: imgs/card_est_knysna_duran_de_villiers.png
-    - href: content/coast/cst_synthesis.qmd
+      image: imgs/card_est_sout_nmu.png
+    - path: content/coast/cst_synthesis.qmd
       title: Coastal zone
       image: imgs/card_cst_Linda_Harris.png
-    - href: content/subantarctic/sub-all_sections.qmd
+    - path: content/subantarctic/sub-all_sections.qmd
       title: Subantarctic territory
       image: imgs/card_sub_Stephni_van_der_Merwe.png
   type: grid
@@ -67,19 +67,32 @@ Integrated findings for species and ecosystems across all realms, including thre
 
 The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as follows: A) Cross realm pressures are impacting people; B) Improving the status of biodiversity is key to a sustainable future; C) Inclusive actions across the whole of society are needed.
 
-:::::: columns
-::: {.column width="33%"}
-[![](./imgs/card_kma.png)](./content/key-messages/index.qmd#kma)
-:::
+```{=html}
+<div class="km-tile-wrap">
+  <a class="km-tile" 
+      href="./content/key-messages/index.html#kma/"
+      style="background-color:#FAA755;">
+    <h4>Cluster A</h4>
+    <img src="/imgs/icon-km-cluster-a.png" alt="">
+    <p>Cross-realm pressures on South Africa’s biodiversity are impacting people</p>
+  </a>
+  <a class="km-tile" 
+      href="./content/key-messages/index.html#kmb"
+      style="background-color:#70B276;">
+    <h4>Cluster B</h4>
+    <img src="/imgs/icon-km-cluster-b.png" alt="">
+    <p>Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all</p>
+  </a>
+  <a class="km-tile" 
+      href="./content/key-messages/index.qmd#kmc"
+      style="background-color:#9D85BE;">
+    <h4>Cluster C</h4>
+    <img src="/imgs/icon-km-cluster-c.png" alt="">
+    <p>Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people</p>
+  </a>
+</div>
 
-::: {.column width="33%"}
-[![](./imgs/card_kmb.png)](./content/key-messages/index.qmd#kmb)
-:::
-
-::: {.column width="33%"}
-[![](./imgs/card_kmc.png)](./content/key-messages/index.qmd#kmc)
-:::
-::::::
+```
 
 ------------------------------------------------------------------------
 
@@ -90,7 +103,7 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
 
 :::: column-screen
 ::: column-body
-<center>[Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Duran de Villiers (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).]{style="font-size:.7rem; color:#a7abb4;"}</center>
+<center>[Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Nelson Mandela University (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).]{style="font-size:.7rem; color:#a7abb4;"}</center>
 :::
 ::::
 
@@ -140,6 +153,4 @@ Read about the priority actions, responses and interventions emerging from the N
 :::
 ::::::
 
-------------------------------------------------------------------------
 
-*Photo credits: Andrew Skowno (terrestrial); Jeremy Shelton (freshwater); Eve Marshall (marine); Duran de Villiers (estuaries); Linda Harris (coast); Stephni van der Merwe (subantarctic).*

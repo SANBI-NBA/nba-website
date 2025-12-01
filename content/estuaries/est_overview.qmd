@@ -105,15 +105,13 @@ Pressure evaluation shows that a third of freshwater flow no longer reaches the 
 
 Overall multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
 
-### *ADD BUBBLE MAP OF PRESSURE*
-
 ::::: grid
 ::: {.g-col-lg-8 .g-col-12}
 The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment.
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
-![Map of cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with blue areas showing low pressure.](imgs/cum_press_low_res.jpeg){.lightbox}
+![Map of cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click to expand.](imgs/cum_pres.png){.lightbox}
 :::
 :::::
 

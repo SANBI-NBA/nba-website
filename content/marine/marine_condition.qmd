@@ -123,7 +123,7 @@ The condition map shows areas that are assessed to be in one of four categories 
 ![Map of ecological condition showing the spatial distribution of marine pelagic areas in different ecological condition categories as calculated from cumulative pressures (see [@sec-approach].)](imgs/condition_pel_with_donut.png){#fig-condition_pelagic .lightbox}
 
 \
-Areas of severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the south coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates have been underway.
+Areas of severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the South Coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates have been underway.
 
 ![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
 
@@ -203,7 +203,7 @@ Mining, coastal development and demersal trawling have the highest impact scores
 
 <!-- Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-condition_benthic). -->
 
-![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png){width=900}
+![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png){width="900"}
 
 ## Groundtruthing ecological condition
 
@@ -211,7 +211,7 @@ Few cumulative impact studies validate their assessments of ecological condition
 
 Results showed that ecological condition was significantly but weakly correlated with NBA cumulative impact scores, with notable discrepancies at finer scales, where some reefs were in better condition than predicted while others were worse (Smit et al. 2024). The cumulative impact scores performed better as a proxy for the condition of fish communities than for benthic communities [@smit2024]. Although the cumulative impact map was an effective proxy at broad scales, the findings highlighted the need for finer-scale pressure mapping and ecological data to improve ecological condition maps and support more accurate spatial assessments.
 
-![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. © Steve Benjamin.](imgs/DeHoop_MPA_Steve_Benjamin.png){width=100%}
+![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. © Steve Benjamin.](imgs/DeHoop_MPA_Steve_Benjamin.png){width="100%"}
 
 ## Approach {#sec-approach}
 

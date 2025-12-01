@@ -3,10 +3,6 @@ title: "About ecosystem threat status and the RLE"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
 bibliography: intf_references.bib
-
-format:
-  html:
-    self-contained: false
 ---
 
 South Africa is one of few countries that started assessing ecosystem threat status (circa 2004), using national criteria, before the [IUCN Red List of Ecosystems](https://iucnrle.org/){target="blank"} (RLE) was developed [@botts2020]. For the National Biodiversity Assessment 2018 efforts were made to transition to the IUCN RLE framework for terrestrial ecosystem assessments [@skowno2021] and partially for estuaries and marine ecosystems, with some deviations in the thresholds that were applied. For the NBA 2025, there was full application of the IUCN RLE criteria for the first time in South Africa across all realms following the latest guidelines [@iucn2024] to ensure best practice and global alignment.

@@ -420,8 +420,7 @@ tbl
 
 ### Critically Endangered
 
-The six ecosystem types that are Critically Endangered cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling (that persists over much of the extent of this ecosystem type [@currie2023]) in addition to flow reduction. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort leading to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 [@sink2019] under IUCN RLE Criterion C/D. 
-
+The six ecosystem types that are Critically Endangered cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling (that persists over much of the extent of this ecosystem type [@currie2023]) in addition to flow reduction. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort leading to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 [@sink2019] under IUCN RLE Criterion C/D.
 
 Four additional small ecosystem types listed under this category in 2025 when strictly applying IUCN RLE Criterion B. The Orange Cone Inner Shelf Mud Reef Mosaic is impacted by ongoing flow reduction and marine mining. The KwaZulu-Natal Bight Muddy Inner Shelf has been modified by flow reduction and the demersal inshore crustacean inshore fishery that has subsequently ceased. Cape Bay, which includes Table and Saldanha Bay, has very high cumulative pressures with ongoing degradation linked to port and harbour activities. The Aliwal Shoal Reef Complex falls entirely within a Marine Protected Area (MPA) but ongoing linefishing, waste water discharge and lethal shark control measures cause this ecosystem type, which is of restricted distribution, to be classified as Critically Endangered. Further work to support reef classification and measure ecosystem condition is recommended along with management to reduce pressures in the MPA.
 
@@ -433,7 +432,7 @@ There are 31 Endangered ecosystem types (`r perc_en_count`%) which cover `r perc
 
 ![False and Walker Bay ecosystem type is now considered Endangered. (© Peter Chadwick)](imgs/Walker_bay_southern_Right_Whales.png)
 
-### Vulnerable
+### Vulnerable {#vulnerable}
 
 Vulnerable ecosystem types cover `r perc_vu_extent`% of the ocean space, with 36 ecosystem types (`r perc_vu_count`%) falling within this category. All three kelp ecosystem types in South Africa are Vulnerable with cumulative fishing activities playing a key role in declining condition. Two of the 13 pelagic ecosystem types are threatened (South Atlantic Productive Margin Water and Upwelled Agulhas Current Margin Water), both of these being Vulnerable. Key pressures driving decline in condition include large pelagic fishing and mid water trawling. In 2025, all three coral communities were assessed as Vulnerable under the IUCN RLE criterion B3, with coral bleaching and associated ecosystem modification caused by climate change considered the key threat that could lead to ecosystem collapse. This also aligns with the IUCN RLE result for the Delagoa ecoregion in the regional assessments for the Western Indian Ocean [@obura2021].
 

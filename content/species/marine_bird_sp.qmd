@@ -1,8 +1,8 @@
 ---
 title: "Marine birds" 
-subtitle: "Marine realm" 
+subtitle: "" 
 
-title-block-banner: "#02268A" 
+title-block-banner: "#ad180d" 
 title-block-banner-color: white 
 
 author:
@@ -89,10 +89,6 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
-
-#format:
-# html:
-#    embed-resources: true
 ---
 
 ```{=html}
@@ -107,13 +103,9 @@ google-scholar: true
 </style>
 ```
 
+![Black-browed albatross (*Thalassarche melanophris*) taking off. The species has experienced an improvement in its threat status (Near Threatened to Least Concern), due to the wider implementation of fisheries bycatch mitigation measures. (© Alistair McInnes)](./imgs/seabirds_img_1.png){fig-align="center"}
+
 ------------------------------------------------------------------------
-
-<center>
-
-![Black-browed albatross (*Thalassarche melanophris*) taking off. The species has experienced an improvement in its threat status (Near Threatened to Least Concern), due to the wider implementation of fisheries bycatch mitigation measures. (© Alistair McInnes)](./imgs/seabirds_img_1.png){fig-align="center"}
-
-</center>
 
 ::::: columns
 ::: {.column width="50%"}
@@ -432,20 +424,20 @@ Seabirds constitute the most threatened group of birds in South Africa [@lee2025
 ![](./imgs/seabirds_img_3.png){style="width:70%;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Spectacled petrel (*Procellaria conspicillata*) populations have increased since the local extinction of feral pigs on their major breeding colony on Inaccessible Island in the 1980s. (© Peter Ryan)
+Spectacled petrel (*Procellaria conspicillata*) populations have increased since the local extinction of feral pigs on their major breeding colony on Inaccessible Island in the 1980s. (© Peter Ryan)
 :::
 
-::::::::::::::::::: {#box-1 .callout-note .freshwater title="Box 1: Benguela endemic seabirds - a special group of seabirds on the brink." style="text-align:left;" collapse="false"}
+::::::::::::::::::: {#box-1 .callout-note .species title="Box 1. Benguela endemic seabirds - a special group of seabirds on the brink." style="text-align:left;" collapse="false"}
 :::::::::::::::::: grid
 ::: {.g-col-lg-7 .g-col-12 .text-left}
-## Benguela endemic seabirds - a special group of seabirds on the brink
+#### Benguela endemic seabirds - a special group of seabirds on the brink
 :::
 
 :::: {.g-col-lg-5 .g-col-12 .text-center}
 ![](./imgs/seabirds_img_4.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Cape cormorant – Endangered. (© Alistair McInnes)
+Cape cormorant – Endangered. (© Alistair McInnes)
 :::
 ::::
 
@@ -453,7 +445,7 @@ Cape cormorant – Endangered. (© Alistair McInnes)
 ![](./imgs/seabirds_img_5.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-African penguin – Endangered. (© Alistair McInnes)
+African penguin – Critically Endangered. (© Alistair McInnes)
 :::
 ::::
 
@@ -461,7 +453,7 @@ African penguin – Endangered. (© Alistair McInnes)
 ![](./imgs/seabirds_img_1.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Hartlaub's gull – Vulnerable. (© Alistair McInnes)
+Hartlaub's gull – Vulnerable. (© Alistair McInnes)
 :::
 ::::
 
@@ -469,7 +461,7 @@ Hartlaub's gull – Vulnerable. (© Alistair McInnes)
 ![](./imgs/seabirds_img_6.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Bank cormorant – Endangered. (© Alistair McInnes)
+Bank cormorant – Endangered. (© Alistair McInnes)
 :::
 ::::
 
@@ -477,7 +469,7 @@ Bank cormorant – Endangered. (© Alistair McInnes)
 ![](./imgs/seabirds_img_7.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Cape gannet – Endangered. (© Alistair McInnes)
+Cape gannet – Endangered. (© Alistair McInnes)
 :::
 ::::
 
@@ -485,7 +477,7 @@ Cape gannet – Endangered. (© Alistair McInnes)
 ![](./imgs/seabirds_img_8.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Damara tern – Endangered. (© Peter Ryan)
+Damara tern – Endangered. (© Peter Ryan)
 :::
 ::::
 
@@ -493,12 +485,12 @@ Damara tern – Endangered. (© Peter Ryan)
 ![](./imgs/seabirds_img_9.png){style="width:100%; height:250px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Crowned cormorant – Vulnerable. (© Alistair McInnes)
+Crowned cormorant – Vulnerable. (© Alistair McInnes)
 :::
 ::::
 ::::::::::::::::::
 
-The Benguela upwelling ecosystem supports seven endemic seabird species. The regional Red List assessment of birds in 2025 marked the first instance in which all seven of these species were classified as threatened. Three species: African penguin (now globally Critically Endangered), Cape cormorant ( globally and regionally Endangered) and Cape gannet (regionally Vulnerable and globally Endangered) have been classified as regionally threatened for greater than a decade largely due to their reliance on small pelagic fish, such as sardine and anchovy, and threats associated with the availability of this prey such as resource competition by the commercial purse-seine fishery and climate driven range shifts in these prey species **(Hagen 2025, McInnes et al. 2025a, Pistorius 2025)**. Hartlaub’s gull and Crowned cormorant have been uplisted to Vulnerable due to a combination of threats including human disturbance at breeding colonies, predation and diseases such as highly pathogenic avian influenza **(Makhado et al. 2025a, McInnes et al. 2025b)**. Bank cormorants have been listed as regionally threatened throughout this century due to a combination of threats including a decline in their major prey species, most notably west coast rock lobster, but also breeding failure associated with climate change driven intensification of storm events and heat exposure **(Shaw and Crawford 2025)**. The relatively small population of Damara terns in South Africa have continued to decline largely due to disturbance at their coastal nesting sites **(Whittington 2025)**.
+The Benguela upwelling ecosystem supports seven endemic seabird species. The regional Red List assessment of birds in 2025 marked the first instance in which all seven of these species were classified as threatened. Three species: African penguin (now globally Critically Endangered), Cape cormorant (globally and regionally Endangered) and Cape gannet (regionally Vulnerable and globally Endangered) have been classified as regionally threatened for greater than a decade largely due to their reliance on small pelagic fish, such as sardine and anchovy, and threats associated with the availability of this prey such as resource competition by the commercial purse-seine fishery and climate driven range shifts in these prey species **(Hagen 2025, McInnes et al. 2025a, Pistorius 2025)**. Hartlaub’s gull and Crowned cormorant have been uplisted to Vulnerable due to a combination of threats including human disturbance at breeding colonies, predation and diseases such as highly pathogenic avian influenza **(Makhado et al. 2025a, McInnes et al. 2025b)**. Bank cormorants have been listed as regionally threatened throughout this century due to a combination of threats including a decline in their major prey species, most notably west coast rock lobster, but also breeding failure associated with climate change driven intensification of storm events and heat exposure **(Shaw and Crawford 2025)**. The relatively small population of Damara terns in South Africa have continued to decline largely due to disturbance at their coastal nesting sites **(Whittington 2025)**.
 :::::::::::::::::::
 :::::::::::::::::::::
 
@@ -506,7 +498,7 @@ The Benguela upwelling ecosystem supports seven endemic seabird species. The reg
 
 As part of the Global Biodiversity Framework (GBF) [Target 4](https://www.cbd.int/gbf/targets/4), signatories are committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030. Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. South Africa has initiated a process for each of the taxonomic groups that have been comprehensively assessed following the IUCN Red List criteria, to identify and prioritise species that are in urgent need of interventions to promote their recovery to contribute to achieving the GBF Target 4 goals.
 
-:::::::::: {#box-2 .callout-note .freshwater title="Box 2: Mouse-Free Marion." collapse="false"}
+:::::::::: {#box-2 .callout-note .species title="Box 2. Mouse-Free Marion." collapse="false"}
 Globally, invasive species are among the greatest threats to seabirds. South Africa’s sub-Antarctic Prince Edward Island group (comprising Marion and Prince Edward islands) provides critical breeding grounds for Southern Ocean seabirds. In total, 29 seabird species breed on Prince Edward Island while 28 species breed on the larger Marion Island. Together, these islands host nearly half of the global population of Wandering albatrosses (*Diomedea exulans*). However, Marion Island’s seabirds face a severe threat: invasive House mice (*Mus musculus*), accidentally introduced in the 1800s, are pushing the island’s ecosystem, and its seabird populations, towards ecological collapse.
 
 In partnership with the South African Department of Forestry, Fisheries and the Environment, BirdLife South Africa established Saving Marion Island’s Seabirds: [The Mouse-Free Marion (MFM) Project](https://mousefreemarion.org/) in 2021. This project’s objective is the eradication of House mice to restore Marion Island’s biodiversity and ecological integrity. The MFM Project is currently in its planning and preparatory phase, with the expected date of the eradication operation dependent on securing required funding and regulatory approvals well before the operation.
@@ -522,7 +514,7 @@ Around the world, numerous islands have been restored through the eradication of
 ![](./imgs/seabirds_img_10.png){style="width:100%; height:350px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Grey-headed albatross chicks on Marion Island. (© Ben Dilley)
+Grey-headed albatross chicks on Marion Island. (© Ben Dilley)
 :::
 ::::
 
@@ -530,7 +522,7 @@ Grey-headed albatross chicks on Marion Island. (© Ben Dilley)
 ![](./imgs/seabirds_img_11.png){style="width:100%; height:350px; border-radius:10px; display:block; object-fit:cover; margin:0 auto;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Conducting bait trials on Marion Island. (© Michelle Risi)
+Conducting bait trials on Marion Island. (© Michelle Risi)
 :::
 ::::
 
@@ -538,18 +530,18 @@ Conducting bait trials on Marion Island. (© Michelle Risi)
 ![](./imgs/seabirds_img_12.png){style="width:80%; height:350px; border-radius:10px; display:block; object-fit:cover;margin:0 auto;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Wounded wandering albatross after being preyed on by House mice on Marion Island. (© Michelle Risi)
+Wounded wandering albatross after being preyed on by House mice on Marion Island. (© Michelle Risi)
 :::
 ::::
 :::::::::
 ::::::::::
 
-:::: {#box-3 .callout-note .freshwater title="Box 3: Albatross Task Force seabird conservation efforts." collapse="false"}
+:::: {#box-3 .callout-note .species title="Box 3. Albatross Task Force seabird conservation efforts." collapse="false"}
 Of the 18 species of albatrosses that breed in the Southern Ocean, 12 species forage in South African waters, all of which are impacted by fishing activities in the form of bycatch. Five of the 12 species of albatross breed on the Prince Edward Islands, including 40% of the world’s Wandering albatross population. An additional 19 species of seabirds are impacted by bycatch, including 14 that breed in South Africa, of which five are Benguela Current endemics. Of the total 31 species impacted by bycatch, 14 (35%) are threatened with extinction, with an additional 7 species classified as Near threatened by the IUCN.
 
-At the forefront of dealing with seabird bycatch issues is BirdLife South Africa’s Albatross Task Force (ATF) team, active since 2004 and part of an international team of experts working directly with fishing crews and governments to implement and legislate seabird bycatch mitigation measures. The ATF has been instrumental in the development and adoption of Bird-scaring Lines (BSLs), a key mitigation measure that significantly reduces seabird interactions with trawl cables and baited hooks. In 2010, research carried out by the ATF demonstrated that the use of BSLs reduced annual seabird bycatch in the demersal hake trawl fishery by 90%, from an estimated 9,300 birds being killed annually (2004-2005) to under 1000 seabirds in 2010 **(Maree et al. 2014)**.
+At the forefront of dealing with seabird bycatch issues is BirdLife South Africa’s Albatross Task Force (ATF) team, active since 2004 and part of an international team of experts working directly with fishing crews and governments to implement and legislate seabird bycatch mitigation measures. The ATF has been instrumental in the development and adoption of Bird-scaring Lines (BSLs), a key mitigation measure that significantly reduces seabird interactions with trawl cables and baited hooks. In 2010, research carried out by the ATF demonstrated that the use of BSLs reduced annual seabird bycatch in the demersal hake trawl fishery by 90%, from an estimated 9 300 birds being killed annually (2004-2005) to under 1 000 seabirds in 2010 **(Maree et al. 2014)**.
 
-An 85% reduction in seabird bycatch by foreign longline vessels operating in South African waters was achieved through the incorporation of strict management legislation in 2008, reducing the estimated 2,800 birds killed annually between 1998-2005 to an average of 340 birds killed per year between 2006-2013 **(Rollinson et al. 2017)**.
+An 85% reduction in seabird bycatch by foreign longline vessels operating in South African waters was achieved through the incorporation of strict management legislation in 2008, reducing the estimated 2 800 birds killed annually between 1998-2005 to an average of 340 birds killed per year between 2006-2013 **(Rollinson et al. 2017)**.
 
 Ensuring compliance with mitigation is key to sustaining seabird bycatch reductions and in addition to training fisheries observers and monitors, the ATF is actively promoting and partnering in researching electronic monitoring tools such as the Imvelo BSL Tension Device. A simple device that measures the tension exerted by the BSL as it is dragged through the water, providing real-time data and informing compliance with this measure.
 
@@ -562,11 +554,11 @@ The first phase of the project was to attract penguins to the site naturally, us
 ![](./imgs/seabirds_img_13.png){style="width:100%; height:300px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-Bird-scaring lines preventing seabird mortalities from cable interactions in use by a demersal trawl vessel. (© Otto Whitehead)
+Bird-scaring lines preventing seabird mortalities from cable interactions in use by a demersal trawl vessel. (© Otto Whitehead)
 :::
 ::::
 
-:::::::: {#box-4 .callout-note .freshwater title="Box 4: De Hoop for penguins: Creating a new breeding colony for African Penguins." collapse="false"}
+:::::::: {#box-4 .callout-note .species title="Box 4. De Hoop for penguins: Creating a new breeding colony for African Penguins." collapse="false"}
 One of the major threats to the globally Critically Endangered African Penguin (regionally Endangered) is a lack of food, driven by competition with the fishing industry and climate-induced changes in fish distribution and abundance. While there are several initiatives in place to address this, a novel conservation measure is to establish new penguin breeding colonies in areas of higher fish abundance where there is little competition from the fishery. This work is being led by BirdLife South Africa in partnership with CapeNature and SANCCOB. In late 2018, work began on the eastern edge of the De Hoop Nature Reserve. A small colony was established there in the early 2000s but was abandoned by about 2008 due to predation by caracal. A predator-proof fence was installed to protect the headland, which is monitored using CCTV cameras along the fence and trail cameras to determine the general abundance and movements of predators.
 
 The first phase of the project was to attract penguins to the site naturally, using social attraction techniques that mimic an already existing colony. Life-like penguin decoys were placed at high vantage points and a speaker playing penguin calls was set up. These were in place for 2 years before the second phase was implemented. This was to release hand-reared penguin fledglings. Abandoned eggs and chicks rescued from other colonies, are hand-reared by SANCCOB before being released back into the wild at the age they would fledge naturally. Since 2021, over 300 fledglings have been released.
@@ -578,7 +570,7 @@ Three wild adult African penguins arrived at the colony in June 2022. It is unkn
 ![](./imgs/seabirds_img_14.png){style="width:100%; height:300px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-De Hoop colony headland. (© Christina Hagen)
+De Hoop colony headland. (© Christina Hagen)
 :::
 ::::
 
@@ -586,26 +578,26 @@ De Hoop colony headland. (© Christina Hagen)
 ![](./imgs/seabirds_img_15.png){style="width:100%; height:300px; border-radius:10px; display:block; object-fit:cover;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-African penguin alongside soiled penguin decoy at new penguin colony at De Hoop. (© Christina Hagen)
+African penguin alongside soiled penguin decoy at new penguin colony at De Hoop. (© Christina Hagen)
 :::
 ::::
 :::::::
 ::::::::
 
-::::::: {#box-5 .callout-note .freshwater title="Box 5: Purse-seine fishery no-take zones around six major African penguin colonies." collapse="false"}
+::::::: {#box-5 .callout-note .species title="Box 5. Purse-seine fishery no-take zones around six major African penguin colonies." collapse="false"}
 Competition for common anchovy and sardine prey between African Penguins and commercial purse-seine fishers has been recognized as a significant threat to the African Penguin. This threat was suspected as early as the 1970s but it was not until 2008 that formal recognition of this threat was translated into action by the Department of Environmental Affairs and Tourism through the implementation of experimental ‘island closures’ including alternating 3-year open and closed periods around four major penguin colonies in two regions (Dassen and Robben islands on the west coast and St Croix and Bird islands in Algoa Bay) up until 2021. The results of this experiment demonstrated a meaningful effect of these closures to African penguin breeding success, although the experiment was limited in its ability to assess longer-term impacts of fishing closures on other important African Penguin population parameters such as survival. Despite these limitations and after a lengthy period of negotiations between the Department of Forestry, Fisheries and the Environment, the purse-seine fishing industry representatives and penguin scientists, including an international review of the scientific findings, between 2021 and 2024, no-take zones were implemented for a minimum of 10 years (pending reviews in 2031 and 2035) around six penguin colonies in 2025 (@fig-4 – @fig-6); these included the addition of the south coast colonies of Stony Point and Dyer Island (@fig-5). This resulted in meaningful closure extents, i.e. closure designs that incorporated the majority of important penguin foraging habitat, around at least one colony in each of the three major regions (@fig-4 – @fig-6).
 
 :::::: grid
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around Robben and Dassen islands on the west coast. (© BirdLife South Africa)](./imgs/seabirds_img_16.png){#fig-4 style="width:100%;"}
+![Purse-seine fishing closures around Robben and Dassen islands on the west coast. (© BirdLife South Africa)](./imgs/seabirds_img_16.png){#fig-4 style="width:100%;"}
 :::
 
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around Stony Point and Dyer Island on the south coast. (© BirdLife South Africa)](./imgs/seabirds_img_17.png){#fig-5 style="width:100%;"}
+![Purse-seine fishing closures around Stony Point and Dyer Island on the south coast. (© BirdLife South Africa)](./imgs/seabirds_img_17.png){#fig-5 style="width:100%;"}
 :::
 
 ::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)](./imgs/seabirds_img_18.png){#fig-6 style="width:100%;"}
+![Purse-seine fishing closures around St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)](./imgs/seabirds_img_18.png){#fig-6 style="width:100%;"}
 :::
 ::::::
 :::::::

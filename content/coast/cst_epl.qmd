@@ -151,7 +151,7 @@ There is good progress in protecting coastal ecosystem types, but the national p
 
 Ideally, coastal ecosystem types should have cross-realm protection in contiguous land-based and marine protected areas. Good examples of cross-realm protection are: Garden Route National Park and Tsitsikamma Marine Protected Area (MPA); iSimangaliso Wetland Park and MPA; De Hoop Nature Reserve and MPA; Addo Elephant National Park and MPA; and Namaqua National Park and MPA.
 
-![Coastal ecosystem protection level, 2025.](imgs/cst_epl-map.png){#fig-eplmap fig-align="center"}
+![Coastal ecosystem protection level, 2025.](imgs/cst_epl_map_new2.png){#fig-eplmap fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem protection level of coastal ecosystem types by (A) number of types and (B) extent of types"
