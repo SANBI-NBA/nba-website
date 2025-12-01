@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5577c68e844ab3972e3f16150fc50848.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-href","listing-title","listing-image"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -145,7 +145,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="https://www.sanbi.org/" class="navbar-brand navbar-brand-logo">
+    <a href="https://nba.sanbi.org.za/" class="navbar-brand navbar-brand-logo">
     <img src="./imgs/nba-logo-combo.png" alt="" class="navbar-logo light-content">
     <img src="./imgs/nba-logo-combo.png" alt="" class="navbar-logo dark-content">
     </a>
@@ -282,6 +282,18 @@ window.Quarto = {
  <span class="menu-text">Species trends - Red List Index</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/integrated-findings/chl_rls_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About species threat status</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/integrated-findings/chl_spl_explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About species protection level</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -362,31 +374,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_wet_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland Ecosystem Types</span></a>
+ <span class="menu-text">Wetland ecosystem types</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_riv_type.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">River Ecosystem Type</span></a>
+ <span class="menu-text">River ecosystem types</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland Ecological Condition</span></a>
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on Wetland Ecosystems</span></a>
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_riv_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">River Ecological Condition</span></a>
+ <span class="menu-text">River ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,7 +410,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_riv_ets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">River Ecosystem Threat Status</span></a>
+ <span class="menu-text">River ecosystem threat status</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -410,7 +422,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/freshwater/fw_riv_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">River Ecosystem Protection Level</span></a>
+ <span class="menu-text">River ecosystem protection level</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -626,12 +638,23 @@ window.Quarto = {
  <span class="menu-text">Plants</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mammals</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mammals</span></a>
+  <a href="./content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wildlife species in South Africa</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/species/sp_reptiles.html" class="sidebar-item-text sidebar-link">
@@ -666,15 +689,15 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./content/species/sp_fwf.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Freshwater fishes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/species/fish_recovery.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SA Freshwater fish species recovery</span></a>
+ <span class="menu-text">South African Freshwater fish species recovery actions</span></a>
   </div>
 </li>
       </ul>
@@ -700,7 +723,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/species/sp_sharks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sharks (incl. Rays &amp; Chimaeras)</span></a>
+ <span class="menu-text">Sharks, rays and chimaeras</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -715,11 +738,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="./content/genetics/genetic-indicators.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Genetic diversity</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/genetics/chl-biobank.html" class="sidebar-item-text sidebar-link">
@@ -742,13 +765,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false">
  <span class="menu-text">Priority actions and knowledge gaps</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-17" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./content/integrated-findings/pakg_actions.html" class="sidebar-item-text sidebar-link">
@@ -803,23 +826,32 @@ window.Quarto = {
 <section id="key-messages" class="level3">
 <h3 class="anchored" data-anchor-id="key-messages">Key Messages</h3>
 <p>The <a href="./content/key-messages/index.html">key messages</a> of the NBA are clustered as follows: A) Cross realm pressures are impacting people; B) Improving the status of biodiversity is key to a sustainable future; C) Inclusive actions across the whole of society are needed.</p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><a href="./content/key-messages/index.html#kma"><img src="./imgs/card_kma.png" class="img-fluid"></a></p>
-</div><div class="column" style="width:33%;">
-<p><a href="./content/key-messages/index.html#kmb"><img src="./imgs/card_kmb.png" class="img-fluid"></a></p>
-</div><div class="column" style="width:33%;">
-<p><a href="./content/key-messages/index.html#kmc"><img src="./imgs/card_kmc.png" class="img-fluid"></a></p>
+<div class="km-tile-wrap">
+  <a class="km-tile" href="./content/key-messages/index.html#kma/" style="background-color:#FAA755;">
+    <h4 class="anchored">Cluster A</h4>
+    <img src="./imgs/icon-km-cluster-a.png" alt="">
+    <p>Cross-realm pressures on South Africa’s biodiversity are impacting people</p>
+  </a>
+  <a class="km-tile" href="./content/key-messages/index.html#kmb" style="background-color:#70B276;">
+    <h4 class="anchored">Cluster B</h4>
+    <img src="./imgs/icon-km-cluster-b.png" alt="">
+    <p>Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all</p>
+  </a>
+  <a class="km-tile" href="./content/key-messages/index.html#kmc" style="background-color:#9D85BE;">
+    <h4 class="anchored">Cluster C</h4>
+    <img src="./imgs/icon-km-cluster-c.png" alt="">
+    <p>Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people</p>
+  </a>
 </div>
-</div>
+
 <hr>
 </section>
 <section id="realms-and-zones" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="realms-and-zones">Realms and zones</h3>
 <div id="listing-page-listings" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1764582987000" data-listing-file-modified-sort="1764582987584" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="717">
+<a href="./content/terrestrial/ter_overview.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="imgs/card_ter_Andrew-Skowno.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -831,8 +863,8 @@ Terrestrial realm
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1764582986000" data-listing-file-modified-sort="1764582986914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="725">
+<a href="./content/freshwater/fw_overview.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="imgs/card_fw_Jeremy_Shelton.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -844,8 +876,8 @@ Freshwater realm
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1764582987114" data-listing-reading-time-sort="10" data-listing-word-count-sort="1901">
+<a href="./content/marine/marine_overview.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="imgs/card_mar_Eve_Marshall.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -857,11 +889,11 @@ Marine realm
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1764582986888" data-listing-reading-time-sort="11" data-listing-word-count-sort="2188">
+<a href="./content/estuaries/est_overview.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="imgs/card_est_knysna_duran_de_villiers.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="imgs/card_est_sout_nmu.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -870,8 +902,8 @@ Estuarine realm
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-listing-date-sort="1764582986000" data-listing-file-modified-sort="1764582986822" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4105">
+<a href="./content/coast/cst_synthesis.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="imgs/card_cst_Linda_Harris.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -883,8 +915,8 @@ Coastal zone
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-listing-date-sort="1764582987000" data-listing-file-modified-sort="1764582987541" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3764">
+<a href="./content/subantarctic/sub-all_sections.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="imgs/card_sub_Stephni_van_der_Merwe.png" class="thumbnail-image card-img" style="height: 150px;">
@@ -902,7 +934,7 @@ Subantarctic territory
 <div class="column-screen page-columns page-full">
 <div class="column-body">
 <center>
-<span style="font-size:.7rem; color:#a7abb4;">Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Duran de Villiers (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).</span>
+<span style="font-size:.7rem; color:#a7abb4;">Images: Andrew Skowno (Terrestrial realm), Jeremy Shelton (Freshwater realm), Eve Marshall (Marine realm), Nelson Mandela University (Estuarine realm), Linda Harris (Coastal zone), Stephni van der Merwe (Subantarctic territory).</span>
 </center>
 </div>
 </div>
@@ -942,8 +974,6 @@ Subantarctic territory
 <p><a href="./content/integrated-findings/pakg_gaps.html"><img src="./imgs/card_kgrp.png" class="img-fluid" width="100"></a> <strong>Gaps</strong></p>
 </div>
 </div>
-<hr>
-<p><em>Photo credits: Andrew Skowno (terrestrial); Jeremy Shelton (freshwater); Eve Marshall (marine); Duran de Villiers (estuaries); Linda Harris (coast); Stephni van der Merwe (subantarctic).</em></p>
 
 
 
