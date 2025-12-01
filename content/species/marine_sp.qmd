@@ -202,6 +202,10 @@ citation:
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
+
+#format:
+#  html:
+#    embed-resources: true
 ---
 
 ```{=html}
