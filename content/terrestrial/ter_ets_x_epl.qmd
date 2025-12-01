@@ -57,39 +57,14 @@ format:
       echo: false
 ---
 
-
 *The intersection of ecosystem threat status and protection level reveals protected areas expansion priorities and challenges in Fynbos, Grassland and Desert Biomes.*
 
 ![The Endangered black harrier: an iconic species of the highly threatened renosterveld ecosystems of the Fynbos Biome. (© Odette Curtis-Scott)](./imgs/blackharrier_crop_ocs.png)
 
-------------------------------------------------------------------------
 
-::::: columns
-::: {.column width="50%"}
-<center>
+Close to a quarter (105/463) of terrestrial ecosystems are highly threatened and under-protected (Critically Endangered or Endangered and Not Protected or Poorly Protected). Three of the six ecosystem types making up the Indian Ocean Coastal Belt Biome, and 40% of Fynbos ecosystem types (50/126) fall into this category. Within the Fynbos Biome, renosterveld ecosystems are particularly highly threatened and under-protected (17/30 types), highlighting a general trend globally where fragmented lowland regions which have seen extensive habitat loss from cropland development and human settlement are rarely included in protected areas networks. Recent biodiversity stewardship efforts in the Overberg region have seen some of these ecosystems and their iconic and threatened species receive formal protection ([read more](https://overbergrenosterveld.org.za/latest-renosterveld-news-37/)).
 
-| [23%]{.inline-style-threatened}
-| of 463 ecosystem types
-| [Highly threatened and under protected]{.inline-style-indicator}
-
-</center>
-:::
-
-::: {.column width="50%"}
-<center>
-
-| [57%]{.inline-style-threatened}
-| of 30 renosterveld ecosystem types
-
-</center>
-:::
-:::::
-
-------------------------------------------------------------------------
-
-Close to a quarter (105/463) of terrestrial ecosystems are highly threatened and under protected (Critically Endangered or Endangered and Not Protected or Poorly Protected). Three of the six ecosystem types making up the Indian Ocean Coastal Belt Biome, and 40% of Fynbos ecosystem types (50/126) fall into this category. Within the Fynbos Biome, renosterveld ecosystems are particularly highly threatened and under protected (17/30 types), highlighting a general trend globally where fragmented lowland regions which have seen extensive habitat loss from cropland development and human settlement are rarely included in protected areas networks. Recent biodiversity stewardship efforts in the Overberg region have seen some of these ecosystems and their iconic and threatened species receive formal protection ([read more](https://overbergrenosterveld.org.za/latest-renosterveld-news-37/)).
-
-![Highly threatened and under protected ecosystem types.](./imgs/unluckies_map.png){#fig-unluckies_map fig-cap="Map of threatened and under-protected ecosystem types." width="600"}
+![Highly threatened and under-protected ecosystem types.](./imgs/unluckies_map.png){#fig-unluckies_map fig-cap="Map of threatened and under-protected ecosystem types." width="600"}
 
 ```{r libraries}
 

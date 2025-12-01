@@ -5,6 +5,8 @@ library(here)
 library(ggplot2)
 library(tidyverse)
 
+
+
 ######################### EXTRACT THE EDCZ FROM THE IEM ########################
 # Set up file names ------------------------------------------------------------
 iem_filename <-"IEM_5_13_3_010825.shp"
@@ -515,10 +517,10 @@ ggsave(
 
 
 ## Fast read in to edit and update maps below
-# nba2025cst <- st_read(here("data/spatial_data/link2spatial_data/cst_nba2025_edcz-map.shp"))
-# nba2025cst <- nba2025cst %>% 
-#   rename(`Threat status` = "Thrtstt",
-#          `Protection level` = "Prtctnl")
+nba2025cst <- st_read(here("C:/Users/skownoa/Dropbox/NBAwork/Coast/cst_nba2025_edcz-map.shp"))
+ nba2025cst <- nba2025cst %>% 
+   rename(`Threat status` = "Thrtstt",
+          `Protection level` = "Prtctnl")
 
 
 # Create and save coastal ETS map ----------------------------------------------
@@ -526,14 +528,15 @@ cst_ets_map <- nba_map(DF = nba2025cst,
                        GEOM = 'vector',
                        FILL = `Threat status`,
                        LEGEND = TRUE,
-                       MOE = FALSE,
-                       SCALE_TEXT = 0.55)
+                       #MOE = FALSE,
+                       SCALE_TEXT = 0.4)
 
 ggsave(
-  filename = here("imgs/cst_ets-map_new.png"),
+  filename = "quarto/imgs/cst_ets-map_new2.png",
   plot = cst_ets_map,
-  width = 800/120,   # inches = pixels / dpi
-  height = (800/120) * 0.51,  # adjust aspect ratio
+  width = 600,   # inches = pixels / dpi
+  height = 300,  # adjust aspect ratio
+  units = "px",
   dpi = 120
 )
 

@@ -123,7 +123,7 @@ Key SDG indicators to which the NBA has links:
 -   15.5.1 Red List Index (RLI)
 :::
 
-![](imgs/UNCCD.png){width="200"}
+![](imgs/UNCCD.png){width="220" height="70"}
 
 ::: {.callout-note collapse="true" title="United Nations Convention to Combat Desertification (UNCCD)"}
 The [UNCCD](https://www.unccd.int/) is a legally binding framework set up to address desertification and the effects of drought. In 2017, the Conference of the Parties (COP) to the United Nations Convention to Combat Desertification (UNCCD) adopted the 2018–2030 Strategic Framework. The framework contains five strategic objectives (SOs).
@@ -147,7 +147,7 @@ Key Ramsar indicator to which the NBA has links:
 -   8.6 Total and disaggregated area for the extent of wetlands (according to the Convention’s definition) for the year of available data
 :::
 
-![](imgs/UNFCCC.jpg){width="200"}
+![](imgs/UNFCCC.JPG){width="250"}
 
 ::: {.callout-note collapse="true" title="United Nations Framework Convention on Climate Change (UNFCCC)"}
 The Adaptation Committee of the [UNFCCC](https://www.unfccc.int/) has proposed a number of Ecosystems and Biodiversity indicators of relevance to the NBA.

@@ -476,7 +476,7 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 :::
 ::::
 
-## Trends - the Red List Index
+## Trends – the Red List Index
 
 The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The RLI value for spiders in South Africa was calculated in 2020 and included 2 214 species. The RLI value is 0.994, and relative to other taxon groups assessed in South Africa, spiders have the highest RLI value (@fig-3). Since only one assessment has been conducted for spiders, it is not possible to determine the trend in extinction risk for this group. Important to note, many Data Deficient species are included in the assessment, and hence there is still a high level of uncertainty associated with this result.
 
@@ -668,6 +668,24 @@ Preliminary research on the following families reveals that many species remain 
 :::::::::::::::::::
 ::::::::::::::::::::
 
+## Approach
+
+The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA).
+
+***Data sources and methods***
+
+The assessment utilised data from the First Atlas of South African Spiders [@a2010a], which compiled information from two primary sources: the National Collection of Arachnida (NCA) at the Agricultural Research Council – Plant Health and Protection (ARC-PHP) in Roodeplaat, Pretoria (with over 60 000 records) and published taxonomic literature from 17 museum collections.
+
+The distribution of occurrence records across South Africa, Lesotho and Eswatini was visualised using quarter-degree, degree-square and density kernel plots for all 76 069 records. However, records in the NCA that were not identified to species level were excluded from the Red List assessments, reducing the analytical dataset to 23,827 species-level records covering 2 253 known South African spider species.
+
+***Calculation of parameters***
+
+The calculation of Red List parameters was performed using the R package red (v1.6.3) [@cardoso2017a]. Spatial analyses on observed occurrences used functions for calculating Extent of Occurrence (EOO), Area of Occupancy (AOO), and elevational range. EOO was calculated as the minimum convex polygon around all occurrences, while AOO was determined by the number of 2 km² cells occupied. When EOOs were smaller than the AOO, they were made equal. Assessments were drafted as per the IUCN documentation standards and reviewed by relevant experts.
+
+***Assessment criteria and limitations***
+
+Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends – a critical data gap known as the Prestonian shortfall – which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
+
 ## Acknowledgements
 
 The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council (ARC), the University of the Free State, National Museum Bloemfontein, and the University of Venda (formerly University of Limpopo), with the National Research Foundation (NRF) providing funding and support. South African National Parks and E. Oppenheimer & Son support and provide opportunities to collect in the parks and reserves and the provincial conservation agencies for collecting permits.
@@ -745,24 +763,6 @@ gt(data) %>%
   ) 
 
 ```
-
-## Approach
-
-The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA).
-
-***Data sources and methods***
-
-The assessment utilised data from the First Atlas of South African Spiders [@a2010a], which compiled information from two primary sources: the National Collection of Arachnida (NCA) at the Agricultural Research Council – Plant Health and Protection (ARC-PHP) in Roodeplaat, Pretoria (with over 60 000 records) and published taxonomic literature from 17 museum collections.
-
-The distribution of occurrence records across South Africa, Lesotho and Eswatini was visualised using quarter-degree, degree-square and density kernel plots for all 76 069 records. However, records in the NCA that were not identified to species level were excluded from the Red List assessments, reducing the analytical dataset to 23,827 species-level records covering 2 253 known South African spider species.
-
-***Calculation of parameters***
-
-The calculation of Red List parameters was performed using the R package red (v1.6.3) [@cardoso2017a]. Spatial analyses on observed occurrences used functions for calculating Extent of Occurrence (EOO), Area of Occupancy (AOO), and elevational range. EOO was calculated as the minimum convex polygon around all occurrences, while AOO was determined by the number of 2 km² cells occupied. When EOOs were smaller than the AOO, they were made equal. Assessments were drafted as per the IUCN documentation standards and reviewed by relevant experts.
-
-***Assessment criteria and limitations***
-
-Notably, all Red List assessments relied exclusively on IUCN criteria B (geographic range) or D (population size), as these could be evaluated from available distribution data and inferred threats. The other IUCN criteria (A, C, and E) require empirical evidence of population dynamics and trends – a critical data gap known as the Prestonian shortfall – which remains unavailable for most spider species. This methodological constraint highlights the need for long-term monitoring programs to provide insights into population dynamics.
 
 ### Recommended citation
 
