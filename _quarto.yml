@@ -117,10 +117,7 @@ website:
                      - content/marine/marine_ets.qmd
                      - content/marine/marine_epl.qmd
                      - content/marine/marine_ets_epl.qmd
-                     - section: "Species status"
-                       href: content/species/marine_sp.qmd
-                       contents:
-                          - content/species/marine_bird_sp.qmd
+                     - content/species/marine_sp.qmd
                      - content/marine/marine_priority_actions.qmd
                 - section: "Coast"
                   href: content/coast/cst_synthesis.qmd
@@ -143,7 +140,10 @@ website:
                   contents:
                       - content/species/sp_mammal_wildlife.qmd
                 - content/species/sp_reptiles.qmd
-                - content/species/sp_birds.qmd
+                - section: "Birds"
+                  href: content/species/sp_birds.qmd
+                  contents:
+                      - content/species/marine_bird_sp.qmd
                 - content/species/sp_spiders.qmd
                 - content/species/sp_butterflies.qmd
                 - content/species/sp_amphibians.qmd
@@ -293,6 +293,7 @@ format:
           @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
             .breadcrumb li a {
               color: white !important;
+              --bs-breadcrumb-divider-color: white !important;
             }
           }
           </style>
