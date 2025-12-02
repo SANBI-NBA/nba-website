@@ -452,8 +452,7 @@ ggpubr::ggarrange(indigenous_PL, endemic_PL, ncol = 2, labels = c("A", "B"),
                   font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
 
-##Approach
-NEED TO ADD
+##Approach NEED TO ADD
 
 ### Recommended citation
 

@@ -95,8 +95,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
 ```{=html}
 <style>
 
@@ -110,6 +108,8 @@ google-scholar: true
 ```
 
 ![The thick-tailed bushbaby (*Otolemur crassicaudatus*) was uplisted from LC to NT based on increasing threats due to agriculture, residential and industrial development, and new pressures such as linear infrastructure development and climate change. (© Luca Pozzi)](./imgs/sp-img-12%20L%20Pozzi.png){fig-align="center"}
+
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="32%"}
@@ -489,7 +489,7 @@ knitr::include_graphics("./imgs/Mammals_thrt_10km_HD.png")
 
 ::::::::::::::: {#box-1 .callout-note .species title="Box 1. Improvement in threat status of three species" collapse="true"}
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_1.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
@@ -498,7 +498,7 @@ knitr::include_graphics("./imgs/Mammals_thrt_10km_HD.png")
 ::::
 
 ::: {.g-col-lg-8 .g-col-12 style="display:flex; flex-direction:column; justify-content:center; margin-top:-40px;"}
-### Hartmann's mountain zebra was downlisted from Vulnerable to Near Threatened.
+### Hartmann's mountain zebra was downlisted from Vulnerable to Near Threatened
 
 ------------------------------------------------------------------------
 :::
@@ -507,7 +507,7 @@ knitr::include_graphics("./imgs/Mammals_thrt_10km_HD.png")
 Hartmann's mountain zebra (*Equus zebra hartmannae*) naturally occurs in the north-west portions of the Northern Cape Province in South Africa, where they are currently established in three conservation areas: Richtersveld National Park, Augrabies Falls National Park, and Goegap Provincial Nature Reserve. The subspecies has also been introduced outside of their natural distribution range in the Western Cape, Eastern Cape, North West, Free State and KwaZulu-Natal provinces. The subspecies has been downlisted from Vulnerable D1 to Near Threatened D1 due to a genuine increase in population numbers, with the current mature population within the natural distribution range estimated at least 1 230 mature individuals (compared to fewer than 1 000 estimated in 2016), exceeding the threshold for the Vulnerable D1 criterion. This population growth is evident in formally protected areas such as Goegap Nature Reserve, which more than tripled from 25 individuals in 2004 to 83 in 2022; and Augrabies Falls National Park, which increased from 8 individuals in 1996 to 208 in 2016. Private subpopulations in the Northern Cape are also contributing significantly with an estimated 960 to 1 425 wild individuals. The population size remains small and reliant on active management to remain viable, with increasing drought frequencies due to climate change posing an ongoing threat that requires continued management interventions.
 
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_2.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
@@ -516,16 +516,16 @@ Hartmann's mountain zebra (*Equus zebra hartmannae*) naturally occurs in the nor
 ::::
 
 ::: {.g-col-lg-8 .g-col-12 style="display:flex; flex-direction:column; justify-content:center; margin-top:-40px;"}
-### The Roan antelope has been downlisted from Endangered to Vulnerable.
+### The roan antelope has been downlisted from Endangered to Vulnerable.
 
 ------------------------------------------------------------------------
 :::
 ::::::
 
-The Roan antelope (*Hippotragus equinus*) naturally occurs in the Limpopo (and marginally in Mpumalanga) bushveld areas through to open savannahs in certain areas of North West, Northern Cape and Free State provinces within South Africa. The species has been downlisted from Endangered to Vulnerable because the minimum confirmed wild mature population within the natural range has increased from less than 250 individuals to less than 1 000 individuals (currently estimated at 516-602 mature individuals from a total of 860 individuals). This improvement is primarily due the role that privately owned game farms are playing, as 77% of the total estimated population occurs on private land. While the overall population estimate has increased, roan antelope numbers in state-owned protected areas have declined from 333 individuals across nine protected areas in 2016 to just 197 individuals in eight protected areas in 2024. This decline is primarily attributed to poor habitat management due to insufficient resources (such as funding and human capacity), combined with ecological factors including habitat degradation from high densities of competing herbivores like elephants and other large mammals, increased predation pressure, and the species' sensitivity to changes in grass height and composition (essential for both foraging and concealing their young).
+The roan antelope (*Hippotragus equinus*) naturally occurs in the Limpopo (and marginally in Mpumalanga) bushveld areas through to open savannahs in certain areas of North West, Northern Cape and Free State provinces within South Africa. The species has been downlisted from Endangered to Vulnerable because the minimum confirmed wild mature population within the natural range has increased from less than 250 individuals to less than 1 000 individuals (currently estimated at 516-602 mature individuals from a total of 860 individuals). This improvement is primarily due the role that privately owned game farms are playing, as 77% of the total estimated population occurs on private land. While the overall population estimate has increased, roan antelope numbers in state-owned protected areas have declined from 333 individuals across nine protected areas in 2016 to just 197 individuals in eight protected areas in 2024. This decline is primarily attributed to poor habitat management due to insufficient resources (such as funding and human capacity), combined with ecological factors including habitat degradation from high densities of competing herbivores like elephants and other large mammals, increased predation pressure, and the species' sensitivity to changes in grass height and composition (essential for both foraging and concealing their young).
 
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_3.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
@@ -665,7 +665,7 @@ combined_plot
 ![](./imgs/sp_mammal_5.png){fig-alt="cat" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-The Black-footed cat (*Felis nigripes*) has experienced a genuine improvement in protection level status from 2016 to 2025, due to expansion of protected areas, in particular, the Mountain Zebra-Camdeboo Protected Environment. (© Nadia van Zyl)
+The black-footed cat (*Felis nigripes*) has experienced a genuine improvement in protection level status from 2016 to 2025, due to expansion of protected areas, in particular, the Mountain Zebra-Camdeboo Protected Environment. (© Nadia van Zyl)
 :::
 
 ## Species recovery
@@ -755,7 +755,7 @@ Prioritising these research gaps will enhance evidence-based conservation decisi
 In this regional 2025 assessment of South Africa Eswatini and Lesotho, 336 mammal taxa were assessed using the [IUCN Red List of Threatened Species categories and criteria](https://www.iucnredlist.org/resources/categories-and-criteria) and applying the [regional adjustment criteria](https://www.iucnredlist.org/resources/regionalguidelines). Assessments were undertaken between 2023 and 2025 and involved data contributors from over 40 institutions and 164 experts. A section on genetic health ([Box 4](#box-4)) and climate change vulnerability was included for the first time. Evidence for vulnerability to climate change was established from expert observations and literature for all species, and climate modeling was undertaken for 14 species identified as vulnerable to the impacts of climate change in the 2016 assessment ([Box 5](#box-5)).
 
 ::: {#box-4 .callout-note .species title="Box 4. Using the National Red List assessment process to inform the genetic health of South Africa’s mammals" collapse="true"}
-Building on national efforts to evaluate the genetic health of South Africa’s species (see [Genetic diversity](../content/genetics.qmd) section), a new project is quantifying the genetic status of all South African mammals using two Global Biodiversity Framework indicators: the Proportion of Populations Maintained and the Proportion of Populations with an Effective Population Size (Ne) above 500. Leveraging the coordination and expertise of the mammal Red List reassessments, assessors systematically compiled recent molecular evidence, identified genetic subpopulations, estimated Ne for each, and highlighted research priorities where information was lacking. A core component of this work was in standardising the use of genetic subpopulations, which were defined as groups of individuals with limited or no gene flow per generation, while metapopulations were recognised where connectivity exceeded one migrant per generation. Contemporary Ne estimates were derived from genetic studies or inferred from proxy data (e.g., census counts \[Nc\], density and area of occupancy) using Ne/Nc ratios of 0.1–0.3, adjusted for transboundary populations. This represents the first application of genetic indicators across a complete taxonomic group in South Africa, establishing a streamlined framework to inform species conservation status.
+Building on national efforts to evaluate the genetic health of South Africa’s species (see [genetic diversity](../genetics/genetic-indicators.qmd) page), a new project is quantifying the genetic status of all South African mammals using two Global Biodiversity Framework indicators: the Proportion of Populations Maintained and the Proportion of Populations with an Effective Population Size (Ne) above 500. Leveraging the coordination and expertise of the mammal Red List reassessments, assessors systematically compiled recent molecular evidence, identified genetic subpopulations, estimated Ne for each, and highlighted research priorities where information was lacking. A core component of this work was in standardising the use of genetic subpopulations, which were defined as groups of individuals with limited or no gene flow per generation, while metapopulations were recognised where connectivity exceeded one migrant per generation. Contemporary Ne estimates were derived from genetic studies or inferred from proxy data (e.g., census counts \[Nc\], density and area of occupancy) using Ne/Nc ratios of 0.1–0.3, adjusted for transboundary populations. This represents the first application of genetic indicators across a complete taxonomic group in South Africa, establishing a streamlined framework to inform species conservation status.
 :::
 
 ::: {#box-5 .callout-note .species title="Box 5. Use of climate modelling in assessments" collapse="true"}
@@ -781,21 +781,15 @@ climate_change <- readxl::read_excel("./data/sp_mammals_table4.xlsx") %>%
 climate_change <- gt(climate_change) %>%
   fmt_markdown(columns = Taxon) %>%  # This enables HTML/markdown rendering
   nba_tbl_theme() %>%
-  tab_options(#data_row.padding = px(16),
-              table.font.size = px(13L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black") %>%
+
   tab_style(style = cell_fill(color = "white"), 
            locations = cells_column_labels(columns = everything())) %>%
+  
   tab_style(style = cell_borders(sides = c("left", "right"),
                                 color = "transparent",
                                 weight = px(0)),
            locations = cells_column_labels(columns = everything())) %>%
+  
   tab_style(style = cell_borders(sides = "bottom",
                                 color = "grey", 
                                 weight = px(1)),
@@ -976,7 +970,7 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 -   IUCN 2025. Threats Classification Scheme (Version 3.3). The IUCN Red List of Threatened Species. Version 2025-1. https://www.iucnredlist.org
 
-### Recommended citation
+## Recommended citation
 
 ```{r}
 #| output: asis

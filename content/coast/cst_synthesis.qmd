@@ -154,7 +154,9 @@ The coast is a relatively small area, but comprises a treasure trove of biodiver
 
 ![Ecosystem types that comprise the ecologically determined coastal zone in South Africa. [@harris2025]](imgs/cst-ecoystems-coastmap_Jan25.png){#fig-ecotypes fig-align="center"}
 
-**Although not currently included in the EDCZ, freshwater ecosystem types are likely to be included in future**, particularly the coastal lakes, swamp forests (freshwater forested wetlands), dune slacks, groundwater, aquifers, seeps and springs, and river–estuary transition zones. There are also three micro-estuary types that are within the EDCZ; however, they are not currently assessed, and thus are not included in the count of coastal ecosystem types to simplify reporting. [Read more »](./cst_ecosystems.qmd)
+**Although not currently included in the EDCZ, freshwater ecosystem types are likely to be included in future**, particularly the coastal lakes, swamp forests (freshwater forested wetlands), dune slacks, groundwater, aquifers, seeps and springs, and river–estuary transition zones. There are also three micro-estuary types that are within the EDCZ; however, they are not currently assessed, and thus are not included in the count of coastal ecosystem types to simplify reporting.
+
+[Read more »](./cst_ecosystems.qmd)
 
 ## Pressures on coastal biodiversity
 
@@ -178,11 +180,11 @@ The coast is a relatively small area, but comprises a treasure trove of biodiver
 
 ### Ecological condition
 
-**Given the intensity and number of pressures to coastal biodiversity, half (48%) of the South African coast is no longer in a natural to near-natural state, and a quarter (26%) is severely/critically modified** (@fig-condmap, @fig-condgraph). Proportionately, there more than double the amount of modified habitat in the coastal zone than in non-coastal areas. [Read more »](./cst_pressures-condition.qmd#cst-cond)
+**Given the intensity and number of pressures to coastal biodiversity, half (48%) of the South African coast is no longer in a natural to near-natural state, and a quarter (26%) is severely/critically modified** (@fig-condmap, @fig-condgraph). Proportionately, there more than double the amount of modified habitat in the coastal zone than in non-coastal areas.
 
-![Coastal ecological condition, 2025.](imgs/cst_cond-map_new.png){#fig-condmap}
+[Read more »](./cst_pressures-condition.qmd#cst-cond)
 
-![Coastal ecological condition, 2025.](imgs/cst_cond_map_new2.png)
+![Coastal ecological condition, 2025.](imgs/cst_cond_map_new2.png){#fig-condmap fig-align="center"}
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
 #| label: fig-condgraph
@@ -211,11 +213,11 @@ cst_cond
 
 **The criteria in the IUCN Red List of Ecosystems were applied to determine ecosystem threat status** for the terrestrial, estuarine and marine assessments, with the results summarised here for the coastal ecosystem types. Ecosystem types were assessed as Critically Endangered, Endangered, Vulnerable (collectively referred to as threatened), Near Threatened, or Least Concern.
 
-**There are `r cet_thr_n` (`r  percent_types(cet_thr_n, cet_n)`%) threatened coastal ecosystem types that comprise `r percent_extent(ets, "thr", "coast")`% of the coastal extent**, compared to `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r astext(c_nc_prop_thr_n)` times the number of threatened ecosystem types and almost an order of magnitude (`r astext(c_nc_prop_thr_e)` times) more threatened area than the rest of the South African mainland territory (@fig-etsmap, @fig-etsgraph). [Read more »](./cst_ets.qmd)
+**There are `r cet_thr_n` (`r  percent_types(cet_thr_n, cet_n)`%) threatened coastal ecosystem types that comprise `r percent_extent(ets, "thr", "coast")`% of the coastal extent**, compared to `r ncet_thr_n` (`r  percent_types(ncet_thr_n, ncet_n)`%) threatened ecosystem types that comprise `r round(nc_thr_e/nc_e*100)`% of the rest of the country (non-coastal land and sea). Proportionately, this means the coast has `r astext(c_nc_prop_thr_n)` times the number of threatened ecosystem types and almost an order of magnitude (`r astext(c_nc_prop_thr_e)` times) more threatened area than the rest of the South African mainland territory (@fig-etsmap, @fig-etsgraph).
 
-![Coastal ecosystem threat status, 2025.](imgs/cst_ets-map_new.png){#fig-etsmap fig-align="center"}
+[Read more »](./cst_ets.qmd)
 
-![Coastal ecosystem threat status, 2025.](imgs/cst_ets_map_new2.png){fig-align="center"}
+![Coastal ecosystem threat status, 2025.](imgs/cst_ets_map_new2.png){#fig-etsmap fig-align="center"}
 
 ```{r echo=FALSE, warning=FALSE, fig.align='center', message=FALSE}
 #| fig.cap: "Ecosystem threat status of coastal ecosystem types by (a) number of types and (b) extent of types"
@@ -275,7 +277,9 @@ These results are not comparable with the results from the NBA 2018 given the di
 
 **Ecosystem protection level was determined by calculating the proportion of each ecosystem type in a protected area, and evaluating these against a predefined biodiversity target per ecosystem type, with heuristics regarding the ecological condition of the ecosystem types under protection.** Ecosystem types are assigned one of four categories of protection: Well Protected (WP) ecosystem types are those where the extent target is met or exceeded within the protected area network, Moderately Protected (MP) types are those with between 50 and 99% of their target within the protected area network, Poorly Protected (PP) types have between 5 and 49% of their target within the network, and types with less than 5% of their target within the protected area network are categorised as Not Protected (NP).
 
-**There is good progress in representing coastal ecosystem types in protected areas**, with `r percent_types(c_prot_n, cet_n)`% of 190 coastal ecosystem types now having some level of protection. However, only `r percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types are Well Protected, covering just `r percent_extent(epl, "WP", "coast")`% of the ecologically determined coastal zone (EDCZ), meaning `r 100-percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types covering `r 100-percent_extent(epl, "WP", "coast")`% of the EDCZ are not yet meeting their biodiversity targets for protection (@fig-eplmap, @fig-eplgraph). [Read more »](./cst_epl.qmd)
+**There is good progress in representing coastal ecosystem types in protected areas**, with `r percent_types(c_prot_n, cet_n)`% of 190 coastal ecosystem types now having some level of protection. However, only `r percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types are Well Protected, covering just `r percent_extent(epl, "WP", "coast")`% of the ecologically determined coastal zone (EDCZ), meaning `r 100-percent_types(c_epl_n("WP"), cet_n)`% of coastal ecosystem types covering `r 100-percent_extent(epl, "WP", "coast")`% of the EDCZ are not yet meeting their biodiversity targets for protection (@fig-eplmap, @fig-eplgraph).
+
+[Read more »](./cst_epl.qmd)
 
 ![Coastal ecosystem protection level, 2025.](imgs/cst_epl_map_new2.png){#fig-eplmap fig-align="center"}
 
@@ -367,9 +371,11 @@ reactable(
 
 ```
 
-Of the `r cet_thr_n` (of `r cet_n`) threatened coastal ecosystem types (Critically Endangered, Endangered, Vulnerable), `r risky_n` (`r percent_types(risky_n, cet_thr_n)`%) are under-protected (Moderately Protected, Poorly Protected, Not Protected). `r Astext(unlucky_n)` of these are high risk, because they are highly threatened and under-protected (Critically Endangered or Endangered and Poorly Protected or Not Protected) @fig-unlucky. [Read more »](./cst_ets-x-epl.qmd)
+Of the `r cet_thr_n` (of `r cet_n`) threatened coastal ecosystem types (Critically Endangered, Endangered, Vulnerable), `r risky_n` (`r percent_types(risky_n, cet_thr_n)`%) are under-protected (Moderately Protected, Poorly Protected, Not Protected). `r Astext(unlucky_n)` of these are high risk, because they are highly threatened and under-protected (Critically Endangered or Endangered and Poorly Protected or Not Protected) @fig-unlucky.
 
-![High-risk coastal ecosystem types that are highly threatened and under-protected (CR = Critically Endangered or EN = Endangered, and NP = Not Protected or PP = Poorly Protected).](imgs/cst_unluckies_map_new2.png){#fig-unlucky}
+[Read more »](./cst_ets-x-epl.qmd)
+
+![High-risk coastal ecosystem types that are highly threatened and under-protected.](imgs/cst_unluckies_map_new2.png){#fig-unlucky fig-align="center"}
 
 To see which specific ecosystem types are highly threatened and under-protected, filter @tbl-ets_epl to the categories indicated in @fig-unlucky.
 
@@ -379,7 +385,9 @@ To see which specific ecosystem types are highly threatened and under-protected,
 
 ![Threat status for 20 sandy beach invertebrate species.](imgs/cst_sts-graph.png){#fig-sts}
 
-The Endangered coastal species are all endemic, and are impacted primarily by mining, wrack harvesting, coastal development and artificial light at night (*Tylos granulatus, Tylos capensis, Acanthoscelis ruficornis*), and over-harvesting, mining, and harmful algal blooms (*Donax serra*). [Read more »](./cst_species.qmd)
+The Endangered coastal species are all endemic, and are impacted primarily by mining, wrack harvesting, coastal development and artificial light at night (*Tylos granulatus, Tylos capensis, Acanthoscelis ruficornis*), and over-harvesting, mining, and harmful algal blooms (*Donax serra*).
+
+[Read more »](./cst_species.qmd)
 
 ::::::: grid
 ::: {.g-col-lg-3 .g-col-6 .text-center target="_blank"}

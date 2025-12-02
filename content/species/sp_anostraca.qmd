@@ -175,7 +175,7 @@ knitr::include_graphics("./imgs/anostraca_thrt_10km_HD.png")
 
 ## Threat status
 
-For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN Red List of Threatened Species Categories and Criteria. This includes 40 species, of which [36 have been published and are presented here](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581). The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified (Meyer-Milne et al. in prep).
+For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN Red List of Threatened Species Categories and Criteria. This includes 40 species, of which [36 have been published and are presented here](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581). The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified \[@meyer-milne-a.
 
 :::: panel-tabset
 ## Figure
@@ -449,7 +449,7 @@ See the article ['Land speed record’ racecourse threatens rare fairy shrimps a
 
 ## Protection level
 
-Anostraca were not included in the formal protection level assessment following the methodology outlined by von Staden et al. as part of the NBA 2025 protection level assessment [@skowno2019a]. However, an initial overlay of the South African Protected Area network and the distribution records of Anostraca species was done as part of the IUCN Red Listing process. This preliminary assessment showed that only a few species’ distributions intersect with protected areas, and, similar to freshwater fishes (Jordaan et al. 2020), these areas were not specifically designed to protect Anostraca species or freshwater species in general. Further analysis is needed to evaluate the effectiveness of existing protected areas where such overlaps occur.
+Anostraca were not included in the formal protection level assessment following the methodology outlined as part of the NBA 2018 protection level assessment [@skowno2019a]. However, an initial overlay of the South African Protected Area network and the distribution records of Anostraca species was done as part of the IUCN Red Listing process. This preliminary assessment showed that only a few species’ distributions intersect with protected areas, and, similar to freshwater fishes [@jordaan2020a], these areas were not specifically designed to protect Anostraca species or freshwater species in general. Further analysis is needed to evaluate the effectiveness of existing protected areas where such overlaps occur.
 
 ## Monitoring
 
@@ -515,7 +515,7 @@ Using soils collected from dry habitats (left) to run hatching trials (right), h
 
 The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of species.
 
-Categorisation of southern African anostracan species and their conservation status was attempted by Hamer and Brendonck (1997) and Roeck (2007) [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions. From the 40 species that were assessed, 36 have been published, with four assessments still in process.
+Categorisation of southern African anostracan species and their conservation status was attempted by [@hamer1997a] and [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions. From the 40 species that were assessed, 36 have been published, with four assessments still in process.
 
 ## Acknowledgements
 

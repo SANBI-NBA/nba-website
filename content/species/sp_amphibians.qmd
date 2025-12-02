@@ -74,8 +74,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
 ```{=html}
 <style>
 
@@ -88,11 +86,10 @@ google-scholar: true
 </style>
 ```
 
-<center>
 
 ![Pickersgill's reed frog (*Hyperolius pickersgilli*) is a species that has received extensive collaborative conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. (© Tyrone Ping)](./imgs/sp_amphibian_img_1.png){fig-align="center"}
 
-</center>
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="32%"}
@@ -1069,8 +1066,8 @@ recovery_projects <- recovery_projects %>%
     grepl("^[0-9]{4}-[0-9]{4}", `ORCID number`) ~ paste0('<a href="https://orcid.org/', `ORCID number`, '" target="_blank">', 
                                                           `ORCID number`, 
                                                           '</a>'),
-    TRUE ~ ""
-  ))
+    TRUE ~ ""))
+  
 
 # 3. Build gt table and render HTML links
 recovery_projects_gt <- recovery_projects %>%
@@ -1085,7 +1082,7 @@ recovery_projects_gt <- recovery_projects %>%
   ) %>%
   
   fmt_markdown(columns = c(`ORCID number`)) %>%
-  #nbaR::nba_tbl_theme() %>%
+
   tab_options(table.width = pct(100),
               #data_row.padding = px(10),
               column_labels.border.top.style = "solid",
@@ -1095,8 +1092,7 @@ recovery_projects_gt <- recovery_projects %>%
               column_labels.border.bottom.width = px(2),
               column_labels.border.bottom.color = "black") %>%
   
-  #tab_style(style = cell_fill(color = "gray90"),
-           # locations = cells_column_labels(columns = everything())) %>%
+  cols_hide(columns = `ORCID number`) %>%
   
   tab_style(style = cell_text(size = px(12)),  
             locations = cells_column_labels(columns = everything())) %>%

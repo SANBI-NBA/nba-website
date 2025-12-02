@@ -49,7 +49,6 @@ format:
       echo: false
 ---
 
-
 *Habitat loss and the impact of invasive alien plant species are the dominant factors in determining ecosystem threat status in the terrestrial realm. Croplands established in the last two centuries have replaced and fragmented many ecosystem types, but in recent years expanding human settlements have become a key factor in Red List of Ecosystems assessments for the terrestrial realm.*
 
 ![Eastern Highveld Grassland - Endangered. (©Anisha Dayaram)](./imgs/EasternHighveldGrassland_dayaram_crop.png)

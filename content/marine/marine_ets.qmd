@@ -320,6 +320,7 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 :::::
 
 ------------------------------------------------------------------------
+
 \
 
 ## Ecosystem threat status results

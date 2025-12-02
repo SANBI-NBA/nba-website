@@ -140,7 +140,7 @@ image: "./imgs/sp_birds_img_1.png"
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Density of 63 threatened terrestrial (i.e. non-seabird) bird species in South Africa (10 x 10 km grid) based on modelled distribution at the pentad scale [@lee2020a]. "
+#| fig-cap: "Density of 63 threatened terrestrial (i.e. non-seabird) bird species in South Africa (10 x 10 km grid) based on modelled distribution at the pentad scale [@lee2025b]. "
 #| out-width: 650px
 knitr::include_graphics("./imgs/birds_thrt_10km_HD.png")
 ```
@@ -381,7 +381,7 @@ gt(dat_combined_final) %>%
 :::
 ::::
 
-::::: {#box-1 .callout-note .species title="Box 1. Conservation success story: the White-winged Flufftail (*Sarothrura ayresi*) " collapse="true"}
+::::: {#box-1 .callout-note .species title="Box 1. Conservation success story: the white-winged flufftail (*Sarothrura ayresi*) " collapse="true"}
 The white-winged flufftail (*Sarotheura ayresi*) is one of Africa’s rarest and most threatened waterbirds, with breeding confirmed only in South Africa and Ethiopia. Previously listed as Critically Endangered (CR), the species was downlisted to Endangered (EN) in South Africa in 2025. This change does not reflect a reduction in pressures, rather a better scientific understanding of its distribution and population size, accompanied by significant conservation success in safeguarding its specialised wetland habitat.
 
 Since 2020, BirdLife South Africa’s Wetland and White-winged Flufftail Conservation Project has spearheaded efforts to conserve high-elevation wetlands, the species’ breeding habitat during the wet season. The project vision is to maintain and improve the quality and quantity of these wetlands to support threatened species and secure ecosystem services for local communities. The approach integrates management, restoration, protection, stewardship, advocacy, awareness, and research using the white-winged flufftail as a flagship species for wetland conservation.
@@ -547,6 +547,20 @@ This assessment identifies agriculture as the dominant pressure on South African
 
 Botha’s lark (*Spizocorys fringillaris*) and lappet-faced vulture (*Torgos tracheliotos*) were uplisted to Critically Endangered (CR). Their primary pressures, habitat loss and poisoning respectively, are well understood, and urgent conservation action is essential to prevent their extinction.
 
+::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s lark (*Spizocorys fringillaris*)" collapse="true"}
+Botha’s lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be remaining [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
+
+Recent field surveys, modelling of preferred habitat extent, and [SABAP2](https://sabap2.birdmap.africa/) data trends confirm alarming range contractions, including the near disappearance of the species from its former northern and southern distribution limits. The few remaining strongholds, such as the Wakkerstroom–Daggakraal region, are under increasing pressure from maize farming, pasture improvement, and invasive alien plants. Habitat fragmentation further isolates subpopulations, limiting dispersal and increasing extinction risk.
+
+Botha’s lark exemplifies the broader crisis facing South Africa’s sourveld and highland grasslands, ecosystems that provide essential ecosystem services such as water regulation and carbon storage but remain among the most poorly protected ecosystem types. A range of other threatened species call these areas home, including Rudd’s lark (*Heteromirafra ruddi*) and yellow-breasted pipit (*Anthus chloris*).
+
+<center>![](./imgs/sp_birds_img_4.png){style="border-radius:10px"}[Botha’s lark (*Spizocorys fringillaris*) on its breeding grounds in the high altitude grasslands of Wakkerstroom, Mpumalanga. (© David Ehlers Smith)]{style="width:75%; color:#626262;"}</center>
+
+Unfortunately, most of the Botha’s Lark habitat falls outside of formally protected areas. Conservation responses have included stewardship agreements with private landowners, community outreach, and exploration of targeted habitat restoration. However, without urgent expansion of formal protection and sustainable landuse practices, this iconic species faces imminent extinction.
+
+See full assessment details here - <https://www.birdlife.org.za/red-list/bothas-lark/>
+:::
+
 Natural system modifications, the second-largest pressure, primarily involves ecosystem alterations and fire suppression regimes that disrupt natural habitat dynamics. Waterbirds are particularly vulnerable to natural system modification (@fig-5), in addition to pollution of wetlands and waterways, with mangrove kingfisher (*Halcyon senegaloides*) being a notable example of a species undergoing declines. The decline of waterbirds not previously considered threatened is particularly concerning, though unsurprising given the poor state of [freshwater habitats](../freshwater/fw_overview.qmd). These habitats are highly vulnerable to pollution, invasive species, siltation, and extreme weather. Improving freshwater health will require significant political will and resources. Freshwater species also face added risks because many are congregatory, making them prone to disease outbreaks. Better management of key sites is needed to prevent accelerated declines, while urban freshwater systems present opportunities for citizen-led restoration and monitoring.
 
 Climate change emerges as the third major pressure at 30%, driven predominantly by habitat shifting and alteration as species distributions respond to changing climatic conditions.
@@ -579,19 +593,6 @@ p + scale_x_discrete(
 
 ```
 
-::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s lark (*Spizocorys fringillaris*)" collapse="true"}
-Botha’s lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be remaining [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
-
-Recent field surveys, modelling of preferred habitat extent, and [SABAP2](https://sabap2.birdmap.africa/) data trends confirm alarming range contractions, including the near disappearance of the species from its former northern and southern distribution limits. The few remaining strongholds, such as the Wakkerstroom–Daggakraal region, are under increasing pressure from maize farming, pasture improvement, and invasive alien plants. Habitat fragmentation further isolates subpopulations, limiting dispersal and increasing extinction risk.
-
-Botha’s lark exemplifies the broader crisis facing South Africa’s sourveld and highland grasslands, ecosystems that provide essential ecosystem services such as water regulation and carbon storage but remain among the most poorly protected ecosystem types. A range of other threatened species call these areas home, including Rudd’s lark (*Heteromirafra ruddi*) and yellow-breasted pipit (*Anthus chloris*).
-
-<center>![](./imgs/sp_birds_img_4.png){style="border-radius:10px"}[Botha’s lark (*Spizocorys fringillaris*) on its breeding grounds in the high altitude grasslands of Wakkerstroom, Mpumalanga. (© David Ehlers Smith)]{style="width:75%; color:#626262;"}</center>
-
-Unfortunately, most of the Botha’s Lark habitat falls outside of formally protected areas. Conservation responses have included stewardship agreements with private landowners, community outreach, and exploration of targeted habitat restoration. However, without urgent expansion of formal protection and sustainable landuse practices, this iconic species faces imminent extinction.
-
-See full assessment details here - <https://www.birdlife.org.za/red-list/bothas-lark/>
-:::
 
 ::: {#box-3 .callout-note .species title="Box 3. Poisoning crisis: Africa’s vultures on the brink" collapse="true"}
 ![](./imgs/sp_birds_img_5.png){style="border-radius:10px"}[Mass poisoning event of African white backed vulture (*Gyps africanus*) in Zululand, KwaZulu-Natal. (© Chris Kelly)]{style="width:100%; color:#626262;"}
@@ -784,7 +785,7 @@ Several threatened vultures (white-backed, lappet-faced, hooded and white-headed
 
 Species like the black harrier highlight the urgent need for collision mitigation at wind energy facilities, given population viability models showing extreme sensitivity to adult mortality.
 
-On Marion Island, a suite of seabird species (including albatrosses, petrels, and prions) are threatened by the invasive house mouse (*Mus musculus*), which predate on chicks and even adults. Without eradication, local extinctions are predicted within a century. The [Mouse-Free Marion Project](#0){style="font-size: 11pt;"}, budgeted at over R560 million, represents the largest single bird recovery initiative underway in southern Africa. See [marine bird page](#0){style="font-size: 11pt;"} for further details.
+On Marion Island, a suite of seabird species (including albatrosses, petrels, and prions) are threatened by the invasive house mouse (*Mus musculus*), which predate on chicks and even adults. Without eradication, local extinctions are predicted within a century. The [Mouse-Free Marion Project]((https://mousefreemarion.org/)) budgeted at over R560 million, represents the largest single bird recovery initiative underway in southern Africa. See [marine bird page](../species/marine_birds.qdm) for further details.
 
 Collectively, these examples illustrate that recovery work is expensive and long-term, with estimated costs for the next five years exceeding R695 million and current funding falling short by hundreds of millions. While interventions are in place for many species, most require upscaling if they are to prevent extinctions. Success will depend on strong partnerships among government, NGOs, researchers, landowners, and local communities, and on mobilising significant new resources to match the scale of the challenge, in alignment with global commitments such as GBF Target 3 (expansion and effective management of protected areas) and GBF Target 4 (halting species extinctions and promoting recovery).
 

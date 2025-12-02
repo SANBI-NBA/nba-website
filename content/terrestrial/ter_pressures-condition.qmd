@@ -117,8 +117,13 @@ mat %>%
   ) %>%
   # ↓ make value text smaller
   tab_style(
-    style = cell_text(size = px(13), align = "center"),
+    style = cell_text(size = px(11), align = "center"),
     locations = cells_body(columns = -1)
+  ) %>%
+  # ↓ row heading (stub) text smaller
+  tab_style(
+    style = cell_text(size = px(12)),
+    locations = cells_stub()
   ) %>%
   # ↓ center column labels
   tab_style(
@@ -128,8 +133,8 @@ mat %>%
   tab_options(
     table.align = "center",
     data_row.padding = px(3),
-    column_labels.font.size = px(14)
-  )
+    column_labels.font.size = px(12)
+  ) 
 ```
 
 ## Rangeland degradation

@@ -140,6 +140,7 @@ This complementary indicator is estimated as the total phylogenetic diversity in
 | of 61 species assessed have
 | [Populations with Ne greater than 500]{.inline-style-indicator}
 
+
 </center>
 :::
 :::::
