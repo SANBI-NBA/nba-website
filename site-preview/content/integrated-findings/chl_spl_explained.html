@@ -59,7 +59,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,6 +107,7 @@ background: #adb5bd;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -566,23 +567,12 @@ window.Quarto = {
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -595,11 +585,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -656,11 +646,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -671,11 +661,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
@@ -690,12 +680,23 @@ window.Quarto = {
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marine birds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -848,8 +849,8 @@ window.Quarto = {
 
 
 
-<p>South Africa’s Species Protection Level (SPL) indicator was developed to complement the <a href="../../content/integrated-findings/chl_epl_explained.html">Ecosystem Protection Level (EPL) indicator</a>, which has been part of the NBA headline indicators since 2004.<span class="citation" data-cites="reyers2007"><sup><a href="#ref-reyers2007" role="doc-biblioref">1</a></sup></span> Species protection level was assessed for the first time in 2018.<span class="citation" data-cites="Skownonba2019"><sup><a href="#ref-Skownonba2019" role="doc-biblioref">2</a></sup></span></p>
-<p>The SPL indicator measures the contribution of the protected area network to species persistence. The indicator considers two factors - the contribution of a protected area to meeting a <a href="#sec-targets">population target</a>, as well as the <a href="#sec-effectiveness">effectiveness</a> of the protected area in mitigating pressures on the species. This factor is included because studies of the contributions of protected areas to species conservation consistently note that effective protected area management is as important for species persistence as increasing habitat protection.<span class="citation" data-cites="geldmann2018global costelloe2016global justin2023protected wauchope2022protected"><sup><a href="#ref-geldmann2018global" role="doc-biblioref">3</a>–<a href="#ref-wauchope2022protected" role="doc-biblioref">6</a></sup></span> Where protected areas are less than 100% effective in mitigating pressures, a penalty factor is applied to the protected area’s contribution to the species target.</p>
+<p>South Africa’s Species Protection Level (SPL) indicator was developed to complement the <a href="../../content/integrated-findings/chl_epl_explained.html">Ecosystem Protection Level (EPL) indicator</a>, which has been part of the NBA headline indicators since 2004<span class="citation" data-cites="reyers2007"><sup><a href="#ref-reyers2007" role="doc-biblioref">1</a></sup></span>. Species protection level was assessed for the first time in 2018<span class="citation" data-cites="Skownonba2019"><sup><a href="#ref-Skownonba2019" role="doc-biblioref">2</a></sup></span>.</p>
+<p>The SPL indicator measures the contribution of the protected area network to species persistence. The indicator considers two factors - the contribution of a protected area to meeting a <a href="#sec-targets">population target</a>, as well as the <a href="#sec-effectiveness">effectiveness</a> of the protected area in mitigating pressures on the species. This factor is included because studies of the contributions of protected areas to species conservation consistently note that effective protected area management is as important for species persistence as increasing habitat protection<span class="citation" data-cites="geldmann2018global costelloe2016global justin2023protected wauchope2022protected"><sup><a href="#ref-geldmann2018global" role="doc-biblioref">3</a>–<a href="#ref-wauchope2022protected" role="doc-biblioref">6</a></sup></span>. Where protected areas are less than 100% effective in mitigating pressures, a penalty factor is applied to the protected area’s contribution to the species target.</p>
 <p>A <a href="#sec-protection-score">protection score</a> is calculated for each species, which is the summed scores for individual protected areas where they are confirmed present, and the protection score is compared to the population target and expressed as a percentage of the target met. Depending on the percentage of the target met, a species is placed in one of four protection level categories (<a href="#tbl-plcats" class="quarto-xref">Table&nbsp;1</a>).</p>
 <div class="cell plain">
 <div id="tbl-plcats" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
@@ -859,23 +860,23 @@ Table&nbsp;1. Species protection level categories.
 </figcaption>
 <div aria-describedby="tbl-plcats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="yqyjafmpga" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yqyjafmpga table {
+<div id="zwhbkgxnng" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zwhbkgxnng table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yqyjafmpga thead, #yqyjafmpga tbody, #yqyjafmpga tfoot, #yqyjafmpga tr, #yqyjafmpga td, #yqyjafmpga th {
+#zwhbkgxnng thead, #zwhbkgxnng tbody, #zwhbkgxnng tfoot, #zwhbkgxnng tr, #zwhbkgxnng td, #zwhbkgxnng th {
   border-style: none;
 }
 
-#yqyjafmpga p {
+#zwhbkgxnng p {
   margin: 0;
   padding: 0;
 }
 
-#yqyjafmpga .gt_table {
+#zwhbkgxnng .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -901,12 +902,12 @@ Table&nbsp;1. Species protection level categories.
   border-left-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_caption {
+#zwhbkgxnng .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yqyjafmpga .gt_title {
+#zwhbkgxnng .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -918,7 +919,7 @@ Table&nbsp;1. Species protection level categories.
   border-bottom-width: 0;
 }
 
-#yqyjafmpga .gt_subtitle {
+#zwhbkgxnng .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -930,7 +931,7 @@ Table&nbsp;1. Species protection level categories.
   border-top-width: 0;
 }
 
-#yqyjafmpga .gt_heading {
+#zwhbkgxnng .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -942,13 +943,13 @@ Table&nbsp;1. Species protection level categories.
   border-right-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_bottom_border {
+#zwhbkgxnng .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_col_headings {
+#zwhbkgxnng .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -963,7 +964,7 @@ Table&nbsp;1. Species protection level categories.
   border-right-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_col_heading {
+#zwhbkgxnng .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -983,7 +984,7 @@ Table&nbsp;1. Species protection level categories.
   overflow-x: hidden;
 }
 
-#yqyjafmpga .gt_column_spanner_outer {
+#zwhbkgxnng .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -995,15 +996,15 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 4px;
 }
 
-#yqyjafmpga .gt_column_spanner_outer:first-child {
+#zwhbkgxnng .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yqyjafmpga .gt_column_spanner_outer:last-child {
+#zwhbkgxnng .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yqyjafmpga .gt_column_spanner {
+#zwhbkgxnng .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1015,11 +1016,11 @@ Table&nbsp;1. Species protection level categories.
   width: 100%;
 }
 
-#yqyjafmpga .gt_spanner_row {
+#zwhbkgxnng .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yqyjafmpga .gt_group_heading {
+#zwhbkgxnng .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1045,7 +1046,7 @@ Table&nbsp;1. Species protection level categories.
   text-align: left;
 }
 
-#yqyjafmpga .gt_empty_group_heading {
+#zwhbkgxnng .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1060,15 +1061,15 @@ Table&nbsp;1. Species protection level categories.
   vertical-align: middle;
 }
 
-#yqyjafmpga .gt_from_md > :first-child {
+#zwhbkgxnng .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yqyjafmpga .gt_from_md > :last-child {
+#zwhbkgxnng .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yqyjafmpga .gt_row {
+#zwhbkgxnng .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1087,7 +1088,7 @@ Table&nbsp;1. Species protection level categories.
   overflow-x: hidden;
 }
 
-#yqyjafmpga .gt_stub {
+#zwhbkgxnng .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1100,7 +1101,7 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 5px;
 }
 
-#yqyjafmpga .gt_stub_row_group {
+#zwhbkgxnng .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1114,15 +1115,15 @@ Table&nbsp;1. Species protection level categories.
   vertical-align: top;
 }
 
-#yqyjafmpga .gt_row_group_first td {
+#zwhbkgxnng .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yqyjafmpga .gt_row_group_first th {
+#zwhbkgxnng .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yqyjafmpga .gt_summary_row {
+#zwhbkgxnng .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1132,16 +1133,16 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 5px;
 }
 
-#yqyjafmpga .gt_first_summary_row {
+#zwhbkgxnng .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_first_summary_row.thick {
+#zwhbkgxnng .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yqyjafmpga .gt_last_summary_row {
+#zwhbkgxnng .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1151,7 +1152,7 @@ Table&nbsp;1. Species protection level categories.
   border-bottom-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_grand_summary_row {
+#zwhbkgxnng .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1161,7 +1162,7 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 5px;
 }
 
-#yqyjafmpga .gt_first_grand_summary_row {
+#zwhbkgxnng .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1171,7 +1172,7 @@ Table&nbsp;1. Species protection level categories.
   border-top-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_last_grand_summary_row_top {
+#zwhbkgxnng .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1181,11 +1182,11 @@ Table&nbsp;1. Species protection level categories.
   border-bottom-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_striped {
+#zwhbkgxnng .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yqyjafmpga .gt_table_body {
+#zwhbkgxnng .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1194,7 +1195,7 @@ Table&nbsp;1. Species protection level categories.
   border-bottom-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_footnotes {
+#zwhbkgxnng .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1208,7 +1209,7 @@ Table&nbsp;1. Species protection level categories.
   border-right-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_footnote {
+#zwhbkgxnng .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1217,7 +1218,7 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 5px;
 }
 
-#yqyjafmpga .gt_sourcenotes {
+#zwhbkgxnng .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1231,7 +1232,7 @@ Table&nbsp;1. Species protection level categories.
   border-right-color: #D3D3D3;
 }
 
-#yqyjafmpga .gt_sourcenote {
+#zwhbkgxnng .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1239,72 +1240,72 @@ Table&nbsp;1. Species protection level categories.
   padding-right: 5px;
 }
 
-#yqyjafmpga .gt_left {
+#zwhbkgxnng .gt_left {
   text-align: left;
 }
 
-#yqyjafmpga .gt_center {
+#zwhbkgxnng .gt_center {
   text-align: center;
 }
 
-#yqyjafmpga .gt_right {
+#zwhbkgxnng .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yqyjafmpga .gt_font_normal {
+#zwhbkgxnng .gt_font_normal {
   font-weight: normal;
 }
 
-#yqyjafmpga .gt_font_bold {
+#zwhbkgxnng .gt_font_bold {
   font-weight: bold;
 }
 
-#yqyjafmpga .gt_font_italic {
+#zwhbkgxnng .gt_font_italic {
   font-style: italic;
 }
 
-#yqyjafmpga .gt_super {
+#zwhbkgxnng .gt_super {
   font-size: 65%;
 }
 
-#yqyjafmpga .gt_footnote_marks {
+#zwhbkgxnng .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yqyjafmpga .gt_asterisk {
+#zwhbkgxnng .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yqyjafmpga .gt_indent_1 {
+#zwhbkgxnng .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yqyjafmpga .gt_indent_2 {
+#zwhbkgxnng .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yqyjafmpga .gt_indent_3 {
+#zwhbkgxnng .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yqyjafmpga .gt_indent_4 {
+#zwhbkgxnng .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yqyjafmpga .gt_indent_5 {
+#zwhbkgxnng .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yqyjafmpga .katex-display {
+#zwhbkgxnng .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yqyjafmpga div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zwhbkgxnng div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1347,17 +1348,17 @@ Table&nbsp;1. Species protection level categories.
 </figure>
 </div>
 </div>
-<p>The SPL indicator is typically calculated for all species in a taxonomic group, but for exceptionally speciose groups such as plants, a sampled approach similar to the sampled Red List Index is used.<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">7</a></sup></span> The indicator is a summary of the proportion of species in each protection level category at a given point in time. However, to track changes in species protection level over time, protection level categories applied to species are combined into a single score, the <a href="#sec-spi">Species Protection Index (SPI)</a> with a value ranging between 0 and 1. An index value of 1 indicates all species are Well Protected, while the score is 0 when all species are Not Protected.</p>
+<p>The SPL indicator is typically calculated for all species in a taxonomic group, but for exceptionally speciose groups such as plants, a sampled approach similar to the sampled Red List Index is used<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">7</a></sup></span>. The indicator is a summary of the proportion of species in each protection level category at a given point in time. However, to track changes in species protection level over time, protection level categories applied to species are combined into a single score, the <a href="#sec-spi">Species Protection Index (SPI)</a> with a value ranging between 0 and 1. An index value of 1 indicates all species are Well Protected, while the score is 0 when all species are Not Protected.</p>
 <section id="building-blocks-of-the-species-protection-level-indicator" class="level2">
 <h2 class="anchored" data-anchor-id="building-blocks-of-the-species-protection-level-indicator">Building blocks of the Species Protection Level indicator</h2>
 <section id="protected-areas" class="level3">
 <h3 class="anchored" data-anchor-id="protected-areas">Protected areas</h3>
-<p>Protected areas are areas of land or sea that are protected by law and managed for biodiversity conservation. Protected areas in South Africa are areas declared under the National Environmental Management: Protected Areas Act (Act 57 of 2003).<span class="citation" data-cites="governmentofsouthafrica2004"><sup><a href="#ref-governmentofsouthafrica2004" role="doc-biblioref">8</a></sup></span> The Department of Forestry, Fisheries and the Environment maintains a national register of areas recognised by the Act, and this database, known as the South African Protected Areas Database (SAPAD), informs the protection level assessments for species and ecosystems.</p>
+<p>Protected areas are areas of land or sea that are protected by law and managed for biodiversity conservation. Protected areas in South Africa are areas declared under the National Environmental Management: Protected Areas Act (Act 57 of 2003)<span class="citation" data-cites="governmentofsouthafrica2004"><sup><a href="#ref-governmentofsouthafrica2004" role="doc-biblioref">8</a></sup></span>. The Department of Forestry, Fisheries and the Environment maintains a national register of areas recognised by the Act, and this database, known as the South African Protected Areas Database (SAPAD), informs the protection level assessments for species and ecosystems.</p>
 <p>For each protection level assessment, a spatial layer is prepared representing the extent of the national protected area network at that point in time. Protected areas that have been deproclaimed are excluded. Protected areas are grouped into clusters - which represent groups of adjacent protected areas. Species are considered present in a protected area when there is suitable habitat for the species in the protected area, and the species has been recorded present anywhere within the protected area’s larger cluster.</p>
 </section>
 <section id="sec-effectiveness" class="level3">
 <h3 class="anchored" data-anchor-id="sec-effectiveness">Protected area effectiveness</h3>
-<p>Information on the effectiveness of protected areas in mitigating pressures on species is provided by protected area management effectiveness experts from South African conservation agencies. This information is augmented by national data on the distribution of alien invasive plants within protected areas,<span class="citation" data-cites="invterr2025"><sup><a href="#ref-invterr2025" role="doc-biblioref">9</a></sup></span> as well as changes in the extent of natural or near-natural areas inside protected areas.<span class="citation" data-cites="llcterr2025"><sup><a href="#ref-llcterr2025" role="doc-biblioref">10</a></sup></span></p>
+<p>Information on the effectiveness of protected areas in mitigating pressures on species is provided by protected area management effectiveness experts from South African conservation agencies. This information is augmented by national data on the distribution of alien invasive plants within protected areas<span class="citation" data-cites="invterr2025"><sup><a href="#ref-invterr2025" role="doc-biblioref">9</a></sup></span>, as well as changes in the extent of natural or near-natural areas inside protected areas<span class="citation" data-cites="llcterr2025"><sup><a href="#ref-llcterr2025" role="doc-biblioref">10</a></sup></span>.</p>
 <p>Protected area effectiveness is rated in three categories and a penalty factor is applied to the protected area’s contribution to a species’ conservation target where it is not 100% effective in mitigating pressures (<a href="#tbl-effectiveness-categories" class="quarto-xref">Table&nbsp;2</a>). The effect of the penalty factors is that much larger populations of a species need to be in protected areas to meet the species’ target, as a means to offset ongoing declines inside protected areas.</p>
 <div class="cell plain">
 <div id="tbl-effectiveness-categories" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
@@ -1367,23 +1368,23 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
 </figcaption>
 <div aria-describedby="tbl-effectiveness-categories-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="mzmzoibbbu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mzmzoibbbu table {
+<div id="vlqgkmxzkr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vlqgkmxzkr table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mzmzoibbbu thead, #mzmzoibbbu tbody, #mzmzoibbbu tfoot, #mzmzoibbbu tr, #mzmzoibbbu td, #mzmzoibbbu th {
+#vlqgkmxzkr thead, #vlqgkmxzkr tbody, #vlqgkmxzkr tfoot, #vlqgkmxzkr tr, #vlqgkmxzkr td, #vlqgkmxzkr th {
   border-style: none;
 }
 
-#mzmzoibbbu p {
+#vlqgkmxzkr p {
   margin: 0;
   padding: 0;
 }
 
-#mzmzoibbbu .gt_table {
+#vlqgkmxzkr .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1409,12 +1410,12 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-left-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_caption {
+#vlqgkmxzkr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mzmzoibbbu .gt_title {
+#vlqgkmxzkr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1426,7 +1427,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-bottom-width: 0;
 }
 
-#mzmzoibbbu .gt_subtitle {
+#vlqgkmxzkr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1438,7 +1439,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-top-width: 0;
 }
 
-#mzmzoibbbu .gt_heading {
+#vlqgkmxzkr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1450,13 +1451,13 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-right-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_bottom_border {
+#vlqgkmxzkr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_col_headings {
+#vlqgkmxzkr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1471,7 +1472,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-right-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_col_heading {
+#vlqgkmxzkr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1491,7 +1492,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   overflow-x: hidden;
 }
 
-#mzmzoibbbu .gt_column_spanner_outer {
+#vlqgkmxzkr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1503,15 +1504,15 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 4px;
 }
 
-#mzmzoibbbu .gt_column_spanner_outer:first-child {
+#vlqgkmxzkr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mzmzoibbbu .gt_column_spanner_outer:last-child {
+#vlqgkmxzkr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mzmzoibbbu .gt_column_spanner {
+#vlqgkmxzkr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1523,11 +1524,11 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   width: 100%;
 }
 
-#mzmzoibbbu .gt_spanner_row {
+#vlqgkmxzkr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mzmzoibbbu .gt_group_heading {
+#vlqgkmxzkr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1553,7 +1554,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   text-align: left;
 }
 
-#mzmzoibbbu .gt_empty_group_heading {
+#vlqgkmxzkr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1568,15 +1569,15 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   vertical-align: middle;
 }
 
-#mzmzoibbbu .gt_from_md > :first-child {
+#vlqgkmxzkr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mzmzoibbbu .gt_from_md > :last-child {
+#vlqgkmxzkr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mzmzoibbbu .gt_row {
+#vlqgkmxzkr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1595,7 +1596,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   overflow-x: hidden;
 }
 
-#mzmzoibbbu .gt_stub {
+#vlqgkmxzkr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1608,7 +1609,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 5px;
 }
 
-#mzmzoibbbu .gt_stub_row_group {
+#vlqgkmxzkr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1622,15 +1623,15 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   vertical-align: top;
 }
 
-#mzmzoibbbu .gt_row_group_first td {
+#vlqgkmxzkr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mzmzoibbbu .gt_row_group_first th {
+#vlqgkmxzkr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mzmzoibbbu .gt_summary_row {
+#vlqgkmxzkr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1640,16 +1641,16 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 5px;
 }
 
-#mzmzoibbbu .gt_first_summary_row {
+#vlqgkmxzkr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_first_summary_row.thick {
+#vlqgkmxzkr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mzmzoibbbu .gt_last_summary_row {
+#vlqgkmxzkr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1659,7 +1660,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-bottom-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_grand_summary_row {
+#vlqgkmxzkr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1669,7 +1670,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 5px;
 }
 
-#mzmzoibbbu .gt_first_grand_summary_row {
+#vlqgkmxzkr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1679,7 +1680,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-top-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_last_grand_summary_row_top {
+#vlqgkmxzkr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1689,11 +1690,11 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-bottom-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_striped {
+#vlqgkmxzkr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mzmzoibbbu .gt_table_body {
+#vlqgkmxzkr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1702,7 +1703,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-bottom-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_footnotes {
+#vlqgkmxzkr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1716,7 +1717,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-right-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_footnote {
+#vlqgkmxzkr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1725,7 +1726,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 5px;
 }
 
-#mzmzoibbbu .gt_sourcenotes {
+#vlqgkmxzkr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1739,7 +1740,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   border-right-color: #D3D3D3;
 }
 
-#mzmzoibbbu .gt_sourcenote {
+#vlqgkmxzkr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1747,72 +1748,72 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
   padding-right: 5px;
 }
 
-#mzmzoibbbu .gt_left {
+#vlqgkmxzkr .gt_left {
   text-align: left;
 }
 
-#mzmzoibbbu .gt_center {
+#vlqgkmxzkr .gt_center {
   text-align: center;
 }
 
-#mzmzoibbbu .gt_right {
+#vlqgkmxzkr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mzmzoibbbu .gt_font_normal {
+#vlqgkmxzkr .gt_font_normal {
   font-weight: normal;
 }
 
-#mzmzoibbbu .gt_font_bold {
+#vlqgkmxzkr .gt_font_bold {
   font-weight: bold;
 }
 
-#mzmzoibbbu .gt_font_italic {
+#vlqgkmxzkr .gt_font_italic {
   font-style: italic;
 }
 
-#mzmzoibbbu .gt_super {
+#vlqgkmxzkr .gt_super {
   font-size: 65%;
 }
 
-#mzmzoibbbu .gt_footnote_marks {
+#vlqgkmxzkr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mzmzoibbbu .gt_asterisk {
+#vlqgkmxzkr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mzmzoibbbu .gt_indent_1 {
+#vlqgkmxzkr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mzmzoibbbu .gt_indent_2 {
+#vlqgkmxzkr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mzmzoibbbu .gt_indent_3 {
+#vlqgkmxzkr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mzmzoibbbu .gt_indent_4 {
+#vlqgkmxzkr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mzmzoibbbu .gt_indent_5 {
+#vlqgkmxzkr .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mzmzoibbbu .katex-display {
+#vlqgkmxzkr .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mzmzoibbbu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vlqgkmxzkr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1853,7 +1854,7 @@ Table&nbsp;2. Effectiveness categories applied to protected areas in species pro
 </section>
 <section id="sec-targets" class="level3">
 <h3 class="anchored" data-anchor-id="sec-targets">Species targets</h3>
-<p>The SPL indicator uses population targets for species, which is the minimum number of individuals necessary to ensure the long-term persistence of the species. This approach is preferred over area-based targets because population size is most closely correlated with persistence,<span class="citation" data-cites="reed2003estimates mace2008quantification"><sup><a href="#ref-reed2003estimates" role="doc-biblioref">11</a>,<a href="#ref-mace2008quantification" role="doc-biblioref">12</a></sup></span> while area of habitat and population size are less well correlated due to large variability in species density.<span class="citation" data-cites="santini2014incorporating"><sup><a href="#ref-santini2014incorporating" role="doc-biblioref">13</a></sup></span> Individual taxonomic groups use various methods for setting population targets, to accommodate different levels of data availability, as well as the population dynamics and life-history patterns of different species. The methods used to set conservation targets are documented in technical reports referenced on species’ <a href="../../content/species/sp.html">taxon pages</a>.</p>
+<p>The SPL indicator uses population targets for species, which is the minimum number of individuals necessary to ensure the long-term persistence of the species. This approach is preferred over area-based targets because population size is most closely correlated with persistence<span class="citation" data-cites="reed2003estimates mace2008quantification"><sup><a href="#ref-reed2003estimates" role="doc-biblioref">11</a>,<a href="#ref-mace2008quantification" role="doc-biblioref">12</a></sup></span>, while area of habitat and population size are less well correlated due to large variability in species density<span class="citation" data-cites="santini2014incorporating"><sup><a href="#ref-santini2014incorporating" role="doc-biblioref">13</a></sup></span>. Individual taxonomic groups use various methods for setting population targets, to accommodate different levels of data availability, as well as the population dynamics and life-history patterns of different species. The methods used to set conservation targets are documented in technical reports referenced on species’ <a href="../../content/species/sp.html">taxon pages</a>.</p>
 </section>
 </section>
 <section id="indicator-calculation" class="level2">
@@ -1880,7 +1881,7 @@ S_j = \frac{\displaystyle\sum_{i=1}^n C_i \cdot E_i}{T_j} \cdot 100
 </section>
 <section id="sec-spi" class="level3">
 <h3 class="anchored" data-anchor-id="sec-spi">Species Protection Index</h3>
-<p>The SPI is calculated by applying a weight to each protection level category (<a href="#tbl-plcats" class="quarto-xref">Table&nbsp;1</a>). Category weights are then combined into an index score similar to the calculation of the Red List Index.<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">7</a></sup></span> The index is calculated for individual time points in an assessment, to provide a time series indicating trends in species protection over time.</p>
+<p>The SPI is calculated by applying a weight to each protection level category (<a href="#tbl-plcats" class="quarto-xref">Table&nbsp;1</a>). Category weights are then combined into an index score similar to the calculation of the Red List Index<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">7</a></sup></span>. The index is calculated for individual time points in an assessment, to provide a time series indicating trends in species protection over time.</p>
 <p>The formula for calculating the SPI for a time point <em>t</em> is as follows:</p>
 <p><span class="math display">\[
 SPI_t = 1 - \frac{\displaystyle\sum_s W_{c(t,s)}}{W_{NP} \cdot N}

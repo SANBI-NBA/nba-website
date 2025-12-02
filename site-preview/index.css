@@ -43,28 +43,14 @@
 }
 
 @media screen and (max-width: 952px) {
-  .book-column-image {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -50px;
+  .book-columns {
+    flex-direction: column;
   }
+
+  .book-column-image,
   .book-column-text {
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .book-col-left {
-    display: block;
-    margin-left: auto;
-  }
-
-  .book-col-right {
-    display: block;
-    margin-right: auto;
+    padding: 20px 0; /* optional */
   }
 }
 

@@ -59,7 +59,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,6 +107,7 @@ background: #adb5bd;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -566,23 +567,12 @@ window.Quarto = {
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -595,11 +585,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -656,11 +646,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -671,11 +661,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
@@ -690,12 +680,23 @@ window.Quarto = {
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Marine birds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -843,8 +844,10 @@ window.Quarto = {
 <p>South Africa uses the <a href="https://www.iucnredlist.org/resources/categories-and-criteria">IUCN Red List of Threatened Species Categories and Criteria</a> to assess species’ risk of extinction. This system is the international standard for reporting on the status of biodiversity in multilateral environmental agreements such as <a href="https://www.cbd.int/gbf/targets/4">Target 4</a> of the <a href="https://www.cbd.int/">Convention on Biological Diversity’s</a> <a href="https://www.cbd.int/gbf">Kunming-Montreal Global Biodiversity Framework</a>.</p>
 <section id="sec-threat-categories" class="level2">
 <h2 class="anchored" data-anchor-id="sec-threat-categories">Threat categories</h2>
-<p>The system uses quantitative criteria to assign species to categories indicating relative risk of extinction, from Least Concern (low risk of extinction) to Critically Endangered (highest risk of extinction). The criteria is based on scientific evidence of factors influencing risk of extinction across all species, except micro-organisms.<span class="citation" data-cites="mace2008quantification"><sup><a href="#ref-mace2008quantification" role="doc-biblioref">1</a></sup></span> It is designed to be applicable under various levels of data quality and uncertainty, but species can also be classified as Data Deficient when they are too poorly known to determine their risk of extinction. Species are classified as Extinct only when there is no reasonable doubt that there are no remaining live individuals of the species, with the aim to avoid erroneous classifications that may lead to the withdrawal of conservation efforts. Species that remain only in cultivation or captivity are classified as Extinct in the Wild.</p>
-<p>South African species assessments apply only to the parts of a species’ range within the borders of South Africa and its exclusive economic zone (EEZ), the region of ocean that extends 200 nautical miles from the coast. For species that are not endemic to South Africa, in other words, their distribution extends beyond the borders of South Africa or the EEZ, the <a href="https://www.iucnredlist.org/resources/regionalguidelines">IUCN’s regional assessment procedures</a> are applied. The use of regional assessment methods introduces an additional national sub-category of extinction, Regionally Extinct (RE), which indicates species that are extinct within South Africa, but may persist elsewhere outside the country. Some taxonomic groups choose to distinguish species that are at low risk of extinction (Least Concern), but have narrow distribution ranges (typically less than 500 km<sup>2</sup>) in the national sub-category Rare. These species are considered national conservation priorities despite their classification as Least Concern under the IUCN system.</p>
+<p>The system uses quantitative criteria to assign species to categories indicating relative risk of extinction, from Least Concern (low risk of extinction) to Critically Endangered (highest risk of extinction). The criteria are based on scientific evidence of factors influencing risk of extinction across all species, except micro-organisms<span class="citation" data-cites="mace2008quantification"><sup><a href="#ref-mace2008quantification" role="doc-biblioref">1</a></sup></span>. It is designed to be applicable under various levels of data quality and uncertainty, but species can also be classified as Data Deficient when they are too poorly known to determine their risk of extinction. Species classified as Critically Endangered, Endangered, and Vulnerable are collectively referred to as threatened species.</p>
+<p>Species are classified as Extinct only when there is no reasonable doubt that there are no remaining living individuals of the species, with the aim to avoid erroneous classifications that may lead to the withdrawal of conservation efforts. Some Critically Endangered species are tagged “possibly extinct”. This tag is used to highlight species that are suspected to be extinct, but the strong evidence required to confirm extinction is not yet available. Species that remain only in cultivation or captivity are classified as Extinct in the Wild.</p>
+<p>For most South African species assessments apply only to the parts of a species’ range within the borders of South Africa and its exclusive economic zone (EEZ), the region of ocean that extends 200 nautical miles from the coast. For species that are not endemic to South Africa, in other words, their distribution extends beyond the borders of South Africa or the EEZ, the <a href="https://www.iucnredlist.org/resources/regionalguidelines">IUCN’s regional assessment procedures</a> are applied. An exception is made for species with only a very small proportion (&lt;5%) of their global range inside South Africa, where the species’ global status is adopted as the national status. This avoids potential over-inflation of threatened species lists with species that may have restricted distributions in South Africa, putting them at higher potential risk of local extinction, while they are widespread and not at risk of extinction outside South Africa.</p>
+<p>The use of regional assessment methods introduces an additional national sub-category of extinction, Regionally Extinct (RE), which indicates species that are extinct within South Africa, but may persist elsewhere outside the country. Some taxonomic groups choose to distinguish species that are at low risk of extinction (Least Concern), but have narrow distribution ranges (typically less than 500 km<sup>2</sup>) in the national sub-category Rare. These species are considered national conservation priorities despite their classification as Least Concern under the IUCN system.</p>
 <p>South Africa’s Species Threat Status indicator therefore reports the proportion of species in each of 10 national threat categories (<a href="#fig-rls-categories" class="quarto-xref">Figure&nbsp;1</a>).</p>
 <div id="fig-rls-categories" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -852,23 +855,23 @@ window.Quarto = {
 <img src="imgs/rls-categories.png" class="img-fluid quarto-figure quarto-figure-center figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rls-categories-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1. Threat status categories used in the national Species Threat Status headline indicator<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Graphic adapted from IUCN (2012).<span class="citation" data-cites="IUCN2012categories"><sup><a href="#ref-IUCN2012categories" role="doc-biblioref">2</a></sup></span>
+Figure&nbsp;1. Threat status categories used in the national Species Threat Status headline indicator. Graphic adapted from IUCN (2012)<span class="citation" data-cites="IUCN2012categories"><sup><a href="#ref-IUCN2012categories" role="doc-biblioref">2</a></sup></span>.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-national-assessments" class="level2">
 <h2 class="anchored" data-anchor-id="sec-national-assessments">National species assessments</h2>
-<p>Taxon expert working groups are responsible for national Red List assessments, with the work being co-ordinated by <a href="https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/threatened-species-programme/">SANBI’s Threatened Species Unit</a> and the <a href="https://iucn.org/our-union/commissions/group/iucn-ssc-south-africa-species-specialist-group">IUCN SCC South Africa Species Specialist Group</a>. IUCN Red List criteria is typically applied to all indigenous species in a taxon group, not just those that are suspected to be in danger of extinction. Incomplete or selective assessments may present a biased view of the state of biodiversity, and could result in inappropriate allocation of scarce conservation resources, and even undetected extinctions.<span class="citation" data-cites="BACHMAN201945 possingham2002"><sup><a href="#ref-BACHMAN201945" role="doc-biblioref">3</a>,<a href="#ref-possingham2002" role="doc-biblioref">4</a></sup></span></p>
-<p>A key feature of biodiversity reporting is measuring how species’ risk of extinction change over time, as a means of detecting whether targets to avoid species extinctions are being met. Tracking trends in risk of extinction requires regular reassessments of species’ risk of extinction, which can be challenging in highly speciose groups such as plants. For such groups, an alternative approach is to take a random sample of species from national checklists of indigenous species, and focus more regular reassessment efforts on the selected species. The statistical assumption is that because the sample is random, trends in extinction risk in the sampled species is representative of true trends in the taxon group.<span class="citation" data-cites="butchart2005"><sup><a href="#ref-butchart2005" role="doc-biblioref">5</a></sup></span> When sampling, South Africa follows the recommended sample size of 900 species.<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">6</a></sup></span></p>
+<p>Taxon expert working groups are responsible for national Red List assessments, with the work being co-ordinated by <a href="https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/threatened-species-programme/">SANBI’s Threatened Species Unit</a> and the <a href="https://iucn.org/our-union/commissions/group/iucn-ssc-south-africa-species-specialist-group">IUCN SCC South Africa Species Specialist Group</a>. IUCN Red List criteria is typically applied to all indigenous species in a taxon group, not just those that are suspected to be in danger of extinction. Incomplete or selective assessments may present a biased view of the state of biodiversity, and could result in inappropriate allocation of scarce conservation resources, and even undetected extinctions<span class="citation" data-cites="BACHMAN201945 possingham2002"><sup><a href="#ref-BACHMAN201945" role="doc-biblioref">3</a>,<a href="#ref-possingham2002" role="doc-biblioref">4</a></sup></span>.</p>
+<p>A key feature of biodiversity reporting is measuring how species’ risk of extinction change over time, as a means of detecting whether targets to avoid species extinctions are being met. Tracking trends in risk of extinction requires regular reassessments of species’ risk of extinction, which can be challenging in highly speciose groups such as plants. For such groups, an alternative approach is to take a random sample of species from national checklists of indigenous species, and focus more regular reassessment efforts on the selected species. The statistical assumption is that because the sample is random, trends in extinction risk in the sampled species is representative of true trends in the taxon group<span class="citation" data-cites="butchart2005"><sup><a href="#ref-butchart2005" role="doc-biblioref">5</a></sup></span>. When sampling, South Africa follows the recommended sample size of 900 species<span class="citation" data-cites="baillie2008toward"><sup><a href="#ref-baillie2008toward" role="doc-biblioref">6</a></sup></span>.</p>
 <p>National Red List assessments for animals are reported on SANBI’s <a href="https://speciesstatus.sanbi.org/">Red List of South African species website</a>, while assessments for plants can be found at the <a href="https://redlist.sanbi.org/">Red List of South African plants website</a>.</p>
 </section>
 <section id="red-list-index-of-species" class="level2">
 <h2 class="anchored" data-anchor-id="red-list-index-of-species">Red List Index of species</h2>
-<p>The Red List Index of species (RLI) combines the risk of extinction of all species in a comprehensively assessed taxon group or a representative sample into a single statistic that can be used to track changes in species’ risk of extinction over time. The index follows a process of retrospectively adjusting species’ assessments at earlier time points so that only genuine changes in extinction risk are included in the index.<span class="citation" data-cites="butchart2025"><sup><a href="#ref-butchart2025" role="doc-biblioref">7</a></sup></span></p>
+<p>The Red List Index of species (RLI) combines the risk of extinction of all species in a comprehensively assessed taxon group or a representative sample into a single statistic that can be used to track changes in species’ risk of extinction over time. The index follows a process of retrospectively adjusting species’ assessments at earlier time points so that only genuine changes in extinction risk are included in the index<span class="citation" data-cites="butchart2025"><sup><a href="#ref-butchart2025" role="doc-biblioref">7</a></sup></span>.</p>
 <p>The index value ranges from 0 to 1. Values closer to 0 indicate higher proportions of species at high risk of extinction, with 0 reached when all species are extinct. Values closer to 1 indicate higher proportions of species at low risk of extinction, with all species being Least Concern resulting in an index value of 1. The slope of the line between time points indicate how fast species are moving towards extinction (negative trends) or recovering (positive trends), with steeper lines indicating faster decline or recovery. Strong negative changes in the slope of the index are indicative of rapidly emerging pressures on species that require urgent action.</p>
-<p>South Africa uses species’ national Red List status when calculating the national RLI, rather than the global disaggregation method of area-weighted adjustments to species’ global Red List status.<span class="citation" data-cites="raimondo2022"><sup><a href="#ref-raimondo2022" role="doc-biblioref">8</a></sup></span> This method is preferred because South Africa invests significant efforts into species conservation, resulting in some species assessed nationally at a lower risk of extinction than their global assessments.</p>
-<p>The RLI is calculated by applying weights to Red List categories in increasing order of risk of extinction, from 0 for Least Concern, to 5 for Extinct/Extinct in the Wild. The number of species in each category is multiplied by the category weight, and these values are summed. This value is compared to a maximum value where all species would be extinct. Data Deficient species are excluded from the index calculation, but used to inform the confidence intervals of the indicator value.<span class="citation" data-cites="butchart2025"><sup><a href="#ref-butchart2025" role="doc-biblioref">7</a></sup></span> More Data Deficient species means larger uncertainty around the indicator value.</p>
+<p>South Africa uses species’ national Red List status when calculating the national RLI, rather than the global disaggregation method of area-weighted adjustments to species’ global Red List status<span class="citation" data-cites="raimondo2022"><sup><a href="#ref-raimondo2022" role="doc-biblioref">8</a></sup></span>. This method is preferred because South Africa invests significant efforts into species conservation, resulting in some species assessed nationally at a lower risk of extinction than their global assessments.</p>
+<p>The RLI is calculated by applying weights to Red List categories in increasing order of risk of extinction, from 0 for Least Concern, to 5 for Extinct/Extinct in the Wild. The number of species in each category is multiplied by the category weight, and these values are summed. This value is compared to a maximum value where all species would be extinct. Data Deficient species are excluded from the index calculation, but used to inform the confidence intervals of the indicator value<span class="citation" data-cites="butchart2025"><sup><a href="#ref-butchart2025" role="doc-biblioref">7</a></sup></span>. More Data Deficient species means larger uncertainty around the indicator value.</p>
 <p>The formula for calculating the RLI is as follows:</p>
 <p><span class="math display">\[
 RLI_t = 1 - \frac{\displaystyle\sum_s W_{c(t,s)}}{W_{EX} \cdot N}
@@ -882,7 +885,6 @@ RLI_t = 1 - \frac{\displaystyle\sum_s W_{c(t,s)}}{W_{EX} \cdot N}
 
 
 </section>
-
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-mace2008quantification" class="csl-entry" role="listitem">
@@ -909,12 +911,7 @@ RLI_t = 1 - \frac{\displaystyle\sum_s W_{c(t,s)}}{W_{EX} \cdot N}
 <div id="ref-raimondo2022" class="csl-entry" role="listitem">
 8. Raimondo, D. et al. 2022. Using Red List Indices to monitor extinction risk at national scales. <em>Conservation Science and Practice</em> 5: <a href="https://doi.org/10.1111/csp2.12854">https://doi.org/10.1111/csp2.12854</a>
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notes</h2>
-
-<ol>
-<li id="fn1"><p>The tag ‘Possibly extinct’ is sometimes applied to Critically Endangered, to indicate species that are suspected to be Extinct, but extinction has not been confirmed.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
