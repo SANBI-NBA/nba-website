@@ -17,7 +17,7 @@ format:
 
 :::: column-screen
 ::: column-body
-<center>[Images: Kerry Sink, Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.]{style="font-size:.7rem; color:#a7abb4;"}</center>
+<center>[Images: ACEP Sound Seas (K. Sink), Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.]{style="font-size:.7rem; color:#a7abb4;"}</center>
 :::
 ::::
 
