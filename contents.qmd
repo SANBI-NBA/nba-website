@@ -149,6 +149,7 @@ Key messages summarise the main findings of the NBA, explain why it matters, and
 ```
 
 ------------------------------------------------------------------------
+
 ### Priority actions and knowledge gaps
 
 The NBA 2025 reports seven broad themes for actions that can be implemented in response to its findings. The report also highlights knowledge gaps limiting reporting on the state of biodiversity in South Africa.
@@ -169,4 +170,3 @@ The NBA 2025 reports seven broad themes for actions that can be implemented in r
   </a>
 </div>
 ```
-
