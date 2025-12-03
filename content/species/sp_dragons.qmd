@@ -4,10 +4,10 @@ title-block-banner: "#ad180d"
 title-block-banner-color: white
 ---
 
-![The Black emperor (*Anax tristis*), is widespread throughout Africa and in South Africa drainage and destruction of swampy habitats for agriculture and wood plantations, together with water pollution, are a major threat to this species. It is however unlikely to be declining fast enough to qualify for listing in a threatened category. It has been assessed as Least Concern. © Michael Samways.](./imgs/sp_odonata_img_2.png){fig-align="center"}
+![[Yellow presba](https://www.iucnredlist.org/species/63202/12628404) (*Syncordulia gracilis*). This species is rare throughout its range and has not been recorded for many years at several historically occupied sites (e.g. Michell’s Pass). Although it has recovered at some localities following the removal of invasive alien trees (e.g. Franschhoek Pass), it remains Vulnerable. It is currently known from only a few sites, at approximately six locations. (© Michael Samways)](./imgs/Syncordulia_gracilis_1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
 ::: {.callout-important icon="TRUE" title="Attention:" style="--callout-icon-color: white; font-size:100px;"}
-###### The status summary of dragonflies and damselflies (Odonata) is under production and will be available from February 2026.
+###### The status summary of dragonflies and damselflies (*Odonata*) is under production and will be available from February 2026.
 :::

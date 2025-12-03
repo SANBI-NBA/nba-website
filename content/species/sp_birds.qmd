@@ -82,7 +82,7 @@ google-scholar: true
 image: "./imgs/sp_birds_img_1.png"
 ---
 
-![Climate change and habitat loss are two of the main drivers of declines of South Africa's bird species. Now Near Threatened, the Cape rockjumper (*Chaetops frenatus*), epitomises the threats that are faced by endemic and range-restricted bird species of South Africa. (© Krista Oswald)](./imgs/sp_birds_img_1.png){fig-align="center"}
+![Climate change and habitat loss are two of the main drivers of declines of South Africa's bird species. Now Near Threatened, the [Cape rockjumper (*Chaetops frenatus*)](https://www.birdlife.org.za/red-list/cape-rockjumper/), epitomises the threats that are faced by endemic and range-restricted bird species of South Africa. (© Krista Oswald)](./imgs/sp_birds_img_1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
@@ -448,6 +448,7 @@ nba_index_plot(
 )
 
 ```
+
 ## Table
 
 ::: {.table style="height:500px;overflow-y: auto"}
@@ -537,47 +538,19 @@ knitr::include_graphics("./imgs/birds_in_10km_HD.png")
 
 The 2025 assessment shows that South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat. Across 147 taxa of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
 
-Note: The percentages in brackets indicate the percentage of threatened and Near Threatened birds impacted by pressures. 
+Note: The percentages in brackets indicate the percentage of threatened and Near Threatened birds impacted by pressures.
 
-**Biological resource use**
-<br>
-*(53% overall; 45% terrestrial; 66% marine; 49% inland aquatic; 43% estuarine/coastal)*
-<br>
-This threat is dominated by direct mortality from hunting, trapping, poisoning and fisheries bycatch. It is especially severe for seabirds affected by incidental capture and prey depletion, and for terrestrial species such as vultures (see [Box 3](#box-3)), bustards and cranes impacted by poisoning and hunting. It remains a leading driver of declines.
+**Biological resource use** <br> *(53% overall; 45% terrestrial; 66% marine; 49% inland aquatic; 43% estuarine/coastal)* <br> This threat is dominated by direct mortality from hunting, trapping, poisoning and fisheries bycatch. It is especially severe for seabirds affected by incidental capture and prey depletion, and for terrestrial species such as vultures (see [Box 3](#box-3)), bustards and cranes impacted by poisoning and hunting. It remains a leading driver of declines.
 
-**Natural system modifications**
-<br>
-*(49% overall; 61% terrestrial; 89% inland aquatic; 37% estuarine/coastal; limited for marine)*
-<br>
-Hydrological alteration from dams, abstraction and wetland degradation is the dominant pressure, especially for freshwater birds (see Box 3 on the [Freshwater species summary page](../species/fw_sp.qmd#box-3)). Terrestrial birds are strongly affected by altered fire regimes, bush encroachment and habitat conversion, particularly in grasslands and fynbos.
+**Natural system modifications** <br> *(49% overall; 61% terrestrial; 89% inland aquatic; 37% estuarine/coastal; limited for marine)* <br> Hydrological alteration from dams, abstraction and wetland degradation is the dominant pressure, especially for freshwater birds (see Box 3 on the [Freshwater species summary page](../species/fw_sp.qmd#box-3)). Terrestrial birds are strongly affected by altered fire regimes, bush encroachment and habitat conversion, particularly in grasslands and fynbos.
 
-**Climate change and severe weather**
-<br>
-*(44% overall; 41% terrestrial; 54% inland aquatic; 54% estuarine/coastal; 34% marine))*
-<br>
-Climate change intensifies droughts, floods, storms and heat stress across all realms. Freshwater and coastal birds are most affected, while marine birds face shifting prey and storm damage. Terrestrial impacts include heat stress and aridification, especially for montane and arid-habitat species.
+**Climate change and severe weather** <br> *(44% overall; 41% terrestrial; 54% inland aquatic; 54% estuarine/coastal; 34% marine))* <br> Climate change intensifies droughts, floods, storms and heat stress across all realms. Freshwater and coastal birds are most affected, while marine birds face shifting prey and storm damage. Terrestrial impacts include heat stress and aridification, especially for montane and arid-habitat species.
 
-**Invasive species and diseases**
-<br>
-*(43% overall; 21% terrestrial; 43% inland aquatic; 34% estuarine/coastal; 85% marine)*
-<br>Marine birds are heavily impacted by invasive predators and diseases such as avian influenza. Freshwater systems are affected by invasive plants and fish, while terrestrial impacts are mainly through habitat alteration. Disease risks are increasing across all realms.
+**Invasive species and diseases** <br> *(43% overall; 21% terrestrial; 43% inland aquatic; 34% estuarine/coastal; 85% marine)* <br>Marine birds are heavily impacted by invasive predators and diseases such as avian influenza. Freshwater systems are affected by invasive plants and fish, while terrestrial impacts are mainly through habitat alteration. Disease risks are increasing across all realms.
 
-**Agriculture and aquaculture**
-<br>*(39% overall; 68% terrestrial; 14% inland aquatic; 3% estuarine/coastal; negligible marine)*
-<br>Agriculture is a dominant pressure on terrestrial birds through habitat loss from cultivation (see [Box 2](#box-2)), grazing and plantations, especially in Grasslands and Renosterveld.
+**Agriculture and aquaculture** <br>*(39% overall; 68% terrestrial; 14% inland aquatic; 3% estuarine/coastal; negligible marine)* <br>Agriculture is a dominant pressure on terrestrial birds through habitat loss from cultivation (see [Box 2](#box-2)), grazing and plantations, especially in Grasslands and Renosterveld.
 
-**Additional pressures**
-<br>
--Pollution: Major threat to freshwater birds
-<br>
--Urban development: Mainly affects estuarine/coastal species
-<br>
--Transport: Collision mortality
-<br>
--Energy & mining: Wind energy impacts on raptors
-<br>
--Human disturbance: Nesting and roosting sensitivity
-<br>
+**Additional pressures** <br> -Pollution: Major threat to freshwater birds <br> -Urban development: Mainly affects estuarine/coastal species <br> -Transport: Collision mortality <br> -Energy & mining: Wind energy impacts on raptors <br> -Human disturbance: Nesting and roosting sensitivity <br>
 
 These threats often act cumulatively. Overall, this threat assessment highlights that no single threat acts in isolation. Biological resource use, system modification, climate change, invasive species and agriculture all play significant roles, with relative importance varying across realms. Effective conservation will therefore require ecosystem-specific strategies integrated into a national framework capable of tackling multiple simultaneous pressures.
 
@@ -594,7 +567,6 @@ Unfortunately, most of the Botha’s Lark habitat falls outside of formally prot
 
 See full assessment details here - <https://www.birdlife.org.za/red-list/bothas-lark/>
 :::
-
 
 ```{r}
 #| label: fig-5
@@ -924,12 +896,9 @@ Species deemed vagrants or introduced to the assessment region were excluded. At
 
 See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_spl_explained.qmd).
 
-### Pressure analysis 
+### Pressure analysis
 
-Pressures on bird populations were assessed using the standardised IUCN Threats Classification Scheme (v3.3). For each of the 147 bird species assessed as Critically Endangered, Endangered, Vulnerable or Near Threatened, all relevant sub-threats were coded during the 2025 Regional Red List process, resulting in multiple records per species where more than one pressure operates. Each record represents a unique species–sub-threat combination. For example, a species such as Botha’s lark may have separate entries for habitat loss from annual cropping, overgrazing, bush encroachment, and altered fire regimes, with each coded as a distinct record.
-For reporting here, sub-threats were then aggregated into the eleven major IUCN threat categories to quantify the frequency with which each pressure affects a species. Because species often face several pressures simultaneously, threat categories are non-exclusive and percentages do not sum to 100%.
-Species were also assigned to non-exclusive ecological realms to allow realm-specific summaries of threat patterns: 80 terrestrial, 35 inland aquatic, 24 estuarine/coastal, and 41 marine species. These realm designations reflect ecological rather than taxonomic divisions, and species occurring across multiple realms were counted in each relevant group. For instance, great white pelican is both inland aquatic and marine. Threat frequencies were summarised using distinct species-level records within each realm to avoid double-counting of sub-threats.
-
+Pressures on bird populations were assessed using the standardised IUCN Threats Classification Scheme (v3.3). For each of the 147 bird species assessed as Critically Endangered, Endangered, Vulnerable or Near Threatened, all relevant sub-threats were coded during the 2025 Regional Red List process, resulting in multiple records per species where more than one pressure operates. Each record represents a unique species–sub-threat combination. For example, a species such as Botha’s lark may have separate entries for habitat loss from annual cropping, overgrazing, bush encroachment, and altered fire regimes, with each coded as a distinct record. For reporting here, sub-threats were then aggregated into the eleven major IUCN threat categories to quantify the frequency with which each pressure affects a species. Because species often face several pressures simultaneously, threat categories are non-exclusive and percentages do not sum to 100%. Species were also assigned to non-exclusive ecological realms to allow realm-specific summaries of threat patterns: 80 terrestrial, 35 inland aquatic, 24 estuarine/coastal, and 41 marine species. These realm designations reflect ecological rather than taxonomic divisions, and species occurring across multiple realms were counted in each relevant group. For instance, great white pelican is both inland aquatic and marine. Threat frequencies were summarised using distinct species-level records within each realm to avoid double-counting of sub-threats.
 
 ### Protection level assessment
 
@@ -1030,15 +999,15 @@ See details about how the protection level assessment was conducted [here](../in
 
 **Data sources**
 
-1. Barnes, K. N. (Ed.). 2000. The Eskom red data book of birds of South Africa, Lesotho and Swaziland. Johannesburg, South Africa: BirdLife South Africa.
+1.  Barnes, K. N. (Ed.). 2000. The Eskom red data book of birds of South Africa, Lesotho and Swaziland. Johannesburg, South Africa: BirdLife South Africa.
 
-2. Lee, A. T. K., Rose, S., Banda, S., Bezeng, S. B., Maphalala, M. I., Maphisa, D. H., & Smit-Robinson, H. A. (Eds.). 2025. The 2025 Red Data Book of Birds of South Africa, Lesotho and Eswatini. Johannesburg, South Africa: BirdLife South Africa.
+2.  Lee, A. T. K., Rose, S., Banda, S., Bezeng, S. B., Maphalala, M. I., Maphisa, D. H., & Smit-Robinson, H. A. (Eds.). 2025. The 2025 Red Data Book of Birds of South Africa, Lesotho and Eswatini. Johannesburg, South Africa: BirdLife South Africa.
 
-3. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
 
 ## Acknowledgements
 
-:::::: grid
+::::: grid
 ::: {.g-col-lg-6 .g-col-12}
 **Coordinated by:**
 
@@ -1047,7 +1016,6 @@ See details about how the protection level assessment was conducted [here](../in
 -   [BirdLife South Africa](https://www.birdlife.org.za/)
 
 -   [Endangered Wildlife Trust](https://ewt.org/)
-
 :::
 
 ::: {.g-col-lg-6 .g-col-12}
@@ -1062,7 +1030,6 @@ See details about how the protection level assessment was conducted [here](../in
 -   [Ekapa](https://ekapa.co.za/)
 -   [First Rand](https://www.firstrand.co.za/)
 -   [Italtile and Ceramic Foundation Trust](https://www.italtilefoundation.co.za/)
-
 :::
 :::::
 

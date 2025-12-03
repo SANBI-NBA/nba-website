@@ -1,26 +1,55 @@
 ---
-title: "Media and other resources" # 
+title: "News and media resources"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
-bibliography: refs-about-nba.bib
+
+format:
+  html:
+    toc: false
+    sidebar: false
+    
+listing: 
+  - id: news-items
+    contents: 
+      - path: https://www.sanbi.org/news/twenty-years-of-the-nba-tracking-progress-challenges-and-change/
+        title: Twenty years of the NBA
+        image: imgs/nba2004-2025.png
+      - path: https://www.sanbi.org/news/why-measuring-genetic-diversity-matters-for-south-africas-future/
+        title: Why measuring genetic diversity matters
+        image: imgs/news-rhino.png
+    type: grid
+    fields: [image, title]
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
+  - id: short-films
+    contents: 
+      - path: https://www.youtube.com/channel/UCh93upoxopdBqoTBrpQrdZw
+        title: The Flow for Life
+        image: imgs/peterchadwickspiritual.png
+    type: grid
+    fields: [image, title]
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
 ---
 
-### Media resources and popular products
+## Press releases
 
-Access a range of National Biodiversity Assessment media releases and multi-media products via these links.
+-   [Announcement of NBA 2025 launch event](https://www.sanbi.org/category/media/)
 
-**Short films:**
+## News items
 
--   The Flow for Life – a \~3 min film speaking to NBA 2025’s key messages on clean freshwater flowing to the sea, pollution and the threat status of South Africa’s rivers, wetlands and estuaries
+::: {#news-items}
+:::
 
-Note: more short films will be added during 2026.
+## Short films
 
-**Social media teaser news items:**
+::: {#short-films}
+:::
 
-Several social media teasers were published just before the release of NBA 2025. These were the longer news items linked to some of those teasers:
+------------------------------------------------------------------------
 
--   [Twenty years of the NBA – tracking progress, challenges, and change](https://www.sanbi.org/news/twenty-years-of-the-nba-tracking-progress-challenges-and-change/)
-
--   [Genetic diversity, a new lens on biodiversity](https://www.sanbi.org/news/why-measuring-genetic-diversity-matters-for-south-africas-future/)
-
-*We also welcome our scientific partners and partners in the fields of education, citizen science and communication to make non-technical materials about any of the NBA 2025 findings or key messages. Just let us know via the NBA email address so that we can also repost and share.*
+*We welcome any media contributions from our partners including those involved in education, citizen science and communication. Please [contact us](mailto:nba@sanbi.org.za) so that we can repost and share.*

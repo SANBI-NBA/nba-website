@@ -141,12 +141,13 @@ The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@f
 
 The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) includes 128 shore and shelf ecosystem types which are considered benthopelagic, with 22 deepsea benthic and 13 deepsea pelagic ecosystem types (@fig-sunburst). These 163 ecosystem types nest within 17 ecosystem functional groups (@fig-sunburst) that align with those of the [IUCN GET](https://global-ecosystems.org/), except for minor differences in terminology, and South Africa included Bays as a distinct group. The ecosystem functional groups are nested within bathomes, which represent geomorphological depth categories equivalent to 'biomes' in the [IUCN GET](https://global-ecosystems.org/).
 
-:::: panel-tabset
+::: panel-tabset
 ## Figure
 
 ![Overview of South Africa’s 2023 hierarchical marine ecosystem classification with four bathomes (inner ring), 17 ecosystem functional groups (central ring), 58 biogeographic ecotypes (segments in outer ring) and 163 national marine ecosystem types (not shown as a distinct ring). The number and relative width of each segment in the outer ring reflects the number of marine ecosystem types nested within each of the biogeographic ecotypes. Where there is no number, there is only one ecosystem type associated with that biogeographic ecotype. Note that the shore and shelf do not separate into benthic and pelagic components but the deepsea includes overlapping benthic and pelagic layers. Adapted from Sink et al. (2023).](imgs/ecosystem_sunburst_LAdams.png){#fig-sunburst .lightbox width="500"}
 
 <!-- ::: {#box-eco_tbl .callout .freshwater collapse="False"} -->
+
 ## Data
 
 ```{r}
@@ -215,7 +216,8 @@ reactable(
 ##link to jock reports
 
 ```
-::::
+:::
+
 <!-- ::: -->
 
 ## Approach
@@ -288,15 +290,17 @@ The adoption of reproducible data and analytical pipelines marks a shift in ecos
 
 ## Acknowledgements
 
-The development of national maps of ecosystem types is part of the mandate of the South African National Biodiversity Institute. We acknowledge all participants in South Africa’s three previous national biodiversity assessments (2004, 2011, 2018) and the broader communities of practice that support spatial biodiversity assessment and planning in South Africa. 
+The development of national maps of ecosystem types is part of the mandate of the South African National Biodiversity Institute. We acknowledge all participants in South Africa’s three previous national biodiversity assessments (2004, 2011, 2018) and the broader communities of practice that support spatial biodiversity assessment and planning in South Africa.
 
-The organizations, departments and funders of all contributors to Sink et al. 2023 are acknowledged for their support. The National Marine Ecosystem Committee and Network, the Marine Emerging Researchers Task team, the National Ecosystem Classification Committees and the National Marine Biodiversity Scientific Working Group are thanked for their invaluable technical expertise and guidance. We acknowledge Megan van der Bank for her work in co-ordination and support of the marine ecosystem network and Prideel Majiedt for her technical support and policy insights. 
+The organizations, departments and funders of all contributors to Sink et al. 2023 are acknowledged for their support. The National Marine Ecosystem Committee and Network, the Marine Emerging Researchers Task team, the National Ecosystem Classification Committees and the National Marine Biodiversity Scientific Working Group are thanked for their invaluable technical expertise and guidance. We acknowledge Megan van der Bank for her work in co-ordination and support of the marine ecosystem network and Prideel Majiedt for her technical support and policy insights.
 
-During this assessment period, ecosystem classification and mapping work was supported through funding received from the European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC). The ACEP Deep Connections, Agulhas Bank Connections and Deep Forests projects funded through the National Research Foundation (NRF Grants 129216, 129213, and 110765) are acknowledged. The FBIP funded SeaMap project (funded through the NRF Grant number 138572) is acknowledged for its contributions in advancing knowledge which informed the update of the national marine ecosystem map. 
+During this assessment period, ecosystem classification and mapping work was supported through funding received from the European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC). The ACEP Deep Connections, Agulhas Bank Connections and Deep Forests projects funded through the National Research Foundation (NRF Grants 129216, 129213, and 110765) are acknowledged. The FBIP funded SeaMap project (funded through the NRF Grant number 138572) is acknowledged for its contributions in advancing knowledge which informed the update of the national marine ecosystem map.
 
 ## Technical documentation
 
 ### Code repositories
+
+[Marine ecosystem map repositories](https://gitlab.com/marine-map)
 
 <!-- -   **Bathymetry map**: [gitlab.com/marine-map/geomorphology/attribute_layers](https://gitlab.com/marine-map/geomorphology/attribute_layers) -->
 
@@ -304,7 +308,7 @@ During this assessment period, ecosystem classification and mapping work was sup
 
 <!-- -   **Sediment layers**: [gitlab.com/marine-map/sediment/sediment-map](https://gitlab.com/marine-map/sediment/sediment-map) -->
 
-[Biodiversity occurrence records](https://gitlab.com/marine-map/biodiversity/Occurrence)
+[Marine Ecosystem Map update data workflows and mapping](https://gitlab.com/marine-map)
 
 <!-- -   **RCP models**: [gitlab.com/marine-map/environmental_clustering](https://gitlab.com/marine-map/environmental_clustering) -->
 

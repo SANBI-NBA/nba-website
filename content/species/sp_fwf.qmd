@@ -903,6 +903,8 @@ See details about how the protection level assessment are conducted [here](../in
 
 ## Acknowledgements
 
+We thank all freshwater fish experts across South Africa that have contributed ther time, knowledge and energy to the assessments and the conservation efforts for this group. We specifically acknowledge the NRF South African Institute of Aquatic Biodiversity ([SAIAB](https://saiab.ac.za/)) for its co-leadership of the freshwater fish assessment and for hosting the 2016 IUCN Red List workshop and for their continued efforts in resolving taxonomic uncertainty for this groups. The many tertiary institutions that have contributed student research to the assessment of freshwater fishes. The South African National Biodiversity Institute for funding the 2016 IUCN Red List workshop and for serving as the secretariat of the Freshwater Fish Observation Network.
+
 ```{r}
 #| label: tbl-4
 #| tbl-cap: "List of contributors to species Red List assessments in 2016-2017, contribution of information and members of the freshwater fish observation network as well as conservation agency staff that contributed data and insights to assessments." 
@@ -913,14 +915,14 @@ library(gt)
 # Create example data
 data <- data.frame(
   'Contributor' = c("Paul Skelton","Tsungai Zengeya", "Leon Barkhuizen", "Stan Rodgers", "Darragh Woodford", "Olaf Weyl", "Ashla Gohell", "Mandy Schuman","Dean Impson", "Mohammed Kajee", "Skhumbuzo Khubeka", "Peter Romollo", 
-"Bruce Paxton", "Kagiso Mangwale", "Francois Roux"),
-  'Affiliation'  = c("South African Institute for Aquatic Biodiversity","South African National Biodiversity Institute", "University of the Free State", "Limpopo Economic Development, Environment & Tourism (LEDET)", "University of the Witwatersrand", "South African Institute for Aquatic Biodiversity", "Department of Water and Sanitation", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre (FRC)", "University of Cape Town", "Ezemvelo KZN Wildlife", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre", "Eastern Cape Parks and Tourism Agency", "Mpumalanga Tourism and Parks Agency (MPTA)"))
+"Bruce Paxton", "Kagiso Mangwale", "Francois Roux", "Anisha Dayaram", "Carol Poole", "Esethu Nkibi"),
+  'Affiliation'  = c("South African Institute for Aquatic Biodiversity","South African National Biodiversity Institute", "University of the Free State", "Limpopo Economic Development, Environment & Tourism (LEDET)", "University of the Witwatersrand", "South African Institute for Aquatic Biodiversity", "Department of Water and Sanitation", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre (FRC)", "University of Cape Town", "Ezemvelo KZN Wildlife", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre", "Eastern Cape Parks and Tourism Agency", "Mpumalanga Tourism and Parks Agency (MPTA)","South African National Biodiversity Institute","South African National Biodiversity Institute","South African National Biodiversity Institute"))
 
 # Create gt table
 #gt_table <- gt(data)
 
 ref<- gt(data) %>% 
-  nba_tbl_theme() %>%
+  #nba_tbl_theme() %>%
        tab_options(#data_row.padding = px(16),
               table.font.size = px(13L),
               table.width = pct(100),
@@ -955,10 +957,7 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 ## Technical documentation
 
-**Data sources**
-<br>
-1.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
-
+**Data sources** <br> 1. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
 
 ### Recommended citation
 

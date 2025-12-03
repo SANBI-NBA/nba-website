@@ -21,7 +21,7 @@ author:
   - name:
       given: Domitilla C
       family: Raimondo
-    #orcid: 0000-0003-3998-752X
+    orcid: 0000-0003-3998-752X
     affiliations:
       - ref: sanbi    
   - name:
@@ -682,15 +682,15 @@ The first IUCN Red List assessment of South African spiders was conducted betwee
 
 ------------------------------------------------------------------------
 
-- [South African National Biodiversity Institute](https://www.sanbi.org/)
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
 
-- [Agricultural Research Council](https://www.arc.agric.za/)
+-   [Agricultural Research Council](https://www.arc.agric.za/)
 
-- [University of Free State](https://www.ufs.ac.za/)
+-   [University of Free State](https://www.ufs.ac.za/)
 
-- [National Museum Bloemfontein](https://nationalmuseum.co.za/)
+-   [National Museum Bloemfontein](https://nationalmuseum.co.za/)
 
-- [University of Venda](https://www.univen.ac.za/)
+-   [University of Venda](https://www.univen.ac.za/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -706,11 +706,11 @@ The first IUCN Red List assessment of South African spiders was conducted betwee
 
 ------------------------------------------------------------------------
 
-- [South African National Parks](https://www.sanparks.org/)
+-   [South African National Parks](https://www.sanparks.org/)
 
-- [E. Oppenheimer & Son](https://www.privateequityinternational.com/institution-profiles/e-oppenheimer-son.html)
+-   [E. Oppenheimer & Son](https://www.privateequityinternational.com/institution-profiles/e-oppenheimer-son.html)
 
-- Provincial conservation agencies
+-   Provincial conservation agencies
 :::
 ::::::
 
@@ -739,7 +739,9 @@ data <- data.frame(
 "Reginald Christiaan",
 "Robin Lyle",
 "Ruan Booysen",
-"Sma Chiloane "
+"Sma Chiloane ", 
+"Carol Poole",
+"Anisha Dayaram"
 ),
   'Affiliation'  = c("Agricultural Research Council", 
                      "Spider Club of Southern Africa",
@@ -754,7 +756,9 @@ data <- data.frame(
                      "South African National Biodiversity Institute", 
                      "Agricultural Research Council", 
                      "University of Free State", 
-                     "Agricultural Research Council"
+                     "Agricultural Research Council",
+                     "South African National Biodiversity Institute", 
+                     "South African National Biodiversity Institute" 
                      ))
 
 # Create gt table
@@ -767,6 +771,13 @@ gt(data) %>%
 
    tab_style(style = cell_fill(color = "white"),
             locations = cells_column_labels(columns = everything())) %>%
+  
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_column_labels(columns = everything())) %>%
+  
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_body(columns = everything())) %>%
+  
   tab_style(
     style = cell_borders(
       sides = c("left", "right"),

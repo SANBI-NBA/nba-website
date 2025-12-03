@@ -331,7 +331,7 @@ It is increasingly evident that protected areas will be less meaningful if they 
 
 The Wilderness Lakes System, a designated RAMSAR site within the Garden Route National Park, comprises the Touw Estuary and three interconnected estuarine lakes, Eilandvlei, Langvlei, and Rondevlei. Long-term studies have shown clear directional changes occurring in this system. Water quality monitoring has revealed significant declines in salinity, pH, and turbidity, particularly in the upper lakes, reflecting a shift from estuarine to more freshwater, lacustrine conditions (Russell 2013). Correspondingly, fish communities have changed, with increasing dominance of freshwater and alien species, including Mozambique tilapia (*Oreochromis mossambicus*) and common carp (*Cyprinus carpio*) [@olds2011]. These changes stem from altered hydrology, artificial mouth breaching, and sediment accumulation, restricting connectivity between lakes and the marine environment. More recently, two emerging issues, avian botulism and cyanobacteria blooms, have raised concerns over the ecological health of the system.
 
-![Aerial view of Rondevlei in the foreground and Langvlei in the background. (SANParks) (© SANParks)](imgs/DJI_0178.jpg){width="90%"}
+![Aerial view of Rondevlei in the foreground and Langvlei in the background. (© SANParks)](imgs/DJI_0178.png){width="90%"}
 
 **Avian botulism**
 
@@ -352,7 +352,7 @@ Toxin testing confirmed the presence of microcystins at levels exceeding WHO rec
 :::
 
 ::: {.column width="38%"}
-![The cyanobacteria algal bloom event on Island Lake in 2025. (© SANParks)](imgs/PHOTO-2025-04-02-14-02-04.jpg)
+![The cyanobacteria algal bloom event on Island Lake in 2025. (© SANParks)](imgs/PHOTO-2025-04-02-14-02-04.png)
 :::
 ::::::
 
@@ -364,7 +364,7 @@ Although containment efforts reduced the scale of subsequent outbreaks, the recu
 
 **Without concerted management to restore flow, reduce nutrient inputs, and improve estuarine connectivity, these linked issues threaten to fundamentally alter the ecological character and biodiversity of this protected Warm Temperate estuarine lake system.**
 
-![Arial view of Island Lake in the foreground with Langvlei in the center and Rondevlei in the far distance. (© SANParks)](imgs/DJ_0166.jpg)
+![Arial view of Island Lake in the foreground with Langvlei in the center and Rondevlei in the far distance. (© SANParks)](imgs/DJ_0166.png)
 :::::::
 
 ::: {#box-eco_tbl_epl .callout .estuarine collapse="False"}

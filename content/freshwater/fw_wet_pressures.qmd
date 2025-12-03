@@ -60,31 +60,23 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Freshwater ecosystems - rivers and inland wetlands - face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use.*
-
-*Inland wetlands are among the most threatened ecosystems globally. Their ecological functioning is particularly sensitive to changes in hydrology and water quality. International assessments \[\@IPBES, \@IUCN, \@ Ramsar\] consistently prioritise habitat loss and fragmentation, climate change, pollution, and invasive species as key direct drivers of biodiversity loss and freshwater ecosystem degradation. Addressing these critical pressures is an essential component of wetland conservation.*
+*Freshwater ecosystems - rivers and inland wetlands - face a multitude of pressures, including pollution from mines and wastewater treatment, infrastructure development, and changes in land use. Their ecological functioning is particularly sensitive to changes in hydrology and water quality. Habitat loss and fragmentation, climate change, pollution, and invasive species persist as key direct drivers of biodiversity loss and freshwater ecosystem degradation, and do not appear to be abating since the 2018 assessment. Addressing these critical pressures is an essential component of conservation and management of these vital ecosystems.*
 
 ![Nutrients accumulating along the edge of a depression wetland. (© Nancy Job)](imgs/nvlle_v1.png)
 
-Text per EU-type statement, pressures do not appear to be abating since the 2018 assessment.
-
 ## Hydrological modification
 
-Inappropriate abstraction and damming severely alter natural flow regimes and seasonality, frequently leading to ecosystem type change, such as a change from \[permanently open to closing\]. This is associated with **connectivity** loss, impacting the dispersal of migratory species, and competing demands on water.
-
-Box Ecological reserve
+Inappropriate abstraction and damming severely alter natural flow regimes and seasonality, frequently leading to ecosystem type change, such as a change from seasonal to permanently inundated wetland or regular to intermittent flowing river This is leads to loss in connectivity, impacting the dispersal of migratory species, and competing demands on water.
 
 ## Habitat degradation and loss
 
-The **conversion** and **fragmentation** of rivers and wetlands, such as by agriculture, urban development, and mining, can lead to a complete loss of ?ecosystem structure?. erosion and inappropriate fire regimes. ....Both the suppression of fires and planned burning practices for grazing result in changes to the natural fire regimes and subsequently the species composition of vegetation associated with rivers and inland wetlands in the landscape. Suppression of fire in the Fynbos biome, for example, has led to the densification of vegetation and decline in habitat.
+The conversion and fragmentation of rivers and wetlands, such as by agriculture, urban development, and mining, can lead to loss of ecosystem structure, erosion and inappropriate fire regimes. Both the suppression of fires and planned burning practices for grazing result in changes to the natural fire regimes and subsequently the species composition of vegetation associated with rivers and inland wetlands in the landscape. Suppression of fire in the Fynbos biome, for example, has led to the densification of vegetation and decline in habitat.
 
 ## Pollution
 
-Water pollution is a major cause of the decline in freshwater species, particularly freshwater fishes. A combination of sediment, nutrient, chemical and thermal water pollution cumulatively impact the biodiversity and functioning of river and inland wetland ecosystem types and their associated freshwater species. Pollution (such as poorly or untreated wastewater effluent from industries and WWTWs, mining waste, acid mine drainage and agricultural return flows) not only significantly increases nutrients,metals, pesticides and other toxic compound loads, but can also change the natural temperature ranges and turbulence of aquatic environments. Furthermore, pharmaceuticals and micro-plastics are emerging contaminants that act as endocrine disruptors, impacting the productivity of aquatic species, and are of grave concern. Water pollution has dire, long-lasting consequences for aquatic organisms and hence ecosystems function. The Olifants River, which flows through the Kruger National Park, is a prime example of a river at the receiving end of a heavily utilised and degraded landscape. The impact of pollutants entering the river system have led to the demise of Endangered species such as the Nile Crocodile (Crocodylus niloticus), attributed to pansteatitis, as well as the mortality of several fish species in Loskop Dam. A decline in piscivorous bird species has also been observed, including Pel’s Fishing Owl (Scotopelia peli).
+Water pollution is a major cause of the decline in freshwater species, particularly freshwater fishes. A combination of sediment, nutrient, chemical and thermal water pollution cumulatively impact the biodiversity and functioning of river and inland wetland ecosystem types and their associated freshwater species. Pollution (such as poorly or untreated wastewater effluent from industries and WWTWs, mining waste, acid mine drainage and agricultural return flows) not only significantly increases nutrients,metals, pesticides and other toxic compound loads, but can also change the natural temperature ranges and turbulence of aquatic environments. Furthermore, pharmaceuticals and micro-plastics are emerging contaminants that act as endocrine disruptors, impacting the productivity of aquatic species, and are of grave concern. Water pollution has dire, long-lasting consequences for aquatic organisms and hence ecosystems function. The Olifants River, which flows through the Kruger National Park, is a prime example of a river at the receiving end of a heavily utilised and degraded landscape. The impact of pollutants entering the river system have led to the demise of Endangered species such as the Nile crocodile (*Crocodylus niloticus*), attributed to pansteatitis, as well as the mortality of several fish species in Loskop Dam. A decline in piscivorous bird species has also been observed, including Pel’s fishing owl (Scotopelia peli).
 
 ::: {#box-1 .callout-note .freshwater title="Box 1. Freshwater ecosystems have limited pollution assimilation capacity, which is being exceeded." collapse="true"}
-Prepared by Donovan Kotze
-
 Wetlands are at the frontline of wastewater[^1] impacts given their location at the interface between the terrestrial and aquatic environments, especially in South Africa, with its generally poor performance of wastewater treatment works and declining state of catchment water quality. In the most recent national assessment, 68% of wastewater treatment works were identified as at high or critical risk of discharging partially treated or untreated water into the environment.
 
 When using wetlands to enhance catchment water quality, the impacts on ecosystem services may be considerable. The use of wetlands to enhance water quality in polluted catchments has been well demonstrated. But a narrow focus on water quality objectives, will likely lead to failure to account more broadly for the impacts on wetland ecological health, ecosystem services supply and ultimately human wellbeing.
@@ -111,7 +103,7 @@ Impacts of climate change on water temperatures are projected to vary across Sou
 
 Under climate change and current trends in land use, sediment accumulation is likely to shift. Shifts in climate may alter streamflows, affecting nutrient flows, geomorphic integrity and the hydrology of freshwater systems. Species and ecosystems dependent on predictable stream and nutrient flows may be put under increased pressure as a result of shifts in sedimentation. Projected climate change may result in higher sediment yields than at present conditions primarily in the centre and east of the country, but lower sediment yields along the west and south coastal areas, especially in wetter than average years (Schulze et al. 2025).
 
-South Africa’s freshwater ecosystems are largely inadequately protected, and the NBA 2025 assessment has identified those ecosystems which are both highly threatened and poorly protected.Many of these areas also overlap with areas where streamflow, water temperatures and sediment accumulation patterns are likely to undergo extensive change under near-future climate scenarios (Schulze et al. 2025). Knowledge of areas most affected by climate-related changes and that affect ecosystem functioning and vulnerable species, is critical to ensure effective and timeous management response.
+South Africa’s freshwater ecosystems are largely inadequately protected, and the NBA 2025 assessment has identified those ecosystems which are both highly threatened and poorly protected. Many of these areas also overlap with areas where streamflow, water temperatures and sediment accumulation patterns are likely to undergo extensive change under near-future climate scenarios (Schulze et al. 2025). Knowledge of areas most affected by climate-related changes and that affect ecosystem functioning and vulnerable species, is critical to ensure effective and timeous management response.
 
 ![](imgs/climate.png)
 
@@ -120,15 +112,15 @@ South Africa’s freshwater ecosystems are largely inadequately protected, and t
 
 ## Biological invasions
 
-Biological invasions are a major pressure on the biodiversity and ecosystem functioning of the terrestrial realm. A national report is released every three years – providing a comprehensive assessment on the “[Status of biological invasions and their management in South Africa](https://doi.org/10.5281/zenodo.8217182)”[@sanbi2024]. The report details alien species introduction pathways, their distribution and abundance, their impacts and the various interventions that have been put in place.
+Biological invasions are a major pressure on the biodiversity and ecosystem functioning of the terrestrial realm. A national report is released every three years – providing a comprehensive assessment on the “[Status of biological invasions and their management in South Africa](https://doi.org/10.5281/zenodo.8217182)”. The report details alien species introduction pathways, their distribution and abundance, their impacts and the various interventions that have been put in place.
 
-Alien invasive species cause substantial changes to ecosystem structure and function and negatively impact aquatic biota. Rivers and inland wetlands are the most heavily invaded ecosystems globally, largely due to their inherent connectivity and the intensity of anthropogenic activities. Of the 191 listed alien species in the inland aquatic realm, 65 are invasive. Of these invasive species, 27 severely impact biodiversity (5 fish species and 15 plant species). Nationally, 81% of freshwater fishes of conservation concern are impacted by invasive alien fishes. Many of these native species are endemic to the mountains of the Western Cape. The invasive species (e.g. Bass \[Micropterus\] species) impact on native species mainly through predation of juveniles and outcompeting adults for resources. This reduces population sizes and has caused population extirpation of many native species. In some cases, invasive species have hybridised with native species (e.g. invasive Nile Tilapia (Oreochromis niloticus) and the native Mozambique Tilapia (Oreochromis mossambicus)). Invasive plants in natural rivers and wetlands threaten ecosystem integrity, alter fire regimes and change hydrological processes due to their high water consumption.
+Alien invasive species cause substantial changes to ecosystem structure and function and negatively impact aquatic biota. Rivers and inland wetlands are the most heavily invaded ecosystems globally, largely due to their inherent connectivity and the intensity of anthropogenic activities. Of the 191 listed alien species in the inland aquatic realm, 65 are invasive. Of these invasive species, 27 severely impact biodiversity (5 fish species and 15 plant species). Nationally, 81% of freshwater fishes of conservation concern are impacted by invasive alien fishes. Many of these native species are endemic to the mountains of the Western Cape. The invasive species e.g. bass (*Micropterus*) species impact on native species mainly through predation of juveniles and outcompeting adults for resources. This reduces population sizes and has caused population extirpation of many native species. In some cases, invasive species have hybridised with native species e.g. invasive Nile tilapia (*Oreochromis niloticus*) and indigenous Mozambique tilapia (*Oreochromis mossambicus*). Invasive plants in rivers and wetlands threaten ecosystem integrity, alter fire regimes and change hydrological processes due to their high water consumption.
 
 ## Technical documentation
 
-**Publications**:
+**Related publications and supporting information**
 
-**Technical reports**:
+Coming soon
 
 ## Recommended citation
 
@@ -149,37 +141,7 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-## References for this webpage
-
-DWS, 2023. Green Drop Progress Assessment Report 2023.  Department of Water and Sanitation, Pretoria.
-
-Cullis JDS, Horn A, Rossouw N, Fisher-Jeffes L, Kunneke MM, Hoffman W, 2019. Urbanisation, climate change and its impact on water quality and economic risks in a water scarce and rapidly urbanising catchment: case study of the Berg River Catchment. H2Open Journal, 2: 146-167.
-
-Edokpayi JN, Odiyo JO and Durowoju OS, 2018. Impact of wastewater on surface water quality in developing countries: a case study of South Africa.  In: Tutu H (ed.) Water quality. Intech, Rijeka, Croatia
-
-Convention on Wetlands, 2021. Global Wetland Outlook: Special Edition 2021. Gland, Switzerland: Secretariat of the Convention on Wetlands.
-
-Jacklin DM, Brink IC, and Jacobs SM, 2021. Efficiencies of indigenous South African plant biofilters for urban stormwater runoff water quality improvement with a focus on nutrients and metals. AQUA – Water Infrastructure, Ecosystems and Society 70: 1094-1110.
-
-Kotze DC, 2023. Impacts of wastewater and solid waste on wetland water resources in South Africa: a review.  Unpublished report compiled for the Joint Nature Conservation Committee, Peterborough, UK.
-
-Kemp C, 2024. Kimberley’s “toxic lake”: Kamfers Dam cesspool of sewage, lawsuits. News24. 25 March 2024.
-
-Land M, Granéli W, Grimvall A, Hoffmann CC, Mitsch WJ, TonderskI KS and Verhoeven JTA, 2016. How effective are created or restored freshwater wetlands for nitrogen and phosphorus removal? A systematic review.  Environmental Evidence 5 (1) 9.
-
-Ramollo PP, 2016. Jewel of the Northern Cape is fading due to pollution. Water Wheel. January/February. pp 36 -37.
-
-Ramollo PP, 2018. Ensuring the future of Kamfers’ flamingos. Water Wheel March/April pp 35 - 37.
-
-Rivers-Moore N, 2016. Exploratory use of a Bayesian network process for translating stakeholder perceptions of water quality problems in a catchment in South Africa. Water SA 42: 306-315.
-
-Rybczyk JM, Day JW, and Conner WH, 2002.  The impact of wastewater effluent on accretion and decomposition in a subsiding forested wetland.  Wetlands 22: 18-32.
-
-Sindane JT, and Modley L-AS, 2023. The impacts of poor water quality on the residential areas of Emfuleni local municipality: a case study of perceptions in the Rietspruit River catchment in South Africa, Urban Water Journal, 20:10, 1568-1578, DOI:10.1080/1573062X.2022.2030763.
-
-UN-Water, 2015. Wastewater management: a UN-water analytical brief. UN-Water, United Nations
-
-Verhoeven JT, Arheimer B, Yin C, and Hefting MM, 2006. Regional and global concerns over wetlands and water quality. Trends in Ecology & Evolution 21: 96-103.
+## References 
 
 ::: {#refs}
 :::

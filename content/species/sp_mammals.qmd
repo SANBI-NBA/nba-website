@@ -167,7 +167,7 @@ knitr::include_graphics("./imgs/mammals_in_10km_HD.png")
 
 ## Threat status
 
-South Africa's most recent red list update indicates that of the 336 mammals that occur in the country, 67 are threatened with extinction. Threatened mammals are concentrated mainly in the moist eastern section of South Africa, the area that has seen the highest rates of habitat loss (@fig-1). Almost 20% of mammal species fall within a threatened category (VU, EN or CR), 12% of species are Near Threatened, while close to 70% are Least Concern (@fig-2). It is concerning that around 7% of mammals are listed as Data Deficient, with not enough information available to assign a Red List category. Overall, there were 14 genuine changes threat status in this revision. Eleven species were uplisted to a higher threat category, while only three were downlisted. South Africa’s larger wildlife species face varying levels of threat, with national conservation statuses ranging from Least Concern to Endangered (See page on [status of selected wildlife species in South Africa](sp_mammal_wildlife.qmd)).
+South Africa's most recent red list update indicates that of the 336 mammals that occur in the country, 67 are threatened with extinction. Threatened mammals are concentrated mainly in the moist eastern section of South Africa, the area that has seen the highest rates of habitat loss (@fig-1). Almost 20% of mammal species fall within a threatened category (VU, EN or CR), 12% of species are Near Threatened, while close to 70% are Least Concern (@fig-2). It is concerning that around 7% of mammals are listed as Data Deficient, with not enough information available to assign a Red List category. Overall, there were 14 genuine changes threat status in this revision. Eleven species were uplisted to a higher threat category, while only three were downlisted. South Africa’s larger wildlife species face varying levels of threat, with national conservation statuses ranging from Least Concern to Endangered (See page on [status of selected iconic wildlife species in South Africa](sp_mammal_wildlife.qmd)).
 
 :::: panel-tabset
 ## Figure
@@ -548,7 +548,7 @@ Most mammals are threatened by habitat loss from agriculture, which impacts more
 ```{r}
 #| label: fig-5
 #| fig-cap: "Key pressures on South Africa’s mammals, based on the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme [@i2025a]. The percentage of threatened and Near threatened species impacted by specific pressures are presented. "
-#| out-width: 650px
+#| out.width: 100%
 
 library(stringr)
 
@@ -765,7 +765,7 @@ Building on national efforts to evaluate the genetic health of South Africa’s 
 :::
 
 ::: {#box-5 .callout-note .species title="Box 5. Use of climate modelling in assessments" collapse="false"}
-Climate change modelling was included for the first time in the 2025 Mammal Red List assessment. The approach was piloted for fourteen mammal species that had vulnerability to climate change listed as a potential pressure in the 2016 Red List assessment. Species occurrence records collected from multiple sources, including provincial conservation bodies, museum archives and citizen science platforms, were cleaned and spatially thinned to reduce sampling bias and autocorrelation. Environmental and climatic predictor variables were selected based on species’ ecology and assessed for multicollinearity before model fitting. Three Global Climate Models from CMIP6 (GFDL-ESM4, UKESM1-0-LL, and MPI-ESM1-2-HR) were selected. Two Shared Socioeconomic Pathways were modeled: SSP126 representing a sustainable development scenario with warming limited to 2°C, and SSP585 representing a business-as-usual scenario with mean warming exceeding 4°C. Future distributions were compared to current distributions to calculate habitat maintained, lost, and gained (see (@fig-mammal-models) for an example of the spatial modules produced for the Black-footed cat). Of the 14 species assessed, the most dramatic losses in predicted future habitat distribution were for black-footed cat, riverine rabbit, vlei rat, and Verreaux’s mouse while the Bush-tailed hairy-footed gerbil is predicted to gain the most habitat (@tbl-4). Interestingly, the one species whose population has been observed to experience dramatic declines due to drought in the past 10 years, the Namaqua dune mole-rat ([Box 3](@box-3)), was not predicted to lose extensive habitat via climate models.
+Climate change modelling was included for the first time in the 2025 Mammal Red List assessment. The approach was piloted for fourteen mammal species that had vulnerability to climate change listed as a potential pressure in the 2016 Red List assessment. Species occurrence records collected from multiple sources, including provincial conservation bodies, museum archives and citizen science platforms, were cleaned and spatially thinned to reduce sampling bias and autocorrelation. Environmental and climatic predictor variables were selected based on species’ ecology and assessed for multicollinearity before model fitting. Three Global Climate Models from CMIP6 (GFDL-ESM4, UKESM1-0-LL, and MPI-ESM1-2-HR) were selected. Two Shared Socioeconomic Pathways were modeled: SSP126 representing a sustainable development scenario with warming limited to 2°C, and SSP585 representing a business-as-usual scenario with mean warming exceeding 4°C. Future distributions were compared to current distributions to calculate habitat maintained, lost, and gained (see (@fig-mammal-models) for an example of the spatial modules produced for the Black-footed cat). Of the 14 species assessed, the most dramatic losses in predicted future habitat distribution were for black-footed cat, riverine rabbit, vlei rat, and Verreaux’s mouse while the Bush-tailed hairy-footed gerbil is predicted to gain the most habitat (@tbl-4). Interestingly, the one species whose population has been observed to experience dramatic declines due to drought in the past 10 years, the Namaqua dune mole-rat ([Box 3](@box-3)), was not predicted to lose extensive habitat via climate models. For more details see: [Modeling the change in potential species distribution of 14 South African mammals](https://doi.org/10.6084/m9.figshare.30774914). 
 :::
 
 ```{r}
@@ -985,10 +985,12 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 ## Technical documentation
 
 **Data sources**
-<br>
-1. Engelbrecht, FA., Steinkopf, J., Padavatan, J. & Midgley, GF. 2024. Projections of future climate change in southern Africa and the potential for regional tipping points. In: von Maltitz, G.P., et al. Sustainability of Southern African Ecosystems under Global Change. Ecological Studies, vol 248. Springer, Cham. https://doi.org/10.1007/978-3-031-10948-5_7
-<br>
-2. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+
+1.  Engelbrecht, FA., Steinkopf, J., Padavatan, J. & Midgley, GF. 2024. Projections of future climate change in southern Africa and the potential for regional tipping points. In: von Maltitz, G.P., et al. Sustainability of Southern African Ecosystems under Global Change. Ecological Studies, vol 248. Springer, Cham. https://doi.org/10.1007/978-3-031-10948-5_7
+
+2.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+
+3.  Oliver, C., Conservation and Data Scientist, Endangered wildlife Trust. Available at: https://figshare.com/ndownloader/files/60064052. Accessed: 03 December 2025.
 
 ## Recommended citation
 

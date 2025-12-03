@@ -4,7 +4,7 @@ title-block-banner: "#ad180d"
 title-block-banner-color: white
 ---
 
-![The Cloud copper butterfly (*Aloeides nubilus*), a range-restricted endemic from Mpumalanga Province, is red listed Endangered. © Steve Woodhall](./imgs/sp_butterfly_img_1.png){fig-align="center"}
+![The Cloud copper butterfly (*Aloeides nubilus*), a range-restricted endemic from Mpumalanga Province, is Red Listed as Endangered. This high altitude species occurs on lofty summits or ridges and is threatened by climate change. © Steve Woodhall](./imgs/sp_butterfly_img_1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 

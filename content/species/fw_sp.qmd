@@ -147,6 +147,7 @@ citation:
 # Do not edit or change any of the following entries
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/fw_img_1.png"
 ---
 
 *Freshwater ecosystems are under severe pressure. These habitats are geographically constrained causing impacts to accumulate. Between NBA 2018 and 2024, freshwater fishes have remained among the most threatened vertebrate groups in South Africa. Waterbirds, dependent on freshwater habitats are declining, with several species becoming more threatened since 2015. Physical modification of rivers and wetlands, invasive alien species and climate change continue to accelerate declines*.
@@ -488,7 +489,9 @@ df_wide %>% gt() %>%
 ```
 :::
 
-Note: the sections below (and @fig-1 and @fig-2)) give brief summaries about freshwater species in these taxonomic groups. For a full reflection on entire taxonomic groups, please click on the headings to access the subsections of the website under Species findings.
+::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
+The sections below (and @fig-1 and @fig-2) give brief summaries about freshwater species in these taxonomic groups. For a full reflection on entire taxonomic groups, please click on the headings to access the subsections of the website under Species findings.
+:::
 
 ### [Fairy shrimps](../species/sp_anostraca.qmd)
 
@@ -803,11 +806,12 @@ New to iNaturalist (or never heard of it) and want to contribute? Watch these [v
 :::
 ::::
 
-## Approach {#approach}
+## Approach
 
 ### Threat status assessment
 
-See the Red List explainer page for detailes about the assessment.
+See the Red List explainer page for details about the assessment - [here](../integrated-findings/chl_rls_explained.qmd)
+
 
 In the 2025 assessment of freshwater species, there has been a concerted effort to present a more balanced representation of freshwater species and to include more freshwater invertebrates. Nine freshwater groups are included in this assessment, including, for the first time, Freshwater crabs and Anostraca species. This addresses a gap identified in the previous NBA [@skowno2019a], where only Odonata represented freshwater invertebrates.
 
@@ -910,7 +914,7 @@ Effectiveness ratings were provided by provincial and national conservation agen
 
 ## Acknowledgements
 
-We thank all the many individuals, and specificially, the freshwater taxon experts, who gave up their time to participate in workshops, discussions, and authored and reviewed individual species assessments. BirdLife South Africa who led the regional assessment of South African birds across realms. The Endangered Wildlife Trust is thanked for their leadership of the assessment of South African mammals and amphibians (supported by Anura Africa) across realms. We acknowledge the SANBI and SAIAB led NRF FBIP REFRESH project for supporting red listing of Anostraca. All provincial agencies that have provided data or insights into effectiveness of protected areas across South Africa. We are most humbled by all the members of the IUCN South African Species Specialist Group for their contributions and participation in discussions for species assessments. 
+We thank all the many individuals, and specificially, the freshwater taxon experts, who gave up their time to participate in workshops, discussions, and authored and reviewed individual species assessments. BirdLife South Africa who led the regional assessment of South African birds across realms. The Endangered Wildlife Trust is thanked for their leadership of the assessment of South African mammals and amphibians (supported by Anura Africa) across realms. We acknowledge the SANBI and SAIAB led NRF FBIP REFRESH project for supporting red listing of Anostraca. All provincial agencies that have provided data or insights into effectiveness of protected areas across South Africa. We are most humbled by all the members of the IUCN South African Species Specialist Group for their contributions and participation in discussions for species assessments.
 
 :::::: grid
 ::: {.g-col-lg-4 .g-col-12}
@@ -918,15 +922,13 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--  [South African National Biodiversity Institute](https://www.sanbi.org/)
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
 
--  [ BirdLife South Africa](https://www.birdlife.org.za/)
+-   [BirdLife South Africa](https://www.birdlife.org.za/)
 
--  [Endangered Wildlife Trust](https://ewt.org/) 
+-   [Endangered Wildlife Trust](https://ewt.org/)
 
--  [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
-
--  [National Research Foundation](https://www.nrf.ac.za/)
+-   [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -934,9 +936,9 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--  [Anura Africa]((https://www.anuraafrica.org/))
+-   [Anura Africa]((https://www.anuraafrica.org/))
 
--  [NRF FBIP REFRESH project](https://www.nrf.ac.za/)
+-   [NRF FBIP REFRESH project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -944,15 +946,16 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--  Freshwater taxon experts
+-   Freshwater taxon experts
 
--  Provincial agencies – data, insights on protected area effectiveness
+-   Provincial agencies – data, insights on protected area effectiveness
 
--  IUCN South African Species Specialist Group members
+-   IUCN South African Species Specialist Group members
 :::
 ::::::
 
 ### Contributors
+
 ```{r}
 #| label: tbl-5
 #| tbl-cap: "List of reviewers."
@@ -976,7 +979,6 @@ contributors %>%
               column_labels.border.bottom.color = "black")
 
 ```
-
 
 ## Recommended citation
 

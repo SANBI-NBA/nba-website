@@ -5,19 +5,18 @@ title-block-banner-color: white
 
 author:
   - name:
-      given: Domitilla C.  
-      family: Raimondo
-    orcid: 0000-0003-3998-752X  
-    affiliations:
-      - ref: af1 
-
-      
-  - name:
       given: Jeanetta 
       family: Selier
     orcid: https://orcid.org/0000-0003-1598-464X
     affiliations:
       - ref: af1 
+      
+  - name:
+      given: Domitilla C.  
+      family: Raimondo
+    orcid: 0000-0003-3998-752X  
+    affiliations:
+      - ref: af1       
 
   - name:
       given: Michele
@@ -192,7 +191,7 @@ The expansion of privately and communally managed conservation areas has also be
 
 Additional challenges remain in the management of wildlife populations, particularly where intensive management and selective breeding practices are employed. Such approaches may reduce genetic diversity, alter natural evolutionary trajectories, or shift management priorities from conservation outcomes toward commercial production. The selective breeding of ungulates for specific morphological traits, such as exaggerated horn structures or colour variants [@Selier2018], and the captive breeding of lions have been widely debated for their conservation relevance and animal welfare implications.
 
-While some authors contend that captive-bred lions can serve as a buffer to pressures on wild lion populations by supplying the demand for trophy hunting and derived products [@Lindsey2012;@Williams2015;@Williams2019], others argue that the conservation contribution of captive lions is minimal or negligible [@Coals2019;@Coals2020;@Elwin2024]. Concerns regarding welfare, ecological integrity, and reputational risks have contributed to a shift in policy direction. In 2024, the South African government adopted a policy position to phase out the captive keeping and breeding of lions, as outlined in the Policy Position for the Conservation and Sustainable Use of Elephant, Lion, Leopard and Rhinoceros [@DFFE2024].
+While some authors contend that captive-bred lions can serve as a buffer to pressures on wild lion populations by supplying the demand for trophy hunting and derived products [@Lindsey2012; @Williams2015; @Williams2019], others argue that the conservation contribution of captive lions is minimal or negligible [@Coals2019; @Coals2020; @Elwin2024]. Concerns regarding welfare, ecological integrity, and reputational risks have contributed to a shift in policy direction. In 2024, the South African government adopted a policy position to phase out the captive keeping and breeding of lions, as outlined in the Policy Position for the Conservation and Sustainable Use of Elephant, Lion, Leopard and Rhinoceros [@DFFE2024].
 
 Looking forward, certification schemes and incentive-based mechanisms could strengthen the positive impact of the wildlife sector by rewarding best practices, promoting transparency, and encouraging management that aligns with national biodiversity goals. By fostering stewardship and accountability, these approaches can ensure that managed populations remain genetically robust, ecologically functional, and as wild as possible.
 

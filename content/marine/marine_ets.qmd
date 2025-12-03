@@ -430,16 +430,16 @@ Four additional small ecosystem types listed under this category in 2025 when st
 
 ![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf. (© Kerry Sink)](imgs/Nan18_T16_25m_28.png)
 
+
 ::: {#box-aliwal .callout-note .marine collapse="false" title="Box 1. The effect of ecosystem extent thresholds on ecosystem threat status results"}
 
 Ecosystem types of smaller extent and that are less widely distributed are at greater risk of extinction [@keith2013]. In 2025, the strict application of the IUCN 2024 RLE guidelines, led to worse threat statuses for several ecosystem types under criterion B. The IUCN guidelines provide set thresholds of ecosystem extent which determine ecosystem threat status. There are no accompanying thresholds for ecosystem modification (degradation or disruption), which can result in a worse threat status than might be anticipated by experts. 
 
+
 Aliwal Shoal met the criteria for a Critically Endangered ecosystem type because of its restricted distribution (small extent) and ongoing decline in ecosystem condition. Under criteria C and D Aliwal Shoal was assessed as Vulnerable, which may be more plausible. Further, improved management of pressures, including fishing, pollution and lethal shark control could see this ecosystem type assessed as Least Concern in the future. Additional research is needed to support reef ecosystem classification and mapping. When countries are mapping national ecosystem types it is useful to keep these thresholds, that can drive threat status results, in mind. Further work is needed to better understand the influence of ecosystem extent and distribution on ecosystem risk assessment. Assessments at multiple scales provide useful insights.
 
 ![Aliwal Shoal meets the criteria for a Critically Endangered ecosystem type because of its restricted distribution (small extent) and ongoing decline in ecosystem condition. (© Kerry Sink)](imgs/19_aliwal.png)
-
 :::
-
 
 ### Endangered
 
@@ -469,7 +469,7 @@ The application of the IUCN global standards supported a more comprehensive unde
 
 ## Acknowledgements
 
-The National Marine Biodiversity Scientific Working Group is thanked for its role as reference group for the Marine Realm Assessment of the NBA. We also thank the National Marine Ecosystem Committee and Network for their peer review and shared insights on ecosystem assessment. We acknowledge the authors of the NBA 2018 Ecosystem Threat Status chapter. We thank Jose Ferrer Paris and David Keith for helpful discussions that informed our application of the 2024 IUCN Red List of Ecosystems Guidelines. Jennifer Olbers and Mike Schleyer are thanked for additional insights on Aliwal Shoal. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for supporting the 2025 NBA ecosystem threat status assessment and the planned scientific publication. 
+The National Marine Biodiversity Scientific Working Group is thanked for its role as reference group for the Marine Realm Assessment of the NBA. We also thank the National Marine Ecosystem Committee and Network for their peer review and shared insights on ecosystem assessment. We acknowledge the authors of the NBA 2018 Ecosystem Threat Status chapter. We thank Jose Ferrer Paris and David Keith for helpful discussions that informed our application of the 2024 IUCN Red List of Ecosystems Guidelines. Jennifer Olbers and Mike Schleyer are thanked for additional insights on Aliwal Shoal. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for supporting the 2025 NBA ecosystem threat status assessment and the planned scientific publication.
 
 ## Technical documentation
 
@@ -483,11 +483,11 @@ The National Marine Biodiversity Scientific Working Group is thanked for its rol
 
 ### Code repositories
 
--   [**Marine ecosystem threat status assessment**](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
+-   [**Methods and workflows of the marine ecosystem threat status assessment**](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
 
 ### Data {#data2}
 
-[Table of IUCN RLE threat status and basis](data/epl_ets_ecotypes.csv)
+[Table of marine ecosystem types protection level and threat status](data/epl_ets_ecotypes.csv)
 
 ### Key publications
 

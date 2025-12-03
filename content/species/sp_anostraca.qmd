@@ -39,14 +39,7 @@ author:
       family: Mlambo 
     #orcid: 0000-0000-0000-0000 
     affiliations:
-      - ref: am          
- 
-  - name:
-      given: Shae-Lynn E.
-      family: Hendricks
-    orcid: 0009-0003-1733-1156
-    affiliations:
-      - ref: sanbi   
+      - ref: am     
       
   - name:
       given: Maphale S. 
@@ -54,7 +47,14 @@ author:
     orcid: 0000-0002-5083-7461 
     affiliations:
       - ref: sanbi
-
+           
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi   
+      
 affiliations:
   - id: bec  
     number: 1 
@@ -389,7 +389,7 @@ gt(dat_combined_final) %>%
 :::
 ::::
 
-::: {#box-1 .callout-note .species title="Box 1: The diverse range of freshwater habitats occupied by Anostraca often causes these habitats and their unique aquatic fauna to go unnoticed when dry" collapse="true"}
+::: {#box-1 .callout-note .species title="Box 1. The diverse range of freshwater habitats occupied by Anostraca often causes these habitats and their unique aquatic fauna to go unnoticed when dry" collapse="true"}
 The temporary aquatic habitats that anostracans inhabit include a range of endorheic wetlands, remnant riverine pools, rock pools, roadside ditches and even animal wallows. The biotic and abiotic variables associated with these habitats differ substantially, and species are highly sensitive to specific habitat conditions. Consequently, anostracans are habitat specialists and ideal indicators of environmental change.
 
 ![](./imgs/sp_anostraca_img_2.png)[A diversity of temporary habitats, varying in how they are inundated and the frequency of inundation. (© Betsie Milne, Musa Mlambo and Daksha Bills)]{fig-align="center"}
@@ -461,7 +461,7 @@ Anostraca were not included in the formal protection level assessment following 
 
 There is limited monitoring in temporary freshwater habitats in South Africa. Efforts are hindered mainly by lack of expertise and funding, but unpredictable and limited rainfall, logistical limitations and inaccessibility across vast, rugged terrain prevent consistent sampling attempts. To date, initiatives have mainly focused on gathering foundational biodiversity data, since the biogeography of Anostraca in South Africa is still not fully understood. To reassess this group in the future and have a better understanding of the state of Anostraca species, monitoring of temporary freshwater species and their habitat conditions is required. To support the efforts of researchers, ordinary citizens can make contributions by posting their observations on iNaturalist ([Box 3](#box-3)).
 
-::::: {#box-3 .callout-note .species title="Box 3: Calling all citizen scientists who might have an interest in these creatures" collapse="true"}
+::::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists who might have an interest in these creatures" collapse="true"}
 To contribute to the future Red List assessments and monitoring of Anostraca, join iNaturalist!
 
 ::: {style="text-align:center;"}
@@ -491,7 +491,7 @@ Many of the Anostraca species that are of conservation concern are considered un
 
 -   Attracting interest for branchiopod research and training more South Africans in branchiopod taxonomy skills.
 
-:::::::: {#box-4 .callout-note .species title="Box 4: Egg bank sampling is an effective alternative to live sampling in temporary freshwater habitats" collapse="true"}
+:::::::: {#box-4 .callout-note .species title="Box 4. Egg bank sampling is an effective alternative to live sampling in temporary freshwater habitats" collapse="true"}
 ![](./imgs/sp_anostraca_img_3.png){style="font-size:90px; color:#626262;"}
 
 ::: {fig-align="center"}
@@ -527,16 +527,16 @@ About species threat status: See details about how the IUCN Red List assessments
 
 ## Acknowledgements
 
-- [REFRESH](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
-- [Albany Museum](https://am.org.za/)
-- [South African Environmental Observation Network](https://www.saeon.ac.za/)
-- [South African National Biodiversity Institute](https://www.sanbi.org/)
-- [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
-- [University of Namibia](https://www.unam.edu.na/)
-- [Department of Science, Technology and Innovation](https://www.dsti.gov.za/)
-- [University of KwaZulu-Natal](https://ukzn.ac.za/)
-- [Freshwater Research Centre](https://www.frcsa.org.za/)
-- [National Museum of Namibia](https://www.museums.com.na/museums/windhoek/national-museum-of-namibia)
+-   [REFRESH](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
+-   [Albany Museum](https://am.org.za/)
+-   [South African Environmental Observation Network](https://www.saeon.ac.za/)
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
+-   [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
+-   [University of Namibia](https://www.unam.edu.na/)
+-   [Department of Science, Technology and Innovation](https://www.dsti.gov.za/)
+-   [University of KwaZulu-Natal](https://ukzn.ac.za/)
+-   [Freshwater Research Centre](https://www.frcsa.org.za/)
+-   [National Museum of Namibia](https://www.museums.com.na/museums/windhoek/national-museum-of-namibia)
 
 ### Contributors
 
@@ -550,14 +550,18 @@ library(gt)
 contributors_tbl <- data.frame(Contributors = c("Anisha Dayaram", "Carol Poole",
     "Jenny Day",
     "Michelle Hamer",
-    "Tamuka Nhiwatiwa"),
-  Affiliation = c("South African National Biodiversity Institute","South African National Biodiversity Institute","Freshwater Research Centre",
-                         "University of KwaZulu-Natal",
-                          "University of Namibia"), stringsAsFactors = FALSE)
+    "Tamuka Nhiwatiwa",
+    "Esethu Nkibi"),
+  Affiliation = c("South African National Biodiversity Institute",
+                  "South African National Biodiversity Institute",
+                  "Freshwater Research Centre",
+                  "University of KwaZulu-Natal",
+                  "University of Namibia",
+                  "South African National Biodiversity Institute"), stringsAsFactors = FALSE)
 
 # Build the gt table
 ref<- gt(contributors_tbl) %>%
-   nba_tbl_theme() %>%
+   #nba_tbl_theme() %>%
        tab_options(#data_row.padding = px(16),
               table.font.size = px(13L),
               table.width = pct(100),

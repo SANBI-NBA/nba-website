@@ -24,10 +24,10 @@ Finally, thanks to all the talented photographers who generously donated their i
 
 A Strategic Advisory Committee is established for each NBA in order to facilitate high-level input and commitment to the NBA.
 
-The members of this committee for NBA 2025 were:
-
 ::: {#box-1 .callout-note collapse="true"}
-## Box 1. Strategic Advisory Committee
+## Box 1. Members of the Strategic Advisory Committee
+
+The members of this committee for NBA 2025 were:
 
 ```{r}
 # load libraries
@@ -47,10 +47,10 @@ sac_tb
 
 The Core Reference Group is the primary technical decision-making body of the NBA. It is chaired by the NBA Scientific Lead and consists of all Module Leads as well as key technical and mainstreaming/uptake experts.
 
-Members of the CRG for NBA 2025 were:
-
 ::: {#box-2 .callout-note collapse="true"}
-## Box 2. Core Reference Group
+## Box 2. Members of the Core Reference Group
+
+Members of the CRG for NBA 2025 were:
 
 ```{r}
 # load libraries
@@ -64,10 +64,11 @@ crg_tb <- read.csv("data/crg_members.csv") %>%
   nba_tbl_theme()
 crg_tb
 ```
-:::
 
 Former members of the CRG included Adwoa Awuah and Krystal Tolley.
 
 Several SANBI interns and students were also involved, including Esethu Nkibi, Curtley Tonkin, Alex Nieto Lawrence, Londiwe Makhaye, Nikita Gertze, Jade Simoen and Future Machate.
 
-## 
+:::
+
+

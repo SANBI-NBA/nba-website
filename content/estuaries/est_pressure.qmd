@@ -15,12 +15,16 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
 author:
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
+
       given: Lara #Add author's first name here. Abbreviate the middle name
       family: van Niekerk #Add author's surname here
     orcid: 0000-0001-5761-1337  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Susan #Add author's first name here. Abbreviate the middle name
       family: Taljaard #Add author's surname here
@@ -28,6 +32,9 @@ author:
     affiliations:
       - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Janine B. #Add author's first name here. Abbreviate the middle name
       family: Adams #Add author's surname here
@@ -42,6 +49,9 @@ author:
     affiliations:
       - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
       - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Fiona C. #Add author's first name here. Abbreviate the middle name
       family: Mackay #Add author's surname here
@@ -49,6 +59,10 @@ author:
     affiliations:
       - ref: ORI1 # Ref here must match the id of one of the affiliations listed below
       - ref: UKZN1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+
   - name:
       given: Steven P. #Add author's first name here. Abbreviate the middle name
       family: Weerts #Add author's surname here
@@ -56,6 +70,9 @@ author:
     affiliations:
       - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
       - ref: CRUZ1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
       given: Daniel A. #Add author's first name here. Abbreviate the middle name
       family: Lemley #Add author's surname here
@@ -83,12 +100,6 @@ author:
     orcid: 0000-0003-1220-6295  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: anchor1 # Ref here must match the id of one of the affiliations listed below
-  - name:
-      given: Jabulile   #Add author's first name here. Abbreviate the middle name
-      family: Nhleko #Add author's surname here
-    orcid: 0000-0003-2738-5062  # Author's orcid ID. Delete this line if author is not on orcid
-    affiliations:
-      - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
   - name:
       given: Chuene P. #Add author's first name here. Abbreviate the middle name
       family: Lakane #Add author's surname here
@@ -438,6 +449,16 @@ Agriculture, urban development, and transport infrastructure are responsible for
 
 Although mining activities may have a relatively small spatial footprint, the marked increase in mining (and associated irreversible destruction of estuarine habitat) is a growing concern. Mining activities in the Cool and Warm Temperate regions comprise diamond, heavy minerals, and sand mining, and affect 3% and 1% of extent, respectively. Heavy mineral and sand mining are the dominant mining activities in the Subtropical region, with the latter having increased markedly in the past decades, impacting about half of KZN estuaries (ORI unpublished data). Mining is an intense pressure, with long-term direct and indirect impacts on species and ecosystems. Its direct footprint involves clearing of natural habitat which is captured in land cover change. However, the indirect impacts of mining relating to water abstraction and contamination are not explicitly reflected in these datasets.
 
+::: {.callout-note .estuarine collapse="true"}
+## Box 2. Extractive activities, such as mining, need to be carefully examined to ensure that ecological, social, economic and access issues are addressed in a sustainable manner.
+
+This is especially the case for mining (sand, diamond and mineral), in and around estuaries that have disproportionally large ecological impacts with often little economic or social benefits to the diversity of estuarine beneficiaries enjoying their services, e.g. nursery function, coastal protection, tourism. A key example, is sand and mineral mining effect about half of KZN estuaries. Similarity diamond and mineral mining on the West Coast (Orange to Olifants) are impacting the EFZ of 5 out of 7 estuaries. Mining activities threaten sediment balance, transform habitats, and impacts water quality with cascading impacts on biota. Mining also constrain local community access to estuary benefits.
+
+![Sand Mining in the iLovu Estuary upper reaches (© CoastKZN, ORI)](imgs/mining.png)
+
+**A strategic assessment of the spatial extent and associated impacts on of mining on estuaries and the coast is urgently needed, i.e. ‘Mining SEA for South Africa’s estuaries’ that includes an analysis of estuarine and coastal sediment budgets. Bilateral agreement that limits mining activities in the EFZ , with an effective buffer that prevent mining dust and polluted stormwater (including sediments) from impacting the adjacent estuaries.**
+:::
+
 Other activities associated with land-use and development, include estuarine vegetation harvested (e.g., reeds, sedges, and mangroves) for housing, the construction of cattle enclosures and fish traps in rural areas. Salt works are confined to a few systems in the more arid parts of the Cool (3) and Warm (2) Temperate regions.
 
 Most land-use and development activities, and their associated impact on estuaries, are on an increasing trajectory. Although commercial port infrastructure is considered stable and limited to only a few estuaries, small fishing and yacht harbours, as well as marina developments, are set to increase under a greater ‘blue economy’ development push.
@@ -749,7 +770,7 @@ The ability to predict the response of estuaries to Climate Change and to plan m
 :::
 
 ::: {.callout-note .estuarine collapse="false"}
-## Estuarine climate change refuges contribute to resilience
+## Box 3. Estuarine climate change refuges contribute to resilience
 
 Habitats that can serve as refuges during times of stress contribute to climate change resilience for estuarine and coastal biota. Rapid changes in temperature associated with extreme hot (marine heat waves) and cold (upwelling) events can have negative effects on coastal fish populations and lead to fish kills. The availability of climate refuges in close proximity to the area of disturbance can, however, aid in population resilience and resistance. The middle and upper reaches of permanently open marine dominated estuaries can potentially provide thermal refuge for fish species. During extreme temperature events in the nearshore and lower estuary reaches, minimal thermal variability is maintained in middle and upper estuarine reaches, thus providing biota with a refuge against extreme thermal variability. In healthy estuaries seagrass meadows are particularly important nursery habitats, which have the added ecosystem service of maintaining pH stability and providing ocean acidification refuges for associated biota.
 

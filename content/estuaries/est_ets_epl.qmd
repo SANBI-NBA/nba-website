@@ -65,7 +65,7 @@ google-scholar: true
 
 *In the Estuarine realm, 32% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.*
 
-![The Mbashe Estuary is representative of the threatened and under protected Large Fluvially Dominated ecosystem type currently classified as endangered. The Mbashe Estuary is one of the few estuaries contributing ecosystem type targets for a type that is in dire need of increased protection and management interventions.](imgs/20231202_091909.jpg)
+![The Mbashe Estuary is representative of the threatened and under protected Large Fluvially Dominated ecosystem type currently classified as endangered. The Mbashe Estuary is one of the few estuaries contributing ecosystem type targets for a type that is in dire need of increased protection and management interventions.](imgs/20231202_091909.png)
 
 ## Threatened and under-protected ecosystem types
 

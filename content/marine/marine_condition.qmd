@@ -318,7 +318,7 @@ We also thank the authors of Sink et al 2019 (NBA Ecosystem threat status chapte
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### Git repositories
+<!-- ### Code repositories -->
 
 <!-- -   This GitLab repo is not anywhere close to being ready for sharing! **Cumulative pressure and condition calculations and mapping**: [gitlab.com/marine_pressure_layers/pressure_layers](https://gitlab.com/marine_pressure_layers/pressure_layers) -->
 

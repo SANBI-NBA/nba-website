@@ -4,13 +4,13 @@ title-block-banner: "#ad180d"
 title-block-banner-color: white
 ---
 
-![*Potamonautes karooensis*, A newly described species (2022), from the arid Greater Karoo Basin, in northern Eastern Cape. © Pieter Theron](./imgs/sp_fwcrab_img_1.png){fig-align="center"}
+![[*Potamonautes ngoyensis*](https://www.iucnredlist.org/species/176993126/178424205), was described in 2022 as an endemic to the Ngoye Forest in KwaZulu-Natal, South Africa. It was assessed as Vulnerable under sub-criterion D2. One of only three threatened freshwater crabs in South Africa, all restricted to forest fragments. (© Sharon Louw)](./imgs/Potamonautes ngoyensis_Savel.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
 ::: {.callout-important icon="TRUE" title="Attention:" style="--callout-icon-color: white; font-size:100px;"}
+
 ###### The status summary of freshwater crabs is under production and will be available from February 2026.
 
-See the global assessments for South Africa freshwater crabs [here](add link)
-
+See the global assessments for South Africa freshwater crabs [here.](https://www.iucnredlist.org/search?permalink=d11dfb08-3043-4708-afcc-3463e3ac3b1)
 :::

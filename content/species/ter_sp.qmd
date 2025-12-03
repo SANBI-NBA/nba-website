@@ -285,9 +285,7 @@ df_wide %>% gt() %>%
 ```
 :::
 
-::: {#box-1 .callout-note .species collapse="false"}
-## Box 1. Note
-
+::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
 The sections below (and @fig-1 and @fig-2) give brief summaries about terrestrial species in these taxonomic groups. For a full reflection on entire taxonomic groups, please click on the headings to access the subsections of the website under Species findings.
 :::
 

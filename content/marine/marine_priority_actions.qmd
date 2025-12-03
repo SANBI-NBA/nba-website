@@ -124,6 +124,7 @@ author:
     orcid: 0000-0002-9492-5156 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanparks5 # Ref here must match the id of one of the affiliations listed below
+      - ref: SAFER5 # Ref here must match the id of one of the affiliations listed below
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -323,7 +324,7 @@ google-scholar: true
 
 ## Research progress and priorities
 
-During the 2025 assessment of threat status and protection level of marine ecosystems and species, many research gaps that limit the assessment of marine biodiversity emerged. Knowledge gaps identified in the 2018 assessment [@sink2019c] were also revisited and progress against these were briefly evaluated to identify persistent knowledge gaps.
+During the 2025 assessment of threat status and protection level of marine ecosystems and species, many research gaps that limit the assessment of marine biodiversity emerged. Knowledge gaps identified in the 2008 assessment [@sink2019c] were also revisited and progress against these were briefly evaluated to identify persistent knowledge gaps.
 
 Persistent knowledge gaps and research priorities span foundational marine biodiversity research at the ecosystem, species and genetic level, to applied research for improving our understanding of the impacts of key pressures on ecological condition. New research priorities include the need for increased social science in the marine realm particularly to track progress in more [equitable marine protection](https://www.cbd.int/gbf/targets/3) ([ecosystem protection level page](marine_epl.qmd)).
 
@@ -336,12 +337,6 @@ There has been some progress with foundational biodiversity research at the spec
 Citizen science is also supporting taxonomic research ([Nudibranchs](#box-1)) although potential records far exceed taxonomic capacity and reference collections need investment to make the most of this approach. A reference image database is being advanced [@adams2024] and there is a need to invest in digital taxonomy [@rogers2023a]. Progress in the application of machine learning in processing of seabed imagery is limited by taxonomic constraints with a need to undertake reference collections with *in situ* images and barcodes linked to taxonomic samples. Further systematic prioritization of invertebrate groups together with filling taxonomic knowledge gaps could improve our ability to conduct more Red List assessments for marine invertebrates [@subramoney2024].
 
 Some areas of progress in foundational biodiversity research for species include improved taxonomic knowledge on sea slugs ([Box 1](#box-1)), sea cucumbers and azoozanthellate corals. Taxonomic descriptions of 170 southern African sea cucumbers species were published, representing 55 years of research, and calling for increased efforts to further build taxonomic capacity in southern Africa [@thandar2022]. The state of knowledge of South African azooxanthellate coral species has been improved, with the total number of known species increased from 77 to 108, with 28 new species records, three new species and one new genus [@filander2021]. 
-
-Gaps remain in systematic [genetic barcoding efforts](../genetics/chl_barcoding.qmd) and genetic baselines for priority species. South Africa has made progress in adopting genetic indicators that are part of the Kunming-Montreal Global Biodiversity Framework but marine taxa and particularly marine invertebrates are particularly neglected. 
-
-[Foundational ecosystem knowledge has been improved](marine_ecosystems.qmd#sec-updatingMEM) and includes new and improved species distribution knowledge for informing a more data-driven national marine ecosystem map.
-
-<!-- Some progress is evident in the research priorities identified in the previous NBA (Table 1). Key areas of progress include foundational biodiversity science for species , research on the impacts of demersal trawling (Atkinson et al. In prep, Rylands 2024), climate change [(Porter, other heatwaves?)]{.mark}, improved understanding of underwater noise ([Box 2](marine_pressures.qmd#box-2)), and research to support groundtruthing of marine ecological condition [@smit2023; @smit2024; @smit2026]. -->
 
 :::::::: {#box-1 .callout-note .marine title="Box 1. Citizen science advances foundational marine biodiversity products" collapse="false"}
 ::: {style="margin-bottom: 0.5em;"}
@@ -383,9 +378,13 @@ A new field guide entitled Southern African Sea Slugs was published at the end o
 <!-- :::::: -->
 ::::::::
 
-Other taxonomic research priorities include work on important marine ecosystem engineers (habitat forming animals including Vulnerable Marine Ecosystem Indicator taxa [@franken2025]), marine invertebrates that are sensitive to water quality changes and other indicator taxa. South Africa’s Marine Taxonomy Working group identified several national priorities to help address the critical shortfall in marine taxonomic research and capacity.
+Gaps remain in systematic [genetic barcoding efforts](../genetics/chl_barcoding.qmd) and genetic baselines for priority species. South Africa has made progress in adopting genetic indicators that are part of the Kunming-Montreal Global Biodiversity Framework but marine taxa and particularly marine invertebrates are particularly neglected. 
 
-Ongoing challenges in assessing marine species, genetic biodiversity and ecosystems include the crises in taxonomy and a poor understanding of species distribution data. Innovative and integrated methods that can help address these gaps include imaging approaches, molecular methods, digital taxonomy, active and passive acoustics, citizen science and the strategic connection of biodiversity databases [@rogers2022]. Progress in these complementary areas can increase our understanding of species distribution and feed into improved marine biodiversity assessments at all levels (genetic, species and ecosystems) and multiple scales. Foundational data gaps and capacity constraints limit the IUCN Red List assessment (extinction risk) of marine species. Although dedicated marine species red listing support has been recognised as a key requirement since 2018 (Sink et al. 2019 chapter 11 prev NBA), there has been no progress in securing resources or capacity to advance this work [@subramoney2024]. 
+Foundational ecosystem knowledge [has been improved](marine_ecosystems.qmd#sec-updatingMEM) and includes new and improved species distribution knowledge for informing a more data-driven national marine ecosystem map.
+
+<!-- Some progress is evident in the research priorities identified in the previous NBA (Table 1). Key areas of progress include foundational biodiversity science for species , research on the impacts of demersal trawling (Atkinson et al. In prep, Rylands 2024), climate change [(Porter, other heatwaves?)]{.mark}, improved understanding of underwater noise ([Box 2](marine_pressures.qmd#box-2)), and research to support groundtruthing of marine ecological condition [@smit2023; @smit2024; @smit2026]. -->
+
+Other taxonomic research priorities include work on important marine ecosystem engineers (habitat forming animals including Vulnerable Marine Ecosystem Indicator taxa [@franken2025]), marine invertebrates that are sensitive to water quality changes and other indicator taxa. South Africa’s Marine Taxonomy Working group identified several national priorities to help address the critical shortfall in marine taxonomic research and capacity.
 
 ::: {#box-rp1 .callout-note .marine collapse="true" title="A number of specific research priorities have been identified to strengthen foundational biodiversity knowledge for the marine realm 
 \
@@ -402,6 +401,8 @@ Ongoing challenges in assessing marine species, genetic biodiversity and ecosyst
 -   Research that advances the use of machine learning, artificial intelligence and data analytics for the analysis of big data and in support of the national marine ecosystem map. 
 
 :::
+
+Ongoing challenges in assessing marine species, genetic biodiversity and ecosystems include the crises in taxonomy and a poor understanding of species distribution data. Innovative and integrated methods that can help address these gaps include imaging approaches, molecular methods, digital taxonomy, active and passive acoustics, citizen science and the strategic connection of biodiversity databases [@rogers2022]. Progress in these complementary areas can increase our understanding of species distribution and feed into improved marine biodiversity assessments at all levels (genetic, species and ecosystems) and multiple scales. Foundational data gaps and capacity constraints limit the IUCN Red List assessment (extinction risk) of marine species. Although dedicated marine species red listing support has been recognised as a key requirement since 2018 (Sink et al. 2019 chapter 11 prev NBA), there has been no progress in securing resources or capacity to advance this work [@subramoney2024]. 
 
 ::: {#box-2 .callout-note .marine collapse="true" title="Box 2. Recommendations to strengthen taxonomic research in South Africa as identified by the marine taxonomy working group. Accurate taxonomy published in the peer reviewed literature can support global recognition for South Africa’s exceptional marine biodiversity. 
 \
@@ -600,7 +601,7 @@ Key messages [A2](../key-messages/kma2.qmd), [A3](../key-messages/kma3.qmd), [A4
 [Read more »]()"}
 <!-- ## 3. Avoid, reduce and manage industrial impacts (key message A2, key message A3, key message A4, and key message B5). -->
 
-Potential indicators of progress can include:
+Potential indicators of progress could include:
 
 -   Cumulative effects of mining are considered in environmental impact assessments. 
 

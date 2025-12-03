@@ -226,6 +226,28 @@ knitr::include_graphics("imgs/cnd_with_donut.png")
 
 From an Estuarine Ecosystem perspective, the Cool Temperate biogeographical region had the highest percentage of ecosystem types in a Heavily to Severely/critically modified state with Large fluvially dominated, Large temporarily Closed, Arid predominantly closed, Small temporarily closed and Estuarine Lakes reflecting key pressures such as flow reduction, pollution and fishing pressure of the region.
 
+:::::::: {.callout-note .estuarine collapse="true"}
+## **Box 1. Estuarine Lakes are in crisis requiring urgent management interventions prioritised within an ‘Estuarine Lakes Strategy’.**
+
+:::::: columns
+::: {.column width="60%"}
+This group of estuaries has seen extensive infrastructure development in the estuary functional zone, substantial flow reduction, nutrient pollution, harmful algal blooms, overfishing (especially gillnetting) and are subjected to artificial breaching / mouth manipulation. In addition, the lakes are highly vulnerable to climate change. These impacts have reduced their ability to provide key services such as flood regulation, nutrient cycling, nursery habitat, and have compromised recreational and tourism values.
+
+The first record of estuarine lake acidification in South Africa was observed the last ten years. **The Verlorenvlei Ramsar site’s pH levels declined to 3 (similar to vinegar) during the period 2016-18 due to a regional drought compounded by over-abstraction of surface and groundwater, causing the drying out of the lake and acidification of soils.** This caused the local extinction of invertebrates, fish and bird life. Though lake levels have recovered over the past 3 years, lake pH has still fluctuated for three years between 4 (summer) and 7 (winter). It may take decades for the Ramsar site to fully recover, given the altered soil chemistry in the lake and surrounding wetlands. Manage surface and groundwater allocation to ensure ecosystem resilience during droughts, reduce nutrient pollution, to reduce the buildup of organic material (agricultural return flow).
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="38%"}
+![The first record of estuarine lake acidification in South Africa was observed at Verlorenvlei Estuarine Lake. (© Lara van Niekerk)](imgs/verlorenvlei.png)
+:::
+::::::
+
+**To ensure ecosystem benifits and future climate change resilience, a long-term ‘Estuarine Lakes Strategy’ is needed to restore habitat, improve water quantity and quality, reduce pressure on resources and increase protection levels. .**
+::::::::
+
 In the Subtropical biogeographical region, the highest number of ecosystem types in a Heavily to Severely/Critical modified state are the Estuarine lakes, Estuarine bay, and Large fluvially dominated functional groups reflecting habitat transformation, pollution and fishing pressure of the region. In the Warm Temperate region, the Estuarine lakes reflect significant degradation due to development in the estuarine functional zone, flow reduction and artificial breaching. In addition, Predominantly open and Large temporarily open estuaries are also significantly degraded. None of the types in the Tropical biogeographical region is in a severely degraded state.
 
 :::: panel-tabset
@@ -272,7 +294,7 @@ nba_plot_comb(cnd_combined,
 ```{r}
 #| label: fig-cnd_bargraphs
 #| echo: false
-#| fig-cap: Ecosystem type condition express as percentage of estuaries and estuarine extent
+#| fig-cap: Ecosystem type condition express as percentage of estuarine extent
 #| out-width: 100%
 
 library(gt)
@@ -316,7 +338,7 @@ nba_plot(cnd,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: The condition of South Africa’s estuaries presented as percentage of ecosystem extent
+#| tbl-cap: The condition of South Africa’s estuaries presented as  number of estuaries, extent, percentage of eestuary extent
 #| out-width: 100%
 
 
@@ -374,13 +396,13 @@ The St Lucia Lake System accounts for more than half of the estuarine extent in 
 Monitoring of both abiotic and biotic parameters is seen as fundamental to validating the findings of the condition assessment. To benchmark the findings, monitoring also needs to cover the full spectrum of near-natural to heavily degraded estuaries in all four bioregions following the standardised methods developed for flow requirement studies. Ideally, research and assessment should be underpinned by modelling studies that encompass the functional linkages between ecosystem components and overwhelming pressures on the environment, such as Climate Change and ocean acidification. Such modelling studies can provide the evidence needed for setting realistic targets for resource use, and can also underpin better long-term resource planning.
 
 ::: {.callout-note .estuarine collapse="false"}
-## **Invest in solutions to restore estuarine ecological infrastructure to strengthen climate resilience and sustain ecosystem services.** 
+## **Box 2. Invest in solutions to restore estuarine ecological infrastructure to sustain ecosystem services and strengthen climate resilience.**
 
 The United Nations Decade of Ecosystems Restoration 2021-2030 makes restoration and protection of critical ecosystems an imperative at a global scale. This call to arms aims to scale up the restoration of degraded ecosystems to combat the climate crisis and enhance food security and biodiversity. It also presents a host of funding opportunities through climate finance instruments (e.g. Blue Carbon trading), Ecosystems-based Adaptation (EbA) global funds, and national debt restructuring mechanisms, which will be highly supportive of a South African Strategic Estuarine Management Framework.
 
 **In response, restoration projects have been initiated at a few key estuary sites in South Africa, e.g. St Lucia, Groot Berg, Swartkops, and uMlalazi. Ongoing research has also identified critical systems (e.g. Orange, Olifants, Klein Brak, Gamtoos) that will ensure the best return on investment.**
 
-DFFE and the provincial authorities are engaging in an ‘**Estuary Restoration Programme’** that focuses on degraded and novel systems with an emphasis on the larger systems of high biodiversity importance and the socially important urban systems. Here, an opportunity exists for flagship programmes that could be developed in a collaborative manner between government agencies and civil society. A national estuarine restoration programme will also have the advantage of securing long-term funding at regional scales. Local and provincial government, conservation agencies and NGOs should assist in initiating site-specific restoration opportunities (e.g. BirdLife at Groot Berg).
+DFFE and the provincial authorities are engaging in an ‘Estuary Restoration Programme’ that focuses on degraded and novel systems with an emphasis on the larger systems of high biodiversity importance and the socially important urban systems. Here, an opportunity exists for flagship programmes that could be developed in a collaborative manner between government agencies and civil society. A national estuarine restoration programme will also have the advantage of securing long-term funding at regional scales. Local and provincial government, conservation agencies and NGOs should assist in initiating site-specific restoration opportunities (e.g. BirdLife at Groot Berg).
 :::
 
 ::: {#box-eco_tbl .callout .estuarine collapse="False"}

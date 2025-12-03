@@ -12,13 +12,19 @@ To reference the technical pages of this website (those with an author list at t
 
 *Example:*
 
--   da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
+-   Da Silva, J.M., Nieto Lawrence, J.A., & Tolley, K.A. 2025. Genetic diversity. National Biodiversity Assessment 2025. South African National Biodiversity Institute. https://nba.sanbi.org.za/.
 
 ## General pages
 
 Some pages on the site do not have a specific author list or recommended citation, and this general NBA content should be referenced as follows:
 
 -   South African National Biodiversity Institute (SANBI). 2025. National Biodiversity Assessment 2025: The status of South Africa’s biodiversity - Website. South African National Biodiversity Institute (an entity of the Department of Forestry, Fisheries and the Environment), Pretoria. <https://nba.sanbi.org.za/>
+
+## nbaR package
+
+The NBA website is built using [R](https://www.r-project.org/) and [Quarto](https://quarto.org/). Tables and figures are generated using the [nbaR package](https://sanbi-nba.github.io/nbaR/). Recommended citation:
+
+-   Besseling N, Hendricks S, Bull L, Monyeki M, von Staden L (2025). nbaR: Package for creation of the NBA. Available at <https://github.com/SANBI-NBA/nbaR>. [doi:10.5281/zenodo.14899426](https://doi.org/10.5281/zenodo.14899426).
 
 ## A note on dates and releases
 

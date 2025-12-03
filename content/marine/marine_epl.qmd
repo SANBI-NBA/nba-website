@@ -418,7 +418,6 @@ These tensions were intensified by governance processes widely viewed as top-dow
 While relationships have improved since rezoning, access alone cannot resolve the deeper governance challenges that shaped the conflict. The literature highlights that enduring tensions relate to issues of recognition, trust, values, and equitable involvement in decision-making [@watts2009; @muhl2020]. Without governance arrangements that meaningfully include communities, acknowledge historical context, and create shared authority, the MPA risks continued social contestation and missed opportunities for socially just and ecologically effective conservation.
 
 ![This MPA is a valuable national asset due its long-term protection. The MPA was established to protect the rich diversity of marine life found in the area including mammals, invertebrates and fish. Cape clawless otter (© Peter Chadwick); Community members co-identifying and mapping historical fishing spots as part of the Tsitsikamma MPA rezonation process (© Kyle Smith); roman (© Steve Benjamin); deep water corals (© Geoff Spiby).](imgs/tsitsikamma.png)
-
 :::
 
 ### OECMs
@@ -467,12 +466,11 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ## Acknowledgements
 
-The National Marine Ecosystem Committee and Network and the National Marine Biodiversity Scientific Working Group are thanked for their oversight of marine ecosystem assessments. The organizations, departments and funders and all contributors to Harris et al. 2025 (Indicators for tracking progress in effective, representative ecosystem protection) and Sink et al. 2023 (Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa’s MPA estate) are acknowledged for their support of this evolving body of work. 
+The National Marine Ecosystem Committee and Network and the National Marine Biodiversity Scientific Working Group are thanked for their oversight of marine ecosystem assessments. The organizations, departments and funders and all contributors to Harris et al. 2025 (Indicators for tracking progress in effective, representative ecosystem protection) and Sink et al. 2023 (Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa’s MPA estate) are acknowledged for their support of this evolving body of work.
 
-The One Ocean Hub project funded through the UK Research and Innovation (UKRI) and Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, is sincerely thanked for enabling collaborations to strengthen understanding of the human-dimensions of protected and conserved areas. The European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 818123 (iAtlantic project) is thanked for unlocking opportunities to learn and draw lessons on improving participatory planning and protection. The MeerWissen CoastWise project funded through the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH is thanked for unlocking the opportunity to pilot the mapping of culturally significant areas in South Africa. 
+The One Ocean Hub project funded through the UK Research and Innovation (UKRI) and Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, is sincerely thanked for enabling collaborations to strengthen understanding of the human-dimensions of protected and conserved areas. The European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 818123 (iAtlantic project) is thanked for unlocking opportunities to learn and draw lessons on improving participatory planning and protection. The MeerWissen CoastWise project funded through the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH is thanked for unlocking the opportunity to pilot the mapping of culturally significant areas in South Africa.
 
-The SeaPeople collective is thanked for knowledge co-production and forging pathways for improving participatory spatial planning for and management of protected and conserved areas in South Africa. Convening the SeaPeople collective was financially supported by SANBI, the One Ocean Hub project and the Mission Atlantic project, the latter funded through the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428. The South African Deep Sea Trawl Industry Association, CapMarine, the South African Environmental Observation Network and the Department of Forestry, Fisheries and the Environment are thanked for the pioneering work done to co-design proposed Seabed Management Areas for South Africa. This work was co-funded by the Mission Atlantic project. 
-
+The SeaPeople collective is thanked for knowledge co-production and forging pathways for improving participatory spatial planning for and management of protected and conserved areas in South Africa. Convening the SeaPeople collective was financially supported by SANBI, the One Ocean Hub project and the Mission Atlantic project, the latter funded through the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428. The South African Deep Sea Trawl Industry Association, CapMarine, the South African Environmental Observation Network and the Department of Forestry, Fisheries and the Environment are thanked for the pioneering work done to co-design proposed Seabed Management Areas for South Africa. This work was co-funded by the Mission Atlantic project.
 
 ## Technical documentation
 
@@ -490,7 +488,7 @@ The SeaPeople collective is thanked for knowledge co-production and forging path
 
 ### Data {#data2}
 
-[Protection level of ecosystem types table](data/epl_ets_ecotypes.csv)
+[Table of marine ecosystem types protection level and threat status](data/epl_ets_ecotypes.csv)
 
 ### Key publications
 
