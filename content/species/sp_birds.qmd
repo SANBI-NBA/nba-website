@@ -140,7 +140,7 @@ image: "./imgs/sp_birds_img_1.png"
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Density of 63 threatened terrestrial (i.e. non-seabird) bird species in South Africa (10 x 10 km grid) based on modelled distribution at the pentad scale [@lee2025b]. "
+#| fig-cap: "Spatial distribution of 63 threatened terrestrial birds (i.e. non-seabird) are presented. The legend reflects the number of threatened birds per 10 x 10 km grid cell. Darker shading shows areas where threatened birds are concentrated."
 #| out-width: 650px
 knitr::include_graphics("./imgs/birds_thrt_10km_HD.png")
 ```
@@ -424,44 +424,36 @@ Through calculating the RLI, it was found that many species have shifted in thei
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)."
+#| fig-cap: "The Red List Index (RLI) for bird taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Aggregate refers to the national average RLI across all assessed taxonomic groups."
 
 library(tidyverse)
 library(nbaR)
-
 # --- Dataset ---
 
-df <- read_csv("./data/sp_birds_rli.csv")
+df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
 
-# Plot the RLI trend
-ggplot(df, aes(x = Year, y = RLI, colour = Group)) +
- geom_line(linewidth = 1, alpha = 0.5, linetype = "solid", size = 1.0) +
- geom_point(size = 4, alpha = 0.8) +
- ylim(c(0.5, 1))+
- labs(
-   #title = "Red List Index (RLI) Trend",
-   x = "Year",
-   y = "Red List Index of Species"
- ) +
- theme_classic()+
- theme(panel.grid = element_blank(),
-axis.title.x = element_text(size = 10, margin = margin(t = 12)),
-        axis.title.y = element_text(size = 10, margin = margin(r = 12)),)+
-   scale_x_continuous(
-   breaks = c(2015, 2025),
-   limits = c(2015, 2025),
+df_amphibians <- df_rlis%>%
+  filter(Taxon %in% c("Birds", "Aggregate"))
 
- )+
- coord_equal(ratio = 20/1, expand =T)
+nba_index_plot(
+  TYPE = "RLIs",
+  DF = df_amphibians,
+  YEAR = Year,
+  RLI = RLI,
+  ASSESSMENT_YEAR = Assessment_Year,
+  GROUP = Taxon,
+  PALETTE = "taxon",
+ # AGGREGATE = TRUE,
+  SAVE = NULL
+)
 
 ```
-
 ## Table
 
 ::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-2
-#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate endemism levels: * endemic and ** near-endemic."
+#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate South African endemic."
 #| classes: plain
 library(dplyr)
 library(gt)
@@ -536,16 +528,58 @@ fn = function(x) x ) %>%
 
 ```{r}
 #| label: fig-4
-#| fig-cap: " The distribution of 33 of non-seabird bird species that have increased in threat status since their last assessment in 2015."
+#| fig-cap: "Spatial distribution of 33 non-seabird species that have increased in threat status since their last assessment in 2015. The legend reflects the number of birds per 10 x 10 km grid cell. Darker shading shows areas where birds are concentrated."
 #| out-width: 650px
 knitr::include_graphics("./imgs/birds_in_10km_HD.png")
 ```
 
 ## Pressures
 
-This assessment identifies agriculture as the dominant pressure on South African birds, representing 63% of cumulative pressure – nearly double the impact of natural system modifications at 43%. The agriculture category encompasses three critical sub-pressures: wood and pulp plantations contributing 24%, annual and perennial non-timber crops at 23%, and livestock farming at 16%. These findings reflect South Africa's agricultural transformation, particularly in grassland and fynbos biomes. Grassland species such as Botha's (*Spizocorys fringillaris*) and Rudd's larks (*Heteromirafra ruddi*), blue swallow (*Hirundo atrocaerulea*), African grass owl (*Tyto capensis*) and Denham's bustard (*Neotis denhami*) are under extreme pressure with declining populations, while plantations similarly affect forest species such as Cape parrot (*Poicephalus robustus*) (@fig-5).
+The 2025 assessment shows that South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat. Across 147 taxa of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
 
-Botha’s lark (*Spizocorys fringillaris*) and lappet-faced vulture (*Torgos tracheliotos*) were uplisted to Critically Endangered (CR). Their primary pressures, habitat loss and poisoning respectively, are well understood, and urgent conservation action is essential to prevent their extinction.
+Note: The percentages in brackets indicate the percentage of threatened and Near Threatened birds impacted by pressures. 
+
+**Biological resource use**
+<br>
+*(53% overall; 45% terrestrial; 66% marine; 49% inland aquatic; 43% estuarine/coastal)*
+<br>
+This threat is dominated by direct mortality from hunting, trapping, poisoning and fisheries bycatch. It is especially severe for seabirds affected by incidental capture and prey depletion, and for terrestrial species such as vultures (see [Box 3](#box-3)), bustards and cranes impacted by poisoning and hunting. It remains a leading driver of declines.
+
+**Natural system modifications**
+<br>
+*(49% overall; 61% terrestrial; 89% inland aquatic; 37% estuarine/coastal; limited for marine)*
+<br>
+Hydrological alteration from dams, abstraction and wetland degradation is the dominant pressure, especially for freshwater birds (see Box 3 on the [Freshwater species summary page](../species/fw_sp.qmd#box-3)). Terrestrial birds are strongly affected by altered fire regimes, bush encroachment and habitat conversion, particularly in grasslands and fynbos.
+
+**Climate change and severe weather**
+<br>
+*(44% overall; 41% terrestrial; 54% inland aquatic; 54% estuarine/coastal; 34% marine))*
+<br>
+Climate change intensifies droughts, floods, storms and heat stress across all realms. Freshwater and coastal birds are most affected, while marine birds face shifting prey and storm damage. Terrestrial impacts include heat stress and aridification, especially for montane and arid-habitat species.
+
+**Invasive species and diseases**
+<br>
+*(43% overall; 21% terrestrial; 43% inland aquatic; 34% estuarine/coastal; 85% marine)*
+<br>Marine birds are heavily impacted by invasive predators and diseases such as avian influenza. Freshwater systems are affected by invasive plants and fish, while terrestrial impacts are mainly through habitat alteration. Disease risks are increasing across all realms.
+
+**Agriculture and aquaculture**
+<br>*(39% overall; 68% terrestrial; 14% inland aquatic; 3% estuarine/coastal; negligible marine)*
+<br>Agriculture is a dominant pressure on terrestrial birds through habitat loss from cultivation (see [Box 2](#box-2)), grazing and plantations, especially in Grasslands and Renosterveld.
+
+**Additional pressures**
+<br>
+-Pollution: Major threat to freshwater birds
+<br>
+-Urban development: Mainly affects estuarine/coastal species
+<br>
+-Transport: Collision mortality
+<br>
+-Energy & mining: Wind energy impacts on raptors
+<br>
+-Human disturbance: Nesting and roosting sensitivity
+<br>
+
+These threats often act cumulatively. Overall, this threat assessment highlights that no single threat acts in isolation. Biological resource use, system modification, climate change, invasive species and agriculture all play significant roles, with relative importance varying across realms. Effective conservation will therefore require ecosystem-specific strategies integrated into a national framework capable of tackling multiple simultaneous pressures.
 
 ::: {#box-2 .callout-note .species title="Box 2. Habitat loss in the grasslands: Botha’s lark (*Spizocorys fringillaris*)" collapse="true"}
 Botha’s lark is one of South Africa’s most threatened birds, now assessed as Critically Endangered, with only 340 individuals estimated to be remaining [@colyn2025a]. Endemic to the high-altitude grasslands of Mpumalanga and the Free State, its tiny global population has declined by more than 80% over the past decade. The primary driver of this decline is habitat loss and degradation, with over 90% of its preferred short-grassland habitat converted to croplands (maize and soya), or altered by inappropriate grazing practices.
@@ -561,15 +595,10 @@ Unfortunately, most of the Botha’s Lark habitat falls outside of formally prot
 See full assessment details here - <https://www.birdlife.org.za/red-list/bothas-lark/>
 :::
 
-Natural system modifications, the second-largest pressure, primarily involves ecosystem alterations and fire suppression regimes that disrupt natural habitat dynamics. Waterbirds are particularly vulnerable to natural system modification (@fig-5), in addition to pollution of wetlands and waterways, with mangrove kingfisher (*Halcyon senegaloides*) being a notable example of a species undergoing declines. The decline of waterbirds not previously considered threatened is particularly concerning, though unsurprising given the poor state of [freshwater habitats](../freshwater/fw_overview.qmd). These habitats are highly vulnerable to pollution, invasive species, siltation, and extreme weather. Improving freshwater health will require significant political will and resources. Freshwater species also face added risks because many are congregatory, making them prone to disease outbreaks. Better management of key sites is needed to prevent accelerated declines, while urban freshwater systems present opportunities for citizen-led restoration and monitoring.
-
-Climate change emerges as the third major pressure at 30%, driven predominantly by habitat shifting and alteration as species distributions respond to changing climatic conditions.
-
-Notably, biological resource use – primarily hunting and collecting terrestrial animals – accounts for 24% of pressures, while human development pressures including residential and transportation infrastructure collectively represent 28%. The data aggregation reveals that while individual sub-pressures may appear manageable, their cumulative impact within broader pressure categories creates substantial conservation challenges requiring integrated landscape-scale management approaches. Scavenging birds such as vultures and tawny eagle (*Aquila rapax*) are experiencing rapid declines due to poisoning and persecution (@fig-5).
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s birds, based on the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme [@i2025a]."
+#| fig-cap: "Key pressures on South Africa’s birds, based on the relative frequency of pressures affecting threatened and Near threatened species, using the IUCN Threat Classification Scheme [@i2025a]."
 #| fig-align: center
 #| out.width: 100%
 
@@ -593,7 +622,6 @@ p + scale_x_discrete(
 
 ```
 
-
 ::: {#box-3 .callout-note .species title="Box 3. Poisoning crisis: Africa’s vultures on the brink" collapse="true"}
 ![](./imgs/sp_birds_img_5.png){style="border-radius:10px"}[Mass poisoning event of African white backed vulture (*Gyps africanus*) in Zululand, KwaZulu-Natal. (© Chris Kelly)]{style="width:100%; color:#626262;"}
 
@@ -614,13 +642,13 @@ Despite these efforts, numbers of lappet-faced and other vultures continue to de
 
 ## Protection level
 
-To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 667 terrestrial bird species, and a population-based method applied to 130 Red List species with available abundance estimates ([see approach below](#Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as Well Protected in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the study on measuring protection effectiveness for terrestrial bird species in protected areas and OECMs in South Africa [@retief2017a]. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
+To measure protection status, BirdLife South Africa applied two complementary approaches: a subpopulation-based method covering 652 terrestrial bird species, and a population-based method applied to a subset of 130 birds that had available abundance estimates ([see approach below](#Approach)). The subpopulation approach confirms that most birds are spatially well represented within the protected area network, with over 84% classified as Well Protected in both 2017 (84.1%) and 2025 (84.9%), in broad agreement with the study on measuring protection effectiveness for terrestrial bird species in protected areas and OECMs in South Africa [@retief2017a]. Between 2017 and 2025, mean Protection Level scores increased from 7.50 (±0.32 SE) to 8.53 (±0.35 SE), representing a 13.7% increase, although only nine species (1.3%) showed improved protection categories between assessment periods – most gains were for species of low conservation concern.
 
 The population-based analysis paints a more sobering picture, revealing that only 10% of threatened species meet minimum viable population thresholds inside protected areas. However, there was a positive movement to improved category status from 2017 to 2025: 123 of the 130 Red List species did not reach the Well Protected category in 2017, compared to 117 for 2025, representing an improvement of 4.6%. Together, these results highlight both the conservation value of South Africa’s protected areas and the gaps that remain, particularly for threatened, range-restricted and habitat-dependent species that require targeted expansion and improved management of the network [@lee2025a].
 
 ```{r}
 #| label: fig-6
-#| fig-cap: "Protection level for birds was assessed for 667 taxa. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa); (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics using the spatial protection method." 
+#| fig-cap: "Protection level for birds was assessed for 652 taxa. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa); (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics using the spatial protection method." 
 
 library(dplyr)
 library(tidyr)
@@ -697,7 +725,7 @@ combined_plot
 
 ```{r}
 #| label: fig-7
-#| fig-cap: "The overall protection level of bird species varies dramatically depending on the assessment method used as well as sets of species used. The analysis shown here is based on a subset of only 130 species that have detailed population data available assessed during the 2025 red listing process, it shows the difference between using a population-based target (number of mature individuals) versus a subpopulation based target.  ‘Subpopulations’ represents populations in connected protected area clusters, see the study on measuring protection effectiveness for terrestrial bird species in protected areas in South Africa [@lee2025a] for details on the two methods."
+#| fig-cap: "The overall protection level of bird species varies dramatically depending on the assessment method used as well as sets of species used. The analysis shown here is based on a subset of only 130 species that have detailed population data available that was assessed during the 2025 red listing process, it shows the difference between using a population-based target (number of mature individuals) versus a subpopulation based target.  ‘Subpopulations’ represents populations in connected protected area clusters, see the study on measuring protection effectiveness for terrestrial bird species in protected areas in South Africa [@lee2025a] for details on the two methods."
 #| fig-align: center
 #| out.width: 100%
 
@@ -882,7 +910,7 @@ While many longstanding pressures on South Africa’s birds are well recognised,
 
 **Energy demand is another fast-moving frontier.** The growth of cryptocurrency mining and AI technologies is driving global electricity consumption, yet the scale and consequences for South Africa remain largely unquantified. At the same time, renewable energy developments, particularly the rapid rollout of wind energy projects in Mpumalanga and along the coast, pose escalating risks for birds and bats. Offshore wind energy generation is also emerging as a potential future pressure on marine biodiversity.
 
-**New biological challenges are also evident. The proliferation of novel diseases, often exacerbated by climate change and land-use shifts, poses unknown risks to terrestrial bird populations.** Bush encroachment in the karoo, grasslands and savannas, inappropriate fire regimes, and habitat fragmentation continue to alter habitat quality for specialist species. Illegal ploughing and clearing of natural habitats remain a widespread challenge, often circumventing environmental impact assessments.
+**New biological challenges are also evident. The proliferation of novel diseases, often exacerbated by climate change and land-use shifts, poses unknown risks to terrestrial bird populations.** Examples of land-use shifts include bush encroachment in the Karoo, Grasslands and Savannas, inappropriate fire regimes, and habitat fragmentation continue to alter habitat quality for specialist species. Illegal ploughing and clearing of natural habitats remain a widespread challenge, often circumventing environmental impact assessments.
 
 **Marine and coastal systems face their own suite of emerging pressures.** Sardine stocks remain depleted, yet sardines are a keystone prey resource for seabirds and other predators; current operational management procedures inadequately account for ecosystem needs. Coastal aquaculture, including reliance on fishmeal and bonemeal inputs, has ecological knock-on effects that are poorly quantified. Sand mining is expanding along the coast, threatening coastal biodiversity. Meanwhile, ship-to-ship bunkering operations, paused off Algoa Bay but likely to increase elsewhere, introduce additional risks of oil spills, noise pollution, and chronic disturbance in sensitive seabird areas. See more on the [marine bird page](../species/marine_bird_sp.qmd).
 
@@ -892,7 +920,16 @@ While many longstanding pressures on South Africa’s birds are well recognised,
 
 The Regional Conservation Assessment for the birds of South Africa, Lesotho, and Eswatini was conducted by BirdLife South Africa with contributions from 138 species experts. It was initiated in late 2021, and assessments concluded at the start of 2025. This assessment builds upon the 2015 Eskom Red Data Book findings. All of Southern Africa’s non-vagrant species were assessed for signs of decline using citizen science datasets such as [SABAP2](https://sabap2.birdmap.africa/), [CWAC](https://cwac.birdmap.africa/) and [CAR](https://car.birdmap.africa/#:~:text=The%20Coordinated%20Avifaunal%20Roadcount%20(CAR)%20is%20a%20long%2Dterm,habitat%20use%2C%20and%20conservation%20needs.) [@brooks2022a]. Taxon experts conducted assessments, updating assessments conducted in 2015 and conducting new ones for newly identified species ([see Regional Red List of Birds of South Africa, Lesotho and Eswatini here](https://www.birdlife.org.za/red-data-book/)).
 
-Species deemed vagrants or introduced to the assessment region were excluded. At least 5% of a species' global population or distribution needed to fall within the region to qualify for an assessment. We used BirdLife South Africa’s Checklist of South Africa’s birds for 2023 as a starting point. This lists 876 species, but 123 were vagrant and 10 introduced. Introduced and vagrant species are not assessed during the Red Listing process, leaving 753 species. The taxonomy followed is that of the [IOC World Bird List](https://www.worldbirdnames.org/new/) [@gill2025a]. During 2023, a focus was on assessing Seabird species, for which there are few public datasets available, and where assessments rely heavily on expert knowledge. In 2023, a comprehensive synthesis of citizen science datasets for terrestrial (including freshwater) bird species was undertaken and these datasets fed the 2024 assessments of terrestrial and freshwater birds [@brooks2022a] [@lee2025a]. The thresholds and methods follow IUCN Global and Regional Red List guidelines and take into account new data on distribution, population trends, and known threats (IUCN Red Listing process summary here).
+Species deemed vagrants or introduced to the assessment region were excluded. At least 5% of a species' global population or distribution needed to fall within the region to qualify for an assessment. We used BirdLife South Africa’s Checklist of South Africa’s birds for 2023 as a starting point. This lists 876 species, but 123 were vagrant and 10 introduced. The taxonomy followed is that of the [IOC World Bird List](https://www.worldbirdnames.org/new/) [@gill2025a]. During 2023, a focus was on assessing Seabird species, for which there are few public datasets available, and where assessments rely heavily on expert knowledge. In 2023, a comprehensive synthesis of citizen science datasets for terrestrial (including freshwater) bird species was undertaken and these datasets fed the 2024 assessments of terrestrial and freshwater birds [@brooks2022a] [@lee2025a]. The thresholds and methods follow IUCN Global and Regional Red List guidelines and take into account new data on distribution, population trends, and known threats (IUCN Red Listing process summary here).
+
+See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_spl_explained.qmd).
+
+### Pressure analysis 
+
+Pressures on bird populations were assessed using the standardised IUCN Threats Classification Scheme (v3.3). For each of the 147 bird species assessed as Critically Endangered, Endangered, Vulnerable or Near Threatened, all relevant sub-threats were coded during the 2025 Regional Red List process, resulting in multiple records per species where more than one pressure operates. Each record represents a unique species–sub-threat combination. For example, a species such as Botha’s lark may have separate entries for habitat loss from annual cropping, overgrazing, bush encroachment, and altered fire regimes, with each coded as a distinct record.
+For reporting here, sub-threats were then aggregated into the eleven major IUCN threat categories to quantify the frequency with which each pressure affects a species. Because species often face several pressures simultaneously, threat categories are non-exclusive and percentages do not sum to 100%.
+Species were also assigned to non-exclusive ecological realms to allow realm-specific summaries of threat patterns: 80 terrestrial, 35 inland aquatic, 24 estuarine/coastal, and 41 marine species. These realm designations reflect ecological rather than taxonomic divisions, and species occurring across multiple realms were counted in each relevant group. For instance, great white pelican is both inland aquatic and marine. Threat frequencies were summarised using distinct species-level records within each realm to avoid double-counting of sub-threats.
+
 
 ### Protection level assessment
 
@@ -987,45 +1024,65 @@ Effectiveness ratings were provided by provincial and national conservation agen
 
 Protected areas are the backbone of biodiversity conservation in South Africa. To measure protection status, BirdLife South Africa first piloted a species-level Protection Level (PL) metric in 2017, measuring the number of viable bird subpopulations occurring in well-managed protected areas [@retief2017a]. Species occurring in \>20 protected areas were deemed to be well protected. The method was refined for the current National Biodiversity Assessment using improved spatial data, updated land-cover information, and a cluster-based definition of subpopulations, with \>10 subpopulations required in protected area clusters. This framework allows a systematic comparison between 2017 and 2025, providing an evidence-based measure of how effectively the protected area network supports the long-term persistence of South Africa’s avifauna [@lee2025a].
 
-#### Data source
+See details about how the protection level assessment was conducted [here](../integrated-findings/chl_spl_explained.qmd).
 
-Barnes, K. N. (Ed.). 2000. The Eskom red data book of birds of South Africa, Lesotho and Swaziland. Johannesburg, South Africa: BirdLife South Africa.
+## Technical documentation
 
-Lee, A. T. K., Rose, S., Banda, S., Bezeng, S. B., Maphalala, M. I., Maphisa, D. H., & Smit-Robinson, H. A. (Eds.). 2025. The 2025 Red Data Book of Birds of South Africa, Lesotho and Eswatini. Johannesburg, South Africa: BirdLife South Africa.
+**Data sources**
 
-## Aknowledgements
+1. Barnes, K. N. (Ed.). 2000. The Eskom red data book of birds of South Africa, Lesotho and Swaziland. Johannesburg, South Africa: BirdLife South Africa.
 
-::::: {layout-ncol="3"}
-::: right
-## [Coordinated by:]{style="font-size:0.8em;"}
+2. Lee, A. T. K., Rose, S., Banda, S., Bezeng, S. B., Maphalala, M. I., Maphisa, D. H., & Smit-Robinson, H. A. (Eds.). 2025. The 2025 Red Data Book of Birds of South Africa, Lesotho and Eswatini. Johannesburg, South Africa: BirdLife South Africa.
 
-<img src="./imgs/logo_bird_1.png" width="85%"/>
+3. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+
+## Acknowledgements
+
+:::::: grid
+::: {.g-col-lg-6 .g-col-12}
+**Coordinated by:**
+
+------------------------------------------------------------------------
+
+-   [BirdLife South Africa](https://www.birdlife.org.za/)
+
+-   [Endangered Wildlife Trust](https://ewt.org/)
+
 :::
 
-::: middle
-## [Sponsored by:]{style="font-size:0.8em;"}
+::: {.g-col-lg-6 .g-col-12}
+**Sponsored by:**
 
-<img src="./imgs/logo_bird_2.png" width="85%"/>
+------------------------------------------------------------------------
+
+-   [BirdLasser](https://www.birdlasser.com/)
+-   [Industrial Development Corporation](https://www.idc.co.za/)
+-   [Eskom](https://www.eskom.co.za/)
+-   [AFRiT](https://afrit.co.za/)
+-   [Ekapa](https://ekapa.co.za/)
+-   [First Rand](https://www.firstrand.co.za/)
+-   [Italtile and Ceramic Foundation Trust](https://www.italtilefoundation.co.za/)
+
 :::
 :::::
 
 ```{r}
 #| label: tbl-4
-#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments." 
+#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments and for reviews of the content of the page." 
 #| classes: plain
 
 library(gt)
 
 # Create example data
 data <- data.frame(
-  'Contributor' = c("Hanneline Smit-Robinson", "Chris Kelly"),
-  'Affiliation'  = c("Birdlife South Africa", "Wildlife ACT"))
+  'Contributor' = c("Hanneline Smit-Robinson", "Chris Kelly","Anisha Dayaram", "Carol Poole"),
+  'Affiliation'  = c("Birdlife South Africa", "Wildlife ACT", "South African National Biodiveristy Institute","South African National Biodiveristy Institute" ))
 
 # Create gt table
 #gt_table <- gt(data)
 
 ref<- gt(data) %>% 
-  nba_tbl_theme() %>%
+#  nba_tbl_theme() %>%
        tab_options(#data_row.padding = px(16),
               table.font.size = px(13L),
               table.width = pct(100),

@@ -13,43 +13,135 @@ title-block-banner-color: white # Header text colour: DO NOT CHANGE
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
 
 author:
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Lara
-      family: van Niekerk
-    orcid: 0000-0001-5761-1337
+
+      given: Lara #Add author's first name here. Abbreviate the middle name
+      family: van Niekerk #Add author's surname here
+    orcid: 0000-0001-5761-1337  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: csir1
-      - ref: nmu1
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Andrew L.
-      family: Skowno
-    orcid: 0000-0000-0000-0000
+      given: Susan #Add author's first name here. Abbreviate the middle name
+      family: Taljaard #Add author's surname here
+    orcid: 0000-0001-7204-123X  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: sanbi1
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
-      given: Kerry
-      family: Sink
-    orcid: 0000-0001-5051-573X
+      given: Janine B. #Add author's first name here. Abbreviate the middle name
+      family: Adams #Add author's surname here
+    orcid: 0000-0001-7204-123X  # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: sanbi1
-      - ref: nmu1
+      - ref: NMU2 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
   - name:
-      given: Linda R.
-      family: Harris 
-    orcid: 0000-0003-4719-0481  
+      given: Stephen J. #Add author's first name here. Abbreviate the middle name
+      family: Lamberth #Add author's surname here
+    orcid: 0000-0002-4076-3622   # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: nmu1
+      - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Fiona C. #Add author's first name here. Abbreviate the middle name
+      family: Mackay #Add author's surname here
+    orcid: 0000-0001-5255-1910   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: ORI1 # Ref here must match the id of one of the affiliations listed below
+      - ref: UKZN1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+
+  - name:
+      given: Steven P. #Add author's first name here. Abbreviate the middle name
+      family: Weerts #Add author's surname here
+    orcid: 0000-0002-9826-3209   # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: CSIR1 # Ref here must match the id of one of the affiliations listed below
+      - ref: CRUZ1
+      # If an author has more than one affiliation, add more - ref: lines here
+
+  # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
+  - name:
+      given: Daniel A. #Add author's first name here. Abbreviate the middle name
+      family: Lemley #Add author's surname here
+    orcid: 0000-0003-0325-8499  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: NMU1 # Ref here must match the id of one of the affiliations listed below
+      # If an author has more than one affiliation, add more - ref: lines here
+  - name:
+      given: Nicola C. #Add author's first name here. Abbreviate the middle name
+      family: James #Add author's surname here
+    orcid: 0000-0002-9472-5314  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: SAIAB1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU1
+  - name:
+      given: Gavin M. #Add author's first name here. Abbreviate the middle name
+      family: Rishworth #Add author's surname here
+    orcid: 0000-0003-1148-0081  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: NMU1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU2
+  - name:
+      given: Jane K.  #Add author's first name here. Abbreviate the middle name
+      family: Turpie #Add author's surname here
+    orcid: 0000-0003-1220-6295  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: anchor1 # Ref here must match the id of one of the affiliations listed below
+  - name:
+      given: Jabulile   #Add author's first name here. Abbreviate the middle name
+      family: Nhleko #Add author's surname here
+    orcid: 0000-0003-2738-5062  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: DFFE1 # Ref here must match the id of one of the affiliations listed below
+  - name:
+      given: Chuene P. #Add author's first name here. Abbreviate the middle name
+      family: Lakane #Add author's surname here
+    orcid: 0000-0002-1633-6030  # Author's orcid ID. Delete this line if author is not on orcid
+    affiliations:
+      - ref: NMU1 # Ref here must match the id of one of the affiliations listed below
+      - ref: NMU2
 
 affiliations:
-  - id: csir1
+  - id: CSIR1
     number: 1
     name: Council for Scientific and Industrial Research
-  - id: nmu1
+  - id: NMU1
     number: 2
-    name: Institute for Coastal and Marine Research
-  - id: sanbi1
+    name: Institute for Coastal and Marine Research, Nelson Mandela University
+  - id: NMU2
     number: 3
-    name: South African National Biodiversity Institute
+    name: DST/NRF Research Chair in Shallow Water Ecosystems, Nelson Mandela University
+  - id: DFFE1
+    number: 4
+    name: Department of Environment, Forestry and Fisheries
+  - id: ORI1
+    number: 5
+    name: Oceanographic Research Institute, SAAMBR
+  - id: UKZN1
+    number: 6
+    name: University of KwaZulu-Natal
+  - id: CRUZ1
+    number: 7
+    name: University of Zululand
+  - id: SAIAB1
+    number: 8
+    name: South African Institute for Aquatic Biodiversity
+  - id: anchor1
+    number: 9
+    name: Anchor Environmental Consultants
    
 
 # This date determines the PUBLISHED date in the title block
@@ -69,9 +161,11 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From a ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.*
+*More than 53% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning the overall, more than 70% of estuarine area is significantly modified.*
 
-------------------------------------------------------------------------
+*This represents an overall 3% decline in Natural/Near Natural estuaries and 7% increase in degraded extent. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.*
+
+![Kosi Estuary is an example of a Tropical Estuarine Lake in a Near-natural state is an example of healthy productive estuary that support biodiversity and coastal livelihoods. (© iSimangaliso Wetland Park)](imgs/kosi_bay.jpg)
 
 <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
 
@@ -79,13 +173,13 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [00%]{.inline-style-threatened}
-| of 220 ecosystem types
-| [Threatened]{.inline-style-indicator}
+| [53%]{.inline-style-not-protected}
+| of estuaries
+| Natural/near natural
 
-| [00%]{.inline-style-well-protected}
-| of 220 ecosystem types
-| [Well Protected]{.inline-style-indicator}
+| [22%]{.inline-style-vulnerable}
+| of estuaries
+| Heavily to critically degraded
 
 </center>
 :::
@@ -93,13 +187,13 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [00%]{.inline-style-not-protected}
-| of 220 ecosystem types
-| [Not protected]{.inline-style-indicator}
+| [18%]{.inline-style-not-protected}
+| of estuarine area
+| Natural/near natural
 
-| [00%]{.inline-style-threatened}
-| of 50 taxa assessed
-| [Threatened]{.inline-style-indicator}
+| [70%]{.inline-style-vulnerable}
+| of estuarine area
+| Heavily to critically degraded
 
 </center>
 :::
@@ -107,109 +201,108 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-```{r}
-#| label: fig-mpa_map
-#| fig-cap: South Africa's Protected Area network.
-#| echo: false
-#| message: false
-#| warning: false
-#| out-width: 100%
-
-
-
-knitr::include_graphics("imgs/pa_map.png")
-
-```
-
-## Ecosystem protection level assessment
-
-Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From an ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.
-
-Since 2011 there has been erosion of protection in historical protected areas caused by removal of no-take restrictions and developing commercial fisheries in Marine protected Areas (MPAs). This is further exasperated by increased illegal gillnetting in protected areas in KZN.
-
-An investment in estuarine protection is needed in ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate are least protected.
-
-## Opportunities to improve ecosystem protection level
-
 <!-- it is important to use second-level headings in panel tabsets, i.e. two hashes -->
 
+South African estuaries differ considerably around the coast in terms of their physicochemical and biotic characteristics. The climatic range across the four biogeographic regions has resulted in large differences in human settlement patterns and with them the nature of estuarine utilisation [@lamberth2003]. The first step in proactive planning and effective management of estuaries is to understand how healthy they are.
+
+The 2025 assessment determined that 11% of estuaries in South African are considered to be in a Natural state (A category), 43% in a Near natural state (B category), 28% in a Moderately modified state (C category), 8% in a Heavily modified state (D category), and 7% in a Severely/Critical modified state. Estuaries in Natural and Near natural state are mainly located in the Warm Temperate and Subtropical regions, while the Cool Temperate region is characterised by estuaries in a Heavily to Severely /Critical modified state. That analysis is biased towards the state of the large number of small estuary types occurring along the South African coast. When analysed according to estuarine area rather than the number of estuaries, the majority (70%) of estuarine area is in a Heavily modified state or worse, and only about 1% and 18% in a Natural and Near natural state, respectively. The latter are mainly located in the Warm Temperate region and Subtropical region. An additional 12% are in a moderately modified state. Part of this result is an artefact of the ‘Lake St Lucia effect’. This Subtropical system accounts for more than half of South African estuarine extent and is currently classified as being in a Heavily modified state.
+
+The 2018 assessment showed that 21% of estuaries in a Natural state, 40% in a Near natural state, 20% in a Moderately modified state, 12% in a Heavily modified state, and 7% in a Severely /Critical modified state. By estuarine area, the majority of estuarine area (63%) was in a Heavily modified state or worse, and only about 5% and 17% in a Natural and Near natural state, respectively.
+
+The Cool Temperate region had the highest number of estuaries in a degraded condition as it supports estuarine habitat mainly in the Severely to Critical modified categories, especially the large to small temporarily open systems near Cape Town and other coastal urban centres. The Warm Temperate region, on the other hand, was characterised by a large number of estuaries in a Natural to Near Natural condition, possibly due to the undeveloped nature of large parts of the coast in this biogeographic region. The Subtropical region had the second-highest number of estuaries in a degraded state, mainly due to pollution, very high fishing pressure (illegal gillnetting), direct habitat loss, sand mining, and intensive sugar cane farming in the catchments and estuary functional zone.
+
 ```{r}
-#| label: fig-est_epl_map
-#| fig-cap: Estuarine ecosystem type protection level.
+#| label: fig-est_cnd_map
+#| fig-cap: Map of estuary degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or critically degraded state.
 #| echo: false
 #| message: false
 #| warning: false
 #| out-width: 100%
 
 
-knitr::include_graphics("imgs/epl_with_donut.png")
+knitr::include_graphics("imgs/cnd_with_donut.png")
 
 ```
 
-There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
+From an Estuarine Ecosystem perspective, the Cool Temperate biogeographical region had the highest percentage of ecosystem types in a Heavily to Severely/critically modified state with Large fluvially dominated, Large temporarily Closed, Arid predominantly closed, Small temporarily closed and Estuarine Lakes reflecting key pressures such as flow reduction, pollution and fishing pressure of the region.
 
-Several under protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi.
-
-The global support for 30% protection target (2030 Global Biodiversity Framework Target 3) represent a unique opportunity to garden international support and present funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process to evaluate and extend estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
-
-Ongoing efforts to develop OECMs and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats. It is less clear, if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increase formal protection over time or as a sufficient measure one its own.
-
-## Summary {#summary}
-
-**Use this section to summarise highlights or key messages of your page** Use bold text to highlight your main points. Do not write it as an abstract. Suggestion is to follow this section with a nice picture that relates to your page/section, before diving into details or supporting statistics
-
-**Remember to use links to relevant sections elsewhere on the page**. To add a link, click on Insert \> Link. In the pop-up box, change the link to selection from URL to Heading, and select the heading of the section you want to link to. The display text will default to the header name. If you want to use different text, you need to tag your header. Select the header, and click on the three dots to the right. In the pop-up box, give the header a tag using the ID text box. The tag must start with #, e.g. #summary. Now you can link to it using the following syntax: [display text](#section-name). (Check how it is configured in Source view).
-
-<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
-
-![Descriptive image captions. As in the 2018 synthesis report, photos get descriptive captions but are not numbered.](imgs/nba-banner.png){fig-align="center"}
-
-### References
-
-See [Quarto documentation](https://quarto.org/docs/authoring/citations.html#sec-citations) for different ways to cite references. For reference citations to work, there needs to be a .bib file stored in the same folder as the .qmd file. Give the .bib file a unique name (i.e. change it from the default references.bib). Make sure to edit the yaml header to reference the correct .bib file. See this [bibtex reference](https://www.bibtex.com/e/entry-types/) for the formats for different types of references. The references.bib file in the `quarto` folder contains some example references:
-
-For a chapter or section in a book that is part of a series (e.g. Vegetation of South Africa) use the `@inproceedings` format[@vegsa2006]
-
-Add an appropriate descriptive caption next to **fig-cap.**
-
-```{r}
-#| label: fig-ref
-#| fig-cap: "Add figure caption here." 
-
-# Add R code for generating figure here, e.g.
-nbaR::nba_plot(nbaR::NBA_example_thr_data, `OVERALL types`, 2:5, CHRT = "bar", NUM = TRUE, LAB = "Percentage of ecosystem types")
-
-```
-
-### Combine figures and related data
-
-It is possible do display both the data that a figure is based on and the figure using [tabset-panels](https://quarto.org/docs/output-formats/html-basics.html#tabsets). This enables users to interrogate the data behind the statistics directly. Use this code to set up a tabset:
+In the Subtropical biogeographical region, the highest number of ecosystem types in a Heavily to Severely/Critical modified state are the Estuarine lakes, Estuarine bay, and Large fluvially dominated functional groups reflecting habitat transformation, pollution and fishing pressure of the region. In the Warm Temperate region, the Estuarine lakes reflect significant degradation due to development in the estuarine functional zone, flow reduction and artificial breaching. In addition, Predominantly open and Large temporarily open estuaries are also significantly degraded. None of the types in the Tropical biogeographical region is in a severely degraded state.
 
 :::: panel-tabset
-## Figure
+## Biogeographical region figure
 
 ```{r}
 #| label: fig-epl_bargraphs
 #| echo: false
-#| fig-cap: NEEDS A CAPTION
+#| fig-cap: Different perspectives arise when the condition assessment is presented either as “Percentage estuaries” or “Percentage estuarine extent”. The area analysis highlights the fact that the majority of South African estuarine extent is in a degraded state.
 #| out-width: 100%
 
 library(gt)
 library(nbaR)
 library(tidyverse)
 
-epl_combined <- read.csv(file=list.files(path = "./data", pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+cnd_combined <- read.csv(file=list.files(path = "./data", pattern = "^cnd_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Tropical",
+                                  "Subtropical",
+                                 "Warm Temperate",
+                                 "Cool Temperate"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) 
 
 #Combine RLE plot
-nba_plot_comb(epl_combined,
+nba_plot_comb(cnd_combined,
               zone,
               METRIC_COL = metric,
               METRICS = c("count", "extent"),
-              2:5,
+              2:6,
               CHRT = "bar",
               NUM = FALSE,
-              LAB = "Percentage of ecosystem",
+              LAB = "Percentage of estuaries",
+              SAVE = NULL,
+              SCALE_TEXT = 1) +
+  theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
+
+
+```
+
+## Ecosystem type figure
+
+```{r}
+#| label: fig-cnd_bargraphs
+#| echo: false
+#| fig-cap: Ecosystem type condition express as percentage of estuaries and estuarine extent
+#| out-width: 100%
+
+library(gt)
+library(nbaR)
+library(tidyverse)
+
+cnd <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Tropical",
+                                  "Subtropical",
+                                 "Warm Temperate",
+                                 "Cool Temperate"),
+                    ordered = TRUE)) %>% 
+   arrange(zone)%>% 
+  select(type, NAME, efz_ha, condition) %>% 
+  distinct() %>% 
+  summarise(extent = sum(efz_ha), .by = c(type,condition )) %>% 
+  pivot_wider(names_from = condition, 
+              values_from = extent)%>%
+  mutate(across(where(is.numeric), ~replace_na(.x,0))) %>% ungroup()
+  
+
+#Combine RLE plot
+nba_plot(cnd,
+              type,
+              2:6,
+              CHRT = "bar",
+              NUM = FALSE,
+              LAB = "Percentage of ecosystem extent",
               SAVE = NULL,
               SCALE_TEXT = 1) +
   theme(plot.margin=grid::unit(c(0,0,0,0), "pt")) #remove white space around the plot
@@ -223,7 +316,7 @@ nba_plot_comb(epl_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: The condition of South Africa’s estuaries presented as percentage of ecosystem extent
 #| out-width: 100%
 
 
@@ -231,22 +324,35 @@ nba_plot_comb(epl_combined,
 
 library(gt)
 
-tbl <- epl_combined %>% 
-  mutate(metric = str_replace_all(metric, "extent", "extent_km2")) %>% 
-  arrange(zone) %>% 
-  select(zone, metric, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>% 
+tbl <- cnd_combined %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
+         metric = str_replace_all(metric, "count", "No. estuaries"),
+         metric = str_replace_all(metric, "perc", "Percentage (%)")) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Cool Temperate",
+                               "Warm Temperate",
+                               "Subtropical",
+                               "Tropical"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) %>% 
+  select(zone, metric, `Natural`, `Near-natural`, `Moderately modified`, `Heavily modified`, `Severely / critically modified `) %>%
   mutate(across(where(is.numeric), round)) %>% 
   gt::gt(
     rowname_col = "metric",
     groupname_col = "zone",
-    row_group_as_column = TRUE)%>% 
+    row_group_as_column = TRUE) %>% 
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 0,
+    sep_mark = "\u202F") %>% 
+  fmt_markdown(columns = metric) %>%  # tells gt to render HTML/Markdown in that column
   nbaR::nba_tbl_theme(HEADER = "Estuarine") %>% 
   tab_style(
     style = cell_text(color = "white"),
     locations = cells_column_labels()
   )
 
-tbl%>% 
+tbl %>% 
   gt::tab_options(
     table.width = pct(100),
     data_row.padding = px(5),
@@ -254,17 +360,34 @@ tbl%>%
     row_group.font.size = px(15),
     table.font.size = px(15)
   )
+
 ```
 :::
 ::::
 
-While the larger and more biodiversity rich estuaries are undoubtedly protection priorities, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond.Unless some ecosystem types or functional groups, e.g. Cool Temperate large fluvially dominated are targeted for inclusion in Marine Protected Areas, Protected areas or OECMs, gaps in representation will persist.
+Overall, a significant number of the estuaries in South Africa are in excellent to good health, but these are mostly small systems in rural areas with few pressures. In these areas, smaller estuaries tend to be in a better state of health because there are fewer pressures on them. However, these systems tend not to be as resilient to change as large estuaries, primarily due to their small size and higher residence time brought about by limited tidal exchange. This is one of the key reasons for the poor conditions of urban systems.
 
-It is increasingly evident that protected areas won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures (OECMs) and/or Stewardship offer new opportunities for a broader diversify of conservation models to contribute to marine protection. Lastly, increasing extent of protection alone will not advance estuarine ecosystems to well protected. The condition of ecosystems in protected areas needs improvement.
+On the other hand, larger systems, which are important as fish nursery grounds and of higher economic and ecological importance, are mostly in declining health due to indirect pressures from the catchment and direct pressures such as development in the estuary functional zone and fishing. Most of the estuarine extent in South Africa is in a modified moderately to heavily modified state and there is a risk that this percentage could increase further if appropriate management actions are delayed.
 
+The St Lucia Lake System accounts for more than half of the estuarine extent in South Africa and it is in relatively poor condition. Fortunately, however, the St Lucia and uMfolozi systems are in the process of being restored, and an adaptive management and monitoring programme has been initiated to assist with the long-term recovery of this World Heritage Site.
+
+Monitoring of both abiotic and biotic parameters is seen as fundamental to validating the findings of the condition assessment. To benchmark the findings, monitoring also needs to cover the full spectrum of near-natural to heavily degraded estuaries in all four bioregions following the standardised methods developed for flow requirement studies. Ideally, research and assessment should be underpinned by modelling studies that encompass the functional linkages between ecosystem components and overwhelming pressures on the environment, such as Climate Change and ocean acidification. Such modelling studies can provide the evidence needed for setting realistic targets for resource use, and can also underpin better long-term resource planning.
+
+::: {.callout-note .estuarine collapse="false"}
+## **Invest in solutions to restore estuarine ecological infrastructure to strengthen climate resilience and sustain ecosystem services.** 
+
+The United Nations Decade of Ecosystems Restoration 2021-2030 makes restoration and protection of critical ecosystems an imperative at a global scale. This call to arms aims to scale up the restoration of degraded ecosystems to combat the climate crisis and enhance food security and biodiversity. It also presents a host of funding opportunities through climate finance instruments (e.g. Blue Carbon trading), Ecosystems-based Adaptation (EbA) global funds, and national debt restructuring mechanisms, which will be highly supportive of a South African Strategic Estuarine Management Framework.
+
+**In response, restoration projects have been initiated at a few key estuary sites in South Africa, e.g. St Lucia, Groot Berg, Swartkops, and uMlalazi. Ongoing research has also identified critical systems (e.g. Orange, Olifants, Klein Brak, Gamtoos) that will ensure the best return on investment.**
+
+DFFE and the provincial authorities are engaging in an ‘**Estuary Restoration Programme’** that focuses on degraded and novel systems with an emphasis on the larger systems of high biodiversity importance and the socially important urban systems. Here, an opportunity exists for flagship programmes that could be developed in a collaborative manner between government agencies and civil society. A national estuarine restoration programme will also have the advantage of securing long-term funding at regional scales. Local and provincial government, conservation agencies and NGOs should assist in initiating site-specific restoration opportunities (e.g. BirdLife at Groot Berg).
+:::
+
+::: {#box-eco_tbl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-epl
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: Estuary Condition for South Africa listed by estuary
+#| classes: plain
 
 # library(here)
 #library(gt)
@@ -273,63 +396,43 @@ library(dplyr)
 
 
 # load data
-epl <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
+ets <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(-'threat_status') %>% 
-  mutate(
-    protection_level = factor(protection_level, levels = c("Well Protected",
-                                 "Moderately Protected",
-                                 "Poorly Protected",
-                                 "Not Protected"),
-                      ordered = TRUE)) %>%
-  arrange(protection_level, NAME) 
+  select(NAME, type, condition) %>% 
+  rename(`Estuary name` = NAME, 
+         `Estuary type` = type, 
+         `Condition` = condition)
 
-nba_tbl_colr(DF = epl,
-             COL = protection_level,
+write.csv(ets, "data/condition_categories_per_estuary.csv")
+
+nba_tbl_colr(DF = ets,
+             COL = Condition,
              HEADER = "Estuarine") %>%
   tab_options(container.height = px(550),
-              container.overflow.y = TRUE) %>% 
-    tab_style(
-    style = cell_fill(color = "#028A85"),
-    locations = cells_column_labels(columns = everything())
+              container.overflow.y = TRUE)%>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
   )
 
-# # create the table
-# reactable(
-#   epl,
-#   filterable = TRUE,
-#   searchable = FALSE,
-#   pagination = FALSE,
-#   height = 600,
-#   defaultColDef = colDef(
-#     headerStyle = list(background = "#028A85", color = "white", fontWeight = "bold")
-#   ),
-#   theme = reactableTheme(
-#     inputStyle = list(
-#       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
-#       backgroundColor = "white",
-#       border = "1px solid #ccc"
-#     )))
+
 
 ```
 
+Download the data [here](data/condition_categories_per_estuary.csv).
+:::
+
 ## Approach
 
-XXX
+Assessment of the condition of South African estuaries was based on the Estuarine Health Index (EHI) developed for South Africa’s ecological flow requirement studies [@departmentofwateraffairsandforestry2008; @turpie2013]. The EHI considers both abiotic and biotic components, namely hydrology, hydrodynamics and mouth condition, water chemistry, sediment processes, microalgae, macrophytes, invertebrates, fish and birds ([@fig-cond-flow]). Both abiotic and biotic variables are included because the exact relationships between them are often not well understood and because the biotic responses to specific abiotic variables generally occur after a lag period [@adams2002, @vanniekerk2013, @vanniekerk2019].
 
-#INSERT TABLE WITH HEALTH CATEGORIES: est_ets_cat.csv
+![Components and weightings of the Estuarine Health Index [@departmentofwateraffairsandforestry2008].](imgs/condition_flow.png){#fig-cond-flow}
 
-Protection Level is an indicator developed in South Africa that measures the representation of ecosystem types within the protected area network. The extent of each ecosystem type within the network is expressed as a proportion of the total extent. Four categories of Ecosystem Protection Level are calculated per ecosystem type (n= 22).
+The approach requires that a multidisciplinary group of estuarine scientists assesses the health of a particular estuary in a workshop setting and is based on their collective understanding of likely impacts affecting that system. Available information and expert knowledge are used to build a “picture” of the natural state of an estuary and the changes that have occurred under present conditions. For each of the components (abiotic and biotic), the change in condition is estimated as a percentage (0 – 100%) of the natural state. Scores are weighted (25% for each abiotic and 20% for each biotic component) and aggregated (50:50) to provide an overall score that reflects the present health of the system as a percentage of that under natural conditions. The index score in turn corresponds to an Ecological Management Category to describe the health of  the estuaries using six categories, ranging from natural (A) to critically modified (F) ([@tbl-cond-tbl]). These in turn have been cross walked to the NBA condition assessment categories.
 
--   Well Protected: 100% of the PA target within PA network; AND only A&B condition estuaries contribute; AND areas under heavy and very heavy fishing pressure are excluded from contributing
+![The relationship between loss of ecosystem condition and functionality (modified from Van Niekerk et al. 2013).](imgs/condition_tbl.png){#tbl-cond-tbl}
 
--   Moderately Protected: 50% to 99% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
-
--   Poorly Protected: 5% to 49% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
-
--   Not Protected: less than 5% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
-
-The PA target was historically set at 20% for marine and estuarine ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework - the protected areas target was increased to 30% in the EPL calculations (previous time points (2018) were recalculated using this higher target). Ecosystem condition data (van Niekerk et al., 2025) for each time point allow for only good condition estuaries without heavey fishing pressure (especially systems under severe gill-netting pressure) to be considered representative for Well Protected status; while for Moderately Protected, Poorly Protected and Not Protected the condition of the estuaries is used to calculate their contribution to meeting targets such that higher integrity / condition estuaries contribute more to meeting protected areas targets than low integrity / condition estuaries.
+To develop a clear understanding of the status of estuarine health within South Africa, large complex systems such as the Lake St Lucia Estuary were disaggregated into separate sections, namely Lake St Lucia and the uMfolozi Estuary. Similarly, the uMhlathuze Estuary and Richard’s Bay Harbour were evaluated separately. Consequently, the country-wide health assessment was conducted for a total of 290 estuaries.
 
 ## Technical documentation
 
@@ -337,29 +440,11 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 
 <!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
 
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
-
-### Code repositories
-
--   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
-
-#INSERT ANDREW'S EPL FILE
-
 ### Key Publications
 
-The last section of your page should contain links to technical documentation of the indicators and analyses presented on your page. Technical documentation can be in a variety of formats. It is not necessary to have all these in place, but there should at least be a technical report available in a public document repository (e.g. OPUS) or a published paper describing your methods. Edit and adapt the suggested layout below depending on what technical documentation is applicable to your page.
+Van Niekerk, L., Adams, J.B., Lamberth, S.J., MacKay, C.F., Taljaard, S., Turpie, J.K., Weerts S.P. & Raimondo, D.C., 2019 (eds). *South African National Biodiversity Assessment 2018 Technical Report Volume 3: Estuarine Realm*. CSIR report. South African National Biodiversity Institute, Pretoria.
 
--   **Code repository**: [github.com/SANBI-NBA/templates](https://github.com/SANBI-NBA/templates)
-
--   **Data repository**: [OPUS](https://opus.sanbi.org/home), [Figshare](https://figshare.com/), [KNB](https://knb.ecoinformatics.org/) or [BGIS](https://bgis.sanbi.org/) - link to the specific page within these websites containing your data.
-
--   **Technical report**: Add link to technical report in PDF format or Quarto website
-
-**Key publications**
-
-Jordaan, M.S., et al. 2020. Protected areas and endemic freshwater fishes of the Cape Fold Ecoregion: missing the boat for fish conservation? Frontiers in Environmental Science 8:502042. doi: [10.3389/fenvs.2020.502042](https://doi.org/10.3389/fenvs.2020.502042)
+Van Niekerk, L. et al. 2013. Country-wide assessment of estuary health: An approach for integrating pressures and ecosystem response in a data limited environment. Estuarine, Coastal and Shelf Science 130: 239–251. https://doi.org/10.1016/j.ecss.2013.05.006
 
 ## Recommended citation
 

@@ -93,53 +93,70 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*South Africa’s globally recognised biodiversity richness also extends to inland wetlands. A wide range of climatic, geological and topographic settings have resulted in an exceptional diversity of wetland ecosystem types, from permanently saturated peatlands that accumulated in place over thousands of years to ephemeral salt pans harbouring newly described invertebrate species. In global terms, South Africa’s wetlands are small, with nearly 50% that are less than 1.5 hectares in size, but they are of outsized importance in a semi-arid context and they frequently function as an inter-connected network across a catchment. Wetlands provide vitally important benefits to people, such as improving water quality and controlling floods. They are water sources, habitats, and refuges for animals and people in times of drought.*
+*South Africa’s globally recognised biodiversity richness also extends to inland wetlands. A wide range of climatic, geological and topographic settings have resulted in an exceptional diversity of wetland ecosystem types, from permanently saturated peatlands which accumulated in place over thousands of years, to ephemeral salt pans harbouring newly described aquatic invertebrate species. More than half of South Africa's wetlands are less than two hectares in size but are of outsized importance when functioning collectively across a catchment, especially within the semi-arid context. Wetlands improve water quality and control floods and they are water sources, habitats, and refuges for animals and people in times of drought, among many other benefits.*
 
-We have an interim typology in place and are currently at work on an updated national system to understand and manage our wetlands as effectively as possible. The proposed updated typology update will contribute significantly towards ensuring their long-term health and the benefits they provide to all South Africans.
+![Mix of sedges and flowering plants within a KwaZulu-Natal grasslands wetland. (© Nancy Job)](imgs/kzn_merthly.png)
 
-::: {#box-1 .callout-note .freshwater title="Box 1. xxxxxxxx" collapse="true"}
-WetMap
+South Africa is among the most water-scarce countries per capita in the world and has a high temporal and spatial variability of rainfall. Evapotransipiration significantly exceeds rainfall over most of the country. However, diverse water-bearing geology and the expression of groundwater-dependent wetlands, the extensive movement of water through catchments and hillslopes and highly variable river flow regimes have resulted in a relative scarcity, but surprisingly rich variety, of inland wetlands. The diversity of inland wetland ecosystem types is underpinned by South Africa's strongly contrasting bioclimatic zones, including the arid western interior (summer rainfall), the mesic eastern grassy biomes (summer rainfall), the arid western coastal regions (winter rainfall) and the mesic winter-rainfall southwestern Cape. 
 
-Digital Earth Africa
+## Work in progress
 
-Field campaigns and photo
+The map of wetland ecosystem types is a work in progress. We have an interim typology in place and are currently at work with several collaborators on an updated national system to understand and manage our wetlands as effectively as possible. The proposed typology update will contribute significantly towards conservation, management and conservation, ensuring the long-term health of wetlands and the benefits they provide to all South Africans.
 
-EcoPulse, Phil and team
-:::
+The latest data indicates that inland wetlands cover 2.2% of South Africa’s surface area, though this is likely to be an underestimate. These wetlands are classified into 82 distinct ecosystem types on the basis of vegetation bioregions and hydrogeomorphic units.
 
-::: {.callout-note .freshwater title="Box 4. Wetlands of International Importance (Ramsar Wetlands)" collapse="true"}
-Prepared by .
-:::
+## Mapping wetland extent
 
-## Approach to develop this input layer
+The National Wetland Map is the primary input layer for the NBA 2025 assessment and depicts the location and size (extent) of wetlands. Importantly, the National Wetland Map attempts to capture the historical extent of wetlands prior to human modification. 
 
-measures
+The National Wetland Map is built up from a range of different data sources, from fundamental field mapping to digitising of satellite images. Since 2022, the National Wetland Map has incorporated information from an automated wetland probability map, which uses topographic modelling to estimate where wetlands are likely to occur and helps to map a larger area in a shorter amount of time and fill in unmapped areas.
+
+Submissions from stakeholders make an important contribution to the dataset. The National Wetland Map team developed a framework and protocols for preparing and combining the data from different mapping methods and contributors into one consolidated dataset. 
+
+Once the national wetland typology (see below) is stable, the information on historical extent will make it possible to assess and report on trends in wetlands over time.
+
+## Classifying wetland types
+
+Wetlands are first classified according to hydrogeomorphic type based on landform and hydrology. Drawing from Ollis et al. and Grenfell et al., four hydrogeomorphic types have been adopted for the NBA 2025 assessment. These are floodplains (a river or stream channel runs through the wetland), unchannelled valley-bottom wetlands, depressions and seep wetlands (fed by groundwater and hillslope water).
+
+These are further divided into different regional wetland types. Aligning with the Global Ecosystem Typology allows reporting towards global processes.
+
+## Classifying wetland types
+
+Collaboration
 
 ## Acknowledgements
 
-Major contributors to the National Wetland Map
+Coming soon
 
 ## Technical documentation
 
-**Code repository**: nwm link
+Coming soon
 
-**Key Publications**:
+**Related publications and supporting information**
 
-Ollis
-
-Grenfell
-
-Floodplains infosheet
-
-Collins WetMap
-
-**Technical reports**:
+Convention on Wetlands (2025) Small Wetlands: Their importance and strategies for effective conservation. Policy Brief 7. Gland, Switzerland: Secretariat of the Convention on Wetlands. DOI: 10.69556/strp <https://www.ramsar.org/document/small-wetlands-their-importance-strategies-effective-conservation>
 
 SANBI. 2025. National Wetland Map: South Africa’s official map of wetland extent, type and condition. SANBI Factsheet series. South African National Biodiversity Institute, Pretoria.
 
 ## Recommended citation
 
-Job, N.M., Skowno, A.L xx. 2025. Ecosystem protection level: Freshwater (inland aquatic) realm synthesis. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+```
 
 ## References
 

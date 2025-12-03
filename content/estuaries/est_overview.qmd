@@ -9,7 +9,108 @@ description: |
 bibliography: references.bib
 ---
 
-*South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al. 1992; Harrison 2002; Turpie et al. 2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+# load the data 
+ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) 
+  
+
+## extent
+eco_extent <- ets_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "extent")
+
+thr_extent <- ets_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_cr_extent <- round((sum(thr_extent$`Critically Endangered`)/total_extent)*100)
+perc_en_extent <- round((sum(thr_extent$`Endangered`)/total_extent)*100)
+perc_vu_extent <- round((sum(thr_extent$`Vulnerable`)/total_extent)*100)
+perc_lc_extent <- round((sum(thr_extent$`Least Concern`)/total_extent)*100)
+perc_thr_extent <- round(perc_cr_extent+perc_en_extent+perc_vu_extent)
+
+##count
+eco_count <- ets_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "count")
+
+thr_count <- ets_combined %>% 
+  filter(metric == "count")
+
+
+total_count <- sum(eco_count$value)
+
+perc_cr_count<- round((sum(thr_count$`Critically Endangered`)/total_count)*100)
+perc_en_count<- round((sum(thr_count$`Endangered`)/total_count)*100)
+perc_vu_count<- round((sum(thr_count$`Vulnerable`)/total_count)*100)
+perc_lc_count <- round((sum(thr_count$`Least Concern`)/total_count)*100)
+perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
+
+```
+
+```{r}
+
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+# load the data 
+epl_combined <- read.csv(file=list.files(pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+## extent
+eco_extent <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "extent")
+
+pro_extent <- epl_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_wp_extent <- round((sum(pro_extent$`Well Protected`)/total_extent)*100)
+perc_mp_extent <- round((sum(pro_extent$`Moderately Protected`)/total_extent)*100)
+perc_pp_extent <- round((sum(pro_extent$`Poorly Protected`)/total_extent)*100)
+perc_np_extent <- round((sum(pro_extent$`Not Protected`)/total_extent)*100)
+perc_protected_extent <- perc_pp_extent+perc_mp_extent+perc_wp_extent
+
+
+
+##count
+eco_count <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "count")
+
+pro_count <- epl_combined %>% 
+  filter(metric == "count")
+
+some_protection_count <- pro_count %>% 
+  select('Poorly Protected':'Well Protected') %>% 
+  sum()
+
+total_count <- sum(eco_count$value)
+
+perc_wp_count<- round((sum(pro_count$`Well Protected`)/total_count)*100)
+perc_mp_count<- round((sum(pro_count$`Moderately Protected`)/total_count)*100)
+perc_pp_count<- round((sum(pro_count$`Poorly Protected`)/total_count)*100)
+perc_np_count <- round((sum(pro_count$`Not Protected`)/total_count)*100)
+perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
+
+```
+
+*South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.*
 
 ![Sout Predominantly Open Estuary ©Nelson Mandela University, Shallow Water Research](imgs/est_sout_nmu.JPG)
 
@@ -27,7 +128,7 @@ Even important ‘bait’ invertebrate species Sandprawn (*Callichirus kraussii*
 ::: {.column width="50%"}
 <center>
 
-| [59%]{.inline-style-threatened}
+| [91%]{.inline-style-threatened}
 | of 22 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
@@ -59,31 +160,86 @@ Even important ‘bait’ invertebrate species Sandprawn (*Callichirus kraussii*
 
 ## Ecosystem assessments
 
-**The Estuarine Realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.** Of South Africa’s 22 estuarine ecosystem types, 59% are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
+**The Estuarine Realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.** Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable..
 
 Overall, Cool Temperate and Subtropical ecosystems are at higher risk of ecosystem collapse. The most threatened ecosystem functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed types. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk.
 
-**More than 80% of South Africa's 22 estuarine ecosystem types now have some representation in the protected areas network, but only 1% are Well Protected.** Large Fluvially Dominated, Predominantly Open, Estuarine Bay (Subtropical), Large temporarily closed and Arid predominantly closed are the most Poorly Protected ecosystem functional groups.
+```{r}
+#| label: fig-ets_map
+#| fig-cap: Map showing the distribution of threatened estuarine ecosystems according to the IUCN Red List of Ecosystems (size of the dot represents area of the individual estuary). The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
+
+
+knitr::include_graphics("imgs/ets_with_donut.png")
+
+```
+
+**More than 80% of South Africa's 22 estuarine ecosystem types now have some representation in the protected areas network, but only 9% are Well Protected.** Large Fluvially Dominated, Predominantly Open, Estuarine Bay (Subtropical), Large temporarily closed and Arid predominantly closed are the most Poorly Protected ecosystem functional groups.
 
 Increasing the extent of South Africa’s estuarine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of estuaries in protected areas also needs improvement for ecosystem types to advance to Well Protected status. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi. Estuarine conservation also needs to better consider and involve people, diversify protection models, and address issues that undermine legitimacy. The ongoing efforts to develop OECMs and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats.
 
-**In the estuarine realm, 22% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.** These include the following five ecosystem types:
+```{r}
+#| label: fig-est_epl_map
+#| fig-cap: Schematic representation of estuarine ecosystem protection levels (size of the dot represents area of the individual estuary). There are many overlaps between points that can obscure the status of smaller estuaries. The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 100%
 
--   Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)
 
--   Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)
+knitr::include_graphics("imgs/epl_with_donut.png")
 
--   Cool Temperate Large Fluvially Dominated (Orange)
+```
 
--   Cool Temperate Predominantly Open (Olifants, Groot Berg, Uilkraals)
+**In the estuarine realm, 32% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.** These include the following seven ecosystem types:
 
--   Subtropical Estuarine Bay (Durban Bay)
+-   Cool Temperate Estuarine lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)
+-   Cool Temperate Large fluvially dominated (Orange)
+-   Cool Temperate Predominantly open (Olifants, Groot Berg, Uilkraals)
+-   Cool Temperate Arid predominantly closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)
+-   Cool Temperate Large temporarily closed (Jakkals, Diep/Rietvlei, Sout (Wes), Disa, Wildevoëlvlei, Silwermyn, Zand, Eerste, Palmiet)
+-   Subtropical Estuarine bay (Durban Bay)
+-   Subtropical Large fluvially dominated (Mbashe, Mzimvubu, uMvoti, uThukela, iMfolozi/uMsunduze)
+
+```{r}
+#| label: tbl-ets_epl
+#| echo: false
+#| tbl-cap: Intersection of threatened and under-protected ecosystem types
+#| out-width: 100%
+#| classes: plain
+
+library(tidyverse)
+library(gt)
+
+# load spatial data
+est <-  read.csv(
+  dir("data",
+      "^est.csv$",
+      full.names = T,
+      recursive = T)[1])
+
+unluckies_tbl <- est %>%
+  select(type, threat_status, protection_level) %>%
+  nbaR::nba_tbl_comb(GROUP = type,
+                     THR =threat_status,
+                     PRO = protection_level,
+                     FILE ="csv") %>% 
+  #gt::tab_options(table.font.size = px(13L)) %>%
+  gt::tab_options(table.width = gt::pct(100))
+
+unluckies_tbl
+
+
+```
 
 ## Condition
 
-**More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries.** **Concerning overall, more than 70% of estuarine area is significantly modified.**
+**More than 53% of South Africa's estuaries are healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries.** **Concerning overall, more than 70% of estuarine area is significantly modified.**
 
-This represent an **overall 1% decline in Natural/Near Natural estuaries and 7% increase in degraded extent**. Overall, Cool Temperate and Subtropical ecosystems are the most degraded. The most degraded functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed types.
+This represent an **overall 3% decline in Natural/Near Natural estuaries and 7% increase in degraded extent**. Overall, Cool Temperate and Subtropical ecosystems are the most degraded. The most degraded functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed types.
 
 Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.
 
@@ -95,7 +251,7 @@ There are many interacting pressures cumulatively affecting estuarine ecosystems
 :::
 
 ::: {.g-col-lg-5 .g-col-12}
-![Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand.](imgs/cnd.png){.lightbox}
+![Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or critically degraded state. Click to expand.](imgs/cnd.png){.lightbox}
 :::
 :::::
 
@@ -114,12 +270,6 @@ The impacts of cumulative pressures also warrant consideration at multiple scale
 ![Map of cumulative pressures in South Africa's estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click to expand.](imgs/cum_pres.png){.lightbox}
 :::
 :::::
-
-## Species assessments
-
-**Of the 66 species included in this assessment, 18 (27%) are threatened with extinction.** While this finding corresponds well with the ecosystem assessment where a high proportion of ecosystems are highly threatened, it is based on a limited set of species assessments that include a high proportion of range restricted endemics, economically important species or habitat forming species. Of the groups considered, only birds were comprehensively assessed. Future assessments need to include all representatives of a taxonomic group to remedy this bias.
-
-Increased extinction risk for estuarine species is attributed to multiple pressures, with overfishing (including by recreational, small-scale, commercial and illegal fisheries), pollution, flow reduction, biological invasions, coastal development, agriculture and mining contributing most to the threatened status of estuarine species.
 
 ## Responses
 

@@ -138,6 +138,7 @@ date: last-modified
 bibliography: species.bib
 
 # This section sets up the page citation format. DO NOT EDIT
+
 citation:
   type: webpage
   container-title: National Biodiversity Assessment 2025
@@ -148,15 +149,11 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-------------------------------------------------------------------------
-
-Freshwater ecosystems are under severe pressure. These habitats are geographically constrained causing impacts to accumulate. Between NBA 2018 and 2024, freshwater fishes have remained among the most threatened vertebrate groups in South Africa. Waterbirds, dependent on freshwater habitats are declining, with several species becoming more threatened since 2015. Physical modification of rivers and wetlands, invasive alien species and climate change continue to accelerate declines.
-
-<center>
+*Freshwater ecosystems are under severe pressure. These habitats are geographically constrained causing impacts to accumulate. Between NBA 2018 and 2024, freshwater fishes have remained among the most threatened vertebrate groups in South Africa. Waterbirds, dependent on freshwater habitats are declining, with several species becoming more threatened since 2015. Physical modification of rivers and wetlands, invasive alien species and climate change continue to accelerate declines*.
 
 ![Free-flowing Tra-Tra river within the Doring River system, in the Western Cape province, historically hosting high numbers of Clanwilliam sandfish (*Labeo seeberi*). Today 98% of the river is invaded by invasive alien black bass species (*Micropterus* spp) and bluegill (*Lepomis macrochirus*). (© Jeremy Shelton)](./imgs/fw_img_1.png){fig-align="center"}
 
-</center>
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="33.3%"}
@@ -194,9 +191,9 @@ Freshwater ecosystems are under severe pressure. These habitats are geographical
 
 ## Threat status and pressures
 
-Using the [IUCN Red List of Threatened Species Categories and Criteria](../integrated-findings/chl_rls_explained.qmd), 655 taxa that depend on freshwater habitats, including rivers and wetlands, were assessed to determine their risk of extinction (@fig-1, @tbl-1). To date, many freshwater-dependent taxa have not been included in IUCN Red List assessments due to the lack of comprehensive taxonomic understanding as well as limited distribution data. South Africa, as a mega-diverse country, is not likely to ever have the capacity to assess all known freshwater species, and hence groups included provide important insight into the conditions experienced by freshwater species. 
+Using the [IUCN Red List of Threatened Species Categories and Criteria](../integrated-findings/chl_rls_explained.qmd), 655 taxa that depend on freshwater habitats, including rivers and wetlands, were assessed to determine their risk of extinction (@fig-1, @tbl-1). To date, many freshwater-dependent taxa have not been included in IUCN Red List assessments due to the lack of comprehensive taxonomic understanding as well as limited distribution data. South Africa, as a mega-diverse country, is not likely to ever have the capacity to assess all known freshwater species, and hence groups included provide important insight into the conditions experienced by freshwater species.
 
-Nine freshwater groups are included in this assessment, including, birds, mammals, amphibians, and reptiles (reassessed and completed within the last three years (2023 to 2025)), and for the first time, freshwater crabs and fairy shrimps (Anostraca)(assessed in 2024 and 2025 respectively). Further, Freshwater fishes and Odonata have not had their Red List assessments updated since the 2018 NBA, and here we present the findings of the 2018 assessments. These groups are due for reassessment in the next two years (2026/27). Freshwater plants are represented by a small sample (27 from a 900-representative sample of all plants). A more comprehensive assessment of freshwater plants has been identified as a priority to be able to accurately report on their threat status in South Africa. 
+Nine freshwater groups are included in this assessment, including, birds, mammals, amphibians, and reptiles (reassessed and completed within the last three years (2023 to 2025)), and for the first time, freshwater crabs and fairy shrimps (Anostraca)(assessed in 2024 and 2025 respectively). Further, Freshwater fishes and Odonata have not had their Red List assessments updated since the 2018 NBA, and here we present the findings of the 2018 assessments. These groups are due for reassessment in the next two years (2026/27). Freshwater plants are represented by a small sample (27 from a 900-representative sample of all plants). A more comprehensive assessment of freshwater plants has been identified as a priority to be able to accurately report on their threat status in South Africa.
 
 In general, most freshwater groups show high sensitivity to multiple pressures, the most serious being the loss of natural habitat owing to habitat modification, e.g., wetland drainage, pollution of river systems, agricultural and housing developments, over-abstraction of water, and the impacts of invasive alien species and climate change. Of all the assessed freshwater species, 20% (131 taxa) are classified as threatened (CR, CR(PE), EN and VU) with extinction, when accounting for other taxa of conservation concern (ToCC) (threatened species, DD, Rare and NT), these include 31% (206) of assessed taxa ([see details on the Red List assessment process here](../integrated-findings/chl_rls_explained.qmd). Further, 32% (201 taxa) of assessed taxa are endemic to South Africa, of which 42% (90 taxa) are threatened with extinction, meaning the responsibility to protect these species and prevent further losses rests solely with South Africa.
 
@@ -235,7 +232,7 @@ df_clean <- readxl::read_excel("./data/overall_status_summary_2025.xlsx", sheet 
                                                        "Endangered", "Vulnerable", "Near Threatened", "Data Deficient",
                                                        "Rare", "Least Concern")),
                    
-                   `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", TRUE ~`Taxonomic grouping`),
+                   `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", `Taxonomic grouping` == "Plants" ~ "Plants*", `Taxonomic grouping` == "Dragonflies & Damselflies" ~ "Dragonflies & damselflies", `Taxonomic grouping` == "Freshwater Fishes" ~ "Freshwater fishes", `Taxonomic grouping` == "Freshwater Crabs" ~ "Freshwater crabs", TRUE ~`Taxonomic grouping`),
                    `Taxonomic grouping` = factor(`Taxonomic grouping`)) %>%
                     
                     filter(`Inland aquatic` == "Y", Status != "Not Evaluated") %>%
@@ -331,11 +328,9 @@ df <- df %>%
       "Rare" = "Rare",
       "RE" = "Regionally Extinct"
     ),
-    `Taxonomic grouping` = case_when(
-      `Taxonomic grouping` == "Plants" ~ "Plants*",
-      TRUE ~ `Taxonomic grouping`
+    `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Plants" ~ "Plants*", `Taxonomic grouping` == "Plants" ~ "Plants*", `Taxonomic grouping` == "Dragonflies & Damselflies" ~ "Dragonflies & damselflies", `Taxonomic grouping` == "Freshwater Fishes" ~ "Freshwater fishes", `Taxonomic grouping` == "Freshwater Crabs" ~ "Freshwater crabs", TRUE ~`Taxonomic grouping`)
     )
-  )
+  
 
 
 # ---- Functions ----
@@ -497,74 +492,63 @@ Note: the sections below (and @fig-1 and @fig-2)) give brief summaries about fre
 
 ### [Fairy shrimps](../species/sp_anostraca.qmd)
 
-South African fairy shrimps (Anostraca) species represent habitat specialists that occupy temporary freshwater habitats. Of the 36 species assessed, 25% (9 species) were found to be threatened with extinction (@fig-1 and @tbl-1). The main driver of threat was habitat loss and degradation due to urban expansion and agricultural activities. These species' habitats are varied and include endorheic (internally drained) wetlands, remnant riverine pools, rock pools, roadside ditches, and even animal wallows. These habitats are not permanent features in the landscape and hence are impacted by activities when they are not inundated. An increase in awareness is needed to protect these highly diverse and dynamic habitats. In recent years, there has been some interest in sampling and identifying these species using both morphology and genetic tools. This has led to the discovery of new species [@Rogers2021], as well as range extensions.
-
-In 2023, the first comprehensive assessment of South African Anostraca was initiated through the [NRF FBIP REFRESH Project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/). This contributes 58% of the [global Anostraca IUCN assessments](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581), making a sizeable contribution to the understanding of the current state of these temporary freshwater habitat indicator species.
-
+South African fairy shrimps (Anostraca) species represent habitat specialists that occupy temporary freshwater habitats.In 2023, the first comprehensive assessment of South African Anostraca was initiated through the [NRF FBIP REFRESH Project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/). This contributes 58% of the [global Anostraca IUCN assessments](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581), making a sizeable contribution to the understanding of the current state of these temporary freshwater habitat indicator species. Of the [36 species assessed](https://www.iucnredlist.org/search?permalink=738fb169-a7d9-4fa5-8874-2f43b795e55e), 25% (9 species) were found to be threatened with extinction (@fig-1 and @tbl-1). The main driver of threat was habitat loss and degradation due to urban expansion and agricultural activities. These species' habitats are varied and include endorheic (internally drained) wetlands, remnant riverine pools, rock pools, roadside ditches, and even animal wallows. These habitats are not permanent features in the landscape and hence are impacted by activities when they are not inundated. An increase in awareness is needed to protect these highly diverse and dynamic habitats. In recent years, there has been some interest in sampling and identifying these species using both morphology and genetic tools. This has led to the discovery of new species [@Rogers2021], as well as range extensions.
 
 ### [Freshwater fishes](../species/sp_fwf.qmd)
 
-South Africa’s freshwater fishes are the second most threatened comprehensively assessed taxonomic group [(see ecosystem threat status)](../integrated-findings/intf_ecosystem.qmd), with 36% (42 taxa) assessed as threatened, and when only considering endemics, 66% (38) are threatened (@fig-1 and @tbl-1). Freshwater fish have not been reassessed since 2018, but field observations and the status of South African rivers and wetlands indicate that pressures have not ceased and continue to mount [(see freshwater ecosystem condition)](../integrated-findings/intf_pressure-condition.qmd)). A breakthrough for this group since the last assessment in 2018 has been an immense investment in the expansion of the taxonomic understanding of many freshwater fishes, through resolving species complexes and describing new species[see box X - **REFRESH** ]. These taxonomic advances are critical to enable Red List assessment updates. Along with taxonomic updates of many species, a large number of field surveys have improved our understanding of active threats and the condition of the habitats of many fishes. 
+South Africa’s freshwater fishes are the second most threatened comprehensively assessed taxonomic group [(see ecosystem threat status)](../integrated-findings/intf_ecosystems.qmd), with 36% (42 taxa) assessed as threatened, and when only considering endemics, 66% (38) are threatened (@fig-1 and @tbl-1). Freshwater fish have not been reassessed since 2018, but field observations and the status of South African rivers and wetlands indicate that pressures have not ceased and continue to mount [(see freshwater ecosystem condition)](../integrated-findings/intf_pressures-condition.qmd)). A breakthrough for this group since the last assessment in 2018 has been an immense investment in the expansion of the taxonomic understanding of many freshwater fishes, through resolving species complexes and describing new species (see [Box 1](#box-1)). These taxonomic advances are critical to enable Red List assessment updates. Along with taxonomic updates of many species, a large number of field surveys have improved our understanding of active threats and the condition of the habitats of many fishes.
 
-
-::: {#box-1 .callout-note .freshwater title="REFRESH, filling the gaps on freshwater species" collapse="true"}
-
-The NRF Foundational Biodiversity Information Programme (FBIP) [RREFRESH project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/) aimed to address knowledge gaps for seven freshwater taxonomic groups, incuding freshwater fishes, mollusca, large branchiopoda (fairy shrimps), freshwater crabs, freshwater fish parasites, amphibians and odonata species. Each group idnetified specific aims, for improving data to inform a better understanding of species delineation, species distributions, habitat condition and identification of pressures. Along with these aims, capacity building, student training and raising awareness of freshwater species were also outcomes that was focused on. More than 40 co-investigators and collaborators have contributed to the project that started in 2021, ending in 2024 as part of the Foundational Biodiversity Information Programme (FBIP). Data produced through this project, as contributed to Red Listing, expansion of DNA barcoding collections, and will be used to establish and update baselines data, for assessing change patterns, river and wetland condition and to inform strategic freshwater management and decision-making.
-
-
-
+::: {#box-1 .callout-note .freshwater title="Box 1. REFRESH: filling knowledge gaps on freshwater species of South Africa" collapse="true"}
+<img src="imgs/refresh_logo.png" alt="box_1_img_3" style="width:30%; float:left; margin-right:15px;"/> The NRF Foundational Biodiversity Information Programme (FBIP) [REFRESH project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/) aimed to address key knowledge gaps for seven freshwater taxonomic groups: freshwater fishes, molluscs, large branchiopods (fairy shrimps), freshwater crabs, freshwater fish parasites, amphibians, and odonates (dragonflies and damselflies). Each group defined specific objectives to improve data on species delimitation, distribution, habitat condition, and key pressures. Capacity building, student training, and raising awareness of freshwater biodiversity were also core outcomes of the project. More than 40 co-investigators and collaborators contributed to the project, which ran from 2021 to 2025, implemented by SANBI and SAIAB. Data generated through the project have contributed to Red List assessments, expanded DNA barcoding collections, and will be used to establish and update baseline datasets for detecting change, assessing river and wetland condition, and informing strategic freshwater management and decision-making.
 :::
-
 
 Major pressures that have persisted for freshwater fishes and their habitat are competition with invasive alien fish and degradation of their freshwater habitat through water abstraction, pollution, and inappropriate sedimentation. Many emerging pressures have been identified through recent surveys, but their impacts on freshwater fishes will be interpreted and accounted for within the next update of the Red List of South African freshwater fishes. Of particular concern is illegal mining activity in the north-eastern regions of the country within river systems hosting highly threatened and restricted fishes (e.g. [*Enteromius treurensis*](https://www.iucnredlist.org/species/2572/100159826)) see [Box 2](#box-2).
 
-The current list of freshwater fishes excludes migratory fishes such as the eel species present in South African freshwater and marine realms, thus representing a knowledge gap. Further work is required to enable comprehensive reporting on the state of migratory fish species. 
-
+The current list of freshwater fishes excludes migratory fishes such as the eel species present in South African freshwater and marine realms, thus representing a knowledge gap. Further work is required to enable comprehensive reporting on the state of migratory fish species.
 
 :::: {#box-2 .callout-note .freshwater title="Box 2. New active pressures in river systems that are impacting highly threatened species" collapse="true"}
-
 Unregulated or illigal gold mining (commonly referred to as zama-zama activities in South Africa) presents an escalating threat to the Blyde, Sabi and lower Crocodile River tributaries in the Mpumalanga Province. Expansion of these activities is currently occurring with limited law enforcement or coordinated institutional response. Impacts include physical disturbance of riverbeds and banks, and the use of mercury and cyanide for gold extraction, with consequent cumulative risks to aquatic biota.
 
 The Blyde River population of [*Enteromius treurensis*](https://www.iucnredlist.org/species/2572/100159826) (CR) is of particular concern. Habitat degradation in this system has intensified to the extent that **extinction of this taxon in the near future is plausible** if current pressures persist. The scale and nature of impacts indicate that an effective response will require coordinated, cross-sectoral intervention across relevant government departments.
 
-::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-![](./imgs/sp_fw_2.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin:0;"}
+![](./imgs/sp_fw_2.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin: 0;"}
+
 <figcaption>Map illustrating a section of the river impacted by unregulated informal mining activities along the Blyde River, Mpumalanga Province. (© Francios Roux)</figcaption>
 
-![](./imgs/sp_fw_3.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
-<figcaption>The upper Blyde River near Pilgrim’s Rest, illustrating habitat impacts by informal and unregulated gold mining activities. (© Francios Roux)</figcaption>
+![](./imgs/sp_fw_3.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin: 0;"}
 
+<figcaption>The upper Blyde River near Pilgrim’s Rest, illustrating habitat impacts by informal and unregulated gold mining activities. (© Francios Roux)</figcaption>
 :::
 ::::
 
 ### [Birds](../species/sp_birds.qmd)
 
-There are 166 birds associated with freshwater ecosystems (waterbirds), and of these, 133 have been assessed using the IUCN Regional Red List. Of these waterbirds, 14% (19 species) of the species are threatened with extinction and 28% (37 species) are taxa of conservation concern (TOCC) (threatened species, DD, Rare and NT) (@fig-1 and @tbl-1). Since the 2015 Red List assessment, there has been a sharp decline in the status of many waterbird species, with many species recently being uplisted from Least Concern to an IUCN threat category (see [Box 3](#box-3)). Of the thirty-nine bird species that have been uplisted to a higher threat category, nineteen are waterbirds (48% of uplisted birds are water birds). 
+There are 166 birds associated with freshwater ecosystems (waterbirds), and of these, 133 have been assessed using the IUCN Regional Red List. Of these waterbirds, 14% (19 species) of the species are threatened with extinction and 28% (37 species) are taxa of conservation concern (TOCC) (threatened species, DD, Rare and NT) (@fig-1 and @tbl-1). Since the 2015 Red List assessment, there has been a sharp decline in the status of many waterbird species, with many species recently being uplisted from Least Concern to an IUCN threat category (see [Box 3](#box-3)). Of the thirty-nine bird species that have been uplisted to a higher threat category, nineteen are waterbirds (48% of uplisted birds are water birds).
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
-![](./imgs/fw_img_7.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+![](./imgs/fw_img_7.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
-
-<figcaption> The [greater flamingo](https://www.birdlife.org.za/red-list/greater-flamingo/) (*Phoenicopterus roseus*) is assesses as Near-Threatened in South Africa, an iconic wetland species, while recent CWAC data indicate population declines within the assessment region. (© Martin Taylor, AvesAfrica)</figcaption>
+<figcaption>The [greater flamingo](https://www.birdlife.org.za/red-list/greater-flamingo/) (*Phoenicopterus roseus*) is assesses as Near-Threatened in South Africa, an iconic wetland species, recent CWAC data indicate population declines within the assessment region. (© Martin Taylor, AvesAfrica)</figcaption>
 
 </figure>
 :::
-<br>
-An few examples is the [African darter](https://www.birdlife.org.za/red-list/african-darter/) (*Anhinga rufa*) which has experienced a significant decline in its habitat availability through habitat loss (e.g. wetland drainage), impacts on breeding sites and environmental pollution (e.g. pesticide use and run-off, effluent). The [maccoa duck](https://www.birdlife.org.za/red-list/maccoa-duck/) (*Oxyura maccoa*), has been uplisted from Near Threatened to Vulnerable, due to the impacts of invasive alien species (e.g., water hyacinth (*Eichhornia crassipes*)) in its wetland habitats. The [half-collared kingfisher](https://www.birdlife.org.za/red-list/half-collared-kingfisher/) (VU) (*Alcedo semitorquata*) provides an example of a habitat specialist dependent on fast-flowing, clear, perennial streams and rivers that offer sheltered conditions and dense marginal vegetation. These types of habitats are increasingly threatened by pollution, siltation, and reduced flow due to over-abstraction of water and prolonged drought.   
+
+<br> An few examples is the [African darter](https://www.birdlife.org.za/red-list/african-darter/) (*Anhinga rufa*) which has experienced a significant decline in its habitat availability through habitat loss (e.g. wetland drainage), impacts on breeding sites and environmental pollution (e.g. pesticide use and run-off, effluent). The [maccoa duck](https://www.birdlife.org.za/red-list/maccoa-duck/) (*Oxyura maccoa*), has been uplisted from Near Threatened to Vulnerable, due to the impacts of invasive alien species (e.g., water hyacinth (*Eichhornia crassipes*)) in its wetland habitats. The [half-collared kingfisher](https://www.birdlife.org.za/red-list/half-collared-kingfisher/) (VU) (*Alcedo semitorquata*) provides an example of a habitat specialist dependent on fast-flowing, clear, perennial streams and rivers that offer sheltered conditions and dense marginal vegetation. These types of habitats are increasingly threatened by pollution, siltation, and reduced flow due to over-abstraction of water and prolonged drought.
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
-![](./imgs/fw_img_8.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+![](./imgs/fw_img_8.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
-<figcaption> [Yellow-billed stork](https://www.birdlife.org.za/red-list/yellow-billed-stork/) (*Phoenicopterus roseus*), is globally Least Concern, but in South Africa it is assessed as Vulnerable due to loss of habitat in wetlands, on which it depends for foraging. (© Martin Taylor, AvesAfrica)</figcaption>
+<figcaption>[Yellow-billed stork](https://www.birdlife.org.za/red-list/yellow-billed-stork/) (*Phoenicopterus roseus*), is globally Least Concern, but in South Africa it is assessed as Vulnerable due to loss of habitat in wetlands, on which it depends for foraging. (© Martin Taylor, AvesAfrica)</figcaption>
 
 </figure>
 :::
-<br>
-Besides habitat loss, many of these waterbirds are congregatory in nature, which makes them vulnerable to disease outbreaks. Waterbirds merit increased protection at key protected areas to prevent accelerated rates of decline. Urban freshwater habitats present unique opportunities for citizen-led habitat restoration and monitoring.
+
+<br> Besides habitat loss, many of these waterbirds are congregatory in nature, which makes them vulnerable to disease outbreaks. Waterbirds merit increased protection at key protected areas to prevent accelerated rates of decline. Urban freshwater habitats present unique opportunities for citizen-led habitat restoration and monitoring.
 
 ::: {#box-3 .callout-note .freshwater title="Box 3. Waterbirds are declining in South Africa, based on the most recent Regional assessment for South African birds led by BirdLife South Africa" collapse="true"}
 Waterbirds are integral to the healthy ecological function of wetland and temporary aquatic systems, where they contribute to nutrient cycling, regulate plant and insect populations, and act as sensitive indicators of ecosystem health. Their presence signals functioning temporary habitats such as pans, mudflats, and ephemeral wetlands that support a wide range of biodiversity. Because many waterbirds depend on shallow, short-lived waterbodies, any change in hydroperiod, water quality, or habitat structure quickly affects their survival, breeding and migration.
@@ -573,11 +557,10 @@ Recent monitoring through the [Coordinated Waterbird Count](https://cwac.birdmap
 
 Human pressures are amplifying these trends. Wetlands are drained for agriculture and development, polluted by runoff and waste, disturbed by recreation, and invaded by alien plants that choke natural systems. In general, dams and diversions reduce river flow, while farm dams in particular provide poor-quality substitutes with depleted food webs. These combined pressures threaten species entirely dependent on intact wetlands. Conservation frameworks such as the Ramsar Convention — supported by monitoring efforts like CWAC — are critical to protecting temporary wetland systems, sustaining waterbird populations, and maintaining the broader ecological functions they underpin.
 
-Monitoring waterbirds is vital to see how they are navigating these types of change. You can get involved by joining citizen-science monitoring programmes like CWAC to track changes and inform conservation actions. Visit [cwac.birdmap.africa](cwac.birdmap.africa) or enquire at your local bird club to find out more. 
-
+Monitoring waterbirds is vital to see how they are navigating these types of change. You can get involved by joining citizen-science monitoring programmes like CWAC to track changes and inform conservation actions. Visit [cwac.birdmap.africa](cwac.birdmap.africa) or enquire at your local bird club to find out more.
 :::
 
-### [Reptiles](../species/reptiles.qmd)
+### [Reptiles](../species/sp_reptiles.qmd)
 
 Of the 407 reptile species indigenous to South Africa, 15 species are dependent on freshwater habitats. Four of the 15 species (20%) are taxa of conservation concern (ToCC), three of these are assessed as Vulnerable, and one is assessed as Data Deficient (@fig-1 and @tbl-1). The major pressures on these ToCC are natural system modification and pollution, which are impacting all threatened species, followed by 66% of ToCC impacted by agricultural and mining activities, causing habitat degradation (@fig-3). Climate change and its associated effects on weather patterns and temperature have been identified as a current or potential future threat to some threatened reptile species. However, more monitoring is required to fully understand these impacts in South Africa. Increase in intensity of fires and a change in the timing of seasonal burns may affect these species during their hibernation period. While no freshwater-associated species have experienced a change in their IUCN Red List status, resulting in the RLI remaining stable, there has still been a continuation and exacerbation of pressures within these species' habitats.
 
@@ -589,9 +572,9 @@ Alien freshwater crayfish have been widely introduced worldwide for aquaculture 
 Evidence indicates that *Cherax quadricarinatus* and *Procambarus clarkii* have established populations across several river systems. Containment has been proposed as the primary management strategy. *Procambarus clarkii* is not listed under the A&IS Regulations; it was previously listed as a prohibited species but was removed from the regulations in 2021, creating legal uncertainty that may have facilitated its spread. Anecdotal evidence suggests that five other crayfish species (*Faxonius limosus*, *F. rusticus*, *Pontastacus leptodactylus*, *Pacifastacus leniusculus*) listed under the A&IS Regulations are also present in South Africa, likely due to the pet trade- a significant invasion pathway that is difficult to manage. Several other crayfish species that have a global invasion history (*Faxonius immunis*, *F. juvenilis*, *F. virilis*, *Procambarus acutus* and *P. virginalis*) are not yet present in South Africa, highlighting a substantial invasion debt. Management options should prioritise preventing further introductions.
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
-<img src="./imgs/sp_fw_4.png" style="width:60%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
+<img src="./imgs/sp_fw_4.png" style="width:100%; object-fit: cover; border-radius:10px; margin: 0"/>
 
 <figcaption>Red-swamp crayfish (*Procambarus clarkia*), was a candidate for eradication in 2018, when it was first reported as part of the NBA 2018. However, in 2018 it was only known from the two localised sites in Mpumalanga and Free State, now it has been detected in the Western Cape province in 2025. (© Leon Barkhuizen)</figcaption>
 
@@ -601,29 +584,26 @@ Evidence indicates that *Cherax quadricarinatus* and *Procambarus clarkii* have 
 
 ### [Amphibians](../species/sp_amphibians.qmd)
 
-A total of 135 amphibian species occur in South Africa. These include a few recently described species; of these, 117 species are dependent on freshwater ecosystems for survival and successful reproduction. Twenty-one percent of the 117 taxa (25 taxa) are threatened with extinction, and an additional 9% (11 taxa) are ToCC (1 DD and 10 NT). Almost ~50% (63 taxa) of freshwater-dependent amphibians are endemic to South Africa, of which 36% (23 taxa) are threatened with extinction and 16% (10 taxa) are additional ToCC (@fig-1 and @tbl-1). The most important pressure driving species threat status for amphibians is the impacts of invasive alien species, including infectious diseases and invasive alien trees. Invasive alien trees impact water storage reservoirs and interrupt stream-flow consistency. 
+A total of 135 amphibian species occur in South Africa. These include a few recently described species; of these, 117 species are dependent on freshwater ecosystems for survival and successful reproduction. Twenty-one percent of the 117 taxa (25 taxa) are threatened with extinction, and an additional 9% (11 taxa) are ToCC (1 DD and 10 NT). Almost \~50% (63 taxa) of freshwater-dependent amphibians are endemic to South Africa, of which 36% (23 taxa) are threatened with extinction and 16% (10 taxa) are additional ToCC (@fig-1 and @tbl-1). The most important pressure driving species threat status for amphibians is the impacts of invasive alien species, including infectious diseases and invasive alien trees. Invasive alien trees impact water storage reservoirs and interrupt stream-flow consistency.
 
 Amphibians have shown a genuine change in Red List status between the assessment period 2017 to 2025 for only two species, and one of these is dependent on freshwater habitats (@fig-2). Phofung river frog (*Amietia hymenopus*) restricted to the high altitude areas of the Drakensberg in Lesotho and northern KwaZulu-Natal, has been uplisted from Near Threatened to Vulnerable, due to deterioration in habitat quality, especially in Lesotho and areas bordering South Africa, where mines and proposed mines have had an observable increase in impact (both directly and indirectly) on this species. The species is also projected to be impacted by increased aridification across its range due to climate change, and overgrazing and water quality issues that have intensified since the last assessment. Recognized as a major global threat, climate change is increasingly driving amphibian declines in South Africa, affecting nearly half of threatened species, though its impacts remain hard to measure (@fig-3).
 
-
 ### [Mammals](../species/sp_mammals.qmd)
 
-At least 336 mammal species occur in South Africa, and their IUCN Red List status was assessed in 2025. At least 21 of the 336 taxa assessed make extensive use and are dependent on freshwater habitats. Of these 21 species, 33% (7 taxa) are threatened (i.e., CR, EN, or VU) and 19% (4 taxa) Near Threatened (@fig-1 and @tbl-1). Only eight species are endemic and four of these are Vulnerable. Since 2004, the RLI has declined sharply for freshwater mammals, with this downward trend continuing from 2015 into 2025. In contrast, terrestrial mammals have experienced a much slower rate of decline over the same period [*see terrestrial species summary*](../species/ter_sp.qdm). Of the 21 taxa dependent on freshwater systems, two species (Laminate Vlei Rat (*Otomys laminatus*  (NT to VU) and the Cape shaggy rat (*Dasymys capensis*) (NT to VU)) have increased in their threat status, and this has largely been due to a reduction in wetland habitat, causing species population reduction (@fig-2). There has been no improvement in species status, as has been observed for other mammals in the terrestrial realm. This supports the call for more conservation efforts focused on restoring and maintaining river and wetland habitats.
-
+At least 336 mammal species occur in South Africa, and their IUCN Red List status was assessed in 2025. At least 21 of the 336 taxa assessed make extensive use and are dependent on freshwater habitats. Of these 21 species, 33% (7 taxa) are threatened (i.e., CR, EN, or VU) and 19% (4 taxa) Near Threatened (@fig-1 and @tbl-1). Only eight species are endemic and four of these are Vulnerable. Since 2004, the RLI has declined sharply for freshwater mammals, with this downward trend continuing from 2015 into 2025. In contrast, terrestrial mammals have experienced a much slower rate of decline over the same period [*see terrestrial species summary*](../species/ter_sp.qdm). Of the 21 taxa dependent on freshwater systems, two species (Laminate Vlei Rat (*Otomys laminatus* (NT to VU) and the Cape shaggy rat (*Dasymys capensis*) (NT to VU)) have increased in their threat status, and this has largely been due to a reduction in wetland habitat, causing species population reduction (@fig-2). There has been no improvement in species status, as has been observed for other mammals in the terrestrial realm. This supports the call for more conservation efforts focused on restoring and maintaining river and wetland habitats.
 
 ### [Plants](../species/sp_plants.qmd)
 
-Aquatic (freshwater) plant species were not reassessed during the 2025 NBA, and only a small sample of 27 species is included in the freshwater summary statistics that have been extracted from the 900 representative sample of plant species for South Africa (@fig-1, @tbl-1). For a more detailed analysis of the status of freshwater plants, see NBA 2019 Freshwater techinal report [@VanDerColff2019]. 
+Aquatic (freshwater) plant species were not reassessed during the 2025 NBA, and only a small sample of 27 species is included in the freshwater summary statistics that have been extracted from the 900 representative sample of plant species for South Africa (@fig-1, @tbl-1). For a more detailed analysis of the status of freshwater plants, see NBA 2019 Freshwater techinal report [@VanDerColff2019].
 
-Invasion of wetlands by alien invasive plants is the most important pressure to aquatic plants based on both the current analysis as well as the previous analysis using a 100-sample of aquatic plant species (@fig-4). Of the 27 plants classified as aquatic in the current assessment, 66% of ToCC are directly impacted due to competition for space and resources from invasive alien species. 
-
+Invasion of wetlands by alien invasive plants is the most important pressure to aquatic plants based on both the current analysis as well as the previous analysis using a 100-sample of aquatic plant species (@fig-4). Of the 27 plants classified as aquatic in the current assessment, 66% of ToCC are directly impacted due to competition for space and resources from invasive alien species.
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
-![](./imgs/sp_fw_9.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
+![](./imgs/sp_fw_9.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
-<figcaption> [Oxalis dines](https://redlist.sanbi.org/species.php?species=1794-91) (VU), a species restricted to Cape vernal pools and other similar temporarily inundated habitats, provides an example of impacts in temporary systems, where ongoing habitat degradation due to crop cultivation and trampling by livestock continues, resulting in degradation of its habitat. It is also susceptible to severe drought conditions, and these events exacerbate the impacts of other pressures. (© Ismail Ebrahim)</figcaption>
+<figcaption>[Oxalis dines](https://redlist.sanbi.org/species.php?species=1794-91) (VU), a species restricted to Cape vernal pools and other similar temporarily inundated habitats, provides an example of impacts in temporary systems, where ongoing habitat degradation due to crop cultivation and trampling by livestock continues, resulting in degradation of its habitat. It is also susceptible to severe drought conditions, and these events exacerbate the impacts of other pressures. (© Ismail Ebrahim)</figcaption>
 
 </figure>
 :::
@@ -632,33 +612,38 @@ Invasion of wetlands by alien invasive plants is the most important pressure to 
 
 ### [Dragonflies and damselflies (Odonata)](../species/sp_dragons.qmd)
 
-Odonata (dragonflies and damselflies) species are excellent indicators of freshwater habitat condition and serve as umbrella species for other aquatic macro-invertebrates [@Samways2016]. There are 162 species known to occur in South Africa, with a fifth of these species endemic to the country (@fig-1 and @tbl-1). This group has been assessed multiple times globally and nationally and was included in the NBA for the first time in 2018 and the results presented are from that assessment [@VanDerColff2019], as the group has not been updated since. 
+Odonata (dragonflies and damselflies) species are excellent indicators of freshwater habitat condition and serve as umbrella species for other aquatic macro-invertebrates [@Samways2016]. There are 162 species known to occur in South Africa, with a fifth of these species endemic to the country (@fig-1 and @tbl-1). This group has been assessed multiple times globally and nationally and was included in the NBA for the first time in 2018 and the results presented are from that assessment [@VanDerColff2019], as the group has not been updated since.
 
 Most of the Odonata species have been assessed as Least Concern (79%), as they have wide distribution ranges. They have also shown little change in their Red List status over the previous assessment period, as measured using the RLI (@fig-2). Some taxa are range restricted, and 33 taxa (20%) are ToCC (@fig-1 and @tbl-1). The main pressure faced by dragonflies is the shading out of their habitat (affecting 15 taxa) by invasive alien trees; they are also threatened by habitat modification due to livestock farming (affecting 14 taxa) and non-timber crop cultivation (affecting 11 taxa) (@fig-3). Some reprieve for the 15 taxa facing impact from invasive alien trees has come from highly effective invasive tree eradication programmes, with some remarkable success stories of re-colonization of habitats following the removal of these trees. Two species ([*Chlorocypha consueta*](https://speciesstatus.sanbi.org/assessment/last-assessment/1788/) and [*Crenigomphus cornutus*](https://speciesstatus.sanbi.org/assessment/last-assessment/1803/)) that were assessed as Critically Endangered Potentially Extinct (CRPE) in 2008 were re-assessed in 2017 as Regionally Extinct (RE). Despite extensive searches, these species have not been recorded since their initial discovery in South Africa in the 1950s and 1960s, respectively. An update on the state of Odonata will be provided in the next assessment due in 2027.
 
-
-
 ### [Freshwater crabs](../species/sp_fwfcrabs.qmd)
 
-Freshwater crabs, represented by two genera in South Africa (*Potamonuates* (23 taxa) and *Maritimonautes* (1 species)) have been included in the NBA for the first time to improve representation of freshwater invertebrates. This group was first assessed in 2008 as part of the Regional Southern African Freshwater IUCN Red List assessment [@Cumberlidge2008].  Since 2008, there has been a proliferation of species descriptions. This group now consists of 29 described species, including five newly recognized species that have been described since 2023 [@Mengel2024,@Daniels2023]. The most recent assessment was concluded in 2023 and included 24 freshwater crab species that were described pre-2023. Freshwater crabs, unlike other freshwater dependent groups, seem to be less impacted by modified systems, and based on the IUCN Red List assessments, only 3 of the 24 species are assessed as threatened (12% - are Vulnerable), and one species is assessed as Rare. These three species are highly restricted and recently described. It is suspected that they might have a wider distribution; however, based on current knowledge of their distributions, they have been listed as Vulnerable. Their habitats, mostly fragmented forests, are impacted by habitat disturbance and possibly loss due to impacts on the forest margin and trampling by livestock [*Potamonautes ntendekaensis*](https://www.iucnredlist.org/species/176992896/178424200) (VU) , [*Potamonautes ngoyensis*](https://www.iucnredlist.org/species/176993126/178424205) (VU), [*Potamonautes mhlophe*](https://www.iucnredlist.org/species/176993210/178424210) (VU).
+Freshwater crabs, represented by two genera in South Africa (*Potamonuates* (23 taxa) and *Maritimonautes* (1 species)) have been included in the NBA for the first time to improve representation of freshwater invertebrates. This group was first assessed in 2008 as part of the Regional Southern African Freshwater IUCN Red List assessment [@Cumberlidge2008]. Since 2008, there has been a proliferation of species descriptions. This group now consists of 29 described species, including five newly recognized species that have been described since 2023 [@Mengel2024,@Daniels2023]. The most recent assessment was concluded in 2023 and included 24 freshwater crab species that were described pre-2023. Freshwater crabs, unlike other freshwater dependent groups, seem to be less impacted by modified systems, and based on the IUCN Red List assessments, only 3 of the 24 species are assessed as threatened (12% - are Vulnerable), and one species is assessed as Rare. These three species are highly restricted and recently described. It is suspected that they might have a wider distribution; however, based on current knowledge of their distributions, they have been listed as Vulnerable. Their habitats, mostly fragmented forests, are impacted by habitat disturbance and possibly loss due to impacts on the forest margin and trampling by livestock [*Potamonautes ntendekaensis*](https://www.iucnredlist.org/species/176992896/178424200) (VU) , [*Potamonautes ngoyensis*](https://www.iucnredlist.org/species/176993126/178424205) (VU), [*Potamonautes mhlophe*](https://www.iucnredlist.org/species/176993210/178424210) (VU).
 
 Further monitoring is needed to understand the impacts on these species, but it is suspected that they are experiencing some level of habitat disturbance that might cause declines. Apart from these species, most freshwater crabs have been assessed as Least Concern (83%, 20 species) and found to be highly resilient and have persisted in modified river systems and impacted wetlands. There is, however, no monitoring of this group, and long-term trends are not currently available. Monitoring is needed to confirm whether these species have high tolerance for changing and impacted habitats or whether there is a lack of detection of impacts. At present, freshwater crabs and Odonata are the only freshwater groups with low proportions of threatened species. Interestingly, both groups can utilise terrestrial systems if needed, likely increasing their tolerance to disturbances within the freshwater system.
-
 
 ## Trends - the Red List Index
 
 The trend in freshwater species status over time was measured using the globally recognized indicator, the IUCN Red List Index of species (RLIs) [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in taxa assignments to Red List categories over time. The RLIs value ranges from 0 to 1, where the lower the value the faster the taxonomic group is heading towards extinction – i.e. if the value is 1, all taxa are Least Concern and if the value is 0, all taxa are assessed as Extinct.
-
 
 ```{r}
 #| label: fig-2
 #| fig-cap: "The Red List Index (RLI) for freshwater species, including birds, mammals, reptiles, freshwater fishes, freshwater crabs, Anostraca (fairly shrimps), dragonflies and damselflies, and amphibians assessed in South Africa. The slope of the line indicates the rate at which species are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)." 
 #| fig-width: 6
 #| fig-align: center
+#| out-width: 100%
+
+
+mycols <- c("Amphibians"="#17becf", 
+"Anostraca"="#a6cee3", 
+"Birds"="#ffcc66",
+"Dragonflies & damselflies"="#7570b3",
+"Freshwater crabs"="#66cc99", "Freshwater fishes"="#e7298a", "Mammals"="#B15928",
+"Plants*"="#66a61e", "Reptiles"="#fb9a99")
 
 RLI <- readxl::read_excel("./data/nba_example_RLI_data_trim_freshwater.xlsx")
       
-nbaR::nba_index_plot(TYPE = "RLIs",
+p <- nbaR::nba_index_plot(TYPE = "RLIs",
                      DF = RLI,
                      YEAR = Year,
                      RLI = RLI,
@@ -668,17 +653,12 @@ nbaR::nba_index_plot(TYPE = "RLIs",
                      AGGREGATE = TRUE,
                      SAVE = NULL)
 
+p+scale_color_manual(values=mycols)
 ```
 
 The taxonomic group at highest risk of extinction is the freshwater fishes. Steep declines were recorded between 2007 and 2016. While only due for reassessment in 2026, the [**declining status of rivers**](../freshwater/fw_wet_pressures.qmd) and dwindling resources available for management actions where many of these species are concentrated (Western Cape, Eastern Cape, and KwaZulu-Natal) likely means that they will continue on a declining trajectory. Anostraca currently only has a single RLI point and it is below the national average, just second to freshwater fishes, and just below freshwater mammals. This indicates that this group has a high proportion of species that are assessed as threatened. Of the 20 freshwater-associated mammals that occur in South Africa, two have become more threatened since their last assessment in 2016. Amphibians and reptiles have had no changes in the status of species between the assessment period, possibly indicating some stabilisation; however, based on their recent assessments, many species are experiencing continued pressures, but not to the point of triggering an uplisting. Between the two assessment periods for Odonata (dragonflies and damselflies), this group had four deteriorations in status – species becoming more threatened due to habitat loss and degradation, and two improvements due to effective invasive alien plant species control [@VanDerColff2019]. Due to improvements and deterioration of species threat status, the group’s RLI score is above the national average for freshwater species (@fig-2).
 
-After freshwater fishes, in the most recent assessment period, freshwater birds (water birds) have the steepest negative trend. Nineteen birds have been assessed at a higher threat status due to a genuine increase in their risk of extinction, and two species have been downlisted ([wattled crane](https://www.birdlife.org.za/red-list/wattled-crane/) (*Grus carunculata*) and the [southern bald ibis](https://www.birdlife.org.za/red-list/southern-bald-ibis/) (*Geronticus calvus*). The major drivers for increased threat are linked to climate change, through prolonged drought and shifts in rainfall and temperatures ([see box 4](#box-4)). While conservation efforts has resulted in improvements for these two species. Freshwater crabs have been assessed twice and are included here for the first time. This group has remained stable, due to their ability to persist in modified habitats. Freshwater plants are excluded from this trend analysis, as a sufficiently large representative sample is not currently available. 
-
-
-
-
-
-
+After freshwater fishes, in the most recent assessment period, freshwater birds (water birds) have the steepest negative trend. Nineteen birds have been assessed at a higher threat status due to a genuine increase in their risk of extinction, and two species have been downlisted ([wattled crane](https://www.birdlife.org.za/red-list/wattled-crane/) (*Grus carunculata*) and the [southern bald ibis](https://www.birdlife.org.za/red-list/southern-bald-ibis/) (*Geronticus calvus*). The major drivers for increased threat are linked to climate change, through prolonged drought and shifts in rainfall and temperatures ([see box 4](#box-4)). While conservation efforts has resulted in improvements for these two species. Freshwater crabs have been assessed twice and are included here for the first time. This group has remained stable, due to their ability to persist in modified habitats. Freshwater plants are excluded from this trend analysis, as a sufficiently large representative sample is not currently available.
 
 ```{r}
 #| label: fig-3
@@ -692,7 +672,7 @@ knitr::include_graphics("./imgs/Inland_Aquatic_Maj.png")
 
 ## Protection Level
 
-The 2018 NBA assessment [@VanDerColff2019] found that most freshwater species, except freshwater fishes, were relatively well protected, while freshwater fishes were poorly protected. The current analysis shows the same pattern. Because freshwater systems are linear and many threats, such as pollution, invasive species, and water abstraction, originate upstream and outside protected areas, these pressures cannot be effectively mitigated within protected area boundaries. Protected areas are also mainly managed for terrestrial biodiversity, further limiting freshwater protection. 
+The 2018 NBA assessment [@VanDerColff2019] found that most freshwater species, except freshwater fishes, were relatively well protected, while freshwater fishes were poorly protected. The current analysis shows the same pattern. Because freshwater systems are linear and many threats, such as pollution, invasive species, and water abstraction, originate upstream and outside protected areas, these pressures cannot be effectively mitigated within protected area boundaries. Protected areas are also mainly managed for terrestrial biodiversity, further limiting freshwater protection.
 
 ```{r}
 #| label: fig-4
@@ -717,7 +697,7 @@ PLoverall_df <- PL_clean %>%
                 tidyr::pivot_wider(names_from = `Protection level status`,
                                    values_from = count,
                                    values_fill = 0) %>%
-                mutate(across(all_of(numeric_cols), as.numeric))  
+                mutate(across(all_of(numeric_cols), as.numeric), `Taxonomic grouping`= case_when(`Taxonomic grouping`== "Freshwater Fishes" ~ "Freshwater fishes", TRUE ~`Taxonomic grouping`))  
 
 PLendemic_df <- PL_clean %>%
                 group_by(`Taxonomic grouping`, `Protection level status`, Endemism) %>%
@@ -726,7 +706,7 @@ PLendemic_df <- PL_clean %>%
                 tidyr::pivot_wider(names_from = `Protection level status`,
                                    values_from = count,
                                    values_fill = 0) %>%
-                mutate(across(all_of(numeric_cols), as.numeric))
+                mutate(across(all_of(numeric_cols), as.numeric), `Taxonomic grouping`= case_when(`Taxonomic grouping`== "Freshwater Fishes" ~ "Freshwater fishes", TRUE ~`Taxonomic grouping`))
 
 
 indigenous_PL <- nba_plot(DF = PLoverall_df,               
@@ -753,49 +733,43 @@ ggpubr::ggarrange(indigenous_PL, endemic_PL, ncol = 2, labels = c("A", "B"),
                   font.label = list(size = 10), common.legend = TRUE, legend = "bottom")
 ```
 
+Freshwater fish are the most Poorly Protected of South Africa’s freshwater taxonomic groups assessed. Only 26% of freshwater fish taxa included in the analysis were Well Protected (25 taxa), while the majority (74%, 71 taxa) of taxa are under protected (including Not Protected (17 taxa), Poorly Protected (33 taxa) or Moderately Protected (21 taxa)) (@fig-4). Seven freshwater fish are assessed as Critically Endangered and four of these taxa are assessed as Not Protected. These four are the Treur River Barb (*Enteromius treurensis*), Barrydale Redfin (*Pseudobarbus burchelli*), *Pseudobarbus senticeps* and *Galaxias* sp nov ‘slender’, all with very restricted distributions, some limited to a single stretch of a river or a single sub-quaternary catchment. This finding has not changed since 2018 and these species remain highly threatened and not protected. Thirty-three taxa are listed as Poorly Protected, these occur across South Africa, with the majority of the taxa assessed as threatened or Near Threatened (25 taxa).
 
+Other taxonomic groups included in this analysis contrast strongly with freshwater fish, as the majority of species are Well Protected (@fig-4). However, when assessing under-protected species, these include 32 amphibians 18 birds, and 11 mammals. These under-protected species include a number of threatened and Near Threatened species for birds (4 taxa), amphibians (20 taxa), and mammals (7 taxa). Interestingly, all freshwater-dependent reptiles are assessed as Well Protected. Of the four birds assessed as under-protected, the [white-winged flufftail](https://www.birdlife.org.za/red-list/white-winged-flufftail/) (*Sarothrura ayresi*) (EN) was previously assessed as Not Protected (2017) and has now been assessed as Poorly Protected (2025) [@lee2025a]. See [White-winged flufftail project](https://www.birdlife.org.za/white-winged-flufftail/) for further details.
 
-Freshwater fish are the most Poorly Protected of South Africa’s freshwater taxonomic groups assessed. Only 26% of freshwater fish taxa included in the analysis were Well Protected (25 taxa), while the majority (74%, 71 taxa) of taxa are under protected (including Not Protected (17 taxa), Poorly Protected (33 taxa) or Moderately Protected (21 taxa)) (@fig-4). Seven freshwater fish are assessed as Critically Endangered and four of these taxa are assessed as Not Protected. These four are the Treur River Barb (*Enteromius treurensis*), Barrydale Redfin (*Pseudobarbus burchelli*), *Pseudobarbus senticeps* and *Galaxias* sp nov ‘slender’, all with very restricted distributions, some limited to a single stretch of a river or a single sub-quaternary catchment. This finding has not changed since 2018 and these species remain highly threatened and not protected. Thirty-three taxa are listed as Poorly Protected, these occur across South Africa, with the majority of the taxa assessed as threatened or Near Threatened (25 taxa). 
-
-Other taxonomic groups included in this analysis contrast strongly with freshwater fish, as the majority of species are Well Protected (@fig-4). However, when assessing under-protected species, these include 32 amphibians 18 birds, and 11 mammals. These under-protected species include a number of threatened and Near Threatened species for birds (4 taxa), amphibians (20 taxa), and mammals (7 taxa). Interestingly, all freshwater-dependent reptiles are assessed as Well Protected.
-Of the four birds assessed as under-protected, the [white-winged flufftail](https://www.birdlife.org.za/red-list/white-winged-flufftail/) (*Sarothrura ayresi*) (EN) was previously assessed as Not Protected (2017) and has now been assessed as Poorly Protected (2025) [@lee2025a]. See [White-winged flufftail project](https://www.birdlife.org.za/white-winged-flufftail/) for further details.
-
-Of the eleven amphibian species assessed as Not Protected, nine are assessed as threatened. The [Rough moss frog](https://www.iucnredlist.org/species/174664/77162276# ) (*Arthroleptella rugosa*) (CR) and the Amatole toad (*Vandijkophrynus amatolicus*) (EN), remain Not Protected, since its initial assessment in 2017. Many newly described species, have been assessed as Not Protected, as their current known distribution does not overlap with protected areas (see the [amphibian page](../species/sp_amphibians.qmd) for more details). In the case of mammals, four species are assessed as Poorly Protected. Interestingly, the spotted-necked otter (*Hydrictis maculicollis* – VU) and the Southern reedbuck (*Redunca arundinum*) (LC) have widespread distribution within South Africa, but with limited coverage within the protected area network. This reflects the terrestrial bias of the current protected area network, which was not designed to protect rivers. Protected area expansion needs to address this bias.
+Of the eleven amphibian species assessed as Not Protected, nine are assessed as threatened. The [Rough moss frog](https://www.iucnredlist.org/species/174664/77162276#) (*Arthroleptella rugosa*) (CR) and the Amatole toad (*Vandijkophrynus amatolicus*) (EN), remain Not Protected, since its initial assessment in 2017. Many newly described species, have been assessed as Not Protected, as their current known distribution does not overlap with protected areas (see the [amphibian page](../species/sp_amphibians.qmd) for more details). In the case of mammals, four species are assessed as Poorly Protected. Interestingly, the spotted-necked otter (*Hydrictis maculicollis* – VU) and the Southern reedbuck (*Redunca arundinum*) (LC) have widespread distribution within South Africa, but with limited coverage within the protected area network. This reflects the terrestrial bias of the current protected area network, which was not designed to protect rivers. Protected area expansion needs to address this bias.
 
 Recent expansion of the protected area network has improved protection for some species, but many threatened freshwater species—especially freshwater fish—remain under-protected. Improving management within existing protected areas could greatly strengthen conservation outcomes. While protected areas help buffer species from land-use change, stronger management is often needed to meet conservation goals. For freshwater systems in particular, effective conservation requires protection and coordinated management at the whole catchment level, not just within individual protected areas. Further details will be provided in the technical report.
 
 ## Conservation efforts
 
-The Global Biodiversity Framework (GBF) [Target 4](https://www.cbd.int/gbf/targets/4) is a critical commitment, requiring signatories to halt human-induced extinctions and improve species' conservation status by 2030. Achieving this ambitious goal necessitates coordinated efforts among nations to effectively reverse species declines and maintain genetic diversity, particularly within populations of threatened species. South Africa contributes to Target 4, engaging with each taxonomic group and prioritising species for urgent recovery through comprehensive taxonomic Red List assessments. South Africa has initiated a process with each taxonomic group that has comprehensive Red List assessments for their taxonomic groups, to identify and prioritise species in urgent need of recovery to contribute to achieving the GBF Target 4 goals (see [**freshwater fish recovery efforts**](../species/sp_fwf/fresh_recovery)). 
+The Global Biodiversity Framework (GBF) [Target 4](https://www.cbd.int/gbf/targets/4) is a critical commitment, requiring signatories to halt human-induced extinctions and improve species' conservation status by 2030. Achieving this ambitious goal necessitates coordinated efforts among nations to effectively reverse species declines and maintain genetic diversity, particularly within populations of threatened species. South Africa contributes to Target 4, engaging with each taxonomic group and prioritising species for urgent recovery through comprehensive taxonomic Red List assessments. South Africa has initiated a process with each taxonomic group that has comprehensive Red List assessments for their taxonomic groups, to identify and prioritise species in urgent need of recovery to contribute to achieving the GBF Target 4 goals (see [**freshwater fish recovery efforts**](../species/sp_fwf/fresh_recovery)).
 
-
-Addressing and improving freshwater health will take considerable political will and resources. Many national, provincial, and local initiatives are currently active to improve the conservation of freshwater species, and species in general ([see box on FBIS](#box-5)). Several key resources—including the  National Freshwater Ecosystem Priority Areas (NFEPA), the DFFE Screening Tool, and the Freshwater Biodiversity Information System (FBIS)(developed by the FRC) —guide decision-making and prevent impacts on freshwater species. The NFEPA is currently being updated into a national strategic spatial plan to integrate and strengthen planning across government and civil society. 
+Addressing and improving freshwater health will take considerable political will and resources. Many national, provincial, and local initiatives are currently active to improve the conservation of freshwater species, and species in general ([see box on FBIS](#box-5)). Several key resources—including the National Freshwater Ecosystem Priority Areas (NFEPA), the DFFE Screening Tool, and the Freshwater Biodiversity Information System (FBIS)(developed by the FRC) —guide decision-making and prevent impacts on freshwater species. The NFEPA is currently being updated into a national strategic spatial plan to integrate and strengthen planning across government and civil society.
 
 Addressing and improving freshwater health will take considerable political will and resources. Many national, provincial and local initiatives are currently active to improve the conservation of freshwater species, and species in general (See freshwater fish recovery page – add link). For conservation and prevention of future impacts, several tools have been developed and include the National Freshwater Ecosystem Priority Areas (NFEPA) project and the DFFE Screening Tool, as well as the Freshwater Biodiversity Information System (FBIS), developed and led by the Freshwater Research Center ([see box on FBIS](#box-5)). These tools can be used to prevent impacts on species and guide decision-making. They are only some of the many other resources available to influence better decision-making for the protection of freshwater species. The NFEPA is currently being updated, and will be a strategic spatial plan to integrate and strengthen freshwater ecosystem and species-related planning and decision-making across government and civil society.
 
 ::::: {#box-5 .callout-note .freshwater title="Box 5. Rising to South Africa’s freshwater data challenge" collapse="true"}
 In 2018 when the previous National Biodiversity Assessment (NBA) was published, access to freshwater biodiversity data was limited, which made it difficult to undertake data-driven assessments of trends in the country’s freshwater species and ecosystems. In response to the difficulty in accessing high-quality, comprehensive freshwater biodiversity data, the Freshwater Research Centre (FRC) and partners, with funds from the JRS Biodiversity Foundation, initiated a project to develop the Freshwater Biodiversity Information System (FBIS) – a data-rich, online platform for hosting and serving freshwater biodiversity data in South Africa. The purpose of the platform is to overcome barriers to data access by harmonising datasets from many different sources into one user-friendly, open access information system.
 
-
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
 ![](./imgs/fw_img_5.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
 
-<figcaption> The Freshwater Biodiversity Information System (FBIS) map interface showing \>900,000 freshwater biodiversity records available for South Africa. (© FBIS)</figcaption>
+<figcaption>The Freshwater Biodiversity Information System (FBIS) map interface showing \>900,000 freshwater biodiversity records available for South Africa. (© FBIS)</figcaption>
 
 </figure>
 :::
 
 A new platform for freshwater biodiversity data in South Africa Launched in 2020, the FBIS serves as a platform for the inventory and maintenance of data, thereby facilitating the evaluation of long-term change in freshwater biodiversity and ecosystem condition, and guiding future monitoring strategies and management decisions (read the paper). The FBIS complements and links with existing platforms like the Global Biodiversity Information Facility (GBIF) and the IUCN Red List, and provides users with a suite of powerful tools for visualising, analysing and downloading biodiversity (and associated abiotic) data. Because the platform conforms to international biodiversity data standards, including preserving detailed metadata for each record, it is now possible to access large, user-ready freshwater datasets at the click of a button.
 
-
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 100%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 100%;">
 
 ![](./imgs/sp_fw_6.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
 
-<figcaption> Visualising freshwater biodiversity data using spatial layers and querying a subset of the biodiversity data by selecting a custom polygon area (left), and a dashboard showing a breakdown of freshwater fish data from the selected polygon (right).(© FBIS)</figcaption>
+<figcaption>Visualising freshwater biodiversity data using spatial layers and querying a subset of the biodiversity data by selecting a custom polygon area (left), and a dashboard showing a breakdown of freshwater fish data from the selected polygon (right).(© FBIS)</figcaption>
 
 </figure>
 :::
@@ -811,15 +785,13 @@ This improved data access is enabling new insights into species distributions, p
 
 Protecting and managing freshwater habitat is vital for securing water resources and the many remaining undocumented or undescribed freshwater species. Although the 2018 National Biodiversity Assessment (NBA) showed clear fish decline, the true freshwater ecosystem and species crisis was likely underestimated due to insufficient data on freshwater-specific groups. The current assessment has improved this by including fairy shrimps (Anostraca) and freshwater crabs. Anostraca data now clearly reveals severe impacts in ephemeral habitats, contrasting with the relatively less threatened status of the more mobile freshwater crabs.
 
+• In the coming years, there will be a focus on including freshwater Mollusca to expand the freshwater-dependent taxa
 
-•	In the coming years, there will be a focus on including freshwater Mollusca to expand the freshwater-dependent taxa
+• Further, the proposed updating of NFEPA to include other freshwater taxonomic groups will ensure freshwater priority areas are identified that support critical species conservation.
 
-•	Further, the proposed updating of NFEPA to include other freshwater taxonomic groups will ensure freshwater priority areas are identified that support critical species conservation. 
+• The expansion and strengthening of the River Eco-status Monitoring Programme (REMP) is essential; this can be achieved through coordination and collaboration between all partners from the national government, provincial agencies, NGO’s and researchers. Due to a range of constraints, for example, funding limitations, the activities of the REMP have not been as efficient and effective as they could be.
 
-•	The expansion and strengthening of the River Eco-status Monitoring Programme (REMP) is essential; this can be achieved through coordination and collaboration between all partners from the national government, provincial agencies, NGO’s and researchers. Due to a range of constraints, for example, funding limitations, the activities of the REMP have not been as efficient and effective as they could be. 
-
-•	Monitoring of freshwater species is undertaken at the provincial level, yet many conservation agencies have few remaining freshwater ecologists and technicians. In the 2018 inland aquatic NBA technical report (van Devender et al., 2018), a key message was that there was a noticeable decline in skilled staff and budget assigned to monitoring and interventions in freshwater systems. Observations and engagements with expert partners for this NBA suggest that this trend has continued, and **there is a need to quantify the loss in capacity** and to assess the drivers of this loss in capacity, to make sure that monitoring efforts are resumed to serve as early warnings and to inform planning and decision-making.
-
+• Monitoring of freshwater species is undertaken at the provincial level, yet many conservation agencies have few remaining freshwater ecologists and technicians. In the 2018 inland aquatic NBA technical report (van Devender et al., 2018), a key message was that there was a noticeable decline in skilled staff and budget assigned to monitoring and interventions in freshwater systems. Observations and engagements with expert partners for this NBA suggest that this trend has continued, and **there is a need to quantify the loss in capacity** and to assess the drivers of this loss in capacity, to make sure that monitoring efforts are resumed to serve as early warnings and to inform planning and decision-making.
 
 :::: {#box-6 .callout-note .freshwater title="Box 6. Calling all citizen scientists who might have an interest in these freshwater creatures" collapse="true"}
 A range of freshwater related projects can be found on iNaturalist. These projects contributes to species observations and ecosystem information.
@@ -833,9 +805,9 @@ New to iNaturalist (or never heard of it) and want to contribute? Watch these [v
 
 ## Approach {#approach}
 
-### Threat Status Assessment
+### Threat status assessment
 
-See the Red List explainer page for detailes about the assessment. 
+See the Red List explainer page for detailes about the assessment.
 
 In the 2025 assessment of freshwater species, there has been a concerted effort to present a more balanced representation of freshwater species and to include more freshwater invertebrates. Nine freshwater groups are included in this assessment, including, for the first time, Freshwater crabs and Anostraca species. This addresses a gap identified in the previous NBA [@skowno2019a], where only Odonata represented freshwater invertebrates.
 
@@ -918,7 +890,7 @@ gt(df) %>%
   )
 ```
 
-This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses undertaken by **Hilbers et al. (2017)**.
+This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses [@Hilbers2017].
 
 **There are two components included in the protection level assessment:**
 
@@ -938,7 +910,73 @@ Effectiveness ratings were provided by provincial and national conservation agen
 
 ## Acknowledgements
 
-We thank all the many individuals, and specificially, the freshwater taxon experts, who gave up their time to participate in workshops, discussions, and authored and reviewed individual species assessments. BirdLife South Africa who led the regional assessment of South African birds across realms. The Endangered Wildlife Trust is thanked for their leadership of the assessment of South African mammals and amphibians (supported by Anura Africa) across realms. We acknowledge the SANBI and SAIAB led NRF FBIP REFRESH project for supporting red listing of Anostraca. All provincial agencies that have provided data or insights into effectiveness of protected areas across South Africa. We are most humbled by all the members of the IUCN South African Species Specialist Group for their contributions and participation in discussions for species assessments. A special thanks to Anisha Dayaram and Carol Poole for reviewing this page. 
+We thank all the many individuals, and specificially, the freshwater taxon experts, who gave up their time to participate in workshops, discussions, and authored and reviewed individual species assessments. BirdLife South Africa who led the regional assessment of South African birds across realms. The Endangered Wildlife Trust is thanked for their leadership of the assessment of South African mammals and amphibians (supported by Anura Africa) across realms. We acknowledge the SANBI and SAIAB led NRF FBIP REFRESH project for supporting red listing of Anostraca. All provincial agencies that have provided data or insights into effectiveness of protected areas across South Africa. We are most humbled by all the members of the IUCN South African Species Specialist Group for their contributions and participation in discussions for species assessments. 
+
+:::::: grid
+::: {.g-col-lg-4 .g-col-12}
+**Coordinated by:**
+
+------------------------------------------------------------------------
+
+-  [South African National Biodiversity Institute](https://www.sanbi.org/)
+
+-  [ BirdLife South Africa](https://www.birdlife.org.za/)
+
+-  [Endangered Wildlife Trust](https://ewt.org/) 
+
+-  [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
+
+-  [National Research Foundation](https://www.nrf.ac.za/)
+:::
+
+::: {.g-col-lg-4 .g-col-12}
+**Sponsored by:**
+
+------------------------------------------------------------------------
+
+-  [Anura Africa]((https://www.anuraafrica.org/))
+
+-  [NRF FBIP REFRESH project](https://www.nrf.ac.za/)
+:::
+
+::: {.g-col-lg-4 .g-col-12}
+**Supported by:**
+
+------------------------------------------------------------------------
+
+-  Freshwater taxon experts
+
+-  Provincial agencies – data, insights on protected area effectiveness
+
+-  IUCN South African Species Specialist Group members
+:::
+::::::
+
+### Contributors
+```{r}
+#| label: tbl-5
+#| tbl-cap: "List of reviewers."
+#| out-width: 650px
+#| classes: plain
+library(gt)
+library(dplyr)
+
+contributors <- tibble(Contributor = c("Anisha Dayaram", "Carol Poole"),
+                       Affiliation = "South African National Biodiversity Institute")
+
+contributors %>%
+  gt() %>%
+  tab_options(table.font.size = px(13L),
+              table.width = pct(100),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black")
+
+```
+
 
 ## Recommended citation
 

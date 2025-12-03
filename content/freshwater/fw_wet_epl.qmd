@@ -80,8 +80,7 @@ google-scholar: true
 
 *Protected areas play an important role in conserving representative and healthy functioning wetland ecosystems to ensure the continued existence of species and ecosystem types. However, inland wetland types are severely under-represented and under-protected in South Africa, with nearly 80% of wetland ecosystem types categorised as Poorly Protected or Not Protected. Freshwater-associated restoration efforts strategically implemented within protected areas continue to increase their effectiveness. However, achieving national conservation goals requires these efforts be amplified through a comprehensive network of conservation measures across the broader landscape.*
 
-![Effective conservation efforts by multiple partners led to regional downlisting of the wetland-dependent wattled crane from Critically Endangered to Endangered. (© Endangered Wildlife Trust/International Crane Foundation partnership, Damian Walters)](imgs/wcrane.png)
-
+![Effective conservation efforts by multiple partners led to regional downlisting of the wetland-dependent wattled crane from Critically Endangered to Endangered. (© Endangered Wildlife Trust/International Crane Foundation partnership, Damian Walters)](imgs/wcrane.png)
 
 ------------------------------------------------------------------------
 
@@ -116,11 +115,16 @@ google-scholar: true
 
 The proportion of South Africa’s total wetland extent under statutory protection (i.e. in categories[^1] recognised under the Protected Areas Act) at the time of this assessment is 23% (600 000 ha). Taking wetland ecological condition into consideration, approximately 5% of inland wetland ecosystem extent is Well Protected, 6% is Moderately Protected, 69% is Poorly Protected and 20% is Not Protected.
 
-[^1]: List of categories
+[^1]: Includes Forest Nature Reserve, Forest Wilderness Area, Marine Protected Area, Mountain Catchment Area, National Park, Nature Reserve, Protected Environment, Special Nature Reserve, World Heritage Site, as well as the sub-categories associated with each of these sites.
 
 According to wetland type, 8 (10%) of inland wetland ecosystem types are Well Protected, 11 (13%) are Moderately Protected, 41 (50%) are Poorly Protected and 22 (27%) are Not Protected. Well Protected wetland ecosystem types are clustered within the Kruger National Park in eastern Mpumalanga, iSimangaliso Wetland Park World Heritage Site on the Maputaland Coastal Plain in KwaZulu-Natal, and across the Western Cape. Well Protected wetland ecosystem types are clustered within the Kruger National Park in eastern Mpumalanga, iSimangaliso Wetland Park World Heritage Site on the Maputaland Coastal Plain in KwaZulu-Natal, and across the Western Cape.
 
+::: panel-tabset
+## Map
+
 ![Ecosystem protection level for inland wetland ecosystem types. The inset graph shows the number of ecosystem types per protection level category.](imgs/wet_epl_map.png){#fig-epl_wet_map}
+
+## Data
 
 ```{r}
 #| label: tbl-epl
@@ -149,7 +153,7 @@ reactable(
   filterable = TRUE,
   searchable = FALSE,
   pagination = FALSE,
-  height = 600,
+  height = 480,
   defaultColDef = colDef(
     headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
   ),
@@ -159,9 +163,10 @@ reactable(
       backgroundColor = "white",
       border = "1px solid #ccc"
     )),
-  style = list(fontSize = "14px"))
+  style = list(fontSize = "12px"))
 
 ```
+:::
 
 In terms of wetland hydrogeomorphic type, depression wetlands have the highest protection level, with 33% of depression wetland types and 37% of depression wetland extent considered to be Well Protected, while only 11% and 10% respectively of floodplain and seep wetland types are considered Well Protected. No unchannelled valley-bottom wetland types are considered Well Protected.
 
@@ -321,9 +326,11 @@ tbl
 Download the data [here](outputs/wetlands_EPL.csv).
 ::::
 
-Although there has been positive progress in protecting inland wetland ecosystem types, the national protected area network could be strengthened to encompass a wider representation of South Africa’s inland wetlands and to afford protection to those that are Poorly Protected or Not Protected. Seventeen (20%) out of 82 inland wetland types are both highly threatened (i.e. Critically Endangered and Endangered) and under-protected (Not Protected or Poorly Protected). They are widespread, but found predominantly on the Highveld, along the eastern escarpment, in the Cape Fold Mountains and the arid Northern Cape.
+## Intersection of ecosystem threat status and protection levels
 
-![Highly threatened and under-protected inland wetland ecosystems.](imgs/wet_unluckies_map.png){#fig-ets_epl_map}
+Combining the headline indicators provides an additional perspective on the status of wetland ecosystems. Although there has been positive progress in protecting inland wetland ecosystem types, the national protected area network could be strengthened to encompass a wider representation of South Africa’s inland wetlands and to afford protection to those that are Poorly Protected or Not Protected. Seventeen (20%) out of 82 inland wetland types are both highly threatened (i.e. Critically Endangered and Endangered) and under-protected (Not Protected or Poorly Protected). They are widespread, but found predominantly on the Highveld, along the eastern escarpment, in the Cape Fold Mountains and the arid Northern Cape.
+
+![Highly threatened and under-protected inland wetland ecosystem types.](imgs/wet_unluckies_map.png){#fig-ets_epl_map}
 
 ```{r}
 #| label: tbl-unluckies
@@ -366,7 +373,8 @@ nbaR::nba_tbl_comb(DF = unlucky_tbl,
 
 The wetland ecosystem protection level analysis is built on a robust interim wetland ecosystem typology. However, the refinement of the national wetland ecosystem typology was still underway at the time of this assessment. This ongoing process to refine the interim typology into more detailed, validated subtypes is being undertaken in collaboration with multiple research partners. It will soon result in minor adjustments and an updated assessment, which will be widely communicated.
 
-::: {#box-1 .callout-note .freshwater title="Box 1. Primary Catchments and Inland Wetland Ecosystem Protection Level" collapse="true"}
+```{=html}
+<!--# ::: {#box-1 .callout-note .freshwater title="Box 1. Primary Catchments and Inland Wetland Ecosystem Protection Level" collapse="true"}
 South Africa supports 22 primary catchments which are further grouped into six Water Management Areas. These are the Vaal-Orange, Pongola-Umzimkhulu, Mzimvubu-Tsitsikamma, Limpopo-Olifants, Breede-Olifants, and Inkomati-Usuthu. Each WMA is managed by an established or in process Catchment Management Agency responsible for overseeing the allocation, protection, and conservation of water resources in the catchment.
 
 To support the consideration of biodiversity into emerging Catchment Management Strategies and implementation plans, the inland wetland ecosystem threat status headline indicator is presented according to the 22 primary catchments and associated Water Management Area.
@@ -391,14 +399,15 @@ Prepared by Phumla Mayekiso, Jackie Jay and Nancy Job.
 
 Wetlands of International Importance, designated in accordance with the Ramsar Convention on Wetlands, are places of globally significant biodiversity and embody South Africa's commitment to conserve and ensure the wise use of its wetland ecosystems for the benefit of all humanity.
 
-\![Mahanga Pan, April 2021, Makuleke Wetlands Ramsar Site. © SANParks\]
+\![Mahanga Pan, April 2021, Makuleke Wetlands Ramsar Site. © SANParks\]
 
 The total area under the Ramsar Convention in South Africa is approximately 300 000 ha or 0.5% of total wetlands in South Africa. Of the 31 Ramsar Sites in South Africa, 17 sites contain inland wetlands. Although Ramsar sites range widely from one wetland to multiple wetlands, sometimes with a mix of estuary, river, inland wetland and marine aquatic ecosystems all within one designated site, only inland wetlands are calculated per site for the purposes of this report. See here for information on the full suite of South Africa's Ramsar sites.
 
 Figure 4.1. Ramsar sites of South Africa
 
 Ramsar wetland sites are provided a level of protection in that they require management plans and are afforded greater protection through higher water allocations through the National Water Act (Chapter 3). The majority (92%) of Ramsar inland wetlands fall within Protected Areas. They amount to 14 133 ha (x%) of the total of inland wetland wetlands within protected area in South Africa and x% of the extent of all inland wetlands. Approximately 936.6 ha (7.4%) of Ramsar inland wetlands do not overlap with the formal protected area network.
-:::
+::: -->
+```
 
 ## Approach
 
@@ -422,7 +431,7 @@ Changes in ecosystem protection level results since the 2018 assessment reflect 
 
 **Related publications and supporting information**
 
-Convention on Wetlands (2025) Other effective area-based conservation measures (OECMs) for the conservation and wise use of wetlands. Briefing Note 14. Gland, Switzerland: Secretariat of the Convention on Wetlands. DOI: 10.69556/strp.bn14.25.eng
+Convention on Wetlands (2025). Other effective area-based conservation measures (OECMs) for the conservation and wise use of wetlands. Briefing Note 14. Gland, Switzerland: Secretariat of the Convention on Wetlands. DOI: 10.69556/strp.bn14.25.eng
 
 Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 

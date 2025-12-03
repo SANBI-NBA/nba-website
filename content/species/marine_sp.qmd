@@ -144,11 +144,18 @@ author:
     affiliation: 
       - ref: dffe 
   - name:
+      given: Christi  
+      family: Linardich  
+    orcid: 0000-0001-7382-667X 
+    affiliations:
+      - ref: odu  
+  - name:
       given: Maphale S. 
       family: Monyeki 
     orcid: 0000-0002-5083-7461 
     affiliations:
       - ref: sanbi    
+
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
 # Write out institutional names in full
@@ -187,6 +194,10 @@ affiliations:
   - id: upmmri
     number: 11
     name: University of Pretoria
+  - id: odu
+    number: 12
+    name: Old Dominion University
+
 # This date determines the PUBLISHED date in the title block
 date: last-modified
 
@@ -224,7 +235,7 @@ google-scholar: true
 </style>
 ```
 
-*Globally, South Africa is reported to have the third-highest level of marine species endemism, meaning that the country has a critical role to play in international marine species conservation. Several marine species are faring better in the country than elsewhere in the region. However, marine species have among the highest data deficiency across all realms signalling the need to build foundational knowledge and capacity to support assessment for informed management and decision-making. Of the 506 species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/); sharks, rays and chimaeras; corals; seabirds and seabreams are among the most threatened species groups.*
+*Globally, South Africa is reported to have the third-highest level of marine species endemism, meaning that the country has a critical role to play in international marine species conservation. Several marine species are faring better in the country than elsewhere in the region. However, marine species have among the highest data deficiency across all realms signalling the need to build foundational knowledge and capacity to support assessment for informed management and decision-making. Of the 495 species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/); sharks, rays and chimaeras; corals; seabirds and seabreams are among the most threatened species groups.*
 
 ![Jenkins’ whipray (*Pateobatis jenkinsii*) is wide ranging and is globally Endangered. (© Geoff Spiby)](./imgs/sp_marine_img_1.png){fig-align="center"}
 
@@ -235,7 +246,7 @@ google-scholar: true
 <center>
 
 | [36%]{.inline-style-threatened}
-| of 506 taxa assessed are
+| of 495 taxa assessed are
 | [Threatened]{.inline-style-indicator}
 
 | [32%]{.inline-style-depleted}
@@ -248,8 +259,8 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [8%]{.inline-style-data-deficient}
-| of 506 taxa assessed are
+| [7%]{.inline-style-data-deficient}
+| of 495 taxa assessed are
 | [Data Deficient]{.inline-style-indicator}
 
 | [25%]{.inline-style-unknown}
@@ -262,9 +273,9 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-## Threat status
+## Threat status, trends and pressures
 
-A total of 506 marine species have been assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria and are included in the NBA, drawing from a combination of national, regional and global assessments. Of these, approximately 36% of taxa are threatened in 2025, while 18% of 376 assessed species were threatened in 2018. This difference is due to the inclusion of additional species (including all sharks, rays and chimaeras, additional corals and selected marine invertebrates), many of which are threatened. However, the high proportion of threatened taxa is not fully representative of the extinction risks at the realm level because there has been a focus on assessing economically important species and groups known to be at risk (such as corals, sharks, rays and chimaeras, rock lobsters and abalone). The lack of comprehensively assessed marine taxonomic groups leads to an inflated bias of threat results.
+A total of 495 marine species have been assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria and are included in the NBA, drawing from a combination of national, regional and global assessments. Of these, approximately 36% of taxa are threatened in 2025, while 18% of 376 assessed species were threatened in 2018. This difference is due to the inclusion of additional species (including all sharks, rays and chimaeras, additional corals and selected marine invertebrates), many of which are threatened. However, the high proportion of threatened taxa is not fully representative of the extinction risks at the realm level because there has been a focus on assessing economically important species and groups known to be at risk (such as corals, sharks, rays and chimaeras, rock lobsters and abalone). The lack of comprehensively assessed marine taxonomic groups leads to an inflated bias of threat results.
 
 ::: panel-tabset
 ## Figures
@@ -311,7 +322,7 @@ df_clean <- read_excel("./data/overall_status_summary_2025.xlsx",
                                                        "Endangered", "Vulnerable", "Near Threatened", "Data Deficient",
                                                        "Rare", "Least Concern")),
                    
-                   `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Sharks (incl. Rays & Chimaeras)" ~ "Sharks (incl. rays & chimaeras)", `Taxonomic grouping` == "Marine fish" ~ "Marine fishes", `Taxonomic grouping` == "Marine Invertebrates" ~ "Marine invertebrates", TRUE ~`Taxonomic grouping`),
+                   `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Sharks (incl. Rays & Chimaeras)" ~ "Sharks (incl. rays & chimaeras)", `Taxonomic grouping` == "Marine fish" ~ "Marine fishes", `Taxonomic grouping` == "Marine Invertebrates" ~ "Marine invertebrates", `Taxonomic grouping` == "Coastal Invertebrates" ~ "Coastal invertebrates", TRUE ~`Taxonomic grouping`),
                    `Taxonomic grouping` = factor(`Taxonomic grouping`)) %>%
                     
                     filter(Marine == "Y", Status != "Not Evaluated") %>%
@@ -365,7 +376,7 @@ ggpubr::ggarrange(
   overall,
   endemic,
   nrow = 2, # ← stack vertically
-  heights = c(2.5, 1.5),
+  heights = c(2.9, 2),
   labels = c("A", "B"),
   font.label = list(size = 12),
   common.legend = TRUE,
@@ -411,7 +422,7 @@ df <- df %>%
                          "EW" = "Extinct in the Wild",
                          "EX" = "Extinct",
                          "Rare" = "Rare"
-  ))
+  ), `Taxonomic grouping` = case_when(`Taxonomic grouping` == "Sharks (incl. Rays & Chimaeras)" ~ "Sharks (incl. rays & chimaeras)", `Taxonomic grouping` == "Marine fish" ~ "Marine fishes", `Taxonomic grouping` == "Marine Invertebrates" ~ "Marine invertebrates", TRUE ~`Taxonomic grouping`))
 
 
 # ---- Functions ----
@@ -624,7 +635,7 @@ df_wide %>% gt() %>%
 
 In the marine realm, capacity shortfalls, gaps in taxonomic knowledge, and the lack of information on species distribution, life histories and long-term population trends have led to limited assessments with many groups not evaluated for their risk of extinction. Consequently, \~8% of species were assessed as Data Deficient, the highest among the four realms. Limited assessment efforts signal the need to address knowledge gaps and increase capacity for foundational research on marine species (including taxonomy and strengthened distribution data) and comprehensive IUCN Red List assessments for entire taxonomic groups.
 
-A comprehensive assessment of cartilaginous fishes (sharks, rays and chimaeras) was included in NBA 2025 drawing from global and national assessments, with this group emerging as one of the most threatened groups across all realms (41% threatened; [Figure 1A](#fig-1)). Many cartilaginous fishes are long-lived, with slow growth and low reproductive output, and are thus inherently vulnerable to fishing. Many cartilaginous species are also wide-ranging and much of their declines can be attributed to poor fisheries management in other regions. However, 42% of South Africa's endemic sharks, rays and chimaeras are threatened ([Figure 1B](#fig-1)), indicating that the country has an important role in reversing declines of these species. Endemic species at highest risk of extinction include the happy Eddie (*Haploblepharus edwardsi*) and twineye skate (*Raja miraletus*), both assessed as Endangered. Globally and in South Africa, the main threats to sharks are unsustainable fishing as target and bycatch species [@dulvy2021a; @pollom2024b]. In South Africa, cartilaginous fishes are caught as target and bycatch species in industrial fisheries, targeted catch in recreational fisheries, and in bather protection shark nets.
+A comprehensive assessment of cartilaginous fishes (sharks, rays and chimaeras) was included in NBA 2025 drawing from global and national assessments, with this group emerging as one of the most threatened groups across all realms (41% threatened; [Figure 1A](#fig-1)). Many cartilaginous fishes are long-lived, with slow growth and low reproductive output, and are thus inherently vulnerable to fishing. Many cartilaginous species are also wide-ranging and much of their declines can be attributed to poor fisheries management in other regions. However, 42% of South Africa's endemic sharks, rays and chimaeras are threatened ([Figure 1B](#fig-1)), indicating that the country has an important role in reversing declines of these species. Endemic species at highest risk of extinction include the happy Eddie (*Haploblepharus edwardsi*) and twineye skate (*Raja ocellifera*), both assessed as Endangered. Globally and in South Africa, the main threats to sharks are unsustainable fishing as target and bycatch species [@dulvy2021a; @pollom2024a]. In South Africa, cartilaginous fishes are caught as target and bycatch species in industrial fisheries, targeted catch in recreational fisheries, and in bather protection shark nets.
 
 <!-- <center> -->
 
@@ -636,14 +647,34 @@ A comprehensive assessment of cartilaginous fishes (sharks, rays and chimaeras) 
 
 The Red List Index (RLI) [@butchart2004a] for top predators such as sharks, shows deteriorating threat status over time (@fig-2). As apex and meso-predators, sharks perform a range of essential ecological functions in marine food webs, including controlling the populations of their prey, maintaining diversity at lower trophic levels (that include commercially fished species), and maintaining functional coastal and marine ecosystems [@forestry2022a]. Loss of top predators, therefore, has potential knock-on effects on the livelihoods of fisheries-dependent communities and food security.
 
-The decline in shark populations is a global trend, where the main threats to sharks are fisheries (as both target catch and bycatch), habitat loss and degradation, and climate change [@dulvy2014; @dulvy2024a; @pollom2024b]. As most of South Africa’s 191 shark species have ranges that extend well beyond South African waters, some of the decline in the RLI for South Africa’s sharks reflects fishing pressure and other threats beyond South Africa’s jurisdiction. When national adjustments in threat status are taken into account, the South African RLI is marginally higher and the declining trend is marginally less steep than the global RLI for the same set of species. Nevertheless, 6 of South Africa’s 13 endemic sharks are threatened with global extinction, with their future fully dependent on conservation and fisheries management actions in South Africa.
+The decline in shark populations is a global trend, where the main threats to sharks are fisheries (as both target catch and bycatch), habitat loss and degradation, and climate change [@dulvy2014; @dulvy2024a; @pollom2024a]. As most of South Africa’s 191 shark species have ranges that extend well beyond South African waters, some of the decline in the RLI for South Africa’s sharks reflects fishing pressure and other threats beyond South Africa’s jurisdiction. When national adjustments in threat status are taken into account, the South African RLI is marginally higher and the declining trend is marginally less steep than the global RLI for the same set of species. Nevertheless, 6 of South Africa’s 13 endemic sharks are threatened with global extinction, with their future fully dependent on conservation and fisheries management actions in South Africa.
 
 ```{r}
 #| label: fig-2
 #| fig-cap: "The Red List Index (RLI) for marine species assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is to extinction (with 0 representing extinction)." 
 #| out-width: 100%
 #| out-height: "auto"
-knitr::include_graphics("./imgs/sp_marine_fig_2.png")
+
+mycols <- c(
+"Birds"="#ffcc66",
+ "Coral"="#De1234", "Mammals"="#B15928",
+ "Reptiles"="#fb9a99",
+"Sparids"="#666666", "Sharks (incl. rays & chimaeras)"="#6a3d9a")
+  
+RLI <- readxl::read_excel("./data/nba_example_RLI_data_trim_marine.xlsx")
+      
+p <- nbaR::nba_index_plot(TYPE = "RLIs",
+                     DF = RLI,
+                     YEAR = Year,
+                     RLI = RLI,
+                     ASSESSMENT_YEAR = Assessment_Year,
+                     GROUP = Taxon,
+                     PALETTE = "taxon",
+                     AGGREGATE = TRUE,
+                     SAVE = NULL)
+
+p+scale_color_manual(values = mycols)
+
 ```
 
 A total of 10 (24%) of South Africa’s 42 seabreams (sparids) are at risk of extinction with two Critically Endangered, four Endangered and four Vulnerable species [Figure 1A](#fig-1). The dageraad (*Chrysoblephus cristiceps*) and red steenbras (*Petrus rupestris*) are Critically Endangered [@parker2016a; @kerwath2019a], with Endangered taxa including seventy-four (*Polysteganus undulosus*) [@oosthuizen2024a], red stumpnose (*Chrysoblephus gibbiceps*), West Coast and white steenbras (*Lithognathus aureti* and *L. lithognathus*, respectively).
@@ -654,11 +685,11 @@ South African kob species (*Argyrosomus* genus) – including dusky, silver, squ
 
 These sciaenids are inherently vulnerable to exploitation: they are large, relatively slow growing and late maturing, spawn in predictable aggregations, and their juveniles show varying degrees of dependence on estuaries and their critical ecosystem functions (such as food provision and refuge from predators). Their susceptibility to overfishing is worsened by habitat degradation from sedimentation, freshwater flow reduction, pollution, and agricultural runoff. Similar appearances of multiple species complicate identification by fishers in the field, challenging effective species-specific management. Current regulations are inadequate, particularly for the large recreational sector, while climate change and the declining quality and quantity of estuarine habitats pose additional threats ([Box 1](#box-1)).
 
-:::: {#box-1 .callout-note .marine .box title="Box 1. South Africa co-developed a conservation strategy to improve the threat and stock status of kobs [@farthing2025a]. " collapse="true" style="overflow: auto;"}
+::: {#box-1 .callout-note .marine .box title="Box 1. South Africa co-developed a conservation strategy to improve the threat and stock status of kobs [@farthing2025a]. " collapse="true" style="overflow: auto;"}
 <img src="imgs/sp_marine_img_3.png" alt="box_1_img_3" style="width:30%; float:left; margin-right:15px;"/> A collaborative conservation strategy involving government and non-government stakeholders established five key objectives: (1) reform current regulations with public engagement; (2) foster stewardship among users and managers; (3) enhance spatial protection of spawning sites, nurseries, and bycatch hotspots; (4) ensure adequate freshwater flow to estuaries; and (5) address critical research gaps. Each objective includes specific actions, responsible parties, priorities, and timelines.
 
 The strategy invites researchers, fishers, conservationists, and decision-makers to contribute toward the long-term vision of recovering kob populations to sustainable levels in South Africa.
-::::
+:::
 
 Four of South Africa’s six marine reptiles are threatened ([Figure 1A](#fig-1)), with three of five turtles at risk from fisheries bycatch or incidental mortalities. Leatherback turtles (*Dermochelys coriacea*) are regionally Critically Endangered and are a conservation priority. South Africa's only sea snake is Least Concern.
 
@@ -705,7 +736,7 @@ Assessments from a small sample of utilised marine invertebrates in South Africa
 
 <!-- </center> -->
 
-The West Coast rock lobster (*Jasus lalandii*), was globally assessed as Least Concern in 2009 [@cockcroft2011a] as part of international efforts to assess crustaceans. However, a national assessment in 2025 found this species to be Endangered, primarily due to severe population decline, with exploitable biomass falling by 68% over the past three generations (45 years) and current stock levels at only 1.2% of pre-fished levels from 1910. The species faces overwhelming pressure from illegal fishing, which is estimated to remove more than twice as much biomass annually as legal fishing operations. Total allowable catch for the fishery was reduced by 91% from over 5 000 tons in the late 1970s to just 505 tons in 2024/2025, reflecting the resource's dire condition. A small positive trend in the recent stock assessment has led to an increased allocation of 800 tons for the 2025/26 fishing season, however, the resource remains at significantly reduced levels and requires cautious management. Environmental stresses have compounded fishing pressures, including significant reductions in somatic growth rates since the 1990s, mass strandings caused by low oxygen events (with an estimated 2 000 tons lost in the 1997 event), and an eastward distribution shift that has disrupted traditional fishing areas. Climate change effects, including increased frequency of algal blooms and hypoxic conditions, continue to threaten the species through habitat degradation and physiological stress. The species' biological characteristics make it particularly vulnerable to overexploitation, as it is slow-growing with a 15-year generation length and a complex life cycle that includes an extended larval stage. Despite decades of management measures including minimum size limits, seasonal restrictions, and operational management procedures, the combination of heavy illegal fishing pressure and environmental change has pushed this economically important species into crisis [@eggers2024a].
+The West Coast rock lobster (*Jasus lalandii*), was globally assessed as Least Concern in 2009 [@cockcroft2011a] as part of international efforts to assess crustaceans. However, a national assessment in 2025 found this species to be Endangered, primarily due to severe population decline, with exploitable biomass falling by 68% over the past three generations (45 years) and current stock levels at only 1.2% of pre-fished levels from 1910. The species faces overwhelming pressure from illegal fishing, which is estimated to remove more than twice as much biomass annually as legal fishing operations. Total allowable catch for the fishery was reduced by 91% from over 5 000 tonnes in the late 1970s to just 505 tons in 2024/2025, reflecting the resource's dire condition. A small positive trend in the recent stock assessment has led to an increased allocation of 800 tons for the 2025/26 fishing season, however, the resource remains at significantly reduced levels and requires cautious management. Environmental stresses have compounded fishing pressures, including significant reductions in somatic growth rates since the 1990s, mass strandings caused by low oxygen events (with an estimated 2 000 tonnes lost in the 1997 event), and an eastward distribution shift that has disrupted traditional fishing areas. Climate change effects, including increased frequency of algal blooms and hypoxic conditions, continue to threaten the species through habitat degradation and physiological stress. The species' biological characteristics make it particularly vulnerable to overexploitation, as it is slow-growing with a 15-year generation length and a complex life cycle that includes an extended larval stage. Despite decades of management measures including minimum size limits, seasonal restrictions, and operational management procedures, the combination of heavy illegal fishing pressure and environmental change has pushed this economically important species into crisis [@eggers2024a].
 :::
 
 The endemic South Coast rock lobster (*Palinurus gilchristi*) ([Box 5](#box-5)) was assessed as Vulnerable in 2025 due to current overfishing, with historical illegal fishing also a key contributing factor. Abalone and South Coast rock lobster are endemic and their assessments are global, but the West Coast rock lobster assessment is a national assessment. Assessments for other rock lobster species occurring in South Africa are global assessments and all are considered to be Least Concern.
@@ -748,7 +779,7 @@ Improvements in stock assessment methods, particularly for data-sparse species, 
 
 Effective science-based management has supported stock recovery of the carpenter seabream (*Argyrozona argyrozona*) and the roman seabream (*Chrysoblephus laticeps*) in the last two decades [@yemane2023a]. Important resources such as silver kob (*Argyrosomus inodorus*) remain depleted, despite signs of improvement from its previous heavily depleted state; whilst dusky kob (*A. japonicus*), dageraad (*Chrysoblephus cristiceps*) and red steenbras (*Petrus rupestris*) remain heavily depleted and are yet to show significant signs of stock recovery. Importantly, the seventy-four seabream (*Polysteganus undulosus*) is showing the first signals of recovery following a 27-year moratorium imposed on capture of this species (see [sparid page](../species/sp_sparids.qmd)). Recovery of many linefish species has been hampered by their life history characteristics, including slow growth, late maturity, hermaphroditism and residency, which make them vulnerable to exploitation. Whilst the linefish emergency declared in 2000 has supported stock recovery through a reduction in exploitation [@haupt2020a], many linefish remain unassessed or depleted and are sought after in the open-access recreational fishery and the newly recognised small-scale fishery. Recent recommendations focus on more holistic ecosystem-based management for the line fishery [@potts2020a] that recognises the complexities of multiple sectors, species, and interacting socio-economics. Harmonised policy and fisheries governance (across commercial, recreational and small-scale sectors) can enable more equitable sharing of limited linefish resources could aid species recovery and maximise economic and social benefits [@potts2020a].
 
-Large pelagic resources such as southern bluefin tuna (*Thunnus maccoyii*), bigeye tuna (*Thunnus obesus*) and swordfish (*Xiphias gladius*) are depleted. While very few sharks and rays have fisheries stock assessments, many of those assessed still have too little data to assign a stock status and have been listed as unknown. Where data are sufficient, several are in a poor state, with soupfin shark (*Galeorhinus galeus*) being heavily depleted, and shortfin mako shark (*Isurus oxyrinchus*), common smoothhound (*Mustelus mustelus*), dusky shark (*Carcharhinus obscurus*), happy Eddie (*Haploblepharus edwardsii*), yellowspotted skate (*Leucoraja wallacei*) and twineye skate (*Raja miraletus*) assessed as depleted. As apex predators, sharks and rays play an important role in marine food webs. Currently, sharks and rays are targeted in the demersal shark longline fishery and the KwaZulu-Natal bather-protection shark nets, and are caught as bycatch in several fisheries, including the large pelagic longline fishery. Urgent effort is needed to halt the rapid decline in shark and ray resources. Management strategies such as the published National Plan of Action for Sharks II [@unknown-a] and the draft National Shark Biodiversity Plan [@forestry2023a] make recommendations for improved fisheries and biodiversity elements of cartilaginous fishes management. Implementing these recommendations, particularly through a coordinated approach that provides for integrated shark and ray conservation, is needed to secure South Africa’s globally significant shark, ray and chimaera biodiversity (see [shark and ray page](../species/sp_sharks.qmd)).
+Large pelagic resources such as southern bluefin tuna (*Thunnus maccoyii*), bigeye tuna (*Thunnus obesus*) and swordfish (*Xiphias gladius*) are depleted. While very few sharks and rays have fisheries stock assessments, many of those assessed still have too little data to assign a stock status and have been listed as unknown. Where data are sufficient, several are in a poor state, with soupfin shark (*Galeorhinus galeus*) being heavily depleted, and shortfin mako shark (*Isurus oxyrinchus*), common smoothhound (*Mustelus mustelus*), dusky shark (*Carcharhinus obscurus*), happy Eddie (*Haploblepharus edwardsii*), yellowspotted skate (*Leucoraja wallacei*) and twineye skate (*Raja ocellifera*) assessed as depleted. As apex predators, sharks and rays play an important role in marine food webs. Currently, sharks and rays are targeted in the demersal shark longline fishery and the KwaZulu-Natal bather-protection shark nets, and are caught as bycatch in several fisheries, including the large pelagic longline fishery. Urgent effort is needed to halt the rapid decline in shark and ray resources. Management strategies such as the published National Plan of Action for Sharks II [@forestry2022a] and the draft National Shark Biodiversity Plan [@forestry2023a] make recommendations for improved fisheries and biodiversity elements of cartilaginous fishes management. Implementing these recommendations, particularly through a coordinated approach that provides for integrated shark and ray conservation, is needed to secure South Africa’s globally significant shark, ray and chimaera biodiversity (see [shark and ray page](../species/sp_sharks.qmd)).
 
 Traditional fishing resources such as snoek (*Thyrsites atun*) and commercially important resources such as shallow-water hake (*Merluccius capensis*) remain abundant with deep-water hake (*Merluccius paradoxus*) being optimally exploited.
 
@@ -768,7 +799,7 @@ knitr::include_graphics("imgs/sp_marine_fig_4.png")
 
 For the species of the marine realm, we report on species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) in terms of extinction risk and the state of resource species for which stock status is assessed.
 
-South Africa's IUCN Red List assessment work is coordinated by SANBI's Threatened Species Programme but is conducted by groups of species specialists. A total of 506 South African marine species have been assessed using the IUCN Red List criteria through a combination of national, regional and global assessments. Assessments of sharks, rays and chimaeras, sparids, and corals were undertaken by the IUCN species specialist groups, with many species assessed using global assessments. However, 33 species of cartilaginous fishes (sharks, rays and chimaeras) were assessed nationally, meaning that the IUCN criteria were applied to the portions of the populations that occur in South Africa’s water. Adjustments were undertaken for species where we had sufficient data to show that extinction risk trends were different from global trends.
+South Africa's IUCN Red List assessment work is coordinated by SANBI's Threatened Species Programme but is conducted by groups of species specialists. A total of 495 South African marine species have been assessed using the IUCN Red List criteria through a combination of national, regional and global assessments. Assessments of sharks, rays and chimaeras, sparids, and corals were undertaken by the IUCN species specialist groups, with many species assessed using global assessments. However, 33 species of cartilaginous fishes (sharks, rays and chimaeras) were assessed nationally, meaning that the IUCN criteria were applied to the portions of the populations that occur in South Africa’s water. Adjustments were undertaken for species where we had sufficient data to show that extinction risk trends were different from global trends.
 
 The NBA 2025 assessment includes IUCN Red List assessments for kobs conducted as part of South Africa’s kob conservation strategy [@farthing2025a], the first assessments for beach invertebrate fauna, assessments for selected marine invertebrate resource species and compilation of global coral assessments for shallow water coral species that occor in South Africa. Seabirds were regionally assessed by BirdLife South Africa, mammals were regionally assessed by the Endangered Wildlife Trust and reptiles were assessed using a combination of global and regional assessments.
 
@@ -780,7 +811,7 @@ Information about resource stock status is drawn from the Department of Forestry
 
 We thank BirdLife South Africa who led the regional assessment of South African birds across realms and also coordinated the national adjustments for assessments on sharks, rays and chimaeras drawing from global efforts and national expertise. All contributors to the shark, rays and chimaeras assessments are acknowledged (see [Sharks page](../species/sp_sharks.qmd)). Scientists that contributed to sciaenid assessments and the kob conservation strategy are thanked, and the Agulhas Bank Connections Project funded through the African Coelacanth Ecosystem Project is acknowledged. The Endangered Wildlife Trust is thanked for their leadership of the assessment of South African mammals across realms. All the many individuals who gave up their time to participate in workshops, discussions, and author and review individual species assessments are sincerely thanked. We thank all the IUCN global assessment teams, including but not limited to: the IUCN SSC Coral Specialist Group, IUCN Cetacean Specialist Group and Cetacean Red List Authority, the IUCN SSC Snapper, Seabream and Grunt Specialist Group, the IUCN Shark Specialist Group and the IUCN SSC Grouper and Wrasse Specialist Group. We acknowledge the SAEON-led SeaMap project for supporting red listing of marine invertebrate resource species and the development of a strategy to increase Red List assessments of marine invertebrates in South Africa.
 
-### Recommended citation
+## Recommended citation
 
 ```{r}
 #| output: asis

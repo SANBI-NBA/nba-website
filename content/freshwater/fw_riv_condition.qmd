@@ -64,7 +64,7 @@ google-scholar: true
 
 *Rivers are among the most threatened ecosystems in South Africa, with over 60% of their extent in a compromised state. This has placed the vital services they provide and the incredible biodiversity they support at great risk.*
 
-![add text. (© Nancy Job)](imgs/jeremy_12.png)
+![add text. (© Nancy Job)](imgs/jeremy_12.png)
 
 ------------------------------------------------------------------------
 
@@ -308,7 +308,7 @@ Wetlands are complex systems that influenced by multiple biotic and abiotic fact
 
 <!-- :::: -->
 
-## Approach 
+## Approach
 
 Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described xxx MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands xxx those of a national wetland inventory. In addition to being typed according to Ollis et al. 2013, the method also requires xxx wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment, instead of buffers as were used during the previous NBA assessment (Van Deventer et al. 2019).
 

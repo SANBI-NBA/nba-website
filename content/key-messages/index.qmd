@@ -12,15 +12,15 @@ Key messages distill some of the most important findings of NBA 2025 in a way th
 
 The 15 key messages from the NBA 2025 are clustered into three themes (@tbl-km-summary):
 
-## CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people {#kma}
+### CLUSTER A: Cross-realm pressures on South Africa's biodiversity are impacting people {#kma}
 
 This cluster highlights the key pressures on South Africa's biodiversity across realms, and how these pressures have impact on the numerous benefits people derive from biodiversity, such as natural disaster resilience, biodiversity-based livelihoods, clean water, and food resources such as fisheries.
 
-## CLUSTER B: Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all {#kmb}
+### CLUSTER B: Improving the status of South Africa's biodiversity is key to a sustainable and equitable future for all {#kmb}
 
 This cluster relates to the status of South Africa's biodiversity, using national and international headline indicators. These messages encourage intensive effort towards ensuring a society living in harmony with nature, where biodiversity conservation and sustainable use ensure healthy ecosystems, with improved benefits that are fairly and equitably shared for present and future generations.
 
-## CLUSTER C: Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people {#kmc}
+### CLUSTER C: Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people {#kmc}
 
 This cluster speaks to three all-inclusive and over-arching actions that are needed to accelerate the calls to action expressed in each message in cluster A and B. These include a whole-of-government and whole-of-society approach to biodiversity conservation, increased investment in biodiversity monitoring, and the need for sufficient resources to manage and protect biodiversity effectively.
 

@@ -79,7 +79,6 @@ format:
 
 ------------------------------------------------------------------------
 
-\
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # devtools::install_github("SANBI-NBA/nbaR", force = T)
@@ -275,7 +274,7 @@ At the national level, South Africa’s overall RLIe declined slightly from 0.82
 
 ```{r, echo=FALSE, fig.width = 10, fig.height = 6}
 #| label: tbl-RLIe
-#| tbl-cap: "Red List Index of terrestrial ecosystems at the South African biome level"
+#| tbl-cap: "Red List Index of terrestrial ecosystems at the South African biome level. In the legend, aggregate refers to the national average RLIe across all terrestrial ecosystems."
 
 # ---- Data Prep ----
 biomes <- RLIe %>%

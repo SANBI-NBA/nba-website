@@ -101,14 +101,14 @@ google-scholar: true
 
 *While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate threat. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent, monitoring and reporting.*
 
-![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
+![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [58%]{.inline-style-well-protected}
-| of 82 inland wetland types
+| [35%]{.inline-style-not-protected}
+| of wetland extent
 | Natural or Near-natural
 
 </center>
@@ -117,8 +117,8 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [35%]{.inline-style-not-protected}
-| of wetland extent
+| [58%]{.inline-style-well-protected}
+| of 82 inland wetland types
 | Natural or Near-natural
 
 </center>
@@ -134,11 +134,9 @@ google-scholar: true
 
 ![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem types within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
 
-Ecological condition was calculated for 171 303 wetlands. Of these, approximately 1 476 561 ha (49%) of inland wetland extent and \# (58%) of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately 808 325 ha (27%) of inland wetland extent and \# (x%) of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately 705 797 (27%) of inland wetland extent and x% of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
+Ecological condition was calculated for 171 303 wetlands. Of these, approximately 1 476 561 ha (49%) of inland wetland extent and 100 029 (58%) of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately 808 325 ha (27%) of inland wetland extent and 24 752 (14%) of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately 705 797 (27%) of inland wetland extent and 46 522 (24%) of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
 
-Table: 82 types with their conditions (percent extent and extent)
-
-Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition. xxxxx
+Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition.
 
 :::: panel-tabset
 ## Figure
@@ -310,15 +308,32 @@ In addition to allowing for the rapid assessment of multiple wetlands, the autom
 
 ## Technical documentation
 
-**Code repository**:
+**Code repository**
 
-**Publications**
+<https://github.com/askowno/RLE_wet>
 
-**Technical reports**
+**Related publications and supporting information**
+
+Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
 ## Recommended citation
 
-Collins, N.B., Job, N.M., Awuah, A., Kok, R., Mayekiso, P., Currie, J., Ollis, D and Kotze, D. 2025. Inland wetland ecological condition assessment: Freshwater (inland aquatic) realm. National Biodiversity Assessment 2025. South African National Biodiversity Institute. http://nba.sanbi.org.za/.
+```{r}
+#| output: asis
+#| label: lst-citation-code
+
+library(nbaR) 
+library(knitr)
+library(rmarkdown)
+
+# Code for fetching the yaml metadata
+# Note that this only runs when the .qmd file is rendered, therefore the outputs of this code block will return no results if you try to run it within R - that does not mean it is not working
+
+meta <- knitr::opts_knit$get("rmarkdown.pandoc.to")  # forces knitr to load metadata
+meta <- rmarkdown::metadata  # full YAML is now in `meta`
+
+nba_citation(meta)
+```
 
 ## References
 

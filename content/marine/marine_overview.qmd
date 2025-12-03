@@ -17,7 +17,7 @@ description: |
 
 ```
 
-*South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and and is integral to the deep cultural and spiritual values held by many South Africans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, identified knowledge gaps that limit the assessment, and identified priority areas, together with co-developed priority actions, to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
+*South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and is integral to the deep cultural and spiritual values held by many South Africans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, identified knowledge gaps that limit the assessment, and identified priority areas, together with co-developed priority actions, to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.*
 
 ![South Africa's seascape harbours rich biodiversity with many benefits to society. (© Peter Chadwick)](imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png){fig-align="center"}
 
@@ -46,7 +46,7 @@ description: |
 | [Not protected]{.inline-style-indicator}
 
 | [36%]{.inline-style-threatened}
-| of 506 taxa assessed
+| of 495 taxa assessed
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -64,13 +64,13 @@ description: |
 
 ## Ecosystem assessments
 
-Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food and job security and climate resilience ([key message A2](../key-messages/kma2.qmd)).
+Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food and job security and climate resilience (key message [A2](../key-messages/kma2.qmd)).
 
-Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk ([key message A2](../key-messages/kma2.qmd)).
+Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk (key message [A2](../key-messages/kma2.qmd)).
 
-More than 80% of South Africa's 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected ([key message B4](../key-messages/kmb4.qmd)). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.
+More than 80% of South Africa's 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected (key message [B4](../key-messages/kmb4.qmd)). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.
 
-Increasing the extent of South Africa’s MPA estate will contribute to improving ecosystem protection levels. For certain ecosystem types to advance to Well Protected status, however, their ecological condition inside MPAs needs improvement ([key message C2](../key-messages/kmc2.qmd)). Ocean governance needs to better consider and involve human dimensions in conservation initiatives ([key message C1](../key-messages/kmc1.qmd)), diversify protection models, and address persistent challenges that undermine the legitimacy of conservation areas.
+Increasing the extent of South Africa’s MPA estate will contribute to improving ecosystem protection levels. For certain ecosystem types to advance to Well Protected status, however, their ecological condition inside MPAs needs improvement (key message [C2](../key-messages/kmc2.qmd)). Ocean governance needs to better consider and involve human dimensions in conservation initiatives (key message [C1](../key-messages/kmc1.qmd)), diversify protection models, and address persistent challenges that undermine the legitimacy of conservation areas.
 
 In the marine realm, 17% of ecosystem types are both highly threatened and under protected. These ecosystem types are found on the West Coast, the western Agulhas Bank shelf edge, parts of the Agulhas Bank and parts of the KwaZulu-Natal Bight (see [intersection of ecosystem threat status and protection level](marine_ets_epl.qmd#fig-rle_map) page).
 
@@ -87,23 +87,23 @@ knitr::include_graphics("imgs/benthic_pelagic_map_panel.png") # knitr::include_g
 
 Marine species are assessed in terms of their stock status and/or threat status. Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria.
 
-There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management ([key message A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and West Coast rock lobster are Endangered. Illegal fishing plays a key role in the Endangered status of these species ([key message A6](../key-messages/kma6.qmd)).
+There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (key message [A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and West Coast rock lobster are Endangered. Illegal fishing plays a key role in the Endangered status of these species (key message [A6](../key-messages/kma6.qmd)).
 
-Of the 506 marine species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria, 36% are considered threatened ([key message B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+Of the 495 marine species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria, 36% are considered threatened (key message [B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
 
 ![Several marine invertebrate resources, seabreams and shark and rays were assessed as threatened in 2025. West Coast rocklobster are Endangered (© Geoff Spiby); dageraad are Critically Endangered (© Steve Benjamin); bull sharks are Vulnerable (© Fiona Erst).](imgs/overview_species.png)
 
-Sharks, rays and chimaeras are one of the most threatened groups across all realms (see [species status](../species/marine_sp.qmd) page). A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 South African shallow reef building corals assessed globally, 34% are threatened by climate change ([key message A1](../key-messages/kma1.qmd)).
+Sharks, rays and chimaeras are one of the most threatened groups across all realms (see [species status](../species/marine_sp.qmd) page). A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 South African shallow reef building corals assessed globally, 34% are threatened by climate change (key message [A1](../key-messages/kma1.qmd)).
 
-Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring ([key message C3](../key-messages/kmc3.qmd)), and increase capacity for marine species red listing ([key message C3](../key-messages/kmc3.qmd)). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.
+Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring (key message [C3](../key-messages/kmc3.qmd)), and increase capacity for marine species red listing (key message [C3](../key-messages/kmc3.qmd)). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.
 
 ## Pressures and ecological condition
 
 ::::: grid
 ::: {.g-col-lg-8 .g-col-12}
-There are many interacting pressures cumulatively affecting marine ecosystems and species. Key pressures impacting marine biodiversity include fishing (including industrial, recreational and illegal fisheries), coastal development (including ports and harbours), pollution, shipping, mining, freshwater flow reduction, lethal shark control measures and climate change.
+There are many interacting pressures cumulatively affecting marine ecosystems and species. Key pressures impacting marine biodiversity are fishing (including industrial, recreational and illegal fisheries), coastal development (including ports and harbours), pollution, shipping, mining, freshwater flow reduction, lethal shark control measures and climate change.
 
-Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity ([key message A5](../key-messages/kma5.qmd)) impacting ecosystems, species and genetic diversity ([key message B3](../key-messages/kmb3.qmd)).
+Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (key message [A5](../key-messages/kma5.qmd)) impacting ecosystems, species and genetic diversity (key message [B3](../key-messages/kmb3.qmd)).
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -115,9 +115,9 @@ Hotspots of degradation and cumulative impacts are often driven by the location 
 
 ::::: grid
 ::: {.g-col-lg-8 .g-col-12}
-The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. However, despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and inaccuracy of pressure impacts on ecosystem condition. Increased monitoring is needed to support assessment of ecosystem and species ([key message B5](../key-messages/kmb5.qmd)), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.
+The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. However, despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and inaccuracy of pressure impacts on ecosystem condition. Increased monitoring is needed to support assessment of ecosystem and species (key message [B5](../key-messages/kmb5.qmd)), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.
 
-The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts on biodiversity will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment ([key message A2](../key-messages/kma2.qmd)).
+The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts on biodiversity will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment (key message [A2](../key-messages/kma2.qmd)).
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -135,7 +135,26 @@ Spatial biodiversity priority areas to protect, restore and recover marine ecosy
 
 Drawing from key findings of the NBA, ten priority actions were co-developed for improving the state of marine biodiversity. Each of these are associated with several potential indicators for progress. The priority actions include:
 
-[add priority actions linked through to the priority actions page boxes]{.mark}
+- Enable broader participation in ocean planning, assessment, management and governance. [Read more »](marine_priority_actions.qmd#box-4)
+
+- Improve marine coordination within government and strengthen collaborations for improved ecosystem-based ocean management and decision-making. [Read more »](marine_priority_actions.qmd#box-5)
+
+- Avoid, reduce and effectively manage industrial impacts to safeguard marine biodiversity and ecosystem services. [Read more »](marine_priority_actions.qmd#box-6)
+
+- Ensure sufficient quantity and quality of freshwater flows to marine ecosystems. [Read more »](marine_priority_actions.qmd#box-7)
+
+- Build on past successes to manage fisheries better and more fairly to improve ocean health and food and livelihood security. [Read more »](marine_priority_actions.qmd#box-8)
+
+- Ensure that existing Marine Protected Areas (MPAs) function effectively, and expand and diversify South Africa’s conservation estate. [Read more »](marine_priority_actions.qmd#box-9)
+
+- Update and advance spatial data and maps to strengthen marine biodiversity assessment, planning and management. [Read more »](marine_priority_actions.qmd#box-10)
+
+- Ensure South Africa has the skills and infrastructure to manage and deliver expanding  data  for ocean planning and decision-making. [Read more »](marine_priority_actions.qmd#box-11)
+
+- Maintain marine biodiversity benefits through improved statistics, communication and knowledge sharing. [Read more »](marine_priority_actions.qmd#box-12)
+
+- Reduce climate risks to people and nature. [Read more »](marine_priority_actions.qmd#box-13)
+
 
 ![Science-to-policy dialogue convened in November 2024 to co-develop priority management and policy actions for improving the state of South Africa's marine biodiversity for the benefit of nature and people. (© Kerry Sink)](imgs/workshop.png)
 

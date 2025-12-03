@@ -60,8 +60,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Rivers are among the most threatened ecosystems in South Africa, with over 65% of river types categorised as Threatened. This places the vital ecosystem services they provide and the incredible biodiversity they support at great risk.* 
+*Rivers are among the most threatened ecosystems in South Africa, with over 65% of river types categorised as Threatened. This places the vital ecosystem services they provide and the incredible biodiversity they support at great risk.*
 
+![Sandy banks and riparian forest along the Luvuvhu river within Kruger National Park. (© Nancy Job)](imgs/kruger.png)
 
 ------------------------------------------------------------------------
 
@@ -96,9 +97,12 @@ google-scholar: true
 
 Of South Africa’s 222 river ecosystem types, 22% (49) are Critically Endangered, 19% (44) are Endangered, 23% (52) are Vulnerable, and 34% (77) are of Least Concern. In terms of total river length, 2% is Critically Endangered, 6% Endangered, 56% Vulnerable, and 34% is of Least Concern.
 
-![Ecosystem threat status for river ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/riv_ets_map.png){#fig-ets_riv_map} <!-- ![](imgs/clipboard-1952197093.png) --> <!-- Figure 1. Ecosystem threat status for river ecosystem types. The inset doughnut shows the number of ecosystem types per threat category. -->
+::: panel-tabset
+## Map
 
-Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
+![Ecosystem threat status for river ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/riv_ets_map.png){#fig-ets_riv_map}  
+
+## Data
 
 ```{r}
 #| label: tbl-ets
@@ -133,7 +137,7 @@ reactable(
   filterable = TRUE,
   searchable = FALSE,
   pagination = FALSE,
-  height = 600,
+  height = 480,
   defaultColDef = colDef(
     headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
   ),
@@ -142,9 +146,14 @@ reactable(
       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
       backgroundColor = "white",
       border = "1px solid #ccc"
-    )))
+    )),
+  style = list(fontSize = "12px"))
 
 ```
+
+:::
+
+Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
 
 :::: panel-tabset
 ## Figure
@@ -295,11 +304,8 @@ tbl
 Download the data [here](outputs/rivers_ETS.csv).
 ::::
 
-<!-- Figure 2. River ecosystem threat status within each geomorphological zone (slope category). (a) The percentage of ecosystem types per threat category (labelled with actual value) with the total for all rivers at the bottom (n = 222); (b) the percentage of river length (km) within each threat category with the total length for all rivers (length = 147 180 km) at the bottom – providing an indication of the relative extent of each category. -->
-
-Text
-
-::: {#box-1 .callout-note .freshwater title="Box 1. River ecosystem threat status across primary catchments." collapse="true"}
+```{=html}
+<!--::: {#box-1 .callout-note .freshwater title="Box 1. River ecosystem threat status across primary catchments." collapse="true"}
 ## **Box 1. River ecosystem threat status across primary Catchments and Water Management Areas**
 
 Text
@@ -317,7 +323,8 @@ Text
 Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact. Read more about this indicator on the [About ecosystem threat status page.](../integrated-findings/chl_rle_explained.qmd)
 
 ***Heading 3*** xxxx.
-:::
+::: -->
+```
 
 ## Approach
 

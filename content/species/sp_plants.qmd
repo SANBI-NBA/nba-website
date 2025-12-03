@@ -71,6 +71,7 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/Ixia%20ebrahimii_cropped.png"
 ---
 
 ![*Ixia ebrahimii*, a new *Ixia* species found by the [Custodians of Rare and Endangered Wildflowers (CREW)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/) team. (© Ismail Ebrahim)](./imgs/Ixia%20ebrahimii_cropped.png){fig-align="center"}
@@ -115,9 +116,9 @@ google-scholar: true
 
 -   South Africa’s indigenous flora has high levels of diversity and endemism: 13 642 of the 20 248 taxa (67%) are endemic, with high concentration in the south-western region of the Fynbos biome, moderate concentration in the arid regions, low escarpment bushveld, and coastal grasslands.
 
--   1 in 5 endemic plant taxa are at risk of extinction.
+-   1 in 5 endemic plants are at risk of extinction.
 
--   Trends in threat status reveal a 2% increase in the number of plant taxa at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
+-   Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
 
 -   Protected area expansion has improved the protection of indigenous plants, but shortcomings in protected area effectiveness are constraining progress towards plant conservation targets.
 
@@ -132,7 +133,7 @@ knitr::include_graphics("./imgs/plants_thrt_10km_HD.png")
 
 ## Threat status
 
-South Africa has assessed the threat status of 20 248 indigenous plant taxa using the IUCN Red List of Threatened Species Categories and Criteria, which reflect a species’ risk of extinction within the country's borders. The Red List includes several extinct categories, three threatened categories - Critically Endangered (CR), Endangered (EN), and Vulnerable (VU) - as well as categories for Near Threatened (NT), Data Deficient (DD), and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range-restricted endemic species with a global extent of occurrence of less than 500 km² that occur in areas with no significant anthropogenic pressures. Rare species are prioritised for national conservation interventions, even if they qualify as Least Concern under the IUCN system.
+South Africa has assessed the threat status of 20 248 indigenous plants using the IUCN Red List of Threatened Species Categories and Criteria, which reflect a species’ risk of extinction within the country's borders. The Red List includes several extinct categories, three threatened categories - Critically Endangered (CR), Endangered (EN), and Vulnerable (VU) - as well as categories for Near Threatened (NT), Data Deficient (DD), and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range-restricted endemic species with a global extent of occurrence of less than 500 km² that occur in areas with no significant anthropogenic pressures. Rare species are prioritised for national conservation interventions, even if they qualify as Least Concern under the IUCN system.
 
 Among assessed taxa, 0.2% (36) are extinct or possibly extinct, and 16% (3 195) of the total flora are threatened. The country also has high endemism, with 13 648 taxa (67%) found only in South Africa. The distribution of threatened species is shown in @fig-1, highlighting the concentrations in the Cape Floristic Region, the Succulent Karoo and the eastern escarpment. These are areas where there are both high levels of plant endemism and land use change (habitat loss and degradation).
 
@@ -438,7 +439,7 @@ The trend in species status over time was measured using the globally recognised
 
 The Red List Index indicates a slow but consistent increase in the risk of extinction of plants. About 5% of sampled taxa became more threatened between 1990 and 2018, with a further 2% increase in threat between 2018 and 2024.
 
-The RLI for plant taxa occurring in the Desert and Succulent Karoo biomes decreased most rapidly between 2018 and 2024 (@fig-3) due to increasing pressures from climate change and habitat loss from mining and renewable energy developments. Most of these taxa occur in the Northern Cape. The province has experienced a prolonged drought over the past decade, which has exacerbated the effects of livestock overgrazing, mining, and renewable energy activities. This same region is also being heavily impacted by the illegal wildlife trade of ornamental succulent and geophytic plants (see [Box 2](#box-2)).
+The RLI for plants occurring in the Desert and Succulent Karoo biomes decreased most rapidly between 2018 and 2024 (@fig-3) due to increasing pressures from climate change and habitat loss from mining and renewable energy developments. Most of these taxa occur in the Northern Cape. The province has experienced a prolonged drought over the past decade, which has exacerbated the effects of livestock overgrazing, mining, and renewable energy activities. This same region is also being heavily impacted by the illegal wildlife trade of ornamental succulent and geophytic plants (see [Box 2](#box-2)). The RLI for plants in the Forest biome improved due to reduced habitat pressure from clearing invasive species and targeted conservation interventions (see [Box 1](#box-1)).
 
 :::: panel-tabset
 ## Figure
@@ -469,7 +470,7 @@ nba_index_plot(
 ```{r}
 #| classes: plain
 #| label: tbl-2
-#| tbl-cap: "List of plant taxa with genuine changes in their threat status and corresponding drivers, based only on taxa included in the representative sample of 900 plants. Asterisks indicate endemism levels: * endemic and ** near-endemic."
+#| tbl-cap: "List of plants with genuine changes in their threat status and corresponding drivers, based only on taxa included in the representative sample of 900 plants. Asterisks indicate endemism levels: * endemic and ** near-endemic."
 
 library(dplyr)
 library(gt)
@@ -525,7 +526,13 @@ fn = function(x) x ) %>%
       weight = px(1)
     ),
     locations = cells_body(columns = everything())
-  ) %>%
+  )  %>%
+   tab_style(style = cell_text(align = "left"),
+    locations = cells_column_labels(columns = everything())) %>%
+  
+  tab_style(style = cell_text(align = "left"),
+    locations = cells_body(columns = c(`Reason for change`, `Direction of change`))) %>%
+  
   cols_width(
     Taxon ~ pct(10),
     `Reason for change` ~ pct(20),
@@ -538,7 +545,7 @@ fn = function(x) x ) %>%
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "Map showing the distribution of plant taxa that have increased in threat status since the NBA 2018, based on the representative sample of 900 plants."
+#| fig-cap: "Map showing the distribution of plants that have increased in threat status since the NBA 2018, based on the representative sample of 900 plants."
 #| out-width: 650px
 knitr::include_graphics("./imgs/plant_in_10km_HD.png")
 ```
@@ -547,11 +554,11 @@ knitr::include_graphics("./imgs/plant_in_10km_HD.png")
 
 Plants in terrestrial ecosystems face multiple interacting pressures, including habitat loss and fragmentation, invasive alien species, pollution, unsustainable resource extraction, and climate change. Among these, habitat loss remains the most significant driver of species decline. Habitat loss is primarily caused by the conversion of natural vegetation for croplands, mining, plantations, human settlements, and infrastructure development. Habitat fragmentation further disrupts ecological functioning and reduces population viability, especially in the context of climate change and biological invasions.
 
-Analyses of species that have increased their risk of extinction since 2021 reveal a notable shift in the primary drivers of extinction risk for plants. Before 2020, these risks were predominantly associated with competition from invasive species, agricultural expansion, urban development, and overgrazing by livestock [@skowno2019a]. However, current trends indicate increasing influences from climate change, illegal harvesting, mining, renewable energy projects and habitat degradation in sensitive arid ecosystems in the Northern Cape Province (@fig-4, @tbl-2). Agriculture, including crop cultivation and livestock farming, continues to affect the largest proportion of plant taxa included in the representative sample (68%), while competition from invasive alien species is also severe (57%). Loss of habitat to residential and commercial developments has slowed since 2010; however, it still impacts 36% of plant taxa due to the ongoing slow loss of habitat. The 2018 National Biodiversity Assessment reported only 9% of plant taxa to be threatened by harvesting; this has increased to 28%, and habitat loss due to mining has increased from 8% in 2018 to 13% in this assessment. The influence of climate change and severe weather events was not reported to be impacting any of the representative sample plants in 2018, but is now pronounced, affecting 11% of taxa (@fig-5).
+Analyses of species that have increased their risk of extinction since 2021 reveal a notable shift in the primary drivers of extinction risk for plants. Before 2020, these risks were predominantly associated with competition from invasive species, agricultural expansion, urban development, and overgrazing by livestock [@skowno2019a]. However, current trends indicate increasing influences from climate change, illegal harvesting, mining, renewable energy projects and habitat degradation in sensitive arid ecosystems in the Northern Cape Province (@fig-4, @tbl-2). Agriculture, including crop cultivation and livestock farming, continues to affect the largest proportion of plants included in the representative sample (68%), while competition from invasive alien species is also severe (57%). Loss of habitat to residential and commercial developments has slowed since 2010; however, it still impacts 36% of plants due to the ongoing slow loss of habitat. The 2018 National Biodiversity Assessment reported only 9% of plants to be threatened by harvesting; this has increased to 28%, and habitat loss due to mining has increased from 8% in 2018 to 13% in this assessment. The influence of climate change and severe weather events was not reported to be impacting any of the representative sample plants in 2018, but is now pronounced, affecting 11% of taxa (@fig-5).
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s plant taxa, based on a representative sample of 900 plant taxa. This bar chart shows the relative frequency of pressures affecting threatened and Near Threatened plant species. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
+#| fig-cap: "Key pressures on South Africa’s plants, based on a representative sample of 900 plants. This bar chart shows the relative frequency of pressures affecting threatened and Near Threatened plant species. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
 #| out.width: 100%
 
 library(stringr)
@@ -572,7 +579,7 @@ p + scale_x_discrete(
 )
 ```
 
-::::: {#illegal-trade .callout-note .species collapse="true"}
+::::: {#box-2 .callout-note .species collapse="true"}
 ## Box 2. Illegal trade in succulent plants
 
 South Africa’s distinctive succulent diversity, notably those endemic to the globally significant Succulent Karoo biodiversity hotspot, is under increasing pressure from a dramatic surge in illegal harvesting driven by high international demand. Since 2017, 878 mostly localised endemic species have been affected by indiscriminate, unsustainable collection from the wild. Twelve species are now considered functionally extinct due to the majority of individual plants having been harvested from the wild.
@@ -709,23 +716,23 @@ combined_plot
 
 ```
 
-[Protection level](../content/integrated-findings/chl_spl_explained.qmd) measures the contribution of South Africa’s protected area network to meeting plant conservation targets (@fig-6). The plant protection level assessment is applied to the same representative sample from the indigenous flora as used in the Red List Index. Most plants (70%) are Well Protected, however, plants have the second highest proportion of species that are Not Protected (14%), after freshwater fishes (see [species protection level under integrated findings](../integrated-findings/intf-species.qmd#spl)). These plant species are found predominantly in the arid central region of South Africa where protected area coverage is sparse (@fig-7). These areas also align with the distribution of [Not Protected and Poorly Protected terrestrial ecosystems](../terrestrial/ter_epl.qmd).
+[Protection level](../integrated-findings/chl_spl_explained.qmd) measures the contribution of South Africa’s protected area network to meeting plant conservation targets (@fig-6). The plant protection level assessment is applied to the same representative sample from the indigenous flora as used in the Red List Index. Most plants (70%) are Well Protected, however, plants have the second highest proportion of species that are Not Protected (14%), after freshwater fishes (see [species protection level under integrated findings](../integrated-findings/intf-species.qmd#spl)). These plant species are found predominantly in the arid central region of South Africa where protected area coverage is sparse (@fig-7). These areas also align with the distribution of [Not Protected and Poorly Protected terrestrial ecosystems](../terrestrial/ter_epl.qmd).
 
 ```{r}
 #| label: fig-7
 #| out-width: 650px
-#| fig-cap: "Relative richness of Not Protected plant taxa across South Africa, based on a representative sample of the indigenous flora."
+#| fig-cap: "Relative richness of Not Protected plants across South Africa, based on a representative sample of the indigenous flora."
 knitr::include_graphics("imgs/plants-not-protected-map.png")
 ```
 
 Plant protection level has been assessed twice, in 2017 and 2024. Over this time, protection status improved for 7% of taxa but deteriorated for 1% of taxa (@fig-8). Protection status can change through expansion or contraction of the protected area network (as a result of protected area degazettement), or through changes in the effectiveness of protected areas in mitigating pressures on plants.
 
-Improvements in protection level were the result of both protected area expansion and improvements in protected area effectiveness. The establishment of the Mountain Zebra-Camdeboo Protected Environment in a previously relatively poorly protected part of the Eastern Cape contributed most notably to improving the protection level for multiple plant taxa.
+Improvements in protection level were the result of both protected area expansion and improvements in protected area effectiveness. The establishment of the Mountain Zebra-Camdeboo Protected Environment in a previously relatively poorly protected part of the Eastern Cape contributed most notably to improving the protection level for multiple plants.
 
 ```{r}
 #| label: fig-8
 #| out-width: 650px
-#| fig-cap: "Changes in protection level assessments for the representative sample of 900 plant taxa between 2017 and 2024."
+#| fig-cap: "Changes in protection level assessments for the representative sample of 900 plants between 2017 and 2024."
 
 knitr::include_graphics("imgs/plant-pl-category-changes.png")
 ```
@@ -766,13 +773,13 @@ Below are two examples of Critically Endangered plant species that require urgen
 <center>![](imgs/sp_plants_img_7.png){.lightbox fig-align="center" width="48%"} ![](imgs/sp_plants_img_8.png){.lightbox fig-align="center" width="48%"}</center>
 :::
 
-## Approach {#approach}
+## Approach
 
 ### Threat status assessment
 
-The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of plant taxa in South Africa. The 2025 South African National Plant Checklist records 23 514 taxa and 21 539 species, of which 20 204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country. This enormous number of plant taxa, and the very limited number of plant Red List specialists in the country, makes it challenging to assess all plant taxa regularly –so SANBI coordinates and undertakes the assessments of certain families or genera each year. The [Red List of South African Plants website](https://redlist.sanbi.org/) hosts all national assessments conducted for plants. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant species is used for repeat assessments for each National Biodiversity Assessment.
+The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of plants in South Africa. The 2025 South African National Plant Checklist records 23 514 taxa and 21 539 species, of which 20 204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country. This enormous number of plants, and the very limited number of plant Red List specialists in the country, makes it challenging to assess all plants regularly –so SANBI coordinates and undertakes the assessments of certain families or genera each year. The [Red List of South African Plants website](https://redlist.sanbi.org/) hosts all national assessments conducted for plants. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant species is used for repeat assessments for each National Biodiversity Assessment.
 
-Click [here](../integrated-findings/chl_rls_explained.qmd) to read more about the Red List of species
+See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_rls_explained.qmd).
 
 ### Protection level assessment
 
@@ -865,9 +872,35 @@ gt(df) %>%
 
 Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
 
-Click [here](../integrated-findings/chl_spl_explained.qmd) to read more about the Species Protection Level. 
+See details about how the protection level indicator was conducted [here](../integrated-findings/chl_spl_explained.qmd).
 
-## Acknowledgements 
+## Acknowledgements
+
+::::: grid
+::: {.g-col-lg-6 .g-col-12}
+**Coordinated by:**
+
+------------------------------------------------------------------------
+
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
+
+-   [Custodians of Rare and Endangered Wildflowers](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/)
+:::
+
+::: {.g-col-lg-6 .g-col-12}
+**Funded by:**
+
+------------------------------------------------------------------------
+
+-   [The Botanical Society of South Africa](https://botanicalsociety.org.za/crew-programme/)
+
+-   [Mapula Trust](https://www.fynboslife.com/partners/mapula-trust/?)
+
+-   [Agence Française de développement](https://www.afd.fr/fr)
+:::
+:::::
+
+### Contributors
 
 ```{r}
 #| classes: plain
@@ -915,6 +948,7 @@ nba_tbl_theme() %>%
        
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 ```
+
 ## Technical documentation
 
 **Data sources**
@@ -923,19 +957,13 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 2.  South African National Biodiversity Institute (SANBI). 2019. National Biodiversity Assessment 2018: The status of South Africa’s ecosystems and biodiversity. Synthesis Report. South African National Biodiversity Institute, an entity of the Department of Environment, Forestry and Fisheries, Pretoria. pp. 1–214.
 
+3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+
 **Code repositories**
-
-Threat status:
-
-Pressures:
 
 Protection level: Von Staden, L. 2025. SANBI-NBA Plant protection level indicator \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/plant-protection-level>.
 
 **Technical reports**
-
-Threat status:
-
-Pressures:
 
 Protection level: Von Staden, L. 2025. Plant protection level indicator. National Biodiversity Assessment Technical Reports. South African National Biodiversity Institute, Pretoria. [doi:10.6084/m9.figshare.30135625](https://figshare.com/articles/online_resource/Technical_Report/30135625?file=58824784).
 

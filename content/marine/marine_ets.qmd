@@ -17,6 +17,7 @@ author:
     orcid: 0000-0001-5051-573X # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu2
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -114,7 +115,9 @@ author:
       family: Franken #Add author's surname here
     orcid: 0000-0003-3441-9013 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: nmu2 # Ref here must match the id of one of the affiliations listed below
+      - ref: sanbi1 # Ref here must match the id of one of the affiliations listed below
+      - ref: uct8 # Ref here must match the id of one of the affiliations listed below
+      - ref: nmu2
       # If an author has more than one affiliation, add more - ref: lines here
       
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -281,7 +284,7 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ```
 
-*Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened, with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy ([Key Message A2](../key-messages/kma2.qml)). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning. Strategic Marine Spatial Planning can safeguard natural capital while enabling economic development.*
+*Less than half (`r perc_thr_count`%) of South Africa’s `r total_count` marine ecosystem types are threatened, with inshore and shelf ecosystem types more threatened than those in the slope, abyss and open ocean. Ecosystem types of smaller extent are at greater risk. Unsustainable sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving ocean economy ([key message A2](../key-messages/kma2.qmd)). Collaborative efforts are needed to improve ecological condition and inclusive marine biodiversity planning. Strategic Marine Spatial Planning can safeguard natural capital while enabling economic development.*
 
 ![Cape Bay is now considered an Endangered ecosystem type. (© Peter Chadwick)](imgs/cape_bay.png)
 
@@ -331,7 +334,7 @@ The locations of the threatened ecosystem types are shown in @fig-ets_map_benth 
 
 ```{r}
 #| label: fig-ets_map_benth
-#| fig-cap: Threat status of benthopelagic and deepsea benthic marine ecosystem types.
+#| fig-cap: Threat status of benthopelagic and deepsea benthic marine ecosystem types. The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
 #| echo: false
 #| message: false
 #| warning: false
@@ -345,7 +348,7 @@ knitr::include_graphics("imgs/ets_benthic_with_donut.png") #"imgs/ets_benthic_wi
 
 ```{r}
 #| label: fig-ets_map_pel
-#| fig-cap: Threat status of pelagic marine ecosystem types.
+#| fig-cap: Threat status of pelagic marine ecosystem types. The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
 #| echo: false
 #| out-width: 100%
 
@@ -427,6 +430,17 @@ Four additional small ecosystem types listed under this category in 2025 when st
 
 ![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf. (© Kerry Sink)](imgs/Nan18_T16_25m_28.png)
 
+::: {#box-aliwal .callout-note .marine collapse="false" title="Box 1. The effect of ecosystem extent thresholds on ecosystem threat status results"}
+
+Ecosystem types of smaller extent and that are less widely distributed are at greater risk of extinction [@keith2013]. In 2025, the strict application of the IUCN 2024 RLE guidelines, led to worse threat statuses for several ecosystem types under criterion B. The IUCN guidelines provide set thresholds of ecosystem extent which determine ecosystem threat status. There are no accompanying thresholds for ecosystem modification (degradation or disruption), which can result in a worse threat status than might be anticipated by experts. 
+
+Aliwal Shoal met the criteria for a Critically Endangered ecosystem type because of its restricted distribution (small extent) and ongoing decline in ecosystem condition. Under criteria C and D Aliwal Shoal was assessed as Vulnerable, which may be more plausible. Further, improved management of pressures, including fishing, pollution and lethal shark control could see this ecosystem type assessed as Least Concern in the future. Additional research is needed to support reef ecosystem classification and mapping. When countries are mapping national ecosystem types it is useful to keep these thresholds, that can drive threat status results, in mind. Further work is needed to better understand the influence of ecosystem extent and distribution on ecosystem risk assessment. Assessments at multiple scales provide useful insights.
+
+![Aliwal Shoal meets the criteria for a Critically Endangered ecosystem type because of its restricted distribution (small extent) and ongoing decline in ecosystem condition. (© Kerry Sink)](imgs/19_aliwal.png)
+
+:::
+
+
 ### Endangered
 
 There are 31 Endangered ecosystem types (`r perc_en_count`%) which cover `r perc_en_extent`% extent of the marine realm area. Many of these are ecosystem types of limited extent that were uplisted (considered more threatened) relative to 2019 due to the application of global standards in 2025. For example, False and Walker Bay, St Helena Bay and Eastern Agulhas Bays (Algoa and St Francis) are all Endangered under either criterion B1 or B2 of the IUCN RLE.
@@ -452,6 +466,10 @@ The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted
 As pressure and condition data sets were not updated for the 2025 assessment, it is important to note that changes in ecosystem threat status are largely as a result of refined methods rather than recent loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included Criterion A, habitat loss, and Criterion B, number of threat defined locations, ongoing non-trivial drivers of ecological degradation (as opposed to pressures that have ceased) and stochastic events. Several ecosystem types have shifted into more threatened categories due to the ecosystem extent thresholds provided by the IUCN, but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline in ecological condition.
 
 The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen assessments. See the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd) for further information on South Africa’s approach to the assessment of ecosystem threat status.
+
+## Acknowledgements
+
+The National Marine Biodiversity Scientific Working Group is thanked for its role as reference group for the Marine Realm Assessment of the NBA. We also thank the National Marine Ecosystem Committee and Network for their peer review and shared insights on ecosystem assessment. We acknowledge the authors of the NBA 2018 Ecosystem Threat Status chapter. We thank Jose Ferrer Paris and David Keith for helpful discussions that informed our application of the 2024 IUCN Red List of Ecosystems Guidelines. Jennifer Olbers and Mike Schleyer are thanked for additional insights on Aliwal Shoal. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for supporting the 2025 NBA ecosystem threat status assessment and the planned scientific publication. 
 
 ## Technical documentation
 
