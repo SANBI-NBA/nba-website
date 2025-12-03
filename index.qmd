@@ -11,13 +11,13 @@ format:
 
 :::: {style="margin: 0; padding: 0;"}
 ::: {style="width: 100vw; margin-left: calc(-50vw + 50%); margin-top: -2rem; "}
-<a href="./contents.qmd" style="display: block;"> <img src="imgs/nba-banner.jpg" alt="NBA Banner" style="width: 100%; height: auto; display: block; margin: 0;"/> </a>
+<a href="./contents.qmd" style="display: block;"> <img src="imgs/banner-kingfisher.jpg" alt="NBA Banner" style="width: 100%; height: auto; display: block; margin: 0;"/> </a>
 :::
 ::::
 
 :::: column-screen
 ::: column-body
-<center>[Images: ACEP Sound Seas (K. Sink), Sacha Specker, Janine Adams, SANBI, Andrew Skowno, Deon Oosthuizen, Andrew Purnell.]{style="font-size:.7rem; color:#a7abb4;"}</center>
+<center>[Half-collared kingfisher (<em>Alcedo semitorquata</em>) © Tim Kuiper]{style="font-size:.7rem; color:#a7abb4;"}</center>
 :::
 ::::
 
@@ -30,10 +30,26 @@ format:
 The National Biodiversity Assessment (NBA) is a collaborative effort to synthesise the best available science on South Africa's biodiversity to inform policy, support decision-making across multiple sectors, and contribute to national development priorities.
 
 The NBA is the primary tool for monitoring and reporting on the state of biodiversity in South Africa, and is produced by the South African National Biodiversity Institute as part of its mandate under the National Environmental Management: Biodiversity Act (Act 10 of 2004), in partnership with numerous institutions and individuals.
-
-------------------------------------------------------------------------
 :::
 ::::
+
+![](imgs/launch-banner.jpg){style="margin-bottom: 0; margin-top: 1.5rem" fig-align="center"}
+
+<center>
+
+<h4 style="color: #70B276; margin-top: 0">
+
+<a href="./content/context/media.html">
+
+NBA 2025 launch event news and media resources
+
+</a>
+
+</h4>
+
+</center>
+
+------------------------------------------------------------------------
 
 #### The National Biodiversity Assessment 2025 takes two forms
 
@@ -130,4 +146,4 @@ tags$div(class = "category-row",
 
 ### Archived assessments
 
-To find information from previous iterations of the National Biodiversity Assessment (2004, 2011, 2018) - click [here](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/national-biodiversity-assessment/)
+Previous iterations of the National Biodiversity Assessment (2004, 2011, 2018) are available [here](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/national-biodiversity-assessment/).

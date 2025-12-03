@@ -36,6 +36,8 @@ website:
         href: index.qmd
       - text: "Contents"
         href: contents.qmd
+      - text: "Media"
+        href: content/context/media.qmd
   
   sidebar:
     - id: id-contents
