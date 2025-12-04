@@ -63,13 +63,13 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*In the Estuarine realm, 32% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.*
+*In the Estuarine realm, 32% of ecosystem types are both highly threatened and under-protected, these types are prevalent in the Cool Temperate and Subtropical biogeographical regions.*
 
-![The Mbashe Estuary is representative of the threatened and under protected Large Fluvially Dominated ecosystem type currently classified as endangered. The Mbashe Estuary is one of the few estuaries contributing ecosystem type targets for a type that is in dire need of increased protection and management interventions.](imgs/20231202_091909.png)
+![The Mbashe Estuary is representative of the threatened and under protected Large Fluvially Dominated ecosystem type currently classified as endangered. The Mbashe Estuary is one of the few estuaries contributing ecosystem type targets for a type that is in dire need of increased protection and management interventions. (© Nelson Mandela Univeristy)](imgs/20231202_091909.png)
 
-## Threatened and under-protected ecosystem types
+## Highly threatened and under-protected ecosystem types
 
-In the Estuarine realm, 32% of ecosystem types are both highly threatened and under protected. These types are prevalent in the Cool Temperate and Subtropical biogeographical regions. These include the following seven ecosystem types:
+In the Estuarine realm, 32% of ecosystem types are both highly threatened and under-protected. These types are prevalent in the Cool Temperate and Subtropical biogeographical regions, namely:
 
 -   Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)
 -   Cool Temperate Large Fluvially Dominated (Orange)
@@ -167,7 +167,7 @@ thr_pro
 
 ```
 
-Threatened and under-protected ecosystem types are candidates for improved protection through formal protected areas expansion or other spatial management measures such as stewardship or Other Effective area-based Conservation Measures (OECMs).
+Highly threatened and under-protected ecosystem types are candidates for improved protection through formal protected areas expansion or other spatial management measures such as stewardship or Other Effective area-based Conservation Measures (OECMs).
 
 In addition to the expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, management of pollution (wastewater, agricultural return flow or stormwater), reduced fishing pressure, restoration of degraded habitats, removal of invasive alien plants, and effective artificial breaching (where required).
 
@@ -183,11 +183,9 @@ In addition to the expansion of protection of these ecosystem types, it is impor
 
 ### Code repositories
 
--   [Protection level assessment](https://github.com/askowno/EPL_est)
+Protection level assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
 
--   [Threat status assessment](https://github.com/askowno/RLE_est)
-
-### Key Publications
+Threat status assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_est>.
 
 ## Recommended citation
 

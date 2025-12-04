@@ -46,7 +46,7 @@ affiliations:
     name: Council for Scientific and Industrial Research
   - id: nmu1
     number: 2
-    name: Institute for Coastal and Marine Research
+    name: Nelson Mandela University
   - id: sanbi1
     number: 3
     name: South African National Biodiversity Institute
@@ -122,9 +122,13 @@ perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 ```
 
-*Overall, estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) protected in South Africa, less than 1% of area is well protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From a ecosystem types perspective about `r perc_wp_count`% are Well protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.*
+*Overall, the majority of estuarine extent is Moderately to Poorly Protected, with less than 1% of extent categorised as Well Protected and 9% categorised as Not Protected. From an ecosystem type perspective two types (`r perc_wp_count`%) are Well Protected, eight types (`r perc_mp_count`%) are Moderately Protected, nine types (`r perc_pp_count`%) are Poorly Protected, and three types (`r perc_np_count`%) are Not Protected.*
+
+<!--estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) Protected in South Africa, less than 1% of area is Well Protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From a ecosystem type perspective about `r perc_wp_count`% are Well Protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.-->
 
 ![Bulurha Estuary - Warm Temperate - Large Temporarily Closed. (© Nelson Mandela Univeristy)](imgs/Image-bulungula.png)
+
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -174,15 +178,13 @@ knitr::include_graphics("imgs/pa_map.png")
 
 ## Ecosystem protection level assessment
 
-Overall, estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) protected in South Africa, less than 1% of the area is well protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From an ecosystem types perspective about `r perc_wp_count`% are Well protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.
-
-Of concern, three estuarine ecosystem types are categorised as Not Protected, namely:
+Of key concern, three estuarine ecosystem types are categorised as Not Protected, namely:
 
 -   Warm Temperate Large Fluvially Dominated
 -   Subtropical Estuarine Bay
 -   Cool Temperate Predominantly Open
 
-Similarly, nine estuarine ecosystem types are categorised as Poorly Protected, and are represented by:
+Similarly, nine estuarine ecosystem types are categorised as Poorly Protected, namely:
 
 -   Cool Temperate Estuarine Lake
 -   Cool Temperate Arid Predominantly Closed
@@ -196,7 +198,7 @@ Similarly, nine estuarine ecosystem types are categorised as Poorly Protected, a
 
 Since 2011, there has been an erosion of protection in historically protected areas. This can be attributed to the removal of no-take restrictions and the development of commercial fisheries in Marine Protected Areas (MPAs). This is further exacerbated by increased illegal gillnetting in protected areas in KwaZulu-Natal.
 
-An investment in estuarine protection is needed in ecosystem types that are Not Protected, or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the most well protected, while ecosystem types in the Cool Temperate regions are the least protected.
+An investment in estuarine protection is needed in ecosystem types that are Not Protected, or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate regions have the lowest protection levels.
 
 ```{r}
 #| label: fig-est_epl_map
@@ -217,7 +219,7 @@ knitr::include_graphics("imgs/epl_with_donut.png")
 
 There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
 
-Several under protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of estuarine ecosystem types and 10% of the total estuarine area can be Well Protected if fishing efforts in just 3 estuaries are better controlled. These estuaries are Langebaan, Knysna and Kosi.
+Several under-protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of estuarine ecosystem types and 10% of the total estuarine area could be Well Protected if fishing efforts in just 3 estuaries were better controlled. These estuaries are Langebaan, Knysna and Kosi.
 
 The global support for a 30% protection target (2030 Global Biodiversity Framework Target 3) presents a unique opportunity to garner international support and possible funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process of evaluating and extending estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
 
@@ -459,7 +461,7 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 
 ### Code repositories
 
--   [Protection level assessment](https://github.com/askowno/EPL_est)
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
 
 ### Key publications
 

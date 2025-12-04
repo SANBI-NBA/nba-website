@@ -366,7 +366,7 @@ Increasing extent of protection alone will not advance marine ecosystems to Well
 
 Ecosystem types that are Not Protected include the Kingklip Koppies, the vast Southeast Atlantic Lower Slope, the expansive Southwest Indian Lower Slope and four pelagic ecosystem types. Among the latter, the Agulhas Retroflection and Southern Ocean Transitional Water is of particular interest as a globally unique area. The uThukela Canyon, the Cape Lower Canyon and St Helena Bay are also Not Protected.
 
-![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures. (© SANBI)](imgs/canyons_legend.png)
+![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures. (© South African National Biodiversity Institute)](imgs/canyons_legend.png)
 
 Of the 27 Poorly Protected ecosystem types, several fall into this category because their areas that are within MPAs have high levels of ecosystem modification (i.e. poor [ecological condition](marine_condition.qmd) due to high past or ongoing [pressures](marine_pressures.qmd)), not because they have very limited areas within MPAs. Among others, these include two kelp ecosystem types, Agulhas and Cape Kelp Forests, and two bay ecosystem types, Cape Bay and False and Walker Bay. Other ecosystem types that could advance from their current Poorly Protected status to Moderately Protected by improving ecological condition include Agulhas Mid Shelf Reef, the Agulhas Coarse Sediment Shelf Edge and Amathole Lace Corals.
 
@@ -374,7 +374,7 @@ Of the 27 Poorly Protected ecosystem types, several fall into this category beca
 
 Forty-eight marine ecosystem types are Moderately Protected. While several of these could advance to Well Protected through improved ecological condition, 27 types will require increased coverage in MPAs or OECMs. For example, Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon require increased representation in South Africa’s marine conservation estate to improve their ecosystem protection level.
 
-![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected. (© Lloyd Edwards and ACEP Deep Secrets and Deep Forests projects)](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
+![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected. (© Lloyd Edwards, ACEP Deep Secrets and Deep Forests projects)](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
 
 Only 20% of South Africa’s 163 marine ecosystem types are Well Protected. This statistic could be increased through increasing the estate of representative protected areas and by reducing [pressures](marine_pressures.qmd) and thereby improving [ecological condition](marine_condition.qmd) within some existing MPAs. Well Protected ecosystem types include many from the Delagoa ecoregion where the iSimangaliso MPA and World Heritage Site provides protection to many ecosystem types. Other examples of Well Protected types include Agulhas Inner Shelf Reef, Natal Exposed Rocky Shore and [seamount](https://mzansea590234219.wordpress.com/ecosystems/seamounts-and-ridges/) ecosystem types in the South east Atlantic.
 
@@ -420,7 +420,7 @@ While relationships have improved since rezoning, access alone cannot resolve th
 ![This MPA is a valuable national asset due its long-term protection. The MPA was established to protect the rich diversity of marine life found in the area including mammals, invertebrates and fish. Cape clawless otter (© Peter Chadwick); Community members co-identifying and mapping historical fishing spots as part of the Tsitsikamma MPA rezonation process (© Kyle Smith); roman (© Steve Benjamin); deep water corals (© Geoff Spiby).](imgs/tsitsikamma.png)
 :::
 
-### OECMs
+### Other Effective area-based Conservation Measures
 
 The concept of OECMs offers new opportunities for more inclusive and people-centred approaches to marine conservation that can encourage and support resource co-management, diverse cultural values, livelihoods and enhanced sustainability, while reducing the burden on MPA expansion in South Africa [@kirkman2023]. These areas are governed and managed in ways that achieve positive and sustained long-term outcomes for the *in situ* conservation of biodiversity values, whether or not biodiversity conservation is the primary management objective. No marine areas have been recognised as OECMs in South Africa as of December, 2025.
 
@@ -492,9 +492,9 @@ The SeaPeople collective is thanked for knowledge co-production and forging path
 
 ### Key publications
 
-Harris, L. et al. 2025. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
+Harris, L. et al. in press. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
 
-Sink, KJ. et al. IN PREP. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
+Sink, KJ. et al. in prep. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
 
 Sink, KJ. et al. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
 

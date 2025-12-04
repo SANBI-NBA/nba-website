@@ -683,7 +683,7 @@ Potential indicators of progress could include:
 
 -   Ecological Risk Assessments are reviewed and key steps to avoid and mitigate ecosystem risks are identified with actions initiated to address risks.
 
--   Illegal harvesting of abalone and West Coast rock lobster is reduced with evidence of resource recovery.
+-   Illegal harvesting of South African abalone (*Haliotis midae*) and West Coast rock lobster (*Jasus lalandii*) is reduced with evidence of resource recovery.
 
 <!-- -   There is progress in electronic monitoring of fisheries including the piloting of electronic logbooks. -->
 
@@ -881,7 +881,7 @@ Potential indicators of progress could include:
 
 South Africa’s biodiversity is not evenly distributed across the seascape and when this is combined with limited resources for action, spatial prioritisation becomes essential. An important feature of South Africa’s biodiversity-related action to the pressures on biodiversity has been spatial planning to identify priority areas in the seascape for intervention. The NBA provides an initial portfolio of spatial priorities by highlighting the location of the most threatened ecosystems and species and by intersecting the results of ecosystem threat status and protection level. However, it is not only threatened biodiversity that needs attention; often there are strategic gains to be made from focusing on areas that are still in good ecological condition and where there are relatively easy opportunities for protection or effective management. 
 
-To learn more about biodiversity mapping, see SANBI's guide on [mapping biodiversity priorities](https://hdl.handle.net/20.500.12143/9339){"A practical approach to spatial biodiversity assessment and prioritisation to inform national policy, planning, decisions and action"} and the IUCN's course on [Introduction to Mapping Biodiversity Priorities](https://iucnacademy.org/courses/introduction-to-mapping-biodiversity-priorities/). 
+To learn more about biodiversity mapping, see SANBI's guide on [mapping biodiversity priorities](https://hdl.handle.net/20.500.12143/9339) and the IUCN's course on [Introduction to Mapping Biodiversity Priorities](https://iucnacademy.org/courses/introduction-to-mapping-biodiversity-priorities/). 
 
 ## Critical Biodiversity Areas (CBAs) {#cba}
 

@@ -64,7 +64,7 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [28%]{.inline-style-well-protected}
+| [25%]{.inline-style-well-protected}
 | of river length
 | Natural or Near-natural
 
@@ -75,7 +75,7 @@ google-scholar: true
 <center>
 
 | [26%]{.inline-style-not-protected}
-| of 122 river ecosystem types
+| of 222 river ecosystem types
 | Natural or Near-natural
 
 </center>
@@ -100,6 +100,7 @@ google-scholar: true
 
 ::: {.table style="height:500px;overflow-y: auto"}
 <!-- ::: {#box-eco_tbl .callout .freshwater collapse="False"} -->
+
 ```{r}
 #| label: tbl-wetland_condition_bytype
 #| tbl-cap: Ecological condition of river ecosystem types summarised by river type. Note that extent figures represent river length (km) and have been rounded.
@@ -143,10 +144,9 @@ tbl
 :::
 
 Download the data by river type [here](data/rivers_condition_combined_extent_percent_by_type.csv).
-
 ::::
 
-Only a third of the total length of river ecosystems in South Africa are in a natural/near-natural ecological condition, with two-thirds in a moderately modified or worse condition. Tributaries are almost equally heavily impacted as mainstem rivers, with 38% of tributary length in a natural/near-natural condition compared to 28% of mainstems. The extent of ecosystem modifications in the inland aquatic realm reflects the wide array of pressures that are concentrated in rivers and inland wetlands that negatively impact on ecosystems and species.
+Only a quarter of the total length of river ecosystems in South Africa are in a natural/near-natural ecological condition, with three-quarters in a moderately modified or worse condition. Approximately 42% of mountain streams extent is in a natural or near-natural condition, in contrast with lowland rivers which have only 15% in a natural or near-natural condition. The extent of ecosystem modifications in lowland rivers reflects the geographic differences wide array of pressures that are concentrated in rivers that negatively impact on ecosystems and species.
 
 :::: panel-tabset
 ## Figure
@@ -228,18 +228,19 @@ tbl
 :::
 
 Download the data [here](data/rivers_condition_combined_extent_percent.csv).
-
 ::::
 
 ## Approach
 
-River ecological condition was assessed as part of the Present Ecological State (PES) and Ecological Importance and Sensitivity national project currently in process by the Department of Water and Sanitation (DWS) and the Water Research Commission of South Africa (WRC), along with appointed specialists. The process was expert driven, where rivers were reviewed at quinary catchment level according to a standardised methodology to describe the extent of ecosystem modification by assessing six indicators, namely flow modification, physico-chemical modification, in-stream habitat and habitat continuity modification, riparian/wetland zone habitat and habitat continuity modification. Information from the six indicator assessments was aggregated into a final condition score, assigning ecological condition categories ranging from natural (A) to critically modified or extremely degraded (F). The score was per quinary reach in the original dataset and was cross-walked to the river ecosystem type units for the NBA assessment. 
+River ecological condition was assessed as part of the [Present Ecological State (PES) and Ecological Importance and Sensitivity](https://www.dws.gov.za/iwqs/rhp/eco/peseismodel.aspx) national project currently underway by the Department of Water and Sanitation (DWS) and the Water Research Commission of South Africa (WRC), along with appointed specialists. The process was expert driven, where rivers were reviewed at quinary catchment level according to a standardised methodology to describe the extent of ecosystem modification by assessing six indicators, namely flow modification, physico-chemical modification, in-stream habitat and habitat continuity modification, riparian/wetland zone habitat and habitat continuity modification. Information from the six indicator assessments was aggregated into a final condition score, assigning ecological condition categories ranging from natural (A) to critically modified or extremely degraded (F). The score was per quinary reach in the original dataset and was cross-walked to the river ecosystem type units for the NBA assessment.
 
 ## Technical documentation
 
 **Related publications and supporting information**
 
-Coming soon
+Department of Water and Sanitation. 2014. A Desktop Assessment of the Present Ecological State, Ecological Importance and Ecological Sensitivity per Sub Quaternary Reaches for Secondary Catchments in South Africa. Compiled by RQIS-RDM: <https://www.dwa.gov.za/iwqs/rhp/eco/peseismodel.aspx>
+
+Kleynhans, C.J & Louw, M.D. 2007. Module A: EcoClassification and EcoStatus determination in River EcoClassification: Manual for EcoStatus Determination (version 2). Joint Water Research Commission and Department of Water Affairs and Forestry report. WRC Report No. TT 329/08. DOI: 10.13140/RG.2.1.1728.3286
 
 ## Recommended citation
 
@@ -260,7 +261,4 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-## References
 
-::: {#refs}
-:::

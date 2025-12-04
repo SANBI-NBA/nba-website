@@ -79,7 +79,6 @@ format:
 
 ------------------------------------------------------------------------
 
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # devtools::install_github("SANBI-NBA/nbaR", force = T)
 
@@ -336,7 +335,9 @@ The terrestrial RLE assessment follows the IUCN RLE 2.0 in an approach described
 
 ## Technical documentation
 
-**Code repository**: <https://github.com/askowno/RLE_terr>
+**Code repository**
+
+Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_terr>
 
 **Key publications**
 

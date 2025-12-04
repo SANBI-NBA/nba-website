@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Freshwater Fishes" # Compulsory
+title: "Freshwater fishes" # Compulsory
 subtitle: "" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml

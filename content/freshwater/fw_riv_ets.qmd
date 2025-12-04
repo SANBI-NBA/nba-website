@@ -70,9 +70,9 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [65%]{.inline-style-well-protected}
+| [65%]{.inline-style-threatened}
 | of river length
-| Threatened
+| [Threatened]{.inline-style-indicator}
 
 </center>
 :::
@@ -80,9 +80,9 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [65%]{.inline-style-not-protected}
+| [65%]{.inline-style-threatened}
 | of 222 river ecosystem types
-| Threatened
+| [Threatened]{.inline-style-indicator}
 
 </center>
 :::
@@ -100,7 +100,7 @@ Of South Africa’s 222 river ecosystem types, 22% (49) are Critically Endangere
 ::: panel-tabset
 ## Map
 
-![Ecosystem threat status for river ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/riv_ets_map.png){#fig-ets_riv_map}  
+![Ecosystem threat status for river ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/riv_ets_map.png){#fig-ets_riv_map}
 
 ## Data
 
@@ -150,7 +150,6 @@ reactable(
   style = list(fontSize = "12px"))
 
 ```
-
 :::
 
 Ecosystem threat status varies across geomorphological zones with 67% of lowland river types being Critically Endangered compared to only 25% of mountain stream types.
@@ -326,6 +325,10 @@ Ecosystem threat status is a headline indicator established to assess how close 
 ::: -->
 ```
 
+## Important note on work in progress
+
+The river threat status assessment applied the [IUCN Red List of Ecosystems](../integrated-findings/chl_rle_explained.qmd) framework for the first time. Given the application of a new method and input data, the current results are considered preliminary and a more extensive review of the outputs is still to be completed, with stakeholder engagement continuing through early 2026. It is likely to result in adjustments and an updated assessment, which will be widely communicated.
+
 ## Approach
 
 Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact.
@@ -342,13 +345,13 @@ The IUCN RLE (version 2) approach was followed and the following criteria were a
 
 -   **Criterion D3** was applied to the Present Ecological State (PES) data such that Severity \>=90% was assigned to PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F.
 
-Each river ecosystem type was assessed against these criteria and the **highest risk category** triggered by any single criterion was assigned as the overall ecosystem threat status for that type. Each of the 222 river ecosystem types was placed into one of four risk categories: **Critically Endangered**, **Endangered**, **Vulnerable**, or **Least concern**. Critically endangered, endangered, and vulnerable are collectively referred to as the threatened categories.
+Each river ecosystem type was assessed against these criteria and the highest risk category triggered by any single criterion was assigned as the overall ecosystem threat status for that type. Each of the 222 river ecosystem types was placed into one of four risk categories: Critically Endangered, Endangered, Vulnerable, or Least concern. Critically endangered, endangered, and vulnerable are collectively referred to as the threatened categories.
 
 ## Technical documentation
 
 **Code repository**
 
-<https://github.com/askowno/ETS_riv>
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status \[Source code\]. GitHub repository available at [https://github.com/askowno/RLE_riv](https://github.com/askowno/RLE_riv)
 
 **Key publications**
 
@@ -373,7 +376,4 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-## References
 
-::: {#refs}
-:::

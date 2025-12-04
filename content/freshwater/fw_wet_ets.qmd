@@ -94,7 +94,7 @@ google-scholar: true
 <center>
 
 | [73%]{.inline-style-threatened}
-| of 82 ecosytem types
+| of 82 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -346,10 +346,7 @@ Table 2.1. Percentage of the total wetland area in each province that falls with
 The current data reflects ongoing collaborative mapping and data-sharing efforts between national and provincial agencies.
 
 <!-- In the face of prevailing financial and capacity constraints to implementing large-scale inventory across the country, there is a focus on expanding the mapping and validation of extent, ecological condition and characteristics of wetlands within Provincial Nature Reserves, ultimately contributing to the continuous refinement of the national wetland map. The current data reflects ongoing collaborative efforts between national and provincial agencies. -->
-```
 
-:::: -->
-```{=html}
 <!--::: {#box-3 .callout-note .freshwater title="Box 3. Inland wetland ecosystem threat status across National Parks" collapse="true"}
 Coming soon
 ::: -->
@@ -357,13 +354,9 @@ Coming soon
 
 ## Important note on work in progress
 
-The wetland ecosystem threat status analysis is built on a robust interim wetland ecosystem typology and an automated assessment of wetland ecological condition. The automated wetland ecological condition is a major step forward in repeatability and opportunity for ongoing improvement. It mirrors the categories and framework adopted by practitioners undertaking assessments in the field and sets in place great potential for teasing out drivers of degradation from the perspective of wetland hydrology, water quality, geomorphology or vegetation change, and the development of specific management responses. Going forward, work remains for wide expert engagement to continue inform future wetland ecological condition assessments. The refinement of the national wetland ecosystem typology was still underway at the time of this assessment. This ongoing process to refine the interim typology into more detailed, validated sub-types is being undertaken in collaboration with multiple research partners. It will soon result in minor adjustments and an updated assessment, which will be widely communicated. 
+The wetland ecosystem threat status assessment applied the [IUCN Red List of Ecosystems](../integrated-findings/chl_rle_explained.qmd) framework for the first time. The assessment was based on a robust interim wetland [ecosystem typology](./fw_wet_type.qmd) and an automated assessment of wetland [ecological condition](./fw_wet_condition.qmd). Given the application of a new method and use of new input data, the current results are considered preliminary and a more extensive review of the outputs is still to be completed, with stakeholder engagement continuing through early 2026. It is likely to result in adjustments and an updated assessment, which will be widely communicated.
 
 ## Approach
-
-Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact.
-
-Key input layers include [wetland ecosystem types](fw_wet_type.qmd) and [wetland ecological condition](fw_wet_condition.qmd).
 
 The assessment was conducted using the IUCN Red List of Ecosystems framework (version 2), which has been applied across all realms for the 2025 assessments. The framework uses the concept of ecosystem collapse as the equivalent endpoint to species extinction. It evaluates the status of each ecosystem type using a set of quantitative and qualitative criteria linked to the key aspects of ecosystem decline, namely, Criterion A: reduction in extent, Criterion B: restricted distribution, Criterion C: environmental degradation and Criterion D: biotic degradation. Read more about this indicator on the [About ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 
@@ -387,7 +380,7 @@ Each wetland ecosystem type was assessed against these criteria and the **highes
 
 **Code repository**
 
-<https://github.com/askowno/RLE_wet>
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_wet](https://github.com/askowno/RLE_wet)
 
 **Related publications and supporting information**
 
@@ -412,8 +405,4 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-## References
 
-::: {#refs}
-:::
-::::

@@ -75,10 +75,9 @@ google-scholar: true
 
 ![Cape Sheltered Rocky Shore is Endangered and Not Protected. (© Kerry Sink)](imgs/cape_sheltered_rocky_shore.png)
 
-The headline indicators of the NBA provide information on the pressures faced by species and ecosystems and on the progress made in protecting them. Combining the indicators provides an additional perspective on the status of marine ecosystems. There are 27 marine ecosystem types that are both highly threatened and under-protected. The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and the five ecosystem types that are both Endangered and Not Protected (@tbl-ets_epl). This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and Poorly Protected ecosystem types include several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KZN shelf and four ecosystem types in the KZN Bight.
+The headline indicators of the NBA provide information on the pressures faced by species and ecosystems and on the progress made in protecting them. Combining the indicators provides an additional perspective on the status of marine ecosystems. There are 27 marine ecosystem types that are both highly threatened and under-protected (@fig-rle_map; @tbl-ets_epl_ht).
 
 :::: panel-tabset
-
 ## Map
 
 ```{r}
@@ -94,10 +93,7 @@ library(tidyverse)
 library(nbaR)
 library(sf)
 
-
-
 knitr::include_graphics("imgs/rle_unluckies.png")
-
 
 ```
 
@@ -179,8 +175,9 @@ thr_pro
 
 ```
 :::
-
 ::::
+
+The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud Reef Mosaic which is Not Protected and the five ecosystem types that are both Endangered and Not Protected (@tbl-ets_epl). This includes the Orange Cone Muddy Mid Shelf, Cape Lower Canyon, St Helena Bay, Cape Sheltered Rocky Shore and the KZN Bight Mid Shelf Reef Complex. Three ecosystem types are Critically Endangered and Poorly Protected; the Agulhas Muddy Mid Shelf, Browns Bank Rocky Shelf Edge and Cape Bay. Endangered and Poorly Protected ecosystem types include several shore types in the Namaqua, Cape and Agulhas Regions, False and Walker Bay, Western Agulhas Bays, two ecosystem types on the southern KwaZulu-Natal (KZN) shelf and four ecosystem types in the KZN Bight.
 
 ```{r}
 #| label: tbl-ets_epl
@@ -209,84 +206,145 @@ thr_pro
 
 ```
 
-Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as Other Effective Conservation Measures (OECMs). In addition to expansion of protection, it is important to improve ecosystem condition through strategic alleviation of pressures such as [restoration of freshwater flow to the marine environment](marine_pressures#box9) and improved ecosystem management. Improved bycatch management ([priority action 5](marine_priority_actions.qmd#box-8)) and diversified measures to protect bathers from sharks using non-lethal measures ([Improvements in shark control measures](marine_pressures.qmd#box3)) could help improve ecosystem condition in KwaZulu-Natal.
+Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as OECMs. In addition to expansion of protection, it is important to improve ecosystem condition through strategic alleviation of pressures such as [restoration of freshwater flow to the marine environment](marine_pressures#box9) and improved ecosystem management. Improved bycatch management ([priority action 5](marine_priority_actions.qmd#box-8)) and diversified measures to protect bathers from sharks using non-lethal measures ([Improvements in shark control measures](marine_pressures.qmd#box3)) could help improve ecosystem condition in KwaZulu-Natal.
 
 ![The KwaZulu Natal Bight Mid Shelf Reef Complex is considered Endangered and Not Protected. Increased research to improve reef classification, mapping and assessment is recommended in this area. (© ACEP Spatial Solutions Project, Kerry Sink)](imgs/R20_UmlhotiSteep_57_62m.png)
 
 Under protected, but Least Concern ecosystem types are also candidates for improved protection. Such ecosystems types may not be currently experiencing serious pressure or decline in ecological condition, but are perhaps easier targets for protection through MPA's or OECM's. For example, the Namaqua Muddy Sands, is a distinct ecosystem type that is currently not represented in South Africa's conservation estate. [Improved spatial planning](marine_priority_actions.qmd#priority-areas) can help find the best area to protect this ecosystem type, by considering other habitat and species priorities. This ecosystem types hosts Vulnerable Marine Ecosystems (VMEs) [@franken2025].
 
-![Namaqua Muddy Sands is Least Concern but Not Protected. This ecosystem type needs to be represented in South Africa's MPA network and there are options in terms of sites for protection with most area in good ecologial condition. The VME indicator species *Suberites dandelenae* occurs in high numbers in this ecosystem type and habitat with high densities of this species should be prioritised for protection. (© Department of Forestry Fisheries and Environment and South African Environmental Observation Network)](imgs/Namaqua_Muddy_Sands_DFFE&SAEON.png)
+![Namaqua Muddy Sands is Least Concern but Not Protected. This ecosystem type needs to be represented in South Africa's MPA network and there are options in terms of sites for protection with most area in good ecologial condition. The VME indicator species (*Suberites dandelenae*) occurs in high numbers in this ecosystem type and habitat with high densities of this species should be prioritised for protection. (© Department of Forestry Fisheries and Environment and South African Environmental Observation Network)](imgs/Namaqua_Muddy_Sands_DFFE&SAEON.png)
 
 <!-- # ```{r} -->
+
 <!-- #| label: tbl-ets_epl_ht -->
+
 <!-- #| echo: false -->
+
 <!-- #| tbl-cap: Table showing protection levels and threat status categories for the highly threatened and underprotected ecosystem types. -->
+
 <!-- #| classes: plain -->
 
 <!-- library(dplyr) -->
+
 <!-- library(nbaR) -->
+
 <!-- library(gt) -->
+
 <!-- # library(sf) -->
 
-
 <!-- thr_pro <- read.csv(file=list.files(pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE),  -->
-<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>% -->
-<!--   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas -->
-<!--   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>%  -->
-<!--   select(ecosystem_type, threat_status, protection_level) %>%  -->
-<!--   filter(protection_level %in% c("Not Protected", "Poorly Protected"), -->
-<!--          threat_status %in% c("Critically Endangered", "Endangered")) %>%  -->
-<!--   rowid_to_column() %>%  -->
-<!--   pivot_wider(names_from = "protection_level", values_from = ecosystem_type)%>% -->
-<!--   select(-rowid) %>%  -->
-<!--   arrange(threat_status, `Not Protected`) %>%  -->
-<!--   mutate(across(everything(), ~ if_else(is.na(.x), "", .x))) %>%  -->
-<!--   rename(`Threat status` = threat_status) %>%  -->
-<!--   gt() %>%  -->
-<!--   nba_tbl_theme(HEADER = "Marine") %>%  -->
-<!--   tab_style( -->
-<!--     style = cell_text(color = "white"), -->
-<!--     locations = cells_column_labels() -->
-<!--   ) %>%  -->
-<!--   # 4. give cells colour -->
-<!--     tab_style( -->
-<!--       style = list( -->
-<!--         gt::cell_fill(color = "#A93800") -->
-<!--       ), -->
-<!--       locations = gt::cells_body( -->
-<!--         columns = "Not Protected", -->
-<!--         rows = 1 -->
-<!--       ) -->
-<!--     ) %>% -->
-<!--     tab_style( -->
-<!--       style = list( -->
-<!--         gt::cell_fill(color = "#E69800") -->
-<!--       ), -->
-<!--       locations = gt::cells_body( -->
-<!--         columns = "Not Protected", -->
-<!--         rows = 5:9 -->
-<!--       ) -->
-<!--     )%>% -->
-<!--     tab_style( -->
-<!--       style = list( -->
-<!--         gt::cell_fill(color = "#A87001") -->
-<!--       ), -->
-<!--       locations = gt::cells_body( -->
-<!--         columns = "Poorly Protected", -->
-<!--         rows = 2:4 -->
-<!--       ) -->
-<!--     )%>% -->
-<!--     tab_style( -->
-<!--       style = list( -->
-<!--         gt::cell_fill(color = "#FFEBB0") -->
-<!--       ), -->
-<!--       locations = gt::cells_body( -->
-<!--         columns = "Poorly Protected", -->
-<!--         rows = 10:27 -->
-<!--       ) -->
-<!--     ) %>%  -->
-<!--   gt::tab_options(table.width = gt::pct(100)) -->
 
+<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>% -->
+
+<!--   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas -->
+
+<!--   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>%  -->
+
+<!--   select(ecosystem_type, threat_status, protection_level) %>%  -->
+
+<!--   filter(protection_level %in% c("Not Protected", "Poorly Protected"), -->
+
+<!--          threat_status %in% c("Critically Endangered", "Endangered")) %>%  -->
+
+<!--   rowid_to_column() %>%  -->
+
+<!--   pivot_wider(names_from = "protection_level", values_from = ecosystem_type)%>% -->
+
+<!--   select(-rowid) %>%  -->
+
+<!--   arrange(threat_status, `Not Protected`) %>%  -->
+
+<!--   mutate(across(everything(), ~ if_else(is.na(.x), "", .x))) %>%  -->
+
+<!--   rename(`Threat status` = threat_status) %>%  -->
+
+<!--   gt() %>%  -->
+
+<!--   nba_tbl_theme(HEADER = "Marine") %>%  -->
+
+<!--   tab_style( -->
+
+<!--     style = cell_text(color = "white"), -->
+
+<!--     locations = cells_column_labels() -->
+
+<!--   ) %>%  -->
+
+<!--   # 4. give cells colour -->
+
+<!--     tab_style( -->
+
+<!--       style = list( -->
+
+<!--         gt::cell_fill(color = "#A93800") -->
+
+<!--       ), -->
+
+<!--       locations = gt::cells_body( -->
+
+<!--         columns = "Not Protected", -->
+
+<!--         rows = 1 -->
+
+<!--       ) -->
+
+<!--     ) %>% -->
+
+<!--     tab_style( -->
+
+<!--       style = list( -->
+
+<!--         gt::cell_fill(color = "#E69800") -->
+
+<!--       ), -->
+
+<!--       locations = gt::cells_body( -->
+
+<!--         columns = "Not Protected", -->
+
+<!--         rows = 5:9 -->
+
+<!--       ) -->
+
+<!--     )%>% -->
+
+<!--     tab_style( -->
+
+<!--       style = list( -->
+
+<!--         gt::cell_fill(color = "#A87001") -->
+
+<!--       ), -->
+
+<!--       locations = gt::cells_body( -->
+
+<!--         columns = "Poorly Protected", -->
+
+<!--         rows = 2:4 -->
+
+<!--       ) -->
+
+<!--     )%>% -->
+
+<!--     tab_style( -->
+
+<!--       style = list( -->
+
+<!--         gt::cell_fill(color = "#FFEBB0") -->
+
+<!--       ), -->
+
+<!--       locations = gt::cells_body( -->
+
+<!--         columns = "Poorly Protected", -->
+
+<!--         rows = 10:27 -->
+
+<!--       ) -->
+
+<!--     ) %>%  -->
+
+<!--   gt::tab_options(table.width = gt::pct(100)) -->
 
 <!-- thr_pro -->
 

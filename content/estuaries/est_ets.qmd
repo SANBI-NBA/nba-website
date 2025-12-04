@@ -117,6 +117,8 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ![Knysna is one of two estuarine bays inside South Africa and is an example of a Vulnerable system. (© Matt Dubber)](imgs/est_knysna_matt_dubber.jpeg)
 
+--------------------------------------------------------------------------------
+
 ::::: columns
 ::: {.column width="50%"}
 <center>
@@ -147,6 +149,7 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 :::
 :::::
 
+--------------------------------------------------------------------------------
 <!-- creates spaces -->
 
 \
@@ -293,7 +296,7 @@ Nine estuarine ecosystem types were classified as Endangered, with 6 types in th
 
 ### Vulnerable
 
-Overall 10 estuarine ecosystem types were classified as Vulnerable, with 2 types in the Cool temperate, 4 in the Warm Temperate, 3 in the Subtropical, and 1 in the Tropical biogeographical region.
+Overall 10 estuarine ecosystem types were classified as Vulnerable, with 2 types in the Cool Temperate, 4 in the Warm Temperate, 3 in the Subtropical, and 1 in the Tropical biogeographical region.
 
 -   Cool Temperate Small Temporarily Closed
 -   Cool Temperate Small Fluvially Dominated
@@ -352,11 +355,11 @@ Download the data [here](data/threat_status_per_estuary.csv).
 
 The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems [@keith2024] and drawing from previous estuarine NBA assessments [@vanniekerk2018].
 
-The IUCN RLE (Ver 2) framework was applied and following criterion were assessed:
+The following criterion were assessed:
 
 -   **Criterion A2b** (current rate of decline in ecosystem extent); based on land cover change rates between 1990 and 2022 - projected forward to 2040.
 
--   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022
+-   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022.
 
 -   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there is ongoing decline defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH, OR b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment is greater than 30% of type extent. This captures increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating applies to the whole type and is scaled by estuarine extent.
 
@@ -364,9 +367,9 @@ The IUCN RLE (Ver 2) framework was applied and following criterion were assessed
 
 -   **Criterion D3** was applied to the Estuarine Ecological State Class (PES) data such that severity of biotic disruption of \>= 90% was assumed for PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F. The rating applies to the whole type and is scaled by estuarine extent.
 
-Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for these two criteria is selected as the threat / risk status for each river type.
+Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for the criteria was selected as the threat / risk status for each river type.
 
-A more detailed explanation of the assessment method can be found at [RLE explanation page](../integrated-findings/chl_rle_explained.qmd).
+A more detailed explanation of the assessment method can be found on the  [about ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 
 ## Technical documentation
 
@@ -379,11 +382,9 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Code repositories
-
--   [Threat status assessment](https://github.com/askowno/RLE_est)
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_est](https://github.com/askowno/RLE_est).
 
 ### Key publications
-
 Rowland, J.A. et al. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. https://doi.org/10.1111/conl.12680
 
 IUCN. 2024. Guidelines for the application of IUCN Red List of Ecosystems. Gland, Switzerland. https://doi.org/10.2305/CJDF9122

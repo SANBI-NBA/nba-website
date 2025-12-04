@@ -473,7 +473,7 @@ library(nbaR)
 
 # --- Dataset ---
 
-df_rlis <- readxl::read_excel("./data/nba_example_rli_data_trim.xlsx")
+df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
 
 df_spiders <- df_rlis %>%
   filter(Taxon %in% c("Spiders","Aggregate"))

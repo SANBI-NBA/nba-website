@@ -24,30 +24,6 @@ author:
     affiliations:
       - ref: sanbi
   - name:
-      given: Domitilla C.
-      family: Raimondo
-    orcid: 0000-0003-3998-752X
-    affiliations:
-      - ref: sanbi
-  - name:
-      given: Dewidine
-      family: van der Colff
-    orcid: 0000-0002-0906-7098
-    affiliations:
-      - ref:  sanbi
-  - name:
-      given: Keenan
-      family: Meissenheimer
-    orcid:
-    affiliations:
-      - ref: sanbi    
-  - name:
-      given: Shae-Lynn E.
-      family: Hendricks
-    orcid: 0009-0003-1733-1156
-    affiliations:
-      - ref: sanbi
-  - name:
       given: Shanan
       family: Atkins
     orcid: 0000-0003-2327-5077
@@ -91,7 +67,6 @@ author:
       given: Rob
       family: Leslie
     orcid: 
-
   - name: 
       given: Sarika
       family: Singh
@@ -99,11 +74,35 @@ author:
     affiliations:
       - ref: dffe(oc)
   - name:
+      given: Dewidine
+      family: van der Colff
+    orcid: 0000-0002-0906-7098
+    affiliations:
+      - ref:  sanbi
+  - name:
+      given: Keenan
+      family: Meissenheimer
+    orcid:
+    affiliations:
+      - ref: sanbi    
+  - name:
+      given: Shae-Lynn E.
+      family: Hendricks
+    orcid: 0009-0003-1733-1156
+    affiliations:
+      - ref: sanbi
+  - name:
       given: Maphale S. 
       family: Monyeki 
     orcid: 0000-0002-5083-7461 
     affiliations:
-      - ref: sanbi  
+      - ref: sanbi 
+  - name:
+      given: Domitilla C.
+      family: Raimondo
+    orcid: 0000-0003-3998-752X
+    affiliations:
+      - ref: sanbi
                                                                                   
 affiliations:
 
@@ -193,15 +192,15 @@ google-scholar: true
 
 ## Key findings
 
--   In the current assessment, 191 species of sharks, rays and chimaeras have been assessed, with 13 of these species endemic to South Africa.
+-   191 species of sharks, rays and chimaeras have been assessed, with 13 of these species endemic to South Africa.
 
--   Forty-three percent (82 species) of these 191 species are assessed as threatened with extinction, with another 10% (20 species) assessed as Near Threatened.
+-   Forty-three percent (82 species) of these are threatened with extinction, with another 10% (20 species) assessed as Near Threatened.
 
 -   Six of South Africa’s 13 endemic sharks are threatened with extinction, placing full responsibility for their protection in South Africa.
 
--   Sharks have been included in the South African Red List Index (RLI) for the first time, and this group is considered the most threatened marine taxonomic group in South Africa, with the lowest RLI score, indicating high levels of threat and declining status.
+-   Sharks have been included in the South African Red List Index (RLI) for the first time. Sharks are the most threatened marine taxonomic group in South Africa, and they have the lowest RLI score of all South African taxon groups assessed.
 
--   The main threats to sharks are fisheries, primarily as targeted catch and bycatch in commercial fisheries targeting more productive species. Habitat loss and degradation are also identified as a threat to several species with small geographic ranges in nearshore and coastal habitats (including endemic species). Climate and oceanographic changes are likely driving habitat loss and range shifts for some species.
+-   The main threats to sharks are fisheries, primarily as targeted catch and bycatch in commercial fisheries. Habitat loss and degradation are also identified as a threat to several species with small geographic ranges in nearshore and coastal habitats (including endemic species). Climate and oceanographic changes are likely driving habitat loss and range shifts for some species.
 
 ## Overview of diversity
 
@@ -213,9 +212,9 @@ South Africa's sharks range in size from smaller species such as the happy Eddie
 
 Sharks occupy a diversity of habitats from estuaries and shallow coastal waters (including sandy and muddy seabeds, coral and rocky reefs, and kelp forests) to deeper offshore waters (including both benthic habitats and the pelagic zone).
 
-Sharks perform a range of essential ecological functions – as apex and meso-predators sharks influence marine ecosystems in multiple ways. By limiting the abundance, behaviour, and distribution of their prey, they help stabalise food webs, support diversity at lower trophic levels, and maintain the ecological processess that underpin health ocean systems. Large benthic rays can serve as habitat engineers and important bioturbators, making oxygen and buried nutrients available to other organisms [@dedman2024a]. The importance of sharks in maintaining well-functioning coastal and marine ecosystems cannot be overemphasised [@forestry2022a].
+Sharks perform a range of essential ecological functions – as apex and meso-predators sharks influence marine ecosystems in multiple ways. By limiting the abundance, behaviour, and distribution of their prey, they help stabilise food webs, support diversity at lower trophic levels, and maintain the ecological processess that underpin healthy ocean systems. Large benthic rays can serve as habitat engineers and important bioturbators, making oxygen and buried nutrients available to other organisms [@dedman2024a]. The importance of sharks in maintaining well-functioning coastal and marine ecosystems cannot be overemphasised [@forestry2022a].
 
-Unfortunately, many shark species have slow life histories – they are long-lived but slow growing and late maturing with low reproductive rates. These characteristics combine to make shark populations inherently vulnerable to overfishing and slow to recover following depletion.
+Many shark species are long-lived, slow growing, and late maturing with low reproductive rates. These characteristics combine to make shark populations inherently vulnerable to overfishing and slow to recover following depletion.
 
 Species with small geographic ranges in nearshore and coastal habitats are also especially vulnerable to habitat loss and degradation, and some appear to be undergoing climate-induced range shifts that may reduce their geographic range still further.
 
@@ -227,7 +226,7 @@ Sharks, rays, skates, wedgefishes (also known as guitarfishes), sawfishes and ch
 
 ## Threat status
 
-Based on the combination of global and national IUCN Red List of Threatened Species assessments (see [Approach](#approach)), 82 species (43%) were found to be threatened with extinction (@fig-1, @tbl-1), including 12 species (6%) listed as Critically Endangered at extremely high risk of extinction), 35 (18%) as Endangered (at very high risk), and 35 (18%) as Vulnerable (at high risk). A further 20 species (10%) are categorised as Near Threatened, while 18 (9%) are classified as Data Deficient (i.e. have insufficient information to determine whether they are threatened or not), so the true number of threatened species could be even higher. 71 species (37%) are categorised as Least Concern. Six (46%) of the 13 endemic species were assessed as threatened. Responsibility for the conservation and recovery of these six species lies in South Africa’s hands.
+Based on the combination of global and national IUCN Red List of Threatened Species assessments (see [Approach](#approach)), 82 species (43%) were found to be threatened with extinction (@fig-1, @tbl-1), including 12 species (6%) listed as Critically Endangered at extremely high risk of extinction), 35 (18%) as Endangered (at very high risk), and 35 (18%) as Vulnerable (at high risk). A further 20 species (10%) are categorised as Near Threatened, while 18 (9%) are classified as Data Deficien, with insufficient information to determine threat status. 71 species (37%) are categorised as Least Concern. Six (46%) of the 13 endemic species were assessed as threatened. Responsibility for the conservation and recovery of these six species lies in South Africa’s hands.
 
 For the species assessed at the national level, 11 species are assessed as less threatened at the national than global level (including five species that are globally threatened but nationally Least Concern) and 21 species have the same threat status at global and national levels. These results indicate that South Africa’s efforts to manage fisheries for some target and bycatch species are having significant positive impacts, while the overall status assessment (43% of South Africa’s sharks listed as threatened) shows that much more still needs to be done to prevent extinctions and foster recovery.
 
@@ -502,21 +501,21 @@ Overfishing is the main threat to sharks globally [@dulvy2021a] and in South Afr
 
 Total catch of sharks across all fisheries is in the order of 1 000 tonnes per annum [@forestry2022a]. Domestic consumption of shark meat and fins in South Africa is limited – most of the documented catch is exported to markets in Asia, Latin America and Australia.
 
-Of shark species landed in South African fisheries, 24% are Critically Endangered (@tbl-3) or Endangered. Two of these species have estimated annual catches (2013-2023) in excess of 100 tonnes [@d2025a]: soupfin shark (*Galeorhinus galeus*, CR) and shortfin mako (*Isurus oxyrinchus*, EN). An additional four Endangered species have estimated average annual catches (2013-2023) of 11 tonnes or more [@d2025a]: dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), and common smooth-hound (*Mustelus mustelus*, EN) (@tbl-2). For most of these species (the exception being the spearnose skate), overfishing is the sole pressure. However, catches are very low for five of the Critically Endangered or Endangered species landed in South African fisheries [@forestry2022a].
+Among shark species landed in South African fisheries, 24% are Critically Endangered (@tbl-3) or Endangered. Two of these species have estimated annual catches (2013-2023) in excess of 100 tonnes [@d2025b]: soupfin shark (*Galeorhinus galeus*, CR) and shortfin mako (*Isurus oxyrinchus*, EN). An additional four Endangered species have estimated average annual catches (2013-2023) of 11 tonnes or more [@d2025b]: dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), and common smooth-hound (*Mustelus mustelus*, EN) (@tbl-2). For most of these species (the exception being the spearnose skate), overfishing is the sole pressure. However, catches are very low for five of the Critically Endangered or Endangered species landed in South African fisheries [@forestry2022a].
 
 From 2010 to 2012, approximately two thirds of the reported shark catch in southern Africa was bycatch [@silva2015a]. While some bycatch is retained and sold, much unwanted bycatch is discarded at sea. Mortality rates are high for many bycatch species, especially if they are neglected while on deck. Bycatch discarded at sea is effectively unrecorded and unregulated [@forestry2022a].
 
-Recreational fisheries continue for some shark species – while fishers may choose catch-and-release, post-release mortality rates are high for some species due to high capture stress (e.g., the Critically Endangered scalloped hammerhead, *Sphyrna lewini*). The impact of recreational fishing also extends to threatened shysharks and catsharks, which are caught as bycatch why fishers target other species. They are often discarded on the shore because they are viewed as pests.
+Recreational fisheries continue for some shark species – while fishers may choose catch-and-release, post-release mortality rates are high for some species due to high capture stress (e.g. the Critically Endangered scalloped hammerhead, *Sphyrna lewini*). The impact of recreational fishing also extends to threatened shysharks and catsharks, which are caught as bycatch why fishers target other species. They are often discarded on the shore because they are viewed as pests.
 
 The [lethal shark control programme](../marine/marine_pressures.qmd) in KwaZulu-Natal (shark nets and baited drum lines for bather protection) targets large sharks and represents an additional pressure on target and bycatch species. Currently, the programme is responsible for 2.4% of South Africa’s total shark catch [@forestry2022a]. The lethal shark control programme is the main pressure in South Africa for the Critically Endangered great hammerhead (*Sphyrna mokarran*) and the Endangered sandbar shark (*Carcharhinus plumbeus*), and also takes the Critically Endangered scalloped hammerhead (*Sphyrna lewini*). While some individuals are released alive, some species (such as hammerheads) have high capture stress and are unlikely to survive. See [lethal shark control measures section](../marine/marine_pressures.qmd#box2) on the marine pressure page.
 
-By combing long-term catch records from the demersal and pelagic shark longlines and the KZN lethal shark control programme with satellite-tracking data for white sharks, there is evidence that these bather protection measures have caught more white sharks than assessed commercial fisheries [@kock2022].
+By combining long-term catch records from the demersal and pelagic shark longlines and the KZN lethal shark control programme with satellite-tracking data for white sharks, there is evidence that these bather protection measures have caught more white sharks than assessed commercial fisheries [@kock2022].
 
 ![Both the longfin mako (*Isurus paucus*) and shortfin mako (*Isurus oxyrinchus*) sharks are assessed as Endangered, with average annual landings of the shortfin mako estimated at 11 tonnes or more. (© Steve Benjamin)](./imgs/sp_sharks_img_2.png){fig-align="center"}
 
 South African fisheries are well developed, with a high degree of industrialisation [@silva2015a]. Threats to sharks, rays and chimaeras associated with small-scale fisheries are likely lower in South Africa than in some other coastal countries in the region.
 
-Pressure from illegal gillnet fisheries in estuaries and the open sea along the entire South African continental margin is growing, representing an increasing threat to both legal fisheries and sharks [@d2025a]. In some areas, catches and landings of sharks in illegal gillnets at sea likely exceed landings from legal gillnets [@d2025a]. The illegal gillnet fishery is characterised by exceptionally high bycatch, especially when nets are set in estuaries and other nursery areas [@d2025a].
+Pressure from illegal gillnet fisheries in estuaries and the open sea along the entire South African continental margin is growing, representing an increasing threat to both legal fisheries and sharks [@d2025b]. In some areas, catches and landings of sharks in illegal gillnets at sea likely exceed landings from legal gillnets [@d2025b]. The illegal gillnet fishery is characterised by exceptionally high bycatch, especially when nets are set in estuaries and other nursery areas [@d2025b].
 
 While South Africa’s industrial fisheries are well managed and various measures are in place to reduce pressure on threatened species, many sharks are highly mobile and face more intense fishing pressure when they leave South African waters, including unregulated and illegal fishing [@pollom2024].
 
@@ -524,7 +523,7 @@ One quarter of South Africa’s threatened shark species are threatened by habit
 
 The effects of climate change are difficult to determine, but one fifth of South Africa’s threatened shark species are considered threatened by climate-driven habitat loss or range shifts. Climate pressure may be mediated through direct impacts on habitat loss (e.g., loss of coral reef habitat through bleaching for the Critically Endangered shorttail nurse shark, *Pseudoginglymostoma brevicaudatum*) or through range shifts in response to changing ocean temperatures and other oceanographic variables that can lead to significant habitat loss for geographically restricted and ecologically specialised species, including several of South Africa’s threatened endemic species (@tbl-2; see also Pollom et al. 2024).
 
-[Focus on South Africa’s threatened endemic shark species]{.underline}
+**Focus on South Africa’s threatened endemic shark species**
 
 The main threat identified for the six threatened endemic species is fisheries – two species are subject to target catch effort, while all six are taken as bycatch in fisheries targeting other species (@tbl-2).
 
@@ -568,13 +567,13 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 ```
 
-<br> [Focus on Critically Endangered shark species that occur in South Africa]{.underline}
+**Focus on Critically Endangered shark species that occur in South Africa**
 
-Many of the global threatened shark species that occur in South Africa have broad global ranges and face varying pressure across their ranges. Some of the pressures shown in @fig-3 may not be prevalent in South Africa. @tbl-3 summarises the pressures on 12 Critically Endangered shark species, focusing on pressures in South African waters. The Critically Endangered soupfin shark (*Galeorhinus galeus*) still faces pressure from fisheries removals of more than 100 tonnes in South Africa alone.
+Many of the globally threatened shark species that occur in South African waters have broad global ranges and face varying pressure across their ranges. Some of the pressures shown in @fig-3 may not be prevalent in South Africa. @tbl-3 summarises the pressures on 12 Critically Endangered shark species, focusing on pressures in South African waters. The Critically Endangered soupfin shark (*Galeorhinus galeus*) still faces pressure from fisheries, with an annual catch of more than 100 tonnes in South Africa alone.
 
 ```{r}
 #| label: tbl-3
-#| tbl-cap: "Major pressures on South Africa’s six threatened endemic shark species [@everette2017a; @cliff2022a; @forestry2022a]."
+#| tbl-cap: "Major pressures on South Africa’s Critically Endangered shark species  [@everette2017a; @cliff2022a; @forestry2022a]."
 #| out-width: 650px
 #| classes: plain
 
@@ -640,27 +639,25 @@ p + scale_x_discrete(
 )
 ```
 
-## Addressing Pressures
+## Addressing pressures
 
-Management measures are essential to address key threats to sharks, prevent overfishing and halt the progressive decline of shark populations towards extinction. Such measures can support the conservation and recovery of South Africa’s shark biodiversity, maintain livelihoods based on sustainable fisheries, and ensure that sharks continue to play their critical roles in maintaining well-functioning coastal and marine ecosystems. These measures are all part of South Africa’s commitment to the global community to address biodiversity loss through the Kunming-Montreal Global Biodiversity Framework, especially Target 4 (halting species extinctions), Target 5 (sustainable use of wild species, preventing overexploitation), Target 9 (sustainable management of wild species for the benefit of people) and Target 2 (restoration of degraded ecosystems). See [priority actions](../marine/marine_priority_actions.qmd) in the marine chapter for more information.
+Management measures are essential to address threats to sharks, prevent overfishing and halt the progressive decline of shark populations towards extinction. Such measures can support the conservation and recovery of South Africa’s shark biodiversity, maintain livelihoods based on sustainable fisheries, and ensure that sharks continue to play their critical roles in maintaining well-functioning coastal and marine ecosystems. These measures are all part of South Africa’s commitment to the global community to address biodiversity loss through the Kunming-Montreal Global Biodiversity Framework, especially Target 4 (halting species extinctions), Target 5 (sustainable use of wild species, preventing overexploitation), Target 9 (sustainable management of wild species for the benefit of people) and Target 2 (restoration of degraded ecosystems). See [priority actions](../marine/marine_priority_actions.qmd) in the marine chapter for more information.
 
 <!-- --------------------------------------------------------- -->
 
 ### Progress to date
 
-<!-- [What has been achieved]{.underline} -->
+South Africa has made significant progress in addressing threats to sharks through the following measures:
 
-South Africa has made significant progress in addressing threats to sharks, including through the measures summarised below.
-
-[Data collection and analysis]{.underline}
+**Data collection and analysis**
 
 -   Good data collection and data management are essential for effective fisheries management. South Africa undertakes fisheries-independent surveys, catch and effort data collection in various fisheries, analysis of population trends and distribution patterns for selected species, stock assessments for a small number of species. There have also been many efforts to improve the identification of sharks which improves data quality [@forestry2022a].
 
-[Spatial measures]{.underline}
+**Spatial measures**
 
 -   Sharks need a refuge from fishing pressure. Marine protected areas (MPAs), other effective area-based conservation measures (OECMs) and other special protection measures designed to safeguard sharks and their habitat within a delineated space can play an important role in safeguarding nursery grounds and other essential habitats. Such measures are most relevant to resident species, but even highly mobile species often depend on specific sites for one or more key life-cycle processes and may be philopatric.
 
--   South Africa has established a network of coastal and offshore MPAs – while designed to safeguard a broader set of biodiversity, some of these are located in sites where they can safeguard sharks and important habitat for sharks. Existing MPAs that safeguard important shark habitat include the uThukela Banks, an important nursery areas for several shark species, Protea Banks, which is a known aggregation site for several species, and the Southwest Indian Seamount MPA, which incorporates habitats identified as globally significant for the conservation of shark species in the region [@forestry2023a].
+-   South Africa has established a network of coastal and offshore MPAs – while designed to safeguard a broader set of biodiversity, some of these are located in sites where they can protect sharks and important parts of their habitat. Existing MPAs that safeguard important shark habitat include the uThukela Banks, an important nursery areas for several shark species, Protea Banks, which is a known aggregation site for several species, and the Southwest Indian Seamount MPA, which incorporates habitats identified as globally significant for the conservation of shark species in the region [@forestry2023a].
 
 ::: {#box-1 .callout-note .species title="Box 1. Conviction for illegal fishing strengthens marine protected areas in South Africa, click here." collapse="true"}
 In a landmark 2024 court decision, the Bredasdorp Regional Court handed down South Africa’s first conviction for environmental degradation under the National Environmental Management Act (NEMA), resulting from illegal fishing within a Marine Protected Area (MPA). The case involved a demersal shark longlining vessel based out of Gqeberha, which was found guilty of illegally harvesting sharks and other fish within the fully protected De Hoop MPA. Expert testimony highlighted the ecological impacts of these activities, including the depletion of local shark populations, disruption of their ecological roles and the broader ecosystem functioning, and the degradation of ecosystem processes such as predator–prey interactions. This conviction highlighted the powerful role of the combination of citizens reporting illegal activities, rigorous investigations, and well-prepared cases by law enforcement and prosecutors, as well as strong scientific evidence and expert testimony, in supporting legal action.
@@ -670,7 +667,7 @@ The guilty verdict represents a significant step forward for marine conservation
 ![Smooth-hound (*Mustelus mustelus*) present in the Table Mountain National Park (TMNP), Marine Protected Area (MPA). (© Craig Foster)](imgs/Smooth_hound_shark_Table_Mountain_National_Park_marine_protected_area_Craig_Foster.png)
 :::
 
-[Fisheries-wide measures]{.underline}
+**Fisheries-wide measures**
 
 Fisheries-wide measures are usually applied to all vessels or permit-holders within a particular fleet (e.g., entry permits, catch limits, size limits, gear restrictions, catch-and-release protocols, trade restrictions). South Africa has implemented various fisheries-wide measures, including:
 
@@ -678,7 +675,7 @@ Fisheries-wide measures are usually applied to all vessels or permit-holders wit
 
 -   the demersal hake trawl fishery has ringfenced its footprint, and no longer trawls outside of these established trawl areas,
 
--   the crustacean trawl fishery in Kwa-Zulu Natal has reduced its footprint and no longer trawls in shallow water due to the establishment of the uThukela MPA,
+-   the crustacean trawl fishery in KwaZulu-Natal has reduced its footprint and no longer trawls in shallow water due to the establishment of the uThukela MPA,
 
 -   South Africa prohibits squalene production which has helped to prevent targeting of deep-water squalid sharks,
 
@@ -690,17 +687,15 @@ Fisheries-wide measures are usually applied to all vessels or permit-holders wit
 
 -   shift from large-mesh gillnets to more selective baited drumlines (i.e. baited hooks suspended from buoys anchored to the seabed) in lethal shark control programmes and removal of gillnets from most beaches during the winter months to reduce bycatch of predators associated with the sardine run and prevent entanglement of whales.
 
-[Water quality and flows]{.underline}
+**Water quality and flows**
 
 -   Measures to restore water quality and flows (see key message [A7](../key-messages/kma7.qmd))
 
-<!-- [What still needs to be done]{.underline} -->
+### Future needs
 
-### Future progress
+Not withstanding the above, the persistent high proportion of South Africa’s shark species that are Critically Endangered or Endangered (47 species, 25%) and the declining trend in the RLI for South African sharks indicate that the measures need to be expanded, strengthened, or improved.
 
-Nevertheless, the persistent high proportion of South Africa’s shark species that are Critically Endangered or Endangered (47 species, 25%) and the declining trend in the RLI for South African sharks indicate that the measures need to be expanded, strengthened, or improved.
-
-[Spatial measures]{.underline}
+**Spatial measures**
 
 -   Important sites for sharks should be prioritised in any plans to expand and improve management of MPAs, OECMs and other special protection areas, given the high and deteriorating threat status of sharks. Information on important sites for sharks can be gained through the widely respected expert-derived Important Shark and Ray Area (ISRA) process[@group2023a], Key Biodiversity Areas [@boyd2025a] and other approaches (e.g., systematic conservation planning[@faure-beaulieu2023a].
 
@@ -758,25 +753,25 @@ Nevertheless, the persistent high proportion of South Africa’s shark species t
 
 <!-- Important sites that are not protected through MPAs or OECMs can be incorporated into Critical Biodiversity Areas. In addition to MPAs and OECMs, other spatial conservation and management processes, including Environmental Impact Assessments, estuarine management plans, and integrated coastal management plans, need to be directed to consider shark conservation [@forestry2023a]. -->
 
-[Fisheries management for target species]{.underline}
+**Fisheries management for target species**
 
 Additional investments are needed to ensure sustainable science-based fisheries management for target species that takes account of the ecosystem effects of shark removals, given the important roles of sharks in coastal and marine ecosystems. This includes specific actions to address excess catch, including a shift from lethal shark control to non-lethal bather protection programmes and increased investment in monitoring and enforcement of existing regulations.
 
-In particular, stronger measures are needed to protect the six Critically Endangered and Endangered species that were subject to average annual catches of 11 tonnes or more in the 2013-2023 period (i.e. soupfin shark (*Galeorhinus galeus*, CR), shortfin mako (*Isurus oxyrinchus*, EN), dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), common smooth-hound (*Mustelus mustelus*, EN))[@d2025a].
+In particular, stronger measures are needed to protect the six Critically Endangered and Endangered species that were subject to average annual catches of 11 tonnes or more in the 2013-2023 period (i.e. soupfin shark (*Galeorhinus galeus*, CR), shortfin mako (*Isurus oxyrinchus*, EN), dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), common smooth-hound (*Mustelus mustelus*, EN))[@d2025b].
 
 ![The twineye skate (*Raja ocellifera*) is an endemic skate that is Endangered. Although this species receives some protection in the Amathole offshore MPA, stronger measures are needed to support species recovery (© ACEP Deep Forests Project, Kerry Sink)](./imgs/Raja_ocillifera_DFR039_KSink.png){fig-align="center"}
 
-[Bycatch]{.underline}
+**Bycatch**
 
 Most notably, increased investment is urgently needed to reduce the excessive rates of shark bycatch in South Africa’s fisheries and shift towards more selective fishing gears and practices. As noted, approximately two-thirds of the reported shark catch in southern Africa from 2010 to 2012 was bycatch [@silva2015a]. Unwanted bycatch harms sharks and fishers who must waste time removing the catch from fishing gear, sometimes at considerable personal risk.
 
 This may include expanding the list of prohibited species, strengthening monitoring and enforcement systems, and efforts to reduce high mortality rates for discarded catch (e.g., skills training on how to release hooked sharks to minimise post-release mortality, education and awareness raising aimed improving handling and safe release of sharks caught as unwanted bycatch, especially threatened endemic species, such as the happy Eddie (*Haploblepharus edwardsii*, EN) and brown shyshark (*Haploblepharus fuscus*, VU)).
 
-[Illegal fisheries]{.underline}
+**Illegal fisheries**
 
-Interventions are urgently needed to eradicate illegal gillnetting operations in estuaries and the open sea, recognising that this represents a threat to both legal fisheries and sharks as well as other species taken as bycatch by illegal gillnets [@d2025a].
+Interventions are urgently needed to eradicate illegal gillnetting operations in estuaries and the open sea, recognising that this represents a threat to both legal fisheries and sharks as well as other species taken as bycatch by illegal gillnets [@d2025b].
 
-[Regional cooperation]{.underline}
+**Regional cooperation**
 
 Given that many of South Africa’s shark species are highly mobile and spend only part of their annual life cycles in South African waters, there is also a need for regional collaboration with other countries (especially neighbouring countries, Mozambique and Namibia) and in marine areas beyond national jurisdiction to reduce threats to South Africa’s sharks beyond our waters. This is especially important for the 47 South African shark species listed as Critically Endangered or Endangered.
 
@@ -784,9 +779,9 @@ Given that many of South Africa’s shark species are highly mobile and spend on
 
 Science-based management to ensure sustainable fisheries for both target and bycatch species within an ecosystem approach to fisheries requires adequate data on the status and trends of relevant fish stocks. In South Africa, fisheries-independent surveys, including demersal trawl surveys and shore angling surveys, provide essential data for status assessments and should be continued or even expanded.
 
-More sophisticated fisheries stock assessments designed to optimise harvest levels with respect to various management objectives require reliable time-series of catch and associated effort data. In South Africa, this information is currently only available for 10 species, and stock assessments have only been attempted for 5 species [@silva2015a].
+More sophisticated fisheries stock assessments designed to optimise harvest levels with respect to various management objectives require reliable time-series of catch and associated effort data. In South Africa, this information is currently only available for 10 species, and stock assessments have only been attempted for five species [@silva2015a].
 
-While most of the required catch and effort data are self-reported, self-reporting is not always reliable and datasets can be significantly improved through fisheries observer programmes. It is recommended that the scientific observer programme is re-establshed in the demersal trawl fishery, observer coverage is improved in priority fisheries, and training provided in shark species identification and other relevant skills. Electronic monitoring systems have been tested by various countries and shown to be effective at monitoring catches in some fisheries and could enable expanded coverage at lower cost, but species identification will likely be challenging in the case of sharks. Fisheries observer programmes can also provide a valued source of employment for fisheries-dependent communities. In South Africa, electronic monitoring is being tested in the demersal shark longline fishery, with preliminary results showing promise [@d2025a].
+While most of the required catch and effort data are self-reported, self-reporting is not always reliable and datasets can be significantly improved through fisheries observer programmes. It is recommended that the scientific observer programme is re-establshed in the demersal trawl fishery, observer coverage is improved in priority fisheries, and training provided in shark species identification and other relevant skills. Electronic monitoring systems have been tested by various countries and shown to be effective at monitoring catches in some fisheries and could enable expanded coverage at lower cost, but species identification will likely be challenging in the case of sharks. Fisheries observer programmes can also provide a valued source of employment for fisheries-dependent communities. In South Africa, electronic monitoring is being tested in the demersal shark longline fishery, with preliminary results showing promise [@d2025b].
 
 More data are also required to assess the impacts of recreational fisheries, as catches are not currently reported leading to significant gaps in our understanding of fishing pressure.
 
@@ -802,7 +797,7 @@ In addition to monitoring of population trends to inform science-based fisheries
 
 An understanding of key life-history parameters is also needed to identify those less well-studied species that are especially vulnerable to overfishing.
 
-The two volumes of Species Profiles of South African Sharks, Rays and Chimaeras [@cliff2022a; @cliff2025a] provide detailed species-specific comments on current and future importance of research for each species covered.
+The two volumes of *Species Profiles of South African Sharks, Rays and Chimaeras* [@cliff2022a; @cliff2025a] provide detailed species-specific comments on current and future importance of research for each species covered.
 
 ![In 2025, a specimen of the Critically Endangered largetooth sawfish *Pristis pristis* washed up on a beach near East London. The most recent prior record of a sawfish in South Africa was caught in a shark net in 1999. Sawfishes were previously not uncommon in South African waters and were thought to be the first likely local extinction of marine species in South Africa. (© Kevin Cole, East London Museum)](./imgs/sp_sharks_img_6.png){fig-align="center"}
 
@@ -816,9 +811,11 @@ The trend in species status over time was measured using the globally recognised
 
 The RLI was calculated for all shark species in South African waters (n = 191), using national status assessments where available and global status assessments otherwise.
 
+For further information on approach, see [here](../integrated-findings/chl_rls_explained.qmd).
+
 ## Acknowledgements
 
-All contributors to the shark, rays and chimaeras assessments are sincerely thanked particularly the many experts who contributed to the nationally adjusted assessments under very tight timeframes. We thank all the IUCN global assessment teams including but not limited to the IUCN SSC Coral Specialist Group, IUCN Cetacean Specialist Group and Cetacean Red List Authority, the IUCN SSC Snapper, Seabream and Grunt Specialist Group, IUCN Shark Specialist Group and the IUCN SSC Grouper and Wrasse Specialist Group. We acknowledge the SAEON led SeaMap project for supporting redlisting of marine invertebrate resource species and the development of a strategy to increase Red List assessments of marine invertebrates in South Africa.
+Members of the IUCN SSC Shark Specialist Group are sincerely thanked for their contributions to the nationally adjusted assessments under very tight time frames.
 
 ## Recommended citation
 

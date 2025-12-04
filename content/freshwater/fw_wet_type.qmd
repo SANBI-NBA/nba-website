@@ -101,41 +101,27 @@ South Africa is one of the most water-scarce countries in the world, with high t
 
 ## Mapping wetland extent
 
-The National Wetland Map is the primary input layer for the NBA 2025 assessment. The map depicts the location and extent of wetlands and strives to capture the historical extent of wetlands prior to human modification. The map is created using a mixed-method approach combining diverse data sources and mapping techniques to achieve comprehensive coverage and accuracy. This methodology integrates traditional data collection, ranging from field mapping and the digitisation of satellite imagery, to information derived from Earth Observation, supported by automated processes. Notably, the map has incorporated an automated wetland probability map, which uses topographic modelling to estimate wetland likelihood and efficiently map large or previously unmapped areas. Furthermore, the dataset is enriched by important contributions from external stakeholders. To manage this complexity, the NWM team developed a robust framework and established protocols for standardising, preparing, and integrating all data from these varied methods and contributors into a single, cohesive, and consolidated national dataset.
+The [National Wetland Map](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/freshwater-programme-) (NWM) is the primary input layer for the NBA 2025 assessment. The map depicts the location and extent of wetlands and strives to capture the historical extent of wetlands prior to human modification. The map is created using a mixed-method approach combining diverse data sources and mapping techniques to achieve comprehensive coverage and accuracy. This methodology integrates traditional data collection, ranging from field mapping and the digitisation of satellite imagery, to information derived from Earth Observation, supported by automated processes. Notably, the map has incorporated an automated wetland probability map, which uses topographic modelling to estimate wetland likelihood and efficiently map large or previously unmapped areas. Furthermore, the dataset is enriched by important contributions from external stakeholders. To manage this complexity, the NWM team developed a robust framework and established protocols for standardising, preparing, and integrating data from these varied methods and contributors into a single, cohesive, and consolidated national dataset.
 
-## Classifying wetland types - work in progress
+## Classifying wetland types - a work in progress
 
-An interim typology of South Africa's wetland ecosystem types, based on a combination of bioregional and hydrogeomorphic criteria, informs NBA 2025. Wetlands are first classified according to hydrogeomorphic type based on landform and hydrology. Four hydrogeomorphic (HGM) types have been adopted for the NBA 2025 assessment. These are floodplain wetlands (identified by the presence of a river channel and consolidating previously named floodplain and channelled valley-bottom wetlands into one group), unchannelled valley-bottom wetlands, depression wetlands and seep wetlands. The four HGM types are further divided into regional wetland types, resulting in 82 provisional types.
+An interim typology of South Africa's wetland ecosystem types, based on a combination of bioregional and hydrogeomorphic criteria, informs NBA 2025. Wetlands are first classified according to hydrogeomorphic type based on landform and hydrology [@ollis2013; @grenfell2019]. Four hydrogeomorphic (HGM) types have been adopted for the NBA 2025 assessment. These are floodplain wetlands (identified by the presence of a river channel and consolidating previously named floodplain and channelled valley-bottom wetlands into one group), unchannelled valley-bottom wetlands, depression wetlands and seep wetlands. The four HGM types are further divided into regional wetland types, resulting in 82 provisional types.
 
-Each wetland type has been aligned with the Global Ecosystem Typology to support reporting into global processes, with depression wetlands grouped under F1 Lacustrine wetlands, and all other inland wetlands grouped under TF1 Palustrine wetlands.
+Each wetland type has been aligned with the [Global Ecosystem Typology](https://global-ecosystems.org/page/typology) to support reporting into global processes, with depression wetlands grouped under [F2 Lacustrine wetlands](https://global-ecosystems.org/explore/biomes/F2), and all other inland wetlands grouped under [TF1 Palustrine wetlands](https://global-ecosystems.org/explore/biomes/TF1).
 
 ## Future work
 
-While the NBA input version of the national wetland ecosystem map will be released alongside NBA 2025 as National Wetland Map 2025, our mapping efforts are continuous as we work to address remaining data gaps and expand coverage. Work is already underway on an expanded extent map that reflects our ongoing progress and partnerships.
-
-We are actively developing an updated wetland typology with accompanying descriptions of each wetland ecosystem type, which has not before been available for South Africa's wetlands. Extensive efforts with multiple partners to update and develop the first version of the wetland typology was not finalised for inclusion in the NBA 2025 assessment. This work will continue into the upcoming year, expanding the current number of wetland ecosystem types and moving closer towards an ecosystem map that can be formally gazetted in future alongside terrestrial ecosystems.
-
-This is also the first time to undertake an assessment of wetland ecosystems against IUCN ecosystem red listing criteria.
-
-Therefore, while NBA 2025 represents the best available information, the current results are preliminary and an extensive review of the outputs remains underway, with stakeholder engagement continuing through early 2026. It remains essential that map data be verified in the field by a wetland professional for site-specific conservation and management decisions.
-
-The wetland ecosystem map input to the NBA 2025 will be available to the public as National Wetland Map 2025, while an ongoing extent map version is already underway as mapping continues. Once the national wetland typology is stable, the information on historical extent combined with the wetland ecological condition assessment will make it possible to assess and report on wetland extent trends over time.
+While the current working version of the national wetland ecosystem map will be released alongside NBA 2025 as National Wetland Map 2025, mapping efforts with a range of partners continue, focused on filling data gaps and expanding the map coverage. We are actively developing an updated wetland typology with accompanying descriptions of each wetland ecosystem type (a first for South Africa). Extensive efforts with multiple partners to revise the wetland typology was not finalised for inclusion in the NBA 2025 assessment. This work will continue into the upcoming year, expanding the current number of wetland ecosystem types and moving closer towards a comprehensive ecosystem map. It remains essential that map data be verified in the field by a wetland professional for site-specific conservation and management decisions.
 
 ## Technical documentation
 
-Coming soon
+### Key publications
 
-**Related publications and supporting information**
+Convention on Wetlands. 2025. [Small wetlands: Their importance and strategies for effective conservation](https://www.ramsar.org/document/small-wetlands-their-importance-strategies-effective-conservation). Policy Brief 7. Gland, Switzerland: Secretariat of the Convention on Wetlands.
 
-Convention on Wetlands. 2025. Small Wetlands: Their importance and strategies for effective conservation. Policy Brief 7. Gland, Switzerland: Secretariat of the Convention on Wetlands. DOI: 10.69556/strp <https://www.ramsar.org/document/small-wetlands-their-importance-strategies-effective-conservation>
+Grenfell, S., Grenfell, M., Ellery, W., Job, N. & Walters, D. 2019. A genetic geomorphic classification system for southern African palustrine wetlands: Global implications for the management of wetlands in drylands. *Frontiers in Environmental Science* 7:174. [doi: 10.3389/fenvs.2019.00174](https://doi.org/10.3389/fenvs.2019.00174)
 
-Grenfell, S., Grenfell, M., Ellery, W., Job, N. & Walters, D. 2019. A Genetic Geomorphic Classification System for Southern African Palustrine Wetlands: Global Implications for the Management of Wetlands in Drylands. *Front. Environ. Sci.* 7:174. doi: 10.3389/fenvs.2019.00174
-
-Ollis, D.J., Snaddon, C.D., Job, N.M. & Mbona, N. 2013. Classification System for Wetlands and other Aquatic Ecosystems in South Africa. User Manual: Inland Systems. No. 22, South African National Biodiversity Institute (SANBI) Biodiversity Series. SANBI, Pretoria, South Africa.
-
-SANBI. 2025. Floodplain wetlands of South Africa: Managing floodplain wetlands to provide ecosystem services and reduce risk of floods. SANBI Factsheet series. South African National Biodiversity Institute, Pretoria.
-
-SANBI. 2025. National Wetland Map: South Africa’s official map of wetland extent, type and condition. SANBI Factsheet series. South African National Biodiversity Institute, Pretoria.
+Ollis, D.J., Snaddon, C.D., Job, N.M. & Mbona, N. 2013. [Classification system for wetlands and other aquatic ecosystems in South Africa. User manual: Inland systems](https://www.sanbi.org/wp-content/uploads/2018/04/sanbi-biodiversity-series-wetlands-classification-no-22.pdf). SANBI Biodiversity Series 22. South African National Biodiversity Institute, Pretoria.
 
 ## Recommended citation
 

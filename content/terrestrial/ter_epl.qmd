@@ -266,7 +266,9 @@ Ecosystem protection level index (EPLI) calculation (Harris et al., in review) i
 
 ## Technical documentation
 
-**Code repository:** <https://github.com/askowno/EPL_terr>
+**Code repository**
+
+Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_terr>.
 
 **Key publications**
 

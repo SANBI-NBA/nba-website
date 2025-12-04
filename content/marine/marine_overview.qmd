@@ -43,7 +43,7 @@ description: |
 
 | [17%]{.inline-style-not-protected}
 | of 163 ecosystem types
-| [Not protected]{.inline-style-indicator}
+| [Not Protected]{.inline-style-indicator}
 
 | [36%]{.inline-style-threatened}
 | of 495 taxa assessed
@@ -86,11 +86,11 @@ knitr::include_graphics("imgs/benthic_pelagic_map_panel.png") # knitr::include_g
 
 ## Species assessments
 
-Marine species are assessed in terms of their [stock status and/or threat status](../species/marine_sp.qmd). Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria.
+Marine species are assessed in terms of their [threat status and/or stock status](../species/marine_sp.qmd). Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria.
 
-There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (key message [A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and West Coast rock lobster are Endangered. Illegal fishing plays a key role in the Endangered status of these species (key message [A6](../key-messages/kma6.qmd)).
+Of the 495 marine species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria, [36% are considered threatened](../species/marine_sp.qmd) (key message [B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
 
-Of the 495 marine species assessed using the [IUCN Red List of Threatened Species](https://www.iucnredlist.org/) criteria, 36% are considered threatened (key message [B1](../key-messages/kmb1.qmd)). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.
+There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (key message [A5](../key-messages/kma5.qmd)). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and South African abalone (*Haliotis midae*) and West Coast rock lobster (*Jasus lalandii*) are Endangered. Illegal fishing plays a key role in the Endangered status of these species (key message [A6](../key-messages/kma6.qmd)).
 
 ![Several marine invertebrate resources, seabreams and shark and rays were assessed as threatened in 2025. West Coast rocklobster are Endangered (© Geoff Spiby); dageraad are Critically Endangered (© Steve Benjamin); bull sharks are Vulnerable (© Fiona Erst).](imgs/overview_species.png)
 
@@ -132,8 +132,7 @@ The NBA 2025 identified knowledge gaps limiting the assessment and research prio
 
 Priority actions for improving the state of marine biodiversity were co-developed in collaboration with knowledge holders, policy and decision makers through a series of science-policy-society dialogues. More than 80 actions were advanced and these were distilled into 10 overarching actions with proposed indicators against which progress can be tracked (see [knowledge gaps, priority actions and priority areas page](marine_priority_actions.qmd)).
 
-Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified and planning is 
- being improved with increased participation, collaboration and technical innovation.
+Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified and planning is being improved with increased participation, collaboration and technical innovation.
 
 Drawing from key findings of the NBA, ten priority actions were co-developed for improving the state of marine biodiversity. Each of these are associated with several potential indicators for progress. The priority actions include:
 

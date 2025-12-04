@@ -1,5 +1,5 @@
 ---
-title: "Anostraca (Fairy shrimps)" 
+title: "Fairy shrimps (Anostraca)" 
 title-block-banner: "#ad180d" 
 title-block-banner-color: white 
 

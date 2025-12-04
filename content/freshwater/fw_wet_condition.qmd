@@ -103,11 +103,13 @@ google-scholar: true
 
 ![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
 
+------------------------------------------------------------------------
+
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [35%]{.inline-style-not-protected}
+| [49%]{.inline-style-not-protected}
 | of wetland extent
 | Natural or Near-natural
 
@@ -118,7 +120,7 @@ google-scholar: true
 <center>
 
 | [58%]{.inline-style-well-protected}
-| of 82 inland wetland types
+| of 171 303 inland wetlands
 | Natural or Near-natural
 
 </center>
@@ -135,11 +137,12 @@ google-scholar: true
 :::: panel-tabset
 ## Map
 
-![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem types within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
+![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem extent within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
 
 ## Data
 
 <!-- ::: {#table-1 .table style="height:500px;overflow-y: auto"} -->
+
 ::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-wetland_condition_bytype
@@ -205,16 +208,16 @@ tbl
 # tbl
 
 ```
-
 :::
 
 Download the data by wetland type [here](data/wetlands_condition_combined_extent_percent_by_type.csv).
-
 ::::
 
-Ecological condition was calculated for 171 303 wetlands. Of these, approximately 1 476 561 ha (49%) of inland wetland extent and 100 029 (58%) of inland wetland ecosystem types have been assessed to be in natural (class A) or near-natural (class B) ecological condition. Approximately 808 325 ha (27%) of inland wetland extent and 24 752 (14%) of inland wetland ecosystem types have been assessed to be in a moderately modified (class C) ecological condition and approximately 705 797 (27%) of inland wetland extent and 46 522 (24%) of inland wetland ecosystem types have been assessed to be in severely modified (class D, E or F) ecological condition.
+Approximately 1 476 561 ha (49%) of total inland wetland extent is in a natural (class A) or near -natural (class B) condition, 808 325 ha (27%) is in a moderately modified (class C) condition, and 705 797 ha (27%) is in a heavily to critically modified (class D, E or F) condition.
 
-Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 14% of depression wetlands Severely Modified, 11% Moderately Modified and 76% in a Near-Natural or Natural ecological state. Floodplain, unchannelled valley-bottom, and seep wetlands all appear to have 42% Severely Modified wetland extent, with 34%, 35%, and 42% respectively in Near-Natural or Natural ecological condition.
+Ecological condition was calculated for 171 303 wetlands. Of these, approximately 100 029 wetlands (58%) are in a natural (class A) or near-natural (class B) condition, 24 752 (14%) are in a moderately modified (class C) condition and 46 522 (24%) are in a heavily to critically modified (class D, E or F) condition.
+
+Of the different hydrogeomorphological types, depression wetlands are in the best ecological condition, with 76% in a natural or near-natural condition, with 11% moderately modified and 14% in a heavily to critically modified condition. Floodplain, unchannelled valley-bottom, and seep wetlands have 34%, 35%, 42% of their extent in natural or near-natural ecological condition.
 
 :::: panel-tabset
 ## Figure
@@ -300,17 +303,21 @@ tbl
 Download the data [here](data/wetlands_condition_combined_extent_percent.csv).
 ::::
 
-## Approach to develop this input layer
+## Approach {#cond}
 
-Wetlands are complex systems that are influenced by multiple biotic and abiotic factors. Determining wetland health therefore requires a multidisciplinary approach that will allow for determining a single condition score from all the influencing factors. While previous approaches to determine wetland condition were sound, they lacked the holistic and systematic characteristics of the Level 1A approach of MacFarlane et al. 2020.
+Wetlands are complex systems that are influenced by multiple biotic and abiotic factors. Determining wetland health therefore requires a multidisciplinary approach that will allow for determining a single condition score from all the influencing factors. While previous approaches to determine wetland condition were sound, they lacked the holistic and systematic characteristics of the WET-Health Level 1A approach [@macfarlane2020].
 
-Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described by MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands such as those of a national wetland inventory. In addition to being typed according to Ollis et al. 2013, the method also requires each wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment.
+Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described by MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands such as those of a national wetland inventory. In addition to being typed according to Ollis et al. (2013) [@ollis2013], the method also requires each wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment.
 
 Overall wetland condition was calculated from the combined state of wetland hydrology, water quality, geomorphology, and vegetation, which were all calculated from the inferred pressures of different land cover classes.
 
 While allowing for a systematic assessment of wetland condition, the Level 1A approach also allows for the inclusion of in-field validated expert data, a process that has already been initiated through numerous expert engagements during which spatial extent, typing, and wetland condition data were captured for individual wetlands and wetland complexes. Such expert data, along with the Level 1A assessment, contributes towards an improved approach for national wetland condition assessment by building a reference dataset that will directly and indirectly inform future PES assessments.
 
 In addition to allowing for the rapid assessment of multiple wetlands, the automation of a standardised wetland condition assessment method also provides opportunity for future temporal analysis by using land cover grids from different periods as input data. The results will not only reveal the change in wetland condition over time, but also the pressures responsible for such changes.
+
+### Future steps
+
+The automated wetland ecological condition is a major step forward in reproducibility and an opportunity for ongoing improvement. It mirrors the categories and framework adopted by practitioners undertaking assessments in the field and sets in place great potential for teasing out drivers of degradation from the perspective of wetland hydrology, water quality, geomorphology or vegetation change, and the development of specific management responses. Going forward, work remains for wide expert engagement to continue inform future wetland ecological condition assessments.
 
 ## Technical documentation
 

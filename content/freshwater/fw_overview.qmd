@@ -99,7 +99,7 @@ Over 30% (82/222) of river ecosystem types are both highly threatened and under-
 
 It follows that the freshwater species which these ecosystems support are increasingly highly threatened. Over 36% of all assessed freshwater taxa and 66% of assessed endemic freshwater taxa are threatened, while 36% of all freshwater fishes and 66% of endemic freshwater fishes are threatened.
 
-Freshwater fishes are the most threatened of all taxa in South Africa. With escalating pressures from human activities and climate change, it is highly concerning that 59 [waterbird species](../species/fw_sp.qmd) have been uplisted, with 5 listed as Endangered, 11 Vulnerable and the remaining Near Threatened, while the African shaggy rat (previously African marsh rat) and the laminate vlei rat have been uplisted from Least Concern to Near Threatened during the current assessment. This is the first time that [freshwater invertebrates](../species/sp_anostraca.qmd) have been included into the national biodiversity assessment.
+Freshwater fishes are the most threatened taxon group in South Africa. With escalating pressures from human activities and climate change, it is highly concerning that 59 [waterbird species](../species/fw_sp.qmd) have been uplisted, with 5 listed as Endangered, 11 Vulnerable and the remaining Near Threatened, while the African shaggy rat (previously African marsh rat) and the laminate vlei rat have been uplisted from Least Concern to Near Threatened. This is the first time that [freshwater invertebrates](../species/sp_anostraca.qmd) have been included in the national biodiversity assessment.
 
 In the face of increasing pressures, South African freshwater ecosystems continue to degrade faster than the investment in their conservation, management and rehabilitation. Key pressures include disruptions to the hydrological regime, deteriorating water quality ([key message A3](../key-messages/kma3.qmd)), direct habitat loss and biological invasions ([key message A4](../key-messages/kma4.qmd)), as well as the exacerbating effect of climate change ([key message A1](../key-messages/kma1.qmd)).
 
@@ -107,14 +107,22 @@ As freshwater ecosystems are affected by land use within their receiving catchme
 
 [^2]: [Other effective area-based conservation measures](https://iucn.org/our-work/topic/effective-protected-areas/our-philosophy-protected-and-conserved-areas/oecms) (OECMs) are defined as "a geographically defined area other than a Protected Area, which is governed and managed in ways that achieve positive and sustained long-term outcomes for the in-situ conservation of biodiversity, with associated ecosystem functions and services and where applicable, cultural, spiritual, socio-economic, and other locally relevant values". For more information on wetland-related opportunities, see [Other effective area-based conservation measures (OECMs) for the conservation and wise use of wetlands \| The Convention on Wetlands, The Convention on Wetlands](Other%20effective%20area-based%20conservation%20measures%20(OECMs)%20for%20the%20conservation%20and%20wise%20use%20of%20wetlands%20%7C%20The%20Convention%20on%20Wetlands,%20The%20Convention%20on%20Wetlands).
 
-## For more information on river ecosystems
+## More information on river ecosystems
 
-Click on the following or see the links in the left panel of this page to find more information on [river ecosystem types](fw_riv_type.qmd), [river ecological condition](fw_riv_condition.qmd), [pressures of rivers](fw_wet_pressures.qmd), [river ecosystem threat status](fw_riv_ets.qmd), [river ecosystem protection level](fw_riv_epl.qmd), [key actions](../integrated-findings/pakg_actions.qmd) and [knowledge gaps](../integrated-findings/pakg_actions.qmd).
+-   [River ecosystem types](fw_riv_type.qmd)
+-   [River ecological condition](fw_riv_condition.qmd)
+-   [Pressures on rivers](fw_wet_pressures.qmd)
+-   [River ecosystem threat status](fw_riv_ets.qmd)
+-   [River ecosystem protection level](fw_riv_epl.qmd)
 
-## For more information on inland wetland ecosystems
+## More information on inland wetland ecosystems
 
-Click on the following or see the links in the left panel of this page to find more information on [inland wetland ecosystem types](fw_wet_type.qmd), [wetland ecological condition](fw_wet_condition.qmd), [pressures on wetlands](fw_wet_pressures.qmd), [wetland ecosystem threat status](fw_wet_ets.qmd), [wetland ecosystem protection level](fw_wet_epl.qmd), [key actions](../integrated-findings/pakg_actions.qmd) and [knowledge gaps](../integrated-findings/pakg_actions.qmd).
+-   [Inland wetland ecosystem types](fw_wet_type.qmd)
+-   [Wetland ecological condition](fw_wet_condition.qmd)
+-   [Pressures on wetlands](fw_wet_pressures.qmd)
+-   [Wetland ecosystem threat status](fw_wet_ets.qmd)
+-   [Wetland ecosystem protection level](fw_wet_epl.qmd)
 
-## For more information on freshwater species
+## More information on freshwater species
 
-Click on the following or see the link in the left panel of this page to find more information on the status of assessed [freshwater species](../species/fw_sp.qmd).
+[Freshwater species](../species/fw_sp.qmd)

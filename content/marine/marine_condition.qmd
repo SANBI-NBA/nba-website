@@ -117,7 +117,7 @@ google-scholar: true
 
 *Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, further refinement of indicators and improved understanding of ecosystem responses to pressures are needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd)).*
 
-![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. © Eve Marshall, Triton Dive Charters](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
+![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. (© Eve Marshall, Triton Dive Charters)](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
 
 \
 
@@ -125,14 +125,14 @@ google-scholar: true
 
 The condition map shows areas that are assessed to be in one of four categories of ecological condition: natural/near-natural, moderately modified, heavily modified and severely modified ([Box 1](#box-ecol_cats)). Critically modified areas were included in the heavily modified category in this assessment. In South Africa's marine environment, critically modified components are only present in some shore ecosystem types, where infrastructure (coastal development or ports) has caused irreversible habitat loss.
 
-![Map of ecological condition showing the spatial distribution of marine benthopelagic and benthic areas in different ecological condition categories as calculated from cumulative pressures (see [Approach](#approach) and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)).](imgs/condition_with_donut.png){#fig-condition_benthic .lightbox}
+![Map of ecological condition showing the spatial distribution of marine benthopelagic and benthic areas in different ecological condition categories as calculated from cumulative pressures (see [Approach](#approach) and [Majiedt et al. 2019](http://hdl.handle.net/20.500.12143/6372)).](imgs/condition_with_donut.png){#fig-condition_benthic}
 
-![Map of ecological condition showing the spatial distribution of marine pelagic areas in different ecological condition categories as calculated from cumulative pressures (see [Approach](#approach)).](imgs/condition_pel_with_donut.png){#fig-condition_pelagic .lightbox}
+![Map of ecological condition showing the spatial distribution of marine pelagic areas in different ecological condition categories as calculated from cumulative pressures (see [Approach](#approach)).](imgs/condition_pel_with_donut.png){#fig-condition_pelagic}
 
 \
 Areas of severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the South Coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates are underway.
 
-![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. © SAEON](imgs/WCVS19_sTATION_4_292m_26.png)
+![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. (© South African Environmental Observation Network)](imgs/WCVS19_sTATION_4_292m_26.png)
 
 The marine realm has relatively high proportions of areas in the natural/near-natural ecological condition (@fig-condition_benthic, @fig-condition_pelagic). However, ecosystem modification tends to be focused in pressure hotspots, usually linked to local characteristics such as high productivity, accessibility and valuable natural resources (such as bays, inner shelf and shelf edge areas), while large and often remote areas remain relatively lightly used and unmodified. Deepwater biogenic beds, bays and kelp forests have the highest proportion of ecosystem modification in terms of their extent ([@fig-ets_bargraphs]).
 
@@ -211,7 +211,7 @@ Mining, coastal development and demersal trawling have the highest impact scores
 
 <!-- Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-condition_benthic). -->
 
-![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is in the uThukela MPA. © ACEP Surrogacy project, Kerry Sink.](imgs/uThukela_condition_ACEP.png){width="900"}
+![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is in the uThukela MPA. (© ACEP Surrogacy project, Kerry Sink)](imgs/uThukela_condition_ACEP.png){width="900"}
 
 ## Groundtruthing ecological condition
 
@@ -219,7 +219,7 @@ Few cumulative impact studies validate their assessments of ecological condition
 
 Results showed that ecological condition was significantly but weakly correlated with NBA cumulative impact scores, with notable discrepancies at finer scales, where some reefs were in better condition than predicted while others were worse [@smit2024]. The cumulative impact scores performed better as a proxy for the condition of fish communities than for benthic communities [@smit2024]. Although the cumulative impact map was an effective proxy at broad scales, the findings highlighted the need for finer-scale pressure mapping and ecological data to improve ecological condition maps and support more accurate spatial assessments.
 
-![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. © Steve Benjamin.](imgs/DeHoop_MPA_Steve_Benjamin.png){width="100%"}
+![Highly protected zones within MPAs can be used as reference areas to support the calibration of ecological condition. This reef is within the De Hoop MPA. (© Steve Benjamin)](imgs/DeHoop_MPA_Steve_Benjamin.png){width="100%"}
 
 ## Approach {#approach}
 
@@ -262,7 +262,7 @@ impact_scores %>%
                                            color = "white", 
                                            align = "left")),
                 locations = gt::cells_column_labels()) %>%
-  tab_options(container.height = px(400),
+  tab_options(container.height = px(380),
               container.overflow.y = TRUE) %>% 
   nba_tbl_theme(HEADER = "Marine")
 
@@ -304,9 +304,9 @@ Potential future improvements to the ecological condition mapping process includ
 
 ## Acknowledgements
 
-The National Marine Ecosystem Committee and Network and the National Marine Biodiversity Scientific Working Group are thanked for their oversight of marine ecosystem assessments. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for funding advances in knowledge on ecosystem condition assessment. Authors and contributors of Smit et al. 2022 (A Roadmap to Advance Marine and Coastal Monitoring, Biodiversity Assessment, and International Reporting), including participants who attended the SANBI/UCT/Mission Atlantic ecosystem assessment workshop held Oct 2021 are thanked.  
+The National Marine Ecosystem Committee and Network and the National Marine Biodiversity Scientific Working Group are thanked for their oversight of marine ecosystem assessments. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for funding advances in knowledge on ecosystem condition assessment. Authors and contributors of Smit et al. 2022 (A Roadmap to Advance Marine and Coastal Monitoring, Biodiversity Assessment, and International Reporting), including participants who attended the SANBI/UCT/Mission Atlantic ecosystem assessment workshop held Oct 2021 are thanked.
 
-We also thank the authors of Sink et al 2019 (NBA Ecosystem threat status chapter) as well as participants of the 3-day Pressures scoring workshop held in 2017 including Andrew Cockcroft, Anthony Bernard, Anѐ Oosthuizen, George Branch, Jodie Reed, Lara Atkinson, Linda Harris, Loyiso Dunga, Luther Adams, Maphale Matlala, Megan van der Bank, Myriam Perschke, Olona Buswana, Siyasanga Miza, Sizo Sibanda, Stephen Kirkman and Steven Weerts. Participants of the 2018 NBA Review workshop are also acknowledged for useful insights into ecosystem condition assessment.  Finally, we thank Andrew Skowno for his cross-realm leadership in ecosystem condition assessment. 
+We also thank the authors of Sink et al. (2019; Ecosystem threat status chapter) as well as participants of the 3-day Pressures scoring workshop held in 2017, including Andrew Cockcroft, Anthony Bernard, Anѐ Oosthuizen, George Branch, Jodie Reed, Lara Atkinson, Linda Harris, Loyiso Dunga, Luther Adams, Maphale Matlala, Megan van der Bank, Myriam Perschke, Olona Buswana, Siyasanga Miza, Sizo Sibanda, Stephen Kirkman and Steven Weerts. Participants of the 2018 NBA Review workshop are also acknowledged for useful insights into ecosystem condition assessment. Finally, we thank Andrew Skowno for his cross-realm leadership in ecosystem condition assessment.
 
 ## Technical documentation
 
@@ -332,11 +332,6 @@ Smit, K.P. et al. 2024. Groundtruthing cumulative impact assessments with biodiv
 
 Smit, K.P. et al. 2026. Depth and habitat drive spatial patterns in fish functional diversity: a trait-based assessment across South Africa and southern Mozambique. Marine Environmental Research 213: 107620. https://doi.org/10.1016/j.marenvres.2025.107620
 
-### References
-
-::: {#refs}
-:::
-
 ## Recommended citation
 
 ```{r}
@@ -356,3 +351,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
+
+### References
+
+::: {#refs}
+:::

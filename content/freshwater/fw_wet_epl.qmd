@@ -417,9 +417,9 @@ Key input layers include the South African protected areas database[@southafrica
 
 While the 2018 assessment used a standard 20% target for freshwater[@roux2008] ecosystems, the current protection level target was adjusted to 30% in line with Target 3 of the Global Biodiversity Framework. This target is applied to each of the 82 inland wetland ecosystem types. Importantly, the current ecological condition of the wetland within the protected area is taken into consideration in the calculation, ensuring that effectiveness is accounted for. At least 30% of each inland wetland ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition (ecological class A or B) to qualify in the Well Protected category. If this target was not met, the ecosystem type is categorised as Moderately Protected or lower, meaning that good condition wetlands contribute more to meeting protection level targets than poor condition wetlands.
 
-Ecosystem types were assigned to one of four categories based on the percentage of the protection target met within the protected areas network, and scaled by ecological condition: **Well Protected**: 100% (or more) of a wetland ecosystem type’s target falls within the protected area network; but only wetlands in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of a wetland ecosystem type’s target falls within the protected area network; and wetlands in an A and B condition contribute 100%, wetlands in a C and D condition contribute 30%, while E and F condition wetlands contribute only 10%; **Poorly Protected**: 5% to 49% of a wetland ecosystem type’s target falls within the protected area network; and A and B condition wetlands contribute 100%, C and D condition wetlands contribute 30%, E and F condition wetlands contribute 10%; **Not Protected**: less than 5% of a wetland ecosystem type’s target falls within the protected area network; and A and B condition wetlands contribute 100%, C and D condition wetlands contribute 30%, E and F condition rivers contribute 10%.
+Ecosystem types were assigned to one of four categories based on the percentage of the protection target met within the protected areas network, and scaled by ecological condition (@tbl-eplcon): **Well Protected**: 100% (or more) of a wetland ecosystem type’s target falls within the protected area network; but only wetlands in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of a wetland ecosystem type’s target falls within the protected area network; and wetlands in an A and B condition contribute 100%, wetlands in a C and D condition contribute 30%, while E and F condition wetlands contribute only 10%; **Poorly Protected**: 5% to 49% of a wetland ecosystem type’s target falls within the protected area network; and A and B condition wetlands contribute 100%, C and D condition wetlands contribute 30%, E and F condition wetlands contribute 10%; **Not Protected**: less than 5% of a wetland ecosystem type’s target falls within the protected area network; and A and B condition wetlands contribute 100%, C and D condition wetlands contribute 30%, E and F condition rivers contribute 10%.
 
-![](imgs/EPL_table.png)
+![Ecosystem protection level categories and the use of ecosystem condition data to moderate contribution to targets.](imgs/EPL_table.png){#tbl-eplcon width="600"}
 
 Changes in ecosystem protection level results since the 2018 assessment reflect revised targets and improved methodologies for global and national alignment, alongside genuine changes in protection and updates to inland wetland ecological condition and mapping of wetland extent.
 
@@ -427,7 +427,7 @@ Changes in ecosystem protection level results since the 2018 assessment reflect 
 
 **Code repository**
 
-<https://github.com/askowno/EPL_wet>
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem protection level \[Source code\]. GitHub repository available at [https://github.com/askowno/EPL_wet](https://github.com/askowno/EPL_wet)
 
 **Related publications and supporting information**
 
