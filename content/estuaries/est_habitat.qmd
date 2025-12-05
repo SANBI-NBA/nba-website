@@ -143,7 +143,7 @@ Mangroves are threatened by overutilisation such as the harvesting of mangrove w
 :::
 
 ::: {.column width="60%"}
-Swamp forests are freshwater ecosystems associated with estuaries in the subtropical and tropical regions, including species such as *Barringtonia racemosa*, *Hibiscus tiliaceous*, *Ficus trichopoda* and *Syzigium cordatum*. In systems with little submerged macrophytes they play an important role in detritus input in the form of leaf litter. This habitat plays an important role in riparian erosion control and flood attenuation.
+Swamp forests are transitional freshwater-terrestrial ecosystems associated with estuaries in the subtropical and tropical regions, including species such as *Barringtonia racemosa*, *Hibiscus tiliaceous*, *Ficus trichopoda* and *Syzigium cordatum*. In systems with little submerged macrophytes they play an important role in detritus input in the form of leaf litter. This habitat plays an important role in riparian erosion control and flood attenuation.
 :::
 ::::::
 

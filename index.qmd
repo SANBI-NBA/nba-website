@@ -21,7 +21,6 @@ format:
 :::
 ::::
 
-#### NBA staging website: content under development {style="color: red"}
 
 :::: column-screen
 ::: column-body
