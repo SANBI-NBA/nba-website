@@ -573,7 +573,7 @@ Many of the globally threatened shark species that occur in South African waters
 
 ```{r}
 #| label: tbl-3
-#| tbl-cap: "Major pressures on South Africa’s Critically Endangered shark species  [@everette2017a; @cliff2022a; @forestry2022a]."
+#| tbl-cap: "Major pressures on South Africa’s Critically Endangered shark species occurring in South Africa [@everette2017a; @cliff2022a; @forestry2022a]."
 #| out-width: 650px
 #| classes: plain
 
@@ -703,7 +703,7 @@ Not withstanding the above, the persistent high proportion of South Africa’s s
 
 -   Important sites that are not protected through MPAs or OECMs can be incorporated into Critical Biodiversity Areas. In addition to MPAs and OECMs, other spatial conservation and management processes, including Environmental Impact Assessments, estuarine management plans, and integrated coastal management plans, need to be directed to consider shark conservation [@forestry2023a].
 
-![The Agulhas Bank MPA protects mesophotic kelp forests and gardens of coralline algae on the offshore volcanic pinnacles. The rare speckled guitarfish (*Acroteriobatus ocellatus*, DD) has been observed in this MPA. (© Georgina Jones)](./imgs/sp_sharks_img_4.png){fig-align="center"}
+![The Agulhas Bank MPA protects mesophotic kelp forests and gardens of coralline algae on the offshore volcanic pinnacles. The rare speckled guitarfish (possibly *Acroteriobatus ocellatus*, Data Deficient) has been observed in this MPA. (© Georgina Jones)](./imgs/sp_sharks_img_4.png){fig-align="center"}
 
 <!-- ############ -->
 

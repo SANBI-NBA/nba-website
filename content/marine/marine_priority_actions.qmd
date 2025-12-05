@@ -336,7 +336,7 @@ There has been some progress with foundational biodiversity research at the spec
 
 Citizen science is also supporting taxonomic research ([Nudibranchs](#box-1)) although potential records far exceed taxonomic capacity and reference collections need investment to make the most of this approach. A reference image database is being advanced [@adams2024] and there is a need to invest in digital taxonomy [@rogers2023a]. Progress in the application of machine learning in processing of seabed imagery is limited by taxonomic constraints with a need to undertake reference collections with *in situ* images and barcodes linked to taxonomic samples. Further systematic prioritization of invertebrate groups together with filling taxonomic knowledge gaps could improve our ability to conduct more Red List assessments for marine invertebrates [@subramoney2024].
 
-Some areas of progress in foundational biodiversity research for species include improved taxonomic knowledge on sea slugs ([Box 1](#box-1)), sea cucumbers and azoozanthellate corals. Taxonomic descriptions of 170 southern African sea cucumbers species were published, representing 55 years of research, and calling for increased efforts to further build taxonomic capacity in southern Africa [@thandar2022]. The state of knowledge of South African azooxanthellate coral species has been improved, with the total number of known species increased from 77 to 108, with 28 new species records, three new species and one new genus [@filander2021]. 
+Some areas of progress in foundational biodiversity research for species include improved taxonomic knowledge on sea slugs ([Box 1](#box-1)), sea cucumbers and azoozanthellate corals. Taxonomic descriptions of 170 southern African sea cucumbers species were published, representing 55 years of research, and calling for increased efforts to further build taxonomic capacity in southern Africa [@thandar2022]. The state of knowledge of South African azooxanthellate coral species has been improved, with the total number of known species increased from 77 to 108, with 28 new species records, three new species and one new genus [@filander2021].
 
 :::::::: {#box-1 .callout-note .marine title="Box 1. Citizen science advances foundational marine biodiversity products" collapse="false"}
 ::: {style="margin-bottom: 0.5em;"}
@@ -378,7 +378,7 @@ A new field guide entitled Southern African Sea Slugs was published at the end o
 <!-- :::::: -->
 ::::::::
 
-Gaps remain in systematic [genetic barcoding efforts](../genetics/chl_barcoding.qmd) and genetic baselines for priority species. South Africa has made progress in adopting genetic indicators that are part of the Kunming-Montreal Global Biodiversity Framework but marine taxa and particularly marine invertebrates are particularly neglected. 
+Gaps remain in systematic [genetic barcoding efforts](../genetics/chl_barcoding.qmd) and genetic baselines for priority species. South Africa has made progress in adopting genetic indicators that are part of the Kunming-Montreal Global Biodiversity Framework but marine taxa and particularly marine invertebrates are particularly neglected.
 
 Foundational ecosystem knowledge [has been improved](marine_ecosystems.qmd#sec-updatingMEM) and includes new and improved species distribution knowledge for informing a more data-driven national marine ecosystem map.
 
@@ -386,28 +386,21 @@ Foundational ecosystem knowledge [has been improved](marine_ecosystems.qmd#sec-u
 
 Other taxonomic research priorities include work on important marine ecosystem engineers (habitat forming animals including Vulnerable Marine Ecosystem Indicator taxa [@franken2025]), marine invertebrates that are sensitive to water quality changes and other indicator taxa. South Africa’s Marine Taxonomy Working group identified several national priorities to help address the critical shortfall in marine taxonomic research and capacity.
 
-::: {#box-rp1 .callout-note .marine collapse="true" title="A number of specific research priorities have been identified to strengthen foundational biodiversity knowledge for the marine realm 
-\
-[Read more »]()"}
+::: {#box-rp1 .callout-note .marine collapse="true" title="A number of specific research priorities have been identified to strengthen foundational biodiversity knowledge for the marine realm [Read more »]()"}
+-   Research to validate and improve South Africa’s evolving national map of marine ecosystem types. Research effort beyond the shelf including slope, plateau, seamount and abyssal systems is particularly encouraged with a need to test the extent of differences between deep-sea ecosystem types in the Indian, Atlantic and Southern oceans.
 
--   Research to validate and improve South Africa’s evolving national map of marine ecosystem types. Research effort beyond the shelf including slope, plateau, seamount and abyssal systems is particularly encouraged with a need to test the extent of differences between deep-sea ecosystem types in the Indian, Atlantic and Southern oceans. 
+-   Research to identify key drivers of marine biodiversity patterns and ecosystem processes from under researched geographic areas.
 
--   Research to identify key drivers of marine biodiversity patterns and ecosystem processes from under researched geographic areas. 
+-   Integrated taxonomic research with a focus on validating species identification with in-situ imagery and genetic barcodes. This will enable increased application of increasing imagery to support foundational ecosystem research and monitoring. Taxonomic priorities are shown in Box 2.
 
--   Integrated taxonomic research with a focus on validating species identification with in-situ imagery and genetic barcodes. This will enable increased application of increasing imagery to support foundational ecosystem research and monitoring. Taxonomic priorities are shown in Box 2. 
+-   Sustained research to support population genetic baselines and strategic long-term monitoring of species and populations in need of recovery. Priority taxa could include overexploited and threatened marine invertebrates (link to marine species page).
 
--   Sustained research to support population genetic baselines and strategic long-term monitoring of species and populations in need of recovery. Priority taxa could include overexploited and threatened marine invertebrates (link to marine species page). 
-
--   Research that advances the use of machine learning, artificial intelligence and data analytics for the analysis of big data and in support of the national marine ecosystem map. 
-
+-   Research that advances the use of machine learning, artificial intelligence and data analytics for the analysis of big data and in support of the national marine ecosystem map.
 :::
 
-Ongoing challenges in assessing marine species, genetic biodiversity and ecosystems include the crises in taxonomy and a poor understanding of species distribution data. Innovative and integrated methods that can help address these gaps include imaging approaches, molecular methods, digital taxonomy, active and passive acoustics, citizen science and the strategic connection of biodiversity databases [@rogers2022]. Progress in these complementary areas can increase our understanding of species distribution and feed into improved marine biodiversity assessments at all levels (genetic, species and ecosystems) and multiple scales. Foundational data gaps and capacity constraints limit the IUCN Red List assessment (extinction risk) of marine species. Although dedicated marine species red listing support has been recognised as a key requirement since 2018 (Sink et al. 2019 chapter 11 prev NBA), there has been no progress in securing resources or capacity to advance this work [@subramoney2024]. 
+Ongoing challenges in assessing marine species, genetic biodiversity and ecosystems include the crises in taxonomy and a poor understanding of species distribution data. Innovative and integrated methods that can help address these gaps include imaging approaches, molecular methods, digital taxonomy, active and passive acoustics, citizen science and the strategic connection of biodiversity databases [@rogers2022]. Progress in these complementary areas can increase our understanding of species distribution and feed into improved marine biodiversity assessments at all levels (genetic, species and ecosystems) and multiple scales. Foundational data gaps and capacity constraints limit the IUCN Red List assessment (extinction risk) of marine species. Although dedicated marine species red listing support has been recognised as a key requirement since 2018 (Sink et al. 2019 chapter 11 prev NBA), there has been no progress in securing resources or capacity to advance this work [@subramoney2024].
 
-::: {#box-2 .callout-note .marine collapse="true" title="Box 2. Recommendations to strengthen taxonomic research in South Africa as identified by the marine taxonomy working group. Accurate taxonomy published in the peer reviewed literature can support global recognition for South Africa’s exceptional marine biodiversity. 
-\
-[Read more »]()"}
-
+::: {#box-2 .callout-note .marine collapse="true" title="Box 2. Recommendations to strengthen taxonomic research in South Africa as identified by the marine taxonomy working group. Accurate taxonomy published in the peer reviewed literature can support global recognition for South Africa’s exceptional marine biodiversity.   [Read more »]()"}
 -   Ensure taxonomic data is effectively collated, coordinated and managed through effective data management, integrated and accessible platforms that prioritise taxonomic data and by employing and developing well trained, permanent, networked data managers /systems administrators across institutions.
 
 -   Communicate the value of taxonomic research, collections and collection management to mobilise increased and resources and capacity to address foundational marine biodiversity knowledge. Collections must be recognised as critical national assets that underpin biodiversity management.
@@ -445,9 +438,7 @@ Whilst progress has been made in the initiation of research to [strengthen our u
 
 Progress has been made in the detection of microplastics and other emerging contaminants (including pharmaceuticals and pesticides) [@porter2018; @sparks2020; @ojemaye2022; @tyohemba2022], however the impacts of these are still poorly understood in a national context. Mapping these pressures would enable their use in biodiversity assessment and spatial biodiversity prioritisation.
 
-::: {#box-rp2 .callout-note .marine collapse="true" title="A number of applied research prorities have been identified to support improved assessment and management of marine biodiversity. 
-\
-[Read more »]()"}
+::: {#box-rp2 .callout-note .marine collapse="true" title="A number of applied research prorities have been identified to support improved assessment and management of marine biodiversity.   [Read more »]()"}
 -   Research to support IUCN Red List assessments of marine species. There is a need to increase the number of marine taxonomic groups that are comprehensively assessed using the IUCN Red List criteria.
 
 -   Research and spatial analysis to measure protection levels of threatened marine species.
@@ -475,10 +466,7 @@ Research has been conducted on cultural connections to the ocean [@dunga2025] an
 
 Participatory research has been advanced to understand and map the resource use patterns and priorities of small-scale fishers [@sunde2024] and further research effort is needed to expand this knowledge across the different geographies of South Africa.
 
-::: {#box-rp3 .callout-note .marine collapse="true" title="A number of research priorities have been identified to support improved understanding of socio-economic and socio-cultural benefits of, and connections to, marine biodiversity. 
-\
-[Read more »]()"}
-
+::: {#box-rp3 .callout-note .marine collapse="true" title="A number of research priorities have been identified to support improved understanding of socio-economic and socio-cultural benefits of, and connections to, marine biodiversity.   [Read more »]()"}
 -   Research to build knowledge on the ecosystem services in the deep sea and its role in supporting key production sectors, livelihoods, climate resilience and the economy.
 
 -   Socio-ecological and human-dimension research, including inter-disciplinary research, to support spatial planning, prioritisation and management and resource management. The co-development of research questions with stakeholders and diverse research institutions is encouraged.
@@ -524,16 +512,7 @@ The Kunming-Montreal Global Biodiversity Framework (GBF) is a global agreement u
 Whilst aimed at improving biodiversity, the GBF framework elevates the importance of indigenous people and local communities, and seeks to recognise and enhance the role this important stakeholder group plays in protecting and managing biodiversity now and in the future. Further details are available in the [2030 targets](https://www.cbd.int/gbf/targets "CBD targets").
 ::::::::
 
-
-::: {#box-4 .callout-note .marine collapse="true" title="Action 1. 
-\
-![](imgs/Slide1.jpg) 
-\
-Enhance meaningful participation and influence in decision-making for ocean planning, assessment and management to support a whole-of-society approach for effective ocean governance. Participation should extend beyond legislative requirements and advance towards good practice in participatory approaches that enable meaningful involvement of civil society, indigenous people and local communities. This can be achieved through robust inter-disciplinary approaches, inclusive stakeholder dialogue, strengthened capacity and social practice* across institutions, and through innovations in community and industry partnerships.
-\
-Key messages [C1](../key-messages/kmc1.qmd), [B4](../key-messages/kmb4.qmd) 
-\
-[Read more »]()"}
+::: {#box-4 .callout-note .marine collapse="true" title="Action 1.   ![](imgs/Slide1.jpg)   Enhance meaningful participation and influence in decision-making for ocean planning, assessment and management to support a whole-of-society approach for effective ocean governance. Participation should extend beyond legislative requirements and advance towards good practice in participatory approaches that enable meaningful involvement of civil society, indigenous people and local communities. This can be achieved through robust inter-disciplinary approaches, inclusive stakeholder dialogue, strengthened capacity and social practice* across institutions, and through innovations in community and industry partnerships.  Key messages [C1](../key-messages/kmc1.qmd), [B4](../key-messages/kmb4.qmd)   [Read more »]()"}
 <!-- [^1]: The ways in which individuals and groups interact, adjust and readjust and establish relationships and patterns of behaviour which are again modified through social interaction, collective reflection and learning.  -->
 
 Potential indicators of progress could include:
@@ -542,7 +521,7 @@ Potential indicators of progress could include:
 
 -   Indigenous knowledge working groups are established with co-developed guidelines and outputs that support the recognition and inclusion of indigenous knowledge in marine biodiversity assessment, planning and decision-making. Identify and establish mechanisms for integrating Indigenous knowledge into existing and new management plans, actions, and policies and other outputs and outcomes related to planning, management, and decision-making.
 
--   Indigenous knowledge is recognised and considered in marine biodiversity assessment, planning, policies, action plans and decisions alongside other knowledge forms. One way to support this is through the establishment of indigenous knowledge working groups and the co-development of guidelines to safeguard and support the recognition and inclusion of indigenous knowledge in a marine context. 
+-   Indigenous knowledge is recognised and considered in marine biodiversity assessment, planning, policies, action plans and decisions alongside other knowledge forms. One way to support this is through the establishment of indigenous knowledge working groups and the co-development of guidelines to safeguard and support the recognition and inclusion of indigenous knowledge in a marine context.
 
 -   National and local small-scale fisheries priority areas maps are developed and validated through processes that prioritise and actively involve indigenous people and small-scale fishing communities to represent the spatial interests of this vulnerable sector in national ocean planning and decision-making processes.
 
@@ -552,72 +531,55 @@ Potential indicators of progress could include:
 
 ![Platforms such as the SeaPeople collective can allow focussed dialogue on persistent challenges and enable trust building and collaborative ways of working within South Africa’s marine conservation sector. (© Loyiso Dunga)](imgs/workshop2.png)
 
-*An institution's social practice is the way in which it engages internal and external parties in doing its work - from research to planning and policy development to implementation - so that stakeholders co-create the outcome of the process. Given that this work always takes place in a constantly shifting context and is never the same, it requires a creative learning environment within institutions to flourish. 
-
+\*An institution's social practice is the way in which it engages internal and external parties in doing its work - from research to planning and policy development to implementation - so that stakeholders co-create the outcome of the process. Given that this work always takes place in a constantly shifting context and is never the same, it requires a creative learning environment within institutions to flourish.
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-5 .callout-note .marine collapse="true" title="Action 2. 
-\
-![](imgs/Slide2.jpg) 
-\
-Simplify, strengthen and co-ordinate institutional and sectoral arrangements, relationships and frameworks to enable a whole-of government approach for effective and efficient ocean planning and governance. This can be advanced through improved coordination, clear roles and responsibilities and more integrated spatial planning and ecosystem-based management. Improved co-ordination across sectors will also benefit coastal and marine climate adaptation. 
-\
-Key messages [A2](../key-messages/kma2.qmd), [B1](../key-messages/kmb1.qmd), [C1](../key-messages/kmc1.qmd) 
-\
-[Read more »]()"}
-
+::: {#box-5 .callout-note .marine collapse="true" title="Action 2.   ![](imgs/Slide2.jpg)   Simplify, strengthen and co-ordinate institutional and sectoral arrangements, relationships and frameworks to enable a whole-of government approach for effective and efficient ocean planning and governance. This can be advanced through improved coordination, clear roles and responsibilities and more integrated spatial planning and ecosystem-based management. Improved co-ordination across sectors will also benefit coastal and marine climate adaptation.   Key messages [A2](../key-messages/kma2.qmd), [B1](../key-messages/kmb1.qmd), [C1](../key-messages/kmc1.qmd)   [Read more »]()"}
 Potential indicators of progress could include:
 
--   The role and focus of marine inter-governmental and cross-sectoral working groups and task teams are reviewed with steps taken to clarify, simplify, streamline workstreams and enhance efficiency. 
+-   The role and focus of marine inter-governmental and cross-sectoral working groups and task teams are reviewed with steps taken to clarify, simplify, streamline workstreams and enhance efficiency.
 
--   New or revived structures and processes to advance ecosystem-based management (including ecosystem-based fisheries management and better consideration of cumulative impacts in environmental impact assessments) are established with holistic recommendations co-developed and implemented for integrated management.  
+-   New or revived structures and processes to advance ecosystem-based management (including ecosystem-based fisheries management and better consideration of cumulative impacts in environmental impact assessments) are established with holistic recommendations co-developed and implemented for integrated management.
 
--   Improved policy alignment, communication and coordination between government departments and agencies responsible for fishing rights allocation, small-scale fisheries, ocean conservation and management. 
+-   Improved policy alignment, communication and coordination between government departments and agencies responsible for fishing rights allocation, small-scale fisheries, ocean conservation and management.
 
--   Co-ordinated engagement and problem solving to address the persistent challenges facing small-scale fishers including issues related to permitting, rights allocation, MPAs and co-management. 
+-   Co-ordinated engagement and problem solving to address the persistent challenges facing small-scale fishers including issues related to permitting, rights allocation, MPAs and co-management.
 
--   There is progress in cross sectoral biodiversity prioritisation (working with sectors such as heritage, fisheries and tourism) to support implementation of integrated biodiversity-inclusive marine spatial planning. 
--   Marine biodiversity priorities and key considerations for ecosystem based management are integrated in the environmental screening tool that supports environmental impact assessments. 
+-   There is progress in cross sectoral biodiversity prioritisation (working with sectors such as heritage, fisheries and tourism) to support implementation of integrated biodiversity-inclusive marine spatial planning.
 
--   Improved co-ordination facilitates an integrated approach that combines the management of flow, water quality and ecological and built infrastructure to secure vital freshwater flows to the marine realm. 
+-   Marine biodiversity priorities and key considerations for ecosystem based management are integrated in the environmental screening tool that supports environmental impact assessments.
 
--   An overarching framework for integrated shark management (considering fisheries, conservation, tourism and trade) is developed and its implementation is initiated. Progress could be measured in species level fisheries data, bycatch reduction in industrial fisheries, reduction of recreational fisheries pressure on sharks and rays, effective spatial protection, further reduction in the impacts of lethal shark control measures and strengthened cooperative analyses of the impact of trade. 
+-   Improved co-ordination facilitates an integrated approach that combines the management of flow, water quality and ecological and built infrastructure to secure vital freshwater flows to the marine realm.
+
+-   An overarching framework for integrated shark management (considering fisheries, conservation, tourism and trade) is developed and its implementation is initiated. Progress could be measured in species level fisheries data, bycatch reduction in industrial fisheries, reduction of recreational fisheries pressure on sharks and rays, effective spatial protection, further reduction in the impacts of lethal shark control measures and strengthened cooperative analyses of the impact of trade.
 
 ![Biodiversity is fundamental to achieving South Africa’s national objectives, and safeguarding biodiversity calls for a whole-of-government approach with collaborative and integrated planning, management and governance.](imgs/overlapping_sectors.png){width="60%" fig-align="center"}
 :::
 
 <!-- ######################################################### -->
 
-::: {#box-6 .callout-note .marine collapse="true" title="Action 3. 
-\
-![](imgs/Slide3.jpg) 
-\
-Avoid, reduce and manage industrial impacts from maritime sectors through strategic mainstreaming within key production sectors, effective Marine Spatial Planning, strengthened mitigation and restoration and increased incentives. 
-\
-Key messages [A2](../key-messages/kma2.qmd), [A3](../key-messages/kma3.qmd), [A4](../key-messages/kma4.qmd), [B5](../key-messages/kmb5.qmd) 
-\
-[Read more »]()"}
+::: {#box-6 .callout-note .marine collapse="true" title="Action 3.   ![](imgs/Slide3.jpg)   Avoid, reduce and manage industrial impacts from maritime sectors through strategic mainstreaming within key production sectors, effective Marine Spatial Planning, strengthened mitigation and restoration and increased incentives.   Key messages [A2](../key-messages/kma2.qmd), [A3](../key-messages/kma3.qmd), [A4](../key-messages/kma4.qmd), [B5](../key-messages/kmb5.qmd)   [Read more »]()"}
 <!-- ## 3. Avoid, reduce and manage industrial impacts (key message A2, key message A3, key message A4, and key message B5). -->
 
 Potential indicators of progress could include:
 
--   Cumulative effects of mining are considered in environmental impact assessments. 
+-   Cumulative effects of mining are considered in environmental impact assessments.
 
--   Other environmental management tools (such as Strategic Environmental Assessments and Environmental Management Frameworks) are harnessed to support more strategic mining decisions that can ensure that critical coastal and marine ecosystem services are maintained. In addition, increased resources to improve monitoring, compliance and enforcement can reduce illegal mining.  
+-   Other environmental management tools (such as Strategic Environmental Assessments and Environmental Management Frameworks) are harnessed to support more strategic mining decisions that can ensure that critical coastal and marine ecosystem services are maintained. In addition, increased resources to improve monitoring, compliance and enforcement can reduce illegal mining.
 
--   Critical Biodiversity Areas and Sea-Use guidelines are mainstreamed within key production sectors and included in screening tools used for Environmental Impact Assessments to guide infrastructure placement and development. 
+-   Critical Biodiversity Areas and Sea-Use guidelines are mainstreamed within key production sectors and included in screening tools used for Environmental Impact Assessments to guide infrastructure placement and development.
 
--   The impacts of underwater noise impacts are better accounted for in biodiversity assessments, Marine Spatial Planning, mining authorizations and protected area management.  
+-   The impacts of underwater noise impacts are better accounted for in biodiversity assessments, Marine Spatial Planning, mining authorizations and protected area management.
 
--   Innovative finance tools in South Africa are piloted to demonstrate how industrial sectors can fund marine conservation restoration (e.g. blue bonds and mechanisms to enable the polluter pays principle).  
+-   Innovative finance tools in South Africa are piloted to demonstrate how industrial sectors can fund marine conservation restoration (e.g. blue bonds and mechanisms to enable the polluter pays principle).
 
--   The Ballast Water Act, which has been in Bill form since 2013, is promulgated by South Africa and implemented with the associated regulations and compliance systems. 
+-   The Ballast Water Act, which has been in Bill form since 2013, is promulgated by South Africa and implemented with the associated regulations and compliance systems.
 
--   New marine mainstreaming initiatives are developed and implemented to reduce pollution (including underwater noise), seabed and shore damage and impacts on threatened marine species. These could include scaled-up incentives for sustainable use and conservation through eco-certification and other mechanisms. 
+-   New marine mainstreaming initiatives are developed and implemented to reduce pollution (including underwater noise), seabed and shore damage and impacts on threatened marine species. These could include scaled-up incentives for sustainable use and conservation through eco-certification and other mechanisms.
 
--   Industrial impacts in MPAs are reduced and conservation-area expansion efforts contribute to reduced conflict between sectors.  
+-   Industrial impacts in MPAs are reduced and conservation-area expansion efforts contribute to reduced conflict between sectors.
 
 ![The limited consideration of marine information during planning for the Boegoebaai deepwater harbour installation and associated green hydrogen infrastructure highlighted the lack of marine content on the [environmental screening tool](https://screening.environment.gov.za/) that guides placement of infrastructure developments in South Africa. (© Linda Harris)](imgs/boegoebaai_Linda_Harris.png)
 
@@ -628,16 +590,7 @@ Potential indicators of progress could include:
 
 <!-- ######################################################### -->
 
-
-::: {#box-7 .callout-note .marine collapse="true" title="Action 4. 
-\
-![](imgs/Slide4.jpg) 
-\
-South Africa needs to ensure that sufficient fresh water is allocated and received by the marine realm and that water quality is improved to maintain benefits for coastal ecosystems, species and people. 
-\
-Key messages [A7](../key-messages/kma7.qmd), [A3](../key-messages/kma3.qmd), [B2](../key-messages/kmb2.qmd) 
-\
-[Read more »]()"}
+::: {#box-7 .callout-note .marine collapse="true" title="Action 4.   ![](imgs/Slide4.jpg)   South Africa needs to ensure that sufficient fresh water is allocated and received by the marine realm and that water quality is improved to maintain benefits for coastal ecosystems, species and people.   Key messages [A7](../key-messages/kma7.qmd), [A3](../key-messages/kma3.qmd), [B2](../key-messages/kmb2.qmd)   [Read more »]()"}
 <!-- ## 4. Ensure sufficient quantity and quality of freshwater flows to marine ecosystems (key message A3, A7, B2). -->
 
 Potential indicators of progress could include:
@@ -661,21 +614,12 @@ Potential indicators of progress could include:
 ![Sufficient quantity and quality of freshwater reaching the sea is essential for sustainable health of marine ecosystems and species. (© Peter Chadwick)](imgs/river_mouth_Peter_Chadwick.png)
 :::
 
-
-::: {#box-8 .callout-note .marine collapse="true" title="Action 5. 
-\
-![](imgs/Slide5.jpg) 
-\
-Strengthen ecosystem-based fisheries management through periodic reviews and updates to ecological risk assessments, development and implementation of effective fisheries management plans, and increased biodiversity mainstreaming in fisheries. 
-\
-Key messages [A5](../key-messages/kma5.qmd), [A2](../key-messages/kma2.qmd), [B1](../key-messages/kmb1.qmd), [B3](../key-messages/kmb3.qmd), [B5](../key-messages/kmb5.qmd) 
-\
-[Read more »]()"}
+::: {#box-8 .callout-note .marine collapse="true" title="Action 5.   ![](imgs/Slide5.jpg)   Strengthen ecosystem-based fisheries management through periodic reviews and updates to ecological risk assessments, development and implementation of effective fisheries management plans, and increased biodiversity mainstreaming in fisheries.   Key messages [A5](../key-messages/kma5.qmd), [A2](../key-messages/kma2.qmd), [B1](../key-messages/kmb1.qmd), [B3](../key-messages/kmb3.qmd), [B5](../key-messages/kmb5.qmd)   [Read more »]()"}
 <!-- ## 5. Manage fisheries better and more fairly to improve ocean health and food and livelihood security (A2, A5, B1, B3, B5). -->
 
 Potential indicators of progress could include:
 
--   Fisheries management plans for fishing sectors are developed to ensure ecological sustainability for long term economic sustainability. These should support resource (target species) sustainability, include bycatch and habitat management objectives (where applicable), address the human dimensions of fisheries, and include climate change considerations. Participatory approaches could help include fisher knowledge in these plans building on existing mechanisms for stakeholder inclusion in South African fisheries management. 
+-   Fisheries management plans for fishing sectors are developed to ensure ecological sustainability for long term economic sustainability. These should support resource (target species) sustainability, include bycatch and habitat management objectives (where applicable), address the human dimensions of fisheries, and include climate change considerations. Participatory approaches could help include fisher knowledge in these plans building on existing mechanisms for stakeholder inclusion in South African fisheries management.
 
 -   A bycatch management strategy is developed and implemented to improve fisheries sustainability, reduce inter-sector conflict and support fair fisheries.
 
@@ -706,29 +650,20 @@ Potential indicators of progress could include:
 
 <!-- ######################################################### -->
 
-::: {#box-9 .callout-note .marine collapse="true" title="Action 6. 
-\
-![](imgs/Slide6.jpg) 
-\
-Improve marine protection through more diverse and inclusive conservation models, inter-disciplinary approaches, improved social process and innovative finance, progress in co-management, restorative action and steps to address critical capacity shortfalls. Co-ordinated efforts to address persistent barriers to effective protection must be overcome and key lessons learnt should be applied in future expansion efforts. 
-\
-Key messages [B4](../key-messages/kmb4.qmd), [C1](../key-messages/kmc1.qmd), [C3](../key-messages/kmc3.qmd) 
-\
-Read more »"}
-
+::: {#box-9 .callout-note .marine collapse="true" title="Action 6.   ![](imgs/Slide6.jpg)   Improve marine protection through more diverse and inclusive conservation models, inter-disciplinary approaches, improved social process and innovative finance, progress in co-management, restorative action and steps to address critical capacity shortfalls. Co-ordinated efforts to address persistent barriers to effective protection must be overcome and key lessons learnt should be applied in future expansion efforts.   Key messages [B4](../key-messages/kmb4.qmd), [C1](../key-messages/kmc1.qmd), [C3](../key-messages/kmc3.qmd)   Read more »"}
 Potential indicators of progress could include:
 
--   Organisations tasked with design, implementation and management of marine protected and conserved areas and fisheries management have capacity for social science research, reflective social practice, process facilitation and community development. 
+-   Organisations tasked with design, implementation and management of marine protected and conserved areas and fisheries management have capacity for social science research, reflective social practice, process facilitation and community development.
 
--   Clear and specific gazetted MPA objectives that encompass both biodiversity conservation, cultural heritage and socio-economic considerations are established through retrospective reviews for MPAs lacking clear purposes. 
+-   Clear and specific gazetted MPA objectives that encompass both biodiversity conservation, cultural heritage and socio-economic considerations are established through retrospective reviews for MPAs lacking clear purposes.
 
 -   A formal definition, common understanding, and practical framework for “co-management” in an MPA-specific context is co-developed and harmonised with co-existing contexts (e.g., Fisheries).
 
--   New spatial management measures that have potential relevance for marine biodiversity conservation, cultural heritage protection or sustainable use (such as Special Management Areas, marine heritage sites and small-scale fishing zones) are piloted. 
+-   New spatial management measures that have potential relevance for marine biodiversity conservation, cultural heritage protection or sustainable use (such as Special Management Areas, marine heritage sites and small-scale fishing zones) are piloted.
 
 -   Innovative sustainable finance mechanisms to support long-term comprehensive operational funding for MPAs are tested.
 
--   There is increased capacity for collaborative monitoring, surveillance and compliance in and around MPAs with increased funding, new partnerships (including community collaborations) and innovative technology to support these efforts. 
+-   There is increased capacity for collaborative monitoring, surveillance and compliance in and around MPAs with increased funding, new partnerships (including community collaborations) and innovative technology to support these efforts.
 
 -   Offshore protection levels are improved, in particular for slope ecosystem types.
 
@@ -741,15 +676,7 @@ Potential indicators of progress could include:
 
 <!-- ######################################################### -->
 
-::: {#box-10 .callout-note .marine collapse="true" title="Action 7. 
-\
-![](imgs/Slide7.jpg) 
-\
-Update key spatial layers and develop new maps and capacity to support improved species and ecosystem assessment, spatial prioritisation, and biodiversity inclusive spatial planning and management in the marine realm. 
-\
-Key messages [A2](../key-messages/kma2.qmd), [B3](../key-messages/kmb3.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd) 
-\
-Read more »"}
+::: {#box-10 .callout-note .marine collapse="true" title="Action 7.   ![](imgs/Slide7.jpg)   Update key spatial layers and develop new maps and capacity to support improved species and ecosystem assessment, spatial prioritisation, and biodiversity inclusive spatial planning and management in the marine realm.   Key messages [A2](../key-messages/kma2.qmd), [B3](../key-messages/kmb3.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd)   Read more »"}
 <!-- ## 7. Ensure South Africa has the skills and infrastructure to manage and deliver expanding data and knowledge products for informed ocean planning and decision-making (key message A2?, key message B5, and key message C2). -->
 
 Potential indicators of progress could include:
@@ -775,16 +702,7 @@ Potential indicators of progress could include:
 
 <!-- ######################################################### -->
 
-::: {#box-11 .callout-note .marine collapse="true" title="Action 8. 
-\
-![](imgs/Slide8.jpg) 
-\
-Invest in data science capacity and infrastructure to ensure effective and reproducible data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean. This will require substantial investment. 
-\
-Key message [C3](../key-messages/kmc3.qmd) 
-\
-[Read more »]()"}
-
+::: {#box-11 .callout-note .marine collapse="true" title="Action 8.   ![](imgs/Slide8.jpg)   Invest in data science capacity and infrastructure to ensure effective and reproducible data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean. This will require substantial investment.   Key message [C3](../key-messages/kmc3.qmd)   [Read more »]()"}
 Potential indicators of progress could include:
 
 -   New knowledge products are developed to support the consideration of marine biodiversity and ecosystem services in ocean decision-making.
@@ -804,16 +722,7 @@ Potential indicators of progress could include:
 
 <!-- ######################################################### -->
 
-:::: {#box-12 .callout-note .marine collapse="true" title="Action 9. 
-\
-![](imgs/Slide9.jpg) 
-\
-Diversify and improve the communication of marine biodiversity (values and benefits, risks, opportunities and usage), and mainstream biodiversity into key production sectors. This evidence will enable better understanding of the value of marine biodiversity and its contribution to society and the economy. The role of intact biodiversity in supporting food production, the biodiversity economy and climate resilience can be better communicated to support the maintenance of biodiversity benefits. 
-\
-Key messages [C1](../key-messages/kmc1.qmd), [C2](../key-messages/kmc2.qmd) 
-\
-[Read more »]()"}
-
+:::: {#box-12 .callout-note .marine collapse="true" title="Action 9.   ![](imgs/Slide9.jpg)   Diversify and improve the communication of marine biodiversity (values and benefits, risks, opportunities and usage), and mainstream biodiversity into key production sectors. This evidence will enable better understanding of the value of marine biodiversity and its contribution to society and the economy. The role of intact biodiversity in supporting food production, the biodiversity economy and climate resilience can be better communicated to support the maintenance of biodiversity benefits.   Key messages [C1](../key-messages/kmc1.qmd), [C2](../key-messages/kmc2.qmd)   [Read more »]()"}
 Potential indicators of progress could include:
 
 -   Marine sector needs are identified and communicated to Statistics South Africa to support data collection for new statistics that support effective communication of the value of marine biodiversity to the economy.
@@ -843,57 +752,49 @@ Through the application of NCA in the marine and coastal realm, the value and co
 
 <!-- ######################################################### -->
 
-::: {#box-13 .callout-note .marine collapse="true" title="Action 10. 
-\
-![](imgs/Slide10.jpg) 
-\
-South Africa needs to invest in the multiple opportunities for scaling up integrated climate action through inclusive choices that promote resilience, and prioritise risk reduction, equity and justice. Protection and restoration of healthy coastal ecosystems increases climate resilience and maintaining genetic diversity enables adaptation including for important food species. Increased and co-ordinated climate science is needed in the marine realm. Many relevant recommendations to support climate adaptation can be found in South Africa’s Climate Change Coastal Adaptation Response Plan (DFFE 2025) and international reports (such as Cooley et al. 2022) with local recommendations on climate adaptation for fisheries also published (Hyder et al. 2024). 
-\
-Key messages [A1](../key-messages/kma1.qmd), [B4](../key-messages/kmb4.qmd), [C1](../key-messages/kmc1.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd) 
-\
-[Read more »]()"}
+::: {#box-13 .callout-note .marine collapse="true" title="Action 10.   ![](imgs/Slide10.jpg)   South Africa needs to invest in the multiple opportunities for scaling up integrated climate action through inclusive choices that promote resilience, and prioritise risk reduction, equity and justice. Protection and restoration of healthy coastal ecosystems increases climate resilience and maintaining genetic diversity enables adaptation including for important food species. Increased and co-ordinated climate science is needed in the marine realm. Many relevant recommendations to support climate adaptation can be found in South Africa’s Climate Change Coastal Adaptation Response Plan (DFFE 2025) and international reports (such as Cooley et al. 2022) with local recommendations on climate adaptation for fisheries also published (Hyder et al. 2024).   Key messages [A1](../key-messages/kma1.qmd), [B4](../key-messages/kmb4.qmd), [C1](../key-messages/kmc1.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd)   [Read more »]()"}
 <!-- ::: {.callout .freshwater collapse="false"} -->
 
 Potential indicators of progress could include:
 
 -   Climate smart biodiversity planning is advanced, drawing from local knowledge, increasing research progress (including genetic considerations to preserve adaptive potential of species) and international lessons. In the long term, all marine sector plans consider climate change to advance climate smart marine spatial planning.
 
--   Restoration and protection of climate-buffering ecosystems is advanced, including both blue carbon vegetated habitats and biogenic carbonate systems (e.g., shellfish and coralline habitats). 
+-   Restoration and protection of climate-buffering ecosystems is advanced, including both blue carbon vegetated habitats and biogenic carbonate systems (e.g., shellfish and coralline habitats).
 
--   Setback lines have been implemented in all coastal provinces to keep the littoral active zone intact. This will secure a zone within which shores can realign further inland in response to sea-level rise without being trapped and lost to coastal squeeze. 
+-   Setback lines have been implemented in all coastal provinces to keep the littoral active zone intact. This will secure a zone within which shores can realign further inland in response to sea-level rise without being trapped and lost to coastal squeeze.
 
--   National monitoring and mapping of coastal and marine climate stressors (temperature anomalies, coastal acidification (pH), hypoxia, and coastal erosion) and biotic responses (harmful algal blooms, fish kills, coral bleaching, range shifts) is increased. 
+-   National monitoring and mapping of coastal and marine climate stressors (temperature anomalies, coastal acidification (pH), hypoxia, and coastal erosion) and biotic responses (harmful algal blooms, fish kills, coral bleaching, range shifts) is increased.
 
 -   Spatial climate change data and predictions are included into the assessment of ecosystem threat status and other relevant risk assessments.
 
 -   Local and indigenous knowledge is used in area and context specific climate adaptation plans including efforts to support adaptive management for vulnerable fishery sectors and fishers.
 
--   Coastal/beach access points are maintained to limit trampling and degradation of foredunes to enhance coastal protection against heightened wave energy during large storms. In addition, signage and public awareness are increased about the need to keep off foredunes to avoid trampling and degradation of this particularly sensitive zone to maximize coastal protection services and benefits. 
+-   Coastal/beach access points are maintained to limit trampling and degradation of foredunes to enhance coastal protection against heightened wave energy during large storms. In addition, signage and public awareness are increased about the need to keep off foredunes to avoid trampling and degradation of this particularly sensitive zone to maximize coastal protection services and benefits.
 
 -   There is formal integration of climate considerations into fisheries policy and legislation.
 
--   Existing or new communities of practice support inclusive integrated climate adaptation for marine and coastal ecosystems, fisheries and people. 
+-   Existing or new communities of practice support inclusive integrated climate adaptation for marine and coastal ecosystems, fisheries and people.
 
 <!-- ![TBA](imgs/PA_10.png) -->
 :::
 
 ## Priority areas for safeguarding biodiversity {#priority_areas}
 
-South Africa’s biodiversity is not evenly distributed across the seascape and when this is combined with limited resources for action, spatial prioritisation becomes essential. An important feature of South Africa’s biodiversity-related action to the pressures on biodiversity has been spatial planning to identify priority areas in the seascape for intervention. The NBA provides an initial portfolio of spatial priorities by highlighting the location of the most threatened ecosystems and species and by intersecting the results of ecosystem threat status and protection level. However, it is not only threatened biodiversity that needs attention; often there are strategic gains to be made from focusing on areas that are still in good ecological condition and where there are relatively easy opportunities for protection or effective management. 
+South Africa’s biodiversity is not evenly distributed across the seascape and when this is combined with limited resources for action, spatial prioritisation becomes essential. An important feature of South Africa’s biodiversity-related action to the pressures on biodiversity has been spatial planning to identify priority areas in the seascape for intervention. The NBA provides an initial portfolio of spatial priorities by highlighting the location of the most threatened ecosystems and species and by intersecting the results of ecosystem threat status and protection level. However, it is not only threatened biodiversity that needs attention; often there are strategic gains to be made from focusing on areas that are still in good ecological condition and where there are relatively easy opportunities for protection or effective management.
 
-To learn more about biodiversity mapping, see SANBI's guide on [mapping biodiversity priorities](https://hdl.handle.net/20.500.12143/9339) and the IUCN's course on [Introduction to Mapping Biodiversity Priorities](https://iucnacademy.org/courses/introduction-to-mapping-biodiversity-priorities/). 
+To learn more about biodiversity mapping, see SANBI's guide on [mapping biodiversity priorities](https://hdl.handle.net/20.500.12143/9339) and the IUCN's course on [Introduction to Mapping Biodiversity Priorities](https://iucnacademy.org/courses/introduction-to-mapping-biodiversity-priorities/).
 
 ## Critical Biodiversity Areas (CBAs) {#cba}
 
 SANBI, in collaboration with its partners, identifies Critical Biodiversity Areas (CBAs) across all realms. CBA mapping is achieved through the application of systematic conservation planning to identify areas that are in a natural/near-natural state that represent opportunities where biodiversity management action can be most impactful. CBA Maps are the biodiversity sector’s input into decisions on appropriate land and sea uses to safeguard a sufficient, representative sample of biodiversity that can persist into the future, in support of sustainable economic development and to meet international environmental commitments. [Spatial biodiversity priority areas](https://cmr.mandela.ac.za/Research-Projects/EBSA-Portal/South-Africa/National-Coastal-and-Marine-Spatial-Biodiversity-P/CBA-Map-and-Sea-use-Guidelines-Version-1) to protect, restore and recover marine ecosystems and species have been identified, and are being improved with increased stakeholder dialogue, collaboration, and technical innovation.
 
-Since 2022, the number of spatial data layers that can inform national coastal and marine spatial biodiversity planning in South Africa has tripled. These include new species records for invertebrates and fish, updated Vulnerable Marine Ecosystem distribution data [@franken2025] (@fig-vme), new data for sharks, rays and chimaeras [@faure-beaulieu2023], maps of Culturally Significant Areas [@dunga2025] and new data layers to improve climate resilience and connectivity in spatial planning. Work is underway to update the CBA Map in 2026. 
+Since 2022, the number of spatial data layers that can inform national coastal and marine spatial biodiversity planning in South Africa has tripled. These include new species records for invertebrates and fish, updated Vulnerable Marine Ecosystem distribution data [@franken2025] (@fig-vme), new data for sharks, rays and chimaeras [@faure-beaulieu2023], maps of Culturally Significant Areas [@dunga2025] and new data layers to improve climate resilience and connectivity in spatial planning. Work is underway to update the CBA Map in 2026.
 
 ![Map showing updated Vulnerable Marine Ecosystem data [@franken2025].](imgs/VME_DATA_nba2025_v5.png){#fig-vme}
 
 ## Other Priority Areas
 
-In the marine realm, South Africa also has a [network of Ecologically or Biologically Significant Marine Areas](https://cmr.mandela.ac.za/Research-Projects/EBSA-Portal) (EBSAs) that have been revised and resubmitted to the CBD. Initially, EBSAs were conceptualised to be a tool by which MPAs might be identified and established in the high seas; however, their value within national jurisdiction, and for helping countries to achieve their Aichi targets, soon became apparent. Through a series of regional workshops, EBSAs were identified by evaluating sites against seven criteria, and were delineated within country Exclusive Economic Zones (EEZs), in the high seas, and in transboundary (country-country, or country-high seas) areas. EBSAs in South Africa draw from systematic biodiversity plans and align with priorities developed as part of the National Coastal and Marine Spatial Biodiversity Plan. 
+In the marine realm, South Africa also has a [network of Ecologically or Biologically Significant Marine Areas](https://cmr.mandela.ac.za/Research-Projects/EBSA-Portal) (EBSAs) that have been revised and resubmitted to the CBD. Initially, EBSAs were conceptualised to be a tool by which MPAs might be identified and established in the high seas; however, their value within national jurisdiction, and for helping countries to achieve their Aichi targets, soon became apparent. Through a series of regional workshops, EBSAs were identified by evaluating sites against seven criteria, and were delineated within country Exclusive Economic Zones (EEZs), in the high seas, and in transboundary (country-country, or country-high seas) areas. EBSAs in South Africa draw from systematic biodiversity plans and align with priorities developed as part of the National Coastal and Marine Spatial Biodiversity Plan.
 
 Key Biodiversity Areas (KBAs) are an additional category of priority areas that represent the most important sites for global biodiversity conservation. They are identified using globally standardised criteria with thresholds established by the IUCN [@sanbi2024]. KBAs are site-based and are delineated with practical, manageable boundaries. The process to identify areas that meet KBA criteria is a separate process to delineating KBA boundaries. There has been little effort to map marine KBAs in South Africa to date but expanding biodiversity data puts South Africa in an excellent position to pilot marine KBAs across the country.
 
@@ -965,21 +866,21 @@ Knowledge gaps and research priorities were identified throughout the NBA 2025, 
 
 Drawing from the key findings of this assessment, more than 80 priority actions were co-developed to improve the condition of marine ecosystems and species, and to safeguard the many benefits they provide. To inform these actions, a series of science–policy-society engagements were held, bringing together researchers, decision-makers, civil society and knowledge holders (with a particular focus on coastal communities) to review research evidence and jointly co-develop recommendations to address key findings, identified risks and key pressures on South Africa’s marine biodiversity [@sink2023c; @rylands2025; @vanderbank2025]. From the more than 80 specific actions, a set of 10 overarching priority actions were distilled with recommended indicators of progress that point to a range of sub-actions which if implemented could improve the state of marine biodiversity in South Africa.
 
-### Priority areas 
+### Priority areas
 
-South Africa has several established spatial prioritisation tools for informing the work of the biodiversity sector. These tools provide a comprehensive set of biodiversity priority areas that collectively meet biodiversity targets for ecosystems, species and ecological processes. Increasingly, critical ecological infrastructure assets are also included in this set of biodiversity priority areas and KBAs are a further set of global priority areas. Maps of biodiversity priority areas directly support the implementation of the National Biodiversity Strategy and Action Plan (NBSAP). 
+South Africa has several established spatial prioritisation tools for informing the work of the biodiversity sector. These tools provide a comprehensive set of biodiversity priority areas that collectively meet biodiversity targets for ecosystems, species and ecological processes. Increasingly, critical ecological infrastructure assets are also included in this set of biodiversity priority areas and KBAs are a further set of global priority areas. Maps of biodiversity priority areas directly support the implementation of the National Biodiversity Strategy and Action Plan (NBSAP).
 
-In the terrestrial realm, Maps of CBAs and Ecological Support Areas (ESAs), presented together and referred to collectively as CBA maps, are produced by all provincial conservation authorities, marine planners and some metropolitan municipalities and are based on the principles of systematic biodiversity planning. They are a form of strategic planning for the natural environment, identifying a set of geographic areas that provide a spatial plan for ecological sustainability at the landscape and seascape scale. A CBA Map comprises five map categories: Protected Areas, CBAs, ESAs, Other Natural Areas and areas where there is No Natural habitat Remaining. Guidelines published by SANBI [@sanbi2017] encourage consistency between the CBAs prepared by different agencies. 
+In the terrestrial realm, Maps of CBAs and Ecological Support Areas (ESAs), presented together and referred to collectively as CBA maps, are produced by all provincial conservation authorities, marine planners and some metropolitan municipalities and are based on the principles of systematic biodiversity planning. They are a form of strategic planning for the natural environment, identifying a set of geographic areas that provide a spatial plan for ecological sustainability at the landscape and seascape scale. A CBA Map comprises five map categories: Protected Areas, CBAs, ESAs, Other Natural Areas and areas where there is No Natural habitat Remaining. Guidelines published by SANBI [@sanbi2017] encourage consistency between the CBAs prepared by different agencies.
 
-Protected areas, CBAs and ESAs together form a network of natural and semi-natural areas that enable ecologically functional seascapes and landscapes in the long term, designed to be spatially efficient and to avoid conflict with non-compatible land and ocean uses wherever possible. CBAs should be kept in a natural or near natural state to support ecological sustainability of the landscape and seascape. ESAs do not need to be entirely natural, but should be kept at least semi-natural so that they retain their ecological processes. These natural and semi-natural areas can co-exist in a matrix of multiple uses, including fisheries, aquaculture, mining, ports and others. 
+Protected areas, CBAs and ESAs together form a network of natural and semi-natural areas that enable ecologically functional seascapes and landscapes in the long term, designed to be spatially efficient and to avoid conflict with non-compatible land and ocean uses wherever possible. CBAs should be kept in a natural or near natural state to support ecological sustainability of the landscape and seascape. ESAs do not need to be entirely natural, but should be kept at least semi-natural so that they retain their ecological processes. These natural and semi-natural areas can co-exist in a matrix of multiple uses, including fisheries, aquaculture, mining, ports and others.
 
-Land-based CBA Maps have been produced for over a decade, while the first map of CBAs and ESAs for the coast and ocean was completed in 2019 [@sink2019c]. Since 2019, data collation and analyses have improved with the last published version of the [CBA map produced in 2022](https://cmr.mandela.ac.za/Research-Projects/EBSA-Portal/South-Africa/National-Coastal-and-Marine-Spatial-Biodiversity-P/CBA-Map-and-Sea-use-Guidelines-Version-1) and further work underway to update the CBA map in 2026. 
+Land-based CBA Maps have been produced for over a decade, while the first map of CBAs and ESAs for the coast and ocean was completed in 2019 [@sink2019c]. Since 2019, data collation and analyses have improved with the last published version of the [CBA map produced in 2022](https://cmr.mandela.ac.za/Research-Projects/EBSA-Portal/South-Africa/National-Coastal-and-Marine-Spatial-Biodiversity-P/CBA-Map-and-Sea-use-Guidelines-Version-1) and further work underway to update the CBA map in 2026.
 
 ## Acknowledgements
 
-We sincerely thank the more than 123 individuals who actively participated in the three engagements held to co-develop priority actions for improved Ecosystem Based Management in South Africa. In addition, SANBI appreciates further inputs from the SeaPeople collective, staff from DFFE Oceans and Coasts and Fisheries Branches, SANParks and provincial conservation entities. We acknowledge Sven Kerwath for his contributions in shaping selected priority actions. We also thank Merle Sowman for sharing insights on coastal and marine mining and Sarah Wilkinson for providing important perspectives on offshore industry activities and opportunities to strengthen offshore biodiversity management. Jess da Silva is thanked for her insights on genetic research priorities and key actions to maintain genetic biodiversity in the marine realm.   
+We sincerely thank the more than 123 individuals who actively participated in the three engagements held to co-develop priority actions for improved Ecosystem Based Management in South Africa. In addition, SANBI appreciates further inputs from the SeaPeople collective, staff from DFFE Oceans and Coasts and Fisheries Branches, SANParks and provincial conservation entities. We acknowledge Sven Kerwath for his contributions in shaping selected priority actions. We also thank Merle Sowman for sharing insights on coastal and marine mining and Sarah Wilkinson for providing important perspectives on offshore industry activities and opportunities to strengthen offshore biodiversity management. Jess da Silva is thanked for her insights on genetic research priorities and key actions to maintain genetic biodiversity in the marine realm.
 
-We acknowledge the National Research Foundation particularly projects funded through the Foundational Biodiversity Information Program (FBIP) and the African Coelacanth Ecosystem Program (ACEP). These include the SAEON led SeaMap project (Grant number 138572), Deep Connections (Grant number 129216), Agulhas Bank Connections (Grant number 129213) and Sound Seas projects (Ref number ACEP23040790163). This work was supported through international projects funded by the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428 (Mission Atlantic project) and 818123 (iAtlantic project), the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH for the MeerWissen CoastWise project, and the UK Research and Innovation (UKRI) through the Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, for the One Ocean Hub project. 
+We acknowledge the National Research Foundation particularly projects funded through the Foundational Biodiversity Information Program (FBIP) and the African Coelacanth Ecosystem Program (ACEP). These include the SAEON led SeaMap project (Grant number 138572), Deep Connections (Grant number 129216), Agulhas Bank Connections (Grant number 129213) and Sound Seas projects (Ref number ACEP23040790163). This work was supported through international projects funded by the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428 (Mission Atlantic project) and 818123 (iAtlantic project), the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH for the MeerWissen CoastWise project, and the UK Research and Innovation (UKRI) through the Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, for the One Ocean Hub project.
 
 <!-- ## Technical documentation -->
 

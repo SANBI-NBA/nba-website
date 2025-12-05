@@ -113,7 +113,7 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ```
 
-*The Estuarine Realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable. Unsustainable land and sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving economy ([key message A2](../key-messages/kma2.qmd)).*
+*The Estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable. Unsustainable land and sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving economy ([key message A2](../key-messages/kma2.qmd)).*
 
 ![Knysna is one of two estuarine bays inside South Africa and is an example of a Vulnerable system. (© Matt Dubber)](imgs/est_knysna_matt_dubber.jpeg)
 

@@ -127,7 +127,7 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [31%]{.inline-style-threatened}
+| [39%]{.inline-style-threatened}
 | of 74 assessed species are
 | [Threatened]{.inline-style-indicator}
 
@@ -506,11 +506,7 @@ Crowned cormorant – Vulnerable. (© Alistair McInnes)
 ::::
 ::::::::::::::::::
 
-The Benguela upwelling ecosystem supports seven endemic seabird species. The regional Red List assessment of birds in 2025 marked the first instance in which all seven of these species were classified as threatened. Three species: African penguin (now globally Critically Endangered, regionally Endangered\*), Cape cormorant (globally and regionally Endangered) and Cape gannet (regionally Vulnerable and globally Endangered) have been classified as regionally threatened for greater than a decade largely due to their reliance on small pelagic fish, such as sardine and anchovy, and threats associated with the availability of this prey such as resource competition by the commercial purse-seine fishery and climate driven range shifts in these prey species [@Hagen2025; @McInnes2025a; @Pistorius2025]. Hartlaub’s gull and Crowned cormorant have been uplisted regionally to Vulnerable due to a combination of threats including human disturbance at breeding colonies, predation and diseases such as highly pathogenic avian influenza [@Makhado2025a; @McInnes2025a]. Bank cormorants have been listed as regionally and globally threatened throughout this century due to a combination of threats including a decline in their major prey species, most notably west coast rock lobster, but also breeding failure associated with climate change driven intensification of storm events and heat exposure [@Shaw2025]. The relatively small population of Damara terns in South Africa have continued to decline largely due to disturbance at their coastal nesting sites [@Whittington2025].
-<br>
-<br>
-\*Regional assessments refer to assessments done for South Africa’s area of jurisdiction and are available at [www.birdlife.org.za](https://www.birdlife.org.za/red-list). Global assessments are for the entire global population of a species and include the population outside of South Africa, these assessments are available on the [IUCN Red List](https://www.iucnredlist.org/).  
-
+The Benguela upwelling ecosystem supports seven endemic seabird species. The regional Red List assessment of birds in 2025 marked the first instance in which all seven of these species were classified as threatened. Three species: African penguin (now globally Critically Endangered, regionally Endangered\*), Cape cormorant (globally and regionally Endangered) and Cape gannet (regionally Vulnerable and globally Endangered) have been classified as regionally threatened for greater than a decade largely due to their reliance on small pelagic fish, such as sardine and anchovy, and threats associated with the availability of this prey such as resource competition by the commercial purse-seine fishery and climate driven range shifts in these prey species [@Hagen2025; @McInnes2025a; @Pistorius2025]. Hartlaub’s gull and Crowned cormorant have been uplisted regionally to Vulnerable due to a combination of threats including human disturbance at breeding colonies, predation and diseases such as highly pathogenic avian influenza [@Makhado2025a; @McInnes2025a]. Bank cormorants have been listed as regionally and globally threatened throughout this century due to a combination of threats including a decline in their major prey species, most notably west coast rock lobster, but also breeding failure associated with climate change driven intensification of storm events and heat exposure [@Shaw2025]. The relatively small population of Damara terns in South Africa have continued to decline largely due to disturbance at their coastal nesting sites [@Whittington2025]. <br> <br> \*Regional assessments refer to assessments done for South Africa’s area of jurisdiction and are available at [www.birdlife.org.za](https://www.birdlife.org.za/red-list). Global assessments are for the entire global population of a species and include the population outside of South Africa, these assessments are available on the [IUCN Red List](https://www.iucnredlist.org/).
 :::::::::::::::::::
 :::::::::::::::::::::
 
@@ -574,7 +570,7 @@ Bird-scaring lines preventing seabird mortalities from cable interactions in use
 :::
 ::::
 
-Recent efforts to support the establishment of a new African penguin colony at De Hoop ([Box 4](#box-4)) parallels a previous similar initiative with Cape gannets led by DFFE and CapeNature. In Lambert's Bay where Cape gannets were abandoning breeding due to seal encroachment, their return was encouraged through the use of gannet decoys and playing audio recordings of gannets. This was a pioneering conservation effort and represents a significant recovery for the Cape gannets at this site, where they had completely abandoned the island in 2005. The Cape gannet population has remained at ~ 20 000 to 30 000 birds in subsequent years, indicating the effectiveness of ongoing conservation measures and effort.
+Recent efforts to support the establishment of a new African penguin colony at De Hoop ([Box 4](#box-4)) parallels a previous similar initiative with Cape gannets led by DFFE and CapeNature. In Lambert's Bay where Cape gannets were abandoning breeding due to seal encroachment, their return was encouraged through the use of gannet decoys and playing audio recordings of gannets. This was a pioneering conservation effort and represents a significant recovery for the Cape gannets at this site, where they had completely abandoned the island in 2005. The Cape gannet population has remained at \~ 20 000 to 30 000 birds in subsequent years, indicating the effectiveness of ongoing conservation measures and effort.
 
 :::::::: {#box-4 .callout-note .species title="Box 4. De Hoop for penguins: Creating a new breeding colony for African penguins." collapse="false"}
 One of the major threats to the globally Critically Endangered African penguin (regionally Endangered) is a lack of food, driven by competition with the fishing industry and climate-induced changes in fish distribution and abundance. While there are several initiatives in place to address this, a novel conservation measure is to establish new penguin breeding colonies in areas of higher fish abundance where there is little competition from the fishery. This work is being led by BirdLife South Africa in partnership with CapeNature and SANCCOB. In late 2018, work began on the eastern edge of the De Hoop Nature Reserve. A small colony was established there in the early 2000s but was abandoned by about 2008 due to predation by caracal. A predator-proof fence was installed to protect the headland, which is monitored using CCTV cameras along the fence and trail cameras to determine the general abundance and movements of predators.
@@ -620,13 +616,14 @@ Competition for common anchovy and sardine prey between African penguins and com
 ::::::
 :::::::
 
-
 ## Approach
-For more on the methodology used in this assessment, please visit the [Bird page](../species/sp_birds.qmd). 
+
+For more on the methodology used in this assessment, please visit the [Bird page](../species/sp_birds.qmd).
 
 See details about the IUCN Red List assessments process [here](../integrated-findings/chl_rls_explained.qmd).
 
 ## Acknowledgements
+
 BirdLife South Africa is thanked for providing the resources and convening the experts needed to conduct the regional IUCN Red List assessments used in this assessment. All seabird experts and assessors who gave their time, provided data and contributed intellectual property toward the completion of individual seabird assessments are sincerely thanked. The Department of Forestry, Fisheries and the Environment is thanked for hosting a long-term data series that has supported the completion of both regional and global assessments for seabirds that breed within South Africa’s Exclusive Economic Zone including species that breed on the Prince Edward Islands.
 
 ### Recommended citation

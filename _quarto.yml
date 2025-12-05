@@ -91,8 +91,8 @@ website:
                   contents:
                      - content/freshwater/fw_wet_type.qmd
                      - content/freshwater/fw_riv_type.qmd
+                     - content/freshwater/fw_wet_pressures.qmd                     
                      - content/freshwater/fw_wet_condition.qmd
-                     - content/freshwater/fw_wet_pressures.qmd
                      - content/freshwater/fw_riv_condition.qmd
                      - content/freshwater/fw_wet_ets.qmd
                      - content/freshwater/fw_riv_ets.qmd
@@ -109,7 +109,6 @@ website:
                      - content/estuaries/est_ets.qmd
                      - content/estuaries/est_epl.qmd
                      - content/estuaries/est_ets_epl.qmd
-                     - content/species/est_sp.qmd
                 - section: "Marine"
                   href: content/marine/marine_overview.qmd
                   contents:
