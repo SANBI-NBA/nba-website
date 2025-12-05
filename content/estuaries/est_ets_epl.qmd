@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Intesection of ecosystem threat status and protection level" 
+title: "Intersection of ecosystem threat status and protection level" 
 subtitle: "Estuarine realm" 
 
 title-block-banner: "#028A85" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -63,29 +63,25 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-## Threatened and under-protected ecosystem types
+*In the Estuarine realm, 32% of ecosystem types are both highly threatened and under-protected, these types are prevalent in the Cool Temperate and Subtropical biogeographical regions.*
 
-In the Estuarine realm, 31% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.\*\* These include the following seven ecosystem types:
+![The Mbashe Estuary is representative of the threatened and under protected Large Fluvially Dominated ecosystem type currently classified as endangered. The Mbashe Estuary is one of the few estuaries contributing ecosystem type targets for a type that is in dire need of increased protection and management interventions. (© Nelson Mandela Univeristy)](imgs/20231202_091909.png)
 
--   Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)
+## Highly threatened and under-protected ecosystem types
+
+In the Estuarine realm, 32% of ecosystem types are both highly threatened and under-protected. These types are prevalent in the Cool Temperate and Subtropical biogeographical regions, namely:
 
 -   Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)
-
 -   Cool Temperate Large Fluvially Dominated (Orange)
-
 -   Cool Temperate Predominantly Open (Olifants, Groot Berg, Uilkraals)
-
+-   Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)
+-   Cool Temperate Large Temporarily Closed (Jakkals, Diep/Rietvlei, Sout (Wes), Disa, Wildevoëlvlei, Silwermyn, Zand, Eerste, Palmiet)
 -   Subtropical Estuarine Bay (Durban Bay)
-
-### Lara to revisit the types to list the estuaries that can contribute
-
-## JUST LIST NUMBER OF ECOSYSTEMS ON DONUT.
-
-## CAN WE HAVE A TABLE OF THE TYPES NEXT TO MAPS
+-   Subtropical Large Fluvially Dominated (Mbashe, Mzimvubu, uMvoti, uThukela, iMfolozi/uMsunduze)
 
 ```{r}
 #| label: fig-rle_map
-#| fig-cap: Map of threatened and under-protected ecosystem types
+#| fig-cap: Map of threatened and under-protected ecosystem types (size of the dot represents area of the individual estuary). The inset graph shows the number and proportion of ecosystem types that fall within each combined threat status and protection level category.
 
 
 #| echo: false
@@ -105,43 +101,75 @@ knitr::include_graphics("imgs/epl_ets_with_donut.png")
 
 ```
 
-Threatened and under-protected ecosystem types are candidates for improved protection through formal protected areas expansion or other spatial management measures such as stewardship or Other Effective Conservation Measures (OECMs).
-
-In addition to expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, managment of pollution (wastewater, agricultural return flow or stormwater), reduced fishing pressure, restoration of degraded habitats, removal of invasive alien plants, and effective artificial breaching (where required).
-
 ```{r}
-#| label: tbl-ets_epl
+#| label: tbl-ets_epl_ht
 #| echo: false
-#| tbl-cap: Intersection of threatened and under-protected ecosystem types
-#| out-width: 100%
+#| tbl-cap: Table summarising protection levels and threat status categories for the highly threatened and underprotected ecosystem types.
 #| classes: plain
 
-library(tidyverse)
+library(dplyr)
+library(nbaR)
 library(gt)
+# library(sf)
 
-# load spatial data
-est <-  read.csv(
-  dir("data",
-      "^est.csv$",
-      full.names = T,
-      recursive = T)[1])
 
-unluckies_tbl <- est %>%
-  select(type, threat_status, protection_level) %>%
-  nbaR::nba_tbl_comb(GROUP = type,
-                     THR =threat_status,
-                     PRO = protection_level,
-                     FILE ="csv") %>% 
-  #gt::tab_options(table.font.size = px(13L)) %>%
+thr_pro <- read.csv(file=list.files(pattern = "^est.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)%>% 
+  select(type, threat_status, protection_level) %>% 
+  filter(protection_level %in% c("Not Protected", "Poorly Protected"),
+         threat_status %in% c("Critically Endangered", "Endangered")) %>% 
+  rowid_to_column() %>% 
+  pivot_wider(names_from = "protection_level", values_from = type)%>%
+  select(-rowid) %>% 
+  select(threat_status, `Not Protected`, `Poorly Protected`) %>% 
+  arrange(threat_status, `Not Protected`,  `Poorly Protected`) %>% 
+  mutate(across(everything(), ~ if_else(is.na(.x), "", .x))) %>% 
+  rename(`Threat status` = threat_status) %>% 
+  distinct() %>% 
+  gt() %>% 
+  nba_tbl_theme(HEADER = "Estuarine")%>% 
+  tab_style(
+    style = cell_text(color = "white"),
+    locations = cells_column_labels()
+  ) %>% 
+  # 4. give cells colour
+    tab_style(
+      style = list(
+        gt::cell_fill(color = "#A93800")
+      ),
+      locations = gt::cells_body(
+        columns = "Not Protected",
+        rows = 1
+      )
+    ) %>%
+    tab_style(
+      style = list(
+        gt::cell_fill(color = "#E69800")
+      ),
+      locations = gt::cells_body(
+        columns = "Not Protected",
+        rows = 2
+      )
+    )%>%
+    tab_style(
+      style = list(
+        gt::cell_fill(color = "#FFEBB0")
+      ),
+      locations = gt::cells_body(
+        columns = "Poorly Protected",
+        rows = 3:7
+      )
+    ) %>% 
   gt::tab_options(table.width = gt::pct(100))
+  
 
-unluckies_tbl
-
-
-
-
+thr_pro
 
 ```
+
+Highly threatened and under-protected ecosystem types are candidates for improved protection through formal protected areas expansion or other spatial management measures such as stewardship or Other Effective area-based Conservation Measures (OECMs).
+
+In addition to the expansion of protection of these ecosystem types, it is important to improve ecosystem condition through flow restoration, management of pollution (wastewater, agricultural return flow or stormwater), reduced fishing pressure, restoration of degraded habitats, removal of invasive alien plants, and effective artificial breaching (where required).
 
 ## Technical documentation
 
@@ -155,11 +183,9 @@ unluckies_tbl
 
 ### Code repositories
 
--   **Protection level assessment**: [gitlab.com/nba_2025/ecosystem_assessment/protection_level](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
+Protection level assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
 
--   **Threat status assessment**: [gitlab.com/nba_2025/ecosystem_assessment/threat_status](https://gitlab.com/nba_2025/ecosystem_assessment/threat_status)
-
-### Key Publications
+Threat status assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_est>.
 
 ## Recommended citation
 

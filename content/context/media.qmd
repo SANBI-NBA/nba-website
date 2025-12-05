@@ -1,0 +1,49 @@
+---
+title: "News and media resources"
+title-block-banner: "#adb5bd"
+title-block-banner-color: white
+
+format:
+  html:
+    toc: false
+    sidebar: false
+    
+listing: 
+  - id: news-items
+    contents: 
+      - path: https://www.sanbi.org/news/twenty-years-of-the-nba-tracking-progress-challenges-and-change/
+        title: Twenty years of the NBA
+        image: imgs/nba2004-2025.png
+      - path: https://www.sanbi.org/news/why-measuring-genetic-diversity-matters-for-south-africas-future/
+        title: Why measuring genetic diversity matters
+        image: imgs/news-rhino.png
+      - path: https://www.sanbi.org/news/pollution-impacts-aquatic-ecosystems-species-and-economic-activity/
+        title: Pollution impacts on aquatic ecosystems
+        image: imgs/news-pollution.png
+    type: grid
+    fields: [image, title]
+    sort: false
+    sort-ui: false
+    filter-ui: false
+    categories: false
+---
+
+## Press releases
+
+-   [Announcement of NBA 2025 launch event](https://www.sanbi.org/category/media/)
+
+## News items
+
+::: {#news-items}
+:::
+
+## Short films
+
+
+{{< video https://www.youtube.com/embed/EnRlSBeGNs0 
+    title='Flow for Life' 
+>}}
+
+------------------------------------------------------------------------
+
+*We welcome any media contributions from our partners including those involved in education, citizen science and communication. Please [contact us](mailto:nba@sanbi.org.za) so that we can repost and share.*

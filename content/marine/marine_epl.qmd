@@ -89,8 +89,8 @@ author:
       family: Smith #Add author's surname here
     orcid: 0000-0002-9492-5156 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
-      - ref: sanparks5 # Ref here must match the id of one of the affiliations listed below
-      # If an author has more than one affiliation, add more - ref: lines here
+      - ref: sanparks5
+      - ref: rhodes
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
   - name:
@@ -133,6 +133,10 @@ affiliations:
   - id: sanparks5 # Use this as the affiliation ref with authors above
     number: 5 # This number is used to associate authors with affiliations
     name: South African National Parks
+# Make sure you maintain indentations exactly as they are here
+  - id: rhodes # Use this as the affiliation ref with authors above
+    number: 6 # This number is used to associate authors with affiliations
+    name: Rhodes University # have updated this as we are supposed to use organisations, not
 
 # This date determines the PUBLISHED date in the title block
 date: last-modified
@@ -362,7 +366,7 @@ Increasing extent of protection alone will not advance marine ecosystems to Well
 
 Ecosystem types that are Not Protected include the Kingklip Koppies, the vast Southeast Atlantic Lower Slope, the expansive Southwest Indian Lower Slope and four pelagic ecosystem types. Among the latter, the Agulhas Retroflection and Southern Ocean Transitional Water is of particular interest as a globally unique area. The uThukela Canyon, the Cape Lower Canyon and St Helena Bay are also Not Protected.
 
-![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures. (© SANBI)](imgs/canyons_legend.png)
+![Submarine canyons cut into the continental slope off South Africa’s western margin. The Southeast Atlantic Lower Slope and the Cape Lower Canyon are both Not Protected ecosystem types. Coastal communities and small-scale fishers can contribute to offshore protection in South Africa and must be included in participatory processes to support new offshore protection measures. (© South African National Biodiversity Institute)](imgs/canyons_legend.png)
 
 Of the 27 Poorly Protected ecosystem types, several fall into this category because their areas that are within MPAs have high levels of ecosystem modification (i.e. poor [ecological condition](marine_condition.qmd) due to high past or ongoing [pressures](marine_pressures.qmd)), not because they have very limited areas within MPAs. Among others, these include two kelp ecosystem types, Agulhas and Cape Kelp Forests, and two bay ecosystem types, Cape Bay and False and Walker Bay. Other ecosystem types that could advance from their current Poorly Protected status to Moderately Protected by improving ecological condition include Agulhas Mid Shelf Reef, the Agulhas Coarse Sediment Shelf Edge and Amathole Lace Corals.
 
@@ -370,7 +374,7 @@ Of the 27 Poorly Protected ecosystem types, several fall into this category beca
 
 Forty-eight marine ecosystem types are Moderately Protected. While several of these could advance to Well Protected through improved ecological condition, 27 types will require increased coverage in MPAs or OECMs. For example, Agulhas Boulder Shore, Agulhas Rocky Plateau and Agulhas Upper Canyon require increased representation in South Africa’s marine conservation estate to improve their ecosystem protection level.
 
-![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected. (© Lloyd Edwards and ACEP Deep Secrets and Deep Forests projects)](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
+![Agulhas Upper Canyon requires increased representation in South Africa’s network of protected and conserved areas to advance to Well Protected. (© Lloyd Edwards, ACEP Deep Secrets and Deep Forests projects)](imgs/Addo_canyons_Lloyd_Edwards_ACEP.png)
 
 Only 20% of South Africa’s 163 marine ecosystem types are Well Protected. This statistic could be increased through increasing the estate of representative protected areas and by reducing [pressures](marine_pressures.qmd) and thereby improving [ecological condition](marine_condition.qmd) within some existing MPAs. Well Protected ecosystem types include many from the Delagoa ecoregion where the iSimangaliso MPA and World Heritage Site provides protection to many ecosystem types. Other examples of Well Protected types include Agulhas Inner Shelf Reef, Natal Exposed Rocky Shore and [seamount](https://mzansea590234219.wordpress.com/ecosystems/seamounts-and-ridges/) ecosystem types in the South east Atlantic.
 
@@ -402,7 +406,7 @@ South Africa has made progress in evaluating the ecological, socio-economic and 
 
 Common elements in these evaluations indicate a need to revisit MPA objectives for many MPAs declared before 2019, advance efforts to address historical injustices, strengthen social inclusion and collaboration in the design, implementation and management of protected areas and increase socio-economic research. Innovative transdisciplinary strategies in the co-design of protected and conserved areas and transparent and fair trade-offs in planning are needed [@vanderbank2025a]. This will ensure equitable governance and increased tangible benefits for rights holders, knowledge holders and people affected by protected areas [@kirkman2023]. Closer co-operation with fisheries, heritage and tourism could also deliver more integrated and effective protection [@vanderbank2025a].
 
-::: {#box-1 .callout-note .marine title="Box 1. Tsitsikamma MPA: Ecological gains, historic conflict, and the path toward inclusive governance." collapse="true"}
+::: {#box-1 .callout-note .marine title="Box 1. Tsitsikamma MPA: Ecological gains, historic conflict, and the path toward inclusive governance" collapse="true"}
 The Tsitsikamma MPA, established in 1964 and covering 340 km², is South Africa's oldest MPA [@sanparks2020]. Supporting near-pristine rocky shores [@hanekom2011], reef and soft habitats, the area is a breeding ground for chokka squid (*Loligo reynaudii*) [@sauer1995], and protects endemic, slow-growing seabreams ([seabream status page](../species/sp_sparids.qmd)) such as roman (*Chrysoblephus laticeps*), dageraad (*Chyrsoblephus cristiceps*), and red steenbras (*Petrus rupestris*) [@heyns-veale2019], which are heavily fished elsewhere [@buxton1989; @buxton1989a; @cowley2002; @kerwath2007]. Populations inside the MPA are more abundant, larger, and have more mature fish than in surrounding fished areas, with linefish such as galjoen (*Dichistius capensis*), blacktail (*Diplodus capensis*), and bronze bream (*Pachymetopon grande*) thriving inside the MPA [@cowley2002; @brouwer2002; @brouwer2003]. Adult carpenter (*Argyrozona argyrozona*) largely remain resident, while their eggs and larvae spill over to neighbouring areas, supporting fisheries outside the reserve [@brouwer2002; @brouwer2003].
 
 High-relief, deeper reefs further enhance outcomes, hosting distinct species assemblages, higher biomass, and larger fish than shallower and less complex areas, showing that protecting diverse habitats is critical [@heyns-veale2019]. By allowing older, larger fish to persist and reproduce, Tsitsikamma enhances population resilience and spill-over, while also providing long-term research opportunities, tourism benefits, and sustainable fishing benefits.
@@ -413,10 +417,10 @@ These tensions were intensified by governance processes widely viewed as top-dow
 
 While relationships have improved since rezoning, access alone cannot resolve the deeper governance challenges that shaped the conflict. The literature highlights that enduring tensions relate to issues of recognition, trust, values, and equitable involvement in decision-making [@watts2009; @muhl2020]. Without governance arrangements that meaningfully include communities, acknowledge historical context, and create shared authority, the MPA risks continued social contestation and missed opportunities for socially just and ecologically effective conservation.
 
-![This MPA is a valuable national asset due its long-term protection. The MPA was established to protect the rich diversity of marine life found in the area including mammals, invertebrates and fish. Cape clawless otter (© Peter Chadwick); dramatic cliffs and rugged rocks (© Peter Chadwick); roman (© Steve Benjamin); deep water corals (© Geoff Spiby).](imgs/tsitsikamma.png)
+![This MPA is a valuable national asset due its long-term protection. The MPA was established to protect the rich diversity of marine life found in the area including mammals, invertebrates and fish. Cape clawless otter (© Peter Chadwick); Community members co-identifying and mapping historical fishing spots as part of the Tsitsikamma MPA rezonation process (© Kyle Smith); roman (© Steve Benjamin); deep water corals (© Geoff Spiby).](imgs/tsitsikamma.png)
 :::
 
-### OECMs
+### Other Effective area-based Conservation Measures
 
 The concept of OECMs offers new opportunities for more inclusive and people-centred approaches to marine conservation that can encourage and support resource co-management, diverse cultural values, livelihoods and enhanced sustainability, while reducing the burden on MPA expansion in South Africa [@kirkman2023]. These areas are governed and managed in ways that achieve positive and sustained long-term outcomes for the *in situ* conservation of biodiversity values, whether or not biodiversity conservation is the primary management objective. No marine areas have been recognised as OECMs in South Africa as of December, 2025.
 
@@ -426,7 +430,7 @@ Exploratory assessments of various management measures that exist in the marine 
 
 There are certain measures that South Africa's legislation makes provision for but are yet to be implemented, which could meet the criteria for OECM recognition, depending on where and how they are implemented. An example is Special Management Areas under the [National Environmental Management: Integrated Coastal Management Act](https://www.gov.za/documents/national-environmental-management-integrated-coastal-management-act). Sites under this measure can be designated primarily for cultural purposes and could potentially constitute OECMs that uphold cultural sustainability, promote the connection of people with their environment and heritage, and facilitate greater inclusivity in marine conservation and management in the country.
 
-::: {#box-2 .callout-note .marine title="Box 2. Culturally Significant Areas" collapse="false"}
+::: {#box-2 .callout-note .marine collapse="false" title="Box 2. Culturally Significant Areas"}
 \
 
 ![South Africa has committed to expanding protected and conserved areas to meet national and global goals. Realising this ambition will require strengthened community participation in establishing and managing these areas. Sites such as Gompo’s Rock (near East London, Eastern Cape), which hold both cultural and biodiversity significance could be explored for conservation relevance and recognition as OECMs in partnership with value holders. (© Kerry Sink)](imgs/csa_gompos_rock.png)
@@ -460,6 +464,14 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 <!-- ([I would replace reference 28 with some other outputs. These are mostly videos so not sure how one could cite these. One Ocean Hub animation Indlela Yokuphila (The path of the soul- Indlela Yokuphila: The Soul's Journey (ZULU) (youtube.com))and Empatheatre Deep Connections \| The importance of Culturally Significant Areas in South Africa's marine space - YouTube)]{.mark}) -->
 
+## Acknowledgements
+
+The National Marine Ecosystem Committee and Network and the National Marine Biodiversity Scientific Working Group are thanked for their oversight of marine ecosystem assessments. The organizations, departments and funders and all contributors to Harris et al. 2025 (Indicators for tracking progress in effective, representative ecosystem protection) and Sink et al. 2023 (Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa’s MPA estate) are acknowledged for their support of this evolving body of work.
+
+The One Ocean Hub project funded through the UK Research and Innovation (UKRI) and Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, is sincerely thanked for enabling collaborations to strengthen understanding of the human-dimensions of protected and conserved areas. The European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 818123 (iAtlantic project) is thanked for unlocking opportunities to learn and draw lessons on improving participatory planning and protection. The MeerWissen CoastWise project funded through the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH is thanked for unlocking the opportunity to pilot the mapping of culturally significant areas in South Africa.
+
+The SeaPeople collective is thanked for knowledge co-production and forging pathways for improving participatory spatial planning for and management of protected and conserved areas in South Africa. Convening the SeaPeople collective was financially supported by SANBI, the One Ocean Hub project and the Mission Atlantic project, the latter funded through the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428. The South African Deep Sea Trawl Industry Association, CapMarine, the South African Environmental Observation Network and the Department of Forestry, Fisheries and the Environment are thanked for the pioneering work done to co-design proposed Seabed Management Areas for South Africa. This work was co-funded by the Mission Atlantic project.
+
 ## Technical documentation
 
 <!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
@@ -476,13 +488,13 @@ Recent evaluations of ecological, socio-economic and governance effectiveness fo
 
 ### Data {#data2}
 
-[Protection level of ecosystem types table](data/epl_ets_ecotypes.csv)
+[Table of marine ecosystem types protection level and threat status](data/epl_ets_ecotypes.csv)
 
 ### Key publications
 
-Harris, L. et al. 2025. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
+Harris, L. et al. in press. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
 
-Sink, KJ. et al. IN PREP. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
+Sink, KJ. et al. in prep. Evaluating marine protection in South Africa to inform policy, practice and prioritisation.
 
 Sink, KJ. et al. 2023. Integrated systematic planning and adaptive stakeholder process support a 10‐fold increase in South Africa's MPA estate. Conservation Letters. e12954.
 

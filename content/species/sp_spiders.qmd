@@ -1,14 +1,10 @@
 ---
-# indentations are critical in YAML headers, be careful when editing this section
+title: "Spiders" 
+subtitle: "" 
 
-title: "Spiders" # Compulsory
-subtitle: "" # Optional: delete if you are not using a subtitle
+title-block-banner: "#ad180d" 
+title-block-banner-color: white 
 
-title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
-title-block-banner-color: white # Header text colour: DO NOT CHANGE
-
-# List authors here in the order you want them displayed in the title block
-# See examples in README
 author:
   - name:
       given: Ansie
@@ -25,7 +21,7 @@ author:
   - name:
       given: Domitilla C
       family: Raimondo
-    #orcid: 0000-0003-3998-752X
+    orcid: 0000-0003-3998-752X
     affiliations:
       - ref: sanbi    
   - name:
@@ -72,16 +68,12 @@ author:
       - ref: sanbi
      
 affiliations:
-# List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
-# Write out institutional names in full
-# See README for common examples - they can be copied and pasted here
-# Make sure you maintain indentations exactly as they are here
-  - id: arc # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
+  - id: arc 
+    number: 1 
     name: Agricultural Reseach Council
 
-  - id: sanbi # Use this as the affiliation ref with authors above
-    number: 2 # This number is used to associate authors with affiliations
+  - id: sanbi 
+    number: 2 
     name: South African National Biodiversity Institute
   - id: uv
     number: 3
@@ -93,19 +85,15 @@ affiliations:
     number: 5
     name: National Museum Bloemfontein
 
-# This date determines the PUBLISHED date in the title block
 date: last-modified
-
-# Remember to rename the default .bib file and change the name here
 bibliography: species.bib
 
-# This section sets up the page citation format. DO NOT EDIT
 citation:
   type: webpage
   container-title: National Biodiversity Assessment 2025
   publisher: South African National Biodiversity Institute
   url: http://nba.sanbi.org.za/
-# Do not edit or change any of the following entries
+
 appendix-cite-as: false
 google-scholar: true
 image: "./imgs/sp_spider_img_1.png"
@@ -142,13 +130,9 @@ image: "./imgs/sp_spider_img_1.png"
 </style>
 ```
 
-------------------------------------------------------------------------
-
-<center>
-
 ![*Pycnacantha tribulus* (Fabricius, 1781), the hedgehog spider, was the first spider species described from South Africa, 244 years ago. (© Peter Webb)](./imgs/sp_spider_img_1.png){fig-align="center"}
 
-</center>
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="33.3%"}
@@ -206,7 +190,7 @@ image: "./imgs/sp_spider_img_1.png"
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Density of threatened spider species (10 × 10 km grid) based on all threatened species distributional data. Highest concentrations occur in the Cape Floristic Region — a global biodiversity hotspot with exceptional richness and high levels of threat. This is followed bu Gauteng, the economic hub of South Africa ad highly numbers in southern KwaZulu-Natal. These patterns might be influenced by sampling bias in urban areas."
+#| fig-cap: "Spatial distribution of threatened spiders. The legend reflects the number of threatened plants per 10 x 10 km grid cell. Darker shading shows areas where threatened spiders are concentrated."
 #| out-width: 650px
 knitr::include_graphics("./imgs/spiders_thrt_10km_HD.png")
 ```
@@ -453,12 +437,12 @@ gt(dat_combined_final) %>%
 
 The South African National Survey of Arachnida (SANSA) was initiated in 1997, with the main aim of documenting the arachnid fauna of South Africa at a national level and to unify and strengthen biodiversity research on the spiders of South Africa [@dippenaar-schoeman2015a]. SANSA was managed by the Arachnida Unit at the National Collection of Arachnida (NCA) at the Agricultural Research Council - Plant Health and Protection (ARC-PHP) unit in Pretoria, with support from the Universities of the Free State and Venda, the National Museum in Bloemfontein, and the South African National Biodiversity Institute (SANBI) Threatened Species Programme, who funded SANSA Phase 2 [@dippenaar-schoeman2015a].
 
-The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all existing spider data into a MySQL relational database developed at the ARC. The study of South African spiders was significantly influenced by colonial expansion and the visits of scientists, who dispatched hundreds of specimens to museums in Belgium, France, Germany and the United Kingdom. The data date back to 1781, when the first species was described from South Africa. Records of all known South African species and their distribution information were extracted from original descriptions, re-descriptions and revisionary work, as listed on the World Spider Catalogue. SANBI joined the project for its second phase, known as SANSA II, from 2006 to 2010. Gap analyses were done to determine the spatial coverage of the species, and targeted surveys were undertaken in degree-squares throughout South Africa, particularly in areas with poor historic coverage. Due to extensive fieldwork by SANSA field managers and research from other projects, student projects and public participation, more than 40 degree-squares were sampled in previously poorly sampled areas, providing valuable material that improved our knowledge of species distributions and yielding valuable specimens for future taxonomic studies. In 2010, the [First Atlas of South African Spiders](https://zenodo.org/records/7628809) (FASSA) was published online, listing 2003 species from 70 families, with georeferenced records and distribution maps [@a2010a]. The last decade, however, has seen considerable growth in the knowledge of spiders in South Africa, and the number of species known from the country has increased to 2 265 species [@a2023a]. Dr Dippenaar-Schoeman still continues to work on the SANSA project as the project manager, updating taxonomy, even after retiring from the ARC-PHP.
+The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all existing spider data into a MySQL relational database developed at the ARC. The study of South African spiders was significantly influenced by colonial expansion and the visits of scientists, who dispatched hundreds of specimens to museums in Belgium, France, Germany and the United Kingdom. The data date back to 1 781, when the first species was described from South Africa. Records of all known South African species and their distribution information were extracted from original descriptions, re-descriptions and revisionary work, as listed on the World Spider Catalogue. SANBI joined the project for its second phase, known as SANSA II, from 2006 to 2010. Gap analyses were done to determine the spatial coverage of the species, and targeted surveys were undertaken in degree-squares throughout South Africa, particularly in areas with poor historic coverage. Due to extensive fieldwork by SANSA field managers and research from other projects, student projects and public participation, more than 40 degree-squares were sampled in previously poorly sampled areas, providing valuable material that improved our knowledge of species distributions and yielding valuable specimens for future taxonomic studies. In 2010, the [First Atlas of South African Spiders](https://zenodo.org/records/7628809) (FASSA) was published online, listing 2003 species from 70 families, with georeferenced records and distribution maps [@a2010a]. The last decade, however, has seen considerable growth in the knowledge of spiders in South Africa, and the number of species known from the country has increased to 2 265 species [@a2023a]. Dr Dippenaar-Schoeman still continues to work on the SANSA project as the project manager, updating taxonomy, even after retiring from the ARC-PHP.
 
-<center>![](./imgs/sp_spider_img_2.png){style="border-radius:10px;"}[The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. (© Elsa van Niekerk)]{style="width:75%; color:#626262;"}</center>
+![](./imgs/sp_spider_img_2.png){style="border-radius:10px;"}[The National Collection of Arachnida - The cabinets housing the specimens in the National Collection of Arachnida. (© Elsa van Niekerk)]{style="width:75%; color:#626262;"}
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
-<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 45%;">
 
 <img src="./imgs/sp_spider_img_3.png" alt="White-winged flufftail" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
@@ -466,7 +450,7 @@ The primary objective of the SANSA Phase 1 (1997–2005) was to consolidate all 
 
 </figure>
 
-<figure style="margin: 0; text-align: center; flex: 1 1 45%;">
+<figure style="margin: 0; text-align: left; flex: 1 1 45%;">
 
 <img src="./imgs/sp_spider_img_5.png" alt="Habitat monitoring" style="width:100%; height:250px; object-fit: cover; border-radius:10px; margin: 0"/>
 
@@ -482,14 +466,14 @@ The trend in species status over time was measured using a global standard indic
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for spider species assessed in South Africa, relative to national aggregate (national average across all assessed taxonomic groups). The slope of the line indicates the rate at which species are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Spiders are indicated in yellow and have a relatively high RLI value when compared with the national average, indicating that levels of extinction risk are low. However, many spiders were assessed as Data Deficient, that are not included in this calculation."
+#| fig-cap: "The Red List Index (RLI) for spider species assessed in South Africa, relative to national aggregate (national average across all assessed taxonomic groups). The slope of the line indicates the rate at which species are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Spiders are indicated in yellow and have a relatively high RLI value when compared with the national average, indicating that levels of extinction risk are low. However, many spiders were assessed as Data Deficient, that are not included in this calculation. Aggregate refers to the national average RLI across all assessed taxonomic groups."
 
 library(tidyverse)
 library(nbaR)
 
 # --- Dataset ---
 
-df_rlis <- readxl::read_excel("./data/nba_example_rli_data_trim.xlsx")
+df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
 
 df_spiders <- df_rlis %>%
   filter(Taxon %in% c("Spiders","Aggregate"))
@@ -545,7 +529,7 @@ Most of the studies of spider ecology in South Africa are local-scale studies fo
 
 Fire is a factor that can significantly impact spider populations, but its effects vary depending on the species, habitat, and intensity of the fire. Many foliage-dwelling spiders perish during fires due to direct exposure to heat and flames, while some ground-dwellers that remain in their burrows (particularly trapdoor spiders) and those that seek shelter under rocks or in cracks in the soil are less impacted. Due to habitat disruption, fire alters leaf litter, vegetation and microhabitats that spiders rely on for shelter and hunting. A study in central South African grasslands found that fast-burning spring fires resulted in an immediate sharp decline in ground-dwelling spider numbers, but that assemblages recovered to levels comparable to unburnt sites within a year. Burnt sites had significantly fewer individuals and species compared to unburnt ones. Some families, such as Lycosidae (wolf spiders) and Gnaphosidae (ground spiders), persisted post-fire, while others declined. Caponiidae (lungless spiders) were the only group found to increase in burnt areas. Studies have shown a decline in overall spider numbers after fire events. There are species-specific responses, and web builders (such as orb and sheet weavers) are more vulnerable and often absent after a fire, while ground hunters and ambush predators tend to be more resilient. Some spiders can recolonise burned areas relatively quickly, depending on the severity of the fire and the condition of the surrounding habitat. Fires that burn unevenly leave refuges that aid in faster recovery [@haddad2015a].
 
-<center>![](./imgs/sp_spiders_img_6.png){style="border-radius:10px;"}[Veld fire in the Grassland and Savannah systems. (© Robin Lyle)]{style="width:75%; color:#626262;"}</center>
+![](./imgs/sp_spiders_img_6.png){style="border-radius:10px;"}[Veld fire in the Grassland and Savannah systems. (© Robin Lyle)]{style="width:75%; color:#626262;"}
 :::
 
 ## Knowledge gaps
@@ -602,67 +586,67 @@ Although South Africa has the richest described spiders on the continent, some r
 Preliminary research on the following families reveals that many species remain unidentified. All images are credited to © Peter Webb unless otherwise indicated.
 
 ::::::::::::::::::: grid
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Araneus coccinella* [Araneidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47535) (estimated to be 29 spp.)](./imgs/sp_spider_img_7.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Clubiona durbana* [Clubionidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=121773) (estimated to be 150 spp.)](./imgs/sp_spiders_img_8.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Copuetta lacustris* [Corinnidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47418) (estimated to be 14 spp.)](./imgs/sp_spiders_img_9.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Dictyna sp.* [Dictynidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=84523) (estimated to be 6 spp.)](./imgs/sp_spiders_img_10.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Afrofilistata fradei* [Filistatidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=49331) (estimated to be 6 spp.) (© G. Wilson)](./imgs/sp_spiders_img_11.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Aphantaulax* sp. [Gnaphosidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=50168) (estimated to be 10 spp.)](./imgs/sp_spiders_img_12.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Macrobunidae sp. [Macrobunidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=1525719) (estimated to be 13 spp.)](./imgs/sp_spiders_img_13.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Mimetidae sp. [Mimetidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=60351) (estimated to be 8 spp.)](./imgs/sp_spiders_img_14.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Orsolobidae sp. [Orsolobidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=373104) (estimated to be 3 spp.)](./imgs/sp_spiders_img_15.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Peucetia striata* [Oxyopidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=83843) (estimated to be 15 spp.)](./imgs/sp_spiders_img_16.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Philodromidae sp. [Philodromidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47868) (estimated to be 6 spp.)](./imgs/sp_spiders_img_17.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Sctodidae sp. [Scytodidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47431) (estimated to be 80 spp.)](./imgs/sp_spiders_img_18.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Selenopidae sp. [Selenopidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47487) (estimated to be 23 spp.)](./imgs/sp_spiders_img_19.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Latrodectus cinctus* [Theridiidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=47371) (estimated to be 28 spp.)](./imgs/sp_spiders_img_20.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![*Afroceto martini* [Trachelidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=416721) (estimated to be 35 spp.)](./imgs/sp_spiders_img_21.png){.img-align}
 :::
 
-::: {.g-col-lg-3 .g-col-6 .text-center}
+::: {.g-col-lg-3 .g-col-6 .text-left}
 ![Zodariidae sp. [Zodariidae](https://www.inaturalist.org/observations?place_id=6986&taxon_id=48893) (estimated to be 8 spp.)](./imgs/sp_spiders_img_22.png){.img-align}
 :::
 :::::::::::::::::::
@@ -670,7 +654,9 @@ Preliminary research on the following families reveals that many species remain 
 
 ## Approach
 
-The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA).
+### Threat status assessments
+
+The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council, the University of the Free State and the University of Venda (formerly University of Limpopo). This assessment represents a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group and was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and a 350% rise in specimen accessions in the ARC's National Collection of Arachnida (NCA). See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_rls_explained.qmd)
 
 ***Data sources and methods***
 
@@ -690,13 +676,49 @@ Notably, all Red List assessments relied exclusively on IUCN criteria B (geograp
 
 The first IUCN Red List assessment of South African spiders was conducted between 2016 and 2019, as a collaborative project between the South African National Biodiversity Institute (SANBI), the Agricultural Research Council (ARC), the University of the Free State, National Museum Bloemfontein, and the University of Venda (formerly University of Limpopo), with the National Research Foundation (NRF) providing funding and support. South African National Parks and E. Oppenheimer & Son support and provide opportunities to collect in the parks and reserves and the provincial conservation agencies for collecting permits.
 
-All the field workers, museum staff and other members contributing to the completion of the assessment are acknowledged for their contributions (@tbl-2).
+:::::: grid
+::: {.g-col-lg-4 .g-col-12}
+**Coordinated by:**
 
-<center>![](./imgs/logo_spiders_2.png){style="width:50%;"}</center>
+------------------------------------------------------------------------
+
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
+
+-   [Agricultural Research Council](https://www.arc.agric.za/)
+
+-   [University of Free State](https://www.ufs.ac.za/)
+
+-   [National Museum Bloemfontein](https://nationalmuseum.co.za/)
+
+-   [University of Venda](https://www.univen.ac.za/)
+:::
+
+::: {.g-col-lg-4 .g-col-12}
+**Sponsored by:**
+
+------------------------------------------------------------------------
+
+-   [National Research Foundation](https://www.nrf.ac.za/)
+:::
+
+::: {.g-col-lg-4 .g-col-12}
+**Supported by:**
+
+------------------------------------------------------------------------
+
+-   [South African National Parks](https://www.sanparks.org/)
+
+-   [E. Oppenheimer & Son](https://www.privateequityinternational.com/institution-profiles/e-oppenheimer-son.html)
+
+-   Provincial conservation agencies
+:::
+::::::
+
+### Contributors
 
 ```{r}
 #| label: tbl-2
-#| tbl-cap: "List of contributors mobilising IUCN Red List assessments and support with field work during SANSA." 
+#| tbl-cap: "List of contributors mobilising IUCN Red List assessments and support with field work during SANSA and museum staff." 
 #| classes: plain
 
 library(gt)
@@ -717,7 +739,9 @@ data <- data.frame(
 "Reginald Christiaan",
 "Robin Lyle",
 "Ruan Booysen",
-"Sma Chiloane "
+"Sma Chiloane ", 
+"Carol Poole",
+"Anisha Dayaram"
 ),
   'Affiliation'  = c("Agricultural Research Council", 
                      "Spider Club of Southern Africa",
@@ -732,7 +756,9 @@ data <- data.frame(
                      "South African National Biodiversity Institute", 
                      "Agricultural Research Council", 
                      "University of Free State", 
-                     "Agricultural Research Council"
+                     "Agricultural Research Council",
+                     "South African National Biodiversity Institute", 
+                     "South African National Biodiversity Institute" 
                      ))
 
 # Create gt table
@@ -745,6 +771,13 @@ gt(data) %>%
 
    tab_style(style = cell_fill(color = "white"),
             locations = cells_column_labels(columns = everything())) %>%
+  
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_column_labels(columns = everything())) %>%
+  
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_body(columns = everything())) %>%
+  
   tab_style(
     style = cell_borders(
       sides = c("left", "right"),
@@ -764,7 +797,7 @@ gt(data) %>%
 
 ```
 
-### Recommended citation
+## Recommended citation
 
 ```{r}
 #| output: asis

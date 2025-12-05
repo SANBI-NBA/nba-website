@@ -2,6 +2,6 @@ Score,Functional impact,Recovery
 0,No impact.,N/A
 1,Minor impact limited to a single species with minimal impact on overall system functioning.,Very quick recovery (< 1 year).
 2,Minor impact limited to a few (< 10) species with minimal impact on overall system functioning.,Quick recovery (> 1 year but < 2 years).
-5,"Moderate impact on natural state of ecosystems, including impacts on a range of species and some impacts on trophic structure. May include localised physical habitat damage. ",Average recovery time (> 2 year but < 5 years).
-8,High impact on natural state of an ecosystem (including habitat and/or changes in trophic structure).,Slow recovery time (> 5 year but < 10 years).
+5,"Moderate impact on natural state of ecosystems, including impacts on a range of species and some impacts on trophic structure. May include localised physical habitat damage. ",Average recovery time (> 2 years but < 5 years).
+8,High impact on natural state of an ecosystem (including habitat and/or changes in trophic structure).,Slow recovery time (> 5 years but < 10 years).
 10,Extremely heavy impact on the natural state of an ecosystem (including major changes in trophic structure and/or damage to physical structure).,Very slow recovery (> 10 years) or permanent damage (e.g. irreversible changes in habitat or trophic structure).

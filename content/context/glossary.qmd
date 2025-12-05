@@ -4,8 +4,14 @@ title-block-banner: "#adb5bd"
 title-block-banner-color: white
 ---
 
-Acronyms and abbreviations: The use of these on the NBA website has been restricted to those that are in common usage.  
+**Acronyms and abbreviations:**
 
-Terminology: Users of the NBA are encouraged to refer to the [Lexicon of Spatial Biodiversity Assessment, Prioritisation and Planning in South Africa (Second Edition, 2023)](http://hdl.handle.net/20.500.12143/8261) for standard definitions of key concepts and frequently used terms. 
+The use of these on the NBA website has been restricted to those that are in common usage.  
 
-Species and taxa: Both scientific and common names (where available) are provided when referring to species. English common names are used unless a non-English name is predominantly used in South Africa. It is recognised that more than one English common name and common names in other official South African languages may also exist. Some species have been split into subspecies and/or varieties and are assessed at these levels. Consequently, if a taxonomic group includes subspecies or varieties, the summary statistics use the term ‘taxa’ (singular: taxon). If a group contains only species then the term ‘species’ is used in the summary statistics. 
+**Terminology:**
+
+Users of the NBA are encouraged to refer to the [Lexicon of Spatial Biodiversity Assessment, Prioritisation and Planning in South Africa (Second Edition, 2023)](http://hdl.handle.net/20.500.12143/8261) for standard definitions of key concepts and frequently used terms. 
+
+**Species and taxa:**
+
+Both scientific and common names (where available) are provided when referring to species. English common names are used unless a non-English name is predominantly used in South Africa. It is recognised that more than one English common name and common names in other official South African languages may also exist. Some species have been split into subspecies and/or varieties and are assessed at these levels. Consequently, if a taxonomic group includes subspecies or varieties, the summary statistics use the term ‘taxa’ (singular: taxon). If a group contains only species then the term ‘species’ is used in the summary statistics. 

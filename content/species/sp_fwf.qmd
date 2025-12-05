@@ -1,7 +1,7 @@
 ---
 # indentations are critical in YAML headers, be careful when editing this section
 
-title: "Freshwater Fishes" # Compulsory
+title: "Freshwater fishes" # Compulsory
 subtitle: "" # Optional: delete if you are not using a subtitle
 
 title-block-banner: "#ad180d" #Background colour of the title block: Apply component colours where necessary - find hex codes in _brand.yml
@@ -165,7 +165,7 @@ image: "./imgs/sp_freshwater_fish_img_1.png"
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Density of threatened freshwater fish taxa (10 x 10 km grid) based on distribution records. Highest concentrations of threatened taxa coincide with areas of high endemism, highlighting the vulnerability of these range-restricted species to multiple anthropogenic pressures. These are chiefly related to invasive alien species, pollution and habitat degradation."
+#| fig-cap: "Spatial distribution of threatened freshwater fishes. The legend reflects the number of threatened freshwater fishes per 10 x 10 km grid cell. Darker shading shows areas are where threatened freshwater fishes are concentrated. Highest concentrations of threatened taxa coincide with areas of high endemism, highlighting the vulnerability of these range-restricted species to multiple anthropogenic pressures. These are chiefly related to invasive alien species, pollution and habitat degradation."
 #| out-width: 650px 
 
 knitr::include_graphics("./imgs/freshwater_fishes_thrt_10km_HD.png")
@@ -175,7 +175,7 @@ knitr::include_graphics("./imgs/freshwater_fishes_thrt_10km_HD.png")
 
 The Red List assessment of all freshwater fishes in South Africa was done in 2016/17. A comparison with all comprehensively assessed taxonomic groups in the country indicated that freshwater fishes have the second highest proportion of species that are threatened with extinction (36%), second to [sharks, rays and chimaeras](../species/sp_sharks.qmd) [@tbl-1]. Overall, more than half (53% or 62 taxa) of freshwater fishes in the country are classified as Taxa of Conservation Concern (ToCC) ([@fig-1 & @fig-2]). Most of these taxa occur in the Cape Fold Ecoregion (CFE) [@ellender2017a; @chakona2022a; @skelton2024a]. Most concerning is that almost all the endemic freshwater fishes (88% or 51 taxa) in the country are classified as ToCC ([@fig-1] & [@fig-2]).
 
-The elevated risk of extinction for freshwater fishes corresponds to the poor condition of rivers. Estimates from the freshwater ecosystem assessment indicate that 75% of overall river length in the country has been modified and over 50% of rivers are threatened. A reassessment of the Red List status for freshwater fishes in the country is planned for 2027 to integrate new information (including new species and distribution records) that has been generated from a number of projects that were undertaken since the previous 2016/17 assessment (see further details in [Box 1](#box-1)). As these assessments are underpinned by correct taxonomy, ongoing work is focusing on expediting the resolution of the taxonomic statuses of selected priority groups ahead of the planned 2027 reassessment. Another important development over the last nine years was the establishment of the [freshwater fish observation network](../species/fw_sp.qmd) that was constituted to provide a better coordinated approach to address the challenges that were identified in the NBA 2018.
+The elevated risk of extinction for freshwater fishes corresponds to the poor condition of rivers. Estimates from the freshwater ecosystem assessment indicate that 75% of overall river length in the country has been modified and over 50% of rivers are threatened. A reassessment of the Red List status for freshwater fishes in the country is planned for 2027 to integrate new information (including new species and distribution records) that has been generated from a number of projects that were undertaken since the previous 2016/17 assessment (see further details in [Box 1](#box-1)). As these assessments are underpinned by correct taxonomy, ongoing work is focusing on expediting the resolution of the taxonomic statuses of selected priority groups ahead of the planned 2027 reassessment. Another important development over the last nine years was the establishment of the freshwater fish observation network that was constituted to provide a better coordinated approach to address the challenges that were identified in the NBA 2018.
 
 :::: panel-tabset
 ## Figure
@@ -435,25 +435,25 @@ Strategic research initiatives have significantly strengthened the evidence base
 
 ## Trends – the Red List Index
 
-The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI indices are calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1, with the lower value indicating rapid progression towards extinction. A value of 1 signifies that all taxa are Least Concern, whereas a value of 0 indicates that all taxa are extinct. The RLI for freshwater fishes of South Africa was calculated at 0.75, revealing this group to be the second lowest among all assessed taxonomic groups in the country [@fig-3]. This relatively low (compared with other taxonomic groups) RLI reflects a high proportion of species facing elevated extinction risk, reinforcing the urgent need for targeted interventions to secure remaining populations and promote recovery of species that have suffered severe reductions in distribution ranges and population sizes.
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI indices are calculated for specific taxonomic groups based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1, with the lower value indicating rapid progression towards extinction. A value of 1 signifies that all taxa are Least Concern, whereas a value of 0 indicates that all taxa are extinct. The RLI for freshwater fishes of South Africa was calculated at 0.75 in 2018, revealing this group to be the second lowest among all assessed taxonomic groups in the country [@fig-3]. This relatively low (compared with other taxonomic groups) RLI reflects a high proportion of species facing elevated extinction risk, reinforcing the urgent need for targeted interventions to secure remaining populations and promote recovery of species that have suffered severe reductions in distribution ranges and population sizes.
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) trends for South African freshwater fishes (RLI  value = 0.75). The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct)"
+#| fig-cap: "The Red List Index (RLI) trends for South African freshwater fishes (RLI  value = 0.75). The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). Aggregate refers to the national average RLI across all assessed taxonomic groups."
 
 library(tidyverse)
 library(nbaR)
 # --- Dataset ---
-
+mycols <- ("Freshwater fishes"="#e7298a")
 df_rlis <- readxl::read_excel("./data/nba_example_RLI_data_trim.xlsx")
 
 df_fwf <- df_rlis%>%
-  filter(Taxon %in% c("Freshwater Fishes", "Aggregate"))
+  filter(Taxon %in% c("Freshwater fishes", "Aggregate"))
 
-nba_index_plot(
+p <- nba_index_plot(
   TYPE = "RLIs",
   DF = df_fwf,
   YEAR = Year,
@@ -464,6 +464,9 @@ nba_index_plot(
   # AGGREGATE = TRUE,
   SAVE = NULL
 )
+
+p+scale_color_manual(values = mycols)
+
 ```
 
 ## Data
@@ -599,11 +602,11 @@ Invasive fish populations are not limited to species originating outside the cou
 
 Another problematic native species is the African sharptooth catfish (*Clarias gariepinus* – LC), which was identified in the previous Red List assessment (2007) as an upcoming potential future threat, and it has spread as predicted [@darwall2009a]. The native range of this species is the northern ecoregions, and it extends from the Orange River system in the west to the Mtamvuna (KwaZulu-Natal) in the east [@skelton2024a]. As a result of inter-basin water transfers and human-assisted dispersal, it now has an extensive invasive range in all the major river systems and many smaller coastal catchments of the Western and Eastern Cape [@weyl2016a]. While it favours large lowland rivers and floodplain habitats, @ellender2014a have shown that sharptooth catfish can readily invade sensitive headwater habitats. Both their ability to establish in these habitats and their impacts on sensitive headwater ecosystems remain poorly studied [@weyl2016a].
 
-Two invasive freshwater crayfish species, *Cherax quadricarinatus* and *Procambarus clarkii* are present in several river systems in South Africa. Recent records indicate that these species are expanding their ranges in South Africa and other parts of the region without much control. Of particular concern is the [recent detection of *P. clarkii*](../species/fw_sp#) in the Western Cape Province, a region with the highest concentration of highly threatened freshwater fishes in the country.
+Two invasive freshwater crayfish species, *Cherax quadricarinatus* and *Procambarus clarkii* are present in several river systems in South Africa. Recent records indicate that these species are expanding their ranges in South Africa and other parts of the region without much control. Of particular concern is the [recent detection of *P. clarkii*](../species/fw_sp#box-4) in the Western Cape Province, a region with the highest concentration of highly threatened freshwater fishes in the country.
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "Key pressures on South Africa’s freshwater fishes. This analysis presents the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme."
+#| fig-cap: "Key pressures on South Africa’s freshwater fishes. This analysis presents the relative frequency of pressures affecting threatened and Near threatened species, using the IUCN Threat Classification Scheme[@i2025a]."
 #| out.width: 100%
 
 library(stringr)
@@ -629,7 +632,7 @@ p + scale_x_discrete(
 
 South Africa is a water-scarce country with many competing water users. While the National Water Act 36 of 1998 [@africa1998a] recognises the environment as a legitimate water user, environmental flow requirements and pollution mitigation measures are not consistently implemented or enforced on a national scale. While some species have a higher tolerance for polluted systems such as the African sharptooth catfish and several tilapia species, most other species are intolerant of polluted water, and this is reflected by the increasing incidences of fish kills due to mining effluent and poorly maintained and managed Wastewater Treatment Works (WWTWs).
 
-Pollution in a range of forms (e.g., from agricultural and forestry effluent, domestic and urban wastewater, and industrial effluent) is impacting many freshwater fishes of conservation concern. Many rivers, especially mainstream and lowland reaches are impacted by pollution as [67% of rivers are considered degraded](../content/freshwater/fw_riv_ets.qmd). For example, the Elands River (Inkomti system) flowing past Machadodorp to its confluence with the Crocodile River is polluted due to a paper mill and settlements situated close to the river as well as the poorly-managed WWTW. These sources of pollution are impacting the Incomati suckermouth catfish (*Chiloglanis bifurcus* – CR) [@roux2017a]. The Elands River and its tributaries have been identified as a priority freshwater environment for fish conservation through the National Freshwater Ecosystem Priority Areas (NFEPA) (Driver et al. 2012; Nel et al. 2011a; 2011b), however this needs updating to reflect the current state of knowledge. The Tradouw redfin (*Pseudobarbus burchelli* – CR) is affected by hydrological modification, agrochemical pollution as well as poorly functioning sewage works that impact the Tradouw River downstream of Barrydale [@jordaan2024a]. The Krom River minnow (*Pseudobarbus senticeps* – CR), restricted to the Krom River system, has been extirpated from its historic range mainly as a result of invasive alien species, while in the Assegaaibosch River, the population is impacted by excessive pollution from settlements in the sub-catchment [@chakona2017a].
+Pollution in a range of forms (e.g., from agricultural and forestry effluent, domestic and urban wastewater, and industrial effluent) is impacting many freshwater fishes of conservation concern. Many rivers, especially mainstream and lowland reaches are impacted by pollution as [67% of rivers are considered degraded](../freshwater/fw_riv_ets.qmd). For example, the Elands River (Inkomti system) flowing past Machadodorp to its confluence with the Crocodile River is polluted due to a paper mill and settlements situated close to the river as well as the poorly-managed WWTW. These sources of pollution are impacting the Incomati suckermouth catfish (*Chiloglanis bifurcus* – CR) [@roux2017a]. The Elands River and its tributaries have been identified as a priority freshwater environment for fish conservation through the National Freshwater Ecosystem Priority Areas (NFEPA) [@driver2011a; @nel2011a], however this needs updating to reflect the current state of knowledge. The Tradouw redfin (*Pseudobarbus burchelli* – CR) is affected by hydrological modification, agrochemical pollution as well as poorly functioning sewage works that impact the Tradouw River downstream of Barrydale [@jordaan2024a]. The Krom River minnow (*Pseudobarbus senticeps* – CR), restricted to the Krom River system, has been extirpated from its historic range mainly as a result of invasive alien species, while in the Assegaaibosch River, the population is impacted by excessive pollution from settlements in the sub-catchment [@chakona2017a].
 
 Anthropogenic pollution can be exacerbated by unsustainable water use patterns and over-abstraction of surface water sources. Complete abstraction during the dry season can result in localised extirpations, as was observed for the smallscale redfin (*Pseudobarbus asper*). This species was historically widespread throughout the Gouritz and Gamtoos river systems in the CFE but presently persist as highly fragmented populations in larger tributaries. Sampling results suggest that it has been lost from mainstream habitat due to the impacts of invasive piscivorous fish, while two lowland river populations downstream of Towerkop Nature Reserve are likely extirpated because of complete abstraction of surface water during the dry summer season. Lowland species such as *Pseudobarbus asper* are especially vulnerable to water abstraction impacts as there are often no refuge populations in upstream areas from where the species can recolonise. Examples such as these illustrate that impacts on habitat quality and quantity are significant pressures on freshwater fish and drive the highly threatened status of many taxa. Alarmingly, these pressures are only expected to worsen under future climate change predictions, especially for the CFE.
 
@@ -637,15 +640,15 @@ Anthropogenic pollution can be exacerbated by unsustainable water use patterns a
 
 ### Exacerbated and emerging pressures
 
-Freshwater systems across the assessment region face an expanding list of severe threats. These include acid mine drainage and mining-related sedimentation and effluent spills, forestry activities **such as XXXX**, alien invasive fish and their translocation, road-related chemical spills, agricultural impacts **such as XXX**, alien plant invasions and associated control activities. These impacts are exacerbated by failures in municipal water services, including non-functional sewage works and refuse dumping in sensitive areas of catchments. Illegal gold mining within sensitive riverbeds is a growing concern, directly damaging habitats that support already highly threatened freshwater fish species.
+Freshwater systems in the assessment region face escalating threats from mining (including acid mine drainage and sedimentation), forestry-driven flow reduction, and agricultural activities that degrade habitats through riparian loss, water over-abstraction, instream modification, and agrochemical use. These pressures are compounded by alien plant invasions, failing municipal water services, and illegal gold mining in sensitive riverbeds, which directly damages critical habitat for highly threatened freshwater fishes.
 
-See Box X, [Freshwater Species Realm](../freshwater/fw_overview.qmd).<!-- Will update when Freshwater page is complete -->
+See Box 2, [Freshwater Realm Species Summary](../freshwater/fw_overview.qmd).<!-- Will update when Freshwater page is complete -->
 
 ## Protection level
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Protection level results for the freshwater fishes of South Africa." 
+#| fig-cap: "Protection level for freshwater fishes was assessed for 96 taxa. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa); (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics (56 taxa)." 
 
 library(dplyr)
 library(tidyr)
@@ -739,7 +742,7 @@ In a recent evaluation of the value of protected areas for conserving the freshw
 
 ## Species recovery
 
-As part of the Global Biodiversity Framework (GBF) Target 4 under the Convention on Biological Diversity, signatories are committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030. Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. South Africa has initiated a process for each of the taxonomic groups that have been comprehensively assessed following the IUCN Red List criteria to identify and prioritise species that are in urgent need of interventions to promote their recovery to contribute to achieving the GBF Target 4 goals.
+As part of the Global Biodiversity Framework (GBF) [Target 4](https://www.cbd.int/gbf/targets/4) under the Convention on Biological Diversity, signatories are committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030. Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. South Africa has initiated a process for each of the taxonomic groups that have been comprehensively assessed following the IUCN Red List criteria to identify and prioritise species that are in urgent need of interventions to promote their recovery to contribute to achieving the GBF Target 4 goals.
 
 See more details on the process followed for freshwater fishes [here](../species/fish_recovery.qmd).
 
@@ -797,9 +800,11 @@ Although rehabilitation needs for highly threatened species are often known by t
 
 ## Approach
 
-### Red List Assessment
+### Threat status assessment
 
 The IUCN Red List criteria and categories are used to assess the threat status of species. Freshwater fish species were assessed in 2016, utilising multiple workshops, including a three-day in-person workshop hosted by the South African Institute of Aquatic Biodiversity (NRF-SAIAB) in Makhanda, Eastern Cape, and funded by the South African National Biodiversity Institute (SANBI). All available spatial data were collated, and experts reviewed specimen records related to these data. Incorrect data were georeferenced, with a high investment in updating all threatened species records. The freshwater fish checklist was based on a very specific definition of freshwater fishes and included species occurring in neighbouring countries Eswatini and Lesotho. See further details from a study on diversity, distribution and extinction risk of native freshwater fishes of South Africa [@chakona2022a].
+
+See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_rls_explained.qmd).
 
 ### Protection level assessment
 
@@ -890,32 +895,34 @@ Species-specific conservation targets reflect either the area required to suppor
 
 Scores for protected area effectiveness were developed with input from freshwater fish experts and protected area management agencies, based on species responses to management at specific sites.
 
-**Freshwater Fish Reassessment (2025)**
+**Freshwater fish protection level re-assessment (2025)**
 
 The 2025 reassessment repeated the previous method using the 2018 protection level as the baseline, with minor spatial data updates from a 2022 workshop. Updated protected area boundaries meant the 2018 protection level assessment had to be recalculated with re-applied expert scores. No taxonomic changes were included in this cycle. A full update incorporating revised taxonomy and new Red List assessments is planned for 2027. Although this interim update has limitations, experts confirm that the findings align with current field observations. A technical report outlining the full methodology and limitations will follow.
 
+See details about how the protection level assessment are conducted [here](../integrated-findings/chl_spl_explained.qmd).
+
 ## Acknowledgements
 
-![](./imgs/logo_freshwater_fish_1){fig-align="center"}
+We thank all freshwater fish experts across South Africa that have contributed ther time, knowledge and energy to the assessments and the conservation efforts for this group. We specifically acknowledge the NRF South African Institute of Aquatic Biodiversity ([SAIAB](https://saiab.ac.za/)) for its co-leadership of the freshwater fish assessment and for hosting the 2016 IUCN Red List workshop and for their continued efforts in resolving taxonomic uncertainty for this groups. The many tertiary institutions that have contributed student research to the assessment of freshwater fishes. The South African National Biodiversity Institute for funding the 2016 IUCN Red List workshop and for serving as the secretariat of the Freshwater Fish Observation Network.
 
 ```{r}
 #| label: tbl-4
-#| tbl-cap: "List of contributors to mobilising IUCN Red List assessments and support with field work." 
+#| tbl-cap: "List of contributors to species Red List assessments in 2016-2017, contribution of information and members of the freshwater fish observation network as well as conservation agency staff that contributed data and insights to assessments." 
 #| classes: plain
 
 library(gt)
 
 # Create example data
 data <- data.frame(
-  'Contributor' = c("Tsungai Zengeya", "Leon Barkhuizen", "Stan Rodgers", "Darragh Woodford", "Olaf Weyl", "Ashla Gohell", "Mandy Schuman","Dean Impson", "Mohammed Kajee", "Skhumbuzo Khubeka", "Peter Romollo", 
-"Bruce Paxton", "Kagiso Mangwale", "Francois Roux"),
-  'Affiliation'  = c("South African National Biodiversity Institute", "University of the Free State", "Limpopo Economic Development, Environment & Tourism (LEDET)", "University of the Witwatersrand", "South African Institute for Aquatic Biodiversity", "", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre (FRC)", "University of Cape Town", "Ezemvelo KZN Wildlife", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre", "", "Mpumalanga Tourism and Parks Agency (MPTA)"))
+  'Contributor' = c("Paul Skelton","Tsungai Zengeya", "Leon Barkhuizen", "Stan Rodgers", "Darragh Woodford", "Olaf Weyl", "Ashla Gohell", "Mandy Schuman","Dean Impson", "Mohammed Kajee", "Skhumbuzo Khubeka", "Peter Romollo", 
+"Bruce Paxton", "Kagiso Mangwale", "Francois Roux", "Anisha Dayaram", "Carol Poole", "Esethu Nkibi"),
+  'Affiliation'  = c("South African Institute for Aquatic Biodiversity","South African National Biodiversity Institute", "University of the Free State", "Limpopo Economic Development, Environment & Tourism (LEDET)", "University of the Witwatersrand", "South African Institute for Aquatic Biodiversity", "Department of Water and Sanitation", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre (FRC)", "University of Cape Town", "Ezemvelo KZN Wildlife", "Northern Cape Department of Environment and Nature Conservation (DENC)", "Freshwater Research Centre", "Eastern Cape Parks and Tourism Agency", "Mpumalanga Tourism and Parks Agency (MPTA)","South African National Biodiversity Institute","South African National Biodiversity Institute","South African National Biodiversity Institute"))
 
 # Create gt table
 #gt_table <- gt(data)
 
 ref<- gt(data) %>% 
-  nba_tbl_theme() %>%
+  #nba_tbl_theme() %>%
        tab_options(#data_row.padding = px(16),
               table.font.size = px(13L),
               table.width = pct(100),
@@ -947,6 +954,10 @@ ref<- gt(data) %>%
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 
 ```
+
+## Technical documentation
+
+**Data sources** <br> 1. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
 
 ### Recommended citation
 

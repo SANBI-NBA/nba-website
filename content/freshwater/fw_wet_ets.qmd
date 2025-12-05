@@ -35,12 +35,6 @@ author:
       family: Collins 
     affiliations:
       - ref: destea
-  - name:
-      given: Adwoa  
-      family: Awuah 
-    affiliations:
-      - ref: sanbi
-      # If an author has more than one affiliation, add more - ref: lines here
       
 affiliations:
 # List affiliations here and number them in the order that they are associated with the list of authors above. If multiple authors have the same affiliation, only list the affiliation once here.
@@ -75,9 +69,9 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Inland wetlands remain highly threatened and under-protected. This places the vital services they provide and the incredible biodiversity they support at great risk.* <!--ALS this is ets so better to say more about ets than link to epl in is header? add something about state of depressions being super bad?-->
+*Inland wetlands remain highly threatened, placing the vital services they provide and the incredible biodiversity they support at great risk. Often overlooked, this assessment has highlighted the plight of depression wetlands as one of our most threatened and vulnerable wetland ecosystem types, while the continued loss and degradation of peatlands remains of great concern.*
 
-![Typical wetland within the grasslands of KwaZulu-Natal. (© Nancy Job)](imgs/kzn_merthly.png)
+![South Africa's iconic peatlands are more vulnerable to drying out, fire and erosion when their water level is lowered for sustained periods. It is considerably more expensive to restore wetlands than to conserve them and, in the case of peatlands, it would take thousands of years for new peat to form. (© Nancy Job)](imgs/peatdegradation.png){width="800"}
 
 <!-- need to find the inline style for "critically endangered" -->
 
@@ -100,7 +94,7 @@ google-scholar: true
 <center>
 
 | [73%]{.inline-style-threatened}
-| of 82 ecosytem types
+| of 82 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -116,13 +110,16 @@ google-scholar: true
 
 Threatened wetland extent constitutes approximately 2.3 million ha (86%) of the more than 2.6 million hectares of inland wetlands mapped at the time of NBA 2025. Approximately 20% of wetland extent is Critically Endangered, 21% is Endangered, and 45% is Vulnerable. The remaining 14% is assessed as Least Concern.
 
-![Ecosystem threat status for inland wetland ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
-
 Of the 82 inland wetland ecosystem types assessed 60 are threatened (73%), with 15 types Critically Endangered (18%), 20 types Endangered (24%), and 25 types Vulnerable (30%). The remaining 22 (28%) wetland types are Least Concern. Threatened wetland ecosystem types are spread widely across South Africa, while Critically Endangered and Endangered wetlands are clustered within the central Free State and extending into central NorthWest Province, central Northern Cape, the Swartland of the Western Cape, the mining belt of Limpopo Province and the coastal regions of KwaZulu-Natal.
 
-<!-- If time later bring in colour coding for EPL and ETS classes within the tables, per Natasha's code for estuaries? -->
+::: panel-tabset
+## Map
 
-<!-- as predicted these reactables below are not working on the website and we cant figure out why, this will most likely have to be a gt table -->
+![Ecosystem threat status for inland wetland ecosystem types. The inset graph shows the number of ecosystem types per threat status category.](imgs/wet_ets_map.png){#fig-ets_wet_map}
+
+## Data
+
+<!-- If time later bring in colour coding for EPL and ETS classes within the tables, per Natasha's code for estuaries? -->
 
 <!-- HGM type, zone or category decide which to use - I like zone to separate from ETS category) -->
 
@@ -154,7 +151,7 @@ reactable(
   filterable = TRUE,
   searchable = FALSE,
   pagination = FALSE,
-  height = 600,
+  height = 480,
   defaultColDef = colDef(
     headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
   ),
@@ -164,9 +161,11 @@ reactable(
       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
       backgroundColor = "white",
       border = "1px solid #ccc"
-    )))
+    )),
+  style = list(fontSize = "12px"))
 
 ```
+:::
 
 In terms of wetland hydrogeomorphic type, depression wetlands are the most threatened (24% of types threatened), followed by floodplains (17% of types threatened) and unchannelled valley-bottom wetlands (17% of types threatened), and seep wetland types (15% of types threatened) considered Threatened. Approximately 14% of depression wetland types and 19% of depression wetland extent is considered to be Critically Endangered, while 2% of seep wetland types, 1% of unchannelled valley-bottom wetland types and no floodplain types are considered Critically Endangered. <!-- add some dscription of this big difference in threat status for the different hgm zones, alignment with farming or mountains whatevewr ) -->
 
@@ -330,7 +329,8 @@ tbl
 Download the data [here](outputs/wetlands_ETS.csv).
 ::::
 
-::: {#box-1 .callout-note .freshwater title="Box 1. Inland wetland ecosystem threat status across primary catchments" collapse="true"}
+```{=html}
+<!--# ::: {#box-1 .callout-note .freshwater title="Box 1. Inland wetland ecosystem threat status across primary catchments" collapse="true"}
 South Africa supports 22 primary catchments which are further grouped into six Water Management Areas (WMA). These are the Vaal-Orange, Pongola-Umzimkhulu, Mzimvubu-Tsitsikamma, Limpopo-Olifants, Breede-Olifants, and Inkomati-Usuthu. Each WMA is managed by an established or in process Catchment Management Agency responsible for overseeing the allocation, protection, and conservation of water resources in the catchment.
 
 To support the consideration of biodiversity into emerging Catchment Management Strategies and implementation plans, the inland wetland ecosystem threat status headline indicator is presented according to the 22 primary catchments and associated Water Management Area.
@@ -346,17 +346,17 @@ Table 2.1. Percentage of the total wetland area in each province that falls with
 The current data reflects ongoing collaborative mapping and data-sharing efforts between national and provincial agencies.
 
 <!-- In the face of prevailing financial and capacity constraints to implementing large-scale inventory across the country, there is a focus on expanding the mapping and validation of extent, ecological condition and characteristics of wetlands within Provincial Nature Reserves, ultimately contributing to the continuous refinement of the national wetland map. The current data reflects ongoing collaborative efforts between national and provincial agencies. -->
-:::
 
-::: {#box-3 .callout-note .freshwater title="Box 3. Inland wetland ecosystem threat status across National Parks" collapse="true"}
+<!--::: {#box-3 .callout-note .freshwater title="Box 3. Inland wetland ecosystem threat status across National Parks" collapse="true"}
 Coming soon
-:::
+::: -->
+```
+
+## Important note on work in progress
+
+The wetland ecosystem threat status assessment applied the [IUCN Red List of Ecosystems](../integrated-findings/chl_rle_explained.qmd) framework for the first time. The assessment was based on a robust interim wetland [ecosystem typology](./fw_wet_type.qmd) and an automated assessment of wetland [ecological condition](./fw_wet_condition.qmd). Given the application of a new method and use of new input data, the current results are considered preliminary and a more extensive review of the outputs is still to be completed, with stakeholder engagement continuing through early 2026. It is likely to result in adjustments and an updated assessment, which will be widely communicated.
 
 ## Approach
-
-Ecosystem threat status is a headline indicator established to assess how close an ecosystem type is to collapsing (losing vital aspects of its structure, function, or composition). It serves as an indicator of the degree to which ecosystems are still intact.
-
-Key input layers include [wetland ecosystem types](fw_wet_type.qmd) and [wetland ecological condition](fw_wet_condition.qmd).
 
 The assessment was conducted using the IUCN Red List of Ecosystems framework (version 2), which has been applied across all realms for the 2025 assessments. The framework uses the concept of ecosystem collapse as the equivalent endpoint to species extinction. It evaluates the status of each ecosystem type using a set of quantitative and qualitative criteria linked to the key aspects of ecosystem decline, namely, Criterion A: reduction in extent, Criterion B: restricted distribution, Criterion C: environmental degradation and Criterion D: biotic degradation. Read more about this indicator on the [About ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 
@@ -380,9 +380,9 @@ Each wetland ecosystem type was assessed against these criteria and the **highes
 
 **Code repository**
 
-<https://github.com/askowno/RLE_wet>
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_wet](https://github.com/askowno/RLE_wet)
 
-**Key publications**
+**Related publications and supporting information**
 
 Harris, L.R., Skowno, A.L., Holness, S.D., Sink, K.J., van Niekerk, L., van Deventer, H., Smith-Adao, L., Job, N., Khatieb, S., Monyeki, M. (in review). Indicators for tracking progress in effective, representative ecosystem protection.
 
@@ -405,7 +405,4 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 ```
 
-## References
 
-::: {#refs}
-:::

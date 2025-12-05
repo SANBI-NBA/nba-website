@@ -29,9 +29,10 @@ author:
   - name:      
       given: Lize
       family: von Staden
-    #orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-2652-7180
     affiliations:
-      - ref: sanbi   
+      - ref: sanbi 
+      - ref: nmu
        
   - name:
       given: Nokukhanya N.
@@ -58,6 +59,9 @@ affiliations:
   - id: sanbi 
     number: 1 
     name: South African National Biodiversity Institute
+  - id: nmu
+    number: 2
+    name: Nelson Mandela University
 
 date: last-modified
 bibliography: species.bib
@@ -71,6 +75,7 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/Ixia%20ebrahimii_cropped.png"
 ---
 
 ![*Ixia ebrahimii*, a new *Ixia* species found by the [Custodians of Rare and Endangered Wildflowers (CREW)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/) team. (© Ismail Ebrahim)](./imgs/Ixia%20ebrahimii_cropped.png){fig-align="center"}
@@ -82,7 +87,9 @@ google-scholar: true
 <center>
 
 | [17%]{.inline-style-threatened}
-| taxa assessed
+| of 900
+| representative taxa
+| assessed
 | [Threatened]{.inline-style-indicator}
 
 </center>
@@ -92,7 +99,9 @@ google-scholar: true
 <center>
 
 | [70%]{.inline-style-well-protected}
-| taxa assessed
+| of 900
+| representative taxa
+| assessed
 | [Well Protected]{.inline-style-indicator}
 
 </center>
@@ -102,8 +111,10 @@ google-scholar: true
 <center>
 
 | [14%]{.inline-style-not-protected}
-| taxa assessed
-| [Not protected]{.inline-style-indicator}
+| of 900
+| representative taxa
+| assessed
+| [Not Protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -113,18 +124,18 @@ google-scholar: true
 
 ## Key findings {#summary}
 
--   South Africa’s indigenous flora has high levels of diversity and endemism: 13 642 of the 20 248 taxa (67%), with high concentration in the south-western region of the Fynbos biome, moderate concentration in the arid regions, low escarpment bushveld, and coastal grasslands.
+-   South Africa’s indigenous flora has high levels of diversity and endemism: 13 642 of the 20 248 taxa (67%) are endemic, with a high concentration of endemism in the south-western region of the Fynbos biome, and moderate concentrations in the arid regions, low escarpment bushveld, and coastal grasslands.
 
 -   1 in 5 endemic plants are at risk of extinction.
 
--   Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss and competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
+-   Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
 
 -   Protected area expansion has improved the protection of indigenous plants, but shortcomings in protected area effectiveness are constraining progress towards plant conservation targets.
 
 ::: {.column width="100%"}
 ```{r}
 #| label: fig-1
-#| fig-cap: "Spatial distribution of threatened plants. The legend reflects the number of threatened plants per 10 x 10 km grid cell. Darker shading shows areas where threatened plants are concentrated."
+#| fig-cap: "Threatened plant richness across South Africa, mapped as the number of threatened plants per 10 x 10 km grid cell."
 #| out-width: 650px
 knitr::include_graphics("./imgs/plants_thrt_10km_HD.png")
 ```
@@ -132,18 +143,18 @@ knitr::include_graphics("./imgs/plants_thrt_10km_HD.png")
 
 ## Threat status
 
-South Africa has assessed the threat status of 20 248 indigenous plant species using the IUCN Red List of Threatened Species categories and criteria, which reflect a species’ risk of extinction within the country's borders. The Red List includes several extinct categories, three threatened categories - Critically Endangered (CR), Endangered (EN), and Vulnerable (VU) - as well as categories for Near Threatened (NT), Data Deficient (DD), and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range-restricted endemic species with a global extent of occurrence of less than 500 km² that occur in areas with no significant anthropogenic pressures. Rare species are prioritized for national conservation interventions, even if they qualify as Least Concern under the IUCN system.
+South Africa is maintaining a comprehensive national assessment of the threat status of 20 248 indigenous plants. The [national plant Red List](https://redlist.sanbi.org/) uses the IUCN Red List of Threatened Species Categories and Criteria, which measures a species’ risk of extinction within South Africa. The Red List includes several extinct categories, three threatened categories - Critically Endangered (CR), Endangered (EN), and Vulnerable (VU) - as well as categories for Near Threatened (NT), Data Deficient (DD), and Least Concern (LC). South Africa augments the IUCN system by adding a category for rarity (Rare), defined as range-restricted endemic species with a global extent of occurrence of less than 500 km² that occur in areas with no significant anthropogenic pressures. Rare species are prioritised for national conservation interventions, even if they qualify as Least Concern under the IUCN system.
 
-Among assessed taxa, 0.2% (36) are extinct or possibly extinct, and 16% (3 195) are threatened. The country also has high endemism, with 13 648 taxa (67%) found only in South Africa. The distribution of threatened species is shown in @fig-1, highlighting the concentrations in the Cape Floristic Region, the Succulent Karoo and the eastern escarpment. These are areas where there are both high levels of plant endemism and land use change (habitat loss and degradation).
+Overall, 16% (3 195 taxa) of the indigenous flora is threatened, while 36 taxa (0.2%) are extinct or possibly extinct. Threatened plants are concentrated in the the Cape Floristic Region, the Succulent Karoo and the eastern escarpment (@fig-1). South Africa also has high levels of plant endemism, with 13 648 taxa (67%) found only in South Africa.
 
-Given the exceptional diversity and high levels of threat, monitoring all species is not practical. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plants was used. Of the assessed representative plants, 17% taxa are threatened with extinction (@fig-2). The proportion of 17% of plants being threatened, as indicated by the representative sample, reflects the actual threat level to plants, as these assessments conducted between 2023 and 2025 include recent threats such as climate change and the impacts of illegal collection for ornamental species, which only became severe in 2019. They also correctly represent intensifying pressures such as habitat loss to mining and the spread of invasive alien plants. Many assessments on the plant red list predate 2018; hence, the 15% portion of the total flora does not accurately reflect the extent to which pressures are increasing extinction risk.
+Given the exceptional diversity and high levels of threat, monitoring and reassessing all plant species regularly is not feasible. The Red List team prioritises specific plant families or genera to assess each year. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant species is reassessed regularly for National Biodiversity Assessment. Of the assessed representative plants, 17% taxa are threatened with extinction (@fig-2). This slightly higher statistic likely reflects the actual threat level to plants, as newly updated assessments reflect major recent increases in pressures on plants such as climate change and illegal collection of wild plants for ornamental purposes. These assessments also more accurately represent intensifying pressures such as habitat loss to mining and the spread of invasive alien plants.
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of South African plants, including all indigenous taxa/sampled taxa (A), compared to taxa endemic to South Africa (B)." 
+#| fig-cap: "Threat status of a representative sample of 900 South African plant taxa, showing all indigenous taxa (A), compared to taxa endemic to South Africa (B)." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -409,16 +420,16 @@ gt(dat_combined_final) %>%
 ::::
 
 :::: {#box-1 .callout-note .species collapse="true"}
-## Box 1. Conservation interventions for medicinal plants reversing extinction risk trends (*Warburgia salutaris*).
+## Box 1. Conservation interventions for medicinal plants reversing extinction risk trends – a case study of *Warburgia salutaris*
 
-A pioneering socio-ecological conservation model developed in the Kruger National Park and spread to other parts of South Africa, has successfully resulted in the highly popular medicinal plant the pepper bark tree being downlisted from Endangered to Vulnerable. The conservation intervention that supplies traditional healers with cultivated plants to grow in home gardens has reduced pressure on wild populations while ensuring continued access to culturally important resources. The intervention has slowed and reversed the species’ decline, leading to a genuine improvement in its Red List status. Building on this success, the model is now being expanded to other medicinal plant species, offering a replicable blueprint for balancing cultural practices with biodiversity conservation.
+A pioneering socio-ecological conservation model developed in the Kruger National Park and spread to other parts of South Africa, has successfully resulted in the highly popular medicinal plant the pepper bark tree (*Warburgia salutaris*) being downlisted from Endangered to Vulnerable. This conservation intervention that supplies traditional healers with cultivated plants to grow in home gardens has reduced pressure on wild populations while ensuring continued access to culturally important resources. The intervention has slowed and reversed the species’ decline, leading to a genuine improvement in its Red List status. Building on this success, the model is now being expanded to other medicinal plant species, offering a replicable blueprint for balancing cultural practices with biodiversity conservation.
 
 ::: {style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;"}
 <figure style="margin: 0; text-align: left; flex: 1 1 45%;">
 
 <img src="./imgs/sp_plants_img_2.png" style="width:100%;height:400px; object-fit: cover; border-radius:10px; margin: 0"/>
 
-<figcaption>Traditional healers receiving seedlings of the [*Warburgia salutaris*](https://redlist.sanbi.org/species.php?species=925-2) to support conservation and sustainable use of this culturally important medicinal species. (© SANParks)</figcaption>
+<figcaption>Traditional healers receiving seedlings of the pepper bark tree ([*Warburgia salutaris*](https://redlist.sanbi.org/species.php?species=925-2)*)* to support conservation and sustainable use of this culturally important medicinal species. (© SANParks)</figcaption>
 
 </figure>
 
@@ -434,18 +445,16 @@ A pioneering socio-ecological conservation model developed in the Kruger Nationa
 
 ## Trends – the Red List Index
 
-The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI) [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of plants is calculated using a representative sample of 900 taxa.
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI) [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of plants is calculated using the representative sample of 900 taxa.
 
-The Red List Index indicates a slow but consistent increase in the risk of extinction of plants. About 5% of sampled taxa became more threatened between 1990 and 2018, with a further 2% increase in threat between 2018 and 2024.
-
-The RLI for plants occurring in the Desert and Succulent Karoo biomes decreased most rapidly between 2018 and 2024 (@fig-3) due to increasing threats from climate change and habitat loss to mining and renewable energy developments. Most of these taxa occur in the Northern Cape. The province has experienced a prolonged drought over the past decade, which has exacerbated the effects of livestock overgrazing, mining, and renewable energy activities. This same region is also being heavily impacted by the illegal wildlife trade of ornamental succulent and geophytic plants [Box 2](#box-2).
+The RLI indicates a slow but consistent increase in the risk of extinction of plants. About 5% of sampled taxa became more threatened between 1990 and 2018, with a further 2% increase in threat between 2018 and 2024. Plants occurring in the Desert and Succulent Karoo biomes declined most rapidly between 2018 and 2024 (@fig-3) due to increasing pressures from climate change and habitat loss from mining and renewable energy developments. Most of these taxa occur in the Northern Cape. The province has experienced a prolonged drought over the past decade, which has exacerbated the effects of livestock overgrazing, mining, and renewable energy developments. This same region is also being heavily impacted by the illegal trade of ornamental succulent and geophytic plants (see [Box 2](#box-2)). The RLI for plants in the Forest biome improved due to reduced habitat pressure from clearing invasive species and targeted conservation interventions (see [Box 1](#box-1)).
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for South African plants, disaggregated by biome. The slope of the line indicates the rate at which plants within each biome are more threatened over time. A lower value means more species at high risk of extinction (if the value is 0, all species are extinct). The aggregate trend line shows the Red List Index for all taxonomic groups included in South Africa’s RLI."
+#| fig-cap: "The Red List Index (RLI) for South African plants, disaggregated by biome. The slope of the line indicates the rate at which the risk of extinction of plants within each biome is changing over time. A lower value means more species are at high risk of extinction. The aggregate trend line shows the Red List Index for all taxonomic groups included in South Africa’s RLI."
 
 
 df_rlisb <- readxl::read_excel("./data/summarised_rli_plants.xlsx")
@@ -469,7 +478,7 @@ nba_index_plot(
 ```{r}
 #| classes: plain
 #| label: tbl-2
-#| tbl-cap: "List of plant taxa with genuine changes in their threat status and corresponding drivers, based only on taxa included in the representative sample of 900 plants. Asterisks indicate endemism levels: * endemic and ** near-endemic."
+#| tbl-cap: "List of plants with genuine changes in their threat status and corresponding drivers, based only on taxa included in the representative sample of 900 plants. Asterisks indicate endemism levels: * endemic and ** near-endemic."
 
 library(dplyr)
 library(gt)
@@ -525,7 +534,13 @@ fn = function(x) x ) %>%
       weight = px(1)
     ),
     locations = cells_body(columns = everything())
-  ) %>%
+  )  %>%
+   tab_style(style = cell_text(align = "left"),
+    locations = cells_column_labels(columns = everything())) %>%
+  
+  tab_style(style = cell_text(align = "left"),
+    locations = cells_body(columns = c(`Reason for change`, `Direction of change`))) %>%
+  
   cols_width(
     Taxon ~ pct(10),
     `Reason for change` ~ pct(20),
@@ -538,20 +553,20 @@ fn = function(x) x ) %>%
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "Map showing the distribution of plant taxa that have increased in threat status since the NBA 2018, based on the representative sample of 900 plants."
+#| fig-cap: "The distribution of plants that have increased in threat status since 2018, based on a representative sample of 900 plants."
 #| out-width: 650px
 knitr::include_graphics("./imgs/plant_in_10km_HD.png")
 ```
 
 ## Pressures
 
-Plants in terrestrial ecosystems face multiple interacting pressures, including habitat loss and fragmentation, invasive alien species, pollution, resource extraction, and climate change. Among these, habitat loss remains the most significant driver of species decline. Habitat loss is primarily caused by the conversion of natural vegetation for croplands, mining, plantations, human settlements, and infrastructure development. Habitat fragmentation further disrupts ecological functioning and reduces population viability, especially in the context of climate change and biological invasions.
+Plants in terrestrial ecosystems face multiple interacting pressures, including habitat loss and fragmentation, invasive alien species, pollution, unsustainable resource extraction, and climate change. Among these, habitat loss remains the most significant driver of species decline. Habitat loss is primarily caused by the conversion of natural vegetation for croplands, mining, plantations, human settlements, and infrastructure development. Habitat fragmentation further disrupts ecological functioning and reduces population viability, especially in the context of climate change and biological invasions.
 
-Analyses of species that have increased their risk of extinction since 2021 reveal a notable shift in the primary drivers of extinction risk for plants. Before 2020, these risks were predominantly associated with competition from invasive species, agricultural expansion, urban development, and overgrazing by livestock [@skowno2019a]. However, current trends indicate an increasing influence of climate change, illegal harvesting, mining, renewable energy projects and habitat degradation in sensitive arid ecosystems in the Northern Cape Province (@fig-4, @tbl-2). Agriculture, including crop cultivation and livestock farming, continues to affect the largest proportion of plants included in the representative sample (68%), while competition from invasive alien species is also severe (57%). Loss of habitat to residential and commercial developments has slowed since 2010; however, it still impacts 36% of plants due to the ongoing slow loss of habitat. The 2018 National Biodiversity Assessment reported only 9% of plants to be threatened by harvesting; this has increased to 28%, and habitat loss due to mining has increased from 8% in 2018 to 13% in this assessment. The influence of climate change and severe weather events was not reported to be impacting any of the representative sample plants in 2018, but is now pronounced, affecting 11% of taxa (@fig-5).
+Analyses of species that have increased their risk of extinction since 2021 reveal a notable shift in the primary drivers of extinction risk for plants. Before 2020, these risks were predominantly associated with competition from invasive species, agricultural expansion, urban development, and overgrazing by livestock [@skowno2019a]. However, current trends indicate increasing influences from climate change, illegal harvesting, mining, renewable energy projects and habitat degradation in sensitive arid ecosystems in the Northern Cape Province (@fig-4, @tbl-2). Agriculture, including crop cultivation and livestock farming, continues to affect the largest proportion of sampled plants (68%), while competition from invasive alien species is also severe (57%). Loss of habitat to residential and commercial developments has slowed since 2010; however, it still impacts 36% of plants. The 2018 National Biodiversity Assessment reported only 9% of plants to be threatened by harvesting; this has increased to 28%, and plants impacted by habitat loss to mining have increased from 8% in 2018 to 13% in this assessment. The influence of climate change and severe weather events was not reported to be impacting any of the sampled plants in 2018, but is now pronounced, affecting 11% of taxa (@fig-5).
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s plant taxa, based on a representative sample of 900 plant taxa. This bar chart shows the relative frequency of pressures affecting threatened plant species. Pressures are categorized using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
+#| fig-cap: "Key pressures affecting threatened and Near Threatened plants from a representative sample of 900 taxa. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
 #| out.width: 100%
 
 library(stringr)
@@ -572,14 +587,14 @@ p + scale_x_discrete(
 )
 ```
 
-::::: {#illegal-trade .callout-note .species collapse="true"}
-## Box 2. Illegal trade in succulent plants.
+::::: {#box-2 .callout-note .species collapse="true"}
+## Box 2. Illegal trade in succulent plants
 
-South Africa’s distinctive succulent diversity, notably those endemic to the globally significant Succulent Karoo biodiversity hotspot, is under increasing pressure from a dramatic surge in illegal harvesting driven by high international demand. Since 2017, 878 mostly localized endemic species have been affected by indiscriminate, unsustainable collection from the wild. Twelve species are now considered functionally extinct due to the majority of plants having been harvested from the wild.
+South Africa’s distinctive succulent diversity, notably those endemic to the globally significant Succulent Karoo biodiversity hotspot, is under increasing pressure from a dramatic surge in illegal harvesting driven by high international demand. Since 2017, 878 mostly localised endemic species have been affected by indiscriminate, unsustainable collection from the wild. Twelve species are now considered functionally extinct due to the majority of individual plants having been harvested from the wild.
 
-The succulent trade crisis stems from multiple interconnected factors: a notable absence of cultivated material to meet global horticultural demand, limited economic opportunities in remote regions of the Northern Cape that make residents vulnerable to recruitment by criminal syndicates, inadequate in-situ protection measures across vast arid landscapes, and the proliferation of online trade platforms that facilitate laundering operations. These pressures have been exacerbated by climate change impacts, including extended drought conditions since 2016, the COVID-19 pandemic’s socio-economic effects, and overwhelmed conservation authorities struggling with insufficient resources and capacity to manage the growing volume of confiscated plants requiring specialized care.
+The illegal succulent harvesting and trade crisis stems from multiple interconnected factors: a notable absence of cultivated material to meet global horticultural demand, limited economic opportunities in remote regions of the Northern Cape that make residents vulnerable to recruitment by criminal syndicates, inadequate in-situ protection measures across vast arid landscapes, and the proliferation of online trade platforms that facilitate operations. These pressures have been exacerbated by climate change impacts (including extended drought conditions since 2016), the COVID-19 pandemic’s socio-economic effects, and overwhelmed conservation authorities struggling with insufficient resources and capacity to manage the growing volume of confiscated plants requiring specialised care.
 
-Recognizing that initial law enforcement responses were unable to manage the full scale of the problem, the Department of Forestry, Fisheries, and the Environment, in partnership with the South African National Biodiversity Institute and WWF South Africa, developed the comprehensive [National Response Strategy and Action Plan in 2022](https://www.sanbi.org/wp-content/uploads/2022/08/Succulent-strategy-and-action-plan.pdf) to address the illegal trade holistically through collaborative multi-stakeholder action. The strategy encompasses seven interconnected objectives designed to ensure both conservation outcomes and sustainable socio-economic development:
+Recognising that initial law enforcement responses were unable to manage the full scale of the problem, the Department of Forestry, Fisheries and the Environment, in partnership with the South African National Biodiversity Institute and WWF South Africa, developed the comprehensive [National Response Strategy and Action Plan](https://www.sanbi.org/wp-content/uploads/2022/08/Succulent-strategy-and-action-plan.pdf) in 2022 to address the illegal trade holistically through collaborative multi-stakeholder action. The strategy encompasses seven interconnected objectives designed to ensure both conservation outcomes and sustainable socio-economic development:
 
 1.  ensuring long-term survival of representative wild populations,
 
@@ -709,7 +724,7 @@ combined_plot
 
 ```
 
-[Protection level](../integrated-findings/chl_epl_explained.qmd) measures the contribution of South Africa’s protected area network to meeting plant conservation targets. The plant protection level assessment is applied to the same representative sample from the indigenous flora as used in the Red List Index (@fig-6). Most plants (70%) are Well Protected, however, plants have the second highest proportion of species that are [Not Protected](../integrated-findings/intf-species.qmd#spl) (14%), after freshwater fishes. These species are found predominantly in the arid central region of South Africa, where protected area coverage is sparse (@fig-7). These areas also align with the distribution of [Not Protected and Poorly Protected terrestrial ecosystems](../terrestrial/ter_epl.qmd).
+[Protection level](../integrated-findings/chl_spl_explained.qmd) measures the contribution of South Africa’s protected area network to meeting plant conservation targets (@fig-6). The plant protection level assessment is applied to the same representative sample from the indigenous flora as used in the Red List Index. Most plants (70%) are Well Protected, however, plants have the second highest proportion of species that are Not Protected (14%), after freshwater fishes (see [species protection level under integrated findings](../integrated-findings/intf-species.qmd#spl)). Not Protected plants are found predominantly in the arid central region of South Africa where protected area coverage is sparse (@fig-7). These areas also align with the distribution of [Not Protected and Poorly Protected terrestrial ecosystems](../terrestrial/ter_epl.qmd).
 
 ```{r}
 #| label: fig-7
@@ -725,20 +740,20 @@ Improvements in protection level were the result of both protected area expansio
 ```{r}
 #| label: fig-8
 #| out-width: 650px
-#| fig-cap: "Changes in protection level assessments for a representative sample of plant taxa between 2017 and 2024."
+#| fig-cap: "Changes in protection level assessments between 2017 and 2024 for a representative sample of 900 plants."
 
 knitr::include_graphics("imgs/plant-pl-category-changes.png")
 ```
 
-Protected area effectiveness can have a significant impact on plant protection level assessments. In 2017, 9% of taxa were downgraded at least one category due to insufficient protected area effectiveness. In 2024, this number improved to 7% of taxa. In the 2024 assessment, 2.5% of taxa were placed in higher protection level categories compared to 2017, solely due to improvements in the effectiveness of the protected areas where they occur. However, the 2024 assessment also highlighted how increasing pressures such as plant poaching, overgrazing, and drought are having significant impacts on protected areas’ capacity to protect plants from extinction. All taxa that were assessed in lower protection level categories in 2024 compared to 2017 were due to deteriorating protected area effectiveness, most notably in the Succulent Karoo region in the Northern Cape and Western Cape. Protected area degazettements, on the other hand, were minor and had no impact on the protection level.
+Protected area effectiveness can have a significant impact on plant protection level assessments. In 2017, 9% of taxa were downgraded at least one category due to insufficient protected area effectiveness. In 2024, this number improved to 7% of taxa. In the 2024 assessment, 2.5% of taxa were placed in higher protection level categories compared to 2017, solely due to improvements in the effectiveness of the protected areas where they occur. However, the 2024 assessment also highlighted how increasing pressures such as plant poaching, overgrazing, and drought are having significant impacts on protected areas’ capacity to protect plants from extinction. All taxa that were assessed in lower protection level categories in 2024 compared to 2017 were due to deteriorating protected area effectiveness, most notably in the Succulent Karoo region in the Northern Cape and Western Cape. Protected area degazettements, on the other hand, were minor and had no impact on protection level.
 
 ![*Daubenya namaquensis*, a rare and restricted range species from Namaqualand experienced a genuine improvement in protection level status as a result of the declaration of new protected areas between 2018 and 2025. (© Nick Helme)](imgs/Daubenya_namaquensis.png){fig-align="center"}
 
 ::::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
-To contribute data to future Red List and Protection Level assessments of plants, you can join the Custodians of Rare and Endangered Wildflowers (CREW) Programme – a citizen-science initiative focused on the monitoring and conservation of South Africa’s threatened plants.
+To contribute data to future Red List and protection level assessments of plants, you can join the Custodians of Rare and Endangered Wildflowers (CREW) Programme – a citizen-science initiative focused on the monitoring and conservation of South Africa’s threatened plants.
 
 ::: {style="text-align:center;"}
-For more information, email [crew\@sanbi.org.za](crew@sanbi.org.za) <br> Alternatively, join these citizen science projects on iNaturalist <br> [South African Red List: Plants and Animals](https://www.inaturalist.org/projects/south-african-red-list-plants-and-animals) and [redlist (s Afr)](https://www.inaturalist.org/projects/redlist-s-afr)
+For more information, email [crew\@sanbi.org.za](crew@sanbi.org.za). <br> Alternatively, join these citizen science projects on iNaturalist <br> [South African Red List: Plants and Animals](https://www.inaturalist.org/projects/south-african-red-list-plants-and-animals) and [redlist (s Afr)](https://www.inaturalist.org/projects/redlist-s-afr).
 :::
 
 New to iNaturalist (or never heard of it) and want to play along? Watch these [video tutorials](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795) to get started, and sign up on the iNaturalist website or download the app on your smartphone.
@@ -752,154 +767,125 @@ To see how valuable your nature photographs can be, watch this inspiring [TED ta
 
 ## Species recovery
 
-South Africa, as a signatory to the Convention on Biological Diversity, is committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030 [Global Biodiversity Framework (GBF) Target 4](https://www.cbd.int/gbf/targets/4). Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. To contribute to the GBF Target 4 goals, South Africa has initiated a process with each taxonomic group that has comprehensive Red List assessments to identify and prioritise species in urgent need of recovery.
+South Africa, as a signatory to the Convention on Biological Diversity, is committed to taking urgent action to halt human-induced extinctions, reduce species’ risk of extinction, and improve their conservation status by 2030 (see [Global Biodiversity Framework (GBF) Target 4](https://www.cbd.int/gbf/targets/4)). Achieving this target requires coordinated efforts to prevent and reverse species declines, recover and conserve populations, and maintain genetic diversity, particularly among threatened species. To contribute to the GBF Target 4 goals, South Africa has initiated a process with each taxonomic group that has comprehensive Red List assessments to identify and prioritise species in urgent need of recovery. [Box 4](#plant-recovery) explains the prioritisation process for plant recovery.
 
-::: {#plant-recovery .callout-note .species collapse="true"}
-## Box 4. A prioritization process for plant recovery.
+::: {#plant-recovery .callout-note .species collapse="false"}
+## Box 4. A prioritisation process for plant recovery
 
-With over 3000 plants threatened with extinction, multiple interventions to address threatened species declines are required, including the expansion of protected areas, the restoration of habitats that are being degraded by invasive species, and the inclusion of threatened plants in biodiversity sector plans. In addition, 293 Critically Endangered and Endangered plants need active recovery projects to take place in order to ensure that they do not go extinct in the next decade. Between 2020 and 2023, the South African National Biodiversity Institute (SANBI) led a process to prioritise plants in urgent need of recovery, using the IUCN Red List categories and criteria to select those in most urgent need of recovery. A species recovery working group with conservation agencies and indigenous plant growers has been established, and each stakeholder has been allocated a handful of species on which to implement recovery work. A major upscaling of resources is required, as only 14 of the 293 species identified as needing urgent action have active recovery projects implemented.
+With over 3 000 plants threatened with extinction, multiple interventions to address threatened species declines are required, including the expansion of protected areas, the restoration of habitats that are being degraded by invasive species, and the inclusion of threatened plants in biodiversity sector plans. In addition, 293 Critically Endangered and Endangered plants need active recovery projects in order to ensure that they do not go extinct in the next decade.
 
-Below are two examples of Critically Endangered plant species that require urgent recovery interventions to ensure their long-term survival. The accompanying flyers outline the key activities needed, including habitat restoration, population reinforcement, and threat mitigation. If you would like to financially support the recovery of Critically Endangered plants from extinction, please contact Ismail Ebrahim at i.ebrahim\@sanbi.org.za
+Between 2020 and 2023, the South African National Biodiversity Institute (SANBI) led a process to prioritise plants in urgent need of recovery, using the IUCN Red List of Threatened Species Categories and Criteria to select those in most urgent need of recovery. A species recovery working group with members from conservation agencies and indigenous plant growers has been established, and each stakeholder has been allocated a handful of species on which to implement recovery work. A major upscaling of resources is required, as only 14 of the 293 species identified as needing urgent action have active recovery projects implemented.
 
-<center>![](imgs/sp_plants_img_7.png){fig-align="center" width="350px" height="500px"} ![](imgs/sp_plants_img_8.png){fig-align="center" width="400px" height="500px"}</center>
+Below are two examples of Critically Endangered plant species that require urgent recovery interventions to ensure their long-term survival. The factsheets outline the key activities needed, including habitat restoration, population reinforcement, and threat mitigation.
+
+*Click on images to enlarge*
+
+<center>![](imgs/sp_plants_img_7.png){.lightbox fig-align="center" width="48%"} ![](imgs/sp_plants_img_8.png){.lightbox fig-align="center" width="48%"}</center>
 :::
 
-## Approach {#approach}
+## Approach
+
+### Threat status assessment
+
+The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of plants in South Africa. The 2025 South African National Plant Checklist records 23 514 taxa and 21 539 species, of which 20 204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country. This enormous number of plants, and the very limited number of plant Red List specialists in the country, makes it challenging to reassess all plants regularly. Therefore SANBI coordinates and undertakes the assessments of selected families or genera each year. The [Red List of South African Plants website](https://redlist.sanbi.org/) hosts all national plant assessments. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant species is used for repeat assessments for each National Biodiversity Assessment.
+
+Read more about how threat status is assessed [here](../integrated-findings/chl_rls_explained.qmd).
 
 ### Protection level assessment
 
-The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a “persistence target” for each species — the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
+The species protection level assessment measures the contribution of South Africa’s protected area network to species persistence. It evaluates progress towards the protection of a population target for each species, set at the level of protection needed to support long-term population survival.
 
-Species are classified into four protection categories:
+Read more about the calculation of the protection level indicator [here](../integrated-findings/chl_spl_explained.qmd).
 
-```{r}
+## Acknowledgements
 
-library(gt)
-library(nbaR)
+::::: grid
+::: {.g-col-lg-6 .g-col-12}
+**Coordinated by:**
 
-# Create the data frame
-df <- data.frame(
-  "Protection level categories" = c(
-    "Well Protected",
-    "Moderately Protected",
-    "Poorly Protected",
-    "Not Protected"
-  ),
-  
-  "Percentage of biodiversity target" = c(
-    "≥100% of the persistence target met",
-    "50–99% of the target met",
-    "5–49% of the target met",
-    "<5% of the target met"
-  ),
-  check.names = FALSE
-)
+------------------------------------------------------------------------
 
-# Define colors
-row_colors <- list(
-  "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
-  "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
-  "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
-  "Not Protected" = rgb(166, 166, 166, maxColorValue = 255)
-)
-
-# Create gt table
-gt(df) %>%
-  tab_options(table.font.size = px(14L),
-    table.width = pct(80),
-    data_row.padding = px(14)
-  ) %>%
-
-  tab_style(
-    style = cell_text(size = px(12), weight = "bold"),  
-    locations = cells_column_labels(columns = everything())
-  ) %>%  
-    
-  tab_style(
-    style = cell_text(size = px(12), color = "white"),  
-    locations = cells_body(columns = everything())
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Well Protected"]]),
-    locations = cells_body(rows = 1)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Moderately Protected"]]),
-    locations = cells_body(rows = 2)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Poorly Protected"]]),
-    locations = cells_body(rows = 3)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Not Protected"]]),
-    locations = cells_body(rows = 4)
-  )
-```
-
-This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses undertaken by **Hilbers et al. (2017)**.
-
-**There are two components included in the protection level assessment:**
-
-1.  Representation in protected areas — quantifies how much of the area of suitable habitat required to support the persistence target within existing protected areas.
-
-2.  Protected area effectiveness — adjusts for how well pressures that cause species declines such as invasive species, poaching, inappropriate fire regimes etc are mitigated within protected areas.
-
--   **The degree to which protected areas effectively mitigate threats are scored as:**
-
--   **Good**, when the protected area is fully effective in protecting the species against major threats;
-
--   **Fair** if the protected area provides some mitigation of major threats to species but is not completely effective;
-
--   **Poor** if the protected area provides no mitigation of the major threats to the species.
-
-Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
-
-The above analysis was first undertaken for NBA 2018 and was repeated in 2025 using updated species occurrence data based on the 2025 Mammal Red List Reassessment. A spatial layer of protected areas for 2018 and 2025 representing protected areas that were declared at that time were used for the two time periods. A technical report outlining the full methodology and limitations will be available in February 2026.
-
-## Acknowledgement 
-
-::::: {layout-ncol="3"}
-::: right
-## [Coordinated by:]{style="font-size:0.8em;"}
-
-<img src="./imgs/logo_plants_1.png" width="85%"/>
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
+-   [Custodians of Rare and Endangered Wildflowers](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/)
 :::
 
-::: middle
-## [Funded by:]{style="font-size:0.8em;"}
+::: {.g-col-lg-6 .g-col-12}
+**Funded by:**
 
-<img src="./imgs/logo_plants_2.png" width="85%"/>
+------------------------------------------------------------------------
+
+-   [The Botanical Society of South Africa](https://botanicalsociety.org.za/crew-programme/)
+-   [Mapula Trust](https://www.fynboslife.com/partners/mapula-trust/?)
+-   [Agence Française de développement](https://www.afd.fr/fr)
 :::
 :::::
 
+### Contributors
+
+```{r}
+#| classes: plain
+#| label: tbl-4
+#| tbl-cap: List of content reviewers.
+
+library(gt)
+
+ref <- data.frame(Contributors = c(
+    "Anisha Dayaram","Carol Poole"
+    ),
+  Affiliation = c("South African National Biodiversity Institute",
+                         "South African National Biodiversity Institute"), stringsAsFactors = FALSE)
+
+# Build the gt table
+ref <- gt(ref) %>%
+nba_tbl_theme() %>%
+       tab_options(#data_row.padding = px(16),
+              table.font.size = px(13L),
+              table.width = pct(100),
+              column_labels.border.top.style = "solid",
+              column_labels.border.top.width = px(2),
+              column_labels.border.top.color = "black",
+              column_labels.border.bottom.style = "solid",
+              column_labels.border.bottom.width = px(2),
+              column_labels.border.bottom.color = "black")%>%
+ tab_style(style = cell_fill(color = "white"), 
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = c("left", "right"),
+                                color = "transparent",
+                                weight = px(0)),
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = "bottom",
+                                color = "grey", 
+                                weight = px(1)),
+          locations = cells_body(columns = everything())) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_body(columns = everything())
+  ) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_column_labels(columns = everything())
+  )
+       
+htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
+```
+
 ## Technical documentation
 
-**Data sources**
+### **Data sources**
 
 1.  South African Biodiversity Institute (SANBI). 2024. Statistics: Red List of South African Plants. Available at: <http://Redlist.sanbi.org>. Accessed August 27, 2025.
 
 2.  South African National Biodiversity Institute (SANBI). 2019. National Biodiversity Assessment 2018: The status of South Africa’s ecosystems and biodiversity. Synthesis Report. South African National Biodiversity Institute, an entity of the Department of Environment, Forestry and Fisheries, Pretoria. pp. 1–214.
 
-**Code repositories**
+3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
 
-Threat status:
+### **Code repositories**
 
-Pressures:
+**Protection level**: Von Staden, L. 2025. SANBI-NBA Plant protection level indicator \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/plant-protection-level>.
 
-Protection level: Von Staden, L. 2025. SANBI-NBA Plant protection level indicator \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/plant-protection-level>.
+### **Technical reports**
 
-**Technical reports**
-
-Threat status:
-
-Pressures:
-
-Protection level: Von Staden, L. 2025. Plant protection level indicator. National Biodiversity Assessment Technical Reports. South African National Biodiversity Institute, Pretoria. [doi:10.6084/m9.figshare.30135625](https://figshare.com/articles/online_resource/Technical_Report/30135625?file=58824784).
+**Protection level**: Von Staden, L. 2025. Plant protection level indicator. National Biodiversity Assessment Technical Reports. South African National Biodiversity Institute, Pretoria. [doi:10.6084/m9.figshare.30135625](https://figshare.com/articles/online_resource/Technical_Report/30135625?file=58824784).
 
 ## Recommended citation
 

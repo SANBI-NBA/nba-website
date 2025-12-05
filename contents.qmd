@@ -33,39 +33,45 @@ listing:
   categories: false
 ---
 
+<!-- Biodiversity profile -->
+
+```{=html}
+
+<div class="flex-pair">
+  <div class="flex-text">
+    <h3>Biodiversity profile</h3>
+    <p>South Africa has exceptional biodiversity that is globally recognised, characterised by high species richness, high rates of endemism and a wide variety of ecosystem types.<br><br>
+    <a href="./content/context/biodivprof.html">Read more »</a>
+    </p>
+  </div>
+
+  <img src="./imgs/card_profile.png" class="flex-img">
+</div>
+```
+
 ------------------------------------------------------------------------
 
-::::: columns
-::: {.column width="50%"}
-### Biodiversity profile
+<!-- Headline indicators -->
 
-South Africa's species and ecosystem diversity [facts and figures](./content/context/biodivprof.qmd)
-:::
+```{=html}
 
-::: {.column width="50%"}
-[![](./imgs/card_profile.png){width="200px"}](./content/context/biodivprof.qmd)
-:::
-:::::
+<div class="flex-pair">
+  <div class="flex-text">
+    <h3>Headline indicators</h3>
+    <p>The NBA's four headline indicators report on threat status and protection level for species and ecosystems across all realms.<br><br>
+    <a href="./content/integrated-findings/intf_headline.html">Read more »</a>
+    </p>
+  </div>
 
-------------------------------------------------------------------------
-
-::::: columns
-::: {.column width="50%"}
-### Headline indicators
-
-Integrated findings for species and ecosystems across all realms, including threat status and protection level indicators [here](./content/integrated-findings/intf_headline.qmd)
-:::
-
-::: {.column width="50%"}
-[![](./imgs/card_hl.png){width="200px"}](./content/integrated-findings/intf_headline.qmd)
-:::
-:::::
+  <img src="./imgs/card_hl.png" class="flex-img">
+</div>
+```
 
 ------------------------------------------------------------------------
 
 ### Key Messages
 
-The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as follows: A) Cross realm pressures are impacting people; B) Improving the status of biodiversity is key to a sustainable future; C) Inclusive actions across the whole of society are needed.
+Key messages summarise the main findings of the NBA, explain why it matters, and point to practical actions, responses, and interventions that can be taken in response. There are [15 key messages](./content/key-messages/index.qmd) in the NBA 2025 that are clustered into three themes:
 
 ```{=html}
 <div class="km-tile-wrap">
@@ -91,7 +97,6 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
     <p>Inclusive actions across the whole of government and whole of society are needed to secure nature's contributions to people</p>
   </a>
 </div>
-
 ```
 
 ------------------------------------------------------------------------
@@ -109,48 +114,59 @@ The [key messages](./content/key-messages/index.qmd) of the NBA are clustered as
 
 ------------------------------------------------------------------------
 
-::::: columns
-::: {.column width="50%"}
-### Species findings
+<!-- Species findings -->
 
-Explore the NBA results for each of the taxonomic groups assessed [here](./content/species/sp.qmd).
-:::
+```{=html}
 
-::: {.column width="50%"}
-[![](./imgs/card_species.png){width="200px"}](./content/species/sp.qmd)
-:::
-:::::
+<div class="flex-pair">
+  <div class="flex-text">
+    <h3>Species findings</h3>
+    <p>The NBA reports on the threat status of more than 25&nbsp;000 indigenous taxa from 15 taxonomic groups, of which 14% are in danger of extinction. Spiders, freshwater crabs, and fairy shrimps (Anostraca) assessments are included for the first time in the NBA 2025.<br><br>
+    <a href="./content/species/sp.html">Read more »</a>
+    </p>
+  </div>
 
-------------------------------------------------------------------------
-
-::::: columns
-::: {.column width="50%"}
-### Genetic diversity indicators
-
-Learn about genetic diversity indicators and approaches [here](./content/genetics/genetic-indicators.qmd).
-:::
-
-::: {.column width="50%"}
-[![](./imgs/card_genetics.png){width="150px"}](./content/genetics/genetic-indicators.qmd)
-:::
-:::::
+  <img src="./imgs/card_species.png" class="flex-img">
+</div>
+```
 
 ------------------------------------------------------------------------
 
-:::::: columns
-::: {.column width="50%"}
+<!-- Genetic diversity -->
+
+```{=html}
+
+<div class="flex-pair">
+  <div class="flex-text">
+    <h3>Genetic diversity</h3>
+    <p>Pilot indicators on genetic diversity aligned with headline indicators of the Convention on Biological Diversity's Global Biodiversity Framework are included for the first time in the NBA 2025.<br><br>
+    <a href="./content/genetics/genetic-indicators.html">Read more »</a>
+    </p>
+  </div>
+
+  <img src="./imgs/card_genetics.png" class="flex-img">
+</div>
+```
+
+------------------------------------------------------------------------
+
 ### Priority actions and knowledge gaps
 
-Read about the priority actions, responses and interventions emerging from the NBA [here](./content/integrated-findings/pakg_actions.qmd), and selected knowledge gaps and research priorities [here](./content/integrated-findings/pakg_gaps.qmd).
-:::
+The NBA 2025 reports seven broad themes for actions that can be implemented in response to its findings. The report also highlights knowledge gaps limiting reporting on the state of biodiversity in South Africa.
 
-::: {.column width="25%"}
-[![](./imgs/card_pactions.png){width="100px"}](./content/integrated-findings/pakg_actions.qmd) **Actions**
-:::
-
-::: {.column width="25%"}
-[![](./imgs/card_kgrp.png){width="100px"}](./content/integrated-findings/pakg_gaps.qmd) **Gaps**
-:::
-::::::
-
-
+```{=html}
+<div class="km-tile-wrap">
+  <a class="km-tile" 
+      href="./content/integrated-findings/pakg_actions.html"
+      style="background-color:#70B276;">
+    <h4>Priority actions</h4>
+    <img src="./imgs/card_pactions.png" alt="">
+  </a>
+  <a class="km-tile" 
+      href="./content/integrated-findings/pakg_gaps.html"
+      style="background-color:#9D85BE;">
+    <h4>Knowledge gaps</h4>
+    <img src="./imgs/card_kgrp.png" alt="">
+  </a>
+</div>
+```

@@ -5,9 +5,9 @@ title-block-banner-color: white
 bibliography: intf_references.bib
 ---
 
-South Africa's Species Protection Level (SPL) indicator was developed to complement the [Ecosystem Protection Level (EPL) indicator](./chl_epl_explained.qmd), which has been part of the NBA headline indicators since 2004.[@reyers2007] Species protection level was assessed for the first time in 2018.[@Skownonba2019]
+South Africa's Species Protection Level (SPL) indicator was developed to complement the [Ecosystem Protection Level (EPL) indicator](./chl_epl_explained.qmd), which has been part of the NBA headline indicators since 2004[@reyers2007]. Species protection level was assessed for the first time in 2018[@Skownonba2019].
 
-The SPL indicator measures the contribution of the protected area network to species persistence. The indicator considers two factors - the contribution of a protected area to meeting a [population target](#sec-targets), as well as the [effectiveness](#sec-effectiveness) of the protected area in mitigating pressures on the species. This factor is included because studies of the contributions of protected areas to species conservation consistently note that effective protected area management is as important for species persistence as increasing habitat protection.[@geldmann2018global; @costelloe2016global; @justin2023protected; @wauchope2022protected] Where protected areas are less than 100% effective in mitigating pressures, a penalty factor is applied to the protected area's contribution to the species target.
+The SPL indicator measures the contribution of the protected area network to species persistence. The indicator considers two factors - the contribution of a protected area to meeting a [population target](#sec-targets), as well as the [effectiveness](#sec-effectiveness) of the protected area in mitigating pressures on the species. This factor is included because studies of the contributions of protected areas to species conservation consistently note that effective protected area management is as important for species persistence as increasing habitat protection[@geldmann2018global; @costelloe2016global; @justin2023protected; @wauchope2022protected]. Where protected areas are less than 100% effective in mitigating pressures, a penalty factor is applied to the protected area's contribution to the species target.
 
 A [protection score](#sec-protection-score) is calculated for each species, which is the summed scores for individual protected areas where they are confirmed present, and the protection score is compared to the population target and expressed as a percentage of the target met. Depending on the percentage of the target met, a species is placed in one of four protection level categories (@tbl-plcats).
 
@@ -77,19 +77,19 @@ gt::gt(table_pl_categories) %>% nba_tbl_theme() %>%
 
 ```
 
-The SPL indicator is typically calculated for all species in a taxonomic group, but for exceptionally speciose groups such as plants, a sampled approach similar to the sampled Red List Index is used.[@baillie2008toward] The indicator is a summary of the proportion of species in each protection level category at a given point in time. However, to track changes in species protection level over time, protection level categories applied to species are combined into a single score, the [Species Protection Index (SPI)](#sec-spi) with a value ranging between 0 and 1. An index value of 1 indicates all species are Well Protected, while the score is 0 when all species are Not Protected.
+The SPL indicator is typically calculated for all species in a taxonomic group, but for exceptionally speciose groups such as plants, a sampled approach similar to the sampled Red List Index is used[@baillie2008toward]. The indicator is a summary of the proportion of species in each protection level category at a given point in time. However, to track changes in species protection level over time, protection level categories applied to species are combined into a single score, the [Species Protection Index (SPI)](#sec-spi) with a value ranging between 0 and 1. An index value of 1 indicates all species are Well Protected, while the score is 0 when all species are Not Protected.
 
 ## Building blocks of the Species Protection Level indicator
 
 ### Protected areas
 
-Protected areas are areas of land or sea that are protected by law and managed for biodiversity conservation. Protected areas in South Africa are areas declared under the National Environmental Management: Protected Areas Act (Act 57 of 2003).[@governmentofsouthafrica2004] The Department of Forestry, Fisheries and the Environment maintains a national register of areas recognised by the Act, and this database, known as the South African Protected Areas Database (SAPAD), informs the protection level assessments for species and ecosystems.
+Protected areas are areas of land or sea that are protected by law and managed for biodiversity conservation. Protected areas in South Africa are areas declared under the National Environmental Management: Protected Areas Act (Act 57 of 2003)[@governmentofsouthafrica2004]. The Department of Forestry, Fisheries and the Environment maintains a national register of areas recognised by the Act, and this database, known as the South African Protected Areas Database (SAPAD), informs the protection level assessments for species and ecosystems.
 
 For each protection level assessment, a spatial layer is prepared representing the extent of the national protected area network at that point in time. Protected areas that have been deproclaimed are excluded. Protected areas are grouped into clusters - which represent groups of adjacent protected areas. Species are considered present in a protected area when there is suitable habitat for the species in the protected area, and the species has been recorded present anywhere within the protected area's larger cluster.
 
 ### Protected area effectiveness {#sec-effectiveness}
 
-Information on the effectiveness of protected areas in mitigating pressures on species is provided by protected area management effectiveness experts from South African conservation agencies. This information is augmented by national data on the distribution of alien invasive plants within protected areas,[@invterr2025] as well as changes in the extent of natural or near-natural areas inside protected areas.[@llcterr2025]
+Information on the effectiveness of protected areas in mitigating pressures on species is provided by protected area management effectiveness experts from South African conservation agencies. This information is augmented by national data on the distribution of alien invasive plants within protected areas[@invterr2025], as well as changes in the extent of natural or near-natural areas inside protected areas[@llcterr2025].
 
 Protected area effectiveness is rated in three categories and a penalty factor is applied to the protected area's contribution to a species' conservation target where it is not 100% effective in mitigating pressures (@tbl-effectiveness-categories). The effect of the penalty factors is that much larger populations of a species need to be in protected areas to meet the species' target, as a means to offset ongoing declines inside protected areas.
 
@@ -136,7 +136,7 @@ gt::gt(tbl_effectiveness_categories) %>%
 
 ### Species targets {#sec-targets}
 
-The SPL indicator uses population targets for species, which is the minimum number of individuals necessary to ensure the long-term persistence of the species. This approach is preferred over area-based targets because population size is most closely correlated with persistence,[@reed2003estimates; @mace2008quantification] while area of habitat and population size are less well correlated due to large variability in species density.[@santini2014incorporating] Individual taxonomic groups use various methods for setting population targets, to accommodate different levels of data availability, as well as the population dynamics and life-history patterns of different species. The methods used to set conservation targets are documented in technical reports referenced on species' [taxon pages](../species/sp.qmd).
+The SPL indicator uses population targets for species, which is the minimum number of individuals necessary to ensure the long-term persistence of the species. This approach is preferred over area-based targets because population size is most closely correlated with persistence[@reed2003estimates; @mace2008quantification], while area of habitat and population size are less well correlated due to large variability in species density[@santini2014incorporating]. Individual taxonomic groups use various methods for setting population targets, to accommodate different levels of data availability, as well as the population dynamics and life-history patterns of different species. The methods used to set conservation targets are documented in technical reports referenced on species' [taxon pages](../species/sp.qmd).
 
 ## Indicator calculation
 
@@ -161,7 +161,7 @@ $$ Where
 
 ### Species Protection Index {#sec-spi}
 
-The SPI is calculated by applying a weight to each protection level category (@tbl-plcats). Category weights are then combined into an index score similar to the calculation of the Red List Index.[@baillie2008toward] The index is calculated for individual time points in an assessment, to provide a time series indicating trends in species protection over time.
+The SPI is calculated by applying a weight to each protection level category (@tbl-plcats). Category weights are then combined into an index score similar to the calculation of the Red List Index[@baillie2008toward]. The index is calculated for individual time points in an assessment, to provide a time series indicating trends in species protection over time.
 
 The formula for calculating the SPI for a time point *t* is as follows:
 

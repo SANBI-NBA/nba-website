@@ -46,7 +46,7 @@ affiliations:
     name: Council for Scientific and Industrial Research
   - id: nmu1
     number: 2
-    name: Institute for Coastal and Marine Research
+    name: Nelson Mandela University
   - id: sanbi1
     number: 3
     name: South African National Biodiversity Institute
@@ -69,27 +69,68 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From a ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.*
+```{r}
+
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+# load the data 
+epl_combined <- read.csv(file=list.files(pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE)
+
+## extent
+eco_extent <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "extent")
+
+pro_extent <- epl_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_wp_extent <- round((sum(pro_extent$`Well Protected`)/total_extent)*100)
+perc_mp_extent <- round((sum(pro_extent$`Moderately Protected`)/total_extent)*100)
+perc_pp_extent <- round((sum(pro_extent$`Poorly Protected`)/total_extent)*100)
+perc_np_extent <- round((sum(pro_extent$`Not Protected`)/total_extent)*100)
+perc_protected_extent <- perc_pp_extent+perc_mp_extent+perc_wp_extent
+
+
+
+##count
+eco_count <- epl_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "count")
+
+pro_count <- epl_combined %>% 
+  filter(metric == "count")
+
+some_protection_count <- pro_count %>% 
+  select('Poorly Protected':'Well Protected') %>% 
+  sum()
+
+total_count <- sum(eco_count$value)
+
+perc_wp_count<- round((sum(pro_count$`Well Protected`)/total_count)*100)
+perc_mp_count<- round((sum(pro_count$`Moderately Protected`)/total_count)*100)
+perc_pp_count<- round((sum(pro_count$`Poorly Protected`)/total_count)*100)
+perc_np_count <- round((sum(pro_count$`Not Protected`)/total_count)*100)
+perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
+
+```
+
+*Overall, the majority of estuarine extent is Moderately to Poorly Protected, with less than 1% of extent categorised as Well Protected and 9% categorised as Not Protected. From an ecosystem type perspective two types (`r perc_wp_count`%) are Well Protected, eight types (`r perc_mp_count`%) are Moderately Protected, nine types (`r perc_pp_count`%) are Poorly Protected, and three types (`r perc_np_count`%) are Not Protected.*
+
+<!--estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) Protected in South Africa, less than 1% of area is Well Protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From a ecosystem type perspective about `r perc_wp_count`% are Well Protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.-->
+
+![Bulurha Estuary - Warm Temperate - Large Temporarily Closed. (© Nelson Mandela Univeristy)](imgs/Image-bulungula.png)
 
 ------------------------------------------------------------------------
 
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
-
 ::::: columns
-::: {.column width="50%"}
-<center>
-
-| [1%]{.inline-style-well-protected}
-| of estuarine extent
-| [Well Protected]{.inline-style-indicator}
-
-| [32%]{.inline-style-poorly-protected}
-| of estuarine extent
-| [Poorly Protected]{.inline-style-indicator}
-
-</center>
-:::
-
 ::: {.column width="50%"}
 <center>
 
@@ -100,22 +141,6 @@ google-scholar: true
 | [41%]{.inline-style-poorly-protected}
 | of 22 ecosystem types
 | [Poorly Protected]{.inline-style-indicator}
-
-</center>
-:::
-:::::
-
-::::: columns
-::: {.column width="50%"}
-<center>
-
-| [59%]{.inline-style-moderately-protected}
-| of estuarine extent
-| [Moderately Protected]{.inline-style-indicator}
-
-| [8%]{.inline-style-not-protected}
-| of estuarine extent
-| [Not Protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -153,15 +178,31 @@ knitr::include_graphics("imgs/pa_map.png")
 
 ## Ecosystem protection level assessment
 
-Overall, estuaries are Moderately (59%) to Poorly (32%) protected in South Africa, less than 1% of area is well protected. From an ecosystem types perspective about 9% are Well protected, 36% Moderate, 41% Poorly, and 14% Not Protected.
+Of key concern, three estuarine ecosystem types are categorised as Not Protected, namely:
 
-Since 2011 there has been erosion of protection in historical protected areas caused by removal of no-take restrictions and developing commercial fisheries in Marine protected Areas (MPAs). This is further exasperated by increased illegal gillnetting in protected areas in KZN.
+-   Warm Temperate Large Fluvially Dominated
+-   Subtropical Estuarine Bay
+-   Cool Temperate Predominantly Open
 
-An investment in estuarine protection is needed in ecosystem types that are Not Protected or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate are least protected.
+Similarly, nine estuarine ecosystem types are categorised as Poorly Protected, namely:
+
+-   Cool Temperate Estuarine Lake
+-   Cool Temperate Arid Predominantly Closed
+-   Cool Temperate Large Fluvially Dominated
+-   Cool Temperate Large Temporarily Closed
+-   Warm Temperate Predominantly Open
+-   Warm Temperate Large Temporarily Closed
+-   Subtropical Large Fluvially Dominated
+-   Subtropical Predominantly Open
+-   Subtropical Large Temporarily Closed
+
+Since 2011, there has been an erosion of protection in historically protected areas. This can be attributed to the removal of no-take restrictions and the development of commercial fisheries in Marine Protected Areas (MPAs). This is further exacerbated by increased illegal gillnetting in protected areas in KwaZulu-Natal.
+
+An investment in estuarine protection is needed in ecosystem types that are Not Protected, or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate regions have the lowest protection levels.
 
 ```{r}
 #| label: fig-est_epl_map
-#| fig-cap: Schematic representation of estuarine ecosystem protection levels (size of the dot represents area of the individual estuary). There are many overlaps between points that can obscure the status of smaller estuaries.
+#| fig-cap: Schematic representation of estuarine ecosystem protection levels (size of the dot represents area of the individual estuary). There are many overlaps between points that can obscure the status of smaller estuaries. The inset graph shows the number and proportion of ecosystem types that fall within each protection level category.
 #| echo: false
 #| message: false
 #| warning: false
@@ -178,11 +219,11 @@ knitr::include_graphics("imgs/epl_with_donut.png")
 
 There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
 
-Several under protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi.
+Several under-protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of estuarine ecosystem types and 10% of the total estuarine area could be Well Protected if fishing efforts in just 3 estuaries were better controlled. These estuaries are Langebaan, Knysna and Kosi.
 
-The global support for 30% protection target (2030 Global Biodiversity Framework Target 3) represent a unique opportunity to garden international support and present funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process to evaluate and extend estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
+The global support for a 30% protection target (2030 Global Biodiversity Framework Target 3) presents a unique opportunity to garner international support and possible funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process of evaluating and extending estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
 
-Ongoing efforts to develop OECMs and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats. It is less clear, if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increase formal protection over time or as a sufficient measure one its own.
+Ongoing efforts to develop other effective area-based conservation measures (OECMs) and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and curb the ongoing decline in Blue Carbon habitats. It is less clear if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increasing formal protection over time or as a sufficient measure on its own.
 
 :::: panel-tabset
 ## Figure
@@ -190,7 +231,7 @@ Ongoing efforts to develop OECMs and stewardship approaches for estuaries presen
 ```{r}
 #| label: fig-epl_bargraphs
 #| echo: false
-#| fig-cap: Estuarine Ecosystem Protection Levels in South Africa by percentage of types (# contributing estuaries indicated on bar) (a) and percentage extent (b).
+#| fig-cap: Estuarine Ecosystem Protection Levels in South Africa by percentage of types (number of contributing estuaries indicated on bar) (A) and percentage extent (B).
 #| out-width: 100%
 #| classes: plain
 
@@ -200,7 +241,15 @@ library(nbaR)
 library(tidyverse)
 
 epl_combined <- read.csv(file=list.files(path = "./data", pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Tropical",
+                                  "Subtropical",
+                                 "Warm Temperate",
+                                 "Cool Temperate"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) 
+  
 
 #Combine RLE plot
 nba_plot_comb(epl_combined,
@@ -223,7 +272,7 @@ nba_plot_comb(epl_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap: Estuarine Ecosystem Protection Levels in South Africa tabulated by ecosystem type, extent (km2) and percentage extent (%)
+#| tbl-cap: Estuarine Ecosystem Protection Levels  South Africa’s estuaries tabulated by number of estuaries in a type, estuary types, extent and percentage area in a biogeographical region.
 #| out-width: 100%
 #| classes: plain
 
@@ -232,12 +281,18 @@ nba_plot_comb(epl_combined,
 
 tbl <- epl_combined %>% 
   mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
-         metric = str_replace_all(metric, "count", "Type"),
-         metric = str_replace_all(metric, "perc", "Percentage")) %>% 
-  arrange(zone) %>% 
-  select(zone, metric, `Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>%
+         metric = str_replace_all(metric, "estuary_count", "No. estuaries"),
+         metric = str_replace_all(metric, "count", "No. estuary types"),
+         metric = str_replace_all(metric, "perc", "Percentage (%)")) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Cool Temperate",
+                               "Warm Temperate",
+                               "Subtropical",
+                               "Tropical"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) %>% 
+  select(zone, metric,`Well Protected`, `Moderately Protected`, `Poorly Protected`, `Not Protected`) %>%
   mutate(across(where(is.numeric), round)) %>% 
-  #mutate(across(where(is.numeric), if_else(metric == "Percentage", paste(., "%")))) %>% 
   gt::gt(
     rowname_col = "metric",
     groupname_col = "zone",
@@ -267,11 +322,54 @@ tbl %>%
 :::
 ::::
 
-While the larger and more biodiversity rich estuaries are undoubtedly protection priorities, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond.Unless some ecosystem types or functional groups, e.g. Cool Temperate large fluvially dominated are targeted for inclusion in Marine Protected Areas, Protected areas or Other Effective area-based Conservation Measure (OECMs), gaps in representation will persist.
+While the larger estuaries with greater biodiversity are undoubtedly priorities for protection, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, an increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond. Gaps in representation will persist unless some ecosystem types or functional groups (e.g. Cool Temperate Large Fluvially Dominated) are targeted for inclusion in Marine Protected Areas, Protected areas or OECMs.
 
-It is increasingly evident that protected areas won't work if they don’t consider and involve people and address issues that undermine their legitimacy and effectiveness. Other Effective Conservation Measures (OECMs) and/or Stewardship offer new opportunities for a broader diversify of conservation models to contribute to marine protection. Lastly, increasing extent of protection alone will not advance estuarine ecosystems to well protected. The condition of ecosystems in protected areas needs improvement.
+It is increasingly evident that protected areas will be less meaningful if they don’t involve people in the landscape and address issues that undermine their legitimacy and effectiveness. OECMs and/or Stewardship offer new opportunities for a broader diversity of conservation models to contribute to marine protection. Lastly, an increasing extent of protection alone will not advance estuarine ecosystems to Well Protected. The condition of ecosystems in protected areas needs improvement as well.
 
-::: {#box-eco_tbl .callout .estuarine collapse="False"}
+::::::: {#box-blooms .callout-note .estuarine collapse="False"}
+## Box 1. Avian botulism and cyanobacteria blooms on the protected Touw/Wilderness Estuarine Lakes system and the underlying water quality issues that threaten ecosystem protection levels in the region
+
+*MKS Smith, CM Lawrence, R Petersen* - *SANPARKS*
+
+The Wilderness Lakes System, a designated RAMSAR site within the Garden Route National Park, comprises the Touw Estuary and three interconnected estuarine lakes, Eilandvlei, Langvlei, and Rondevlei. Long-term studies have shown clear directional changes occurring in this system. Water quality monitoring has revealed significant declines in salinity, pH, and turbidity, particularly in the upper lakes, reflecting a shift from estuarine to more freshwater, lacustrine conditions (Russell 2013). Correspondingly, fish communities have changed, with increasing dominance of freshwater and alien species, including Mozambique tilapia (*Oreochromis mossambicus*) and common carp (*Cyprinus carpio*) [@olds2011]. These changes stem from altered hydrology, artificial mouth breaching, and sediment accumulation, restricting connectivity between lakes and the marine environment. More recently, two emerging issues, avian botulism and cyanobacteria blooms, have raised concerns over the ecological health of the system.
+
+![Aerial view of Rondevlei in the foreground and Langvlei in the background. (© SANParks)](imgs/DJI_0178.png){width="90%"}
+
+**Avian botulism**
+
+An outbreak of avian botulism, a disease caused by toxins produced by *Clostridium botulinum* under warm, low-oxygen conditions, was first recorded in the system in 2015, becoming one of the largest such events documented in South Africa [@govender2019]. Over three years, at least 1,115 waterbirds from 23 species were affected, with the highest mortalities recorded among red-knobbed coot (*Fulica cristata*; 60%), Cape shoveler (*Anas smithii*; 18%), and yellow-billed duck (*Anas undulata*; 9%). Mortality peaked in summer and autumn (November to April), coinciding with high temperatures and low dissolved oxygen. Conditions conducive to toxin formation. A second botulism outbreak was recorded in 2025. The outbreak was shorter in duration (February to April) and resulted in lower mortalities, with 199 birds being affected from 10 species. The outbreak occurred during a dry, hot summer and unusually low water levels.
+
+While the precise cause of the outbreaks remains uncertain, a possible link with the invasive common carp, whose bottom-feeding behaviour disturbs sediments and releases organic material that may promote anaerobic, toxin-producing conditions, has been highlighted (Russell et al. 2019). The first event also followed a period of macrophyte decline, reduced water circulation, and accumulation of decaying organic matter, which are factors known to exacerbate botulism risk. Decaying carcasses and maggot-mediated toxin transfer are key components of the botulism cycle. In response, during both outbreaks, SANParks implemented an intensive management programme that included regular collection and off-site disposal of bird and fish carcasses, monitoring of environmental conditions, and collaboration with veterinary specialists for testing and diagnosis.
+
+:::::: columns
+::: {.column width="60%"}
+**Cyanobacteria blooms**
+
+Cyanobacteria thrive in warm, nutrient-enriched, and stagnant waters and are capable of producing toxins harmful to fish, birds, and humans. In 2022, the first recorded bloom was limited to a few isolated patches in Eilandvlei and the Serpentine channel, with only a single toxin-producing genus/family identified, namely, *Microcystis*. However, during the summer/autumn of 2025, a significant bloom occurred, covering the entire Eilandvlei, with four distinct cyanobacteria genera (*Anabaena*, *Microcystis*, *Cylindrospermopsis* and *Oscillatoria*), capable of producing neurotoxins and hepatotoxins being detected.
+
+Toxin testing confirmed the presence of microcystins at levels exceeding WHO recreational safety thresholds and during both blooms, Eilandvlei was closed to the public, preventing the realisation of various cultural and provisioning ecosystem services for residents. Tourism and park revenue generation were also impacted.
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="38%"}
+![The cyanobacteria algal bloom event on Island Lake in 2025. (© SANParks)](imgs/PHOTO-2025-04-02-14-02-04.png)
+:::
+::::::
+
+Both blooms have likely been fuelled by limited flushing, historic nutrient runoff from agricultural lands, and organic enrichment from decaying vegetation, leading to nutrient enrichment of sediments. A concern is that the system may be moving through a regime shift where internal processes (rather than external inputs) may be increasingly driving bloom occurrence.
+
+**Management challenges**
+
+Although containment efforts reduced the scale of subsequent outbreaks, the recurrence of avian botulism and the emergence of cyanobacteria blooms, both symptoms of declining water quality, signal deeper systemic issues. Addressing these growing challenges requires a systematic approach that integrates monitoring, rapid response, clear communication, and ongoing evaluation. Botulism and harmful algal blooms share similar triggers (temperature, nutrient loading, stagnation), suggesting they may worsen concurrently under climate change. Recorded data show declining winter and annual rainfall over recent decades, which is likely to increase water retention times, nutrient build‑up, and disease risk in closed or semi‑closed systems.
+
+**Without concerted management to restore flow, reduce nutrient inputs, and improve estuarine connectivity, these linked issues threaten to fundamentally alter the ecological character and biodiversity of this protected Warm Temperate estuarine lake system.**
+
+![Arial view of Island Lake in the foreground with Langvlei in the center and Rondevlei in the far distance. (© SANParks)](imgs/DJ_0166.png)
+:::::::
+
+::: {#box-eco_tbl_epl .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-epl
 #| tbl-cap: Estuarine Ecosystem Protection Levels in South Africa listed by estuary
@@ -281,18 +379,12 @@ It is increasingly evident that protected areas won't work if they don’t consi
 # load data
 epl <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(-'threat_status') %>% 
-  mutate(
-    protection_level = factor(protection_level, levels = c("Well Protected",
-                                 "Moderately Protected",
-                                 "Poorly Protected",
-                                 "Not Protected"),
-                      ordered = TRUE)) %>%
-  arrange(protection_level, NAME) %>% 
+  select(NAME, type, protection_level) %>% 
   rename(`Estuary name` = NAME, 
-         `Estuary type` = type, 
-         `Estuary functional type` = zone, 
+         `Estuary type` = type,  
          `Protection level` = protection_level)
+
+write.csv(epl, "data/protection_level_per_estuary.csv")
 
 nba_tbl_colr(epl,
              COL = `Protection level`,
@@ -307,11 +399,13 @@ nba_tbl_colr(epl,
 
 
 ```
+
+Download the data [here](data/threat_status_per_estuary.csv).
 :::
 
 ## Approach
 
-The protection level assessment for estuarine ecosystems was adjusted to align with global targets. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.
+The protection level assessment for estuarine ecosystems was adjusted to align with global targets [@harris2025]. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.
 
 Using as input data the South African Protected Areas Database (SAPAD) 2024Q4 (Department of Forestry Fisheries and Environment), South African estuary ecosystem map (van Niekerk 2020) and estuarine health condition as input data.
 
@@ -319,7 +413,7 @@ Estuarine Condition (Health) scores (0-100) are assigned to Department of Water 
 
 ```{r}
 #| label: tbl-ets_cat
-#| tbl-cap: NEEDS A CAPTION
+#| tbl-cap: Estuarine Condition (Health) scores (0-100) are assigned to PES categories (A-F) and NBA Modification categories (Natural - Severely modified) according to the table below.
 
 
 
@@ -367,9 +461,11 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 
 ### Code repositories
 
--   [Protection level assessment](https://github.com/askowno/EPL_est)
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
 
 ### Key publications
+
+Harris, L. et al. 2025. Indicators for tracking progress in effective, representative ecosystem protection. *Conservation biology.*
 
 ## Recommended citation
 
@@ -390,6 +486,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
+
+## Refernces
 
 ::: {#refs}
 :::

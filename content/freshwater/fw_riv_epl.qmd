@@ -63,7 +63,7 @@ google-scholar: true
 
 *Rivers are among the least protected ecosystems in South Africa. A whole catchment approach is needed to bend the curve on river conservation, as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. Rivers within Protected Areas that were assessed to be Poorly Protected due to their ecological condition may be prime targets for strategic restoration.*
 
-![Sandy banks and riparian forest along the Luvuvhu river within Kruger National Park. (© Nancy Job)](imgs/kruger.png)
+![The stunning Mtentu River forms the border of Mkabati Nature Reserve in the Eastern Cape. (© Nancy Job)](imgs/mkambati_river.png)
 
 ------------------------------------------------------------------------
 
@@ -81,7 +81,7 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [8%]{.inline-style-not-protected}
+| [8%]{.inline-style-well-protected}
 | of 222 river ecosystem types
 | [Well Protected]{.inline-style-indicator}
 
@@ -98,9 +98,12 @@ google-scholar: true
 
 Approximately 14% of the country’s river length occurs in protected areas. Of the rivers within protected areas, approximately 60% of these were assessed to be in a natural or near-natural ecological condition. This is much higher than the roughly 37% of rivers in a natural or near-natural ecological condition country-wide, however, this means that only 8% of river ecosystem types in South Africa are considered Well Protected, 13% Moderately Protected and 48% Poorly Protected, while 31% are considered Not Protected.
 
-![Ecosystem protection level for river ecosystem types. The inset graph shows the number of ecosystem types per protection level category.](imgs/riv_epl_map.png){#fig-epl_riv_map} <!-- # ```{r} --> <!-- #| label: fig-riv_epl_map --> <!-- #| fig-cap: Map showing the river ecosystem protection level (EPL) and a donut plot summarising the number of river types in each EPL category. # checkNancy, check caption --> <!-- #| echo: false --> <!-- #| message: false --> <!-- #| warning: false --> <!-- #| out-width: 100% --> <!-- knitr::include_graphics("imgs/riv_epl_map.png") # ("imgs/riv_epl_map.png") --> <!-- ``` -->
+::: panel-tabset
+## Map
 
-The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally less threatened than other regions of the country. Protection levels are particularly low in the northern interior of the country, reflecting the spatial distribution of the current protected areas network.
+![Ecosystem protection level for river ecosystem types. The inset graph shows the number of ecosystem types per protection level category.](imgs/riv_epl_map.png){#fig-epl_riv_map}
+
+## Data
 
 ```{r}
 #| label: tbl-epl
@@ -135,7 +138,7 @@ reactable(
   filterable = TRUE,
   searchable = FALSE,
   pagination = FALSE,
-  height = 600,
+  height = 480,
   defaultColDef = colDef(
     headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold")
   ),
@@ -144,9 +147,101 @@ reactable(
       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
       backgroundColor = "white",
       border = "1px solid #ccc"
-    )))
+    )),
+  style = list(fontSize = "12px"))
 
 ```
+:::
+
+The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally less threatened than other regions of the country. Protection levels are particularly low in the northern interior of the country, reflecting the spatial distribution of the current protected areas network.
+
+<!-- ::: {#box-epl .callout-note .freshwater collapse="true" title="Box 1. River ecosystem protection levels"} -->
+
+<!-- # ```{r} -->
+
+<!-- #| label: tbl-epl -->
+
+<!-- #| tbl-cap: "Ecosystem protection level of river ecosystem types." -->
+
+<!-- # library(here) -->
+
+<!-- library(stringr) -->
+
+<!-- library(reactable) -->
+
+<!-- library(dplyr) -->
+
+<!-- # load data -->
+
+<!-- epl <- read.csv(file=list.files(pattern = "^river_metrics_2.csv$", recursive = TRUE, full.names = TRUE), # ^riv_metrics_type.csv$ -->
+
+<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>%  -->
+
+<!--   select(type, zone, protection_level) %>%  -->
+
+<!--   ## take out the NA zones -->
+
+<!--   filter(!is.na(zone)) %>%  -->
+
+<!--   rename("River type" = type, -->
+
+<!--          "Geomorphic zone" = zone, -->
+
+<!--          "Ecosystem protection level" = protection_level) -->
+
+<!--   # select(RIVTYPE, zone, protection_level) %>% # , RLE24, extent, RLE_EPL24) # -->
+
+<!--   # mutate(EPL24_all = str_replace_all(EPL24_all, "WP","Well Protected"), -->
+
+<!--   #        EPL24_all = str_replace_all(EPL24_all, "MP","Moderately Protected"), -->
+
+<!--   #        EPL24_all = str_replace_all(EPL24_all, "PP","Poorly Protected"), -->
+
+<!--   #        EPL24_all = str_replace_all(EPL24_all, "NP","Not Protected" )) %>%  -->
+
+<!--   # rename("River type" = RIVTYPE, -->
+
+<!--   #        "Geomorphic zone" = zone, -->
+
+<!--   #        "Ecosystem protection level" = EPL24_all) -->
+
+<!-- # create the table -->
+
+<!-- reactable( -->
+
+<!--   epl, -->
+
+<!--   filterable = TRUE, -->
+
+<!--   searchable = FALSE, -->
+
+<!--   pagination = FALSE, -->
+
+<!--   height = 600, -->
+
+<!--   defaultColDef = colDef( -->
+
+<!--     headerStyle = list(background = "#4097C2", color = "white", fontWeight = "bold") -->
+
+<!--   ), -->
+
+<!--   theme = reactableTheme( -->
+
+<!--     inputStyle = list( -->
+
+<!--       color = "black", # create black searching text in the filter box, otherwise one doesn't see it! -->
+
+<!--       backgroundColor = "white", -->
+
+<!--       border = "1px solid #ccc" -->
+
+<!--     )), -->
+
+<!--   style = list(fontSize = "12px")) -->
+
+<!-- ``` -->
+
+<!-- ::: -->
 
 In terms of river geomorphological zone, only 16% of the river ecosystem types within the lower foothill and mountain stream zones are Well Protected. More than half of lowland river ecosystem types are Not Protected (61%), reflecting the bias of the protected area network towards mountain versus lowland areas.
 
@@ -313,7 +408,11 @@ tbl
 Download the data [here](outputs/rivers_EPL.csv).
 ::::
 
-It is evident that formal protection does not guarantee biodiversity conservation as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. A whole catchment and OECM approach, including conservation corridors, to river conservation is therefore required since most land-based protected areas were not designed to protect rivers.
+## Intersection of ecosystem threat status and protection levels
+
+Combining the headline indicators provides an additional perspective on the status of river ecosystems. There are 67 river ecosystem types that are both highly threatened and under-protected. Although the Cape fold mountains support multiple protected area types including mountain catchment area and nature reserves, as well as several OECM measures in progress, reports of worsening river ecological condition across the western cape identify this area as important for increased protection. Similarly, the upper Wilge catchment, the western region of the Eastern Cape and selected rivers of the Free State and Limpopo province are also candidates for focussed action,
+
+![Highly threatened and under-protected river ecosystem types.](imgs/riv_unluckies_map.png){#fig-riv_ets_epl_map}
 
 ```{r}
 #| label: tbl-unluckies
@@ -352,7 +451,8 @@ nbaR::nba_tbl_comb(DF = unlucky_tbl,
 
 ```
 
-::: {#box-1 .callout-note .freshwater title="Box 1. River ecosystem protection level across primary catchments" collapse="true"}
+```{=html}
+<!--# ::: {#box-1 .callout-note .freshwater title="Box 1. River ecosystem protection level across primary catchments" collapse="true"}
 ## **Box 1. Primary Catchments and River ecosystem protection level**
 
 Text
@@ -378,7 +478,8 @@ Text
 Text
 
 ***Heading 3*** xxxx.
-:::
+::: -->
+```
 
 ## Approach
 
@@ -386,11 +487,11 @@ Ecosystem protection level is a headline indicator of the National Biodiversity 
 
 Key input layers include the South African protected areas database, the [river ecosystem network](fw_riv_type.qmd), and [river ecological condition](fw_riv_condition.qmd) assessment[@southafricanprotectedareasdatabase2024].
 
-While the 2018 assessment used a standard 20% target for freshwater ecosystems\[@roux2008\], the current protection level target was adjusted to 30% in line with Target 3 of the Global Biodiversity Framework. This target is applied to each of the 122 river ecosystem types. Importantly, the current ecological condition of the river within the protected area is taken into consideration in the calculation, ensuring that effectiveness is accounted for. At least 30% of each river ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition (ecological class A or B) to qualify in the Well Protected category. If this target was not met, the ecosystem type is categorised as Moderately Protected or lower, meaning that higher integrity rivers contribute more to meeting protection level targets than low integrity rivers.
+While the 2018 assessment used a standard 20% target for freshwater ecosystems[@roux2008], the current protection level target was adjusted to 30% in line with Target 3 of the Global Biodiversity Framework. This target is applied to each of the 122 river ecosystem types. Importantly, the current ecological condition of the river within the protected area is taken into consideration in the calculation, ensuring that effectiveness is accounted for. At least 30% of each river ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition (ecological class A or B) to qualify in the Well Protected category. If this target was not met, the ecosystem type is categorised as Moderately Protected or lower, meaning that higher integrity rivers contribute more to meeting protection level targets than low integrity rivers.
 
 Ecosystem types were assigned to one of four categories based on the percentage of the protection target met within the protected areas network, and scaled by ecological condition: **Well Protected**: 100% (or more) of a river ecosystem type’s target falls within the protected area network; but only rivers in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of a river ecosystem type’s target falls within the protected area network; and rivers in an A and B condition contribute 100%, rivers in a C and D condition contribute 30%, while E and F condition rivers contribute only 10%; **Poorly Protected**: 5% to 49% of a river ecosystem type’s target falls within the protected area network; and A and B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%; **Not Protected**: less than 5% of a river ecosystem type’s target falls within the protected area network; and A and B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%.
 
-![](imgs/EPL_table.png)
+![Ecosystem protection level categories and the use of ecosystem condition data to moderate contribution to targets.](imgs/EPL_table.png){#tbl-eplcon width="600"}
 
 Changes in ecosystem protection level results since the 2018 assessment reflect revised targets and improved methodologies for global and national alignment, alongside genuine changes in protection and updates to river ecological condition.
 
@@ -398,7 +499,7 @@ Changes in ecosystem protection level results since the 2018 assessment reflect 
 
 **Code repository**
 
-<https://github.com/askowno/EPL_riv>
+Skowno, A.L. 2025. SANBI-NBA River ecosystem protection level \[Source code\]. GitHub repository available at [https://github.com/askowno/EPL_riv](https://github.com/askowno/EPL_riv)
 
 **Key publications**
 

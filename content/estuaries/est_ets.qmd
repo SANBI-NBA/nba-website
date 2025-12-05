@@ -65,19 +65,71 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*More than 54% of South Africa's estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Concerning overall, more than 70% of estuarine area is significantly modified.* <!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
+```{r}
+#| echo: false
+
+library(tidyverse)
+library(nbaR)
+
+
+# load the data 
+ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
+                    stringsAsFactors = FALSE, check.names = FALSE) 
+  
+
+## extent
+eco_extent <- ets_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "extent")
+
+thr_extent <- ets_combined %>% 
+  filter(metric == "extent")
+
+
+total_extent <- sum(eco_extent$value)
+
+perc_cr_extent <- round((sum(thr_extent$`Critically Endangered`)/total_extent)*100)
+perc_en_extent <- round((sum(thr_extent$`Endangered`)/total_extent)*100)
+perc_vu_extent <- round((sum(thr_extent$`Vulnerable`)/total_extent)*100)
+perc_lc_extent <- round((sum(thr_extent$`Least Concern`)/total_extent)*100)
+perc_thr_extent <- round(perc_cr_extent+perc_en_extent+perc_vu_extent)
+
+##count
+eco_count <- ets_combined %>% 
+  pivot_longer(cols = 2:5) %>% 
+  filter(metric == "count")
+
+thr_count <- ets_combined %>% 
+  filter(metric == "count")
+
+
+total_count <- sum(eco_count$value)
+
+perc_cr_count<- round((sum(thr_count$`Critically Endangered`)/total_count)*100)
+perc_en_count<- round((sum(thr_count$`Endangered`)/total_count)*100)
+perc_vu_count<- round((sum(thr_count$`Vulnerable`)/total_count)*100)
+perc_lc_count <- round((sum(thr_count$`Least Concern`)/total_count)*100)
+perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
+
+```
+
+*The Estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable. Unsustainable land and sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving economy ([key message A2](../key-messages/kma2.qmd)).*
+
+![Knysna is one of two estuarine bays inside South Africa and is an example of a Vulnerable system. (© Matt Dubber)](imgs/est_knysna_matt_dubber.jpeg)
+
+--------------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
 <center>
 
-| [59%]{.inline-style-threatened}
+| [91%]{.inline-style-threatened}
 | of 22 ecosystem types
 | [Threatened]{.inline-style-indicator}
 
-| [23%]{.inline-style-critically-endangered}
+| [41%]{.inline-style-endangered}
 | of 22 ecosystem types
-| [Critically Endangered]{.inline-style-indicator}
+| [Endangered]{.inline-style-indicator}
 
 </center>
 :::
@@ -85,11 +137,11 @@ google-scholar: true
 ::: {.column width="50%"}
 <center>
 
-| [18%]{.inline-style-endangered}
+| [5%]{.inline-style-critically-endangered}
 | of 22 ecosystem types
-| [Endangered]{.inline-style-indicator}
+| [Critically Endangered]{.inline-style-indicator}
 
-| [18%]{.inline-style-vulnerable}
+| [45%]{.inline-style-vulnerable}
 | of 22 ecosystem types
 | [Vulnerable]{.inline-style-indicator}
 
@@ -97,21 +149,22 @@ google-scholar: true
 :::
 :::::
 
+--------------------------------------------------------------------------------
 <!-- creates spaces -->
 
 \
 
 ## Ecosystem threat status assessment
 
-The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.
+The estuarine realm is one of the most threatened in South Africa, in terms of both the number of ecosystem types and by area [@vanniekerk2018].
 
-About 59% of the 22 estuary types are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.
+About `r perc_thr_count`% of the 22 estuary types are threatened, with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of the total estuarine area, `r perc_thr_extent`% is threatened, with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable.
 
-Multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.
+Multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development, and crops in the estuarine functional zone.
 
 ```{r}
 #| label: fig-ets_map
-#| fig-cap: Map showing the distribution of threatened estuarine ecosystems according to the IUCN Red List of Ecosystems (size of the dot represents area of the individual estuary)
+#| fig-cap: Map showing the distribution of threatened estuarine ecosystems according to the IUCN Red List of Ecosystems (size of the dot represents area of the individual estuary). The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
 #| echo: false
 #| message: false
 #| warning: false
@@ -131,7 +184,7 @@ knitr::include_graphics("imgs/ets_with_donut.png")
 ```{r}
 #| label: fig-ets_bargraphs
 #| echo: false
-#| fig-cap: Ecosystem threat status of South Africa’s estuaries presented as percentage of ecosystems types (a) and percentage ecosystems extent (b).
+#| fig-cap: Ecosystem threat status of South Africa’s estuaries presented as percentage of ecosystem types (A) and percentage ecosystem extent (B).
 #| out-width: 100%
 #| classes: plain
 
@@ -141,7 +194,14 @@ library(tidyverse)
 
 # load the data 
 ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Tropical",
+                                  "Subtropical",
+                                 "Warm Temperate",
+                                 "Cool Temperate"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) 
 
 
 #Combine RLE plot
@@ -165,7 +225,7 @@ nba_plot_comb(ets_combined,
 ```{r}
 #| label: tbl-ets_bargraphs
 #| echo: false
-#| tbl-cap:  Ecosystem threat status of South Africa’s estuaries tabulated by type, extent and percentage area
+#| tbl-cap:  Ecosystem threat status of South Africa’s estuaries tabulated by number of estuaries in a type, estuary types, extent and percentage area in a biogeographical region.
 #| out-width: 100%
 #| classes: plain
 
@@ -174,10 +234,17 @@ nba_plot_comb(ets_combined,
 
 
 tbl <- ets_combined %>% 
-  mutate(metric = str_replace_all(metric, "extent", "Extent  (km<sup>2</sup>)"),
-         metric = str_replace_all(metric, "count", "Type"),
-         metric = str_replace_all(metric, "perc", "Percentage")) %>% 
-  arrange(zone) %>% 
+  mutate(metric = str_replace_all(metric, "extent", "Extent  (ha)"),
+         metric = str_replace_all(metric, "estuary_count", "No. estuaries"),
+         metric = str_replace_all(metric, "count", "No. estuary types"),
+         metric = str_replace_all(metric, "perc", "Percentage (%)")) %>% 
+  mutate(
+  zone = factor(zone, levels = c("Cool Temperate",
+                               "Warm Temperate",
+                               "Subtropical",
+                               "Tropical"),
+                    ordered = TRUE)) %>% 
+   arrange(zone) %>% 
   select(zone, metric, `Critically Endangered`, `Endangered`, `Vulnerable`, `Least Concern`) %>%
   mutate(across(where(is.numeric), round)) %>% 
   gt::gt(
@@ -208,12 +275,46 @@ tbl %>%
 ::::
 
 \
+
+### Critically Endangered
+
+Following the application of 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments, the Subtropical Estuarine Bay ecosystem type, represented by Durban Bay, is the only system that triggered Critically Endangered.
+
+### Endangered
+
+Nine estuarine ecosystem types were classified as Endangered, with 6 types in the Cool Temperate, 1 in the Warm Temperate and 2 in the Subtropical biogeographical region.
+
+-   Cool Temperate Estuarine Lagoon
+-   Cool Temperate Estuarine Lake
+-   Cool Temperate Large Fluvially Dominated
+-   Cool Temperate Predominantly Open
+-   Cool Temperate Large Temporarily Closed
+-   Cool Temperate Arid Predominantly Closed
+-   Warm Temperate Estuarine Lake
+-   Subtropical Large Fluvially Dominated
+-   Subtropical Estuarine lake
+
+### Vulnerable
+
+Overall 10 estuarine ecosystem types were classified as Vulnerable, with 2 types in the Cool Temperate, 4 in the Warm Temperate, 3 in the Subtropical, and 1 in the Tropical biogeographical region.
+
+-   Cool Temperate Small Temporarily Closed
+-   Cool Temperate Small Fluvially Dominated
+-   Warm Temperate Estuarine Bay
+-   Warm Temperate Large Fluvially Dominated
+-   Warm Temperate Predominantly Open
+-   Warm Temperate Large Temporarily Closed
+-   Subtropical Predominantly Open
+-   Subtropical Large Temporarily Closed
+-   Subtropical Small Temporarily Closed
+-   Tropical Estuarine Lake
+
 \
 
-::: {#box-eco_tbl .callout .estuarine collapse="False"}
+::: {#box-eco_tbl_ets .callout .estuarine collapse="False"}
 ```{r}
 #| label: tbl-ets
-#| tbl-cap: Ecosystem threat status of South Africa’s estuaries
+#| tbl-cap: Ecosystem threat status of South Africa’s estuaries, ordered from west to east coast.
 #| classes: plain
 
 
@@ -226,62 +327,39 @@ library(dplyr)
 # load data
 ets <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
                     stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  select(-'protection_level') %>% 
-  mutate(
-    threat_status = factor(threat_status, levels = c("Critically Endangered",
-                                 "Endangered",
-                                 "Vulnerable",
-                                 "Least Concern"),
-                      ordered = TRUE)) %>%
-  arrange(threat_status, NAME) %>% 
+  select(NAME, type, threat_status) %>% 
   rename(`Estuary name` = NAME, 
          `Estuary type` = type, 
-         `Estuary functional type` = zone, 
          `Threat status` = threat_status)
+
+write.csv(ets, "data/threat_status_per_estuary.csv")
 
 nba_tbl_colr(DF = ets,
              COL = `Threat status`,
              HEADER = "Estuarine") %>%
   tab_options(container.height = px(550),
-              container.overflow.y = TRUE) %>% 
-    tab_style(
-    style = cell_fill(color = "#028A85"),
-    locations = cells_column_labels(columns = everything())
-  )%>% 
+              container.overflow.y = TRUE)%>% 
   tab_style(
     style = cell_text(color = "white"),
     locations = cells_column_labels()
   )
 
-# # create the table
-# reactable(
-#   epl,
-#   filterable = TRUE,
-#   searchable = FALSE,
-#   pagination = FALSE,
-#   height = 600,
-#   defaultColDef = colDef(
-#     headerStyle = list(background = "#028A85", color = "white", fontWeight = "bold")
-#   ),
-#   theme = reactableTheme(
-#     inputStyle = list(
-#       color = "black", # create black searching text in the filter box, otherwise one doesn't see it!
-#       backgroundColor = "white",
-#       border = "1px solid #ccc"
-#     )))
+
 
 ```
+
+Download the data [here](data/threat_status_per_estuary.csv).
 :::
 
 ## Approach
 
-The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments.
+The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems [@keith2024] and drawing from previous estuarine NBA assessments [@vanniekerk2018].
 
-The IUCN RLE (Ver 2) framework was applied and following criterion were assessed:
+The following criterion were assessed:
 
 -   **Criterion A2b** (current rate of decline in ecosystem extent); based on land cover change rates between 1990 and 2022 - projected forward to 2040.
 
--   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022
+-   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022.
 
 -   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there is ongoing decline defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH, OR b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment is greater than 30% of type extent. This captures increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating applies to the whole type and is scaled by estuarine extent.
 
@@ -289,9 +367,9 @@ The IUCN RLE (Ver 2) framework was applied and following criterion were assessed
 
 -   **Criterion D3** was applied to the Estuarine Ecological State Class (PES) data such that severity of biotic disruption of \>= 90% was assumed for PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F. The rating applies to the whole type and is scaled by estuarine extent.
 
-Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for these two criteria is selected as the threat / risk status for each river type.
+Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for the criteria was selected as the threat / risk status for each river type.
 
-A more detailed explanation of the assessment method can be found at [RLE explanation page](../integrated-findings/chl_rle_explained.qmd).
+A more detailed explanation of the assessment method can be found on the  [about ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 
 ## Technical documentation
 
@@ -304,10 +382,12 @@ A more detailed explanation of the assessment method can be found at [RLE explan
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Code repositories
-
--   [Threat status assessment](https://github.com/askowno/RLE_est)
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_est](https://github.com/askowno/RLE_est).
 
 ### Key publications
+Rowland, J.A. et al. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. https://doi.org/10.1111/conl.12680
+
+IUCN. 2024. Guidelines for the application of IUCN Red List of Ecosystems. Gland, Switzerland. https://doi.org/10.2305/CJDF9122
 
 ## Recommended citation
 
@@ -328,6 +408,8 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 nba_citation(meta)
 
 ```
+
+## Refernces
 
 ::: {#refs}
 :::

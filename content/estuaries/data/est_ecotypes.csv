@@ -1,291 +1,291 @@
-"NAME","type","zone","protection_level","threat_status"
-"Orange","Cool Temperate Large Fluvially Dominated","CTemp","Poorly Protected","Endangered"
-"Buffels","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Swartlintjies","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Spoeg","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Groen","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Sout (Noord)","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Olifants","Cool Temperate Predominantly Open","CTemp","Not Protected","Endangered"
-"Jakkals","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Wadrift","Cool Temperate Arid Predominantly Closed","CTemp","Poorly Protected","Endangered"
-"Verlorenvlei","Cool Temperate Estuarine Lake","CTemp","Poorly Protected","Endangered"
-"Groot Berg","Cool Temperate Predominantly Open","CTemp","Not Protected","Endangered"
-"Langebaan","Cool Temperate Estuarine Lagoon","CTemp","Moderately Protected","Endangered"
-"Diep/Rietvlei","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Sout (Wes)","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Disa","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Wildevoëlvlei","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Schuster","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Krom","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Silwermyn","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Zand","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Zeekoei","Cool Temperate Estuarine Lake","CTemp","Poorly Protected","Endangered"
-"Eerste","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Lourens","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Sir Lowry’s Pass","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Steenbras","Cool Temperate Small Fluvially Dominated","CTemp","Well Protected","Vulnerable"
-"Rooiels","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Buffels (Oos)","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Palmiet","Cool Temperate Large Temporarily Closed","CTemp","Poorly Protected","Endangered"
-"Bot/Kleinmond","Cool Temperate Estuarine Lake","CTemp","Poorly Protected","Endangered"
-"Onrus","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Klein","Cool Temperate Estuarine Lake","CTemp","Poorly Protected","Endangered"
-"Uilkraals","Cool Temperate Predominantly Open","CTemp","Not Protected","Endangered"
-"Ratel","Cool Temperate Small Temporarily Closed","CTemp","Moderately Protected","Vulnerable"
-"Heuningnes","Warm Temperate Estuarine Lake","WTemp","Moderately Protected","Endangered"
-"Klipdrifsfontein","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Breede","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Duiwenhoks","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Goukou","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Gouritz","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Blinde","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Tweekuilen","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Gericke","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Hartenbos","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Klein Brak","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Groot Brak","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Maalgate","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Gwaing","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kaaimans","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Touw/Wilderness","Warm Temperate Estuarine Lake","WTemp","Moderately Protected","Endangered"
-"Swartvlei","Warm Temperate Estuarine Lake","WTemp","Moderately Protected","Endangered"
-"Goukamma","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Knysna","Warm Temperate Estuarine Bay","WTemp","Moderately Protected","Vulnerable"
-"Noetsie","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Piesang","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Keurbooms","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Matjies","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Sout (Oos)","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Groot (Wes)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Bloukrans","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Lottering","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Elandsbos","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Storms","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Elands","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Groot (Oos)","Warm Temperate Small Fluvially Dominated","WTemp","Well Protected","Least Concern"
-"Tsitsikamma","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Klipdrif (Oos)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Slang","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kromme","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Seekoei","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Kabeljous","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Gamtoos","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Van Stadens","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Maitland","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Baakens","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Papkuils","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Swartkops","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Coega (Ngqurha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Sundays","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Boknes","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Bushmans","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Kariega","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Grant's","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kasouga","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Kowie","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Rufane","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Riet","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"West Kleinemonde","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"East Kleinemonde","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Great Fish","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Old Woman’s","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Mpekweni","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Mtati (Mthathi)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Mgwalana","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Bira (Bhirha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Gqutywa","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Ngculura (Ngculurha)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Mtana","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Keiskamma","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Nqinisa","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kiwane (Khiwane)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Tyolomnqa","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Shelbertsstroom","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Lilyvale","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ross' Creek","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ncera (Ncerha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Mlele","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Mcantsi","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Gxulu","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Goda","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Hlozi","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Hickman's","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Buffalo","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Blind","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Hlaze (iHlanze)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Nahoon","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Qinira (Quinirha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Gqunube","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Kwelera (Kwelerha)","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Bulura (Bulurha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Cunge","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Cintsa","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Cefane","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Kwenxura (Kwenxurha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Nyara (Nyarha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Imtwendwe (Mtwendwe)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Haga-haga","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Mtendwe","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Quko","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Morgan","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Cwili","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Great Kei","Warm Temperate Large Fluvially Dominated","WTemp","Not Protected","Vulnerable"
-"Gxara (Gxarha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Ngogwane","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Qolora (Qolorha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Ncizele","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Timba","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kobonqaba (Khobonqaba)","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Nxaxo/Ngqusi","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Cebe","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Gqunqe","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Zalu","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ngqwara (Ngqwarha)","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Sihlontlweni","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Nebelele","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Qora (Qhorha)","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Jujura (Jujurha)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ngadla","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Shixini","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Beechamwood","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kwazlelitsha (Kwazwedala)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Kwa-Goqo","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ku-Nocekedwa","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Nqabara/Nqabarana","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Ngomane (East)","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Ngoma/Kobule","Warm Temperate Small Temporarily Closed","WTemp","Moderately Protected","Least Concern"
-"Mendu","Warm Temperate Large Temporarily Closed","WTemp","Poorly Protected","Vulnerable"
-"Mendwana","Warm Temperate Predominantly Open","WTemp","Poorly Protected","Vulnerable"
-"Mbashe","Subtropical Large Fluvially Dominated","SubTrop","Poorly Protected","Endangered"
-"Ku-Mpenzu","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Ku-Bhula (Mbhanyana)","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Kwa-Suku","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Ntlonyane","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Nkanya","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Sundwana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Xora","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Bulungula","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Ku-Amanzimuzama","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Nqakanqa","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mdikana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mncwasa","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mpako","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Nenga","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mapuzi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mtata","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Thsani","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mdumbi","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Lwandilana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Lwandile","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mtakatye","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Hluleka","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mnenu","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mtonga","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mpande","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Sinangwana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mngazana","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Mngazi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Gxwaleni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Bulolo","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mtumbane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mzimvubu","Subtropical Large Fluvially Dominated","SubTrop","Poorly Protected","Endangered"
-"Ntlupeni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Nkodusweni","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mntafufu","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Ingo","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mzintlava","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Mzimpunzi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Kwanyambalala","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mbotyi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mkozi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Sikatsha","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Lupatana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mkweni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Msikaba","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Mgwegwe","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mgwetyana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mtentu","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Sikombe","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Kwanyana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mtolane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mnyameni","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Mpahlanyana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mpahlane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Mzamba","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Mtentwana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMthavuna","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iSolwane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iSandlu","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMbhoyibhoyi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMuntongazi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iKhandalendlovu","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iMpenjani","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMhlangomkhulu (South) (Umhlangankulu)","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iKhaba","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iMbizana","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iMvutshini","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iBilanhlonhlo","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uVuzana","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iKongeni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uVunguza","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"oHlangeni","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iZotsha","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iBhobhoyi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMbango","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMzimkhulu","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"uMthente","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMhlangomkhulu (North) (Mhlangamkulu)","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iDombe","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iKhoshwana","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iNjambili","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMzumbe","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMhlabashana","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMhlungwa","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMfazezala","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMakhosi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMnamfu","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMthwalume","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMvuzi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iFafa","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMdesingane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iSezela","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMkhumbane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"iNkomba","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMuziwezinto","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMzimayi","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"Rocky Bay","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMphambanyoni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"aMahlongwa","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMahlongwane","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMkhomazi","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"iNgane","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMgababa","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMsimbazi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iLovu","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"aManzanamtoti","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"aManzimtoti","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iZimbokodo","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iSiphingo","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"Durban Bay","Subtropical Estuarine Bay","SubTrop","Not Protected","Critically Endangered"
-"uMngeni","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"uMhlanga","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMdloti","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uThongathi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uMhlali","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"Bob’s Stream","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uSetheni","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMvoti","Subtropical Large Fluvially Dominated","SubTrop","Poorly Protected","Endangered"
-"uMdlotane","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iNonoti","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"iZinkwazi","Subtropical Large Temporarily Closed","SubTrop","Poorly Protected","Vulnerable"
-"uThukela","Subtropical Large Fluvially Dominated","SubTrop","Poorly Protected","Endangered"
-"aMatigulu/iNyoni","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"iSiyaya","Subtropical Small Temporarily Closed","SubTrop","Moderately Protected","Vulnerable"
-"uMlalazi","Subtropical Predominantly Open","SubTrop","Poorly Protected","Vulnerable"
-"uMhlathuze","Subtropical Estuarine Lake","SubTrop","Moderately Protected","Endangered"
-"Richards Bay","Subtropical Estuarine Lake","SubTrop","Moderately Protected","Endangered"
-"iNhlabane","Subtropical Estuarine Lake","SubTrop","Moderately Protected","Endangered"
-"iMfolozi/uMsunduze","Subtropical Large Fluvially Dominated","SubTrop","Poorly Protected","Endangered"
-"St Lucia","Subtropical Estuarine Lake","SubTrop","Moderately Protected","Endangered"
-"uMgobezeleni","Tropical Estuarine Lake","Tropical","Moderately Protected","Vulnerable"
-"Kosi","Tropical Estuarine Lake","Tropical","Moderately Protected","Vulnerable"
+"NAME","type","zone","protection_level","threat_status","condition","efz_ha"
+"Orange","Cool Temperate Large Fluvially Dominated","Cool Temperate","Poorly Protected","Endangered","Heavily modified",3019.1
+"Buffels","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",87.6
+"Swartlintjies","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Near-natural",134.3
+"Spoeg","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Near-natural",88.2
+"Groen","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Near-natural",88.2
+"Sout (Noord)","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",532.8
+"Olifants","Cool Temperate Predominantly Open","Cool Temperate","Not Protected","Endangered","Moderately modified",2778.6
+"Jakkals","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",72.6
+"Wadrift","Cool Temperate Arid Predominantly Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",509
+"Verlorenvlei","Cool Temperate Estuarine Lake","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",2276.3
+"Groot Berg","Cool Temperate Predominantly Open","Cool Temperate","Not Protected","Endangered","Heavily modified",11733.5
+"Langebaan","Cool Temperate Estuarine Lagoon","Cool Temperate","Moderately Protected","Endangered","Near-natural",6006.9
+"Diep/Rietvlei","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",1250
+"Sout (Wes)","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",613.7
+"Disa","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",23.5
+"Wildevoëlvlei","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",604.8
+"Schuster","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Near-natural",22.6
+"Krom","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Natural",100.5
+"Silwermyn","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",15.8
+"Zand","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Heavily modified",381.8
+"Zeekoei","Cool Temperate Estuarine Lake","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",405.5
+"Eerste","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Severely / critically modified ",277.4
+"Lourens","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Heavily modified",266.5
+"Sir Lowry’s Pass","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Severely / critically modified ",4.1
+"Steenbras","Cool Temperate Small Fluvially Dominated","Cool Temperate","Well Protected","Vulnerable","Near-natural",4
+"Rooiels","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Natural",21.6
+"Buffels (Oos)","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Near-natural",35.8
+"Palmiet","Cool Temperate Large Temporarily Closed","Cool Temperate","Poorly Protected","Endangered","Moderately modified",44.2
+"Bot/Kleinmond","Cool Temperate Estuarine Lake","Cool Temperate","Poorly Protected","Endangered","Moderately modified",2345.9
+"Onrus","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Heavily modified",30.8
+"Klein","Cool Temperate Estuarine Lake","Cool Temperate","Poorly Protected","Endangered","Moderately modified",2065.5
+"Uilkraals","Cool Temperate Predominantly Open","Cool Temperate","Not Protected","Endangered","Heavily modified",747.7
+"Ratel","Cool Temperate Small Temporarily Closed","Cool Temperate","Moderately Protected","Vulnerable","Near-natural",35.9
+"Heuningnes","Warm Temperate Estuarine Lake","Warm Temperate","Moderately Protected","Endangered","Heavily modified",10993.7
+"Klipdrifsfontein","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",6.7
+"Breede","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",2257.6
+"Duiwenhoks","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",441.4
+"Goukou","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",438.7
+"Gouritz","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",1099.7
+"Blinde","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",19.9
+"Tweekuilen","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Severely / critically modified ",23.2
+"Gericke","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Severely / critically modified ",8.7
+"Hartenbos","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",306.1
+"Klein Brak","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",1021.7
+"Groot Brak","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",318.1
+"Maalgate","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",34.4
+"Gwaing","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",21.8
+"Kaaimans","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",40.6
+"Touw/Wilderness","Warm Temperate Estuarine Lake","Warm Temperate","Moderately Protected","Endangered","Moderately modified",1180.4
+"Swartvlei","Warm Temperate Estuarine Lake","Warm Temperate","Moderately Protected","Endangered","Near-natural",2168.2
+"Goukamma","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",299.2
+"Knysna","Warm Temperate Estuarine Bay","Warm Temperate","Moderately Protected","Vulnerable","Near-natural",3010.6
+"Noetsie","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",50.6
+"Piesang","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",87.3
+"Keurbooms","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",1623.8
+"Matjies","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",12.1
+"Sout (Oos)","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Natural",24.1
+"Groot (Wes)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",100
+"Bloukrans","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Natural",15.3
+"Lottering","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Natural",11.2
+"Elandsbos","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Natural",22.1
+"Storms","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Natural",12.4
+"Elands","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Near-natural",31.1
+"Groot (Oos)","Warm Temperate Small Fluvially Dominated","Warm Temperate","Well Protected","Least Concern","Natural",30.3
+"Tsitsikamma","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",67.4
+"Klipdrif (Oos)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",66.8
+"Slang","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",42.8
+"Kromme","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",755.5
+"Seekoei","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",322.4
+"Kabeljous","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",311.9
+"Gamtoos","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",2133.4
+"Van Stadens","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",101.8
+"Maitland","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",67.6
+"Baakens","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Severely / critically modified ",13.5
+"Papkuils","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Severely / critically modified ",80.4
+"Swartkops","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",2861
+"Coega (Ngqurha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Severely / critically modified ",443.5
+"Sundays","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",824
+"Boknes","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",47.5
+"Bushmans","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",888.8
+"Kariega","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",559
+"Grant's","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",16.3
+"Kasouga","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",247.6
+"Kowie","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",484.9
+"Rufane","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",24.7
+"Riet","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",40.3
+"West Kleinemonde","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",224.2
+"East Kleinemonde","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",100.9
+"Great Fish","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",519.9
+"Old Woman’s","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",23.3
+"Mpekweni","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",83.1
+"Mtati (Mthathi)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",142.1
+"Mgwalana","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",216.9
+"Bira (Bhirha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",270.6
+"Gqutywa","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",105.4
+"Ngculura (Ngculurha)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",36.6
+"Mtana","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",81.2
+"Keiskamma","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",1402
+"Nqinisa","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",54.3
+"Kiwane (Khiwane)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Natural",87
+"Tyolomnqa","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",207.6
+"Shelbertsstroom","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",15
+"Lilyvale","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",33.7
+"Ross' Creek","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",13
+"Ncera (Ncerha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",77.9
+"Mlele","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",20.2
+"Mcantsi","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",31.8
+"Gxulu","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",106.6
+"Goda","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",51.9
+"Hlozi","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",40.9
+"Hickman's","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Moderately modified",25.9
+"Buffalo","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Heavily modified",137.5
+"Blind","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Heavily modified",14.3
+"Hlaze (iHlanze)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Heavily modified",7.9
+"Nahoon","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Moderately modified",178.5
+"Qinira (Quinirha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",110.7
+"Gqunube","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",176.3
+"Kwelera (Kwelerha)","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",121.6
+"Bulura (Bulurha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",135.4
+"Cunge","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",8.7
+"Cintsa","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",122.6
+"Cefane","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",176.5
+"Kwenxura (Kwenxurha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Natural",126.1
+"Nyara (Nyarha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",55.3
+"Imtwendwe (Mtwendwe)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",15.9
+"Haga-haga","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",25.5
+"Mtendwe","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",17.1
+"Quko","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Natural",102.1
+"Morgan","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",83.5
+"Cwili","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",14.7
+"Great Kei","Warm Temperate Large Fluvially Dominated","Warm Temperate","Not Protected","Vulnerable","Moderately modified",572.6
+"Gxara (Gxarha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",68.5
+"Ngogwane","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",22.5
+"Qolora (Qolorha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",69.3
+"Ncizele","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",22.9
+"Timba","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",9.2
+"Kobonqaba (Khobonqaba)","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",115.1
+"Nxaxo/Ngqusi","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",269.5
+"Cebe","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Natural",82.1
+"Gqunqe","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Natural",79.1
+"Zalu","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",68.8
+"Ngqwara (Ngqwarha)","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",78.9
+"Sihlontlweni","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",55.2
+"Nebelele","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",29.8
+"Qora (Qhorha)","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",133.9
+"Jujura (Jujurha)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",30.3
+"Ngadla","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",40.7
+"Shixini","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Natural",116.4
+"Beechamwood","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",20.1
+"Kwazlelitsha (Kwazwedala)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",32.1
+"Kwa-Goqo","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",30.9
+"Ku-Nocekedwa","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",33.7
+"Nqabara/Nqabarana","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",307.8
+"Ngomane (East)","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Near-natural",25.9
+"Ngoma/Kobule","Warm Temperate Small Temporarily Closed","Warm Temperate","Moderately Protected","Least Concern","Natural",88.8
+"Mendu","Warm Temperate Large Temporarily Closed","Warm Temperate","Poorly Protected","Vulnerable","Near-natural",107.4
+"Mendwana","Warm Temperate Predominantly Open","Warm Temperate","Poorly Protected","Vulnerable","Natural",27.8
+"Mbashe","Subtropical Large Fluvially Dominated","Subtropical","Poorly Protected","Endangered","Moderately modified",469.8
+"Ku-Mpenzu","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",31.7
+"Ku-Bhula (Mbhanyana)","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",58.7
+"Kwa-Suku","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",21.4
+"Ntlonyane","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",89.7
+"Nkanya","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",62.1
+"Sundwana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",25.2
+"Xora","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",261.5
+"Bulungula","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",67.4
+"Ku-Amanzimuzama","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",13
+"Nqakanqa","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",16.9
+"Mdikana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",17
+"Mncwasa","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",116.7
+"Mpako","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",51.5
+"Nenga","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",33.6
+"Mapuzi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",12.2
+"Mtata","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Moderately modified",545.6
+"Thsani","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",12.6
+"Mdumbi","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",254.9
+"Lwandilana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",49.6
+"Lwandile","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",100.5
+"Mtakatye","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",247.8
+"Hluleka","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",30.1
+"Mnenu","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",197
+"Mtonga","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",56.2
+"Mpande","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",51.3
+"Sinangwana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",123.1
+"Mngazana","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",770.6
+"Mngazi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",434.3
+"Gxwaleni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",16.1
+"Bulolo","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",13.2
+"Mtumbane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",15.5
+"Mzimvubu","Subtropical Large Fluvially Dominated","Subtropical","Poorly Protected","Endangered","Near-natural",842.7
+"Ntlupeni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",30.8
+"Nkodusweni","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",100
+"Mntafufu","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",277.5
+"Ingo","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",34.7
+"Mzintlava","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",108.9
+"Mzimpunzi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",67.8
+"Kwanyambalala","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",24.8
+"Mbotyi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",64.1
+"Mkozi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",38.1
+"Sikatsha","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",13.3
+"Lupatana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",14.5
+"Mkweni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",15.4
+"Msikaba","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",142
+"Mgwegwe","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",19.4
+"Mgwetyana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",22.1
+"Mtentu","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",92.8
+"Sikombe","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",102.1
+"Kwanyana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",57.8
+"Mtolane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Natural",46.5
+"Mnyameni","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",87.5
+"Mpahlanyana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",24.1
+"Mpahlane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",35.2
+"Mzamba","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Near-natural",110.7
+"Mtentwana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",33.4
+"uMthavuna","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",160
+"iSolwane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",18.7
+"iSandlu","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",32.4
+"uMbhoyibhoyi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",20.2
+"uMuntongazi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",11.5
+"iKhandalendlovu","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",31.6
+"iMpenjani","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",100.8
+"uMhlangomkhulu (South) (Umhlangankulu)","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",45.5
+"iKhaba","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",26.2
+"iMbizana","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",95.9
+"iMvutshini","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",10.7
+"iBilanhlonhlo","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Heavily modified",23.6
+"uVuzana","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",9.8
+"iKongeni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Severely / critically modified ",44.8
+"uVunguza","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",14.5
+"oHlangeni","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",70.3
+"iZotsha","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",104
+"iBhobhoyi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",47.9
+"uMbango","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Severely / critically modified ",36.7
+"uMzimkhulu","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Moderately modified",402.9
+"uMthente","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",102.5
+"uMhlangomkhulu (North) (Mhlangamkulu)","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",27.9
+"iDombe","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Heavily modified",27.1
+"iKhoshwana","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",23.1
+"iNjambili","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",67.4
+"uMzumbe","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",291.2
+"uMhlabashana","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Near-natural",32.5
+"uMhlungwa","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",43.8
+"uMfazezala","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",20.9
+"uMakhosi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",19
+"uMnamfu","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",18.1
+"uMthwalume","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",185.6
+"uMvuzi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",36.7
+"iFafa","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Heavily modified",111.2
+"uMdesingane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Heavily modified",25
+"iSezela","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",72.7
+"uMkhumbane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",24.8
+"iNkomba","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",1.1
+"uMuziwezinto","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",105.3
+"uMzimayi","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",26.6
+"Rocky Bay","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Heavily modified",5.9
+"uMphambanyoni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",84.4
+"aMahlongwa","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Moderately modified",98.1
+"uMahlongwane","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",40.7
+"uMkhomazi","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Moderately modified",331.9
+"iNgane","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Heavily modified",34.6
+"uMgababa","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",138
+"uMsimbazi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",193.7
+"iLovu","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Heavily modified",425.4
+"aManzanamtoti","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Severely / critically modified ",55.2
+"aManzimtoti","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",50.3
+"iZimbokodo","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",89.4
+"iSiphingo","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",704.4
+"Durban Bay","Subtropical Estuarine Bay","Subtropical","Not Protected","Critically Endangered","Severely / critically modified ",2815.2
+"uMngeni","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",403.5
+"uMhlanga","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",150.8
+"uMdloti","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Heavily modified",189.5
+"uThongathi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Severely / critically modified ",145.6
+"uMhlali","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Heavily modified",200.9
+"Bob’s Stream","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Heavily modified",8.9
+"uSetheni","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Near-natural",10.2
+"uMvoti","Subtropical Large Fluvially Dominated","Subtropical","Poorly Protected","Endangered","Heavily modified",288.7
+"uMdlotane","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",79.9
+"iNonoti","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",153.8
+"iZinkwazi","Subtropical Large Temporarily Closed","Subtropical","Poorly Protected","Vulnerable","Moderately modified",300.1
+"uThukela","Subtropical Large Fluvially Dominated","Subtropical","Poorly Protected","Endangered","Heavily modified",1261
+"aMatigulu/iNyoni","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Moderately modified",1183.1
+"iSiyaya","Subtropical Small Temporarily Closed","Subtropical","Moderately Protected","Vulnerable","Severely / critically modified ",88.4
+"uMlalazi","Subtropical Predominantly Open","Subtropical","Poorly Protected","Vulnerable","Moderately modified",1851.7
+"uMhlathuze","Subtropical Estuarine Lake","Subtropical","Moderately Protected","Endangered","Heavily modified",5642.3
+"Richards Bay","Subtropical Estuarine Lake","Subtropical","Moderately Protected","Endangered","Severely / critically modified ",6365.1
+"iNhlabane","Subtropical Estuarine Lake","Subtropical","Moderately Protected","Endangered","Severely / critically modified ",1875.7
+"iMfolozi/uMsunduze","Subtropical Large Fluvially Dominated","Subtropical","Poorly Protected","Endangered","Heavily modified",7903.7
+"St Lucia","Subtropical Estuarine Lake","Subtropical","Moderately Protected","Endangered","Heavily modified",67992.2
+"uMgobezeleni","Tropical Estuarine Lake","Tropical","Moderately Protected","Vulnerable","Near-natural",829.3
+"Kosi","Tropical Estuarine Lake","Tropical","Moderately Protected","Vulnerable","Near-natural",7337

@@ -36,7 +36,7 @@ author:
           
   - name:
       given: Jessica 
-      family: Da Silva
+      family: da Silva
     orcid: https://orcid.org/0000-0001-8385-1166 
     affiliations:
       - ref: sanbi  
@@ -70,16 +70,13 @@ author:
       - ref: sanbi 
               
 affiliations:
-  - id: AA 
-    number: 1 
-    name: Anura Africa/Amphibian Specialist Group
-    
+  
   - id: EWT 
-    number: 2 
+    number: 1 
     name: Endangered Wildlife Trust
    
   - id: sanbi 
-    number: 3 
+    number: 2 
     name: South African National Biodiversity Institute
 
 date: last-modified
@@ -93,9 +90,8 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/sp-img-12%20L%20Pozzi.png"
 ---
-
-------------------------------------------------------------------------
 
 ```{=html}
 <style>
@@ -109,7 +105,9 @@ google-scholar: true
 </style>
 ```
 
-![The thick-tailed bushbaby (*Otolemur crassicaudatus*) was uplisted from LC to NT based on increasing threats due to agriculture, residential and industrial development, and new pressures such as linear infrastructure development and climate change. (© Luca Pozzi)](./imgs/sp-img-12%20L%20Pozzi.png){fig-align="center"}
+![The thick-tailed bushbaby (*Otolemur crassicaudatus*) was uplisted from LC to NT based on increasing threats from to agriculture, residential and industrial development, and new pressures such as linear infrastructure development and climate change. (© Luca Pozzi)](./imgs/sp-img-12%20L%20Pozzi.png){fig-align="center"}
+
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="32%"}
@@ -153,15 +151,15 @@ google-scholar: true
 
 -   For South Africa’s endemic mammals, 42% (28) are threatened with extinction, placing full responsibility for their protection on the country.
 
--   Mammals are becoming increasingly threatened with extinction, with 11 species uplisted to higher threat categories, while three species were downlisted due to showing some improvement in status.
+-   Mammals are becoming increasingly threatened, with 11 species uplisted to higher threat categories, while only three species are now at lower risk of extinction compared to previous assessments.
 
 -   The main pressures driving change in threat status are habitat loss and degradation due to agricultural and urban expansion, climate change and extreme weather conditions, as well as over-exploitation and poaching.
 
--   A large proportion (56%) of mammals are Well Protected within the South African protected areas network; however, 25% of mammals are Poorly Protected or Not Protected, and need intervention to increase their protection level.
+-   A large proportion (56%) of mammals are Well Protected within the South African protected area network; however, 25% of mammals are Poorly Protected or Not Protected, and need intervention to increase their protection level.
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Species richness map (10 x 10 km grid) of threatened mammal species in South Africa, based on point occurrence records of the species."
+#| fig-cap: "Threatened mammal richness across South Africa, mapped as the number of threatened species per 10 x 10 km grid cell."
 #| out-width: 650px
 
 knitr::include_graphics("./imgs/mammals_in_10km_HD.png")
@@ -169,14 +167,14 @@ knitr::include_graphics("./imgs/mammals_in_10km_HD.png")
 
 ## Threat status
 
-South Africa's most recent red list update indicates that of the 336 mammals that occur in the country, 67 are threatened with extinction. Threatened mammals are concentrated mainly in the moist eastern section of South Africa, the area that has seen the highest rates of habitat loss (@fig-1). Almost 20% of mammal species fall within a threatened category (VU, EN or CR), 12% of species are Near Threatened, while close to 70% are Least Concern (@fig-2). It is concerning that around 7% of mammals are listed as Data Deficient, with not enough information available to assign a Red List category. Overall, there were 14 genuine changes threat status in this revision. Eleven species were uplisted to a higher threat category, while only three were downlisted. South Africa’s larger wildlife species face varying levels of threat, with national conservation statuses ranging from Least Concern to Endangered (See page on [status of selected wildlife species in South Africa](sp_mammal_wildlife.qmd)).
+South Africa's most recent Red List update indicates that among the 336 mammals that occur in the country, 67 are threatened with extinction. Threatened mammals occur mainly in the moist eastern parts of South Africa, the area that has seen the highest rates of habitat loss (@fig-1). Almost 20% of mammal species fall within a threatened category (assessed as Vulnerable, Endangered or Critically Endangered), 12% of species are Near Threatened, while close to 70% are Least Concern (@fig-2). It is concerning that around 7% of mammals are listed as Data Deficient, with not enough information available to determine risk of extinction. Overall, there were 14 genuine changes threat status in this revision. Eleven species were uplisted to a higher threat category, while only three were downlisted. South Africa’s larger wildlife species face varying levels of threat, with national conservation statuses ranging from Least Concern to Endangered (see page on [status of selected iconic wildlife species in South Africa](sp_mammal_wildlife.qmd)).
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Threat status of 336 South African mammal taxa assessed following the IUCN 3.1 Red List Categories and Criteria. The proportion of species in each category is shown in the larger circle, and the proportion of endemic species per category is shown in the smaller circle. The total number of taxa that have been assessed is shown inside the circle. (A) shows the threat status for all taxa; (B) shows the status for South African endemic mammals." 
+#| fig-cap: "Threat status of 336 South African mammal taxa assessed following the IUCN 3.1 Red List Categories and Criteria. A shows the proportion of all species in each category, while B is the proportion of endemic species per category." 
 #| out-width: 75%
 #| out-height: "75%"
 
@@ -388,14 +386,14 @@ gt(dat_combined_final) %>%
 
 ## Trends – the Red List Index
 
-The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of mammals was calculated for all mammal taxa that have been reassessed (n = 336). The Mammal RLI shows a declining trend from 2016, meaning that species are moving closer to extinction (@fig-3). Further, the mammal RLI is below the national average RLI, meaning mammals are doing worse then the average taxonomic group in South Africa. This is due to eleven species being uplisted to higher categories of threat (@tbl-2). Fortunately, there are three species that showed improvement in their threat status [Box 1](#box-1).
+Trend in species' risk of extinction is measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List category over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of mammals was calculated for all mammal taxa that have been reassessed (n = 336). The Mammal RLI shows a declining trend from 2016, meaning that species are moving closer to extinction (@fig-3). Further, the mammal RLI is below the national aggregated RLI, meaning mammals are doing worse than the average taxonomic group in South Africa. This is due to eleven species being uplisted to higher categories of threat (@tbl-2). Fortunately, there are three species that showed improvement in their threat status [Box 1](#box-1).
 
 ::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for mammal taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The steeper the slope, the faster the group of species is heading towards extinction (if the value is 0, all species are extinct). The aggregate represents the Red List index for all 11 groups whose trends in extinction risk have been calculated."
+#| fig-cap: "The Red List Index (RLI) for mammal taxa assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time, with steeper slopes indicating more rapid decline towards extinction. Aggregate refers to the national average RLI across all assessed taxonomic groups."
 
 library(tidyverse)
 library(nbaR)
@@ -422,7 +420,7 @@ nba_index_plot(TYPE = "RLIs",
 
 ```{r}
 #| label: tbl-2
-#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate endemism levels: * endemic and ** near-endemic."
+#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate endemism levels: * endemic."
 #| classes: plain
 
 library(dplyr)
@@ -477,11 +475,11 @@ tab_style(style = cell_text(align = "left"),
 ```
 :::
 
-Mammals that have increased their threat status are spread throughout South Africa (@fig-4). With the exception of the aardvark (*Orycteropus afer*), all the other mammals experiencing increases in threats are small mammals that are declining due to ongoing habitat loss and degradation as well as due to the construction of renewable energy infrastructure (@tbl-2). Five of the eleven threatened species are bats (@tbl-2), whose most severe threat is population decline due to mortalities caused by collisions with wind turbines.
+Mammals that have increased their threat status are spread throughout South Africa (@fig-4). With the exception of the aardvark (*Orycteropus afer*), all the other mammals facing increasing threats are small mammals that are declining due to ongoing habitat loss and degradation and the construction of renewable energy infrastructure (@tbl-2). Five of the eleven threatened species are bats (@tbl-2), whose most severe threat is high mortality due to collisions with wind turbines.
 
 ```{r}
 #| label: fig-4
-#| fig-cap: "The distribution of mammal species (10 x 10 km grid) that have increased in threat status since the last Red List assessment of mammals in 2016."
+#| fig-cap: "The number of mammal species per 10x10 km grid cell that have increased in threat status since the last Red List assessment of mammals in 2016."
 #| out-width: 650px
 
 knitr::include_graphics("./imgs/Mammals_thrt_10km_HD.png")
@@ -489,47 +487,47 @@ knitr::include_graphics("./imgs/Mammals_thrt_10km_HD.png")
 
 ::::::::::::::: {#box-1 .callout-note .species title="Box 1. Improvement in threat status of three species" collapse="true"}
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_1.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-© Cliff and Suretha Dorse
+Hartmann's mountain zebra (*Equus zebra hartmannae*) © Cliff and Suretha Dorse
 :::
 ::::
 
 ::: {.g-col-lg-8 .g-col-12 style="display:flex; flex-direction:column; justify-content:center; margin-top:-40px;"}
-### Hartmann's mountain zebra was downlisted from Vulnerable to Near Threatened.
+### Hartmann's mountain zebra was downlisted from Vulnerable to Near Threatened
 
 ------------------------------------------------------------------------
 :::
 ::::::
 
-Hartmann's mountain zebra (*Equus zebra hartmannae*) naturally occurs in the north-west portions of the Northern Cape Province in South Africa, where they are currently established in three conservation areas: Richtersveld National Park, Augrabies Falls National Park, and Goegap Provincial Nature Reserve. The subspecies has also been introduced outside of their natural distribution range in the Western Cape, Eastern Cape, North West, Free State and KwaZulu-Natal provinces. The subspecies has been downlisted from Vulnerable D1 to Near Threatened D1 due to a genuine increase in population numbers, with the current mature population within the natural distribution range estimated at least 1 230 mature individuals (compared to fewer than 1 000 estimated in 2016), exceeding the threshold for the Vulnerable D1 criterion. This population growth is evident in formally protected areas such as Goegap Nature Reserve, which more than tripled from 25 individuals in 2004 to 83 in 2022; and Augrabies Falls National Park, which increased from 8 individuals in 1996 to 208 in 2016. Private subpopulations in the Northern Cape are also contributing significantly with an estimated 960 to 1 425 wild individuals. The population size remains small and reliant on active management to remain viable, with increasing drought frequencies due to climate change posing an ongoing threat that requires continued management interventions.
+Hartmann's mountain zebra (*Equus zebra hartmannae*) naturally occurs in the north-west portions of the Northern Cape Province in South Africa, where they are currently established in three conservation areas: Richtersveld National Park, Augrabies Falls National Park, and Goegap Provincial Nature Reserve. The subspecies has also been introduced outside of their natural distribution range in the Western Cape, Eastern Cape, North West, Free State and KwaZulu-Natal provinces. The subspecies has been downlisted from Vulnerable D1 to Near Threatened D1 due to a genuine increase in population numbers, with the current mature population within the natural distribution range estimated at least 1 230 mature individuals (compared to fewer than 1 000 estimated in 2016), exceeding the threshold for the Vulnerable D1 criterion. This population growth is evident in formally protected areas such as Goegap Nature Reserve, which more than tripled from 25 individuals in 2004 to 83 in 2022; and Augrabies Falls National Park, which increased from 8 individuals in 1996 to 208 in 2016. Subpopulations on private land in the Northern Cape are also contributing significantly to the increasing population size with an estimated 960 to 1 425 wild individuals. The population size remains small and reliant on active management to remain viable, with increasing drought frequencies due to climate change posing an ongoing threat that requires continued management interventions.
 
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_2.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-© Cliff and Suretha Dorse
+Roan antelope (*Hippotragus equinus*) © Cliff and Suretha Dorse
 :::
 ::::
 
 ::: {.g-col-lg-8 .g-col-12 style="display:flex; flex-direction:column; justify-content:center; margin-top:-40px;"}
-### The Roan antelope has been downlisted from Endangered to Vulnerable.
+### The roan antelope has been downlisted from Endangered to Vulnerable.
 
 ------------------------------------------------------------------------
 :::
 ::::::
 
-The Roan antelope (*Hippotragus equinus*) naturally occurs in the Limpopo (and marginally in Mpumalanga) bushveld areas through to open savannahs in certain areas of North West, Northern Cape and Free State provinces within South Africa. The species has been downlisted from Endangered to Vulnerable because the minimum confirmed wild mature population within the natural range has increased from less than 250 individuals to less than 1 000 individuals (currently estimated at 516-602 mature individuals from a total of 860 individuals). This improvement is primarily due the role that privately owned game farms are playing, as 77% of the total estimated population occurs on private land. While the overall population estimate has increased, roan antelope numbers in state-owned protected areas have declined from 333 individuals across nine protected areas in 2016 to just 197 individuals in eight protected areas in 2024. This decline is primarily attributed to poor habitat management due to insufficient resources (such as funding and human capacity), combined with ecological factors including habitat degradation from high densities of competing herbivores like elephants and other large mammals, increased predation pressure, and the species' sensitivity to changes in grass height and composition (essential for both foraging and concealing their young).
+The roan antelope (*Hippotragus equinus*) has a natural distribution range across the bushveld areas of Limpopo (and marginally in Mpumalanga), to the open savanna in parts of North West, Northern Cape and Free State provinces within South Africa. The species has been downlisted from Endangered to Vulnerable because the minimum confirmed wild mature population within the natural range has increased from less than 250 individuals to less than 1 000 individuals (currently estimated at 516-602 mature individuals from a total of 860 individuals). This improvement is primarily due the role that privately owned game farms are playing, as 77% of the total estimated population occurs on private land. While the overall population estimate has increased, roan antelope numbers in state-owned protected areas have declined from 333 individuals across nine protected areas in 2016 to just 197 individuals in eight protected areas in 2024. This decline is primarily attributed to poor habitat management due to insufficient resources (such as funding and human capacity), combined with ecological factors including habitat degradation from high densities of competing herbivores like elephants and other large mammals, increased predation pressure, and the species' sensitivity to changes in grass height and composition (essential for both foraging and concealing their young).
 
 :::::: grid
-:::: {.g-col-lg-4 .g-col-12 .text-center}
+:::: {.g-col-lg-4 .g-col-12 .text-left}
 ![](./imgs/sp_mammal_3.png){fig-alt="zebra" style="width:100%; height:300px; object-fit:cover; border-radius:10px; display:block;"}
 
 ::: {style="font-size:90%; color:#626262; line-height:1.7;"}
-© Nico de Bruyn
+Southern elephant seal (*Mirounga leonina*) © Nico de Bruyn
 :::
 ::::
 
@@ -540,17 +538,17 @@ The Roan antelope (*Hippotragus equinus*) naturally occurs in the Limpopo (and m
 :::
 ::::::
 
-The southern elephant seal (*Mirounga leonina*) breeds exclusively on Marion Island and Prince Edward Island within South Africa's assessment region, with vagrant individuals occasionally spotted along the South African coastline. The species was downlisted from Near Threatened to Least Concern because the Marion Island population has shown sustained recovery since the mid-1990s, with pup production increasing by 47% between 1997 and 2023 (from 421 to 972 pups). Over the past four generations (1986-2023), the population has increased by approximately 29%, demonstrating a positive trajectory after decades of decline. The current mature population at Marion Island is estimated at 3 062 individuals, with the total Prince Edward Islands archipelago population likely reaching 5 500 individuals when including Prince Edward Island and non-breeding females. No serious threats have been affecting these land breeding colonies in the last 40 years and, with this continued positive trend and an absence of major pressures that could cause rapid population decline, the species now qualifies for a Least Concern listing.
+The southern elephant seal (*Mirounga leonina*) breeds exclusively on Marion Island and Prince Edward Island within South Africa's subantarctic territory, with vagrant individuals occasionally spotted along the South African coastline. The species was downlisted from Near Threatened to Least Concern because the Marion Island population has shown sustained recovery since the mid-1990s, with pup production increasing by 47% between 1997 and 2023 (from 421 to 972 pups). Over the past four generations (1986-2023), the population has increased by approximately 29%, demonstrating a positive trajectory after decades of decline. The current mature population at Marion Island is estimated at 3 062 individuals, with the total Prince Edward Islands archipelago population likely reaching 5 500 individuals when including Prince Edward Island and non-breeding females. No serious threats have been affecting these land breeding colonies in the last 40 years and, with this continued positive trend and an absence of major pressures that could cause rapid population decline, the species now qualifies for a Least Concern listing.
 :::::::::::::::
 
 ## Pressures
 
-Most mammals are threatened by habitat loss from agriculture, which impacts more than 70 species and includes annual and perennial non-timber crops, wood and pulp plantations, and livestock farming. The second most severe pressure is projected population declines linked to climate change and extreme weather. Climate change impacts, particularly prolonged droughts in the Northern Cape, have been especially severe and are causing severe declines to small mammals (see [Box 2](#box-2) for the example of the dramatic decline to the Namaqua dune mole-rat). Mining has also contributed to habitat loss, while renewable energy development is resulting in population declines for a number of bat species (@tbl-2). Illegal harvesting and trapping of wild animals (biological resource use @fig-5) remains a major concern, particularly in areas with high human densities.
+Most mammals are threatened by habitat loss to agriculture, which impacts more than 70 species and includes annual and perennial non-timber crops, wood and pulp plantations, and livestock farming. The second most severe pressure is projected population declines linked to climate change and extreme weather. Climate change impacts, particularly prolonged droughts in the Northern Cape, have been especially severe and are causing severe declines in small mammals (see [Box 2](#box-2) for the example of the dramatic decline to the Namaqua dune mole-rat). Mining has also contributed to habitat loss, while renewable energy development is resulting in population declines for a number of bat species (@tbl-2). Illegal harvesting and trapping of wild animals (biological resource use @fig-5) remains a major concern, particularly in areas with high human densities.
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s mammals, based on the relative frequency of pressures affecting threatened species, using the IUCN Threat Classification Scheme (IUCN, 2025). The percentage of threatened and Near threatened species impacted by specific pressures are presented. "
-#| out-width: 650px
+#| fig-cap: "Key pressures affecting threatened and Near Threatened South African mammals. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
+#| out.width: 100%
 
 library(stringr)
 
@@ -571,22 +569,32 @@ p + scale_x_discrete(
 ```
 
 :::: {#box-2 .callout-note .species title="Box 2. The Namaqua dune mole-rat, heading towards extinction at a rapid rate" collapse="true"}
-::: {style="margin-bottom:15px;"}
-<img src="./imgs/sp_mammal_4.png" style="width:25%; float:left; margin-right:15px; border-radius:10px; display:block;"/>
+<figure style="float:left; width:25%; margin-right:15px; text-align:left;">
+
+<img src="./imgs/sp_mammal_4.png" style="width:100%; border-radius:10px;"/>
+
+<figcaption style="color:#626262; font-size:90; margin-top:4px;">
+
+::: {.callout-note .species title="Box 2. The Namaqua dune mole-rat, heading towards extinction at a rapid rate" collapse="true"}
+Namaqua dune mole-rat (*Bathyergus janetta*) © L Luthermann
 :::
 
-The Namaqua dune mole-rat (*Bathyergus janetta*) that occurs in northern namaqualand and southern Namibia has been uplisted from Least Concerned to Endangered. Climate change and habitat destruction are the two major drivers of population reduction. Climate change is already affecting the species by the reduced rainfall causing geophytes (the underground storage organs on which the mole-rats feed) to dry out and disappear, which has reduced population densities to as low as 2 individuals/km² in some areas. Additional threats include habitat loss from diamond mining along coastal regions of southern Namibia and north-western South Africa, and severe overgrazing by small livestock (goats and sheep) in parts of Namaqualand, which degrades the vegetation quality. Recent surveys have revealed local extinctions at Alexander Bay and Port Nolloth, with only three of five known subpopulations remaining in South Africa. The species' limited dispersal ability means that even if mined areas are rehabilitated, recolonisation may not be possible, and the isolated nature of remaining subpopulations prevents any natural dispersal between them, making the species particularly vulnerable to extinction within the next 100 years.
+</figcaption>
+
+</figure>
+
+The Namaqua dune mole-rat (*Bathyergus janetta*), which occurs in northern Namaqualand and southern Namibia, has been uplisted from Least Concerned to Endangered. Climate change and habitat destruction are the two major drivers of population reduction. Climate change is already affecting the species by the reduced rainfall causing geophytes (the underground storage organs on which the mole-rats feed) to dry out and disappear, which has reduced population densities to as low as 2 individuals/km² in some areas. Additional threats include habitat loss from diamond mining along coastal regions of southern Namibia and north-western South Africa, and severe overgrazing by small livestock (goats and sheep) in parts of Namaqualand. Recent surveys have revealed local extinctions at Alexander Bay and Port Nolloth, with only three of five known subpopulations remaining in South Africa. The species' limited dispersal ability means that even if mined areas are rehabilitated, recolonisation may not be possible, and the isolated nature of remaining subpopulations prevents natural dispersal between them, making the species particularly vulnerable to extinction within the next 100 years.
 ::::
 
 ## Protection level
 
-The protection level assessment was conducted for 268 mammal species, which excluded all marine species (see [Approach](#approach) from more details). Peripheral taxa with less than 5% of their distribution in South Africa were also excluded from the analysis. Protection levels were calculated for this group of species to track changes in protection level over time. The effectiveness of protected areas in mitigating threats to species within their boundaries has also revealed some interesting case studies.
+Protection level was assessed for 268 mammal species, excluding marine species (see [Approach](#approach) from more details). Peripheral taxa with less than 5% of their distribution in South Africa were also excluded from the analysis.
 
-Close to 60% of mammals are Well Protected, with around 25% Poorly or Not Protected (@fig-6). Eighteen species were less Well Protected once Protected Area management effectiveness was accounted for, showing the importance of effective taxon-specific management interventions.
+Protection levels were calculated for mammals by intersecting mammal occurrence records with the national protected areas spatial database and calculating area or population size that was protected. Mammals were considered Well Protected if their estimated protected population size is greater than 3 876 individuals, for adult mammals that weigh 1 kg or more, or 5 137 individuals, for adult mammals weighing less than 1 kg. This is based on Minimum Viable Population estimates for mammals. Protection levels were also adjusted based on the management effectiveness of protected areas. Close to 75% of mammals are well protected, with around 20% poorly or not protected (@fig-6). Eighteen species were placed in lower protection level categories once protected area effectiveness was taken into account. A greater proportion of endemic species are Not Protected or Poorly Protected (25%), compared with non-endemic species, and only around 65% are Well Protected.
 
 ```{r}
 #| label: fig-6
-#| fig-cap: "Protection level for mammals was assessed for 268 taxa. Analysis excluded peripheral taxa (those with less than 5% of distribution range occurring in South Africa) and marine species; (A) shows the protection level for all taxa; (B) shows the protection level for South African endemics (59 taxa)."
+#| fig-cap: "Results of the mammal protection level assessment for for (A) all assessed taxa (268) and (B) South African endemics (59 taxa)."
 
 library(dplyr)
 library(tidyr)
@@ -665,7 +673,7 @@ combined_plot
 ![](./imgs/sp_mammal_5.png){fig-alt="cat" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-The Black-footed cat (*Felis nigripes*) has experienced a genuine improvement in protection level status from 2016 to 2025, due to expansion of protected areas, in particular, the Mountain Zebra-Camdeboo Protected Environment. (© Nadia van Zyl)
+Protection of the black-footed cat (*Felis nigripes*) improved between 2016 and 2025, due to expansion of protected areas, in particular, the Mountain Zebra-Camdeboo Protected Environment. (© Nadia van Zyl)
 :::
 
 ## Species recovery
@@ -682,37 +690,29 @@ library(stringr)
 
 sp_recovery <- readxl::read_excel("./data/sp_mammals_table3.xlsx") 
 
+# Note I fixed the table styling that wasn't aligned with NBA theme: don't change
+
 recovery_table <- gt(sp_recovery ) %>%
   fmt_markdown(columns = c(Taxon, Contact)) %>%  # This enables HTML/markdown rendering
   nba_tbl_theme() %>%
-  tab_options(data_row.padding = px(16),
-              table.font.size = px(12L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black") %>%
- tab_style(style = cell_fill(color = "white"), 
-           locations = cells_column_labels(columns = everything())) %>%
+   tab_style(
+            style = cell_text(align = "left"),
+            locations = cells_body()) %>%
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_column_labels(columns = everything())) %>% 
+   tab_style(
+             style = list(
+                          cell_fill(color = "#D1D3D4")),
+                          locations = cells_column_labels()) %>%
+   tab_style(
+            style = cell_borders(
+                                 sides = c("left", "right"),
+                                 color = NA,
+                                 style = "hidden",
+                                 weight = px(0)),
+                                 locations = cells_column_labels())
   
- tab_style(style = cell_borders(sides = c("left", "right"),
-                                color = "transparent",
-                                weight = px(0)),
-           locations = cells_column_labels(columns = everything())) %>%
   
- tab_style(style = cell_borders(sides = "bottom",
-                                color = "grey", 
-                                weight = px(1)),
-          locations = cells_body(columns = everything())) %>%
-  
- tab_style(style = cell_text(align = "left"),
-           locations = cells_body(columns = everything())) %>%   
- 
-tab_style(style = cell_text(align = "left"),
-           locations = cells_column_labels(columns = everything()))
-
 # Wrap in scrollable div
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", recovery_table)
 
@@ -731,35 +731,39 @@ The metapopulation of cheetahs (*Acinonyx jubatus*) in South Africa is actively 
 ::::
 
 ::: {.g-col-lg-7 .g-col-12 style="margin-left: -20px;"}
-The Endangered Wildlife Trust's Cheetah Range Expansion Project aims to increase cheetah numbers, reduce cheetah-human conflict and create genetically diverse cheetah populations while protecting the demographic integrity of these populations. This project was launched in 2011 (then known as the Cheetah Metapopulation Project) and, since 2017, has expanded its focus to include other southern African countries. The cheetah metapopulation in southern Africa currently stands at 315 mature adults and sub-adults in 67 reserves (Brown et al. 2024) and it is expected that it would have been far lower if it weren't for the work undertaken since 2011. In 2022, a Cheetah Advisory Group was established with stakeholders to promote science-based, legislative and conservation-focused cheetah management. A biodiversity management plan (BMP) for cheetahs is being drafted, which aims to ensure the long-term survival of the species in the wild. Read more about a successful relocation of [three male Cheetah from Malawi to South Africa](https://ewt.org/first-cheetah-swop/); this success story sets a precedent for the future of the Cheetah metapopulation in South Africa.
+The Endangered Wildlife Trust's Cheetah Range Expansion Project aims to increase cheetah numbers, reduce cheetah-human conflict and create genetically diverse cheetah populations while protecting the demographic integrity of these populations. This project was launched in 2011 (then known as the Cheetah Metapopulation Project) and, since 2017, has expanded its focus to include other southern African countries. The cheetah metapopulation in southern Africa currently stands at 315 mature adults and sub-adults in 67 reserves [@Brown2024] and it is expected that it would have been far lower if it weren't for the work undertaken since 2011. In 2022, a Cheetah Advisory Group was established with stakeholders to promote science-based, legislative and conservation-focused cheetah management. A biodiversity management plan (BMP) for cheetahs is being drafted, which aims to ensure the long-term survival of the species in the wild. Read more about a successful relocation of [three male Cheetah from Malawi to South Africa](https://ewt.org/first-cheetah-swop/); this success story sets a precedent for the future of the Cheetah metapopulation in South Africa.
 :::
 ::::::
 :::::::
 
 ## Knowledge gaps
 
-The most important gap in monitoring the threat and protection status of mammals is insufficient population sampling and monitoring within protected areas, particularly for small mammal species. Since 2016, several taxonomic orders, especially small mammals, have received inadequate research attention, resulting in limited peer-reviewed studies on population size, trends, and genetic diversity.
+The most critical gap in monitoring the threat and protection status of mammals is insufficient population sampling and monitoring within protected areas, particularly for small mammal species. Since 2016, several taxonomic groups, especially small mammals, have received inadequate research attention, resulting in limited peer-reviewed studies on population size, trends, and genetic diversity.
 
-In the 2025 Mammal Red List Revision, 24 species (7% of all assessed species) were classified as Data Deficient due to insufficient information to assign a Red List category. This represents a significant research priority, with cetaceans comprising the majority of Data Deficient species. All Data Deficient species require urgent baseline surveys and monitoring programs.
+In the 2025 Mammal Red List Revision, 24 species (7% of all assessed species) were classified as Data Deficient due to insufficient information to assign a Red List category. This represents a significant research priority, with Cetaceans comprising the majority of Data Deficient species. All Data Deficient species require urgent baseline surveys and monitoring programs.
 
-While evidence for climate change impacts was reviewed for all assessments, there is very little research or population monitor data to show the impact of climate change on most mammal species. Targeted research on climate vulnerability is needed across all mammal orders to inform proactive conservation strategies and adaptive management interventions.
+While evidence for climate change impacts was reviewed for all assessments, there is very little research or population monitoring data to show the impact of climate change on most mammal species. Targeted research on climate vulnerability is needed across all mammal orders to inform proactive conservation strategies and adaptive management interventions.
 
-Although genetic indicators were evaluated for this assessment, analyses were constrained by limited available data. Comprehensive population genetic studies are essential to strengthen these indicators and inform metapopulation management plans.
+Data to quantify the genetic health of all mammals using two genetic diversity indicators were collected during the 2025 Mammal Red List Revision, and analyses are now being finalised (see [Box 4](#box-4)). Early results mirror initial assessments [@mastretta2024], revealing signs of genetic erosion even in Least Concern and Near Threatened taxa (see page on [genetic diversity](../genetics/genetic-indicators.qmd). These otherwise invisible genetic declines highlight the need for more comprehensive population genetic studies and long-term genetic monitoring to safeguard these species’ evolutionary potential.
 
-Prioritising these research gaps will enhance evidence-based conservation decision-making for South Africa's mammal diversity.
+Prioritizing these research gaps will enhance evidence-based conservation decision-making for South Africa's mammal diversity.
 
 ## Approach {#approach}
 
-### Threat Status Assessment
+### Threat status assessment
 
 In this regional 2025 assessment of South Africa Eswatini and Lesotho, 336 mammal taxa were assessed using the [IUCN Red List of Threatened Species categories and criteria](https://www.iucnredlist.org/resources/categories-and-criteria) and applying the [regional adjustment criteria](https://www.iucnredlist.org/resources/regionalguidelines). Assessments were undertaken between 2023 and 2025 and involved data contributors from over 40 institutions and 164 experts. A section on genetic health ([Box 4](#box-4)) and climate change vulnerability was included for the first time. Evidence for vulnerability to climate change was established from expert observations and literature for all species, and climate modeling was undertaken for 14 species identified as vulnerable to the impacts of climate change in the 2016 assessment ([Box 5](#box-5)).
 
-::: {#box-4 .callout-note .species title="Box 4. Using the National Red List assessment process to inform the genetic health of South Africa’s mammals" collapse="true"}
-Building on national efforts to evaluate the genetic health of South Africa’s species (see [Genetic diversity](../content/genetics.qmd) section), a new project is quantifying the genetic status of all South African mammals using two Global Biodiversity Framework indicators: the Proportion of Populations Maintained and the Proportion of Populations with an Effective Population Size (Ne) above 500. Leveraging the coordination and expertise of the mammal Red List reassessments, assessors systematically compiled recent molecular evidence, identified genetic subpopulations, estimated Ne for each, and highlighted research priorities where information was lacking. A core component of this work was in standardising the use of genetic subpopulations, which were defined as groups of individuals with limited or no gene flow per generation, while metapopulations were recognised where connectivity exceeded one migrant per generation. Contemporary Ne estimates were derived from genetic studies or inferred from proxy data (e.g., census counts \[Nc\], density and area of occupancy) using Ne/Nc ratios of 0.1–0.3, adjusted for transboundary populations. This represents the first application of genetic indicators across a complete taxonomic group in South Africa, establishing a streamlined framework to inform species conservation status.
+Red List assessments were conducted in two phases. The first phase concentrated on networking with experts and organisations to obtain recent data. Four introductory workshops were held in 2023 where species experts were introduced to the project and recruited to either assess or review assessments. A call to all research institutions, conservation agencies and experts was circulated to obtain occurrence records, population count data and published datasets to update the already extensive database established for the 2016 mammal Red List. This process concluded in 2025. Data contributors included museums, university researchers, statutory conservation agencies, environmental consultancies, private protected areas, landowners, and citizen scientists. Overall, the database grew from around 500 000 occurrence records to over 7 000 000. Cleaning and synthesising these data are an ongoing task undertaken by the Endangered Wildlife Trust. The second phase involved experts contributing to updating all of the 2016 assessments with new information on population status, threats, genetics and climate change vulnerability. Assessments were undertaken continuously between 2023-2025, with the review process running in parallel between 2024 and 2025.
+
+For more details on how the IUCN Red List assessments are conducted, read [here](../integrated-findings/chl_spl_explained.qmd).
+
+::: {#box-4 .callout-note .species title="Box 4. Using the National Red List assessment process to inform the genetic health of South Africa’s mammals" collapse="false"}
+Building on national efforts to evaluate the genetic health of South Africa’s species (see [genetic diversity](../genetics/genetic-indicators.qmd) page), a new project is quantifying the genetic status of all South African mammals using two headline indicators of the Convention on Biological Diversity's Kunming-Montreal Global Biodiversity Framework: the Proportion of Populations Maintained and the Proportion of Populations with an Effective Population Size (Ne) above 500 [@hoban2024a]. Leveraging the coordination and expertise of the mammal Red List reassessments, assessors systematically compiled recent molecular evidence, identified genetic subpopulations, estimated Ne for each, and highlighted research priorities where information was lacking. A core component of this work was in standardizing the use of genetic subpopulations, which were defined as groups of individuals with limited or no gene flow per generation, while metapopulations were recognised where connectivity exceeded one migrant per generation. Contemporary Ne estimates were derived from genetic studies or inferred from proxy data, for examplee census counts (Nc), density and area of occupancy. Ne/Nc ratios of 0.1–0.3 were used, and adjusted for transboundary populations. This represents the first application of genetic indicators across a complete taxonomic group in South Africa, establishing a streamlined framework to inform species conservation status.
 :::
 
-::: {#box-5 .callout-note .species title="Box 5. Use of climate modelling in assessments" collapse="true"}
-Climate change modelling was included for the first time in the 2025 Mammal Red List assessment. The approach was piloted for fourteen mammal species that had vulnerability to climate change listed as a potential pressure in the 2016 Red List assessment. Species occurrence records collected from multiple sources, including provincial conservation bodies, museum archives and citizen science platforms, were cleaned and spatially thinned to reduce sampling bias and autocorrelation. Environmental and climatic predictor variables were selected based on species’ ecology and assessed for multicollinearity before model fitting. Three Global Climate Models from CMIP6 (GFDL-ESM4, UKESM1-0-LL, and MPI-ESM1-2-HR) were selected. Two Shared Socioeconomic Pathways were modeled: SSP126 representing a sustainable development scenario with warming limited to 2°C, and SSP585 representing a business-as-usual scenario with mean warming exceeding 4°C. Future distributions were compared to current distributions to calculate habitat maintained, lost, and gained (see (@fig-mammal-models) for an example of the spatial modules produced for the Black-footed cat). Of the 14 species assessed, the most dramatic losses in predicted future habitat distribution were for black-footed cat, riverine rabbit, vlei rat, and Verreaux’s mouse while the Bush-tailed hairy-footed gerbil is predicted to gain the most habitat (@tbl-4). Interestingly, the one species whose population has been observed to experience dramatic declines due to drought in the past 10 years, the Namaqua dune mole-rat ([Box 3](@box-3)), was not predicted to lose extensive habitat via climate models.
+::: {#box-5 .callout-note .species title="Box 5. Use of climate modelling in assessments" collapse="false"}
+Climate change modelling was included for the first time in the 2025 Mammal Red List assessment. The approach was piloted for fourteen mammal species that had vulnerability to climate change listed as a potential pressure in the 2016 Red List assessment. Species occurrence records collected from multiple sources, including provincial conservation bodies, museum archives and citizen science platforms, were cleaned and spatially resampled to reduce sampling bias and autocorrelation. Environmental and climatic predictor variables were selected based on species’ ecology and assessed for multicollinearity before model fitting. Three global climate models from the [Coupled Model Intercomparison Project Phase 6](https://pcmdi.llnl.gov/CMIP6/) (GFDL-ESM4, UKESM1-0-LL, and MPI-ESM1-2-HR) were selected. Two shared socioeconomic pathways were modeled: SSP126 representing a sustainable development scenario with warming limited to 2°C, and SSP585 representing a business-as-usual scenario with mean warming exceeding 4°C. Future distributions were compared to current distributions to calculate habitat maintained, lost, and gained. @fig-mammal-models illustrates an example of the spatial modules produced for the black-footed cat. Of the 14 species assessed, the most dramatic losses in predicted future habitat distribution were for black-footed cat, riverine rabbit, vlei rat, and Verreaux’s mouse while the bush-tailed hairy-footed gerbil is predicted to gain the most habitat (@tbl-4). Interestingly, the Namaqua dune mole-rat ([Box 3](#0){style="font-size: 11pt;"}), a species where dramatic declines due to drought have been ovserved in the past 10 years, was not predicted to lose extensive habitat via climate models. For more details see Cowan (2025)[@Cowan2025].
 :::
 
 ```{r}
@@ -767,6 +771,8 @@ Climate change modelling was included for the first time in the 2025 Mammal Red 
 #| tbl-cap: "Climate change findings - predicted habitat loss or gain by 2040."
 #| out-width: 650px
 #| classes: plain
+
+# Note that I fixed table styling to be aligned with NBA theme DO NOT CHANGE
 
 library(stringr)
 library(gt)
@@ -781,27 +787,19 @@ climate_change <- readxl::read_excel("./data/sp_mammals_table4.xlsx") %>%
 climate_change <- gt(climate_change) %>%
   fmt_markdown(columns = Taxon) %>%  # This enables HTML/markdown rendering
   nba_tbl_theme() %>%
-  tab_options(#data_row.padding = px(16),
-              table.font.size = px(13L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black") %>%
-  tab_style(style = cell_fill(color = "white"), 
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = c("left", "right"),
-                                color = "transparent",
-                                weight = px(0)),
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = "bottom",
-                                color = "grey", 
-                                weight = px(1)),
-          locations = cells_body(columns = everything())) %>%
+     tab_style(
+             style = list(
+                          cell_fill(color = "#D1D3D4")),
+                          locations = cells_column_labels()) %>%
+   tab_style(
+            style = cell_borders(
+                                 sides = c("left", "right"),
+                                 color = NA,
+                                 style = "hidden",
+                                 weight = px(0)),
+                                 locations = cells_column_labels()) %>% 
 
-  tab_style(style = cell_text(align = "center"),
+   tab_style(style = cell_text(align = "center"),
             locations = cells_column_labels(columns = c(`Average Change SSP126`, 
                                                         `Average Change SSP585`, 
                                                         `Time Period`))) %>%
@@ -821,162 +819,76 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 ```{r}
 #| label: fig-mammal-models
-#| fig-cap: "An example of the models produced: predicted changes in distribution for *Felis nigripes* (black-footed cat) under the three Global Climate Models and two Shared Socioeconomic Pathways for the time period 2011-2040."
+#| fig-cap: "An example of the models of predicted changes in distribution of  black-footed cat (*Felis nigripes*) under the three global climate models and two shared socioeconomic pathways for the time period 2011-2040."
 #| out-width: "90%"
 
 knitr::include_graphics("./imgs/sp_mammal_7.png")
 ```
 
-The Red List assessment was conducted in two phases. The first phase concentrated on networking with experts and organisations to obtain recent mammal data. Four introductory workshops were held in 2023 where species experts were introduced to the project and recruited to either assess or review assessments. A call to all research institutions, conservation agencies and experts was circulated to obtain occurrence records, population count data and literature datasets to update the already extensive database established for the 2016 Mammal Red List, and updating of these data continued between 2023 and 2025. Data contributors included museums, university researchers, statutory conservation agencies, environmental consultancies, private protected areas, landowners, and citizen scientists. Overall, the database grew from around 500 000 occurrence records to over 7 000 000. Cleaning and synthesising these data are an ongoing task undertaken by the staff of the Endangered Wildlife Trust. The second phase involved the assessments where experts contributed to updating all of the 2016 assessments with new information on population status, threats, genetics and climate change vulnerability. Assessments were undertaken continuously between 2023-2025, with the review process running in parallel between 2024 and 2025.
-
 ### Protection level assessment
 
-The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a persistence target for each species – the level of protection needed to support long-term population survival. Because persistence depends on the area protected and on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
+The species protection level assessment measures the contribution of South Africa’s protected area network to species persistence. It evaluates progress towards the protection of a population target for each species, set at the level of protection needed to support long-term population survival.
 
-Species are classified into four protection categories:
+Read more about the calculation of the protection level indicator [here](../integrated-findings/chl_spl_explained.qmd).
 
-```{r}
-
-library(gt)
-library(nbaR)
-
-# Create the data frame
-df <- data.frame(
-  "Protection level categories" = c(
-    "Well Protected",
-    "Moderately Protected",
-    "Poorly Protected",
-    "Not Protected"
-  ),
-  
-  "Percentage of biodiversity target" = c(
-    "≥100% of the persistence target met",
-    "50–99% of the target met",
-    "5–49% of the target met",
-    "<5% of the target met"
-  ),
-  check.names = FALSE
-)
-
-# Define colors
-row_colors <- list(
-  "Well Protected" = rgb(75, 110, 0, maxColorValue = 255),
-  "Moderately Protected" = rgb(132, 171, 92, maxColorValue = 255),
-  "Poorly Protected" = rgb(213, 222, 196, maxColorValue = 255),
-  "Not Protected" = rgb(166, 166, 166, maxColorValue = 255)
-)
-
-# Create gt table
-gt(df) %>%
-  tab_options(table.font.size = px(14L),
-    table.width = pct(80),
-    data_row.padding = px(14)
-  ) %>%
-
-  tab_style(
-    style = cell_text(size = px(12), weight = "bold"),  
-    locations = cells_column_labels(columns = everything())
-  ) %>%  
-    
-  tab_style(
-    style = cell_text(size = px(12), color = "white"),  
-    locations = cells_body(columns = everything())
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Well Protected"]]),
-    locations = cells_body(rows = 1)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Moderately Protected"]]),
-    locations = cells_body(rows = 2)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Poorly Protected"]]),
-    locations = cells_body(rows = 3)
-  ) %>%
-  
-  tab_style(
-    style = cell_fill(color = row_colors[["Not Protected"]]),
-    locations = cells_body(rows = 4)
-  )
-```
-
-This assessment was applied to 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses undertaken by **Hilbers et al. (2017)**.
-
-**There are two components included in the protection level assessment:**
-
-1.  Representation in protected areas – quantifies how much of the area of suitable habitat required to support the persistence target is within existing protected areas.
-
-2.  Protected area effectiveness – adjusts for how well pressures that cause species declines (such as invasive species, poaching, inappropriate fire regimes, etc.) are mitigated within protected areas.
-
-**The degree to which protected areas effectively mitigate threats are scored as:**
-
--   **Good** when the protected area is fully effective in protecting the species against major pressures;
-
--   **Fair** if the protected area provides some mitigation of major pressures on species but is not completely effective;
-
--   **Poor** if the protected area provides no mitigation of the major pressures on the species.
-
-Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
-
-The above analysis was first undertaken for NBA 2018 and was repeated in 2025 using updated species occurrence data based on the 2025 Mammal Red List Reassessment. A spatial layer of protected areas for 2018 and 2025 representing protected areas that were declared at that time were used for the two time periods. Protection levels were also adjusted based on the management effectiveness of protected areas. A technical report outlining the full methodology and limitations will be available in early 2026.
+Protection level was assessed for 268 mammal species with the persistence targets set either at the area required to protect 10 000 individuals or at a minimum viable population with standardised MVP estimates obtained from meta-analyses [@Hilbers2017].
 
 ## Acknowledgements
 
-![](./imgs/logo_mammals_1.png){style="width:100%; height:380px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
+-   [Endangered Wildlife Trust](https://ewt.org/)
+-   [Eskom](https://www.eskom.co.za/)
+-   [De Beers Group](https://www.debeersgroup.com/)
+-   [Fonds Français Pour L'environnement Mondial](https://www.ffem.fr/fr)
+-   [Agence Française de développement](https://www.afd.fr/fr)
+-   Leiden Conservation Foundation
 
-## List of contributors
+### Contributors
 
 ```{r}
+#| label: tbl-5
+#| tbl-cap: "List of contributors and reviewers of species assessments as well as reviewers of page content."
+#| out-width: 650px
 #| classes: plain
-
 library(gt)
 library(nbaR)
+
+# Note I fixed the table styling to be aligned with NBA style DO NOT CHANGE
 
 ref <- readxl::read_xlsx("./data/Expert list for NBA.xlsx") %>%
        gt() %>%
   nba_tbl_theme() %>%
-       tab_options(#data_row.padding = px(16),
-              table.font.size = px(13L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black")%>%
- tab_style(style = cell_fill(color = "white"), 
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = c("left", "right"),
-                                color = "transparent",
-                                weight = px(0)),
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = "bottom",
-                                color = "grey", 
-                                weight = px(1)),
-          locations = cells_body(columns = everything())) %>%
   tab_style(
-    style = cell_text(align = "left"),
-    locations = cells_body(columns = everything())
-  ) %>%
-  tab_style(
-    style = cell_text(align = "left"),
-    locations = cells_column_labels(columns = everything())
-  )
+            style = cell_text(align = "left"),
+            locations = cells_body()) %>%
+   tab_style(style = cell_text(align = "left"),
+            locations = cells_column_labels(columns = everything())) %>% 
+   tab_style(
+             style = list(
+                          cell_fill(color = "#D1D3D4")),
+                          locations = cells_column_labels()) %>%
+   tab_style(
+            style = cell_borders(
+                                 sides = c("left", "right"),
+                                 color = NA,
+                                 style = "hidden",
+                                 weight = px(0)),
+                                 locations = cells_column_labels())
        
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 ```
 
-## Data Sources
+## Technical documentation
 
--   Engelbrecht, FA., Steinkopf, J., Padavatan, J. & Midgley, GF. 2024. Projections of future climate change in southern Africa and the potential for regional tipping points. In: von Maltitz, G.P., et al. Sustainability of Southern African Ecosystems under Global Change. Ecological Studies, vol 248. Springer, Cham. https://doi.org/10.1007/978-3-031-10948-5_7
+**Data sources**
 
--   IUCN 2025. Threats Classification Scheme (Version 3.3). The IUCN Red List of Threatened Species. Version 2025-1. https://www.iucnredlist.org
+1.  Engelbrecht, FA., Steinkopf, J., Padavatan, J. & Midgley, GF. 2024. Projections of future climate change in southern Africa and the potential for regional tipping points. In: von Maltitz, G.P., et al. Sustainability of Southern African Ecosystems under Global Change. Ecological Studies, vol 248. Springer, Cham. <https://doi.org/10.1007/978-3-031-10948-5_7>
 
-### Recommended citation
+2.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
+
+3.  Oliver, C. 2025. Technical Report: Modelling the change in potential species distribution of 14 mammals in South Africa under predicted future climate change scenarios. Available at: <https://figshare.com/ndownloader/files/60064052>.
+
+## Recommended citation
 
 ```{r}
 #| output: asis

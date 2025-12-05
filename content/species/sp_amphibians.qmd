@@ -72,9 +72,8 @@ citation:
 
 appendix-cite-as: false
 google-scholar: true
+image: "./imgs/sp_amphibian_img_1.png"
 ---
-
-------------------------------------------------------------------------
 
 ```{=html}
 <style>
@@ -88,11 +87,9 @@ google-scholar: true
 </style>
 ```
 
-<center>
-
 ![Pickersgill's reed frog (*Hyperolius pickersgilli*) is a species that has received extensive collaborative conservation focus over the last decade in South Africa. These efforts have resulted in its protection level improving from poorly protected in 2018 to moderately protected in 2025. (© Tyrone Ping)](./imgs/sp_amphibian_img_1.png){fig-align="center"}
 
-</center>
+------------------------------------------------------------------------
 
 :::::: columns
 ::: {.column width="32%"}
@@ -120,7 +117,7 @@ google-scholar: true
 
 | [\~80%]{.inline-style-under-protected}
 | of threatened amphibians are considered
-| [under-protected]{.inline-style-indicator}
+| [Under-protected]{.inline-style-indicator}
 
 </center>
 :::
@@ -146,7 +143,7 @@ google-scholar: true
 
 ```{r}
 #| label: fig-richness-map
-#| fig-cap: "Density of threatened amphibian species (10 x 10 km grid), based on the distribution data of all threatened amphibian species."
+#| fig-cap: "Spatial distribution of threatened amphibians. The legend reflects the number of threatened plants per 10 x 10 km grid cell. Darker shading shows areas where threatened amphibians are concentrated."
 #| out-width: 650px
 
 knitr::include_graphics("./imgs/amphibians_thrt_10km_HD.png")
@@ -336,8 +333,8 @@ dat1_sel <- dat1 %>% select(1, 2:ncol(dat1)) %>% rename(Taxon = Type)
 dat2_sel <- dat2 %>% select(1, 2:ncol(dat2)) %>% rename(Taxon = Type)
 
 # Now assign custom row names (or first column values)
-dat1_sel$Taxon <- "Overall spiders"
-dat2_sel$Taxon <- "Endemic spiders"
+dat1_sel$Taxon <- "Overall amphibians"
+dat2_sel$Taxon <- "Endemic amphibians"
 
 # Combine into one table
 dat_combined_final <- bind_rows(dat1_sel, dat2_sel)
@@ -378,18 +375,18 @@ gt(dat_combined_final) %>%
 :::
 ::::
 
-:::::::::::: {#box-1 .callout-note .species title="Box 1: New knowledge informs our understanding of extinction risk." collapse="true"}
+:::::::::::: {#box-1 .callout-note .species title="Box 1. New knowledge informs our understanding of extinction risk" collapse="true"}
 ::::: {layout-ncol="2"}
 ## Moonlight mountain toadlet (*Capensibufo selenophos*)
 
 ::: left
-Thirteen amphibian species were assessed for the first time in 2024 (three assessed as EN, one as VU, four as NT, four as LC, and one as DD). Three of the four previously DD species were assessed (one as EN and two as NT). This supports the finding that DD species are often more threatened than ‘data-sufficient’ species ( species with enough information available to complete a Red List assessment) as proposed by Borgelt et al. 2022[@borgelt2022a] and demonstrates the value of prioritizing DD species for funding and dedicated surveys. An example of this is the Moonlight Mountain Toadlet (*Capensibufo selenophos*). The [Endangered Wildlife Trust](https://ewt.org/) secured funding to carry out extensive surveys between 2020 and 2023, and drive habitat protection processes with landowners. Seven previously unknown subpopulations of *C. selenophos* were confirmed across the Akkedisberg , Kleinrivier and Soetmuisberg Mountains in the Western Cape.
+Thirteen amphibian species were assessed for the first time in 2024 (three assessed as EN, one as VU, four as NT, four as LC, and one as DD). Three of the four previously DD species were assessed (one as EN and two as NT). This supports the finding that DD species are often more threatened than ‘data-sufficient’ species (species with enough information available to complete a Red List assessment) as proposed by Borgelt et al. 2022[@borgelt2022a] and demonstrates the value of prioritizing DD species for funding and dedicated surveys. An example of this is the Moonlight Mountain Toadlet (*Capensibufo selenophos*). The [Endangered Wildlife Trust](https://ewt.org/) secured funding to carry out extensive surveys between 2020 and 2023, and drive habitat protection processes with landowners. Seven previously unknown subpopulations of *C. selenophos* were confirmed across the Akkedisberg , Kleinrivier and Soetmuisberg Mountains in the Western Cape.
 :::
 
 ::: right
 ![](./imgs/Capensibufo%20selenophos_Bionerds.png){fig-alt="Moonlight Mountain Toadlet" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Keir Lynch]{style="width:75%; color:#626262;"}
 
-Knowledge on threats were improved, and one property (approximately 700 ha) has been declared as a Nature Reserve through the [Biodiversity Stewardship](https://www.sanbi.org/biodiversity/science-into-policy-action/mainstreaming-biodiversity/biodiversity-and-land-use-project/biodiversity-stewardship/) process and is being actively managed for control of alien invasive plants. This new information resulted in a non-genuine change (change in status due change in taxonomy, better available data or improved understanding of the criteria, see Butchart et al. (2004)[@butchart2004a] for further information) from DD to EN based on an EOO of 478 km2, and improved understanding of threats including deterioration of habitat quality, and suspected declines.
+Knowledge on threats were improved, and one property (approximately 700 ha) has been declared as a Nature Reserve through the [Biodiversity Stewardship](https://www.sanbi.org/biodiversity/science-into-policy-action/mainstreaming-biodiversity/biodiversity-and-land-use-project/biodiversity-stewardship/) process and is being actively managed for control of alien invasive plants. This new information resulted in a non-genuine change (change in status due change in taxonomy, better available data or improved understanding of the criteria, see Butchart et al. (2004)[@butchart2004a] for further information) from DD to EN based on an EOO of 478 km^2^, and improved understanding of threats including deterioration of habitat quality, and suspected declines.
 :::
 :::::
 
@@ -421,7 +418,7 @@ The Table mountain ghost frog (*Heleophryne rosei*) provides an interesting exam
 ::: right
 ![](./imgs/sp_amphibian_img_2.png){fig-alt="Table Mountain Ghost" style="width:100%; height:300px; object-fit:cover; border-radius:10px; margin-bottom:10px;"} [© Joshua Weeber]{style="width:75%; color:#626262;"}
 
-specialist is still extremely range-restricted and experiencing continued habitat loss, the project revealed that the location and source of known threats are diverse and the species is therefore considered to occur at 2-4 threat locations (different streams on Table Mountain). Data from this project are now being used to inform management frameworks for headwater mountain streams, emphasising the importance of fine-scale studies in amphibian conservation in South Africa, and supporting the view that priority research needs to inform conservation of amphibians [@campbell2023a].
+specialist is still extremely range-restricted and experiencing continued habitat loss, the project revealed that the location and source of known threats are diverse and the species is therefore considered to occur at 2-4 threat locations (different streams on Table Mountain), meaning it now qualifies for listing as Endangered. Data from this project are now being used to inform management frameworks for headwater mountain streams, emphasising the importance of fine-scale studies in amphibian conservation in South Africa, and supporting the view that priority research needs to inform conservation of amphibians [@campbell2023a].
 :::
 :::::
 ::::::::::::
@@ -432,14 +429,14 @@ The trend in species status over time was measured using the globally recognised
 
 Thirty species have had a change in status since the latest assessment (2016 to 2025). However, only two of these are genuine changes: *Breviceps macrops* – desert rain frog (NT to VU) and *Amietia hymenopus* - Phofung river frog (NT to VU). These species are spatially isolated; however, they share some pressures, as both *Breviceps macrops* and *Amietia hymenopus* are likely to be impacted by climate change. The former is restricted to the dry West Coast of South Africa and relies on limited precipitation in the form of fog; and the latter occurs in streams along the Drakensberg Escarpment and Lesotho, which may face increased drying and extreme weather events. Both species are also impacted by the expansion of mining activities, *B. macros* specifically on the West Coast, due to the future planned development of Green Hydrogen and *A. hymenopus* in the highlands of Lesotho into South Africa ([Table 2](#tbl-2)).
 
-The remaining species that have had a change in their status were considered to be non-genuine changes due to new information, taxonomic changes, application of criteria, etc. There has been no improvement in the status of amphibians during the assessment period. Important to note is that amphibians remain threatened by pressures that have not ceased and are increasing in most instances. Of particular concern are the impacts of invasive alien species, which affect 83% of threatened species, particularly in cases where the spread of invasive species is continuing or increasing. Impacts of this threat include drying out and replacement of habitat by alien invasive plants, diseases such as *chytridiomycosis*, and competition with problematic native species ([Box 2](#box-2)).
+The remaining species that have had a change in their status were considered to be non-genuine changes due to new information, taxonomic changes, application of criteria, (see [Box 1](#box-1) for examples). There has been no improvement in the status of amphibians during the assessment period. Important to note is that amphibians remain threatened by pressures that have not ceased and are increasing in most instances. Of particular concern are the impacts of invasive alien species, which affect 83% of threatened species, particularly in cases where the spread of invasive species is continuing or increasing. Impacts of this threat include drying out and replacement of habitat by alien invasive plants, diseases such as *chytridiomycosis*, and competition with problematic native species ([Box 2](#box-2)).
 
 ::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-3
-#| fig-cap: "The Red List Index (RLI) for amphibian species assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is towards extinction (if the value is 0, all species are extinct)."
+#| fig-cap: "The Red List Index (RLI) for amphibian species assessed in South Africa. The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is towards extinction (if the value is 0, all species are extinct). Aggregate refers to the national average RLI across all assessed taxonomic groups."
 
 library(tidyverse)
 library(nbaR)
@@ -592,9 +589,9 @@ knitr::include_graphics("./imgs/amphibians_in_10km_HD.png")
 
 ## Pressures
 
-Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@re2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 76% of threatened and Near Threatened species. These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes.
+Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@rewild2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 76% of threatened and Near Threatened species. These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes.
 
-::::::::::::::::: {#box-2 .callout-note .species title="Box 2: Invasive species impacts on range-restricted amphibians" collapse="true"}
+::::::::::::::::: {#box-2 .callout-note .species title="Box 2. Invasive species impacts on range-restricted amphibians" collapse="true"}
 ::::::: {layout-ncol="2"}
 ::: left
 The Critically Endangered rough moss frog, (*Arthroleptella rugosa*) is restricted to the Klein Swartberg Mountain in the Western Cape. Within less than a decade, large portions of its seepage habitat in the fynbos have been invaded by cluster pines (*Pinus pinaster*). A study using bioacoustics to estimate frog densities found that numbers at invaded sites were directly affected by *P. pinaster* infestations [@angus2023a]. At invaded sites, call densities (and hence population numbers) were reduced, while at uninvaded sites call densities were notably higher. These results confirm previous
@@ -608,7 +605,7 @@ The Critically Endangered rough moss frog, (*Arthroleptella rugosa*) is restrict
 :::
 
 ::: {style="margin-top:-10px;"}
-suggestions that invasive pine trees cause population declines in *A. rugosa*.
+suggestions that invasive pine trees cause population declines in *Arthroleptella rugosa*.
 :::
 :::::
 :::::::
@@ -617,7 +614,7 @@ suggestions that invasive pine trees cause population declines in *A. rugosa*.
 
 ::::::: {layout-ncol="2"}
 ::: left
-These findings were used as motivation for conservation action and a joint initiative through CapeNature, the Endangered Wildlife Trust, Fynbos Trust, 18 landowners and the Klein Swartberg Conservancy, resulted in adaptive fire management to control pine invasion across the species range. An ecological burn was carried out, which covered approximately 4 000 hectares, and eradicated pines from areas where *A. rugosa* occurs. Post-fire monitoring has confirmed increasing numbers of frogs, and a 10-year management plan has been developed with the Conservancy, including ongoing alien plant management. This is a great example of conservation needs being guided by expert knowledge and Red List assessment information, which have also resulted in the designation of this species entire range as an [Alliance for Zero Extinction](https://zeroextinction.org/) site, thus gaining international
+These findings were used as motivation for conservation action and a joint initiative through CapeNature, the Endangered Wildlife Trust, Fynbos Trust, 18 landowners and the Klein Swartberg Conservancy, resulted in adaptive fire management to control pine invasion across the species range. An ecological burn was carried out, which covered approximately 4 000 hectares, and eradicated pines from areas where *Arthroleptella rugosa* occurs. Post-fire monitoring has confirmed increasing numbers of frogs, and a 10-year management plan has been developed with the Conservancy, including ongoing alien plant management. This is a great example of conservation needs being guided by expert knowledge and Red List assessment information, which have also resulted in the designation of this species entire range as an [Alliance for Zero Extinction](https://zeroextinction.org/) site, thus gaining international
 :::
 
 ::::: right
@@ -646,7 +643,7 @@ attention, strengthening partnerships and work with landowners towards formal ha
 :::::
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>A. rugosa</i> through the use of a controlled ecological burn. (© Alouis and Keir Lynch Bionerds)
+Before and after images showing a reduction in pine invasion from July 2021 (left) to April 2022 (right) at the type locality of <i>Arthroleptella rugosa</i> through the use of a controlled ecological burn. (© Alouis and Keir Lynch Bionerds)
 :::
 :::::::::::::::::
 
@@ -654,7 +651,7 @@ This is followed by habitat loss and degradation due to modification of natural 
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s amphibians, based on the percentage of impacted threatened species, using the IUCN Threat Classification Scheme (IUCN, 2025)[@i2025a]."
+#| fig-cap: "Key pressures on South Africa’s amphibians, based on the percentage of impacted threatened and Near Threatened species, using the IUCN Threat Classification Scheme [@i2025a]."
 #| fig-align: center
 #| out.width: 100%
 
@@ -679,12 +676,12 @@ p + scale_x_discrete(
 
 ```
 
-::::::::::: {#box-3 .callout-note .species title="Box 3: The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
+::::::::::: {#box-3 .callout-note .species title="Box 3. The impact of habitat loss and degradation on South Africa’s amphibians" collapse="true"}
 :::::: {layout-ncol="2"}
 ## Habitat loss to agriculture and plantations
 
 ::: left
-All 30 of South Africa’s threatened (CR, EN, VU) frog species are affected in one way or another by habitat loss and degradation (driven by agriculture, natural systems modifications, residential and commercial development, energy production and mining, and linear infrastructure for transportation and service corridors). While, agriculture is globally the main driver of threat to amphibians, impacting 77% of threatened frog species [@re2023a]. The Endangered Amathole toad (*Vandijkophrynus amatolicus*) occurs in an area of the Eastern Cape highlands where original grassland habitat has been heavily transformed by both agriculture and timber production. However, working with livestock farmers to improve grazing management
+All 30 of South Africa’s threatened (CR, EN, VU) frog species are affected in one way or another by habitat loss and degradation (driven by agriculture, natural systems modifications, residential and commercial development, energy production and mining, and linear infrastructure for transportation and service corridors). While, agriculture is globally the main driver of threat to amphibians, impacting 77% of threatened frog species [@rewild2023a]. The Endangered Amathole toad (*Vandijkophrynus amatolicus*) occurs in an area of the Eastern Cape highlands where original grassland habitat has been heavily transformed by both agriculture and timber production. However, working with livestock farmers to improve grazing management
 :::
 
 :::: right
@@ -837,7 +834,7 @@ The previously Critically Endangered micro frog (*Microbatrachella capensis*), i
 
 As part of the Red List process for southern Africa, the Amphibian Ark (AArk) joined the expert workshop and worked with coordinators to produce a Conservation Needs Assessment (CNA) for threatened South African amphibian species [@brunner2025a]. This used a process developed by AArk to determine which species have the most urgent conservation needs, based on action plans that combine in situ and ex situ actions, as appropriate. Six South African species were identified for ex situ conservation actions, including ex situ rescue (n = 5) and ex situ research (n = 1). Due to their level of threat, the five species recommended for ex situ rescue are also recommended for biobanking. Twenty-five species were recommended for in situ conservation, and 34 species are recommended for in situ research, while 15 species were identified for conservation education programs.
 
-In addition, subsequent work to identify species requiring urgent recovery under Target 4 of the Kunming-Montreal Global Biodiversity Framework resulted in 10 species being prioritised. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
+In addition, subsequent work to identify species requiring urgent recovery under [Target 4](https://www.cbd.int/gbf/targets/4) of the Kunming-Montreal Global Biodiversity Framework resulted in 10 species being prioritised. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
 
 South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behaviour and ecology (@tbl-3). These activities were partially guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments (2025). While progress has been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context, with limited resources in general, and the constant need to balance development needs with conservation efforts.
 
@@ -852,7 +849,8 @@ library(dplyr)
 library(gt)
 
 # 1. Read Excel file
-recovery_projects <- readxl::read_xlsx("./data/sp_am_table5.xlsx")
+recovery_projects <- readxl::read_xlsx("./data/sp_am_table5.xlsx")%>%
+                     mutate(`Get involved` = ifelse(is.na(`Get involved`), "", `Get involved`)) 
 
 # 2. Format Contact and Get involved as clickable
 recovery_projects <- recovery_projects %>%
@@ -866,8 +864,7 @@ recovery_projects_gt <- recovery_projects %>%
   gt() %>%
   fmt_markdown(columns = c("Get involved")) %>%
 
-  tab_options(#data_row.padding = px(10),
-              table.width = pct(100),
+  tab_options(table.width = pct(100),
               column_labels.border.top.style = "solid",
               column_labels.border.top.width = px(2),
               column_labels.border.top.color = "black",
@@ -876,7 +873,7 @@ recovery_projects_gt <- recovery_projects %>%
               column_labels.border.bottom.color = "black") %>%
 
  
-  tab_style(style = cell_text(size = px(12)),  
+  tab_style(style = cell_text(size = px(12), weight = "bold"),  
             locations = cells_column_labels(columns = everything())) %>%
   
     tab_style(style = cell_text(size = px(12)),  
@@ -911,7 +908,7 @@ The example of coordinated conservation action for Pickersgill’s reed frog (*H
 ![](./imgs/sp_amphibian_img_12.png){style="width:100%; height:auto; max-height:600px; object-fit:cover; border-radius:10px; margin-bottom: 5px;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7; object-fit:cover; border-radius:10px;"}
-Partnering for Pickersgill’s reed frog’ - a sign put up at various *H. pickersgilli* sites explaining the Biodiversity Management Plan.
+Partnering for Pickersgill’s reed frog (*Hyperolius pickersgilli*) - a sign put up at various *H. pickersgilli* sites explaining the Biodiversity Management Plan.
 :::
 ::::
 
@@ -925,11 +922,14 @@ In the red listing process for amphibians, Criterion B (Geographic range informa
 
 ## Approach
 
-**Threat status assessment**
+### Threat status assessments
 
-All previously assessed South African amphibians were reassessed as part of the Southern African Amphibian Red List Project (SAARLP) that commenced in 2023, as part the third global amphibian assessment process, supported by the IUCN Amphibian Specialist Group and Amphibian Red List Authority. A total of 135 species were assessed for publication on the IUCN Red List in 2025 and 2026, including 11 newly described species since 2016 [@frost2025a]. Over 150 000 records were collated for the assessments, including from various institutions and verified citizen science data. Twenty experts representing thirteen organisations contributed to the assessment process.
+All previously assessed South African amphibians were reassessed as part of the Southern African Amphibian Red List Project (SAARLP) that commenced in 2023, as part the third global amphibian assessment process, supported by the IUCN Amphibian Specialist Group and Amphibian Red List Authority. A total of 135 species were assessed for publication on the IUCN Red List in 2025 and 2026, including 11 newly described species since 2016 [@frost2025a]. Over 150 000 records were collated for the assessments, including from various institutions and verified citizen science data. Twenty experts representing thirteen organisations contributed to the assessment process. 
 
-**Protection level assessment**
+See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_rls_explained.qmd).
+
+
+### Protection level assessments
 
 The species protection level assessment measures how effectively South Africa’s protected area network safeguards a species. It evaluates progress towards achieving a 'persistence target' for each species – the level of protection needed to support long-term population survival. Because persistence depends not only on the area protected but also on the ability of protected areas to reduce pressures that drive population decline, a protected area effectiveness factor is included in the calculation.
 
@@ -1014,42 +1014,64 @@ This assessment was applied to 133 amphibian species with the persistence target
 
 **The degree to which protected areas effectively mitigate threats are scored as:**
 
--   Good, when the protected area is fully effective in protecting the species against major threats;
+-   **Good**, when the protected area is fully effective in protecting the species against major threats;
 
--   Fair if the protected area provides some mitigation of major threats to species but is not completely effective;
+-   **Fair** if the protected area provides some mitigation of major threats to species but is not completely effective;
 
--   Poor if the protected area provides no mitigation of the major threats to the species.
+-   **Poor** if the protected area provides no mitigation of the major threats to the species.
 
 Effectiveness ratings were provided by provincial and national conservation agencies responsible for protected area management as well as taxon experts.
 
 The above analysis was first undertaken for NBA 2018 and was repeated in 2025 using updated species occurrence data based on the 2025 Amphibian Red List Reassessment. A spatial layer of protected areas for 2018 and 2025 representing protected areas that were declared at that time were used for the two time periods. A technical report outlining the full methodology and limitations will be available in February 2026.
 
-## Acknowledgement
+See details about how the protection level indicator was conducted [here](../integrated-findings/chl_spl_explained.qmd).
 
-:::::: {layout-ncol="3"}
-::: right
-## [Coordinated by:]{style="font-size:0.8em;"}
+## Acknowledgements
 
-<img src="./imgs/logo_amphibians_1.png" width="85%"/>
+:::::: grid
+::: {.g-col-lg-4 .g-col-12}
+**Coordinated by:**
+
+------------------------------------------------------------------------
+
+-   [Anura Africa](https://www.anuraafrica.org/)
+
+-   [Endangered Wildlife Trust](https://ewt.org/)
+
+-   [Whitley Fund for Nature](https://whitleyaward.org/)
 :::
 
-::: middle
-## [Sponsored by:]{style="font-size:0.8em;"}
+::: {.g-col-lg-4 .g-col-12}
+**Sponsored by:**
 
-<img src="./imgs/logo_amphibians_2.png" width="85%"/>
+------------------------------------------------------------------------
+
+-   [Anglo American](https://www.angloamerican.com/)
+
+-   [Re:wild](https://www.rewild.org/)
+
+-   [Synchronicity Earth](https://www.synchronicityearth.org/)
+
+-   [Rainforest Trust](https://www.synchronicityearth.org/)
 :::
 
-::: left
-## [Supported by:]{style="font-size:0.8em;"}
+::: {.g-col-lg-4 .g-col-12}
+**Supported by:**
 
-<img src="./imgs/logo_amphibian_3.png" width="100%"/>
+------------------------------------------------------------------------
+
+-   [IUCN SSC Amphibian Specialist Group](https://www.iucn-amphibians.org/)
+
+-   [South African National Biodiversity Institute](https://www.sanbi.org/)
 :::
 ::::::
+
+### Contributors
 
 ::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-4
-#| tbl-cap: List of contributors to the assessment of South Africa amphibians and other activities related to amphibian conservation.   
+#| tbl-cap: List of contributors and reviewers to the assessment of South Africa amphibians and other activities related to amphibian conservation.   
 #| classes: plain
 
 library(readxl)
@@ -1059,67 +1081,45 @@ library(gt)
 # 1. Read Excel file
 recovery_projects <- readxl::read_xlsx("./data/sp_am_table4.xlsx")
 
-# 2. Format ORCID number as clickable links and replace NA with blank
-recovery_projects <- recovery_projects %>%
-  mutate(`ORCID number` = case_when(
-    is.na(`ORCID number`) ~ "",
-    grepl("^http", `ORCID number`) ~ paste0('<a href="', `ORCID number`, '" target="_blank">', 
-                                             gsub("https://orcid.org/", "", `ORCID number`), 
-                                             '</a>'),
-    grepl("^[0-9]{4}-[0-9]{4}", `ORCID number`) ~ paste0('<a href="https://orcid.org/', `ORCID number`, '" target="_blank">', 
-                                                          `ORCID number`, 
-                                                          '</a>'),
-    TRUE ~ ""
-  ))
+
 
 # 3. Build gt table and render HTML links
-recovery_projects_gt <- recovery_projects %>%
+ref <- recovery_projects %>%
   gt() %>%
-  
-  # Add padding to "Author affiliation/s" column (not "Reason for change")
-  text_transform(
-    locations = cells_body(columns = `Author affiliation/s`),
-    fn = function(x) {
-      paste0("<div style='padding: 8px 12px; line-height: 1.6;'>", x, "</div>")
-    }
-  ) %>%
-  
-  fmt_markdown(columns = c(`ORCID number`)) %>%
-  #nbaR::nba_tbl_theme() %>%
-  tab_options(table.width = pct(100),
-              #data_row.padding = px(10),
+ nba_tbl_theme() %>%
+       tab_options(#data_row.padding = px(16),
+              table.font.size = px(13L),
+              table.width = pct(100),
               column_labels.border.top.style = "solid",
               column_labels.border.top.width = px(2),
               column_labels.border.top.color = "black",
               column_labels.border.bottom.style = "solid",
               column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black") %>%
-  
-  #tab_style(style = cell_fill(color = "gray90"),
-           # locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_text(size = px(12)),  
-            locations = cells_column_labels(columns = everything())) %>%
-  
-    
-  tab_style(style = cell_text(size = px(12)),  
-            locations = cells_body(columns = everything())) %>%
-  
-  tab_style(style = cell_text(align = "left", v_align = "top"),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_text(align = "left"),
-            locations = cells_body(columns = everything())) %>%
-  
-cols_width(Contributor ~ pct(15),
-           `Author affiliation/s` ~ pct(55),
-           `ORCID number` ~ pct(30))
-# 4. Render
-recovery_projects_gt
+              column_labels.border.bottom.color = "black")%>%
+ tab_style(style = cell_fill(color = "white"), 
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = c("left", "right"),
+                                color = "transparent",
+                                weight = px(0)),
+           locations = cells_column_labels(columns = everything())) %>%
+  tab_style(style = cell_borders(sides = "bottom",
+                                color = "grey", 
+                                weight = px(1)),
+          locations = cells_body(columns = everything())) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_body(columns = everything())
+  ) %>%
+  tab_style(
+    style = cell_text(align = "left"),
+    locations = cells_column_labels(columns = everything())
+  )
+       
+htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 ```
 :::
 
-### Recommended citation
+## Recommended citation
 
 ```{r}
 #| output: asis

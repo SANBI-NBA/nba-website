@@ -49,7 +49,6 @@ format:
       echo: false
 ---
 
-
 *Habitat loss and the impact of invasive alien plant species are the dominant factors in determining ecosystem threat status in the terrestrial realm. Croplands established in the last two centuries have replaced and fragmented many ecosystem types, but in recent years expanding human settlements have become a key factor in Red List of Ecosystems assessments for the terrestrial realm.*
 
 ![Eastern Highveld Grassland - Endangered. (©Anisha Dayaram)](./imgs/EasternHighveldGrassland_dayaram_crop.png)
@@ -79,8 +78,6 @@ format:
 :::::
 
 ------------------------------------------------------------------------
-
-\
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # devtools::install_github("SANBI-NBA/nbaR", force = T)
@@ -276,7 +273,7 @@ At the national level, South Africa’s overall RLIe declined slightly from 0.82
 
 ```{r, echo=FALSE, fig.width = 10, fig.height = 6}
 #| label: tbl-RLIe
-#| tbl-cap: "Red List Index of terrestrial ecosystems at the South African biome level"
+#| tbl-cap: "Red List Index of terrestrial ecosystems at the South African biome level. In the legend, aggregate refers to the national average RLIe across all terrestrial ecosystems."
 
 # ---- Data Prep ----
 biomes <- RLIe %>%
@@ -338,7 +335,9 @@ The terrestrial RLE assessment follows the IUCN RLE 2.0 in an approach described
 
 ## Technical documentation
 
-**Code repository**: <https://github.com/askowno/RLE_terr>
+**Code repository**
+
+Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_terr>
 
 **Key publications**
 

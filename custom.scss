@@ -531,5 +531,34 @@ a.km-tile p {
   display: none;
 }
 
+/* Flexible image-text combos */
 
+.flex-pair {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: nowrap; /* keep side-by-side by default */
+}
+
+/* Text fills remaining space */
+.flex-text {
+  flex: 1;
+  min-width: 200px; /* ensures readability on small screens */
+}
+
+.flex-img {
+  max-width: 40%;
+  height: auto;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 700px) {
+  .flex-pair {
+    flex-direction: column;  /* stack items vertically */
+    flex-wrap: nowrap;        /* no wrapping needed */
+  }
+  .flex-img {
+    max-width: 100%;          /* image fills available width */
+  }
+}
 
