@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,6 +88,7 @@ background: #adb5bd;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -120,6 +121,10 @@ background: #adb5bd;
   <li class="nav-item">
     <a class="nav-link active" href="../../contents.html" aria-current="page"> 
 <span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/context/media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -367,14 +372,14 @@ background: #adb5bd;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland ecological condition</span></a>
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on freshwater ecosystems</span></a>
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -463,13 +468,7 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
   </div>
 </li>
       </ul>
@@ -519,23 +518,12 @@ background: #adb5bd;
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -548,11 +536,11 @@ background: #adb5bd;
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -609,11 +597,11 @@ background: #adb5bd;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -624,15 +612,15 @@ background: #adb5bd;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wildlife species in South Africa</span></a>
+ <span class="menu-text">Selected iconic wildlife species</span></a>
   </div>
 </li>
       </ul>
@@ -643,12 +631,23 @@ background: #adb5bd;
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seabirds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -687,19 +686,19 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater Crabs</span></a>
+ <span class="menu-text">Freshwater crabs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anostraca</span></a>
+ <span class="menu-text">Fairy shrimps (Anostraca)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+ <span class="menu-text">Dragonflies and damselflies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -711,7 +710,7 @@ background: #adb5bd;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sparids</span></a>
+ <span class="menu-text">Seabreams (Sparids)</span></a>
   </div>
 </li>
       </ul>
@@ -803,15 +802,15 @@ background: #adb5bd;
 </tr>
 <tr class="even">
 <td>Biotic and abiotic monitoring</td>
-<td>Long-term, focused, site-based monitoring of biodiversity and pressures on biodiversity, as well as the monitoring of specific species at larger scales (e.g., harvested species, invasive alien species, etc.) remain insufficient. While there are some long-term site-based and species monitoring programmes, many suffer from a lack of resources. Abiotic information (e.g., water turbidity, sediments, temperature, pesticide load, microplastics, etc.) is crucial for mapping ecosystems and their condition, and much of this information is not collected and/or poorly understood in terms of their impacts on ecological condition. Further investment in strategic monitoring and data systems is needed. See also key message C2.</td>
+<td>Long-term, focused, site-based monitoring of biodiversity and pressures on biodiversity, as well as the monitoring of specific species at larger scales (e.g., harvested species, invasive alien species, etc.) remain insufficient. While there are some long-term site-based and species monitoring programmes, many suffer from a lack of resources. Abiotic information (e.g., water turbidity, sediments, temperature, pesticide load, microplastics, etc.) is crucial for mapping ecosystems and their condition, and much of this information is not collected and/or poorly understood in terms of their impacts on ecological condition. Further investment in strategic monitoring and data systems is needed. See also key message <a href="../../content/key-messages/kmc2.html">C2</a>.</td>
 </tr>
 <tr class="odd">
 <td>Incorporating genetic diversity measures</td>
-<td>There is ongoing progress on emerging genetic diversity indicators (see the genetic diversity indicators section), however the species and taxonomic groups included in these indicators are a small sample and coverage needs to be expanded.</td>
+<td>There is ongoing progress on emerging <a href="../../content/genetics/genetic-indicators.html">genetic diversity indicators</a>, however the species and taxonomic groups included in these indicators are a small sample and coverage needs to be expanded.</td>
 </tr>
 <tr class="even">
 <td>Taxonomic coverage and taxonomists</td>
-<td>Although progress has been made for vertebrate groups, particularly amphibians and freshwater fishes, many invertebrate groups lack essential information. Initiatives such as the SeaMap and REFRESH projects have helped fill some gaps in marine and freshwater invertebrate data, yet limited taxonomic capacity, few full-time taxonomist positions and declining collections expertise remain major constraints. While ongoing efforts of the Natural Science Collections Facility are helping to strengthen capacity, connect expertise and coordinate new collaborative approaches, revitalising taxonomic efforts and building capacity across all taxonomic groups remain urgent priorities.</td>
+<td>Although progress has been made for vertebrate groups, particularly amphibians and freshwater fishes, many invertebrate groups lack essential information. Initiatives such as the <a href="https://fbip.co.za/news/fbip-seamap-mapping-marine-biodiversity-to-detect-change-support-ocean-economy/">SeaMap</a> and <a href="https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/">REFRESH</a> projects have helped fill some gaps in marine and freshwater invertebrate data, yet limited taxonomic capacity, few full-time taxonomist positions and declining collections expertise remain major constraints. While ongoing efforts of the <a href="https://nscf.org.za/">Natural Science Collections Facility</a> are helping to strengthen capacity, connect expertise and coordinate new collaborative approaches, revitalising taxonomic efforts and building capacity across all taxonomic groups remain urgent priorities.</td>
 </tr>
 <tr class="odd">
 <td>Improved classification of ecosystem types and an integrated ecosystem classification system</td>
@@ -819,7 +818,7 @@ background: #adb5bd;
 </tr>
 <tr class="even">
 <td>Measuring and mapping ecological condition and pressures data</td>
-<td>Ecological condition data underpins our ability to assess the risk of collapse of ecosystems. Since the NBA 2018, new data on invasive alien plant species density and distribution have enhanced our RLE assessments on land, and focussed research on rangeland condition is starting to bear fruit – though comprehensive data sets will only be finalised in 2026-2027. Climate change models have improved and inform species assessments, and will be used in future ecosystem assessments. Marine pressure data are outdated and limits reliable condition assessment in the marine realm. Recently, extensive ecological modelling work has resulted in comprehensive wetland health data. The automated WET-Health 2.0 links seamlessly to the widely used field assessment methodology, and allows broad assumptions to be drawn on which driving component (hydrology, water quality, vegetation or geomorphology) is most impacted per wetland, each wetland buffer and the wetland’s receiving catchment. More work is required on microplastics, pesticides and other pollutants in order for such data to be useful in ecosystem and species assessments</td>
+<td>Ecological condition data underpins our ability to assess the risk of collapse of ecosystems. Since the NBA 2018, <a href="../../content/terrestrial/ter_ets.html#approach">new data on invasive alien plant species density and distribution have enhanced our RLE assessments on land</a>, and focussed research on rangeland condition is starting to bear fruit – though comprehensive data sets will only be finalised in 2026-2027. Climate change models have improved and inform species assessments, and will be used in future ecosystem assessments. Marine pressure data are outdated and limits reliable condition assessment in the marine realm. Recently, extensive ecological modelling work has resulted in comprehensive wetland health data. The automated <a href="https://wrcwebsite.azurewebsites.net/wp-content/uploads/mdocs/TT%20820_Final%20web.pdf">WET-Health 2.0</a> links seamlessly to the widely used field assessment methodology, and allows broad assumptions to be drawn on which driving component (hydrology, water quality, vegetation or geomorphology) is most impacted per wetland, each wetland buffer and the wetland’s receiving catchment. More work is required on microplastics, pesticides and other pollutants in order for such data to be useful in ecosystem and species assessments.</td>
 </tr>
 <tr class="odd">
 <td>Mapping and assessing ecological infrastructure</td>
@@ -827,15 +826,15 @@ background: #adb5bd;
 </tr>
 <tr class="even">
 <td>Indicators linking biodiversity and human wellbeing</td>
-<td>NBA 2018 showcased several facts and statistics via the <a href="http://hdl.handle.net/20.500.12143/8052">Compendium of Benefits of Biodiversity</a>. Unfortunately few of these have been updated. The Multidimensional Biodiversity Index Project (2022-2024) piloted a composite indicator for South Africa. It consists of two sub-indices, the Biodiversity Index (BI) that focuses on the state of biodiversity; and the Biodiversity Contributions to People Index (BCPI) that assesses how biodiversity supports human wellbeing through regulation, material provision and non-material benefits. Funding is needed for future steps for the MBI, including further development of BCPI indicators.</td>
+<td>NBA 2018 showcased several facts and statistics via the <a href="http://hdl.handle.net/20.500.12143/8052">Compendium of Benefits of Biodiversity</a>. Unfortunately few of these have been updated. The <a href="https://hdl.handle.net/20.500.12143/9419">Multidimensional Biodiversity Index Project</a> (2022-2024) piloted a composite indicator for South Africa. It consists of two sub-indices, the Biodiversity Index (BI) that focuses on the state of biodiversity; and the Biodiversity Contributions to People Index (BCPI) that assesses how biodiversity supports human wellbeing through regulation, material provision and non-material benefits. Funding is needed for future steps for the MBI, including further development of BCPI indicators.</td>
 </tr>
 <tr class="odd">
 <td>Monitoring effectiveness of interventions and responses</td>
-<td>There are good examples of indicators being developed to monitor the effectiveness of actions and responses to pressures on biodiversity (e.g., <a href="https://iasreport.sanbi.org.za/"><em>The status of biological invasions and their management in South Africa</em></a> is a regular report using various important indicators; and case studies have evaluated the <a href="https://doi.org/10.1016/j.landusepol.2022.106044">effectiveness of maps of Critical Biodiversity Areas</a> and threatened ecosystem regulations in certain biomes/provinces). More work is needed, ideally using counter-factual impact evaluation methods, to monitor the impact of interventions, especially restoration/recovery interventions. See also key message B5.</td>
+<td>There are good examples of indicators being developed to monitor the effectiveness of actions and responses to pressures on biodiversity (e.g., <a href="https://iasreport.sanbi.org.za/"><em>The status of biological invasions and their management in South Africa</em></a> is a regular report using various important indicators; and case studies have evaluated the <a href="https://doi.org/10.1016/j.landusepol.2022.106044">effectiveness of maps of Critical Biodiversity Areas</a> and threatened ecosystem regulations in certain biomes/provinces). More work is needed, ideally using counter-factual impact evaluation methods, to monitor the impact of interventions, especially restoration/recovery interventions. See also key message <a href="../../content/key-messages/kmb5.html">B5</a>.</td>
 </tr>
 <tr class="even">
 <td>Data management and sharing</td>
-<td>SANBI has made some progress on a national biodiversity information system (<a href="https://biodiversityadvisor.sanbi.org/">Biodiversity Advisor</a>)) which aims to enhance South Africa’s open access approach to biodiversity information, through allowing users to search seamlessly across multiple sources of information. SANBI has also undertaken substantial capacity development for the skills needed to streamline and automate indicator calculation and produce dashboards. The upcoming National Biodiversity Monitoring System aims to provide dashboards of key biodiversity indicators, underpinned by transparent workflows and databases. The move to an online NBA enables more regular updating of certain NBA indicators.</td>
+<td>SANBI has made some progress on a national biodiversity information system (<a href="https://biodiversityadvisor.sanbi.org/">Biodiversity Advisor</a>) which aims to enhance South Africa’s open access approach to biodiversity information, through allowing users to search seamlessly across multiple sources of information. SANBI has also undertaken substantial capacity development for the skills needed to streamline and automate indicator calculations and produce dashboards. The upcoming National Biodiversity Monitoring System aims to provide dashboards of key biodiversity indicators, underpinned by transparent workflows and databases. The move to an online NBA enables more regular updating of certain NBA indicators.</td>
 </tr>
 </tbody>
 </table>

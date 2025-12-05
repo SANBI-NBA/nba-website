@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -92,6 +92,7 @@ background: #028A85;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -124,6 +125,10 @@ background: #028A85;
   <li class="nav-item">
     <a class="nav-link active" href="../../contents.html" aria-current="page"> 
 <span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/context/media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -376,14 +381,14 @@ background: #028A85;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland ecological condition</span></a>
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on freshwater ecosystems</span></a>
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -472,13 +477,7 @@ background: #028A85;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
   </div>
 </li>
       </ul>
@@ -528,23 +527,12 @@ background: #028A85;
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -557,11 +545,11 @@ background: #028A85;
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -618,11 +606,11 @@ background: #028A85;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -633,15 +621,15 @@ background: #028A85;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wildlife species in South Africa</span></a>
+ <span class="menu-text">Selected iconic wildlife species</span></a>
   </div>
 </li>
       </ul>
@@ -652,12 +640,23 @@ background: #028A85;
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seabirds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -696,19 +695,19 @@ background: #028A85;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater Crabs</span></a>
+ <span class="menu-text">Freshwater crabs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anostraca</span></a>
+ <span class="menu-text">Fairy shrimps (Anostraca)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+ <span class="menu-text">Dragonflies and damselflies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -720,7 +719,7 @@ background: #028A85;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sparids</span></a>
+ <span class="menu-text">Seabreams (Sparids)</span></a>
   </div>
 </li>
       </ul>
@@ -792,9 +791,9 @@ background: #028A85;
   <li><a href="#ecosystem-assessments" id="toc-ecosystem-assessments" class="nav-link active" data-scroll-target="#ecosystem-assessments">Ecosystem assessments</a></li>
   <li><a href="#condition" id="toc-condition" class="nav-link" data-scroll-target="#condition">Condition</a></li>
   <li><a href="#pressures" id="toc-pressures" class="nav-link" data-scroll-target="#pressures">Pressures</a></li>
-  <li><a href="#species-assessments" id="toc-species-assessments" class="nav-link" data-scroll-target="#species-assessments">Species assessments</a></li>
   <li><a href="#responses" id="toc-responses" class="nav-link" data-scroll-target="#responses">Responses</a></li>
   <li><a href="#key-publications" id="toc-key-publications" class="nav-link" data-scroll-target="#key-publications">Key publications</a></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </nav>
     </div>
@@ -805,22 +804,18 @@ background: #028A85;
 
 
 
-<p><em>South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystems and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi) (Emanuel et al.&nbsp;1992; Harrison 2002; Turpie et al.&nbsp;2000). Rainfall in these regions varies significantly from less than 100 mm along the arid west coast to about 1 200 mm along the east coast.</em></p>
+<p><em>South Africa has 290 estuaries and 42 micro-estuaries, which have been classified into 22 estuarine ecosystem types and 3 micro-estuary types. This high diversity of estuary types stems from the country’s diverse climatic, oceanographic and geological drivers. Four biogeographical regions characterise the South African coast; namely the Cool Temperate (Orange to Ratel), the Warm Temperate (Heuningnes to Mendwana), the Subtropical (Mbashe to St Lucia) and the Tropical (uMgobezeleni to Kosi). Rainfall in these regions varies significantly from less than 100&nbsp;mm along the arid west coast to about 1&nbsp;200&nbsp;mm along the east coast. Our estuarine biodiversity underpins food security and economic opportunities, and is part of the deep cultural and spiritual values of South Africa’s coast. The National Biodiversity Assessment 2025 identifies key estuarine ecosystems and benefits at risk, and highlights priority actions to safeguard life and livelihoods, and maintain the many benefits of South Africa’s exceptional biodiversity.</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/est_sout_nmu.JPG" class="img-fluid figure-img"></p>
-<figcaption>Sout Predominantly Open Estuary ©Nelson Mandela University, Shallow Water Research</figcaption>
+<figcaption>Sout Predominantly Open Estuary. (©&nbsp;Nelson&nbsp;Mandela&nbsp;University, Shallow Water Research)</figcaption>
 </figure>
 </div>
-<p><strong>In South Africa, there are <em>circa</em> 176 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat.</strong> Estuary habitats in South Africa cover a total area of 103 500 ha, with reeds and sedges (17 500 ha) the dominant habitat type. On a bioregional scale, supratidal salt marsh dominates in the Cool temperate region (6 300 ha) and Warm temperate region (2 400 ha), reeds and sedges in the Subtropical region (10 800 ha), and swamp forest in the Tropical region (2 000 ha). Estuaries with the largest extent are St Lucia (44 800 ha), Groot Berg (8 000 ha) and Knysna (2 400 ha). The number of macrophyte species per estuary varied from 1 to 54 (recorded at Kosi). Macrophyte species richness in estuaries of the Cool and Warm Temperate region is higher than that in the Subtropical and Tropical region. Macrophyte species are distributed amongst 58 families . Only 66 plant species occurred in five or more estuaries in the country.</p>
-<p><strong>Approximately 50 of the 150 estuarine-associated fish species that regularly occur in estuaries are Southern African endemics of which 20 are exclusively found in South African waters with some species confined to only a few systems.</strong> For example, the iconic Knysna seahorse only occurs in three estuaries (Knysna, Swartvlei, Keurbooms), the Bot River Klipvis in two estuaries (Bot/Kleinmond and Klein) and the Estuarine Pipefish in five estuaries (historically Bushmans, Kariega, Kasouga, East and West Kleinemonde but currently only confirmed in first two systems).</p>
-<p>The importance of South Africa’s estuaries for resident and migratory waterbirds has long been recognised. <strong>A total of 35 bird species are considered highly dependent on estuaries as more than 15% of their regional population is found in these systems.</strong> The 118 waterbird species found in South African estuaries belong to eight orders, 25 families and 73 genera. While most species are found throughout the coast, there are some species which are predominantly confined to the west of the country, and in general, species richness increases towards the east, into the subtropical and tropical regions.</p>
-<p>Even important ‘bait’ invertebrate species Sandprawn (<em>Callichirus kraussii</em>), Mud Prawn (<em>Upogebia africana</em>) and <em>Macrobrachium petersii</em> are southern African endemics, while the freshwater Sand-shrimp (<em>Palaemon capensis</em>) is a South African endemic.</p>
-<p><em>Our estuarine biodiversity underpins food security and economic opportunities, and is part of the deep cultural and spiritual values of South Africa’s coast. The 2025 National Biodiversity Assessment identified key estuarine ecosystems and benefits at risk, and high lights priority actions to safeguard life and livelihoods, and maintain the many benefits of South Africa’s exceptional biodiversity</em></p>
+<hr>
 <div class="columns">
 <div class="column" style="width:50%;">
 <center>
-<div class="line-block"><span class="inline-style-threatened">59%</span><br>
+<div class="line-block"><span class="inline-style-threatened">91%</span><br>
 of 22 ecosystem types<br>
 <span class="inline-style-indicator">Threatened</span></div>
 <div class="line-block"><span class="inline-style-well-protected">9%</span><br>
@@ -831,45 +826,597 @@ of 22 ecosystem types<br>
 <center>
 <div class="line-block"><span class="inline-style-not-protected">14%</span><br>
 of 22 ecosystem types<br>
-<span class="inline-style-indicator">Not protected</span></div>
+<span class="inline-style-indicator">Not Protected</span></div>
 <div class="line-block"><span class="inline-style-threatened">70%</span><br>
 of estuarine area are<br>
-<span class="inline-style-indicator">Heavily degraded to Critically degraded</span></div>
+<span class="inline-style-indicator">Heavily to Critically Modified</span></div>
 </center>
 </div>
 </div>
 <hr>
-<!--# Follow the summary section with a relevant picture. Convert pictures to .png or .webp format, with a maximum 800px width, and 72 DPI for web resolution. Store all images in a folder called imgs. Insert images using visual editor Insert -> Figure/Image. Add a descriptive caption in the caption box. Set image alignment to center -->
+<p>In South Africa, there are <em>~</em>180 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat. Estuary habitats in South Africa cover a total area of 103&nbsp;500&nbsp;ha, with reeds and sedges (17&nbsp;500&nbsp;ha) the dominant habitat type. On a bioregional scale, supratidal salt marsh dominates in the Cool Temperate region (6&nbsp;300&nbsp;ha) and Warm Temperate region (2&nbsp;400&nbsp;ha), reeds and sedges in the Subtropical region (10&nbsp;800&nbsp;ha), and swamp forest in the Tropical region (2&nbsp;000&nbsp;ha). Estuaries with the largest extent are St Lucia (44&nbsp;800&nbsp;ha), Groot Berg (8&nbsp;000&nbsp;ha) and Knysna (2&nbsp;400&nbsp;ha). The number of macrophyte species per estuary varied from 1 to 54 (recorded at Kosi). Macrophyte species richness in estuaries of the Cool and Warm Temperate regions is higher than that in the Subtropical and Tropical regions. Macrophyte species are distributed amongst 58 families. Only 66 plant species occurred in five or more estuaries in the country.</p>
+<p>Approximately 50 of the 150 estuarine-associated fish species that regularly occur in estuaries are Southern African endemics of which 20 are exclusively found in South African waters with some species confined to only a few systems. For example, the iconic Knysna seahorse only occurs in three estuaries (Knysna, Swartvlei, Keurbooms), the Bot River Klipvis in two estuaries (Bot/Kleinmond and Klein) and the Estuarine Pipefish in five estuaries (historically Bushmans, Kariega, Kasouga, East and West Kleinemonde but currently only confirmed in the first two systems).</p>
+<p>The importance of South Africa’s estuaries for resident and migratory waterbirds has long been recognised. A total of 35 bird species are considered highly dependent on estuaries as more than 15% of their regional population is found in these systems. The 118 waterbird species found in South African estuaries belong to eight orders, 25 families and 73 genera. While most species are found throughout the coast, there are some species which are predominantly confined to the west of the country, and in general, species richness increases towards the east, into the subtropical and tropical regions.</p>
+<p>Even important ‘bait’ invertebrate species sandprawn (<em>Callichirus kraussii</em>), mud prawn (<em>Upogebia africana</em>) and <em>Macrobrachium petersii</em> are southern African endemics, while the freshwater sand-shrimp (<em>Palaemon capensis</em>) is a South African endemic.</p>
 <section id="ecosystem-assessments" class="level2">
 <h2 class="anchored" data-anchor-id="ecosystem-assessments">Ecosystem assessments</h2>
-<p><strong>The Estuarine Realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area.</strong> Of South Africa’s 22 estuarine ecosystem types, 59% are threatened with 23% Critically Endangered, 18% Endangered and 18% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 57% Endangered and 41% Vulnerable.</p>
-<p>Overall, Cool Temperate and Subtropical ecosystems are at higher risk of ecosystem collapse. The most threatened ecosystem functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed types. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk.</p>
-<p><strong>More than 80% of South Africa’s 22 estuarine ecosystem types now have some representation in the protected areas network, but only 1% are Well Protected.</strong> Large Fluvially Dominated, Predominantly Open, Estuarine Bay (Subtropical), Large temporarily closed and Arid predominantly closed are the most Poorly Protected ecosystem functional groups.</p>
-<p>Increasing the extent of South Africa’s estuarine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of estuaries in protected areas also needs improvement for ecosystem types to advance to Well Protected status. For example, 32% of types and 10% of area can be well protected if fishing effort in just 3 estuaries are better controlled – Langebaan, Knysna and Kosi. Estuarine conservation also needs to better consider and involve people, diversify protection models, and address issues that undermine legitimacy. The ongoing efforts to develop OECMs and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats.</p>
-<p><strong>In the estuarine realm, 22% of ecosystem types are both highly threatened and under protected, prevalent on the Cool Temperate and Subtropical biogeographical regions.</strong> These include the following five ecosystem types:</p>
+<p>The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s 22 estuarine ecosystem types, 91% are threatened with 5% Critically Endangered, 41% Endangered and 45% Vulnerable. Of total estuarine area, 99% is threatened with 1% Critically Endangered, 72% Endangered and 26% Vulnerable.</p>
+<p>Overall, Cool Temperate and Subtropical ecosystems are at the highest risk of ecosystem collapse. The most threatened ecosystem functional groups are Estuarine Bays, Estuarine Lakes, Large Fluvially Dominated, Large Temporarily Closed, and Arid Predominantly Closed types. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-ets_map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ets_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/ets_with_donut.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ets_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1. Map showing the distribution of threatened estuarine ecosystems according to the IUCN Red List of Ecosystems (size of the dot represents area of the individual estuary). The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>More than 80% of South Africa’s 22 estuarine ecosystem types now have some representation in the protected areas network, but only 9% are Well Protected. Large Fluvially Dominated, Predominantly Open, Estuarine Bay (Subtropical), Large Temporarily Closed and Arid Predominantly Closed are the most Poorly Protected ecosystem functional groups.</p>
+<p>Increasing the extent of South Africa’s estuarine protected area estate will contribute to improving ecosystem protection levels. Importantly, however, the ecological condition of estuaries in protected areas also needs improvement for ecosystem types to advance to Well Protected status. For example, 32% of types and 10% of area can be Well Protected if fishing effort in just three estuaries is controlled more appropriately – Langebaan, Knysna and Kosi. Estuarine conservation also needs to better consider and involve people, diversify protection models, and address issues that undermine legitimacy. The ongoing efforts to develop other effective area-based conservation measures (OECMs) and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and arrest the ongoing decline in Blue Carbon habitats.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-est_epl_map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-est_epl_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="imgs/epl_with_donut.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-est_epl_map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2. Schematic representation of estuarine ecosystem protection levels (size of the dot represents area of the individual estuary). There are many overlaps between points that can obscure the status of smaller estuaries. The inset graph shows the number and proportion of ecosystem types that fall within each protection level category.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>In the estuarine realm, 32% of ecosystem types are both highly threatened (Critically Endangered and Endangered) and under-protected (Not Protected and Poorly Protected), prevalent in the Cool Temperate and Subtropical biogeographical regions. These include the following seven types:</p>
 <ul>
-<li><p>Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)</p></li>
-<li><p>Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)</p></li>
-<li><p>Cool Temperate Large Fluvially Dominated (Orange)</p></li>
-<li><p>Cool Temperate Predominantly Open (Olifants, Groot Berg, Uilkraals)</p></li>
-<li><p>Subtropical Estuarine Bay (Durban Bay)</p></li>
+<li>Cool Temperate Estuarine Lakes (Verlorenvlei, Zeekoei, Bot/Kleinmond, Klein)</li>
+<li>Cool Temperate Large Fluvially Dominated (Orange)</li>
+<li>Cool Temperate Predominantly Open (Olifants, Groot Berg, Uilkraals)</li>
+<li>Cool Temperate Arid Predominantly Closed (Buffels, Swartlintjies, Spoeg, Groen, Sout (Noord), Wadrift)</li>
+<li>Cool Temperate Large Temporarily Closed (Jakkals, Diep/Rietvlei, Sout (Wes), Disa, Wildevoëlvlei, Silwermyn, Zand, Eerste, Palmiet)</li>
+<li>Subtropical Estuarine Bay (Durban Bay)</li>
+<li>Subtropical Large Fluvially Dominated (Mbashe, Mzimvubu, uMvoti, uThukela, iMfolozi/uMsunduze)</li>
 </ul>
+<div class="cell plain">
+<div id="tbl-ets_epl" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ets_epl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1. Intersection of threat status and protection level of ecosystem types
+</figcaption>
+<div aria-describedby="tbl-ets_epl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="nqnequmylg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nqnequmylg table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nqnequmylg thead, #nqnequmylg tbody, #nqnequmylg tfoot, #nqnequmylg tr, #nqnequmylg td, #nqnequmylg th {
+  border-style: none;
+}
+
+#nqnequmylg p {
+  margin: 0;
+  padding: 0;
+}
+
+#nqnequmylg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#nqnequmylg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#nqnequmylg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#nqnequmylg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#nqnequmylg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nqnequmylg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#nqnequmylg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#nqnequmylg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#nqnequmylg .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#nqnequmylg .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#nqnequmylg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nqnequmylg .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#nqnequmylg .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#nqnequmylg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#nqnequmylg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nqnequmylg .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#nqnequmylg .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#nqnequmylg .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#nqnequmylg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nqnequmylg .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#nqnequmylg .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nqnequmylg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#nqnequmylg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nqnequmylg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nqnequmylg .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nqnequmylg .gt_left {
+  text-align: left;
+}
+
+#nqnequmylg .gt_center {
+  text-align: center;
+}
+
+#nqnequmylg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#nqnequmylg .gt_font_normal {
+  font-weight: normal;
+}
+
+#nqnequmylg .gt_font_bold {
+  font-weight: bold;
+}
+
+#nqnequmylg .gt_font_italic {
+  font-style: italic;
+}
+
+#nqnequmylg .gt_super {
+  font-size: 65%;
+}
+
+#nqnequmylg .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#nqnequmylg .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#nqnequmylg .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#nqnequmylg .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#nqnequmylg .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#nqnequmylg .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#nqnequmylg .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#nqnequmylg .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#nqnequmylg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell plain caption-top table" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="threat_status" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="text-align: left; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col"></th>
+<th id="Not-Protected" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Not Protected</th>
+<th id="Poorly-Protected" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Poorly Protected</th>
+<th id="Moderately-Protected" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Moderately Protected</th>
+<th id="Well-Protected" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Well Protected</th>
+<th id="Total" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="text-align: center; background-color: #FFFFFF; border-top-width: 2px; border-top-style: solid; border-top-color: black; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: lightgray; border-right-width: 1px; border-right-style: solid; border-right-color: lightgray; font-weight: bold;" scope="col">Total</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="threat_status" style="text-align: left; font-weight: bold; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 2px; border-right-style: solid; border-right-color: black;">Critically Endangered</td>
+<td class="gt_row gt_right" headers="Not Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent; background-color: #A93800;">1</td>
+<td class="gt_row gt_right" headers="Poorly Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent; background-color: #A87001;">0</td>
+<td class="gt_row gt_right" headers="Moderately Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0</td>
+<td class="gt_row gt_right" headers="Well Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0</td>
+<td class="gt_row gt_right" headers="Total" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="threat_status" style="text-align: left; font-weight: bold; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 2px; border-right-style: solid; border-right-color: black;">Endangered</td>
+<td class="gt_row gt_right" headers="Not Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent; background-color: #E69800;">1</td>
+<td class="gt_row gt_right" headers="Poorly Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent; background-color: #FFEBB0;">5</td>
+<td class="gt_row gt_right" headers="Moderately Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">3</td>
+<td class="gt_row gt_right" headers="Well Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0</td>
+<td class="gt_row gt_right" headers="Total" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="threat_status" style="text-align: left; font-weight: bold; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 2px; border-right-style: solid; border-right-color: black;">Vulnerable</td>
+<td class="gt_row gt_right" headers="Not Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+<td class="gt_row gt_right" headers="Poorly Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">4</td>
+<td class="gt_row gt_right" headers="Moderately Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">4</td>
+<td class="gt_row gt_right" headers="Well Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+<td class="gt_row gt_right" headers="Total" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="threat_status" style="text-align: left; font-weight: bold; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 2px; border-right-style: solid; border-right-color: black;">Least Concern</td>
+<td class="gt_row gt_right" headers="Not Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0</td>
+<td class="gt_row gt_right" headers="Poorly Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">0</td>
+<td class="gt_row gt_right" headers="Moderately Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+<td class="gt_row gt_right" headers="Well Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">1</td>
+<td class="gt_row gt_right" headers="Total" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: gray50; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="threat_status" style="text-align: left; font-weight: bold; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 2px; border-right-style: solid; border-right-color: black;">Total (n)</td>
+<td class="gt_row gt_right" headers="Not Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">3</td>
+<td class="gt_row gt_right" headers="Poorly Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">9</td>
+<td class="gt_row gt_right" headers="Moderately Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">8</td>
+<td class="gt_row gt_right" headers="Well Protected" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">2</td>
+<td class="gt_row gt_right" headers="Total" style="text-align: center; border-top-width: 1px; border-top-style: dotted; border-top-color: gray50; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: black; border-left-width: 1px; border-left-style: solid; border-left-color: transparent; border-right-width: 1px; border-right-style: solid; border-right-color: transparent;">22</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
 </section>
 <section id="condition" class="level2">
 <h2 class="anchored" data-anchor-id="condition">Condition</h2>
-<p><strong>More than 54% of South Africa’s estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries.</strong> <strong>Concerning overall, more than 70% of estuarine area is significantly modified.</strong></p>
-<p>This represent an <strong>overall 1% decline in Natural/Near Natural estuaries and 7% increase in degraded extent</strong>. Overall, Cool Temperate and Subtropical ecosystems are the most degraded. The most degraded functional groups are Estuarine bays, Estuarine lakes, Large fluvially dominated, Large temporarily closed, and Arid predominantly closed types.</p>
+<p>More than 53% of South Africa’s estuaries are healthy, however this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Of concern is that more than 70% of estuarine area is significantly modified.</p>
+<p>This represent an overall 3% decline in Natural/Near Natural estuaries and 7% increase in degraded extent. Overall, Cool Temperate and Subtropical ecosystems are the most degraded. The most degraded functional groups are Estuarine Bays, Estuarine Lakes, Large Fluvially Dominated, Large Temporarily Closed, and Arid Predominantly Closed types.</p>
 <p>Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.</p>
 <div class="grid">
 <div class="g-col-lg-7 g-col-12">
-<p>Estuaries require increased protection and interventions across multiple sectors to arrest the ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining &amp; farming).</p>
-<p>There are many interacting pressures cumulatively affecting estuarine ecosystems and species. The main pressures impacting estuarine biodiversity include escalating gillnet pressure, declining water quality, increased flow reduction and land-use change in the estuarine functional zone (from coastal development, mining &amp; farming).</p>
+<p>Estuaries require increased protection and interventions across multiple sectors to arrest the ongoing decline. Key concerns are escalating gillnetting pressure, declining water quality, increased flow reduction, and land-use change in the estuarine functional zone (mining and farming).</p>
+<p>There are many interacting pressures cumulatively affecting estuarine ecosystems and species. The main pressures impacting estuarine biodiversity include escalating gillnet pressure, declining water quality, increased flow reduction and land-use change in the estuarine functional zone (from coastal development, mining and agriculture).</p>
 </div>
 <div class="g-col-lg-5 g-col-12">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="imgs/cnd.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand."><img src="imgs/cnd.png" class="img-fluid figure-img" alt="Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand."></a></p>
-<figcaption>Map of ecosystem degradation showing the spatial distribution of estuaries in natural/near natural, moderately degraded, severely degraded or very severely degraded state. Click to expand.</figcaption>
+<p><a href="imgs/cnd.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Map of ecological condition showing the spatial distribution of estuaries in the different categories. Click image to expand."><img src="imgs/cnd.png" class="img-fluid figure-img" alt="Map of ecological condition showing the spatial distribution of estuaries in the different categories. Click image to expand."></a></p>
+<figcaption>Map of ecological condition showing the spatial distribution of estuaries in the different categories. Click image to expand.</figcaption>
 </figure>
 </div>
 </div>
@@ -877,45 +1424,65 @@ of estuarine area are<br>
 </section>
 <section id="pressures" class="level2">
 <h2 class="anchored" data-anchor-id="pressures">Pressures</h2>
-<p>Pressure evaluation shows that a third of freshwater flow no longer reaches the coast (22% of systems severely impacted). Wastewater discharges amount to about 655 000 m<sup>3</sup>/d (32% of estuaries under severe pollution pressure), with harmful algal blooms (HABs) now recorded in 18% of estuaries in response to declining water quality. Estuaries, especially in KwaZulu-Natal and Wild Coast, are under severe pressure from illegal gillnetting, with systems under severe pressure increasing from 15% to 21% to 28% between 2011, 2018 and 2025 (75%, 78% and 85% of area), significantly compromising the multiple benefits derived from estuaries. Over 22% of estuaries are also subjected to severe habitat modification.</p>
-<p>Overall multiple interventions are required to avoid further decline in health. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort and avoidance of mining, infrastructure development and crops in the estuarine functional zone.</p>
+<p>The evaluation of pressures shows that a third of freshwater flow no longer reaches the coast (22% of systems severely impacted). Wastewater discharges amount to about 655&nbsp;000&nbsp;m<sup>3</sup>/d (32% of estuaries under severe pollution pressure), with harmful algal blooms (HABs) now recorded in 18% of estuaries in response to declining water quality. Estuaries, especially in KwaZulu-Natal and the Wild Coast, are under severe pressure from illegal gillnetting, with systems under severe pressure increasing from 15% to 21% to 28% between 2011, 2018 and 2025 (75%, 78% and 85% of area), significantly compromising the multiple benefits derived from estuaries. Over 22% of estuaries are also subjected to severe habitat modification.</p>
 <div class="grid">
 <div class="g-col-lg-8 g-col-12">
+<p>Overall, multiple interventions are required to avoid further declines in estuarine ecosystem condition. These include protection of freshwater inflow to estuaries and the sea, restoration of water quality, reduction in fishing effort, and avoidance of mining, infrastructure development and cultivation in the estuarine functional zone.</p>
 <p>The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts will mean that potential impacts are missed and poor spatial planning and decisions are likely, with negative impacts on people and the environment.</p>
 </div>
 <div class="g-col-lg-4 g-col-12">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="imgs/cum_pres.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click to expand."><img src="imgs/cum_pres.png" class="img-fluid figure-img" alt="Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click to expand."></a></p>
-<figcaption>Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click to expand.</figcaption>
+<p><a href="imgs/cum_pres.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click image to expand."><img src="imgs/cum_pres.png" class="img-fluid figure-img" alt="Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click image to expand."></a></p>
+<figcaption>Map of cumulative pressures in South Africa’s estuaries. Red and orange areas have the highest cumulative pressure, with yellow areas showing low pressure. Click image to expand.</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="species-assessments" class="level2">
-<h2 class="anchored" data-anchor-id="species-assessments">Species assessments</h2>
-<p><strong>Of the 66 species included in this assessment, 18 (27%) are threatened with extinction.</strong> While this finding corresponds well with the ecosystem assessment where a high proportion of ecosystems are highly threatened, it is based on a limited set of species assessments that include a high proportion of range restricted endemics, economically important species or habitat forming species. Of the groups considered, only birds were comprehensively assessed. Future assessments need to include all representatives of a taxonomic group to remedy this bias.</p>
-<p>Increased extinction risk for estuarine species is attributed to multiple pressures, with overfishing (including by recreational, small-scale, commercial and illegal fisheries), pollution, flow reduction, biological invasions, coastal development, agriculture and mining contributing most to the threatened status of estuarine species.</p>
-</section>
 <section id="responses" class="level2">
 <h2 class="anchored" data-anchor-id="responses">Responses</h2>
-<p><strong>South Africa has a strong policy and legislative framework to protect and manage estuaries.</strong> Excellent progress has been made in the management of estuaries in water and land use/planning sector. <strong>Department of Water and Sanitation (DWS) has determined the ecological water requirements of all estuaries, with 100% of these being subject to the “Classification” of freshwater resources.</strong> In addition, <strong>over 20% of estuaries have Estuary Management Plans</strong> <strong>in various stages of completion under the guidance of DFFE, provinces and conservation agencies</strong>. These noteworthy progresses since 2018 play a critical role in ensuring estuary health and the multiple benefits that society derives from them. These measures are proactive in that they set management objectives for estuarine resources on the strategic level through the engagement of society in the decision-making process. Unfortunately, there has been a deterioration in the management of extractive use in estuaries, with sand, mineral and diamond mining key concerns.</p>
-<p><strong>There is an urgent need to strengthen multilateral arrangements between sectors dealing with Environment, Water, Fishing and Mining to ensure optimum resource allocation.</strong> In many of the above sectors, management measures/processes do not meet biodiversity requirements, e.g.&nbsp;freshwater flow allocation to the uMlalazi Estuary in the Thukela Marine Protected Area (MPA) is not sufficient to prevent increased constricted/closed mouth conditions developing during low flow periods with associated poor water quality resulting in low oxygen conditions. Given that estuarine management straddles multiple sectors, a more robust intergovernmental engagement could assist in ensuring a balance in sectoral requirements and preventing mandate conflict between departments.</p>
-<p><strong>Availability of cheap gillnets online (e.g.&nbsp;Temo, Takelot, Shein) have led to exponential increase in estuary fishing pressure.</strong> This indiscriminate fishing method catches juvenile fish, macro invertebrates, birds, turtles and terrapins, water monitors and crocodiles. <strong>Authorities launched DFFE Gillnet Reporting App (OCIMS) to monitor illegal catches and established a well co-ordinate compliance network in KZN</strong>. An example of success achieved is that 80% of nets are retrieved before they catch anything and for every 39 fish caught per illegal net retrieved 21 is released alive. Overall catches peaked in 2023/24. <strong>Compliance initiatives needs to be supported by community education and awareness programmes, increase customs control (stop imports), and collaboration with online retailers to foster self-regulation.</strong> The retailer Macro is example of self-regulation as they removed gillnets form their stock once the company became aware of the cascading impacts on estuarine and coastal ecosystems.</p>
-<p><strong>Investment is needed in solutions to restore estuarine ecological infrastructure to strengthen climate resilience and sustain ecosystem services</strong>. The Kunming-Montreal Global Biodiversity Framework makes restoration and protection of critical ecosystems an imperative at a global scale. <strong>Restoration projects has been initiated at a few key estuary sites in South Africa, e.g.&nbsp;St Lucia, Groot Berg, Swartkops, Mlalazi. Ongoing research have also identified critical systems (e.g.&nbsp;Orange, Olifants, Klein Brak, Gamtoos) that will ensure the best return on investment.</strong> DFFE and the provincial authorities are engaging in an ‘Estuary Restoration Strategy’ that focuses on degraded and novel systems with an emphasis on the larger systems of high biodiversity importance and the socially importan</p>
+<p>South Africa has a strong policy and legislative framework to protect and manage estuaries. Excellent progress has been made in the management of estuaries in water and land use/planning sector. The Department of Water and Sanitation (DWS) has determined the ecological water requirements of all estuaries, with 100% of these being subject to the ‘classification’ of freshwater resources. In addition, over 20% of estuaries have Estuary Management Plans in various stages of completion under the guidance of Department of Forestry, Fisheries and the Environment (DFFE), provinces and conservation agencies. Since 2018, theses initiatives have played an important role in ensuring estuary health and the multiple benefits that society derives from estuaries. These measures are proactive in that they set management objectives for estuarine resources on the strategic level through the engagement of society in the decision-making process. Unfortunately, there has been a deterioration in the management of extractive use in estuaries, with sand, mineral and diamond mining are key concerns.</p>
+<p>There is an urgent need to strengthen multilateral arrangements between sectors dealing with environment, water, fisheries and mining to ensure optimum resource allocation. In many of these sectors, management measures/processes do not meet biodiversity requirements, e.g.&nbsp;freshwater flow allocation to the uMlalazi Estuary in the uThukela Marine Protected Area (MPA) is not sufficient to prevent increased constricted/closed mouth conditions developing during low flow periods with associated poor water quality resulting in low oxygen conditions. Given that estuarine management straddles multiple sectors, more robust intergovernmental engagement could assist in ensuring a balance in sectoral requirements and preventing mandate conflict between departments.</p>
+<p>Availability of cheap gillnets online (e.g.&nbsp;Temo, Takelot, Shein) has led to a large increase in estuary fishing pressure. This indiscriminate fishing method catches juvenile fish, macro invertebrates, birds, turtles and terrapins, water monitors and crocodiles. Authorities launched the DFFE Gillnet Reporting App (see <a href="https://ocims.environment.gov.za/">OCIMS</a>) to monitor illegal catches and established a well coordinated compliance network in KwaZulu-Natal. An example of success is that 80% of nets are retrieved before they catch anything, and for every 39 fish caught per illegal net retrieved 21 are released alive. Overall catches peaked in 2023/24. Compliance initiatives needs to be supported by community education and awareness programmes, increase customs control (stop imports), and collaboration with online retailers to foster self-regulation. The retailer Macro is example of self-regulation as they removed gillnets from their stock once the company became aware of the cascading impacts on estuarine and coastal ecosystems.</p>
+<p>Investment is needed in solutions to restore estuarine ecological infrastructure to strengthen climate resilience and sustain ecosystem services. The Kunming-Montreal Global Biodiversity Framework makes restoration and protection of ecosystems an imperative at a global scale. Restoration projects have been initiated at a few key estuary sites in South Africa, e.g.&nbsp;St Lucia, Groot Berg, Swartkops, uMlalazi. Ongoing research projects have also identified important systems (e.g.&nbsp;Orange, Olifants, Klein Brak, Gamtoos) that will ensure the best return on investment. DFFE and the provincial authorities are engaging in an ‘Estuary Restoration Strategy’ that focuses on degraded and novel systems with an emphasis on the larger systems of high biodiversity importance and those that are socially important.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/est_kromme_saltmarsh3.png" class="img-fluid figure-img"></p>
-<figcaption>Kromme Estuary with extensive salt marsh. © Riaan Weitz.</figcaption>
+<figcaption>Kromme Estuary with extensive salt marsh. (©&nbsp;Riaan Weitz)</figcaption>
 </figure>
 </div>
 </section>
 <section id="key-publications" class="level2">
 <h2 class="anchored" data-anchor-id="key-publications">Key publications</h2>
-<p>Van Niekerk, L., Adams, J.B., Lamberth, S.J., MacKay, C.F., Taljaard, S., Turpie, J.K., Weerts S.P. &amp; Raimondo, D.C., 2019 (eds). <em>National Biodiversity Assessment 2018 Technical Report Volume 3: Estuarine Realm</em>. CSIR report. South African National Biodiversity Institute, Pretoria.</p>
+<p>van Niekerk, L., Adams, J.B., Lamberth, S.J., MacKay, C.F., Taljaard, S., Turpie, J.K., Weerts S.P. &amp; Raimondo, D.C., 2019 (eds). <em>National Biodiversity Assessment 2018 Technical Report Volume 3: Estuarine Realm</em>. CSIR report. South African National Biodiversity Institute, Pretoria.</p>
 <p>van Niekerk, L., S. Taljaard, S. J. Lamberth, J. B. Adams, S. P. Weerts,and C. F. MacKay. 2022. “Disaggregation and Assessment of estuarine pressures at the country-level to better inform management and resource protection the South African experience.” <em>African Journal of Aquatic Science</em>, April. <a href="https://www.tandfonline.com/doi/abs/10.2989/16085914.2022.2041388" class="uri">https://www.tandfonline.com/doi/abs/10.2989/16085914.2022.2041388</a>.</p>
 <p>Adams, J. B., S. Taljaard, L. van Niekerk, and D. A. Lemley. 2020.“Nutrient Enrichment as a threat to the ecological resilience and health of South African microtidal estuaries.” <em>African Journal of Aquatic Science</em> 45 (1-2): 23–40. <a href="https://doi.org/10.2989/16085914.2019.1677212" class="uri">https://doi.org/10.2989/16085914.2019.1677212</a>.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>The estuarine realm assessment is led by the Council for Scientific and Industrial Research, and is conducted in collaboration with &gt;30 individuals across a range of institutions, spanning academia, government and public organisations, NGOs, and independent individuals. The estuarine realm assessment would not have been possible without the substantial in-kind contributions of time, data and expertise from these institutions.</p>
+<p>We sincerely thank the National Estuarine and Marine Ecosystem Committee and Network for their invaluable technical expertise and guidance. The National Working Group 7 (Oceans and Coasts) is thanked for it valuable inputs and contributions to the draft key messages.</p>
+<p>We acknowledge the following institutional support:</p>
+<ul>
+<li><p>Council for Scientific and Industrial Research</p></li>
+<li><p>Nelson Mandela University</p></li>
+<li><p>South African National Biodiversity Institute</p></li>
+<li><p>Department of Forestry, Fisheries and the Environment,</p></li>
+<li><p>Oceanographic Research Institute</p></li>
+<li><p>Anchor Environmental</p></li>
+<li><p>CapeNature</p></li>
+<li><p>Birdlife South Africa</p></li>
+<li><p>Western Cape Department of Environmental Affairs and Development Planning</p></li>
+<li><p>Department of Water and Sanitation</p></li>
+<li><p>Eastern Cape Parks and Tourism Agency</p></li>
+<li><p>Ezemvelo KZN Wildlife</p></li>
+<li><p>KwaZulu-Natal Department of Economic Development, Tourism and Environmental Affairs</p></li>
+<li><p>South African Environmental Observation Network</p></li>
+<li><p>South African Institute for Aquatic Biodiversity</p></li>
+<li><p>South African National Parks</p></li>
+<li><p>University of Western Cape</p></li>
+</ul>
 
 
 </section>

@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -92,6 +92,7 @@ background: #02268A;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -124,6 +125,10 @@ background: #02268A;
   <li class="nav-item">
     <a class="nav-link active" href="../../contents.html" aria-current="page"> 
 <span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/context/media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -376,14 +381,14 @@ background: #02268A;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland ecological condition</span></a>
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on freshwater ecosystems</span></a>
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -472,13 +477,7 @@ background: #02268A;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
   </div>
 </li>
       </ul>
@@ -528,23 +527,12 @@ background: #02268A;
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -557,11 +545,11 @@ background: #02268A;
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -618,11 +606,11 @@ background: #02268A;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -633,15 +621,15 @@ background: #02268A;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wildlife species in South Africa</span></a>
+ <span class="menu-text">Selected iconic wildlife species</span></a>
   </div>
 </li>
       </ul>
@@ -652,12 +640,23 @@ background: #02268A;
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seabirds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -696,19 +695,19 @@ background: #02268A;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater Crabs</span></a>
+ <span class="menu-text">Freshwater crabs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anostraca</span></a>
+ <span class="menu-text">Fairy shrimps (Anostraca)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+ <span class="menu-text">Dragonflies and damselflies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -720,7 +719,7 @@ background: #02268A;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sparids</span></a>
+ <span class="menu-text">Seabreams (Sparids)</span></a>
   </div>
 </li>
       </ul>
@@ -804,7 +803,7 @@ background: #02268A;
 
 
 
-<p><em>South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and and is integral to the deep cultural and spiritual values held by many South Africans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, identified knowledge gaps that limit the assessment, and identified priority areas, together with co-developed priority actions, to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.</em></p>
+<p><em>South Africa has exceptional marine biodiversity with 163 marine ecosystem types and high marine endemism linked to the intersection of three oceans and two contrasting current systems that interact with a diverse topographic and geological setting. Our marine biodiversity underpins food and job security, an expanding ocean economy, and is integral to the deep cultural and spiritual values held by many South Africans. The 2025 National Biodiversity Assessment identified marine ecosystems, species and benefits at risk, identified knowledge gaps that limit the assessment, and identified priority areas, together with co-developed priority actions, to safeguard ocean life, livelihoods and maintain the many benefits of South Africa’s rich marine biodiversity.</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/009_Table_Mountain_PeterChadwick_AfricanConservationPhotographer.png" class="img-fluid figure-img"></p>
@@ -826,9 +825,9 @@ of 163 ecosystem types<br>
 <center>
 <div class="line-block"><span class="inline-style-not-protected">17%</span><br>
 of 163 ecosystem types<br>
-<span class="inline-style-indicator">Not protected</span></div>
+<span class="inline-style-indicator">Not Protected</span></div>
 <div class="line-block"><span class="inline-style-threatened">36%</span><br>
-of 506 taxa assessed<br>
+of 495 taxa assessed<br>
 <span class="inline-style-indicator">Threatened</span></div>
 </center>
 </div>
@@ -841,10 +840,10 @@ of 506 taxa assessed<br>
 <!-- ![Caption to be added](imgs/Marine_Biodiveristy_Assessment.jpg){fig-align="center"} -->
 <section id="ecosystem-assessments" class="level2">
 <h2 class="anchored" data-anchor-id="ecosystem-assessments">Ecosystem assessments</h2>
-<p>Of South Africa’s 163 marine ecosystem types, 45% are threatened, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food and job security and climate resilience (<a href="../../content/key-messages/kma2.html">key message A2</a>).</p>
-<p>Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk (<a href="../../content/key-messages/kma2.html">key message A2</a>).</p>
-<p>More than 80% of South Africa’s 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected (<a href="../../content/key-messages/kmb4.html">key message B4</a>). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.</p>
-<p>Increasing the extent of South Africa’s MPA estate will contribute to improving ecosystem protection levels. For certain ecosystem types to advance to Well Protected status, however, their ecological condition inside MPAs needs improvement (<a href="../../content/key-messages/kmc2.html">key message C2</a>). Ocean governance needs to better consider and involve human dimensions in conservation initiatives (<a href="../../content/key-messages/kmc1.html">key message C1</a>), diversify protection models, and address persistent challenges that undermine the legitimacy of conservation areas.</p>
+<p>Of South Africa’s 163 marine ecosystem types, <a href="../../content/marine/marine_ets.html">45% are threatened</a>, particularly smaller ecosystem types of restricted distribution. Several small, high-value ecosystem types are at risk of ecosystem collapse, which could compromise food and job security and climate resilience (key message <a href="../../content/key-messages/kma2.html">A2</a>).</p>
+<p>Overall, coastal and shelf ecosystems are at higher risk of ecosystem collapse, and the most threatened ecosystem functional groups are bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf. Unless collaborative efforts are made to improve ecological condition in these functional groups, the vital ecosystem services and benefits they provide are at risk (key message <a href="../../content/key-messages/kma2.html">A2</a>).</p>
+<p>More than 80% of South Africa’s 163 marine ecosystem types now have some representation in the Marine Protected Area (MPA) network, but only 20% are Well Protected (key message <a href="../../content/key-messages/kmb4.html">B4</a>). Slopes, abyssal plains, muddy and rocky shelves, and open oceans are the most Poorly Protected ecosystem functional groups.</p>
+<p>Increasing the extent of South Africa’s MPA estate will contribute to improving ecosystem protection levels. For certain ecosystem types to advance to Well Protected status, however, their ecological condition inside MPAs needs improvement (key message <a href="../../content/key-messages/kmc2.html">C2</a>). Ocean governance needs to better consider and involve human dimensions in conservation initiatives (key message <a href="../../content/key-messages/kmc1.html">C1</a>), diversify protection models, and address persistent challenges that undermine the legitimacy of conservation areas.</p>
 <p>In the marine realm, 17% of ecosystem types are both highly threatened and under protected. These ecosystem types are found on the West Coast, the western Agulhas Bank shelf edge, parts of the Agulhas Bank and parts of the KwaZulu-Natal Bight (see <a href="../../content/marine/marine_ets_epl.html#fig-rle_map">intersection of ecosystem threat status and protection level</a> page).</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -863,24 +862,24 @@ Figure&nbsp;1. Map of the 163 marine ecosystem types in South Africa, including 
 </section>
 <section id="species-assessments" class="level2">
 <h2 class="anchored" data-anchor-id="species-assessments">Species assessments</h2>
-<p>Marine species are assessed in terms of their stock status and/or threat status. Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the <a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a> criteria.</p>
-<p>There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (<a href="../../content/key-messages/kma5.html">key message A5</a>). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and abalone and West Coast rock lobster are Endangered. Illegal fishing plays a key role in the Endangered status of these species (<a href="../../content/key-messages/kma6.html">key message A6</a>).</p>
-<p>Of the 506 marine species assessed using the <a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a> criteria, 36% are considered threatened (<a href="../../content/key-messages/kmb1.html">key message B1</a>). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.</p>
+<p>Marine species are assessed in terms of their <a href="../../content/species/marine_sp.html">threat status and/or stock status</a>. Stock status refers to the resource status from a fisheries management perspective, whereas species threat status focuses on extinction risk using the <a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a> criteria.</p>
+<p>Of the 495 marine species assessed using the <a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a> criteria, <a href="../../content/species/marine_sp.html">36% are considered threatened</a> (key message <a href="../../content/key-messages/kmb1.html">B1</a>). However, this is an inflated estimate of the actual proportion of marine taxa that are threatened because species that are at risk and/or economically important have been prioritised for assessment, with few marine taxonomic groups being comprehensively assessed.</p>
+<p>There is increasing knowledge on stock status of resources, with evidence of resource recovery for some species linked to improved fisheries and spatial management (key message <a href="../../content/key-messages/kma5.html">A5</a>). This shows that fish stocks can recover with effective collaborative management of effort, catch and area. However, some inshore resources are increasingly depleted, and South African abalone (<em>Haliotis midae</em>) and West Coast rock lobster (<em>Jasus lalandii</em>) are Endangered. Illegal fishing plays a key role in the Endangered status of these species (key message <a href="../../content/key-messages/kma6.html">A6</a>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/overview_species.png" class="img-fluid figure-img"></p>
 <figcaption>Several marine invertebrate resources, seabreams and shark and rays were assessed as threatened in 2025. West Coast rocklobster are Endangered (©&nbsp;Geoff Spiby); dageraad are Critically Endangered (©&nbsp;Steve Benjamin); bull sharks are Vulnerable (©&nbsp;Fiona Erst).</figcaption>
 </figure>
 </div>
-<p>Sharks, rays and chimaeras are one of the most threatened groups across all realms (see <a href="../../content/species/marine_sp.html">species status</a> page). A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 128 South African shallow reef building corals assessed globally, 34% are threatened by climate change (<a href="../../content/key-messages/kma1.html">key message A1</a>).</p>
-<p>Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring (<a href="../../content/key-messages/kmc3.html">key message C3</a>), and increase capacity for marine species red listing (<a href="../../content/key-messages/kmc3.html">key message C3</a>). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.</p>
+<p>Sharks, rays and chimaeras are one of the most threatened groups across all realms (see <a href="../../content/species/marine_sp.html">species status</a> page). A re-assessment of South Africa’s seabreams showed improved threat status for three species while two have become more threatened. Of the 97 South African shallow reef building corals assessed globally, 37% are threatened by climate change (key message <a href="../../content/key-messages/kma1.html">A1</a>).</p>
+<p>Marine species continue to have the highest levels of data deficiency across all realms, signalling the need to address knowledge gaps, improve monitoring (key message <a href="../../content/key-messages/kmc3.html">C3</a>), and increase capacity for marine species red listing (key message <a href="../../content/key-messages/kmc3.html">C3</a>). High levels of data deficiency compromise effective species and ecosystem management, spatial planning, and decision-making.</p>
 </section>
 <section id="pressures-and-ecological-condition" class="level2">
 <h2 class="anchored" data-anchor-id="pressures-and-ecological-condition">Pressures and ecological condition</h2>
 <div class="grid">
 <div class="g-col-lg-8 g-col-12">
-<p>There are many interacting pressures cumulatively affecting marine ecosystems and species. Key pressures impacting marine biodiversity include fishing (including industrial, recreational and illegal fisheries), coastal development (including ports and harbours), pollution, shipping, mining, freshwater flow reduction, lethal shark control measures and climate change.</p>
-<p>Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (<a href="../../content/key-messages/kma5.html">key message A5</a>) impacting ecosystems, species and genetic diversity (<a href="../../content/key-messages/kmb3.html">key message B3</a>).</p>
+<p>There are many interacting pressures cumulatively affecting marine ecosystems and species. <a href="../../content/marine/marine_pressures.html">Key pressures impacting marine biodiversity</a> are fishing (including industrial, recreational and illegal fisheries), coastal development (including ports and harbours), pollution, shipping, mining, freshwater flow reduction, lethal shark control measures and climate change.</p>
+<p>Fishing, petroleum activities and shipping are widespread sectors resulting in many pressures on multiple ecosystem components and species. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (key message <a href="../../content/key-messages/kma5.html">A5</a>) impacting ecosystems, species and genetic diversity (key message <a href="../../content/key-messages/kmb3.html">B3</a>).</p>
 </div>
 <div class="g-col-lg-4 g-col-12">
 <div id="fig-pressures" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
@@ -898,8 +897,7 @@ Figure&nbsp;2. Map of 31 cumulative pressures in South Africa’s ocean. Red and
 <p>Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and current circulation, increase pollution, and facilitate the introduction and spread of invasive species. Pollution including industrial, municipal and noise pollution are key escalating pressures. Seismic surveys to detect potential offshore oil and gas resources have been expanding into deeper waters and, together with shipping and other sources of underwater noise, pose uncertain risks to marine ecosystems and species. Renewable energy production is important in achieving energy security and reducing climate change impacts but marine renewable energy development requires careful consideration of marine biodiversity impacts.</p>
 <div class="grid">
 <div class="g-col-lg-8 g-col-12">
-<p>The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. However, despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and inaccuracy of pressure impacts on ecosystem condition. Increased monitoring is needed to support assessment of ecosystem and species (<a href="../../content/key-messages/kmb5.html">key message B5</a>), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.</p>
-<p>The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts on biodiversity will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment (<a href="../../content/key-messages/kma2.html">key message A2</a>).</p>
+<p>The first groundtruthing of <a href="../../content/marine/marine_condition.html">marine ecosystem condition</a> shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. However, despite their importance in spatial planning, most marine pressure data are outdated, leading to missing pressures, poor resolution of some pressures, and inaccuracy of pressure impacts on ecosystem condition. Increased monitoring is needed to support assessment of ecosystem and species (key message <a href="../../content/key-messages/kmb5.html">B5</a>), and to quantify ecological condition more accurately for both biodiversity assessment and guiding management.</p>
 </div>
 <div class="g-col-lg-4 g-col-12">
 <div id="fig-condition" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
@@ -914,14 +912,26 @@ Figure&nbsp;3. Map of ecological condition showing the spatial distribution of m
 </div>
 </div>
 </div>
+<p>The impacts of cumulative pressures also warrant consideration at multiple scales, particularly in evaluating the impacts of expanding and diversifying ocean economy activities. Failure to account for indirect and cumulative impacts on biodiversity will mean that important impacts are missed, resulting in poor spatial planning and decisions, with negative impacts on people and the environment (key message <a href="../../content/key-messages/kma2.html">A2</a>).</p>
 </section>
 <section id="knowledge-gaps-priority-actions-and-priority-areas" class="level2">
 <h2 class="anchored" data-anchor-id="knowledge-gaps-priority-actions-and-priority-areas">Knowledge gaps, priority actions and priority areas</h2>
-<p><mark>The NBA 2025 identified knowledge gaps limiting the assessment and research priorities that could strengthen biodiveristy assessment, spatial and management planning, and enable decision-making underpinned by holistic science and diverse forms of knowledge.</mark></p>
-<p><mark>Priority actions for improving the state of marine biodiversity were co-developed in collaboration with knowledge holders, policy and decision makers through a series of science-policy-society dialogues. More than 80 actions were advanced and these were distilled into 10 overarching actions with proposed indicators against which progress could be measured (see <a href="../../content/marine/marine_priority_actions.html">knowledge gaps, priority actions and priority areas</a> page).</mark></p>
-<p>Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified and <mark>products</mark> are being improved with increased participation, collaboration and technical innovation.</p>
+<p>The NBA 2025 identified knowledge gaps limiting the assessment and research priorities that could strengthen biodiversity assessment, spatial and management planning, and enable decision-making underpinned by holistic science and diverse forms of knowledge.</p>
+<p>Priority actions for improving the state of marine biodiversity were co-developed in collaboration with knowledge holders, policy and decision makers through a series of science-policy-society dialogues. More than 80 actions were advanced and these were distilled into 10 overarching actions with proposed indicators against which progress can be tracked (see <a href="../../content/marine/marine_priority_actions.html">knowledge gaps, priority actions and priority areas page</a>).</p>
+<p>Spatial biodiversity priority areas to protect, restore and recover marine ecosystems and species have been identified and planning is being improved with increased participation, collaboration and technical innovation.</p>
 <p>Drawing from key findings of the NBA, ten priority actions were co-developed for improving the state of marine biodiversity. Each of these are associated with several potential indicators for progress. The priority actions include:</p>
-<p><mark>add priority actions linked through to the priority actions page boxes</mark></p>
+<ul>
+<li><p>Enable broader participation in ocean planning, assessment, management and governance. <a href="../../content/marine/marine_priority_actions.html#box-4">Read more »</a></p></li>
+<li><p>Improve marine coordination within government and strengthen collaborations for improved ecosystem-based ocean management and decision-making. <a href="../../content/marine/marine_priority_actions.html#box-5">Read more »</a></p></li>
+<li><p>Avoid, reduce and effectively manage industrial impacts to safeguard marine biodiversity and ecosystem services. <a href="../../content/marine/marine_priority_actions.html#box-6">Read more »</a></p></li>
+<li><p>Ensure sufficient quantity and quality of freshwater flows to marine ecosystems. <a href="../../content/marine/marine_priority_actions.html#box-7">Read more »</a></p></li>
+<li><p>Build on past successes to manage fisheries better and more fairly to improve ocean health and food and livelihood security. <a href="../../content/marine/marine_priority_actions.html#box-8">Read more »</a></p></li>
+<li><p>Ensure that existing Marine Protected Areas (MPAs) function effectively, and expand and diversify South Africa’s conservation estate. <a href="../../content/marine/marine_priority_actions.html#box-9">Read more »</a></p></li>
+<li><p>Update and advance spatial data and maps to strengthen marine biodiversity assessment, planning and management. <a href="../../content/marine/marine_priority_actions.html#box-10">Read more »</a></p></li>
+<li><p>Ensure South Africa has the skills and infrastructure to manage and deliver expanding data for ocean planning and decision-making. <a href="../../content/marine/marine_priority_actions.html#box-11">Read more »</a></p></li>
+<li><p>Maintain marine biodiversity benefits through improved statistics, communication and knowledge sharing. <a href="../../content/marine/marine_priority_actions.html#box-12">Read more »</a></p></li>
+<li><p>Reduce climate risks to people and nature. <a href="../../content/marine/marine_priority_actions.html#box-13">Read more »</a></p></li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/workshop.png" class="img-fluid figure-img"></p>

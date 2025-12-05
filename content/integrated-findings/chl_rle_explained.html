@@ -59,7 +59,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,6 +107,7 @@ background: #adb5bd;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -168,6 +169,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link active" href="../../contents.html" aria-current="page"> 
 <span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/context/media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -414,14 +419,14 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland ecological condition</span></a>
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on freshwater ecosystems</span></a>
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -510,13 +515,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
   </div>
 </li>
       </ul>
@@ -566,23 +565,12 @@ window.Quarto = {
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -595,11 +583,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -656,11 +644,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -671,15 +659,15 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wildlife species in South Africa</span></a>
+ <span class="menu-text">Selected iconic wildlife species</span></a>
   </div>
 </li>
       </ul>
@@ -690,12 +678,23 @@ window.Quarto = {
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seabirds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -734,19 +733,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater Crabs</span></a>
+ <span class="menu-text">Freshwater crabs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anostraca</span></a>
+ <span class="menu-text">Fairy shrimps (Anostraca)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+ <span class="menu-text">Dragonflies and damselflies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -758,7 +757,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sparids</span></a>
+ <span class="menu-text">Seabreams (Sparids)</span></a>
   </div>
 </li>
       </ul>
@@ -905,23 +904,23 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
 </figcaption>
 <div aria-describedby="tbl-applied-criteria-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="rauwzfvmon" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rauwzfvmon table {
+<div id="tyilgyttik" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#tyilgyttik table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rauwzfvmon thead, #rauwzfvmon tbody, #rauwzfvmon tfoot, #rauwzfvmon tr, #rauwzfvmon td, #rauwzfvmon th {
+#tyilgyttik thead, #tyilgyttik tbody, #tyilgyttik tfoot, #tyilgyttik tr, #tyilgyttik td, #tyilgyttik th {
   border-style: none;
 }
 
-#rauwzfvmon p {
+#tyilgyttik p {
   margin: 0;
   padding: 0;
 }
 
-#rauwzfvmon .gt_table {
+#tyilgyttik .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -947,12 +946,12 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-left-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_caption {
+#tyilgyttik .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rauwzfvmon .gt_title {
+#tyilgyttik .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -964,7 +963,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-bottom-width: 0;
 }
 
-#rauwzfvmon .gt_subtitle {
+#tyilgyttik .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -976,7 +975,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-top-width: 0;
 }
 
-#rauwzfvmon .gt_heading {
+#tyilgyttik .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -988,13 +987,13 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-right-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_bottom_border {
+#tyilgyttik .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_col_headings {
+#tyilgyttik .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1009,7 +1008,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-right-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_col_heading {
+#tyilgyttik .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1029,7 +1028,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   overflow-x: hidden;
 }
 
-#rauwzfvmon .gt_column_spanner_outer {
+#tyilgyttik .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1041,15 +1040,15 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 4px;
 }
 
-#rauwzfvmon .gt_column_spanner_outer:first-child {
+#tyilgyttik .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rauwzfvmon .gt_column_spanner_outer:last-child {
+#tyilgyttik .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rauwzfvmon .gt_column_spanner {
+#tyilgyttik .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1061,11 +1060,11 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   width: 100%;
 }
 
-#rauwzfvmon .gt_spanner_row {
+#tyilgyttik .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rauwzfvmon .gt_group_heading {
+#tyilgyttik .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1091,7 +1090,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   text-align: left;
 }
 
-#rauwzfvmon .gt_empty_group_heading {
+#tyilgyttik .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1106,15 +1105,15 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   vertical-align: middle;
 }
 
-#rauwzfvmon .gt_from_md > :first-child {
+#tyilgyttik .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rauwzfvmon .gt_from_md > :last-child {
+#tyilgyttik .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rauwzfvmon .gt_row {
+#tyilgyttik .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1133,7 +1132,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   overflow-x: hidden;
 }
 
-#rauwzfvmon .gt_stub {
+#tyilgyttik .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1146,7 +1145,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 5px;
 }
 
-#rauwzfvmon .gt_stub_row_group {
+#tyilgyttik .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1160,15 +1159,15 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   vertical-align: top;
 }
 
-#rauwzfvmon .gt_row_group_first td {
+#tyilgyttik .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rauwzfvmon .gt_row_group_first th {
+#tyilgyttik .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rauwzfvmon .gt_summary_row {
+#tyilgyttik .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1178,16 +1177,16 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 5px;
 }
 
-#rauwzfvmon .gt_first_summary_row {
+#tyilgyttik .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_first_summary_row.thick {
+#tyilgyttik .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rauwzfvmon .gt_last_summary_row {
+#tyilgyttik .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1197,7 +1196,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-bottom-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_grand_summary_row {
+#tyilgyttik .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1207,7 +1206,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 5px;
 }
 
-#rauwzfvmon .gt_first_grand_summary_row {
+#tyilgyttik .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1217,7 +1216,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-top-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_last_grand_summary_row_top {
+#tyilgyttik .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1227,11 +1226,11 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-bottom-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_striped {
+#tyilgyttik .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rauwzfvmon .gt_table_body {
+#tyilgyttik .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1240,7 +1239,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-bottom-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_footnotes {
+#tyilgyttik .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1254,7 +1253,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-right-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_footnote {
+#tyilgyttik .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1263,7 +1262,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 5px;
 }
 
-#rauwzfvmon .gt_sourcenotes {
+#tyilgyttik .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1277,7 +1276,7 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   border-right-color: #D3D3D3;
 }
 
-#rauwzfvmon .gt_sourcenote {
+#tyilgyttik .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1285,72 +1284,72 @@ Table&nbsp;1. The IUCN Red List of Ecosystem criteria applied across realms in S
   padding-right: 5px;
 }
 
-#rauwzfvmon .gt_left {
+#tyilgyttik .gt_left {
   text-align: left;
 }
 
-#rauwzfvmon .gt_center {
+#tyilgyttik .gt_center {
   text-align: center;
 }
 
-#rauwzfvmon .gt_right {
+#tyilgyttik .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rauwzfvmon .gt_font_normal {
+#tyilgyttik .gt_font_normal {
   font-weight: normal;
 }
 
-#rauwzfvmon .gt_font_bold {
+#tyilgyttik .gt_font_bold {
   font-weight: bold;
 }
 
-#rauwzfvmon .gt_font_italic {
+#tyilgyttik .gt_font_italic {
   font-style: italic;
 }
 
-#rauwzfvmon .gt_super {
+#tyilgyttik .gt_super {
   font-size: 65%;
 }
 
-#rauwzfvmon .gt_footnote_marks {
+#tyilgyttik .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rauwzfvmon .gt_asterisk {
+#tyilgyttik .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rauwzfvmon .gt_indent_1 {
+#tyilgyttik .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rauwzfvmon .gt_indent_2 {
+#tyilgyttik .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rauwzfvmon .gt_indent_3 {
+#tyilgyttik .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rauwzfvmon .gt_indent_4 {
+#tyilgyttik .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rauwzfvmon .gt_indent_5 {
+#tyilgyttik .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rauwzfvmon .katex-display {
+#tyilgyttik .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rauwzfvmon div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#tyilgyttik div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

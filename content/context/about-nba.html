@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3bf24dfed18dffe8877f8d918430f0ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-16fa3bc6452896bbe83b31a44f772b15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -91,6 +91,7 @@ background: #A7A9AC;
 @media (min-width: 992px) { /* because the bread crumbs are only on the banner on large screens */
   .breadcrumb li a {
     color: white !important;
+    --bs-breadcrumb-divider-color: white !important;
   }
 }
 </style>
@@ -130,6 +131,10 @@ background: #A7A9AC;
   <li class="nav-item">
     <a class="nav-link active" href="../../contents.html" aria-current="page"> 
 <span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/context/media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -376,14 +381,14 @@ background: #A7A9AC;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wetland ecological condition</span></a>
+  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pressures on freshwater ecosystems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/freshwater/fw_wet_pressures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pressures on freshwater ecosystems</span></a>
+  <a href="../../content/freshwater/fw_wet_condition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wetland ecological condition</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -472,13 +477,7 @@ background: #A7A9AC;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/estuaries/est_ets_epl.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intesection of ecosystem threat status and protection level</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../content/species/est_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
+ <span class="menu-text">Intersection of ecosystem threat status and protection level</span></a>
   </div>
 </li>
       </ul>
@@ -528,23 +527,12 @@ background: #A7A9AC;
  <span class="menu-text">Intersection of ecosystem threat status and protection levels</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Species status</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth4 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Marine birds</span></a>
+  <a href="../../content/species/marine_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species status</span></a>
   </div>
 </li>
-      </ul>
-  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/marine/marine_priority_actions.html" class="sidebar-item-text sidebar-link">
@@ -557,11 +545,11 @@ background: #A7A9AC;
       <div class="sidebar-item-container"> 
             <a href="../../content/coast/cst_synthesis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/coast/cst_ecosystems.html" class="sidebar-item-text sidebar-link">
@@ -618,11 +606,11 @@ background: #A7A9AC;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Species findings</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_plants.html" class="sidebar-item-text sidebar-link">
@@ -633,15 +621,15 @@ background: #A7A9AC;
       <div class="sidebar-item-container"> 
             <a href="../../content/species/sp_mammals.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mammals</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_mammal_wildlife.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Wildlife species in South Africa</span></a>
+ <span class="menu-text">Selected iconic wildlife species</span></a>
   </div>
 </li>
       </ul>
@@ -652,12 +640,23 @@ background: #A7A9AC;
  <span class="menu-text">Reptiles</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/species/sp_birds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Birds</span></a>
+  <a href="../../content/species/marine_bird_sp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seabirds</span></a>
   </div>
 </li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_spiders.html" class="sidebar-item-text sidebar-link">
@@ -696,19 +695,19 @@ background: #A7A9AC;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_fwfcrabs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Freshwater Crabs</span></a>
+ <span class="menu-text">Freshwater crabs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_anostraca.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Anostraca</span></a>
+ <span class="menu-text">Fairy shrimps (Anostraca)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_dragons.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dragonflies &amp; Damselflies</span></a>
+ <span class="menu-text">Dragonflies and damselflies</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -720,7 +719,7 @@ background: #A7A9AC;
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/species/sp_sparids.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sparids</span></a>
+ <span class="menu-text">Seabreams (Sparids)</span></a>
   </div>
 </li>
       </ul>
@@ -830,7 +829,7 @@ background: #A7A9AC;
 </figure>
 </div>
 <p>The scope of the NBA is broad, assessing biodiversity at the ecosystem and species level, and addressing aspects of genetic diversity. The assessment covers all of South Africa’s territory, across land and sea, including its subantarctic territory of the Prince Edward Islands. Information is organised by realm (terrestrial, freshwater (rivers and inland wetlands), estuarine and marine (benthic and pelagic)), and the cross-ream coastal zone and the subantarctic region. For species, information is organised by taxonomic group and summarised for each realm.</p>
-<p>Read more about the purposes and uses of all the NBA products <a href="../../content/context/uses-nba.html">here</a>.</p>
+<p><a href="../../content/context/uses-nba.html">Read more »</a>.</p>
 </section>
 <section id="how-the-nba-is-undertaken" class="level2">
 <h2 class="anchored" data-anchor-id="how-the-nba-is-undertaken">How the NBA is undertaken</h2>
@@ -840,10 +839,10 @@ background: #A7A9AC;
 <section id="when-the-nba-is-updated" class="level2">
 <h2 class="anchored" data-anchor-id="when-the-nba-is-updated">When the NBA is updated</h2>
 <p>An important lesson learned from previous NBAs is to align with the preparation of the national report required by the UN Convention on Biological Diversity (CBD), to ensure that the latest information is available. While the NBA findings also feed into other Multilateral Environmental Agreements, there are multiple shared indicators across the NBA and Kunming-Montreal Global Biodiversity Framework of the CBD.</p>
-<p>The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the <a href="../../content/context/whatsnew-nba.html">what’s new</a> section to see which sections have been updated.</p>
+<p>The shift to delivering the NBA as a website allows for more regular updates of components as they become available, rather than waiting for an official release. Keep checking the <a href="../../content/context/whatsnew-nba.html">what’s new</a> section of this website to see which sections have been updated.</p>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
-<p>Read more about the origins, context, goals, form, scope and approach of the NBA in the document called <a href="https://hdl.handle.net/20.500.12143/9058">South Africa’s National Biodiversity Assessment: Contextual and Operational Framework</a>.</p>
+<p>Read more about the origins, context, goals, form, scope and approach of the NBA in the <a href="https://hdl.handle.net/20.500.12143/9058">National Biodiversity Assessment: Contextual and Operational Framework</a>.</p>
 <p>Poole, C.J., Skowno, A.L., Currie, J.C., Sink, K.J., Daly, B., von Staden, L., 2023. Taking state of biodiversity reporting into the information age – A South African perspective. Frontiers in Ecology and Evolution 1–6. <a href="https://doi.org/10.3389/fevo.2023.1107956" class="uri">https://doi.org/10.3389/fevo.2023.1107956</a></p>
 
 
