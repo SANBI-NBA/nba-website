@@ -64,7 +64,7 @@ google-scholar: true
 
 *Six different macrophyte habitats are recognised in South African estuaries. The spatial distribution of different macrophyte communities along the length of an estuary is dependent on the salinity created by a continual flow of freshwater into the system. This spatial distribution is of significance as it gives a good indication of the health of the estuary. Estuaries with low freshwater inflow tend to have low macrophyte diversity.*
 
-![Extesive saltmashes of the Kromme Estuary. (© Janine Adams)](imgs/est_kromme_salt_marsh_2.png)
+![Extensive saltmashes of the Kromme Estuary. (© Janine Adams)](imgs/est_kromme_salt_marsh_2.png)
 
 ## Important estuarine habitats
 
@@ -105,7 +105,7 @@ Submerged macrophytes are important primary producers in estuaries providing a s
 ::: {.column width="60%"}
 Reeds, sedges and rushes are important in the freshwater and brackish zones of estuaries. Because they are often associated with freshwater input they can be used to identify freshwater seepage sites along estuaries. The dominant species are the common reed *Phragmites australis* and sedges *Schoenoplectus* spp., *Scirpoides* spp. and *Bolboschoenus maritimus*.
 
-Like salt marsh, reeds and sedges protection the banks of estuaries from erosion. They also provide an important habitat for birds, invertebrates, fish and food for detritivores. Due to their high productivity *Phragmites*-dominated marshes are widely used in artificial wetlands for the treatment of polluted water.
+Like salt marsh, reeds and sedges protect the banks of estuaries from erosion. They also provide an important habitat for birds, invertebrates, fish and food for detritivores. Due to their high productivity *Phragmites* is widely used in the construction of artificial wetlands for the treatment of polluted water.
 :::
 ::::::
 
@@ -143,7 +143,7 @@ Mangroves are threatened by overutilisation such as the harvesting of mangrove w
 :::
 
 ::: {.column width="60%"}
-Swamp forests are transitional freshwater-terrestrial ecosystems associated with estuaries in the subtropical and tropical regions, including species such as *Barringtonia racemosa*, *Hibiscus tiliaceous*, *Ficus trichopoda* and *Syzigium cordatum*. In systems with little submerged macrophytes they play an important role in detritus input in the form of leaf litter. This habitat plays an important role in riparian erosion control and flood attenuation.
+Swamp forests are transitional freshwater-terrestrial ecosystems that are also associated with certain estuaries in the Subtropical and Tropical regions, including species such as *Barringtonia racemosa*, *Hibiscus tiliaceous*, *Ficus trichopoda* and *Syzigium cordatum*. In systems with little submerged macrophytes they play an important role in detritus input in the form of leaf litter. This habitat plays an important role in riparian erosion control and flood attenuation.
 :::
 ::::::
 
@@ -177,7 +177,7 @@ Macroalgae can be free-floating or attached to rocks and other substrates. Filam
 :::
 
 ::: {.column width="60%"}
-This habitat provides a possible area for microphytobenthos to inhabit.
+This habitat provides a possible area for microphytobenthos communities to establish.
 :::
 ::::::
 
@@ -213,7 +213,7 @@ The Berg Estuary is a unique system worthy of conservation as it has extensive f
 
 ![Distribution of supratidal salt marsh habitat in South African estuaries.](imgs/supertidal_map.png){#fig-sp}
 
-Mangroves and swamp forests are restricted to the Tropical and Subtropical region of South Africa, with a few estuaries in the Warm Temperate region of the Eastern Cape supporting these habitats. uMhlathuze Estuary supports the largest mangrove habitat (760 ha), with the second-highest area occurring at St Lucia Estuary (290 ha). Although not truly estuarine swamp forest habitat occurs within the estuarine functional zone of estuaries. The greatest cover of swamp forest was mapped at iMfolozi/uMsunduze Estuary (1 680 ha). Kosi Estuarine Lake also supports a large area of swamp forest habitat (870 ha) and uMlalazi Estuary (100 ha).
+Mangroves and swamp forests are transitional ecosystems types (between the freshwater, terrestrial and marine realms). They restricted to the Tropical and Subtropical region of South Africa, with a few estuaries in the Warm Temperate region of the Eastern Cape supporting these habitats. uMhlathuze Estuary supports the largest mangrove habitat (760 ha), with the second-highest area occurring at St Lucia Estuary (290 ha). Although not truly estuarine swamp forest habitat occurs within the estuarine functional zone of estuaries. The greatest cover of swamp forest was mapped at iMfolozi/uMsunduze Estuary (1 680 ha). Kosi Estuarine Lake also supports a large area of swamp forest habitat (870 ha) and uMlalazi Estuary (100 ha).
 
 ![Distribution of mangrove habitat in South Africa.](imgs/mangrove_map.png){#fig-man}
 
@@ -221,13 +221,13 @@ About 20% of South African estuaries support submerged aquatic vegetation as the
 
 ## Species diversity of macrophyte habitats
 
-The number of macrophyte species per estuary varies from one to 54, recorded at Kosi Estuary. The presence/absence list has been simplified to about 180 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat. Macrophyte species are distributed in 60 families. Only 66 plant species occurred in five or more estuaries in the country. Of these, 14 species occurred in more than 20% of the country’s estuaries. Species such as sharp rush (*Juncus kraussii*)and common reed (*Phragmites australis*) are widely distributed in estuaries.
+The number of macrophyte species per estuary varies from one to 54, recorded at Kosi Estuary. The presence/absence list has been simplified to about 180 estuarine-associated plant species, the majority (56 species) of which are associated with salt marsh habitat. Macrophyte species are distributed in 60 families. Only 66 plant species occurred in five or more estuaries in the country. Of these, 14 species occurred in more than 20% of the country’s estuaries. Species such as sharp rush (*Juncus kraussii*) and common reed (*Phragmites australis*) are widely distributed in estuaries.
 
 Macrophyte species richness was higher in estuaries of the Cool and Warm temperate zone than in the Subtropical zone. This included a large number of ecotone species; terrestrial species occurring in the estuary functional zone. Inclusion of the new Tropical bioregion shows that the estuaries there (Kosi & Mgobezeleni) have higher macrophyte species richness than the Cool temperate zone. The Langebaan estuarine lagoon had the highest species richness. Estuarine bays, lakes and permanently open estuaries followed in terms of the highest number of macrophyte species present.
 
 ## Macrophyte habitat distribution changes
 
-Estuaries are by nature resilient systems, because their fauna and flora are adapted to living in conditions of extreme change. However, development surrounding estuaries can cause changes to the structural habitat of an estuary, possibly resulting in local extinctions. Development also prevents lateral movement of habitats such as salt marsh. The construction of hard structures in estuary floodplains is not easily reversible and can only be mitigated. Even recovery from temporary disturbances can take decades to restore to nature conditions. Global sea level rise coupled with these artificial margins, referred to as coastal squeeze, will result in localised extinctions of habitats as the biota will be unable to move landward. The combination of changing temperature, precipitation and increased coastal erosion may result in species distribution changes resulting in shifts along the coastline. The ecotones between salt marshes and terrestrial vegetation need to be maintained to prevent invasion by alien plants and to ensure landward migration of salt marsh vegetation.
+Estuaries are by nature resilient systems, because their fauna and flora are adapted to living in conditions of extreme change. However, development surrounding estuaries can cause changes to the structural habitat of an estuary, possibly resulting in local extinctions. Development also prevents lateral movement of habitats such as salt marsh. The construction of hard structures in estuary floodplains is not easily reversible and can only be mitigated. Even recovery from temporary disturbances can take decades. Global sea level rise coupled with these artificial margins, referred to as coastal squeeze, will result in localised extinctions of habitats as the biota will be unable to move landward. The combination of changing temperature, precipitation and increased coastal erosion may result in species distribution changes resulting in shifts along the coastline. The ecotones between salt marshes and terrestrial vegetation need to be maintained to prevent invasion by alien plants and to ensure landward migration of salt marsh vegetation.
 
 Over 10 000 ha of macrophyte habitat has been lost across the country directly due to a change in land-use i.e. transformation of natural habitat into development and other activities. It is estimated that 4 300 ha of salt marsh has been lost and over 250 ha of mangrove habitat. These losses have had an impact on the provisioning of ecosystem services provided by estuaries. Estuaries have lost vital habitat for refugia and food provisioning for juvenile fish and invertebrate species, the ability to provide protection against coastal storms, the ability to remediate waste and filter water, and food provisioning services, amongst others.
 
@@ -237,7 +237,7 @@ The greatest loss of macrophyte habitat has been of supratidal salt marsh. This 
 
 Intertidal salt marsh has been lost from a number of estuaries. The Berg, Langebaan and Knysna estuaries, which presently support the largest areas, receive some level of protection in reserves [@maree2000]. Development, such as the town of Knysna, Thesen Island, Leisure Isle, the N2 road bridge and embankments, has resulted in the loss of large areas of salt marsh habitat in the Knysna Estuary. The Port Alfred Marina, the town of Port Alfred and houses along the banks with jetties have removed intertidal salt marsh habitat from the Kowie Estuary. Footpaths and the caravan park in the lower reaches has disturbed habitat in the Great Fish Estuary.
 
-Agriculture within the floodplain of estuaries has resulted in the loss of large supratidal salt marsh habitat in the country. Nearly 90% of salt marsh at Gamtoos Estuary has been lost to vegetable cultivation and cattle grazing. The Orange River Estuary, a Ramsar wetland of international importance, is the boundary between South African and Namibia. It was placed on the Montreux Record in 1995 because 300 ha of salt marsh had become desertified. This loss was attributed to leakage of diamond mine water, the effect of windblown dried slimes dam sediment on the marsh vegetation, construction of flood protection works and a beach access road, and the elimination of tidal exchange into the wetland due to a causeway constructed at the river mouth [@shaw2008]. Due to the low rainfall on the West Coast and highly salinized nature of the desertified marsh area there has been little change of the salt marsh status over the last 10 years.
+Agriculture within the floodplain of estuaries has resulted in the loss of large supratidal salt marsh habitat in the country. Nearly 90% of salt marsh at Gamtoos Estuary has been lost to vegetable cultivation and cattle grazing. The Orange River Estuary, a Ramsar wetland of international importance, is the boundary between South Africa and Namibia. It was placed on the Montreux Record in 1995 because 300 ha of salt marsh had become desertified. This loss was attributed to leakage of diamond mine water, the effect of windblown dried slimes dam sediment on the marsh vegetation, construction of flood protection works and a beach access road, and the elimination of tidal exchange into the wetland due to a causeway constructed at the river mouth [@shaw2008]. Due to the low rainfall on the West Coast and highly salinized nature of the desertified marsh area there has been little change of the salt marsh status over the last 10 years.
 
 There is some protection for estuaries with large salt marsh areas in South Africa. In addition, estuary management plans are a requirement of the National Environmental Management: Integrated Coastal Management Act (Act 24 of 2008). These plans can be effective in protecting sensitive habitats such as salt marsh through zonation of destructive activities, such as boating. There is a need for formal protection status for the Berg Estuary, which is currently designated as an Important Bird Area (IBA) where the water and intertidal habitat is managed by CapeNature and the local municipality. Restoration of the salt marsh at the Orange River Mouth is also needed, as well as greater protection for the large intertidal salt marshes of Knysna Estuary.
 

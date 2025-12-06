@@ -136,7 +136,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 <center>
 
 | [44%]{.inline-style-endemic}
-| of 36 species are assessed are
+| of 36 species are
 | [Endemic]{.inline-style-indicator}
 
 </center>
@@ -147,9 +147,9 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 ## Key findings
 
--   There are 40 described Anostraca species (referred to as fairy shrimps) in South Africa, representing \~11% of the world's species (\~353)[@rogers2013a].
+-   There are 40 described fairy shrimp (Anostraca) species in South Africa, representing around 11% of the world's 353 species[@rogers2013a].
 
--   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (four species are still in review, which will take the total assessed species to 40).
+-   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (four species are still in review).
 
 -   Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) [@meyer-milne-a].
 
@@ -163,7 +163,7 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Spatial distribution of threatened anostraca. The legend reflects the number of threatened anostraca per 10 x 10 km grid cell. Darker shading shows areas where threatened anostraca are concentrated."
+#| fig-cap: "Threatened Anostraca richness across South Africa, mapped as the number of threatened species per 10 x 10 km grid cell."
 #| out-width: 650px
 
 knitr::include_graphics("./imgs/anostraca_thrt_10km_HD.png")
@@ -171,14 +171,14 @@ knitr::include_graphics("./imgs/anostraca_thrt_10km_HD.png")
 
 ## Threat status
 
-For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN Red List of Threatened Species Categories and Criteria. This includes 40 species, of which [36 have been published and are presented here](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581). The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified [@meyer-milne-a].
+For the first time in South Africa, a comprehensive assessment of Anostraca species was conducted using the IUCN Red List of Threatened Species Categories and Criteria. This includes 40 species, of which [36 have been published and are presented here](https://www.iucnredlist.org/search?permalink=41b6a04f-4ca0-47a8-8d57-65277bde5581) (@fig-2, @tbl-tab-0). The last four species will be included in future updates. Nine species were found to be threatened with extinction, of which two were assessed as Critically Endangered (Possibly Extinct). The latter species are both only known from their type collection series. *Streptocephalus gracilis* was last collected in 1898, while *Rhinobranchipus martensi* was last collected in 1989. Sadly, the type localities for both species have been severely modified [@meyer-milne-a].
 
 :::: panel-tabset
 ## Figure
 
 ```{r}
 #| label: fig-2
-#| fig-cap: "Summary threat status of South African Anostraca species; categories follow the IUCN 3.1 Red List Categories and Criteria. The portion of species in each category is shown in the larger circle (A), and the proportion of endemic species per category is shown in the smaller circle (B). The total number of taxa that have been assessed is shown inside the circles." 
+#| fig-cap: "Threat status of South African Anostraca species assessed following the IUCN 3.1 Red List Categories and Criteria. A shows the proportion of all species in each category, while B is the proportion of endemic species per category. The total number of species that have been assessed is indicated within each circle." 
 #| out-width: 100%
 #| out-height: "auto"
 
@@ -370,18 +370,17 @@ gt(dat_combined_final) %>%
   tab_options(table.width = pct(100),
               data_row.padding = px(12)) %>%
 
-  tab_style(style = cell_fill(color = "white"),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_borders(sides = c("left", "right"),
-                                 color = "transparent",
-                                 weight = px(0)),
-            locations = cells_column_labels(columns = everything())) %>%
-  
-  tab_style(style = cell_borders(sides = "bottom",
-                                 color = "grey", 
-                                 weight = px(1)),
-            locations = cells_body(columns = everything())) %>%
+  tab_style(
+     style = list(
+     cell_fill(color = "#D1D3D4")),
+     locations = cells_column_labels()) %>%
+tab_style(
+     style = cell_borders(
+     sides = c("left", "right"),
+     color = NA,
+     style = "hidden",
+     weight = px(0)),
+     locations = cells_column_labels()) %>%
 
   cols_width(Taxon ~ pct(15),
              everything() ~ pct(10))
@@ -397,11 +396,11 @@ The temporary aquatic habitats that anostracans inhabit include a range of endor
 
 ## Trends – the Red List Index
 
-The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for specific taxonomic groups based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of Anostraca was calculated for the first time for South Africa, and this group is relatively low on the RLI scale, with a value of 0.84. This indicates that the group has high levels of threat and that many species are at risk of extinction.
+The trend in species status over time was measured using a global standard indicator, the IUCN Red List Index (RLI) of species [@butchart2004a]. The RLI is calculated for each taxonomic group based on genuine changes in Red List status over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The Red List Index of Anostraca was calculated for the first time for South Africa, and this group is relatively low on the RLI scale, with a value of 0.84 (@fig-3). This indicates that the group has high levels of threat and that many species are at risk of extinction.
 
 ```{r}
 #| label: fig-3
-#| fig-cap: " The Red List Index (RLI) for Anostraca taxa assessed in South Africa (RLI  value = 0.84). The slope of the line indicates the rate at which species within each taxonomic group are becoming more threatened over time. The lower the value, the closer the group of species is towards extinction (if the value is 0, all species are extinct). This is the first assessment for Anostraca, and it is only represented by a single point. Aggregate refers to the national average RLI across all assessed taxonomic groups."
+#| fig-cap: " The Red List Index (RLI) for Anostraca taxa assessed in South Africa (RLI  value = 0.84). The slope of the line indicates the rate at which the risk of extinction of plants within each biome is changing over time. A lower value means more species are at high risk of extinction. The aggregate trend line shows the Red List Index for all taxonomic groups included in South Africa’s RLI. This is the first assessment for Anostraca, and it is only represented by a single point."
 #| out-width: 100%
 
 library(tidyverse)
@@ -428,11 +427,11 @@ nba_index_plot(
 
 ## Pressures
 
-The major drivers of threat to Anostraca species are habitat loss and degradation caused by urban and agricultural expansion and mining. Due to the temporary nature of the freshwater systems that Anostraca species inhabit, they seldom exhibit wetland indicators to alert water resource protection. Their soils do not always display typical soil wetness indicators and obligate- or facultative wetland plant species are often absent. In the arid regions of South Africa, the surfaces of many pan systems are bare or rocky, while along the escarpment or other large rock formations, the rock pools go unnoticed when dry. As a result, these habitats and their unique aquatic fauna do not receive adequate recognition to allow for their protection against ongoing pressures.
+The major drivers of threat to Anostraca species are habitat loss and degradation caused by urban and agricultural expansion and mining (@fig-5). Due to the temporary nature of the freshwater systems that Anostraca species inhabit, they seldom exhibit wetland indicators to alert water resource protection. Their soils do not always display typical soil wetness indicators and obligate- or facultative wetland plant species are often absent. In the arid regions of South Africa, the surfaces of many pan systems are bare or rocky, while along the escarpment or other large rock formations, the rock pools go unnoticed when dry. As a result, these habitats and their unique aquatic fauna do not receive adequate recognition to allow for their protection against ongoing pressures.
 
 ```{r}
 #| label: fig-5
-#| fig-cap: "Key pressures on South Africa’s anostraca, based on the relative frequency of pressures affecting threatened  and Near Threatened species, using the IUCN Threat Classification Scheme [@i2025a]. The percentage of threatened and Near threatened species impacted by specific pressures are presented."
+#| fig-cap: "Key pressures affecting threatened and Near Threatened Anostraca. Pressures are categorised using the IUCN Threat Classification Scheme and are ranked from most to least frequent number of impacted species."
 #| out-width: 100%
 
 
@@ -455,7 +454,7 @@ See the article ['Land speed record’ racecourse threatens rare fairy shrimps a
 
 ## Protection level
 
-Anostraca were not included in the formal protection level assessment following the methodology outlined as part of the NBA 2018 protection level assessment [@skowno2019a]. However, an initial overlay of the South African Protected Area network and the distribution records of Anostraca species was done as part of the IUCN Red Listing process. This preliminary assessment showed that only a few species’ distributions intersect with protected areas, and, similar to freshwater fishes [@jordaan2020a], these areas were not specifically designed to protect Anostraca species or freshwater species in general. Further analysis is needed to evaluate the effectiveness of existing protected areas where such overlaps occur.
+Anostraca were not assessed according to the [formal protection level assessment methods of the NBA](../integrated-findings/chl_spl_explained.qmd). However, an initial overlay of the South African protected area network and the distribution records of Anostraca species was done as part of the IUCN Red Listing process. This preliminary assessment showed that only a few species’ distributions intersect with protected areas, and, similar to freshwater fishes \[@jordaan2020a\], these areas were not specifically designed to protect Anostraca species or freshwater species in general. Further analysis is needed to evaluate the effectiveness of existing protected areas where such overlaps occur.
 
 ## Monitoring
 
@@ -479,15 +478,15 @@ New to iNaturalist (or never heard of it) and want to contribute? Watch these [v
 
 ## Knowledge gaps
 
-Many of the Anostraca species that are of conservation concern are considered under-sampled, as there are only a few experts actively conducting surveys, and the taxonomical skills to accurately identify the specimens to species level are scarce. Furthermore, the life history traits adopted by Anostraca to survive in their temporary habitats create an unpredictable sampling timeframe, which complicates sampling attempts. As a result, many promising potential habitats remain underexplored. Some of the important actions needed to address current knowledge gaps include:
+Many of the Anostraca species that are of conservation concern are considered under-sampled, as there are only a few experts actively conducting surveys, and the taxonomical skills to accurately identify the specimens to species level are scarce. Furthermore, the life history traits adopted by Anostraca to survive in their temporary habitats create an unpredictable sampling timeframe, which complicates sampling attempts. As a result, many promising potential habitats remain under-explored. Some of the important actions needed to address current knowledge gaps include:
 
 -   Many areas in South Africa and the subcontinent remain unsampled. Regional surveys specifically for Gauteng, Mpumalanga, Limpopo, Free State and North-West should be prioritised.
 
--   Active search campaigns should be launched for the CR - Possibly Extinct species, *Streptocephalus gracilis* and *Rhinobranchipus martensi*, as well as for the Data Deficient species, *Branchipodopsis scambus* and *Streptocephalus vitreus*.
+-   Active search campaigns should be launched for the possibly extinct species, *Streptocephalus gracilis* and *Rhinobranchipus martensi*, as well as for the Data Deficient species, *Branchipodopsis scambus* and *Streptocephalus vitreus*.
 
 -   Genetic studies are needed to unravel suspected species complexes, where great morphological variation exist, e.g., *Branchipodopsis wolfi* and *Branchipodopsis tridens*.
 
--   Developing a standardised method to calculate population estimates for hatching trials, field research, monitoring, and ad-hoc sampling, which is a vital element during red list assessments.
+-   Developing a standardised method to calculate population estimates for hatching trials, field research, monitoring, and ad-hoc sampling, which is a vital element during Red List assessments.
 
 -   Attracting interest for branchiopod research and training more South Africans in branchiopod taxonomy skills.
 
@@ -523,7 +522,7 @@ The IUCN Red List of Threatened Species Categories and Criteria are used to asse
 
 Categorisation of southern African anostracan species and their conservation status was attempted by [@hamer1997a] and [@roeck2007a], according to the IUCN criteria at that time. From their attempts, only four species were officially added to the IUCN Red list, because many species lacked information to be properly categorised and fully assessed. Considerable advances have been made in anostracan research in South Africa over the past few decades. In 2023, the first comprehensive assessment of South African Anostraca was initiated through the NRF FBIP Project REFRESH. This assessment was conducted through online workshops by experts from multiple institutions. From the 40 species that were assessed, 36 have been published, with four assessments still in process.
 
-About species threat status: See details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_spl_explained.qmd).
+See more details about how the IUCN Red List assessments are conducted [here](../integrated-findings/chl_spl_explained.qmd).
 
 ## Acknowledgements
 
@@ -561,26 +560,18 @@ contributors_tbl <- data.frame(Contributors = c("Anisha Dayaram", "Carol Poole",
 
 # Build the gt table
 ref<- gt(contributors_tbl) %>%
-   #nba_tbl_theme() %>%
-       tab_options(#data_row.padding = px(16),
-              table.font.size = px(13L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black")%>%
- tab_style(style = cell_fill(color = "white"), 
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = c("left", "right"),
-                                color = "transparent",
-                                weight = px(0)),
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = "bottom",
-                                color = "grey", 
-                                weight = px(1)),
-          locations = cells_body(columns = everything())) %>%
+   nba_tbl_theme() %>%
+       tab_style(
+     style = list(
+     cell_fill(color = "#D1D3D4")),
+     locations = cells_column_labels()) %>%
+tab_style(
+     style = cell_borders(
+     sides = c("left", "right"),
+     color = NA,
+     style = "hidden",
+     weight = px(0)),
+     locations = cells_column_labels()) %>%
   tab_style(
     style = cell_text(align = "left"),
     locations = cells_body(columns = everything())

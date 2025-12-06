@@ -197,7 +197,7 @@ South Africa has a wide range of bioclimatic, oceanographic, geological and topo
 
 **Terrestrial realm**: Nine biomes and 463 ecosystem types, approximately 80% of which are endemic.
 
-**Freshwater realm**: Highly variable rainfall supports diverse freshwater ecosystems; **wetlands** are classified into 82 distinct types, and **rivers** are classified into 222 distinct types.
+**Freshwater realm**: Highly variable rainfall and topography supports diverse freshwater ecosystems; **wetlands** are classified into 82 interim types, and **rivers** are classified into 222 distinct types.
 
 **Marine realm**: Exceptional marine biodiversity, represented by 163 distinct ecosystem types.
 

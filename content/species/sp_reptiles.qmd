@@ -8,7 +8,7 @@ title-block-banner-color: white
 
 ------------------------------------------------------------------------
 
-::: {.callout-important icon="TRUE" title="Attention:" style="--callout-icon-color: white; font-size:100px;"}
+::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
 ###### The status summary of reptiles is under production and will be available from February 2026.
 
 For details of the latest assessment of reptiles: See the [Conservation status of the reptiles of South Africa, Eswatini and Lesotho](https://www.sanbi.org/wp-content/uploads/2024/06/2023_Suricata10.pdf).

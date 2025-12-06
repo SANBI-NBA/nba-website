@@ -126,7 +126,7 @@ perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 <!--estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) Protected in South Africa, less than 1% of area is Well Protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From a ecosystem type perspective about `r perc_wp_count`% are Well Protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.-->
 
-![Bulurha Estuary - Warm Temperate - Large Temporarily Closed. (© Nelson Mandela Univeristy)](imgs/Image-bulungula.png)
+![Bulurha Estuary – Warm Temperate – Large Temporarily Closed. (© Nelson Mandela University)](imgs/Image-bulungula.png)
 
 ------------------------------------------------------------------------
 
@@ -198,7 +198,7 @@ Similarly, nine estuarine ecosystem types are categorised as Poorly Protected, n
 
 Since 2011, there has been an erosion of protection in historically protected areas. This can be attributed to the removal of no-take restrictions and the development of commercial fisheries in Marine Protected Areas (MPAs). This is further exacerbated by increased illegal gillnetting in protected areas in KwaZulu-Natal.
 
-An investment in estuarine protection is needed in ecosystem types that are Not Protected, or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical region are the best protected, while ecosystem types in the Cool Temperate regions have the lowest protection levels.
+An investment in estuarine protection is needed in ecosystem types that are Not Protected, or to advance Poorly Protected ecosystem types towards Well Protected. Ecosystem types in the Tropical and Warm Temperate biogeographical regions are the best protected, while ecosystem types in the Cool Temperate regions have the lowest protection levels.
 
 ```{r}
 #| label: fig-est_epl_map
@@ -219,9 +219,9 @@ knitr::include_graphics("imgs/epl_with_donut.png")
 
 There is an opportunity to improve the protection level of some of the Poorly or Moderately Protected ecosystem types to Well Protected through improved estuarine management and ecosystem restoration to reduce ecosystem degradation.
 
-Several under-protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of estuarine ecosystem types and 10% of the total estuarine area could be Well Protected if fishing efforts in just 3 estuaries were better controlled. These estuaries are Langebaan, Knysna and Kosi.
+Several under-protected ecosystem types can advance to Well Protected solely with improved management of fishing and water quality. For example, 32% of estuarine ecosystem types and 10% of the total estuarine area could be Well Protected if fishing efforts in just three estuaries were better controlled. These estuaries are Langebaan, Knysna and Kosi.
 
-The global support for a 30% protection target (2030 Global Biodiversity Framework Target 3) presents a unique opportunity to garner international support and possible funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process of evaluating and extending estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
+The global support for a 30% protection target (Global Biodiversity Framework Target 3) presents a unique opportunity to garner international support and possible funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process of evaluating and extending estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
 
 Ongoing efforts to develop other effective area-based conservation measures (OECMs) and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and curb the ongoing decline in Blue Carbon habitats. It is less clear if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increasing formal protection over time or as a sufficient measure on its own.
 
@@ -322,9 +322,9 @@ tbl %>%
 :::
 ::::
 
-While the larger estuaries with greater biodiversity are undoubtedly priorities for protection, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, an increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond. Gaps in representation will persist unless some ecosystem types or functional groups (e.g. Cool Temperate Large Fluvially Dominated) are targeted for inclusion in Marine Protected Areas, Protected areas or OECMs.
+While the larger estuaries with greater biodiversity are undoubtedly priorities for protection, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, an increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond. Gaps in representation will persist unless some ecosystem types or functional groups (e.g. Cool Temperate Large Fluvially Dominated) are targeted for inclusion in Marine Protected Areas, formal Protected Areas or OECMs.
 
-It is increasingly evident that protected areas will be less meaningful if they don’t involve people in the landscape and address issues that undermine their legitimacy and effectiveness. OECMs and/or Stewardship offer new opportunities for a broader diversity of conservation models to contribute to marine protection. Lastly, an increasing extent of protection alone will not advance estuarine ecosystems to Well Protected. The condition of ecosystems in protected areas needs improvement as well.
+It is increasingly evident that protected and conserved areas will be less meaningful if they do not involve people in the landscape and address issues that undermine their legitimacy and effectiveness. OECMs and/or biodiversity stewardship offer new opportunities for a broader diversity of conservation models to contribute to estuarine protection. Lastly, an increasing extent of protection alone will not advance estuarine ecosystems to Well Protected. The condition of ecosystems in protected areas needs improvement as well.
 
 ::::::: {#box-blooms .callout-note .estuarine collapse="False"}
 ## Box 1. Avian botulism and cyanobacteria blooms on the protected Touw/Wilderness Estuarine Lakes system and the underlying water quality issues that threaten ecosystem protection levels in the region
@@ -337,7 +337,7 @@ The Wilderness Lakes System, a designated RAMSAR site within the Garden Route Na
 
 **Avian botulism**
 
-An outbreak of avian botulism, a disease caused by toxins produced by *Clostridium botulinum* under warm, low-oxygen conditions, was first recorded in the system in 2015, becoming one of the largest such events documented in South Africa [@govender2019]. Over three years, at least 1,115 waterbirds from 23 species were affected, with the highest mortalities recorded among red-knobbed coot (*Fulica cristata*; 60%), Cape shoveler (*Anas smithii*; 18%), and yellow-billed duck (*Anas undulata*; 9%). Mortality peaked in summer and autumn (November to April), coinciding with high temperatures and low dissolved oxygen. Conditions conducive to toxin formation. A second botulism outbreak was recorded in 2025. The outbreak was shorter in duration (February to April) and resulted in lower mortalities, with 199 birds being affected from 10 species. The outbreak occurred during a dry, hot summer and unusually low water levels.
+An outbreak of avian botulism, a disease caused by toxins produced by *Clostridium botulinum* under warm, low-oxygen conditions, was first recorded in the system in 2015, becoming one of the largest such events documented in South Africa [@govender2019]. Over three years, at least 1 115 waterbirds from 23 species were affected, with the highest mortalities recorded among red-knobbed coot (*Fulica cristata*; 60%), Cape shoveler (*Anas smithii*; 18%), and yellow-billed duck (*Anas undulata*; 9%). Mortality peaked in summer and autumn (November to April), coinciding with high temperatures and low dissolved oxygen. Conditions conducive to toxin formation. A second botulism outbreak was recorded in 2025. The outbreak was shorter in duration (February to April) and resulted in lower mortalities, with 199 birds being affected from 10 species. The outbreak occurred during a dry, hot summer and unusually low water levels.
 
 While the precise cause of the outbreaks remains uncertain, a possible link with the invasive common carp, whose bottom-feeding behaviour disturbs sediments and releases organic material that may promote anaerobic, toxin-producing conditions, has been highlighted (Russell et al. 2019). The first event also followed a period of macrophyte decline, reduced water circulation, and accumulation of decaying organic matter, which are factors known to exacerbate botulism risk. Decaying carcasses and maggot-mediated toxin transfer are key components of the botulism cycle. In response, during both outbreaks, SANParks implemented an intensive management programme that included regular collection and off-site disposal of bird and fish carcasses, monitoring of environmental conditions, and collaboration with veterinary specialists for testing and diagnosis.
 
@@ -405,15 +405,15 @@ Download the data [here](data/threat_status_per_estuary.csv).
 
 ## Approach
 
-The protection level assessment for estuarine ecosystems was adjusted to align with global targets [@harris2025]. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had it's contribution to the protection level target scaled according to the severity of the degradation.
+The protection level assessment for estuarine ecosystems was adjusted to align with global targets [@harris2025]. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had its contribution to the protection level target scaled according to the severity of the degradation.
 
-Using as input data the South African Protected Areas Database (SAPAD) 2024Q4 (Department of Forestry Fisheries and Environment), South African estuary ecosystem map (van Niekerk 2020) and estuarine health condition as input data.
+The South African Protected Areas Database (SAPAD) 2024Q4 (Department of Forestry Fisheries and Environment), South African estuary ecosystem map (van Niekerk 2020) and estuarine health condition were used as input data.
 
-Estuarine Condition (Health) scores (0-100) are assigned to Department of Water and Sanitation Present Ecological Status (PES) categories (A-F) and NBA Modification categories (Natural - Severely modified) according to the table below.
+Estuarine Condition (Health) scores (0-100) are assigned to Department of Water and Sanitation Present Ecological Status (PES) categories (A-F) and NBA Modification categories (natural – severely modified) according to the table below.
 
 ```{r}
 #| label: tbl-ets_cat
-#| tbl-cap: Estuarine Condition (Health) scores (0-100) are assigned to PES categories (A-F) and NBA Modification categories (Natural - Severely modified) according to the table below.
+#| tbl-cap: Estuarine Condition (Health) scores (0-100) are assigned to PES categories (A-F) and NBA modification categories (natural - severely modified) according to the table below.
 
 
 
@@ -437,7 +437,7 @@ gt(ets_cat) %>%
 
 ```
 
-Protection Level is an indicator developed in South Africa that measures the representation of ecosystem types within the protected area network. The extent of each ecosystem type within the network is expressed as a proportion of the total extent. Four categories of Ecosystem Protection Level are calculated per ecosystem type (n= 22).
+Protection level is an indicator developed in South Africa that measures the representation of ecosystem types within the protected area network. The extent of each ecosystem type within the network is expressed as a proportion of the total extent. Four categories of ecosystem protection level are calculated per ecosystem type (n= 22).
 
 -   **Well Protected**: 100% of the PA target within PA network; AND only A&B condition estuaries contribute; AND areas under heavy and very heavy fishing pressure are excluded from contributing
 
@@ -447,7 +447,7 @@ Protection Level is an indicator developed in South Africa that measures the rep
 
 -   **Not Protected**: less than 5% of PA target within the PA network; and A&B condition estuaries contribute 100%, C & D condition estuaries contribute 30% and E&F condition estuaries contribute 10%
 
-The PA target was historically set at 20% for marine and estuarine ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework - the protected areas target was increased to 30% in the EPL calculations (previous time points (2018) were recalculated using this higher target). Ecosystem condition data (van Niekerk et al., 2025) for each time point allow for only good condition estuaries without heavey fishing pressure (especially systems under severe gill-netting pressure) to be considered representative for Well Protected status; while for Moderately Protected, Poorly Protected and Not Protected the condition of the estuaries is used to calculate their contribution to meeting targets such that higher integrity / condition estuaries contribute more to meeting protected areas targets than low integrity / condition estuaries.
+The PA target was historically set at 20% for marine and estuarine ecosystems, but with the adoption of the 30% targets for Target 3 of the Global Biodiversity Framework – the protected areas target was increased to 30% in the ecosystem protection level calculations (previous time points (2018) were recalculated using this higher target). Ecosystem condition data (van Niekerk et al., 2025) for each time point allow for only good condition estuaries without heavy fishing pressure (especially systems under severe gill-netting pressure) to be considered representative for Well Protected status; while for Moderately Protected, Poorly Protected and Not Protected the condition of the estuaries is used to calculate their contribution to meeting targets such that higher integrity / condition estuaries contribute more to meeting protected areas targets than low integrity / condition estuaries.
 
 ## Technical documentation
 
@@ -487,7 +487,7 @@ nba_citation(meta)
 
 ```
 
-## Refernces
+## References
 
 ::: {#refs}
 :::

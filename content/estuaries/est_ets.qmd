@@ -113,11 +113,11 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ```
 
-*The Estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable. Unsustainable land and sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving economy ([key message A2](../key-messages/kma2.qmd)).*
+*The estuarine realm is one of the most threatened in South Africa, in terms of both number of ecosystem types and by area. Of South Africa’s `r total_count` estuarine ecosystem types, `r perc_thr_count`% are threatened, with `r perc_cr_count`% Critically Endangered, `r perc_en_count`% Endangered and `r perc_vu_count`% Vulnerable. Of total estuarine area, `r perc_thr_extent`% is threatened, with `r perc_cr_extent`% Critically Endangered, `r perc_en_extent`% Endangered and `r perc_vu_extent`% Vulnerable. Unsustainable land and sea use can undermine the benefits from healthy ecosystems and the natural capital that can support a thriving economy ([key message A2](../key-messages/kma2.qmd)).*
 
-![Knysna is one of two estuarine bays inside South Africa and is an example of a Vulnerable system. (© Matt Dubber)](imgs/est_knysna_matt_dubber.jpeg)
+![Knysna is one of two Estuarine Bays inside South Africa and is an example of a Vulnerable system. (© Matt Dubber)](imgs/est_knysna_matt_dubber.jpeg)
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ::::: columns
 ::: {.column width="50%"}
@@ -149,7 +149,8 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 :::
 :::::
 
---------------------------------------------------------------------------------
+------------------------------------------------------------------------
+
 <!-- creates spaces -->
 
 \
@@ -278,11 +279,11 @@ tbl %>%
 
 ### Critically Endangered
 
-Following the application of 2024 IUCN guidelines for red listing ecosystems and drawing from previous estuarine NBA assessments, the Subtropical Estuarine Bay ecosystem type, represented by Durban Bay, is the only system that triggered Critically Endangered.
+Following the 2024 Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria and drawing from previous estuarine NBA assessments, the Subtropical Estuarine Bay ecosystem type, represented by Durban Bay, is the only system that triggered Critically Endangered.
 
 ### Endangered
 
-Nine estuarine ecosystem types were classified as Endangered, with 6 types in the Cool Temperate, 1 in the Warm Temperate and 2 in the Subtropical biogeographical region.
+Nine estuarine ecosystem types are classified as Endangered, with six types in the Cool Temperate, one in the Warm Temperate and two in the Subtropical biogeographical region.
 
 -   Cool Temperate Estuarine Lagoon
 -   Cool Temperate Estuarine Lake
@@ -296,7 +297,7 @@ Nine estuarine ecosystem types were classified as Endangered, with 6 types in th
 
 ### Vulnerable
 
-Overall 10 estuarine ecosystem types were classified as Vulnerable, with 2 types in the Cool Temperate, 4 in the Warm Temperate, 3 in the Subtropical, and 1 in the Tropical biogeographical region.
+Overall 10 estuarine ecosystem types were classified as Vulnerable, with two types in the Cool Temperate, four in the Warm Temperate, three in the Subtropical, and one in the Tropical biogeographical region.
 
 -   Cool Temperate Small Temporarily Closed
 -   Cool Temperate Small Fluvially Dominated
@@ -353,7 +354,7 @@ Download the data [here](data/threat_status_per_estuary.csv).
 
 ## Approach
 
-The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 IUCN guidelines for red listing ecosystems [@keith2024] and drawing from previous estuarine NBA assessments [@vanniekerk2018].
+The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conducted using the 2024 Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria [@keith2024] and drawing from previous estuarine NBA assessments [@vanniekerk2018].
 
 The following criterion were assessed:
 
@@ -369,7 +370,7 @@ The following criterion were assessed:
 
 Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for the criteria was selected as the threat / risk status for each river type.
 
-A more detailed explanation of the assessment method can be found on the  [about ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
+A more detailed explanation of the assessment method can be found on the [about ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 
 ## Technical documentation
 
@@ -382,9 +383,11 @@ A more detailed explanation of the assessment method can be found on the  [about
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Code repositories
-Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_est](https://github.com/askowno/RLE_est).
+
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_est>.
 
 ### Key publications
+
 Rowland, J.A. et al. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13, 11. https://doi.org/10.1111/conl.12680
 
 IUCN. 2024. Guidelines for the application of IUCN Red List of Ecosystems. Gland, Switzerland. https://doi.org/10.2305/CJDF9122
@@ -409,7 +412,7 @@ nba_citation(meta)
 
 ```
 
-## Refernces
+## References
 
 ::: {#refs}
 :::

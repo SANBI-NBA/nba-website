@@ -167,7 +167,7 @@ All three threatened penguin species, African, gentoo and southern rockhopper pe
 
 ```{r}
 #| label: fig-1
-#| fig-cap: "Threat status of South African seabirds species assessed following the IUCN 3.1 Red List Categories and Criteria. A shows the proportion of all species in each category, while B is the proportion of endemic species per category. The total number of species that have been assessed is indicated within each circle." 
+#| fig-cap: "Threat status of South African seabird species assessed following the IUCN 3.1 Red List Categories and Criteria. A shows the proportion of all species in each category, while B is the proportion of endemic species per category. The total number of species that have been assessed is indicated within each circle." 
 #| out-width: 100%
 #| out-height: "auto"
 
