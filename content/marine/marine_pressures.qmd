@@ -101,7 +101,7 @@ author:
     orcid: 0000-0001-5384-4109 # Author's orcid ID. Delete this line if author is not on orcid
     affiliations:
       - ref: CapMarine6 # Ref here must match the id of one of the affiliations listed below
-      - ref: uct7 # Ref here must match the id of one of the affiliations listed below
+
       # If an author has more than one affiliation, add more - ref: lines here
 
   # Copy this block and add details for each author of your page. Make sure you maintain indentations exactly as they are here
@@ -203,7 +203,7 @@ affiliations:
 # Make sure you maintain indentations exactly as they are here
   - id: uct7 # Use this as the affiliation ref with authors above
     number: 7 # This number is used to associate authors with affiliations
-    name: Univeristy of Cape Town
+    name: University of Cape Town
     
     
 # Make sure you maintain indentations exactly as they are here

@@ -721,7 +721,7 @@ To see how valuable your nature photographs can be, watch this inspiring [TED ta
 
 ## Protection level
 
-The protection level assessment was conducted for 133 of South Africa’s 135 described amphibian species (@fig=6). Two peripheral taxa with less than 5% of their distribution in South Africa were excluded from the analysis. Protection levels were calculated for amphibians by intersecting amphibian occurrence records with the protected area spatial layer, and calculating the area required to protect a target population of 10 000 individuals. Protection levels were also adjusted based on the management effectiveness of protected areas. For further details on the method used to conduct this assessment see [here](../integrated-findings/intf-species.qmd).
+The protection level assessment was conducted for 133 of South Africa’s 135 described amphibian species (@fig-6). Two peripheral taxa with less than 5% of their distribution in South Africa were excluded from the analysis. Protection levels were calculated for amphibians by intersecting amphibian occurrence records with the protected area spatial layer, and calculating the area required to protect a target population of 10 000 individuals. Protection levels were also adjusted based on the management effectiveness of protected areas. For further details on the method used to conduct this assessment see [here](../integrated-findings/intf-species.qmd).
 
 ```{r}
 #| label: fig-6

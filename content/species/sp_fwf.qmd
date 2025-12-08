@@ -111,7 +111,7 @@ google-scholar: true
 image: "./imgs/sp_freshwater_fish_img_1.png"
 ---
 
-![The Twee River redfin ([*Cedercypris erubescens*](https://www.iucnredlist.org/species/2564/100140580)) (CR), Heks River, Western Cape. Restricted to the Twee River catchment, this species has been heavily impacted by invasive alien fishes and intensive agriculture in the surrounding catchment. (© Jeremy Shelton)](./imgs/sp_freshwater_fish_img_1.png){fig-align="center"}
+![The Twee River redfin ([Sedercypris erubescens](https://www.iucnredlist.org/species/2564/100140580)) (CR), Heks River, Western Cape. Restricted to the Twee River catchment, this species has been heavily impacted by invasive alien fishes and intensive agriculture in the surrounding catchment. (© Jeremy Shelton)](./imgs/sp_freshwater_fish_img_1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 

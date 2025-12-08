@@ -279,7 +279,7 @@ tbl %>%
 
 ### Critically Endangered
 
-Following the 2024 Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria and drawing from previous estuarine NBA assessments, the Subtropical Estuarine Bay ecosystem type, represented by Durban Bay, is the only system that triggered Critically Endangered.
+After following the 2024 Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria, and drawing from previous estuarine NBA assessments, the Subtropical Estuarine Bay ecosystem type, represented by Durban Bay, was the only ecosystem type and system categorised as Critically Endangered.
 
 ### Endangered
 
@@ -358,17 +358,17 @@ The 2025 assessment of South Africa’s 22 estuarine ecosystem types was conduct
 
 The following criterion were assessed:
 
--   **Criterion A2b** (current rate of decline in ecosystem extent); based on land cover change rates between 1990 and 2022 - projected forward to 2040.
+-   **Criterion A2b** (current rate of decline in ecosystem extent); based on the rate of land cover change between 1990 and 2022, projected forward to 2040.
 
--   **Criterion A3** (historical reduction in ecosystem extent), based on land cover 2022.
+-   **Criterion A3** (historical reduction in ecosystem extent); based on land cover 2022.
 
--   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there is ongoing decline defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH, OR b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment is greater than 30% of type extent. This captures increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating applies to the whole type and is scaled by estuarine extent.
+-   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there was ongoing decline, defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH;  b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment was greater than 30% of type extent. These metrics capture increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating was applied to the whole type and was scaled by estuarine extent.
 
--   **Criterion D1** was applied using fishing pressure scores for each estuary. The scores were converted to an index 0-1 and aligned to severity rating (1 highest severity - 100%; 0 lowest severity - 0%). The rating applies to the whole type and is scaled by estuarine extent.
+-   **Criterion D1** was applied using fishing pressure scores for each estuary. The scores were converted to an index 0-1 and aligned to severity rating (1 highest severity - 100%; 0 lowest severity - 0%). The rating was applied to the whole type and was scaled by estuarine extent.
 
--   **Criterion D3** was applied to the Estuarine Ecological State Class (PES) data such that severity of biotic disruption of \>= 90% was assumed for PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F. The rating applies to the whole type and is scaled by estuarine extent.
+-   **Criterion D3** was applied to the Estuarine Ecological State Class (PES) data such that severity of biotic disruption of \>= 90% was assumed for PES classes E-F; Severity \>=70% was assigned to PES classes D-F; Severity \>=50% was assigned to PES classes C-F. The rating was applied to the whole type and was scaled by estuarine extent.
 
-Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for the criteria was selected as the threat / risk status for each river type.
+Each of the 22 estuary ecosystem types were assigned to one of the four risk categories: Critically Endangered, Endangered, Vulnerable and Least Concern. The highest risk category for the criteria was selected as the threat / risk status for each estuary type in line with IUCN guidance.
 
 A more detailed explanation of the assessment method can be found on the [about ecosystem threat status page](../integrated-findings/chl_rle_explained.qmd).
 

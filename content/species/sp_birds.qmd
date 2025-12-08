@@ -856,6 +856,8 @@ fn = function(x) x ) %>%
 
 ```
 
+<!--
+
 ::: {#box-4 .callout-note .species title="Box 4. Recovery efforts for Cape vultures (*Gyps coprotheres*)" collapse="true"}
 The Cape vulture (*Gyps coprotheres*) has suffered severe historical declines due to multiple threats, including poisoning (both intentional and accidental), collisions and electrocutions on powerlines, food shortages, disturbance at colonies, and illegal harvesting for the traditional medicine trade. Once widespread across southern Africa, the species has disappeared from large parts of its former range, and today is largely confined to South Africa, Lesotho, Botswana, and parts of Mozambique.
 
@@ -867,6 +869,8 @@ At the international level, multiple conservation organisations have played a pi
 
 As a result of all the interventions described here, the Cape vulture was downlisted from Endangered (2015) to Vulnerable (2025). Despite these successes, ongoing recovery remains essential. Cape vultures face intensifying threats, particularly from collisions with rapidly expanding wind energy facilities where mitigation measures are not applied, and from increasing demand in the traditional medicine market. Sustained investment in rescue, rehabilitation, population supplementation, and systemic threat reduction, alongside continued political commitment, regional cooperation, and community involvement, will be vital to secure the long-term survival of this species.
 :::
+
+-->
 
 ## Knowledge gaps
 

@@ -209,7 +209,7 @@ As technology advances and the cost of molecular processing continues to decreas
 
 -   **Environmental DNA (eDNA)** — detecting species and tracking biodiversity changes through genetic traces in soil, water, or air samples.
 
-    ![The Deep Connections project funded through the African Coelacanth Ecosystem Programme pioneered the first detection of coelacanths using environmental DNA [@oliver2024] providing new methods to support conservation assessment and monitoring for these rare and ancient lineage of fishes. © ACEP Deep Connections, Kerry Sink](imgs/coelacanth.png){#coelacanth width="800"}
+    ![The Deep Connections project funded through the African Coelacanth Ecosystem Programme pioneered the first detection of coelacanths using environmental DNA [@oliver2024] providing new methods to support conservation assessment and monitoring for this rare and ancient lineage of fishes. © ACEP Deep Connections, Kerry Sink](imgs/coelacanth.png){#coelacanth width="800"}
 
 ## Technical documentation
 

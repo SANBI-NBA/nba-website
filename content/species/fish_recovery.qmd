@@ -1,5 +1,5 @@
 ---
-title: "South African Freshwater fish species recovery actions" 
+title: "Freshwater fish species recovery actions" 
 title-block-banner: "#ad180d" 
 title-block-banner-color: white 
 

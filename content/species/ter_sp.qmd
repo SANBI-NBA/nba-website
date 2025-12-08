@@ -37,9 +37,6 @@ affiliations:
   - id: sanbi 
     number: 1 
     name: South African National Biodiversity Institute
-  - id: birdlife 
-    number: 2
-    name: Birdlife South Africa
 
 date: last-modified
 bibliography: species.bib
@@ -285,9 +282,7 @@ df_wide %>% gt() %>%
 ```
 :::
 
-::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white;"}
-The sections below (and @fig-1 and @fig-2) give brief summaries about terrestrial species in these taxonomic groups. For a full reflection on entire taxonomic groups, please click on the headings to access the subsections of the website under Species findings.
-:::
+The following sections (and @fig-1 and @fig-2) give brief summaries of findings on terrestrial species. For a full reflection on each taxonomic group, follow links on the headings.
 
 ### [Plants](sp_plants.qmd)
 

@@ -201,7 +201,7 @@ In 2016, South Africa assessed 2 214 indigenous spider species for the first ti
 
 Highly threatened spiders occur in the three major urban centres of South Africa (Western Cape, Gauteng and KwaZulu-Natal). This could be an indication of sample bias, but also identifies areas that have lost large areas of habitat to urban expansion (@fig-1). Some species have very restricted ranges yet face no anthropogenic threats. These are listed under [South Africa’s national rarity categories](https://redlist.sanbi.org/redcat.php): Rare (extent of occurrence \<500 km²) or Critically Rare (known from a single location). Sixteen spider species were classified as Critically Rare and 44 species as Rare. Although such species are assessed as Least Concern under the IUCN system, they remain a priority for national conservation and are included as taxa of conservation concern along with threatened, Near Threatened and Data Deficient species.
 
-Most species (1 419, 63%) are widespread, face no known threats, and are assessed as Least Concern (@fig-2). A large proportion (675, 30%) are Data Deficient, highlighting the need for more research, particularly providing more detailed taxonomic descriptions, describing unknown sexes and providing additional distribution data through field sampling and examination of museum material (see @box-1).
+Most species (1 419, 63%) are widespread, face no known threats, and are assessed as Least Concern (@fig-2). A large proportion (675, 30%) are Data Deficient, highlighting the need for more research, particularly providing more detailed taxonomic descriptions, describing unknown sexes and providing additional distribution data through field sampling and examination of museum material (see [Box 1](#box-1)).
 
 Endemism is high, with 1 325 species (59%) found only in South Africa, representing 2% of global spider diversity. Of the 72 spider families recorded, Salticidae (jumping spiders) is the most species-rich (354), followed by Gnaphosidae (195) and Thomisidae (143) [@a2023a]. Because of its size, Salticidae also has the highest number of threatened (6) and Data Deficient (98) species.
 
@@ -487,7 +487,7 @@ nba_index_plot(
 
 ## Pressures
 
-Spiders face an array of threats – both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire (see @box-2), overgrazing and invasive alien species infestations have a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Urban expansion, agriculture, forestry, and mining are the leading causes of habitat loss for spiders. These pressures are especially important for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as fynbos [@dippenaar-schoeman2024a] with 28% endemic species to this biome, and savanna [@foord2011a] with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
+Spiders face an array of threats – both natural and human-driven (@fig-4). Research has shown that habitat loss caused by fire (see [Box 2](#box-2)), overgrazing and invasive alien species infestations have a direct impact on spider populations, causing local losses [@dippenaar-schoeman2015a]. Urban expansion, agriculture, forestry, and mining are the leading causes of habitat loss for spiders. These pressures are especially important for ground-dwelling and endemic species with poor dispersal abilities. In South Africa, many spider species are highly localised and endemic to specific biomes, such as fynbos [@dippenaar-schoeman2024a] with 28% endemic species to this biome, and savanna [@foord2011a] with 30% of the species endemic. Ground-dwelling spiders are particularly vulnerable to changes in their habitat and often struggle to recolonise areas after disturbance due to their limited dispersal capabilities, making them more prone to local extinction.
 
 Spiders are present in relatively high numbers in agro-ecosystems. However, it has been shown that they are negatively impacted by pesticide use [@dippenaar-schoeman2013a]. Thus far, 51 families from 413 species have been recorded from crops in South Africa, and five agrobiont species have been identified that play an important role as natural control agents of agricultural pests. However, chemical use can directly kill spiders or disrupt their prey base. Integrated pest management (IPM) and organic farming are recommended to reduce chemical exposure that harms spiders and their prey. Altered temperature and rainfall patterns (likely from climate change) can affect spider distribution, reproduction, and prey availability, and they may be severely impacted by drought.
 
@@ -530,7 +530,7 @@ Fire is a factor that can significantly impact spider populations, but its effec
 
 A significant portion of the South African spider fauna remains undescribed. In the Cape Floristic Region, 24% of species are classified as Data Deficient, and two families (Synotaxidae and Theridiosomatidae) are only known from undescribed species. Studies on mygalomorph trapdoor spiders (e.g. *Stasimopus*, *Ancylotrypa*, *Galeosoma*) show taxonomic resolution as low as 15–29%, indicating high uncertainty in species delimitation.
 
-Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling. Making use of citizen science to contribute to observations, both helps fill sampling gaps and also raises awareness (see @box-3).
+Sampling bias and geographic gaps are a concern. Spider records are heavily concentrated in the eastern and coastal regions of South Africa, with North West, Northern Cape and Mpumalanga province remaining undersampled [@foord2020a; @a2023a; @mescht2024a]. These sampling biases impede conservation assessments and ecological modelling. Making use of citizen science to contribute to observations, both helps fill sampling gaps and also raises awareness (see [Box 3](#box-3)).
 
 ::: {#box-3 .callout-note .species title="Box 3. Calling all citizen scientists!" collapse="true"}
 To contribute to the future Red List assessments and monitoring of spiders, join iNaturalist!
@@ -548,7 +548,7 @@ Morphological variation is poorly understood due to limited sampling, making it 
 
 Addressing the taxonomic impediment for spiders in South Africa requires a multi-pronged strategy that blends capacity building, infrastructure development, and policy integration. The following is a breakdown of suggested solutions:
 
--   Expansion of taxonomic capacity by creating employment for specialist taxonomists and providing the required skills transfer opportunities (see @box-4).
+-   Expansion of taxonomic capacity by creating employment for specialist taxonomists and providing the required skills transfer opportunities (see [Box 4](#box-4)).
 
 -   Accelerate species descriptions through capacity building and collaborative research, particularly with international partners.
 
@@ -560,7 +560,7 @@ Addressing the taxonomic impediment for spiders in South Africa requires a multi
 
 -   Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database accessible to researchers, conservationists, and policy-makers.
 
--   Encourage citizen science platforms like iNaturalist to crowdsource observations and expand distribution data (see @box-3).
+-   Encourage citizen science platforms like iNaturalist to crowdsource observations and expand distribution data (see [Box 3](#box-3)).
 
 -   Relax permit conditions so that members of the public can sample specimens without fear of prosecution, particularly those linked to photographic observations, to enable species-level identifications.
 

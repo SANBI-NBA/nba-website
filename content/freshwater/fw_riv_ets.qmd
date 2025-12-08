@@ -351,7 +351,7 @@ Each river ecosystem type was assessed against these criteria and the highest ri
 
 **Code repository**
 
-Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status \[Source code\]. GitHub repository available at [https://github.com/askowno/RLE_riv](https://github.com/askowno/RLE_riv)
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_riv>
 
 **Key publications**
 
@@ -375,5 +375,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
 nba_citation(meta)
 ```
-
-

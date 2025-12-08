@@ -71,7 +71,7 @@ google-scholar: true
 Macrophytes fulfil an important ecological function as growth and decomposition influence other biotic and abiotic components. Macrophytes provide physical structure to the littoral zone and serve as a habitat for fauna. Macrophytes also play an important role in terms of nutrient trapping, recycling and as a food source. Data on the area coverage and species composition of macrophyte habitats are used to determine estuary condition for South African estuaries. It is also used to inform estuary management and conservation priorities. The presence or absence of rare and keystone species can be used as indicators of change. It is therefore important to have these data available and regularly updated.
 
 ::::::::::::::::::::::::::::::: {.callout-note .estuarine collapse="False"}
-## Box 1. Estuarine habitats in the South African estuaries
+## Box 1. Estuarine habitats in South African estuaries
 
 :::::: columns
 ::: {.column width="38%"}
@@ -122,7 +122,7 @@ Like salt marsh, reeds and sedges protect the banks of estuaries from erosion. T
 :::
 
 ::: {.column width="60%"}
-Mangroves are trees that establish in the intertidal zone in permanently open estuaries along the east coast of South Africa north of East London where water temperature is usually above 20°C. The white mangrove (*Avicennia marina*) is the most abundant, followed by the black mangrove (*Bruguiera gymnorrhiza*), followed by the red mangrove (*Rhizophora mucronata*).
+Mangroves are trees that establish in the intertidal zone in permanently open estuaries along the east coast of South Africa (north of East London) where water temperature is usually above 20°C. The white mangrove (*Avicennia marina*) is the most abundant, followed by the black mangrove (*Bruguiera gymnorrhiza*), followed by the red mangrove (*Rhizophora mucronata*).
 
 Mangrove forests protect the coastline acting as buffers against severe weather. They are extremely productive habitats that are home to a diversity of fish and invertebrate species. Mangroves are also important for filtering and improving water quality. They also have a high recreational, cultural and tourism value. More recently the value of mangrove forests as a carbon sink has been recognised.
 
@@ -194,7 +194,7 @@ This habitat provides a possible area for microphytobenthos communities to estab
 :::
 
 ::: {.column width="60%"}
-This is the habitat associated with the water column of an estuary and is measured as water surface area. It serves as a possible habitat for phytoplankton.
+This is the habitat associated with the water column of an estuary and is measured as water surface area. It serves as a habitat for phytoplankton.
 :::
 ::::::
 :::::::::::::::::::::::::::::::

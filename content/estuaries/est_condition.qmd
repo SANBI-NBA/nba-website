@@ -161,9 +161,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*More than 53% of South Africa’s estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. This represents a 3 percentage point decline overall in natural/near natural estuaries and a 7 percentage point increase in degraded extent.*
-
-*Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.*
+*More than 53% of South Africa’s estuaries are relatively healthy, but this amounts to only 18% of total estuarine extent, comprised mostly of small estuaries. Since 2018, the number of estuaries in natural/near natural condition declined by 11% and the extent of heavily modified estuarine area has increased by 13%. Important ecological processes are under severe pressure and with resultant reductions in ecosystem productivity, food security, fisheries livelihood, property values and recreational enjoyment.*
 
 ![Kosi Estuary is an example of a Tropical Estuarine Lake in a near-natural state, and is a healthy productive estuary that supports biodiversity and coastal livelihoods. (© iSimangaliso Wetland Park)](imgs/kosi_bay.jpg)
 

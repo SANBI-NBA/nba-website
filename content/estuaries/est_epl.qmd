@@ -122,9 +122,7 @@ perc_protected_count <- perc_pp_count+perc_mp_count+perc_wp_count
 
 ```
 
-*Overall, the majority of estuarine extent is Moderately to Poorly Protected, with less than 1% of extent categorised as Well Protected and 9% categorised as Not Protected. From an ecosystem type perspective two types (`r perc_wp_count`%) are Well Protected, eight types (`r perc_mp_count`%) are Moderately Protected, nine types (`r perc_pp_count`%) are Poorly Protected, and three types (`r perc_np_count`%) are Not Protected.*
-
-<!--estuaries are Moderately (`r perc_mp_extent`%) to Poorly (`r perc_pp_extent`%) Protected in South Africa, less than 1% of area is Well Protected. Of concern is that about `r perc_np_extent`% of estuarine extent is Not Protected. From a ecosystem type perspective about `r perc_wp_count`% are Well Protected, `r perc_mp_count`% Moderate, `r perc_pp_count`% Poorly, and `r perc_np_count`% Not Protected.-->
+*Estuarine protection levels have not increased since 2018 with no progress in spatial conservation of estuarine ecosystems. Overall, less than 1% of extent and two estuarine ecosystem types (9%) are Well Protected. Nine percent of estuarine extent and three ecosystem types (14%) are Not Protected. The majority of estuarine extent is Moderately to Poorly Protected. From an ecosystem type perspective, eight types (36%) are Moderately Protected and nine types (41%) are Poorly Protected*
 
 ![Bulurha Estuary – Warm Temperate – Large Temporarily Closed. (© Nelson Mandela University)](imgs/Image-bulungula.png)
 
@@ -223,7 +221,7 @@ Several under-protected ecosystem types can advance to Well Protected solely wit
 
 The global support for a 30% protection target (Global Biodiversity Framework Target 3) presents a unique opportunity to garner international support and possible funding opportunities to advance estuary protection. Conservation agencies around the coast are in the process of evaluating and extending estuarine protection with local community support, e.g. Olifants Estuary and Verlorenvlei (CapeNature).
 
-Ongoing efforts to develop other effective area-based conservation measures (OECMs) and stewardship approaches for estuaries present an opportunity for bottom-up conservation models to be developed that can be used to protect and curb the ongoing decline in Blue Carbon habitats. It is less clear if this mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increasing formal protection over time or as a sufficient measure on its own.
+Ongoing efforts to develop spatial protection and stewardship approaches for estuaries and recognise other effective area-based conservation measures (OECMs) present an opportunity for bottom-up conservation models to be developed that can be used to protect and curb the ongoing decline in blue carbon habitats. It is less clear to what extent these mechanism will also be able to protect invertebrates, fish and birds. However, there is no doubt that increased community engagement in protection will create an environment of trust and present opportunities for strengthening protection over time, either as a ‘stepping stone’ for increasing estuarine protection over time or as a sufficient measure on its own.
 
 :::: panel-tabset
 ## Figure
@@ -322,7 +320,7 @@ tbl %>%
 :::
 ::::
 
-While the larger estuaries with greater biodiversity are undoubtedly priorities for protection, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, an increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond. Gaps in representation will persist unless some ecosystem types or functional groups (e.g. Cool Temperate Large Fluvially Dominated) are targeted for inclusion in Marine Protected Areas, formal Protected Areas or OECMs.
+While the larger estuaries with greater biodiversity are undoubtedly priorities for protection, there is an urgent need to update the 2011 National Estuary Biodiversity Plan to reflect updated estuary condition/development levels, an increased protection target (30%), facilitate inter-estuary connectivity (e.g. De Hoop Cluster), and ensure protection of key ecosystem services such as blue carbon and nursery function to inform the 30 x 30 planning process and the beyond. Gaps in representation will persist unless some ecosystem types or functional groups (e.g. Cool Temperate Large Fluvially Dominated) are targeted for inclusion in Marine Protected Areas, estuarine Protected Areas or OECMs.
 
 It is increasingly evident that protected and conserved areas will be less meaningful if they do not involve people in the landscape and address issues that undermine their legitimacy and effectiveness. OECMs and/or biodiversity stewardship offer new opportunities for a broader diversity of conservation models to contribute to estuarine protection. Lastly, an increasing extent of protection alone will not advance estuarine ecosystems to Well Protected. The condition of ecosystems in protected areas needs improvement as well.
 
@@ -405,7 +403,7 @@ Download the data [here](data/threat_status_per_estuary.csv).
 
 ## Approach
 
-The protection level assessment for estuarine ecosystems was adjusted to align with global targets [@harris2025]. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had its contribution to the protection level target scaled according to the severity of the degradation.
+The protection level assessment for estuarine ecosystems was adjusted to align with global targets [@harris2025]. While the 2018 assessment used a standard 20% target, the 2025 assessment applied a 30% target. In order for a estuarine ecosystem type to qualify in the Well Protected category, at least 30% of the ecosystem type (i.e. the ecosystem target) needs to be within a protected areas and in a natural / near natural ecological condition. If this target was not met, the ecosystem was categorised as Moderately Protected. Additionally, any area inside a protected area that was in degraded condition had its contribution to the protection level target scaled according to the severity of the degradation.
 
 The South African Protected Areas Database (SAPAD) 2024Q4 (Department of Forestry Fisheries and Environment), South African estuary ecosystem map (van Niekerk 2020) and estuarine health condition were used as input data.
 

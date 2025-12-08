@@ -61,7 +61,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Rivers are among the least protected ecosystems in South Africa. A whole catchment approach is needed to bend the curve on river conservation, as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. Rivers within Protected Areas that were assessed to be Poorly Protected due to their ecological condition may be prime targets for strategic restoration.*
+*Rivers are among the least protected ecosystems in South Africa. A whole catchment approach is needed to bend the curve on river conservation, as rivers are highly connected linear ecosystems that may be impacted by human activities throughout their catchment. Rivers within protected areas that were assessed to be Poorly Protected due to their ecological condition may be prime targets for strategic restoration.*
 
 ![The stunning Mtentu River forms the border of Mkabati Nature Reserve in the Eastern Cape. (© Nancy Job)](imgs/mkambati_river.png)
 
@@ -96,7 +96,7 @@ google-scholar: true
 
 ------------------------------------------------------------------------
 
-Approximately 14% of the country’s river length occurs in protected areas. Of the rivers within protected areas, approximately 60% of these were assessed to be in a natural or near-natural ecological condition. This is much higher than the roughly 37% of rivers in a natural or near-natural ecological condition country-wide, however, this means that only 8% of river ecosystem types in South Africa are considered Well Protected, 13% Moderately Protected and 48% Poorly Protected, while 31% are considered Not Protected.
+Approximately 14% of the country’s river length occurs in protected areas. Of the rivers within protected areas, approximately 60% of these were assessed to be in a natural or near-natural ecological condition. This is much higher than the roughly 37% of rivers in a natural or near-natural ecological condition country-wide. However, this means that only 8% of river ecosystem types in South Africa are considered Well Protected, 13% Moderately Protected and 48% Poorly Protected, while 31% are considered Not Protected.
 
 ::: panel-tabset
 ## Map
@@ -153,7 +153,7 @@ reactable(
 ```
 :::
 
-The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally less threatened than other regions of the country. Protection levels are particularly low in the northern interior of the country, reflecting the spatial distribution of the current protected areas network.
+The rivers of northern KwaZulu-Natal, Lowveld and Succulent Karoo are generally better protected than other regions of the country. In contrast, protection levels are particularly low in the northern interior of the country, reflecting the spatial distribution of the current protected areas network.
 
 <!-- ::: {#box-epl .callout-note .freshwater collapse="true" title="Box 1. River ecosystem protection levels"} -->
 
@@ -410,7 +410,7 @@ Download the data [here](outputs/rivers_EPL.csv).
 
 ## Intersection of ecosystem threat status and protection levels
 
-Combining the headline indicators provides an additional perspective on the status of river ecosystems. There are 67 river ecosystem types that are both highly threatened and under-protected. Although the Cape fold mountains support multiple protected area types including mountain catchment area and nature reserves, as well as several OECM measures in progress, reports of worsening river ecological condition across the western cape identify this area as important for increased protection. Similarly, the upper Wilge catchment, the western region of the Eastern Cape and selected rivers of the Free State and Limpopo province are also candidates for focussed action,
+Combining the headline indicators provides an additional perspective on the status of river ecosystems. There are 67 river ecosystem types that are both highly threatened and under-protected. Although the Cape fold mountains support multiple protected area types including mountain catchment area and nature reserves, as well as several OECM measures in progress, reports of worsening river ecological condition across the Western Cape identify this area as important for increased protection. Similarly, the upper Wilge catchment, the western region of the Eastern Cape, and selected rivers of the Free State and Limpopo province are also candidates for focussed action.
 
 ![Highly threatened and under-protected river ecosystem types.](imgs/riv_unluckies_map.png){#fig-riv_ets_epl_map}
 
@@ -487,7 +487,7 @@ Ecosystem protection level is a headline indicator of the National Biodiversity 
 
 Key input layers include the South African protected areas database, the [river ecosystem network](fw_riv_type.qmd), and [river ecological condition](fw_riv_condition.qmd) assessment[@southafricanprotectedareasdatabase2024].
 
-While the 2018 assessment used a standard 20% target for freshwater ecosystems[@roux2008], the current protection level target was adjusted to 30% in line with Target 3 of the Global Biodiversity Framework. This target is applied to each of the 122 river ecosystem types. Importantly, the current ecological condition of the river within the protected area is taken into consideration in the calculation, ensuring that effectiveness is accounted for. At least 30% of each river ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition (ecological class A or B) to qualify in the Well Protected category. If this target was not met, the ecosystem type is categorised as Moderately Protected or lower, meaning that higher integrity rivers contribute more to meeting protection level targets than low integrity rivers.
+While the 2018 assessment used a standard 20% target for freshwater ecosystems[@roux2008], the current protection level target was adjusted to 30% in line with Target 3 of the Global Biodiversity Framework. This target is applied to each of the 222 river ecosystem types. Importantly, the current ecological condition of the river within the protected area is taken into consideration in the calculation, ensuring that effectiveness is accounted for. At least 30% of each river ecosystem type (i.e. the ecosystem target) needs to be in a natural or near natural ecological condition (ecological class A or B) to qualify in the Well Protected category. If this target was not met, the ecosystem type is categorised as Moderately Protected or lower, meaning that higher integrity rivers contribute more to meeting protection level targets than low integrity rivers.
 
 Ecosystem types were assigned to one of four categories based on the percentage of the protection target met within the protected areas network, and scaled by ecological condition: **Well Protected**: 100% (or more) of a river ecosystem type’s target falls within the protected area network; but only rivers in an A and B condition are considered to contribute; **Moderately Protected**: 50% to 99% of a river ecosystem type’s target falls within the protected area network; and rivers in an A and B condition contribute 100%, rivers in a C and D condition contribute 30%, while E and F condition rivers contribute only 10%; **Poorly Protected**: 5% to 49% of a river ecosystem type’s target falls within the protected area network; and A and B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%; **Not Protected**: less than 5% of a river ecosystem type’s target falls within the protected area network; and A and B condition rivers contribute 100%, C and D condition rivers contribute 30%, E and F condition rivers contribute 10%.
 
@@ -499,7 +499,7 @@ Changes in ecosystem protection level results since the 2018 assessment reflect 
 
 **Code repository**
 
-Skowno, A.L. 2025. SANBI-NBA River ecosystem protection level \[Source code\]. GitHub repository available at [https://github.com/askowno/EPL_riv](https://github.com/askowno/EPL_riv)
+Skowno, A.L. 2025. SANBI-NBA River ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_riv>
 
 **Key publications**
 
