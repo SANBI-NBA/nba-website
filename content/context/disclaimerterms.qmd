@@ -8,7 +8,7 @@ The information provided on the National Biodiversity Assessment website is on a
 
 SANBI will not be liable for any claims whatsoever, whether for damages or otherwise, which may arise as a result of inaccuracies in the information supplied.
 
-Should you notice errors or inconsistencies, please send feedback via the NBA email address.
+Should you notice errors or inconsistencies, please send feedback via the NBA email address. Where there are discrepancies between a publication (such as the NBA 2025 Summary of Findings and Key Messages book) and this website, assume that the website contains the latest information.
 
 Please read the [recommendations for how to cite NBA information](./cite-nba.qmd).
 

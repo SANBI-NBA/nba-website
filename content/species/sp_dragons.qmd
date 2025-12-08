@@ -8,6 +8,6 @@ title-block-banner-color: white
 
 ------------------------------------------------------------------------
 
-::: {.callout-important icon="TRUE" title="Attention:" style="--callout-icon-color: white; font-size:100px;"}
+::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
 ###### The status summary of dragonflies and damselflies (*Odonata*) is under production and will be available from February 2026.
 :::

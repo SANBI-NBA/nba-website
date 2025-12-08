@@ -69,7 +69,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*Inland wetlands remain highly threatened, placing the vital services they provide and the incredible biodiversity they support at great risk. Often overlooked, this assessment has highlighted the plight of depression wetlands as one of our most threatened and vulnerable wetland ecosystem types, while the continued loss and degradation of peatlands remains of great concern.*
+*Inland wetlands remain highly threatened, placing the vital services they provide and the incredible biodiversity they support at great risk. Often overlooked, this assessment has highlighted the plight of depression wetlands as one of South Africa's most threatened wetland types, while the continued loss and degradation of peatlands remains of great concern.*
 
 ![South Africa's iconic peatlands are more vulnerable to drying out, fire and erosion when their water level is lowered for sustained periods. It is considerably more expensive to restore wetlands than to conserve them and, in the case of peatlands, it would take thousands of years for new peat to form. (© Nancy Job)](imgs/peatdegradation.png){width="800"}
 
@@ -110,7 +110,7 @@ google-scholar: true
 
 Threatened wetland extent constitutes approximately 2.3 million ha (86%) of the more than 2.6 million hectares of inland wetlands mapped at the time of NBA 2025. Approximately 20% of wetland extent is Critically Endangered, 21% is Endangered, and 45% is Vulnerable. The remaining 14% is assessed as Least Concern.
 
-Of the 82 inland wetland ecosystem types assessed 60 are threatened (73%), with 15 types Critically Endangered (18%), 20 types Endangered (24%), and 25 types Vulnerable (30%). The remaining 22 (28%) wetland types are Least Concern. Threatened wetland ecosystem types are spread widely across South Africa, while Critically Endangered and Endangered wetlands are clustered within the central Free State and extending into central NorthWest Province, central Northern Cape, the Swartland of the Western Cape, the mining belt of Limpopo Province and the coastal regions of KwaZulu-Natal.
+Of the 82 inland wetland ecosystem types assessed 60 are threatened (73%), with 15 types Critically Endangered (18%), 20 types Endangered (24%), and 25 types Vulnerable (30%). The remaining 22 (28%) wetland types are Least Concern. Threatened wetland ecosystem types are spread widely across South Africa, while Critically Endangered and Endangered wetlands are clustered within the central Free State and extending into central North West province, central Northern Cape, the Swartland of the Western Cape, the mining belt of Limpopo Province and the coastal regions of KwaZulu-Natal.
 
 ::: panel-tabset
 ## Map
@@ -167,7 +167,7 @@ reactable(
 ```
 :::
 
-In terms of wetland hydrogeomorphic type, depression wetlands are the most threatened (24% of types threatened), followed by floodplains (17% of types threatened) and unchannelled valley-bottom wetlands (17% of types threatened), and seep wetland types (15% of types threatened) considered Threatened. Approximately 14% of depression wetland types and 19% of depression wetland extent is considered to be Critically Endangered, while 2% of seep wetland types, 1% of unchannelled valley-bottom wetland types and no floodplain types are considered Critically Endangered. <!-- add some dscription of this big difference in threat status for the different hgm zones, alignment with farming or mountains whatevewr ) -->
+In terms of wetland hydrogeomorphic type, depression wetlands are the most threatened (24% of types threatened), followed by floodplains (17% of types threatened) and unchannelled valley-bottom wetlands (17% of types threatened), and seep wetland types (15% of types threatened) considered threatened. Approximately 14% of depression wetland types and 19% of depression wetland extent is considered to be Critically Endangered, while 2% of seep wetland types, 1% of unchannelled valley-bottom wetland types and no floodplain types are considered Critically Endangered. <!-- add some dscription of this big difference in threat status for the different hgm zones, alignment with farming or mountains whatevewr ) -->
 
 :::: panel-tabset
 ## Figure
@@ -374,13 +374,13 @@ The following criteria were assessed for inland wetland ecosystems:
 
 -   **Criterion D3** was applied to the wetland ecological condition (PES) category (A-F) such that severity of biotic disruption of \>= 90% was assumed for PES categories E-F; Severity \>=70% was assigned to PES categories D-F; Severity \>=50% was assigned to PES categories C-F. The rating was applied to each element of PES, namely, vegetation, water quality, geomorphology, hydrology, and the overall Wet-Health score that combines these elements.
 
-Each wetland ecosystem type was assessed against these criteria and the **highest risk category** triggered by any single criterion was assigned as the overall ecosystem threat status for that type. Each of the 82 inland wetland ecosystem types was placed into one of four risk categories: **Critically Endangered**, **Endangered**, **Vulnerable**, or **Least Concern**. Critically Endangered, Endangered, and Vulnerable are collectively referred to as the threatened categories.
+Each wetland ecosystem type was assessed against these criteria and the **highest risk category** triggered by any single criterion was assigned as the overall ecosystem threat status for that type. Each of the 82 inland wetland ecosystem types was placed into one of four risk categories: Critically Endangered, Endangered, Vulnerable, or Least Concern. Critically Endangered, Endangered, and Vulnerable are collectively referred to as the threatened categories.
 
 ## Technical documentation
 
 **Code repository**
 
-Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status [Source code]. GitHub repository available at [https://github.com/askowno/RLE_wet](https://github.com/askowno/RLE_wet)
+Skowno, A.L. 2025. SANBI-NBA Wetland ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_wet>
 
 **Related publications and supporting information**
 
@@ -404,5 +404,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
 nba_citation(meta)
 ```
-
-

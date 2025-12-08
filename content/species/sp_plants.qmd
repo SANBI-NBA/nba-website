@@ -36,7 +36,7 @@ author:
        
   - name:
       given: Nokukhanya N.
-      family: Nozipho
+      family: Mhlongo
     orcid: 0000-0002-6214-3475
     affiliations:
       - ref: sanbi
@@ -393,24 +393,17 @@ gt(dat_combined_final) %>%
   tab_options(table.width = pct(100),
               data_row.padding = px(12)) %>%
   
- tab_style(style = cell_fill(color = "white"),
-            locations = cells_column_labels(columns = everything())) %>%
-  tab_style(
-    style = cell_borders(
-      sides = c("left", "right"),
-      color = "transparent",
-      weight = px(0)
-    ),
-    locations = cells_column_labels(columns = everything())
-  ) %>%
-  tab_style(
-    style = cell_borders(
-      sides = "bottom",
-      color = "grey", 
-      weight = px(1)
-    ),
-    locations = cells_body(columns = everything())
-  ) %>%
+tab_style(
+     style = list(
+     cell_fill(color = "#D1D3D4")),
+     locations = cells_column_labels()) %>%
+tab_style(
+     style = cell_borders(
+     sides = c("left", "right"),
+     color = NA,
+     style = "hidden",
+     weight = px(0)),
+     locations = cells_column_labels()) %>%
   
   cols_width(Taxon ~ pct(15),
              everything() ~ pct(10))
@@ -517,24 +510,17 @@ fn = function(x) x ) %>%
     table.width = pct(100),
     data_row.padding = px(12)
   ) %>%
-   tab_style(style = cell_fill(color = "white"),
-            locations = cells_column_labels(columns = everything())) %>%
   tab_style(
-    style = cell_borders(
-      sides = c("left", "right"),
-      color = "transparent",
-      weight = px(0)
-    ),
-    locations = cells_column_labels(columns = everything())
-  ) %>%
-  tab_style(
-    style = cell_borders(
-      sides = "bottom",
-      color = "grey", 
-      weight = px(1)
-    ),
-    locations = cells_body(columns = everything())
-  )  %>%
+     style = list(
+     cell_fill(color = "#D1D3D4")),
+     locations = cells_column_labels()) %>%
+tab_style(
+     style = cell_borders(
+     sides = c("left", "right"),
+     color = NA,
+     style = "hidden",
+     weight = px(0)),
+     locations = cells_column_labels())  %>%
    tab_style(style = cell_text(align = "left"),
     locations = cells_column_labels(columns = everything())) %>%
   
@@ -838,25 +824,17 @@ ref <- data.frame(Contributors = c(
 # Build the gt table
 ref <- gt(ref) %>%
 nba_tbl_theme() %>%
-       tab_options(#data_row.padding = px(16),
-              table.font.size = px(13L),
-              table.width = pct(100),
-              column_labels.border.top.style = "solid",
-              column_labels.border.top.width = px(2),
-              column_labels.border.top.color = "black",
-              column_labels.border.bottom.style = "solid",
-              column_labels.border.bottom.width = px(2),
-              column_labels.border.bottom.color = "black")%>%
- tab_style(style = cell_fill(color = "white"), 
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = c("left", "right"),
-                                color = "transparent",
-                                weight = px(0)),
-           locations = cells_column_labels(columns = everything())) %>%
-  tab_style(style = cell_borders(sides = "bottom",
-                                color = "grey", 
-                                weight = px(1)),
-          locations = cells_body(columns = everything())) %>%
+      tab_style(
+     style = list(
+     cell_fill(color = "#D1D3D4")),
+     locations = cells_column_labels()) %>%
+tab_style(
+     style = cell_borders(
+     sides = c("left", "right"),
+     color = NA,
+     style = "hidden",
+     weight = px(0)),
+     locations = cells_column_labels()) %>%
   tab_style(
     style = cell_text(align = "left"),
     locations = cells_body(columns = everything())
@@ -879,11 +857,11 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
 
-### **Code repositories**
+### Code repositories
 
 **Protection level**: Von Staden, L. 2025. SANBI-NBA Plant protection level indicator \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/plant-protection-level>.
 
-### **Technical reports**
+### Technical reports
 
 **Protection level**: Von Staden, L. 2025. Plant protection level indicator. National Biodiversity Assessment Technical Reports. South African National Biodiversity Institute, Pretoria. [doi:10.6084/m9.figshare.30135625](https://figshare.com/articles/online_resource/Technical_Report/30135625?file=58824784).
 

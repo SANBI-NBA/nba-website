@@ -31,7 +31,7 @@ author:
       - ref: tut
   - name:
       given: Rhett
-      family: Bennet
+      family: Bennett
     orcid: 
     affiliations:
       - ref: wcs
@@ -226,7 +226,7 @@ Sharks, rays, skates, wedgefishes (also known as guitarfishes), sawfishes and ch
 
 ## Threat status
 
-Based on the combination of global and national IUCN Red List of Threatened Species assessments (see [Approach](#approach)), 82 species (43%) were found to be threatened with extinction (@fig-1, @tbl-1), including 12 species (6%) listed as Critically Endangered at extremely high risk of extinction), 35 (18%) as Endangered (at very high risk), and 35 (18%) as Vulnerable (at high risk). A further 20 species (10%) are categorised as Near Threatened, while 18 (9%) are classified as Data Deficien, with insufficient information to determine threat status. 71 species (37%) are categorised as Least Concern. Six (46%) of the 13 endemic species were assessed as threatened. Responsibility for the conservation and recovery of these six species lies in South Africa’s hands.
+Based on the combination of global and national IUCN Red List of Threatened Species assessments (see [Approach](#approach)), 82 species (43%) were found to be threatened (@fig-1, @tbl-1), including 12 species (6%) listed as Critically Endangered, 35 (18%) as Endangered, and 35 (18%) as Vulnerable. A further 20 species (10%) are categorised as Near Threatened, while 18 (9%) are classified as Data Deficient, with insufficient information to determine threat status. 71 species (37%) are categorised as Least Concern. Six (46%) of the 13 endemic species were assessed as threatened. Responsibility for the conservation and recovery of these six species lies in South Africa’s hands.
 
 For the species assessed at the national level, 11 species are assessed as less threatened at the national than global level (including five species that are globally threatened but nationally Least Concern) and 21 species have the same threat status at global and national levels. These results indicate that South Africa’s efforts to manage fisheries for some target and bycatch species are having significant positive impacts, while the overall status assessment (43% of South Africa’s sharks listed as threatened) shows that much more still needs to be done to prevent extinctions and foster recovery.
 
@@ -497,11 +497,11 @@ The declining status of sharks is a global trend [@dulvy2024a], with steeper dec
 
 ## Pressures
 
-Overfishing is the main threat to sharks globally [@dulvy2021a] and in South Africa (@fig-3). Overfishing has been identified as a major threat on the IUCN Red List for all of South Africa’s threatened shark species and is the sole major threat identified for two thirds of those species. This includes targeted catch in some commercial fisheries, plus bycatch in commercial fisheries targeting more productive species, recreational fisheries, lethal shark control measures, and ghost fishing by abandoned fishing gear.
+Overfishing is the main threat to sharks globally [@dulvy2021a] and in South Africa (@fig-3). Overfishing has been identified as a major threat on the IUCN Red List for all of South Africa’s threatened shark species and is the main threat identified for two thirds of those species. This includes targeted catch in some commercial fisheries, plus bycatch in commercial fisheries targeting more productive species, recreational fisheries, lethal shark control measures, and ghost fishing by abandoned fishing gear.
 
-Total catch of sharks across all fisheries is in the order of 1 000 tonnes per annum [@forestry2022a]. Domestic consumption of shark meat and fins in South Africa is limited – most of the documented catch is exported to markets in Asia, Latin America and Australia.
+Total catches of sharks across all fisheries have been decreasing and are now in the order of 1 000 tonnes per annum [@forestry2022a]. Domestic consumption of shark meat and fins in South Africa is limited – most of the documented catch is exported to markets in Asia, Latin America and Australia.
 
-Among shark species landed in South African fisheries, 24% are Critically Endangered (@tbl-3) or Endangered. Two of these species have estimated annual catches (2013-2023) in excess of 100 tonnes [@d2025b]: soupfin shark (*Galeorhinus galeus*, CR) and shortfin mako (*Isurus oxyrinchus*, EN). An additional four Endangered species have estimated average annual catches (2013-2023) of 11 tonnes or more [@d2025b]: dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), and common smooth-hound (*Mustelus mustelus*, EN) (@tbl-2). For most of these species (the exception being the spearnose skate), overfishing is the sole pressure. However, catches are very low for five of the Critically Endangered or Endangered species landed in South African fisheries [@forestry2022a].
+Among shark species landed in South African fisheries, 24% are Critically Endangered (@tbl-3) or Endangered. Two of these species have estimated annual catches (2013-2023) in excess of 100 tonnes [@d2025b]: soupfin shark (*Galeorhinus galeus*, CR) and shortfin mako (*Isurus oxyrinchus*, EN). An additional four Endangered species have estimated average annual catches (2013-2023) of 11 tonnes or more [@d2025b]: dusky shark (*Carcharhinus obscurus*, EN), the endemic twineye skate (*Raja ocellifera*, EN), spearnose skate (*Rostroraja alba*, EN), and common smooth-hound (*Mustelus mustelus*, EN) (@tbl-2). For most of these species (the exception being the spearnose skate), overfishing is the main pressure. However, catches are very low for five of the Critically Endangered or Endangered species landed in South African fisheries [@forestry2022a].
 
 From 2010 to 2012, approximately two thirds of the reported shark catch in southern Africa was bycatch [@silva2015a]. While some bycatch is retained and sold, much unwanted bycatch is discarded at sea. Mortality rates are high for many bycatch species, especially if they are neglected while on deck. Bycatch discarded at sea is effectively unrecorded and unregulated [@forestry2022a].
 
@@ -573,7 +573,7 @@ Many of the globally threatened shark species that occur in South African waters
 
 ```{r}
 #| label: tbl-3
-#| tbl-cap: "Major pressures on South Africa’s Critically Endangered shark species occurring in South Africa [@everette2017a; @cliff2022a; @forestry2022a]."
+#| tbl-cap: "Major pressures on Critically Endangered shark species occurring in South Africa [@everette2017a; @cliff2022a; @forestry2022a]."
 #| out-width: 650px
 #| classes: plain
 

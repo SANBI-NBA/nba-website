@@ -5,10 +5,10 @@ title-block-banner-color: white
 bibliography: species.bib
 ---
 
-![The beautiful endemic red roman *Chrysoblephus laticeps* is one of the Cape’s most iconic fishes and IUCN Red List assessment for this species shows good news. Marine Protected Areas such as the Table Mountain, De Hoop and Tsitsikamma MPAs have played a key role in the recovery of this resource. © Steve Benjamin](./imgs/sp_sparids_img_1.png){fig-align="center"}
+![The beautiful endemic red roman *Chrysoblephus laticeps* is one of the Cape’s most iconic fishes and IUCN Red List assessment for this species shows good news. Marine protected areas such as the Table Mountain, De Hoop and Tsitsikamma MPAs have played a key role in the recovery of this resource. © Steve Benjamin](./imgs/sp_sparids_img_1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-::: {.callout-important icon="TRUE" title="Attention:" style="--callout-icon-color: white; font-size:100px;"}
+::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
 ###### The status summary of Sparids (Seabreams) is under production and will be available from February 2026.
 :::

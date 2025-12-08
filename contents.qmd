@@ -71,7 +71,7 @@ listing:
 
 ### Key Messages
 
-Key messages summarise the main findings of the NBA, explain why it matters, and point to practical actions, responses, and interventions that can be taken in response. There are [15 key messages](./content/key-messages/index.qmd) in the NBA 2025 that are clustered into three themes:
+Key messages summarise the main findings of the NBA, explain why they matter, and point to practical actions, responses, and interventions that can be taken in response. There are [15 key messages](./content/key-messages/index.qmd) in the NBA 2025 that are clustered into three themes:
 
 ```{=html}
 <div class="km-tile-wrap">

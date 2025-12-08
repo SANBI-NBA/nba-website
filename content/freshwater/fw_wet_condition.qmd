@@ -99,7 +99,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate threat. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent, monitoring and reporting.*
+*While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate problem. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent monitoring and reporting.*
 
 ![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
 
@@ -213,7 +213,7 @@ tbl
 Download the data by wetland type [here](data/wetlands_condition_combined_extent_percent_by_type.csv).
 ::::
 
-Approximately 1 476 561 ha (49%) of total inland wetland extent is in a natural (class A) or near -natural (class B) condition, 808 325 ha (27%) is in a moderately modified (class C) condition, and 705 797 ha (27%) is in a heavily to critically modified (class D, E or F) condition.
+Approximately 1 476 561 ha (49%) of total inland wetland extent is in a natural (class A) or near-natural (class B) condition, 808 325 ha (27%) is in a moderately modified (class C) condition, and 705 797 ha (27%) is in a heavily to critically modified (class D, E or F) condition.
 
 Ecological condition was calculated for 171 303 wetlands. Of these, approximately 100 029 wetlands (58%) are in a natural (class A) or near-natural (class B) condition, 24 752 (14%) are in a moderately modified (class C) condition and 46 522 (24%) are in a heavily to critically modified (class D, E or F) condition.
 
@@ -307,7 +307,7 @@ Download the data [here](data/wetlands_condition_combined_extent_percent.csv).
 
 Wetlands are complex systems that are influenced by multiple biotic and abiotic factors. Determining wetland health therefore requires a multidisciplinary approach that will allow for determining a single condition score from all the influencing factors. While previous approaches to determine wetland condition were sound, they lacked the holistic and systematic characteristics of the WET-Health Level 1A approach [@macfarlane2020].
 
-Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described by MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands such as those of a national wetland inventory. In addition to being typed according to Ollis et al. (2013) [@ollis2013], the method also requires each wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment.
+Wetland ecological condition was determined using an automated approach (ArcGIS python scripts) of the Level 1A method described by MacFarlane et al. (2020), which is a low confidence, non-detailed approach that is suitable for assessing multiple wetlands such as those of a national wetland inventory. In addition to being typed according to Ollis et al. (2013) [@ollis2013], the method also requires each wetland to have a 200 m buffer, as well as have its area of influence mapped. While the 200 m buffer is created by the automated process, the area of influence was created using a separate, but also automated, process. This allows the area of influence to be the actual wetland catchment.
 
 Overall wetland condition was calculated from the combined state of wetland hydrology, water quality, geomorphology, and vegetation, which were all calculated from the inferred pressures of different land cover classes.
 

@@ -232,7 +232,7 @@ Download the data [here](data/rivers_condition_combined_extent_percent.csv).
 
 ## Approach
 
-River ecological condition was assessed as part of the [Present Ecological State (PES) and Ecological Importance and Sensitivity](https://www.dws.gov.za/iwqs/rhp/eco/peseismodel.aspx) national project currently underway by the Department of Water and Sanitation (DWS) and the Water Research Commission of South Africa (WRC), along with appointed specialists. The process was expert driven, where rivers were reviewed at quinary catchment level according to a standardised methodology to describe the extent of ecosystem modification by assessing six indicators, namely flow modification, physico-chemical modification, in-stream habitat and habitat continuity modification, riparian/wetland zone habitat and habitat continuity modification. Information from the six indicator assessments was aggregated into a final condition score, assigning ecological condition categories ranging from natural (A) to critically modified or extremely degraded (F). The score was per quinary reach in the original dataset and was cross-walked to the river ecosystem type units for the NBA assessment.
+River ecological condition was assessed as part of the [Present Ecological State (PES) and Ecological Importance and Sensitivity](https://www.dws.gov.za/iwqs/rhp/eco/peseismodel.aspx) national project currently underway by the Department of Water and Sanitation (DWS) and the Water Research Commission of South Africa (WRC), along with appointed specialists. The process was expert driven, where rivers were reviewed at quinary catchment level according to a standardised methodology to describe the extent of ecosystem modification by assessing six indicators, namely flow modification, physico-chemical modification, in-stream habitat and habitat continuity modification, riparian/wetland zone habitat and habitat continuity modification. Information from the six indicator assessments was aggregated into a final condition score, assigning ecological condition categories ranging from natural (A) to critically modified or extremely degraded (F). The score was per quinary reach in the original dataset and was cross-walked to the river ecosystem type units for the NBA.
 
 ## Technical documentation
 
@@ -260,5 +260,3 @@ meta <- rmarkdown::metadata  # full YAML is now in `meta`
 
 nba_citation(meta)
 ```
-
-
