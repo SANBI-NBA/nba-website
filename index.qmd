@@ -21,7 +21,6 @@ format:
 :::
 ::::
 
-
 :::: column-screen
 ::: column-body
 ## National Biodiversity Assessment {#summary}
@@ -56,7 +55,7 @@ NBA 2025 launch event news and media resources
 :::::: column-body
 ::::: book-columns
 ::: {.book-column-image .book-col-right}
-<a href="https://%20hdl.handle.net/20.500.12143/9467s"> ![](./imgs/cover-small.png) </a>
+<a href="https://hdl.handle.net/20.500.12143/9467"> ![](./imgs/cover-small.png) </a>
 :::
 
 ::: {.book-column-text .book-col-left}
