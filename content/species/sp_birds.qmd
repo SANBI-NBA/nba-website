@@ -411,7 +411,7 @@ White-winged flufftail, landing (left), while monitoring is taking place in its 
 
 ## Trends – the Red List Index
 
-The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI)[@butchart2004a]. The RLI is calculated based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The slope of the line indicates the rate at which species are becoming more threatened over time. The Red List Index of birds was calculated for all taxa that have been reassessed (n = 729).
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI)[@butchart2004a]. The RLI is calculated based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1. At a value of 1, all species are at low risk of extinction (Least Concern), while a value of 0 indicates that all species are extinct. The slope of the line indicates the rate at which species are becoming more threatened over time. The Red List Index of birds was calculated for all species that have been reassessed (n = 729).
 
 It was found that many species have changed Red List categories over the last decade. Results indicate that the average RLI score decreased between 2015 and 2025, which means that South African bird species' risk of extinction is increasing. A total of 147 species had a threat status higher than Least Concern for 2025. Although 131 species showed no change in status, 39 deteriorated (moving into higher risk categories) and 8 improved. The analysis highlights that habitat degradation, invasive species, powerline collisions, climate change, and fisheries impacts remain pressing conservation issues. These pressures are spread quite widely across South Africa, as indicated by the distributions of species that have increased in threat status since 2015 (@fig-4). Targeting these pressures is essential, especially for species newly classified as Vulnerable or Endangered.
 
@@ -450,7 +450,7 @@ nba_index_plot(
 ::: {.table style="height:500px;overflow-y: auto"}
 ```{r}
 #| label: tbl-2
-#| tbl-cap: "List of taxa that have had a genuine change in their status and the drivers. Asterisks indicate South African endemic."
+#| tbl-cap: "List of species that have had a genuine change in their status and the drivers. Asterisks indicate South African endemic."
 #| classes: plain
 library(dplyr)
 library(gt)
@@ -524,7 +524,7 @@ knitr::include_graphics("./imgs/birds_in_10km_HD.png")
 
 ## Pressures
 
-South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat[^1]. Across 147 taxa of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
+South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat[^1]. Across 147 species of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
 
 [^1]: The percentage values in this section indicate the percentage of threatened and Near Threatened bird species impacted by the listed pressures.
 
@@ -773,7 +773,7 @@ Despite South Africa’s extensive protected area network, many bird species rem
 
 Priority areas for bird recovery are guided by the 2025 Red List assessments and subsequent expert consultations. These processes identified species whose continued declines are unlikely to be halted by protected area coverage alone, and which therefore require targeted interventions. While the expansion of protected and conserved areas under [Global Biodiversity Framework (GBF) Target 3](https://www.cbd.int/gbf/targets/3) is essential, recovery planning shows that protection alone is insufficient unless paired with targeted species-focused measures. Where published prioritisation exists, such as the [Biodiversity Management Plan for Vultures](https://www.dffe.gov.za/sites/default/files/sites/default/files/docs/publications/nemba_multispecies.bmp_southafricanvultures_g47632gon2817.pdf) [@forestry2024a] or the [Mouse-Free Marion Project](https://mousefreemarion.org/) plans, these form the basis for coordinated action. In other cases, BirdLife South Africa and partners use a combination of Red List urgency, ecological feasibility, and opportunity for partnerships with landowners or government to determine priorities.
 
-Selected active recovery projects are highlighted below (@tbl-3). This showcases both the diversity of interventions needed and the scale of resources required. Some species, such as Botha’s lark, require stewardship agreements and changes in land-use practices to secure remnant grassland habitat. Others, such as the blue swallow, need artificial nest-site provisioning and alien clearing in addition to site protection. For marine birds such as the African penguin, population recovery hinges on fisheries reform, fishery closures around key colonies, and advocacy on threats such as ship-to-ship bunkering.
+Selected active recovery projects are highlighted below (@tbl-3). This showcases both the diversity of interventions needed and the scale of resources required. Some species, such as Botha’s lark, require stewardship agreements and changes in land-use practices to secure remnant grassland habitat. Others, such as the blue swallow, need artificial nest-site provisioning and alien clearing in addition to site protection. For marine birds such as the African penguin, population recovery hinges on fisheries reform, fishery closures around key colonies, and advocacy on threats such as ship-to-ship bunkering (see further marine bird results [here](../species/marine_bird_sp.qmd)).
 
 Several threatened vultures (white-backed, lappet-faced, hooded and white-headed vultures) require landscape-scale pressure reduction, including poison-response networks, regulation of traditional medicine markets, a change in the hunting culture preference for lead-based ammunition, and mitigation of electrocution and collision risks. In contrast, the bearded vulture recovery strategy combines *in situ* action with a long-term *ex situ* programme [Bearded Vulture Captive Breeding Project](https://4vultures.org/blog/saving-bearded-vultures-in-southern-africa-through-a-captive-breeding-programme/), where harvested eggs are raised in captivity and juveniles reintroduced.
 
@@ -856,6 +856,7 @@ fn = function(x) x ) %>%
 
 ```
 
+```{=html}
 <!--
 
 ::: {#box-4 .callout-note .species title="Box 4. Recovery efforts for Cape vultures (*Gyps coprotheres*)" collapse="true"}
@@ -871,6 +872,7 @@ As a result of all the interventions described here, the Cape vulture was downli
 :::
 
 -->
+```
 
 ## Knowledge gaps
 
@@ -878,7 +880,7 @@ While many long-standing pressures on South Africa’s birds are well recognised
 
 Agriculture and expansion of croplands continue to be linked to biodiversity loss, however changes in agricultural practices are anticipated to introduce new and as yet poorly understood dynamics. For example, the rapid expansion of shaded agriculture, where fruit orchards are increasingly sealed under large greenhouse structures will likely have negative impacts on avian biodiversity. These structures prevent access to flowering trees by natural pollinators and may have cascading impacts on terrestrial biodiversity. Parallel to this, agrochemical use has grown substantially, yet its full impact on South African birds and other wildlife is poorly understood. In addition, the spread of novel crops, including genetically modified organisms introduced into new habitats, raises questions about long-term ecosystem impacts.
 
-Climate change represents a cross-cutting pressure where biodiversity impacts remain poorly quantified at the species level. Although broad projections suggest range contractions and distribution shifts for many taxa, very few South African birds have been assessed using bespoke best-practice models that integrate climatic, habitat and demographic data. This leaves uncertainty about which species are most vulnerable, the likely magnitude of impacts, and where conservation interventions should be prioritised. Incorporating climate velocity, dispersal capacity, and habitat quality into future assessments will be essential to identify both high-risk species and potential refugia.
+Climate change represents a cross-cutting pressure where biodiversity impacts remain poorly quantified at the species level. Although broad projections suggest range contractions and distribution shifts for many species, very few South African birds have been assessed using bespoke best-practice models that integrate climatic, habitat and demographic data. This leaves uncertainty about which species are most vulnerable, the likely magnitude of impacts, and where conservation interventions should be prioritised. Incorporating climate velocity, dispersal capacity, and habitat quality into future assessments will be essential to identify both high-risk species and potential refugia.
 
 Energy demand is another fast-moving frontier. The growth of cryptocurrency mining and AI technologies is driving global electricity consumption, yet the scale and consequences for South Africa remain largely unquantified. At the same time, renewable energy developments, particularly the rapid roll-out of wind energy projects in Mpumalanga and along the coast, pose escalating risks for birds and bats. Offshore wind energy generation is also emerging as a potential future pressure on marine biodiversity.
 
@@ -935,6 +937,7 @@ BirdLife South Africa first piloted a species-level Protection Level (PL) metric
 
 ------------------------------------------------------------------------
 
+-   [SANBI](https://www.sanbi.org/)
 -   [BirdLasser](https://www.birdlasser.com/)
 -   [Industrial Development Corporation](https://www.idc.co.za/)
 -   [Eskom](https://www.eskom.co.za/)
