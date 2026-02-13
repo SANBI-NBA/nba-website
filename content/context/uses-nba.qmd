@@ -17,7 +17,7 @@ bibliography: refs-about-nba.bib
 
 3.  Highlight the benefits of biodiversity for people and the economy;
 
-4.  present indicators for both national and international reporting;
+4.  Present indicators for both national and international reporting;
 
 5.  Raise key issues for education and fundraising;
 

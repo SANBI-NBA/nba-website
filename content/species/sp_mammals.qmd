@@ -877,7 +877,7 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 2.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
 
-3.  Oliver, C. 2025. Technical Report: Modelling the change in potential species distribution of 14 mammals in South Africa under predicted future climate change scenarios. Available at: <https://figshare.com/ndownloader/files/60064052>.
+3.  Oliver, C. 2025. Technical Report: Modelling the change in potential species distribution of 14 mammals in South Africa under predicted future climate change scenarios. Available at: <https://doi.org/10.6084/m9.figshare.30774914>.
 
 ## Recommended citation
 
