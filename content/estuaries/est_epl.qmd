@@ -79,7 +79,7 @@ library(nbaR)
 
 # load the data 
 epl_combined <- read.csv(file=list.files(pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE")
 
 ## extent
 eco_extent <- epl_combined %>% 
@@ -239,7 +239,7 @@ library(nbaR)
 library(tidyverse)
 
 epl_combined <- read.csv(file=list.files(path = "./data", pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") %>% 
   mutate(
   zone = factor(zone, levels = c("Tropical",
                                   "Subtropical",
@@ -376,13 +376,13 @@ Although containment efforts reduced the scale of subsequent outbreaks, the recu
 
 # load data
 epl <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") %>% 
   select(NAME, type, protection_level) %>% 
   rename(`Estuary name` = NAME, 
          `Estuary type` = type,  
          `Protection level` = protection_level)
 
-write.csv(epl, "data/protection_level_per_estuary.csv")
+write.csv(epl, "data/protection_level_per_estuary.csv", fileEncoding="UTF-16LE")
 
 nba_tbl_colr(epl,
              COL = `Protection level`,
@@ -459,7 +459,7 @@ The PA target was historically set at 20% for marine and estuarine ecosystems, b
 
 ### Code repositories
 
-Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/estuary-epl-analysis>
 
 ### Key publications
 

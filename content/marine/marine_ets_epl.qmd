@@ -75,6 +75,8 @@ google-scholar: true
 
 ![Cape Sheltered Rocky Shore is Endangered and Not Protected. (© Kerry Sink)](imgs/cape_sheltered_rocky_shore.png)
 
+## Intersection of ecosystem threat status and protection level results
+
 The headline indicators of the NBA provide information on the pressures faced by species and ecosystems and on the progress made in protecting them. Combining the indicators provides an additional perspective on the status of marine ecosystems. There are 27 marine ecosystem types that are both highly threatened and under-protected (@fig-rle_map; @tbl-ets_epl_ht).
 
 :::: panel-tabset
@@ -82,7 +84,7 @@ The headline indicators of the NBA provide information on the pressures faced by
 
 ```{r}
 #| label: fig-rle_map
-#| fig-cap: Threatened and under-protected marine ecosystem types.
+#| fig-cap: Threatened and under-protected marine ecosystem types. The inset graph shows the number and proportion of ecosystem types that fall within the four threatened and under-protected categories identified.
 #| echo: false
 #| message: false
 #| warning: false
@@ -182,7 +184,7 @@ The highest priorities are the Critically Endangered Orange Cone Inner Shelf Mud
 ```{r}
 #| label: tbl-ets_epl
 #| echo: false
-#| tbl-cap: Table summarising protection levels across different threat status categories for marine ecosystem types.
+#| tbl-cap: Table summarising protection levels across different threat status categories for marine ecosystem types, highlighting under-protected ecosystem types.
 #| classes: plain
 
 library(dplyr)
@@ -206,13 +208,13 @@ thr_pro
 
 ```
 
-Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as OECMs. In addition to expansion of protection, it is important to improve ecosystem condition through strategic alleviation of pressures such as [restoration of freshwater flow to the marine environment](marine_pressures#box9) and improved ecosystem management. Improved bycatch management ([priority action 5](marine_priority_actions.qmd#box-8)) and diversified measures to protect bathers from sharks using non-lethal measures ([Improvements in shark control measures](marine_pressures.qmd#box3)) could help improve ecosystem condition in KwaZulu-Natal.
+Threatened and under-protected ecosystem types are candidates for improved protection through MPA expansion or other spatial management measures that could be recognised as OECMs. In addition to expansion of protection, it is important to improve ecosystem condition through strategic alleviation of pressures such as [restoration of freshwater flow to the marine environment](marine_pressures#box9) and improved ecosystem management. Improved bycatch management ([priority action 5](marine_priority_actions.qmd#box-8)) and diversified measures to protect bathers from sharks using non-lethal measures ([Improvements in shark control measures](marine_pressures.qmd#box3)) could help improve ecosystem condition in KZN.
 
-![The KwaZulu Natal Bight Mid Shelf Reef Complex is considered Endangered and Not Protected. Increased research to improve reef classification, mapping and assessment is recommended in this area. (© ACEP Spatial Solutions Project, Kerry Sink)](imgs/R20_UmlhotiSteep_57_62m.png)
+![The KZN Bight Mid Shelf Reef Complex is considered Endangered and Not Protected. Increased research to improve reef classification, mapping and assessment is recommended in this area. (© ACEP Spatial Solutions Project, Kerry Sink)](imgs/R20_UmlhotiSteep_57_62m.png)
 
-Under protected, but Least Concern ecosystem types are also candidates for improved protection. Such ecosystems types may not be currently experiencing serious pressure or decline in ecological condition, but are perhaps easier targets for protection through MPA's or OECM's. For example, the Namaqua Muddy Sands, is a distinct ecosystem type that is currently not represented in South Africa's conservation estate. [Improved spatial planning](marine_priority_actions.qmd#priority-areas) can help find the best area to protect this ecosystem type, by considering other habitat and species priorities. This ecosystem types hosts Vulnerable Marine Ecosystems (VMEs) [@franken2025].
+Under-protected, but Least Concern ecosystem types are also candidates for improved protection. Such ecosystems types may not be currently experiencing serious pressure or decline in ecological condition, but are perhaps easier targets for protection through MPAs or OECMs. For example, the Namaqua Muddy Sands, is a distinct ecosystem type that is currently not represented in South Africa's conservation estate. [Improved spatial planning](marine_priority_actions.qmd#priority-areas) can help find the best area to protect this ecosystem type, by considering other habitat and species priorities. This ecosystem types hosts Vulnerable Marine Ecosystems (VMEs) [@franken2025].
 
-![Namaqua Muddy Sands is Least Concern but Not Protected. This ecosystem type needs to be represented in South Africa's MPA network and there are options in terms of sites for protection with most area in good ecological condition. The VME indicator species (*Suberites dandelenae*) occurs in high numbers in this ecosystem type and habitat with high densities of this species should be prioritised for protection. (© South African Environmental Observation Network)](imgs/namqua_muddy_sands_Saeon.png)
+![Namaqua Muddy Sands is Least Concern but Not Protected. This ecosystem type needs to be represented in South Africa's MPA network and there are options in terms of sites for protection with most areas in good ecological condition. The VME indicator species (*Suberites dandelenae*) occurs in high numbers in this ecosystem type and habitat with high densities of this species should be prioritised for protection. (© South African Environmental Observation Network)](imgs/namqua_muddy_sands_Saeon.png)
 
 <!-- # ```{r} -->
 
@@ -368,7 +370,7 @@ We thank all contributors as reflected in the Ecosystem Threat Status and Protec
 
 <!--# Always use DOI to link to published papers - never use the journal's website -->
 
-### GitLab repositories
+### Code repositories
 
 -   [Protection level assessment](https://gitlab.com/nba_2025/ecosystem_assessment/protection_level)
 

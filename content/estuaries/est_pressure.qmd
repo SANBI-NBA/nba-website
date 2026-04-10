@@ -223,14 +223,16 @@ library(nbaR)
 library(tidyverse)
 
 pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE")%>% 
   mutate(
   zone = factor(zone, levels = c("Tropical",
                                   "Subtropical",
                                  "Warm Temperate",
                                  "Cool Temperate"),
                     ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+   arrange(zone) 
+
+pres_1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_2025_flow_modification) %>% 
   distinct() %>% 
   summarise(extent = sum(efz_ha), .by = c(type,pressure_2025_flow_modification )) %>% 
@@ -240,7 +242,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres_1 ,
               type,
               2:5,
               CHRT = "bar",
@@ -316,15 +318,7 @@ library(gt)
 library(nbaR)
 library(tidyverse)
 
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_2025_pollution) %>% 
   distinct() %>% 
   summarise(extent = sum(efz_ha), .by = c(type,pressure_2025_pollution )) %>% 
@@ -334,7 +328,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:5,
               CHRT = "bar",
@@ -393,15 +387,7 @@ library(gt)
 library(nbaR)
 library(tidyverse)
 
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_2025_fishing_effort_DEFF) %>% 
   distinct() %>% 
   filter(pressure_2025_fishing_effort_DEFF != "") %>% 
@@ -412,7 +398,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:5,
               CHRT = "bar",
@@ -483,15 +469,7 @@ library(gt)
 library(nbaR)
 library(tidyverse)
 
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_2025_habitat_loss) %>% 
   distinct() %>% 
   filter(pressure_2025_habitat_loss != "") %>% 
@@ -502,7 +480,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:5,
               CHRT = "bar",
@@ -559,15 +537,7 @@ library(gt)
 library(nbaR)
 library(tidyverse)
 
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_artificial_breaching) %>% 
   distinct() %>% 
   filter(pressure_artificial_breaching != "") %>% 
@@ -578,7 +548,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:5,
               CHRT = "bar",
@@ -633,15 +603,7 @@ library(gt)
 library(nbaR)
 library(tidyverse)
 
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, pressure_invasive_alien_plants) %>% 
   distinct() %>% 
   filter(pressure_invasive_alien_plants != "") %>% 
@@ -652,7 +614,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:4,
               CHRT = "bar",
@@ -697,19 +659,7 @@ Settlement of alien and invasive species are a function of the degree of exposur
 
 
 
-library(gt)
-library(nbaR)
-library(tidyverse)
-
-pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
-  mutate(
-  zone = factor(zone, levels = c("Tropical",
-                                  "Subtropical",
-                                 "Warm Temperate",
-                                 "Cool Temperate"),
-                    ordered = TRUE)) %>% 
-   arrange(zone) %>% 
+pres1 <- pres %>% 
   select(type, NAME, efz_ha, Pressure_alien_fish) %>% 
   distinct() %>% 
   filter(Pressure_alien_fish != "") %>% 
@@ -720,7 +670,7 @@ pres <- read.csv(file=list.files(path = "./data", pattern = "^est_pressure_data.
   
 
 #Combine RLE plot
-nba_plot(pres,
+nba_plot(pres1,
               type,
               2:5,
               CHRT = "bar",

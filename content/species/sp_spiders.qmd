@@ -70,7 +70,7 @@ author:
 affiliations:
   - id: arc 
     number: 1 
-    name: Agricultural Reseach Council
+    name: Agricultural Research Council
 
   - id: sanbi 
     number: 2 
