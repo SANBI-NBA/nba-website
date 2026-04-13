@@ -20,7 +20,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 :::
 
 ::: {.column width="40%"}
-![](../analysis/bookletoutputs/rle_hl.png){.lightbox fig-align="right" width="200"}
+![](imgs/fig3brle.png){.lightbox width="200px" fig-align="right"}
 :::
 :::::
 
@@ -38,7 +38,7 @@ The threat status indicators use established [IUCN Red List of Ecosystems](https
 :::
 
 ::: {.column width="40%"}
-![](../analysis/bookletoutputs/epl_hl.png){.lightbox fig-align="right" width="200"}
+![](imgs/fig3depl.png){.lightbox width="200px" fig-align="right"}
 :::
 :::::
 
