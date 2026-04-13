@@ -15,9 +15,9 @@ Fishing is one of the most enduring marine activities that supports food and job
 
 :::: figure
 ::: {layout-ncol="2"}
-![A, Cape bream (*Pachymetopon blochii*). (© Joris van Alphen)](imgs/22a.%20Pg28_KMA5_seabream_(c)Joris_van_%20Alphen.png)
+![A, Cape bream (*Pachymetopon blochii*). (© Joris van Alphen)](imgs/kma5_seabream_JorisvanAlphen.png)
 
-![B, Slinger (*Chrysoblephus puniceus*). (© Geoff Spiby)](imgs/22b.%20Pg%2028%20slinger%206%20(c)%20Geoff%20Spiby.png)
+![B, Slinger (*Chrysoblephus puniceus*). (© Geoff Spiby)](imgs/kma5_slinger_GeoffSpiby.png)
 :::
 ::::
 

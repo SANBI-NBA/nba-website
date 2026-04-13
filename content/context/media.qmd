@@ -30,7 +30,7 @@ listing:
 
 ## Press releases
 
--   [NBA 2025 media statement](assets/Media_Statement_NBA 2025_9_December_2025.pdf)
+-   [NBA 2025 media statement](assets/Media_Statement_NBA%202025_9_December_2025.pdf)
 
 ## News items
 
@@ -40,6 +40,18 @@ listing:
 ## Short films
 
 {{< video https://www.youtube.com/embed/EnRlSBeGNs0 title='Flow for Life' >}}
+
+## Webinar series
+
+The NBA Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
+
+For more information about upcoming webinars see [here](https://www.sanbi.org/news/nba-webinar-series-begins-with-overview-of-key-findings/).
+
+Links to recordings of completed webinars:
+
+**Webinar 1:** [Reverse the Red: NBA 2025 species findings](https://youtu.be/m6NkcfjvR-o)
+
+**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc&t)
 
 ------------------------------------------------------------------------
 

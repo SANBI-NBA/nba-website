@@ -37,9 +37,9 @@ The NBA is the primary tool for monitoring and reporting on the state of biodive
 
 <h4 style="color: #70B276; margin-top: 0">
 
-<a href="./content/context/media.html">
+<a href="./content/context/media.html#webinar-series">
 
-NBA 2025 launch event news and media resources
+Follow the NBA 2025 webinar series
 
 </a>
 

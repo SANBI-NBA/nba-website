@@ -74,7 +74,7 @@ library(nbaR)
 
 # load the data 
 ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") 
   
 
 ## extent
@@ -195,7 +195,7 @@ library(tidyverse)
 
 # load the data 
 ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") %>% 
   mutate(
   zone = factor(zone, levels = c("Tropical",
                                   "Subtropical",
@@ -327,13 +327,13 @@ library(dplyr)
 
 # load data
 ets <- read.csv(file=list.files(path = "./data/", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) %>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") %>% 
   select(NAME, type, threat_status) %>% 
   rename(`Estuary name` = NAME, 
          `Estuary type` = type, 
          `Threat status` = threat_status)
 
-write.csv(ets, "data/threat_status_per_estuary.csv")
+write.csv(ets, "data/threat_status_per_estuary.csv", fileEncoding="UTF-16LE")
 
 nba_tbl_colr(DF = ets,
              COL = `Threat status`,
@@ -362,7 +362,7 @@ The following criterion were assessed:
 
 -   **Criterion A3** (historical reduction in ecosystem extent); based on land cover 2022.
 
--   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there was ongoing decline, defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH;  b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment was greater than 30% of type extent. These metrics capture increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating was applied to the whole type and was scaled by estuarine extent.
+-   **Criterion B3** was applied to the estuary types that occur at 5 or fewer locations - and for which there was ongoing decline, defined as: a) between t1 and t2, fishing pressure shifts from M to H OR H to VH; b) PES class A, B and C extent declined by \>1%, OR extent of H and VH Fishing pressure at year of assessment was greater than 30% of type extent. These metrics capture increasing or sustained gill-netting pressures, and steady decline in ecosystem condition as triggers. The rating was applied to the whole type and was scaled by estuarine extent.
 
 -   **Criterion D1** was applied using fishing pressure scores for each estuary. The scores were converted to an index 0-1 and aligned to severity rating (1 highest severity - 100%; 0 lowest severity - 0%). The rating was applied to the whole type and was scaled by estuarine extent.
 
@@ -384,7 +384,7 @@ A more detailed explanation of the assessment method can be found on the [about 
 
 ### Code repositories
 
-Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_est>.
+Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/estuary-rle-analysis>.
 
 ### Key publications
 

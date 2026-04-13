@@ -18,7 +18,7 @@ library(nbaR)
 
 # load the data 
 ets_combined <- read.csv(file=list.files(path = "./data", pattern = "^ets_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE) 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") 
   
 
 ## extent
@@ -67,7 +67,7 @@ library(nbaR)
 
 # load the data 
 epl_combined <- read.csv(file=list.files(pattern = "^epl_combined_count_extent.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE")
 
 ## extent
 eco_extent <- epl_combined %>% 
@@ -217,7 +217,7 @@ est <-  read.csv(
   dir("data",
       "^est.csv$",
       full.names = T,
-      recursive = T)[1])
+      recursive = T)[1], fileEncoding="UTF-16LE")
 
 unluckies_tbl <- est %>%
   select(type, threat_status, protection_level) %>%

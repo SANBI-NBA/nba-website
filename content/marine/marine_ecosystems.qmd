@@ -111,6 +111,10 @@ google-scholar: true
 
 ![South Africa's reef ecosystems support high biodiversity with many endemic species. (© Geoff Spiby)](imgs/Ecosystem_cover_page_Atlantis_reef_09_11013.png)
 
+## Marine ecosystem types
+
+The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@fig-eco_map) to assess the state of 163 marine ecosystem types around mainland South Africa. See the [subantarctic territory page](../subantarctic/sub-all_sections.qmd) for an overview of the marine ecosystem types in the Prince Edward Islands. South Africa’s mainland maritime domain (territorial seas plus Exclusive Economic Zone) extends from the dune base to 200 NM seaward, representing an area of approximately 1.07 million km^2^ and extending to a depth of about 5 500 m. The continental shelf width varies between \~2 and 260 km, and the shelf break depth ranges between 80 and 600 m, being terraced in places (de Wet and Compton, 2021). The Agulhas Bank is a 116 000 km^2^ triangular extension of the continental shelf that supports many endemic species. Shelf areas constitute approximately 40% of the mainland maritime domain with slope and abyssal ecosystems constituting the remaining 60%. South Africa has a coastline length of over 3 000 km. A separate [coastal chapter](../coast/cst_synthesis.qmd) covers the ecologically determined coastal zone.
+
 ::: {.panel-tabset appearance="minimal" collapse="false"}
 <!-- do not include .callout-note in the line above unless you want callout-note formatting of the box; I'm not sure what the group="RLE" did? seemingly nothing and likely an artifact from where this code came from  -->
 
@@ -118,7 +122,7 @@ google-scholar: true
 
 ```{r}
 #| label: fig-eco_map
-#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined benthopelagic (shelf) and 22 deep-sea benthic (deep-sea) types and (B) 13 deep-sea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246).
+#| fig-cap: Map of the 163 marine ecosystem types in South Africa, including (A) 128 combined benthopelagic (shelf) and 22 deepsea benthic types (beyond the shelf break) and (B) 13 deepsea pelagic types. The insert on A shows the transition between the Natal (warm colours) and Delagoa ecoregions (pink/purple colours). The map can be downloaded from [BGIS](https://bgis.sanbi.org/Projects/Detail/2246).
 # where does the following link come from? it requires me to sign up on some esri platform and is not a BGIS link?! https://aniday.maps.arcgis.com/apps/webappviewer/index.html?id=d123de04da384e52b53baad8e6ca749c. -->
 #| echo: false
 
@@ -134,10 +138,6 @@ knitr::include_graphics("imgs/benthic_pelagic_map_panel.png")
 
 ![Key for the pelagic component of the Marine Ecosystem Map](imgs/nba_pelagic_map_legend.png){fig-align="center"}
 :::
-
-## Marine ecosystem types
-
-The 2025 National Biodiversity Assessment used the 2023 Marine Ecosystem Map (@fig-eco_map) to assess the state of 163 marine ecosystem types around mainland South Africa. See the [subantarctic territory page](../subantarctic/sub-all_sections.qmd) for an overview of the marine ecosystem types in the Prince Edward Islands. South Africa’s mainland maritime domain (territorial seas plus Exclusive Economic Zone) extends from the dune base to 200 NM seaward, representing an area of approximately 1.07 million km^2^ and extending to a depth of about 5 500 m. The continental shelf width varies between \~2 and 260 km, and the shelf break depth ranges between 80 and 600 m, being terraced in places (de Wet and Compton, 2021). The Agulhas Bank is a 116 000 km^2^ triangular extension of the continental shelf that supports many endemic species. Shelf areas constitute approximately 40% of the mainland maritime domain with slope and abyssal ecosystems constituting the remaining 60%. South Africa has a coastline length of over 3 000 km. A separate [coastal chapter](../coast/cst_synthesis.qmd) covers the ecologically determined coastal zone.
 
 The 2023 [Marine Ecosystem Map](https://bgis.sanbi.org/Projects/Detail/2246) includes 128 shore and shelf ecosystem types which are considered benthopelagic, with 22 deepsea benthic and 13 deepsea pelagic ecosystem types (@fig-sunburst). These 163 ecosystem types nest within 17 ecosystem functional groups (@fig-sunburst) that align with those of the [IUCN GET](https://global-ecosystems.org/), except for minor differences in terminology, and South Africa included Bays as a distinct group. The ecosystem functional groups are nested within bathomes, which represent geomorphological depth categories equivalent to 'biomes' in the [IUCN GET](https://global-ecosystems.org/).
 
@@ -266,14 +266,14 @@ Large brown seaweeds of the order Laminariales fringe rocky shores of temperate 
 ![Masters student, Ms. Nelisiwe Hambile, is embarking on work to map subsurface kelp forests in South Africa using remotely sensed data, and to assess how they will respond under different climate change scenarios. This work is a collaborative effort with the Seas of Good Hope, SANBI and the University of Cape Town.](imgs/neli_kelp.png){#fig-kelps}
 :::
 
-The updated environmental layers have been organised by topical project groups, which include oceanography, geology and geomorphology. A suite of oceanographic (physical, chemical and phytoplankton) variables for surface and seafloor depths were downloaded from the [Bio-ORACLE](https://bio-oracle.org/) platform and calculated from [Copernicus Marine Service](https://data.marine.copernicus.eu/products) satellite products and regional ocean model hindcasts provided by [SAEON](https://www.saeon.ac.za/) and [SOMISANA](https://somisana.ac.za/). Updated sediment data were sourced from collaborators, greatly increasing the inventory of marine sediment sample and seafloor description records. Interpolated maps of sediment characteristics were additionally sourced from [dbSEABED](https://dbseabed.com/). Geomorphological variables included a new, national-scale, 100-m resolution [bathymetry map](https://doi.org/10.15493/SANBI.220424)[@manikam2024], from which derived variables such as slope angle, bathymetric position index and rugosity were calculated.
+The updated environmental layers have been organised by thematic groups, which include oceanography, geology and geomorphology. A suite of oceanographic (physical, chemical and phytoplankton) variables for surface and seafloor depths were downloaded from the [Bio-ORACLE](https://bio-oracle.org/) platform and calculated from [Copernicus Marine Service](https://data.marine.copernicus.eu/products) satellite products and regional ocean model hindcasts provided by [SAEON](https://www.saeon.ac.za/) and [SOMISANA](https://somisana.ac.za/). Updated sediment data were sourced from collaborators, greatly increasing the inventory of marine sediment sample and seafloor description records. Interpolated maps of sediment characteristics were additionally sourced from [dbSEABED](https://dbseabed.com/). Geomorphological variables included a new, national-scale, 100-m resolution [bathymetry map](https://doi.org/10.15493/SANBI.220424)[@manikam2024], from which derived variables such as slope angle, bathymetric position index and rugosity were calculated.
 
 ::: {#box-canyons .callout-note .marine collapse="false" title="Box 2. South Africa’s submarine canyons"}
 <!-- ### South Africa’s submarine canyons -->
 
 Submarine canyons are steep-sided valleys that cut into the continental slope and play an important role in connecting coastal and deep-sea environments by facilitating the vertical movement of water, sediments, and nutrients. Many of these canyons host complex terrain, diverse substrate types, habitats and species, including vulnerable marine ecosystem indicators, such as cold-water corals and sponges. They act as important nursery and feeding grounds for a variety of benthic and pelagic species, some of which are conservation priorities, such as the African coelacanth (*Latimeria chalumnae*). Furthermore, submarine canyons can act as refuges from anthropogenic pressures, such as trawling, in areas where steep slopes and complex terrain limit human access.
 
-Despite their ecological importance, many of South Africa’s submarine canyons have remained unknown and unmapped due to limited coverage of high-resolution bathymetry data. The release of the [100-m resolution national-scale bathymetric map](https://doi.org/10.15493/SANBI.220424) in 2024, combined with additional unpublished multibeam echosounder datasets, has enabled a substantial [advance in the mapping of submarine canyon features in South Africa](https://gitlab.com/marine-map/geomorphology/canyon), increasing the number of canyon polygons from 39 in 2018 to over 120. This work, led by Nokubonga Mzimela, enhances knowledge on canyon classification and geomorphological processes, identifies shelf-breaching canyons that influence shelf ecology, supports habitat predictions for coelacanths and other species, and will improve the delineation of canyon ecosystem types in the next Marine Ecosystem Map.
+Despite their ecological importance, many of South Africa’s submarine canyons have remained unknown and unmapped due to limited coverage of high-resolution bathymetry data. The release of the [100-m resolution national-scale bathymetric map](https://doi.org/10.15493/SANBI.220424) in 2024, combined with additional unpublished multibeam echosounder datasets, has enabled a substantial advance in the [mapping of submarine canyon features in South Africa](https://gitlab.com/marine-map/geomorphology/canyon), increasing the number of canyon polygons from 39 in 2018 to 120. This work, led by Nokubonga Mzimela, enhances knowledge on canyon classification and geomorphological processes, identifies shelf-breaching canyons that influence shelf ecology, supports habitat predictions for coelacanths and other species, and will improve the delineation of canyon ecosystem types in the next Marine Ecosystem Map.
 
 ![South Africa's newly mapped submarine canyons (red outline) overlayed on the new bathymetry map [@manikam2024]. (© Nokubonga Mzimela, SANBI)](imgs/canyons_map.png){#fig-canyons .lightbox}
 :::
@@ -308,7 +308,7 @@ During this assessment period, ecosystem classification and mapping work was sup
 
 <!-- -   **Sediment layers**: [gitlab.com/marine-map/sediment/sediment-map](https://gitlab.com/marine-map/sediment/sediment-map) -->
 
-[Marine Ecosystem Map update data workflows and mapping](https://gitlab.com/marine-map)
+<!-- [Marine Ecosystem Map update data workflows and mapping](https://gitlab.com/marine-map) -->
 
 <!-- -   **RCP models**: [gitlab.com/marine-map/environmental_clustering](https://gitlab.com/marine-map/environmental_clustering) -->
 

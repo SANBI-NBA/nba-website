@@ -114,7 +114,7 @@ The outputs of spatially explicit ecosystem assessments, as conducted in the NBA
 
 -   A quarter of terrestrial ecosystem types (115/463) are highly threatened and under-protected. The Fynbos Biome and Namaqualand contain many Critically Endangered and under-protected ecosystem types while the grasslands of the interior and the Indian Ocean Coastal Belt have many Endangered and under-protected types.
 
--   Over a third of river ecosystem types (82/222) and a third of wetland types (29/82) are highly threatened and under-protected. Lowland river ecosystem types and depression wetlands have the highest proportion of types in this combined threat and protection category.
+-   Over a third of river ecosystem types (82/222) and a quarter of wetland types (20/82) are highly threatened and under-protected. Lowland river ecosystem types and Unchannelled valley-bottom wetlands have the highest proportion of types in this combined threat and protection category.
 
 -   A third of estuarine ecosystem types (7/22) are highly threatened and under-protected. Each of the four biogeographical regions have ecosystem types that are highly threatened and under-protected.
 

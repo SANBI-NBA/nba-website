@@ -255,7 +255,7 @@ library(tidyverse)
 library(sf)
 
 
-est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE) %>%
+est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotypes.csv$", recursive = TRUE, full.names = TRUE), stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE") %>%
   rename(`Estuary name` = NAME, 
          `Estuary type` = type, 
          `Estuary functional type` = zone, 
@@ -264,7 +264,7 @@ est_ecotypes <- read.csv(file=list.files(path = "./data", pattern = "^est_ecotyp
          Condition = condition, 
          `Extent (ha)` = efz_ha) 
 
-write.csv(est_ecotypes, "data/estuary_ecosystem_types.csv")
+write.csv(est_ecotypes, "data/estuary_ecosystem_types.csv", fileEncoding="UTF-16LE")
 
 test <- est_ecotypes %>% 
   gt() %>%

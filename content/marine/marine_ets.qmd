@@ -344,7 +344,6 @@ knitr::include_graphics("imgs/ets_benthic_with_donut.png") #"imgs/ets_benthic_wi
 
 ```
 
-\
 
 ```{r}
 #| label: fig-ets_map_pel
@@ -356,7 +355,7 @@ knitr::include_graphics("imgs/ets_pelagic_with_donut.png")
 
 ```
 
-The most threatened functional groups include bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf (@fig-ets_bargraphs). The assessment method used to calculate threat status is outlined in the [Approach](#approach) section below and further detail can be found in the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd).
+The most threatened functional groups include bays, deepwater biogenic beds, muddy shelves and rocky ecosystems on the shelf (@fig-ets_bargraphs). The [IUCN Red List of Ecosystems](https://iucnrle.org/) (RLE) assessment method used to calculate threat status is outlined in the [Approach](#approach) section below and further detail can be found in the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd).
 
 :::: panel-tabset
 ## Figure
@@ -426,7 +425,7 @@ tbl
 
 The six ecosystem types that are Critically Endangered cover `r perc_cr_extent`% of the ocean area. The Agulhas Muddy Mid Shelf is threatened by demersal trawling (that persists over much of the extent of this ecosystem type [@currie2023]) in addition to flow reduction. The Browns Bank Rocky Shelf Edge has also been subject to intensive demersal trawling and high demersal longline effort leading to poor ecological condition. Both these ecosystem types were reported as Critically Endangered in 2018 [@sink2019] under IUCN RLE Criterion C/D.
 
-Four additional small ecosystem types listed under this category in 2025 when strictly applying IUCN RLE Criterion B. The Orange Cone Inner Shelf Mud Reef Mosaic is impacted by ongoing flow reduction and marine mining. The KwaZulu-Natal Bight Muddy Inner Shelf has been modified by flow reduction and the demersal inshore crustacean inshore fishery that has subsequently ceased. Cape Bay, which includes Table and Saldanha Bay, has very high cumulative pressures with ongoing degradation linked to port and harbour activities. The Aliwal Shoal Reef Complex falls entirely within a Marine Protected Area (MPA) but ongoing linefishing, waste water discharge and lethal shark control measures cause this ecosystem type, which is of restricted distribution, to be classified as Critically Endangered. Further work to support reef classification and measure ecosystem condition is recommended along with management to reduce pressures in the MPA.
+Four additional small ecosystem types listed under this category in 2025, when strictly applying IUCN RLE Criterion B. The Orange Cone Inner Shelf Mud Reef Mosaic is impacted by ongoing flow reduction and marine mining. The KwaZulu-Natal Bight Muddy Inner Shelf has been modified by flow reduction and the demersal inshore crustacean inshore fishery that has subsequently ceased. Cape Bay, which includes Table and Saldanha Bay, has very high cumulative pressures with ongoing degradation linked to port and harbour activities. The Aliwal Shoal Reef Complex falls entirely within a Marine Protected Area (MPA) but ongoing linefishing, waste water discharge and lethal shark control measures cause this ecosystem type, which is of restricted distribution, to be classified as Critically Endangered. Further work to support reef classification and measure ecosystem condition is recommended along with management to reduce pressures in the MPA.
 
 ![Fauna including grunter, kobs and prawns from the Critically Endangered KwaZulu-Natal Bight Muddy Inner Shelf. (© Kerry Sink)](imgs/Nan18_T16_25m_28.png)
 
@@ -452,17 +451,17 @@ Vulnerable ecosystem types cover `r perc_vu_extent`% of the ocean space, with 36
 
 ### Near Threatened
 
-Near Threatened ecosystem types are those that were evaluated to be within 10% of the threshold for Vulnerable. These ecosystems are at risk of ecosystem collapse if increasing pressures lead to further degradation in ecological condition. Examples include the Kingklip Koppies and the Agulhas Exposed Stromatolite Rocky Shore.
+Near Threatened ecosystem types are those that were evaluated to be within 10% of the threshold for Vulnerable. These ecosystems are at risk of becoming threatened if increasing pressures lead to further degradation in ecological condition. Examples include the Kingklip Koppies and the Agulhas Exposed Stromatolite Rocky Shore.
 
 ![The Kingkilp Koppies is a Near Threatened ecosystem type off Gqeberha. A co-developed seabed management area will protect this ecosystem type from trawling but further collaborations are needed to secure this area from other activities that may impact the seabed. (© ACEP Deep Secrets, Kerry Sink)](imgs/kingklip_koppies_KSink.png)
 
 ## Approach {#approach}
 
-The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using the 2024 [Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria](https://portals.iucn.org/library/node/51533) and drawing from previous NBA assessments. The threat status of South Africa’s 163 marine ecosystem types was evaluated applying the IUCN Criteria A-D using pressure and condition maps from the 2018 assessment. Both the extent and severity of ecosystem degradation were considered by calculating the extent of ecosystem types in each of the four ecosystem [condition categories](../marine/marine_condition.qmd). Condition assessments were based on an ecosystem pressure matrix that is used to weight the impact of each pressure on each ecosystem type.
+The 2025 assessment of South Africa’s 163 marine ecosystem types was conducted using the 2024 [Guidelines for the application of IUCN Red List of Ecosystems Categories and Criteria](https://portals.iucn.org/library/node/51533) and drawing from previous NBA assessments. The threat status of South Africa’s 163 marine ecosystem types was evaluated applying the IUCN Criteria A-D using pressure and condition maps from the 2018 assessment. Both the extent and severity of ecosystem degradation were considered by calculating the extent of ecosystem types in each of the four ecosystem [condition categories](../marine/marine_condition.qmd). Condition assessments were based on a cumulative pressure score informed by pressure maps and an ecosystem pressure matrix that weights the impact of each pressure on each ecosystem type [@sink2019].
 
 As pressure and condition data sets were not updated for the 2025 assessment, it is important to note that changes in ecosystem threat status are largely as a result of refined methods rather than recent loss or degradation in marine ecosystems. New aspects that were considered in the 2025 assessment included Criterion A, habitat loss, and Criterion B, number of threat defined locations, ongoing non-trivial drivers of ecological degradation (as opposed to pressures that have ceased) and stochastic events. Several ecosystem types have shifted into more threatened categories due to the ecosystem extent thresholds provided by the IUCN, but 13 ecosystem types had more positive (less threatened) results due to stricter thresholds for ongoing non-trivial decline in ecological condition.
 
-The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen assessments. See the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd) for further information on South Africa’s approach to the assessment of ecosystem threat status.
+The application of the IUCN global standards supported a more comprehensive understanding of the implications of previous deviations from the IUCN guidelines (such as altered thresholds under Criterion B in 2018) and provided a broader range of plausible results. It also led to the identification of new research priorities and recommendations relevant to current ecosystem mapping efforts and future ecosystem condition assessments that will strengthen RLE assessments. See the [ecosystem threat status and RLE explainer page](../integrated-findings/chl_rle_explained.qmd) for further information on South Africa’s approach to the assessment of ecosystem threat status.
 
 ## Acknowledgements
 

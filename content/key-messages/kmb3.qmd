@@ -25,13 +25,13 @@ The Kunming-Montreal Global Biodiversity Framework (Target 4) uses the proportio
 
 ::::: figure
 ::: {layout-ncol="2"}
-![A. The grey rhebok (*Pelea capreolus*). (© Tim Kuiper)](imgs/29a.%20Pg33_KMB3_DSC00820%20Grey%20Rhebok%20(c)%20Tim%20Kruiper.png)
+![A. The grey rhebok (*Pelea capreolus*). (© Tim Kuiper)](imgs/kmb3_GreyRhebok_TimKruiper.png)
 
-![B. The brown hyena (*Parahyaena brunnea*). (© Endangered Wildlife Trust)](imgs/29b.%20Pg33_KMB3_Brown%20Hyaena_25984%20(c)%20EWT.png)
+![B. The brown hyena (*Parahyaena brunnea*). (© Endangered Wildlife Trust)](imgs/kmb3_BrownHyaena_EWT.png)
 :::
 
 ::: quarto-figure-caption
-A and B: these two species are categorised as Near Threatened on the IUCN Red List of Threatened Species, yet their genetic population size (Ne) may already fall below the threshold for long-term survival. Falling below the threshold of Ne \> 500 raises concerns about species' abilities to maintain genetic health and adapt to environmental change.
+These two species (panel A and B) are categorised as Near Threatened on the IUCN Red List of Threatened Species, yet their genetic population size (Ne) may already fall below the threshold for long-term survival. Falling below the threshold of Ne \> 500 raises concerns about species' abilities to maintain genetic health and adapt to environmental change.
 :::
 :::::
 

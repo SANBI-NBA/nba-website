@@ -114,7 +114,7 @@ library(gt)
 
 
 thr_pro <- read.csv(file=list.files(pattern = "^est.csv$", recursive = TRUE, full.names = TRUE), 
-                    stringsAsFactors = FALSE, check.names = FALSE)%>% 
+                    stringsAsFactors = FALSE, check.names = FALSE, fileEncoding="UTF-16LE")%>% 
   select(type, threat_status, protection_level) %>% 
   filter(protection_level %in% c("Not Protected", "Poorly Protected"),
          threat_status %in% c("Critically Endangered", "Endangered")) %>% 
@@ -183,9 +183,9 @@ In addition to the expansion of protection of these ecosystem types, it is impor
 
 ### Code repositories
 
-Protection level assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_est>
+Protection level assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem protection level \[Source code\]. GitHub repository available at [htthttps://github.com/SANBI-NBA/estuary-epl-analysis](https://github.com/SANBI-NBA/estuary-epl-analysis){.uri}
 
-Threat status assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_est>.
+Threat status assessment: Skowno, A.L. 2025. SANBI-NBA Estuary ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/SANBI-NBA/estuary-rle-analysis>.
 
 ## Recommended citation
 
