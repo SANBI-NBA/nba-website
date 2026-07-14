@@ -85,7 +85,7 @@ affiliations:
     number: 5
     name: National Museum Bloemfontein
 
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:
@@ -170,23 +170,23 @@ image: "./imgs/sp_spider_img_1.png"
 
 ## Key findings
 
--   South Africa has a rich diversity of spider species, with 2 265 described species [@a2023a], representing 4% of the world's spiders.
+- South Africa has a rich diversity of spider species, with 2 265 described species [@a2023a], representing 4% of the world's spiders.
 
--   A comprehensive assessment of 2 214 spider species was conducted for the first time between 2016 and 2019 using the IUCN Red List of Threatened Species Categories and Criteria. This assessment is a global first and a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group [@foord2020a].
+- A comprehensive assessment of 2 214 spider species was conducted for the first time between 2016 and 2019 using the IUCN Red List of Threatened Species Categories and Criteria. This assessment is a global first and a pioneering effort in applying IUCN Red List criteria to a mega-diverse invertebrate group [@foord2020a].
 
--   The spider assessment was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and, during this project, a 350% rise in specimen accessions in the national collection.
+- The spider assessment was made possible through the 22-year South African National Survey of Arachnida (SANSA) initiative, which resulted in significant improvements to the knowledge base: a 33% increase in described species and, during this project, a 350% rise in specimen accessions in the national collection.
 
--   Of the assessed species, only 78 of the species (4%) were assessed as threatened.
+- Of the assessed species, only 78 of the species (4%) were assessed as threatened.
 
--   Most species (1 419 species, 64%) are widely distributed with no known threats and are assessed as Least Concern.
+- Most species (1 419 species, 64%) are widely distributed with no known threats and are assessed as Least Concern.
 
--   Importantly, almost a third of the species (707 species, 32%) are assessed as Data Deficient, meaning that a large number of species need further research before their risk of extinction can be determined.
+- Importantly, almost a third of the species (707 species, 32%) are assessed as Data Deficient, meaning that a large number of species need further research before their risk of extinction can be determined.
 
--   Endemism is high, with 1 303 species (58%) found only in South Africa, representing around 2% of the world’s spiders.
+- Endemism is high, with 1 303 species (58%) found only in South Africa, representing around 2% of the world’s spiders.
 
--   In the IUCN Red List Index (RLI) assessment, spiders currently have the highest RLI score of all South African taxonomic groups, making them appear the least threatened. However, many species remain unevaluated due to limited information. As a result, their true status is uncertain – more species may prove to be threatened, or many may be Least Concern. This uncertainty means the current RLI value should be interpreted with caution.
+- In the IUCN Red List Index (RLI) assessment, spiders currently have the highest RLI score of all South African taxonomic groups, making them appear the least threatened. However, many species remain unevaluated due to limited information. As a result, their true status is uncertain – more species may prove to be threatened, or many may be Least Concern. This uncertainty means the current RLI value should be interpreted with caution.
 
--   The major threats to spiders are habitat loss due to fire, overgrazing, invasive plants, mining, agricultural practices, and urban development.
+- The major threats to spiders are habitat loss due to fire, overgrazing, invasive plants, mining, agricultural practices, and urban development.
 
 ```{r}
 #| label: fig-1
@@ -548,29 +548,29 @@ Morphological variation is poorly understood due to limited sampling, making it 
 
 Addressing the taxonomic impediment for spiders in South Africa requires a multi-pronged strategy that blends capacity building, infrastructure development, and policy integration. The following is a breakdown of suggested solutions:
 
--   Expansion of taxonomic capacity by creating employment for specialist taxonomists and providing the required skills transfer opportunities (see [Box 4](#box-4)).
+- Expansion of taxonomic capacity by creating employment for specialist taxonomists and providing the required skills transfer opportunities (see [Box 4](#box-4)).
 
--   Accelerate species descriptions through capacity building and collaborative research, particularly with international partners.
+- Accelerate species descriptions through capacity building and collaborative research, particularly with international partners.
 
--   Integrate molecular tools and promote DNA barcoding and phylogenetics to resolve species boundaries, especially in morphologically conservative groups.
+- Integrate molecular tools and promote DNA barcoding and phylogenetics to resolve species boundaries, especially in morphologically conservative groups.
 
--   Develop a national spider barcode reference library linked to voucher specimens and ecological metadata. Currently, sequence data on South African spiders (around 10  600 specimens processed, mainly COI-5P) is scattered among several projects with strongly contrasting levels of taxonomic resolution.
+- Develop a national spider barcode reference library linked to voucher specimens and ecological metadata. Currently, sequence data on South African spiders (around 10  600 specimens processed, mainly COI-5P) is scattered among several projects with strongly contrasting levels of taxonomic resolution.
 
--   Digitize and standardise collections with high-resolution imaging, georeferencing, and standardised metadata.
+- Digitize and standardise collections with high-resolution imaging, georeferencing, and standardised metadata.
 
--   Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database accessible to researchers, conservationists, and policy-makers.
+- Support the evolution of natural science collection databases to be more accessible by improving the use of centralized database accessible to researchers, conservationists, and policy-makers.
 
--   Encourage citizen science platforms like iNaturalist to crowdsource observations and expand distribution data (see [Box 3](#box-3)).
+- Encourage citizen science platforms like iNaturalist to crowdsource observations and expand distribution data (see [Box 3](#box-3)).
 
--   Relax permit conditions so that members of the public can sample specimens without fear of prosecution, particularly those linked to photographic observations, to enable species-level identifications.
+- Relax permit conditions so that members of the public can sample specimens without fear of prosecution, particularly those linked to photographic observations, to enable species-level identifications.
 
--   Link taxonomic work to spatial tools for species conservation, e.g. Key Biodiversity Areas (KBAs) and the [DFFE's Environmental Screening Tool](https://screening.environment.gov.za/screeningtool/#/pages/welcome) for Environmental Impact Assessments (EIAs), to justify funding and urgency. This can be further linked to understanding biodiversity data and the role it could play in South Africa’s biosecurity with regards to emerging pests and diseases.
+- Link taxonomic work to spatial tools for species conservation, e.g. Key Biodiversity Areas (KBAs) and the [DFFE's Environmental Screening Tool](https://screening.environment.gov.za/screeningtool/#/pages/welcome) for Environmental Impact Assessments (EIAs), to justify funding and urgency. This can be further linked to understanding biodiversity data and the role it could play in South Africa’s biosecurity with regards to emerging pests and diseases.
 
--   Foster international collaboration and partner with global arachnological networks for training, data sharing, and joint revisions.
+- Foster international collaboration and partner with global arachnological networks for training, data sharing, and joint revisions.
 
--   Invite and fund visiting taxonomists to work on South African material and co-author species descriptions.
+- Invite and fund visiting taxonomists to work on South African material and co-author species descriptions.
 
--   Facilitate the training of taxonomists from other African countries to expand the skills base on the continent.
+- Facilitate the training of taxonomists from other African countries to expand the skills base on the continent.
 
 :::::::::::::::::::: {#box-4 .callout-note .species collapse="true"}
 ## Box 4. Data Deficient spiders of South Africa
@@ -676,15 +676,15 @@ The first IUCN Red List assessment of South African spiders was conducted betwee
 
 ------------------------------------------------------------------------
 
--   [South African National Biodiversity Institute](https://www.sanbi.org/)
+- [South African National Biodiversity Institute](https://www.sanbi.org/)
 
--   [Agricultural Research Council](https://www.arc.agric.za/)
+- [Agricultural Research Council](https://www.arc.agric.za/)
 
--   [University of Free State](https://www.ufs.ac.za/)
+- [University of Free State](https://www.ufs.ac.za/)
 
--   [National Museum Bloemfontein](https://nationalmuseum.co.za/)
+- [National Museum Bloemfontein](https://nationalmuseum.co.za/)
 
--   [University of Venda](https://www.univen.ac.za/)
+- [University of Venda](https://www.univen.ac.za/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -692,7 +692,7 @@ The first IUCN Red List assessment of South African spiders was conducted betwee
 
 ------------------------------------------------------------------------
 
--   [National Research Foundation](https://www.nrf.ac.za/)
+- [National Research Foundation](https://www.nrf.ac.za/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -700,11 +700,11 @@ The first IUCN Red List assessment of South African spiders was conducted betwee
 
 ------------------------------------------------------------------------
 
--   [South African National Parks](https://www.sanparks.org/)
+- [South African National Parks](https://www.sanparks.org/)
 
--   [E. Oppenheimer & Son](https://www.privateequityinternational.com/institution-profiles/e-oppenheimer-son.html)
+- [E. Oppenheimer & Son](https://www.privateequityinternational.com/institution-profiles/e-oppenheimer-son.html)
 
--   Provincial conservation agencies
+- Provincial conservation agencies
 :::
 ::::::
 
@@ -782,6 +782,10 @@ tab_style(
      locations = cells_column_labels())
 
 ```
+
+## Technical documentation
+### Data sources
+1. Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ## Recommended citation
 

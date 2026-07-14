@@ -210,7 +210,7 @@ affiliations:
 
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: marine_references.bib
@@ -226,11 +226,8 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-<!-- Things to consider changing: -->
-
-<!-- change the 45% threatened stat to its own on one line; and the other three on their own line below it? -->
-
-<!-- standardise style of 'Key references' so that they match the References style -->
+[//]: # (TO DO: change the 45% threatened stat to its own on one line; and the other three on their own line below it?)
+[//]: # (TO DO: standardise style of 'Key references' so that they match the References style)
 
 ```{r}
 #| echo: false
@@ -288,8 +285,6 @@ perc_thr_count <- round(perc_cr_count+perc_en_count+perc_vu_count)
 
 ![Cape Bay is now considered an Endangered ecosystem type. (© Peter Chadwick)](imgs/cape_bay.png)
 
-<!--# Key statistics section: This section can be edited to report more/fewer statistics by adding more items to each column (these will be stacked), or adding more columns (then they will be placed next to each other). Using source view, copy and paste the entire block (the three lines with the pipe | at the start), and edit contents as necessary. Be careful to apply the correct styling parameters (the bits in the sqiggly brackets {}). If you are adding or removing columns, remember to adjust the column widths to add up to 100%. Preferably add more rows, as more than two columns tend to display poorly on narrow screens. Delete the entire section (plus the horizontal line above the Summary header) if you don't want to include statistics on your page-->
-
 ------------------------------------------------------------------------
 
 ::::: columns
@@ -344,7 +339,6 @@ knitr::include_graphics("imgs/ets_benthic_with_donut.png") #"imgs/ets_benthic_wi
 
 ```
 
-
 ```{r}
 #| label: fig-ets_map_pel
 #| fig-cap: Threat status of pelagic marine ecosystem types. The inset graph shows the number and proportion of ecosystem types that fall within each threat status category.
@@ -364,7 +358,6 @@ The most threatened functional groups include bays, deepwater biogenic beds, mud
 #| label: fig-ets_bargraphs
 #| echo: false
 #| fig-cap: Threat status of marine ecosystem types in each functional group, summarised by numbers of ecosystem types in (A) and by aerial extent in (B). 
-# <!-- #| Threat status of marine ecosystem types by functional group. Numbers reflected in (A) indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category.  -->
 #| out-width: 100%
 #| classes: plain
 
@@ -468,14 +461,6 @@ The application of the IUCN global standards supported a more comprehensive unde
 The National Marine Biodiversity Scientific Working Group is thanked for its role as reference group for the Marine Realm Assessment of the NBA. We also thank the National Marine Ecosystem Committee and Network for their peer review and shared insights on ecosystem assessment. We acknowledge the authors of the NBA 2018 Ecosystem Threat Status chapter. We thank Jose Ferrer Paris and David Keith for helpful discussions that informed our application of the 2024 IUCN Red List of Ecosystems Guidelines. Jennifer Olbers and Mike Schleyer are thanked for additional insights on Aliwal Shoal. The European Union’s Horizon 2020 research and innovation program under Grant Agreement No. 862428 (MISSION ATLANTIC) is thanked for supporting the 2025 NBA ecosystem threat status assessment and the planned scientific publication.
 
 ## Technical documentation
-
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
-
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
-
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Code repositories
 

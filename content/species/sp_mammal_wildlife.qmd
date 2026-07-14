@@ -57,7 +57,7 @@ affiliations:
     number: 1
     name: South African National Biodiversity Institute
 
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:

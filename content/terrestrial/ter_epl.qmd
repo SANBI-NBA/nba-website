@@ -268,7 +268,12 @@ Ecosystem protection level index (EPLI) calculation (Harris et al., in review) i
 
 **Code repository**
 
-Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem protection level \[Source code\]. GitHub repository available at <https://github.com/askowno/EPL_terr>.
+Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem protection level \[Source code\].The GitHub repository is available [here](https://github.com/SANBI-TER-ECO/EPL_terr.git).
+
+**Datasets**
+
+- Spatial data on ecosystem historic and remaining extent, with their threat status and protection level, are available for download [here](https://bgis.sanbi.org/Projects/Detail/2284).
+- Historical extent of terrestrial ecosystems is available for download [here](https://bgis.sanbi.org/Projects/Detail/2258).
 
 **Key publications**
 

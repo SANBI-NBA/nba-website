@@ -61,7 +61,7 @@ affiliations:
     number: 3 
     name: South African National Biodiversity Institute
 
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:
@@ -127,19 +127,19 @@ image: "./imgs/sp_amphibian_img_1.png"
 
 ## Key findings
 
--   The latest amphibian assessment evaluated 135 species and 82 (61%) of these are endemic or near-endemic to South Africa, Eswatini, and Lesotho.
+- The latest amphibian assessment evaluated 135 species and 82 (61%) of these are endemic or near-endemic to South Africa, Eswatini, and Lesotho.
 
--   A total of 22% of assessed amphibians (30 species) are threatened with extinction, with another 10% (13) assessed as Near Threatened.
+- A total of 22% of assessed amphibians (30 species) are threatened with extinction, with another 10% (13) assessed as Near Threatened.
 
--   Among South Africa’s endemic amphibians, 39% are threatened with extinction, placing full responsibility for their protection on South Africa.
+- Among South Africa’s endemic amphibians, 39% are threatened with extinction, placing full responsibility for their protection on South Africa.
 
--   Amphibians in South Africa continue to decline mainly due to invasive and other problematic species, impacting 83% of threatened species. Impacts range from infectious diseases to drying out and replacement of habitat by invasive alien plants. This is followed by habitat loss and degradation due to agriculture (72%), and natural system modification (69%) related to, for example, wetland drainage, overgrazing, and inappropriate fire cycles.
+- Amphibians in South Africa continue to decline mainly due to invasive and other problematic species, impacting 83% of threatened species. Impacts range from infectious diseases to drying out and replacement of habitat by invasive alien plants. This is followed by habitat loss and degradation due to agriculture (72%), and natural system modification (69%) related to, for example, wetland drainage, overgrazing, and inappropriate fire cycles.
 
--   Recognised as the most important emerging threat globally, climate change impacts are also becoming an important driver of amphibian declines in South Africa affecting nearly half of threatened species, although the impacts of this threat are challenging to quantify.
+- Recognised as the most important emerging threat globally, climate change impacts are also becoming an important driver of amphibian declines in South Africa affecting nearly half of threatened species, although the impacts of this threat are challenging to quantify.
 
--   A large proportion of amphibians are assessed as Well Protected (73%) within the South African protected area network. Eleven percent (15) of amphibian species are Not Protected. Among the 29 threatened species, 79% are considered under-protected (Moderately Protected, Poorly Protected or Not Protected). The most threatened amphibians are therefore also most in need of improved protection, particularly improvement of protected area management to support amphibian persistence.
+- A large proportion of amphibians are assessed as Well Protected (73%) within the South African protected area network. Eleven percent (15) of amphibian species are Not Protected. Among the 29 threatened species, 79% are considered under-protected (Moderately Protected, Poorly Protected or Not Protected). The most threatened amphibians are therefore also most in need of improved protection, particularly improvement of protected area management to support amphibian persistence.
 
--   Almost 50% (17) of South Africa’s threatened amphibians occur in the Western Cape province. Given the high endemicity within this province, and the disproportionate number of endemic species that are threatened, this spatial pattern is not surprising.
+- Almost 50% (17) of South Africa’s threatened amphibians occur in the Western Cape province. Given the high endemicity within this province, and the disproportionate number of endemic species that are threatened, this spatial pattern is not surprising.
 
 ```{r}
 #| label: fig-richness-map
@@ -153,7 +153,7 @@ knitr::include_graphics("./imgs/amphibians_thrt_10km_HD.png")
 
 Seventy-six amphibian species (56%) are endemic to South Africa, with 30 of these (39%) threatened with extinction, placing full responsibility for their protection on South Africa. Most threatened species occur in, and are endemic to, the Western Cape (17 species), followed by KwaZulu-Natal (6 species) and then the Eastern Cape (4 species, @fig-richness-map).
 
-Twenty-two percent (30 species) of amphibians were assessed as threatened (Critically Endangered, Endangered, Vulnerable), and a further 10% (13 species) were assessed as Near Threatened (@fig-2, @tbl-1). There have been significant shifts in the number of species per category since the 2016 assessments, with 23% of species changing categories. Most of these have however been non-genuine changes such as improved accuracy in the application of the Red List criteria or because survey efforts resulted in better knowledge of the status of populations (see [Box 1](#box-1)).
+Twenty-two percent (30 species) of amphibians were assessed as threatened (Critically Endangered, Endangered, Vulnerable), and a further 10% (13 species) were assessed as Near Threatened (@fig-2, @tbl-1). There have been significant shifts in the number of species per category since the 2016 assessments, with 23% of species changing categories. Most of these have however been non-genuine changes due to improved accuracy in the application of the Red List criteria or because survey efforts resulted in better knowledge of the status of populations (see [Box 1](#box-1)).
 
 :::: panel-tabset
 ## Figure
@@ -418,7 +418,7 @@ specialist is still extremely range-restricted and experiencing continued habita
 
 ## Trends - the Red List Index
 
-The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI) [@butchart2004a]. The RLI are calculated based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1, and if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The slope of the line show the rate at which the taxonomic group is heading towards extinction. The Red List Index of amphibians was calculated for all amphibian taxa that have been reassessed (n = 135, @fig-3).
+The trend in species status over time was measured using the globally recognised indicator, the IUCN Red List Index of species (RLI) [@butchart2004a]. The RLI is calculated based on genuine changes in Red List categories over time. The RLI value ranges from 0 to 1, and if the value is 1, all taxa are Least Concern, and if the value is 0, all taxa are extinct. The slope of the line shows the rate at which the taxonomic group is heading towards extinction. The Red List Index of amphibians was calculated for all amphibian taxa that have been reassessed (n = 135, @fig-3).
 
 Thirty species have had a change in status since the latest assessment (2016). However, only two of these are genuine changes: *Breviceps macrops* – desert rain frog (NT to VU) and *Amietia hymenopus* - Phofung river frog (NT to VU). These species are spatially isolated; however, they share some pressures, as both *Breviceps macrops* and *Amietia hymenopus* are likely to be impacted by climate change. The former is restricted to the dry West Coast of South Africa and relies on limited precipitation in the form of fog; and the latter occurs in streams along the Drakensberg Escarpment and Lesotho, which may face increased drying and extreme weather events (@fig-4). Both species are also impacted by the expansion of mining activities, *B. macros* specifically on the West Coast, due to the future planned development of Green Hydrogen and *A. hymenopus* in the highlands of Lesotho into South Africa ([Table 2](#tbl-2)).
 
@@ -575,7 +575,7 @@ knitr::include_graphics("./imgs/amphibians_in_10km_HD.png")
 
 ## Pressures
 
-Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@rewild2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 76% of threatened and Near Threatened species (@fig-5). These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes.
+Globally, habitat loss is the most common threat to amphibians, impacting 93% of threatened species, with agricultural expansion being the leading cause of habitat loss and degradation [@rewild2023a]. For South Africa’s frogs, the main pressures driving declines are impacts from invasive species, affecting 83% of threatened and Near Threatened species (@fig-5). These impacts include replacement of natural habitat due to expansion of woody invasive plants, drying out of wetlands and streams, changes to stream dynamics, including sedimentation, and alteration of natural fire regimes.
 
 ::::::::::::::::: {#box-2 .callout-note .species title="Box 2. Invasive species impacts on range-restricted amphibians" collapse="true"}
 ::::::: {layout-ncol="2"}
@@ -633,7 +633,7 @@ Before and after images showing a reduction in pine invasion from July 2021 (lef
 :::
 :::::::::::::::::
 
-This is followed by habitat loss and degradation due to modification of natural system (impacting 64% of threatened and Near Threatened species) and agricultural activities (impacting 57% of threatened and Near Threatened species). Modifications can exacerbate inappropriate fire cycles. Globally, climate change is now recognised as the most serious emerging challenge facing amphibians, with 29% of threatened species worldwide impacted. This threat is expected to affect more species in the future with projected increases in temperature and changes in precipitation. In South Africa, 38% of our threatened and Near threatened species are impacted, or projected to be impacted by climate change and extreme weather, through shifts in habitat, droughts and flooding (@fig-5). These impacts require data to improve predictive models of amphibian habitats; for example, species monitoring and climate data. Fourteen threatened species (33%) are affected by pollution, particularly from agricultural effluents and domestic and urban waste water. A good example is the subpopulations of the Kloof frog, (*Natalobatrachus bonebergi*), in Durban that are impacted by sewage overflows into streams and increased sedimentation from urban construction, where it has a severe impact on stream health and breeding sites. Even while this species has been downlisted from EN to NT due to overall EOO and the correct application of the criteria, the KwaZulu-Natal subpopulations face increasing levels of threat. These impacts reflect the state of South Africa’s freshwater ecosystems, with many systems currently assessed as modified (see [freshwater ecosystem pressures](../freshwater/fw_riv_ets.qmd)).
+This is followed by habitat loss and degradation due to modification of natural system (impacting 64% of threatened and Near Threatened species) and agricultural activities (impacting 57% of threatened and Near Threatened species). Modifications can exacerbate inappropriate fire cycles. Globally, climate change is now recognised as the most serious emerging challenge facing amphibians, with 29% of threatened species worldwide impacted. This threat is expected to affect more species in the future with projected increases in temperature and changes in precipitation. In South Africa, 38% of our threatened and Near threatened species are impacted, or projected to be impacted by climate change and extreme weather, through shifts in habitat, droughts and flooding (@fig-5). These impacts require data to improve predictive models of amphibian habitats; for example, species monitoring and climate data. Fourteen threatened species (33%) are affected by pollution, particularly from agricultural effluents and domestic and urban waste water. A good example are the subpopulations of the Kloof frog, (*Natalobatrachus bonebergi*), in Durban that are impacted by sewage overflows into streams and increased sedimentation from urban construction, where it has a severe impact on stream health and breeding sites. Even while this species has been downlisted from EN to NT due to overall EOO and the correct application of the criteria, the KwaZulu-Natal subpopulations face increasing levels of threat. These impacts reflect the state of South Africa’s freshwater ecosystems, with many systems currently assessed as modified (see [freshwater ecosystem pressures](../freshwater/fw_riv_ets.qmd)).
 
 ```{r}
 #| label: fig-5
@@ -803,7 +803,7 @@ Overall, the 2025 protection level was higher than in 2016. While close to 72% o
 ![](./imgs/sp_amphibian_img_9.png){fig-alt="Micro Frog" style="width:100%; height:350px; max-height:600px; object-fit:cover; margin-bottom: 5px;"}
 
 ::: {style="font-size:90%; color:#626262; margin-right: -10px; line-height: 1.7;"}
-The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the micro frog (*Microbatrachella capensis*) was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using (*M. capensis*) as a management target. (© Keir Lynch Bionerds)
+The mosaic of wetland habitat at the Nuwejaars Wetlands Special Management Area where the micro frog (*Microbatrachella capensis*) was discovered in 2021. Alien clearing efforts and population density estimates are currently underway using *M. capensis* as a management target. (© Keir Lynch Bionerds)
 :::
 
 Nine species have had improvements in their protection level, from Poorly Protected to Moderately Protected (8 species) or Well Protected (1 species). Examples of threatened species that have benefitted from improved protection include the Endangered micro frog (*Microbatrachella capensis*), Pickersgill’s reed frog (*Hyperolius pickersgilli*), and the Cape platanna (*Xenopus gilli*). In the case of *H. pickersgilli*, an additional 16 sites have been confirmed for the species since 2017, with several of these occurring within protected areas [@armstrong2025a].
@@ -820,7 +820,7 @@ The previously Critically Endangered micro frog (*Microbatrachella capensis*), i
 
 As part of the Red List process for southern Africa, the Amphibian Ark (AArk) joined the expert workshop and worked with coordinators to produce a Conservation Needs Assessment (CNA) for threatened South African amphibian species [@brunner2025a]. This used a process developed by AArk to determine which species have the most urgent conservation needs, based on action plans that combine i*n situ* and *ex situ* actions, as appropriate. Six South African species were identified for *ex situ* conservation actions, including *ex situ* rescue (n = 5) and *ex situ* research (n = 1). Due to their level of threat, the five species recommended for *ex situ* rescue are also recommended for biobanking. Twenty-five species were recommended for *in situ* conservation, and 34 species are recommended for *in situ* research, while 15 species were identified for conservation education programs.
 
-In addition, subsequent work to identify species requiring urgent recovery under [Target 4](https://www.cbd.int/gbf/targets/4) of the Kunming-Montreal Global Biodiversity Framework resulted in 10 species being prioritised. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
+In addition, subsequent work to identify species requiring urgent recovery under [Target 4](https://www.cbd.int/gbf/targets/4) of the Kunming-Montreal Global Biodiversity Framework resulted in 12 species being prioritised for Green Status assessments and 9 of these as Target 4 species. This includes threatened endemic species and those of regional importance that might go extinct even if their habitat is protected. This highlights the limited targeted management of amphibians within protected areas and the need for research on how they respond to management interventions.
 
 South Africa has a relatively proactive community working on amphibian conservation and research, with NGOs, provincial authorities and various universities contributing to building conservation evidence for assessing the effectiveness of conservation interventions and growing the body of knowledge on amphibian taxonomy, behaviour and ecology (@tbl-3). These activities were partially guided by the conservation and research strategy compiled following the 2010 Red List assessments [@measey2011a], demonstrating the value of these processes, with plans in place to update this strategy following the most recent assessments (2025). While progress has been made, amphibian conservation capacity remains overlooked and underfunded compared to other taxa [@gu2025a], and this is particularly pertinent in the African context, with limited resources in general, and the constant need to balance development needs with conservation efforts.
 
@@ -935,11 +935,11 @@ See details about how the protection level indicator was conducted [here](../int
 
 ------------------------------------------------------------------------
 
--   [Anura Africa](https://www.anuraafrica.org/)
+- [Anura Africa](https://www.anuraafrica.org/)
 
--   [Endangered Wildlife Trust](https://ewt.org/)
+- [Endangered Wildlife Trust](https://ewt.org/)
 
--   [Whitley Fund for Nature](https://whitleyaward.org/)
+- [Whitley Fund for Nature](https://whitleyaward.org/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -947,13 +947,13 @@ See details about how the protection level indicator was conducted [here](../int
 
 ------------------------------------------------------------------------
 
--   [Anglo American](https://www.angloamerican.com/)
+- [Anglo American](https://www.angloamerican.com/)
 
--   [Re:wild](https://www.rewild.org/)
+- [Re:wild](https://www.rewild.org/)
 
--   [Synchronicity Earth](https://www.synchronicityearth.org/)
+- [Synchronicity Earth](https://www.synchronicityearth.org/)
 
--   [Rainforest Trust](https://www.synchronicityearth.org/)
+- [Rainforest Trust](https://www.synchronicityearth.org/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -961,9 +961,9 @@ See details about how the protection level indicator was conducted [here](../int
 
 ------------------------------------------------------------------------
 
--   [IUCN SSC Amphibian Specialist Group](https://www.iucn-amphibians.org/)
+- [IUCN SSC Amphibian Specialist Group](https://www.iucn-amphibians.org/)
 
--   [South African National Biodiversity Institute](https://www.sanbi.org/)
+- [South African National Biodiversity Institute](https://www.sanbi.org/)
 :::
 ::::::
 
@@ -1011,6 +1011,14 @@ tab_style(
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 ```
 :::
+
+## Technical documentation
+
+### Data sources
+
+1.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
+
+2.  Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ## Recommended citation
 

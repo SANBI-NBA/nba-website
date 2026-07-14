@@ -55,7 +55,7 @@ affiliations:
     name: Rhodes University
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: marine_references.bib
@@ -216,142 +216,6 @@ Under-protected, but Least Concern ecosystem types are also candidates for impro
 
 ![Namaqua Muddy Sands is Least Concern but Not Protected. This ecosystem type needs to be represented in South Africa's MPA network and there are options in terms of sites for protection with most areas in good ecological condition. The VME indicator species (*Suberites dandelenae*) occurs in high numbers in this ecosystem type and habitat with high densities of this species should be prioritised for protection. (© South African Environmental Observation Network)](imgs/namqua_muddy_sands_Saeon.png)
 
-<!-- # ```{r} -->
-
-<!-- #| label: tbl-ets_epl_ht -->
-
-<!-- #| echo: false -->
-
-<!-- #| tbl-cap: Table showing protection levels and threat status categories for the highly threatened and underprotected ecosystem types. -->
-
-<!-- #| classes: plain -->
-
-<!-- library(dplyr) -->
-
-<!-- library(nbaR) -->
-
-<!-- library(gt) -->
-
-<!-- # library(sf) -->
-
-<!-- thr_pro <- read.csv(file=list.files(pattern = "^epl_ets_ecotypes.csv$", recursive = TRUE, full.names = TRUE),  -->
-
-<!--                     stringsAsFactors = FALSE, check.names = FALSE) %>% # mem %>% -->
-
-<!--   # because we had renamed them, need to name them back without spaces as the nba_tbl_comb() wasn't handling the spaces even with inverted commas -->
-
-<!--   rename(ecosystem_type = "Ecosystem type", protection_level = "Protection level", threat_status = "Threat status") %>%  -->
-
-<!--   select(ecosystem_type, threat_status, protection_level) %>%  -->
-
-<!--   filter(protection_level %in% c("Not Protected", "Poorly Protected"), -->
-
-<!--          threat_status %in% c("Critically Endangered", "Endangered")) %>%  -->
-
-<!--   rowid_to_column() %>%  -->
-
-<!--   pivot_wider(names_from = "protection_level", values_from = ecosystem_type)%>% -->
-
-<!--   select(-rowid) %>%  -->
-
-<!--   arrange(threat_status, `Not Protected`) %>%  -->
-
-<!--   mutate(across(everything(), ~ if_else(is.na(.x), "", .x))) %>%  -->
-
-<!--   rename(`Threat status` = threat_status) %>%  -->
-
-<!--   gt() %>%  -->
-
-<!--   nba_tbl_theme(HEADER = "Marine") %>%  -->
-
-<!--   tab_style( -->
-
-<!--     style = cell_text(color = "white"), -->
-
-<!--     locations = cells_column_labels() -->
-
-<!--   ) %>%  -->
-
-<!--   # 4. give cells colour -->
-
-<!--     tab_style( -->
-
-<!--       style = list( -->
-
-<!--         gt::cell_fill(color = "#A93800") -->
-
-<!--       ), -->
-
-<!--       locations = gt::cells_body( -->
-
-<!--         columns = "Not Protected", -->
-
-<!--         rows = 1 -->
-
-<!--       ) -->
-
-<!--     ) %>% -->
-
-<!--     tab_style( -->
-
-<!--       style = list( -->
-
-<!--         gt::cell_fill(color = "#E69800") -->
-
-<!--       ), -->
-
-<!--       locations = gt::cells_body( -->
-
-<!--         columns = "Not Protected", -->
-
-<!--         rows = 5:9 -->
-
-<!--       ) -->
-
-<!--     )%>% -->
-
-<!--     tab_style( -->
-
-<!--       style = list( -->
-
-<!--         gt::cell_fill(color = "#A87001") -->
-
-<!--       ), -->
-
-<!--       locations = gt::cells_body( -->
-
-<!--         columns = "Poorly Protected", -->
-
-<!--         rows = 2:4 -->
-
-<!--       ) -->
-
-<!--     )%>% -->
-
-<!--     tab_style( -->
-
-<!--       style = list( -->
-
-<!--         gt::cell_fill(color = "#FFEBB0") -->
-
-<!--       ), -->
-
-<!--       locations = gt::cells_body( -->
-
-<!--         columns = "Poorly Protected", -->
-
-<!--         rows = 10:27 -->
-
-<!--       ) -->
-
-<!--     ) %>%  -->
-
-<!--   gt::tab_options(table.width = gt::pct(100)) -->
-
-<!-- thr_pro -->
-
-<!-- ``` -->
-
 There is good progress in evaluating the ecological, socio-economic and governance effectiveness of South Africa’s MPAs [@kirkman2021; @mann-lang2021; @kirkman2023; @sink2023e], which reveal gaps in participation, cultural heritage protection and governance limiting progress in protection. Lessons from the 2019 Marine Protected Area expansion are important for future expansion efforts.
 
 ![Agulhas Inner Shelf Reef is Least Concern and Well Protected. This reef is protected within the Tsitstikamma MPA. (© Geoff Spiby)](imgs/Tsitsikama_middelbank_11_11_004.png)
@@ -361,14 +225,6 @@ There is good progress in evaluating the ecological, socio-economic and governan
 We thank all contributors as reflected in the Ecosystem Threat Status and Protection Level pages.
 
 ## Technical documentation
-
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
-
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
-
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Code repositories
 

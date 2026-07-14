@@ -132,7 +132,7 @@ affiliations:
     name: Stellenbosch Univerisity
     
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
 # Remember to rename the default .bib file and change the name here
 bibliography: species.bib
@@ -832,13 +832,13 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--   [South African National Biodiversity Institute](https://www.sanbi.org/)
+- [South African National Biodiversity Institute](https://www.sanbi.org/)
 
--   [BirdLife South Africa](https://www.birdlife.org.za/)
+- [BirdLife South Africa](https://www.birdlife.org.za/)
 
--   [Endangered Wildlife Trust](https://ewt.org/)
+- [Endangered Wildlife Trust](https://ewt.org/)
 
--   [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
+- [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -846,9 +846,9 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--   [Anura Africa]((https://www.anuraafrica.org/))
+- [Anura Africa]((https://www.anuraafrica.org/))
 
--   [NRF FBIP REFRESH project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
+- [NRF FBIP REFRESH project](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
 :::
 
 ::: {.g-col-lg-4 .g-col-12}
@@ -856,11 +856,11 @@ We thank all the many individuals, and specificially, the freshwater taxon exper
 
 ------------------------------------------------------------------------
 
--   Freshwater taxon experts
+- Freshwater taxon experts
 
--   Provincial agencies – data, insights on protected area effectiveness
+- Provincial agencies – data, insights on protected area effectiveness
 
--   IUCN South African Species Specialist Group members
+- IUCN South African Species Specialist Group members
 :::
 ::::::
 

@@ -76,7 +76,7 @@ affiliations:
     number: 5 
     name: BirdLife South Africa
     
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:
@@ -147,19 +147,19 @@ image: "./imgs/sp_anostraca_img_1.png"
 
 ## Key findings
 
--   There are 40 described fairy shrimp (Anostraca) species in South Africa, representing around 11% of the world's 353 species[@rogers2013a].
+- There are 40 described fairy shrimp (Anostraca) species in South Africa, representing around 11% of the world's 353 species[@rogers2013a].
 
--   A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (six species are still in review).
+- A comprehensive assessment of 36 Anostraca species was conducted for the first time using the IUCN Red List of Threatened Species Categories and Criteria to classify their risk of extinction (six species are still in review).
 
--   Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) [@meyer-milne-a].
+- Of the assessed taxa, nine species (25%) were assessed as threatened with extinction, and of these, two species are considered Critically Endangered (Possibly Extinct) [@meyer-milne-a].
 
--   Endemism is high, with 44% (16) species only found in South Africa. Of these, 56% (9 species) are threatened with extinction, placing sole responsibility on South Africa to protect and conserve these species [@meyer-milne-a].
+- Endemism is high, with 44% (16) species only found in South Africa. Of these, 56% (9 species) are threatened with extinction, placing sole responsibility on South Africa to protect and conserve these species [@meyer-milne-a].
 
--   This assessment of Anostraca contributed to 58% of the global Anostraca IUCN assessments, making a sizeable contribution to the understanding of the current state of these temporary freshwater habitat indicator species.
+- This assessment of Anostraca contributed to 58% of the global Anostraca IUCN assessments, making a sizeable contribution to the understanding of the current state of these temporary freshwater habitat indicator species.
 
--   The IUCN Red List Index (RLI) assessment revealed that Anostraca have the third lowest RLI score (0.84), making it one of the most threatened taxonomic groups in South Africa. This illustrates the need for further surveys of temporary freshwater systems in the country, to understand their drivers of threat better as well as guide efforts to prevent further losses.
+- The IUCN Red List Index (RLI) assessment revealed that Anostraca have the third lowest RLI score (0.84), making it one of the most threatened taxonomic groups in South Africa. This illustrates the need for further surveys of temporary freshwater systems in the country, to understand their drivers of threat better as well as guide efforts to prevent further losses.
 
--   Major threats to Anostraca are habitat loss and degradation due to urban and agricultural expansion, and mining.
+- Major threats to Anostraca are habitat loss and degradation due to urban and agricultural expansion, and mining.
 
 ```{r}
 #| label: fig-1
@@ -480,15 +480,15 @@ New to iNaturalist (or never heard of it) and want to contribute? Watch these [v
 
 Many of the Anostraca species that are of conservation concern are considered under-sampled, as there are only a few experts actively conducting surveys, and the taxonomical skills to accurately identify the specimens to species level are scarce. Furthermore, the life history traits adopted by Anostraca to survive in their temporary habitats create an unpredictable sampling timeframe, which complicates sampling attempts. As a result, many promising potential habitats remain under-explored. Some of the important actions needed to address current knowledge gaps include:
 
--   Many areas in South Africa and the subcontinent remain unsampled. Regional surveys specifically for Gauteng, Mpumalanga, Limpopo, Free State and North-West should be prioritised.
+- Many areas in South Africa and the subcontinent remain unsampled. Regional surveys specifically for Gauteng, Mpumalanga, Limpopo, Free State and North-West should be prioritised.
 
--   Active search campaigns should be launched for the possibly extinct species, *Streptocephalus gracilis* and *Rhinobranchipus martensi*, as well as for the Data Deficient species, *Branchipodopsis scambus* and *Streptocephalus vitreus*.
+- Active search campaigns should be launched for the possibly extinct species, *Streptocephalus gracilis* and *Rhinobranchipus martensi*, as well as for the Data Deficient species, *Branchipodopsis scambus* and *Streptocephalus vitreus*.
 
--   Genetic studies are needed to unravel suspected species complexes, where great morphological variation exist, e.g., *Branchipodopsis wolfi* and *Branchipodopsis tridens*.
+- Genetic studies are needed to unravel suspected species complexes, where great morphological variation exist, e.g., *Branchipodopsis wolfi* and *Branchipodopsis tridens*.
 
--   Developing a standardised method to calculate population estimates for hatching trials, field research, monitoring, and ad-hoc sampling, which is a vital element during Red List assessments.
+- Developing a standardised method to calculate population estimates for hatching trials, field research, monitoring, and ad-hoc sampling, which is a vital element during Red List assessments.
 
--   Attracting interest for branchiopod research and training more South Africans in branchiopod taxonomy skills.
+- Attracting interest for branchiopod research and training more South Africans in branchiopod taxonomy skills.
 
 :::::::: {#box-4 .callout-note .species title="Box 4. Egg bank sampling is an effective alternative to live sampling in temporary freshwater habitats" collapse="true"}
 ![](./imgs/sp_anostraca_img_3.png){style="font-size:90px; color:#626262;"}
@@ -526,16 +526,16 @@ See more details about how the IUCN Red List assessments are conducted [here](..
 
 ## Acknowledgements
 
--   [REFRESH](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
--   [Albany Museum](https://am.org.za/)
--   [South African Environmental Observation Network](https://www.saeon.ac.za/)
--   [South African National Biodiversity Institute](https://www.sanbi.org/)
--   [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
--   [University of Namibia](https://www.unam.edu.na/)
--   [Department of Science, Technology and Innovation](https://www.dsti.gov.za/)
--   [University of KwaZulu-Natal](https://ukzn.ac.za/)
--   [Freshwater Research Centre](https://www.frcsa.org.za/)
--   [National Museum of Namibia](https://www.museums.com.na/museums/windhoek/national-museum-of-namibia)
+- [REFRESH](https://saiab.ac.za/platforms/fresh-water-field-unit/refresh-project/)
+- [Albany Museum](https://am.org.za/)
+- [South African Environmental Observation Network](https://www.saeon.ac.za/)
+- [South African National Biodiversity Institute](https://www.sanbi.org/)
+- [South African Institute for Aquatic Biodiversity](https://saiab.ac.za/)
+- [University of Namibia](https://www.unam.edu.na/)
+- [Department of Science, Technology and Innovation](https://www.dsti.gov.za/)
+- [University of KwaZulu-Natal](https://ukzn.ac.za/)
+- [Freshwater Research Centre](https://www.frcsa.org.za/)
+- [National Museum of Namibia](https://www.museums.com.na/museums/windhoek/national-museum-of-namibia)
 
 ### Contributors
 
@@ -584,6 +584,11 @@ tab_style(
 htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;", ref)
 
 ```
+
+## Technical documentation
+### Data sources
+
+1. Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ## Recommended citation
 

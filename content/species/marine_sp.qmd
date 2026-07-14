@@ -199,7 +199,7 @@ affiliations:
     name: Old Dominion University
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
 # Remember to rename the default .bib file and change the name here
 bibliography: species.bib

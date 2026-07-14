@@ -39,7 +39,7 @@ affiliations:
     name: Birdlife South Africa
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
 # Remember to rename the default .bib file and change the name here
 bibliography: species.bib
@@ -86,13 +86,13 @@ google-scholar: true
 
 ::::: columns
 ::: {.column width="50%"}
--   Key findings related to diversity, richness of the group in South Africa, or relative to global diversity.
+- Key findings related to diversity, richness of the group in South Africa, or relative to global diversity.
 
--   Key finding related to Threat status
+- Key finding related to Threat status
 
--   Key finding related to Trends
+- Key finding related to Trends
 
--   Key finding related to Major pressures
+- Key finding related to Major pressures
 :::
 
 ::: {.column width="50%"}

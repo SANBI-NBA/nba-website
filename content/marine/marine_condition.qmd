@@ -95,7 +95,7 @@ affiliations:
     name: Univeristy of Cape Town
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: marine_references.bib
@@ -111,10 +111,6 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-<!-- Things that need doing: -->
-
-<!-- replace 'degraded' with 'modified' in the condition categories throughout marine results and ask Linda to update her Figure 3 in coast/cst_pressures-condition.qmd -->
-
 *Areas of high cumulative pressure tend to translate into areas of poor ecological condition. The first groundtruthing of marine ecosystem condition shows that pressure mapping is an effective proxy at broad national scales, but that finer scale pressure mapping can improve condition estimates. Increased monitoring, further refinement of indicators and improved understanding of ecosystem responses to pressures are needed to support more accurate assessments of ecological condition ([key message C2](../key-messages/kmc2.qmd)).*
 
 ![Maintaining marine ecosystems in good ecological condition is a key goal of ecosystem based management. (© Eve Marshall, Triton Dive Charters)](imgs/apr2017_Eve_Marshall_Triton_100_cropped.png)
@@ -127,7 +123,6 @@ The condition map shows areas that are assessed to be in one of four categories 
 
 ![Map of ecological condition showing the spatial distribution of marine pelagic areas in different ecological condition categories as calculated from cumulative pressures (see [Approach](#approach)).](imgs/condition_pel_with_donut.png){#fig-condition_pelagic}
 
-
 Areas of severely modified ecological condition in the benthopelagic and benthic ecosystems include the southwest Atlantic shelf edge, many inner shelf areas adjacent to the Western Cape, parts of the South Coast and shelf, and multiple areas in the KwaZulu-Natal Bight [@fig-condition_benthic]. The ecological condition map for the marine realm was not updated for the 2025 NBA although some pressure layer updates are underway.
 
 ![The Browns Bank Rocky Shelf is one of the marine ecosystem types with the greatest extent of very severe (84%) ecosystem modification. (© South African Environmental Observation Network)](imgs/WCVS19_sTATION_4_292m_26.png)
@@ -138,7 +133,6 @@ The marine realm has relatively high proportions of areas in the natural/near-na
 #| label: fig-ets_bargraphs
 #| echo: false
 #| fig-cap: Condition of marine ecosystem types in each functional group, summarised by aerial extent.
-# <!-- #| Threat status of marine ecosystem types by functional group. Numbers reflected in (A) indicate number of ecosystems in each threat category, while length of bars indicate percentage of ecosystems in each threat category.  -->
 #| out-width: "100%"
 #| classes: plain
 #| fig-align: "left"
@@ -170,7 +164,6 @@ nba_plot(cnd,
 #| label: tbl-conditions
 #| echo: false
 #| classes: plain
-# <!-- #| tbl-cap: Description of marine ecological condition categories. -->
 
 # library(reactable)
 library(gt)
@@ -204,8 +197,6 @@ conditions %>%
 :::
 
 Mining, coastal development and demersal trawling have the highest impact scores among the 31 pressures included in the assessment of ecological condition and contributed to heavily modified and severely modified ecological condition in some areas [@sink2019]. Fishing is the greatest driver of modified ecological condition in the offshore environment, whereas coastal development and fishing are the greatest drivers of ecosystem modification in inshore ecosystems. Flow reduction, waste water discharge and lethal shark control measures also drive high levels of ecosystem modification in some areas.
-
-<!-- Hotspots of degradation and cumulative impacts are often driven by the location of ports and harbours, which increase access for fishing, alter shorelines and circulation, increase pollution, and facilitate the introduction and spread of invasive species. Port and harbour location therefore warrants careful consideration. Areas of poor ecological condition include parts of the southwest Atlantic shelf edge and the inner shelf of much of the western Cape, and parts of the south coast and shelf and KwaZulu-Natal Bight (@fig-condition_benthic). -->
 
 ![Restored flows, improved bycatch and waste water management and further reductions of lethal shark control measures could improve ecological condition in parts of the KwaZulu-Natal Bight. This mesophotic reef is in the uThukela MPA. (© ACEP Surrogacy project, Kerry Sink)](imgs/uThukela_condition_ACEP.png){width="900"}
 
@@ -305,18 +296,6 @@ The National Marine Ecosystem Committee and Network and the National Marine Biod
 We also thank the authors of Sink et al. (2019) [@sink2019] as well as participants of the 3-day Pressures scoring workshop held in 2017, including Andrew Cockcroft, Anthony Bernard, Anѐ Oosthuizen, George Branch, Jodie Reed, Lara Atkinson, Linda Harris, Loyiso Dunga, Luther Adams, Maphale Matlala, Megan van der Bank, Myriam Perschke, Olona Buswana, Siyasanga Miza, Sizo Sibanda, Stephen Kirkman and Steven Weerts. Participants of the 2018 NBA Review workshop are also acknowledged for useful insights into ecosystem condition assessment. Finally, we thank Andrew Skowno for his cross-realm leadership in ecosystem condition assessment.
 
 ## Technical documentation
-
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
-
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
-
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
-
-<!-- ### Code repositories -->
-
-<!-- -   This GitLab repo is not anywhere close to being ready for sharing! **Cumulative pressure and condition calculations and mapping**: [gitlab.com/marine_pressure_layers/pressure_layers](https://gitlab.com/marine_pressure_layers/pressure_layers) -->
 
 ### Key publications
 
