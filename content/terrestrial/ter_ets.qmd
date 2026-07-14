@@ -337,7 +337,12 @@ The terrestrial RLE assessment follows the IUCN RLE 2.0 in an approach described
 
 **Code repository**
 
-Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem threat status \[Source code\]. GitHub repository available at <https://github.com/askowno/RLE_terr>
+Skowno, A.L. 2025. SANBI-NBA Terrestrial ecosystem threat status \[Source code\]. The GitHub repository is available [here](https://github.com/SANBI-TER-ECO/RLE_terr.git).
+
+**Datasets**
+
+- Spatial data on ecosystem historic and remaining extent, with their threat status and protection level, are available for download [here](https://bgis.sanbi.org/Projects/Detail/2284).
+- Historical extent of terrestrial ecosystems is available for download [here](https://bgis.sanbi.org/Projects/Detail/2258).
 
 **Key publications**
 

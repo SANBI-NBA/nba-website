@@ -94,7 +94,7 @@ affiliations:
     name: Department of Forestry Fisheries and Environment 
     
 
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:
@@ -149,10 +149,10 @@ google-scholar: true
 
 ## Key findings
 
--   All seven seabird species endemic to the Benguela upwelling ecosystem are classified as regionally threatened for the first time.
--   Africa’s only penguin species, the African penguin, is now the world’s most threatened penguin species, having been uplisted from globally Endangered to globally Critically Endangered.
--   Albatrosses constitute the largest group of threatened seabird species largely due to incidental mortalities associated with interactions with commercial fishing vessels and due to predation by invasive mammals like house mice at their breeding colonies.
--   Efforts are underway to restore Marion Island’s ecosystem and the many seabird species that breed there with the Mouse-Free Marion Project, a partnership between the Department of Forestry, Fisheries and Environment (DFFE) and BirdLife South Africa.
+- All seven seabird species endemic to the Benguela upwelling ecosystem are classified as regionally threatened for the first time.
+- Africa’s only penguin species, the African penguin, is now the world’s most threatened penguin species, having been uplisted from globally Endangered to globally Critically Endangered.
+- Albatrosses constitute the largest group of threatened seabird species largely due to incidental mortalities associated with interactions with commercial fishing vessels and due to predation by invasive mammals like house mice at their breeding colonies.
+- Efforts are underway to restore Marion Island’s ecosystem and the many seabird species that breed there with the Mouse-Free Marion Project, a partnership between the Department of Forestry, Fisheries and Environment (DFFE) and BirdLife South Africa.
 
 ## Threat status and pressures
 
@@ -642,24 +642,27 @@ African penguin alongside soiled penguin decoy at new penguin colony at De Hoop.
 :::::::
 ::::::::
 
-::::::: {#box-5 .callout-note .species title="Box 5. Purse-seine fishery no-take zones around six major African penguin colonies" collapse="false"}
-Competition for common anchovy and sardine prey between African penguins and commercial purse-seine fishers has been recognized as a significant threat to the African penguin. This threat was suspected as early as the 1970s but it was not until 2008 that formal recognition of this threat was translated into action by the Department of Environmental Affairs and Tourism through the implementation of experimental ‘island closures’ including alternating 3-year open and closed periods around four major penguin colonies in two regions (Dassen and Robben islands on the west coast and St Croix and Bird islands in Algoa Bay) up until 2021. The results of this experiment demonstrated a meaningful effect of these closures to African penguin breeding success, although the experiment was limited in its ability to assess longer-term impacts of fishing closures on other important African penguin population parameters such as survival. Despite these limitations and after a lengthy period of negotiations between the Department of Forestry, Fisheries and the Environment, the purse-seine fishing industry representatives and penguin scientists, including an international review of the scientific findings, between 2021 and 2024, no-take zones were implemented for a minimum of 10 years (pending reviews in 2031 and 2035) around six penguin colonies in 2025 (@fig-4 – @fig-6); these included the addition of the south coast colonies of Stony Point and Dyer Island (@fig-5). This resulted in meaningful closure extents, i.e. closure designs that incorporated the majority of important penguin foraging habitat, around at least one colony in each of the three major regions (@fig-4 – @fig-6).
+::: {#box-5 .callout-note .species title="Box 5. Purse-seine fishery no-take zones around six major African penguin colonies" collapse="false"}
+Competition for common anchovy and sardine prey between African penguins and commercial purse-seine fishers has been recognized as a significant threat to the African penguin. This threat was suspected as early as the 1970s but it was not until 2008 that formal recognition of this threat was translated into action by the Department of Environmental Affairs and Tourism through the implementation of experimental ‘island closures’ including alternating 3-year open and closed periods around four major penguin colonies in two regions (Dassen and Robben islands on the west coast and St Croix and Bird islands in Algoa Bay) up until 2021. The results of this experiment demonstrated a meaningful effect of these closures to African penguin breeding success, although the experiment was limited in its ability to assess longer-term impacts of fishing closures on other important African penguin population parameters such as survival. Despite these limitations and after a lengthy period of negotiations between the Department of Forestry, Fisheries and the Environment, the purse-seine fishing industry representatives and penguin scientists, including an international review of the scientific findings, between 2021 and 2024, no-take zones were implemented for a minimum of 10 years (pending reviews in 2031 and 2035) around six penguin colonies in 2025 (@fig-4); these included the addition of the south coast colonies of Stony Point and Dyer Island (@fig-4 B). This resulted in meaningful closure extents, i.e. closure designs that incorporated the majority of important penguin foraging habitat, around at least one colony in each of the three major regions (@fig-4).
 
-:::::: grid
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around Robben and Dassen islands on the west coast. (© BirdLife South Africa)](./imgs/seabirds_img_16.png){#fig-4 style="width:100%;"}
+::: {#fig-4 layout-ncol=3 margin="0px"}
+
+::: {.panel}
+![A](./imgs/seabirds_img_16.png){fig-subcap="A"}
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around Stony Point and Dyer Island on the south coast. (© BirdLife South Africa)](./imgs/seabirds_img_17.png){#fig-5 style="width:100%;"}
+::: {.panel}
+![B](./imgs/seabirds_img_17.png){fig-subcap="B"}
 :::
 
-::: {.g-col-lg-4 .g-col-12 .text-center}
-![Purse-seine fishing closures around St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)](./imgs/seabirds_img_18.png){#fig-6 style="width:100%;"}
+::: {.panel}
+![C](./imgs/seabirds_img_18.png){fig-subcap="C"}
 :::
-::::::
-:::::::
 
+[Purse-seine fishing closures around (A) Robben and Dassen islands on the west coast, (B) Stony Point and Dyer Island on the south coast, and (C) St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)]{fig-align="center"}
+
+:::
+:::
 ## Approach
 
 For more on the methodology used in this assessment, please visit the [bird page](../species/sp_birds.qmd).

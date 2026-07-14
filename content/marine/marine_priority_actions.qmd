@@ -299,10 +299,8 @@ affiliations:
     number: 9 # This number is used to associate authors with affiliations
     name: Council for Scientific and Industrial Research
 
-
-
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: marine_references.bib
@@ -318,16 +316,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-<!-- PLEASE NOTE: (anyone working on this file) -->
-<!-- Do NOT view or work on this file in 'Visual' mode, as it deletes the empty line-end '\' symbols and these have been inserted in many places, e.g. the example below. If you open it in visual, do 'undo' (Ctrl + z) to undo the changes and not save those and change over to 'Source' mode. -->
-<!-- The work-around to adding citations is to do so in marine/scripts/dummy_references.qmd (it is outside the quarto folder) and then copy and paste the citation codes from there into this document. The reference would have been added to marine_references.bib when you added the citation to that dummy_references.qmd file. -->
-<!-- ::: {#box-7 .callout-note .marine collapse="true" title="Action 4.   ![](imgs/Slide4.jpg)   South Africa needs to ensure that sufficient fresh water is allocated and received by the marine realm and that water quality is improved to maintain benefits for coastal ecosystems, species and people.    -->
-<!-- \ -->
-<!-- Key messages [A7](../key-messages/kma7.qmd), [A3](../key-messages/kma3.qmd), [B2](../key-messages/kmb2.qmd)    -->
-<!-- \ -->
-<!-- [Read more »]()"} -->
-
-<!-- Potential indicators of progress could include: -->
+[//]: # (anyone working on this file PLEASE NOTE (this is a non-printing comment): Do NOT view or work on this file in 'Visual' mode, as it deletes the empty line-end '\' symbols and these have been inserted in many places to ensure the key messages and 'read more' occur on a new line, e.g. in the priority action boxes. If you open it in visual, do 'undo' (Ctrl + z) to undo the changes to not save those and change over to 'Source' mode to edit from there. If you need to add citations, use the work-around of doing so in marine/scripts/dummy_references.qmd (it is outside the quarto folder) and then copy and paste the citation codes from there into this document. The reference would have been added to marine_references.bib when you added the citation to that dummy_references.qmd file.)
 
 *The 2025 National Biodiversity Assessment identified key marine ecosystems, species and benefits at risk, and knowledge gaps limiting the assessment. Priority actions to safeguard ocean life and livelihoods were co-developed in collaboration with knowledge holders and decision makers. Advancing these priority actions can help to improve the state of marine biodiversity and maintain its many benefits to South Africans.*
 
@@ -366,34 +355,11 @@ A new field guide entitled *Southern African Sea Slugs* was published at the end
 :::
 ::::::
 
-<!-- :::::: columns -->
-
-<!-- ::: {.column width="53%"} -->
-
-<!-- Taxonomic descriptions of 170 southern African sea cucumbers species were published, representing 55 years of research, and calling for increased efforts to further build taxonomic capacity in southern Africa [@thandar2022]. -->
-
-<!-- The state of knowledge of South African azooxanthellate coral species has been improved, with the total number of known species increased from 77 to 108, with 28 new species records, three new species and one new genus [@filander2021]. -->
-
-<!-- ::: -->
-
-<!-- ::: {.column width="2%"} -->
-
-<!-- ::: -->
-
-<!-- ::: {.column width="45%"} -->
-
-<!-- ![A taxonomic monograph of sea cucumbers of southern Africa (Echinodermata: Holothuroidea), authored by Ahmed Thandar and published by SANBI.](imgs/Taxonomic_mon_graph_Sea_cucumbers_Ahmed_Thandar.png) -->
-
-<!-- ::: -->
-
-<!-- :::::: -->
 ::::::::
 
 Gaps remain in systematic [genetic barcoding efforts](../genetics/chl_barcoding.qmd) and genetic baselines for priority species. South Africa has made progress in adopting genetic indicators that are part of the Kunming-Montreal Global Biodiversity Framework but marine taxa and particularly marine invertebrates are particularly neglected.
 
 Foundational ecosystem knowledge [has been improved](marine_ecosystems.qmd#sec-updatingMEM) and includes new and improved species distribution knowledge for informing a more data-driven national marine ecosystem map.
-
-<!-- Some progress is evident in the research priorities identified in the previous NBA (Table 1). Key areas of progress include foundational biodiversity science for species , research on the impacts of demersal trawling (Atkinson et al. In prep, Rylands 2024), climate change [(Porter, other heatwaves?)]{.mark}, improved understanding of underwater noise ([Box 2](marine_pressures.qmd#box-2)), and research to support groundtruthing of marine ecological condition [@smit2023; @smit2024; @smit2026]. -->
 
 Other taxonomic research priorities include work on important marine ecosystem engineers (habitat forming animals including Vulnerable Marine Ecosystem Indicator taxa [@franken2025]), marine invertebrates that are sensitive to water quality changes and other indicator taxa. South Africa’s Marine Taxonomy Working Group identified several national priorities to help address the critical shortfall in marine taxonomic research and capacity.
 
@@ -500,18 +466,6 @@ Participatory research has been advanced to understand and map the resource use 
 -   Further research to understand spatial resource use patterns and priorities of the small-scale fisheries sector to improve representation of this sector in spatial planning.
 :::
 
-<!-- ## Research priorities -->
-
-<!-- Ongoing challenges in assessing marine species, genetic biodiversity and ecosystems include the crises in taxonomy and a poor understanding of species distribution data (Table 1). Innovative and integrated methods that can help address these gaps include imaging approaches, molecular methods, digital taxonomy, active and passive acoustics, citizen science and the strategic connection of biodiversity databases (Rogers et al, 2022). Progress in these complementary areas can increase our understanding of species distribution and feed into improved marine biodiversity assessment at all levels (genetic, species and ecosystems) and multiple scales. Foundational data gaps and capacity constraints limit the IUCN Red List assessment (extinction risk) of marine species. Although dedicated marine species red listing support has been recognised as a key need since 2008 (Sink et al. 2019 chapter 11 prev NBA), there has been no progress in securing resources or capacity to advance this work (Subramoney et al. 2024). -->
-
-<!-- <!-- South Africa has made progress in adopting the four Kunming-Montreal Global Biodiversity Framework genetic indicators, however marine invertebrate taxa are still neglected. A national genetics monitoring framework is still lacking and the integration of genetic/genomic data into marine spatial plans. -->
-
-<!-- Challenges in measuring ecosystem condition and developing agreed thresholds of collapse for different ecosystem functional groups include capacity gaps, data and monitoring gaps and conceptual challenges with the need to apply a greater diversity of indicators to this end. -->
-
-<!-- Groundtruthing ecosystem types remains crucial for ongoing improvement of their descriptions and delineations. For example, the marine realm uses techniques such as remote operated vehicle surveys and seabed sampling (e.g. by grab samples, research trawls and sleds) to collect information on biotic components of ecosystem types; while abiotic data like bathymetry, water turbidity, productivity data and sediments also contribute to ecosystem classification. Progress in work to strengthen the classification and delineation of marine ecosystem types is detailed on the [Marine Ecosystem types page](../marine/marine_ecosystems.qmd). -->
-
-<!-- A comprehensive list of research priorities that could advance the assessment of South Africa’s biodiversity can be found here: XXX [Megan wants to Lets make a clear list for download. Something that funders can put forward in calls]{.mark} -->
-
 ## Priority actions for improving the state of marine biodiversity
 
 Drawing from the key findings of NBA 2025, several priority actions were co-developed to improve the state of marine biodiversity in South Africa [@sink2023c; @rylands2025; @vanderbank2025]. More than 80 individual actions were co-developed and classified into ten broad thematic areas with more detailed recommended steps and potential indicators of progress for each action. These are not comprehensive, prescriptive or time-bound but include specific and measurable elements, where possible, to more easily track progress. Each of the 10 actions were linked to relevant [Kunming-Montreal Global Biodiversity Framework](https://www.cbd.int/gbf) targets ([Box 3](#box-3)) to easily inform ongoing policy processes. The marine assessment team will evaluate progress for these recommended steps in future assessments.
@@ -541,8 +495,6 @@ Whilst aimed at improving biodiversity, the GBF framework elevates the importanc
 Key messages [C1](../key-messages/kmc1.qmd), [B4](../key-messages/kmb4.qmd)   
 \
 [Read more »]()"}
-<!-- [^1]: The ways in which individuals and groups interact, adjust and readjust and establish relationships and patterns of behaviour which are again modified through social interaction, collective reflection and learning.  -->
-
 Potential indicators of progress could include:
 
 -   New or strengthened fora, collectives and platforms are established or revived through which government institutions can actively engage communities, civil society, industry and non-profit organisations with a focus on indigenous peoples, women and youth, heritage institutions, small-scale fishers, traditional leaders, traditional healers, and other traditional and local knowledge holders on matters related to ocean planning, management, development and decision-making. The Offshore Environment Forum could be re-convened with strengthened participation from shipping and heritage.
@@ -562,7 +514,7 @@ Potential indicators of progress could include:
 \*An institution's social practice is the way in which it engages internal and external parties in doing its work - from research to planning and policy development to implementation - so that stakeholders co-create the outcome of the process. Given that this work takes place in a constantly shifting context and is never the same, it requires a creative learning environment within institutions to flourish.
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-5 .callout-note .marine collapse="true" title="Action 2.   ![](imgs/Slide2.jpg)   Simplify, strengthen and co-ordinate institutional and sectoral arrangements, relationships and frameworks to enable a whole-of government approach for effective and efficient ocean planning and governance. This can be advanced through improved coordination, clear roles and responsibilities and more integrated spatial planning and ecosystem-based management. Improved co-ordination across sectors will also benefit coastal and marine climate adaptation.   
 \
@@ -591,15 +543,13 @@ Potential indicators of progress could include:
 ![Biodiversity is fundamental to achieving South Africa’s national objectives, and safeguarding biodiversity calls for a whole-of-government approach with collaborative and integrated planning, management and governance.](imgs/overlapping_sectors.png){width="60%" fig-align="center"}
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-6 .callout-note .marine collapse="true" title="Action 3.   ![](imgs/Slide3.jpg)   Avoid, reduce and manage industrial impacts from maritime sectors through strategic mainstreaming within key production sectors, effective Marine Spatial Planning, strengthened mitigation and restoration and increased incentives.   
 \
 Key messages [A2](../key-messages/kma2.qmd), [A3](../key-messages/kma3.qmd), [A4](../key-messages/kma4.qmd), [B5](../key-messages/kmb5.qmd)   
 \
 [Read more »]()"}
-<!-- ## 3. Avoid, reduce and manage industrial impacts (key message A2, key message A3, key message A4, and key message B5). -->
-
 Potential indicators of progress could include:
 
 -   Cumulative effects of mining are considered in environmental impact assessments.
@@ -619,21 +569,15 @@ Potential indicators of progress could include:
 -   Industrial impacts in MPAs are reduced and conservation-area expansion efforts contribute to reduced conflict between sectors.
 
 ![The limited consideration of marine information during planning for the Boegoebaai deepwater harbour installation and associated green hydrogen infrastructure highlighted the lack of marine content on the [environmental screening tool](https://screening.environment.gov.za/) that guides placement of infrastructure developments in South Africa. (© Linda Harris)](imgs/boegoebaai_Linda_Harris.png)
-
-<!-- (Boegoebaai picture – Caption:   -->
-
-<!-- ![Industrial sectors such as shipping exert multiple pressures on the marine environment and require careful management and risk mitigation. (© Kerry Sink)](imgs/shipping.png) -->
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-7 .callout-note .marine collapse="true" title="Action 4.   ![](imgs/Slide4.jpg)   South Africa needs to ensure that sufficient fresh water is allocated and received by the marine realm and that water quality is improved to maintain benefits for coastal ecosystems, species and people.   
 \
 Key messages [A7](../key-messages/kma7.qmd), [A3](../key-messages/kma3.qmd), [B2](../key-messages/kmb2.qmd)   
 \
 [Read more »]()"}
-<!-- ## 4. Ensure sufficient quantity and quality of freshwater flows to marine ecosystems (key message A3, A7, B2). -->
-
 Potential indicators of progress could include:
 
 -   A lead department is assigned to coordinate and ensure that flow requirements for fluvially dependent marine ecosystems and marine resources are determined and secured.
@@ -660,21 +604,19 @@ Potential indicators of progress could include:
 Key messages [A5](../key-messages/kma5.qmd), [A2](../key-messages/kma2.qmd), [B1](../key-messages/kmb1.qmd), [B3](../key-messages/kmb3.qmd), [B5](../key-messages/kmb5.qmd)   
 \
 [Read more »]()"}
-<!-- ## 5. Manage fisheries better and more fairly to improve ocean health and food and livelihood security (A2, A5, B1, B3, B5). -->
-
 Potential indicators of progress could include:
 
 -   Fisheries management plans for fishing sectors are developed to ensure ecological sustainability for long term economic sustainability. These should support resource (target species) sustainability, include bycatch and habitat management objectives (where applicable), address the human dimensions of fisheries, and include climate change considerations. Participatory approaches could help include fisher knowledge in these plans building on existing mechanisms for stakeholder inclusion in South African fisheries management.
 
 -   A bycatch management strategy is developed and implemented to improve fisheries sustainability, reduce inter-sector conflict and support fair fisheries.
 
-<!-- -   The Linefish & Netfish Scientific Working Group’s 2015 recommendations are implemented. -->
+[//]: # (-   The Linefish & Netfish Scientific Working Group’s 2015 recommendations are implemented.)
 
 -   Ecological Risk Assessments are reviewed and key steps to avoid and mitigate ecosystem risks are identified with actions initiated to address risks.
 
 -   Illegal harvesting of South African abalone (*Haliotis midae*) and West Coast rock lobster (*Jasus lalandii*) is reduced with evidence of resource recovery.
 
-<!-- -   There is progress in electronic monitoring of fisheries including the piloting of electronic logbooks. -->
+[//]: # (-   There is progress in electronic monitoring of fisheries including the piloting of electronic logbooks.)
 
 -   Traditional fishing practices have been respected and safeguarded from industrial maritime sectors (industrial fisheries impacts), through the prioritisation of such practices in MPA design and expansion.
 
@@ -693,7 +635,7 @@ Potential indicators of progress could include:
 ![Fishing grounds in Struisbaai sustain the livelihoods of many traditional fishers. Equitable management and sharing of limited fishing resources between sectors is critical to safeguard ocean life and livelihoods. Fisher-led establishment of small-scale fishing zones could safeguard traditional fishing practices. (© Peter Chadwick)](imgs/struisbaai_Peter_Chadwick.png)
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-9 .callout-note .marine collapse="true" title="Action 6.   ![](imgs/Slide6.jpg)   Improve marine protection through more diverse and inclusive conservation models, inter-disciplinary approaches, improved social process and innovative finance, progress in co-management, restorative action and steps to address critical capacity shortfalls. Co-ordinated efforts to address persistent barriers to effective protection must be overcome and key lessons learnt should be applied in future expansion efforts.   
 \
@@ -721,10 +663,9 @@ Potential indicators of progress could include:
 
 -   Measures are implemented to reduce light pollution in protected and conserved areas.
 
-<!-- ![TBA](imgs/PA_6.png) -->
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-10 .callout-note .marine collapse="true" title="Action 7.   
 ![](imgs/Slide7.jpg)   
@@ -733,8 +674,6 @@ Update key spatial layers and develop new maps and capacity to support improved 
 Key messages [A2](../key-messages/kma2.qmd), [B3](../key-messages/kmb3.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd)  
 \
 [Read more »]()"}
-<!-- ## 7. Ensure South Africa has the skills and infrastructure to manage and deliver expanding data and knowledge products for informed ocean planning and decision-making (key message A2?, key message B5, and key message C2). -->
-
 Potential indicators of progress could include:
 
 -   An updated Critical Biodiversity Area map includes the many new spatial data sets leveraged for improved biodiversity planning since 2022.
@@ -756,7 +695,7 @@ Potential indicators of progress could include:
 -   A coordinated national marine biodiversity monitoring framework is developed.
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-11 .callout-note .marine collapse="true" title="Action 8.   ![](imgs/Slide8.jpg)   Invest in data science capacity and infrastructure to ensure effective and reproducible data pipelines that integrate and update strategic analyses in a transparent way to support informed ocean decision-making. Strengthened capacity and infrastructure is needed for all organisations tasked with mapping, assessing, monitoring, and providing indicators and data products that inform management of marine biodiversity, fisheries and the ocean. This will require substantial investment.   
 \
@@ -777,10 +716,9 @@ Potential indicators of progress could include:
 
 -   FAIR (Findable, Accessible, Interoperable, and Reusable) data principles and reproducible science workflows are prioritised.
 
-<!-- ![TBA](imgs/PA_8.png) -->
 :::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 :::: {#box-12 .callout-note .marine collapse="true" title="Action 9.   ![](imgs/Slide9.jpg)   Diversify and improve the communication of marine biodiversity (values and benefits, risks, opportunities and usage), and mainstream biodiversity into key production sectors. This evidence will enable better understanding of the value of marine biodiversity and its contribution to society and the economy. The role of intact biodiversity in supporting food production, the biodiversity economy and climate resilience can be better communicated to support the maintenance of biodiversity benefits.   
 \
@@ -811,18 +749,15 @@ Natural Capital Accounting (NCA), developed under the SEEA Central Framework, is
 Through the application of NCA in the marine and coastal realm, the value and contribution of marine and coastal ecosystems can be communicated in direct terms that link to the current System of National Accounts, illustrating the linkages and dependencies that exist between existing and future economic activities. For example, by linking the results of the NBA to maps of marine and coastal Ecological Infrastructure, NCA accounts can be developed to valuate and communicate the benefits from functional biodiversity in the availability and delivery of ecosystem services such as climate change mitigations, adaptation and resilience.
 :::
 
-<!-- ![TBA](imgs/PA_9.png) -->
 ::::
 
-<!-- ######################################################### -->
+[//]: # (#########################################################)
 
 ::: {#box-13 .callout-note .marine collapse="true" title="Action 10.   ![](imgs/Slide10.jpg)   South Africa needs to invest in the multiple opportunities for scaling up integrated climate action through inclusive choices that promote resilience, and prioritise risk reduction, equity and justice. Protection and restoration of healthy coastal ecosystems increases climate resilience and maintaining genetic diversity enables adaptation, including for important food species. Increased and co-ordinated climate science is needed in the marine realm. Many relevant recommendations to support climate adaptation can be found in South Africa’s Climate Change Coastal Adaptation Response Plan [@departmentofforestryfisheriesandtheenvironment2025b], international reports [@cooley2022] and local recommendations on climate adaptation for fisheries have also been published [@hyder2024].   
 \
 Key messages [A1](../key-messages/kma1.qmd), [B4](../key-messages/kmb4.qmd), [C1](../key-messages/kmc1.qmd), [C2](../key-messages/kmc2.qmd), [C3](../key-messages/kmc3.qmd)   
 \
 [Read more »]()"}
-<!-- ::: {.callout .freshwater collapse="false"} -->
-
 Potential indicators of progress could include:
 
 -   Climate smart biodiversity planning is advanced, drawing from local knowledge, increasing research progress (including genetic considerations to preserve adaptive potential of species) and international lessons. In the long term, all marine sector plans consider climate change to advance climate smart marine spatial planning.
@@ -843,7 +778,6 @@ Potential indicators of progress could include:
 
 -   Existing or new communities of practice support inclusive integrated climate adaptation for marine and coastal ecosystems, fisheries and people.
 
-<!-- ![TBA](imgs/PA_10.png) -->
 :::
 
 ## Priority areas for safeguarding biodiversity {#priority_areas}
@@ -872,64 +806,6 @@ South Africa also has a [network of Ecologically or Biologically Significant Mar
 
 Knowledge gaps and research priorities were identified throughout the NBA 2025, but also through a systematic review of progress against research priorities identified in the NBA 2018.
 
-<!-- # ```{r} -->
-
-<!-- #| label: tbl-48 -->
-
-<!-- #| echo: false -->
-
-<!-- #| tbl-cap: Summary of progress made in addressing knowledge gaps identified in NBA 2018.   -->
-
-<!-- #| out-width: 100% -->
-
-<!-- #| classes: plain -->
-
-<!-- library(tidyverse) -->
-
-<!-- # load the data  -->
-
-<!-- tbl_48 <- read.csv(file=list.files(pattern = "^Table_48update.csv$", recursive = TRUE, full.names = TRUE),  -->
-
-<!--                     stringsAsFactors = FALSE, check.names = FALSE) -->
-
-<!-- library(gt) -->
-
-<!-- tbl <- tbl_48 %>% -->
-
-<!--   mutate(across( -->
-
-<!--     everything(), -->
-
-<!--     ~ { -->
-
-<!--       x <- as.character(.) -->
-
-<!--       x <- iconv(x, from = "", to = "UTF-8", sub = "")   # fix encoding first -->
-
-<!--       x <- gsub("\u00a0", " ", x, fixed = TRUE)          # replace non-breaking spaces -->
-
-<!--       x -->
-
-<!--     } -->
-
-<!--   )) -->
-
-<!--   gt::gt(tbl)%>% -->
-
-<!--   fmt_markdown(columns = everything())  %>% -->
-
-<!--   nbaR::nba_tbl_theme(HEADER = "Marine") %>%  -->
-
-<!--   tab_style( -->
-
-<!--     style = cell_text(color = "white"), -->
-
-<!--     locations = cells_column_labels() -->
-
-<!--   ) -->
-
-<!-- ``` -->
-
 ### Priority actions
 
 Drawing from the key findings of this assessment, more than 80 priority actions were co-developed to improve the condition of marine ecosystems and species, and to safeguard the many benefits they provide. To inform these actions, a series of science–policy-society engagements were held, bringing together researchers, decision-makers, civil society and knowledge holders (with a particular focus on coastal communities) to review research evidence and jointly co-develop recommendations to address key findings, identified risks and key pressures on South Africa’s marine biodiversity [@sink2023c; @rylands2025; @vanderbank2025]. From the more than 80 specific actions, a set of 10 overarching priority actions were distilled with recommended indicators of progress that point to a range of sub-actions, which if implemented, could improve the state of marine biodiversity in South Africa.
@@ -949,16 +825,6 @@ Land-based CBA Maps have been produced for over a decade, while the first map of
 We sincerely thank the more than 123 individuals who actively participated in the three engagements held to co-develop priority actions for improved Ecosystem Based Management in South Africa. In addition, SANBI appreciates further inputs from the SeaPeople Collective, staff from DFFE Oceans and Coasts and Fisheries Branches, SANParks and provincial conservation entities. We acknowledge Sven Kerwath for his contributions in shaping selected priority actions. We also thank Merle Sowman for sharing insights on coastal and marine mining and Sarah Wilkinson for providing important perspectives on offshore industry activities and opportunities to strengthen offshore biodiversity management. Jess da Silva is thanked for her insights on genetic research priorities and key actions to maintain genetic biodiversity in the marine realm.
 
 We acknowledge the National Research Foundation, particularly projects funded through the Foundational Biodiversity Information Program (FBIP) and the African Coelacanth Ecosystem Program (ACEP). These include the SAEON led SeaMap project (Grant number 138572), Deep Connections (Grant number 129216), Agulhas Bank Connections (Grant number 129213) and Sound Seas projects (Ref number ACEP23040790163). This work was supported through international projects funded by the European Union's Horizon 2020 Research and Innovation Program under Grant Agreement No. 862428 (MISSION ATLANTIC project) and 818123 (iAtlantic project), the German Federal Ministry for Economic Cooperation and Development (BMZ) through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH for the MeerWissen CoastWise project, and the UK Research and Innovation (UKRI) through the Global Challenges Research Fund (GCRF), Grant ref: NE/S008950/1, for the One Ocean Hub project.
-
-<!-- ## Technical documentation -->
-
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
-
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
-
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
 
 ### Key publications
 

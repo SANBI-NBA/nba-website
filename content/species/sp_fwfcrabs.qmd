@@ -9,7 +9,7 @@ title-block-banner-color: white
 ------------------------------------------------------------------------
 
 ::: {.callout-important icon="TRUE" title="Note:" style="--callout-icon-color: white; font-size:100px;"}
-###### The status summary of freshwater crabs is under production and will be available from February 2026.
+###### We are currently completing the status summary for freshwater crabs. Please revisit this page soon for the full update!
 
 See the global assessments for South Africa freshwater crabs [here.](https://www.iucnredlist.org/search?permalink=d11dfb08-3043-4708-afcc-3463e3ac3b1)
 :::

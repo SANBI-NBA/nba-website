@@ -236,7 +236,7 @@ affiliations:
 
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: marine_references.bib
@@ -252,15 +252,10 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-<!-- List requiring action -->
-
-<!-- Last thing to check before publication: did Kerry get permission from Frontiers to include Lisa Skein's flow diagram image? -->
 
 *Marine ecosystems and species face pressures from an increasing range and intensity of human activities that continue to expand and diversify as South Africa develops its ocean economy. Fishing, particularly widespread industrial fishing, continues to exert substantial pressures on marine biodiversity, affecting ecosystems, species and genetic diversity. Mining, petroleum, flow reduction, port and harbour development and shipping also drive ecosystem modification and risk to marine species, with increasing pollution (plastics, underwater noise, waste water and effluent) and climate change as concerns. Pressure mapping needs to be updated and improved for more accurate assessments and planning, especially at finer scales.*
 
 ![Coastal mining between Kleinzee and Lambertsbaai. (© Jaque Smith)](imgs/Coastal_Mining_Tormin_Lamberts_Bay_to_Klienzee_Jacque_Smit_PTWC-83.png)
-
-<!-- Additional high pressure areas include the area offshore of the Orange River, the shelf edge on the west and south coasts, large portions of the Cape inner and middle shelf, the Agulhas Bank and the KwaZulu-Natal Bight. Fishing, particularly industrial fishing, continues to exert the greatest pressures on marine biodiversity (link to KMA5) impacting ecosystems, species and genetic diversity (link to KMB3).** -->
 
 ## Cumulative Pressures
 
@@ -532,7 +527,7 @@ Globally, there is increasing recognition of the impacts of anthropogenic noise 
 
 The Sound Seas project aims to determine the extent to which the underwater marine soundscape can provide information about the ecological condition of marine ecosystems and which tools (systems and methods) can be developed for monitoring these environments and assisting management, decision-making and policy. The team is developing capacity in underwater soundscape ecology and acoustics research in South Africa and will provide baselines for further research and monitoring on marine soundscapes and the impacts of anthropogenic noise sources.
 
-<!-- ![Kerry intends to provide image here that is on her phone (but note there is already a whale/sound image above?). (© photographer)](imgs/nudibranch_georgina_jones.jpg) -->
+[//]: # (TO DO: Kerry intends to provide an image here — check if still needed given whale/sound image already present above)
 :::
 
 ### Invasive alien species
@@ -575,17 +570,7 @@ We thank international funders for supporting mapping of seismic surveys and upd
 
 ## Technical documentation
 
-<!--# This section is compulsory for all scientific content, but what you include here is flexible based on what you have available for your indicators -->
-
-<!--# the below examples/recommendations can be modified, e.g. you could do a technical report PDF, as long as it is made available on a public repository (figshare?) and can be linked to in this document -->
-
-<!--# avoid linking to Google Drive or other personal drives that may not be permanent. -->
-
-<!--# Always use DOI to link to published papers - never use the journal's website -->
-
-<!-- ### Code repositories -->
-
-<!-- -   [**Cumulative pressure and condition calculations and mapping**](https://gitlab.com/marine_pressure_layers/pressure_layers) -->
+[//]: # (TO DO: Code repositories — Cumulative pressure and condition calculations and mapping: https://gitlab.com/marine_pressure_layers/pressure_layers — add when repo is ready to share)
 
 ### Key publications
 

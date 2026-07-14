@@ -1,11 +1,18 @@
 ---
 title: "Overview"
 subtitle: "Marine realm"
+
 title-block-banner: "#02268A" #imgs/overview_banner.jpg #
 title-block-banner-color: white
+
 image: imgs/card_mar_Eve_Marshall.png
+
 description: | 
   Findings of the NBA presented by realm
+
+# This date determines the PUBLISHED date in the title block
+date: 2025-12-05 # date: last-modified
+
 ---
 
 ```{r error=FALSE}
@@ -151,10 +158,6 @@ Drawing from key findings of the NBA, ten priority actions were co-developed for
 -   Reduce climate risks to people and nature. [Read more »](marine_priority_actions.qmd#box-13)
 
 ![Science-to-policy dialogue convened in November 2024 to co-develop priority management and policy actions for improving the state of South Africa's marine biodiversity for the benefit of nature and people. (© Kerry Sink)](imgs/workshop.png)
-
-<!-- ## Key publications -->
-
-<!-- Sink, K.J., van der Bank, M., Majiedt, P.A., Harris, L., Atkinson, L. & Karenyi, N., 2019. *National Biodiversity Assessment 2018: Technical Report Volume 4: Marine realm*. Pretoria: South African National Biodiversity Institute. -->
 
 ## Acknowledgements
 

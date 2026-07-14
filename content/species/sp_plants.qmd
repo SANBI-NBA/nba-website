@@ -63,7 +63,7 @@ affiliations:
     number: 2
     name: Nelson Mandela University
 
-date: last-modified
+date: 2025-12-05
 bibliography: species.bib
 
 citation:
@@ -124,13 +124,13 @@ image: "./imgs/Ixia%20ebrahimii_cropped.png"
 
 ## Key findings {#summary}
 
--   South Africa’s indigenous flora has high levels of diversity and endemism: 13 642 of the 20 248 taxa (67%) are endemic, with a high concentration of endemism in the south-western region of the Fynbos biome, and moderate concentrations in the arid regions, low escarpment bushveld, and coastal grasslands.
+- South Africa’s indigenous flora has high levels of diversity and endemism: 13 642 of the 20 248 taxa (67%) are endemic, with a high concentration of endemism in the south-western region of the Fynbos biome, and moderate concentrations in the arid regions, low escarpment bushveld, and coastal grasslands.
 
--   1 in 5 endemic plants are at risk of extinction.
+- 1 in 5 endemic plants are at risk of extinction.
 
--   Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
+- Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.
 
--   Protected area expansion has improved the protection of indigenous plants, but shortcomings in protected area effectiveness are constraining progress towards plant conservation targets.
+- Protected area expansion has improved the protection of indigenous plants, but shortcomings in protected area effectiveness are constraining progress towards plant conservation targets.
 
 ::: {.column width="100%"}
 ```{r}
@@ -791,8 +791,8 @@ Read more about the calculation of the protection level indicator [here](../inte
 
 ------------------------------------------------------------------------
 
--   [South African National Biodiversity Institute](https://www.sanbi.org/)
--   [Custodians of Rare and Endangered Wildflowers](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/)
+- [South African National Biodiversity Institute](https://www.sanbi.org/)
+- [Custodians of Rare and Endangered Wildflowers](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/custodians-of-rare-and-endangered-wildflowers-crew-programme/)
 :::
 
 ::: {.g-col-lg-6 .g-col-12}
@@ -800,9 +800,9 @@ Read more about the calculation of the protection level indicator [here](../inte
 
 ------------------------------------------------------------------------
 
--   [The Botanical Society of South Africa](https://botanicalsociety.org.za/crew-programme/)
--   [Mapula Trust](https://www.fynboslife.com/partners/mapula-trust/?)
--   [Agence Française de développement](https://www.afd.fr/fr)
+- [The Botanical Society of South Africa](https://botanicalsociety.org.za/crew-programme/)
+- [Mapula Trust](https://www.fynboslife.com/partners/mapula-trust/?)
+- [Agence Française de développement](https://www.afd.fr/fr)
 :::
 :::::
 
@@ -849,13 +849,15 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 ## Technical documentation
 
-### **Data sources**
+### Data sources
 
 1.  South African Biodiversity Institute (SANBI). 2024. Statistics: Red List of South African Plants. Available at: <http://Redlist.sanbi.org>. Accessed August 27, 2025.
 
 2.  South African National Biodiversity Institute (SANBI). 2019. National Biodiversity Assessment 2018: The status of South Africa’s ecosystems and biodiversity. Synthesis Report. South African National Biodiversity Institute, an entity of the Department of Environment, Forestry and Fisheries, Pretoria. pp. 1–214.
 
-3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
+
+4. Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ### Code repositories
 

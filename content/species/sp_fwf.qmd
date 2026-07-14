@@ -94,7 +94,7 @@ affiliations:
     name: South African National Biodiversity Institute
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
 # Remember to rename the default .bib file and change the name here
 bibliography: species.bib
@@ -151,17 +151,17 @@ image: "./imgs/sp_freshwater_fish_img_1.png"
 
 ## Key findings
 
--   There are currently 139 formally described primary freshwater fishes in South Africa [@skelton2024a], representing around 0.8% of the world's 18 000 freshwater fish species[@fricke2025a].
+- There are currently 139 formally described primary freshwater fishes in South Africa [@skelton2024a], representing around 0.8% of the world's 18 000 freshwater fish species[@fricke2025a].
 
--   A comprehensive reassessment of extinction risk for 118 freshwater fishes was done in 2016-2017 following the IUCN Red List Categories and Criteria.
+- A comprehensive reassessment of extinction risk for 118 freshwater fishes was done in 2016-2017 following the IUCN Red List Categories and Criteria.
 
--   A total of 42 taxa (36%) were classified as facing a high risk of extinction.
+- A total of 42 taxa (36%) were classified as facing a high risk of extinction.
 
--   A total of 58 taxa (49%) are endemic to South Africa. A high proportion (38 taxa or 66%) of these face an elevated risk of extinction, thus placing sole responsibility on the country to protect and ensure persistence of these species.
+- A total of 58 taxa (49%) are endemic to South Africa. A high proportion (38 taxa or 66%) of these face an elevated risk of extinction, thus placing sole responsibility on the country to protect and ensure persistence of these species.
 
--   The IUCN Red List Index (RLI) indicates that freshwater fishes have the second-lowest RLI score (0.75) compared to other taxonomic groups in South Africa. This shows that freshwater fishes are one of the most threatened groups, consistent with the broader patterns of the vulnerability of freshwater ecosystems in the country.
+- The IUCN Red List Index (RLI) indicates that freshwater fishes have the second-lowest RLI score (0.75) compared to other taxonomic groups in South Africa. This shows that freshwater fishes are one of the most threatened groups, consistent with the broader patterns of the vulnerability of freshwater ecosystems in the country.
 
--   The major threats to freshwater fishes are invasive alien fishes, pollution, over-abstraction of water and habitat loss.
+- The major threats to freshwater fishes are invasive alien fishes, pollution, over-abstraction of water and habitat loss.
 
 ```{r}
 #| label: fig-1
@@ -854,7 +854,11 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 ## Technical documentation
 
-**Data sources** <br> 1. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: https://www.dffe.gov.za/egis. Accessed: 25 August 2024.
+### Data sources
+
+1. DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
+
+2. Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ## Recommended citation
 
