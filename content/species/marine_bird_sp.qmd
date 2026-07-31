@@ -657,6 +657,7 @@ Competition for common anchovy and sardine prey between African penguins and com
 
 ::: {.panel}
 ![C](./imgs/seabirds_img_18.png){fig-subcap="C"}
+
 :::
 
 [Purse-seine fishing closures around (A) Robben and Dassen islands on the west coast, (B) Stony Point and Dyer Island on the south coast, and (C) St Croix and Bird islands in Algoa Bay. (© BirdLife South Africa)]{fig-align="center"}

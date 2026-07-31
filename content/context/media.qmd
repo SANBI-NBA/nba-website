@@ -5,7 +5,6 @@ title-block-banner-color: white
 
 format:
   html:
-    toc: false
     sidebar: false
     
 listing: 
@@ -20,6 +19,9 @@ listing:
       - path: https://www.sanbi.org/news/pollution-impacts-aquatic-ecosystems-species-and-economic-activity/
         title: Pollution impacts on aquatic ecosystems
         image: imgs/news-pollution.png
+      - path: https://www.sanbi.org/news/sanbi-wins-prestigious-nstf-south32-data-for-research-award/
+        title: NBA wins NSTF-South32 Data for Science Award
+        image: imgs/award.png    
     type: grid
     fields: [image, title]
     sort: false
@@ -41,7 +43,7 @@ listing:
 
 {{< video https://www.youtube.com/embed/EnRlSBeGNs0 title='Flow for Life' >}}
 
-## Webinar series
+## Webinar series {#webinars}
 
 The NBA Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
 
@@ -51,7 +53,24 @@ Links to recordings of completed webinars:
 
 **Webinar 1:** [Reverse the Red: NBA 2025 species findings](https://youtu.be/m6NkcfjvR-o)
 
-**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc&t)
+**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc)
+
+**Webinar 3**: [Freshwater wetlands and rivers: The backbone of South Africa’s water security remains under threat](https://www.youtube.com/watch?v=ZAaIhUi9WXE)
+
+**Webinar 4**: [Estuaries on the edge: 99% of South Africa’s estuarine extent is threatened](https://www.youtube.com/watch?v=MvLWkyTahnE)
+
+**Webinar 5**: [Coastal Ecosystems: Pressure at the land–sea interface across South Africa](https://www.youtube.com/watch?v=nEH0RplCYNU)
+
+**Webinar 6**: [Genetics and biodiversity: Understanding the building blocks of life](https://www.youtube.com/watch?v=bmVNEJSP_dw)
+
+**Webinar 7**: [South Africa has exceptional marine biodiversity – what is its status?](https://www.youtube.com/watch?v=e_5DtfzeP4Q)
+
+**Webinar 8**: [New species assessed in the NBA 2025](https://www.youtube.com/watch?v=Cw008DnSs1c)
+
+**Webinar 9**: [Using NBA 2025 for planning, policy revision and decision-making in South Africa](https://www.youtube.com/watch?v=Q8L7YnFDmSY)
+
+**Webinar 10**: [Recaps and the future directions of the NBA as a living assessment that will be updated more regularly](https://www.youtube.com/watch?v=lKdIaBC9wvA)
+
 
 ------------------------------------------------------------------------
 

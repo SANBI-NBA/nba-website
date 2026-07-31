@@ -122,21 +122,23 @@ image: "./imgs/sp_birds_img_1.png"
 
 ## Key findings
 
-- The latest bird assessment evaluated 728 species, and 26 of these are endemic to South Africa, Eswatini, and Lesotho.
+-   The latest bird assessment evaluated 728[^1] species, and 26 of these are endemic to South Africa, Eswatini, and Lesotho.
 
-- Nearly 13% (93) of assessed bird species are threatened with extinction, with another 7% (54) assessed as Near Threatened.
+-   Nearly 13% (93) of assessed bird species are threatened with extinction, with another 7% (54) assessed as Near Threatened.
 
-- Among South Africa’s endemic bird species, 34% (9 out of 26) of are threatened with extinction, placing full responsibility for their protection on the Republic of South Africa.
+-   Among South Africa’s endemic bird species, 34% (9 out of 26) of are threatened with extinction, placing full responsibility for their protection on the Republic of South Africa.
 
-- Eight species were downlisted after some improvement in threat status, however birds are in general becoming increasingly threatened with extinction, with 39 species uplisted to higher threat categories.
+-   Eight species were downlisted after some improvement in threat status, however birds are in general becoming increasingly threatened with extinction, with 39 species uplisted to higher threat categories.
 
-- The main pressures driving change in threat status have remained similar to those driving change in the previous assessments. However, in this assessment, the plight of waterbirds has been highlighted, with many waterbirds being uplisted to a higher category of threat.
+-   The main pressures driving change in threat status have remained similar to those driving change in the previous assessments. However, in this assessment, the plight of waterbirds has been highlighted, with many waterbirds being uplisted to a higher category of threat.
 
-- Freshwater ecosystem condition must improve to safeguard these species, but doing so will require substantial political will and resources. Because many freshwater species are congregatory and therefore susceptible to disease outbreaks, effective water management and protection of key sites are critical to slowing their decline. Urban freshwater systems also provide important opportunities for citizen-led restoration and monitoring.
+-   Freshwater ecosystem condition must improve to safeguard these species, but doing so will require substantial political will and resources. Because many freshwater species are congregatory and therefore susceptible to disease outbreaks, effective water management and protection of key sites are critical to slowing their decline. Urban freshwater systems also provide important opportunities for citizen-led restoration and monitoring.
 
-- Using a subpopulation method based on proximal protected areas, a large proportion of bird species were found to be Well Protected within the South African protected area network (86%, 561 species); with only 7% Poorly Protected.
+-   Using a subpopulation method based on proximal protected areas, a large proportion of bird species were found to be Well Protected within the South African protected area network (86%, 561 species); with only 7% Poorly Protected.
 
-- When protection level is assessed using a Minimum Conservation Population (MCP) approach that incorporates species-specific abundance thresholds, protection levels are far lower: only 10% of assessed species are Well Protected, while the vast majority (90%) remain inadequately protected despite occurring within the protected area network.
+-   When protection level is assessed using a Minimum Conservation Population (MCP) approach that incorporates species-specific abundance thresholds, protection levels are far lower: only 10% of assessed species are Well Protected, while the vast majority (90%) remain inadequately protected despite occurring within the protected area network.
+
+[^1]:Taxa totals may differ slightly between Red List and South Africa's Biodiversity Profile pages, due to periodic updates to the Checklists and ongoing taxonomic revision. See the Approach section for further details.
 
 ```{r}
 #| label: fig-1
@@ -384,17 +386,17 @@ Since 2020, BirdLife South Africa’s Wetland and White-winged Flufftail Conserv
 
 Key achievements include:
 
-- **Management and restoration**: publication of Best Practice Guidelines for High-Elevation Wetland and Peatland Management in Southern Africa in multiple local languages, bridging the gap between scientific research and land users responsible for stewarding wetlands.
+-   **Management and restoration**: publication of Best Practice Guidelines for High-Elevation Wetland and Peatland Management in Southern Africa in multiple local languages, bridging the gap between scientific research and land users responsible for stewarding wetlands.
 
-- **Protection and stewardship**: declaration of Middelpunt Nature Reserve (527 ha) and designation as a Ramsar Site, expansion of the Greater Lakenvlei Protected Environment (21 400 ha), and new stewardship agreements in Mpumalanga and KwaZulu-Natal to conserve biodiversity alongside daily land-use activities.
+-   **Protection and stewardship**: declaration of Middelpunt Nature Reserve (527 ha) and designation as a Ramsar Site, expansion of the Greater Lakenvlei Protected Environment (21 400 ha), and new stewardship agreements in Mpumalanga and KwaZulu-Natal to conserve biodiversity alongside daily land-use activities.
 
-- **Community engagement**: establishment of the Steenkampsberg Birding Routes and employment of a community bird guide at Ntsikeni Nature Reserve to promote eco-tourism and local custodianship through financial incentives.
+-   **Community engagement**: establishment of the Steenkampsberg Birding Routes and employment of a community bird guide at Ntsikeni Nature Reserve to promote eco-tourism and local custodianship through financial incentives.
 
-- **Policy and advocacy**: publication of surveying and mitigation guidelines for environmental impact assessments of developments within the species' distributional range, endorsed by the Department of Forestry, Fisheries and the Environment.
+-   **Policy and advocacy**: publication of surveying and mitigation guidelines for environmental impact assessments of developments within the species' distributional range, endorsed by the Department of Forestry, Fisheries and the Environment.
 
-- **Awareness**: publication of two children’s books (and audiobooks) for different age groups and raising awareness among children and adults during the annual Flufftail Festival hosted on World Wetlands Day.
+-   **Awareness**: publication of two children’s books (and audiobooks) for different age groups and raising awareness among children and adults during the annual Flufftail Festival hosted on World Wetlands Day.
 
-- **Research**: dedicated surveys using passive monitoring equipment provided the first empirical population estimate of \~900 breeding pairs (1 800 mature individuals) across just 20 km² of suitable habitat in South Africa.
+-   **Research**: dedicated surveys using passive monitoring equipment provided the first empirical population estimate of \~900 breeding pairs (1 800 mature individuals) across just 20 km² of suitable habitat in South Africa.
 
 These collective efforts, underpinned by partnerships with government, landowners, NGOs, universities, and international agreements (e.g. [AEWA](https://www.unep-aewa.org/) and [CMS](https://www.cms.int/species/appendix-i-ii-cms)), directly informed the 2025 [IUCN Regional Red List assessment for the white-winged flufftail](https://www.birdlife.org.za/red-list/white-winged-flufftail/). The protection level for the species has changed from “Not Protected” to “Poorly Protected” thanks to the declaration of key protected areas. The white-winged flufftail now qualifies as Endangered under criterion B2ab(iii), highlighting both its precarious status and the tangible conservation gains achieved through science-based collaborative action.
 
@@ -524,9 +526,9 @@ knitr::include_graphics("./imgs/birds_in_10km_HD.png")
 
 ## Pressures
 
-South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat[^1]. Across 147 species of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
+South Africa’s threatened and Near Threatened birds face multiple interacting pressures, with no single dominant threat[^2]. Across 147 species of conservation concern, the most common threats are biological resource use (53%), natural system modification (49%), climate change (44%), invasive species (43%), and agriculture (39%). Threat patterns differ across terrestrial, freshwater, estuarine and marine systems (@fig-5).
 
-[^1]: The percentage values in this section indicate the percentage of threatened and Near Threatened bird species impacted by the listed pressures.
+[^2]: The percentage values in this section indicate the percentage of threatened and Near Threatened bird species impacted by the listed pressures.
 
 **Biological resource use** <br> *(53% overall; 45% terrestrial; 66% marine; 49% inland aquatic; 43% estuarine/coastal)* <br> This threat is dominated by direct mortality from hunting, trapping, poisoning and fisheries bycatch. It is especially severe for seabirds affected by incidental capture and prey depletion, and for terrestrial species such as vultures (see [Box 3](#box-3)), bustards and cranes impacted by poisoning and hunting. It remains a leading driver of declines.
 
@@ -540,11 +542,11 @@ South Africa’s threatened and Near Threatened birds face multiple interacting 
 
 **Additional pressures**
 
-- Pollution: Major threat to freshwater birds
-- Urban development: Mainly affects estuarine/coastal species
-- Transport: Collision mortality
-- Energy & mining: Wind energy impacts on raptors
-- Human disturbance: Nesting and roosting sensitivity
+-   Pollution: Major threat to freshwater birds
+-   Urban development: Mainly affects estuarine/coastal species
+-   Transport: Collision mortality
+-   Energy & mining: Wind energy impacts on raptors
+-   Human disturbance: Nesting and roosting sensitivity
 
 These threats often act cumulatively. Overall, this threat assessment highlights that no single threat acts in isolation. Biological resource use, system modification, climate change, invasive species and agriculture all play significant roles, with relative importance varying across realms. Effective conservation will therefore require ecosystem-specific strategies integrated into a national framework capable of tackling multiple simultaneous pressures.
 
@@ -890,6 +892,10 @@ Marine and coastal systems face their own suite of emerging pressures. Sardine s
 
 ## Approach {#Approach}
 
+### Differences between Checklist and Red List species numbers
+
+The total number of taxa and endemics is derived from the South African National Animal Checklist, which is updated periodically. Therefore, small differences may appear between specific Species pages (Red List) and South Africa's Biodiversity Profile page. Differences mainly result from ongoing taxonomic revisions, particularly the treatment of synonyms that have been incorporated into the Checklists but are not yet reflected in the Red List. While substantial effort is made to ensure these are aligned, kindly use the numbers reflected on the pages at the time of your enquiry and ensure the date of the page is accurately cited.
+
 ### Threat status assessment
 
 The [regional conservation assessment for the birds of South Africa, Lesotho, and Eswatini](https://www.birdlife.org.za/red-data-book/) was conducted by BirdLife South Africa with contributions from 138 species experts. It was initiated in late 2021, and assessments concluded at the start of 2025. This assessment builds upon the 2015 Eskom Red Data Book findings. All of Southern Africa’s non-vagrant species were assessed for signs of decline using citizen science datasets such as [SABAP2](https://sabap2.birdmap.africa/), [CWAC](https://cwac.birdmap.africa/) and [CAR](https://car.birdmap.africa/#:~:text=The%20Coordinated%20Avifaunal%20Roadcount%20(CAR)%20is%20a%20long%2Dterm,habitat%20use%2C%20and%20conservation%20needs.) [@brooks2022a].
@@ -910,7 +916,6 @@ Read more about the calculation of the protection level indicator [here](../inte
 
 BirdLife South Africa first piloted a species-level Protection Level (PL) metric in 2017, measuring the number of viable bird subpopulations occurring in well-managed protected areas [@retief2017a]. Species occurring in \>20 protected areas were deemed to be well protected. The method was refined for the current National Biodiversity Assessment using improved spatial data, updated land-cover information, and a cluster-based definition of subpopulations, with \>10 subpopulations required in protected area clusters. This framework allows a systematic comparison between 2017 and 2025, providing an evidence-based measure of how effectively the protected area network supports the long-term persistence of South Africa’s avifauna [@lee2025a].
 
-
 ## Acknowledgements
 
 ::::: grid
@@ -919,8 +924,8 @@ BirdLife South Africa first piloted a species-level Protection Level (PL) metric
 
 ------------------------------------------------------------------------
 
-- [BirdLife South Africa](https://www.birdlife.org.za/)
-- [Endangered Wildlife Trust](https://ewt.org/)
+-   [BirdLife South Africa](https://www.birdlife.org.za/)
+-   [Endangered Wildlife Trust](https://ewt.org/)
 :::
 
 ::: {.g-col-lg-6 .g-col-12}
@@ -928,14 +933,14 @@ BirdLife South Africa first piloted a species-level Protection Level (PL) metric
 
 ------------------------------------------------------------------------
 
-- [SANBI](https://www.sanbi.org/)
-- [BirdLasser](https://www.birdlasser.com/)
-- [Industrial Development Corporation](https://www.idc.co.za/)
-- [Eskom](https://www.eskom.co.za/)
-- [AFRiT](https://afrit.co.za/)
-- [Ekapa](https://ekapa.co.za/)
-- [First Rand](https://www.firstrand.co.za/)
-- [Italtile and Ceramic Foundation Trust](https://www.italtilefoundation.co.za/)
+-   [SANBI](https://www.sanbi.org/)
+-   [BirdLasser](https://www.birdlasser.com/)
+-   [Industrial Development Corporation](https://www.idc.co.za/)
+-   [Eskom](https://www.eskom.co.za/)
+-   [AFRiT](https://afrit.co.za/)
+-   [Ekapa](https://ekapa.co.za/)
+-   [First Rand](https://www.firstrand.co.za/)
+-   [Italtile and Ceramic Foundation Trust](https://www.italtilefoundation.co.za/)
 :::
 :::::
 
@@ -990,7 +995,7 @@ htmltools::div(style = "overflow-x: auto; overflow-y: auto; max-height: 500px;",
 
 3.  DFFE. 2024. South African Protected Areas Database (SAPAD), Version 2024_Q3 (modified by SANBI). DFFE, Pretoria. Available at: <https://www.dffe.gov.za/egis>. Accessed: 25 August 2024.
 
-4. Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
+4.  Van der Colff, Dewidine (2026). South African National Biodiversity Assessment Species Summary Status Checklist 2025. figshare. Dataset. <https://doi.org/10.6084/m9.figshare.31650961.v3>
 
 ## Recommended citation
 
@@ -1013,6 +1018,3 @@ nba_citation(meta)
 ```
 
 ## References
-
-::: {#refs}
-:::
