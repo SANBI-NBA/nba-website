@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,10 +20,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -66,10 +69,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-081f85e9579d7d4c511e8e55f570f3f7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d264e29de15f38ec2b41a62cbbe76cf7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -1028,6 +1031,7 @@ background: #ad180d;
   <li><a href="#species-recovery" id="toc-species-recovery" class="nav-link" data-scroll-target="#species-recovery">Species recovery</a></li>
   <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a>
   <ul>
+  <li><a href="#differences-between-checklist-and-red-list-species-numbers" id="toc-differences-between-checklist-and-red-list-species-numbers" class="nav-link" data-scroll-target="#differences-between-checklist-and-red-list-species-numbers">Differences between Checklist and Red List species numbers</a></li>
   <li><a href="#threat-status-assessment" id="toc-threat-status-assessment" class="nav-link" data-scroll-target="#threat-status-assessment">Threat status assessment</a></li>
   <li><a href="#protection-level-assessment" id="toc-protection-level-assessment" class="nav-link" data-scroll-target="#protection-level-assessment">Protection level assessment</a></li>
   </ul></li>
@@ -1091,7 +1095,7 @@ assessed<br>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Key findings</h2>
 <ul>
-<li><p>South Africa’s indigenous flora has high levels of diversity and endemism: 13&nbsp;642 of the 20&nbsp;248 taxa (67%) are endemic, with a high concentration of endemism in the south-western region of the Fynbos biome, and moderate concentrations in the arid regions, low escarpment bushveld, and coastal grasslands.</p></li>
+<li><p>South Africa’s indigenous flora has high levels of diversity and endemism: 13&nbsp;642 of the 20&nbsp;248 <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> taxa (67%) are endemic, with a high concentration of endemism in the south-western region of the Fynbos biome, and moderate concentrations in the arid regions, low escarpment bushveld, and coastal grasslands.</p></li>
 <li><p>1 in 5 endemic plants are at risk of extinction.</p></li>
 <li><p>Trends in threat status reveal a 2% increase in the number of plants at risk of extinction between 2017 and 2024. Increases in risk of extinction are driven mainly by habitat loss, competition with invasive alien species, illegal harvesting, and the intensifying impacts of climate change.</p></li>
 <li><p>Protected area expansion has improved the protection of indigenous plants, but shortcomings in protected area effectiveness are constraining progress towards plant conservation targets.</p></li>
@@ -1148,23 +1152,23 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
 </figcaption>
 <div aria-describedby="tbl-tab-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="xifmxbqxno" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xifmxbqxno table {
+<div id="oygliakvzi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oygliakvzi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xifmxbqxno thead, #xifmxbqxno tbody, #xifmxbqxno tfoot, #xifmxbqxno tr, #xifmxbqxno td, #xifmxbqxno th {
+#oygliakvzi thead, #oygliakvzi tbody, #oygliakvzi tfoot, #oygliakvzi tr, #oygliakvzi td, #oygliakvzi th {
   border-style: none;
 }
 
-#xifmxbqxno p {
+#oygliakvzi p {
   margin: 0;
   padding: 0;
 }
 
-#xifmxbqxno .gt_table {
+#oygliakvzi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1190,12 +1194,12 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-left-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_caption {
+#oygliakvzi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xifmxbqxno .gt_title {
+#oygliakvzi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1207,7 +1211,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-bottom-width: 0;
 }
 
-#xifmxbqxno .gt_subtitle {
+#oygliakvzi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1219,7 +1223,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-top-width: 0;
 }
 
-#xifmxbqxno .gt_heading {
+#oygliakvzi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1231,13 +1235,13 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-right-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_bottom_border {
+#oygliakvzi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_col_headings {
+#oygliakvzi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1252,7 +1256,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-right-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_col_heading {
+#oygliakvzi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1272,7 +1276,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   overflow-x: hidden;
 }
 
-#xifmxbqxno .gt_column_spanner_outer {
+#oygliakvzi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1284,15 +1288,15 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 4px;
 }
 
-#xifmxbqxno .gt_column_spanner_outer:first-child {
+#oygliakvzi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xifmxbqxno .gt_column_spanner_outer:last-child {
+#oygliakvzi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xifmxbqxno .gt_column_spanner {
+#oygliakvzi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1304,11 +1308,11 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   width: 100%;
 }
 
-#xifmxbqxno .gt_spanner_row {
+#oygliakvzi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xifmxbqxno .gt_group_heading {
+#oygliakvzi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1334,7 +1338,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   text-align: left;
 }
 
-#xifmxbqxno .gt_empty_group_heading {
+#oygliakvzi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1349,15 +1353,15 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   vertical-align: middle;
 }
 
-#xifmxbqxno .gt_from_md > :first-child {
+#oygliakvzi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xifmxbqxno .gt_from_md > :last-child {
+#oygliakvzi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xifmxbqxno .gt_row {
+#oygliakvzi .gt_row {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 5px;
@@ -1376,7 +1380,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   overflow-x: hidden;
 }
 
-#xifmxbqxno .gt_stub {
+#oygliakvzi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1389,7 +1393,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 5px;
 }
 
-#xifmxbqxno .gt_stub_row_group {
+#oygliakvzi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1403,15 +1407,15 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   vertical-align: top;
 }
 
-#xifmxbqxno .gt_row_group_first td {
+#oygliakvzi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xifmxbqxno .gt_row_group_first th {
+#oygliakvzi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xifmxbqxno .gt_summary_row {
+#oygliakvzi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1421,16 +1425,16 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 5px;
 }
 
-#xifmxbqxno .gt_first_summary_row {
+#oygliakvzi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_first_summary_row.thick {
+#oygliakvzi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xifmxbqxno .gt_last_summary_row {
+#oygliakvzi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1440,7 +1444,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-bottom-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_grand_summary_row {
+#oygliakvzi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1450,7 +1454,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 5px;
 }
 
-#xifmxbqxno .gt_first_grand_summary_row {
+#oygliakvzi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1460,7 +1464,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-top-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_last_grand_summary_row_top {
+#oygliakvzi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1470,11 +1474,11 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-bottom-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_striped {
+#oygliakvzi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xifmxbqxno .gt_table_body {
+#oygliakvzi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1483,7 +1487,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-bottom-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_footnotes {
+#oygliakvzi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1497,7 +1501,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-right-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_footnote {
+#oygliakvzi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1506,7 +1510,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 5px;
 }
 
-#xifmxbqxno .gt_sourcenotes {
+#oygliakvzi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1520,7 +1524,7 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   border-right-color: #D3D3D3;
 }
 
-#xifmxbqxno .gt_sourcenote {
+#oygliakvzi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1528,72 +1532,72 @@ Table&nbsp;1. The number of South African plants per IUCN Red List category * in
   padding-right: 5px;
 }
 
-#xifmxbqxno .gt_left {
+#oygliakvzi .gt_left {
   text-align: left;
 }
 
-#xifmxbqxno .gt_center {
+#oygliakvzi .gt_center {
   text-align: center;
 }
 
-#xifmxbqxno .gt_right {
+#oygliakvzi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xifmxbqxno .gt_font_normal {
+#oygliakvzi .gt_font_normal {
   font-weight: normal;
 }
 
-#xifmxbqxno .gt_font_bold {
+#oygliakvzi .gt_font_bold {
   font-weight: bold;
 }
 
-#xifmxbqxno .gt_font_italic {
+#oygliakvzi .gt_font_italic {
   font-style: italic;
 }
 
-#xifmxbqxno .gt_super {
+#oygliakvzi .gt_super {
   font-size: 65%;
 }
 
-#xifmxbqxno .gt_footnote_marks {
+#oygliakvzi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xifmxbqxno .gt_asterisk {
+#oygliakvzi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xifmxbqxno .gt_indent_1 {
+#oygliakvzi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xifmxbqxno .gt_indent_2 {
+#oygliakvzi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xifmxbqxno .gt_indent_3 {
+#oygliakvzi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xifmxbqxno .gt_indent_4 {
+#oygliakvzi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xifmxbqxno .gt_indent_5 {
+#oygliakvzi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xifmxbqxno .katex-display {
+#oygliakvzi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xifmxbqxno div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#oygliakvzi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1763,23 +1767,23 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
 </figcaption>
 <div aria-describedby="tbl-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="jhouvfpoml" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jhouvfpoml table {
+<div id="itamxgiank" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#itamxgiank table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jhouvfpoml thead, #jhouvfpoml tbody, #jhouvfpoml tfoot, #jhouvfpoml tr, #jhouvfpoml td, #jhouvfpoml th {
+#itamxgiank thead, #itamxgiank tbody, #itamxgiank tfoot, #itamxgiank tr, #itamxgiank td, #itamxgiank th {
   border-style: none;
 }
 
-#jhouvfpoml p {
+#itamxgiank p {
   margin: 0;
   padding: 0;
 }
 
-#jhouvfpoml .gt_table {
+#itamxgiank .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1805,12 +1809,12 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-left-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_caption {
+#itamxgiank .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jhouvfpoml .gt_title {
+#itamxgiank .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1822,7 +1826,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-bottom-width: 0;
 }
 
-#jhouvfpoml .gt_subtitle {
+#itamxgiank .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1834,7 +1838,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-top-width: 0;
 }
 
-#jhouvfpoml .gt_heading {
+#itamxgiank .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1846,13 +1850,13 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-right-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_bottom_border {
+#itamxgiank .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_col_headings {
+#itamxgiank .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1867,7 +1871,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-right-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_col_heading {
+#itamxgiank .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1887,7 +1891,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   overflow-x: hidden;
 }
 
-#jhouvfpoml .gt_column_spanner_outer {
+#itamxgiank .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1899,15 +1903,15 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 4px;
 }
 
-#jhouvfpoml .gt_column_spanner_outer:first-child {
+#itamxgiank .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jhouvfpoml .gt_column_spanner_outer:last-child {
+#itamxgiank .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jhouvfpoml .gt_column_spanner {
+#itamxgiank .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1919,11 +1923,11 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   width: 100%;
 }
 
-#jhouvfpoml .gt_spanner_row {
+#itamxgiank .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jhouvfpoml .gt_group_heading {
+#itamxgiank .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1949,7 +1953,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   text-align: left;
 }
 
-#jhouvfpoml .gt_empty_group_heading {
+#itamxgiank .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1964,15 +1968,15 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   vertical-align: middle;
 }
 
-#jhouvfpoml .gt_from_md > :first-child {
+#itamxgiank .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jhouvfpoml .gt_from_md > :last-child {
+#itamxgiank .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jhouvfpoml .gt_row {
+#itamxgiank .gt_row {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 5px;
@@ -1991,7 +1995,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   overflow-x: hidden;
 }
 
-#jhouvfpoml .gt_stub {
+#itamxgiank .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2004,7 +2008,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 5px;
 }
 
-#jhouvfpoml .gt_stub_row_group {
+#itamxgiank .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2018,15 +2022,15 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   vertical-align: top;
 }
 
-#jhouvfpoml .gt_row_group_first td {
+#itamxgiank .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jhouvfpoml .gt_row_group_first th {
+#itamxgiank .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jhouvfpoml .gt_summary_row {
+#itamxgiank .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2036,16 +2040,16 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 5px;
 }
 
-#jhouvfpoml .gt_first_summary_row {
+#itamxgiank .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_first_summary_row.thick {
+#itamxgiank .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jhouvfpoml .gt_last_summary_row {
+#itamxgiank .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2055,7 +2059,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-bottom-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_grand_summary_row {
+#itamxgiank .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2065,7 +2069,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 5px;
 }
 
-#jhouvfpoml .gt_first_grand_summary_row {
+#itamxgiank .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2075,7 +2079,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-top-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_last_grand_summary_row_top {
+#itamxgiank .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2085,11 +2089,11 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-bottom-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_striped {
+#itamxgiank .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jhouvfpoml .gt_table_body {
+#itamxgiank .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2098,7 +2102,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-bottom-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_footnotes {
+#itamxgiank .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2112,7 +2116,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-right-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_footnote {
+#itamxgiank .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2121,7 +2125,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 5px;
 }
 
-#jhouvfpoml .gt_sourcenotes {
+#itamxgiank .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2135,7 +2139,7 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   border-right-color: #D3D3D3;
 }
 
-#jhouvfpoml .gt_sourcenote {
+#itamxgiank .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2143,72 +2147,72 @@ Table&nbsp;2. List of plants with genuine changes in their threat status and cor
   padding-right: 5px;
 }
 
-#jhouvfpoml .gt_left {
+#itamxgiank .gt_left {
   text-align: left;
 }
 
-#jhouvfpoml .gt_center {
+#itamxgiank .gt_center {
   text-align: center;
 }
 
-#jhouvfpoml .gt_right {
+#itamxgiank .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jhouvfpoml .gt_font_normal {
+#itamxgiank .gt_font_normal {
   font-weight: normal;
 }
 
-#jhouvfpoml .gt_font_bold {
+#itamxgiank .gt_font_bold {
   font-weight: bold;
 }
 
-#jhouvfpoml .gt_font_italic {
+#itamxgiank .gt_font_italic {
   font-style: italic;
 }
 
-#jhouvfpoml .gt_super {
+#itamxgiank .gt_super {
   font-size: 65%;
 }
 
-#jhouvfpoml .gt_footnote_marks {
+#itamxgiank .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jhouvfpoml .gt_asterisk {
+#itamxgiank .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jhouvfpoml .gt_indent_1 {
+#itamxgiank .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jhouvfpoml .gt_indent_2 {
+#itamxgiank .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jhouvfpoml .gt_indent_3 {
+#itamxgiank .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jhouvfpoml .gt_indent_4 {
+#itamxgiank .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jhouvfpoml .gt_indent_5 {
+#itamxgiank .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jhouvfpoml .katex-display {
+#itamxgiank .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jhouvfpoml div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#itamxgiank div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2653,6 +2657,10 @@ Figure&nbsp;8. Changes in protection level assessments between 2017 and 2024 for
 </section>
 <section id="approach" class="level2">
 <h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<section id="differences-between-checklist-and-red-list-species-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="differences-between-checklist-and-red-list-species-numbers">Differences between Checklist and Red List species numbers</h3>
+<p>The total number of plant taxa and endemics is derived from the South African National Plant Checklist, which is updated periodically. Therefore, small differences may appear between the Plant Species page (Red List) and South Africa’s Biodiversity Profile page. Differences mainly result from ongoing taxonomic revisions, particularly the treatment of synonyms that have been incorporated into the Checklist but are not yet reflected in the Red List. While substantial effort is made to ensure these are aligned, kindly use the numbers reflected on the pages at the time of your enquiry and ensure the date of the page is accurately cited.</p>
+</section>
 <section id="threat-status-assessment" class="level3">
 <h3 class="anchored" data-anchor-id="threat-status-assessment">Threat status assessment</h3>
 <p>The IUCN Red List of Threatened Species Categories and Criteria are used to assess the threat status of plants in South Africa. The 2025 South African National Plant Checklist records 23&nbsp;514 taxa and 21&nbsp;539 species, of which 20&nbsp;204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country. This enormous number of plants, and the very limited number of plant Red List specialists in the country, makes it challenging to reassess all plants regularly. Therefore SANBI coordinates and undertakes the assessments of selected families or genera each year. The <a href="https://redlist.sanbi.org/">Red List of South African Plants website</a> hosts all national plant assessments. To track trends in extinction risk and identify the pressures driving these risks, a representative sample of 900 plant species is used for repeat assessments for each National Biodiversity Assessment.</p>
@@ -2696,23 +2704,23 @@ Table&nbsp;3. List of content reviewers.
 <div aria-describedby="tbl-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div style="overflow-x: auto; overflow-y: auto; max-height: 500px;">
-<div id="bafjxzlzkh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bafjxzlzkh table {
+<div id="ckmgadeyko" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ckmgadeyko table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bafjxzlzkh thead, #bafjxzlzkh tbody, #bafjxzlzkh tfoot, #bafjxzlzkh tr, #bafjxzlzkh td, #bafjxzlzkh th {
+#ckmgadeyko thead, #ckmgadeyko tbody, #ckmgadeyko tfoot, #ckmgadeyko tr, #ckmgadeyko td, #ckmgadeyko th {
   border-style: none;
 }
 
-#bafjxzlzkh p {
+#ckmgadeyko p {
   margin: 0;
   padding: 0;
 }
 
-#bafjxzlzkh .gt_table {
+#ckmgadeyko .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2738,12 +2746,12 @@ Table&nbsp;3. List of content reviewers.
   border-left-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_caption {
+#ckmgadeyko .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bafjxzlzkh .gt_title {
+#ckmgadeyko .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2755,7 +2763,7 @@ Table&nbsp;3. List of content reviewers.
   border-bottom-width: 0;
 }
 
-#bafjxzlzkh .gt_subtitle {
+#ckmgadeyko .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2767,7 +2775,7 @@ Table&nbsp;3. List of content reviewers.
   border-top-width: 0;
 }
 
-#bafjxzlzkh .gt_heading {
+#ckmgadeyko .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2779,13 +2787,13 @@ Table&nbsp;3. List of content reviewers.
   border-right-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_bottom_border {
+#ckmgadeyko .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_col_headings {
+#ckmgadeyko .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2800,7 +2808,7 @@ Table&nbsp;3. List of content reviewers.
   border-right-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_col_heading {
+#ckmgadeyko .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2820,7 +2828,7 @@ Table&nbsp;3. List of content reviewers.
   overflow-x: hidden;
 }
 
-#bafjxzlzkh .gt_column_spanner_outer {
+#ckmgadeyko .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2832,15 +2840,15 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 4px;
 }
 
-#bafjxzlzkh .gt_column_spanner_outer:first-child {
+#ckmgadeyko .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bafjxzlzkh .gt_column_spanner_outer:last-child {
+#ckmgadeyko .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bafjxzlzkh .gt_column_spanner {
+#ckmgadeyko .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2852,11 +2860,11 @@ Table&nbsp;3. List of content reviewers.
   width: 100%;
 }
 
-#bafjxzlzkh .gt_spanner_row {
+#ckmgadeyko .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bafjxzlzkh .gt_group_heading {
+#ckmgadeyko .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2882,7 +2890,7 @@ Table&nbsp;3. List of content reviewers.
   text-align: left;
 }
 
-#bafjxzlzkh .gt_empty_group_heading {
+#ckmgadeyko .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2897,15 +2905,15 @@ Table&nbsp;3. List of content reviewers.
   vertical-align: middle;
 }
 
-#bafjxzlzkh .gt_from_md > :first-child {
+#ckmgadeyko .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bafjxzlzkh .gt_from_md > :last-child {
+#ckmgadeyko .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bafjxzlzkh .gt_row {
+#ckmgadeyko .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2924,7 +2932,7 @@ Table&nbsp;3. List of content reviewers.
   overflow-x: hidden;
 }
 
-#bafjxzlzkh .gt_stub {
+#ckmgadeyko .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2937,7 +2945,7 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 5px;
 }
 
-#bafjxzlzkh .gt_stub_row_group {
+#ckmgadeyko .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2951,15 +2959,15 @@ Table&nbsp;3. List of content reviewers.
   vertical-align: top;
 }
 
-#bafjxzlzkh .gt_row_group_first td {
+#ckmgadeyko .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bafjxzlzkh .gt_row_group_first th {
+#ckmgadeyko .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bafjxzlzkh .gt_summary_row {
+#ckmgadeyko .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2969,16 +2977,16 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 5px;
 }
 
-#bafjxzlzkh .gt_first_summary_row {
+#ckmgadeyko .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_first_summary_row.thick {
+#ckmgadeyko .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bafjxzlzkh .gt_last_summary_row {
+#ckmgadeyko .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2988,7 +2996,7 @@ Table&nbsp;3. List of content reviewers.
   border-bottom-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_grand_summary_row {
+#ckmgadeyko .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2998,7 +3006,7 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 5px;
 }
 
-#bafjxzlzkh .gt_first_grand_summary_row {
+#ckmgadeyko .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3008,7 +3016,7 @@ Table&nbsp;3. List of content reviewers.
   border-top-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_last_grand_summary_row_top {
+#ckmgadeyko .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3018,11 +3026,11 @@ Table&nbsp;3. List of content reviewers.
   border-bottom-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_striped {
+#ckmgadeyko .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bafjxzlzkh .gt_table_body {
+#ckmgadeyko .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3031,7 +3039,7 @@ Table&nbsp;3. List of content reviewers.
   border-bottom-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_footnotes {
+#ckmgadeyko .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3045,7 +3053,7 @@ Table&nbsp;3. List of content reviewers.
   border-right-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_footnote {
+#ckmgadeyko .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3054,7 +3062,7 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 5px;
 }
 
-#bafjxzlzkh .gt_sourcenotes {
+#ckmgadeyko .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3068,7 +3076,7 @@ Table&nbsp;3. List of content reviewers.
   border-right-color: #D3D3D3;
 }
 
-#bafjxzlzkh .gt_sourcenote {
+#ckmgadeyko .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3076,72 +3084,72 @@ Table&nbsp;3. List of content reviewers.
   padding-right: 5px;
 }
 
-#bafjxzlzkh .gt_left {
+#ckmgadeyko .gt_left {
   text-align: left;
 }
 
-#bafjxzlzkh .gt_center {
+#ckmgadeyko .gt_center {
   text-align: center;
 }
 
-#bafjxzlzkh .gt_right {
+#ckmgadeyko .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bafjxzlzkh .gt_font_normal {
+#ckmgadeyko .gt_font_normal {
   font-weight: normal;
 }
 
-#bafjxzlzkh .gt_font_bold {
+#ckmgadeyko .gt_font_bold {
   font-weight: bold;
 }
 
-#bafjxzlzkh .gt_font_italic {
+#ckmgadeyko .gt_font_italic {
   font-style: italic;
 }
 
-#bafjxzlzkh .gt_super {
+#ckmgadeyko .gt_super {
   font-size: 65%;
 }
 
-#bafjxzlzkh .gt_footnote_marks {
+#ckmgadeyko .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bafjxzlzkh .gt_asterisk {
+#ckmgadeyko .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bafjxzlzkh .gt_indent_1 {
+#ckmgadeyko .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bafjxzlzkh .gt_indent_2 {
+#ckmgadeyko .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bafjxzlzkh .gt_indent_3 {
+#ckmgadeyko .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bafjxzlzkh .gt_indent_4 {
+#ckmgadeyko .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bafjxzlzkh .gt_indent_5 {
+#ckmgadeyko .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bafjxzlzkh .katex-display {
+#ckmgadeyko .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bafjxzlzkh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ckmgadeyko div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3212,7 +3220,13 @@ Table&nbsp;3. List of content reviewers.
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notes</h2>
+
+<ol>
+<li id="fn1"><p>Taxa totals may differ slightly between Red List and South Africa’s Biodiversity Profile pages, due to periodic updates to the Checklists and ongoing taxonomic revision. See the Approach section for further details.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
