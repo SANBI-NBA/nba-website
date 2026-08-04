@@ -5,7 +5,6 @@ title-block-banner-color: white
 
 format:
   html:
-    toc: false
     sidebar: false
     
 listing: 
@@ -20,6 +19,9 @@ listing:
       - path: https://www.sanbi.org/news/pollution-impacts-aquatic-ecosystems-species-and-economic-activity/
         title: Pollution impacts on aquatic ecosystems
         image: imgs/news-pollution.png
+      - path: https://www.sanbi.org/news/sanbi-wins-prestigious-nstf-south32-data-for-research-award/
+        title: NBA wins NSTF-South32 Data for Science Award
+        image: imgs/award.png    
     type: grid
     fields: [image, title]
     sort: false
@@ -41,17 +43,41 @@ listing:
 
 {{< video https://www.youtube.com/embed/EnRlSBeGNs0 title='Flow for Life' >}}
 
-## Webinar series
+## Webinars {#webinars}
 
-The NBA Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
 
-For more information about upcoming webinars see [here](https://www.sanbi.org/news/nba-webinar-series-begins-with-overview-of-key-findings/).
+### NBA 2025 webinar series
 
-Links to recordings of completed webinars:
+The NBA 2025 Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
+
+**Webinar 1:** [What the NBA 2025 tells us about the state of South Africa’s biodiversity](https://www.youtube.com/watch?v=w4-rR-a1Uso)
+
+**Webinar 2**: [The status of SA’s terrestrial ecosystems – where are we losing ground and why](https://www.youtube.com/watch?v=RwGYa60BTEY)
+
+**Webinar 3**: [Freshwater wetlands and rivers: The backbone of South Africa’s water security remains under threat](https://www.youtube.com/watch?v=ZAaIhUi9WXE)
+
+**Webinar 4**: [Estuaries on the edge: 99% of South Africa’s estuarine extent is threatened](https://www.youtube.com/watch?v=MvLWkyTahnE)
+
+**Webinar 5**: [Coastal Ecosystems: Pressure at the land–sea interface across South Africa](https://www.youtube.com/watch?v=nEH0RplCYNU)
+
+**Webinar 6**: [Genetics and biodiversity: Understanding the building blocks of life](https://www.youtube.com/watch?v=bmVNEJSP_dw)
+
+**Webinar 7**: [South Africa has exceptional marine biodiversity – what is its status?](https://www.youtube.com/watch?v=e_5DtfzeP4Q)
+
+**Webinar 8**: [New species assessed in the NBA 2025](https://www.youtube.com/watch?v=Cw008DnSs1c)
+
+**Webinar 9**: [Using NBA 2025 for planning, policy revision and decision-making in South Africa](https://www.youtube.com/watch?v=Q8L7YnFDmSY)
+
+**Webinar 10**: [Recaps and the future directions of the NBA as a living assessment that will be updated more regularly](https://www.youtube.com/watch?v=lKdIaBC9wvA)
+
+### Reverse the Red webinars
+
+[Reverse the Red](https://www.reversethered.org/) is a global movement encouraging strategic cooperation and action to ensure the survival of wild species and ecosystems. It is focused on recovery actions for threatened species, to deliver on the [Global Biodiversity Framework Goal A](https://www.cbd.int/gbf/goals) and [Target 4](https://www.cbd.int/gbf/targets/4). These webinars highlight how species asssessments completed as part of the NBA support the work of Reverse the Red.
+
 
 **Webinar 1:** [Reverse the Red: NBA 2025 species findings](https://youtu.be/m6NkcfjvR-o)
 
-**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc&t)
+**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc)
 
 ------------------------------------------------------------------------
 

@@ -9,7 +9,7 @@ description: |
   Findings of the NBA presented by realm
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
   
 # Remember to rename the default .bib file and change the name here

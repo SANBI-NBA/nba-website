@@ -84,7 +84,7 @@ Conservation monitoring is guided by key principles (@fig-con-gen-princ), which 
 
 [^1]: Genetic drift is a random change in the genetic makeup of a population from one generation to the next that happens by chance.
 
-![Representation of three core conservation genetic principles focused on safeguarding evolutionary distinctiveness (A & B), protecting genetically distinct populations to minimise the risk of losing evolutionary evolutionary distinctiveness and ensuring all populations are large enough to ensure their long-term persistence (C). Red lines represent deep phylogenetic branches at risk, which can be caused by either entire clades of species being threatened with extinction (e.g., pangolins; A) or by threatened species isolated on long branches of the phylogenetic tree (e.g., secretary bird, B). C: Dashed lines represent the loss of a genetically distinct amphibian population, while polygons with solid lines represent different existing populations, each differing in size with the largest being the most likely to avoid genetic erosion. A & B taken from Gumbs et al., 2023.](imgs/con-gen-princip.png){#fig-con-gen-princ}
+![Representation of three core conservation genetic principles focused on safeguarding evolutionary distinctiveness (A & B), protecting genetically distinct populations to minimise the risk of losing evolutionary distinctiveness and ensuring all populations are large enough to ensure their long-term persistence (C). Red lines represent deep phylogenetic branches at risk, which can be caused by either entire clades of species being threatened with extinction (e.g., pangolins; A) or by threatened species isolated on long branches of the phylogenetic tree (e.g., secretary bird, B). C: Dashed lines represent the loss of a genetically distinct amphibian population, while polygons with solid lines represent different existing populations, each differing in size with the largest being the most likely to avoid genetic erosion. A & B taken from Gumbs et al., 2023.](imgs/con-gen-princip.png){#fig-con-gen-princ}
 
 In line with these principles, South Africa has adopted four genetic indicators from the Kunming-Montreal Global Biodiversity Framework, which can be based on direct genetic data or on proxies (when genetic data are not available; namely the [Ne 500](#box-1) and [PM](#box-2) indicators).
 
@@ -105,7 +105,7 @@ This indicator is based on the principle that genetic differences increase as po
 :::
 
 ::: {#box-3 .callout-note .genetics collapse="true"}
-## Box 3. Changing status of evolutionary distinct and globally endangered species (EDGE index)
+## Box 3. Changing status of evolutionarily distinct and globally endangered species (EDGE index)
 
 A component indicator in Convention on Biological Diversity's Global Biodiversity Framework. This is a detailed metric that measures progress towards a specific target or goal within the framework.
 
@@ -139,7 +139,6 @@ This complementary indicator is estimated as the total phylogenetic diversity in
 | [42%]{.inline-style-threatened}
 | of 61 species assessed have
 | [Populations with Ne greater than 500]{.inline-style-indicator}
-
 
 </center>
 :::

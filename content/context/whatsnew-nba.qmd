@@ -1,8 +1,59 @@
 ---
-title: "What's new in the NBA"
+title: "News and updates"
 title-block-banner: "#adb5bd"
 title-block-banner-color: white
+toc: true
+toc-title: "Updates"
+toc-depth: 4
 ---
+
+## 2026
+
+![](imgs/launch-group-photo.jpg){fig-align="center"}
+
+![](imgs/nstf-award.jpg){fig-align="center"}
+
+### Core Data Team wins prestigious NSTF-South 32 Data for Research Award {#update-nstf-award}
+
+::: {.update-date .date}
+16 July 2026
+:::
+
+For 28 years, the NSTF-South32 Awards have celebrated outstanding contributions by researchers, innovators, science communicators, data specialists and research leaders whose work shape South Africa’s future and advance global knowledge. The NBA 2025 Core Data Team was awarded the prestigious Data for Research Award at a gala ceremony on Thursday 16 July 2026. The award recognised the transformation of the NBA into an innovative, web-based living assessment that enables users to move seamlessly from high-level findings to the underlying data, methods and analyses, significantly improving the accessibility, transparency and long-term value of South Africa’s biodiversity evidence base. [Read more »](https://nstf.org.za/wp-content/uploads/2026/07/26WinnersMediaReleaseDatabase.pdf)
+
+------------------------------------------------------------------------
+
+![](imgs/webinar-series.png){fig-align="center"}
+
+### NBA 2025 webinar series concludes {#update-nba-webinars}
+
+::: {.update-date .date}
+19 June 2026
+:::
+
+The findings of the NBA 2025 were showcased in a series of 10 webinars. The concluding webinar was presented on 19 June 2026 and reflected on the key themes and insights shared throughout the series as well as exploring what lies ahead for biodiversity assessment, monitoring and reporting in South Africa. Links to recordings of all 10 webinars can be found on our [media page](../context/media.qmd#webinars).
+
+------------------------------------------------------------------------
+
+![](imgs/bgis.png){fig-align="center"}
+
+### NBA 2025 spatial data now available on BGIS {#update-spatial-data}
+
+::: {.update-date .date}
+1 June 2026
+:::
+
+Spatial datasets associated with realm assessments for the NBA 2025 are now available for download on [SANBI's Biodiversity GIS website](https://bgis.sanbi.org/Projects/Detail/2277). These include ecosystem threat status and protection levels, remaining natural extent (for terrestrial ecosystems), and ecological condition data for estuaries and marine ecosystems.
+
+## 2025
+
+![](imgs/launch-banner.jpg){fig-align="center"}
+
+### What's new in the NBA 2025
+
+::: {.update-date .date}
+8 December 2025
+:::
 
 The focus of NBA 2025 was on creating transparent and repeatable workflows hosted on accessible repositories, and ensuring that the entirety of the results expected in the NBA are online via a searchable website. In addition, there was also substantial new work that was accomplished between the release of NBA 2018 and the release of NBA 2025. The following is what is new in NBA 2025:
 

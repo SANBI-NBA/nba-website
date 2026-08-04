@@ -31,21 +31,21 @@ The NBA is the primary tool for monitoring and reporting on the state of biodive
 :::
 ::::
 
-![](imgs/launch-banner.jpg){style="margin-bottom: 0; margin-top: 1.5rem" fig-align="center"}
+![](imgs/launch-group-photo.jpg){style="margin-bottom: 0; margin-top: 1.5rem" fig-align="center"} 
 
-<center>
+:::: column-screen
+::: column-body
+<center>[The NBA team with Deputy Minister Bernice Swarts at the NBA 2025 launch event in December 2025 © SANBI]{style="font-size:.7rem; color:#a7abb4;"}</center>
+:::
+::::
 
-<h4 style="color: #70B276; margin-top: 0">
+#### News and updates
 
-<a href="./content/context/media.html#webinar-series">
+-   [Core Data Team wins prestigious NSTF-South 32 Data for Research Award](./content/context/whatsnew-nba.qmd#update-nstf-award)
 
-Follow the NBA 2025 webinar series
+-   [NBA 2025 webinar series concludes](./content/context/whatsnew-nba.qmd#update-nba-webinars)
 
-</a>
-
-</h4>
-
-</center>
+-   [NBA 2025 spatial data now available on BGIS](./content/context/whatsnew-nba.qmd#update-spatial-data)
 
 ------------------------------------------------------------------------
 
@@ -145,3 +145,4 @@ tags$div(class = "category-row",
 ### Archived assessments
 
 Previous iterations of the National Biodiversity Assessment (2004, 2011, 2018) are available [here](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/national-biodiversity-assessment/).
+

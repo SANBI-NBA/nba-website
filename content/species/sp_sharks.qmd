@@ -192,15 +192,17 @@ google-scholar: true
 
 ## Key findings
 
-- 191 species of sharks, rays and chimaeras have been assessed, with 13 of these species endemic to South Africa.
+-   191[^1] species of sharks, rays and chimaeras have been assessed, with 13 of these species endemic to South Africa.
 
-- Forty-three percent (82 species) of these are threatened with extinction, with another 10% (20 species) assessed as Near Threatened.
+-   Forty-three percent (82 species) of these are threatened with extinction, with another 10% (20 species) assessed as Near Threatened.
 
-- Six of South Africa’s 13 endemic sharks are threatened with extinction, placing full responsibility for their protection in South Africa.
+-   Six of South Africa’s 13 endemic sharks are threatened with extinction, placing full responsibility for their protection in South Africa.
 
-- Sharks have been included in the South African Red List Index (RLI) for the first time. Sharks are the most threatened marine taxonomic group in South Africa, and they have the lowest RLI score of all South African taxon groups assessed.
+-   Sharks have been included in the South African Red List Index (RLI) for the first time. Sharks are the most threatened marine taxonomic group in South Africa, and they have the lowest RLI score of all South African taxon groups assessed.
 
-- The main threats to sharks are fisheries, primarily as targeted catch and bycatch in commercial fisheries. Habitat loss and degradation are also identified as a threat to several species with small geographic ranges in nearshore and coastal habitats (including endemic species). Climate and oceanographic changes are likely driving habitat loss and range shifts for some species.
+-   The main threats to sharks are fisheries, primarily as targeted catch and bycatch in commercial fisheries. Habitat loss and degradation are also identified as a threat to several species with small geographic ranges in nearshore and coastal habitats (including endemic species). Climate and oceanographic changes are likely driving habitat loss and range shifts for some species.
+
+[^1]: Taxa totals may differ slightly between Red List and South Africa's Biodiversity Profile pages, due to periodic updates to the Checklists and ongoing taxonomic revision. See the Approach section for further details.
 
 ## Overview of diversity
 
@@ -651,13 +653,13 @@ South Africa has made significant progress in addressing threats to sharks throu
 
 **Data collection and analysis**
 
-- Good data collection and data management are essential for effective fisheries management. South Africa undertakes fisheries-independent surveys, catch and effort data collection in various fisheries, analysis of population trends and distribution patterns for selected species, and stock assessments for a small number of species. There have also been many efforts to improve the identification of sharks, which improves data quality [@forestry2022a].
+-   Good data collection and data management are essential for effective fisheries management. South Africa undertakes fisheries-independent surveys, catch and effort data collection in various fisheries, analysis of population trends and distribution patterns for selected species, and stock assessments for a small number of species. There have also been many efforts to improve the identification of sharks, which improves data quality [@forestry2022a].
 
 **Spatial measures**
 
-- Sharks need a refuge from fishing pressure. Marine protected areas (MPAs), other effective area-based conservation measures (OECMs) and other special protection measures designed to safeguard sharks and their habitat within a delineated space can play an important role in safeguarding nursery grounds and other essential habitats. Such measures are most relevant to resident species, but even highly mobile species often depend on specific sites for one or more key life-cycle processes and may be philopatric.
+-   Sharks need a refuge from fishing pressure. Marine protected areas (MPAs), other effective area-based conservation measures (OECMs) and other special protection measures designed to safeguard sharks and their habitat within a delineated space can play an important role in safeguarding nursery grounds and other essential habitats. Such measures are most relevant to resident species, but even highly mobile species often depend on specific sites for one or more key life-cycle processes and may be philopatric.
 
-- South Africa has established a network of coastal and offshore MPAs – while designed to safeguard a broader set of biodiversity, some of these are located in sites where they can protect sharks and important parts of their habitat. Existing MPAs that safeguard important shark habitat include the uThukela Banks, an important nursery areas for several shark species, Protea Banks, which is a known aggregation site for several species, and the Southwest Indian Seamount MPA, which incorporates habitats identified as globally significant for the conservation of shark species in the region [@forestry2023a].
+-   South Africa has established a network of coastal and offshore MPAs – while designed to safeguard a broader set of biodiversity, some of these are located in sites where they can protect sharks and important parts of their habitat. Existing MPAs that safeguard important shark habitat include the uThukela Banks, an important nursery areas for several shark species, Protea Banks, which is a known aggregation site for several species, and the Southwest Indian Seamount MPA, which incorporates habitats identified as globally significant for the conservation of shark species in the region [@forestry2023a].
 
 ::: {#box-1 .callout-note .species title="Box 1. Conviction for illegal fishing strengthens marine protected areas in South Africa, click here." collapse="true"}
 In a landmark 2024 court decision, the Bredasdorp Regional Court handed down South Africa’s first conviction for environmental degradation under the National Environmental Management Act (NEMA), resulting from illegal fishing within a Marine Protected Area (MPA). The case involved a demersal shark longlining vessel based out of Gqeberha, which was found guilty of illegally harvesting sharks and other fish within the fully protected De Hoop MPA. Expert testimony highlighted the ecological impacts of these activities, including the depletion of local shark populations, disruption of their ecological roles and the broader ecosystem functioning, and the degradation of ecosystem processes such as predator–prey interactions. This conviction highlighted the powerful role of the combination of citizens reporting illegal activities, rigorous investigations, and well-prepared cases by law enforcement and prosecutors, as well as strong scientific evidence and expert testimony, in supporting legal action.
@@ -671,25 +673,25 @@ The guilty verdict represents a significant step forward for marine conservation
 
 Fisheries-wide measures are usually applied to all vessels or permit-holders within a particular fleet (e.g., entry permits, catch limits, size limits, gear restrictions, catch-and-release protocols, trade restrictions). South Africa has implemented various fisheries-wide measures, including:
 
-- prohibition of nine threatened species in commercial and/or recreational fisheries,
+-   prohibition of nine threatened species in commercial and/or recreational fisheries,
 
-- the demersal hake trawl fishery has ringfenced its footprint, and no longer trawls outside of these established trawl areas,
+-   the demersal hake trawl fishery has ringfenced its footprint, and no longer trawls outside of these established trawl areas,
 
-- the crustacean trawl fishery in KwaZulu-Natal has reduced its footprint and no longer trawls in shallow water due to the establishment of the uThukela MPA,
+-   the crustacean trawl fishery in KwaZulu-Natal has reduced its footprint and no longer trawls in shallow water due to the establishment of the uThukela MPA,
 
-- South Africa prohibits squalene production which has helped to prevent targeting of deep-water squalid sharks,
+-   South Africa prohibits squalene production which has helped to prevent targeting of deep-water squalid sharks,
 
-- permit conditions that penalise vessels with high bycatch,
+-   permit conditions that penalise vessels with high bycatch,
 
-- size limits in the demersal shark longline fishery,
+-   size limits in the demersal shark longline fishery,
 
-- daily bag limits in recreational fisheries,
+-   daily bag limits in recreational fisheries,
 
-- shift from large-mesh gillnets to more selective baited drumlines (i.e. baited hooks suspended from buoys anchored to the seabed) in lethal shark control programmes and removal of gillnets from most beaches during the winter months to reduce bycatch of predators associated with the sardine run and prevent entanglement of whales.
+-   shift from large-mesh gillnets to more selective baited drumlines (i.e. baited hooks suspended from buoys anchored to the seabed) in lethal shark control programmes and removal of gillnets from most beaches during the winter months to reduce bycatch of predators associated with the sardine run and prevent entanglement of whales.
 
 **Water quality and flows**
 
-- Measures to restore water quality and flows (see key message [A7](../key-messages/kma7.qmd))
+-   Measures to restore water quality and flows (see key message [A7](../key-messages/kma7.qmd))
 
 ### Future needs
 
@@ -697,11 +699,11 @@ Not withstanding the above, the persistent high proportion of South Africa’s s
 
 **Spatial measures**
 
-- Important sites for sharks should be prioritised in any plans to expand and improve management of MPAs, OECMs and other special protection areas, given the high and deteriorating threat status of sharks. Information on important sites for sharks can be gained through the widely respected expert-derived Important Shark and Ray Area (ISRA) process [@group2023a], Key Biodiversity Areas [@boyd2025a] and other approaches (e.g., systematic conservation planning [@faure-beaulieu2023a]).
+-   Important sites for sharks should be prioritised in any plans to expand and improve management of MPAs, OECMs and other special protection areas, given the high and deteriorating threat status of sharks. Information on important sites for sharks can be gained through the widely respected expert-derived Important Shark and Ray Area (ISRA) process [@group2023a], Key Biodiversity Areas [@boyd2025a] and other approaches (e.g., systematic conservation planning [@faure-beaulieu2023a]).
 
-- Much can also be achieved by expanding the areas within existing MPAs where fisheries that take sharks are restricted or must adopt special measures to prevent capture of threatened sharks[@faure-beaulieu2023a].
+-   Much can also be achieved by expanding the areas within existing MPAs where fisheries that take sharks are restricted or must adopt special measures to prevent capture of threatened sharks[@faure-beaulieu2023a].
 
-- Important sites that are not protected through MPAs or OECMs can be incorporated into Critical Biodiversity Areas. In addition to MPAs and OECMs, other spatial conservation and management processes, including Environmental Impact Assessments, estuarine management plans, and integrated coastal management plans, need to be directed to consider shark conservation [@forestry2023a].
+-   Important sites that are not protected through MPAs or OECMs can be incorporated into Critical Biodiversity Areas. In addition to MPAs and OECMs, other spatial conservation and management processes, including Environmental Impact Assessments, estuarine management plans, and integrated coastal management plans, need to be directed to consider shark conservation [@forestry2023a].
 
 ![The Agulhas Bank MPA protects mesophotic kelp forests and gardens of coralline algae on the offshore volcanic pinnacles. The rare speckled guitarfish (possibly *Acroteriobatus ocellatus*, Data Deficient) has been observed in this MPA. (© Georgina Jones)](./imgs/sp_sharks_img_4.png){fig-align="center"}
 
@@ -802,6 +804,12 @@ The two volumes of *Species Profiles of South African Sharks, Rays and Chimaeras
 ![In 2025, a specimen of the Critically Endangered largetooth sawfish *Pristis pristis* washed up on a beach near East London. The most recent prior record of a sawfish in South Africa was caught in a shark net in 1999. Sawfishes were previously not uncommon in South African waters and were thought to be the first likely local extinction of marine species in South Africa. (© Kevin Cole, East London Museum)](./imgs/sp_sharks_img_6.png){fig-align="center"}
 
 ## Approach {#approach}
+
+### Differences between Checklist and Red List species numbers
+
+The total number of taxa and endemics is derived from the South African National Animal Checklist, which is updated periodically. Therefore, small differences may appear between specific Species pages (Red List) and South Africa's Biodiversity Profile page. Differences mainly result from ongoing taxonomic revisions, particularly the treatment of synonyms that have been incorporated into the Checklists but are not yet reflected in the Red List. While substantial effort is made to ensure these are aligned, kindly use the numbers reflected on the pages at the time of your enquiry and ensure the date of the page is accurately cited.
+
+### Threat status assessment
 
 South African sharks have been assessed through the global IUCN Shark Specialist Group and most of these assessments were adopted for the South African Red List. National assessments were conducted for 33 non-endemic species through a process including two expert workshops and follow-up expert engagements. Species selection was based primarily on the list of shark species included in South Africa’s Second National Plan of Action for sharks (NPOA-Sharks II [@forestry2022a]) for which the proposed national assessment differed from the current global assessment, followed by consultation with national shark experts.
 
