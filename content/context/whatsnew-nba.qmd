@@ -35,7 +35,7 @@ The findings of the NBA 2025 were showcased in a series of 10 webinars. The conc
 1 June 2026
 :::
 
-Spatial datasets associated with realm assessments for the NBA 2025 are now available for download on [SANBI's Biodiversity GIS website](https://bgis.sanbi.org/Projects/Detail/2286). These include ecosystem threat status and protection levels, remaining natural extent (for terrestrial ecosystems), and ecological condition data for estuaries and marine ecosystems.
+Spatial datasets associated with realm assessments for the NBA 2025 are now available for download on [SANBI's Biodiversity GIS website](https://bgis.sanbi.org/Projects/Detail/2277). These include ecosystem threat status and protection levels, remaining natural extent (for terrestrial ecosystems), and ecological condition data for estuaries and marine ecosystems.
 
 ## 2025
 

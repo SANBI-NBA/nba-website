@@ -36,6 +36,8 @@ website:
         href: index.qmd
       - text: "Contents"
         href: contents.qmd
+      - text: "News and updates"
+        href: content/context/whatsnew-nba.qmd
       - text: "Media"
         href: content/context/media.qmd
   

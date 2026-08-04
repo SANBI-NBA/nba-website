@@ -36,7 +36,7 @@ affiliations:
     name: University of Cape Town
 
 
-date: last-modified
+date: 2025-12-05
 bibliography: terrestrial.bib
 
 citation:
@@ -77,9 +77,7 @@ table-caption-auto-number: true    # enable automatic numbering
 
 :::::: columns
 ::: {.column width="50%"}
-The ecosystem units for terrestrial ecosystem assessments in the NBA 2025 are based on *The vegetation of South Africa, Lesotho and Swaziland – version 2024* [@mucina; @Dayaram2019].
-This digital map, underpinned by numerous publications, delineates and describes 463 national vegetation types nested within nine terrestrial biomes (@fig-biome) [@rutherford2006].
-*Click on map to enlarge »*.
+The ecosystem units for terrestrial ecosystem assessments in the NBA 2025 are based on *The vegetation of South Africa, Lesotho and Swaziland – version 2024* [@mucina; @Dayaram2019]. This digital map, underpinned by numerous publications, delineates and describes 463 national vegetation types nested within nine terrestrial biomes (@fig-biome) [@rutherford2006]. *Click on map to enlarge »*.
 :::
 
 :::: {.column width="50%"}

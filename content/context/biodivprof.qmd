@@ -168,7 +168,7 @@ affiliations:
 
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05
 
 #bibliography: 
 
@@ -281,7 +281,9 @@ ggsave(
 
 ```
 
-South Africa is rich in species (@fig-rich) and is home to an estimated 67 000 animal species, although many invertebrates remain undescribed or undiscovered. The 2025 South African National Plant Checklist records 23 514 taxa and 21 539 species, of which 20 204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country.
+South Africa is rich in species[^1] (@fig-rich) and is home to an estimated 67 000 animal species, although many invertebrates remain undescribed or undiscovered. The 2025 South African National Plant Checklist records 23 514 taxa and 21 539 species, of which 20 204 are indigenous. Remarkably, 60.5% of these indigenous species are endemic to the country.
+
+[^1]: The total number of taxa and endemics is derived from the South African National Plant and Animal Checklists, which are updated periodically. Therefore, small differences may appear between specific Species pages (Red List) and South Africa's Biodiversity Profile page. Differences mainly result from ongoing taxonomic revisions, particularly the treatment of synonyms that have been incorporated into the Checklists but are not yet reflected in the Red List. While substantial effort is made to ensure these are aligned, kindly use the numbers reflected on the pages at the time of your enquiry and ensure the date of the page is accurately cited.
 
 Current estimates indicate that South Africa harbours approximately 8% of the world’s non-vascular and 6% vascular plant species; and 10% of the world’s dung beetle, 7% of bird, 6% of bee, 5% of mammal, 3% of reptile, 2% of amphibian and 1% of freshwater fish species. In the marine realm, South Africa supports 15% of the world’s shark, ray and chimaera species, 15% of nudibranch, 13% of marine (bony) fish, and 5% of seaweed species (including brown, green and red algae). Several terrestrial invertebrate groups have high richness relative to global statistics, with South Africa hosting nearly 5% of the world’s butterfly, 4% of spider, and 3% of dragonfly and damselfly species.
 

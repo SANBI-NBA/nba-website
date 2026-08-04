@@ -57,7 +57,7 @@ affiliations:
     number: 4
     name: University of Pretoria
     
-date: last-modified
+date: 2025-12-05
 bibliography: terrestrial.bib
 
 citation:

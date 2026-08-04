@@ -43,17 +43,16 @@ listing:
 
 {{< video https://www.youtube.com/embed/EnRlSBeGNs0 title='Flow for Life' >}}
 
-## Webinar series {#webinars}
+## Webinars {#webinars}
 
-The NBA Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
 
-For more information about upcoming webinars see [here](https://www.sanbi.org/news/nba-webinar-series-begins-with-overview-of-key-findings/).
+### NBA 2025 webinar series
 
-Links to recordings of completed webinars:
+The NBA 2025 Webinar Series showcases presentations and discussions related to South Africa’s 2025 National Biodiversity Assessment. These webinars unpack key findings, highlight species trends and recovery actions, and explore how assessment results inform policy, planning and conservation practice. The series forms part of SANBI’s efforts to translate biodiversity assessments into meaningful action.
 
-**Webinar 1:** [Reverse the Red: NBA 2025 species findings](https://youtu.be/m6NkcfjvR-o)
+**Webinar 1:** [What the NBA 2025 tells us about the state of South Africa’s biodiversity](https://www.youtube.com/watch?v=w4-rR-a1Uso)
 
-**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc)
+**Webinar 2**: [The status of SA’s terrestrial ecosystems – where are we losing ground and why](https://www.youtube.com/watch?v=RwGYa60BTEY)
 
 **Webinar 3**: [Freshwater wetlands and rivers: The backbone of South Africa’s water security remains under threat](https://www.youtube.com/watch?v=ZAaIhUi9WXE)
 
@@ -71,6 +70,14 @@ Links to recordings of completed webinars:
 
 **Webinar 10**: [Recaps and the future directions of the NBA as a living assessment that will be updated more regularly](https://www.youtube.com/watch?v=lKdIaBC9wvA)
 
+### Reverse the Red webinars
+
+[Reverse the Red](https://www.reversethered.org/) is a global movement encouraging strategic cooperation and action to ensure the survival of wild species and ecosystems. It is focused on recovery actions for threatened species, to deliver on the [Global Biodiversity Framework Goal A](https://www.cbd.int/gbf/goals) and [Target 4](https://www.cbd.int/gbf/targets/4). These webinars highlight how species asssessments completed as part of the NBA support the work of Reverse the Red.
+
+
+**Webinar 1:** [Reverse the Red: NBA 2025 species findings](https://youtu.be/m6NkcfjvR-o)
+
+**Webinar 2**: [Reverse the Red: Species recovery in freshwater and marine ecosystems](https://www.youtube.com/watch?v=ob7svDrhbxc)
 
 ------------------------------------------------------------------------
 
