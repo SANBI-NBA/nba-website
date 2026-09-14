@@ -83,7 +83,7 @@ affiliations:
     name: University of KwaZulu-Natal
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: fw-references.bib
@@ -99,7 +99,7 @@ appendix-cite-as: false
 google-scholar: true
 ---
 
-*While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate problem. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent monitoring and reporting.*
+*While numerous policies and strategies aim to improve or at least stabilise the ecological condition of wetlands in South Africa, overall wetland condition continues to deteriorate. Continued wetland loss and declining ecological condition has led to significant ecological and financial loss. This deterioration is often gradual and 'out of sight' and, therefore, generally not perceived as an immediate threat. It is, however, a serious concern which should be addressed through restoration (where feasible and strategic) and improved, frequent monitoring and reporting.*
 
 ![Musa Mlambo from the Albany Museum surveying a wetland for aquatic invertebrates, Eastern Cape highlands. (© Nancy Job)](imgs/musa_ECGNP.png)
 
@@ -137,7 +137,7 @@ google-scholar: true
 :::: panel-tabset
 ## Map
 
-![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem extent within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
+![Ecological condition for inland wetland ecosystem types. The inset graph shows percentage of ecosystem types within each condition category.](imgs/wet_condition_map.png){#fig-condition_wet_map}
 
 ## Data
 
