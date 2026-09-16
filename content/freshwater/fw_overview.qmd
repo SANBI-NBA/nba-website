@@ -11,7 +11,7 @@ description: |
   Findings of the NBA for rivers and inland wetlands
 
 # This date determines the PUBLISHED date in the title block
-date: last-modified
+date: 2025-12-05 # date: last-modified
 
 # Remember to rename the default .bib file and change the name here
 bibliography: fw-references.bib
@@ -126,3 +126,6 @@ As freshwater ecosystems are affected by land use within their receiving catchme
 ## More information on freshwater species
 
 [Freshwater species](../species/fw_sp.qmd)
+
+## A note on the freshwater biodiversity datasets from NBA 2025 
+Finalisation of the freshwater datasets has taken longer than expected due to a significant reduction in the programme's capacity at SANBI. The extent, condition and threat assessment have been finalised. Quality checking is underway and is the last step before the complete datasets can be released. We appreciate your patience and will update relevant webpages as soon as the full datasets are ready.
